@@ -38,4 +38,4 @@ Amazon DynamoDB stores metadata, relationships, and application state with singl
 ## Transforms and Integrations Layer
 <a name="transforms-and-integrations-layer"></a>
 
-AWS Deadline Cloud handles compute-intensive transformations like 3D rendering, format conversion, and thumbnail generation. This layer enables integration with external applications through REST APIs and direct S3 access.
+AWS Deadline Cloud handles compute-intensive transformations like 3D rendering, format conversion, and thumbnail generation. Connectors link assets to external applications, processing jobs, and machine learning models through configuration, and route their results back into the asset record. External applications can also use the REST APIs and direct S3 access. For more information, see [Connectors](connectors.md).

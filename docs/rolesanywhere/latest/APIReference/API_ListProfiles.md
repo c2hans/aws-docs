@@ -96,6 +96,14 @@ For information about the errors that are common to all actions, see [Common Err
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
 
+ ** ServiceUnavailableException **
+The request has failed due to a temporary failure of the service.
+ ** message **
+The exception message.
+ ** retryAfterSeconds **
+The recommended number of seconds after which the client should retry the request.
+HTTP Status Code: 503
+
  ** ValidationException **
 Validation exception error.
 HTTP Status Code: 400

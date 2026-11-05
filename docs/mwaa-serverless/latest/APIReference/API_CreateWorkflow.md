@@ -25,6 +25,11 @@ Creates a new workflow in Amazon Managed Workflows for Apache Airflow Serverless
       "Type": "{{string}}"
    },
    "EngineVersion": {{number}},
+   "Environment": {
+      "Variables": {
+         "{{string}}" : "{{string}}"
+      }
+   },
    "LoggingConfiguration": {
       "LogGroupName": "{{string}}"
    },
@@ -81,6 +86,11 @@ Required: No
  ** [EngineVersion](#API_CreateWorkflow_RequestSyntax) **   <a name="mwaaserverless-CreateWorkflow-request-EngineVersion"></a>
 The version of the Amazon Managed Workflows for Apache Airflow Serverless engine that you want to use for this workflow. This determines the feature set, supported operators, and execution environment capabilities available to your workflow. Amazon Managed Workflows for Apache Airflow Serverless maintains backward compatibility across versions while introducing new features and improvements. Currently supports version 1 with plans for additional versions as the service evolves.
 Type: Integer
+Required: No
+
+ ** [Environment](#API_CreateWorkflow_RequestSyntax) **   <a name="mwaaserverless-CreateWorkflow-request-Environment"></a>
+The environment variables to set for tasks in the workflow. If you don't specify this parameter, the workflow has no environment variables.
+Type: [Environment](API_Environment.md) object
 Required: No
 
  ** [LoggingConfiguration](#API_CreateWorkflow_RequestSyntax) **   <a name="mwaaserverless-CreateWorkflow-request-LoggingConfiguration"></a>
@@ -166,7 +176,7 @@ Type: Array of strings
 The Amazon Resource Name (ARN) of the newly created workflow. This ARN uniquely identifies the workflow resource.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-[a-z]+-[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
+Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-(?:[a-z]+-)+[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
 
  ** [WorkflowStatus](#API_CreateWorkflow_ResponseSyntax) **   <a name="mwaaserverless-CreateWorkflow-response-WorkflowStatus"></a>
 The current status of the workflow. Possible values are `READY` (workflow is ready to run) and `DELETING` (workflow is being deleted).

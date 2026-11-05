@@ -42,6 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The action to take when the cluster step fails. Possible values are `CANCEL_AND_WAIT` and `CONTINUE`.
 *Required*: No
 *Type*: String
+*Allowed values*: `CANCEL_AND_WAIT | CONTINUE | TERMINATE_CLUSTER | TERMINATE_JOB_FLOW`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `HadoopJarStep`  <a name="cfn-emr-cluster-stepconfig-hadoopjarstep"></a>

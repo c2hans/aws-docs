@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AutoScalingPolicy](#cfn-emr-cluster-instancegroupconfig-autoscalingpolicy)" : {{AutoScalingPolicy}},
   "[BidPrice](#cfn-emr-cluster-instancegroupconfig-bidprice)" : {{String}},
-  "[Configurations](#cfn-emr-cluster-instancegroupconfig-configurations)" : {{[ Configuration, ... ]}},
+  "[Configurations](#cfn-emr-cluster-instancegroupconfig-configurations)" : {{[ EMRConfiguration, ... ]}},
   "[CustomAmiId](#cfn-emr-cluster-instancegroupconfig-customamiid)" : {{String}},
   "[EbsConfiguration](#cfn-emr-cluster-instancegroupconfig-ebsconfiguration)" : {{EbsConfiguration}},
   "[InstanceCount](#cfn-emr-cluster-instancegroupconfig-instancecount)" : {{Integer}},
@@ -39,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     AutoScalingPolicy}}
   [BidPrice](#cfn-emr-cluster-instancegroupconfig-bidprice): {{String}}
   [Configurations](#cfn-emr-cluster-instancegroupconfig-configurations): {{
-    - Configuration}}
+    - EMRConfiguration}}
   [CustomAmiId](#cfn-emr-cluster-instancegroupconfig-customamiid): {{String}}
   [EbsConfiguration](#cfn-emr-cluster-instancegroupconfig-ebsconfiguration): {{
     EbsConfiguration}}
@@ -56,7 +56,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `AutoScalingPolicy` is a subproperty of the [InstanceGroupConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-cluster-jobflowinstancesconfig-instancegroupconfig.html) property type that specifies the constraints and rules of an automatic scaling policy in Amazon EMR. The automatic scaling policy defines how an instance group dynamically adds and terminates EC2 instances in response to the value of a CloudWatch metric. Only core and task instance groups can use automatic scaling policies. For more information, see [Using Automatic Scaling in Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html).
 *Required*: No
 *Type*: [AutoScalingPolicy](aws-properties-emr-cluster-autoscalingpolicy.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `BidPrice`  <a name="cfn-emr-cluster-instancegroupconfig-bidprice"></a>
 If specified, indicates that the instance group uses Spot Instances. This is the maximum price you are willing to pay for Spot Instances. Specify `OnDemandPrice` to set the amount equal to the On-Demand price, or specify an amount in USD.
@@ -65,14 +65,14 @@ If specified, indicates that the instance group uses Spot Instances. This is the
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `0`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Configurations`  <a name="cfn-emr-cluster-instancegroupconfig-configurations"></a>
 Amazon EMR releases 4.x or later.
 The list of configurations supplied for an Amazon EMR cluster instance group. You can specify a separate configuration for each instance group (master, core, and task).
 *Required*: No
-*Type*: Array of [Configuration](aws-properties-emr-cluster-configuration.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Type*: Array of [EMRConfiguration](aws-properties-emr-cluster-emrconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `CustomAmiId`  <a name="cfn-emr-cluster-instancegroupconfig-customamiid"></a>
 The custom AMI ID to use for the provisioned instance group.
@@ -81,19 +81,19 @@ The custom AMI ID to use for the provisioned instance group.
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `0`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `EbsConfiguration`  <a name="cfn-emr-cluster-instancegroupconfig-ebsconfiguration"></a>
 EBS configurations that will be attached to each Amazon EC2 instance in the instance group.
 *Required*: No
 *Type*: [EbsConfiguration](aws-properties-emr-cluster-ebsconfiguration.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `InstanceCount`  <a name="cfn-emr-cluster-instancegroupconfig-instancecount"></a>
 Target number of instances for the instance group.
 *Required*: Yes
 *Type*: Integer
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `InstanceType`  <a name="cfn-emr-cluster-instancegroupconfig-instancetype"></a>
 The Amazon EC2 instance type for all instances in the instance group.
@@ -102,14 +102,14 @@ The Amazon EC2 instance type for all instances in the instance group.
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `1`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Market`  <a name="cfn-emr-cluster-instancegroupconfig-market"></a>
 Market type of the Amazon EC2 instances used to create a cluster node.
 *Required*: No
 *Type*: String
 *Allowed values*: `ON_DEMAND | SPOT`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Name`  <a name="cfn-emr-cluster-instancegroupconfig-name"></a>
 Friendly name given to the instance group.
@@ -118,4 +118,4 @@ Friendly name given to the instance group.
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `0`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

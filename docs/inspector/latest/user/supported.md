@@ -258,6 +258,7 @@ Ubuntu
 | Echo | 2 |
 | Fedora | 43 |
 | Fedora | 44 |
+| Fedora | 45 |
 | Hummingbird OS | – |
 | macOS | 11\+ |
 | Oracle Linux | 8 |

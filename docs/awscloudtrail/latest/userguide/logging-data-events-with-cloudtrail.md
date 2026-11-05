@@ -54,7 +54,7 @@ The events that are logged by your trails are available in Amazon EventBridge. F
     + [Example: RESOURCE\_ACCESS aggregated event](aggregating-data-events.md#aggregating-data-events-resource-access-example)
 + [Logging data events for AWS Config compliance](#config-data-events-best-practices)
 + [Logging data events with the AWS SDKs](#logging-data-events-with-the-AWS-SDKs)
-+ [Logging Amazon S3 data events for data governance, security, and compliance](logging-s3-data-events-governance.md)
++ [Logging CloudTrail S3 data events for data governance, security, and compliance](logging-s3-data-events-governance.md)
   + [Amazon S3 resource types for data events](logging-s3-data-events-governance.md#logging-s3-data-events-resource-types)
     + [Identify who performed an action](logging-s3-data-events-governance.md#logging-s3-data-events-identify-actor)
   + [Data governance: know who uses your data and how it changes](logging-s3-data-events-governance.md#logging-s3-data-events-data-governance)
@@ -62,12 +62,12 @@ The events that are logged by your trails are available in Amazon EventBridge. F
     + [Investigate authentication failures](logging-s3-data-events-governance.md#logging-s3-data-events-investigate-authn-failures)
     + [Determine whether a person or a lifecycle rule deleted an object](logging-s3-data-events-governance.md#logging-s3-data-events-who-deleted-object)
   + [Compliance: prove your controls work](logging-s3-data-events-governance.md#logging-s3-data-events-compliance)
-    + [Verify that Amazon S3 data event logging is turned on](logging-s3-data-events-governance.md#logging-s3-data-events-verify-logging)
+    + [Verify that CloudTrail S3 data event logging is turned on](logging-s3-data-events-governance.md#logging-s3-data-events-verify-logging)
   + [Logging and excluding Amazon S3 lifecycle and authentication failure events](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-events)
     + [Amazon S3 lifecycle events](logging-s3-data-events-governance.md#logging-s3-lifecycle-events)
     + [Considerations](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-considerations)
     + [Examples: Log Amazon S3 lifecycle and authentication failure events](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-examples-log)
-      + [Example 1: Log all Amazon S3 data events, including lifecycle and authentication failure events](logging-s3-data-events-governance.md#logging-s3-example-log-all)
+      + [Example 1: Log all CloudTrail S3 data events, including lifecycle and authentication failure events](logging-s3-data-events-governance.md#logging-s3-example-log-all)
       + [Example 2: Log only lifecycle events](logging-s3-data-events-governance.md#logging-s3-example-log-lifecycle-only)
       + [Example 3: Log only authentication failure events](logging-s3-data-events-governance.md#logging-s3-example-log-authn-only)
       + [Example 4: Log lifecycle events for a specific bucket](logging-s3-data-events-governance.md#logging-s3-example-log-lifecycle-one-bucket)
@@ -99,6 +99,7 @@ For event data stores, you can use only advanced event selectors to include data
 
 | AWS service | Description | Resource type (console) | resources.type value |
 | --- | --- | --- | --- |
+| Abuse Report | API activity on `AWS::Abuse::Report` resources. | Abuse Report | `AWS::Abuse::Report` |
 | OMWDeviceCommunicationService | API activity on `AWS::Account::ControlledDomain` resources. | AWS::Account::ControlledDomain | `AWS::Account::ControlledDomain` |
 | Amazon WorkSpaces Applications | Agents accessing WorkSpaces Applications MCP tool events | Agent Access MCP Tools | `AWS::AgentAccessMCP::Tools` |
 | AWS Agent Registry | API activity on `AWS::AgentRegistry::Registry` resources. | AWS Agent Registry | `AWS::AgentRegistry::Registry` |

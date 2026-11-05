@@ -41,6 +41,9 @@ The following general limitations apply to blue/green deployments:
   + Cross-Region read replicas
   + Aurora Serverless v1 DB clusters
   + CloudFormation
+  + Capacity Reservations
+
+    You can't specify a Capacity Reservation when you create a blue/green deployment, and the DB instances in the green environment don't draw from a reservation. For more information about Capacity Reservations, see [Amazon Aurora On-Demand Capacity Reservations](capacity-reservations.md).
 + After you switch over a blue/green deployment, point-in-time recovery (PITR) history doesn't carry over to the new production DB cluster. The green DB cluster keeps its own resource ID. Its earliest restorable time starts when you created the green environment. You can't restore the new production DB cluster to any point in time before that, including any time before switchover. The blue DB cluster keeps its own PITR history and automated backups until you delete it. To restore the blue DB cluster after switchover, use its resource ID (`SourceDbClusterResourceId`), not its name. The name changes during switchover. For more information, see [Restoring a DB cluster to a specified time](aurora-pitr.md).
 
 **Important**

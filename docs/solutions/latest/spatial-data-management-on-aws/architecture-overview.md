@@ -28,6 +28,7 @@ Users and external applications access the solution through multiple interfaces:
 
 The core solution includes:
 +  **Control Plane** – Amazon API Gateway and AWS Lambda functions for business logic and orchestration
++  **Asset Record** – Versions, metadata, derived files, lineage, and connector runs for every asset, validated by asset templates
 +  **Data Plane** – Amazon S3 for spatial asset storage with content-addressable architecture
 +  **Metadata Layer** – Amazon DynamoDB for resource metadata and Amazon OpenSearch Serverless for full-text search
 +  **Integration Layer** – Amazon EventBridge, Amazon SQS, and connectors for external system integration
@@ -39,5 +40,5 @@ The core solution includes:
 Third-party systems integrate through:
 +  **REST APIs** – Standard HTTP/HTTPS endpoints
 +  **S3 APIs** – Direct access to spatial assets with temporary credentials
-+  **Webhooks** – Event notifications for asset changes
-+  **Connectors** – Pre-built integrations for common platforms (Digital Twin, Geographic Information Systems (GIS), and Computer-Aided Design (CAD) tools)
++  **Connectors** – Configured integrations, approved for each asset template, that publish asset changes to external systems and bring results back as metadata, derived files, and new assets. Examples include Digital Twin, Geographic Information Systems (GIS), and Computer-Aided Design (CAD) tools, processing jobs, and machine learning models.
++  **Notifications** – In-app, email, and Slack notifications for asset changes

@@ -61,6 +61,11 @@ Specifies the name of the option group from which this option group is copied.
 Type: String
 Required: No
 
+ ** SourceRegion **
+Specifies the AWS Region for the option group from which this option group is copied.
+Type: String
+Required: No
+
  ** VpcId **
 If **AllowsVpcAndNonVpcInstanceMemberships** is `false`, this field is blank. If **AllowsVpcAndNonVpcInstanceMemberships** is `true` and this field is blank, then this option group can be applied to both VPC and non-VPC instances. If this field contains a value, then this option group can only be applied to instances that are in the VPC indicated by this field.
 Type: String

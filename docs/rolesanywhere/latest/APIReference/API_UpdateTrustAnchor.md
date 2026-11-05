@@ -17,6 +17,7 @@ PATCH /trustanchor/{{trustAnchorId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "crlDpRevocationEnabled": {{boolean}},
    "name": "{{string}}",
    "source": {
       "sourceData": { ... },
@@ -41,6 +42,11 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [crlDpRevocationEnabled](#API_UpdateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-UpdateTrustAnchor-request-crlDpRevocationEnabled"></a>
+Specifies whether the trust anchor checks certificate revocation status against CRL distribution points.
+Type: Boolean
+Required: No
+
  ** [name](#API_UpdateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-UpdateTrustAnchor-request-name"></a>
 The name of the trust anchor.
 Type: String
@@ -63,6 +69,7 @@ Content-type: application/json
 {
    "trustAnchor": {
       "createdAt": "string",
+      "crlDpRevocationEnabled": boolean,
       "enabled": boolean,
       "name": "string",
       "notificationSettings": [
@@ -108,6 +115,14 @@ HTTP Status Code: 403
  ** ResourceNotFoundException **
 The resource could not be found.
 HTTP Status Code: 404
+
+ ** ServiceUnavailableException **
+The request has failed due to a temporary failure of the service.
+ ** message **
+The exception message.
+ ** retryAfterSeconds **
+The recommended number of seconds after which the client should retry the request.
+HTTP Status Code: 503
 
  ** ValidationException **
 Validation exception error.

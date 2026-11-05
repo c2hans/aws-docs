@@ -74,6 +74,7 @@ For event data stores, you can use only advanced event selectors to include data
 
 | AWS service | Description | Resource type (console) | resources.type value |
 | --- | --- | --- | --- |
+| Abuse Report | API activity on `AWS::Abuse::Report` resources. | Abuse Report | `AWS::Abuse::Report` |
 | OMWDeviceCommunicationService | API activity on `AWS::Account::ControlledDomain` resources. | AWS::Account::ControlledDomain | `AWS::Account::ControlledDomain` |
 | Amazon WorkSpaces Applications | Agents accessing WorkSpaces Applications MCP tool events | Agent Access MCP Tools | `AWS::AgentAccessMCP::Tools` |
 | AWS Agent Registry | API activity on `AWS::AgentRegistry::Registry` resources. | AWS Agent Registry | `AWS::AgentRegistry::Registry` |

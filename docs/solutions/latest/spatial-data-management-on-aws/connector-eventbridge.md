@@ -11,6 +11,8 @@ EventBridge is a publish-only connector type. It sends events outward from SDMA 
 
 Step type: `eventBridgePutEvents`
 
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+
 ## Roles
 <a name="eventbridge-roles"></a>
 
@@ -36,8 +38,8 @@ Step type: `eventBridgePutEvents`
            "Effect": "Allow",
            "Principal": {
              "AWS": [
-               "<CONNECTOR_INVOCATION_ROLE_ARN>",
-               "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+               "<connector-invocation-role-arn>",
+               "<async-connector-invocation-role-arn>"
              ]
            },
            "Action": "sts:AssumeRole"
@@ -46,7 +48,7 @@ Step type: `eventBridgePutEvents`
      }
      ```
 
-     Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+     Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
      If you have AWS CLI access, you can find these values by running:
 
@@ -60,7 +62,7 @@ Step type: `eventBridgePutEvents`
        --query 'Configuration.Role' --output text
      ```
 
-     Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+     Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `events:PutEvents` on the target event bus:
 
      ```
@@ -70,7 +72,7 @@ Step type: `eventBridgePutEvents`
          {
            "Effect": "Allow",
            "Action": "events:PutEvents",
-           "Resource": "arn:aws:events:<REGION>:<ACCOUNT_ID>:event-bus/<EVENT_BUS_NAME>"
+           "Resource": "arn:aws:events:<region>:<account-id>:event-bus/<event-bus-name>"
          }
        ]
      }
@@ -79,22 +81,22 @@ Step type: `eventBridgePutEvents`
 ## Using EventBridge as a publisher
 <a name="eventbridge-as-publisher"></a>
 
-### Example: publish asset events to an event bus
+### Example – publish asset events to an event bus
 <a name="_example-publish-asset-events-to-an-event-bus"></a>
 
 ```
 {
+  "securityConfig": {
+    "type": "AssumeRole",
+    "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-EventBridge"
+  },
+  "eventBridgeConfig": {
+    "eventBusArn": "arn:aws:events:<region>:<account-id>:event-bus/<event-bus-name>",
+    "source": "sdma.connectors",
+    "detailType": "AssetLifecycleEvent"
+  },
   "defaultStepConfig": {
-    "stepType": "eventBridgePutEvents",
-    "eventBridgeConfig": {
-      "eventBusArn": "arn:aws:events:<REGION>:<ACCOUNT_ID>:event-bus/<EVENT_BUS_NAME>",
-      "source": "sdma.connectors",
-      "detailType": "AssetLifecycleEvent",
-      "securityConfig": {
-        "type": "AssumeRole",
-        "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentPublisher-EventBridge"
-      }
-    }
+    "stepType": "eventBridgePutEvents"
   },
   "fieldMappings": [
     { "source": "asset.assetId", "target": "assetId" },
@@ -112,7 +114,7 @@ Step type: `eventBridgePutEvents`
 }
 ```
 
-Downstream consumers create EventBridge rules that match on `source` and `detailType` to route events to Lambda functions, SQS queues, Step Functions, or other targets.
+Downstream consumers create EventBridge rules that match on `source` and `detailType` to route events to AWS Step Functions state machines, Amazon SQS queues, AWS Lambda functions, or other targets.
 
 ## Using EventBridge as a step type in multi-step triggers
 <a name="eventbridge-as-step-type"></a>
@@ -128,13 +130,13 @@ The `eventBridgePutEvents` step type can appear in multi-step triggers. A common
   {
     "stepType": "lambdaInvoke",
     "lambdaConfig": {
-      "functionArn": "arn:aws:lambda:<REGION>:<ACCOUNT_ID>:function:post-process"
+      "functionArn": "arn:aws:lambda:<region>:<account-id>:function:post-process"
     }
   },
   {
     "stepType": "eventBridgePutEvents",
     "eventBridgeConfig": {
-      "eventBusArn": "arn:aws:events:<REGION>:<ACCOUNT_ID>:event-bus/notifications",
+      "eventBusArn": "arn:aws:events:<region>:<account-id>:event-bus/notifications",
       "source": "sdma.connectors",
       "detailType": "AssetPublished"
     }
@@ -150,5 +152,5 @@ The `eventBridgePutEvents` step type can appear in multi-step triggers. A common
 |  `eventBridgeConfig.eventBusArn`  | Yes | ARN of the target EventBridge custom event bus. |
 |  `eventBridgeConfig.source`  | Yes | Event source string. Use a descriptive namespace (for example, `sdma.connectors`). |
 |  `eventBridgeConfig.detailType`  | Yes | Event detail type. Downstream rules match on this value. |
-|  `eventBridgeConfig.securityConfig`  | Yes | Authentication configuration. Must use `AssumeRole` type. |
+|  `securityConfig`  | Yes | Connector-level authentication configuration, a sibling of `eventBridgeConfig`. Must use `AssumeRole` type. |
 |  `payload.fields`  | No | Array of field names to include in the event detail. If omitted, all mapped fields are included. |

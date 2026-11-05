@@ -359,7 +359,7 @@ Default: `{{componentName}}\\\\w*.log`, where {{componentName}} is the name of t
 Default: `false`
 `multiLineStartPattern`  <a name="log-manager-component-configuration-component-multi-line-start-pattern"></a>
 (Optional) A regular expression that identifies when a log message on a new line is a new log message. If the regular expression doesn't match the new line, the log manager component appends the new line to the log message for the previous line.
-By default, the log manager component checks if the line starts with a whitespace character, such as a tab or space. If it doesn't, the log manager handles that line as a new log message. Otherwise, it appends that line to the current log message. This behavior ensures that the log manager component doesn't split messages that span multiple lines, such as stack traces.
+By default, a line begins a new log message only if it starts with a `YYYY-MM-DD` date (optionally after `[` or `(`) or `{`. Otherwise, the log manager component appends that line to the current log message. In v2.3.4 and earlier, any line that doesn't start with a whitespace character is a new log message.
 
   `periodicUploadIntervalSec`
 (Optional) The period in seconds at which the log manager component checks for new log files to upload.
@@ -495,7 +495,7 @@ Default: `{{componentName}}\\\\w*.log`, where {{componentName}} is the name of t
 Default: `false`
 `multiLineStartPattern`  <a name="log-manager-component-configuration-component-multi-line-start-pattern"></a>
 (Optional) A regular expression that identifies when a log message on a new line is a new log message. If the regular expression doesn't match the new line, the log manager component appends the new line to the log message for the previous line.
-By default, the log manager component checks if the line starts with a whitespace character, such as a tab or space. If it doesn't, the log manager handles that line as a new log message. Otherwise, it appends that line to the current log message. This behavior ensures that the log manager component doesn't split messages that span multiple lines, such as stack traces.
+By default, a line begins a new log message only if it starts with a `YYYY-MM-DD` date (optionally after `[` or `(`) or `{`. Otherwise, the log manager component appends that line to the current log message. In v2.3.4 and earlier, any line that doesn't start with a whitespace character is a new log message.
 
   `periodicUploadIntervalSec`
 (Optional) The period in seconds at which the log manager component checks for new log files to upload.
@@ -626,7 +626,7 @@ Default: `{{componentName}}\\\\w*.log`, where {{componentName}} is the name of t
 Default: `false`
 `multiLineStartPattern`  <a name="log-manager-component-configuration-component-multi-line-start-pattern"></a>
 (Optional) A regular expression that identifies when a log message on a new line is a new log message. If the regular expression doesn't match the new line, the log manager component appends the new line to the log message for the previous line.
-By default, the log manager component checks if the line starts with a whitespace character, such as a tab or space. If it doesn't, the log manager handles that line as a new log message. Otherwise, it appends that line to the current log message. This behavior ensures that the log manager component doesn't split messages that span multiple lines, such as stack traces.
+By default, a line begins a new log message only if it starts with a `YYYY-MM-DD` date (optionally after `[` or `(`) or `{`. Otherwise, the log manager component appends that line to the current log message. In v2.3.4 and earlier, any line that doesn't start with a whitespace character is a new log message.
 
   `periodicUploadIntervalSec`
 (Optional) The period in seconds at which the log manager component checks for new log files to upload.
@@ -750,7 +750,7 @@ Default: `{{componentName}}\\\\w*.log`, where {{componentName}} is the name of t
 Default: `false`
 `multiLineStartPattern`  <a name="log-manager-component-configuration-component-multi-line-start-pattern"></a>
 (Optional) A regular expression that identifies when a log message on a new line is a new log message. If the regular expression doesn't match the new line, the log manager component appends the new line to the log message for the previous line.
-By default, the log manager component checks if the line starts with a whitespace character, such as a tab or space. If it doesn't, the log manager handles that line as a new log message. Otherwise, it appends that line to the current log message. This behavior ensures that the log manager component doesn't split messages that span multiple lines, such as stack traces.
+By default, a line begins a new log message only if it starts with a `YYYY-MM-DD` date (optionally after `[` or `(`) or `{`. Otherwise, the log manager component appends that line to the current log message. In v2.3.4 and earlier, any line that doesn't start with a whitespace character is a new log message.
 
   `periodicUploadIntervalSec`
 (Optional) The period in seconds at which the log manager component checks for new log files to upload.
@@ -852,7 +852,7 @@ Default: `{{componentName}}\\\\w*.log`, where {{componentName}} is the name of t
 Default: `false`
 `multiLineStartPattern`  <a name="log-manager-component-configuration-component-multi-line-start-pattern"></a>
 (Optional) A regular expression that identifies when a log message on a new line is a new log message. If the regular expression doesn't match the new line, the log manager component appends the new line to the log message for the previous line.
-By default, the log manager component checks if the line starts with a whitespace character, such as a tab or space. If it doesn't, the log manager handles that line as a new log message. Otherwise, it appends that line to the current log message. This behavior ensures that the log manager component doesn't split messages that span multiple lines, such as stack traces.
+By default, a line begins a new log message only if it starts with a `YYYY-MM-DD` date (optionally after `[` or `(`) or `{`. Otherwise, the log manager component appends that line to the current log message. In v2.3.4 and earlier, any line that doesn't start with a whitespace character is a new log message.
 
  `periodicUploadIntervalSec`
 (Optional) The period in seconds at which the log manager component checks for new log files to upload.
@@ -952,7 +952,7 @@ To upload a Greengrass component's logs, specify a regex that matches the rotate
 Default: `false`
 `multiLineStartPattern`  <a name="log-manager-component-configuration-component-multi-line-start-pattern"></a>
 (Optional) A regular expression that identifies when a log message on a new line is a new log message. If the regular expression doesn't match the new line, the log manager component appends the new line to the log message for the previous line.
-By default, the log manager component checks if the line starts with a whitespace character, such as a tab or space. If it doesn't, the log manager handles that line as a new log message. Otherwise, it appends that line to the current log message. This behavior ensures that the log manager component doesn't split messages that span multiple lines, such as stack traces.
+By default, a line begins a new log message only if it starts with a `YYYY-MM-DD` date (optionally after `[` or `(`) or `{`. Otherwise, the log manager component appends that line to the current log message. In v2.3.4 and earlier, any line that doesn't start with a whitespace character is a new log message.
 
 `periodicUploadIntervalSec`
 (Optional) The period in seconds at which the log manager component checks for new log files to upload.

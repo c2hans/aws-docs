@@ -45,22 +45,22 @@ To declare this entity in your CloudFormation template, use the following syntax
 The conditions that trigger an automatic scaling activity.
 *Required*: Yes
 *Type*: [ScalingAction](aws-properties-emr-cluster-scalingaction.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Description`  <a name="cfn-emr-cluster-scalingrule-description"></a>
 A friendly, more verbose description of the automatic scaling rule.
 *Required*: No
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Name`  <a name="cfn-emr-cluster-scalingrule-name"></a>
 The name used to identify an automatic scaling rule. Rule names must be unique within a scaling policy.
 *Required*: Yes
 *Type*: String
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Trigger`  <a name="cfn-emr-cluster-scalingrule-trigger"></a>
 The CloudWatch alarm definition that determines when automatic scaling activity is triggered.
 *Required*: Yes
 *Type*: [ScalingTrigger](aws-properties-emr-cluster-scalingtrigger.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

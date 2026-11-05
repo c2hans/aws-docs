@@ -9,6 +9,8 @@ This guide shows how to use the REST API connector to publish SDMA asset metadat
 
 Use this pattern to integrate with geoportal platforms or any STAC-compliant catalog. When assets are created, updated, or deleted in SDMA, the connector automatically publishes, updates, or removes the corresponding STAC Items.
 
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+
 ## How it works
 <a name="stac-how-it-works"></a>
 
@@ -95,14 +97,12 @@ The following is a complete, working STAC connector configuration. Replace the p
     }
   },
   "restConfig": {
-    "apiBase": "http://<STAC_API_HOST>:<PORT>/geoportal",
+    "apiBase": "http://<stac-api-host>:<port>/geoportal",
     "authProvider": "basic_auth",
     "securityConfig": {
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentPublisher-STAC",
-      "password": "${secret.password}",
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-STAC",
       "type": "BasicAuth",
-      "secretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>",
-      "username": "${secret.username}"
+      "secretArn": "arn:aws:secretsmanager:<region>:<account-id>:secret:<secret-name>"
     }
   },
   "fieldMappings": [

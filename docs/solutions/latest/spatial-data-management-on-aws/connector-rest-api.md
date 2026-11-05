@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 The REST API connector sends resource metadata to external REST endpoints. It supports all HTTP methods and works for both publishing and synchronization.
 
+Filters, `output` blocks, `${…​}` variables, and `$temp` values work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), and [Intermediate state with $temp variables](connector-configuration.md#temp-variables).
+
 ## Prerequisites
 <a name="rest-prerequisites"></a>
 
@@ -32,8 +34,8 @@ The REST API connector sends resource metadata to external REST endpoints. It su
            "Effect": "Allow",
            "Principal": {
              "AWS": [
-               "<CONNECTOR_INVOCATION_ROLE_ARN>",
-               "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+               "<connector-invocation-role-arn>",
+               "<async-connector-invocation-role-arn>"
              ]
            },
            "Action": "sts:AssumeRole"
@@ -42,7 +44,7 @@ The REST API connector sends resource metadata to external REST endpoints. It su
      }
      ```
 
-     Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+     Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
      If you have AWS CLI access, you can find these values by running:
 
@@ -56,7 +58,7 @@ The REST API connector sends resource metadata to external REST endpoints. It su
        --query 'Configuration.Role' --output text
      ```
 
-     Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+     Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant access to the Secrets Manager secret (if using API key, token, or basic auth):
 
      ```
@@ -66,7 +68,7 @@ The REST API connector sends resource metadata to external REST endpoints. It su
          {
            "Effect": "Allow",
            "Action": "secretsmanager:GetSecretValue",
-           "Resource": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>"
+           "Resource": "arn:aws:secretsmanager:<region>:<account-id>:secret:<secret-name>"
          }
        ]
      }
@@ -107,6 +109,8 @@ The REST API connector supports the following step type.
     "apiBase": "https://api.example.com/v1",
     "securityConfig": {
       "type": "ApiKey",
+      "apiKeyLocation": "header",
+      "headerName": "X-API-Key",
       "secretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:my-api-key"
     }
   },
@@ -121,10 +125,8 @@ The REST API connector supports the following step type.
       "events": ["create"],
       "stepType": "rest",
       "steps": [{
-        "restConfig": {
-          "method": "POST",
-          "path": "/records"
-        }
+        "method": "POST",
+        "path": "/records"
       }]
     },
     {
@@ -133,10 +135,8 @@ The REST API connector supports the following step type.
       "events": ["update"],
       "stepType": "rest",
       "steps": [{
-        "restConfig": {
-          "method": "PUT",
-          "path": "/records/${project.connectedResource.externalId}"
-        }
+        "method": "PUT",
+        "path": "/records/${project.connectedResource.externalId}"
       }]
     },
     {
@@ -145,10 +145,8 @@ The REST API connector supports the following step type.
       "events": ["delete"],
       "stepType": "rest",
       "steps": [{
-        "restConfig": {
-          "method": "DELETE",
-          "path": "/records/${project.connectedResource.externalId}"
-        }
+        "method": "DELETE",
+        "path": "/records/${project.connectedResource.externalId}"
       }]
     }
   ]
@@ -293,7 +291,7 @@ SDMA determines the AWS service name for signing from the endpoint hostname:
     "apiBase": "https://runtime.sagemaker.us-west-2.amazonaws.com",
     "securityConfig": {
       "type": "AssumeRole",
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentPublisher-SageMaker"
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-SageMaker"
     }
   }
 }
@@ -336,7 +334,7 @@ The `restConfig.sampling` block enables SDMA to respond to text-generation callb
     "modelId": "abcd-20240307-v1:0",
     "securityConfig": {
       "type": "AssumeRole",
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentPublisher-Model"
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-Model"
     }
   }
 }

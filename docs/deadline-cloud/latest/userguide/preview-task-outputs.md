@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/preview-
 
 The **Task outputs** panel shows the output files of the task that you select in the **Tasks** list. The panel previews images, text, video, audio, 3D meshes, and point clouds, so you can check what a task produced without downloading its files or leaving the job monitor.
 
+To try the panel with sample data, open the [demo compositing job](https://_demo.us-east-1.deadlinecloud.amazonaws.com/us-west-2/farms/farm-94d29d9475dd814529b87a52f20ff9cb/queues/queue-b5fb7c92ae42326d3851bab4b0568d97?jobId=job-1cf313e2991e74375006ea6092c5a2ed&stepId=step-ed81a8594ee0f700b2f915af2582cc26&taskId=task-ed81a8594ee0f700b2f915af2582cc26-0&demo=moonrise), and then add the **Task outputs** panel.
+
 **To preview the outputs of a task**
 
 1. Follow the steps in [View and manage job details in Deadline Cloud](view-a-job.md) to view a list of jobs.

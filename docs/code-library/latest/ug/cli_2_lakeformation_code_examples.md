@@ -1993,7 +1993,7 @@ The following `start-transaction` example starts a new transaction and returns i
 
 ```
 aws lakeformation start-transaction \
-    --transaction-type {{=}} '{{READ_AND_WRITE}}'
+    --transaction-type '{{READ_AND_WRITE}}'
 ```
 Output:
 

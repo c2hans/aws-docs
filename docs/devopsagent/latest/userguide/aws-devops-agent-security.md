@@ -349,6 +349,8 @@ Customers are responsible for:
 + Limiting access to trusted users of external systems that provide inputs to the agent, such as services and resources that produce logs, CloudTrail events, tickets, and more – that may be used to attempt malicious prompt injection.
 + Ensure all connected data sources have trusted data that is unlikely to be used to attempt prompt injection attacks
 + Ensuring bring-your-own MCP server integrations operate securely
++ Connecting only trusted repositories for release readiness code reviews
++ Only referencing trusted and related code repositories in READMEs, pull and merge request comments, issues, and AGENTS.md files. For more information, see [Repository content and external references](release-management-release-readiness-code-review.md).
 + Ensuring IAM roles assigned to the agent are properly scoped
 + Redacting PII data before storing in observability logs and other agent data sources
 + Following the recommended practice of granting only read-only permissions to connected data sources, including bring-your-own MCP servers

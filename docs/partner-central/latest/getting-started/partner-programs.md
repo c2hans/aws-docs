@@ -40,7 +40,7 @@ To apply for programs, you must have one of the following AWS managed policies a
 
 To view applications you have already submitted, choose the **Applications** tab.
 
-After you submit the application, the status changes to In review. AWS reviews the application and provides feedback throughout the process. If you need to address open items, the status changes to Action required. Review the feedback, make the required changes, and resubmit. You can withdraw a submitted application at any time while the application is in review.
+After you submit the application, the status changes to In review. We review the application and provide feedback throughout the process. If the Competency is automated, then the results appear within minutes on the application page. If you need to address open items, the status changes to Action required. Review the feedback, make the required changes, and resubmit. You can withdraw a submitted application at any time while the application is in review.
 
 ## Application statuses
 <a name="partner-programs-statuses"></a>

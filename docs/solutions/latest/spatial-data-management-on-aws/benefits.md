@@ -10,7 +10,12 @@ The solution addresses these challenges by providing:
 ## Centralized Data Management
 <a name="centralized-data-management"></a>
 
-Store all your spatial data in a single, secure, and highly available location powered by Amazon Simple Storage Service (Amazon S3). Use the web portal, desktop client, or APIs to upload, download, and manage files and folders, preserving the data structure.
+Manage each dataset as an asset with versions, metadata, and permissions, rather than as loose files in a bucket. Files are stored in Amazon Simple Storage Service (Amazon S3) by content, so identical files are stored once across versions and assets. Use the web portal, desktop client, or APIs to upload, download, and manage files and folders, preserving the data structure.
+
+## Versions and Lineage
+<a name="versions-and-lineage"></a>
+
+Every change to an asset creates a new version. Metadata and derived content, such as previews, converted formats, and model outputs, are recorded on the version they describe, so a result stays with the data it was made from, even after later uploads. Assets that a connector creates from another asset record where they came from, so you can trace a result back to its source.
 
 ## Automated Metadata Enrichment
 <a name="automated-metadata-enrichment"></a>
@@ -25,4 +30,9 @@ Organize and access your spatial data using a flexible resource model that suppo
 ## Seamless Data Interoperability
 <a name="seamless-data-interoperability"></a>
 
-Define connectors to integrate your spatial data stored in Amazon S3 with various applications, APIs, and data processing jobs. Trigger actions and workflows based on events associated with your spatial assets, ensuring seamless data exchange across your pipeline.
+Connect your assets to applications, APIs, processing jobs, and machine learning models with connectors. A connector is configuration, so nothing is built or deployed to add an integration. When an asset changes, the connectors approved for its asset template run, and their results return to the asset as metadata, derived files, and new assets. Each run is recorded, so you can see what ran, on which version, and what it produced.
+
+## Governed Integration
+<a name="governed-integration"></a>
+
+Administrators approve each connector on the asset templates it can act on, so a connector never touches assets outside that scope. Connectors use roles you control in your own accounts, and their changes are subject to the same permissions and version history as any other change.

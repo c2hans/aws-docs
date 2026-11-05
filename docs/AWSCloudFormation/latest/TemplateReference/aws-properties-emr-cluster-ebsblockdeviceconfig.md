@@ -40,10 +40,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 EBS volume specifications such as volume type, IOPS, size (GiB) and throughput (MiB/s) that are requested for the EBS volume attached to an Amazon EC2 instance in the cluster.
 *Required*: Yes
 *Type*: [VolumeSpecification](aws-properties-emr-cluster-volumespecification.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `VolumesPerInstance`  <a name="cfn-emr-cluster-ebsblockdeviceconfig-volumesperinstance"></a>
 Number of EBS volumes with a specific volume configuration that are associated with every instance in the instance group
 *Required*: No
 *Type*: Integer
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

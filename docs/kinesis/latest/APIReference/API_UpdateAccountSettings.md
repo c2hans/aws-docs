@@ -77,7 +77,7 @@ A message that provides information about the error.
 HTTP Status Code: 400
 
  ** ValidationException **
-Specifies that you tried to invoke this API for a data stream with the on-demand capacity mode. This API is only supported for data streams with the provisioned capacity mode.
+The request failed data validation for this data stream, such as a parameter value that is outside its valid range or a `StreamARN` that is not in a valid format. Check the error message for details about which parameter or value caused the validation failure, and correct it before retrying.
 HTTP Status Code: 400
 
 ## See Also

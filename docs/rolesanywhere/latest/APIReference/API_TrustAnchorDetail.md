@@ -15,6 +15,11 @@ The ISO-8601 timestamp when the trust anchor was created.
 Type: Timestamp
 Required: No
 
+ ** crlDpRevocationEnabled **   <a name="rolesanywhere-Type-TrustAnchorDetail-crlDpRevocationEnabled"></a>
+Specifies whether the trust anchor checks certificate revocation status against CRL distribution points.
+Type: Boolean
+Required: No
+
  ** enabled **   <a name="rolesanywhere-Type-TrustAnchorDetail-enabled"></a>
 Indicates whether the trust anchor is enabled.
 Type: Boolean

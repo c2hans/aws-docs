@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AutoScalingRole](#cfn-emr-cluster-autoscalingrole)" : {{String}},
       "[AutoTerminationPolicy](#cfn-emr-cluster-autoterminationpolicy)" : {{AutoTerminationPolicy}},
       "[BootstrapActions](#cfn-emr-cluster-bootstrapactions)" : {{[ BootstrapActionConfig, ... ]}},
-      "[Configurations](#cfn-emr-cluster-configurations)" : {{[ Configuration, ... ]}},
+      "[Configurations](#cfn-emr-cluster-configurations)" : {{[ EMRConfiguration, ... ]}},
       "[CustomAmiId](#cfn-emr-cluster-customamiid)" : {{String}},
       "[EbsRootVolumeIops](#cfn-emr-cluster-ebsrootvolumeiops)" : {{Integer}},
       "[EbsRootVolumeSize](#cfn-emr-cluster-ebsrootvolumesize)" : {{Integer}},
@@ -39,6 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[LogEncryptionKmsKeyId](#cfn-emr-cluster-logencryptionkmskeyid)" : {{String}},
       "[LogUri](#cfn-emr-cluster-loguri)" : {{String}},
       "[ManagedScalingPolicy](#cfn-emr-cluster-managedscalingpolicy)" : {{ManagedScalingPolicy}},
+      "[MonitoringConfiguration](#cfn-emr-cluster-monitoringconfiguration)" : {{MonitoringConfiguration}},
       "[Name](#cfn-emr-cluster-name)" : {{String}},
       "[OSReleaseLabel](#cfn-emr-cluster-osreleaselabel)" : {{String}},
       "[PlacementGroupConfigs](#cfn-emr-cluster-placementgroupconfigs)" : {{[ PlacementGroupConfig, ... ]}},
@@ -46,10 +47,10 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ScaleDownBehavior](#cfn-emr-cluster-scaledownbehavior)" : {{String}},
       "[SecurityConfiguration](#cfn-emr-cluster-securityconfiguration)" : {{String}},
       "[ServiceRole](#cfn-emr-cluster-servicerole)" : {{String}},
+      "[SessionEnabled](#cfn-emr-cluster-sessionenabled)" : {{Boolean}},
       "[StepConcurrencyLevel](#cfn-emr-cluster-stepconcurrencylevel)" : {{Integer}},
       "[Steps](#cfn-emr-cluster-steps)" : {{[ StepConfig, ... ]}},
-      "[Tags](#cfn-emr-cluster-tags)" : {{[ Tag, ... ]}},
-      "[VisibleToAllUsers](#cfn-emr-cluster-visibletoallusers)" : {{Boolean}}
+      "[Tags](#cfn-emr-cluster-tags)" : {{[ Tag, ... ]}}
     }
 }
 ```
@@ -69,7 +70,7 @@ Properties:
   [BootstrapActions](#cfn-emr-cluster-bootstrapactions): {{
     - BootstrapActionConfig}}
   [Configurations](#cfn-emr-cluster-configurations): {{
-    - Configuration}}
+    - EMRConfiguration}}
   [CustomAmiId](#cfn-emr-cluster-customamiid): {{String}}
   [EbsRootVolumeIops](#cfn-emr-cluster-ebsrootvolumeiops): {{Integer}}
   [EbsRootVolumeSize](#cfn-emr-cluster-ebsrootvolumesize): {{Integer}}
@@ -83,6 +84,8 @@ Properties:
   [LogUri](#cfn-emr-cluster-loguri): {{String}}
   [ManagedScalingPolicy](#cfn-emr-cluster-managedscalingpolicy): {{
     ManagedScalingPolicy}}
+  [MonitoringConfiguration](#cfn-emr-cluster-monitoringconfiguration): {{
+    MonitoringConfiguration}}
   [Name](#cfn-emr-cluster-name): {{String}}
   [OSReleaseLabel](#cfn-emr-cluster-osreleaselabel): {{String}}
   [PlacementGroupConfigs](#cfn-emr-cluster-placementgroupconfigs): {{
@@ -91,12 +94,12 @@ Properties:
   [ScaleDownBehavior](#cfn-emr-cluster-scaledownbehavior): {{String}}
   [SecurityConfiguration](#cfn-emr-cluster-securityconfiguration): {{String}}
   [ServiceRole](#cfn-emr-cluster-servicerole): {{String}}
+  [SessionEnabled](#cfn-emr-cluster-sessionenabled): {{Boolean}}
   [StepConcurrencyLevel](#cfn-emr-cluster-stepconcurrencylevel): {{Integer}}
   [Steps](#cfn-emr-cluster-steps): {{
     - StepConfig}}
   [Tags](#cfn-emr-cluster-tags): {{
     - Tag}}
-  [VisibleToAllUsers](#cfn-emr-cluster-visibletoallusers): {{Boolean}}
 ```
 
 ## Properties
@@ -141,7 +144,7 @@ A list of bootstrap actions to run before Hadoop starts on the cluster nodes.
 `Configurations`  <a name="cfn-emr-cluster-configurations"></a>
 Applies only to Amazon EMR releases 4.x and later. The list of configurations that are supplied to the Amazon EMR cluster.
 *Required*: No
-*Type*: Array of [Configuration](aws-properties-emr-cluster-configuration.md)
+*Type*: Array of [EMRConfiguration](aws-properties-emr-cluster-emrconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CustomAmiId`  <a name="cfn-emr-cluster-customamiid"></a>
@@ -175,7 +178,7 @@ The throughput, in MiB/s, of the Amazon EBS root device volume of the Linux AMI 
 A specification of the number and type of Amazon EC2 instances.
 *Required*: Yes
 *Type*: [JobFlowInstancesConfig](aws-properties-emr-cluster-jobflowinstancesconfig.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `JobFlowRole`  <a name="cfn-emr-cluster-jobflowrole"></a>
 Also called instance profile and Amazon EC2 role. An IAM role for an Amazon EMR cluster. The Amazon EC2 instances of the cluster assume this role. The default role is `EMR_EC2_DefaultRole`. In order to use the default role, you must have already created it using the AWS CLI or console.
@@ -209,6 +212,12 @@ Creates or updates a managed scaling policy for an Amazon EMR cluster. The manag
 *Required*: No
 *Type*: [ManagedScalingPolicy](aws-properties-emr-cluster-managedscalingpolicy.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MonitoringConfiguration`  <a name="cfn-emr-cluster-monitoringconfiguration"></a>
+Contains Cloudwatch log configuration metadata and settings.
+*Required*: No
+*Type*: [MonitoringConfiguration](aws-properties-emr-cluster-monitoringconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-emr-cluster-name"></a>
 The name of the cluster. This parameter can't contain the characters <, >, $, \|, or ` (backtick).
@@ -256,6 +265,12 @@ The IAM role that Amazon EMR assumes in order to access AWS resources on your be
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`SessionEnabled`  <a name="cfn-emr-cluster-sessionenabled"></a>
+Indicates whether Spark Connect sessions are enabled on the cluster.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `StepConcurrencyLevel`  <a name="cfn-emr-cluster-stepconcurrencylevel"></a>
 Specifies the number of steps that can be executed concurrently. The default value is `1`. The maximum value is `256`.
 *Required*: No
@@ -272,13 +287,6 @@ A list of steps to run.
 A list of tags associated with a cluster.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-emr-cluster-tag.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`VisibleToAllUsers`  <a name="cfn-emr-cluster-visibletoallusers"></a>
-Indicates whether the cluster is visible to all IAM users of the AWS account associated with the cluster. If this value is set to `true`, all IAM users of that AWS account can view and manage the cluster if they have the proper policy permissions set. If this value is `false`, only the IAM user that created the cluster can view and manage it. This value can be changed using the SetVisibleToAllUsers action.
-When you create clusters directly through the EMR console or API, this value is set to `true` by default. However, for `AWS::EMR::Cluster` resources in CloudFormation, the default is `false`.
-*Required*: No
-*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

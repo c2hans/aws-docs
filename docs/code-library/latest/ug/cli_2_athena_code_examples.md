@@ -1292,7 +1292,7 @@ aws athena update-data-catalog \
     --name {{cw_logs_catalog}} \
     --type {{LAMBDA}} \
     --description {{"New CloudWatch Logs Catalog"}} \
-    --function=arn:aws:lambda:us-west-2:123456789012:function:new_cw_logs_lambda
+    --parameters {{function=arn:aws:lambda:us-west-2:123456789012:function:new_cw_logs_lambda}}
 ```
 This command produces no output. To see the result, use `aws athena get-data-catalog --name cw_logs_catalog`.
 For more information, see [Updating a Catalog: update-data-catalog](https://docs.aws.amazon.com/athena/latest/ug/datastores-hive-cli.html#datastores-hive-cli-updating-a-catalog) in the *Amazon Athena User Guide*.

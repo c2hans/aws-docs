@@ -925,7 +925,6 @@ The following `list-operations` example lists operations that have a status of `
 
 ```
 aws servicediscovery list-operations \
-    --service-id {{srv-e4anhexample0004}} \
     --filters {{Name=STATUS,Condition=IN,Values=PENDING,SUCCESS}}
 ```
 Output:

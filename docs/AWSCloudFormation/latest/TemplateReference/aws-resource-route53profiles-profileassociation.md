@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[Arn](#cfn-route53profiles-profileassociation-arn)" : {{String}},
       "[Name](#cfn-route53profiles-profileassociation-name)" : {{String}},
+      "[Priority](#cfn-route53profiles-profileassociation-priority)" : {{Integer}},
       "[ProfileId](#cfn-route53profiles-profileassociation-profileid)" : {{String}},
       "[ResourceId](#cfn-route53profiles-profileassociation-resourceid)" : {{String}},
       "[Tags](#cfn-route53profiles-profileassociation-tags)" : {{[ Tag, ... ]}}
@@ -38,6 +39,7 @@ Type: AWS::Route53Profiles::ProfileAssociation
 Properties:
   [Arn](#cfn-route53profiles-profileassociation-arn): {{String}}
   [Name](#cfn-route53profiles-profileassociation-name): {{String}}
+  [Priority](#cfn-route53profiles-profileassociation-priority): {{Integer}}
   [ProfileId](#cfn-route53profiles-profileassociation-profileid): {{String}}
   [ResourceId](#cfn-route53profiles-profileassociation-resourceid): {{String}}
   [Tags](#cfn-route53profiles-profileassociation-tags): {{
@@ -61,6 +63,12 @@ The Amazon Resource Name (ARN) of the profile association to a VPC.
 *Minimum*: `0`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Priority`  <a name="cfn-route53profiles-profileassociation-priority"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProfileId`  <a name="cfn-route53profiles-profileassociation-profileid"></a>
  ID of the Profile.

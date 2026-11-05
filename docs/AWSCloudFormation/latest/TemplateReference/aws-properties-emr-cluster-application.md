@@ -49,7 +49,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 This option is for advanced users only. This is meta information about clusters and applications that are used for testing and troubleshooting.
 *Required*: No
 *Type*: Object of String
-*Pattern*: `[a-zA-Z0-9]+`
+*Pattern*: `.*`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Args`  <a name="cfn-emr-cluster-application-args"></a>

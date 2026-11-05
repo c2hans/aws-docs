@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/near-real-time-data-migration-
 title: 'Guidance for Near Real-Time Data Migration from Apache Cassandra to Amazon Keyspaces'
 canonical_url: https://docs.aws.amazon.com/solutions/near-real-time-data-migration-from-apache-cassandra-to-amazon-keyspaces/
 source: aws-documentation
-generated_on: 2026-11-03
+generated_on: 2026-11-04
 ---
 
 # Guidance for Near Real-Time Data Migration from Apache Cassandra to Amazon Keyspaces

@@ -41,10 +41,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 The resize specification for On-Demand Instances in the instance fleet, which contains the allocation strategy, capacity reservation options, and the resize timeout period.
 *Required*: No
 *Type*: [OnDemandResizingSpecification](aws-properties-emr-cluster-ondemandresizingspecification.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `SpotResizeSpecification`  <a name="cfn-emr-cluster-instancefleetresizingspecifications-spotresizespecification"></a>
 The resize specification for Spot Instances in the instance fleet, which contains the allocation strategy and the resize timeout period.
 *Required*: No
 *Type*: [SpotResizingSpecification](aws-properties-emr-cluster-spotresizingspecification.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

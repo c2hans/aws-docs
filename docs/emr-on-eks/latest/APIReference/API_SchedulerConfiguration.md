@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Sched
 # SchedulerConfiguration
 <a name="API_SchedulerConfiguration"></a>
 
-The scheduler configuration for a virtual cluster on Amazon EMR on EKS. It controls how many job runs can run concurrently and how many can wait in the queue. When not set, no concurrency or queue limits are applied.
+The scheduler configuration for a virtual cluster on Amazon EMR on EKS. It controls how many job runs can run concurrently and how many can wait in the queue. If you omit this configuration, the service applies a default limit of 1,000 concurrent job runs and does not limit queue depth.
 
 ## Contents
 <a name="API_SchedulerConfiguration_Contents"></a>
 
  ** maxConcurrentJobRuns **   <a name="emroneks-Type-SchedulerConfiguration-maxConcurrentJobRuns"></a>
-The maximum number of job runs that can be in the `RUNNING` state at any time for the virtual cluster. As running slots free up, queued job runs start automatically. If you omit this field, the service applies no concurrency limit.
+The maximum number of job runs that can be in the `RUNNING` state at any time for the virtual cluster. As running slots free up, queued job runs start automatically. If you omit this field, the service applies a default limit of 1,000 concurrent job runs to the virtual cluster.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 10000.
 Required: No

@@ -44,7 +44,7 @@ Indicates the instance's Capacity Reservation preferences. Possible preferences 
 *Required*: No
 *Type*: String
 *Allowed values*: `open | none`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `CapacityReservationResourceGroupArn`  <a name="cfn-emr-cluster-ondemandcapacityreservationoptions-capacityreservationresourcegrouparn"></a>
 The ARN of the Capacity Reservation resource group in which to run the instance.
@@ -53,7 +53,7 @@ The ARN of the Capacity Reservation resource group in which to run the instance.
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `0`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `UsageStrategy`  <a name="cfn-emr-cluster-ondemandcapacityreservationoptions-usagestrategy"></a>
 Indicates whether to use unused Capacity Reservations for fulfilling On-Demand capacity.
@@ -62,4 +62,4 @@ If you do not specify a value, the fleet fulfills the On-Demand capacity accordi
 *Required*: No
 *Type*: String
 *Allowed values*: `use-capacity-reservations-first`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

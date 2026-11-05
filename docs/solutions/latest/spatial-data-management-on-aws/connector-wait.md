@@ -5,9 +5,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 # Working with wait steps
 <a name="connector-wait"></a>
 
-Many integrations take real time to respond. A point-cloud import can run for minutes, an inference job might take an hour, and an external review might not come back until someone acts on it. A `wait` step lets a connector start that kind of work, pause until it finishes, and then act on the result — all without holding any running compute while the external work is in progress.
+Many integrations take real time to respond. A point-cloud import can run for minutes, a render or an inference job might take an hour, a model training run can take several, and an external review might not come back until someone acts on it. A `wait` step lets a connector start that kind of work, pause until it finishes, and then act on the result — all without holding any running compute while the external work is in progress.
 
 Use a wait step when you need a connector trigger to block on an external outcome before continuing. A wait of a few seconds and a wait of several hours cost the same.
+
+Filters, `output` blocks, `${…​}` variables, `$temp` values, and type suffixes such as `:number` work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), [Intermediate state with $temp variables](connector-configuration.md#temp-variables), and [Type coercion](connector-configuration.md#type-coercion).
 
 ## How wait steps work
 <a name="wait-overview"></a>
@@ -60,6 +62,9 @@ The `wait` block is a sibling of `stepType` and `output` on the step object. It 
 |  `timeoutSeconds`  | integer | 7200 | Maximum seconds to wait for a result before failing the step. Minimum 10, maximum 86400 (24 hours). |
 |  `poll`  | object | — | Polling result source. Mutually exclusive with `externalCompletion`. |
 |  `externalCompletion`  | object | — | External-completion result source. Mutually exclusive with `poll`. |
+|  `failure`  | object | — | Where the external system writes a failure file. Only for output-driven waits. See [Failing fast on a failure file](#wait-failure-artifact). |
+
+A wait step can also declare `responseFieldMapping` to capture values from its result into `$temp.*` variables. See [Capturing values from the result](#wait-capture).
 
 ## Polling result source
 <a name="wait-polling"></a>
@@ -190,7 +195,7 @@ A connector that invokes an inference service, then waits for the results to app
           },
           "output": {
             "metadataAttributes": {
-              "uri": "s3://results-bucket/jobs/${invocation.id}/",
+              "uri": "s3://amzn-s3-demo-bucket/jobs/${invocation.id}/",
               "filter": { "fileNameRegex": ".*_summary\\.json$" },
               "fieldMappings": [
                 { "source": "score", "target": "asset.metadataAttributes.qualityScore:number" }
@@ -198,7 +203,7 @@ A connector that invokes an inference service, then waits for the results to app
             },
             "derivedFiles": [
               {
-                "uri": "s3://results-bucket/jobs/${invocation.id}/",
+                "uri": "s3://amzn-s3-demo-bucket/jobs/${invocation.id}/",
                 "filter": { "fileExtensionFilter": ".geojson" }
               }
             ]
@@ -382,7 +387,7 @@ Set `poll.type` to `"output"` and declare an `output` block with at least one S3
   },
   "output": {
     "metadataAttributes": {
-      "uri": "s3://results-bucket/jobs/${invocation.id}/",
+      "uri": "s3://amzn-s3-demo-bucket/jobs/${invocation.id}/",
       "filter": { "fileNameRegex": ".*_summary\\.json$" },
       "fieldMappings": [
         { "source": "polygonCount", "target": "asset.metadataAttributes.polygonCount:number" }
@@ -390,7 +395,7 @@ Set `poll.type` to `"output"` and declare an `output` block with at least one S3
     },
     "derivedFiles": [
       {
-        "uri": "s3://results-bucket/jobs/${invocation.id}/",
+        "uri": "s3://amzn-s3-demo-bucket/jobs/${invocation.id}/",
         "filter": { "fileExtensionFilter": ".zip" }
       }
     ]
@@ -408,10 +413,68 @@ In this example:
 
 Output-driven wait uses an **all targets present** rule: every S3-backed target declared in the step’s `output` block must be available before the wait resolves. If `metadataAttributes.uri` is declared, it serves as both the completion signal and the data source that `fieldMappings` map from.
 
+### Failing fast on a failure file
+<a name="wait-failure-artifact"></a>
+
+Many systems that write results to S3 also write a file when the work fails. For example, an Amazon SageMaker asynchronous endpoint writes to its failure path. By default, an output-driven wait cannot detect that file, and it keeps waiting until `timeoutSeconds` runs out.
+
+Declare `wait.failure` to watch for it. When the file appears, the wait fails at once, with the file’s message as the reason. The following JSON example declares a `wait.failure` field:
+
+```
+"wait": {
+  "timeoutSeconds": 21600,
+  "poll": { "type": "output", "intervalSeconds": 60 },
+  "failure": {
+    "uri": "s3://amzn-s3-demo-bucket/jobs/${invocation.id}/_FAILED.json"
+  }
+}
+```
+
+| Field | Required | Description |
+| --- | --- | --- |
+|  `uri`  | Yes | S3 location of the failure file. An exact object key, or a prefix when you also give `filter`. Supports `${…​}` variable substitution, so it can be unique per invocation. |
+|  `filter`  | No | Selects the failure file by name when `uri` is a prefix. Supports `fileExtensionFilter`, `fileNameRegex`, `minFileSizeMB`, and `maxFileSizeMB`. |
+
+SDMA checks for the failure file only after it finds the declared output absent. A result always takes priority over a failure file that the system writes at the same time. `failure` is only valid when `poll.type` is `output`.
+
 ### Requirements
 <a name="_requirements"></a>
 + The `output` block must declare at least one S3-backed target with a `uri`. A wait step with `poll.type: "output"` and no `uri` in any output target is a validation error — there would be nothing to wait for.
 + The `path`, `method`, `successWhen`, and `failureWhen` fields do not apply in output mode. Only `type`, `intervalSeconds`, and `timeoutSeconds` are relevant.
+
+## Capturing values from the result
+<a name="wait-capture"></a>
+
+A wait step can declare `responseFieldMapping`, in the same form as other steps, to capture values from its result into `$temp.*` variables. The result it reads depends on the wait’s source. The following table shows where SDMA reads values from for each source.
+
+| Source | Values are read from |
+| --- | --- |
+| REST polling | The body of the poll response that matched `successWhen`. |
+| External completion | The body the external system posted. |
+| Output polling | The JSON document at `output.metadataAttributes.uri`. |
+
+The following JSON shows an output-driven wait step that captures values from its result document:
+
+```
+{
+  "stepType": "wait",
+  "wait": {
+    "poll": { "type": "output", "intervalSeconds": 60 },
+    "timeoutSeconds": 21600
+  },
+  "output": {
+    "metadataAttributes": {
+      "uri": "s3://amzn-s3-demo-bucket/runs/${invocation.id}/_COMPLETE.json"
+    }
+  },
+  "responseFieldMapping": [
+    { "source": "training_seconds", "target": "$temp.trainingSeconds" },
+    { "source": "eval_action_mae", "target": "$temp.actionMae" }
+  ]
+}
+```
+
+Steps that run after the wait can then use `${$temp.trainingSeconds}` and `${$temp.actionMae}` — for example, to post a summary to an external system.
 
 ## Timeout behavior
 <a name="wait-timeout"></a>
@@ -434,19 +497,20 @@ When a wait resolves successfully:
 ## Error handling
 <a name="wait-error-handling"></a>
 
-A wait step has three failure modes:
+A wait step has four failure modes:
 +  **Timeout** — `timeoutSeconds` elapsed without a successful result. The invocation is marked `FAILED`.
 +  **Failure pattern matched** — the response matched `failureWhen`. The invocation is marked `FAILED`.
++  **Failure file found (output polling only)** — the file declared in `wait.failure` appeared. The invocation is marked `FAILED`, with the file’s message as the reason.
 +  **Unmatched body (external completion only)** — the posted body matched neither `successWhen` nor `failureWhen`. The invocation is marked `FAILED`. For external completion, the third party should only post when it has a final outcome; an unmatched body means the contract was not followed.
 
-In all three cases, no output routing runs and remaining steps do not execute. The invocation record captures the reason.
+In all four cases, no output routing runs and remaining steps do not execute. The invocation record captures the reason.
 
 For REST polling, a response that matches neither pattern is **not** a failure — it means "still in progress" and SDMA schedules the next poll. Only an explicit `failureWhen` match or a timeout ends a polling wait as `FAILED`.
 
 ### Interaction with `onError`
 <a name="_interaction-with-onerror"></a>
 
-The `onError` field (`fail` or `record-and-continue`) is not supported on the wait step itself. A wait step always fails the invocation on any of the three failure modes above — there is no option to continue past a failed wait.
+The `onError` field (`fail` or `record-and-continue`) is not supported on the wait step itself. A wait step always fails the invocation on any of the four failure modes in [Error handling](#wait-error-handling) — there is no option to continue past a failed wait.
 
 However, `onError` works normally on steps that run **after** a successful wait. If the trigger resumes and a subsequent step fails:
 + With `onError: fail` (the default) — the invocation is marked `FAILED` and no further steps run.

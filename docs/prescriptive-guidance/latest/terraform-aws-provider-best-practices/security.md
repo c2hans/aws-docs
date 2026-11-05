@@ -144,7 +144,7 @@ Over time, you might grant additional permissions that exceed the minimum requir
 
 If you cannot avoid using access keys, use [IAM credential reports](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html) to find access keys that are older than 90 days, and revoke inactive keys across both user accounts and machine roles. Alert administrators to manually confirm the removal of keys for active employees and systems.
 
-Monitoring key usage helps you optimize permissions because you can identify and remove unused entitlements. When you follow this best practice with [access key rotation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey), it limits credential lifespan and enforces least privilege access.
+Monitoring key usage helps you optimize permissions because you can identify and remove unused entitlements. When you follow this best practice with [access key rotation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id-credentials-access-keys-update.html), it limits credential lifespan and enforces least privilege access.
 
 AWS provides several services and features that you can use to find unused credentials and notify administrators:
 + **IAM Access Analyzer:** [Unused access findings](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-concepts.html) report roles, access keys, passwords, and permissions that haven't been used for the number of days you choose, across an account or an organization.

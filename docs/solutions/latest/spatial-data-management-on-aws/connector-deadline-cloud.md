@@ -18,10 +18,12 @@ The Deadline Cloud connector uses the `deadlineJob` step type. Unlike other step
 **Important**
 Deadline Cloud connectors execute the job templates you provide. SDMA does not validate or inspect job logic — that responsibility falls on the customer side of the shared responsibility model. Deadline Cloud provides its own execution isolation, IAM model, and job lifecycle management. Test job templates thoroughly in a non-production environment before enabling them.
 
+Filters, `output` blocks, `${…​}` variables, and type suffixes such as `:number` work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), and [Type coercion](connector-configuration.md#type-coercion).
+
 ## How it works
 <a name="deadline-how-it-works"></a>
 
-When a trigger fires, the Deadline Cloud connector performs the following steps:
+When a trigger matches an event, the Deadline Cloud connector performs the following steps:
 
 1. If a singular template is configured, SDMA loads the job template from the configured SDMA template asset.
 
@@ -78,8 +80,8 @@ Create an IAM role that SDMA can assume to submit jobs to your Deadline Cloud fa
       "Effect": "Allow",
       "Principal": {
         "AWS": [
-          "<CONNECTOR_INVOCATION_ROLE_ARN>",
-          "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+          "<connector-invocation-role-arn>",
+          "<async-connector-invocation-role-arn>"
         ]
       },
       "Action": "sts:AssumeRole"
@@ -88,7 +90,7 @@ Create an IAM role that SDMA can assume to submit jobs to your Deadline Cloud fa
 }
 ```
 
-\+ Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+\+ Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
 \+ If you have AWS CLI access, you can find these values by running:
 
@@ -104,7 +106,7 @@ aws lambda get-function \
   --query 'Configuration.Role' --output text
 ```
 
-\+ Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+\+ Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
 +  **Permissions policy** must grant access to Deadline Cloud job submission and status queries on your farm and queue:
 
 ```
@@ -119,9 +121,9 @@ aws lambda get-function \
         "deadline:GetQueue"
       ],
       "Resource": [
-        "arn:aws:deadline:<REGION>:<ACCOUNT_ID>:farm/<FARM_ID>",
-        "arn:aws:deadline:<REGION>:<ACCOUNT_ID>:farm/<FARM_ID>/queue/<QUEUE_ID>",
-        "arn:aws:deadline:<REGION>:<ACCOUNT_ID>:farm/<FARM_ID>/queue/<QUEUE_ID>/job/*"
+        "arn:aws:deadline:<region>:<account-id>:farm/<farm-id>",
+        "arn:aws:deadline:<region>:<account-id>:farm/<farm-id>/queue/<queue-id>",
+        "arn:aws:deadline:<region>:<account-id>:farm/<farm-id>/queue/<queue-id>/job/*"
       ]
     }
   ]
@@ -218,14 +220,14 @@ In the Spatial Data Portal, go to **Library settings** > **Content** > **Connect
 ```
 {
   "deadlineConfig": {
-    "farmId": "<FARM_ID>",
-    "queueId": "<QUEUE_ID>",
+    "farmId": "<farm-id>",
+    "queueId": "<queue-id>",
     "templateAsset": {
-      "assetId": "<TEMPLATE_ASSET_ID>"
+      "assetId": "<template-asset-id>"
     },
     "securityConfig": {
       "type": "AssumeRole",
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-CogConversion"
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-CogConversion"
     }
   },
   "triggers": [
@@ -273,7 +275,7 @@ In the Spatial Data Portal, go to **Library settings** > **Content** > **Asset t
 
 1. SDMA reads the job’s output manifest, matches the `.tif` output against the declared `derivedFiles` filter, and ingests the COG as a derived file on the asset.
 
-1. The derived file fires a `derivationComplete` event, which downstream connectors (for example, a publish connector) can react to.
+1. The COG raises an `upload` event on a `derivedFile` resource, which the next connector, such as a publish connector, can match (see [Chaining connectors](connector-configuration.md#chaining-connectors)). The source `.tif` file raises `derivationComplete`.
 
 ## Getting started
 <a name="deadline-getting-started"></a>
@@ -296,7 +298,7 @@ The [Walkthrough: TIF to Cloud-Optimized GeoTIFF conversion](#deadline-walkthrou
 SDMA loads job templates from SDMA assets and supports two template configuration modes.
 
 A [job bundle](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/build-job-bundle.html) groups a job template with additional files and directories that the job needs. When SDMA submits a Deadline Cloud job, it assembles a job bundle automatically according to the connector configuration, including:
-+ The **triggering asset** (the SDMA asset that caused the connector to fire) — SDMA attaches it as a job attachment, giving the job read access to the asset’s files.
++ The **triggering asset** (the SDMA asset that caused the connector to run) — SDMA attaches it as a job attachment, giving the job read access to the asset’s files.
 + The **template asset** (the SDMA asset containing the job template and any supporting files it might need) — SDMA attaches it so the job can access scripts, configuration files, or other resources stored alongside the template.
 + Any **additional assets** configured in the connector are also attached.
 
@@ -316,7 +318,7 @@ Use the `templateAsset` block to reference an SDMA asset containing the job temp
     "projectId": "project-0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d"
   },
   "securityConfig": {
-    "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-MyJob",
+    "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-MyJob",
     "type": "AssumeRole"
   }
 }
@@ -343,7 +345,7 @@ Use `templateProjectId` and `templateAssetId` to reference the template asset di
   "templateProjectId": "project-0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d",
   "templateAssetId": "asset-7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d",
   "securityConfig": {
-    "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-MyJob",
+    "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-MyJob",
     "type": "AssumeRole"
   }
 }
@@ -423,99 +425,57 @@ SDMA treats colons that are not a recognized type suffix as literal characters. 
 ## Output configuration
 <a name="deadline-outputs"></a>
 
-The `output` block in the trigger-level `deadlineJob` configuration declares which files produced by the job are eligible for ingestion into SDMA. SDMA uses a fail-closed approach — only files matching a declared output filter are ingested. SDMA ignores undeclared outputs.
+A Deadline Cloud job routes its results with the same `output` block as every other step type, placed inside the trigger-level `deadlineJob`. For the output targets and how `fieldMappings` work, see [Output routing](connector-configuration.md#output-routing). This section covers what is specific to Deadline Cloud: how SDMA chooses which of a job’s files to ingest.
 
-The job template writes job outputs to the `WorkspacePath` directory. When the job completes, Deadline Cloud’s job attachments system uploads the output files to S3, and SDMA reads the output manifest to determine which files to ingest.
+A job writes its outputs to the `WorkspacePath` directory. When the job completes, Deadline Cloud job attachments upload the outputs to Amazon S3, and SDMA reads the job’s output manifest. A `rest` or `lambdaInvoke` step names where its results are, with `s3Uri`. A Deadline Cloud job instead names nothing, so each output entry uses a `filter` to choose files from the manifest.
 
 ```
 "deadlineJob": {
   "template": "conversion/template.yaml",
   "output": {
     "derivedFiles": [
-      {
-        "filter": { "fileExtensionFilter": ".glb" },
-        "preview": true
-      },
-      {
-        "filter": { "fileExtensionFilter": ".stp" }
-      }
+      { "filter": { "fileExtensionFilter": ".glb" }, "preview": true },
+      { "filter": { "fileExtensionFilter": ".stp" } }
     ]
   }
 }
 ```
 
-### Output types
-<a name="_output-types"></a>
+### How SDMA selects output files
+<a name="deadline-output-selection"></a>
++  **Filters.** An output entry’s `filter` supports the trigger filter fields: `fileExtensionFilter`, `fileNameRegex`, `pathRegex`, `minFileSizeMB`, and `maxFileSizeMB` (see [Trigger filters](connector-configuration.md#trigger-filters)).
++  **Targets.** `derivedFiles`, `siblingDerivedFiles`, `files`, and `metadataAttributes` select files from the manifest. On a project trigger, `assets` selects asset envelope files (see [Creating assets from connector output](connector-configuration.md#creating-assets)). A Deadline Cloud job on an asset trigger does not create assets from its output. To create assets from an asset, use a `rest`, `lambdaInvoke`, or `wait` step instead.
++  **One target for each file.** When a file matches more than one target, the first match wins, in this order: `files`, `siblingDerivedFiles`, `derivedFiles`.
++  **Undeclared files are skipped.** SDMA ignores a file that matches no output entry, with one exception: files named by the built-in conventions. A file whose name contains `spatial_data_mgmt_metadata` is always read as a metadata document, and a file whose name contains `spatial_data_mgmt_preview` is always ingested as a derived file.
 
-| Type | Description |
-| --- | --- |
-|  `derivedFiles`  | Files produced by the job are ingested as derived content associated with the triggering file. Each entry specifies a `filter` to match output files by extension or pattern. Set `preview` to `true` to mark matched files as preview content (for example, thumbnails or 3D previews). |
-|  `files`  | Output files are inserted directly into the asset as regular files. |
-|  `metadataAttributes`  | A JSON metadata file produced by the job is parsed and its fields are applied as metadata attributes on the asset or file. Use `fieldMappings` to control how fields from the metadata file map to SDMA metadata attributes. |
+### Writing metadata from a job
+<a name="deadline-output-metadata"></a>
 
-### Output filters
-<a name="_output-filters"></a>
-
-Each output entry uses a `filter` block to match files. The filter supports the same fields as trigger-level filters:
-+  `fileExtensionFilter` — Match files by extension (for example, `.glb`, `.json`).
-+  `fileNameRegex` — Match files by a regex pattern against the filename.
-+  `pathRegex` — Match files by a regex pattern against the full path.
-+  `minFileSizeMB` / `maxFileSizeMB` — Match files by size.
-
-**Important**
-If no output filters are configured, SDMA does not ingest any job outputs. This is a deliberate safety measure — you must explicitly declare which output types are expected.
-
-### Metadata attribute output with field mappings
-<a name="_metadata-attribute-output-with-field-mappings"></a>
-
-The `metadataAttributes` output type lets a Deadline Cloud job write structured metadata back to the asset record. The job produces a JSON file (typically named `spatial_data_mgmt_metadata.json`) in the output directory. When that file matches the `metadataAttributes` filter, SDMA parses it and writes the values as confirmed metadata attributes — bypassing the suggestion/review workflow that applies to built-in metadata extraction.
-
-Use `fieldMappings` to control where SDMA writes each field from the JSON file. Mappings with `asset. ` targets write to asset-level metadata attributes. Mappings with `file.` targets write to file-level metadata attributes on the triggering file. SDMA flattens any fields in the JSON that a field mapping does not cover and writes them to file-level metadata by default.
-
-The following example shows a connector that runs a quality analysis job and writes results to both asset-level and file-level metadata:
+A job writes metadata as a JSON file in its output directory. The `metadataAttributes` target reads that file, and its `fieldMappings` take their `source` from the file’s top-level fields.
 
 ```
 "deadlineJob": {
   "template": "quality-analysis/template.yaml",
   "output": {
     "metadataAttributes": {
-      "filter": { "fileExtensionFilter": ".json" },
+      "filter": { "fileNameRegex": "^quality\\.json$" },
       "fieldMappings": [
-        { "source": "overallScore", "target": "asset.qualityScore" },
-        { "source": "bundleProcessed", "target": "asset.bundleProcessed" },
-        { "source": "inputQuality", "target": "file.inputQuality" }
+        { "source": "overallScore", "target": "asset.metadataAttributes.qualityScore" },
+        { "source": "inputQuality", "target": "file.metadataAttributes.inputQuality" }
       ]
-    },
-    "derivedFiles": [
-      { "filter": { "fileExtensionFilter": ".dat" } }
-    ]
+    }
   }
 }
 ```
 
-If the job produces the following `spatial_data_mgmt_metadata.json`:
+For a job that writes `{"overallScore": 0.94, "inputQuality": "high", "resolution": "4096x4096"}`, SDMA does the following:
++  `overallScore` is written to the asset’s `qualityScore` attribute.
++  `inputQuality` is written to the triggering file’s `inputQuality` attribute.
++  `resolution` has no mapping, so SDMA writes it to the triggering file under its own name. On an asset trigger, which has no triggering file, it goes to the asset.
 
-```
-{
-  "overallScore": 0.94,
-  "bundleProcessed": true,
-  "inputQuality": "high",
-  "resolution": "4096x4096"
-}
-```
+Each value updates an attribute that already exists rather than adding a second one, so running the connector again merges new results into the existing metadata.
 
-SDMA processes it as follows:
-+  `overallScore` → written to `asset.qualityScore` (asset-level metadata attribute) because the mapping target starts with `asset.`.
-+  `bundleProcessed` → written to `asset.bundleProcessed` (asset-level) for the same reason.
-+  `inputQuality` → written to `file.inputQuality` (file-level metadata attribute on the triggering file) because the mapping target starts with `file.`.
-+  `resolution` → not covered by any field mapping, so SDMA flattens it and writes it to file-level metadata by default.
-
-SDMA removes asset-level attributes that map to `asset.*` targets from the raw metadata before file-level flattening, so they do not appear in both places.
-
-When a field mapping targets an attribute that already exists (at either level), SDMA updates the existing value rather than duplicating it. This means re-running a connector on the same asset merges new results into the existing metadata rather than replacing it entirely.
-
-**Note**
-Without a `metadataAttributes` filter, SDMA still processes `spatial_data_mgmt_metadata.json` files by filename convention, but writes the values as suggestions rather than confirmed attributes. The `metadataAttributes` filter is what promotes the output to confirmed, connector-directed metadata.
+A file named `spatial_data_mgmt_metadata.json` is read even without a `metadataAttributes` target. Without one, SDMA writes its values as suggestions on the triggering file, for a user to review. With a `metadataAttributes` target, SDMA applies its `fieldMappings` and writes the values as confirmed attributes. The `filter` is optional for this file name, but if you declare one, the file must match it.
 
 ## Additional assets
 <a name="deadline-additional-assets"></a>
@@ -677,13 +637,11 @@ When a Deadline Cloud job completes, the following occurs:
 
 1. If the job succeeded, SDMA reads the job’s output manifest from S3.
 
-1. SDMA checks each output file against the connector’s declared output filters and skips files that do not match any filter.
-
-1. SDMA ingests matching files into the asset as derived files, regular files, or metadata attributes based on the output configuration.
+1. SDMA selects output files as described in [How SDMA selects output files](#deadline-output-selection), and routes them to the asset as derived files, files, metadata, or assets.
 
 1. SDMA updates the connector invocation status to `SUCCEEDED` or `FAILED`.
 
-1. If the job was triggered by a file event, SDMA publishes a `derivationComplete` event on the triggering file, which can activate downstream connector triggers.
+1. Each new derived file raises an `upload` event on a `derivedFile` resource, which can start the next connector. If the job succeeded and was started from a file, that file also raises `derivationComplete`. For more information, see [Chaining connectors](connector-configuration.md#chaining-connectors).
 
 ## Security model
 <a name="deadline-security"></a>
@@ -711,10 +669,9 @@ SDMA submits job configuration to Deadline Cloud but does not execute, sandbox, 
 <a name="_output-ingestion-safety"></a>
 
 SDMA enforces strict output ingestion controls:
-+ SDMA ingests only files matching a declared output filter.
++ SDMA ingests only files that match a declared output entry, plus files named by the built-in conventions (see [How SDMA selects output files](#deadline-output-selection)).
 + SDMA only accepts outputs when correlated to a known, active connector invocation.
 + SDMA ignores events that cannot be correlated to a known invocation.
-+ If the connector configuration cannot be loaded or has no output filters, SDMA does not ingest any outputs (fail-closed).
 
 ## Error handling
 <a name="deadline-error-handling"></a>

@@ -7,6 +7,11 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/client-author
 
 Client VPN supports two types of client authorization: security groups and network-based authorization (using authorization rules).
 
+**Authentication and authorization are separate**
+When a user authenticates to a Client VPN endpoint, they establish a VPN connection. That alone does not grant access to any network or resource. This applies to any user who can authenticate, including through a shared SAML IdP application. For information about how authentication works, see [Client authentication in AWS Client VPN](client-authentication.md).
+Client VPN denies all access by default. To control the networks and resources a connected user can reach, you must explicitly configure authorization to allow traffic and scope it to grant each group of users only the access it needs.
+Where applicable, you can also authorize the connection itself. Configure an authorization policy to allow or deny connections based on user identity and device health. For setup instructions, see [Device posture for AWS Client VPN](device-posture.md).
+
 ## Security groups
 <a name="security-groups"></a>
 

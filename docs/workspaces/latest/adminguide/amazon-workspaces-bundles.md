@@ -31,8 +31,10 @@ WorkSpaces supports several different operating systems (OS), streaming protocol
 | Ubuntu 26.04 LTS | Included | DCV | Standard, Performance, Power, PowerPro, Graphics G7 | [June, 2036](https://ubuntu.com/about/release-cycle) |
 | Rocky Linux 8 | Included | DCV | Value, Standard, Performance, Power, PowerPro | [May 31, 2029](https://ciq.com/services/long-term-support/) |
 | Rocky Linux 9 | Included | DCV | Standard, Performance, Power, PowerPro | [May 31, 2032](https://ciq.com/services/long-term-support/) |
+| Rocky Linux 10 | Included | DCV | Standard, Performance, Power, PowerPro | [May 31, 2035](https://ciq.com/services/long-term-support/) |
 | Red Hat Enterprise Linux 8 | Included | DCV | Value, Standard, Performance, Power, PowerPro | [May 31, 2029](https://access.redhat.com/support/policy/updates/errata) |
 | Red Hat Enterprise Linux 9 | Included | DCV | Standard, Performance, Power, PowerPro | [May 31, 2032](https://access.redhat.com/support/policy/updates/errata) |
+| Red Hat Enterprise Linux 10 | Included | DCV | Standard, Performance, Power, PowerPro | [May 31, 2035](https://access.redhat.com/support/policy/updates/errata) |
 
 **Note**
 Operating system versions that are no longer supported by the vendor are not guaranteed to work and are not supported by AWS Support.

@@ -28,7 +28,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the workflow you want to delete.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-[a-z]+-[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
+Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-(?:[a-z]+-)+[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
 Required: Yes
 
  ** [WorkflowVersion](#API_DeleteWorkflow_RequestSyntax) **   <a name="mwaaserverless-DeleteWorkflow-request-WorkflowVersion"></a>
@@ -59,7 +59,7 @@ The following data is returned in JSON format by the service.
 The Amazon Resource Name (ARN) of the deleted workflow.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-[a-z]+-[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
+Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-(?:[a-z]+-)+[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
 
  ** [WorkflowVersion](#API_DeleteWorkflow_ResponseSyntax) **   <a name="mwaaserverless-DeleteWorkflow-response-WorkflowVersion"></a>
 The version of the workflow that was deleted.

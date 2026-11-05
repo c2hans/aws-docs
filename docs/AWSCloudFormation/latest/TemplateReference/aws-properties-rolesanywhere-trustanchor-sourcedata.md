@@ -46,5 +46,5 @@ The PEM-encoded data for the certificate anchor. Included for trust anchors of t
 *Required*: No
 *Type*: String
 *Minimum*: `1`
-*Maximum*: `8000`
+*Maximum*: `204800`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

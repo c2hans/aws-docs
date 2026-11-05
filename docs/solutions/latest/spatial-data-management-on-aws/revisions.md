@@ -9,6 +9,7 @@ The following table describes important changes to the Spatial Data Management o
 
 | Date | Change |
 | --- | --- |
+| November 3, 2026 | Updated the connector documentation:+  Rewrote the connectors overview, and added **Processing changed files and writing results back**, **Connector patterns for models and pipelines**, and **Chaining connectors**. <br />+  Documented trigger filters and parameters, `applyTo` fan-out with waits, `siblingDerivedFiles`, assets from connector output, asset lineage, and AWS Lambda payload limits. <br />+  Corrected connector examples that the connector schema rejects, and the events that chain connectors. <br />+  Updated the solution overview, core concepts, architecture, and planning pages, and added the **Sensor Data and Model Training** use case.  |
 | August 25, 2026 | Added release notes for solution version 1.6.0. Updated the client setup download links and installation examples for Spatial Data Portal version 0.2.4 and CLI version 0.1.8. |
 | August 11, 2026 | Added the following sections:+  Single sign-on (SSO) – Instructions for federating the Amazon Cognito user pool with an external identity provider using OIDC or SAML 2.0, including Microsoft Entra ID walkthroughs.  |
 | August 7, 2026 | Added release notes for solution version 1.5.1. Updated the client setup download links and installation examples for Spatial Data Portal version 0.2.3. |

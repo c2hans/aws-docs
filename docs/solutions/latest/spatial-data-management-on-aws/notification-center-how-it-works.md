@@ -13,6 +13,6 @@ The governance model is the same as every other connector:
 
 1. The administrator associates the rule with one or more asset templates.
 
-1. When an asset created from one of those templates fires a matching lifecycle event, SDMA delivers the notification.
+1. When an asset created from one of those templates raises a matching lifecycle event, the recipients receive the notification.
 
 1. Every delivery is tracked as a connector invocation — visible in the portal with status, timestamp, and result.

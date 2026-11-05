@@ -18,6 +18,11 @@ Indicates whether the option can be copied across AWS accounts.
 Type: Boolean
 Required: No
 
+ ** CopyableCrossRegion **
+Indicates whether the option can be copied across AWS Regions.
+Type: Boolean
+Required: No
+
  ** DefaultPort **
 If the option requires a port, specifies the default port for the option.
 Type: Integer

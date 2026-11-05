@@ -7,6 +7,13 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/federated-aut
 
 AWS Client VPN supports identity federation with Security Assertion Markup Language 2.0 (SAML 2.0) for Client VPN endpoints. You can use identity providers (IdPs) that support SAML 2.0 to create centralized user identities. You can then configure a Client VPN endpoint to use SAML-based federated authentication, and associate it with the IdP. Users then connect to the Client VPN endpoint using their centralized credentials.
 
+Authentication only establishes the VPN connection. It does not, by itself, grant access to any network or resource. Client VPN denies all access by default, so you control access separately with authorization. Configure [network-based authorization rules](client-authorization.md#auth-rules) — and, where applicable, [security groups](client-authorization.md#security-groups) — to allow traffic. Scope them to grant each group of users only the access it needs. Broad rules, such as granting access to all clients, give any authenticated user access to the associated networks.
+
+Where applicable, you can also authorize the connection itself. Configure an authorization policy to allow or deny connections based on user identity and device health. For setup instructions, see [Device posture for AWS Client VPN](device-posture.md).
+
+**Sharing your IdP across applications**
+If you use the same IdP for multiple Client VPN endpoints within your account, the same fixed service provider audience value, `urn:amazon:webservices:clientvpn`, is used. A user who can authenticate through that IdP application can then connect to any Client VPN endpoint using your IdP. To restrict access, we recommend using [authorization rules](client-authorization.md#auth-rules) as described above.
+
 **Topics**
 + [Enable SAML](client-auth-enable-saml.md)
 + [Authentication workflow](#federated-authentication-workflow)

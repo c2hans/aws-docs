@@ -47,7 +47,7 @@ Pattern: `.*\S.*`
 Required: Yes
 
  ** [schedulerConfiguration](#API_UpdateVirtualCluster_RequestSyntax) **   <a name="emroneks-UpdateVirtualCluster-request-schedulerConfiguration"></a>
-The scheduler configuration to apply to the virtual cluster. The new configuration fully replaces the existing one. If you omit a field, the corresponding limit is removed.
+The scheduler configuration to apply to the virtual cluster. The new configuration fully replaces the existing one. If you omit `maxInQueueJobRuns`, the service removes the queue-depth limit. If you omit `maxConcurrentJobRuns`, the service applies the default limit of 1,000 concurrent job runs.
 Type: [SchedulerConfiguration](API_SchedulerConfiguration.md) object
 Required: No
 

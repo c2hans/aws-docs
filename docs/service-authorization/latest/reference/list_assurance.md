@@ -186,12 +186,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   DownloadEvidence  **
-  - **Description:**
-  - **Resource types (\*required):** [environment](#list_assurance-resource-environment)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
-  - **Access level:** Read
-
 - **   [EnableFramework](https://docs.aws.amazon.com/assurance/latest/APIReference/API_EnableFramework.html)  **
   - **Description:** Grants permission to enable a framework for a project
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
@@ -432,12 +426,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   ListResourcesForControl  **
-  - **Description:**
-  - **Resource types (\*required):** [environment](#list_assurance-resource-environment)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
-  - **Access level:** Read
-
 - **   [ListTagsForResource](https://docs.aws.amazon.com/assurance/latest/APIReference/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list tags for a resource
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
@@ -504,12 +492,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   StartResourceDiscovery  **
-  - **Description:**
-  - **Resource types (\*required):** [environment](#list_assurance-resource-environment)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
-  - **Access level:** Write
-
 - **   [TagResource](https://docs.aws.amazon.com/assurance/latest/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to add or overwrite tags on a resource
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
@@ -573,12 +555,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateTask](https://docs.aws.amazon.com/assurance/latest/APIReference/API_UpdateTask.html)  **
   - **Description:** Grants permission to update an existing task's mutable fields
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
-  - **Access level:** Write
-
-- **   UploadEvidence  **
-  - **Description:**
-  - **Resource types (\*required):** [environment](#list_assurance-resource-environment)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 

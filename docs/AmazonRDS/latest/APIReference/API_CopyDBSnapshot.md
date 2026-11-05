@@ -42,7 +42,7 @@ Type: String
 Required: Yes
 
  ** CopyOptionGroup **
-Specifies whether to copy the DB option group associated with the source DB snapshot to the target AWS account and associate with the target DB snapshot. The associated option group can be copied only with cross-account snapshot copy calls.
+Specifies whether to copy the DB option group associated with the source DB snapshot to the target AWS account or AWS Region and associate it with the target DB snapshot.
 Type: Boolean
 Required: No
 
@@ -99,6 +99,15 @@ Required: No
 A list of tags.
 For more information, see [Tagging Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Tagging.html) in the *Amazon RDS User Guide* or [Tagging Amazon Aurora and Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Tagging.html) in the *Amazon Aurora User Guide*.
 Type: Array of [Tag](API_Tag.md) objects
+Required: No
+
+ **TagSpecifications.item.N**
+Tags to assign to the copied option group. By default, the copied option group isn't tagged.
+Valid Values:
++  `og` - The copied option group.
+Constraints:
++ Can only be specified when `CopyOptionGroup` is `true`
+Type: Array of [TagSpecification](API_TagSpecification.md) objects
 Required: No
 
  ** TargetCustomAvailabilityZone **

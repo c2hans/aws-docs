@@ -5,13 +5,21 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 # Connectors overview
 <a name="connectors-overview"></a>
 
-Spatial assets become more valuable when they work with the applications your teams already use — geospatial platforms, rendering services, quality analysis tools, and publishing catalogs. Connectors are how SDMA leverages those external applications and services to transform, enrich, and interoperate with your content — and how those systems reach back in, governed by SDMA.
+A connector is a governed contract between a class of assets and an external system. It says what should happen to an asset when it changes — which external work to run, on which files, under which credentials — and how the results become part of that asset. SDMA runs the contract every time the asset changes, and records what it did.
+
+The important word is *asset*. A connector is not a pipe between buckets or services. It acts on SDMA’s governed asset record: versioned, checked against its template, permissioned, and traceable.
+
+A connector reads an asset version. Its results come back as new versions, metadata attributes, and derived files on that asset. When the work lives in an external system, the connector keeps that system’s records linked to the asset, for example by storing the external ID as metadata. Those changes are themselves lifecycle events. The asset record is how connectors work together: each one reacts to what the others produced, without needing to reference another.
+
+Spatial assets become more valuable when they work with the applications your teams already use — geospatial platforms, 3D and CAD tools, rendering services, machine learning training and inference, quality analysis tools, and publishing catalogs. Connectors are how SDMA leverages those external applications and services to transform, enrich, and interoperate with your content — and how those systems reach back in, governed by SDMA.
 
 A connector can submit a compute job that converts a CAD file into a reviewable 3D format and writes the result back as a derived file. It can call an inference service that classifies imagery and writes quality scores into the asset record. It can look up metadata from a database or CSV and apply it across hundreds of files in one operation. It can publish structured metadata to a geospatial catalog, a data lake, or a project management system every time an asset changes. It can do several of these things in one governed contract.
 
 A domain expert or administrator defines this once — what transforms to run, how to assess file quality, what metadata to enrich from which sources, where to publish — and attaches those connectors to a template. From that point on, every asset created under that template gets the benefit automatically. Files are converted, metadata is enriched, quality is assessed, and external systems are updated as content arrives. The people uploading and working with assets do not need to know how any of this works. They see governed, enriched, publication-ready assets from the moment of ingestion.
 
-Connectors work through configuration, not code. You declare what should happen, when, with what data, under what credentials, and SDMA handles execution, security, failure policy, and audit. Every invocation is tracked. Every result flows back through the asset record with provenance. Connectors are governed through an explicit authorization chain: a connector is created and approved at the library level, a template author requests and approves which connectors are permitted for that class of assets, and a project uses that template. A connector does nothing until it is explicitly approved at each level. This means the people who define integrations, the people who define asset standards, and the people who create projects each control their own part of the chain.
+Connectors work through configuration, not code. You create and change a connector in the Spatial Data Portal or through the API, and nothing is built or deployed. You declare what should happen, when, with what data, under what credentials, and SDMA handles execution, security, failure policy, and audit. Every invocation is tracked. Every result flows back through the asset record with provenance.
+
+An explicit authorization chain governs every connector. You create and approve a connector at the library level, a template author approves which connectors a class of assets permits, and a project uses that template. A connector does nothing until each level approves it. This means the people who define integrations, the people who define asset standards, and the people who create projects each control their own part of the chain.
 
 With connectors, you can:
 +  **Transform and derive content.** Submit compute jobs to AWS Deadline Cloud that convert file formats, generate thumbnails, extract spatial properties, or run custom processing pipelines that leverage your existing licensed software. Results come back as derived files and metadata on the asset — governed, versioned, and traceable to the job that produced them.
@@ -19,16 +27,71 @@ With connectors, you can:
 +  **Publish to external systems.** Push metadata to REST APIs, write to S3, invoke Lambda functions, or send events to EventBridge when assets are created, updated, or deleted. Keep external systems in sync with your asset record.
 +  **Integrate with external applications.** Maintain a governed relationship with an external application that spans both directions — create external records on project creation, enrich metadata from the external catalog, and publish derived content back. One connector, one set of credentials, one failure policy.
 +  **Expose external resources for guided workflows.** List available resources from a connected application — projects, collections, models — so users can select and link them during template authoring without leaving the Spatial Data Portal.
-+  **Chain connectors through the asset record.** When one connector produces a derived file or updates metadata, that change is a lifecycle event that can trigger other connectors. A format conversion connector can feed a quality analysis connector, which can feed a publishing connector — each governed independently, composing through the asset record without referencing each other.
++  **Chain connectors through the asset record.** When one connector produces a derived file or updates metadata, that change is a lifecycle event that can trigger other connectors. A format conversion connector can feed a quality analysis connector, which can feed a publishing connector — each governed independently, composing through the asset record without needing to reference each other.
 +  **Wait for long-running external work.** A `wait` step suspends a trigger until an external job completes — whether that is a point-cloud import, a render, an inference job, or a third-party review. SDMA polls the external system on an interval, or the external system calls back when done. Results flow back into the asset automatically, and remaining steps resume. No running compute is held while waiting.
 
 **Important**
-Connectors execute the configuration you provide. SDMA validates the structure and security credentials of a connector, but does not evaluate the business logic of the configuration. For example, if a connector is configured to produce malformed data or send metadata to an unintended destination, SDMA executes those actions as configured. Test connector configurations thoroughly in a non-production environment before enabling them.
+Connectors execute the configuration you provide. SDMA validates the structure and security credentials of a connector, but does not evaluate the business logic of the configuration. For example, if a connector is configured to produce malformed data or send metadata to an unintended destination, SDMA executes those actions as configured. Test connector configurations thoroughly in a non-production environment before you turn them on.
+
+## What SDMA does for you
+<a name="connector-what-sdma-provides"></a>
+
+Most integrations around content follow the same pattern: notice a change, do some external work, and put the result somewhere useful. Built by hand, the external work is the small part. Most of the effort goes into everything around it. With a connector, you write the external part, and SDMA provides the rest.
+
+The following table compares what you build by hand with what a connector provides for each concern.
+
+| Concern | Built by hand | With a connector |
+| --- | --- | --- |
+| When to run | Event rules and your own change detection | Lifecycle triggers, with filters such as `changeState` that select only the files a version added or modified |
+| Who may run it, on what | AWS Identity and Access Management (IAM) policies alone | IAM, plus the library → template → project approval chain (see [Connectors, templates, and projects](#connector-blast-radius)) |
+| Where results land | Your code writes to storage or calls APIs |  `output` routing writes metadata, files, and derived files into the asset record |
+| Matching results to files | Your own join logic |  `correlate` matches each response entry to the file it describes |
+| History | Whatever your code records | SDMA coalesces writes from one run, so metadata and derived content stay with the content version they describe, and the history shows coherent versions rather than every step of a run (see [Why write back through output routing](connector-fan-out-write-back.md#fan-out-why-output)) |
+| Provenance | Your own tags or logs | Every run is an invocation record; derived files link to the run that produced them |
+| Chaining | Wiring between pipelines | Connectors chain through the asset record: each derived file a connector adds can start the next connector (see [Chaining connectors](connector-configuration.md#chaining-connectors)) |
+| Avoiding self-triggering loops | Your own guards | A metadata write-back changes no files, so `changeState` triggers do not match it |
+| Runaway failures | Alarms and manual intervention |  `failurePolicy` disables a connector after repeated failures |
+| Access to content for compute | Copying or staging data | Deadline Cloud jobs read asset content in place from SDMA’s content store |
+| Credentials for the external system | Your code needs SDMA access to write back | The external system only answers; SDMA writes the results |
+| Adding or changing an integration | Write, build, and deploy code | Create or edit a connector configuration |
+| Calling AWS services | Code against the AWS SDK |  `rest` steps signed with Signature Version 4, or a step type for the service |
+
+## Connectors and workflow engines
+<a name="connector-workflow-engines"></a>
+
+Connectors have triggers and steps, so they can look like a workflow engine. They are deliberately narrower than one. A trigger’s steps run in order, with no branching or general-purpose loops. That keeps each connector small enough to read, review, and approve for a class of assets, which is what the template approval chain depends on.
+
+This is a choice about where logic lives, not a limit on what you can build:
++  **Use a connector** to decide *when* work happens to an asset, *who* may make it happen, and *how* its results become part of the asset.
++  **Use a workflow service** such as AWS Step Functions, or your own code, for complex orchestration with branching, retries across many services, or human approval flows.
+
+Most integrations with AWS services need no code of their own. A connector can call an AWS service directly, such as an Amazon SageMaker endpoint or pipeline (see [Connector patterns for models and pipelines](connector-patterns.md)).
+
+The two work well together. A connector can start a state machine — for example, with an `eventBridgePutEvents` step that a rule routes to the state machine — and then use an output-driven `wait` step for the results the state machine writes to Amazon S3 (see [Output-driven wait](connector-wait.md#wait-output-driven)). The workflow does the orchestration. The connector governs when it runs and brings its results into the asset with versioning and provenance.
+
+## Example – three connectors, one asset
+<a name="connector-example-chain"></a>
+
+The following example shows how independent connectors compose through the asset record. None of the three references another.
+
+1. You upload `site-42.tif` to an asset whose template approves all three connectors.
+
+1.  **Convert** – a Deadline Cloud connector triggers on `upload` for `.tif` files. It submits a job that produces a Cloud-Optimized GeoTIFF, and SDMA ingests the COG as a derived file of `site-42.tif` (see [Walkthrough: TIF to Cloud-Optimized GeoTIFF conversion](connector-deadline-cloud.md#deadline-walkthrough)).
+
+1. The new derived file raises an `upload` event on a `derivedFile` resource.
+
+1.  **Assess** – a Lambda connector triggers on `upload` for derived `.tif` files. Its function scores the COG, and its `output` block writes `qualityScore` to the asset’s metadata (see [Using Lambda as a content producer (deriver)](connector-lambda.md#lambda-as-deriver)).
+
+1.  **Publish** – a REST connector triggers on `update` for assets. It publishes the asset, including the new score and a link to the COG, to an external catalog (see [Publishing to STAC with the REST API connector](connector-stac.md)).
+
+The result is one asset with its source file, a derived COG, a quality score, and a published catalog entry. Every step has an invocation record, every result is traceable to the run that produced it, and each connector can be changed, disabled, or approved for other templates without touching the others.
+
+To make the same flow publish only after scoring has finished, add `dependsOn` to the publish trigger (see [Ordering connectors with dependsOn](connector-configuration.md#trigger-dependencies)). Most compositions do not need it, because each connector already reacts to what the previous one produced.
 
 ## How connectors work
 <a name="how-connectors-work"></a>
 
-SDMA provides a small set of integration primitives — REST, S3, Deadline Cloud, Lambda, EventBridge — that connect your assets with the outside world. Each primitive can produce new content and bring it into SDMA (derive), or send content outward to external systems (publish). For a simple, single action — push metadata to an API, look up values from a CSV, submit a compute job — use a single-step publisher or deriver. When you need more, compose those same primitives into multi-step workflows within a single trigger. The primitives are the same either way.
+Every connector follows the same loop: an asset changes, the connector does external work for that change, and SDMA routes the results back into the asset. To do the external work, SDMA provides a small set of integration primitives — REST, S3, Deadline Cloud, Lambda, EventBridge — that connect your assets with the outside world. Each primitive can produce new content and bring it into SDMA (derive), or send content outward to external systems (publish). For a simple, single action — push metadata to an API, look up values from a CSV, submit a compute job — use a single-step publisher or deriver. When you need more, compose those same primitives into multi-step workflows within a single trigger. The primitives are the same either way.
 
 A connector is a governed composition of five surfaces:
 +  **Resource surface** – What external resources can be discovered, validated, and displayed. Not all connectors need this — it is for connectors that expose selectable values or linked external identities.
@@ -102,7 +165,44 @@ Directions describe which way content flows. Step types describe what each opera
 
 Multi-step triggers can combine operations that feel like both directions. A trigger might call an external API to create a job (outward), poll for completion (outward), fetch the results (inward), and write metadata back to the asset (inward). All of these run in one trigger and SDMA tracks them as one invocation. The connector’s declared direction describes the overall intent; the steps describe the mechanics.
 
-When one connector’s output needs to feed another connector’s input, composition happens through the asset record. A derive connector that produces a derived file creates a lifecycle event. A publish connector with a trigger on `derivationComplete` picks up that event and publishes the result. The two connectors do not reference each other — they compose through what they produce and consume in the asset record.
+When one connector’s output needs to feed another connector’s input, composition happens through the asset record. A derive connector that adds a derived file raises an `upload` event on that derived file. A publish connector with a `derivedFile` trigger on `upload` picks up that event and publishes the result (see [Chaining connectors](connector-configuration.md#chaining-connectors)). The two connectors do not reference each other — they compose through what they produce and consume in the asset record.
+
+## Connectors, templates, and projects
+<a name="connector-blast-radius"></a>
+
+SDMA uses a three-level relationship between connectors, asset templates, and projects to control which connectors can run and on which resources. Use this relationship when you need to control which integrations run for specific asset types across different projects or teams.
+
+### How the relationship works
+<a name="_how-the-relationship-works"></a>
+
+1.  **Connectors** – You create connectors at the library level. A connector defines the integration logic (field mappings, triggers, steps) and security credentials.
+
+1.  **Asset templates** – A template defines the structure and rules for assets. Its `permittedConnectorIds` list names the connectors that the template approves for assets you create from it.
+
+1.  **Projects** – A project uses asset templates. When you create an asset in a project, only the connectors that the asset’s template approves run.
+
+This means:
++ A connector does nothing until it is explicitly added to a template’s `permittedConnectorIds` list.
++ Different templates can approve different connectors, so teams can control which integrations apply to their asset types.
++ Removing a connector ID from a template immediately stops that connector from running for new events on assets using that template.
+
+For information about editing a template’s `permittedConnectorIds` list, see [Connector configuration](connector-configuration.md).
+
+### Limiting blast radius
+<a name="_limiting-blast-radius"></a>
+
+This three-level model limits the blast radius of any single connector. The following table describes the controls that limit it.
+
+| Control | Effect |
+| --- | --- |
+| IAM role permissions | The role restricts what AWS resources the connector can access. Scope the role to specific buckets, functions, or event buses. |
+| Template approval | The template approves which asset types trigger the connector. SDMA never invokes a connector that is not listed in a template’s `permittedConnectorIds` for assets of that type. |
+| Trigger filters | Restricts which specific events and resources activate the connector. A trigger with `"events": ["create"]` does not match `update` or `delete` events. |
+| Payload field filtering | Restricts which metadata fields are sent to the external system. Use `payload.fields` to include only the fields the external system needs. |
+| Failure policy | The failure policy automatically disables a connector after repeated failures to prevent runaway error loops. |
+
+**Reduce connector risk**
+SDMA executes connector configurations as defined. To reduce risk, scope IAM roles to the minimum required permissions, test configurations with non-production data, and review trigger filters before you turn on a connector.
 
 ## Supported connector types
 <a name="supported-connector-types"></a>
@@ -190,6 +290,19 @@ An EventBridge connector publishes events to a custom event bus when asset lifec
 
 For configuration details, see [Amazon EventBridge connector](connector-eventbridge.md).
 
+### Notification
+<a name="_notification"></a>
+
+Step type: `notification`
+
+ **Roles:** alert you and your team when lifecycle events occur.
+
+The notification connector delivers a message when a trigger matches. Use it to alert people about lifecycle events, such as failed quality checks, instead of automating a downstream action. Your team can then respond to issues without monitoring asset status by hand.
+
+A notification connector sends its message to users, groups, or project roles. Messages can appear in the Spatial Data Portal inbox, in Slack, or by email. For example, a trigger might match when an asset’s metadata shows it failed quality checks. Notification rules use the same triggers, filters, and template approval as every other connector, and SDMA tracks each invocation.
+
+For more information about notification configuration, see [Notification center](notification-center.md).
+
 ### STAC API
 <a name="_stac-api"></a>
 
@@ -231,37 +344,4 @@ The `deadlineJob` step type can also participate in multi-step triggers, enablin
 
 This composability means you do not need a separate connector for each destination. A single connector can orchestrate a complete workflow by combining different step types in a single trigger.
 
-## Connectors, templates, and projects
-<a name="connector-blast-radius"></a>
-
-SDMA uses a three-level relationship between connectors, asset templates, and projects to control which connectors can run and on which resources.
-
-### How the relationship works
-<a name="_how-the-relationship-works"></a>
-
-1.  **Connectors** are created at the library level. A connector defines the integration logic (field mappings, triggers, steps) and security credentials.
-
-1.  **Asset templates** define the structure and rules for assets. Each template has a `permittedConnectorIds` list that controls which connectors are approved for assets created from that template.
-
-1.  **Projects** use asset templates. When an asset is created in a project, only connectors approved by the asset’s template are triggered.
-
-This means:
-+ A connector does nothing until it is explicitly added to a template’s `permittedConnectorIds` list.
-+ Different templates can approve different connectors, so teams can control which integrations apply to their asset types.
-+ Removing a connector ID from a template immediately stops that connector from firing for new events on assets using that template.
-
-### Limiting blast radius
-<a name="_limiting-blast-radius"></a>
-
-This three-level model limits the blast radius of any single connector:
-
-| Control | Effect |
-| --- | --- |
-| IAM role permissions | Restricts what AWS resources the connector can access. Scope the role to specific buckets, functions, or event buses. |
-| Template approval | Restricts which asset types trigger the connector. A connector not listed in a template’s `permittedConnectorIds` is never invoked for assets of that type. |
-| Trigger filters | Restricts which specific events and resources activate the connector. A trigger with `"events": ["create"]` does not fire on updates or deletes. |
-| Payload field filtering | Restricts which metadata fields are sent to the external system. Use `payload.fields` to include only the fields the external system needs. |
-| Failure policy | Automatically disables a connector after repeated failures, preventing runaway error loops. |
-
-**Important**
-SDMA executes connector configurations as defined. To reduce risk, scope IAM roles to the minimum required permissions, test configurations with non-production data, and review trigger filters before enabling a connector.
+Steps are how one connector does its work. To combine the work of several connectors, compose through the asset record (see [Example – three connectors, one asset](#connector-example-chain)). To send results back into the asset, use `output` routing rather than writing through the API. A run’s metadata and derived content then arrive together and stay with the content version they describe, rather than arriving as a separate change for each write (see [Processing changed files and writing results back](connector-fan-out-write-back.md)).

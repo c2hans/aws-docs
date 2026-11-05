@@ -20,7 +20,6 @@ The following describes upcoming behavior changes.
 + [SUPER data type supports larger individual strings starting with Patch 206](#super-large-strings-patch206)
 + [AWS KMS key permission enforcement for Amazon Redshift Serverless APIs after August 17, 2026](#kms-permission-serverless-aug2026)
 + [Amazon Redshift enforces user lockout after multiple failed login attempts starting with Patch 208](#user-lockout-patch208)
-+ [Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026](#snapshot-billing-model-jun2026)
 + [Iceberg DELETE on Lake Formation tables requires DELETE permission starting with Patch 202](#iceberg-delete-lf-permission-patch202)
 + [Amazon Redshift Serverless preserves zero-ETL and S3 event integrations on snapshot restore starting with Patch 202](#serverless-restore-integrations-patch202)
 + [End of support for the Amazon Redshift ODBC 1.x driver on December 31, 2026](#odbc1x-deprecation-dec2026)
@@ -137,17 +136,6 @@ To manage this behavior:
 + Unlock user with `ALTER USER username LOGIN PASSWORD 'password';`, which also resets the failed-attempt counter.
 
 For more information, see [SHOW USER LOCKOUT](https://docs.aws.amazon.com/redshift/latest/dg/r_SHOW_USER_LOCKOUT.html), [ALTER USER](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_USER.html), and [max\_failed\_login\_attempts](https://docs.aws.amazon.com/redshift/latest/dg/max_failed_login_attempts.html).
-
-### Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026
-<a name="snapshot-billing-model-jun2026"></a>
-
-Starting June 08, 2026, Amazon Redshift announces an enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances. With this enhancement, manual snapshots are now metered based on unique data blocks stored across all active manual snapshots in your account. Shared data blocks that appear in multiple snapshots are counted only once, billed at existing manual snapshot rates for your region.
-
-You may be impacted by this if you use manual snapshots on Amazon Redshift Serverless workgroups or Amazon Redshift RG clusters. This results in lower manual snapshot costs for customers who maintain multiple snapshots.
-
-No action is required. The enhanced billing model automatically applies to both existing and new manual snapshots.
-
-For more information about snapshot pricing, see [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 
 ### Iceberg DELETE on Lake Formation tables requires DELETE permission starting with Patch 202
 <a name="iceberg-delete-lf-permission-patch202"></a>
@@ -276,6 +264,7 @@ For information on creating and using Lambda UDFs, see [Scalar Lambda UDFs](http
 
 **Topics**
 + [Amazon Redshift takes automated snapshots of paused data sharing producer clusters starting September 30, 2026](#paused-producer-snapshots-sep2026)
++ [Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026](#snapshot-billing-model-jun2026)
 + [Amazon Redshift uses up-to-date IANA Time Zone Database after Aug 26, 2025](#timezone-changes-aug2025)
 + [Amazon Redshift Serverless RPU changes effective after August 15, 2025](#serverless-rpu-aug2025)
 + [Database audit logging changes effective after August 10, 2025](#audit-logging-aug2025)
@@ -295,6 +284,17 @@ Previously, Amazon Redshift didn't take automated snapshots of these clusters wh
 These snapshots follow the cluster's existing automated snapshot schedule and retention period, and no action is required. For a paused cluster that isn't a data sharing producer, Amazon Redshift doesn't take automated snapshots while the cluster is paused.
 
 For more information, see [Automated snapshots](working-with-snapshots.md#about-automated-snapshots).
+
+### Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026
+<a name="snapshot-billing-model-jun2026"></a>
+
+Starting June 08, 2026, Amazon Redshift announces an enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances. With this enhancement, manual snapshots are now metered based on unique data blocks stored across all active manual snapshots in your account. Shared data blocks that appear in multiple snapshots are counted only once, billed at existing manual snapshot rates for your region.
+
+You may be impacted by this if you use manual snapshots on Amazon Redshift Serverless workgroups or Amazon Redshift RG clusters. This results in lower manual snapshot costs for customers who maintain multiple snapshots.
+
+No action is required. The enhanced billing model automatically applies to both existing and new manual snapshots.
+
+For more information about snapshot pricing, see [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
 
 ### Amazon Redshift uses up-to-date IANA Time Zone Database after Aug 26, 2025
 <a name="timezone-changes-aug2025"></a>
@@ -342,6 +342,7 @@ For questions or concerns, contact AWS support at the following link: [AWS Suppo
 
 **Topics**
 + [Amazon Redshift takes automated snapshots of paused data sharing producer clusters starting September 30, 2026](#paused-producer-snapshots-sep2026)
++ [Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026](#snapshot-billing-model-jun2026)
 + [Amazon Redshift uses up-to-date IANA Time Zone Database after Aug 26, 2025](#timezone-changes-aug2025)
 + [Amazon Redshift Serverless RPU changes effective after August 15, 2025](#serverless-rpu-aug2025)
 + [Database audit logging changes effective after August 10, 2025](#audit-logging-aug2025)

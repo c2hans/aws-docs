@@ -27,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DbParameterGroupIdentifier](#cfn-timestream-influxdbinstance-dbparametergroupidentifier)" : {{String}},
       "[DbStorageType](#cfn-timestream-influxdbinstance-dbstoragetype)" : {{String}},
       "[DeploymentType](#cfn-timestream-influxdbinstance-deploymenttype)" : {{String}},
+      "[KmsKeyId](#cfn-timestream-influxdbinstance-kmskeyid)" : {{String}},
       "[LogDeliveryConfiguration](#cfn-timestream-influxdbinstance-logdeliveryconfiguration)" : {{LogDeliveryConfiguration}},
       "[MaintenanceSchedule](#cfn-timestream-influxdbinstance-maintenanceschedule)" : {{MaintenanceSchedule}},
       "[Name](#cfn-timestream-influxdbinstance-name)" : {{String}},
@@ -55,6 +56,7 @@ Properties:
   [DbParameterGroupIdentifier](#cfn-timestream-influxdbinstance-dbparametergroupidentifier): {{String}}
   [DbStorageType](#cfn-timestream-influxdbinstance-dbstoragetype): {{String}}
   [DeploymentType](#cfn-timestream-influxdbinstance-deploymenttype): {{String}}
+  [KmsKeyId](#cfn-timestream-influxdbinstance-kmskeyid): {{String}}
   [LogDeliveryConfiguration](#cfn-timestream-influxdbinstance-logdeliveryconfiguration): {{
     LogDeliveryConfiguration}}
   [MaintenanceSchedule](#cfn-timestream-influxdbinstance-maintenanceschedule): {{
@@ -127,6 +129,15 @@ Specifies whether the Timestream for InfluxDB is deployed as Single-AZ or with a
 *Type*: String
 *Allowed values*: `SINGLE_AZ | WITH_MULTIAZ_STANDBY`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`KmsKeyId`  <a name="cfn-timestream-influxdbinstance-kmskeyid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9:/_\-]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `LogDeliveryConfiguration`  <a name="cfn-timestream-influxdbinstance-logdeliveryconfiguration"></a>
 Configuration for sending InfluxDB engine logs to a specified S3 bucket.
@@ -236,6 +247,9 @@ The Amazon Resource Name (ARN) of the DB instance
 
 `AvailabilityZone`  <a name="AvailabilityZone-fn::getatt"></a>
 The Availability Zone in which the DB instance resides.
+
+`DbClusterId`  <a name="DbClusterId-fn::getatt"></a>
+Property description not available.
 
 `Endpoint`  <a name="Endpoint-fn::getatt"></a>
 The endpoint used to connect to InfluxDB. The default InfluxDB port is 8086.

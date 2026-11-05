@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/rbp-attach-
 When you attach a policy or create a cluster with one, the policy must meet these requirements:
 + It's no longer than 20,480 characters.
 + It doesn't include service principals (the `Service` key in a `Principal` element).
++ Each of its statements includes a `Principal` element and a `Resource` element. Aurora DSQL doesn't support `NotPrincipal` or `NotResource`.
 + It doesn't grant public access. For more information, see [Blocking public access with resource-based policies in Aurora DSQL](rbp-block-public-access.md).
 + It doesn't deny you both `dsql:PutClusterPolicy` and `dsql:DeleteClusterPolicy`.
 

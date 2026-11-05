@@ -1397,6 +1397,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [CreateNotificationPreference](${APIReferenceDocPage}API_CreateNotificationPreference.html)  **
+  - **Description:** Grants permission to create a notification preference
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateProject](${APIReferenceDocPage}API_CreateProject.html)  **
   - **Description:** Grants permission to create a Project to enable your team to publish and subscribe to data
   - **Resource types (\*required):**
@@ -1937,6 +1943,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [GetNotificationPreference](${APIReferenceDocPage}API_GetNotificationPreference.html)  **
+  - **Description:** Grants permission to get a notification preference
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [GetProject](${APIReferenceDocPage}API_GetProject.html)  **
   - **Description:** Grants permission to get Project details
   - **Resource types (\*required):**
@@ -1975,6 +1987,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetSubscriptionTarget](${APIReferenceDocPage}API_GetSubscriptionTarget.html)  **
   - **Description:** Grants permission to retireve details of subscription target
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [GetSystemTableExportConfiguration](${APIReferenceDocPage}API_GetSystemTableExportConfiguration.html)  **
+  - **Description:** Grants permission to get a system table export configuration
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
@@ -2095,6 +2113,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListDataSources](${APIReferenceDocPage}API_ListDataSources.html)  **
   - **Description:** Grants permission to list existing DataSources
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListDeployableEnvironmentBlueprints](${APIReferenceDocPage}API_ListDeployableEnvironmentBlueprints.html)  **
+  - **Description:** Grants permission to list deployable environment blueprints
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -2315,6 +2339,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [PutSystemTableExportConfiguration](${APIReferenceDocPage}API_PutSystemTableExportConfiguration.html)  **
+  - **Description:** Grants permission to put a system table export configuration
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [QueryGraph](${APIReferenceDocPage}API_QueryGraph.html)  **
   - **Description:** Grants permission to query graph
   - **Resource types (\*required):**
@@ -2501,6 +2531,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [UpdateAssetOwner](${APIReferenceDocPage}API_UpdateAssetOwner.html)  **
+  - **Description:** Grants permission to update the owning project of the asset
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [UpdateCell](${APIReferenceDocPage}API_UpdateCell.html)  **
   - **Description:** Grants permission to update cells
   - **Resource types (\*required):**
@@ -2599,6 +2635,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateNotebook](${APIReferenceDocPage}API_UpdateNotebook.html)  **
   - **Description:** Grants permission to update notebooks
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [UpdateNotificationPreference](${APIReferenceDocPage}API_UpdateNotificationPreference.html)  **
+  - **Description:** Grants permission to update a notification preference
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Write

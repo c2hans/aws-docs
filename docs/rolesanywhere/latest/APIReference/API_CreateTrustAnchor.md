@@ -17,6 +17,7 @@ POST /trustanchors HTTP/1.1
 Content-type: application/json
 
 {
+   "crlDpRevocationEnabled": {{boolean}},
    "enabled": {{boolean}},
    "name": "{{string}}",
    "notificationSettings": [
@@ -49,6 +50,11 @@ The request does not use any URI parameters.
 <a name="API_CreateTrustAnchor_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [crlDpRevocationEnabled](#API_CreateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-CreateTrustAnchor-request-crlDpRevocationEnabled"></a>
+Specifies whether the trust anchor checks certificate revocation status against CRL distribution points.
+Type: Boolean
+Required: No
 
  ** [enabled](#API_CreateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-CreateTrustAnchor-request-enabled"></a>
 Specifies whether the trust anchor is enabled.
@@ -89,6 +95,7 @@ Content-type: application/json
 {
    "trustAnchor": {
       "createdAt": "string",
+      "crlDpRevocationEnabled": boolean,
       "enabled": boolean,
       "name": "string",
       "notificationSettings": [
@@ -130,6 +137,14 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
+
+ ** ServiceUnavailableException **
+The request has failed due to a temporary failure of the service.
+ ** message **
+The exception message.
+ ** retryAfterSeconds **
+The recommended number of seconds after which the client should retry the request.
+HTTP Status Code: 503
 
  ** ValidationException **
 Validation exception error.

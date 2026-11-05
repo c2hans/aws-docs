@@ -1232,6 +1232,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [GetSoftwareResourcesV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSoftwareResourcesV2.html)  **
+  - **Description:** Grants permission to retrieve a list of resources that contain a software package
+  - **Resource types (\*required):** [hubv2](#list_securityhub-resource-hubv2)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetSoftwareStatisticsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSoftwareStatisticsV2.html)  **
+  - **Description:** Grants permission to retrieve aggregate statistics about software packages
+  - **Resource types (\*required):** [hubv2](#list_securityhub-resource-hubv2)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetSoftwareV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSoftwareV2.html)  **
+  - **Description:** Grants permission to retrieve a list of software packages found on resources
+  - **Resource types (\*required):** [hubv2](#list_securityhub-resource-hubv2)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [InviteMembers](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_InviteMembers.html)  **
   - **Description:** Grants permission to invite other AWS accounts to become Security Hub member accounts
   - **Resource types (\*required):** [hub](#list_securityhub-resource-hub)

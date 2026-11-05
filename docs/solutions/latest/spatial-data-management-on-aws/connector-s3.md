@@ -9,6 +9,8 @@ The Amazon S3 connector is a multi-purpose primitive that can publish structured
 
 Step types: `s3PutObject`, `s3DeleteObject`
 
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+
 ## Roles
 <a name="s3-roles"></a>
 
@@ -36,8 +38,8 @@ Step types: `s3PutObject`, `s3DeleteObject`
            "Effect": "Allow",
            "Principal": {
              "AWS": [
-               "<CONNECTOR_INVOCATION_ROLE_ARN>",
-               "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+               "<connector-invocation-role-arn>",
+               "<async-connector-invocation-role-arn>"
              ]
            },
            "Action": "sts:AssumeRole"
@@ -46,7 +48,7 @@ Step types: `s3PutObject`, `s3DeleteObject`
      }
      ```
 
-     Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+     Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
      If you have AWS CLI access, you can find these values by running:
 
@@ -60,7 +62,7 @@ Step types: `s3PutObject`, `s3DeleteObject`
        --query 'Configuration.Role' --output text
      ```
 
-     Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+     Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** — scope to the specific bucket and operations needed:
      + For publish: `s3:PutObject` (and `s3:DeleteObject` if using delete triggers).
      + For derive/lookup: `s3:GetObject` on the source file.
@@ -70,20 +72,20 @@ Step types: `s3PutObject`, `s3DeleteObject`
 
 A publish connector writes structured JSON to an S3 bucket when asset events occur. This is useful for feeding data lakes, downstream processing pipelines, or any system that consumes structured data from S3.
 
-### Example: publish asset metadata to S3 on create or update
+### Example – publish asset metadata to S3 on create or update
 <a name="_example-publish-asset-metadata-to-s3-on-create-or-update"></a>
 
 ```
 {
-  "defaultStepConfig": {
-    "stepType": "s3PutObject",
-    "s3Config": {
-      "bucketName": "<TARGET_BUCKET>",
-      "securityConfig": {
-        "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentPublisher-S3Archive",
-        "type": "AssumeRole"
-      }
+  "s3Config": {
+    "bucketName": "amzn-s3-demo-bucket",
+    "securityConfig": {
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentPublisher-S3Archive",
+      "type": "AssumeRole"
     }
+  },
+  "defaultStepConfig": {
+    "stepType": "s3PutObject"
   },
   "fieldMappings": [
     { "source": "asset.assetId", "target": "assetId" },
@@ -118,18 +120,18 @@ The `objectKey` supports `${variable}` substitution, so each asset gets its own 
 
 An S3 derive connector reads a CSV or JSON file from S3 and matches records to SDMA files or assets. This is the bulk metadata enrichment pattern — upload a spreadsheet of metadata once, and every asset created under the template gets its files enriched automatically.
 
-### Example: enrich file metadata from a CSV
+### Example – enrich file metadata from a CSV
 <a name="_example-enrich-file-metadata-from-a-csv"></a>
 
 ```
 {
   "s3Config": {
-    "bucketName": "<SOURCE_BUCKET>",
+    "bucketName": "amzn-s3-demo-source-bucket",
     "region": "us-west-2",
     "csvOptions": { "delimiter": ",", "hasHeader": true },
     "objectKey": "scan_metadata.csv",
     "securityConfig": {
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-S3Lookup",
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-S3Lookup",
       "type": "AssumeRole"
     }
   },
@@ -172,17 +174,17 @@ An S3 connector can serve values from a CSV or JSON file as selectable options i
 
 This uses the connector-level `fieldMappings` \+ `s3Config` shorthand — no triggers, no `resources` block. The connector exists purely to provide reference data for template authoring and metadata entry.
 
-### Example: serve site codes from a CSV for template authoring
+### Example – serve site codes from a CSV for template authoring
 <a name="_example-serve-site-codes-from-a-csv-for-template-authoring"></a>
 
 ```
 {
   "s3Config": {
-    "bucketName": "<REFERENCE_DATA_BUCKET>",
+    "bucketName": "amzn-s3-demo-source-bucket",
     "objectKey": "sites.csv",
     "csvOptions": { "delimiter": ",", "hasHeader": true },
     "securityConfig": {
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-FieldProvider",
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-FieldProvider",
       "type": "AssumeRole"
     }
   },
@@ -217,7 +219,7 @@ The `s3PutObject` and `s3DeleteObject` step types can participate in multi-step 
   {
     "stepType": "lambdaInvoke",
     "lambdaConfig": {
-      "functionArn": "arn:aws:lambda:<REGION>:<ACCOUNT_ID>:function:post-process"
+      "functionArn": "arn:aws:lambda:<region>:<account-id>:function:post-process"
     }
   }
 ]
@@ -246,3 +248,4 @@ The `s3PutObject` and `s3DeleteObject` step types can participate in multi-step 
 |  `s3Config.bucketName`  | No | Overrides the connector-level bucket for this step. |
 |  `payload.format`  | No | Output format. Currently only `json` is supported. |
 |  `payload.fields`  | No | Array of field names to include. If omitted, all mapped fields are included. |
+|  `body`  | No | A JSON template for the object, with `${variable}` substitution. Use it for literal values and variables that field mappings cannot express, such as `${parameters.connectorInvocationId}`. If the step also uses field mappings, `body` is merged over the mapped fields. If it does not, `body` is the whole object. |

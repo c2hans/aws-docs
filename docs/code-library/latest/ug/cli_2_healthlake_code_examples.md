@@ -37,10 +37,10 @@ Output:
 
 ```
 {
-    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/(Data store ID)/r4/",
-    "DatastoreArn": "arn:aws:healthlake:us-west-2:(AWS Account ID):datastore/(Data store ID)",
+    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6/r4/",
+    "DatastoreArn": "arn:aws:healthlake:us-west-2:123456789012:datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
     "DatastoreStatus": "CREATING",
-    "DatastoreId": "(Data store ID)"
+    "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
 }
 ```
 **Example 2: To create a SMART on FHIR-enabled HealthLake data store**
@@ -68,10 +68,10 @@ Output:
 
 ```
 {
-    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/(Data store ID)/r4/",
-    "DatastoreArn": "arn:aws:healthlake:us-west-2:(AWS Account ID):datastore/(Data store ID)",
+    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6/r4/",
+    "DatastoreArn": "arn:aws:healthlake:us-west-2:123456789012:datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
     "DatastoreStatus": "CREATING",
-    "DatastoreId": "(Data store ID)"
+    "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
 }
 ```
 For more information, see [Creating a HealthLake data store](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-create.html) in the *AWS HealthLake Developer Guide*.
@@ -88,16 +88,16 @@ The following `delete-fhir-datastore` example demonstrates how to delete a data 
 
 ```
 aws healthlake delete-fhir-datastore \
-    --datastore-id {{(Data}} {{store}} {{ID)}}
+    --datastore-id {{a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6}}
 ```
 Output:
 
 ```
 {
-    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/(Data store ID)/r4/",
-    "DatastoreArn": "arn:aws:healthlake:us-west-2:(AWS Account ID):datastore/(Data store ID)",
+    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6/r4/",
+    "DatastoreArn": "arn:aws:healthlake:us-west-2:123456789012:datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
     "DatastoreStatus": "DELETING",
-    "DatastoreId": "(Data store ID)"
+    "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
 }
 ```
 For more information, see [Deleting a HealthLake data store](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-delete.html) in the *AWS HealthLake Developer Guide*.
@@ -131,12 +131,12 @@ Output:
             }
         },
         "DatastoreName": "Demo",
-        "DatastoreArn": "arn:aws:healthlake:us-west-2:<AWS Account ID>:datastore/<Data store ID>",
-        "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/<Data store ID>/r4/",
+        "DatastoreArn": "arn:aws:healthlake:us-west-2:123456789012:datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+        "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6/r4/",
         "DatastoreStatus": "ACTIVE",
         "DatastoreTypeVersion": "R4",
         "CreatedAt": 1603761064.881,
-        "DatastoreId": "<Data store ID>",
+        "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
         "IdentityProviderConfiguration": {
             "AuthorizationStrategy": "AWS_AUTH",
             "FineGrainedAuthorizationEnabled": false
@@ -158,7 +158,7 @@ The following `describe-fhir-export-job` example shows how to find the propertie
 
 ```
 aws healthlake describe-fhir-export-job \
-    --datastore-id {{(Data}} {{store}} {{ID)}} \
+    --datastore-id {{a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6}} \
     --job-id {{9b9a51943afaedd0a8c0c26c49135a31}}
 ```
 Output:
@@ -166,19 +166,19 @@ Output:
 ```
 {
     "ExportJobProperties": {
-        "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/HealthLakeDataAccessRole",
         "JobStatus": "IN_PROGRESS",
         "JobId": "9009813e9d69ba7cf79bcb3468780f16",
         "SubmitTime": "2024-11-20T11:31:46.672000-05:00",
         "EndTime": "2024-11-20T11:34:01.636000-05:00",
         "OutputDataConfig": {
             "S3Configuration": {
-            "S3Uri": "s3://(Bucket Name)/(Prefix Name)/",
+            "S3Uri": "s3://amzn-s3-demo-bucket/healthlake/",
             "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
 
         },
-        "DatastoreId": "(Data store ID)"
+        "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
     }
 }
 ```
@@ -196,7 +196,7 @@ The following `describe-fhir-import-job` example shows how to learn the properti
 
 ```
 aws healthlake describe-fhir-import-job \
-    --datastore-id {{(Data}} {{store}} {{ID)}} \
+    --datastore-id {{a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6}} \
     --job-id {{c145fbb27b192af392f8ce6e7838e34f}}
 ```
 Output:
@@ -205,14 +205,14 @@ Output:
 {
     "ImportJobProperties": {
     "InputDataConfig": {
-        "S3Uri": "s3://(Bucket Name)/(Prefix Name)/"
+        "S3Uri": "s3://amzn-s3-demo-bucket/healthlake/"
     },
-    "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)",
+    "DataAccessRoleArn": "arn:aws:iam::123456789012:role/HealthLakeDataAccessRole",
     "JobStatus": "COMPLETED",
     "JobId": "c145fbb27b192af392f8ce6e7838e34f",
     "SubmitTime": 1606272542.161,
     "EndTime": 1606272609.497,
-    "DatastoreId": "(Data store ID)"
+    "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
     }
 }
 ```
@@ -248,12 +248,12 @@ Output:
             }
         },
         "DatastoreName": "Demo",
-        "DatastoreArn": "arn:aws:healthlake:us-west-2:<AWS Account ID>:datastore/<Data store ID>",
-        "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/<Data store ID>/r4/",
+        "DatastoreArn": "arn:aws:healthlake:us-west-2:123456789012:datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+        "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6/r4/",
         "DatastoreStatus": "ACTIVE",
         "DatastoreTypeVersion": "R4",
         "CreatedAt": 1603761064.881,
-        "DatastoreId": "<Data store ID>",
+        "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
         "IdentityProviderConfiguration": {
             "AuthorizationStrategy": "AWS_AUTH",
             "FineGrainedAuthorizationEnabled": false
@@ -276,12 +276,12 @@ The following `list-fhir-export-jobs` example shows how to use the command to vi
 
 ```
 aws healthlake list-fhir-export-jobs \
-    --datastore-id {{(Data}} {{store}} {{ID)}} \
-    --submitted-before {{(DATE}} {{like}} {{2024-10-13T19:00:00Z)}} \
-    --submitted-after {{(DATE}} {{like}} {{2020-10-13T19:00:00Z}} {{)}} \
+    --datastore-id {{a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6}} \
+    --submitted-before {{2024-10-13T19:00:00Z}} \
+    --submitted-after {{2020-10-13T19:00:00Z}} \
     --job-name {{"FHIR-EXPORT"}} \
     --job-status {{SUBMITTED}} \
-    --max-results {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
+    --max-results {{50}}
 ```
 Output:
 
@@ -291,17 +291,17 @@ Output:
         {
             "OutputDataConfig": {
                 "S3Configuration": {
-                    "S3Uri": "s3://(Bucket Name)/(Prefix Name)/",
-                    "KmsKeyId": "(KmsKey Id)"
+                    "S3Uri": "s3://amzn-s3-demo-bucket/healthlake/",
+                    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 }
             },
-            "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/HealthLakeDataAccessRole",
             "JobStatus": "COMPLETED",
             "JobId": "c145fbb27b192af392f8ce6e7838e34f",
             "JobName": "FHIR-EXPORT",
             "SubmitTime": "2024-11-20T11:31:46.672000-05:00",
             "EndTime": "2024-11-20T11:34:01.636000-05:00",
-            "DatastoreId": "(Data store ID)"
+            "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
         }
     ]
 }
@@ -320,12 +320,12 @@ The following `list-fhir-import-jobs` example shows how to use the command to vi
 
 ```
 aws healthlake list-fhir-import-jobs \
-    --datastore-id {{(Data}} {{store}} {{ID)}} \
-    --submitted-before {{(DATE}} {{like}} {{2024-10-13T19:00:00Z)}} \
-    --submitted-after {{(DATE}} {{like}} {{2020-10-13T19:00:00Z}} {{)}} \
+    --datastore-id {{a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6}} \
+    --submitted-before {{2024-10-13T19:00:00Z}} \
+    --submitted-after {{2020-10-13T19:00:00Z}} \
     --job-name {{"FHIR-IMPORT"}} \
     --job-status {{SUBMITTED}} \
-    --max-results {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
+    --max-results {{50}}
 ```
 Output:
 
@@ -337,13 +337,13 @@ Output:
             "JobStatus": "COMPLETED",
             "SubmitTime": "2024-11-20T10:08:46.813000-05:00",
             "EndTime": "2024-11-20T10:10:09.093000-05:00",
-            "DatastoreId": "(Data store ID)",
+            "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
             "InputDataConfig": {
-                "S3Uri": "s3://(Bucket Name)/(Prefix Name)/"
+                "S3Uri": "s3://amzn-s3-demo-bucket/healthlake/"
             },
             "JobOutputDataConfig": {
                 "S3Configuration": {
-                    "S3Uri": "s3://(Bucket Name)/import/6407b9ae4c2def3cb6f1a46a0c599ec0-FHIR_IMPORT-c0fddbf76f238297632d4aebdbfc9ddf/",
+                    "S3Uri": "s3://amzn-s3-demo-bucket/import/6407b9ae4c2def3cb6f1a46a0c599ec0-FHIR_IMPORT-c0fddbf76f238297632d4aebdbfc9ddf/",
                     "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 }
             },
@@ -357,7 +357,7 @@ Output:
                 "TotalNumberOfFilesReadWithCustomerError": 0,
                 "Throughput": 0.0
             },
-            "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/HealthLakeDataAccessRole"
         }
     ]
 }
@@ -408,15 +408,15 @@ The following `start-fhir-export-job` example shows how to start a FHIR export j
 
 ```
 aws healthlake start-fhir-export-job \
-    --output-data-config '{{{"S3Configuration": {"S3Uri":"s3://(Bucket Name)/(Prefix Name)/","KmsKeyId":"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}}}' \
-    --datastore-id {{(Data}} {{store}} {{ID)}} \
-    --data-access-role-arn {{arn:aws:iam::(AWS}} {{Account}} {{ID):role/(Role}} {{Name)}}
+    --output-data-config '{{{"S3Configuration": {"S3Uri":"s3://amzn-s3-demo-bucket/healthlake/","KmsKeyId":"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}}}' \
+    --datastore-id {{a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/HealthLakeDataAccessRole}}
 ```
 Output:
 
 ```
 {
-    "DatastoreId": "(Data store ID)",
+    "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
     "JobStatus": "SUBMITTED",
     "JobId": "9b9a51943afaedd0a8c0c26c49135a31"
 }
@@ -435,16 +435,16 @@ The following `start-fhir-import-job` example shows how to start a FHIR import j
 
 ```
 aws healthlake start-fhir-import-job \
-    --input-data-config S3Uri="s3://(Bucket Name)/(Prefix Name)/" \
-    --job-output-data-config '{{{"S3Configuration": {"S3Uri":"s3://(Bucket Name)/(Prefix Name)/","KmsKeyId":"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}}}' \
-    --datastore-id {{(Data}} {{store}} {{ID)}} \
-    --data-access-role-arn {{"arn:aws:iam::(AWS Account ID):role/(Role Name)"}}
+    --input-data-config S3Uri="s3://amzn-s3-demo-bucket/healthlake/" \
+    --job-output-data-config '{{{"S3Configuration": {"S3Uri":"s3://amzn-s3-demo-bucket/healthlake/","KmsKeyId":"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}}}' \
+    --datastore-id {{a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6}} \
+    --data-access-role-arn {{"arn:aws:iam::123456789012:role/HealthLakeDataAccessRole"}}
 ```
 Output:
 
 ```
 {
-    "DatastoreId": "(Data store ID)",
+    "DatastoreId": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
     "JobStatus": "SUBMITTED",
     "JobId": "c145fbb27b192af392f8ce6e7838e34f"
 }

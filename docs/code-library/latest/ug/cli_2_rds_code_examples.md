@@ -952,6 +952,87 @@ Output:
 }
 ```
 For more information, see [Creating an Amazon Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html) in the *Amazon Aurora User Guide*.
+**Example 4: To create an Aurora PostgreSQL DB cluster for Aurora Limitless Database**
+The following `create-db-cluster` example creates an Aurora PostgreSQL primary DB cluster that's compatible with Aurora Serverless v2 and Aurora Limitless Database. After you create the DB cluster, create its writer DB instance with the `create-db-instance` command and then a DB shard group with the `create-db-shard-group` command.
+
+```
+aws rds create-db-cluster \
+    --db-cluster-identifier {{my-sv2-cluster}} \
+    --engine {{aurora-postgresql}} \
+    --engine-version {{15.2-limitless}} \
+    --storage-type {{aurora-iopt1}} \
+    --serverless-v2-scaling-configuration {{MinCapacity=2,MaxCapacity=16}} \
+    --enable-limitless-database \
+    --master-username {{myuser}} \
+    --master-user-password {{mypassword}} \
+    --enable-cloudwatch-logs-exports {{postgresql}}
+```
+Output:
+
+```
+{
+    "DBCluster": {
+        "AllocatedStorage": 1,
+        "AvailabilityZones": [
+            "us-west-2b",
+            "us-west-2c",
+            "us-west-2a"
+        ],
+        "BackupRetentionPeriod": 1,
+        "DBClusterIdentifier": "my-sv2-cluster",
+        "DBClusterParameterGroup": "default.aurora-postgresql15",
+        "DBSubnetGroup": "default",
+        "Status": "creating",
+        "Endpoint": "my-sv2-cluster.cluster-cekycexample.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "my-sv2-cluster.cluster-ro-cekycexample.us-west-2.rds.amazonaws.com",
+        "MultiAZ": false,
+        "Engine": "aurora-postgresql",
+        "EngineVersion": "15.2-limitless",
+        "Port": 5432,
+        "MasterUsername": "myuser",
+        "PreferredBackupWindow": "06:05-06:35",
+        "PreferredMaintenanceWindow": "mon:08:25-mon:08:55",
+        "ReadReplicaIdentifiers": [],
+        "DBClusterMembers": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-########",
+                "Status": "active"
+            }
+        ],
+        "HostedZoneId": "Z2XHWR1EXAMPLE",
+        "StorageEncrypted": false,
+        "DbClusterResourceId": "cluster-XYEDT6ML6FHIXH4Q2J1EXAMPLE",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:my-sv2-cluster",
+        "AssociatedRoles": [],
+        "IAMDatabaseAuthenticationEnabled": false,
+        "ClusterCreateTime": "2024-02-19T16:24:07.771000+00:00",
+        "EnabledCloudwatchLogsExports": [
+            "postgresql"
+        ],
+        "EngineMode": "provisioned",
+        "DeletionProtection": false,
+        "HttpEndpointEnabled": false,
+        "CopyTagsToSnapshot": false,
+        "CrossAccountClone": false,
+        "DomainMemberships": [],
+        "TagList": [],
+        "StorageType": "aurora-iopt1",
+        "AutoMinorVersionUpgrade": true,
+        "ServerlessV2ScalingConfiguration": {
+            "MinCapacity": 2.0,
+            "MaxCapacity": 16.0
+        },
+        "NetworkType": "IPV4",
+        "IOOptimizedNextAllowedModificationTime": "2024-03-21T16:24:07.781000+00:00",
+        "LimitlessDatabase": {
+            "Status": "not-in-use",
+            "MinRequiredACU": 96.0
+        }
+    }
+}
+```
+For more information, see [Using Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CreateDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-db-instance-read-replica`
@@ -990,7 +1071,7 @@ For more information, see [Creating a read replica](https://docs.aws.amazon.com/
 The following code example shows how to use `create-db-instance`.
 
 **AWS CLI**
-**To create a DB instance**
+**Example 1: To create a DB instance**
 The following `create-db-instance` example uses the required options to launch a new DB instance.
 
 ```
@@ -1097,6 +1178,122 @@ Output:
 }
 ```
 For more information, see [Creating an Amazon RDS DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html) in the *Amazon RDS User Guide*.
+**Example 2: To create an Aurora Serverless v2 writer DB instance in a DB cluster**
+The following `create-db-instance` example creates an Aurora Serverless v2 primary (writer) DB instance in a DB cluster. When you use the console to create a DB cluster, Amazon RDS automatically creates the writer DB instance for your DB cluster. However, when you use the AWS CLI to create a DB cluster, you must explicitly create the writer DB instance for your DB cluster using the `create-db-instance` command.
+
+```
+aws rds create-db-instance \
+    --db-instance-identifier {{my-sv2-instance}} \
+    --db-cluster-identifier {{my-sv2-cluster}} \
+    --engine {{aurora-postgresql}} \
+    --db-instance-class {{db.serverless}}
+```
+Output:
+
+```
+{
+    "DBInstance": {
+        "DBInstanceIdentifier": "my-sv2-instance",
+        "DBInstanceClass": "db.serverless",
+        "Engine": "aurora-postgresql",
+        "DBInstanceStatus": "creating",
+        "MasterUsername": "myuser",
+        "AllocatedStorage": 1,
+        "PreferredBackupWindow": "06:05-06:35",
+        "BackupRetentionPeriod": 1,
+        "DBSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-########",
+                "Status": "active"
+            }
+        ],
+        "DBParameterGroups": [
+            {
+                "DBParameterGroupName": "default.aurora-postgresql15",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "DBSubnetGroup": {
+            "DBSubnetGroupName": "default",
+            "DBSubnetGroupDescription": "default",
+            "VpcId": "vpc-########",
+            "SubnetGroupStatus": "Complete",
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-########",
+                    "SubnetAvailabilityZone": {
+                        "Name": "us-west-2c"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-########",
+                    "SubnetAvailabilityZone": {
+                        "Name": "us-west-2a"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-########",
+                    "SubnetAvailabilityZone": {
+                        "Name": "us-west-2b"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                }
+            ]
+        },
+        "PreferredMaintenanceWindow": "fri:09:01-fri:09:31",
+        "PendingModifiedValues": {
+            "PendingCloudwatchLogsExports": {
+                "LogTypesToEnable": [
+                    "postgresql"
+                ]
+            }
+        },
+        "MultiAZ": false,
+        "EngineVersion": "15.2-limitless",
+        "AutoMinorVersionUpgrade": true,
+        "ReadReplicaDBInstanceIdentifiers": [],
+        "LicenseModel": "postgresql-license",
+        "OptionGroupMemberships": [
+            {
+                "OptionGroupName": "default:aurora-postgresql-15",
+                "Status": "in-sync"
+            }
+        ],
+        "PubliclyAccessible": false,
+        "StorageType": "aurora-iopt1",
+        "DbInstancePort": 0,
+        "DBClusterIdentifier": "my-sv2-cluster",
+        "StorageEncrypted": false,
+        "DbiResourceId": "db-BIQTE3B3K3RM7M74SK5EXAMPLE",
+        "CACertificateIdentifier": "rds-ca-rsa2048-g1",
+        "DomainMemberships": [],
+        "CopyTagsToSnapshot": false,
+        "MonitoringInterval": 0,
+        "PromotionTier": 1,
+        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:my-sv2-instance",
+        "IAMDatabaseAuthenticationEnabled": false,
+        "PerformanceInsightsEnabled": false,
+        "DeletionProtection": false,
+        "AssociatedRoles": [],
+        "TagList": [],
+        "CustomerOwnedIpEnabled": false,
+        "BackupTarget": "region",
+        "NetworkType": "IPV4",
+        "StorageThroughput": 0,
+        "CertificateDetails": {
+            "CAIdentifier": "rds-ca-rsa2048-g1"
+        },
+        "DedicatedLogVolume": false
+    }
+}
+```
+For more information, see [Using Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CreateDBInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-instance.html) in *AWS CLI Command Reference*.
 
 ### `create-db-parameter-group`
@@ -1267,203 +1464,8 @@ For more information, see [Controlling access with security groups](https://docs
 The following code example shows how to use `create-db-shard-group`.
 
 **AWS CLI**
-**Example 1: To create an Aurora PostgreSQL primary DB cluster**
-The following `create-db-shard-group` example starts by using the `create-db-cluster` command to create an Aurora PostgreSQL SQL primary DB cluster that's compatible with Aurora Serverless v2 and Aurora Limitless Database.
-
-```
-aws rds create-db-cluster \
-    --db-cluster-identifier {{my-sv2-cluster}} \
-    --engine {{aurora-postgresql}} \
-    --engine-version {{15.2-limitless}} \
-    --storage-type {{aurora-iopt1}} \
-    --serverless-v2-scaling-configuration {{MinCapacity=2,MaxCapacity=16}} \
-    --enable-limitless-database \
-    --master-username {{myuser}} \
-    --master-user-password {{mypassword}} \
-    --enable-cloudwatch-logs-exports {{postgresql}}
-```
-Output:
-
-```
-{
-    "DBCluster": {
-        "AllocatedStorage": 1,
-        "AvailabilityZones": [
-            "us-west-2b",
-            "us-west-2c",
-            "us-west-2a"
-        ],
-        "BackupRetentionPeriod": 1,
-        "DBClusterIdentifier": "my-sv2-cluster",
-        "DBClusterParameterGroup": "default.aurora-postgresql15",
-        "DBSubnetGroup": "default",
-        "Status": "creating",
-        "Endpoint": "my-sv2-cluster.cluster-cekycexample.us-west-2.rds.amazonaws.com",
-        "ReaderEndpoint": "my-sv2-cluster.cluster-ro-cekycexample.us-west-2.rds.amazonaws.com",
-        "MultiAZ": false,
-        "Engine": "aurora-postgresql",
-        "EngineVersion": "15.2-limitless",
-        "Port": 5432,
-        "MasterUsername": "myuser",
-        "PreferredBackupWindow": "06:05-06:35",
-        "PreferredMaintenanceWindow": "mon:08:25-mon:08:55",
-        "ReadReplicaIdentifiers": [],
-        "DBClusterMembers": [],
-        "VpcSecurityGroups": [
-            {
-                "VpcSecurityGroupId": "sg-########",
-                "Status": "active"
-            }
-        ],
-        "HostedZoneId": "Z2XHWR1EXAMPLE",
-        "StorageEncrypted": false,
-        "DbClusterResourceId": "cluster-XYEDT6ML6FHIXH4Q2J1EXAMPLE",
-        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:my-sv2-cluster",
-        "AssociatedRoles": [],
-        "IAMDatabaseAuthenticationEnabled": false,
-        "ClusterCreateTime": "2024-02-19T16:24:07.771000+00:00",
-        "EnabledCloudwatchLogsExports": [
-            "postgresql"
-        ],
-        "EngineMode": "provisioned",
-        "DeletionProtection": false,
-        "HttpEndpointEnabled": false,
-        "CopyTagsToSnapshot": false,
-        "CrossAccountClone": false,
-        "DomainMemberships": [],
-        "TagList": [],
-        "StorageType": "aurora-iopt1",
-        "AutoMinorVersionUpgrade": true,
-        "ServerlessV2ScalingConfiguration": {
-            "MinCapacity": 2.0,
-            "MaxCapacity": 16.0
-        },
-        "NetworkType": "IPV4",
-        "IOOptimizedNextAllowedModificationTime": "2024-03-21T16:24:07.781000+00:00",
-        "LimitlessDatabase": {
-            "Status": "not-in-use",
-            "MinRequiredACU": 96.0
-        }
-    }
-}
-```
-**Example 2: To create the primary (writer) DB instance**
-The following `create-db-shard-group` example continues by using the `create-db-instance` command to create an Aurora Serverless v2 primary (writer) DB instance. When you use the console to create a DB cluster, Amazon RDS automatically creates the writer DB instance for your DB cluster. However, when you use the AWS CLI to create a DB cluster, you must explicitly create the writer DB instance for your DB cluster using the `create-db-instance` AWS CLI command.
-
-```
-aws rds create-db-instance \
-    --db-instance-identifier {{my-sv2-instance}} \
-    --db-cluster-identifier {{my-sv2-cluster}} \
-    --engine {{aurora-postgresql}} \
-    --db-instance-class {{db.serverless}}
-```
-Output:
-
-```
-{
-    "DBInstance": {
-        "DBInstanceIdentifier": "my-sv2-instance",
-        "DBInstanceClass": "db.serverless",
-        "Engine": "aurora-postgresql",
-        "DBInstanceStatus": "creating",
-        "MasterUsername": "myuser",
-        "AllocatedStorage": 1,
-        "PreferredBackupWindow": "06:05-06:35",
-        "BackupRetentionPeriod": 1,
-        "DBSecurityGroups": [],
-        "VpcSecurityGroups": [
-            {
-                "VpcSecurityGroupId": "sg-########",
-                "Status": "active"
-            }
-        ],
-        "DBParameterGroups": [
-            {
-                "DBParameterGroupName": "default.aurora-postgresql15",
-                "ParameterApplyStatus": "in-sync"
-            }
-        ],
-        "DBSubnetGroup": {
-            "DBSubnetGroupName": "default",
-            "DBSubnetGroupDescription": "default",
-            "VpcId": "vpc-########",
-            "SubnetGroupStatus": "Complete",
-            "Subnets": [
-                {
-                    "SubnetIdentifier": "subnet-########",
-                    "SubnetAvailabilityZone": {
-                        "Name": "us-west-2c"
-                    },
-                    "SubnetOutpost": {},
-                    "SubnetStatus": "Active"
-                },
-                {
-                    "SubnetIdentifier": "subnet-########",
-                    "SubnetAvailabilityZone": {
-                        "Name": "us-west-2a"
-                    },
-                    "SubnetOutpost": {},
-                    "SubnetStatus": "Active"
-                },
-                {
-                    "SubnetIdentifier": "subnet-########",
-                    "SubnetAvailabilityZone": {
-                        "Name": "us-west-2b"
-                    },
-                    "SubnetOutpost": {},
-                    "SubnetStatus": "Active"
-                }
-            ]
-        },
-        "PreferredMaintenanceWindow": "fri:09:01-fri:09:31",
-        "PendingModifiedValues": {
-            "PendingCloudwatchLogsExports": {
-                "LogTypesToEnable": [
-                    "postgresql"
-                ]
-            }
-        },
-        "MultiAZ": false,
-        "EngineVersion": "15.2-limitless",
-        "AutoMinorVersionUpgrade": true,
-        "ReadReplicaDBInstanceIdentifiers": [],
-        "LicenseModel": "postgresql-license",
-        "OptionGroupMemberships": [
-            {
-                "OptionGroupName": "default:aurora-postgresql-15",
-                "Status": "in-sync"
-            }
-        ],
-        "PubliclyAccessible": false,
-        "StorageType": "aurora-iopt1",
-        "DbInstancePort": 0,
-        "DBClusterIdentifier": "my-sv2-cluster",
-        "StorageEncrypted": false,
-        "DbiResourceId": "db-BIQTE3B3K3RM7M74SK5EXAMPLE",
-        "CACertificateIdentifier": "rds-ca-rsa2048-g1",
-        "DomainMemberships": [],
-        "CopyTagsToSnapshot": false,
-        "MonitoringInterval": 0,
-        "PromotionTier": 1,
-        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:my-sv2-instance",
-        "IAMDatabaseAuthenticationEnabled": false,
-        "PerformanceInsightsEnabled": false,
-        "DeletionProtection": false,
-        "AssociatedRoles": [],
-        "TagList": [],
-        "CustomerOwnedIpEnabled": false,
-        "BackupTarget": "region",
-        "NetworkType": "IPV4",
-        "StorageThroughput": 0,
-        "CertificateDetails": {
-            "CAIdentifier": "rds-ca-rsa2048-g1"
-        },
-        "DedicatedLogVolume": false
-    }
-}
-```
-**Example 3: To create the DB shard group**
-The following `create-db-shard-group` example creates a DB shard group in your Aurora PostgreSQL primary DB cluster.
+**To create a DB shard group**
+The following `create-db-shard-group` example creates a DB shard group in an Aurora PostgreSQL primary DB cluster that's compatible with Aurora Serverless v2 and Aurora Limitless Database. Before you create the DB shard group, create the DB cluster with the `create-db-cluster` command and its writer DB instance with the `create-db-instance` command.
 
 ```
 aws rds create-db-shard-group \
@@ -2046,8 +2048,8 @@ For more information, see [Deleting a Snapshot](https://docs.aws.amazon.com/Amaz
 The following code example shows how to use `delete-db-cluster`.
 
 **AWS CLI**
-**Example 1: To delete a DB instance in a DB cluster**
-The following `delete-db-cluster` example starts by using the `delete-db-instance` command to delete the final DB instance in a DB cluster. You can't delete a DB cluster if it contains DB instances that aren't in the **deleting** state. You can't take a final snapshot when deleting a DB instance in a DB cluster.
+**To delete a DB cluster**
+The following `delete-db-cluster` example deletes the DB cluster named `mycluster` and takes a final snapshot named `mycluster-final-snapshot`. You can't delete a DB cluster if it contains DB instances that aren't in the **deleting** state, so first use the `delete-db-instance` command to delete the final DB instance in the DB cluster. You can't take a final snapshot when deleting a DB instance in a DB cluster.
 
 ```
 aws rds delete-db-instance \
@@ -2065,9 +2067,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting a DB Instance in an Aurora DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DeleteInstance.html) in the *Amazon Aurora User Guide*.
-**Example 2: To delete a DB cluster**
-The following `delete-db-cluster` example deletes the DB cluster named `mycluster` and takes a final snapshot named `mycluster-final-snapshot`. The status of the DB cluster is **available** while the snapshot is being taken. To follow the progress of the deletion, use the `describe-db-clusters` CLI command.
+Then delete the DB cluster. The status of the DB cluster is **available** while the snapshot is being taken. To follow the progress of the deletion, use the `describe-db-clusters` command.
 
 ```
 aws rds delete-db-cluster \
@@ -2094,7 +2094,7 @@ Output:
     }
 }
 ```
-For more information, see [Aurora Clusters with a Single DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DeleteInstance.html) in the *Amazon Aurora User Guide*.
+For more information, see [Deleting a DB Instance in an Aurora DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DeleteInstance.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeleteDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-db-cluster.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-instance-automated-backup`
@@ -6526,8 +6526,8 @@ For more information, see [Modify an RDS Proxy](https://docs.aws.amazon.com/Amaz
 The following code example shows how to use `modify-db-shard-group`.
 
 **AWS CLI**
-**Example 1: To modify a DB shard group**
-The following `modify-db-shard-group` example changes the maximum capacity of a DB shard group.
+**To modify a DB shard group**
+The following `modify-db-shard-group` example changes the maximum capacity of a DB shard group to 1000 Aurora capacity units (ACUs). To see the new maximum capacity after the change is applied, use the `describe-db-shard-groups` command.
 
 ```
 aws rds modify-db-shard-group \
@@ -6546,41 +6546,6 @@ Output:
     "Status": "available",
     "PubliclyAccessible": false,
     "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
-}
-```
-For more information, see [Amazon Aurora DB Clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html) in the *Amazon Aurora User Guide*.
-**Example 2: To describe your DB shard groups**
-The following `modify-db-shard-group` example continues by using the `describe-db-shard-groups` command to retrieve the details of your DB shard groups after you run the `modify-db-shard-group` command. The maximum capacity of the DB shard group `my-db-shard-group` is now 1000 Aurora capacity units (ACUs).
-
-```
-aws rds describe-db-shard-groups
-```
-Output:
-
-```
-{
-    "DBShardGroups": [
-        {
-            "DBShardGroupResourceId": "shardgroup-7bb446329da94788b3f957746example",
-            "DBShardGroupIdentifier": "limitless-test-shard-grp",
-            "DBClusterIdentifier": "limitless-test-cluster",
-            "MaxACU": 768.0,
-            "ComputeRedundancy": 0,
-            "Status": "available",
-            "PubliclyAccessible": true,
-            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
-        },
-        {
-            "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
-            "DBShardGroupIdentifier": "my-db-shard-group",
-            "DBClusterIdentifier": "my-sv2-cluster",
-            "MaxACU": 1000.0,
-            "ComputeRedundancy": 0,
-            "Status": "available",
-            "PubliclyAccessible": false,
-            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
-        }
-    ]
 }
 ```
 For more information, see [Amazon Aurora DB Clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html) in the *Amazon Aurora User Guide*.
@@ -6935,8 +6900,8 @@ For more information, see [Promoting a read replica to be a standalone DB instan
 The following code example shows how to use `purchase-reserved-db-instances-offering`.
 
 **AWS CLI**
-**Example 1: To find a reserved DB instance to purchase**
-The following `purchase-reserved-db-instances-offering` example starts by using the `describe-reserved-db-instances-offerings` command to list the available reserved MySQL DB instances with the db.t2.micro instance class and a duration of one year. The offering ID is required for purchasing a reserved DB instance.
+**To purchase a reserved DB instance**
+The following `purchase-reserved-db-instances-offering` example buys a reserved MySQL DB instance with the db.t2.micro instance class and a duration of one year. The offering ID is required for purchasing a reserved DB instance, so first use the `describe-reserved-db-instances-offerings` command to find it.
 
 ```
 aws rds describe-reserved-db-instances-offerings \
@@ -6969,9 +6934,7 @@ Output:
     ]
 }
 ```
-For more information, see [Reserved DB Instances for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*.
-**Example 2: To purchase a reserved DB instance**
-The following `purchase-reserved-db-instances-offering` example shows how to buy the reserved DB instance offering from the previous example.
+Then buy the reserved DB instance offering.
 
 ```
 aws rds purchase-reserved-db-instances-offering \
@@ -7088,8 +7051,8 @@ For more information, see [Rebooting a DB Instance](https://docs.aws.amazon.com/
 The following code example shows how to use `reboot-db-shard-group`.
 
 **AWS CLI**
-**Example 1: To reboot a DB shard group**
-The following `reboot-db-shard-group` example reboots a DB shard group.
+**To reboot a DB shard group**
+The following `reboot-db-shard-group` example reboots a DB shard group. To follow the progress of the reboot, use the `describe-db-shard-groups` command.
 
 ```
 aws rds reboot-db-shard-group \
@@ -7107,41 +7070,6 @@ Output:
     "Status": "available",
     "PubliclyAccessible": false,
     "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
-}
-```
-For more information, see [Rebooting an Amazon Aurora DB cluster or Amazon Aurora DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_RebootCluster.html) in the *Amazon Aurora User Guide*.
-**Example 2: To describe your DB shard groups**
-The following `reboot-db-shard-group` example continues by using the `describe-db-shard-groups` command to retrieve the details of your DB shard groups after you run the `reboot-db-shard-group` command. The DB shard group `my-db-shard-group` is now rebooting.
-
-```
-aws rds describe-db-shard-groups
-```
-Output:
-
-```
-{
-    "DBShardGroups": [
-        {
-            "DBShardGroupResourceId": "shardgroup-7bb446329da94788b3f957746example",
-            "DBShardGroupIdentifier": "limitless-test-shard-grp",
-            "DBClusterIdentifier": "limitless-test-cluster",
-            "MaxACU": 768.0,
-            "ComputeRedundancy": 0,
-            "Status": "available",
-            "PubliclyAccessible": true,
-            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
-        },
-        {
-            "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
-            "DBShardGroupIdentifier": "my-db-shard-group",
-            "DBClusterIdentifier": "my-sv2-cluster",
-            "MaxACU": 1000.0,
-            "ComputeRedundancy": 0,
-            "Status": "rebooting",
-            "PubliclyAccessible": false,
-            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
-        }
-    ]
 }
 ```
 For more information, see [Rebooting an Amazon Aurora DB cluster or Amazon Aurora DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_RebootCluster.html) in the *Amazon Aurora User Guide*.

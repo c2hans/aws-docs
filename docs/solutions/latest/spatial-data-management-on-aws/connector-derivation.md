@@ -12,6 +12,8 @@ This is how you automate bulk metadata enrichment. A domain expert defines the e
 **Important**
 Derive connectors use the IAM role prefix `SpatialDataManagementContentDerivation-` (not `SpatialDataManagementContentPublisher-` used by publish connectors). SDMA validates the role name prefix and tests role assumption when the connector is created.
 
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+
 ## Create a derive connector with lookup
 <a name="derivation-create"></a>
 
@@ -78,8 +80,8 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
            "Effect": "Allow",
            "Principal": {
              "AWS": [
-               "<CONNECTOR_INVOCATION_ROLE_ARN>",
-               "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+               "<connector-invocation-role-arn>",
+               "<async-connector-invocation-role-arn>"
              ]
            },
            "Action": "sts:AssumeRole"
@@ -88,7 +90,7 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
      }
      ```
 
-     Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+     Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
      If you have AWS CLI access, you can find these values by running:
 
@@ -102,7 +104,7 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
        --query 'Configuration.Role' --output text
      ```
 
-     Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+     Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `s3:GetObject` on the source file:
 
      ```
@@ -112,7 +114,7 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
          {
            "Effect": "Allow",
            "Action": "s3:GetObject",
-           "Resource": "arn:aws:s3:::<YOUR_BUCKET_NAME>/metadata/*"
+           "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/metadata/*"
          }
        ]
      }
@@ -122,8 +124,8 @@ The `s3Lookup` operation reads a file from S3 and parses it into records. It sup
 <a name="s3-lookup-csv-options"></a>
 
 For CSV files, the following options are available in the trigger-level `derivation.s3Config.csvOptions`:
-+  `hasHeader` – Whether the CSV has a header row. Defaults to `true`. When `true`, column names from the header are used as field names. When `false`, columns are indexed as `0`, `1`, `2`, and so on
-+  `delimiter` – CSV delimiter character. Defaults to `,`.
++  `hasHeader` – Specifies whether the CSV has a header row. Defaults to `true`. When `true`, SDMA uses the column names from the header as field names. When `false`, SDMA indexes columns as `0`, `1`, `2`, and so on.
++  `delimiter` – Specifies the character that separates values. Defaults to `,`.
 
 ### Example
 <a name="s3-lookup-example"></a>
@@ -133,9 +135,9 @@ This example reads a CSV file from S3 and applies metadata to files based on fil
 ```
 {
   "s3Config": {
-    "bucketName": "my-metadata-bucket",
+    "bucketName": "amzn-s3-demo-bucket",
     "securityConfig": {
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-MyS3Lookup",
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-MyS3Lookup",
       "type": "AssumeRole"
     }
   },
@@ -193,8 +195,8 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
            "Effect": "Allow",
            "Principal": {
              "AWS": [
-               "<CONNECTOR_INVOCATION_ROLE_ARN>",
-               "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+               "<connector-invocation-role-arn>",
+               "<async-connector-invocation-role-arn>"
              ]
            },
            "Action": "sts:AssumeRole"
@@ -203,7 +205,7 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
      }
      ```
 
-     Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+     Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
      If you have AWS CLI access, you can find these values by running:
 
@@ -217,7 +219,7 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
        --query 'Configuration.Role' --output text
      ```
 
-     Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+     Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant access to the Secrets Manager secret (if using API key, token, or basic auth):
 
      ```
@@ -227,7 +229,7 @@ The `restLookup` operation calls a REST API endpoint and parses the response int
          {
            "Effect": "Allow",
            "Action": "secretsmanager:GetSecretValue",
-           "Resource": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>"
+           "Resource": "arn:aws:secretsmanager:<region>:<account-id>:secret:<secret-name>"
          }
        ]
      }
@@ -244,8 +246,10 @@ This example calls a REST API to look up file metadata from an external catalog 
     "apiBase": "https://api.example.com/v1",
     "securityConfig": {
       "type": "ApiKey",
-      "secretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>",
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-MyRestLookup"
+      "apiKeyLocation": "header",
+      "headerName": "X-API-Key",
+      "secretArn": "arn:aws:secretsmanager:<region>:<account-id>:secret:<secret-name>",
+      "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-MyRestLookup"
     }
   },
   "triggers": [
@@ -305,8 +309,8 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
            "Effect": "Allow",
            "Principal": {
              "AWS": [
-               "<CONNECTOR_INVOCATION_ROLE_ARN>",
-               "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+               "<connector-invocation-role-arn>",
+               "<async-connector-invocation-role-arn>"
              ]
            },
            "Action": "sts:AssumeRole"
@@ -315,7 +319,7 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
      }
      ```
 
-     Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+     Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
      If you have AWS CLI access, you can find these values by running:
 
@@ -329,7 +333,7 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
        --query 'Configuration.Role' --output text
      ```
 
-     Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+     Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `dynamodb:GetItem` on the target table:
 
      ```
@@ -339,7 +343,7 @@ The `dynamodbLookup` operation performs a GetItem on a DynamoDB table and return
          {
            "Effect": "Allow",
            "Action": "dynamodb:GetItem",
-           "Resource": "arn:aws:dynamodb:<REGION>:<ACCOUNT_ID>:table/<TABLE_NAME>"
+           "Resource": "arn:aws:dynamodb:<region>:<account-id>:table/<table-name>"
          }
        ]
      }
@@ -359,14 +363,14 @@ This example looks up file metadata from a DynamoDB table using the filename as 
 
 ```
 {
+  "securityConfig": {
+    "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-MyDynamoDBLookup",
+    "type": "AssumeRole"
+  },
   "dynamodbConfig": {
     "tableName": "file-metadata-table",
     "partitionKey": "filename",
-    "region": "us-west-2",
-    "securityConfig": {
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-MyDynamoDBLookup",
-      "type": "AssumeRole"
-    }
+    "region": "us-west-2"
   },
   "triggers": [
     {
@@ -443,7 +447,7 @@ The following tables describe the configuration fields for the metadata derivati
 |  `dynamodbConfig.tableName`  | Yes (for `dynamodbLookup`) | DynamoDB table name. |
 |  `dynamodbConfig.partitionKey`  | Yes (for `dynamodbLookup`) | Partition key attribute name. |
 |  `dynamodbConfig.region`  | No | AWS Region of the DynamoDB table. |
-|  `dynamodbConfig.securityConfig`  | Yes (for `dynamodbLookup`) | Authentication configuration. Must use `AssumeRole` type. |
+|  `securityConfig`  | Yes (for `dynamodbLookup`) | Connector-level authentication configuration, a sibling of `dynamodbConfig`. Must use `AssumeRole` type. |
 
 ### Trigger-level derivation fields
 <a name="_trigger-level-derivation-fields"></a>

@@ -1313,6 +1313,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 17.5. For more i
 This release of Aurora PostgreSQL is compatible with PostgreSQL 17.4. For more information about the improvements in PostgreSQL 17.4, see [PostgreSQL release 17.4](https://www.postgresql.org/docs/17/release-17-4.html).
 
 **Topics**
++ [Aurora PostgreSQL 17.4.9, November 3, 2026](#aurorapostgresql-versions-version174x-1749)
 + [Aurora PostgreSQL 17.4.8, August 5, 2026](#aurorapostgresql-versions-version174x-1748)
 + [Aurora PostgreSQL 17.4.7, June 26, 2026](#aurorapostgresql-versions-version174x-1747)
 + [Aurora PostgreSQL 17.4.6, May 07, 2026](#aurorapostgresql-versions-version174x-1746)
@@ -1321,6 +1322,48 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 17.4. For more i
 + [Aurora PostgreSQL 17.4.3, June 03, 2025](#aurorapostgresql-versions-version1743x-1743)
 + [Aurora PostgreSQL 17.4.2, May 01, 2025](#aurorapostgresql-versions-version1742x-1742)
 + [Aurora PostgreSQL 17.4, May 01, 2025](#aurorapostgresql-versions-version174x-174)
+
+#### Aurora PostgreSQL 17.4.9, November 3, 2026
+<a name="aurorapostgresql-versions-version174x-1749"></a>
+
+**Critical stability enhancements**
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-6464](https://www.postgresql.org/support/security/CVE-2026-6464)
+  + [CVE-2026-6469](https://www.postgresql.org/support/security/CVE-2026-6469)
+  + [CVE-2026-6470](https://www.postgresql.org/support/security/CVE-2026-6470)
+  + [CVE-2026-6471](https://www.postgresql.org/support/security/CVE-2026-6471)
+  + [CVE-2026-14662](https://www.postgresql.org/support/security/CVE-2026-14662)
+  + [CVE-2026-14663](https://www.postgresql.org/support/security/CVE-2026-14663)
+  + [CVE-2026-14664](https://www.postgresql.org/support/security/CVE-2026-14664)
+  + [CVE-2026-14666](https://www.postgresql.org/support/security/CVE-2026-14666)
+  + [CVE-2026-14668](https://www.postgresql.org/support/security/CVE-2026-14668)
+  + [CVE-2026-14669](https://www.postgresql.org/support/security/CVE-2026-14669)
+  + [CVE-2026-14670](https://www.postgresql.org/support/security/CVE-2026-14670)
+  + [CVE-2026-14671](https://www.postgresql.org/support/security/CVE-2026-14671)
+  + [CVE-2026-14672](https://www.postgresql.org/support/security/CVE-2026-14672)
+  + [CVE-2026-14673](https://www.postgresql.org/support/security/CVE-2026-14673)
+  + [CVE-2026-14677](https://www.postgresql.org/support/security/CVE-2026-14677)
+  + [CVE-2026-14678](https://www.postgresql.org/support/security/CVE-2026-14678)
+  + [CVE-2026-14679](https://www.postgresql.org/support/security/CVE-2026-14679)
+  + [CVE-2026-14680](https://www.postgresql.org/support/security/CVE-2026-14680)
+  + [CVE-2026-14681](https://www.postgresql.org/support/security/CVE-2026-14681)
+  + [CVE-2026-15741](https://www.postgresql.org/support/security/CVE-2026-15741)
+  + [CVE-2026-15742](https://www.postgresql.org/support/security/CVE-2026-15742)
+  + [CVE-2026-16239](https://www.postgresql.org/support/security/CVE-2026-16239)
+  + [CVE-2026-16241](https://www.postgresql.org/support/security/CVE-2026-16241)
+  + [CVE-2026-18024](https://www.postgresql.org/support/security/CVE-2026-18024)
+  + [CVE-2026-18408](https://www.postgresql.org/support/security/CVE-2026-18408)
+
+**General enhancements**
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in connection handling of the Aurora Storage Daemon.
++ Fixed increased storage consumption by internal logging of the Aurora Storage Daemon.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Updated time zone data files to tzdata release 2026c.
 
 #### Aurora PostgreSQL 17.4.8, August 5, 2026
 <a name="aurorapostgresql-versions-version174x-1748"></a>
@@ -2475,6 +2518,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.9. For more i
 This release of Aurora PostgreSQL is compatible with PostgreSQL 16.8. For more information about the improvements in PostgreSQL 16.8, see [PostgreSQL release 16.8](https://www.postgresql.org/docs/16/release-16-8.html).
 
 **Topics**
++ [Aurora PostgreSQL 16.8.9, November 3, 2026](#aurorapostgresql-versions-version168x-1689)
 + [Aurora PostgreSQL 16.8.8, August 5, 2026](#aurorapostgresql-versions-version168x-1688)
 + [Aurora PostgreSQL 16.8.7, June 26, 2026](#aurorapostgresql-versions-version168x-1687)
 + [Aurora PostgreSQL 16.8.6, May 07, 2026](#aurorapostgresql-versions-version168x-1686)
@@ -2483,6 +2527,47 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.8. For more i
 + [Aurora PostgreSQL 16.8.3, June 03, 2025](#aurorapostgresql-versions-version1683x-1683)
 + [Aurora PostgreSQL 16.8.2, May 01, 2025](#aurorapostgresql-versions-version1682x-1682)
 + [Aurora PostgreSQL 16.8, April 07, 2025](#aurorapostgresql-versions-version168x-168)
+
+#### Aurora PostgreSQL 16.8.9, November 3, 2026
+<a name="aurorapostgresql-versions-version168x-1689"></a>
+
+**Critical stability enhancements**
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-6464](https://www.postgresql.org/support/security/CVE-2026-6464)
+  + [CVE-2026-6469](https://www.postgresql.org/support/security/CVE-2026-6469)
+  + [CVE-2026-6470](https://www.postgresql.org/support/security/CVE-2026-6470)
+  + [CVE-2026-6471](https://www.postgresql.org/support/security/CVE-2026-6471)
+  + [CVE-2026-14662](https://www.postgresql.org/support/security/CVE-2026-14662)
+  + [CVE-2026-14663](https://www.postgresql.org/support/security/CVE-2026-14663)
+  + [CVE-2026-14664](https://www.postgresql.org/support/security/CVE-2026-14664)
+  + [CVE-2026-14666](https://www.postgresql.org/support/security/CVE-2026-14666)
+  + [CVE-2026-14668](https://www.postgresql.org/support/security/CVE-2026-14668)
+  + [CVE-2026-14669](https://www.postgresql.org/support/security/CVE-2026-14669)
+  + [CVE-2026-14670](https://www.postgresql.org/support/security/CVE-2026-14670)
+  + [CVE-2026-14671](https://www.postgresql.org/support/security/CVE-2026-14671)
+  + [CVE-2026-14672](https://www.postgresql.org/support/security/CVE-2026-14672)
+  + [CVE-2026-14673](https://www.postgresql.org/support/security/CVE-2026-14673)
+  + [CVE-2026-14677](https://www.postgresql.org/support/security/CVE-2026-14677)
+  + [CVE-2026-14678](https://www.postgresql.org/support/security/CVE-2026-14678)
+  + [CVE-2026-14679](https://www.postgresql.org/support/security/CVE-2026-14679)
+  + [CVE-2026-14680](https://www.postgresql.org/support/security/CVE-2026-14680)
+  + [CVE-2026-15741](https://www.postgresql.org/support/security/CVE-2026-15741)
+  + [CVE-2026-15742](https://www.postgresql.org/support/security/CVE-2026-15742)
+  + [CVE-2026-16239](https://www.postgresql.org/support/security/CVE-2026-16239)
+  + [CVE-2026-16241](https://www.postgresql.org/support/security/CVE-2026-16241)
+  + [CVE-2026-18024](https://www.postgresql.org/support/security/CVE-2026-18024)
+  + [CVE-2026-18408](https://www.postgresql.org/support/security/CVE-2026-18408)
+
+**General enhancements**
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in connection handling of the Aurora Storage Daemon.
++ Fixed increased storage consumption by internal logging of the Aurora Storage Daemon.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Updated time zone data files to tzdata release 2026c.
 
 #### Aurora PostgreSQL 16.8.8, August 5, 2026
 <a name="aurorapostgresql-versions-version168x-1688"></a>
@@ -4241,6 +4326,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.13. For more 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 15.12. For more information about the improvements in PostgreSQL 15.12, see [PostgreSQL release 15.12](https://www.postgresql.org/docs/15/release-15-12.html).
 
 **Topics**
++ [Aurora PostgreSQL 15.12.9, November 3, 2026](#aurorapostgresql-versions-version1512x-15129)
 + [Aurora PostgreSQL 15.12.8, August 5, 2026](#aurorapostgresql-versions-version1512x-15128)
 + [Aurora PostgreSQL 15.12.7, June 26, 2026](#aurorapostgresql-versions-version1512x-15127)
 + [Aurora PostgreSQL 15.12.6, May 07, 2026](#aurorapostgresql-versions-version1512x-15126)
@@ -4249,6 +4335,46 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.12. For more 
 + [Aurora PostgreSQL 15.12.3, June 03, 2025](#aurorapostgresql-versions-version15123x-15123)
 + [Aurora PostgreSQL 15.12.2, May 01, 2025](#aurorapostgresql-versions-version15122x-15122)
 + [Aurora PostgreSQL 15.12, April 07, 2025](#aurorapostgresql-versions-version1512x-1512)
+
+#### Aurora PostgreSQL 15.12.9, November 3, 2026
+<a name="aurorapostgresql-versions-version1512x-15129"></a>
+
+**Critical stability enhancements**
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-6464](https://www.postgresql.org/support/security/CVE-2026-6464)
+  + [CVE-2026-6469](https://www.postgresql.org/support/security/CVE-2026-6469)
+  + [CVE-2026-6470](https://www.postgresql.org/support/security/CVE-2026-6470)
+  + [CVE-2026-6471](https://www.postgresql.org/support/security/CVE-2026-6471)
+  + [CVE-2026-14662](https://www.postgresql.org/support/security/CVE-2026-14662)
+  + [CVE-2026-14663](https://www.postgresql.org/support/security/CVE-2026-14663)
+  + [CVE-2026-14664](https://www.postgresql.org/support/security/CVE-2026-14664)
+  + [CVE-2026-14666](https://www.postgresql.org/support/security/CVE-2026-14666)
+  + [CVE-2026-14668](https://www.postgresql.org/support/security/CVE-2026-14668)
+  + [CVE-2026-14669](https://www.postgresql.org/support/security/CVE-2026-14669)
+  + [CVE-2026-14670](https://www.postgresql.org/support/security/CVE-2026-14670)
+  + [CVE-2026-14671](https://www.postgresql.org/support/security/CVE-2026-14671)
+  + [CVE-2026-14673](https://www.postgresql.org/support/security/CVE-2026-14673)
+  + [CVE-2026-14677](https://www.postgresql.org/support/security/CVE-2026-14677)
+  + [CVE-2026-14678](https://www.postgresql.org/support/security/CVE-2026-14678)
+  + [CVE-2026-14679](https://www.postgresql.org/support/security/CVE-2026-14679)
+  + [CVE-2026-14680](https://www.postgresql.org/support/security/CVE-2026-14680)
+  + [CVE-2026-15741](https://www.postgresql.org/support/security/CVE-2026-15741)
+  + [CVE-2026-15742](https://www.postgresql.org/support/security/CVE-2026-15742)
+  + [CVE-2026-16239](https://www.postgresql.org/support/security/CVE-2026-16239)
+  + [CVE-2026-16241](https://www.postgresql.org/support/security/CVE-2026-16241)
+  + [CVE-2026-18024](https://www.postgresql.org/support/security/CVE-2026-18024)
+  + [CVE-2026-18408](https://www.postgresql.org/support/security/CVE-2026-18408)
+
+**General enhancements**
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in connection handling of the Aurora Storage Daemon.
++ Fixed increased storage consumption by internal logging of the Aurora Storage Daemon.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Updated time zone data files to tzdata release 2026c.
 
 #### Aurora PostgreSQL 15.12.8, August 5, 2026
 <a name="aurorapostgresql-versions-version1512x-15128"></a>
@@ -6582,6 +6708,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.18. For more 
 This release of Aurora PostgreSQL is compatible with PostgreSQL 14.17. For more information about the improvements in PostgreSQL 14.17, see [PostgreSQL release 14.17](https://www.postgresql.org/docs/14/release-14-17.html).
 
 **Topics**
++ [Aurora PostgreSQL 14.17.9, November 3, 2026](#aurorapostgresql-versions-version1417x-14179)
 + [Aurora PostgreSQL 14.17.8, August 5, 2026](#aurorapostgresql-versions-version1417x-14178)
 + [Aurora PostgreSQL 14.17.7, June 26, 2026](#aurorapostgresql-versions-version1417x-14177)
 + [Aurora PostgreSQL 14.17.6, May 07, 2026](#aurorapostgresql-versions-version1417x-14176)
@@ -6590,6 +6717,46 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.17. For more 
 + [Aurora PostgreSQL 14.17.3, June 3, 2025](#aurorapostgresql-versions-version14173x-14173)
 + [Aurora PostgreSQL 14.17.2, May 01, 2025](#aurorapostgresql-versions-version14172x-14172)
 + [Aurora PostgreSQL 14.17, April 07, 2025](#aurorapostgresql-versions-version1417x-1417)
+
+#### Aurora PostgreSQL 14.17.9, November 3, 2026
+<a name="aurorapostgresql-versions-version1417x-14179"></a>
+
+**Critical stability enhancements**
++ HypoPG will only consider hypothetical indexes during EXPLAIN that were created by the current role.
++ Fixed an issue with index scan prefetch that could return duplicate rows, and increased I/O wait times.
+
+**High priority enhancements**
++ Backported fixes for the following PostgreSQL community security issues:
+  + [CVE-2026-6464](https://www.postgresql.org/support/security/CVE-2026-6464)
+  + [CVE-2026-6469](https://www.postgresql.org/support/security/CVE-2026-6469)
+  + [CVE-2026-6470](https://www.postgresql.org/support/security/CVE-2026-6470)
+  + [CVE-2026-6471](https://www.postgresql.org/support/security/CVE-2026-6471)
+  + [CVE-2026-14662](https://www.postgresql.org/support/security/CVE-2026-14662)
+  + [CVE-2026-14663](https://www.postgresql.org/support/security/CVE-2026-14663)
+  + [CVE-2026-14664](https://www.postgresql.org/support/security/CVE-2026-14664)
+  + [CVE-2026-14666](https://www.postgresql.org/support/security/CVE-2026-14666)
+  + [CVE-2026-14668](https://www.postgresql.org/support/security/CVE-2026-14668)
+  + [CVE-2026-14669](https://www.postgresql.org/support/security/CVE-2026-14669)
+  + [CVE-2026-14670](https://www.postgresql.org/support/security/CVE-2026-14670)
+  + [CVE-2026-14671](https://www.postgresql.org/support/security/CVE-2026-14671)
+  + [CVE-2026-14673](https://www.postgresql.org/support/security/CVE-2026-14673)
+  + [CVE-2026-14677](https://www.postgresql.org/support/security/CVE-2026-14677)
+  + [CVE-2026-14678](https://www.postgresql.org/support/security/CVE-2026-14678)
+  + [CVE-2026-14679](https://www.postgresql.org/support/security/CVE-2026-14679)
+  + [CVE-2026-14680](https://www.postgresql.org/support/security/CVE-2026-14680)
+  + [CVE-2026-15741](https://www.postgresql.org/support/security/CVE-2026-15741)
+  + [CVE-2026-15742](https://www.postgresql.org/support/security/CVE-2026-15742)
+  + [CVE-2026-16239](https://www.postgresql.org/support/security/CVE-2026-16239)
+  + [CVE-2026-16241](https://www.postgresql.org/support/security/CVE-2026-16241)
+  + [CVE-2026-18024](https://www.postgresql.org/support/security/CVE-2026-18024)
+  + [CVE-2026-18408](https://www.postgresql.org/support/security/CVE-2026-18408)
+
+**General enhancements**
++ Fixed an issue with reader instances, improving replica stability.
++ Fixed an issue that can cause a database instance to restart due to a memory management issue in connection handling of the Aurora Storage Daemon.
++ Fixed increased storage consumption by internal logging of the Aurora Storage Daemon.
++ Fixed an issue that can cause the database to restart when a storage configuration change occurs while a metadata synchronization operation is still in progress.
++ Updated time zone data files to tzdata release 2026c.
 
 #### Aurora PostgreSQL 14.17.8, August 5, 2026
 <a name="aurorapostgresql-versions-version1417x-14178"></a>

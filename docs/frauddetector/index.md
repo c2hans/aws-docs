@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/frauddetector/index.html
 title: 'Amazon Fraud Detector Documentation'
 canonical_url: https://docs.aws.amazon.com/frauddetector/
 source: aws-documentation
-generated_on: 2026-11-03
+generated_on: 2026-11-04
 ---
 
 # Amazon Fraud Detector Documentation

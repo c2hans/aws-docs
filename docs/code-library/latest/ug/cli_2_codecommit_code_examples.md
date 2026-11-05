@@ -156,8 +156,8 @@ The following `batch-disassociate-approval-rule-template-from-repositories` exam
 
 ```
 aws codecommit batch-disassociate-approval-rule-template-from-repositories \
-    --repository-names {{MyDemoRepo,}} {{MyOtherDemoRepo}}  \
-    --approval-rule-template-name {{1-approval-rule-for-all}} {{pull}} {{requests}}
+    --repository-names {{MyDemoRepo}} {{MyOtherDemoRepo}} \
+    --approval-rule-template-name {{1-approval-rule-for-all-pull-requests}}
 ```
 Output:
 
@@ -516,7 +516,7 @@ aws codecommit create-unreferenced-merge-commit \
     --destination-commit-specifier {{main}} \
     --merge-option {{THREE_WAY_MERGE}} \
     --repository-name {{MyDemoRepo}} \
-    --name {{"Maria Garcia"}} \
+    --author-name {{"Maria Garcia"}} \
     --email {{"maria_garcia@example.com"}} \
     --commit-message {{"Testing the results of this merge."}}
 ```
@@ -1067,7 +1067,7 @@ The following `get-comments-for-compared-commit` example displays comments made 
 ```
 aws codecommit get-comments-for-compared-commit \
     --repository-name {{MyDemoRepo}} \
-    --before-commit-ID {{6e147360EXAMPLE}} \
+    --before-commit-id {{6e147360EXAMPLE}} \
     --after-commit-id {{317f8570EXAMPLE}}
 ```
 Output:
@@ -1140,7 +1140,7 @@ The following `get-comments-for-pull-request` example displays comments for a pu
 aws codecommit get-comments-for-pull-request \
     --repository-name {{MyDemoRepo}} \
     --pull-request-id {{42}} \
-    --before-commit-ID {{317f8570EXAMPLE}} \
+    --before-commit-id {{317f8570EXAMPLE}} \
     --after-commit-id {{5d036259EXAMPLE}}
 ```
 Output:
@@ -2040,7 +2040,7 @@ aws codecommit merge-pull-request-by-squash \
     --repository-name {{MyDemoRepo}} \
     --conflict-detail-level {{LINE_LEVEL}} \
     --conflict-resolution-strategy {{ACCEPT_SOURCE}} \
-    --name {{"Jorge Souza"}} \
+    --author-name {{"Jorge Souza"}} \
     --email {{"jorge_souza@example.com"}} \
     --commit-message {{"Merging pull request 47 by squash and accepting source in merge conflicts"}}
 ```
@@ -2105,7 +2105,7 @@ aws codecommit merge-pull-request-by-three-way \
     --pull-request-id {{47}} \
     --source-commit-id {{99132ab0EXAMPLE}} \
     --repository-name {{MyDemoRepo}} \
-    --name {{"Maria Garcia"}} \
+    --author-name {{"Maria Garcia"}} \
     --email {{"maria_garcia@example.com"}} \
     --commit-message {{"Merging pull request 47 by three-way with default options"}}
 ```

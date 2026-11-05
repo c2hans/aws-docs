@@ -57,7 +57,15 @@ Pattern: `arn:aws:payment-cryptography:[a-z]{2}-[a-z]{1,16}-[0-9]+:[0-9]{12}:(ke
 Required: Yes
 
  ** [MacLength](#API_GenerateMac_RequestSyntax) **   <a name="paymentcryptographydata-GenerateMac-request-MacLength"></a>
-The length of a MAC under generation.
+The length of a MAC under generation. The unit and valid values depend on the MAC algorithm:
++  `ISO9797_ALGORITHM1`, `ISO9797_ALGORITHM3`, and `CMAC` with a TDES key: 8 or 16 hexadecimal characters.
++  `CMAC` with an AES key: 8, 16, or 32 hexadecimal characters.
++  `AS2805_4_1`: 8 hexadecimal characters.
++  `DukptCmac`, `DukptIso9797Algorithm1`, and `DukptIso9797Algorithm3`:
+  + TDES working key: 8 or 16 hexadecimal characters.
+  + AES working key: 8, 16, or 32 hexadecimal characters.
++  `EmvMac`: 4 or 8 bytes.
++ HMAC: this value is currently ignored. The MAC is always the full output of the hash algorithm: 56, 64, 96, or 128 hexadecimal characters for SHA-224, SHA-256, SHA-384, or SHA-512.
 Type: Integer
 Valid Range: Minimum value of 4. Maximum value of 32.
 Required: No

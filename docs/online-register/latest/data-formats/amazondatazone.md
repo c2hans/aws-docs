@@ -55,6 +55,7 @@ Amazon DataZone provides the following APIs for data retrieval.
 | <a name="datazone-GetNotebookCompute"></a>[GetNotebookCompute](${APIReferenceDocPage}API_GetNotebookCompute.html) | Get notebook compute | Read |
 | <a name="datazone-GetNotebookExport"></a>[GetNotebookExport](${APIReferenceDocPage}API_GetNotebookExport.html) | Get notebook exports | Read |
 | <a name="datazone-GetNotebookRun"></a>[GetNotebookRun](${APIReferenceDocPage}API_GetNotebookRun.html) | Get a notebook run | Read |
+| <a name="datazone-GetNotificationPreference"></a>[GetNotificationPreference](${APIReferenceDocPage}API_GetNotificationPreference.html) | Get a notification preference | Read |
 | <a name="datazone-GetProject"></a>[GetProject](${APIReferenceDocPage}API_GetProject.html) | Get Project details | Read |
 | <a name="datazone-GetProjectProfile"></a>[GetProjectProfile](${APIReferenceDocPage}API_GetProjectProfile.html) | Get project profile details | Read |
 | <a name="datazone-GetRule"></a>[GetRule](${APIReferenceDocPage}API_GetRule.html) | Get rule | Read |
@@ -63,6 +64,7 @@ Amazon DataZone provides the following APIs for data retrieval.
 | <a name="datazone-GetSubscriptionGrant"></a>[GetSubscriptionGrant](${APIReferenceDocPage}API_GetSubscriptionGrant.html) | Retireve a subscription grant | Read |
 | <a name="datazone-GetSubscriptionRequestDetails"></a>[GetSubscriptionRequestDetails](${APIReferenceDocPage}API_GetSubscriptionRequestDetails.html) | Reject a subscription request for a Data Asset | Read |
 | <a name="datazone-GetSubscriptionTarget"></a>[GetSubscriptionTarget](${APIReferenceDocPage}API_GetSubscriptionTarget.html) | Retireve details of subscription target | Read |
+| <a name="datazone-GetSystemTableExportConfiguration"></a>[GetSystemTableExportConfiguration](${APIReferenceDocPage}API_GetSystemTableExportConfiguration.html) | Get a system table export configuration | Read |
 | <a name="datazone-GetTimeSeriesDataPoint"></a>[GetTimeSeriesDataPoint](${APIReferenceDocPage}API_GetTimeSeriesDataPoint.html) | Get an existing TimeSeriesDataPoints in Amazon DataZone using its identifier | Read |
 | <a name="datazone-GetUIConfiguration"></a>[GetUIConfiguration](${APIReferenceDocPage}API_GetUIConfiguration.html) | Get a UI configuration | Read |
 | <a name="datazone-GetUpdateEligibility"></a>[GetUpdateEligibility](${APIReferenceDocPage}API_GetUpdateEligibility.html) | Get update eligibility status for project constructs | Read |
@@ -82,6 +84,7 @@ Amazon DataZone provides the following APIs for data retrieval.
 | <a name="datazone-ListDataSourceRunActivities"></a>[ListDataSourceRunActivities](${APIReferenceDocPage}API_ListDataSourceRunActivities.html) | List DataSource runs job's activities on Asset | List |
 | <a name="datazone-ListDataSourceRuns"></a>[ListDataSourceRuns](${APIReferenceDocPage}API_ListDataSourceRuns.html) | List DataSource runs job | List |
 | <a name="datazone-ListDataSources"></a>[ListDataSources](${APIReferenceDocPage}API_ListDataSources.html) | List existing DataSources | List |
+| <a name="datazone-ListDeployableEnvironmentBlueprints"></a>[ListDeployableEnvironmentBlueprints](${APIReferenceDocPage}API_ListDeployableEnvironmentBlueprints.html) | List deployable environment blueprints | List |
 | <a name="datazone-ListDesignations"></a>[ListDesignations](${APIReferenceDocPage}API_ListDesignations.html) | List designations | List |
 | <a name="datazone-ListDomainUnitsForParent"></a>[ListDomainUnitsForParent](${APIReferenceDocPage}API_ListDomainUnitsForParent.html) | List child domain units for a given parent domain unit | List |
 | <a name="datazone-ListDomains"></a>[ListDomains](${APIReferenceDocPage}API_ListDomains.html) | Retrieve all domains | List |

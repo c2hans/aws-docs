@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/microservice-extractor/index.html
 title: 'AWS Microservice Extractor for .NET Documentation'
 canonical_url: https://docs.aws.amazon.com/microservice-extractor/
 source: aws-documentation
-generated_on: 2026-11-03
+generated_on: 2026-11-04
 ---
 
 # AWS Microservice Extractor for .NET Documentation

@@ -64,7 +64,7 @@ Pattern: `[\.\-_/#A-Za-z0-9]+`
 Required: Yes
 
  ** [schedulerConfiguration](#API_CreateVirtualCluster_RequestSyntax) **   <a name="emroneks-CreateVirtualCluster-request-schedulerConfiguration"></a>
-The scheduler configuration (concurrency and queue limits) to apply to the virtual cluster at creation time. When omitted, no limits are applied.
+The scheduler configuration (concurrency and queue limits) to apply to the virtual cluster at creation time. If you omit this field, the service applies a default limit of 1,000 concurrent job runs and does not limit queue depth.
 Type: [SchedulerConfiguration](API_SchedulerConfiguration.md) object
 Required: No
 

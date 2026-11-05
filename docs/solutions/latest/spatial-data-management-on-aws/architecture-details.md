@@ -57,6 +57,6 @@ The numbered steps in the architecture diagram illustrate the complete workflow:
 
  **Step 14: Asset Processing** – Lambda functions invoke AWS Deadline Cloud to generate previews, extract additional metadata, convert formats, or perform other transformations on the spatial asset.
 
- **Step 15: Processing Results** – AWS Deadline Cloud stores processing results (previews, converted formats) back to Amazon S3, and Lambda functions publish completion events to EventBridge for downstream workflows.
+ **Step 15: Processing Results** – AWS Deadline Cloud writes processing results (previews, converted formats) to Amazon S3. Spatial Data Management on AWS records them as derived files and metadata on the asset version they were made from, and publishes completion events to EventBridge. Those events can start other connectors approved for the asset’s template.
 
 This flow demonstrates how Spatial Data Management on AWS uses serverless architecture for scalability, event-driven processing for automation, and direct S3 access for performance.

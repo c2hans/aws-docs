@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation since t
 
 | Date | Change | Description |
 | --- | --- | --- |
+| November 3, 2026 | [Repository content and external references](release-management-release-readiness-code-review.html#repository-content-and-external-references) | Added information about how release readiness code reviews handle content in connected repositories and external references, and how to restrict outbound network access during automatic verification testing. |
 | November 2, 2026 | [Content safety guardrail](aws-devops-agent-security.html#content-safety-guardrail) | Added a section about turning the content safety guardrail on or off for an Agent Space. |
 | October 27, 2026 | Datadog authentication and updates | The Datadog page now explains how to choose OAuth, an API key and application key, or an access token. It also shows how to update the credentials of a Datadog registration. For more information about these sections, see [Connecting Datadog](connecting-telemetry-sources-connecting-datadog.html). |
 | October 14, 2026 | [Connecting Microsoft Teams](connecting-to-ticketing-and-chat-connecting-microsoft-teams.html) | Added a page for connecting Microsoft Teams. Covers registering Microsoft Teams with administrator consent and bot account authorization, associating a channel with an Agent Space using a channel link, adding the AWS DevOps Agent app to a team and to private or shared channels, verifying the welcome message, viewing investigation results, removing an association, and troubleshooting. |

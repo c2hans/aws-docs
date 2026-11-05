@@ -9,6 +9,7 @@ The following table lists new features, improvements, and fixes for AWS DevOps A
 
 | Date | Change | Description |
 | --- | --- | --- |
+| November 3, 2026 | [Repository content and external references](release-management-release-readiness-code-review.html#repository-content-and-external-references) | Added information about how release readiness code reviews handle content in connected repositories and external references, and how to restrict outbound network access during automatic verification testing. |
 | November 2, 2026 | [Turn the content safety guardrail on or off for each Agent Space](aws-devops-agent-security.html#content-safety-guardrail) | You can now turn the AWS managed content safety guardrail on or off for each Agent Space. The guardrail is on by default. |
 | November 2, 2026 | Chats list filter | The View all chats list now has an All filter that shows every chat in your Agent Space. See [Accessing Chat](working-with-devops-agent-on-demand-devops-tasks.html#accessing-chat). |
 | October 30, 2026 | [Connecting Splunk](connecting-telemetry-sources-connecting-splunk.html) | The Splunk administrator steps now list the permissions that the mcp\_user role needs. The guide previously said that the role needs no capabilities. |

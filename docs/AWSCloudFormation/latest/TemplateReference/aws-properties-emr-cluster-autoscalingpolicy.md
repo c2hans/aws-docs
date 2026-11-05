@@ -41,10 +41,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 The upper and lower Amazon EC2 instance limits for an automatic scaling policy. Automatic scaling activity will not cause an instance group to grow above or below these limits.
 *Required*: Yes
 *Type*: [ScalingConstraints](aws-properties-emr-cluster-scalingconstraints.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Rules`  <a name="cfn-emr-cluster-autoscalingpolicy-rules"></a>
 The scale-in and scale-out rules that comprise the automatic scaling policy.
 *Required*: Yes
 *Type*: Array of [ScalingRule](aws-properties-emr-cluster-scalingrule.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

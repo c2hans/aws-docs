@@ -39,6 +39,9 @@ The following general limitations apply to blue/green deployments:
   + Cascading read replicas
   + Cross-Region read replicas
   + CloudFormation
+  + Capacity Reservations
+
+    You can't specify a Capacity Reservation when you create a blue/green deployment, and the DB instances in the green environment don't draw from a reservation. For more information about Capacity Reservations, see [Amazon RDS On-Demand Capacity Reservations](capacity-reservations.md).
   + Multi-AZ DB cluster deployments
 
     Blue/green deployments are supported for Multi-AZ DB instance deployments. For more information about Multi-AZ deployments, see [Configuring and managing a Multi-AZ deployment for Amazon RDS](Concepts.MultiAZ.md).

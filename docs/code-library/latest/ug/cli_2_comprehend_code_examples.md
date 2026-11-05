@@ -3502,11 +3502,9 @@ The following `start-dominant-language-detection-job` example starts an asynchro
 ```
 aws comprehend start-dominant-language-detection-job \
     --job-name {{example_language_analysis_job}} \
-    --language-code {{en}} \
     --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/"}} \
     --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
-    --language-code {{en}}
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}}
 ```
 Contents of `Sampletext1.txt`:
 
@@ -4935,11 +4933,9 @@ The following `start-topics-detection-job` example starts an asynchronous topics
 ```
 aws comprehend start-topics-detection-job \
     --job-name {{example_topics_detection_job}} \
-    --language-code {{en}} \
     --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/"}} \
     --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
-    --language-code {{en}}
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}}
 ```
 Output:
 
@@ -5233,7 +5229,7 @@ The following `update-endpoint` example updates information about an endpoint. I
 ```
 aws comprehend update-endpoint \
     --endpoint-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint}} \
-    --active-model-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier-new}}
+    --desired-model-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier-new}}
 ```
 This command produces no output.
 For more information, see [Managing Amazon Comprehend endpoints](https://docs.aws.amazon.com/comprehend/latest/dg/manage-endpoints.html) in the *Amazon Comprehend Developer Guide*.

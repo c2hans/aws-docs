@@ -101,6 +101,13 @@ rules:
     - get
     - list
 - apiGroups:
+    - networking.k8s.io
+  resources:
+    - ingresses
+  verbs:
+    - get
+    - list
+- apiGroups:
     - policy
   resources:
     - poddisruptionbudgets

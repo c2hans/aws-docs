@@ -11,11 +11,11 @@ This section introduces the fundamental concepts of the Spatial Data Management 
 <a name="what-is-spatial-data-management-on-aws"></a>
 
 Spatial Data Management on AWS is a solution for managing large-scale spatial data assets such as point clouds, 3D models, and geospatial imagery. It provides:
-+  **Centralized Storage** – Secure storage and organization of spatial data in Amazon Simple Storage Service (Amazon S3)
-+  **Metadata Management** – Rich metadata and search capabilities for spatial assets
++  **Versioned assets** – Each dataset is an asset with a complete version history. Metadata and derived files are recorded on the version they describe.
++  **Lineage** – Derived files and assets record what they were made from.
++  **Metadata Management** – Rich metadata, validated by asset templates, with full-text and geospatial search
 +  **Access Control** – Fine-grained permissions for users and teams
-+  **Integration** – Connectors for external systems and workflows
-+  **Versioning** – Complete version history for all assets
++  **Governed integration** – Connectors, configured rather than coded, and approved for each asset template
 
 ## Resource Model
 <a name="resource-model"></a>
@@ -51,7 +51,13 @@ Files represent individual data items stored using content-addressable storage, 
 
  **Connectors**
 
-Connectors enable configuration-driven integration between the solution and external systems. They support multiple integration patterns including Content Derivers, Publishers, and Bi-directional synchronization.
+Connectors integrate SDMA with external systems through configuration rather than code. A connector can publish content outward, derive content and metadata inward, or do both.
+
+A single connector can run a multi-step workflow. Its steps call REST APIs, AWS Lambda functions, AWS Deadline Cloud jobs, Amazon S3, and Amazon EventBridge in sequence, and pass values from one step to the next. For example, one connector can start a model training job, wait hours for it to finish without holding compute, and register the trained model as a new asset with its evaluation results. Steps can also run once for each file in an asset, so one connector can send every file to an external system and turn each result into an asset of its own.
+
+Connectors act on assets, not on storage. An asset is a versioned, template-validated, permissioned record. It represents content in SDMA’s content store.
+
+A connector reads asset versions and writes its results back as new versions, metadata, derived files, and new assets. Each result is traceable to the run that produced it. Every change to an asset is a lifecycle event, so connectors also compose through the asset record: one connector’s output is another’s trigger. For more information about connectors, see [Connectors](connectors.md).
 
 ## Next Steps
 <a name="_next-steps"></a>

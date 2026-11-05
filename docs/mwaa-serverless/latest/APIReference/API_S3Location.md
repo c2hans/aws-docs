@@ -23,7 +23,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
 
  ** VersionId **   <a name="mwaaserverless-Type-S3Location-VersionId"></a>
-The version ID of the object in Amazon S3. If not specified, the latest version is used.
+Specifies the version ID of the object in Amazon S3. If you don't specify a version, we use the latest version.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No

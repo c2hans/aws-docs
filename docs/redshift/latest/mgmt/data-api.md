@@ -41,8 +41,6 @@ Consider the following when calling the Data API:
 + The maximum retention time for query results is 24 hours.
 + The maximum query statement size is 200 KB.
 + The Data API is available to query all Serverless workgroups, and Provisioned single-node and multiple-node clusters of the following node types:
-  + dc2.large
-  + dc2.8xlarge
   + rg.large
   + rg.xlarge
   + rg.4xlarge

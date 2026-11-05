@@ -21,7 +21,7 @@ Required: No
  ** x509CertificateData **   <a name="rolesanywhere-Type-SourceData-x509CertificateData"></a>
 The PEM-encoded data for the certificate anchor. Included for trust anchors of type `CERTIFICATE_BUNDLE`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 8000.
+Length Constraints: Minimum length of 1. Maximum length of 204800.
 Required: No
 
 ## See Also

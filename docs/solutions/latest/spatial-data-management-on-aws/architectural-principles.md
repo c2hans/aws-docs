@@ -17,6 +17,11 @@ The architecture separates data storage (Amazon S3), business logic (Amazon API 
 
 Files are stored by content hash with automatic deduplication across assets, ensuring efficient storage and immutable file references.
 
+## Version-Bound Results
+<a name="version-bound-results"></a>
+
+Metadata and derived files are recorded on the asset version they describe. Writes from one connector run are coalesced, so they land together on that version, and a later upload does not detach a result from its source.
+
 ## Event-Driven Architecture
 <a name="event-driven-architecture"></a>
 

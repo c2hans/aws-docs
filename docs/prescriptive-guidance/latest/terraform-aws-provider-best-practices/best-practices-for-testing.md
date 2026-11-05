@@ -38,7 +38,7 @@ run "uppercase_name_rejected" {
 
 To test a failed precondition or `check` block, list the resource or `check.<name>` in `expect_failures`. A run that fails more than one condition must list all of them.
 
-In Terraform 1.17 and later, `mock_provider` also accepts `mock_ephemeral` blocks. With them, unit tests can run configurations that read secrets through ephemeral resources, such as the example in [Keep secrets out of state](https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-aws-provider-best-practices/security.html#secrets), without calling the AWS provider. Set `secret_string` in a `mock_ephemeral "aws_secretsmanager_secret_version"` block.
+In Terraform 1.17 and later, `mock_provider` also accepts `mock_ephemeral` blocks. With them, unit tests can run configurations that read secrets through ephemeral resources, such as the example in [Keep secrets out of state](https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-aws-provider-best-practices/security.html#keep-secrets-out-of-state), without calling the AWS provider. Set `secret_string` in a `mock_ephemeral "aws_secretsmanager_secret_version"` block.
 
 ## Write integration tests
 <a name="write-integration-tests"></a>

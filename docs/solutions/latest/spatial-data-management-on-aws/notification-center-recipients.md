@@ -13,6 +13,6 @@ Recipients are resolved at delivery time. You can specify users, groups, or proj
 | --- | --- |
 | User | A specific portal user, identified by their account ID. |
 | Group | A user group. Members are resolved dynamically at send time. |
-| Role | A project role (`OWNER`, `MANAGER`, or `VIEWER`). All users with that role in the asset’s project receive the notification. |
+| Role | A project role (`OWNER`, `MANAGER`, `CONTRIBUTOR`, or `VIEWER`). All users with that role in the asset’s project receive the notification. |
 
 Recipients are validated as resource members at rule creation time and re-checked at delivery time. Non-members are silently skipped.

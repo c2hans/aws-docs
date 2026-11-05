@@ -40,10 +40,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 An array of Amazon EBS volume specifications attached to a cluster instance.
 *Required*: No
 *Type*: Array of [EbsBlockDeviceConfig](aws-properties-emr-cluster-ebsblockdeviceconfig.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `EbsOptimized`  <a name="cfn-emr-cluster-ebsconfiguration-ebsoptimized"></a>
 Indicates whether an Amazon EBS volume is EBS-optimized. The default is false. You should explicitly set this value to true to enable the Amazon EBS-optimized setting for an EC2 instance.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

@@ -55,7 +55,7 @@ This command produces no output.
 The following `add-thing-to-billing-group` example adds a thing with a specified ARN to a billing group with the specified ARN. Specifying an ARN is helpful if you work with multiple AWS Regions or accounts. It can help ensure that you are adding to the right Region and account.
 
 ```
-aws iot add-thing-to-thing-group \
+aws iot add-thing-to-billing-group \
     --billing-group-arn {{"arn:aws:iot:us-west-2:123456789012:billinggroup/GroupOne"}} \
     --thing-arn {{"arn:aws:iot:us-west-2:123456789012:thing/MyOtherLightBulb"}}
 ```
@@ -1466,8 +1466,7 @@ The following `delete-domain-configuration` example deletes a domain configurati
 
 ```
 aws iot delete-domain-configuration \
-    --domain-configuration-name {{"additionalDataDomain"}} \
-    --domain-configuration-status {{"OK"}}
+    --domain-configuration-name {{"additionalDataDomain"}}
 ```
 This command produces no output.
 For more information, see [Configurable Endpoints](https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-endpoints-configurable-aws.html) in the *AWS IoT Developer Guide*.
@@ -2011,37 +2010,23 @@ The following code example shows how to use `describe-audit-suppression`.
 
 **AWS CLI**
 **To get details about an audit finding suppression**
-The following `describe-audit-suppression` example lists details about an audit finding suppression.
+The following `describe-audit-suppression` example gets details about the audit finding suppression for an expiring device certificate.
 
 ```
-aws iot describe-audit-task \
-    --task-id {{"787ed873b69cb4d6cdbae6ddd06996c5"}}
+aws iot describe-audit-suppression \
+    --check-name {{DEVICE_CERTIFICATE_EXPIRING_CHECK}} \
+    --resource-identifier {{deviceCertificateId=c7691e8b4a5f7d9e8c6b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d}}
 ```
 Output:
 
 ```
 {
-    "taskStatus": "COMPLETED",
-    "taskType": "SCHEDULED_AUDIT_TASK",
-    "taskStartTime": 1596168096.157,
-    "taskStatistics": {
-        "totalChecks": 1,
-        "inProgressChecks": 0,
-        "waitingForDataCollectionChecks": 0,
-        "compliantChecks": 0,
-        "nonCompliantChecks": 1,
-        "failedChecks": 0,
-        "canceledChecks": 0
+    "checkName": "DEVICE_CERTIFICATE_EXPIRING_CHECK",
+    "resourceIdentifier": {
+        "deviceCertificateId": "c7691e8b4a5f7d9e8c6b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d"
     },
-    "scheduledAuditName": "AWSIoTDeviceDefenderDailyAudit",
-    "auditDetails": {
-        "DEVICE_CERTIFICATE_EXPIRING_CHECK": {
-            "checkRunStatus": "COMPLETED_NON_COMPLIANT",
-            "checkCompliant": false,
-            "totalResourcesCount": 195,
-            "nonCompliantResourcesCount": 2
-        }
-    }
+    "expirationDate": "2020-08-20T00:00:00+00:00",
+    "suppressIndefinitely": false
 }
 ```
 For more information, see [Audit finding suppressions](https://docs.aws.amazon.com/iot/latest/developerguide/audit-finding-suppressions.html) in the *AWS IoT Developers Guide*.
@@ -6243,44 +6228,15 @@ For more information, see [Managing Thing Indexing](https://docs.aws.amazon.com/
 The following code example shows how to use `update-job`.
 
 **AWS CLI**
-**To get detailed status for a job**
-The following `update-job` example gets detailed status for the job whose ID is `example-job-01`.
+**To update a job**
+The following `update-job` example updates the description of the job whose ID is `example-job-01`.
 
 ```
-aws iot describe-job \
-    --job-id {{"example-job-01"}}
+aws iot update-job \
+    --job-id {{"example-job-01"}} \
+    --description {{"example job test"}}
 ```
-Output:
-
-```
-{
-    "job": {
-        "jobArn": "arn:aws:iot:us-west-2:123456789012:job/example-job-01",
-        "jobId": "example-job-01",
-        "targetSelection": "SNAPSHOT",
-        "status": "IN_PROGRESS",
-        "targets": [
-            "arn:aws:iot:us-west-2:123456789012:thing/MyRaspberryPi"
-        ],
-        "description": "example job test",
-        "presignedUrlConfig": {},
-        "jobExecutionsRolloutConfig": {},
-        "createdAt": 1560787022.733,
-        "lastUpdatedAt": 1560787026.294,
-        "jobProcessDetails": {
-            "numberOfCanceledThings": 0,
-            "numberOfSucceededThings": 0,
-            "numberOfFailedThings": 0,
-            "numberOfRejectedThings": 0,
-            "numberOfQueuedThings": 1,
-            "numberOfInProgressThings": 0,
-            "numberOfRemovedThings": 0,
-            "numberOfTimedOutThings": 0
-        },
-        "timeoutConfig": {}
-    }
-}
-```
+This command produces no output.
 For more information, see [Creating and Managing Jobs (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/manage-job-cli.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [UpdateJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-job.html) in *AWS CLI Command Reference*.
 

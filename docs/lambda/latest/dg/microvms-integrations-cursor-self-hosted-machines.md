@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/microvms-integrations-c
 
 You can use AWS Lambda MicroVMs as self-hosted machines for your Cursor Cloud Agents, keeping repositories, tool execution, and network access in infrastructure you control. Cursor hosts the agent loop and model; the Lambda MicroVM is where the worker claims pool requests and runs tool calls. With this pattern, you control the execution environment – what is installed in the image, what network access is available, and what AWS resources the worker's IAM role can reach.
 
-Each MicroVM is a Firecracker-isolated virtual machine with snapshot-based startup, runs for up to 8 hours, and is terminated when the session ends. Sessions never share state. You get the security boundary of a VM with the operational model of serverless – no clusters to manage, no idle pool capacity to pay for. You orchestrate MicroVMs with a scheduled controller Lambda function that responds to pending pool requests. Review the [Run self-hosted machines for Cursor Cloud Agents on AWS Lambda MicroVMs](https://github.com/anysphere/aws-lambda-workers) reference template for more detail.
+Each MicroVM is a Firecracker-isolated virtual machine with snapshot-based startup, runs for up to 8 hours, and is terminated when the session ends. Sessions never share state. You get the security boundary of a VM with the operational model of serverless – no clusters to manage, no idle pool capacity to pay for. You orchestrate MicroVMs with a scheduled controller Lambda function that responds to pending pool requests. Review the [Run self-hosted machines for Cursor Cloud Agents on Lambda MicroVMs](https://github.com/anysphere/aws-lambda-workers) reference template for more detail.
 
 ## How it works
 <a name="microvms-integrations-cursor-self-hosted-machines-how-it-works"></a>
@@ -24,7 +24,7 @@ A scheduled controller launches one MicroVM per pending pool request:
 
 1. When the session is idle past the release timeout, the worker releases and the MicroVM terminates.
 
-Your Cursor service-account API key is stored in AWS Systems Manager Parameter Store as a `SecureString`. The controller and the MicroVM read it at runtime through `ssm:GetParameter`; the key is never baked into the image.
+Your Cursor service-account API key is stored in Systems Manager Parameter Store as a `SecureString`. The controller and the MicroVM read it at runtime through `ssm:GetParameter`; the key is never baked into the image.
 
 ## Key properties
 <a name="microvms-integrations-cursor-self-hosted-machines-properties"></a>
@@ -128,7 +128,7 @@ aws logs tail /aws/lambda/microvms/cursor-pool-worker --follow
 aws lambda-microvms list-microvms --image-identifier cursor-pool-worker
 ```
 
-## Troubleshooting
+## Troubleshoot Cursor MicroVM workers
 <a name="microvms-integrations-cursor-self-hosted-machines-troubleshooting"></a>
 
 | Symptom | Cause |
@@ -142,7 +142,7 @@ aws lambda-microvms list-microvms --image-identifier cursor-pool-worker
 
 ## Related resources
 <a name="microvms-integrations-cursor-self-hosted-machines-related"></a>
-+ [AWS Lambda MicroVMs](https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html)
++ [AWS Lambda MicroVMs](lambda-microvms-guide.md)
 + [RunMicrovm CLI reference](https://docs.aws.amazon.com/cli/latest/reference/lambda-microvms/run-microvm.html)
 + [Cursor self-hosted machines Quickstart](https://cursor.com/docs/cloud-agent/bring-your-own-machine)
 + Reference template: [anysphere/aws-lambda-workers](https://github.com/anysphere/aws-lambda-workers)

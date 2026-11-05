@@ -23,7 +23,7 @@ The secret must be in the **same AWS region** as the SDMA deployment. Cross-regi
        {
          "Effect": "Allow",
          "Action": "secretsmanager:GetSecretValue",
-         "Resource": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>"
+         "Resource": "arn:aws:secretsmanager:<region>:<account-id>:secret:<secret-name>"
        }
      ]
    }
@@ -44,7 +44,7 @@ No additional setup required. The notification inbox is available automatically 
 
 1. Associate the connector to one or more asset templates by adding its ID to the template’s `permittedConnectorIds` list.
 
-1. The rule is now active. When an asset created from one of those templates fires a matching lifecycle event, SDMA delivers the notification.
+1. The rule is now active. When an asset created from one of those templates raises a matching lifecycle event, the recipients receive the notification.
 
 Every delivery is recorded as a connector invocation — visible in the portal with status, timestamp, and result.
 
@@ -63,8 +63,8 @@ For example, to send both a Slack message and an in-app notification when an ass
 
 Each connector is dispatched independently — if the Slack delivery fails and retries, the in-app delivery is unaffected.
 
-## Example: alert owners when an asset enters a failed state (Slack)
-<a name="_example-alert-owners-when-an-asset-enters-a-failed-state-slack"></a>
+## Example – alert owners when an asset fails quality checks (Slack)
+<a name="_example-alert-owners-when-an-asset-fails-quality-checks-slack"></a>
 
 ```
 {
@@ -80,18 +80,18 @@ Each connector is dispatched independently — if the Slack delivery fails and r
       "channels": [
         {
           "type": "slack",
-          "webhookUrlSecretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>"
+          "webhookUrlSecretArn": "arn:aws:secretsmanager:<region>:<account-id>:secret:<secret-name>"
         }
       ],
       "messages": {
-        "asset": ["Asset ${asset.assetName} entered ${asset.state} — ${eventName}"]
+        "asset": ["Asset ${asset.assetName} failed QC — ${eventName}"]
       }
     },
     "triggers": [
       {
         "resources": ["asset"],
-        "events": ["stateChange"],
-        "filter": {"stateFilter": ["ERROR", "FAILED"]},
+        "events": ["update"],
+        "filter": {"asset": {"metadataAttributes": {"qcStatus": "failed"}}},
         "steps": [{"stepType": "notification"}]
       }
     ]
@@ -99,7 +99,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
 }
 ```
 
-## Example: in-app notification when a new asset is created
+## Example – in-app notification when a new asset is created
 <a name="_example-in-app-notification-when-a-new-asset-is-created"></a>
 
 ```
@@ -129,7 +129,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
 }
 ```
 
-## Example: multi-channel delivery (two rules, one template)
+## Example – multi-channel delivery (two rules, one template)
 <a name="_example-multi-channel-delivery-two-rules-one-template"></a>
 
 Create two connectors — one per channel — and associate both to the same template:
@@ -143,9 +143,9 @@ Create two connectors — one per channel — and associate both to the same tem
   "connectorConfig": {
     "notificationConfig": {
       "recipients": [{"role": "OWNER"}],
-      "channels": [{"type": "slack", "webhookUrlSecretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SLACK_SECRET>"}],
+      "channels": [{"type": "slack", "webhookUrlSecretArn": "arn:aws:secretsmanager:<region>:<account-id>:secret:<slack-secret>"}]
     },
-    "triggers": [{"resources": ["asset"], "events": ["stateChange"], "filter": {"stateFilter": ["FAILED"]}, "steps": [{"stepType": "notification"}]}]
+    "triggers": [{"resources": ["asset"], "events": ["update"], "filter": {"asset": {"metadataAttributes": {"qcStatus": "failed"}}}, "steps": [{"stepType": "notification"}]}]
   }
 }
 
@@ -157,9 +157,9 @@ Create two connectors — one per channel — and associate both to the same tem
   "connectorConfig": {
     "notificationConfig": {
       "recipients": [{"role": "OWNER"}],
-      "channels": [{"type": "inApp"}],
+      "channels": [{"type": "inApp"}]
     },
-    "triggers": [{"resources": ["asset"], "events": ["stateChange"], "filter": {"stateFilter": ["FAILED"]}, "steps": [{"stepType": "notification"}]}]
+    "triggers": [{"resources": ["asset"], "events": ["update"], "filter": {"asset": {"metadataAttributes": {"qcStatus": "failed"}}}, "steps": [{"stepType": "notification"}]}]
   }
 }
 ```

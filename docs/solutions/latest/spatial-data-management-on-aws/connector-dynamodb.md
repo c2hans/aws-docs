@@ -11,6 +11,8 @@ DynamoDB connectors are well suited for per-file metadata enrichment where each 
 
 DynamoDB is a derive-only connector type. It does not yet have a step type in the trigger\+steps model and cannot be used as a publisher.
 
+Filters, `output` blocks, and `${…​}` variables work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), and [Variable substitution](connector-configuration.md#variable-substitution).
+
 ## Roles
 <a name="dynamodb-roles"></a>
 
@@ -36,8 +38,8 @@ DynamoDB is a derive-only connector type. It does not yet have a step type in th
            "Effect": "Allow",
            "Principal": {
              "AWS": [
-               "<CONNECTOR_INVOCATION_ROLE_ARN>",
-               "<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>"
+               "<connector-invocation-role-arn>",
+               "<async-connector-invocation-role-arn>"
              ]
            },
            "Action": "sts:AssumeRole"
@@ -46,7 +48,7 @@ DynamoDB is a derive-only connector type. It does not yet have a step type in th
      }
      ```
 
-     Replace `<CONNECTOR_INVOCATION_ROLE_ARN>` and `<ASYNC_CONNECTOR_INVOCATION_ROLE_ARN>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
+     Replace `<connector-invocation-role-arn>` and `<async-connector-invocation-role-arn>` with the execution role ARNs of the connector invocation Lambda functions in your SDMA deployment.
 
      If you have AWS CLI access, you can find these values by running:
 
@@ -60,7 +62,7 @@ DynamoDB is a derive-only connector type. It does not yet have a step type in th
        --query 'Configuration.Role' --output text
      ```
 
-     Alternatively, in the [Lambda console](https://console.aws.amazon.com/lambda/), open the `SpatialDataManagement-ConnectorInvocationFunction` and `SpatialDataManagement-ConnectorInvocationAsyncFunction` functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<ACCOUNT_ID>:role/<CONNECTOR_INVOCATION_ROLE_NAME>`).
+     Alternatively, in the AWS Lambda console, open the [SpatialDataManagement-ConnectorInvocationFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationFunction) and [SpatialDataManagement-ConnectorInvocationAsyncFunction](https://console.aws.amazon.com/lambda/home#/functions/SpatialDataManagement-ConnectorInvocationAsyncFunction) functions and find the role name for each under **Configuration** > **Permissions**. Use these names to construct the full ARNs (for example, `arn:aws:iam::<account-id>:role/<connector-invocation-role-name>`).
    +  **Permissions policy** must grant `dynamodb:GetItem` on the target table:
 
      ```
@@ -70,7 +72,7 @@ DynamoDB is a derive-only connector type. It does not yet have a step type in th
          {
            "Effect": "Allow",
            "Action": "dynamodb:GetItem",
-           "Resource": "arn:aws:dynamodb:<REGION>:<ACCOUNT_ID>:table/<TABLE_NAME>"
+           "Resource": "arn:aws:dynamodb:<region>:<account-id>:table/<table-name>"
          }
        ]
      }
@@ -88,19 +90,19 @@ The partition key value can be resolved in two ways:
 +  **Explicit** — set `dynamodbConfig.partitionKeyValue` to a template string (for example, `${asset.assetId}`).
 +  **From match config** — if `partitionKeyValue` is omitted, the value is derived from the `applyTo.match.target` field. For example, if `match.target` is `file.path:basename`, the file’s basename is used as the partition key value.
 
-### Example: enrich file metadata from a DynamoDB table
+### Example – enrich file metadata from a DynamoDB table
 <a name="_example-enrich-file-metadata-from-a-dynamodb-table"></a>
 
 ```
 {
+  "securityConfig": {
+    "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-DynamoDBLookup",
+    "type": "AssumeRole"
+  },
   "dynamodbConfig": {
-    "tableName": "<TABLE_NAME>",
+    "tableName": "<table-name>",
     "partitionKey": "filename",
-    "region": "us-west-2",
-    "securityConfig": {
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-DynamoDBLookup",
-      "type": "AssumeRole"
-    }
+    "region": "us-west-2"
   },
   "fieldMappings": [
     { "source": "processing_notes", "target": "file.processing_notes" },
@@ -140,19 +142,19 @@ For full details on the lookup-derivation model and `applyTo` matching, see [Met
 
 A DynamoDB connector can serve values from a table as selectable options in the Spatial Data Portal. This uses the connector-level `fieldMappings` \+ `ddbConfig` shorthand — no triggers, no `resources` block.
 
-### Example: serve classification values from DynamoDB for template authoring
+### Example – serve classification values from DynamoDB for template authoring
 <a name="_example-serve-classification-values-from-dynamodb-for-template-authoring"></a>
 
 ```
 {
+  "securityConfig": {
+    "assumeRoleArn": "arn:aws:iam::<account-id>:role/SpatialDataManagementContentDerivation-FieldProvider",
+    "type": "AssumeRole"
+  },
   "ddbConfig": {
-    "tableName": "<TABLE_NAME>",
+    "tableName": "<table-name>",
     "partitionKey": "category",
-    "region": "us-west-2",
-    "securityConfig": {
-      "assumeRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-FieldProvider",
-      "type": "AssumeRole"
-    }
+    "region": "us-west-2"
   },
   "fieldMappings": [
     { "source": "classification", "target": "asset.classification" },
@@ -176,7 +178,7 @@ Field mappings can include an `options` object to declare cascading dependencies
 |  `dynamodbConfig.tableName` (or `ddbConfig.tableName`) | Yes | DynamoDB table name. |
 |  `dynamodbConfig.partitionKey` (or `ddbConfig.partitionKey`) | Yes | Partition key attribute name. |
 |  `dynamodbConfig.region` (or `ddbConfig.region`) | No | AWS Region of the DynamoDB table. |
-|  `dynamodbConfig.securityConfig` (or `ddbConfig.securityConfig`) | Yes | Authentication configuration. Must use `AssumeRole` type. |
+|  `securityConfig`  | Yes | Connector-level authentication configuration, a sibling of `dynamodbConfig` (or `ddbConfig`). Must use `AssumeRole` type. |
 
 ### Trigger-level derivation fields
 <a name="_trigger-level-derivation-fields"></a>

@@ -13,4 +13,4 @@ For more information about this product, go to the [AWS Elastic Beanstalk](http:
 
 For a list of region-specific endpoints that AWS Elastic Beanstalk supports, go to [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#elasticbeanstalk_region) in the *Amazon Web Services Glossary*.
 
-This document was last published on November 3, 2026.
+This document was last published on November 4, 2026.

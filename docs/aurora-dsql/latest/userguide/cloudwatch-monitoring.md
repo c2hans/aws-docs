@@ -46,7 +46,8 @@ Aurora DSQL also publishes the following metrics under the AWS/Usage namespace. 
 | MultiRegionWriteDPU | Multi-Region Write Units | <cluster-id> | DPU | Applicable for Multi-Region clusters: Approximates the multi-Region write active-use component of your Aurora DSQL cluster DPU usage. |
 | ReadDPU | Read Units | <cluster-id> | DPU | Approximates the read active-use component of your Aurora DSQL cluster DPU usage. |
 | ComputeDPU | Compute Units | <cluster-id> | DPU | Approximates the compute active-use component of your Aurora DSQL cluster DPU usage. |
-| TotalDPU | Total Units | <cluster-id> | DPU | Approximates the total active-use component of your Aurora DSQL cluster DPU usage. |
+| StreamDPU | Stream Units | <cluster-id> | DPU | Applicable for clusters with CDC streams: Approximates the CDC streaming active-use component of your Aurora DSQL cluster DPU usage, summed across all streams on the cluster. |
+| TotalDPU | Total Units | <cluster-id> | DPU | Approximates the total active-use component of your Aurora DSQL cluster DPU usage. This is the sum of the write, multi-Region write, read, compute, and stream components. Use the Sum statistic. |
 
 ## CDC stream metrics
 <a name="cdc-stream-metrics"></a>
@@ -60,4 +61,4 @@ Aurora DSQL publishes the following metrics for change data capture (CDC) stream
 | PublishedRecords | Published records | none | The number of CDC records that Aurora DSQL wrote to the target Kinesis data stream. |
 | BehindSourceLag | Behind source lag | milliseconds | The delay, in milliseconds, between when a transaction commits in Aurora DSQL and when the CDC system processes the resulting record. A rising value indicates that the CDC pipeline is falling behind the write workload. If lag grows beyond the failure threshold, the stream transitions to FAILED. |
 | BytesStreamed | Bytes streamed | bytes | The total bytes streamed through the CDC pipeline for billing purposes. This metric reflects the data volume used to calculate streaming charges. |
-| StreamDPU | Stream DPU | DPU | The Distributed Processing Units (DPU) consumed by the CDC stream. This metric reflects the processing cost of streaming change data. |
+| StreamDPU | Stream DPU | DPU | The Distributed Processing Units (DPU) consumed by the CDC stream. This metric reflects the processing cost of streaming change data. Aurora DSQL also publishes StreamDPU with only the ClusterId dimension, summed across all streams on the cluster. |

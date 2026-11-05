@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 
 You can use the Amazon S3 Import connector to browse a source bucket, select files or folders, and import them into SDMA without downloading and re-uploading through the portal. SDMA copies the selected files into your library using AWS Deadline Cloud and verifies integrity during the transfer. When the job completes, the imported files appear as a new asset in your project.
 
+Filters, `output` blocks, `${…​}` variables, and `$temp` values work the same way for every connector type. For more information, see [Trigger filters](connector-configuration.md#trigger-filters), [Output routing](connector-configuration.md#output-routing), [Variable substitution](connector-configuration.md#variable-substitution), and [Intermediate state with $temp variables](connector-configuration.md#temp-variables).
+
 ## Overview
 <a name="s3-import-overview"></a>
 
@@ -36,8 +38,8 @@ Create a role that grants read access to the source bucket. The role name **must
         "s3:GetBucketLocation"
       ],
       "Resource": [
-        "arn:aws:s3:::<SOURCE_BUCKET_NAME>",
-        "arn:aws:s3:::<SOURCE_BUCKET_NAME>/*"
+        "arn:aws:s3:::<source-bucket-name>",
+        "arn:aws:s3:::<source-bucket-name>/*"
       ]
     }
   ]
@@ -73,8 +75,8 @@ Add these ARNs as trusted principals:
       "Effect": "Allow",
       "Principal": {
         "AWS": [
-          "<CONNECTOR_INVOCATION_ROLE_ARN>",
-          "<S3_IMPORT_DEADLINE_QUEUE_ROLE_ARN>"
+          "<connector-invocation-role-arn>",
+          "<s3-import-deadline-queue-role-arn>"
         ]
       },
       "Action": "sts:AssumeRole"
@@ -95,8 +97,8 @@ Update the secret value to the following JSON structure:
 ```
 {
   "authType": "assumeRole",
-  "roleArn": "arn:aws:iam::<SOURCE_ACCOUNT_ID>:role/SpatialDataManagementContentDerivation-<YOUR_SUFFIX>",
-  "region": "<SOURCE_BUCKET_REGION>"
+  "roleArn": "arn:aws:iam::<source-account-id>:role/SpatialDataManagementContentDerivation-<your-suffix>",
+  "region": "<source-bucket-region>"
 }
 ```
 
@@ -135,8 +137,8 @@ The Amazon S3 Import connector is initially created with placeholder values. Upd
   "defaultStepConfig": {
     "stepType": "deadlineJob",
     "deadlineConfig": {
-      "farmId": "<DEADLINE_FARM_ID>",
-      "queueId": "<S3_IMPORT_QUEUE_ID>",
+      "farmId": "<deadline-farm-id>",
+      "queueId": "<s3-import-queue-id>",
       "builtInTemplate": "s3_import_asset"
     }
   },
@@ -146,13 +148,13 @@ The Amazon S3 Import connector is initially created with placeholder values. Upd
         "type": "s3ListObjects",
         "securityConfig": {
           "type": "SecretCredentials",
-          "secretArn": "<YOUR_SECRET_ARN>",
-          "assumeRoleArn": "<S3_IMPORT_CONNECTOR_OPS_ROLE_ARN>"
+          "secretArn": "<your-secret-arn>",
+          "assumeRoleArn": "<s3-import-connector-ops-role-arn>"
         },
         "buckets": [
           {
-            "region": "<SOURCE_BUCKET_REGION>",
-            "bucketName": "<SOURCE_BUCKET_NAME>"
+            "region": "<source-bucket-region>",
+            "bucketName": "<source-bucket-name>"
           }
         ]
       }
@@ -180,17 +182,17 @@ The Amazon S3 Import connector is initially created with placeholder values. Upd
             "ManifestKey": "${$temp.objectKey}",
             "ManifestBucket": "${$temp.bucket}",
             "ManifestHash": "${$temp.contentHash}",
-            "SecretArn": "<YOUR_SECRET_ARN>",
-            "AssumeRoleArn": "<S3_IMPORT_CONNECTOR_OPS_ROLE_ARN>",
-            "SourceBucket": "<SOURCE_BUCKET_NAME>",
-            "Region": "<SOURCE_BUCKET_REGION>",
-            "TemplateId": "<ASSET_TEMPLATE_ID>",
+            "SecretArn": "<your-secret-arn>",
+            "AssumeRoleArn": "<s3-import-connector-ops-role-arn>",
+            "SourceBucket": "<source-bucket-name>",
+            "Region": "<source-bucket-region>",
+            "TemplateId": "<asset-template-id>",
             "CasRootPrefix": "SpatialDataManagementAssets"
           },
           "output": {
             "assets": [
               {
-                "assetTemplateIds": ["<ASSET_TEMPLATE_ID>"],
+                "assetTemplateIds": ["<asset-template-id>"],
                 "filter": { "fileNameRegex": "^assets\\.json$" }
               }
             ]

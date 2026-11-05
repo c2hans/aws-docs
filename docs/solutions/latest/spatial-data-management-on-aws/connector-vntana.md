@@ -16,7 +16,7 @@ This means a template author can define once that "all CAD uploads in this proje
 
 The VNTANA connector uses a Deadline-to-ECS bridge pattern:
 
-1. SDMA fires the connector when a matching file is uploaded.
+1. SDMA runs the connector when a matching file is uploaded.
 
 1. The connector submits a Deadline Cloud job that launches a VNTANA container as an ECS task.
 
@@ -43,10 +43,10 @@ The quickstart covers:
 <a name="vntana-connector-shape"></a>
 
 The VNTANA quickstart generates the connector configuration automatically. You do not need to write it by hand. The generated connector has the following shape:
-+  **Direction:** `derive` — content flows inward from VNTANA’s processing pipeline back into SDMA.
-+  **Connector type:** Deadline Cloud — jobs are submitted to your SDMA-managed Deadline Cloud farm.
-+  **One trigger per input format** — for example, `.zip` for zipped CAD assemblies, `.stl` and `.stp`/`.step` for individual CAD files. Each trigger fires on `upload` and `onDemand` events.
-+  **Output declarations** — each trigger declares `derivedFiles` filters for the output formats VNTANA produces: `.glb`, `.usdz`, `.fbx`, `.zip` (re-packaged archive), `.png` (thumbnail), and `.html` (viewer).
-+  **ECS bridge parameters** — the Deadline job template launches a VNTANA container as an ECS task, passing cluster ARN, task definition, subnets, security groups, and the pipeline configuration as job parameters.
++  **Direction:** `derive` – content flows inward from VNTANA’s processing pipeline back into SDMA.
++  **Connector type:** Deadline Cloud – jobs are submitted to your SDMA-managed Deadline Cloud farm.
++  **One trigger per input format** – for example, `.zip` for zipped CAD assemblies, `.stl` and `.stp`/`.step` for individual CAD files. Each trigger matches `upload` and `onDemand` events.
++  **Output declarations** – each trigger declares `derivedFiles` filters for the output formats VNTANA produces: `.glb`, `.usdz`, `.fbx`, `.zip` (re-packaged archive), `.png` (thumbnail), and `.html` (viewer).
++  **ECS bridge parameters** – the Deadline job template launches a VNTANA container as an ECS task, passing cluster ARN, task definition, subnets, security groups, and the pipeline configuration as job parameters.
 
 The connector produces multiple derived files from a single upload — GLB as the primary web-ready 3D format, plus USDZ, FBX, PNG, and HTML as additional format variants and previews. All outputs are governed through the same template chain and traceable to the VNTANA processing job that produced them.

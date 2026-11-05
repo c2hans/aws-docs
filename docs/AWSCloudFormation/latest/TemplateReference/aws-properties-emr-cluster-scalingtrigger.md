@@ -38,4 +38,4 @@ To declare this entity in your CloudFormation template, use the following syntax
 The definition of a CloudWatch metric alarm. When the defined alarm conditions are met along with other trigger parameters, scaling activity begins.
 *Required*: Yes
 *Type*: [CloudWatchAlarmDefinition](aws-properties-emr-cluster-cloudwatchalarmdefinition.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

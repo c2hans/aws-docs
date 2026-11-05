@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[BidPrice](#cfn-emr-cluster-instancetypeconfig-bidprice)" : {{String}},
   "[BidPriceAsPercentageOfOnDemandPrice](#cfn-emr-cluster-instancetypeconfig-bidpriceaspercentageofondemandprice)" : {{Number}},
-  "[Configurations](#cfn-emr-cluster-instancetypeconfig-configurations)" : {{[ Configuration, ... ]}},
+  "[Configurations](#cfn-emr-cluster-instancetypeconfig-configurations)" : {{[ EMRConfiguration, ... ]}},
   "[CustomAmiId](#cfn-emr-cluster-instancetypeconfig-customamiid)" : {{String}},
   "[EbsConfiguration](#cfn-emr-cluster-instancetypeconfig-ebsconfiguration)" : {{EbsConfiguration}},
   "[InstanceType](#cfn-emr-cluster-instancetypeconfig-instancetype)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [BidPrice](#cfn-emr-cluster-instancetypeconfig-bidprice): {{String}}
   [BidPriceAsPercentageOfOnDemandPrice](#cfn-emr-cluster-instancetypeconfig-bidpriceaspercentageofondemandprice): {{Number}}
   [Configurations](#cfn-emr-cluster-instancetypeconfig-configurations): {{
-    - Configuration}}
+    - EMRConfiguration}}
   [CustomAmiId](#cfn-emr-cluster-instancetypeconfig-customamiid): {{String}}
   [EbsConfiguration](#cfn-emr-cluster-instancetypeconfig-ebsconfiguration): {{
     EbsConfiguration}}
@@ -59,19 +59,19 @@ The bid price for each Amazon EC2 Spot Instance type as defined by `InstanceType
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `0`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `BidPriceAsPercentageOfOnDemandPrice`  <a name="cfn-emr-cluster-instancetypeconfig-bidpriceaspercentageofondemandprice"></a>
 The bid price, as a percentage of On-Demand price, for each Amazon EC2 Spot Instance as defined by `InstanceType`. Expressed as a number (for example, 20 specifies 20%). If neither `BidPrice` nor `BidPriceAsPercentageOfOnDemandPrice` is provided, `BidPriceAsPercentageOfOnDemandPrice` defaults to 100%.
 *Required*: No
 *Type*: Number
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Configurations`  <a name="cfn-emr-cluster-instancetypeconfig-configurations"></a>
 A configuration classification that applies when provisioning cluster instances, which can include configurations for applications and software that run on the cluster.
 *Required*: No
-*Type*: Array of [Configuration](aws-properties-emr-cluster-configuration.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Type*: Array of [EMRConfiguration](aws-properties-emr-cluster-emrconfiguration.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `CustomAmiId`  <a name="cfn-emr-cluster-instancetypeconfig-customamiid"></a>
 The custom AMI ID to use for the instance type.
@@ -80,13 +80,13 @@ The custom AMI ID to use for the instance type.
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `0`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `EbsConfiguration`  <a name="cfn-emr-cluster-instancetypeconfig-ebsconfiguration"></a>
 The configuration of Amazon Elastic Block Store (Amazon EBS) attached to each instance as defined by `InstanceType`.
 *Required*: No
 *Type*: [EbsConfiguration](aws-properties-emr-cluster-ebsconfiguration.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `InstanceType`  <a name="cfn-emr-cluster-instancetypeconfig-instancetype"></a>
 An Amazon EC2 instance type, such as `m3.xlarge`.
@@ -95,17 +95,17 @@ An Amazon EC2 instance type, such as `m3.xlarge`.
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `1`
 *Maximum*: `256`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Priority`  <a name="cfn-emr-cluster-instancetypeconfig-priority"></a>
 The priority at which Amazon EMR launches the Amazon EC2 instances with this instance type. Priority starts at 0, which is the highest priority. Amazon EMR considers the highest priority first.
 *Required*: No
 *Type*: Number
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `WeightedCapacity`  <a name="cfn-emr-cluster-instancetypeconfig-weightedcapacity"></a>
 The number of units that a provisioned instance of this type provides toward fulfilling the target capacities defined in `InstanceFleetConfig`. This value is 1 for a master instance fleet, and must be 1 or greater for core and task instance fleets. Defaults to 1 if not specified.
 *Required*: No
 *Type*: Integer
 *Minimum*: `0`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

@@ -42,7 +42,7 @@ Pattern: `[\.\-_/#A-Za-z0-9]+`
 Required: No
 
  ** schedulerConfiguration **   <a name="emroneks-Type-VirtualCluster-schedulerConfiguration"></a>
-The scheduler configuration (concurrency and queue limits) applied to the virtual cluster. The service does not return this field when no scheduler limits are configured.
+The scheduler configuration (concurrency and queue limits) that the virtual cluster uses. The service returns this field only when you configure limits explicitly, and does not return the default concurrency limit.
 Type: [SchedulerConfiguration](API_SchedulerConfiguration.md) object
 Required: No
 

@@ -44,10 +44,10 @@ Specifies the strategy to use in launching On-Demand instance fleets. Available 
 *Required*: Yes
 *Type*: String
 *Allowed values*: `lowest-price | prioritized`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `CapacityReservationOptions`  <a name="cfn-emr-cluster-ondemandprovisioningspecification-capacityreservationoptions"></a>
 The launch specification for On-Demand instances in the instance fleet, which determines the allocation strategy.
 *Required*: No
 *Type*: [OnDemandCapacityReservationOptions](aws-properties-emr-cluster-ondemandcapacityreservationoptions.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

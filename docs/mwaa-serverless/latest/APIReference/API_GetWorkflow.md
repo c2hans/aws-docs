@@ -28,7 +28,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the workflow you want to retrieve.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-[a-z]+-[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
+Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-(?:[a-z]+-)+[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
 Required: Yes
 
  ** [WorkflowVersion](#API_GetWorkflow_RequestSyntax) **   <a name="mwaaserverless-GetWorkflow-request-WorkflowVersion"></a>
@@ -57,6 +57,11 @@ Required: No
       "Type": "string"
    },
    "EngineVersion": number,
+   "Environment": {
+      "Variables": {
+         "string" : "string"
+      }
+   },
    "LoggingConfiguration": {
       "LogGroupName": "string"
    },
@@ -116,6 +121,10 @@ Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
 The version of the Amazon Managed Workflows for Apache Airflow Serverless engine that this workflow uses.
 Type: Integer
 
+ ** [Environment](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-Environment"></a>
+The environment variables that tasks in the workflow use during execution.
+Type: [Environment](API_Environment.md) object
+
  ** [LoggingConfiguration](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-LoggingConfiguration"></a>
 The logging configuration for the workflow.
 Type: [LoggingConfiguration](API_LoggingConfiguration.md) object
@@ -154,7 +163,7 @@ Pattern: `.*`
 The Amazon Resource Name (ARN) of the workflow.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-[a-z]+-[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
+Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-(?:[a-z]+-)+[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
 
  ** [WorkflowDefinition](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-WorkflowDefinition"></a>
 The workflow definition content.

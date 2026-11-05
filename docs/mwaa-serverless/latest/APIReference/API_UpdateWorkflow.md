@@ -20,6 +20,11 @@ Updates an existing workflow with new configuration settings. This operation all
    },
    "Description": "{{string}}",
    "EngineVersion": {{number}},
+   "Environment": {
+      "Variables": {
+         "{{string}}" : "{{string}}"
+      }
+   },
    "LoggingConfiguration": {
       "LogGroupName": "{{string}}"
    },
@@ -63,6 +68,12 @@ The version of the Amazon Managed Workflows for Apache Airflow Serverless engine
 Type: Integer
 Required: No
 
+ ** [Environment](#API_UpdateWorkflow_RequestSyntax) **   <a name="mwaaserverless-UpdateWorkflow-request-Environment"></a>
+The environment variables to set for tasks in the workflow.
+The variables that you specify replace all existing environment variables for the workflow. If you don't specify this parameter, the workflow has no environment variables. To keep existing environment variables, include them in the request.
+Type: [Environment](API_Environment.md) object
+Required: No
+
  ** [LoggingConfiguration](#API_UpdateWorkflow_RequestSyntax) **   <a name="mwaaserverless-UpdateWorkflow-request-LoggingConfiguration"></a>
 Updated logging configuration for the workflow.
 Type: [LoggingConfiguration](API_LoggingConfiguration.md) object
@@ -91,7 +102,7 @@ Required: No
 The Amazon Resource Name (ARN) of the workflow you want to update.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-[a-z]+-[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
+Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-(?:[a-z]+-)+[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
 Required: Yes
 
 ## Response Syntax
@@ -125,7 +136,7 @@ Type: Array of strings
 The Amazon Resource Name (ARN) of the updated workflow.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-[a-z]+-[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
+Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:airflow-serverless:([a-z]{2}-(?:[a-z]+-)+[0-9]{1}):([0-9]{12}):workflow/([a-zA-Z0-9][a-zA-Z0-9\.\-_]{0,254}-[a-zA-Z0-9]{10})`
 
  ** [WorkflowVersion](#API_UpdateWorkflow_ResponseSyntax) **   <a name="mwaaserverless-UpdateWorkflow-response-WorkflowVersion"></a>
 The version identifier of the updated workflow.

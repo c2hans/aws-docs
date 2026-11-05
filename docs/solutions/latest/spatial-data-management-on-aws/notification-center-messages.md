@@ -21,7 +21,7 @@ Multiple messages are concatenated with newlines in the notification body:
 "messages": ["Asset ${asset.assetName} — ${eventName}", "Project: ${project.projectName}"]
 ```
 
-You can also define different messages per resource type using an object format. When an event fires, the array matching the resource type is used. If no match, the `"default"` key is used:
+You can also define different messages per resource type using an object format. When an event occurs, SDMA uses the array that matches the resource type. If no array matches, SDMA uses the `"default"` key:
 
 ```
 "messages": {

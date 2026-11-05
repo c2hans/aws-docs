@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_TagSpe
 # TagSpecification
 <a name="API_TagSpecification"></a>
 
-The tags to apply to resources when creating or modifying a DB instance or DB cluster. When you specify a tag, you must specify the resource type to tag, otherwise the request will fail.
+The tags to apply to resources when creating or modifying a DB instance or DB cluster, or when copying a DB instance snapshot. When you specify a tag, you must specify the resource type to tag, otherwise the request will fail.
 
 ## Contents
 <a name="API_TagSpecification_Contents"></a>
@@ -18,6 +18,7 @@ The type of resource to tag on creation.
 Valid Values:
 +  `auto-backup` - The DB instance's automated backup.
 +  `cluster-auto-backup` - The DB cluster's automated backup.
++  `og` - The copied option group. Valid only for `CopyDBSnapshot`.
 Type: String
 Required: No
 

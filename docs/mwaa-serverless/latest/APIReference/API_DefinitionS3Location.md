@@ -21,7 +21,7 @@ Type: String
 Required: Yes
 
  ** VersionId **   <a name="mwaaserverless-Type-DefinitionS3Location-VersionId"></a>
-Optional. The version ID of the workflow definition file in Amazon S3. If not specified, the latest version is used.
+Optional. The version ID of the workflow definition file in Amazon S3. If you don't specify a version, we use the latest version.
 Type: String
 Required: No
 

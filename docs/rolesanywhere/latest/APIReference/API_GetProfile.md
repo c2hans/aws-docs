@@ -92,6 +92,14 @@ HTTP Status Code: 403
 The resource could not be found.
 HTTP Status Code: 404
 
+ ** ServiceUnavailableException **
+The request has failed due to a temporary failure of the service.
+ ** message **
+The exception message.
+ ** retryAfterSeconds **
+The recommended number of seconds after which the client should retry the request.
+HTTP Status Code: 503
+
 ## See Also
 <a name="API_GetProfile_SeeAlso"></a>
 

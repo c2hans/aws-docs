@@ -41,10 +41,10 @@ Not available for instance groups. Instance groups use the market type specified
 *Required*: No
 *Type*: String
 *Allowed values*: `ON_DEMAND | SPOT`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `SimpleScalingPolicyConfiguration`  <a name="cfn-emr-cluster-scalingaction-simplescalingpolicyconfiguration"></a>
 The type of adjustment the automatic scaling activity makes when triggered, and the periodicity of the adjustment.
 *Required*: Yes
 *Type*: [SimpleScalingPolicyConfiguration](aws-properties-emr-cluster-simplescalingpolicyconfiguration.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)

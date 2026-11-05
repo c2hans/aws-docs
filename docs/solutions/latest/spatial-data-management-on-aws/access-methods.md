@@ -26,7 +26,7 @@ Users interact with the solution through multiple interfaces:
 + Programmatic access for automation and integration
 + Direct S3 upload and download with temporary credentials
 + Full CRUD operations for all resources
-+ Webhook support for event notifications
++ Event delivery to external systems through connectors and the notification center
 
 ## Command-Line Interface (CLI)
 <a name="command-line-interface-cli"></a>

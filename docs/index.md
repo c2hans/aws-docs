@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-03
+generated_on: 2026-11-04
 ---
 
 # Welcome to AWS Documentation
@@ -333,6 +333,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon Nova Act](/nova-act/?icmpid=docs_homepage_ml): Build and manage fleets of reliable AI agents to automate UI workflows
 - [Amazon Personalize](/personalize/?icmpid=docs_homepage_ml): Build real-time recommendations into your applications
 - [Amazon Polly](/polly/?icmpid=docs_homepage_ml): Turn text into life-like speech
+- [Amazon Q Developer](/assistant/?icmpid=docs_homepage_ml): Get answers about your AWS resources, costs, and errors as you work
 - [Amazon Rekognition](/rekognition/?icmpid=docs_homepage_ml): Analyze image and video
 - [Amazon SageMaker AI](/sagemaker/?icmpid=docs_homepage_ml): Build, train, and deploy machine learning models at scale
 - [Amazon Textract](/textract/?icmpid=docs_homepage_ml): Extract text and data from documents
@@ -350,6 +351,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon CloudWatch](/cloudwatch/?icmpid=docs_homepage_mgmtgov): Monitor resources and applications
 - [Amazon EC2 Auto Scaling](/autoscaling/?icmpid=docs_homepage_mgmtgov): Scale multiple resources to meet demand
 - [AWS Security Agent](/securityagent/?icmpid=docs_homepage_mgmtgov): AI-powered agent that proactively secures your applications
+- [AWS Assurance](/assurance/?icmpid=docs_homepage_mgmtgov): Automated compliance readiness assessment for AWS workloads
 - [AWS Command Line Interface](/cli/?icmpid=docs_homepage_mgmtgov): Command line interface tool to manage AWS services
 - [AWS Compute Optimizer](/compute-optimizer/?icmpid=docs_homepage_mgmtgov): Identify optimal AWS compute resources
 - [AWS Config](/config/?icmpid=docs_homepage_mgmtgov): Track and evaluate configuration changes

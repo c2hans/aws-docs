@@ -9,6 +9,8 @@ Use the job attachments browser in the Deadline Cloud monitor to see the file st
 
 The attachments browser displays both input files (submitted with the job) and output files (produced by workers during processing). You can filter the view to show only inputs, only outputs, or all files together.
 
+To try the attachments browser with sample data, open the [demo job attachments](https://_demo.us-east-1.deadlinecloud.amazonaws.com/us-west-2/farms/farm-94d29d9475dd814529b87a52f20ff9cb/queues/queue-b5fb7c92ae42326d3851bab4b0568d97/jobs/job-1cf313e2991e74375006ea6092c5a2ed/attachments?demo=moonrise).
+
 ## Opening the attachments browser
 <a name="browse-job-attachments-open"></a>
 

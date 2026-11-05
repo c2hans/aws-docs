@@ -202,7 +202,7 @@ The following code example shows how to use `delete-medical-vocabulary`.
 The following `delete-medical-vocabulary` example deletes a medical custom vocabulary. For vocabulary-name, specify the name of the medical custom vocabulary.
 
 ```
-aws transcribe delete-vocabulary \
+aws transcribe delete-medical-vocabulary \
     --vocabulary-name {{medical-custom-vocabulary-name}}
 ```
 This command produces no output.
