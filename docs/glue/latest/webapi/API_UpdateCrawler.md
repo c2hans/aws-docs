@@ -12,6 +12,7 @@ Updates a crawler. If a crawler is running, you must stop it using `StopCrawler`
 
 ```
 {
+   "CatalogId": "{{string}}",
    "Classifiers": [ "{{string}}" ],
    "Configuration": "{{string}}",
    "CrawlerSecurityConfiguration": "{{string}}",
@@ -111,6 +112,13 @@ Updates a crawler. If a crawler is running, you must stop it using `StopCrawler`
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CatalogId](#API_UpdateCrawler_RequestSyntax) **   <a name="Glue-UpdateCrawler-request-CatalogId"></a>
+The ID of the Data Catalog in which to store the crawler's output. If you omit this value, the existing value on the crawler is preserved.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
 
  ** [Classifiers](#API_UpdateCrawler_RequestSyntax) **   <a name="Glue-UpdateCrawler-request-Classifiers"></a>
 A list of custom classifiers that the user has registered. By default, all built-in classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.

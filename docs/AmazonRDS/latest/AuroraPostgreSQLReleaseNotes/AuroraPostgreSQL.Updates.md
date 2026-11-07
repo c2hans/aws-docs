@@ -9,7 +9,7 @@ Following, you can find information about versions of the Amazon Aurora PostgreS
 
 For more information about Aurora PostgreSQL support dates, including extended and long-term support, see [Release calendars for Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/aurorapostgresql-release-calendar.html).
 
-To determine the version number of your Aurora PostgreSQL database, see [Identifying versions of Amazon Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Updates.Versions.html) in the *Amazon Aurora User Guide*.
+To determine the version number of your Aurora PostgreSQL database, see [Identifying versions of Amazon Aurora PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Updates.html#AuroraPostgreSQL.Updates.Versions) in the *Amazon Aurora User Guide*.
 
 For information about extensions and modules, see [Extensions supported for Amazon Aurora PostgreSQL](AuroraPostgreSQL.Extensions.md).
 

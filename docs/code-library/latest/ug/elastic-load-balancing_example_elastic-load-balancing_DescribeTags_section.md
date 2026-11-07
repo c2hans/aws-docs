@@ -18,7 +18,7 @@ The following `describe-tags` example describes the tags assigned to the specifi
 
 ```
 aws elb describe-tags \
-    --load-balancer-name {{my-load-balancer}}
+    --load-balancer-names {{my-load-balancer}}
 ```
 Output:
 

@@ -13,9 +13,6 @@ In addition, the AWS CRT-based S3 client offers enhanced connection pooling and 
 
 You can use the AWS CRT-based S3 client in place of the SDK's standard S3 asynchronous client and take advantage of its improved throughput right away.
 
-**Important**
-The AWS CRT-based S3 client does not currently support [SDK metrics collection](metrics.md) at the client level nor at the request level.
-
 **AWS CRT-based components in the SDK**
 
 The AWS CRT-based* S3* client, described in this topic, and the AWS CRT-based *HTTP* client are different components in the SDK.
@@ -134,7 +131,7 @@ This capability helps avoid common issues with traditional uploads where an inco
 <a name="crt-based-s3-client-limitations"></a>
 
 The AWS CRT-based S3 client and Java-based S3 async client [provide comparable features](examples-s3.md#s3-clients), with the AWS CRT-based S3 client offering a performance edge. However, the AWS CRT-based S3 client lacks configuration settings that the Java-based S3 async client has. These settings include:
-+ *Client-level configuration:* API call attempt timeout, compression execution interceptors, metric publishers, custom execution attributes, custom advanced options, custom scheduled executor service, custom headers
++ *Client-level configuration:* API call attempt timeout, compression execution interceptors, custom execution attributes, custom advanced options, custom scheduled executor service, custom headers
 + *Request-level configuration:* custom signers, API call attempt timeout
 
 For a full listing of the configuration differences, see the API reference.

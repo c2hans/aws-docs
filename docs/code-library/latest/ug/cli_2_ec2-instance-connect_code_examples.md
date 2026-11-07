@@ -38,7 +38,7 @@ aws ec2-instance-connect send-ssh-public-key \
 Contents of `my-rsa-key.pub`:
 
 ```
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCEXAMPLEKEY ec2-user@example
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1a2b3c4d5e6f7a8b9c0dEXAMPLEKEY ec2-user@example
 ```
 This command produces no output.
 For more information, see [Connect to a Linux instance using EC2 Instance Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-methods.html) in the *Amazon EC2 User Guide*.

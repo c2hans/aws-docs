@@ -112,6 +112,63 @@ Required: No
             "DatabaseIdentifier": "string",
             "Identifier": "string"
          },
+         "IcebergTableMetadata": {
+            "CurrentSchemaId": number,
+            "DefaultSortOrderId": number,
+            "DefaultSpecId": number,
+            "FormatVersion": "string",
+            "LastColumnId": number,
+            "LastPartitionId": number,
+            "Location": "string",
+            "PartitionSpecs": [
+               {
+                  "Fields": [
+                     {
+                        "FieldId": number,
+                        "Name": "string",
+                        "SourceId": number,
+                        "Transform": "string"
+                     }
+                  ],
+                  "SpecId": number
+               }
+            ],
+            "Properties": {
+               "string" : "string"
+            },
+            "Schemas": [
+               {
+                  "Fields": [
+                     {
+                        "Doc": "string",
+                        "Id": number,
+                        "InitialDefault": JSON value,
+                        "Name": "string",
+                        "Required": boolean,
+                        "Type": JSON value,
+                        "WriteDefault": JSON value
+                     }
+                  ],
+                  "IdentifierFieldIds": [ number ],
+                  "SchemaId": number,
+                  "Type": "string"
+               }
+            ],
+            "SortOrders": [
+               {
+                  "Fields": [
+                     {
+                        "Direction": "string",
+                        "NullOrder": "string",
+                        "SourceId": number,
+                        "Transform": "string"
+                     }
+                  ],
+                  "OrderId": number
+               }
+            ],
+            "TableUuid": "string"
+         },
          "IsMaterializedView": boolean,
          "IsMultiDialectView": boolean,
          "IsRegisteredWithLakeFormation": boolean,
@@ -133,6 +190,9 @@ Required: No
             }
          ],
          "Retention": number,
+         "RLSProperties": {
+            "DefaultRLSPolicy": "string"
+         },
          "Status": {
             "Action": "string",
             "Details": {
@@ -224,6 +284,7 @@ Required: No
          "VersionId": "string",
          "ViewDefinition": {
             "Definer": "string",
+            "IsManaged": boolean,
             "IsProtected": boolean,
             "LastRefreshType": "string",
             "RefreshSeconds": number,
@@ -237,7 +298,19 @@ Required: No
                   "ViewOriginalText": "string"
                }
             ],
+            "SparkPipelineInfo": {
+               "string" : "string"
+            },
             "SubObjects": [ "string" ],
+            "SubObjectsStatistics": [
+               {
+                  "FileCount": number,
+                  "GlueVersionId": "string",
+                  "PartitionCount": number,
+                  "SourceType": "string",
+                  "TotalFileBytes": number
+               }
+            ],
             "SubObjectVersionIds": [ number ],
             "ViewVersionId": number,
             "ViewVersionToken": "string"

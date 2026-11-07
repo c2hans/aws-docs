@@ -35,6 +35,11 @@ Type: String
 Valid Values: `AVAILABLE | DEPRECATED | RECALLED`
 Required: No
 
+ ** supportedCpuConfigurations **   <a name="lambdamicrovm-Type-ManagedMicrovmImageVersion-supportedCpuConfigurations"></a>
+The CPU configurations supported by this managed base image version. You can build a MicroVM image for an architecture only on a base image version that lists that architecture.
+Type: Array of [CpuConfiguration](API_CpuConfiguration.md) objects
+Required: No
+
  ** updatedAt **   <a name="lambdamicrovm-Type-ManagedMicrovmImageVersion-updatedAt"></a>
 The timestamp when the version was last updated.
 Type: Timestamp

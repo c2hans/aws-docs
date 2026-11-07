@@ -957,14 +957,14 @@ The following `deregister-target-from-maintenance-window` example removes the sp
 
 ```
 aws ssm deregister-target-from-maintenance-window \
-    --window-id {{"mw-ab12cd34ef56gh78"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --window-target-id {{"1a2b3c4d-1a2b-1a2b-1a2b-1a2b3c4d-1a2"}}
 ```
 Output:
 
 ```
 {
-    "WindowId":"mw-ab12cd34ef56gh78",
+    "WindowId":"mw-ab12cd34efEXAMPLE",
     "WindowTargetId":"1a2b3c4d-1a2b-1a2b-1a2b-1a2b3c4d-1a2"
 }
 ```
@@ -982,7 +982,7 @@ The following `deregister-task-from-maintenance-window` example removes the spec
 
 ```
 aws ssm deregister-task-from-maintenance-window \
-    --window-id {{"mw-ab12cd34ef56gh78"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --window-task-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
@@ -990,7 +990,7 @@ Output:
 ```
 {
     "WindowTaskId":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-    "WindowId":"mw-ab12cd34ef56gh78"
+    "WindowId":"mw-ab12cd34efEXAMPLE"
 }
 ```
 For more information, see [Systems Manager Maintenance Windows Tutorials (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-windows-tutorials.html) in the *AWS Systems Manager User Guide*.
@@ -2153,7 +2153,7 @@ The following `describe-instance-patches` example retrieves information about pa
 aws ssm describe-instance-patches \
     --instance-id {{"i-1234567890abcdef0"}} \
     --filters {{Key=State,Values=Installed}} \
-    --query {{"Patches[?InstalledTime >= `2023-01-01T16:00:00`]"}}
+    --query '{{Patches[?InstalledTime >= `"2023-01-01T16:00:00"`]}}'
 ```
 Output:
 
@@ -2339,7 +2339,7 @@ The following `describe-maintenance-window-executions` example lists all of the 
 
 ```
 aws ssm describe-maintenance-window-executions \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}}
+    --window-id {{"mw-ab12cd34efEXAMPLE"}}
 ```
 Output:
 
@@ -2347,21 +2347,21 @@ Output:
 {
     "WindowExecutions": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Status": "IN_PROGRESS",
             "StartTime": "2021-08-04T11:00:00.000000-07:00"
 
         },
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Status": "SUCCESS",
             "StartTime": "2021-08-03T11:00:00.000000-07:00",
             "EndTime": "2021-08-03T11:37:21.450000-07:00"
         },
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Status": "FAILED",
             "StatusDetails": "One or more tasks in the orchestration failed.",
@@ -2376,7 +2376,7 @@ The following `describe-maintenance-window-executions` example lists all of the 
 
 ```
 aws ssm describe-maintenance-window-executions \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=ExecutedBefore,Values=2021-08-03T00:00:00Z"}}
 ```
 Output:
@@ -2385,7 +2385,7 @@ Output:
 {
     "WindowExecutions": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Status": "FAILED",
             "StatusDetails": "One or more tasks in the orchestration failed.",
@@ -2400,7 +2400,7 @@ The following `describe-maintenance-window-executions` example lists all of the 
 
 ```
 aws ssm describe-maintenance-window-executions \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=ExecutedAfter,Values=2021-08-04T00:00:00Z"}}
 ```
 Output:
@@ -2409,7 +2409,7 @@ Output:
 {
     "WindowExecutions": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Status": "IN_PROGRESS",
             "StartTime": "2021-08-04T11:00:00.000000-07:00"
@@ -2431,7 +2431,7 @@ The following `describe-maintenance-window-schedule` example lists all upcoming 
 
 ```
 aws ssm describe-maintenance-window-schedule \
-    --window-id {{mw-ab12cd34eEXAMPLE}}
+    --window-id {{mw-ab12cd34efEXAMPLE}}
 ```
 Output:
 
@@ -2439,12 +2439,12 @@ Output:
 {
     "ScheduledWindowExecutions": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "Name": "My-First-Maintenance-Window",
             "ExecutionTime": "2020-02-19T16:00Z"
         },
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "Name": "My-First-Maintenance-Window",
             "ExecutionTime": "2020-02-26T16:00Z"
         }
@@ -2658,7 +2658,7 @@ The following `describe-maintenance-window-tasks` example lists all of the tasks
 
 ```
 aws ssm describe-maintenance-window-tasks \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=TaskArn,Values=AWS-RunPowerShellScript"}}
 ```
 Output:
@@ -2667,7 +2667,7 @@ Output:
 {
     "Tasks": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
@@ -2694,7 +2694,7 @@ The following `describe-maintenance-window-tasks` example lists all of the tasks
 
 ```
 aws ssm describe-maintenance-window-tasks \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=Priority,Values=3"}}
 ```
 Output:
@@ -2703,7 +2703,7 @@ Output:
 {
     "Tasks": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
@@ -2723,7 +2723,7 @@ Output:
             "Name": "MyRunCommandTask"
         },
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "TaskArn": "AWS-RestartEC2Instance",
             "Type": "AUTOMATION",
@@ -2751,7 +2751,7 @@ The following `describe-maintenance-window-tasks` example lists all of the tasks
 
 ```
 aws ssm describe-maintenance-window-tasks \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=Priority,Values=1"}} {{"Key=TaskType,Values=RUN_COMMAND"}}
 ```
 Output:
@@ -2760,7 +2760,7 @@ Output:
 {
     "Tasks": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
@@ -4989,7 +4989,7 @@ The following `list-commands` example retrieves the details of commands requeste
 
 ```
 aws ssm list-commands \
-    --filter {{"key=InvokedAfter,value=2020-02-01T00:00:00Z"}}
+    --filters {{"key=InvokedAfter,value=2020-02-01T00:00:00Z"}}
 ```
 Output:
 
@@ -6146,8 +6146,8 @@ The following `register-target-with-maintenance-window` example registers an ins
 
 ```
 aws ssm register-target-with-maintenance-window \
-    --window-id {{"mw-ab12cd34ef56gh78"}} \
-    --target {{"Key=InstanceIds,Values=i-0000293ffd8c57862"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
+    --targets {{"Key=InstanceIds,Values=i-0000293ffd8c57862"}} \
     --owner-information {{"Single instance"}} \
     --resource-type {{"INSTANCE"}}
 ```
@@ -6163,8 +6163,8 @@ The following `register-target-with-maintenance-window` example registers two in
 
 ```
 aws ssm register-target-with-maintenance-window \
-    --window-id {{"mw-ab12cd34ef56gh78"}} \
-    --target {{"Key=InstanceIds,Values=i-0000293ffd8c57862,i-0cb2b964d3e14fd9f"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
+    --targets {{"Key=InstanceIds,Values=i-0000293ffd8c57862,i-0cb2b964d3e14fd9f"}} \
     --owner-information {{"Two instances in a list"}} \
     --resource-type {{"INSTANCE"}}
 ```
@@ -6199,7 +6199,7 @@ The following `register-target-with-maintenance-window` example register instanc
 aws ssm register-target-with-maintenance-window \
     --window-id {{"mw-0c50858d01EXAMPLE"}} \
     --resource-type {{"INSTANCE"}} \
-    --target {{"Key=tag-key,Values=Name,Instance-Type,CostCenter"}}
+    --targets {{"Key=tag-key,Values=Name,Instance-Type,CostCenter"}}
 ```
 Output:
 
@@ -6215,7 +6215,7 @@ The following `register-target-with-maintenance-window` example register a speci
 aws ssm register-target-with-maintenance-window \
     --window-id {{"mw-0c50858d01EXAMPLE"}} \
     --resource-type {{"RESOURCE_GROUP"}} \
-    --target {{"Key=resource-groups:Name,Values=MyResourceGroup"}}
+    --targets {{"Key=resource-groups:Name,Values=MyResourceGroup"}}
 ```
 Output:
 
@@ -6244,7 +6244,7 @@ aws ssm register-task-with-maintenance-window \
     --task-arn {{AWS-RestartEC2Instance}} \
     --service-role-arn {{arn:aws:iam::123456789012:role/SSM}} \
     --task-type {{AUTOMATION}} \
-    --task-invocation-parameters "{\"Automation\":{\"DocumentVersion\":\"\$LATEST\",\"Parameters\":{\"InstanceId\":[\"{{RESOURCE_ID}}\"]}}}" \
+    --task-invocation-parameters '{{{"Automation":{"DocumentVersion":"$LATEST","Parameters":{"InstanceId":["{{RESOURCE_ID}}"]}}}}}' \
     --priority {{0}} \
     --max-concurrency {{1}} \
     --max-errors {{1}} \
@@ -6345,7 +6345,7 @@ aws ssm register-task-with-maintenance-window \
     --targets {{"Key=WindowTargetIds,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}} \
     --task-arn {{"AWS-RunShellScript"}} \
     --service-role-arn {{"arn:aws:iam::123456789012:role/MaintenanceWindowsRole"}} \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --task-type {{"RUN_COMMAND"}} \
     --task-parameters  "{\"commands\":{\"Values\":[\"df\"]}}" \
     --max-concurrency {{1}} \
@@ -6930,7 +6930,7 @@ The following `start-associations-once` example run the specified association im
 
 ```
 aws ssm start-associations-once \
-    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
+    --association-ids {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Viewing association histories](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-state-assoc-history.html) in the *AWS Systems Manager User Guide*.
@@ -7028,7 +7028,7 @@ Contents of `MyChangeRequest.json`:
             "IamUser"
         ],
         "ApproverSnsTopicArn": [
-            "arn:aws:sns:us-west-2:123456789012;:MyNotificationTopic
+            "arn:aws:sns:us-west-2:123456789012:MyNotificationTopic"
         ]
     },
     "Runbooks": [

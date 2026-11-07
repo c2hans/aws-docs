@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 
 When you add a gateway, set the inbound authorizer with `--authorizer-type`. If you omit it, the gateway uses `NONE` and accepts unauthenticated requests. To use JWT authorization, set up an identity provider first. When you add a target, configure outbound authorization if the target requires it.
 
-For example, add a gateway that validates tokens issued by an existing OpenID Connect (OIDC) provider:
+For example, add a gateway that validates tokens issued by an existing identity provider:
 
 ```
 agentcore add gateway \

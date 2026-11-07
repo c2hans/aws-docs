@@ -11,7 +11,7 @@ The object that shows the details of the materialized view refresh task run.
 <a name="API_MaterializedViewRefreshTaskRun_Contents"></a>
 
  ** CatalogId **   <a name="Glue-Type-MaterializedViewRefreshTaskRun-CatalogId"></a>
-The ID of the Catalog where the materialized view table resides. If none is supplied, the account ID is used by default.
+The ID of the Data Catalog where the table resides. If none is supplied, the account ID is used by default.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
@@ -29,7 +29,7 @@ Length Constraints: Minimum length of 0. Maximum length of 12.
 Required: No
 
  ** DatabaseName **   <a name="Glue-Type-MaterializedViewRefreshTaskRun-DatabaseName"></a>
-The database where the materialized view table resides.
+The database where the table resides.
 Type: String
 Required: No
 
@@ -75,7 +75,7 @@ Valid Values: `FULL | INCREMENTAL`
 Required: No
 
  ** Role **   <a name="Glue-Type-MaterializedViewRefreshTaskRun-Role"></a>
-The IAM role that the service assumes to run the materialized view refresh.
+The IAM role that the service assumes to run the materialized view refresh task.
 Type: String
 Required: No
 
@@ -91,7 +91,7 @@ Valid Values: `STARTING | RUNNING | SUCCEEDED | FAILED | STOPPED`
 Required: No
 
  ** TableName **   <a name="Glue-Type-MaterializedViewRefreshTaskRun-TableName"></a>
-The name of the table for which the materialized view resides.
+The name of the materialized view.
 Type: String
 Required: No
 

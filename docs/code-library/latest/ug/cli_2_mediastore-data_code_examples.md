@@ -30,7 +30,7 @@ The following `delete-object` example deletes the specified object.
 
 ```
 aws mediastore-data delete-object \
-    --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com \
+    --endpoint-url=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com \
     --path=/folder_name/README.md
 ```
 This command produces no output.
@@ -47,7 +47,7 @@ The following `describe-object` example displays the headers for an object at th
 
 ```
 aws mediastore-data describe-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
+    --endpoint-url {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
     --path {{events/baseball/setup.jpg}}
 ```
 Output:
@@ -73,7 +73,7 @@ The following `get-object` example downloads the specified object.
 
 ```
 aws mediastore-data get-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
+    --endpoint-url {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
     --path {{events/baseball/setup.jpg}} {{setup.jpg}}
 ```
 Output:
@@ -92,7 +92,7 @@ The following `get-object` example downloads the specified part of an object.
 
 ```
 aws mediastore-data get-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
+    --endpoint-url {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
     --path {{events/baseball/setup.jpg}} {{setup.jpg}} \
     --range {{"bytes=0-100"}}
 ```
@@ -121,7 +121,7 @@ The following `list-items` example displays a list of items (objects and folders
 
 ```
 aws mediastore-data list-items \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}}
+    --endpoint-url {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}}
 ```
 Output:
 
@@ -148,7 +148,7 @@ The following `list-items` example displays a list of items (objects and folders
 
 ```
 aws mediastore-data list-items \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
+    --endpoint-url {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
     --path {{events/baseball}}
 ```
 Output:
@@ -180,7 +180,7 @@ The following `put-object` example upload an object to the specified container.
 
 ```
 aws mediastore-data put-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
+    --endpoint-url {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
     --body {{ReadMe.md}} \
     --path {{ReadMe.md}} \
     --cache-control {{"max-age=6, public"}} \
@@ -200,7 +200,7 @@ The following `put-object` example upload an object to the specified folder with
 
 ```
 aws mediastore-data put-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
+    --endpoint-url {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
     --body {{ReadMe.md}} \
     --path {{/september-events/ReadMe.md}} \
     --cache-control {{"max-age=6, public"}} \

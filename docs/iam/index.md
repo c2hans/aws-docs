@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iam/index.html
 title: 'AWS Identity and Access Management Documentation'
 canonical_url: https://docs.aws.amazon.com/iam/
 source: aws-documentation
-generated_on: 2026-11-05
+generated_on: 2026-11-07
 ---
 
 # AWS Identity and Access Management Documentation
@@ -34,6 +34,7 @@ AWS Identity and Access Management (IAM) is a web service for securely controlli
 ## IAM account access manager
 
 - [IAM account access manager API Reference](/account-access/latest/APIReference/Welcome.html): Describes the API operations for IAM account access manager. Also provides sample requests, responses, and errors for the supported web services protocols.
+- [IAM account access manager Runtime API Reference](/account-access-runtime/latest/APIReference/Welcome.html): Describes the API operations for the IAM account access manager Runtime API. These operations list the roles that you can access and return temporary credentials for those roles. Also provides sample requests, responses, and errors for the supported web services protocols.
 
 ## IAM Roles Anywhere
 

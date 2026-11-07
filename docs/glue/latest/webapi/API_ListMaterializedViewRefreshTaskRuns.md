@@ -28,21 +28,21 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [CatalogId](#API_ListMaterializedViewRefreshTaskRuns_RequestSyntax) **   <a name="Glue-ListMaterializedViewRefreshTaskRuns-request-CatalogId"></a>
-The ID of the Catalog where the materialized view table resides. If none is supplied, the account ID is used by default.
+The ID of the Data Catalog where the table resides. If none is supplied, the account ID is used by default.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: Yes
 
  ** [DatabaseName](#API_ListMaterializedViewRefreshTaskRuns_RequestSyntax) **   <a name="Glue-ListMaterializedViewRefreshTaskRuns-request-DatabaseName"></a>
-The database where the materialized view table resides.
+The database where the table resides.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: No
 
  ** [MaxResults](#API_ListMaterializedViewRefreshTaskRuns_RequestSyntax) **   <a name="Glue-ListMaterializedViewRefreshTaskRuns-request-MaxResults"></a>
-The maximum number of materialized view refresh task runs to list in the response.
+The maximum size of the response.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 1000.
 Required: No
@@ -53,7 +53,7 @@ Type: String
 Required: No
 
  ** [TableName](#API_ListMaterializedViewRefreshTaskRuns_RequestSyntax) **   <a name="Glue-ListMaterializedViewRefreshTaskRuns-request-TableName"></a>
-The name of the table for which the materialized view resides.
+The name of the materialized view.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
@@ -99,7 +99,7 @@ The results of the ListMaterializedViewRefreshTaskRuns action.
 Type: Array of [MaterializedViewRefreshTaskRun](API_MaterializedViewRefreshTaskRun.md) objects
 
  ** [NextToken](#API_ListMaterializedViewRefreshTaskRuns_ResponseSyntax) **   <a name="Glue-ListMaterializedViewRefreshTaskRuns-response-NextToken"></a>
-A continuation token, if not all task runs have yet been returned.
+A continuation token, if not all task run IDs have yet been returned.
 Type: String
 
 ## Errors

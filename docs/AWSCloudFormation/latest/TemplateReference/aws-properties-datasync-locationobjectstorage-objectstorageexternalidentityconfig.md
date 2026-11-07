@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DataSync::LocationObjectStorage ObjectStorageExternalIdentityConfig
 <a name="aws-properties-datasync-locationobjectstorage-objectstorageexternalidentityconfig"></a>
 
-<a name="aws-properties-datasync-locationobjectstorage-objectstorageexternalidentityconfig-description"></a>The `ObjectStorageExternalIdentityConfig` property type specifies Property description not available. for an [AWS::DataSync::LocationObjectStorage](aws-resource-datasync-locationobjectstorage.md).
+Specifies cloud-provider-specific external identity parameters used when exchanging the AWS web token for an OpenID Connect token at the object storage provider.
 
 ## Syntax
 <a name="aws-properties-datasync-locationobjectstorage-objectstorageexternalidentityconfig-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-datasync-locationobjectstorage-objectstorageexternalidentityconfig-properties"></a>
 
 `GoogleOidc`  <a name="cfn-datasync-locationobjectstorage-objectstorageexternalidentityconfig-googleoidc"></a>
-Property description not available.
+External identity parameters for Google Cloud Storage.
 *Required*: No
 *Type*: [GoogleOidcConfig](aws-properties-datasync-locationobjectstorage-googleoidcconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

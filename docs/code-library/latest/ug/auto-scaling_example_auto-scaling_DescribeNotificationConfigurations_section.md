@@ -18,7 +18,7 @@ The following `describe-notification-configurations` example describes the notif
 
 ```
 aws autoscaling describe-notification-configurations \
-    --auto-scaling-group-name {{my-asg}}
+    --auto-scaling-group-names {{my-asg}}
 ```
 Output:
 
@@ -44,7 +44,7 @@ The following `describe-notification-configurations` example uses the `--max-ite
 
 ```
 aws autoscaling describe-notification-configurations \
-    --auto-scaling-group-name {{my-auto-scaling-group}} \
+    --auto-scaling-group-names {{my-auto-scaling-group}} \
     --max-items {{1}}
 ```
 Output:
@@ -69,7 +69,7 @@ If the output includes a `NextToken` field, there are more notification configur
 
 ```
 aws autoscaling describe-notification-configurations \
-    --auto-scaling-group-name {{my-asg}} \
+    --auto-scaling-group-names {{my-asg}} \
     --starting-token {{Z3M3LMPEXAMPLE}}
 ```
 For more information, see [Getting Amazon SNS notifications when your Auto Scaling group scales](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ASGettingNotifications.html) in the *Amazon EC2 Auto Scaling User Guide*.

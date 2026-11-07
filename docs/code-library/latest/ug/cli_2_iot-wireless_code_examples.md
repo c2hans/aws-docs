@@ -195,8 +195,8 @@ Contents of `input.json`:
 
 ```
 {
-    "Description": "My LoRaWAN wireless device"
-    "DestinationName": "IoTWirelessDestination"
+    "Description": "My LoRaWAN wireless device",
+    "DestinationName": "IoTWirelessDestination",
     "LoRaWAN": {
         "DeviceProfileId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "ServiceProfileId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
@@ -207,8 +207,8 @@ Contents of `input.json`:
         },
         "DevEui": "ac12efc654d23fc2"
     },
-    "Name": "SampleIoTWirelessThing"
-    "Type": LoRaWAN
+    "Name": "SampleIoTWirelessThing",
+    "Type": "LoRaWAN"
 }
 ```
 Output:

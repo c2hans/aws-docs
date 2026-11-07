@@ -228,7 +228,7 @@ The following `batch-get-configuration-policy-associations` example retrieves as
 
 ```
 aws securityhub batch-get-configuration-policy-associations \
-    --configuration-policy-association-identifiers '{{{"OrganizationalUnitId": "ou-6hi7-8j91kl2m"}}}'
+    --configuration-policy-association-identifiers '{{[{"Target": {"OrganizationalUnitId": "ou-6hi7-8j91kl2m"}}]}}'
 ```
 Output:
 
@@ -421,30 +421,30 @@ The following `batch-update-automation-rules` example updates the specified auto
 
 ```
 aws securityhub batch-update-automation-rules \
-    --update-automation-rules-request-items '{{[ \
-        { \
-            "Actions": [{ \
-                "Type": "FINDING_FIELDS_UPDATE", \
-                "FindingFieldsUpdate": { \
-                    "Note": { \
-                        "Text": "Known issue that is a risk", \
-                        "UpdatedBy": "sechub-automation" \
-                    }, \
-                    "Workflow": { \
-                        "Status": "NEW" \
-                    } \
-                } \
-            }], \
-            "Criteria": { \
-                "SeverityLabel": [{ \
-                    "Value": "LOW", \
-                    "Comparison": "EQUALS" \
-                }] \
-            }, \
-            "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111", \
-            "RuleOrder": 1, \
-            "RuleStatus": "DISABLED" \
-        } \
+    --update-automation-rules-request-items '{{[
+        {
+            "Actions": [{
+                "Type": "FINDING_FIELDS_UPDATE",
+                "FindingFieldsUpdate": {
+                    "Note": {
+                        "Text": "Known issue that is a risk",
+                        "UpdatedBy": "sechub-automation"
+                    },
+                    "Workflow": {
+                        "Status": "NEW"
+                    }
+                }
+            }],
+            "Criteria": {
+                "SeverityLabel": [{
+                    "Value": "LOW",
+                    "Comparison": "EQUALS"
+                }]
+            },
+            "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "RuleOrder": 1,
+            "RuleStatus": "DISABLED"
+        }
     ]}}'
 ```
 Output:
@@ -583,23 +583,23 @@ The following `create-automation-rule` example creates an automation rule in the
 
 ```
 aws securityhub create-automation-rule \
-    --actions '{{[{ \
-        "Type": "FINDING_FIELDS_UPDATE", \
-        "FindingFieldsUpdate": { \
-            "Severity": { \
-                "Label": "HIGH" \
-            }, \
-            "Note": { \
-                "Text": "Known issue that is a risk. Updated by automation rules", \
-                "UpdatedBy": "sechub-automation" \
-            } \
-        } \
+    --actions '{{[{
+        "Type": "FINDING_FIELDS_UPDATE",
+        "FindingFieldsUpdate": {
+            "Severity": {
+                "Label": "HIGH"
+            },
+            "Note": {
+                "Text": "Known issue that is a risk. Updated by automation rules",
+                "UpdatedBy": "sechub-automation"
+            }
+        }
     }]}}' \
-    --criteria '{{{ \
-        "SeverityLabel": [{ \
-            "Value": "INFORMATIONAL", \
-            "Comparison": "EQUALS" \
-        }] \
+    --criteria '{{{
+        "SeverityLabel": [{
+            "Value": "INFORMATIONAL",
+            "Comparison": "EQUALS"
+        }]
     }}}' \
     --description {{"A sample rule"}} \
     --no-is-terminal \
@@ -1404,7 +1404,7 @@ The following `get-enabled-standards` example retrieves information about the PC
 
 ```
 aws securityhub get-enabled-standards \
-    --standards-subscription-arn {{"arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"}}
+    --standards-subscription-arns {{"arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"}}
 ```
 Output:
 

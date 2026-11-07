@@ -369,6 +369,7 @@ The following actions are supported by Amazon Connect Service:
 +  [UpdateMetricContent](API_UpdateMetricContent.md)
 +  [UpdateMetricMetadata](API_UpdateMetricMetadata.md)
 +  [UpdateNotificationContent](API_UpdateNotificationContent.md)
++  [UpdateOutboundEmailContactMessage](API_UpdateOutboundEmailContactMessage.md)
 +  [UpdateParticipantAuthentication](API_UpdateParticipantAuthentication.md)
 +  [UpdateParticipantRoleConfig](API_UpdateParticipantRoleConfig.md)
 +  [UpdatePhoneNumber](API_UpdatePhoneNumber.md)
@@ -500,9 +501,11 @@ The following actions are supported by Amazon Connect Outbound Campaigns V2:
 +  [UpdateCampaignSource](API_connect-outbound-campaigns-v2_UpdateCampaignSource.md)
 
 The following actions are supported by Amazon Connect Cases:
++  [BatchCreateRelatedItem](API_connect-cases_BatchCreateRelatedItem.md)
 +  [BatchGetCaseRule](API_connect-cases_BatchGetCaseRule.md)
 +  [BatchGetField](API_connect-cases_BatchGetField.md)
 +  [BatchPutFieldOptions](API_connect-cases_BatchPutFieldOptions.md)
++  [BatchUpdateCase](API_connect-cases_BatchUpdateCase.md)
 +  [CreateCase](API_connect-cases_CreateCase.md)
 +  [CreateCaseRule](API_connect-cases_CreateCaseRule.md)
 +  [CreateDomain](API_connect-cases_CreateDomain.md)

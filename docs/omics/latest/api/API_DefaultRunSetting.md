@@ -46,7 +46,7 @@ Pattern: `[A-Za-z0-9][A-Za-z0-9\-\._]*`
 Required: No
 
  ** engineSettings **   <a name="omics-Type-DefaultRunSetting-engineSettings"></a>
-Engine-specific settings for the workflow run. Use this field to specify configuration options that are specific to the workflow engine (for example, Nextflow profiles).
+Engine-specific settings for the workflow run. Use this field to specify configuration options that are specific to the workflow engine (for example, Nextflow profiles, Nextflow runtime configuration).
 Type: JSON value
 Required: No
 

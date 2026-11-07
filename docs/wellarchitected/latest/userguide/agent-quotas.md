@@ -12,8 +12,6 @@ AWS Well-Architected Agent is in preview release and is subject to change.
 
 AWS WA Agent access and entitlements depend on your AWS Support plan tier.
 
-**Support tier entitlements**
-
 | Support tier | Access | Max profiles | Max applications per profile |
 | --- | --- | --- | --- |
 | Developer | No | — | — |
@@ -25,6 +23,8 @@ AWS WA Agent access and entitlements depend on your AWS Support plan tier.
 
 ## Quotas and limits
 <a name="agent-quotas-limits"></a>
+
+The following table lists the default quotas and limits for AWS Well-Architected Agent.
 
 | Resource | Default limit | Notes |
 | --- | --- | --- |
@@ -45,8 +45,6 @@ AWS WA Agent access and entitlements depend on your AWS Support plan tier.
 AWS WA Agent does not analyze the CloudFormation resource types in the following table. If your application uses these resource types, AWS WA Agent does not retrieve their configuration data and does not include them in resource-level recommendations.
 
 For more information about specifying the services and resource types your application uses, see [Updating application context](agent-update-app-context.md).
-
-**Resource types not supported by AWS WA Agent**
 
 | Service | Unsupported resource types |
 | --- | --- |

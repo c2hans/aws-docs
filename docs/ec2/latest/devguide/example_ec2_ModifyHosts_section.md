@@ -16,7 +16,7 @@ The following `modify-hosts` example enables auto-placement for a Dedicated Host
 
 ```
 aws ec2 modify-hosts \
-    --host-id {{h-06c2f189b4EXAMPLE}} \
+    --host-ids {{h-06c2f189b4EXAMPLE}} \
     --auto-placement {{on}}
 ```
 Output:
@@ -35,7 +35,7 @@ The following `modify-hosts` example enables host recovery for the specified Ded
 
 ```
 aws ec2 modify-hosts \
-    --host-id {{h-06c2f189b4EXAMPLE}} \
+    --host-ids {{h-06c2f189b4EXAMPLE}} \
     --host-recovery {{on}}
 ```
 Output:

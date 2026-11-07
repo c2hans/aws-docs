@@ -46,6 +46,17 @@ Required: Yes
       "SecretAccessRoleArn": "string",
       "SecretArn": "string"
    },
+   "FederatedIdentity": {
+      "AwsIamRole": "string",
+      "ExternalIdentity": {
+         "GoogleOidc": {
+            "IdentityPoolName": "string",
+            "IdentityProviderName": "string",
+            "ProjectName": "string",
+            "ProjectNumber": "string"
+         }
+      }
+   },
    "LocationArn": "string",
    "LocationUri": "string",
    "ManagedSecretConfig": {
@@ -88,6 +99,10 @@ Type: Timestamp
  ** [CustomSecretConfig](#API_DescribeLocationObjectStorage_ResponseSyntax) **   <a name="DataSync-DescribeLocationObjectStorage-response-CustomSecretConfig"></a>
 Describes configuration information for a customer-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS Identity and Access Management (IAM) role that provides access to the secret.
 Type: [CustomSecretConfig](API_CustomSecretConfig.md) object
+
+ ** [FederatedIdentity](#API_DescribeLocationObjectStorage_ResponseSyntax) **   <a name="DataSync-DescribeLocationObjectStorage-response-FederatedIdentity"></a>
+The federated identity configuration that DataSync uses to access your object storage using an OpenID Connect (OIDC) token.
+Type: [ObjectStorageFederatedIdentityConfig](API_ObjectStorageFederatedIdentityConfig.md) object
 
  ** [LocationArn](#API_DescribeLocationObjectStorage_ResponseSyntax) **   <a name="DataSync-DescribeLocationObjectStorage-response-LocationArn"></a>
 The ARN of the object storage system location.

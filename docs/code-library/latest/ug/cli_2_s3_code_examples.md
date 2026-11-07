@@ -335,6 +335,19 @@ Output:
 ```
 download: s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey to mydoc.txt
 ```
+**Example 16: To upload a file with tags**
+The following `cp` example uploads a single file (`mydoc.txt`) to a specified bucket and key while setting two tags on the object. Specify `--tags` once per tag, separating the key and value with a space. Tags are supported only when transferring from a local path to S3.
+
+```
+aws s3 cp {{mydoc.txt}} {{s3://amzn-s3-demo-bucket/mydoc.txt}} \
+    --tags {{key1}} {{value1}} \
+    --tags {{key2}} {{value2}}
+```
+Output:
+
+```
+upload: mydoc.txt to s3://amzn-s3-demo-bucket/mydoc.txt
+```
 For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-copy) in the *AWS CLI User Guide*.
 +  For API details, see [Cp](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/cp.html) in *AWS CLI Command Reference*.
 
@@ -2619,6 +2632,19 @@ Output:
 ```
 move: mydoc.txt to s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey
 ```
+**Example 11: To move a file with tags**
+The following `mv` example moves a single file (`file.txt`) to a specified bucket and key while setting two tags on the object. Specify `--tags` once per tag, separating the key and value with a space. Tags are supported only when transferring from a local path to S3.
+
+```
+aws s3 mv {{file.txt}} {{s3://amzn-s3-demo-bucket/file.txt}} \
+    --tags {{key1}} {{value1}} \
+    --tags {{key2}} {{value2}}
+```
+Output:
+
+```
+move: file.txt to s3://amzn-s3-demo-bucket/file.txt
+```
 For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-move) in the *AWS CLI User Guide*.
 +  For API details, see [Mv](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/mv.html) in *AWS CLI Command Reference*.
 
@@ -3902,6 +3928,20 @@ Output:
 ```
 upload: test.txt to s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/test.txt
 upload: test2.txt to s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/test2.txt
+```
+**Example 9: To sync a local directory to a bucket with tags**
+The following `sync` example syncs the current directory to a specified bucket while setting two tags on each uploaded object. Specify `--tags` once per tag, separating the key and value with a space. Tags are set only on objects that are actually uploaded.
+
+```
+aws s3 sync {{.}} {{s3://amzn-s3-demo-bucket}} \
+    --tags {{key1}} {{value1}} \
+    --tags {{key2}} {{value2}}
+```
+Output:
+
+```
+upload: test.txt to s3://amzn-s3-demo-bucket/test.txt
+upload: test2.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
 For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-sync) in the *AWS CLI User Guide*.
 +  For API details, see [Sync](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/sync.html) in *AWS CLI Command Reference*.

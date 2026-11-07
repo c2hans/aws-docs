@@ -264,10 +264,11 @@ G Worker Types (General-purpose compute workers):
 + G.12X: 12 DPU (48 vCPUs, 192 GB memory, 768GB disk)
 + G.16X: 16 DPU (64 vCPUs, 256 GB memory, 1024GB disk)
 R Worker Types (Memory-optimized workers):
-+ R.1X: 1 M-DPU (4 vCPUs, 32 GB memory)
-+ R.2X: 2 M-DPU (8 vCPUs, 64 GB memory)
-+ R.4X: 4 M-DPU (16 vCPUs, 128 GB memory)
-+ R.8X: 8 M-DPU (32 vCPUs, 256 GB memory)
++ R.1X: 1 M-DPU (4 vCPUs, 32 GB memory, 94GB disk)
++ R.2X: 2 M-DPU (8 vCPUs, 64 GB memory, 138GB disk)
++ R.4X: 4 M-DPU (16 vCPUs, 128 GB memory, 256GB disk)
++ R.8X: 8 M-DPU (32 vCPUs, 256 GB memory, 512GB disk)
+The `G.12X`, `G.16X`, and `R.1X` through `R.8X` worker types are available only for AWS Glue version 4.0 or later Spark ETL jobs in select AWS Regions. For the supported Regions, see [Configuring job properties for Spark jobs](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
 *Required*: No
 *Type*: String
 *Allowed values*: `Standard | G.1X | G.2X | G.025X | G.4X | G.8X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X`

@@ -25,6 +25,7 @@ Retrieves the definitions of some or all of the tables in a given `Database`.
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "QueryAsOfTime": {{number}},
+   "ResourceShareType": "{{string}}",
    "TransactionId": "{{string}}"
 }
 ```
@@ -42,7 +43,7 @@ The following are the valid combinations of values:
 +  `NAME` - Names of all tables in the database.
 +  `NAME`, `TABLE_TYPE` - Names of all tables and the table types.
 Type: Array of strings
-Valid Values: `NAME | TABLE_TYPE`
+Valid Values: `NAME | TABLE_TYPE | DEFAULT | LATEST_ICEBERG_METADATA`
 Required: No
 
  ** [AuditContext](#API_GetTables_RequestSyntax) **   <a name="Glue-GetTables-request-AuditContext"></a>
@@ -92,6 +93,14 @@ The time as of when to read the table contents. If not set, the most recent tran
 Type: Timestamp
 Required: No
 
+ ** [ResourceShareType](#API_GetTables_RequestSyntax) **   <a name="Glue-GetTables-request-ResourceShareType"></a>
+Specifies which tables the `GetTables` call returns. The allowable values are `FEDERATED` or `ALL`.
++ If set to `FEDERATED`, returns only federated tables, which reference an entity outside the AWS Glue Data Catalog.
++ If set to `ALL`, returns all tables in the database, both federated and non-federated.
+Type: String
+Valid Values: `FEDERATED | ALL`
+Required: No
+
  ** [TransactionId](#API_GetTables_RequestSyntax) **   <a name="Glue-GetTables-request-TransactionId"></a>
 The transaction ID at which to read the table contents.
 Type: String
@@ -118,6 +127,63 @@ Required: No
             "DatabaseIdentifier": "string",
             "Identifier": "string"
          },
+         "IcebergTableMetadata": {
+            "CurrentSchemaId": number,
+            "DefaultSortOrderId": number,
+            "DefaultSpecId": number,
+            "FormatVersion": "string",
+            "LastColumnId": number,
+            "LastPartitionId": number,
+            "Location": "string",
+            "PartitionSpecs": [
+               {
+                  "Fields": [
+                     {
+                        "FieldId": number,
+                        "Name": "string",
+                        "SourceId": number,
+                        "Transform": "string"
+                     }
+                  ],
+                  "SpecId": number
+               }
+            ],
+            "Properties": {
+               "string" : "string"
+            },
+            "Schemas": [
+               {
+                  "Fields": [
+                     {
+                        "Doc": "string",
+                        "Id": number,
+                        "InitialDefault": JSON value,
+                        "Name": "string",
+                        "Required": boolean,
+                        "Type": JSON value,
+                        "WriteDefault": JSON value
+                     }
+                  ],
+                  "IdentifierFieldIds": [ number ],
+                  "SchemaId": number,
+                  "Type": "string"
+               }
+            ],
+            "SortOrders": [
+               {
+                  "Fields": [
+                     {
+                        "Direction": "string",
+                        "NullOrder": "string",
+                        "SourceId": number,
+                        "Transform": "string"
+                     }
+                  ],
+                  "OrderId": number
+               }
+            ],
+            "TableUuid": "string"
+         },
          "IsMaterializedView": boolean,
          "IsMultiDialectView": boolean,
          "IsRegisteredWithLakeFormation": boolean,
@@ -139,6 +205,9 @@ Required: No
             }
          ],
          "Retention": number,
+         "RLSProperties": {
+            "DefaultRLSPolicy": "string"
+         },
          "Status": {
             "Action": "string",
             "Details": {
@@ -230,6 +299,7 @@ Required: No
          "VersionId": "string",
          "ViewDefinition": {
             "Definer": "string",
+            "IsManaged": boolean,
             "IsProtected": boolean,
             "LastRefreshType": "string",
             "RefreshSeconds": number,
@@ -243,7 +313,19 @@ Required: No
                   "ViewOriginalText": "string"
                }
             ],
+            "SparkPipelineInfo": {
+               "string" : "string"
+            },
             "SubObjects": [ "string" ],
+            "SubObjectsStatistics": [
+               {
+                  "FileCount": number,
+                  "GlueVersionId": "string",
+                  "PartitionCount": number,
+                  "SourceType": "string",
+                  "TotalFileBytes": number
+               }
+            ],
             "SubObjectVersionIds": [ number ],
             "ViewVersionId": number,
             "ViewVersionToken": "string"

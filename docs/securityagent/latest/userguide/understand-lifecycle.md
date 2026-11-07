@@ -65,7 +65,7 @@ Each security capability in AWS Security Agent follows a different workflow mode
 
 Penetration tests use a configuration-and-run model that supports iterative security testing:
 +  **Create once, execute many times** - Define a configuration for a specific target (API endpoint, feature area) with scope boundaries, authentication, and test parameters
-+  **Independent executions** - Execute the same configuration multiple times as you improve security. Each execution is independent and generates new findings
++  **Independent executions** - Execute the same configuration multiple times as you improve security. Each execution generates its own findings, and first retests the findings from the most recent completed full run. For more information, see [Retest of previous findings](review-penetration-findings.md#retest-previous-findings).
 
 This model supports continuous security validation as you develop and deploy improvements.
 

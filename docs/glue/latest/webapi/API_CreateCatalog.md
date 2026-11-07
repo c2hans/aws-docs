@@ -59,6 +59,7 @@ Creates a new catalog in the AWS Glue Data Catalog.
          "ConnectionType": "{{string}}",
          "Identifier": "{{string}}"
       },
+      "OverwriteChildResourcePermissionsWithDefault": "{{string}}",
       "Parameters": {
          "{{string}}" : "{{string}}"
       },

@@ -80,7 +80,7 @@ The following `create-flow` example creates a flow with the specified configurat
 aws mediaconnect create-flow \
     --availability-zone {{us-west-2c}} \
     --name {{ExampleFlow}} \
-    --source Description='Example source, backup',IngestPort=1055,Name=BackupSource,Protocol=rtp,WhitelistCidr=10.24.34.0/23
+    --source {{"Description='Example source, backup',IngestPort=1055,Name=BackupSource,Protocol=rtp,WhitelistCidr=10.24.34.0/23"}}
 ```
 Output:
 

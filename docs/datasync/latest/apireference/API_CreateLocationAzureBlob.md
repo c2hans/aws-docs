@@ -27,6 +27,13 @@ Before you begin, make sure you know [how DataSync accesses Azure Blob Storage](
       "SecretAccessRoleArn": "{{string}}",
       "SecretArn": "{{string}}"
    },
+   "FederatedIdentity": {
+      "AwsIamRole": "{{string}}",
+      "AzureOidc": {
+         "ClientId": "{{string}}",
+         "TenantId": "{{string}}"
+      }
+   },
    "SasConfiguration": {
       "Token": "{{string}}"
    },
@@ -64,9 +71,9 @@ Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\
 Required: No
 
  ** [AuthenticationType](#API_CreateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-CreateLocationAzureBlob-request-AuthenticationType"></a>
-Specifies the authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS).
+Specifies the authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS) or an OpenID Connect (OIDC) token.
 Type: String
-Valid Values: `SAS | NONE`
+Valid Values: `SAS | NONE | OIDC`
 Required: Yes
 
  ** [BlobType](#API_CreateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-CreateLocationAzureBlob-request-BlobType"></a>
@@ -94,6 +101,11 @@ Required: Yes
 Specifies configuration information for a customer-managed Secrets Manager secret where the authentication token for an AzureBlob storage location is stored in plain text, in Secrets Manager. This configuration includes the secret ARN, and the ARN for an IAM role that provides access to the secret. For more information, see [ Using a secret that you manage](https://docs.aws.amazon.com/datasync/latest/userguide/location-credentials.html#custom-secret-custom-key).
 You can use either `CmkSecretConfig` (with `SasConfiguration`) or `CustomSecretConfig` (without `SasConfiguration`) to provide credentials for a `CreateLocationAzureBlob` request. Do not provide both parameters for the same request.
 Type: [CustomSecretConfig](API_CustomSecretConfig.md) object
+Required: No
+
+ ** [FederatedIdentity](#API_CreateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-CreateLocationAzureBlob-request-FederatedIdentity"></a>
+Specifies the federated identity configuration that allows DataSync to access your Azure Blob Storage using an OpenID Connect (OIDC) token instead of a shared access signature (SAS). Provide either `FederatedIdentity` or `SasConfiguration`, but not both.
+Type: [AzureFederatedIdentityConfig](API_AzureFederatedIdentityConfig.md) object
 Required: No
 
  ** [SasConfiguration](#API_CreateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-CreateLocationAzureBlob-request-SasConfiguration"></a>

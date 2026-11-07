@@ -44,7 +44,7 @@ The string to match against. The setting you provide for this depends on the mat
 Labels are case sensitive and components of a label must be separated by colon, for example `NS1:NS2:name`.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[0-9A-Za-z_:-]{1,1024}$`
+*Pattern*: `^[0-9A-Za-z_:.-]{1,1024}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Scope`  <a name="cfn-wafv2-webacl-labelmatchstatement-scope"></a>

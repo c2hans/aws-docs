@@ -43,6 +43,11 @@ Information associated with a campaign.
 Type: [Campaign](API_Campaign.md) object
 Required: No
 
+ ** Cases **   <a name="connect-Type-Contact-Cases"></a>
+A list of cases associated with the contact. This field is populated when one or more cases have been linked to the contact.
+Type: Array of [CaseEntry](API_CaseEntry.md) objects
+Required: No
+
  ** Channel **   <a name="connect-Type-Contact-Channel"></a>
 How the contact reached your contact center.
 Type: String

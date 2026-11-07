@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-05
+generated_on: 2026-11-06
 ---
 
 # Welcome to AWS Documentation
@@ -280,6 +280,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 
 ### General Reference
 
+- [AWS Abuse Signal API](/abuse-signal/?icmpid=docs_homepage_genref): Programmatically submit and track abuse reports against AWS resources
 - [AWS Diagnostic Tools](/diagnostic-tools/?icmpid=docs_homepage_genref): Diagnostic tools for partners in the Partner-Led Support program
 - [AWS Glossary](/glossary/latest/reference/glos-chap.html?icmpid=docs_homepage_addtlrcs): Find definitions for AWS terms
 - [AWS Lifecycle changes](/general/latest/gr/service-lifecycle.html?icmpid=docs_homepage_genref): Stay informed about AWS service availability changes
@@ -310,6 +311,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Agent Toolkit for AWS](/agent-toolkit/?icmpid=docs_homepage_ml): Tools, knowledge, and guardrails AI coding agents need to build, deploy, and manage applications on AWS
 - [Apache MXNet on AWS](/mxnet/?icmpid=docs_homepage_ml): Scalable, open-source deep learning framework
 - [AWS App Studio](/appstudio/?icmpid=docs_homepage_ml): Build internal applications to automate processes and simplify organization activities
+- [AWS assistant](/assistant/?icmpid=docs_homepage_ml): Get answers about your AWS resources, costs, and errors as you work
 - [Amazon Bedrock](/bedrock/?icmpid=docs_homepage_ml): Access best-in-class foundation models to build generative AI applications
 - [Amazon Bedrock AgentCore](/bedrock-agentcore/?icmpid=docs_homepage_ml): Deploy and operate agents at scale using any framework and model
 - [Claude Platform on AWS](/claude-platform/?icmpid=docs_homepage_ml): Access the native Anthropic platform with AWS billing and security
@@ -333,7 +335,6 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon Nova Act](/nova-act/?icmpid=docs_homepage_ml): Build and manage fleets of reliable AI agents to automate UI workflows
 - [Amazon Personalize](/personalize/?icmpid=docs_homepage_ml): Build real-time recommendations into your applications
 - [Amazon Polly](/polly/?icmpid=docs_homepage_ml): Turn text into life-like speech
-- [Amazon Q Developer](/assistant/?icmpid=docs_homepage_ml): Get answers about your AWS resources, costs, and errors as you work
 - [Amazon Rekognition](/rekognition/?icmpid=docs_homepage_ml): Analyze image and video
 - [Amazon SageMaker AI](/sagemaker/?icmpid=docs_homepage_ml): Build, train, and deploy machine learning models at scale
 - [Amazon Textract](/textract/?icmpid=docs_homepage_ml): Extract text and data from documents

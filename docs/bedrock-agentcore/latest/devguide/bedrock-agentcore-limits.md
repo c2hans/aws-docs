@@ -288,6 +288,7 @@ Amazon Bedrock AgentCore Gateway has the following service quotas. You can reque
 | Search-based tool-call rate | 25 transactions per minute | Yes |
 | Maximum tool-call/tool-list/tool-search payload size | 6 MB | Yes |
 | Rate of Web Search Tool requests | 10 transactions per second | Yes |
+| Rate of Web Answer requests | 10 transactions per second | Yes |
 
 For more information about service quotas and how to request increases, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 

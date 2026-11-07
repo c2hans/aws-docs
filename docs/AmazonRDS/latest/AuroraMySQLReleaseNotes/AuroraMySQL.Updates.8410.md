@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.8410.html
 ---
 
-# Aurora MySQL 8.4.10, October 26, 2026
+# Aurora MySQL 8.4.10
 <a name="AuroraMySQL.Updates.8410"></a><a name="8410"></a><a name="8.4.10"></a>
 
 **Version:** 8.4.10
@@ -19,21 +19,29 @@ For troubleshooting information, see [Troubleshooting for Aurora MySQL in-place 
 
 If you have any questions or concerns, AWS Support is available on the community forums and through [AWS Support](https://aws.amazon.com/support). For more information, see [Maintaining an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_UpgradeDBInstance.Maintenance.html) in the *Amazon Aurora User Guide*.
 
-## New features
+For more information about patch releases and how to apply them, see [About patch releases](AuroraMySQL.Updates.84Updates.md#AuroraMySQL.Updates.84Updates.PatchReleases).
+
+**Topics**
++ [Aurora MySQL 8.4.10, October 26, 2026](#AuroraMySQL.Updates.8410.GA)
+
+## Aurora MySQL 8.4.10, October 26, 2026
+<a name="AuroraMySQL.Updates.8410.GA"></a>
+
+### New features
 <a name="AuroraMySQL.Updates.8410.NewFeatures"></a>
 + Aurora MySQL minor version upgrades to this release from version 8.4.7 or 8.4.8 now complete faster, allowing your writer instance to return to service sooner. No configuration changes or opt-in are required; the improvement is applied automatically.
 + Added support for tagged global transaction identifiers (GTIDs). This feature extends the GTID format to include a user-defined tag, so that transactions sharing the same source server UUID can be grouped and identified separately. A tagged GTID has the format UUID:TAG:NUMBER, where TAG is an alphanumeric label that you assign to a set of transactions. Use tagged GTIDs to distinguish transactions from different workloads or sources within complex replication topologies. For more information, see [Using GTID tags with an Aurora MySQL DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-replication-gtid.tags.html) in the *Amazon Aurora User Guide*.
 
-## Improvements
+### Improvements
 <a name="AuroraMySQL.Updates.8410.Improvements"></a>
 
 Below are the improvements made compared to Aurora MySQL 8.4.8, see [Aurora MySQL 8.4.8 Release Notes](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes/AuroraMySQL.Updates.848.html).
 
-### Availability improvements
+#### Availability improvements
 <a name="AuroraMySQL.Updates.8410.AvailabilityImprovements"></a>
 + Fixed an issue with improper handling of empty responses during connection loss with storage nodes.
 
-### General improvements
+#### General improvements
 <a name="AuroraMySQL.Updates.8410.GeneralImprovements"></a>
 + Added three new CloudWatch metrics `UndoTablespaceTruncationPagesRemaining`, `UndoTablespaceTruncationPoint`, `UndoTablespaceTruncationActiveTransactions` to help track writer instance undo tablespace truncation. Please see [Amazon CloudWatch metrics for Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMonitoring.Metrics.html) for additional details. Added a new global status variable `Aurora_undo_tablespace_truncation_pending_id`, that reports the ID of the undo tablespace currently pending truncation, or 0 when there is none. Please see [Aurora MySQL global status variables](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Reference.GlobalStatusVars.html) for additional details.
 + Added new metrics `AuroraUndoTablespaceBytesUsed`, `AuroraUndoTablespaceUtilization` to help track writer instance undo usage. Please see the [Amazon CloudWatch metrics for Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMonitoring.Metrics.html) for additional details.
@@ -45,11 +53,11 @@ Below are the improvements made compared to Aurora MySQL 8.4.8, see [Aurora MySQ
 + Enabled support for higher `max_connections` limit, increased the highest allowed value from 16000 to 50000.
 + Added `RETURNING` clause support for single-table `DELETE` statements. You can now return values from deleted rows directly in the `DELETE` statement, eliminating the need for a separate `SELECT` query. Because `RETURNING` is now a reserved keyword, identifiers named `returning` must be quoted with backticks.
 
-### Upgrades and migrations
+#### Upgrades and migrations
 <a name="AuroraMySQL.Updates.8410.UpgradesMigration"></a>
 + Optimized minor version upgrade performance through parallel processing of Performance Schema updates, reducing upgrade duration when Performance Schema modifications are required.
 
-## Integration of MySQL Community Edition bug fixes
+### Integration of MySQL Community Edition bug fixes
 <a name="AuroraMySQL.Updates.8410.Patches"></a>
 
 This version is based on MySQL 8.4.10. For more information, see [MySQL 8.4 Release Notes](https://dev.mysql.com/doc/relnotes/mysql/8.4/en/) on the MySQL website.

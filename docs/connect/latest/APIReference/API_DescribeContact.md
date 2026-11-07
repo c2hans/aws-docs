@@ -126,6 +126,12 @@ Content-type: application/json
       "Campaign": {
          "CampaignId": "string"
       },
+      "Cases": [
+         {
+            "CaseId": "string",
+            "CaseReferenceNumber": "string"
+         }
+      ],
       "Channel": "string",
       "ChatMetrics": {
          "AgentMetrics": {

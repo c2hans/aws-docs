@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/ebs-metrics-
 
 Compute Optimizer analyzes the following CloudWatch metrics of your EBS volumes.
 
+**Metrics analyzed for EBS volumes**
+
 | Metric | Description |
 | --- | --- |
 |  VolumeReadBytes  | The read bytes per second of the EBS volume. |

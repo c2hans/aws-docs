@@ -121,6 +121,7 @@ Required: Yes
 ```
 HTTP/1.1 {{statusCode}}
 X-Amzn-Bedrock-AgentCore-Runtime-Session-Id: {{runtimeSessionId}}
+X-Amzn-Bedrock-AgentCore-Runtime-Session-Endpoint-Url: {{sessionEndpointUrl}}
 Mcp-Session-Id: {{mcpSessionId}}
 Mcp-Protocol-Version: {{mcpProtocolVersion}}
 X-Amzn-Trace-Id: {{traceId}}
@@ -160,6 +161,10 @@ Pattern: `[a-zA-Z0-9][a-zA-Z0-9-_]*`
 The identifier of the runtime session.
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9-_]*`
+
+ ** [sessionEndpointUrl](#API_InvokeAgentRuntime_ResponseSyntax) **   <a name="BedrockAgentCore-InvokeAgentRuntime-response-sessionEndpointUrl"></a>
+The HTTPS endpoint that addresses this runtime session directly. This value is returned only when the agent runtime is configured with allowed ports and direct runtime access is available for the session. If this value is not present, use `InvokeAgentRuntime` to communicate with the session.
+Length Constraints: Minimum length of 1. Maximum length of 128.
 
  ** [traceId](#API_InvokeAgentRuntime_ResponseSyntax) **   <a name="BedrockAgentCore-InvokeAgentRuntime-response-traceId"></a>
 The trace identifier for request tracking.

@@ -69,6 +69,11 @@ Required: No
    "Statistics": [
       {
          "ColumnsReferenced": [ "string" ],
+         "DistributionValue": {
+            "BinEdges": [ "string" ],
+            "Count": [ number ],
+            "DataType": "string"
+         },
          "DoubleValue": number,
          "EvaluationLevel": "string",
          "InclusionAnnotation": {

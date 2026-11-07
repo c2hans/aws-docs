@@ -70,12 +70,17 @@ For supported file types, the attachments browser can display an inline preview 
 
 The following file types support inline preview:
 + Images: PNG, JPG, JPEG, GIF, BMP, WebP, SVG, ICO
-+ Text: TXT, LOG, JSON, XML, YAML, YML, CSV, MD, INI, CFG, CONF, SH, BAT, PY, JS, TS, TSX, JSX, HTML, CSS, TOML
++ Text: TXT, XML, MD, INI, CFG, CONF, SH, BAT, PY, JS, TS, TSX, JSX, HTML, CSS, TOML
++ Tables: CSV, TSV, JSONL, NDJSON, Parquet
++ Data files: JSON, YAML, YML
++ Logs: LOG
 + Video: MP4, WebM, OGG
 + Audio: MP3, WAV, OGG, FLAC, AAC, WebM
 + 3D meshes and point clouds: GLB, glTF, OBJ, STL, PLY, PCD
-+ 3D scenes: USDZ
++ 3D scenes: USD, USDA, USDC, USDZ
 
-For a GLB, glTF, OBJ, STL, PLY, or PCD file, the full-screen preview has a toolbar with the zoom, **Reset view**, **Save snapshot as PNG**, and **View settings** controls. Next to the view, the **Properties** panel describes the file, and **Scene graph** lists the objects in the file when it has more than one object or nested objects. To hide or show these details, choose **Hide properties panel** or **Show properties panel**. For a description of each control, setting, and property, see [Viewing 3D meshes and point clouds](preview-task-outputs.md#preview-task-outputs-3d) and [Viewing the properties of a mesh or point cloud](preview-task-outputs.md#preview-task-outputs-properties).
+For what the table, data, and log viewers show, see [Viewing data and log files](preview-task-outputs.md#preview-task-outputs-data).
 
-For a USDZ file, the full-screen preview lists the scene's **Up axis**, **Meters per unit**, **Default prim**, **Time codes**, **Prims**, **Textures**, and **Layers**, and shows the **Prim hierarchy** of the scene.
+In the full-screen preview of a 3D file, a toolbar has the same view buttons and settings. A panel next to the view shows the properties of the file and, when the file has more than one object, its scene graph. To hide or show this panel, choose **Hide properties panel** or **Show properties panel**. For more information, see [Viewing 3D meshes and point clouds](preview-task-outputs.md#preview-task-outputs-3d) and [Viewing the properties of a mesh or point cloud](preview-task-outputs.md#preview-task-outputs-properties).
+
+For a USD, USDA, USDC, or USDZ file, the full-screen preview lists details of the scene, such as its up axis, its units, and its prim hierarchy.

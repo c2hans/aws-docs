@@ -15,6 +15,13 @@ Filter based on a data source (an AWS Glue table) associated with the run.
 Type: [DataSource](API_DataSource.md) object
 Required: Yes
 
+ ** RulesetName **   <a name="Glue-Type-DataQualityRulesetEvaluationRunFilter-RulesetName"></a>
+Filter results by the name of the ruleset.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** StartedAfter **   <a name="Glue-Type-DataQualityRulesetEvaluationRunFilter-StartedAfter"></a>
 Filter results by runs that started after this time.
 Type: Timestamp

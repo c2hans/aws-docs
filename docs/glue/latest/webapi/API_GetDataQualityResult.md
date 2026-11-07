@@ -46,6 +46,13 @@ Required: Yes
    "AnalyzerResults": [
       {
          "Description": "string",
+         "EvaluatedDistributions": {
+            "string" : {
+               "BinEdges": [ "string" ],
+               "Count": [ number ],
+               "DataType": "string"
+            }
+         },
          "EvaluatedMetrics": {
             "string" : number
          },
@@ -162,7 +169,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 
  ** [Observations](#API_GetDataQualityResult_ResponseSyntax) **   <a name="Glue-GetDataQualityResult-response-Observations"></a>
-A list of `DataQualityObservation` objects representing the observations generated after evaluating the rules and analyzers.
+A list of `DataQualityObservation` objects representing the anomaly detection observations generated after evaluating the rules and analyzers.
 Type: Array of [DataQualityObservation](API_DataQualityObservation.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 

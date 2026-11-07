@@ -1654,7 +1654,7 @@ The following `describe-ssl-policies` example displays the names of the polices 
 ```
 aws elbv2 describe-ssl-policies \
     --load-balancer-type {{application}} \
-    --query SslPolicies[?contains(SslProtocols,'TLSv1.3')].Name
+    --query {{"SslPolicies[?contains(SslProtocols,'TLSv1.3')].Name"}}
 ```
 Output:
 
@@ -2064,7 +2064,7 @@ The following `modify-listener` example changes the default action to a `redirec
 ```
 aws elbv2 modify-listener \
     --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}} \
-    --default-actions {{Type=redirect,}} RedirectConfig='{Protocol=HTTPS,StatusCode=HTTP_302}'
+    --default-actions '{{Type=redirect,RedirectConfig={Protocol=HTTPS,StatusCode=HTTP_302}}}'
 ```
 Output:
 
@@ -2342,14 +2342,14 @@ The following code example shows how to use `modify-target-group`.
 
 **AWS CLI**
 **To modify the health check configuration for a target group**
-The following `modify-target-group` example changes the configuration of the health checks used to evaluate the health of the targets for the specified target group. Note that due to the way the CLI parses commas, you must surround the range for the `--matcher` option with single quotes instead of double quotes.
+The following `modify-target-group` example changes the configuration of the health checks used to evaluate the health of the targets for the specified target group. Because the range for the `--matcher` option contains a comma, put the range in double quotes and the whole value in single quotes.
 
 ```
 aws elbv2 modify-target-group \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-https-targets/2453ed029918f21f}} \
     --health-check-protocol {{HTTPS}} \
     --health-check-port {{443}} \
-    --matcher HttpCode='200,299'
+    --matcher '{{HttpCode="200,299"}}'
 ```
 Output:
 

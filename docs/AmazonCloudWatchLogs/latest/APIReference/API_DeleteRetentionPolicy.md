@@ -9,6 +9,8 @@ Deletes the specified retention policy.
 
 Log events do not expire if they belong to log groups without a retention policy.
 
+If an account-level retention policy applies to this log group, the log group uses the retention period from that policy. For more information about account-level retention policies, see [PutAccountPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutAccountPolicy.html).
+
 ## Request Syntax
 <a name="API_DeleteRetentionPolicy_RequestSyntax"></a>
 

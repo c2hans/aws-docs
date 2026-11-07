@@ -18,13 +18,13 @@ You can attach `AIDevOpsAgentAccessPolicy` to your users, groups, and roles.
 <a name="AIDevOpsAgentAccessPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: March 26, 2026, 03:42 UTC
-+ **Edited time:** November 04, 2026, 18:07 UTC
++ **Edited time:** November 06, 2026, 21:57 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy`
 
 ## Policy version
 <a name="AIDevOpsAgentAccessPolicy-version"></a>
 
-**Policy version:** v13 (default)
+**Policy version:** v14 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -210,6 +210,7 @@ The policy's default version is the version that defines the permissions for the
         "cloudwatch:GetMetricStatistics",
         "cloudwatch:GetMetricStream",
         "cloudwatch:GetOTelEnrichment",
+        "cloudwatch:GetProfileRecords",
         "cloudwatch:GetService",
         "cloudwatch:GetServiceLevelObjective",
         "cloudwatch:List*",

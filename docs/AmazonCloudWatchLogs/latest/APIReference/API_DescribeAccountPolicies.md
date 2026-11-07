@@ -12,6 +12,7 @@ To use this operation, you must be signed on with the correct permissions depend
 + To see subscription filter policies, you must have the `logs:DescribeSubscriptionFilters` and `logs:DescribeAccountPolicies` permissions.
 + To see transformer policies, you must have the `logs:GetTransformer` and `logs:DescribeAccountPolicies` permissions.
 + To see field index policies, you must have the `logs:DescribeIndexPolicies` and `logs:DescribeAccountPolicies` permissions.
++ To see retention policies, you must have the `logs:DescribeAccountPolicies` permission.
 
 ## Request Syntax
 <a name="API_DescribeAccountPolicies_RequestSyntax"></a>

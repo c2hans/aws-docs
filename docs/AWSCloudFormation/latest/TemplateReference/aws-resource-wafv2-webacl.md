@@ -157,7 +157,7 @@ A description of the web ACL that helps with identification.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MonetizationConfig`  <a name="cfn-wafv2-webacl-monetizationconfig"></a>
-The monetization configuration for the web ACL. Required when any rule in the web ACL uses the `Monetize` action. Specifies the cryptocurrency payment networks and currency mode for AI bot monetization.
+The monetization configuration for the web ACL. Required when any rule in the web ACL uses the `Monetize` action. Specifies the payment settlement options and currency mode for AI bot monetization.
 *Required*: No
 *Type*: [MonetizationConfig](aws-properties-wafv2-webacl-monetizationconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

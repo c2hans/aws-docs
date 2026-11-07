@@ -402,7 +402,7 @@ aws autoscaling create-launch-configuration \
     --launch-configuration-name {{my-lc}} \
     --image-id {{ami-04d5cc9b88example}} \
     --instance-type {{m5.large}} \
-    --block-device-mappings '{{[{"DeviceName":"/dev/sdf","NoDevice":""}]}}'
+    --block-device-mappings '{{[{"DeviceName":"/dev/sdf","NoDevice":true}]}}'
 ```
 This command produces no output.
 For more information, see [Block device mappings for volumes on Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.
@@ -1561,7 +1561,7 @@ The following `describe-notification-configurations` example describes the notif
 
 ```
 aws autoscaling describe-notification-configurations \
-    --auto-scaling-group-name {{my-asg}}
+    --auto-scaling-group-names {{my-asg}}
 ```
 Output:
 
@@ -1587,7 +1587,7 @@ The following `describe-notification-configurations` example uses the `--max-ite
 
 ```
 aws autoscaling describe-notification-configurations \
-    --auto-scaling-group-name {{my-auto-scaling-group}} \
+    --auto-scaling-group-names {{my-auto-scaling-group}} \
     --max-items {{1}}
 ```
 Output:
@@ -1612,7 +1612,7 @@ If the output includes a `NextToken` field, there are more notification configur
 
 ```
 aws autoscaling describe-notification-configurations \
-    --auto-scaling-group-name {{my-asg}} \
+    --auto-scaling-group-names {{my-asg}} \
     --starting-token {{Z3M3LMPEXAMPLE}}
 ```
 For more information, see [Getting Amazon SNS notifications when your Auto Scaling group scales](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ASGettingNotifications.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -2568,7 +2568,7 @@ The following `put-notification-configuration` example adds the specified notifi
 aws autoscaling put-notification-configuration \
     --auto-scaling-group-name {{my-asg}} \
     --topic-arn {{arn:aws:sns:us-west-2:123456789012:my-sns-topic}} \
-    --notification-type {{autoscaling:TEST_NOTIFICATION}}
+    --notification-types {{autoscaling:TEST_NOTIFICATION}}
 ```
 This command produces no output.
 For more information, see [Getting Amazon SNS notifications when your Auto Scaling group scales](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ASGettingNotifications.html#as-configure-asg-for-sns) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -2847,8 +2847,8 @@ Contents of `config.json`:
         "InstanceWarmup": 60,
         "MinHealthyPercentage": 50,
         "AutoRollback": true,
-        "ScaleInProtectedInstances": Ignore,
-        "StandbyInstances": Terminate
+        "ScaleInProtectedInstances": "Ignore",
+        "StandbyInstances": "Terminate"
     }
 }
 ```

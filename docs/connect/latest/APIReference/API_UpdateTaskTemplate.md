@@ -39,6 +39,9 @@ Content-type: application/json
       ]
    },
    "ContactFlowId": "{{string}}",
+   "ContactHooks": {
+      "WrapUpFlowId": "{{string}}"
+   },
    "Defaults": {
       "DefaultFieldValues": [
          {
@@ -96,6 +99,11 @@ The identifier of the flow that runs by default when a task is created by refere
 Although this parameter is marked as optional, the request must contain either a `ContactFlowId` or a field of type `QUICK_CONNECT`.
 Type: String
 Length Constraints: Maximum length of 500.
+Required: No
+
+ ** [ContactHooks](#API_UpdateTaskTemplate_RequestSyntax) **   <a name="connect-UpdateTaskTemplate-request-ContactHooks"></a>
+The event hooks that are set on tasks created by using this template.
+Type: [TaskTemplateContactHooks](API_TaskTemplateContactHooks.md) object
 Required: No
 
  ** [Defaults](#API_UpdateTaskTemplate_RequestSyntax) **   <a name="connect-UpdateTaskTemplate-request-Defaults"></a>
@@ -167,6 +175,9 @@ Content-type: application/json
       ]
    },
    "ContactFlowId": "string",
+   "ContactHooks": {
+      "WrapUpFlowId": "string"
+   },
    "CreatedTime": number,
    "Defaults": {
       "DefaultFieldValues": [
@@ -218,6 +229,10 @@ Type: [TaskTemplateConstraints](API_TaskTemplateConstraints.md) object
 The identifier of the flow that runs by default when a task is created by referencing this template.
 Type: String
 Length Constraints: Maximum length of 500.
+
+ ** [ContactHooks](#API_UpdateTaskTemplate_ResponseSyntax) **   <a name="connect-UpdateTaskTemplate-response-ContactHooks"></a>
+The event hooks that are set on tasks created by using this template.
+Type: [TaskTemplateContactHooks](API_TaskTemplateContactHooks.md) object
 
  ** [CreatedTime](#API_UpdateTaskTemplate_ResponseSyntax) **   <a name="connect-UpdateTaskTemplate-response-CreatedTime"></a>
 The timestamp when the task template was created.

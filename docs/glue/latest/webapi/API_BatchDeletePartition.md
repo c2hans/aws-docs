@@ -90,6 +90,12 @@ Type: Array of [PartitionError](API_PartitionError.md) objects
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** ConcurrentModificationException **
+Two processes are trying to modify a resource simultaneously.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 400
+
  ** EntityNotFoundException **
 A specified entity does not exist
  ** FromFederationSource **

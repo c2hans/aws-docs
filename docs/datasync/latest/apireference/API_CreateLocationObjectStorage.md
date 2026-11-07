@@ -25,6 +25,17 @@ Before you begin, make sure that you understand the [prerequisites](https://docs
       "SecretAccessRoleArn": "{{string}}",
       "SecretArn": "{{string}}"
    },
+   "FederatedIdentity": {
+      "AwsIamRole": "{{string}}",
+      "ExternalIdentity": {
+         "GoogleOidc": {
+            "IdentityPoolName": "{{string}}",
+            "IdentityProviderName": "{{string}}",
+            "ProjectName": "{{string}}",
+            "ProjectNumber": "{{string}}"
+         }
+      }
+   },
    "SecretKey": "{{string}}",
    "ServerCertificate": {{blob}},
    "ServerHostname": "{{string}}",
@@ -82,6 +93,11 @@ Required: No
 Specifies configuration information for a customer-managed Secrets Manager secret where the secret key for a specific object storage location is stored in plain text, in Secrets Manager. This configuration includes the secret ARN, and the ARN for an IAM role that provides access to the secret. For more information, see [ Using a secret that you manage](https://docs.aws.amazon.com/datasync/latest/userguide/location-credentials.html#custom-secret-custom-key).
 You can use either `CmkSecretConfig` (with `SecretKey`) or `CustomSecretConfig` (without `SecretKey`) to provide credentials for a `CreateLocationObjectStorage` request. Do not provide both parameters for the same request.
 Type: [CustomSecretConfig](API_CustomSecretConfig.md) object
+Required: No
+
+ ** [FederatedIdentity](#API_CreateLocationObjectStorage_RequestSyntax) **   <a name="DataSync-CreateLocationObjectStorage-request-FederatedIdentity"></a>
+Specifies the federated identity configuration that allows DataSync to access your object storage using an OpenID Connect (OIDC) token instead of a long-term access key and secret key. Provide either `FederatedIdentity` or the `AccessKey`/`SecretKey` credentials, but not both.
+Type: [ObjectStorageFederatedIdentityConfig](API_ObjectStorageFederatedIdentityConfig.md) object
 Required: No
 
  ** [SecretKey](#API_CreateLocationObjectStorage_RequestSyntax) **   <a name="DataSync-CreateLocationObjectStorage-request-SecretKey"></a>

@@ -27,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Description](#cfn-customerprofiles-calculatedattributedefinition-description)" : {{String}},
       "[DisplayName](#cfn-customerprofiles-calculatedattributedefinition-displayname)" : {{String}},
       "[DomainName](#cfn-customerprofiles-calculatedattributedefinition-domainname)" : {{String}},
+      "[Filter](#cfn-customerprofiles-calculatedattributedefinition-filter)" : {{Filter}},
       "[Statistic](#cfn-customerprofiles-calculatedattributedefinition-statistic)" : {{String}},
       "[Tags](#cfn-customerprofiles-calculatedattributedefinition-tags)" : {{[ Tag, ... ]}},
       "[UseHistoricalData](#cfn-customerprofiles-calculatedattributedefinition-usehistoricaldata)" : {{Boolean}}
@@ -48,6 +49,8 @@ Properties:
   [Description](#cfn-customerprofiles-calculatedattributedefinition-description): {{String}}
   [DisplayName](#cfn-customerprofiles-calculatedattributedefinition-displayname): {{String}}
   [DomainName](#cfn-customerprofiles-calculatedattributedefinition-domainname): {{String}}
+  [Filter](#cfn-customerprofiles-calculatedattributedefinition-filter): {{
+    Filter}}
   [Statistic](#cfn-customerprofiles-calculatedattributedefinition-statistic): {{String}}
   [Tags](#cfn-customerprofiles-calculatedattributedefinition-tags): {{
     - Tag}}
@@ -102,6 +105,12 @@ The unique name of the domain.
 *Pattern*: `^[a-zA-Z0-9_-]+$`
 *Minimum*: `1`
 *Maximum*: `64`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Filter`  <a name="cfn-customerprofiles-calculatedattributedefinition-filter"></a>
+Property description not available.
+*Required*: No
+*Type*: [Filter](aws-properties-customerprofiles-calculatedattributedefinition-filter.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Statistic`  <a name="cfn-customerprofiles-calculatedattributedefinition-statistic"></a>

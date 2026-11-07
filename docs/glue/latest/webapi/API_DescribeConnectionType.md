@@ -262,10 +262,45 @@ Required: Yes
             "Schema": {
                "string" : {
                   "FieldDataType": "string",
-                  "Name": "string"
+                  "FilterOverrides": {
+                     "BetweenConfiguration": {
+                        "HighBoundKey": "string",
+                        "LowBoundKey": "string",
+                        "Template": "string"
+                     },
+                     "DateTimeFormat": "string",
+                     "FieldName": "string",
+                     "OperatorMappings": {
+                        "string" : "string"
+                     }
+                  },
+                  "IsNullable": boolean,
+                  "IsOrderable": boolean,
+                  "IsPartitionable": boolean,
+                  "IsQueryable": boolean,
+                  "Name": "string",
+                  "ResponseDateFormat": "string"
                }
             },
             "SourceConfiguration": {
+               "FilterConfiguration": {
+                  "BetweenConfiguration": {
+                     "HighBoundKey": "string",
+                     "LowBoundKey": "string",
+                     "Template": "string"
+                  },
+                  "DateTimeFormat": "string",
+                  "FilterMode": "string",
+                  "FilterStringConfiguration": {
+                     "QueryParameterName": "string",
+                     "QuoteCharacter": "string",
+                     "QuoteStringValues": boolean
+                  },
+                  "OperatorMappings": {
+                     "string" : "string"
+                  },
+                  "StripQuotes": boolean
+               },
                "PaginationConfiguration": {
                   "CursorConfiguration": {
                      "LimitParameter": {
@@ -313,6 +348,7 @@ Required: Yes
                   {
                      "AllowedValues": [ "string" ],
                      "DefaultValue": "string",
+                     "Format": "string",
                      "KeyOverride": "string",
                      "Name": "string",
                      "PropertyLocation": "string",
@@ -329,6 +365,24 @@ Required: Yes
          }
       },
       "GlobalSourceConfiguration": {
+         "FilterConfiguration": {
+            "BetweenConfiguration": {
+               "HighBoundKey": "string",
+               "LowBoundKey": "string",
+               "Template": "string"
+            },
+            "DateTimeFormat": "string",
+            "FilterMode": "string",
+            "FilterStringConfiguration": {
+               "QueryParameterName": "string",
+               "QuoteCharacter": "string",
+               "QuoteStringValues": boolean
+            },
+            "OperatorMappings": {
+               "string" : "string"
+            },
+            "StripQuotes": boolean
+         },
          "PaginationConfiguration": {
             "CursorConfiguration": {
                "LimitParameter": {
@@ -376,6 +430,7 @@ Required: Yes
             {
                "AllowedValues": [ "string" ],
                "DefaultValue": "string",
+               "Format": "string",
                "KeyOverride": "string",
                "Name": "string",
                "PropertyLocation": "string",
@@ -390,6 +445,24 @@ Required: Yes
          }
       },
       "ValidationEndpointConfiguration": {
+         "FilterConfiguration": {
+            "BetweenConfiguration": {
+               "HighBoundKey": "string",
+               "LowBoundKey": "string",
+               "Template": "string"
+            },
+            "DateTimeFormat": "string",
+            "FilterMode": "string",
+            "FilterStringConfiguration": {
+               "QueryParameterName": "string",
+               "QuoteCharacter": "string",
+               "QuoteStringValues": boolean
+            },
+            "OperatorMappings": {
+               "string" : "string"
+            },
+            "StripQuotes": boolean
+         },
          "PaginationConfiguration": {
             "CursorConfiguration": {
                "LimitParameter": {
@@ -437,6 +510,7 @@ Required: Yes
             {
                "AllowedValues": [ "string" ],
                "DefaultValue": "string",
+               "Format": "string",
                "KeyOverride": "string",
                "Name": "string",
                "PropertyLocation": "string",

@@ -18,6 +18,32 @@ POST /contact/list-real-time-analysis-segments-v2/{{InstanceId}}/{{ContactId}} H
 Content-type: application/json
 
 {
+   "ListFilter": {
+      "CategoriesAttributeFilter": {
+         "AndCondition": {
+            "TagConditions": [
+               {
+                  "TagKey": "{{string}}",
+                  "TagValue": "{{string}}"
+               }
+            ]
+         },
+         "OrConditions": [
+            {
+               "TagConditions": [
+                  {
+                     "TagKey": "{{string}}",
+                     "TagValue": "{{string}}"
+                  }
+               ]
+            }
+         ],
+         "TagCondition": {
+            "TagKey": "{{string}}",
+            "TagValue": "{{string}}"
+         }
+      }
+   },
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "OutputType": "{{string}}",
@@ -44,6 +70,11 @@ Required: Yes
 <a name="API_ListRealtimeContactAnalysisSegmentsV2_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [ListFilter](#API_ListRealtimeContactAnalysisSegmentsV2_RequestSyntax) **   <a name="connect-ListRealtimeContactAnalysisSegmentsV2-request-ListFilter"></a>
+A filter that restricts the segments returned by the API. When `SegmentTypes` includes `Categories`, use `CategoriesAttributeFilter` to return only the category segments whose rules have tags that match the filter. This enforces tag-based access control on the categories a caller can view.
+Type: [RealTimeContactAnalysisSegmentsFilter](API_RealTimeContactAnalysisSegmentsFilter.md) object
+Required: No
 
  ** [MaxResults](#API_ListRealtimeContactAnalysisSegmentsV2_RequestSyntax) **   <a name="connect-ListRealtimeContactAnalysisSegmentsV2-request-MaxResults"></a>
 The maximum number of results to return per page.

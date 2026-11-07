@@ -30,6 +30,11 @@ Required: No
 Type: [ChileAdditionalInfo](API_taxSettings_ChileAdditionalInfo.md) object
 Required: No
 
+ ** colombiaAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-colombiaAdditionalInfo"></a>
+Additional tax information associated with your Tax Registration Number (TRN) in Colombia.
+Type: [ColombiaAdditionalInfo](API_taxSettings_ColombiaAdditionalInfo.md) object
+Required: No
+
  ** egyptAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-egyptAdditionalInfo"></a>
 Additional tax information to specify for a TRN in Egypt.
 Type: [EgyptAdditionalInfo](API_taxSettings_EgyptAdditionalInfo.md) object

@@ -10,6 +10,13 @@ Specifies a crawler program that examines a data source and uses classifiers to 
 ## Contents
 <a name="API_Crawler_Contents"></a>
 
+ ** CatalogId **   <a name="Glue-Type-Crawler-CatalogId"></a>
+The ID of the Data Catalog in which the crawler's output is stored.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** Classifiers **   <a name="Glue-Type-Crawler-Classifiers"></a>
 A list of UTF-8 strings that specify the custom classifiers that are associated with the crawler.
 Type: Array of strings

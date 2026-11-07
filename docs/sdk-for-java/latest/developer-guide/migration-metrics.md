@@ -143,10 +143,10 @@ The following table lists the IAM permissions required for each metrics publishe
 | --- | --- | --- | --- |
 | IAM permission | cloudwatch:PutMetricData | cloudwatch:PutMetricData | logs:PutLogEvents |
 
-## Limitations
+## AWS CRT-based S3 client considerations
 <a name="migration-metrics-limitations"></a>
 
-The [AWS CRT-based S3 client](crt-based-s3-client.md) does not currently support SDK metrics collection in v2.
+The AWS CRT-based S3 client supports SDK metric publishing at the client and request levels. Its collection granularity and available fields differ from the standard S3 clients. For more information about configuration and metric differences, see [Publish SDK metrics with the CRT-based S3 client](metrics.md#metrics-using-s3-crt-based-client).
 
 ## Additional resources
 <a name="migration-metrics-resources"></a>

@@ -25,7 +25,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [CatalogId](#API_GetMaterializedViewRefreshTaskRun_RequestSyntax) **   <a name="Glue-GetMaterializedViewRefreshTaskRun-request-CatalogId"></a>
-The ID of the Catalog where the materialized view table resides. If none is supplied, the account ID is used by default.
+The ID of the Data Catalog where the table resides. If none is supplied, the account ID is used by default.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`

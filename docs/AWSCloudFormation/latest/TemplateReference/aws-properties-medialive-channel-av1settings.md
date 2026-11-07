@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Bitrate](#cfn-medialive-channel-av1settings-bitrate)" : {{Integer}},
   "[BufSize](#cfn-medialive-channel-av1settings-bufsize)" : {{Integer}},
   "[ColorSpaceSettings](#cfn-medialive-channel-av1settings-colorspacesettings)" : {{Av1ColorSpaceSettings}},
+  "[FilterSettings](#cfn-medialive-channel-av1settings-filtersettings)" : {{Av1FilterSettings}},
   "[FixedAfd](#cfn-medialive-channel-av1settings-fixedafd)" : {{String}},
   "[FramerateDenominator](#cfn-medialive-channel-av1settings-frameratedenominator)" : {{Integer}},
   "[FramerateNumerator](#cfn-medialive-channel-av1settings-frameratenumerator)" : {{Integer}},
@@ -56,6 +57,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [BufSize](#cfn-medialive-channel-av1settings-bufsize): {{Integer}}
   [ColorSpaceSettings](#cfn-medialive-channel-av1settings-colorspacesettings): {{
     Av1ColorSpaceSettings}}
+  [FilterSettings](#cfn-medialive-channel-av1settings-filtersettings): {{
+    Av1FilterSettings}}
   [FixedAfd](#cfn-medialive-channel-av1settings-fixedafd): {{String}}
   [FramerateDenominator](#cfn-medialive-channel-av1settings-frameratedenominator): {{Integer}}
   [FramerateNumerator](#cfn-medialive-channel-av1settings-frameratenumerator): {{Integer}}
@@ -109,6 +112,12 @@ The size of the buffer (HRD buffer model) in bits.
 Specify the type of color space to apply or choose to pass through. The default is to pass through the color space that is in the source.
 *Required*: No
 *Type*: [Av1ColorSpaceSettings](aws-properties-medialive-channel-av1colorspacesettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`FilterSettings`  <a name="cfn-medialive-channel-av1settings-filtersettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [Av1FilterSettings](aws-properties-medialive-channel-av1filtersettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FixedAfd`  <a name="cfn-medialive-channel-av1settings-fixedafd"></a>

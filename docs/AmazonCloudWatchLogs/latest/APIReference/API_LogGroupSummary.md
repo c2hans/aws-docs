@@ -18,7 +18,7 @@ Required: No
  ** logGroupClass **   <a name="CWL-Type-LogGroupSummary-logGroupClass"></a>
 The log group class for this log group. For details about the features supported by each log group class, see [Log classes](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch_Logs_Log_Classes.html)
 Type: String
-Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY`
+Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY | ESSENTIALS`
 Required: No
 
  ** logGroupName **   <a name="CWL-Type-LogGroupSummary-logGroupName"></a>

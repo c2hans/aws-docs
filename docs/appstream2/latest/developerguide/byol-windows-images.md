@@ -40,6 +40,7 @@ Before you begin, verify the following:
 The following Windows 11 versions are supported for Amazon WorkSpaces Applications BYOL:
 + Windows 11 Version 24H2 (October 2024 release)
 + Windows 11 Version 25H2 (September 2025 release)
++ Windows 11 Version 26H2 (September 2026 release)
 
 **Note**
 Windows 10 images imported through WorkSpaces are not supported for Amazon WorkSpaces Applications. Only Windows 11 images can be used with Amazon WorkSpaces Applications.

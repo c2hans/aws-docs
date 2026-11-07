@@ -34,6 +34,7 @@ Lists all the runs meeting the filter criteria, where a ruleset is evaluated aga
             "TableName": "{{string}}"
          }
       },
+      "RulesetName": "{{string}}",
       "StartedAfter": {{number}},
       "StartedBefore": {{number}}
    },

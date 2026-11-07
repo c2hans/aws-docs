@@ -916,7 +916,7 @@ The following `delete-task-definitions` example deletes an INACTIVE task definit
 
 ```
 aws ecs delete-task-definitions \
-    --task-definition {{curltest:1}}
+    --task-definitions {{curltest:1}}
 ```
 Output:
 
@@ -1453,7 +1453,7 @@ The following `describe-clusters` example retrieves details about the specified 
 
 ```
 aws ecs describe-clusters \
-    --cluster {{default}}
+    --clusters {{default}}
 ```
 Output:
 
@@ -1636,7 +1636,7 @@ The following `describe-service-deployments` example returns the service deploym
 
 ```
 aws ecs describe-service-deployments \
-    --service-deployment-arn {{arn:aws:ecs:us-west-2:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe}}
+    --service-deployment-arns {{arn:aws:ecs:us-west-2:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe}}
 ```
 Output:
 

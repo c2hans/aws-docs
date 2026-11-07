@@ -65,10 +65,10 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OAuth2GrantType`  <a name="cfn-glue-connection-oauth2properties-oauth2granttype"></a>
-The OAuth2 grant type. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, or `CLIENT_CREDENTIALS`.
+The OAuth2 grant type. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, `REFRESH_TOKEN`, or `CLIENT_CREDENTIALS`.
 *Required*: No
 *Type*: String
-*Allowed values*: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER`
+*Allowed values*: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER | REFRESH_TOKEN`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TokenUrl`  <a name="cfn-glue-connection-oauth2properties-tokenurl"></a>

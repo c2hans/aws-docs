@@ -75,6 +75,7 @@ Required: Yes
 
  ** [FileSystemPath](#API_CreateDataRepositoryAssociation_RequestSyntax) **   <a name="FSx-CreateDataRepositoryAssociation-request-FileSystemPath"></a>
 A path on the file system that points to a high-level directory (such as `/ns1/`) or subdirectory (such as `/ns1/subdir/`) that will be mapped 1-1 with `DataRepositoryPath`. The leading forward slash in the name is required. Two data repository associations cannot have overlapping file system paths. For example, if a data repository is associated with file system path `/ns1/`, then you cannot link another data repository with file system path `/ns1/ns2`.
+You must specify this path when you create a data repository association. There is no default value; a request that omits it fails with a `BadRequest` error.
 This path specifies where in your file system files will be exported from or imported to. This file system directory can be linked to only one Amazon S3 bucket, and no other S3 bucket can be linked to the directory.
 If you specify only a forward slash (`/`) as the file system path, you can link only one data repository to the file system. You can only specify "/" as the file system path for the first data repository associated with a file system.
 Type: String

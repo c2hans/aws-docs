@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ResumeCo
 # ResumeContact
 <a name="API_ResumeContact"></a>
 
-Allows resuming a task contact in a paused state.
+Resumes a task or email contact in a paused state.
 
 ## Request Syntax
 <a name="API_ResumeContact_RequestSyntax"></a>

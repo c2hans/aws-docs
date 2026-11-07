@@ -116,7 +116,7 @@ Type of a related item.
 <a name="aws-resource-cases-relateditem-return-values-fn--getatt-fn--getatt"></a>
 
 `RelatedItemArn`  <a name="RelatedItemArn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the related item.
 
 `RelatedItemId`  <a name="RelatedItemId-fn::getatt"></a>
 Unique identifier of a related item.

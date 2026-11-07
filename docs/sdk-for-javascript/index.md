@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/index.html
 title: 'AWS SDK for JavaScript Documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-javascript/
 source: aws-documentation
-generated_on: 2026-11-05
+generated_on: 2026-11-06
 ---
 
 # AWS SDK for JavaScript Documentation

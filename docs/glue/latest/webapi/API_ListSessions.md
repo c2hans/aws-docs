@@ -89,6 +89,7 @@ Required: No
          "Progress": number,
          "Role": "string",
          "SecurityConfiguration": "string",
+         "SessionType": "string",
          "Status": "string",
          "WorkerType": "string"
       }

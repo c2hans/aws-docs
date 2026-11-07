@@ -44,12 +44,13 @@ The following code example shows how to use `check-capacity`.
 
 **AWS CLI**
 **To obtain the capacity used by a set of rules**
-The following `check-capacity` example retrieves the capacity requirements for a rule set that contains a rate-based rule statement, and an AND rule statement that contains nested rules.
+The following `check-capacity` example retrieves the capacity requirements for a rule set that contains a rate-based rule statement, and an AND rule statement that contains nested rules. The `--cli-binary-format raw-in-base64-out` option lets you specify the `SearchString` value as plain text instead of base64.
 
 ```
 aws wafv2 check-capacity \
     --scope {{REGIONAL}} \
-    --rules {{file://waf-rule-list.json}}
+    --rules {{file://waf-rule-list.json}} \
+    --cli-binary-format {{raw-in-base64-out}}
 ```
 Contents of `waf-rule-list.json`:
 
@@ -203,7 +204,7 @@ The following code example shows how to use `create-rule-group`.
 
 **AWS CLI**
 **To create a custom rule group for use in your web ACLs**
-The following `create-rule-group` example creates a custom rule group for regional use. The rule statements for the group are provided in a JSON-formatted file.
+The following `create-rule-group` example creates a custom rule group for regional use. The rule statements for the group are provided in a JSON-formatted file. The `--cli-binary-format raw-in-base64-out` option lets you specify the `SearchString` value as plain text instead of base64.
 
 ```
 aws wafv2 create-rule-group \
@@ -211,7 +212,8 @@ aws wafv2 create-rule-group \
     --scope {{REGIONAL}} \
     --capacity {{250}} \
     --rules {{file://waf-rule.json}} \
-    --visibility-config {{SampledRequestsEnabled=true,CloudWatchMetricsEnabled=true,MetricName=TestRuleGroupMetrics}}
+    --visibility-config {{SampledRequestsEnabled=true,CloudWatchMetricsEnabled=true,MetricName=TestRuleGroupMetrics}} \
+    --cli-binary-format {{raw-in-base64-out}}
 ```
 Contents of `waf-rule.json`:
 
@@ -287,7 +289,7 @@ The following code example shows how to use `create-web-acl`.
 
 **AWS CLI**
 **To create a web ACL**
-The following `create-web-acl` example creates a web ACL for regional use. The rule statements for the web ACL are provided in a JSON-formatted file.
+The following `create-web-acl` example creates a web ACL for regional use. The rule statements for the web ACL are provided in a JSON-formatted file. The `--cli-binary-format raw-in-base64-out` option lets you specify the `SearchString` value as plain text instead of base64.
 
 ```
 aws wafv2 create-web-acl \
@@ -295,7 +297,8 @@ aws wafv2 create-web-acl \
     --scope {{REGIONAL}} \
     --default-action {{Allow={}}} \
     --visibility-config {{SampledRequestsEnabled=true,CloudWatchMetricsEnabled=true,MetricName=TestWebAclMetrics}} \
-    --rules {{file://waf-rule.json}}
+    --rules {{file://waf-rule.json}} \
+    --cli-binary-format {{raw-in-base64-out}}
 ```
 Contents of `waf-rule.json`:
 
@@ -1685,7 +1688,7 @@ The following code example shows how to use `update-web-acl`.
 
 **AWS CLI**
 **To update a web ACL**
-The following `update-web-acl` example changes settings for an existing web ACL. This call requires an ID, which you can obtain from the call, `list-web-acls`, and a lock token and other settings, which you can obtain from the call `get-web-acl`. This call also returns a lock token that you can use for a subsequent update.
+The following `update-web-acl` example changes settings for an existing web ACL. This call requires an ID, which you can obtain from the call, `list-web-acls`, and a lock token and other settings, which you can obtain from the call `get-web-acl`. This call also returns a lock token that you can use for a subsequent update. The `--cli-binary-format raw-in-base64-out` option lets you specify the `SearchString` value as plain text instead of base64.
 
 ```
 aws wafv2 update-web-acl \
@@ -1695,7 +1698,8 @@ aws wafv2 update-web-acl \
     --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --default-action {{Block={}}} \
     --visibility-config {{SampledRequestsEnabled=false,CloudWatchMetricsEnabled=false,MetricName=NewMetricTestWebAcl}} \
-    --rules {{file://waf-rule.json}}
+    --rules {{file://waf-rule.json}} \
+    --cli-binary-format {{raw-in-base64-out}}
 ```
 Contents of `waf-rule.json`:
 

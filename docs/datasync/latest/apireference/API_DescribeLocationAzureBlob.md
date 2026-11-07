@@ -48,6 +48,13 @@ Required: Yes
       "SecretAccessRoleArn": "string",
       "SecretArn": "string"
    },
+   "FederatedIdentity": {
+      "AwsIamRole": "string",
+      "AzureOidc": {
+         "ClientId": "string",
+         "TenantId": "string"
+      }
+   },
    "LocationArn": "string",
    "LocationUri": "string",
    "ManagedSecretConfig": {
@@ -76,9 +83,9 @@ Length Constraints: Maximum length of 128.
 Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:agent/agent-[0-9a-z]{17}$`
 
  ** [AuthenticationType](#API_DescribeLocationAzureBlob_ResponseSyntax) **   <a name="DataSync-DescribeLocationAzureBlob-response-AuthenticationType"></a>
-The authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS).
+The authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS) or an OpenID Connect (OIDC) token.
 Type: String
-Valid Values: `SAS | NONE`
+Valid Values: `SAS | NONE | OIDC`
 
  ** [BlobType](#API_DescribeLocationAzureBlob_ResponseSyntax) **   <a name="DataSync-DescribeLocationAzureBlob-response-BlobType"></a>
 The type of blob that you want your objects or files to be when transferring them into Azure Blob Storage. Currently, DataSync only supports moving data into Azure Blob Storage as block blobs. For more information on blob types, see the [Azure Blob Storage documentation](https://learn.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs).
@@ -96,6 +103,10 @@ Type: Timestamp
  ** [CustomSecretConfig](#API_DescribeLocationAzureBlob_ResponseSyntax) **   <a name="DataSync-DescribeLocationAzureBlob-response-CustomSecretConfig"></a>
 Describes configuration information for a customer-managed secret, such as an authentication token that DataSync uses to access a specific storage location, with a customer-managed AWS Identity and Access Management (IAM) role that provides access to the secret.
 Type: [CustomSecretConfig](API_CustomSecretConfig.md) object
+
+ ** [FederatedIdentity](#API_DescribeLocationAzureBlob_ResponseSyntax) **   <a name="DataSync-DescribeLocationAzureBlob-response-FederatedIdentity"></a>
+The federated identity configuration that DataSync uses to access your Azure Blob Storage using an OpenID Connect (OIDC) token.
+Type: [AzureFederatedIdentityConfig](API_AzureFederatedIdentityConfig.md) object
 
  ** [LocationArn](#API_DescribeLocationAzureBlob_ResponseSyntax) **   <a name="DataSync-DescribeLocationAzureBlob-response-LocationArn"></a>
 The ARN of your Azure Blob Storage transfer location.

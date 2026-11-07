@@ -43,6 +43,12 @@ A `FederatedCatalog` object. A `FederatedCatalog` structure that references an e
 Type: [FederatedCatalog](API_FederatedCatalog.md) object
 Required: No
 
+ ** OverwriteChildResourcePermissionsWithDefault **   <a name="Glue-Type-CatalogInput-OverwriteChildResourcePermissionsWithDefault"></a>
+ Overwrites existing AWS Lake Formation permissions with `CatalogInput$CreateTableDefaultPermissions` and `CatalogInput$CreateDatabaseDefaultPermissions` for all child resources.
+Type: String
+Valid Values: `Accept | Deny`
+Required: No
+
  ** Parameters **   <a name="Glue-Type-CatalogInput-Parameters"></a>
 A map array of key-value pairs that define the parameters and properties of the catalog.
 Type: String to string map

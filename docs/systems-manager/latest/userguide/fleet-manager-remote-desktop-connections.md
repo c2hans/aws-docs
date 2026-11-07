@@ -322,7 +322,7 @@ The `AccessTaggedInstances` section, which is located lower in the example polic
             "Condition": {
                 "StringLike": {
                     "ssm:resourceTag/aws:ssmmessages:session-id": [
-                        "${aws:userName}"
+                        "${aws:userid}"
                     ]
                 }
             }

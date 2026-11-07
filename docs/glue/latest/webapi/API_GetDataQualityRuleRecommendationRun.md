@@ -35,6 +35,9 @@ Required: Yes
 
 ```
 {
+   "AdditionalRunOptions": {
+      "CustomLogGroupPrefix": "string"
+   },
    "CompletedOn": number,
    "CreatedRulesetName": "string",
    "DataQualitySecurityConfiguration": "string",
@@ -63,6 +66,7 @@ Required: Yes
    "ExecutionTime": number,
    "LastModifiedOn": number,
    "NumberOfWorkers": number,
+   "RecommendationMode": "string",
    "RecommendedRuleset": "string",
    "Role": "string",
    "RunId": "string",
@@ -78,6 +82,10 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [AdditionalRunOptions](#API_GetDataQualityRuleRecommendationRun_ResponseSyntax) **   <a name="Glue-GetDataQualityRuleRecommendationRun-response-AdditionalRunOptions"></a>
+Additional run options you can specify for a recommendation run.
+Type: [DataQualityRuleRecommendationRunAdditionalRunOptions](API_DataQualityRuleRecommendationRunAdditionalRunOptions.md) object
 
  ** [CompletedOn](#API_GetDataQualityRuleRecommendationRun_ResponseSyntax) **   <a name="Glue-GetDataQualityRuleRecommendationRun-response-CompletedOn"></a>
 The date and time when this run was completed.
@@ -115,13 +123,19 @@ Type: Timestamp
 The number of `G.1X` workers to be used in the run. The default is 5.
 Type: Integer
 
+ ** [RecommendationMode](#API_GetDataQualityRuleRecommendationRun_ResponseSyntax) **   <a name="Glue-GetDataQualityRuleRecommendationRun-response-RecommendationMode"></a>
+The mode that AWS Glue Data Quality uses to recommend rules.
+The default is `BASIC`.
+Type: String
+Valid Values: `BASIC | ADVANCED`
+
  ** [RecommendedRuleset](#API_GetDataQualityRuleRecommendationRun_ResponseSyntax) **   <a name="Glue-GetDataQualityRuleRecommendationRun-response-RecommendedRuleset"></a>
 When a start rule recommendation run completes, it creates a recommended ruleset (a set of rules). This member has those rules in Data Quality Definition Language (DQDL) format.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 65536.
 
  ** [Role](#API_GetDataQualityRuleRecommendationRun_ResponseSyntax) **   <a name="Glue-GetDataQualityRuleRecommendationRun-response-Role"></a>
-An IAM role supplied to encrypt the results of the run.
+The IAM role that AWS Glue assumes to access resources for the run.
 Type: String
 
  ** [RunId](#API_GetDataQualityRuleRecommendationRun_ResponseSyntax) **   <a name="Glue-GetDataQualityRuleRecommendationRun-response-RunId"></a>

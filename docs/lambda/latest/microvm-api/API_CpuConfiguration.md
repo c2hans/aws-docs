@@ -11,7 +11,7 @@ Configuration for the CPU architecture of a MicroVM.
 <a name="API_CpuConfiguration_Contents"></a>
 
  ** architecture **   <a name="lambdamicrovm-Type-CpuConfiguration-architecture"></a>
-The CPU architecture.
+The CPU architecture. Valid values are ARM\_64 and X86\_64. Your container base image and any prebuilt binaries in your code artifact must be built for this architecture.
 Type: String
 Valid Values: `ARM_64 | X86_64`
 Required: Yes

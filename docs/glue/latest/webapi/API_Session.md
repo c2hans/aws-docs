@@ -119,6 +119,12 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: No
 
+ ** SessionType **   <a name="Glue-Type-Session-SessionType"></a>
+The type of the session.
+Type: String
+Valid Values: `LIVY | SPARK_CONNECT`
+Required: No
+
  ** Status **   <a name="Glue-Type-Session-Status"></a>
 The session status.
 Type: String
@@ -126,9 +132,10 @@ Valid Values: `PROVISIONING | READY | FAILED | TIMEOUT | STOPPING | STOPPED`
 Required: No
 
  ** WorkerType **   <a name="Glue-Type-Session-WorkerType"></a>
-The type of predefined worker that is allocated when a session runs. Accepts a value of `G.1X`, `G.2X`, `G.4X`, or `G.8X` for Spark sessions. Accepts the value `Z.2X` for Ray sessions.
+The type of predefined worker that is allocated when a session runs. Accepts a value of `G.1X`, `G.2X`, `G.4X`, `G.8X`, `G.12X`, `G.16X`, `R.1X`, `R.2X`, `R.4X`, or `R.8X` for Spark sessions. Accepts the value `Z.2X` for Ray sessions.
+The `G.12X`, `G.16X`, and `R.1X` through `R.8X` worker types are available only for AWS Glue version 4.0 or later Spark ETL jobs in select AWS Regions. For the supported Regions, see [Configuring job properties for Spark jobs](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
 Type: String
-Valid Values: `Standard | G.1X | G.2X | G.025X | G.4X | G.8X | Z.2X`
+Valid Values: `Standard | G.1X | G.2X | G.4X | G.8X | G.025X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X`
 Required: No
 
 ## See Also

@@ -263,6 +263,7 @@ For information on creating and using Lambda UDFs, see [Scalar Lambda UDFs](http
 <a name="recent-behavior-changes"></a>
 
 **Topics**
++ [Iceberg DDL statements can't run inside a transaction block starting with Patch 206](#iceberg-ddl-transaction-patch206)
 + [Amazon Redshift takes automated snapshots of paused data sharing producer clusters starting September 30, 2026](#paused-producer-snapshots-sep2026)
 + [Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026](#snapshot-billing-model-jun2026)
 + [Amazon Redshift uses up-to-date IANA Time Zone Database after Aug 26, 2025](#timezone-changes-aug2025)
@@ -271,6 +272,17 @@ For information on creating and using Lambda UDFs, see [Scalar Lambda UDFs](http
 + [Virtual Private Cloud Endpoint changes for serverless workgroups effective after June 27, 2025](#VPCE-jun2025)
 + [Query monitoring changes effective after May 2, 2025](#query-monitoring-changes-may2025)
 + [Security changes effective after January 10, 2025](#security-changes-jan2025)
+
+### Iceberg DDL statements can't run inside a transaction block starting with Patch 206
+<a name="iceberg-ddl-transaction-patch206"></a>
+
+Starting with Patch 206, Amazon Redshift supports multi-statement transactions on Apache Iceberg tables. As part of this change, Iceberg data definition language (DDL) statements can no longer run inside a transaction block. These statements include `CREATE TABLE ... USING ICEBERG`, `CREATE TABLE ... USING ICEBERG AS SELECT`, `ALTER TABLE` on an Iceberg table, and `CREATE MATERIALIZED VIEW ... USING ICEBERG`. Previously, a transaction block that contained only one of these statements succeeded. Now the statement fails with an error such as `Iceberg DDL is not allowed in multi-statement transaction: create an "iceberg" table`, and Amazon Redshift rolls back the transaction.
+
+This change might affect you if you run an Iceberg DDL statement in any of the following ways:
++ As the only statement inside `BEGIN ... COMMIT`.
++ From a client with autocommit turned off, such as a JDBC connection with `autoCommit` set to `false`.
+
+To avoid errors, run Iceberg DDL statements as standalone auto-commit statements. For more information, see [Transaction semantics](https://docs.aws.amazon.com/redshift/latest/dg/iceberg-writes-transaction-semantics.html) in the *Amazon Redshift Database Developer Guide*.
 
 ### Amazon Redshift takes automated snapshots of paused data sharing producer clusters starting September 30, 2026
 <a name="paused-producer-snapshots-sep2026"></a>
@@ -341,6 +353,7 @@ For more information, see [Considerations when using Amazon Redshift Serverless]
 For questions or concerns, contact AWS support at the following link: [AWS Support](https://aws.amazon.com/support).
 
 **Topics**
++ [Iceberg DDL statements can't run inside a transaction block starting with Patch 206](#iceberg-ddl-transaction-patch206)
 + [Amazon Redshift takes automated snapshots of paused data sharing producer clusters starting September 30, 2026](#paused-producer-snapshots-sep2026)
 + [Enhanced billing model for manual snapshots on Amazon Redshift Serverless and Amazon Redshift RG instances effective June 08, 2026](#snapshot-billing-model-jun2026)
 + [Amazon Redshift uses up-to-date IANA Time Zone Database after Aug 26, 2025](#timezone-changes-aug2025)

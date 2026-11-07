@@ -317,22 +317,22 @@ The following `create-routing-rule` example creates a routing rule with a priori
 aws apigatewayv2 create-routing-rule \
     --domain-name '{{regional.example.com}}' \
     --priority {{50}} \
-    --conditions '{{[ \
-        { \
-            "MatchBasePaths": { \
-                "AnyOf": [ \
-                    "PetStoreShopper" \
-                ] \
-            } \
-        } \
+    --conditions '{{[
+        {
+            "MatchBasePaths": {
+                "AnyOf": [
+                    "PetStoreShopper"
+                ]
+            }
+        }
     ]}}' \
-    --actions '{{[ \
-        { \
-            "InvokeApi": { \
-                "ApiId": "abcd1234", \
-                "Stage": "prod" \
-            } \
-        } \
+    --actions '{{[
+        {
+            "InvokeApi": {
+                "ApiId": "abcd1234",
+                "Stage": "prod"
+            }
+        }
     ]}}'
 ```
 Output:
@@ -1580,22 +1580,22 @@ aws apigatewayv2 put-routing-rule \
     --routing-rule-id '{{aaa111}}' \
     --domain-name '{{regional.example.com}}' \
     --priority {{150}} \
-    --conditions '{{[ \
-        { \
-            "MatchBasePaths": { \
-                "AnyOf": [ \
-                    "PetStoreShopper" \
-                ] \
-            } \
-        } \
+    --conditions '{{[
+        {
+            "MatchBasePaths": {
+                "AnyOf": [
+                    "PetStoreShopper"
+                ]
+            }
+        }
     ]}}' \
-    --actions '{{[ \
-        { \
-            "InvokeApi": { \
-                "ApiId": "abcd1234", \
-                "Stage": "prod" \
-            } \
-        } \
+    --actions '{{[
+        {
+            "InvokeApi": {
+                "ApiId": "abcd1234",
+                "Stage": "prod"
+            }
+        }
     ]}}'
 ```
 Output:

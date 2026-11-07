@@ -12,6 +12,7 @@ Creates a new crawler with specified targets, role, configuration, and optional 
 
 ```
 {
+   "CatalogId": "{{string}}",
    "Classifiers": [ "{{string}}" ],
    "Configuration": "{{string}}",
    "CrawlerSecurityConfiguration": "{{string}}",
@@ -114,6 +115,13 @@ Creates a new crawler with specified targets, role, configuration, and optional 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CatalogId](#API_CreateCrawler_RequestSyntax) **   <a name="Glue-CreateCrawler-request-CatalogId"></a>
+The ID of the Data Catalog in which to store the crawler's output. If none is supplied, the AWS account ID is used by default.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
 
  ** [Classifiers](#API_CreateCrawler_RequestSyntax) **   <a name="Glue-CreateCrawler-request-Classifiers"></a>
 A list of custom classifiers that the user has registered. By default, all built-in classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.

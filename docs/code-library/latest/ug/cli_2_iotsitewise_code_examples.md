@@ -1643,6 +1643,7 @@ Contents of `update-wind-farm-model.json`:
 
 ```
 {
+    "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "assetModelName": "Wind Farm Model",
     "assetModelDescription": "Represents a wind farm that comprises many wind turbines",
     "assetModelProperties": [

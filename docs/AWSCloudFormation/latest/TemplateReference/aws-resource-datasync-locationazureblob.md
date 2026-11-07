@@ -84,7 +84,7 @@ Specifies the access tier that you want your objects or files transferred into. 
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AzureBlobAuthenticationType`  <a name="cfn-datasync-locationazureblob-azureblobauthenticationtype"></a>
-Specifies the authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS).
+Specifies the authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS) or an OpenID Connect (OIDC) token.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `SAS | NONE | OIDC`

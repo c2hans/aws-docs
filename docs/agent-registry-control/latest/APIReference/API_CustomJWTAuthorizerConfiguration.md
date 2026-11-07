@@ -11,10 +11,10 @@ Configuration for a custom JWT authorizer that validates inbound bearer tokens a
 <a name="API_CustomJWTAuthorizerConfiguration_Contents"></a>
 
  ** discoveryUrl **   <a name="agentregistrycontrol-Type-CustomJWTAuthorizerConfiguration-discoveryUrl"></a>
-The OpenID Connect discovery URL used to retrieve the identity provider's metadata and signing keys.
+The OpenID Connect discovery or OAuth 2.0 authorization server metadata URL used to retrieve the identity provider's metadata and signing keys.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `.+/\.well-known/openid-configuration`
+Pattern: `[^\s?#]+/\.well-known/(openid-configuration|oauth-authorization-server)(/[^\s?#]+)?`
 Required: Yes
 
  ** allowedAudience **   <a name="agentregistrycontrol-Type-CustomJWTAuthorizerConfiguration-allowedAudience"></a>

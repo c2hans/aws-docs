@@ -24,6 +24,17 @@ For more information, see [Configuring DataSync transfers with an object storage
       "SecretAccessRoleArn": "{{string}}",
       "SecretArn": "{{string}}"
    },
+   "FederatedIdentity": {
+      "AwsIamRole": "{{string}}",
+      "ExternalIdentity": {
+         "GoogleOidc": {
+            "IdentityPoolName": "{{string}}",
+            "IdentityProviderName": "{{string}}",
+            "ProjectName": "{{string}}",
+            "ProjectNumber": "{{string}}"
+         }
+      }
+   },
    "LocationArn": "{{string}}",
    "SecretKey": "{{string}}",
    "ServerCertificate": {{blob}},
@@ -65,6 +76,11 @@ Required: No
  ** [CustomSecretConfig](#API_UpdateLocationObjectStorage_RequestSyntax) **   <a name="DataSync-UpdateLocationObjectStorage-request-CustomSecretConfig"></a>
 Specifies configuration information for a customer-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS Identity and Access Management (IAM) role that provides access to the secret.
 Type: [CustomSecretConfig](API_CustomSecretConfig.md) object
+Required: No
+
+ ** [FederatedIdentity](#API_UpdateLocationObjectStorage_RequestSyntax) **   <a name="DataSync-UpdateLocationObjectStorage-request-FederatedIdentity"></a>
+Specifies the federated identity configuration that allows DataSync to access your object storage using an OpenID Connect (OIDC) token instead of a long-term access key and secret key. Provide either `FederatedIdentity` or the `AccessKey`/`SecretKey` credentials, but not both.
+Type: [ObjectStorageFederatedIdentityConfig](API_ObjectStorageFederatedIdentityConfig.md) object
 Required: No
 
  ** [LocationArn](#API_UpdateLocationObjectStorage_RequestSyntax) **   <a name="DataSync-UpdateLocationObjectStorage-request-LocationArn"></a>

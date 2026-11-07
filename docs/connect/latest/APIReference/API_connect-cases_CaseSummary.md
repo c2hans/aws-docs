@@ -14,6 +14,7 @@ Case summary information.
 A unique identifier of the case.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.
+Pattern: `[A-Za-z0-9\-._/:#=+-]*`
 Required: Yes
 
  ** templateId **   <a name="connect-Type-connect-cases_CaseSummary-templateId"></a>

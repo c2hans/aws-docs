@@ -114,7 +114,7 @@ Type: Boolean
 Required: No
 
  ** MonetizationConfig **   <a name="WAF-Type-WebACL-MonetizationConfig"></a>
-The monetization configuration for the web ACL. Required when any rule in the web ACL uses the `Monetize` action. Specifies the cryptocurrency payment networks and currency mode for AI bot monetization.
+The monetization configuration for the web ACL. Required when any rule in the web ACL uses the `Monetize` action. Specifies the payment settlement options and currency mode for AI bot monetization.
 Type: [MonetizationConfig](API_MonetizationConfig.md) object
 Required: No
 

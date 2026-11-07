@@ -16,6 +16,12 @@ Type: Array of [RealTimeContactAnalysisPointOfInterest](API_RealTimeContactAnaly
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: Yes
 
+ ** RuleId **   <a name="connect-Type-RealTimeContactAnalysisCategoryDetails-RuleId"></a>
+The unique identifier of the rule that created the matched category.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
 ## See Also
 <a name="API_RealTimeContactAnalysisCategoryDetails_SeeAlso"></a>
 

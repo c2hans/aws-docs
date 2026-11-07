@@ -60,10 +60,52 @@ S3Client s3 = S3Client.builder()
     .build();
 ```
 
-## Metrics limitation of the AWS CRT-based S3 client
+## Publish SDK metrics with the CRT-based S3 client
 <a name="metrics-using-s3-crt-based-client"></a>
 
-The [AWS CRT-based S3 client](crt-based-s3-client.md) does not currently support SDK metrics collection. The builder for an AWS CRT-based S3 client instance, [`S3CrtAsyncClientBuilder`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3CrtAsyncClientBuilder.html), does not provide methods to configure metrics publishers.
+The AWS CRT-based S3 client supports the standard `MetricPublisher` interface. For interface details, see the [AWS SDK for Java API Reference](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/metrics/MetricPublisher.html) on the AWS SDK for Java website. Existing SDK-provided and custom publishers can consume the generated metric collections without CRT-specific handling.
+
+**Note**
+Metric publishing requires version `0.48.5` or later of the `aws-crt` dependency. If your application explicitly uses an earlier version, update it before you configure a metric publisher.
+
+To publish metrics for every request made by a client, add a publisher when you create the client:
+
+```
+import software.amazon.awssdk.metrics.LoggingMetricPublisher;
+import software.amazon.awssdk.metrics.MetricPublisher;
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.s3.S3AsyncClient;
+
+MetricPublisher metricPublisher = LoggingMetricPublisher.create();
+
+S3AsyncClient s3AsyncClient =
+    S3AsyncClient.crtBuilder()
+                 .region(Region.US_WEST_2)
+                 .addMetricPublisher(metricPublisher)
+                 .build();
+```
+
+To publish metrics for an individual request, add a publisher to the request's `overrideConfiguration`. Request-level publishers replace the client-level publishers for that request:
+
+```
+import software.amazon.awssdk.services.s3.model.GetObjectRequest;
+
+GetObjectRequest request =
+    GetObjectRequest.builder()
+                    .bucket("amzn-s3-demo-bucket")
+                    .key("object-key")
+                    .overrideConfiguration(c -> c.addMetricPublisher(metricPublisher))
+                    .build();
+```
+
+The AWS CRT-based S3 client publishes one `ApiCall` metric collection for each underlying HTTP request attempt that CRT performs for an operation. A single logical SDK operation can produce multiple collections when CRT performs multipart transfers or retries. Metric publishing reports these attempts; it does not create additional S3 requests.
+
+The AWS CRT-based S3 client does not currently publish `CredentialsFetchDuration`, `ReadThroughput`, or `WriteThroughput`. It also does not publish `MarshallingDuration`, `EndpointResolveDuration`, `UnmarshallingDuration`, or `ErrorType`.
+
+For definitions of these fields and other available metrics, see the [SDK metrics reference](metrics-list.md).
+
+**Note**
+The SDK publishes metrics asynchronously and on a best-effort basis. If a publisher cannot process collections quickly enough, the SDK can discard collections and write details to DEBUG-level logs. This does not affect the result of the S3 operation. The SDK does not close your metric publishers. Keep a publisher open while any client uses it. If you close it while final metric delivery is in progress, the SDK might not publish those collections.
 
 ## When are metrics available?
 <a name="when-are-metrics-available"></a>

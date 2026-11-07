@@ -19,6 +19,12 @@ Updates a metadata table in the Data Catalog.
    "SkipArchive": {{boolean}},
    "TableInput": {
       "Description": "{{string}}",
+      "FederatedTable": {
+         "ConnectionName": "{{string}}",
+         "ConnectionType": "{{string}}",
+         "DatabaseIdentifier": "{{string}}",
+         "Identifier": "{{string}}"
+      },
       "LastAccessTime": {{number}},
       "LastAnalyzedTime": {{number}},
       "Name": "{{string}}",
@@ -98,6 +104,7 @@ Updates a metadata table in the Data Catalog.
       },
       "ViewDefinition": {
          "Definer": "{{string}}",
+         "IsManaged": {{boolean}},
          "IsProtected": {{boolean}},
          "LastRefreshType": "{{string}}",
          "RefreshSeconds": {{number}},
@@ -110,7 +117,19 @@ Updates a metadata table in the Data Catalog.
                "ViewOriginalText": "{{string}}"
             }
          ],
+         "SparkPipelineInfo": {
+            "{{string}}" : "{{string}}"
+         },
          "SubObjects": [ "{{string}}" ],
+         "SubObjectsStatistics": [
+            {
+               "FileCount": {{number}},
+               "GlueVersionId": "{{string}}",
+               "PartitionCount": {{number}},
+               "SourceType": "{{string}}",
+               "TotalFileBytes": {{number}}
+            }
+         ],
          "SubObjectVersionIds": [ {{number}} ],
          "ViewVersionId": {{number}},
          "ViewVersionToken": "{{string}}"

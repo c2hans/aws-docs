@@ -45,6 +45,7 @@ Content-type: application/json
    "name": "{{string}}",
    "networkingMode": "{{string}}",
    "outputUri": "{{string}}",
+   "outputUriPrefixMode": "{{string}}",
    "parameters": {{JSON value}},
    "priority": {{number}},
    "requestId": "{{string}}",
@@ -98,7 +99,7 @@ Pattern: `[A-Za-z0-9][A-Za-z0-9\-\._]*`
 Required: No
 
  ** [engineSettings](#API_StartRun_RequestSyntax) **   <a name="omics-StartRun-request-engineSettings"></a>
-Engine-specific settings for the workflow run. Use this field to specify configuration options that are specific to the workflow engine (for example, Nextflow profiles).
+Engine-specific settings for the workflow run. Use this field to specify configuration options that are specific to the workflow engine (for example, Nextflow profiles, Nextflow runtime configuration).
 Type: JSON value
 Required: No
 
@@ -128,6 +129,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 750.
 Pattern: `[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+`
 Required: Yes
+
+ ** [outputUriPrefixMode](#API_StartRun_RequestSyntax) **   <a name="omics-StartRun-request-outputUriPrefixMode"></a>
+You can control the path prefixes that the service adds beneath `outputUri`. If you don't specify a value, the service uses `SERVICE_DEFINED`, which adds a run-specific prefix.
+Type: String
+Valid Values: `SERVICE_DEFINED | NONE_WITH_OVERWRITE`
+Required: No
 
  ** [parameters](#API_StartRun_RequestSyntax) **   <a name="omics-StartRun-request-parameters"></a>
 Parameters for the run. The run needs all required parameters and can include optional parameters. The run cannot include any parameters that are not defined in the parameter template. To retrieve parameters from the run, use the GetRun API operation.

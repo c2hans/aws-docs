@@ -95,7 +95,9 @@ public class HelloInspector {
     }
 }
 ```
-+  For API details, see [ListMembers](https://docs.aws.amazon.com/goto/SdkForJavaV2/inspector-2016-02-16/ListMembers) in *AWS SDK for Java 2.x API Reference*.
++ For API details, see the following topics in *AWS SDK for Java 2.x API Reference*.
+  + [BatchGetAccountStatus](https://docs.aws.amazon.com/goto/SdkForJavaV2/inspector-2016-02-16/BatchGetAccountStatus)
+  + [ListMembers](https://docs.aws.amazon.com/goto/SdkForJavaV2/inspector-2016-02-16/ListMembers)
 
 ## Basics
 <a name="basics"></a>

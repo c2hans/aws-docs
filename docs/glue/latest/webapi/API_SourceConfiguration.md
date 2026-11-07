@@ -10,6 +10,11 @@ Configuration that defines how to make requests to endpoints, including request 
 ## Contents
 <a name="API_SourceConfiguration_Contents"></a>
 
+ ** FilterConfiguration **   <a name="Glue-Type-SourceConfiguration-FilterConfiguration"></a>
+Configuration for applying filter pushdown to REST API requests, defining how filter predicates are translated into query parameters or filter strings.
+Type: [FilterConfiguration](API_FilterConfiguration.md) object
+Required: No
+
  ** PaginationConfiguration **   <a name="Glue-Type-SourceConfiguration-PaginationConfiguration"></a>
 Configuration for handling paginated responses from the REST API, supporting both cursor-based and offset-based pagination strategies.
 Type: [PaginationConfiguration](API_PaginationConfiguration.md) object

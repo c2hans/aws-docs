@@ -531,7 +531,7 @@ The following `list-secrets` example gets a list of the secrets in your account 
 
 ```
 aws secretsmanager list-secrets \
-    --filter Key="name",Values="Test"
+    --filters Key="name",Values="Test"
 ```
 Output:
 
@@ -557,7 +557,7 @@ The following `list-secrets` example returns the secrets in your account that ar
 
 ```
 aws secretsmanager list-secrets \
-    --filter Key="owning-service",Values="rds"
+    --filters Key="owning-service",Values="rds"
 ```
 Output:
 

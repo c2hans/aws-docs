@@ -38,6 +38,7 @@ Required: Yes
 {
    "Crawlers": [
       {
+         "CatalogId": "string",
          "Classifiers": [ "string" ],
          "Configuration": "string",
          "CrawlElapsedTime": number,

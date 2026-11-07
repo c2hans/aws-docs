@@ -88,6 +88,22 @@ Creates a [WebACL](API_WebACL.md) per the specifications provided.
    },
    "Description": "{{string}}",
    "MonetizationConfig": {
+      "ConnectedAccountConfigs": [
+         {
+            "ConnectedAccountArn": "{{string}}",
+            "PaymentNetworks": [
+               {
+                  "Chain": "{{string}}",
+                  "Prices": [
+                     {
+                        "Amount": "{{string}}",
+                        "Currency": "{{string}}"
+                     }
+                  ]
+               }
+            ]
+         }
+      ],
       "CryptoConfig": {
          "PaymentNetworks": [
             {

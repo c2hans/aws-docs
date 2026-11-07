@@ -16,6 +16,9 @@ Content-type: application/json
 
 {
    "agentRuntimeArtifact": { ... },
+   "allowedPorts": [
+      { ... }
+   ],
    "authorizerConfiguration": { ... },
    "capacityProviderConfiguration": {
       "capacityProviderArn": "{{string}}"
@@ -45,6 +48,8 @@ Content-type: application/json
    },
    "platformVersion": "{{string}}",
    "protocolConfiguration": {
+      "path": "{{string}}",
+      "port": {{number}},
       "serverProtocol": "{{string}}"
    },
    "requestHeaderConfiguration": { ... },
@@ -72,6 +77,12 @@ The updated artifact of the AgentCore Runtime.
 Type: [AgentRuntimeArtifact](API_AgentRuntimeArtifact.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** [allowedPorts](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-allowedPorts"></a>
+The updated additional ports on the AgentCore Runtime that are reachable through the runtime's session URL. Specify one to five non-overlapping entries, each containing either a single port or an inclusive port range. Ports must be between `8000` and `12000`, excluding the reserved port `8443`.
+Type: Array of [AllowedPort](API_AllowedPort.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Required: No
 
  ** [authorizerConfiguration](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-authorizerConfiguration"></a>
 The updated authorizer configuration for the AgentCore Runtime.
@@ -134,7 +145,7 @@ Pattern: `[^\s]+`
 Required: No
 
  ** [protocolConfiguration](#API_UpdateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateAgentRuntime-request-protocolConfiguration"></a>
-The protocol configuration for an agent runtime. This structure defines how the agent runtime communicates with clients.
+The updated protocol configuration for the AgentCore Runtime, including the protocol, port, and path on which the agent server is available.
 Type: [ProtocolConfiguration](API_ProtocolConfiguration.md) object
 Required: No
 

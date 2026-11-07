@@ -43,6 +43,8 @@ The **Findings** column on the **Recommendations for Amazon ECS services on Farg
 
 The following findings classifications apply to Amazon ECS services on Fargate.
 
+**Finding classifications for Amazon ECS services on Fargate**
+
 | Classification | Description |
 | --- | --- |
 | Under-provisioned | When Compute Optimizer detects that there’s not enough memory or CPU, an Amazon ECS service is considered under-provisioned. Compute Optimizer displays a finding reason of **CPU under-provisioned** or **Memory under-provisioned**. An under-provisioned Amazon ECS service might result in poor application performance. |
@@ -57,6 +59,8 @@ For more information about under-provisioned and over-provisioned Amazon ECS ser
 The **Finding reasons** column on the **Recommendations for Amazon ECS services on Fargate** page shows which specification of an Amazon ECS service on Fargate is under-provisioned or over-provisioned.
 
 The following finding reasons apply to Amazon ECS services on Fargate.
+
+**Finding reasons for Amazon ECS services on Fargate**
 
 | Finding reason | Description |
 | --- | --- |
@@ -110,6 +114,8 @@ A very low performance risk means that the current Amazon ECS service is predict
 
 On the **Amazon ECS service details** page, compare the current Amazon ECS service task size with Compute Optimizer's recommended task size for your resources. Savings and performance risk information for your Amazon ECS service is also provided in the table. The following table provides a description for each column section in the console.
 
+**Amazon ECS service task size comparison columns**
+
 | Column | Description |
 | --- | --- |
 | CPU size | The CPU size of the current Amazon ECS service tasks and Compute Optimizer's recommended CPU size configurations. |
@@ -142,6 +148,8 @@ The utilization values of an Amazon ECS service can vary based on the infrastruc
 You can change the graphs to display data for the last 24 hours, 3 days, 1 week, or 2 weeks. You can also change the statistic of the graphs between average and maximum.
 
 The following utilization graphs are displayed on the details page.
+
+**Amazon ECS service utilization graphs**
 
 | Graph name | Description |
 | --- | --- |

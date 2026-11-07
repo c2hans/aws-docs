@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 Returns information about log groups, including data sources that ingest into each log group. You can return all your log groups or filter the results by prefix. The results are ASCII-sorted by log group name.
 
+If an account-level retention policy applies to a log group, `retentionInDays` shows the retention period from that policy, and `retentionPolicyName` shows the name of the policy.
+
 CloudWatch Logs doesn't support IAM policies that control access to the `DescribeLogGroups` action by using the `aws:ResourceTag/key-name ` condition key. Other CloudWatch Logs actions do support the use of the `aws:ResourceTag/key-name ` condition key to control access. For more information about using tags to control access, see [Controlling access to Amazon Web Services resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html).
 
 If you are using CloudWatch cross-account observability, you can use this operation in a monitoring account and view data from the linked source accounts. For more information, see [CloudWatch cross-account observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html).
@@ -57,13 +59,15 @@ Required: No
 
  ** [logGroupClass](#API_DescribeLogGroups_RequestSyntax) **   <a name="CWL-DescribeLogGroups-request-logGroupClass"></a>
 Use this parameter to limit the results to only those log groups in the specified log group class. If you omit this parameter, log groups of all classes can be returned.
-Specifies the log group class for this log group. There are three classes:
+If you specify either `INFREQUENT_ACCESS` or `ESSENTIALS`, the results include log groups in both the Infrequent Access and Essentials log classes.
+Specifies the log group class for this log group. There are four classes:
 + The `Standard` log class supports all CloudWatch Logs features.
 + The `Infrequent Access` log class supports a subset of CloudWatch Logs features and incurs lower costs.
++ The `Essentials` log class supports a subset of CloudWatch Logs features and incurs lower costs.
 + Use the `Delivery` log class only for delivering AWS Lambda logs to store in Amazon S3 or Amazon Data Firehose. Log events in log groups in the Delivery class are kept in CloudWatch Logs for only one day. This log class doesn't offer rich CloudWatch Logs capabilities such as CloudWatch Logs Insights queries.
 For details about the features supported by each class, see [Log classes](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch_Logs_Log_Classes.html)
 Type: String
-Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY`
+Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY | ESSENTIALS`
 Required: No
 
  ** [logGroupIdentifiers](#API_DescribeLogGroups_RequestSyntax) **   <a name="CWL-DescribeLogGroups-request-logGroupIdentifiers"></a>

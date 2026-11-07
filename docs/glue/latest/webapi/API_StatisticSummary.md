@@ -17,6 +17,11 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: No
 
+ ** DistributionValue **   <a name="Glue-Type-StatisticSummary-DistributionValue"></a>
+The distribution value for the statistic.
+Type: [DistributionData](API_DistributionData.md) object
+Required: No
+
  ** DoubleValue **   <a name="Glue-Type-StatisticSummary-DoubleValue"></a>
 The value of the statistic.
 Type: Double

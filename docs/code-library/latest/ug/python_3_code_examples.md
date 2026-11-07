@@ -60,6 +60,7 @@ Some services contain additional example categories that show how to leverage li
 + [HealthImaging](python_3_medical-imaging_code_examples.md)
 + [HealthLake](python_3_healthlake_code_examples.md)
 + [IAM](python_3_iam_code_examples.md)
++ [Amazon Inspector](python_3_inspector_code_examples.md)
 + [AWS IoT](python_3_iot_code_examples.md)
 + [AWS IoT data](python_3_iot-data-plane_code_examples.md)
 + [AWS IoT Greengrass V2](python_3_greengrassv2_code_examples.md)

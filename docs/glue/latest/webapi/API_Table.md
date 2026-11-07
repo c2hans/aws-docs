@@ -55,6 +55,11 @@ A `FederatedTable` structure that references an entity outside the AWS Glue Data
 Type: [FederatedTable](API_FederatedTable.md) object
 Required: No
 
+ ** IcebergTableMetadata **   <a name="Glue-Type-Table-IcebergTableMetadata"></a>
+The latest Apache Iceberg table metadata for the table, including format version, schemas, partition specifications, and sort orders. This field is populated for Iceberg tables and reflects the current state of the table's Iceberg metadata.
+Type: [IcebergTableMetadata](API_IcebergTableMetadata.md) object
+Required: No
+
  ** IsMaterializedView **   <a name="Glue-Type-Table-IsMaterializedView"></a>
 Indicates a table is a `MaterializedView`.
 Type: Boolean
@@ -106,6 +111,11 @@ Required: No
 The retention time for this table.
 Type: Integer
 Valid Range: Minimum value of 0.
+Required: No
+
+ ** RLSProperties **   <a name="Glue-Type-Table-RLSProperties"></a>
+A `RLSProperties` structure that describes the default row-level security policy of the table.
+Type: [RLSProperties](API_RLSProperties.md) object
 Required: No
 
  ** Status **   <a name="Glue-Type-Table-Status"></a>

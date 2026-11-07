@@ -320,7 +320,7 @@ The following `get-identity-source` example displays the details for the identit
 
 ```
 aws verifiedpermissions get-identity-source \
-    --identity-source  {{ISEXAMPLEabcdefg111111}} \
+    --identity-source-id  {{ISEXAMPLEabcdefg111111}} \
     --policy-store-id {{PSEXAMPLEabcdefg111111}}
 ```
 Output:

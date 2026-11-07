@@ -30,7 +30,7 @@ The following `describe-directories` example displays details about the specifie
 
 ```
 aws ds describe-directories \
-    --directory-id {{d-a1b2c3d4e5}}
+    --directory-ids {{d-a1b2c3d4e5}}
 ```
 Output:
 

@@ -104,6 +104,12 @@ Indicates whether or not the exception relates to a federated source.
 A message describing the problem.
 HTTP Status Code: 400
 
+ ** OperationNotSupportedException **
+The operation is not available in the region.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 400
+
  ** OperationTimeoutException **
 The operation timed out.
  ** Message **
@@ -112,6 +118,12 @@ HTTP Status Code: 400
 
  ** ResourceNumberLimitExceededException **
 A resource numerical limit was exceeded.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 400
+
+ ** SessionBusyException **
+The session is currently busy processing another request and cannot accept new operations.
  ** Message **
 A message describing the problem.
 HTTP Status Code: 400

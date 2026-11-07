@@ -43,7 +43,7 @@ Properties:
 
 `FileSystemId`  <a name="cfn-fsx-backup-filesystemid"></a>
 The ID of the file system to back up.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Pattern*: `^(fs-[0-9a-f]{8,})$`
 *Minimum*: `11`

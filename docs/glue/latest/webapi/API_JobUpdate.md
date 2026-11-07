@@ -160,9 +160,10 @@ Valid Range: Minimum value of 1.
 Required: No
 
  ** WorkerType **   <a name="Glue-Type-JobUpdate-WorkerType"></a>
-The type of predefined worker that is allocated when a job runs. Accepts a value of G.1X, G.2X, G.4X, G.8X or G.025X for Spark jobs. Accepts the value Z.2X for Ray jobs. For more information, see [Defining job properties for Spark jobs ](https://docs.aws.amazon.com/glue/latest/dg/add-job.html#create-job)
+The type of predefined worker that is allocated when a job runs. Accepts a value of G.025X, G.1X, G.2X, G.4X, G.8X, G.12X, G.16X, R.1X, R.2X, R.4X, or R.8X for Spark jobs. Accepts the value Z.2X for Ray jobs. For more information, see [Defining job properties for Spark jobs ](https://docs.aws.amazon.com/glue/latest/dg/add-job.html#create-job)
+The `G.12X`, `G.16X`, and `R.1X` through `R.8X` worker types are available only for AWS Glue version 4.0 or later Spark ETL jobs in select AWS Regions. For the supported Regions, see [Configuring job properties for Spark jobs](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
 Type: String
-Valid Values: `Standard | G.1X | G.2X | G.025X | G.4X | G.8X | Z.2X`
+Valid Values: `Standard | G.1X | G.2X | G.4X | G.8X | G.025X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X`
 Required: No
 
 ## See Also

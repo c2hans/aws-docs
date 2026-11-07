@@ -23,7 +23,7 @@ The following panels are available to add:
 ![The job monitor showing the Jobs, Steps, and Tasks panels, with an outlined Add panel tile at the end of the page.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/monitor/job-monitor-add-panel-tile.png)
 
 1. In **Add a panel**, choose the panel that you want. The panel is added after the last panel on the page.
-![The Add a panel dialog box listing the Logs panel with a thumbnail and a description of what the panel shows.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/monitor/job-monitor-add-panel-modal.png)
+![The Add a panel dialog box listing the Logs panel and the Task outputs panel, each with a thumbnail and a description of what the panel shows.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/monitor/job-monitor-add-panel-modal.png)
 
 The **Add panel** tile appears only when panels remain to add. After the page shows every available panel, the tile no longer appears.
 

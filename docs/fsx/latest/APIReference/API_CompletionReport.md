@@ -22,7 +22,11 @@ Valid Values: `REPORT_CSV_20191124`
 Required: No
 
  ** Path **   <a name="FSx-Type-CompletionReport-Path"></a>
-Required if `Enabled` is set to `true`. Specifies the location of the report on the file system's linked S3 data repository. An absolute path that defines where the completion report will be stored in the destination location. The `Path` you provide must be located within the file system’s ExportPath. An example `Path` value is "s3://amzn-s3-demo-bucket/myExportPath/optionalPrefix". The report provides the following information for each file in the report: FilePath, FileStatus, and ErrorCode.
+Required if `Enabled` is set to `true`. Specifies the location of the report on the file system's linked S3 data repository. An absolute path that defines where the completion report will be stored in the destination location. The `Path` you provide must be within the Amazon S3 location that the file system is linked to. That location depends on how the file system is configured:
++ The `DataRepositoryPath` of one of the associations, if the file system has data repository associations
++ The `ExportPath`, if the file system was created with an `ImportPath` and an `ExportPath`
+For example, if an association links to `s3://amzn-s3-demo-bucket/myPrefix`, then `s3://amzn-s3-demo-bucket/myPrefix/reports` is valid. The path `s3://amzn-s3-demo-bucket/reports` is not.
+The report provides the following information for each file in the report: FilePath, FileStatus, and ErrorCode.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 4357.
 Pattern: `^[^\u0000\u0085\u2028\u2029\r\n]{3,4357}$`

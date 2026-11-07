@@ -52,11 +52,6 @@ Use this sample policy to give users the ability to start and resume sessions fr
             ]
         },
         {
-         "Effect": "Allow",
-         "Action": ["ssmmessages:OpenDataChannel"],
-         "Resource": ["arn:aws:ssm:*:*:session/${aws:userid}-*"]
-       },
-        {
             "Effect": "Allow",
             "Action": [
                 "ssm:DescribeSessions",
@@ -70,11 +65,15 @@ Use this sample policy to give users the ability to start and resume sessions fr
             "Effect": "Allow",
             "Action": [
                 "ssm:TerminateSession",
-                "ssm:ResumeSession"
+                "ssm:ResumeSession",
+                "ssmmessages:OpenDataChannel"
             ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:userid}-*"
-            ]
+            "Resource": "arn:aws:ssm:*:*:session/*",
+            "Condition": {
+                "StringEquals": {
+                    "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                }
+            }
         },
         {
             "Effect": "Allow",
@@ -115,11 +114,6 @@ Use this sample policy to give users the ability to start and resume sessions fr
             ]
         },
         {
-         "Effect": "Allow",
-         "Action": ["ssmmessages:OpenDataChannel"],
-         "Resource": ["arn:aws:ssm:*:*:session/${aws:userid}-*"]
-       },
-        {
             "Effect": "Allow",
             "Action": [
                 "ssm:GetConnectionStatus",
@@ -131,11 +125,15 @@ Use this sample policy to give users the ability to start and resume sessions fr
             "Effect": "Allow",
             "Action": [
                 "ssm:TerminateSession",
-                "ssm:ResumeSession"
+                "ssm:ResumeSession",
+                "ssmmessages:OpenDataChannel"
             ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:username}-*"
-            ]
+            "Resource": "arn:aws:ssm:*:*:session/*",
+            "Condition": {
+                "StringEquals": {
+                    "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                }
+            }
         }
     ]
 }
@@ -169,19 +167,18 @@ Use this sample policy to give users the ability to start and resume sessions fr
             ]
         },
         {
-         "Effect": "Allow",
-         "Action": ["ssmmessages:OpenDataChannel"],
-         "Resource": ["arn:aws:ssm:*:*:session/${aws:userid}-*"]
-       },
-        {
             "Effect": "Allow",
             "Action": [
                 "ssm:TerminateSession",
-                "ssm:ResumeSession"
+                "ssm:ResumeSession",
+                "ssmmessages:OpenDataChannel"
             ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:userid}-*"
-            ]
+            "Resource": "arn:aws:ssm:*:*:session/*",
+            "Condition": {
+                "StringEquals": {
+                    "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                }
+            }
         },
         {
             "Effect": "Allow",
@@ -260,15 +257,6 @@ Use this sample policy to give administrators the ability to perform session-rel
         {
             "Effect": "Allow",
             "Action": [
-                "ssmmessages:OpenDataChannel"
-            ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:userid}-*"
-            ]
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
                 "ssm:DescribeSessions",
                 "ssm:GetConnectionStatus",
                 "ssm:DescribeInstanceProperties",
@@ -289,21 +277,16 @@ Use this sample policy to give administrators the ability to perform session-rel
         {
             "Effect": "Allow",
             "Action": [
+                "ssm:TerminateSession",
+                "ssm:ResumeSession",
                 "ssmmessages:OpenDataChannel"
             ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:userid}-*"
-            ]
-        },
-        {
-            "Effect": "Allow",
-            "Action": [
-                "ssm:TerminateSession",
-                "ssm:ResumeSession"
-            ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:userid}-*"
-            ]
+            "Resource": "arn:aws:ssm:*:*:session/*",
+            "Condition": {
+                "StringEquals": {
+                    "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                }
+            }
         }
     ]
 }
@@ -352,11 +335,6 @@ Use this sample policy to give administrators the ability to perform session-rel
             ]
         },
         {
-         "Effect": "Allow",
-         "Action": ["ssmmessages:OpenDataChannel"],
-         "Resource": ["arn:aws:ssm:*:*:session/${aws:userid}-*"]
-       },
-        {
             "Effect": "Allow",
             "Action": [
                 "ssm:GetConnectionStatus",
@@ -368,11 +346,15 @@ Use this sample policy to give administrators the ability to perform session-rel
             "Effect": "Allow",
             "Action": [
                 "ssm:TerminateSession",
-                "ssm:ResumeSession"
+                "ssm:ResumeSession",
+                "ssmmessages:OpenDataChannel"
             ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:userid}-*"
-            ]
+            "Resource": "arn:aws:ssm:*:*:session/*",
+            "Condition": {
+                "StringEquals": {
+                    "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                }
+            }
         }
     ]
 }
@@ -412,11 +394,6 @@ Use this sample policy to give administrators the ability to perform session-rel
             }
         },
         {
-         "Effect": "Allow",
-         "Action": ["ssmmessages:OpenDataChannel"],
-         "Resource": ["arn:aws:ssm:*:*:session/${aws:userid}-*"]
-       },
-        {
             "Effect": "Allow",
             "Action": [
                 "ssm:DescribeSessions",
@@ -441,11 +418,15 @@ Use this sample policy to give administrators the ability to perform session-rel
             "Effect": "Allow",
             "Action": [
                 "ssm:TerminateSession",
-                "ssm:ResumeSession"
+                "ssm:ResumeSession",
+                "ssmmessages:OpenDataChannel"
             ],
-            "Resource": [
-                "arn:aws:ssm:*:*:session/${aws:userid}-*"
-            ]
+            "Resource": "arn:aws:ssm:*:*:session/*",
+            "Condition": {
+                "StringEquals": {
+                    "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                }
+            }
         }
     ]
 }

@@ -126,6 +126,9 @@ aws lambda-microvms create-microvm-image \
   --build-role-arn arn:aws:iam::{{123456789012}}:role/MicrovmBuildRole
 ```
 
+**Default CPU architecture**
+This command builds the image for the default `ARM64` CPU architecture. To build for `x86_64` instead, add `--cpu-configurations architecture=X86_64`. For more information, see [CPU architecture](microvms-images.md#microvms-images-cpu-architecture).
+
 The image starts in `CREATING` state. Check the build status with:
 
 ```

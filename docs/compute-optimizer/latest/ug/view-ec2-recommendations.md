@@ -102,7 +102,7 @@ The **Migration effort** column on the **EC2 Auto Scaling groups recommendations
 + **Medium** — A workload type can't be inferred but an AWS Graviton instance type is recommended.
 + **High** — The recommended instance type has different CPU architecture from the current instance type, and the workload has no known compatible version on the recommended CPU architecture.
 
-For more information about migrating from x86-based instance types to Arm-based AWS Graviton instances type, see [Considerations when transitioning workloads to AWS Graviton2 based Amazon EC2 instances ](https://github.com/aws/aws-graviton-getting-started/blob/main/transition-guide.md) in the *AWS Graviton Getting Starged GitHub*.
+For more information about migrating from x86-based instance types to Arm-based AWS Graviton instances type, see [Considerations when transitioning workloads to AWS Graviton2 based Amazon EC2 instances](https://github.com/aws/aws-graviton-getting-started/blob/main/transition-guide.md) in the *AWS Graviton Getting Started* repository on the GitHub website.
 
 ## Platform differences
 <a name="ec2-platform-differences"></a>

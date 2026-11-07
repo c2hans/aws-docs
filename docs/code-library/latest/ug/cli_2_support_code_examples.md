@@ -26,12 +26,12 @@ The following code example shows how to use `add-attachments-to-set`.
 
 **AWS CLI**
 **To add an attachment to a set**
-The following `add-attachments-to-set` example adds an image to a set that you can then specify for a support case in your AWS account.
+The following `add-attachments-to-set` example adds an image to a set that you can then specify for a support case in your AWS account. The `data` value is the base64-encoded contents of the image.
 
 ```
 aws support add-attachments-to-set \
     --attachment-set-id {{"as-2f5a6faa2a4a1e600-mu-nk5xQlBr70-G1cUos5LZkd38KOAHZa9BMDVzNEXAMPLE"}} \
-    --attachments {{fileName=troubleshoot-screenshot.png,data=base64-encoded-string}}
+    --attachments {{fileName=troubleshoot-screenshot.png,data=iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==}}
 ```
 Output:
 
@@ -142,7 +142,7 @@ aws support describe-cases \
     --include-resolved-cases \
     --language {{"en"}} \
     --no-include-communications \
-    --max-item {{1}}
+    --max-items {{1}}
 ```
 Output:
 
@@ -181,7 +181,7 @@ The following `describe-communications` example returns the latest communication
 aws support describe-communications \
     --case-id {{"case-12345678910-2013-c4c1d2bf33c5cf47"}} \
     --after-time {{"2020-03-23T21:31:47.774Z"}} \
-    --max-item {{1}}
+    --max-items {{1}}
 ```
 Output:
 
@@ -318,7 +318,7 @@ The following `describe-trusted-advisor-check-refresh-statuses` example lists th
 
 ```
 aws support describe-trusted-advisor-check-refresh-statuses \
-    --check-id {{"Pfx0RwqBli"}} {{"zXCkfM1nI3"}}
+    --check-ids {{"Pfx0RwqBli"}} {{"zXCkfM1nI3"}}
 ```
 Output:
 

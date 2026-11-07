@@ -16,6 +16,11 @@ Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Required: No
 
+ ** IsManaged **   <a name="Glue-Type-ViewDefinitionInput-IsManaged"></a>
+Specifies whether the materialized view is managed by AWS Glue.
+Type: Boolean
+Required: No
+
  ** IsProtected **   <a name="Glue-Type-ViewDefinitionInput-IsProtected"></a>
 You can set this flag as true to instruct the engine not to push user-provided operations into the logical plan of the view during query planning. However, setting this flag does not guarantee that the engine will comply. Refer to the engine's documentation to understand the guarantees provided, if any.
 Type: Boolean
@@ -38,11 +43,25 @@ Type: Array of [ViewRepresentationInput](API_ViewRepresentationInput.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
+ ** SparkPipelineInfo **   <a name="Glue-Type-ViewDefinitionInput-SparkPipelineInfo"></a>
+A map of key-value pairs containing Spark Declarative Pipelines (SDP) information for the materialized view.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 50 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Value Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
+
  ** SubObjects **   <a name="Glue-Type-ViewDefinitionInput-SubObjects"></a>
 A list of base table ARNs that make up the view.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 20. Maximum length of 2048.
+Required: No
+
+ ** SubObjectsStatistics **   <a name="Glue-Type-ViewDefinitionInput-SubObjectsStatistics"></a>
+Statistics for each sub-object referenced by the materialized view, such as the source type, AWS Glue version ID, and the partition, file, and byte counts. Each entry describes one sub-object, identified by its source type.
+Type: Array of [SubObjectStatistics](API_SubObjectStatistics.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 250 items.
 Required: No
 
  ** SubObjectVersionIds **   <a name="Glue-Type-ViewDefinitionInput-SubObjectVersionIds"></a>

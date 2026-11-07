@@ -9,6 +9,7 @@ This topic describes important changes to the AWS SDK for Java Developer Guide o
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [Publish SDK metrics with the CRT-based S3 client](metrics.html) | Added support for publishing SDK metrics with the AWS CRT-based S3 client at both the client and request levels. | November 6, 2026 |
 | [Limit the total number of results](pagination.html) | Clarify that the maxResults parameter on a request sets the page size, not the total number of items. Add examples that limit the total number of items across all pages. | October 6, 2026 |
 | [Migrating Amazon S3 pre-signed URL downloads from v1 to v2](migration-s3-presign-download.html) | Add migration guide for pre-signed URL downloads from v1 to v2 | July 15, 2026 |
 | [Pre-signed URL download examples for Amazon S3](examples-s3-presign.html) | Add pre-signed URL download examples using S3AsyncClient pre-signed URL extension and S3 Transfer Manager | July 15, 2026 |

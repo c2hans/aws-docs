@@ -54,7 +54,7 @@ In CloudFormation, the options for this property are as follows:
 + `SPECIFIED_REGIONS` - Indicates to aggregate findings only from the Regions listed in the `Regions` parameter. Security Hub does not automatically aggregate findings from new Regions.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `ALL_REGIONS | ALL_REGIONS_EXCEPT_SPECIFIED | SPECIFIED_REGIONS`
+*Allowed values*: `ALL_REGIONS | ALL_REGIONS_EXCEPT_SPECIFIED | SPECIFIED_REGIONS | NO_REGIONS`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Regions`  <a name="cfn-securityhub-findingaggregator-regions"></a>

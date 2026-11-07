@@ -19,7 +19,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AutoFilterSettings](#cfn-medialive-channel-h264h265filtersettings-autofiltersettings)" : {{Json}},
   "[BandwidthReductionFilterSettings](#cfn-medialive-channel-h264h265filtersettings-bandwidthreductionfiltersettings)" : {{BandwidthReductionFilterSettings}},
+  "[NoneFilterSettings](#cfn-medialive-channel-h264h265filtersettings-nonefiltersettings)" : {{Json}},
+  "[PerceptualFilterSettings](#cfn-medialive-channel-h264h265filtersettings-perceptualfiltersettings)" : {{PerceptualFilterSettings}},
   "[TemporalFilterSettings](#cfn-medialive-channel-h264h265filtersettings-temporalfiltersettings)" : {{TemporalFilterSettings}}
 }
 ```
@@ -28,8 +31,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-h264h265filtersettings-syntax.yaml"></a>
 
 ```
+  [AutoFilterSettings](#cfn-medialive-channel-h264h265filtersettings-autofiltersettings): {{Json}}
   [BandwidthReductionFilterSettings](#cfn-medialive-channel-h264h265filtersettings-bandwidthreductionfiltersettings): {{
     BandwidthReductionFilterSettings}}
+  [NoneFilterSettings](#cfn-medialive-channel-h264h265filtersettings-nonefiltersettings): {{Json}}
+  [PerceptualFilterSettings](#cfn-medialive-channel-h264h265filtersettings-perceptualfiltersettings): {{
+    PerceptualFilterSettings}}
   [TemporalFilterSettings](#cfn-medialive-channel-h264h265filtersettings-temporalfiltersettings): {{
     TemporalFilterSettings}}
 ```
@@ -37,10 +44,28 @@ To declare this entity in your CloudFormation template, use the following syntax
 ## Properties
 <a name="aws-properties-medialive-channel-h264h265filtersettings-properties"></a>
 
+`AutoFilterSettings`  <a name="cfn-medialive-channel-h264h265filtersettings-autofiltersettings"></a>
+Property description not available.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `BandwidthReductionFilterSettings`  <a name="cfn-medialive-channel-h264h265filtersettings-bandwidthreductionfiltersettings"></a>
 Property description not available.
 *Required*: No
 *Type*: [BandwidthReductionFilterSettings](aws-properties-medialive-channel-bandwidthreductionfiltersettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NoneFilterSettings`  <a name="cfn-medialive-channel-h264h265filtersettings-nonefiltersettings"></a>
+Property description not available.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PerceptualFilterSettings`  <a name="cfn-medialive-channel-h264h265filtersettings-perceptualfiltersettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [PerceptualFilterSettings](aws-properties-medialive-channel-perceptualfiltersettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TemporalFilterSettings`  <a name="cfn-medialive-channel-h264h265filtersettings-temporalfiltersettings"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-co
 # EMR Studio features, requirements, and limits
 <a name="emr-studio-considerations"></a>
 
-This topic includes Items to consider when working with Amazon EMR Studio, including considerations about regions and tools, cluster requirements, and technical limitations.
+This topic includes items to consider when working with Amazon EMR Studio, including considerations about regions and tools, cluster requirements, and technical limitations.
 
 ## Considerations
 <a name="emr-studio-considerations-general"></a>

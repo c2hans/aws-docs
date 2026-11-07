@@ -19,6 +19,7 @@ Required: Yes
 A unique identifier of the case.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.
+Pattern: `[A-Za-z0-9\-._/:#=+-]*`
 Required: Yes
 
  ** content **   <a name="connect-Type-connect-cases_SearchAllRelatedItemsResponseItem-content"></a>

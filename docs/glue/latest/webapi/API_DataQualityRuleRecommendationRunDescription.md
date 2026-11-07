@@ -10,9 +10,23 @@ Describes the result of a data quality rule recommendation run.
 ## Contents
 <a name="API_DataQualityRuleRecommendationRunDescription_Contents"></a>
 
+ ** CreatedRulesetName **   <a name="Glue-Type-DataQualityRuleRecommendationRunDescription-CreatedRulesetName"></a>
+The name of the ruleset that was created by the recommendation run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** DataSource **   <a name="Glue-Type-DataQualityRuleRecommendationRunDescription-DataSource"></a>
 The data source (AWS Glue table) associated with the recommendation run.
 Type: [DataSource](API_DataSource.md) object
+Required: No
+
+ ** RecommendationMode **   <a name="Glue-Type-DataQualityRuleRecommendationRunDescription-RecommendationMode"></a>
+The mode that AWS Glue Data Quality uses to recommend rules.
+The default is `BASIC`.
+Type: String
+Valid Values: `BASIC | ADVANCED`
 Required: No
 
  ** RunId **   <a name="Glue-Type-DataQualityRuleRecommendationRunDescription-RunId"></a>

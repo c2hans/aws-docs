@@ -18,7 +18,7 @@ Pattern: `[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+`
 Required: Yes
 
  ** engineSettings **   <a name="omics-Type-InlineSetting-engineSettings"></a>
-Per-run engine-specific settings. Use this field to specify configuration options that are specific to the workflow engine (for example, Nextflow profiles). Overrides `defaultRunSetting.engineSettings` for this run.
+Per-run engine-specific settings. Use this field to specify configuration options that are specific to the workflow engine (for example, Nextflow profiles, Nextflow runtime configuration). Overrides `defaultRunSetting.engineSettings` for this run.
 Type: JSON value
 Required: No
 

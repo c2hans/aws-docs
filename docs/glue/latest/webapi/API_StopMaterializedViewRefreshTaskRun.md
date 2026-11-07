@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StopMaterializedV
 # StopMaterializedViewRefreshTaskRun
 <a name="API_StopMaterializedViewRefreshTaskRun"></a>
 
-Stops a materialized view refresh task run for a specified materialized view table.
+Stops a materialized view refresh task run for a specified materialized view.
 
 ## Request Syntax
 <a name="API_StopMaterializedViewRefreshTaskRun_RequestSyntax"></a>
@@ -26,21 +26,21 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [CatalogId](#API_StopMaterializedViewRefreshTaskRun_RequestSyntax) **   <a name="Glue-StopMaterializedViewRefreshTaskRun-request-CatalogId"></a>
-The ID of the Catalog where the materialized view table resides. If none is supplied, the account ID is used by default.
+The ID of the Data Catalog where the table reside. If none is supplied, the account ID is used by default.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: Yes
 
  ** [DatabaseName](#API_StopMaterializedViewRefreshTaskRun_RequestSyntax) **   <a name="Glue-StopMaterializedViewRefreshTaskRun-request-DatabaseName"></a>
-The database where the materialized view table resides.
+The name of the database where the table resides.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: Yes
 
  ** [TableName](#API_StopMaterializedViewRefreshTaskRun_RequestSyntax) **   <a name="Glue-StopMaterializedViewRefreshTaskRun-request-TableName"></a>
-The name of the table to stop the materialized view refresh task.
+The name of the materialized view.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
@@ -72,10 +72,14 @@ HTTP Status Code: 400
 
  ** MaterializedViewRefreshTaskNotRunningException **
 Exception thrown when stopping a task that is not in running state.
+ ** Message **
+A message describing the problem.
 HTTP Status Code: 400
 
  ** MaterializedViewRefreshTaskStoppingException **
 Exception thrown when a task is already in stopping state.
+ ** Message **
+A message describing the problem.
 HTTP Status Code: 400
 
  ** OperationTimeoutException **

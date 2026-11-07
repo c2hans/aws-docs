@@ -71,6 +71,7 @@ Content-type: application/json
    "name": "string",
    "networkingMode": "string",
    "outputUri": "string",
+   "outputUriPrefixMode": "string",
    "parameters": JSON value,
    "priority": number,
    "resourceDigests": {
@@ -211,6 +212,11 @@ The run's output URI.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 750.
 Pattern: `[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+`
+
+ ** [outputUriPrefixMode](#API_GetRun_ResponseSyntax) **   <a name="omics-GetRun-response-outputUriPrefixMode"></a>
+The service returns the value that the `StartRun` request specified for `outputUriPrefixMode`. The service returns `SERVICE_DEFINED` if the request did not specify a value.
+Type: String
+Valid Values: `SERVICE_DEFINED | NONE_WITH_OVERWRITE`
 
  ** [parameters](#API_GetRun_ResponseSyntax) **   <a name="omics-GetRun-response-parameters"></a>
 The run's parameters.

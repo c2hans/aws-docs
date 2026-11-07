@@ -12,6 +12,11 @@ Retrieves partitions in a batch request.
 
 ```
 {
+   "AuditContext": {
+      "AdditionalAuditContext": "{{string}}",
+      "AllColumnsRequested": {{boolean}},
+      "RequestedColumns": [ "{{string}}" ]
+   },
    "CatalogId": "{{string}}",
    "DatabaseName": "{{string}}",
    "PartitionsToGet": [
@@ -19,6 +24,15 @@ Retrieves partitions in a batch request.
          "Values": [ "{{string}}" ]
       }
    ],
+   "QuerySessionContext": {
+      "AdditionalContext": {
+         "{{string}}" : "{{string}}"
+      },
+      "ClusterId": "{{string}}",
+      "QueryAuthorizationId": "{{string}}",
+      "QueryId": "{{string}}",
+      "QueryStartTime": {{number}}
+   },
    "TableName": "{{string}}"
 }
 ```
@@ -29,6 +43,11 @@ Retrieves partitions in a batch request.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [AuditContext](#API_BatchGetPartition_RequestSyntax) **   <a name="Glue-BatchGetPartition-request-AuditContext"></a>
+A structure containing the Lake Formation audit context.
+Type: [AuditContext](API_AuditContext.md) object
+Required: No
 
  ** [CatalogId](#API_BatchGetPartition_RequestSyntax) **   <a name="Glue-BatchGetPartition-request-CatalogId"></a>
 The ID of the Data Catalog where the partitions in question reside. If none is supplied, the AWS account ID is used by default.
@@ -49,6 +68,12 @@ A list of partition values identifying the partitions to retrieve.
 Type: Array of [PartitionValueList](API_PartitionValueList.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 Required: Yes
+
+ ** [QuerySessionContext](#API_BatchGetPartition_RequestSyntax) **   <a name="Glue-BatchGetPartition-request-QuerySessionContext"></a>
+A structure used as a protocol between query engines and Lake Formation or AWS Glue. Contains both a Lake Formation generated authorization identifier and information from the request's authorization context.
+For more information about how to utilize QuerySessionContext, see [Lake Formation workflow for application integration API operations](https://docs.aws.amazon.com/lake-formation/latest/dg/api-overview.html) in the developer guide.
+Type: [QuerySessionContext](API_QuerySessionContext.md) object
+Required: No
 
  ** [TableName](#API_BatchGetPartition_RequestSyntax) **   <a name="Glue-BatchGetPartition-request-TableName"></a>
 The name of the partitions' table.

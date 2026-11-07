@@ -3380,7 +3380,7 @@ The following `describe-db-cluster-parameters` example retrieves the names of on
 ```
 aws rds describe-db-cluster-parameters \
     --db-cluster-parameter-group-name {{default.aurora-mysql5.7}} \
-    --query '{{Parameters[].{ParameterName:ParameterName,DataType:DataType,IsModifiable:IsModifiable} | [?DataType == `boolean`] | [?IsModifiable == `true`]}}'
+    --query '{{Parameters[].{ParameterName:ParameterName,DataType:DataType,IsModifiable:IsModifiable} | [?DataType == `"boolean"`] | [?IsModifiable == `true`]}}'
 ```
 Output:
 
@@ -3653,7 +3653,7 @@ The following `describe-db-clusters` example retrieves only the `DBClusterIdenti
 
 ```
 aws rds describe-db-clusters \
-    --query '{{DBClusters[].{DBClusterIdentifier:DBClusterIdentifier,Engine:Engine} | [?Engine == `aurora-postgresql`]}}'
+    --query '{{DBClusters[].{DBClusterIdentifier:DBClusterIdentifier,Engine:Engine} | [?Engine == `"aurora-postgresql"`]}}'
 ```
 Output:
 
@@ -7724,7 +7724,7 @@ The following `restore-db-instance-to-point-in-time` example restores `test-inst
 ```
 aws rds restore-db-instance-to-point-in-time \
     --source-db-instance-identifier {{test-instance}} \
-    --target-db-instance {{restored-test-instance}} \
+    --target-db-instance-identifier {{restored-test-instance}} \
     --restore-time {{2018-07-30T23:45:00.000Z}}
 ```
 Output:

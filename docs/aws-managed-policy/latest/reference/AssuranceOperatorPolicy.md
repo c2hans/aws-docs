@@ -18,13 +18,13 @@ You can attach `AssuranceOperatorPolicy` to your users, groups, and roles.
 <a name="AssuranceOperatorPolicy-details"></a>
 + **Type**: Service role policy
 + **Creation time**: October 21, 2026, 15:17 UTC
-+ **Edited time:** November 04, 2026, 18:57 UTC
++ **Edited time:** November 06, 2026, 16:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/service-role/AssuranceOperatorPolicy`
 
 ## Policy version
 <a name="AssuranceOperatorPolicy-version"></a>
 
-**Policy version:** v2 (default)
+**Policy version:** v3 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -70,6 +70,7 @@ The policy's default version is the version that defines the permissions for the
         "assurance:GetEvidenceContent",
         "assurance:GetFramework",
         "assurance:GetProject",
+        "assurance:GetResourceActivitiesQueryResults",
         "assurance:GetTask",
         "assurance:ListAssessmentAnnotations",
         "assurance:ListEvidenceAnnotations",
@@ -96,7 +97,7 @@ The policy's default version is the version that defines the permissions for the
         "assurance:PutEvidence",
         "assurance:StartAssessment",
         "assurance:StartAssessmentReportExport",
-        "assurance:StartResourceDiscovery",
+        "assurance:StartResourceActivitiesQuery",
         "assurance:UpdateComment",
         "assurance:UpdateControl",
         "assurance:UpdateControlGroup",

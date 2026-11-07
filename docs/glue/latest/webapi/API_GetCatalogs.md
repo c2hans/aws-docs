@@ -12,6 +12,7 @@ Retrieves all catalogs defined in a catalog in the AWS Glue Data Catalog. For a 
 
 ```
 {
+   "HasDatabases": {{boolean}},
    "IncludeRoot": {{boolean}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
@@ -26,6 +27,11 @@ Retrieves all catalogs defined in a catalog in the AWS Glue Data Catalog. For a 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [HasDatabases](#API_GetCatalogs_RequestSyntax) **   <a name="Glue-GetCatalogs-request-HasDatabases"></a>
+When `true`, the response only includes catalogs that can contain databases. Some catalogs are organizational containers that hold only other catalogs, not databases. When this parameter is set to `true`, those container-only catalogs are excluded, and only catalogs capable of containing databases are returned. Defaults to `false`.
+Type: Boolean
+Required: No
 
  ** [IncludeRoot](#API_GetCatalogs_RequestSyntax) **   <a name="Glue-GetCatalogs-request-IncludeRoot"></a>
 Whether to list the default catalog in the account and region in the response. Defaults to `false`. When `true` and `ParentCatalogId = NULL | AWS Account ID`, all catalogs and the default catalog are enumerated in the response.

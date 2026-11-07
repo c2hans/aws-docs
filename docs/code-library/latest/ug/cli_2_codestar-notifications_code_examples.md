@@ -338,7 +338,7 @@ The following `unsubscribe` example removes an Amazon SNS topic as a target from
 ```
 aws codestar-notifications unsubscribe \
     --arn {{arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE}} \
-    --target {{TargetType=SNS,TargetAddress=arn:aws:sns:us-west-2:123456789012:MyNotificationTopic}}
+    --target-address {{TargetType=SNS,TargetAddress=arn:aws:sns:us-west-2:123456789012:MyNotificationTopic}}
 ```
 Output:
 
@@ -385,11 +385,11 @@ Contents of `update.json`:
 
 ```
 {
+    "Arn": "arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE",
     "Name": "MyUpdatedNotificationRule",
     "EventTypeIds": [
         "codecommit-repository-branches-and-tags-created"
     ],
-    "Resource": "arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo",
     "Targets": [
         {
             "TargetType": "SNS",

@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[LocalStorageConfiguration](#cfn-ecs-capacityprovider-instancelaunchtemplate-localstorageconfiguration)" : {{ManagedInstancesLocalStorageConfiguration}},
   "[Monitoring](#cfn-ecs-capacityprovider-instancelaunchtemplate-monitoring)" : {{String}},
   "[NetworkConfiguration](#cfn-ecs-capacityprovider-instancelaunchtemplate-networkconfiguration)" : {{ManagedInstancesNetworkConfiguration}},
+  "[NitroEnclavesEnabled](#cfn-ecs-capacityprovider-instancelaunchtemplate-nitroenclavesenabled)" : {{Boolean}},
   "[StorageConfiguration](#cfn-ecs-capacityprovider-instancelaunchtemplate-storageconfiguration)" : {{ManagedInstancesStorageConfiguration}}
 }
 ```
@@ -49,6 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Monitoring](#cfn-ecs-capacityprovider-instancelaunchtemplate-monitoring): {{String}}
   [NetworkConfiguration](#cfn-ecs-capacityprovider-instancelaunchtemplate-networkconfiguration): {{
     ManagedInstancesNetworkConfiguration}}
+  [NitroEnclavesEnabled](#cfn-ecs-capacityprovider-instancelaunchtemplate-nitroenclavesenabled): {{Boolean}}
   [StorageConfiguration](#cfn-ecs-capacityprovider-instancelaunchtemplate-storageconfiguration): {{
     ManagedInstancesStorageConfiguration}}
 ```
@@ -127,6 +129,12 @@ CloudWatch provides two categories of monitoring: basic monitoring and detailed 
 The network configuration for Amazon ECS Managed Instances. This specifies the subnets and security groups that instances use for network connectivity.
 *Required*: Yes
 *Type*: [ManagedInstancesNetworkConfiguration](aws-properties-ecs-capacityprovider-managedinstancesnetworkconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NitroEnclavesEnabled`  <a name="cfn-ecs-capacityprovider-instancelaunchtemplate-nitroenclavesenabled"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StorageConfiguration`  <a name="cfn-ecs-capacityprovider-instancelaunchtemplate-storageconfiguration"></a>

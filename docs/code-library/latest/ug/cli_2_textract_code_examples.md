@@ -406,7 +406,7 @@ For Linux and macOS, use the following command.
 aws textract start-document-analysis \
     --document-location '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"document"}}}}' \
     --feature-types '{{["TABLES","FORMS"]}}' \
-    --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleArn"}}
+    --notification-channel {{"SNSTopicArn=arn:aws:sns:us-west-2:123456789012:AmazonTextractTopic,RoleArn=arn:aws:iam::123456789012:role/TextractRole"}}
 ```
 For Windows, use the following command.
 
@@ -414,7 +414,7 @@ For Windows, use the following command.
 aws textract start-document-analysis \
     --document-location "{\"S3Object\":{\"Bucket\":\"amzn-s3-demo-bucket\",\"Name\":\"document\"}}" \
     --feature-types "[\"TABLES\", \"FORMS\"]" \
-    --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleArn"}}
+    --notification-channel {{"SNSTopicArn=arn:aws:sns:us-west-2:123456789012:AmazonTextractTopic,RoleArn=arn:aws:iam::123456789012:role/TextractRole"}}
 ```
 Output:
 
@@ -439,14 +439,14 @@ For Linux and macOS, use the following command.
 ```
 aws textract start-document-text-detection \
     --document-location '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"document"}}}}' \
-    --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleARN"}}
+    --notification-channel {{"SNSTopicArn=arn:aws:sns:us-west-2:123456789012:AmazonTextractTopic,RoleArn=arn:aws:iam::123456789012:role/TextractRole"}}
 ```
 For Windows, use the following command.
 
 ```
 aws textract start-document-text-detection \
     --document-location "{\"S3Object\":{\"Bucket\":\"amzn-s3-demo-bucket\",\"Name\":\"document\"}}" \
-    --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleArn"}}
+    --notification-channel {{"SNSTopicArn=arn:aws:sns:us-west-2:123456789012:AmazonTextractTopic,RoleArn=arn:aws:iam::123456789012:role/TextractRole"}}
 ```
 Output:
 

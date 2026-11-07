@@ -71,7 +71,9 @@ Quick includes pre-configured routines, such as a feed agent that processes item
 
 You can also ask Quick in chat to create a routine. For example, "check my channels every morning at 9 AM and summarize what I missed."
 
-Routines run in the cloud, so they run at their configured time even when the desktop application is closed or your computer is off. The exception is a run that needs a local tool, such as reading a file on your machine, browser automation, or local code execution. For those steps, your computer must be on with the desktop application running and connected at that time. Otherwise the run proceeds but the local step is unavailable until the desktop reconnects.
+Routines run in the cloud, so they run at their configured time even when the desktop application is closed or your computer is off. The exception is a run that needs a local tool, such as reading a file on your machine, browser automation, or local code execution. For those steps, your computer must be on with the desktop application running and connected at that time. Otherwise, Quick skips the run, and the run shows as skipped in Mission Control.
+
+A routine can use only the capabilities listed in its **Uses** field, and the administrator, connector owner, and user controls still apply. When a run reaches an action that requires your approval, the run waits until you approve or deny the action.
 
 ## Working with agent runs
 <a name="mission-control-runs"></a>

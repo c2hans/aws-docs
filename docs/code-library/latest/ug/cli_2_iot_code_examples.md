@@ -609,7 +609,7 @@ The following `create-mitigation-action` example defines a mitigation action nam
 
 ```
 aws iot create-mitigation-action \
-    --cli-input-json {{file::params.json}}
+    --cli-input-json {{file://params.json}}
 ```
 Contents of `params.json`:
 
@@ -669,19 +669,19 @@ Contents of `create-ota-update.json`:
     },
     "files": [
         {
-          "fileName": "firmware.bin",
-          "fileLocation": {
-            "stream": {
-              "streamId": "004",
-              "fileId":123
+            "fileName": "firmware.bin",
+            "fileLocation": {
+                "stream": {
+                    "streamId": "004",
+                    "fileId": 123
+                }
+            },
+            "codeSigning": {
+                "awsSignerJobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
-          },
-          "codeSigning": {
-            "awsSignerJobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
-          }
         }
-    ]
-    "roleArn": "arn:aws:iam:123456789012:role/service-role/my_ota_role"
+    ],
+    "roleArn": "arn:aws:iam::123456789012:role/service-role/my_ota_role"
 }
 ```
 Output:
@@ -1237,7 +1237,7 @@ The following `create-thing` example create a thing that has the specified thing
 aws iot create-thing \
     --thing-name {{"MyLightBulb"}} \
     --thing-type-name {{"LightBulb"}} \
-    --attribute-payload "{"attributes": {"wattage":"75", "model":"123"}}"
+    --attribute-payload '{{{"attributes": {"wattage":"75", "model":"123"}}}}'
 ```
 Output:
 
@@ -1347,7 +1347,7 @@ The following `delete-audit-suppression` example deletes an audit finding suppre
 ```
 aws iot delete-audit-suppression \
     --check-name {{DEVICE_CERTIFICATE_EXPIRING_CHECK}} \
-    --resource-identifier deviceCertificateId="c7691e<shortened>"
+    --resource-identifier deviceCertificateId="c7691e8b4a5f7d9e8c6b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d"
 ```
 This command produces no output.
 For more information, see [Audit finding suppressions](https://docs.aws.amazon.com/iot/latest/developerguide/audit-finding-suppressions.html) in the *AWS IoT Developers Guide*.
@@ -5427,7 +5427,7 @@ The following `register-ca-certificate` example registers a CA certificate. The 
 ```
 aws iot register-ca-certificate \
     --ca-certificate {{file://rootCA.pem}} \
-    --verification-cert {{file://verificationCert.pem}}
+    --verification-certificate {{file://verificationCert.pem}}
 ```
 Contents of `rootCA.pem`:
 
@@ -5985,7 +5985,7 @@ The following `update-audit-suppression` example updates an audit finding suppre
 ```
 aws iot update-audit-suppression \
     --check-name {{DEVICE_CERTIFICATE_EXPIRING_CHECK}} \
-    --resource-identifier {{deviceCertificateId=c7691e<shortened>}} \
+    --resource-identifier {{deviceCertificateId=c7691e8b4a5f7d9e8c6b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e2d}} \
     --no-suppress-indefinitely \
     --expiration-date {{2020-09-21}}
 ```
@@ -6417,8 +6417,8 @@ Contents of `update-stream.json`:
                 "key":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         }
-    ]
-    "roleArn": "arn:aws:iam:us-west-2:123456789012:role/service-role/my_ota_stream_role"
+    ],
+    "roleArn": "arn:aws:iam::123456789012:role/service-role/my_ota_stream_role"
 }
 ```
 Output:
@@ -6490,7 +6490,7 @@ The following `update-thing` example associates a thing in the AWS IoT registry 
 aws iot update-thing \
     --thing-name {{"MyOtherLightBulb"}} \
     --thing-type-name {{"LightBulb"}} \
-    --attribute-payload "{"attributes": {"wattage":"75", "model":"123"}}"
+    --attribute-payload '{{{"attributes": {"wattage":"75", "model":"123"}}}}'
 ```
 This command produces no output. Use the `describe-thing` command to see the result.
 For more information, see [Thing Types](https://docs.aws.amazon.com/iot/latest/developerguide/thing-types.html) in the *AWS IoT Developers Guide*.

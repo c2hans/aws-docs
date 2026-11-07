@@ -53,4 +53,5 @@ Property description not available.
 Property description not available.
 *Required*: Yes
 *Type*: String
+*Pattern*: `^(crowdstrike|jamf|jumpcloud)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

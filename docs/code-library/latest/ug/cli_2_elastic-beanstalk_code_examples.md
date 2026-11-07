@@ -361,7 +361,7 @@ The following `describe-application-versions` example retrieves information abou
 ```
 aws elasticbeanstalk describe-application-versions \
     --application-name {{my-app}} \
-    --version-label {{"v2"}}
+    --version-labels {{"v2"}}
 ```
 Output:
 

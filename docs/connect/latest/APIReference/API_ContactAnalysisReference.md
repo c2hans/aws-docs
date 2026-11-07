@@ -35,7 +35,7 @@ Required: No
  ** Status **   <a name="connect-Type-ContactAnalysisReference-Status"></a>
 Status of the contact analysis reference type.
 Type: String
-Valid Values: `AVAILABLE | DELETED | APPROVED | REJECTED | PROCESSING | FAILED`
+Valid Values: `AVAILABLE | DELETED | APPROVED | REJECTED | PROCESSING | FAILED | DRAFTING`
 Required: No
 
  ** Value **   <a name="connect-Type-ContactAnalysisReference-Value"></a>

@@ -75,7 +75,7 @@ Pattern: `[^\s]+`
 Required: No
 
  ** cpuConfigurations **   <a name="lambdamicrovm-Type-MicrovmImageVersionSummary-cpuConfigurations"></a>
-The list of supported CPU configurations for the MicroVM.
+The CPU configurations that the MicroVM image version is built for.
 Type: Array of [CpuConfiguration](API_CpuConfiguration.md) objects
 Required: No
 

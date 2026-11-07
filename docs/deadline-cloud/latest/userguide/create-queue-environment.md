@@ -36,6 +36,9 @@ Conda provides packages from *channels*. A channel is a location where packages 
 
 ------
 #### [ Linux ]
++ Autodesk Arnold
+  + `arnold=2025`
+  + `arnold=2026`
 + Autodesk Arnold for Cinema 4D
   + `cinema4d-c4dtoa=2025`
   + `cinema4d-c4dtoa=2026`

@@ -157,7 +157,7 @@ For more information, see [AMI-based products](https://docs.aws.amazon.com/marke
 ### Container products
 <a name="container-products-esc"></a>
 
-Container products support the following pricing options: Free, hourly, hourly annual, and monthly.
+Container products are software packaged as container images that buyers deploy on AWS container services such as Amazon ECS and Amazon EKS. Container products support the following pricing options: Free, hourly, hourly annual, usage-based, Bring Your Own License (BYOL), and monthly.
 
 Sellers who have registered as AWS Marketplace sellers in the AWS ESC and have created an AWS ESC account (see [Multi-Catalog for Marketplace sellers](https://docs.aws.amazon.com/marketplace/latest/userguide/multi_catalog.html) for more information) can start listing their container products. To list a container product, complete the following steps:
 

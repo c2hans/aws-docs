@@ -128,7 +128,7 @@ aws autoscaling create-launch-configuration \
     --launch-configuration-name {{my-lc}} \
     --image-id {{ami-04d5cc9b88example}} \
     --instance-type {{m5.large}} \
-    --block-device-mappings '{{[{"DeviceName":"/dev/sdf","NoDevice":""}]}}'
+    --block-device-mappings '{{[{"DeviceName":"/dev/sdf","NoDevice":true}]}}'
 ```
 This command produces no output.
 For more information, see [Block device mappings for volumes on Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.

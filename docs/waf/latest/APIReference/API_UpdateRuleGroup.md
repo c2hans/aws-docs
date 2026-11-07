@@ -41,6 +41,22 @@ The following are examples of the temporary inconsistencies that you might notic
    "Id": "{{string}}",
    "LockToken": "{{string}}",
    "MonetizationConfig": {
+      "ConnectedAccountConfigs": [
+         {
+            "ConnectedAccountArn": "{{string}}",
+            "PaymentNetworks": [
+               {
+                  "Chain": "{{string}}",
+                  "Prices": [
+                     {
+                        "Amount": "{{string}}",
+                        "Currency": "{{string}}"
+                     }
+                  ]
+               }
+            ]
+         }
+      ],
       "CryptoConfig": {
          "PaymentNetworks": [
             {

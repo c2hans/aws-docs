@@ -138,7 +138,7 @@ The following `batch-start-viewer-session-revocation` example performs session r
 
 ```
 aws ivs batch-start-viewer-session-revocation \
-    --viewer-sessions '{{[{"channelArn":"arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh1","viewerId":"abcdefg1","viewerSessionVersionsLessThanOrEqualTo":1234567890}, \
+    --viewer-sessions '{{[{"channelArn":"arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh1","viewerId":"abcdefg1","viewerSessionVersionsLessThanOrEqualTo":1234567890},
       {"channelArn":"arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh2","viewerId":"abcdefg2","viewerSessionVersionsLessThanOrEqualTo":1234567890}]}}'
 ```
 Output:
@@ -772,14 +772,14 @@ The following `get-stream-session` example gets the metadata configuration for t
 ```
 aws ivs get-stream-session \
     --channel-arn '{{arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh}}' \
-    --stream-id '{{mystream}}'
+    --stream-id '{{st-1A2b3C4d5E6f7G8h9I0j1K2l}}'
 ```
 Output:
 
 ```
 {
     "streamSession": {
-        "streamId": "mystream1",
+        "streamId": "st-1A2b3C4d5E6f7G8h9I0j1K2l",
         "startTime": "2023-06-26T19:09:28+00:00",
         "channel": {
             "arn": "arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh",

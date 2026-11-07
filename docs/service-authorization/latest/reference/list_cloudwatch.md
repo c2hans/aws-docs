@@ -1713,6 +1713,12 @@ The following actions are defined by Amazon CloudWatch but are not directly invo
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [DetectGroupOutliers](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  **
+  - **Description:** Grants permission to detect outliers within a group of metrics
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [GetOTelEnrichment](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  **
   - **Description:** Grants permission to retrieve the status of OTel Enrichment of vended metrics for PromQL querying
   - **Resource types (\*required):**

@@ -161,7 +161,7 @@ The following `create-members` example associates member accounts to be managed 
 ```
 aws guardduty create-members \
     --detector-id {{b6b992d6d2f48e64bc59180bfexample}} \
-    --account-details {{AccountId=123456789111,Email=first+member@example.com}} {{AccountId=123456789222}} {{,Email=another+member@example.com}}
+    --account-details {{AccountId=123456789111,Email=first+member@example.com}} {{AccountId=123456789222,Email=another+member@example.com}}
 ```
 Output:
 
@@ -375,7 +375,7 @@ The following `get-findings` example retrieves the full JSON finding details of 
 ```
 aws guardduty get-findings \
     --detector-id {{12abc34d567e8fa901bc2d34eexample}} \
-    --finding-id {{1ab92989eaf0e742df4a014d5example}}
+    --finding-ids {{1ab92989eaf0e742df4a014d5example}}
 ```
 Output:
 

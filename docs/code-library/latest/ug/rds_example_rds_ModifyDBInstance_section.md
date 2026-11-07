@@ -159,7 +159,6 @@ public class ModifyDBInstance {
             // For a demo - modify the DB instance by modifying the master password.
             ModifyDbInstanceRequest modifyDbInstanceRequest = ModifyDbInstanceRequest.builder()
                     .dbInstanceIdentifier(dbInstanceIdentifier)
-                    .publiclyAccessible(true)
                     .masterUserPassword(masterUserPassword)
                     .build();
 
@@ -189,7 +188,6 @@ suspend fun updateIntance(
     val request =
         ModifyDbInstanceRequest {
             dbInstanceIdentifier = dbInstanceIdentifierVal
-            publiclyAccessible = true
             masterUserPassword = masterUserPasswordVal
         }
 

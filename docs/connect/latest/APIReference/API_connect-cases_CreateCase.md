@@ -119,6 +119,7 @@ Length Constraints: Minimum length of 1. Maximum length of 500.
 A unique identifier of the case.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.
+Pattern: `[A-Za-z0-9\-._/:#=+-]*`
 
 ## Errors
 <a name="API_connect-cases_CreateCase_Errors"></a>

@@ -74,7 +74,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [architecture](#API_GetMicrovmImageBuild_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageBuild-response-architecture"></a>
-The target CPU architecture for the build. Supported value: ARM\_64.
+The target CPU architecture for the build. Supported values: ARM\_64 and X86\_64.
 Type: String
 Valid Values: `ARM_64 | X86_64`
 
@@ -90,7 +90,7 @@ Type: String
 Valid Values: `PENDING | IN_PROGRESS | SUCCESSFUL | FAILED`
 
  ** [chipset](#API_GetMicrovmImageBuild_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageBuild-response-chipset"></a>
-The target chipset for the build.
+The target chipset for the build. Valid values are GRAVITON (for ARM\_64 builds) and INTEL (for X86\_64 builds).
 Type: String
 Valid Values: `GRAVITON | INTEL`
 

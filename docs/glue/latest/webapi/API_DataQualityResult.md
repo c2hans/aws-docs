@@ -51,7 +51,7 @@ Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: No
 
  ** Observations **   <a name="Glue-Type-DataQualityResult-Observations"></a>
-A list of `DataQualityObservation` objects representing the observations generated after evaluating the rules and analyzers.
+A list of `DataQualityObservation` objects representing the anomaly detection observations generated after evaluating the rules and analyzers.
 Type: Array of [DataQualityObservation](API_DataQualityObservation.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No

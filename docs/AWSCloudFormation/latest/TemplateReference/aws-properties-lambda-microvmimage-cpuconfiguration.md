@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-microvmimage-cpuconfiguration-properties"></a>
 
 `Architecture`  <a name="cfn-lambda-microvmimage-cpuconfiguration-architecture"></a>
-The CPU architecture.
+The CPU architecture. Valid values are ARM\_64 and X86\_64. Your container base image and any prebuilt binaries in your code artifact must be built for this architecture.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ARM_64 | X86_64`

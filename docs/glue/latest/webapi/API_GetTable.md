@@ -12,6 +12,7 @@ Retrieves the `Table` definition in a Data Catalog for a specified table.
 
 ```
 {
+   "AttributesToGet": [ "{{string}}" ],
    "AuditContext": {
       "AdditionalAuditContext": "{{string}}",
       "AllColumnsRequested": {{boolean}},
@@ -32,6 +33,16 @@ Retrieves the `Table` definition in a Data Catalog for a specified table.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [AttributesToGet](#API_GetTable_RequestSyntax) **   <a name="Glue-GetTable-request-AttributesToGet"></a>
+Specifies the table fields returned by the `GetTable` call. This parameter doesn't accept an empty list.
+The following are the valid combinations of values:
++  `DEFAULT` - Returns the Hive-style table definition only.
++  `LATEST_ICEBERG_METADATA` - Returns only the latest Apache Iceberg table metadata.
++  `DEFAULT`, `LATEST_ICEBERG_METADATA` - Returns both the Hive-style table definition and the latest Apache Iceberg table metadata.
+Type: Array of strings
+Valid Values: `NAME | TABLE_TYPE | DEFAULT | LATEST_ICEBERG_METADATA`
+Required: No
 
  ** [AuditContext](#API_GetTable_RequestSyntax) **   <a name="Glue-GetTable-request-AuditContext"></a>
 A structure containing the Lake Formation [audit context](https://docs.aws.amazon.com/glue/latest/webapi/API_AuditContext.html).
@@ -93,6 +104,63 @@ Required: No
          "DatabaseIdentifier": "string",
          "Identifier": "string"
       },
+      "IcebergTableMetadata": {
+         "CurrentSchemaId": number,
+         "DefaultSortOrderId": number,
+         "DefaultSpecId": number,
+         "FormatVersion": "string",
+         "LastColumnId": number,
+         "LastPartitionId": number,
+         "Location": "string",
+         "PartitionSpecs": [
+            {
+               "Fields": [
+                  {
+                     "FieldId": number,
+                     "Name": "string",
+                     "SourceId": number,
+                     "Transform": "string"
+                  }
+               ],
+               "SpecId": number
+            }
+         ],
+         "Properties": {
+            "string" : "string"
+         },
+         "Schemas": [
+            {
+               "Fields": [
+                  {
+                     "Doc": "string",
+                     "Id": number,
+                     "InitialDefault": JSON value,
+                     "Name": "string",
+                     "Required": boolean,
+                     "Type": JSON value,
+                     "WriteDefault": JSON value
+                  }
+               ],
+               "IdentifierFieldIds": [ number ],
+               "SchemaId": number,
+               "Type": "string"
+            }
+         ],
+         "SortOrders": [
+            {
+               "Fields": [
+                  {
+                     "Direction": "string",
+                     "NullOrder": "string",
+                     "SourceId": number,
+                     "Transform": "string"
+                  }
+               ],
+               "OrderId": number
+            }
+         ],
+         "TableUuid": "string"
+      },
       "IsMaterializedView": boolean,
       "IsMultiDialectView": boolean,
       "IsRegisteredWithLakeFormation": boolean,
@@ -114,6 +182,9 @@ Required: No
          }
       ],
       "Retention": number,
+      "RLSProperties": {
+         "DefaultRLSPolicy": "string"
+      },
       "Status": {
          "Action": "string",
          "Details": {
@@ -205,6 +276,7 @@ Required: No
       "VersionId": "string",
       "ViewDefinition": {
          "Definer": "string",
+         "IsManaged": boolean,
          "IsProtected": boolean,
          "LastRefreshType": "string",
          "RefreshSeconds": number,
@@ -218,7 +290,19 @@ Required: No
                "ViewOriginalText": "string"
             }
          ],
+         "SparkPipelineInfo": {
+            "string" : "string"
+         },
          "SubObjects": [ "string" ],
+         "SubObjectsStatistics": [
+            {
+               "FileCount": number,
+               "GlueVersionId": "string",
+               "PartitionCount": number,
+               "SourceType": "string",
+               "TotalFileBytes": number
+            }
+         ],
          "SubObjectVersionIds": [ number ],
          "ViewVersionId": number,
          "ViewVersionToken": "string"

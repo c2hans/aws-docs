@@ -267,6 +267,10 @@ AVG\_EVALUATION\_SCORE
 Unit: Percent
 Valid groupings and filters: Agent, Agent Hierarchy, Channel, Evaluation Form ID, Evaluation Section ID, Evaluation Question ID, Evaluation Source, Form Version, Queue, Routing Profile
 UI name: [Average evaluation score](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#average-evaluation-score)
+AVG\_EVALUATION\_SCORE\_BY\_SUBMIT\_TIME
+Unit: Percent
+Valid groupings and filters: Agent, Agent Hierarchy, Channel, Evaluation Form ID, Evaluation Source, Form Version, Queue, Routing Profile
+UI name: [Average evaluation score (Submit time)](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#average-evaluation-score-by-submit-time)
 AVG\_FIRST\_RESPONSE\_TIME\_AGENT
 Unit: Seconds
 Valid groupings and filters: Agent, Agent Hierarchy, Channel, contact/segmentAttributes/connect:Subtype, Disconnect Reason, Feature, RoutingStepExpression, Initiation method, Routing Profile, Queue, Q in Connect
@@ -707,6 +711,10 @@ EVALUATIONS\_PERFORMED
 Unit: Count
 Valid groupings and filters: Agent, Agent Hierarchy, Channel, Evaluation Form ID, Evaluation Source, Form Version, Queue, Routing Profile
 UI name: [Evaluations performed](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#evaluations-performed)
+EVALUATIONS\_PERFORMED\_BY\_SUBMIT\_TIME
+Unit: Count
+Valid groupings and filters: Agent, Agent Hierarchy, Channel, Evaluation Form ID, Evaluation Source, Form Version, Queue, Routing Profile
+UI name: [Evaluations performed (Submit time)](https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html#evaluations-performed-by-submit-time)
 FLOWS\_OUTCOME
 Unit: Count
 Valid groupings and filters: Channel, contact/segmentAttributes/connect:Subtype, Flow type, Flows module resource ID, Flows next resource ID, Flows next resource queue ID, Flows outcome type, Flows resource ID, Initiation method, Resource published timestamp

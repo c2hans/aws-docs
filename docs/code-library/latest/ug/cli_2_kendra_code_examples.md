@@ -32,9 +32,9 @@ The following `create-data-source` example creates and configures an Amazon Kend
 aws kendra create-data-source \
     --name {{"example data source 1"}} \
     --description {{"Example data source 1 for example index 1 contains the first set of example documents"}} \
-    --tags '{{{"Key": "test resources", "Value": "kendra"}, {"Key": "test resources", "Value": "aws"}}}' \
+    --tags '{{[{"Key": "test resources", "Value": "kendra"}, {"Key": "test resources", "Value": "aws"}]}}' \
     --role-arn {{"arn:aws:iam::my-account-id:role/KendraRoleForS3TemplateConfigDataSource"}} \
-    --index-id {{exampleindex1}} \
+    --index-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --language-code {{"es"}} \
     --schedule {{"0 0 18 ? * TUE,MON,WED,THU,FRI,SAT *"}} \
     --configuration {{file://s3schemaconfig.json}} \
@@ -104,7 +104,7 @@ The following `create-index` example creates and configures an Amazon Kendra ind
 aws kendra create-index \
     --name {{"example index 1"}} \
     --description {{"Example index 1 contains the first set of example documents"}} \
-    --tags '{{{"Key": "test resources", "Value": "kendra"}, {"Key": "test resources", "Value": "aws"}}}' \
+    --tags '{{[{"Key": "test resources", "Value": "kendra"}, {"Key": "test resources", "Value": "aws"}]}}' \
     --role-arn {{"arn:aws:iam::my-account-id:role/KendraRoleForExampleIndex"}} \
     --edition {{"DEVELOPER_EDITION"}} \
     --server-side-encryption-configuration '{{{"KmsKeyId": "my-kms-key-id"}}}' \
@@ -115,7 +115,7 @@ Output:
 
 ```
 {
-    "Id": "index1"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Getting started with an Amazon Kendra index and data source connector](https://docs.aws.amazon.com/kendra/latest/dg/getting-started.html) in the *Amazon Kendra Developer Guide*.
@@ -133,7 +133,7 @@ The following `describe-data-source` example gets information about an Amazon Ke
 ```
 aws kendra describe-data-source \
     --id {{exampledatasource1}} \
-    --index-id {{exampleindex1}}
+    --index-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -197,7 +197,7 @@ Output:
     },
     "Description": "Example data source 1 for example index 1 contains the first set of example documents",
     "Id": "exampledatasource1",
-    "IndexId": "exampleindex1",
+    "IndexId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LanguageCode": "en",
     "Name": "example data source 1",
     "RoleArn": "arn:aws:iam::my-account-id:role/KendraRoleForS3TemplateConfigDataSource",
@@ -225,7 +225,7 @@ The following `describe-index` example gets information about an Amazon Kendra i
 
 ```
 aws kendra describe-index \
-    --id {{exampleindex1}}
+    --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -300,7 +300,7 @@ Output:
         }
     ],
     "Edition": "DEVELOPER_EDITION",
-    "Id": "index1",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "IndexStatistics": {
         "FaqStatistics": {
             "IndexedQuestionAnswersCount": 10
@@ -343,7 +343,7 @@ The following `update-data-source` example updates the configuration of an Amazo
 ```
 aws kendra update-data-source \
     --id {{exampledatasource1}} \
-    --index-id {{exampleindex1}} \
+    --index-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --name {{"new name for example data source 1"}} \
     --description {{"new description for example data source 1"}} \
     --role-arn {{arn:aws:iam::my-account-id:role/KendraNewRoleForExampleDataSource}} \
@@ -407,14 +407,14 @@ The following `update-index` example updates the configuration of an Amazon Kend
 
 ```
 aws kendra update-index \
-    --id {{enterpriseindex1}} \
+    --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --name {{"new name for Enterprise Edition index 1"}} \
     --description {{"new description for Enterprise Edition index 1"}} \
     --role-arn {{arn:aws:iam::my-account-id:role/KendraNewRoleForEnterpriseIndex}} \
     --capacity-units '{{{"QueryCapacityUnits": 2, "StorageCapacityUnits": 1}}}' \
-    --document-metadata-configuration-updates '{{{"Name": "_document_title", "Relevance": {"Importance": 6}}, {"Name": "_last_updated_at", "Relevance": {"Importance": 8}}}}' \
+    --document-metadata-configuration-updates '{{[{"Name": "_document_title", "Type": "STRING_VALUE", "Relevance": {"Importance": 6}}, {"Name": "_last_updated_at", "Type": "DATE_VALUE", "Relevance": {"Importance": 8}}]}}' \
     --user-context-policy {{"USER_TOKEN"}} \
-    --user-token-configurations '{{{"JsonTokenTypeConfiguration": {"GroupAttributeField": "groupNameField", "UserNameAttributeField": "userNameField"}}}}'
+    --user-token-configurations '{{[{"JsonTokenTypeConfiguration": {"GroupAttributeField": "groupNameField", "UserNameAttributeField": "userNameField"}}]}}'
 ```
 This command produces no output.
 For more information, see [Getting started with an Amazon Kendra index and data source connector](https://docs.aws.amazon.com/kendra/latest/dg/getting-started.html) in the *Amazon Kendra Developer Guide*.

@@ -75,7 +75,7 @@ The following `describe-maintenance-window-tasks` example lists all of the tasks
 
 ```
 aws ssm describe-maintenance-window-tasks \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=TaskArn,Values=AWS-RunPowerShellScript"}}
 ```
 Output:
@@ -84,7 +84,7 @@ Output:
 {
     "Tasks": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
@@ -111,7 +111,7 @@ The following `describe-maintenance-window-tasks` example lists all of the tasks
 
 ```
 aws ssm describe-maintenance-window-tasks \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=Priority,Values=3"}}
 ```
 Output:
@@ -120,7 +120,7 @@ Output:
 {
     "Tasks": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
@@ -140,7 +140,7 @@ Output:
             "Name": "MyRunCommandTask"
         },
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "TaskArn": "AWS-RestartEC2Instance",
             "Type": "AUTOMATION",
@@ -168,7 +168,7 @@ The following `describe-maintenance-window-tasks` example lists all of the tasks
 
 ```
 aws ssm describe-maintenance-window-tasks \
-    --window-id {{"mw-ab12cd34eEXAMPLE"}} \
+    --window-id {{"mw-ab12cd34efEXAMPLE"}} \
     --filters {{"Key=Priority,Values=1"}} {{"Key=TaskType,Values=RUN_COMMAND"}}
 ```
 Output:
@@ -177,7 +177,7 @@ Output:
 {
     "Tasks": [
         {
-            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowId": "mw-ab12cd34efEXAMPLE",
             "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",

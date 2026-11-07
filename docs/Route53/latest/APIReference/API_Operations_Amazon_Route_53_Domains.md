@@ -33,6 +33,7 @@ The following actions are supported by Amazon Route 53 domain registration:
 +  [RenewDomain](API_domains_RenewDomain.md)
 +  [ResendContactReachabilityEmail](API_domains_ResendContactReachabilityEmail.md)
 +  [ResendOperationAuthorization](API_domains_ResendOperationAuthorization.md)
++  [RestoreDomain](API_domains_RestoreDomain.md)
 +  [RetrieveDomainAuthCode](API_domains_RetrieveDomainAuthCode.md)
 +  [TransferDomain](API_domains_TransferDomain.md)
 +  [TransferDomainToAnotherAwsAccount](API_domains_TransferDomainToAnotherAwsAccount.md)

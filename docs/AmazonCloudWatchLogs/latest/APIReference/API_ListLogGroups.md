@@ -83,7 +83,7 @@ Required: No
  ** [logGroupClass](#API_ListLogGroups_RequestSyntax) **   <a name="CWL-ListLogGroups-request-logGroupClass"></a>
 Use this parameter to limit the results to only those log groups in the specified log group class. If you omit this parameter, log groups of all classes can be returned.
 Type: String
-Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY`
+Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY | ESSENTIALS`
 Required: No
 
  ** [logGroupNamePattern](#API_ListLogGroups_RequestSyntax) **   <a name="CWL-ListLogGroups-request-logGroupNamePattern"></a>

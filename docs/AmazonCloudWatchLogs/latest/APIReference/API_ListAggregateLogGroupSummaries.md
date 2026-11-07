@@ -73,7 +73,7 @@ Required: No
  ** [logGroupClass](#API_ListAggregateLogGroupSummaries_RequestSyntax) **   <a name="CWL-ListAggregateLogGroupSummaries-request-logGroupClass"></a>
 Filters the results by log group class to include only log groups of the specified class.
 Type: String
-Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY`
+Valid Values: `STANDARD | INFREQUENT_ACCESS | DELIVERY | ESSENTIALS`
 Required: No
 
  ** [logGroupNamePattern](#API_ListAggregateLogGroupSummaries_RequestSyntax) **   <a name="CWL-ListAggregateLogGroupSummaries-request-logGroupNamePattern"></a>

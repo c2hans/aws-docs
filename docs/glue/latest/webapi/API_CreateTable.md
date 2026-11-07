@@ -73,6 +73,12 @@ Creates a new table definition in the Data Catalog.
    ],
    "TableInput": {
       "Description": "{{string}}",
+      "FederatedTable": {
+         "ConnectionName": "{{string}}",
+         "ConnectionType": "{{string}}",
+         "DatabaseIdentifier": "{{string}}",
+         "Identifier": "{{string}}"
+      },
       "LastAccessTime": {{number}},
       "LastAnalyzedTime": {{number}},
       "Name": "{{string}}",
@@ -152,6 +158,7 @@ Creates a new table definition in the Data Catalog.
       },
       "ViewDefinition": {
          "Definer": "{{string}}",
+         "IsManaged": {{boolean}},
          "IsProtected": {{boolean}},
          "LastRefreshType": "{{string}}",
          "RefreshSeconds": {{number}},
@@ -164,7 +171,19 @@ Creates a new table definition in the Data Catalog.
                "ViewOriginalText": "{{string}}"
             }
          ],
+         "SparkPipelineInfo": {
+            "{{string}}" : "{{string}}"
+         },
          "SubObjects": [ "{{string}}" ],
+         "SubObjectsStatistics": [
+            {
+               "FileCount": {{number}},
+               "GlueVersionId": "{{string}}",
+               "PartitionCount": {{number}},
+               "SourceType": "{{string}}",
+               "TotalFileBytes": {{number}}
+            }
+         ],
          "SubObjectVersionIds": [ {{number}} ],
          "ViewVersionId": {{number}},
          "ViewVersionToken": "{{string}}"
@@ -212,7 +231,6 @@ Required: No
  ** [PartitionIndexes](#API_CreateTable_RequestSyntax) **   <a name="Glue-CreateTable-request-PartitionIndexes"></a>
 A list of partition indexes, `PartitionIndex` structures, to create in the table.
 Type: Array of [PartitionIndex](API_PartitionIndex.md) objects
-Array Members: Maximum number of 3 items.
 Required: No
 
  ** [TableInput](#API_CreateTable_RequestSyntax) **   <a name="Glue-CreateTable-request-TableInput"></a>

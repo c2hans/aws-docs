@@ -238,7 +238,7 @@ Inbound Auth, powered by AgentCore Identity, controls who can access and invoke 
 
 #### OAuth configuration options
 <a name="runtime-oauth-config"></a>
-+  **Discovery URL** : Your identity provider’s OpenID Connect discovery endpoint
++  **Discovery URL** : Your identity provider’s OpenID Connect (OIDC) or OAuth 2.0 Authorization Server Metadata (RFC 8414) discovery endpoint
 +  **Allowed Audiences** : List of valid audience values your tokens should contain
 +  **Allowed Clients** : List of client identifiers that can access this agent
 

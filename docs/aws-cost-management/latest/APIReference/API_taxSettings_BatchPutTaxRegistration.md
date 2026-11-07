@@ -9,6 +9,9 @@ Adds or updates tax registration for multiple accounts in batch. This can be use
 
 To call this API operation for specific countries, see the following country-specific requirements.
 
+ **Argentina**
++  `RegistrationType` valid values are `CUIT` (Clave Única de Identificación Tributaria) and `CDI` (Clave de Identificación).
+
  **Bangladesh**
 + You must specify the tax registration certificate document in the `taxRegistrationDocuments` field of the `VerificationDetails` object.
 
@@ -87,6 +90,9 @@ To call this API operation for specific countries, see the following country-spe
 
  **Ukraine**
 + The sector valid values are `Business` and `Individual`.
+
+ **Uruguay**
++  `RegistrationType` valid values are `RUT` (Registro Único Tributario), `NIE` (Numero de Identificacion del Extranjero), and `CI` (Cedula Identidad).
 
  **Philippines**
 + You can optionally specify the `isVatRegistered` in the `philippinesAdditionalInfo` field of the `additionalTaxInformation` object to indicate your VAT registration status with the Bureau of Internal Revenue (BIR).

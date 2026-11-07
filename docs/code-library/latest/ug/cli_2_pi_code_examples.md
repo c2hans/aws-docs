@@ -283,7 +283,7 @@ aws pi get-resource-metrics \
     --start-time {{1527026400}} \
     --end-time {{1527080400}} \
     --period-in-seconds {{300}} \
-    --metric {{db.load.avg}} \
+    --metric-queries {{db.load.avg}} \
     --metric-queries {{file://metric-queries.json}}
 ```
 The arguments for `--metric-queries` are stored in a JSON file, `metric-queries.json`.

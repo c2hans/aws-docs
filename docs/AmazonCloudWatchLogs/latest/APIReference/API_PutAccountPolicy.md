@@ -18,6 +18,7 @@ When both an account-level policy and a log-group-level policy of the same type 
 +  *Transformers* — A log-group-level transformer overrides the account-level transformer. If a log group has its own transformer, it ignores the account-level transformer policy.
 +  *Field index policies* — If a log group has its own field index policy (created with `PutIndexPolicy`), any account-level policy that uses `LogGroupNamePrefix` selection criteria or has no selection criteria is ignored for that log group. However, account-level policies that use `DataSourceName` and `DataSourceType` selection criteria still apply alongside the log-group-level policy.
 +  *Metric extraction policies* — Metric extraction policies are account-level only and have no log-group-level equivalent, so no conflict resolution applies.
++  *Retention policies* — An account-level retention policy overrides the retention setting of the log group.
 
 For field index policies, you can configure indexed fields as *facets* to enable interactive exploration of your logs. Facets provide value distributions and counts for indexed fields in the CloudWatch Logs Insights console without requiring query execution. For more information, see [Use facets to group and explore logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Facets.html).
 
@@ -28,7 +29,7 @@ To use this operation, you must be signed on with the correct permissions depend
 + To create a field index policy, you must have the `logs:PutIndexPolicy` and `logs:PutAccountPolicy` permissions.
 + To configure facets for field index policies, you must have the `logs:PutIndexPolicy` and `logs:PutAccountPolicy` permissions.
 + To create a metric extraction policy, you must have the `logs:PutMetricExtractionPolicy` and `logs:PutAccountPolicy` permissions.
-+ To create a retention policy, you must have the `logs:PutRetentionPolicy` and `logs:PutAccountPolicy` permissions.
++ To create a retention policy, you must have the `logs:PutRetentionPolicy` and `logs:PutAccountPolicy` permissions. A dry run requires the same permissions as the operation that it previews, and no additional permissions.
 
  **Data protection policy**
 
@@ -163,17 +164,20 @@ When combining policies with `IN` and `NOT IN` operators, the overlap check ensu
 
 A retention policy sets the retention period for log groups in your account. You can use an account-level retention policy to set a default retention period for all log groups in the account, or for a subset of log groups that you specify with the `selectionCriteria` parameter. CloudWatch Logs automatically deletes log events that are older than the retention period.
 
-Each account can have up to 20 account-level retention policies. To scope a retention policy to a subset of log groups, use `LogGroupNamePrefix` in `selectionCriteria`. If you omit `selectionCriteria`, the policy applies to all log groups in the account.
+Each account can have up to 20 account-level retention policies in each Region. To scope a retention policy to a subset of log groups, use `LogGroupNamePrefix` in `selectionCriteria`. Retention policies support log group name prefixes only. If you omit `selectionCriteria`, the policy applies to all log groups in the account.
 
-Unlike other account-level policy types, retention policies can have overlapping selection criteria. When more than one retention policy applies to a log group, the policy with the longest retention period is used. This lets you set a baseline retention period for the account and apply longer retention periods to specific log groups.
+Unlike other account-level policy types, retention policies can have overlapping selection criteria. When more than one retention policy applies to a log group, the policy with the longest retention period is used. A policy that specifies `NEVER_EXPIRE` is treated as the longest retention period. This lets you set a baseline retention period for the account, apply longer retention periods to specific log groups, and exempt specific log groups from expiring at all. If two policies that apply to the same log group specify the same retention period, the policy that was created first is the one reported in `retentionPolicyName`.
 
 **Note**
 Account-level retention policies require a minimum retention period of 30 days.
 
+**Note**
+A retention policy takes effect 24 hours after you create it. If you update a policy, the new retention period takes effect 24 hours after the update, and the previous retention period stays in effect until then. During this period, `DescribeLogGroups` and log event expiration use the retention period that is currently in effect, but a dry run reports the impact as if the policy were already in effect.
+
 Before you create, update, or delete a retention policy, you can specify `true` for `dryRun` to preview how many log groups would have a longer, shorter, or unchanged retention period. For more information, see [DryRunResult](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DryRunResult.html).
 
 **Important**
-If you shorten the retention period of a log group, CloudWatch Logs deletes log events that are older than the new retention period. Use `dryRun` to review the impact before you apply the policy.
+An account-level retention policy replaces the retention period set on a log group, including when the log group's own retention period is longer. For example, if a log group is set to retain log events for 10 years and you create a retention policy that sets a 90-day retention period for that log group, CloudWatch Logs deletes the log events in that log group that are older than 90 days. Specify `true` for `dryRun` to see which log groups would have a shorter retention period before you create or update the policy.
 
 ## Request Syntax
 <a name="API_PutAccountPolicy_RequestSyntax"></a>
@@ -241,7 +245,9 @@ A retention policy must include the following attributes in a JSON block:
 retentionInDays
 The number of days to retain log events. Valid values are 30, 60, 90, 120, 150, 180, 365, 400, 545, 731, 1096, 1827, 2192, 2557, 2922, 3288, and 3653. To retain log events indefinitely, specify the string `NEVER_EXPIRE`.
 enforcementMode
-Specifies how the policy is applied. Valid values are `NEW_ONLY` and `RETROACTIVE`.
+Specifies which log groups the policy applies to. Valid values are `NEW_ONLY` and `RETROACTIVE`.
+ `RETROACTIVE` applies the policy to every log group that matches the selection criteria, including log groups that existed before you created the policy.
+ `NEW_ONLY` applies the policy only to log groups that are created after you create the policy. Log groups that already existed when you created the policy keep their own retention period.
 The following is an example of a retention policy document.
  `"policyDocument": "{\"retentionInDays\": 90, \"enforcementMode\": \"RETROACTIVE\"}"`
 Type: String

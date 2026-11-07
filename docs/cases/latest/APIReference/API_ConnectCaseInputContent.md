@@ -14,6 +14,7 @@ Represents the content of a `ConnectCase` related item.
 A unique identifier of the case.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.
+Pattern: `[A-Za-z0-9\-._/:#=+-]*`
 Required: Yes
 
 ## See Also

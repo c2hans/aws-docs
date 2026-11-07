@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartMaterialized
 # StartMaterializedViewRefreshTaskRun
 <a name="API_StartMaterializedViewRefreshTaskRun"></a>
 
-Starts a materialized view refresh task run, for a specified materialized view table.
+Starts a materialized view refresh task run for a specified materialized view.
 
 ## Request Syntax
 <a name="API_StartMaterializedViewRefreshTaskRun_RequestSyntax"></a>
@@ -27,14 +27,14 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [CatalogId](#API_StartMaterializedViewRefreshTaskRun_RequestSyntax) **   <a name="Glue-StartMaterializedViewRefreshTaskRun-request-CatalogId"></a>
-The ID of the Catalog where the materialized view table resides. If none is supplied, the account ID is used by default.
+The ID of the Data Catalog where the table reside. If none is supplied, the account ID is used by default.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 Required: Yes
 
  ** [DatabaseName](#API_StartMaterializedViewRefreshTaskRun_RequestSyntax) **   <a name="Glue-StartMaterializedViewRefreshTaskRun-request-DatabaseName"></a>
-The database where the materialized view table resides.
+The name of the database where the table resides.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
@@ -46,7 +46,7 @@ Type: Boolean
 Required: No
 
  ** [TableName](#API_StartMaterializedViewRefreshTaskRun_RequestSyntax) **   <a name="Glue-StartMaterializedViewRefreshTaskRun-request-TableName"></a>
-The name of the table to generate run the materialized view refresh task.
+The name of the materialized view to run the refresh task for.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
@@ -102,6 +102,8 @@ HTTP Status Code: 400
 
  ** MaterializedViewRefreshTaskRunningException **
 Exception thrown when a task is already in running state.
+ ** Message **
+A message describing the problem.
 HTTP Status Code: 400
 
  ** OperationTimeoutException **

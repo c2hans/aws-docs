@@ -113,7 +113,7 @@ Type: [CodeArtifact](API_CodeArtifact.md) object
 Required: Yes
 
  ** [cpuConfigurations](#API_CreateMicrovmImage_RequestSyntax) **   <a name="lambdamicrovm-CreateMicrovmImage-request-cpuConfigurations"></a>
-The list of supported CPU configurations for the MicroVM.
+The CPU architecture to build the MicroVM image for. Valid values are ARM\_64 and X86\_64. If you omit this parameter, the image is built for ARM\_64. The base image version must support the architecture that you specify. To check which architectures a base image version supports, use ListManagedMicrovmImageVersions and review supportedCpuConfigurations.
 Type: Array of [CpuConfiguration](API_CpuConfiguration.md) objects
 Required: No
 
@@ -269,7 +269,7 @@ Type: [CodeArtifact](API_CodeArtifact.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 
  ** [cpuConfigurations](#API_CreateMicrovmImage_ResponseSyntax) **   <a name="lambdamicrovm-CreateMicrovmImage-response-cpuConfigurations"></a>
-The list of supported CPU configurations for the MicroVM.
+The CPU configurations that the MicroVM image version is built for.
 Type: Array of [CpuConfiguration](API_CpuConfiguration.md) objects
 
  ** [createdAt](#API_CreateMicrovmImage_ResponseSyntax) **   <a name="lambdamicrovm-CreateMicrovmImage-response-createdAt"></a>

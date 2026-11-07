@@ -1651,6 +1651,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateResourcePermissions  **
+  - **IAM action:**  [quicksight:UpdateResourcePermissions](#list_quicksight-action-UpdateResourcePermissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** quicksight.amazonaws.com / **Access level:** Write
+
 - **   UpdateRoleCustomPermission  **
   - **IAM action:**  [quicksight:UpdateRoleCustomPermission](#list_quicksight-action-UpdateRoleCustomPermission)
   - **Condition key:**
@@ -2557,6 +2561,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [DescribeResourcePermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeResourcePermissions.html)  **
+  - **Description:** Grants permission to describe the QuickSight service role configuration for an account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [DescribeRoleCustomPermission](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeRoleCustomPermission.html)  **
   - **Description:** Grants permission to describe the custom permission associated with a role
   - **Resource types (\*required):**
@@ -3452,6 +3462,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [UpdateResourcePermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateResourcePermissions.html)  **
+  - **Description:** Grants permission to update resource permissions and the QuickSight service role configuration for an account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [UpdateRoleCustomPermission](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateRoleCustomPermission.html)  **
   - **Description:** Grants permission to update the custom permission associated with a role
   - **Resource types (\*required):**
@@ -3987,12 +4003,6 @@ The following actions are defined by Amazon QuickSight but are not directly invo
 
 - **   [UpdateQuickIndexCapacity](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to update index capacity
-  - **Resource types (\*required):**
-  - **Condition keys:**
-  - **Access level:** Write
-
-- **   [UpdateResourcePermissions](https://docs.aws.amazon.com/quicksight/latest/user/security_iam_service-with-iam.html)  **
-  - **Description:** Grants permission to update resource-level permissions in QuickSight
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Write

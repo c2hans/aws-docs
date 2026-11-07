@@ -233,7 +233,7 @@ The following `delete-package-versions` example deletes version 4.0.0 of a packa
 ```
 aws codeartifact delete-package-versions \
     --domain {{test-domain}} \
-    --repo {{test-repo}} \
+    --repository {{test-repo}} \
     --format {{npm}} \
     --package {{test-package}} \
     --versions {{4.0.0}}
@@ -425,7 +425,7 @@ The following `dispose-package-versions` example deletes the assets of test-pack
 ```
 aws codeartifact dispose-package-versions \
     --domain {{test-domain}} \
-    --repo {{test-repo}} \
+    --repository {{test-repo}} \
     --format {{npm}} \
     --package {{test-package}} \
     --versions {{4.0.0}}
@@ -538,7 +538,7 @@ The following `get-package-version-readme` example retrieves the readme file for
 ```
 aws codeartifact get-package-version-readme \
     --domain {{test-domain}} \
-    --repo {{test-repo}} \
+    --repository {{test-repo}} \
     --format {{npm}} \
     --package {{test-package}} \
     --package-version {{4.0.0}}
@@ -656,7 +656,7 @@ The following `list-package-version-assets` example retrieves the assets for ver
 ```
 aws codeartifact list-package-version-assets \
     --domain {{test-domain}} \
-    --repo {{test-repo}} \
+    --repository {{test-repo}} \
     --format {{npm}} \
     --package {{test-package}} \
     --package-version {{4.0.0}}
@@ -698,7 +698,7 @@ The following `list-package-version-dependencies` example retrieves the dependen
 ```
 aws codeartifact list-package-version-dependencies \
     --domain {{test-domain}} \
-    --repo {{test-repo}} \
+    --repository {{test-repo}} \
     --format {{npm}} \
     --package {{test-package}} \
     --package-version {{4.0.0}}
@@ -1050,7 +1050,7 @@ The following `update-package-versions-status` example updates the status of ver
 ```
 aws codeartifact update-package-versions-status \
     --domain {{test-domain}} \
-    --repo {{test-repo}} \
+    --repository {{test-repo}} \
     --format {{npm}} \
     --package {{test-package}} \
     --versions {{4.0.0}} \

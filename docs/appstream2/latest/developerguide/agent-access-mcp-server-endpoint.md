@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 # Connecting to the MCP server
 <a name="agent-access-mcp-server-endpoint"></a>
 
-This topic explains how to connect an agent to the WorkSpaces Applications Model Context Protocol (MCP) server, from the endpoint it calls to how it authorizes its requests and identifies a streaming session.
+This topic explains how to connect an agent to the Amazon WorkSpaces Applications Model Context Protocol (MCP) server. Connecting involves negotiating an MCP protocol version with the server and authorizing each request. This topic covers the endpoint the agent calls, how it authorizes its requests, and how it identifies a streaming session.
 
 Agents connect to the MCP server at the following endpoint:
 
@@ -19,6 +19,20 @@ The MCP server is hosted in the AWS cloud and uses Streamable HTTP as its transp
 
 **Note**
 Before an agent can connect, the fleet associated with your stack must be running and have available capacity.
+
+## Supported MCP protocol versions
+<a name="agent-access-mcp-server-protocol-versions"></a>
+
+The MCP server supports the following versions of the Model Context Protocol. Your MCP client negotiates the version with the server when it connects.
+
+| Version | Type |
+| --- | --- |
+| 2025-03-26 | Stateful |
+| 2025-06-18 | Stateful |
+| 2025-11-25 | Stateful |
+| 2026-07-28 | Stateless |
+
+Version 2026-07-28 is the stateless MCP protocol. With the stateless protocol, the agent ends the session with the `close_session` tool. For more information about the tool, see [Available tools](agent-access-mcp-server-tools.md). With the earlier MCP protocol versions, you end the session by closing the MCP client in your agent code, which sends an HTTP `DELETE` request. For more information, see [Session cleanup](agent-access-mcp-server-session-cleanup.md).
 
 ## Request authorization
 <a name="agent-access-mcp-server-authorization"></a>
@@ -53,11 +67,11 @@ For other languages, write your own SigV4 signing logic for outgoing MCP request
 ### OAuth 2.1 authorization
 <a name="agent-access-mcp-server-connect-oauth"></a>
 
-As an alternative to signing requests with IAM credentials, the MCP server supports OAuth 2.1 authorization through AWS Sign-In, the same way as the AWS MCP Server. AWS Sign-In acts as the authorization server. It issues short-lived, scoped access tokens, and the MCP server accepts these tokens as bearer tokens. OAuth uses your existing IAM identities, permissions, and organizational controls. When you authorize an agent, it can access the MCP server on your behalf without gaining extra permissions, and AWS still checks every request against your IAM policies.
+As an alternative to signing requests with IAM credentials, the MCP server supports OAuth 2.1 authorization through AWS Sign-In, the same way as the AWS MCP Server. AWS Sign-In acts as the authorization server. It issues short-lived, scoped access tokens, and the MCP server accepts these tokens as bearer tokens. OAuth uses your existing IAM identities, permissions, and organizational controls. When you authorize an agent, it can access the MCP server on your behalf without gaining extra permissions. AWS still checks every request against your IAM policies.
 
 OAuth-compatible MCP clients, such as Kiro, Claude Code, Cursor, Codex, and Gemini, can connect directly to the MCP server endpoint without local proxy software. AWS Sign-In supports two authorization models:
-+ **Interactive authorization**. For agents that can open a browser. The client registers through dynamic client registration, redirects you to an AWS Sign-In page to authenticate and approve access, and AWS Sign-In then issues and refreshes the access tokens.
-+ **Non-interactive authorization**. For agents that already have AWS credentials and run without a browser (sometimes called headless authorization). The agent uses the OAuth client credentials grant to exchange SigV4-signed credentials for a short-lived access token.
++ **Interactive authorization** – This model is for agents that can open a browser. The client registers through dynamic client registration and redirects you to an AWS Sign-In page to authenticate and approve access. AWS Sign-In then issues and refreshes the access tokens.
++ **Non-interactive authorization** – This model is for agents that already have AWS credentials and run without a browser (headless authorization). The agent exchanges its SigV4-signed credentials for a short-lived access token by using the OAuth client credentials grant.
 
 OAuth authorization for the MCP server works the same way as it does for the AWS MCP Server, using the MCP server endpoint (`https://agentaccess-mcp.{{region}}.api.aws/mcp`). For setup, required IAM permissions, and governance and monitoring options, see [OAuth 2.1 authentication for AWS MCP Server](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/oauth-authentication.html) in the *Agent Toolkit for AWS User Guide* and [Sign-In with OAuth 2.0](https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-overview.html) in the *AWS Sign-In User Guide*.
 
@@ -72,7 +86,7 @@ At any given time, only one agent can connect to a unique session. Named users, 
 ### Connecting with non-domain-joined fleets
 <a name="agent-access-mcp-server-connect-ndj"></a>
 
-For non-domain-joined fleets, you can connect in one of two ways. Provide the stack and user ID as headers, and the MCP server creates the streaming session for you. This suits statically configured MCP clients, because they can hold a fixed pair of headers but cannot generate a streaming URL or replace one when it expires. Alternatively, generate a streaming URL yourself and pass it as a header. Use this approach when you need control over session creation, such as setting the validity period.
+For non-domain-joined fleets, you can connect in one of two ways. Provide the stack and user ID as headers, and the MCP server creates the streaming session for you. This suits statically configured MCP clients, because they can hold a fixed pair of headers. However, they cannot generate a streaming URL or replace one when it expires. Alternatively, generate a streaming URL yourself and pass it as a header. Use this approach when you need control over session creation, such as setting the validity period.
 
 To connect with the stack and user ID, pass the following headers on every request:
 + `x-amzn-agentaccess-workspaces-applications-stack`. The stack name or ARN.

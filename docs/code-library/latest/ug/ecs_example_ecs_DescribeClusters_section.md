@@ -22,7 +22,7 @@ The following `describe-clusters` example retrieves details about the specified 
 
 ```
 aws ecs describe-clusters \
-    --cluster {{default}}
+    --clusters {{default}}
 ```
 Output:
 

@@ -12,6 +12,11 @@ Retrieves a specified version of a table.
 
 ```
 {
+   "AuditContext": {
+      "AdditionalAuditContext": "{{string}}",
+      "AllColumnsRequested": {{boolean}},
+      "RequestedColumns": [ "{{string}}" ]
+   },
    "CatalogId": "{{string}}",
    "DatabaseName": "{{string}}",
    "TableName": "{{string}}",
@@ -25,6 +30,11 @@ Retrieves a specified version of a table.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [AuditContext](#API_GetTableVersion_RequestSyntax) **   <a name="Glue-GetTableVersion-request-AuditContext"></a>
+A structure containing the Lake Formation audit context.
+Type: [AuditContext](API_AuditContext.md) object
+Required: No
 
  ** [CatalogId](#API_GetTableVersion_RequestSyntax) **   <a name="Glue-GetTableVersion-request-CatalogId"></a>
 The ID of the Data Catalog where the tables reside. If none is provided, the AWS account ID is used by default.
@@ -72,6 +82,63 @@ Required: No
             "DatabaseIdentifier": "string",
             "Identifier": "string"
          },
+         "IcebergTableMetadata": {
+            "CurrentSchemaId": number,
+            "DefaultSortOrderId": number,
+            "DefaultSpecId": number,
+            "FormatVersion": "string",
+            "LastColumnId": number,
+            "LastPartitionId": number,
+            "Location": "string",
+            "PartitionSpecs": [
+               {
+                  "Fields": [
+                     {
+                        "FieldId": number,
+                        "Name": "string",
+                        "SourceId": number,
+                        "Transform": "string"
+                     }
+                  ],
+                  "SpecId": number
+               }
+            ],
+            "Properties": {
+               "string" : "string"
+            },
+            "Schemas": [
+               {
+                  "Fields": [
+                     {
+                        "Doc": "string",
+                        "Id": number,
+                        "InitialDefault": JSON value,
+                        "Name": "string",
+                        "Required": boolean,
+                        "Type": JSON value,
+                        "WriteDefault": JSON value
+                     }
+                  ],
+                  "IdentifierFieldIds": [ number ],
+                  "SchemaId": number,
+                  "Type": "string"
+               }
+            ],
+            "SortOrders": [
+               {
+                  "Fields": [
+                     {
+                        "Direction": "string",
+                        "NullOrder": "string",
+                        "SourceId": number,
+                        "Transform": "string"
+                     }
+                  ],
+                  "OrderId": number
+               }
+            ],
+            "TableUuid": "string"
+         },
          "IsMaterializedView": boolean,
          "IsMultiDialectView": boolean,
          "IsRegisteredWithLakeFormation": boolean,
@@ -93,6 +160,9 @@ Required: No
             }
          ],
          "Retention": number,
+         "RLSProperties": {
+            "DefaultRLSPolicy": "string"
+         },
          "Status": {
             "Action": "string",
             "Details": {
@@ -184,6 +254,7 @@ Required: No
          "VersionId": "string",
          "ViewDefinition": {
             "Definer": "string",
+            "IsManaged": boolean,
             "IsProtected": boolean,
             "LastRefreshType": "string",
             "RefreshSeconds": number,
@@ -197,7 +268,19 @@ Required: No
                   "ViewOriginalText": "string"
                }
             ],
+            "SparkPipelineInfo": {
+               "string" : "string"
+            },
             "SubObjects": [ "string" ],
+            "SubObjectsStatistics": [
+               {
+                  "FileCount": number,
+                  "GlueVersionId": "string",
+                  "PartitionCount": number,
+                  "SourceType": "string",
+                  "TotalFileBytes": number
+               }
+            ],
             "SubObjectVersionIds": [ number ],
             "ViewVersionId": number,
             "ViewVersionToken": "string"

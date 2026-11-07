@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DataSync::LocationObjectStorage GoogleOidcConfig
 <a name="aws-properties-datasync-locationobjectstorage-googleoidcconfig"></a>
 
-<a name="aws-properties-datasync-locationobjectstorage-googleoidcconfig-description"></a>The `GoogleOidcConfig` property type specifies Property description not available. for an [AWS::DataSync::LocationObjectStorage](aws-resource-datasync-locationobjectstorage.md).
+External identity parameters for Google Cloud Storage.
 
 ## Syntax
 <a name="aws-properties-datasync-locationobjectstorage-googleoidcconfig-syntax"></a>
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-datasync-locationobjectstorage-googleoidcconfig-properties"></a>
 
 `IdentityPoolName`  <a name="cfn-datasync-locationobjectstorage-googleoidcconfig-identitypoolname"></a>
-Property description not available.
+Human-readable pool name (e.g. "my-pool").
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(?!gcp-)[a-z][a-z0-9-]{2,30}[a-z0-9]$`
@@ -49,7 +49,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IdentityProviderName`  <a name="cfn-datasync-locationobjectstorage-googleoidcconfig-identityprovidername"></a>
-Property description not available.
+Human-readable provider name (e.g. "my-oidc-provider").
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(?!gcp-)[a-z][a-z0-9-]{2,30}[a-z0-9]$`
@@ -58,7 +58,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProjectName`  <a name="cfn-datasync-locationobjectstorage-googleoidcconfig-projectname"></a>
-Property description not available.
+Human-readable project name (e.g. "my-project").
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-z][a-z0-9-]{4,28}[a-z0-9]$`
@@ -67,7 +67,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProjectNumber`  <a name="cfn-datasync-locationobjectstorage-googleoidcconfig-projectnumber"></a>
-Property description not available.
+Numeric project ID as a string (e.g. "123456789").
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9]+$`

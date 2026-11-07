@@ -21,7 +21,7 @@ Required: No
  ** discoveryUrl **   <a name="bedrockagentcorecontrol-Type-Oauth2Discovery-discoveryUrl"></a>
 The discovery URL for the OAuth2 provider.
 Type: String
-Pattern: `.+/\.well-known/(openid-configuration|oauth-authorization-server)`
+Pattern: `[^\s?#]+/\.well-known/(openid-configuration|oauth-authorization-server)(/[^\s?#]+)?`
 Required: No
 
 ## See Also

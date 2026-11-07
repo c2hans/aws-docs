@@ -172,7 +172,7 @@ The type of predefined worker that is allocated when a task of this transform ru
 + `MaxCapacity` and `NumberOfWorkers` must both be at least 1.
 *Required*: No
 *Type*: String
-*Allowed values*: `Standard | G.1X | G.2X | G.025X | G.4X | G.8X | Z.2X`
+*Allowed values*: `Standard | G.1X | G.2X | G.4X | G.8X | G.025X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

@@ -26,7 +26,7 @@ Required: No
  ** Status **   <a name="connect-Type-AttachmentReference-Status"></a>
 Status of the attachment reference type.
 Type: String
-Valid Values: `AVAILABLE | DELETED | APPROVED | REJECTED | PROCESSING | FAILED`
+Valid Values: `AVAILABLE | DELETED | APPROVED | REJECTED | PROCESSING | FAILED | DRAFTING`
 Required: No
 
  ** Value **   <a name="connect-Type-AttachmentReference-Value"></a>

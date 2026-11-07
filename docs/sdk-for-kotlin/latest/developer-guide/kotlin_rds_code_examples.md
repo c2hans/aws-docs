@@ -656,7 +656,6 @@ suspend fun updateIntance(
     val request =
         ModifyDbInstanceRequest {
             dbInstanceIdentifier = dbInstanceIdentifierVal
-            publiclyAccessible = true
             masterUserPassword = masterUserPasswordVal
         }
 

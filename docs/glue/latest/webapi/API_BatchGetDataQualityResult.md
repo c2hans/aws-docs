@@ -49,6 +49,13 @@ Required: Yes
          "AnalyzerResults": [
             {
                "Description": "string",
+               "EvaluatedDistributions": {
+                  "string" : {
+                     "BinEdges": [ "string" ],
+                     "Count": [ number ],
+                     "DataType": "string"
+                  }
+               },
                "EvaluatedMetrics": {
                   "string" : number
                },

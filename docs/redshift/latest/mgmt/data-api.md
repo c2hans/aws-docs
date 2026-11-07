@@ -71,6 +71,8 @@ By default in AWS Step Functions, retries are not enabled. If you need to call a
     "ClientToken.$": "States.ArrayGetItem(States.StringSplit($$.Execution.Id, ':'), 7)"
   }
   ```
+**Note**
+To isolate access when you share a single IAM role, have each person assume the role with a distinct role session name (`RoleSessionName`). Then scope access with the `redshift-data:statement-owner-iam-userid` and `redshift-data:session-owner-iam-userid` condition keys. The `RedshiftDbUser` session tag is not an isolation control. For more information, see [Configuring IAM permissions](data-api-iam.md).
 
 ## Choosing database authentication credentials when calling the Amazon Redshift Data API
 <a name="data-api-calling-considerations-authentication"></a>

@@ -32,11 +32,11 @@ Required: Yes
  ** registrationType **   <a name="awscostmanagement-Type-taxSettings_TaxRegistration-registrationType"></a>
 Type of your tax registration.
 Type: String
-Valid Values: `VAT | GST | CPF | CNPJ | SST | TIN | NRIC | PAN | NIP`
+Valid Values: `VAT | GST | CPF | CNPJ | SST | TIN | NRIC | PAN | NIP | CUIT | CDI | RUT | NIE | CI`
 Required: Yes
 
  ** status **   <a name="awscostmanagement-Type-taxSettings_TaxRegistration-status"></a>
- The status of your TRN. This can be either `Verified`, `Pending`, `Deleted`, or `Rejected`.
+ The status of your TRN. This can be either `Verified`, `Pending`, `Deleted`, or `Rejected`. If the status is `Rejected`, see `statusReason` for the reason.
 Type: String
 Valid Values: `Verified | Pending | Deleted | Rejected`
 Required: Yes
@@ -56,6 +56,11 @@ Required: No
 The industry that describes your business. For business-to-business (B2B) customers, specify Business. For business-to-consumer (B2C) customers, specify Individual. For business-to-government (B2G), specify Government. Note that certain values may not applicable for the request country. Please refer to country specific information in API document.
 Type: String
 Valid Values: `Business | Individual | Government`
+Required: No
+
+ ** statusReason **   <a name="awscostmanagement-Type-taxSettings_TaxRegistration-statusReason"></a>
+The reason that your TRN was rejected. This is returned only when `status` is `Rejected`.
+Type: [TaxRegistrationStatusReason](API_taxSettings_TaxRegistrationStatusReason.md) object
 Required: No
 
  ** taxDocumentMetadatas **   <a name="awscostmanagement-Type-taxSettings_TaxRegistration-taxDocumentMetadatas"></a>

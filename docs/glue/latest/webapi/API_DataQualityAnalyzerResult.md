@@ -17,6 +17,13 @@ Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 Required: No
 
+ ** EvaluatedDistributions **   <a name="Glue-Type-DataQualityAnalyzerResult-EvaluatedDistributions"></a>
+A map of distribution metrics associated with the evaluation of the analyzer.
+Type: String to [DistributionData](API_DistributionData.md) object map
+Key Length Constraints: Minimum length of 1. Maximum length of 255.
+Key Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** EvaluatedMetrics **   <a name="Glue-Type-DataQualityAnalyzerResult-EvaluatedMetrics"></a>
 A map of metrics associated with the evaluation of the analyzer.
 Type: String to double map

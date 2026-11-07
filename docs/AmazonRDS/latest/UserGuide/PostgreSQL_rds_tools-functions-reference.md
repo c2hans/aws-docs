@@ -49,6 +49,8 @@ None.
 
 ### Output
 <a name="rds_tools.role_password_encryption_type-output"></a>
+
+This function returns the following columns:
 + `rolname` – The name of the database role.
 + `encryption_type` – The password encryption method used, such as `md5` or `scram-sha-256`.
 
@@ -79,6 +81,8 @@ rds_tools.blue_green_get_status(command_type)
 
 ### Arguments
 <a name="rds_tools.blue_green_get_status-arguments"></a>
+
+This function takes the following argument:
 + `command_type` – The type of restricted command to check. Valid values are `'DDL'` (data definition language commands) and `'LO'` (large object operations).
 
 ### Output
@@ -118,6 +122,8 @@ None.
 
 ### Output
 <a name="rds_tools.postgres_get_av_diag-output"></a>
+
+This function returns the following columns:
 + `blocker` – The category of database activity blocking the vacuum. The value is one of the following:
   + Active statement
   + Idle in transaction
@@ -333,10 +339,14 @@ rds_tools.show_topology([client_identifier])
 
 ### Arguments
 <a name="rds_tools.show_topology-arguments"></a>
+
+This function takes the following argument:
 + `client_identifier` (optional) – An identifier for the client library or proxy that is querying the topology. This parameter is optional but recommended, because it allows Amazon RDS to track which clients are actively querying topology and provides telemetry for support of additional clients.
 
 ### Output
 <a name="rds_tools.show_topology-output"></a>
+
+This function returns the following columns:
 + `id` – The DBI resource ID of each instance in the RDS Multi-AZ cluster.
 + `endpoint` – The endpoint for each node in the cluster.
 + `port` – The port number for each instance in the RDS Multi-AZ cluster.
@@ -376,6 +386,8 @@ None.
 
 ### Output
 <a name="rds_tools.pg_ls_multixactdir-output"></a>
+
+This function returns the following columns:
 + `name` – The name of the file or directory.
 + `size` – The size in bytes.
 + `modification` – The last modification timestamp.

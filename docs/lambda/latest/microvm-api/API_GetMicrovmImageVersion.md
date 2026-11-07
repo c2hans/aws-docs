@@ -132,7 +132,7 @@ Type: [CodeArtifact](API_CodeArtifact.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 
  ** [cpuConfigurations](#API_GetMicrovmImageVersion_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageVersion-response-cpuConfigurations"></a>
-The list of supported CPU configurations for the MicroVM.
+The CPU configurations that the MicroVM image version is built for.
 Type: Array of [CpuConfiguration](API_CpuConfiguration.md) objects
 
  ** [createdAt](#API_GetMicrovmImageVersion_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageVersion-response-createdAt"></a>

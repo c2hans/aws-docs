@@ -6,9 +6,11 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Operatio
 <a name="API_Operations_Amazon_Connect_Cases"></a>
 
 The following actions are supported by Amazon Connect Cases:
++  [BatchCreateRelatedItem](API_connect-cases_BatchCreateRelatedItem.md)
 +  [BatchGetCaseRule](API_connect-cases_BatchGetCaseRule.md)
 +  [BatchGetField](API_connect-cases_BatchGetField.md)
 +  [BatchPutFieldOptions](API_connect-cases_BatchPutFieldOptions.md)
++  [BatchUpdateCase](API_connect-cases_BatchUpdateCase.md)
 +  [CreateCase](API_connect-cases_CreateCase.md)
 +  [CreateCaseRule](API_connect-cases_CreateCaseRule.md)
 +  [CreateDomain](API_connect-cases_CreateDomain.md)

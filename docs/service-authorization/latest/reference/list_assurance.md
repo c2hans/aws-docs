@@ -55,7 +55,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Read
 
 - **   [Chat](https://docs.aws.amazon.com/assurance/latest/APIReference/API_Chat.html)  **
-  - **Description:** Grants permission to start a streaming chat session with the AI Governance agent
+  - **Description:** Grants permission to start a streaming chat session with the AWS Assurance agent
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Write
@@ -288,6 +288,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetResourceActivitiesQueryResults](https://docs.aws.amazon.com/assurance/latest/APIReference/API_GetResourceActivitiesQueryResults.html)  **
+  - **Description:** Grants permission to retrieve results of an asynchronous resource-activities query for an AI agent
+  - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetTask](https://docs.aws.amazon.com/assurance/latest/APIReference/API_GetTask.html)  **
   - **Description:** Grants permission to retrieve a specific task by its identifying fields
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
@@ -492,6 +498,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [StartResourceActivitiesQuery](https://docs.aws.amazon.com/assurance/latest/APIReference/API_StartResourceActivitiesQuery.html)  **
+  - **Description:** Grants permission to start an asynchronous resource-activities query for an AI agent
+  - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [TagResource](https://docs.aws.amazon.com/assurance/latest/APIReference/API_TagResource.html)  **
   - **Description:** Grants permission to add or overwrite tags on a resource
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
@@ -591,12 +603,6 @@ The following actions are defined by AWS Assurance but are not directly invocabl
   - **Description:** Grants permission to update an assessment's status and result
   - **Resource types (\*required):** [environment\*](#list_assurance-resource-environment)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_assurance-aws_ResourceTag___TagKey_)
-  - **Access level:** Write
-
-- **   [VendConnectionAccessToken](https://docs.aws.amazon.com/assurance/latest/APIReference/API_VendConnectionAccessToken.html)  **
-  - **Description:** Grants permission to retrieve a short-lived access token for a third-party connection in an environment
-  - **Resource types (\*required):**
-  - **Condition keys:**
   - **Access level:** Write
 
 ## Resource types defined by AWS Assurance

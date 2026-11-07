@@ -50,6 +50,11 @@ Content-type: application/json
          "imageArn": "string",
          "imageVersion": "string",
          "status": "string",
+         "supportedCpuConfigurations": [
+            {
+               "architecture": "string"
+            }
+         ],
          "updatedAt": number
       }
    ],

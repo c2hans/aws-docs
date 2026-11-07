@@ -31,6 +31,16 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateApplication  **
+  - **IAM action:**  [applicationinsights:CreateApplication](#list_application-insights-action-CreateApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [applicationinsights:TagResource](#list_application-insights-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateComponent  **
+  - **IAM action:**  [applicationinsights:CreateComponent](#list_application-insights-action-CreateComponent)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateLogPattern  **
   - **IAM action:**  [applicationinsights:CreateLogPattern](#list_application-insights-action-CreateLogPattern)
   - **Condition key:**
@@ -39,6 +49,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteApplication  **
   - **IAM action:**  [applicationinsights:DeleteApplication](#list_application-insights-action-DeleteApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteComponent  **
+  - **IAM action:**  [applicationinsights:DeleteComponent](#list_application-insights-action-DeleteComponent)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -171,6 +187,36 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateApplication  **
   - **IAM action:**  [applicationinsights:UpdateApplication](#list_application-insights-action-UpdateApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateComponent  **
+  - **IAM action:**  [applicationinsights:UpdateComponent](#list_application-insights-action-UpdateComponent)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateComponentConfiguration  **
+  - **IAM action:**  [applicationinsights:UpdateComponentConfiguration](#list_application-insights-action-UpdateComponentConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateLogPattern  **
+  - **IAM action:**  [applicationinsights:UpdateLogPattern](#list_application-insights-action-UpdateLogPattern)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateProblem  **
+  - **IAM action:**  [applicationinsights:UpdateProblem](#list_application-insights-action-UpdateProblem)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateWorkload  **
+  - **IAM action:**  [applicationinsights:UpdateWorkload](#list_application-insights-action-UpdateWorkload)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

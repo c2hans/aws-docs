@@ -99,6 +99,11 @@ Content-type: application/json
                   "businessActivity": "string",
                   "documentType": "string"
                },
+               "colombiaAdditionalInfo": {
+                  "issueDate": "string",
+                  "responsibilityCodes": [ "string" ],
+                  "taxpayerTypeCode": "string"
+               },
                "egyptAdditionalInfo": {
                   "uniqueIdentificationNumber": "string",
                   "uniqueIdentificationNumberExpirationDate": "string"
@@ -207,6 +212,10 @@ Content-type: application/json
             "registrationType": "string",
             "sector": "string",
             "status": "string",
+            "statusReason": {
+               "code": "string",
+               "message": "string"
+            },
             "taxDocumentMetadatas": [
                {
                   "taxDocumentAccessToken": "string",

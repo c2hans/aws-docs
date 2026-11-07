@@ -12,6 +12,11 @@ Retrieves information about a specified partition.
 
 ```
 {
+   "AuditContext": {
+      "AdditionalAuditContext": "{{string}}",
+      "AllColumnsRequested": {{boolean}},
+      "RequestedColumns": [ "{{string}}" ]
+   },
    "CatalogId": "{{string}}",
    "DatabaseName": "{{string}}",
    "PartitionValues": [ "{{string}}" ],
@@ -25,6 +30,11 @@ Retrieves information about a specified partition.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [AuditContext](#API_GetPartition_RequestSyntax) **   <a name="Glue-GetPartition-request-AuditContext"></a>
+A structure containing the Lake Formation audit context.
+Type: [AuditContext](API_AuditContext.md) object
+Required: No
 
  ** [CatalogId](#API_GetPartition_RequestSyntax) **   <a name="Glue-GetPartition-request-CatalogId"></a>
 The ID of the Data Catalog where the partition in question resides. If none is provided, the AWS account ID is used by default.

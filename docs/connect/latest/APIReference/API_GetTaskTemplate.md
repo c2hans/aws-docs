@@ -70,6 +70,9 @@ Content-type: application/json
       ]
    },
    "ContactFlowId": "string",
+   "ContactHooks": {
+      "WrapUpFlowId": "string"
+   },
    "CreatedTime": number,
    "Defaults": {
       "DefaultFieldValues": [
@@ -124,6 +127,10 @@ Type: [TaskTemplateConstraints](API_TaskTemplateConstraints.md) object
 The identifier of the flow that runs by default when a task is created by referencing this template.
 Type: String
 Length Constraints: Maximum length of 500.
+
+ ** [ContactHooks](#API_GetTaskTemplate_ResponseSyntax) **   <a name="connect-GetTaskTemplate-response-ContactHooks"></a>
+The event hooks that are set on tasks created by using this template.
+Type: [TaskTemplateContactHooks](API_TaskTemplateContactHooks.md) object
 
  ** [CreatedTime](#API_GetTaskTemplate_ResponseSyntax) **   <a name="connect-GetTaskTemplate-response-CreatedTime"></a>
 The timestamp when the task template was created.

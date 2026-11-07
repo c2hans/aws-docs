@@ -21,6 +21,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
          {
             "AllowedValues": [ "{{string}}" ],
             "DefaultValue": "{{string}}",
+            "Format": "{{string}}",
             "KeyOverride": "{{string}}",
             "Name": "{{string}}",
             "PropertyLocation": "{{string}}",
@@ -31,6 +32,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
       "Url": {
          "AllowedValues": [ "{{string}}" ],
          "DefaultValue": "{{string}}",
+         "Format": "{{string}}",
          "KeyOverride": "{{string}}",
          "Name": "{{string}}",
          "PropertyLocation": "{{string}}",
@@ -45,6 +47,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
          "Password": {
             "AllowedValues": [ "{{string}}" ],
             "DefaultValue": "{{string}}",
+            "Format": "{{string}}",
             "KeyOverride": "{{string}}",
             "Name": "{{string}}",
             "PropertyLocation": "{{string}}",
@@ -54,6 +57,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
          "Username": {
             "AllowedValues": [ "{{string}}" ],
             "DefaultValue": "{{string}}",
+            "Format": "{{string}}",
             "KeyOverride": "{{string}}",
             "Name": "{{string}}",
             "PropertyLocation": "{{string}}",
@@ -66,6 +70,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -79,6 +84,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "AuthorizationCode": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -88,6 +94,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "AuthorizationCodeUrl": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -97,6 +104,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "ClientId": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -106,6 +114,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "ClientSecret": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -116,6 +125,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "Prompt": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -125,6 +135,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "RedirectUri": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -135,6 +146,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "Scope": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -144,6 +156,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "TokenUrl": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -154,6 +167,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
                {
                   "AllowedValues": [ "{{string}}" ],
                   "DefaultValue": "{{string}}",
+                  "Format": "{{string}}",
                   "KeyOverride": "{{string}}",
                   "Name": "{{string}}",
                   "PropertyLocation": "{{string}}",
@@ -166,6 +180,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "ClientId": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -175,6 +190,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "ClientSecret": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -186,6 +202,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "Scope": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -195,6 +212,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "TokenUrl": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -205,6 +223,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
                {
                   "AllowedValues": [ "{{string}}" ],
                   "DefaultValue": "{{string}}",
+                  "Format": "{{string}}",
                   "KeyOverride": "{{string}}",
                   "Name": "{{string}}",
                   "PropertyLocation": "{{string}}",
@@ -218,6 +237,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "JwtToken": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -228,6 +248,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "TokenUrl": {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -238,6 +259,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
                {
                   "AllowedValues": [ "{{string}}" ],
                   "DefaultValue": "{{string}}",
+                  "Format": "{{string}}",
                   "KeyOverride": "{{string}}",
                   "Name": "{{string}}",
                   "PropertyLocation": "{{string}}",
@@ -257,10 +279,45 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             "Schema": {
                "{{string}}" : {
                   "FieldDataType": "{{string}}",
-                  "Name": "{{string}}"
+                  "FilterOverrides": {
+                     "BetweenConfiguration": {
+                        "HighBoundKey": "{{string}}",
+                        "LowBoundKey": "{{string}}",
+                        "Template": "{{string}}"
+                     },
+                     "DateTimeFormat": "{{string}}",
+                     "FieldName": "{{string}}",
+                     "OperatorMappings": {
+                        "{{string}}" : "{{string}}"
+                     }
+                  },
+                  "IsNullable": {{boolean}},
+                  "IsOrderable": {{boolean}},
+                  "IsPartitionable": {{boolean}},
+                  "IsQueryable": {{boolean}},
+                  "Name": "{{string}}",
+                  "ResponseDateFormat": "{{string}}"
                }
             },
             "SourceConfiguration": {
+               "FilterConfiguration": {
+                  "BetweenConfiguration": {
+                     "HighBoundKey": "{{string}}",
+                     "LowBoundKey": "{{string}}",
+                     "Template": "{{string}}"
+                  },
+                  "DateTimeFormat": "{{string}}",
+                  "FilterMode": "{{string}}",
+                  "FilterStringConfiguration": {
+                     "QueryParameterName": "{{string}}",
+                     "QuoteCharacter": "{{string}}",
+                     "QuoteStringValues": {{boolean}}
+                  },
+                  "OperatorMappings": {
+                     "{{string}}" : "{{string}}"
+                  },
+                  "StripQuotes": {{boolean}}
+               },
                "PaginationConfiguration": {
                   "CursorConfiguration": {
                      "LimitParameter": {
@@ -308,6 +365,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
                   {
                      "AllowedValues": [ "{{string}}" ],
                      "DefaultValue": "{{string}}",
+                     "Format": "{{string}}",
                      "KeyOverride": "{{string}}",
                      "Name": "{{string}}",
                      "PropertyLocation": "{{string}}",
@@ -324,6 +382,24 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
          }
       },
       "GlobalSourceConfiguration": {
+         "FilterConfiguration": {
+            "BetweenConfiguration": {
+               "HighBoundKey": "{{string}}",
+               "LowBoundKey": "{{string}}",
+               "Template": "{{string}}"
+            },
+            "DateTimeFormat": "{{string}}",
+            "FilterMode": "{{string}}",
+            "FilterStringConfiguration": {
+               "QueryParameterName": "{{string}}",
+               "QuoteCharacter": "{{string}}",
+               "QuoteStringValues": {{boolean}}
+            },
+            "OperatorMappings": {
+               "{{string}}" : "{{string}}"
+            },
+            "StripQuotes": {{boolean}}
+         },
          "PaginationConfiguration": {
             "CursorConfiguration": {
                "LimitParameter": {
@@ -371,6 +447,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",
@@ -385,6 +462,24 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
          }
       },
       "ValidationEndpointConfiguration": {
+         "FilterConfiguration": {
+            "BetweenConfiguration": {
+               "HighBoundKey": "{{string}}",
+               "LowBoundKey": "{{string}}",
+               "Template": "{{string}}"
+            },
+            "DateTimeFormat": "{{string}}",
+            "FilterMode": "{{string}}",
+            "FilterStringConfiguration": {
+               "QueryParameterName": "{{string}}",
+               "QuoteCharacter": "{{string}}",
+               "QuoteStringValues": {{boolean}}
+            },
+            "OperatorMappings": {
+               "{{string}}" : "{{string}}"
+            },
+            "StripQuotes": {{boolean}}
+         },
          "PaginationConfiguration": {
             "CursorConfiguration": {
                "LimitParameter": {
@@ -432,6 +527,7 @@ Supports multiple authentication types including Basic, OAuth2 (Client Credentia
             {
                "AllowedValues": [ "{{string}}" ],
                "DefaultValue": "{{string}}",
+               "Format": "{{string}}",
                "KeyOverride": "{{string}}",
                "Name": "{{string}}",
                "PropertyLocation": "{{string}}",

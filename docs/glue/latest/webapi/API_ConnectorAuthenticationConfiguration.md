@@ -17,17 +17,17 @@ Valid Values: `BASIC | OAUTH2 | CUSTOM | IAM`
 Required: Yes
 
  ** BasicAuthenticationProperties **   <a name="Glue-Type-ConnectorAuthenticationConfiguration-BasicAuthenticationProperties"></a>
-Basic authentication configuration that defines the username and password properties for HTTP Basic authentication.
+The Basic authentication properties for the connection type, defining the username and password used to authenticate requests.
 Type: [BasicAuthenticationProperties](API_BasicAuthenticationProperties.md) object
 Required: No
 
  ** CustomAuthenticationProperties **   <a name="Glue-Type-ConnectorAuthenticationConfiguration-CustomAuthenticationProperties"></a>
-Custom authentication configuration that allows for flexible authentication mechanisms beyond standard Basic and OAuth2 flows.
+The custom authentication properties for the connection type, defining the parameters for authentication mechanisms beyond standard Basic and OAuth2 flows.
 Type: [CustomAuthenticationProperties](API_CustomAuthenticationProperties.md) object
 Required: No
 
  ** OAuth2Properties **   <a name="Glue-Type-ConnectorAuthenticationConfiguration-OAuth2Properties"></a>
-OAuth2 configuration container that defines the authentication properties and flow-specific configurations for OAuth2-based connections.
+The OAuth2 authentication properties for the connection type, defining the grant type and the flow-specific configuration used to obtain access tokens.
 Type: [ConnectorOAuth2Properties](API_ConnectorOAuth2Properties.md) object
 Required: No
 

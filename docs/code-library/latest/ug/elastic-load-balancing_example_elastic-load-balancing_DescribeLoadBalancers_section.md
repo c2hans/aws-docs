@@ -117,7 +117,7 @@ The following `describe-load-balancers` example describes the specified load bal
 
 ```
 aws elb describe-load-balancers \
-    --load-balancer-name {{my-load-balancer}}
+    --load-balancer-names {{my-load-balancer}}
 ```
 The following example response is for an HTTPS load balancer in a VPC.
 Output:

@@ -114,7 +114,7 @@ The code artifact for this version.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CpuConfigurations`  <a name="cfn-lambda-microvmimage-cpuconfigurations"></a>
-The list of supported CPU configurations for the MicroVM.
+The CPU configurations that the MicroVM image version is built for.
 *Required*: Yes
 *Type*: Array of [CpuConfiguration](aws-properties-lambda-microvmimage-cpuconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

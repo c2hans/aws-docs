@@ -37,6 +37,11 @@ The default value for the property.
 Type: String
 Required: No
 
+ ** Format **   <a name="Glue-Type-ConnectorProperty-Format"></a>
+A format template for the property value that defines how the value should be formatted before sending it in API requests. Use `{value}` as a placeholder for the actual property value (for example, `SSWS {value}`).
+Type: String
+Required: No
+
  ** KeyOverride **   <a name="Glue-Type-ConnectorProperty-KeyOverride"></a>
 A key name to use when sending this property in API requests, if different from the display name.
 Type: String

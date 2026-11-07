@@ -109,8 +109,8 @@ The following quotas apply to [durable functions](durable-functions.md). Quotas 
 
 Lambda MicroVMs sets quotas for compute, storage, and API requests. Quotas marked as adjustable can be increased through the Service Quotas console.
 
-**Note**
-Lambda MicroVMs support the ARM64 (AWS Graviton) architecture.
+**Supported CPU architectures**
+Lambda MicroVMs supports the `x86_64` and `ARM64` architectures.
 
 ### Compute and storage
 <a name="microvms-quotas-compute"></a>
@@ -134,7 +134,7 @@ Lambda MicroVMs support the ARM64 (AWS Graviton) architecture.
 
 | Resource | Limit | Adjustable |
 | --- | --- | --- |
-| Concurrent connections per MicroVM | 8 (1 vCPU), 16 (2 vCPU), 32 (4 vCPU), 64 (8 vCPU), 128 (16 vCPU) | No |
+| Concurrent connections per MicroVM | Floor of 150, plus 50 per additional vCPU, up to a maximum of 600 | No |
 | Requests per second per MicroVM | 40 (4 vCPU / 8 GB), 160 (16 vCPU / 32 GB) | No |
 
 ### API rate limits

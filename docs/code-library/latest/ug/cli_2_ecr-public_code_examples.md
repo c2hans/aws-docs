@@ -486,7 +486,7 @@ The following `describe-repositories` example describes a repository named `proj
 
 ```
 aws ecr-public describe-repositories \
-    --repository-name {{project-a/nginx-web-app}}
+    --repository-names {{project-a/nginx-web-app}}
 ```
 Output:
 

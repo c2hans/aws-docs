@@ -20,6 +20,14 @@ POST /contacts/{{InstanceId}}/{{ContactId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "AdditionalRecipients": {
+      "CcEmailAddresses": [
+         {
+            "DisplayName": "{{string}}",
+            "EmailAddress": "{{string}}"
+         }
+      ]
+   },
    "CustomerEndpoint": {
       "Address": "{{string}}",
       "Type": "{{string}}"
@@ -81,8 +89,13 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [AdditionalRecipients](#API_UpdateContact_RequestSyntax) **   <a name="connect-UpdateContact-request-AdditionalRecipients"></a>
+The additional recipients of an outbound email. Use this field to update the CC email address recipients of a contact. An empty list clears the existing CC recipients.
+Type: [NullableAdditionalRecipients](API_NullableAdditionalRecipients.md) object
+Required: No
+
  ** [CustomerEndpoint](#API_UpdateContact_RequestSyntax) **   <a name="connect-UpdateContact-request-CustomerEndpoint"></a>
-The endpoint of the customer for which the contact was initiated. For external audio contacts, this is usually the end customer's phone number. This value can only be updated for external audio contacts. For more information, see [Connect Customer Contact Lens integration](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-integration.html) in the *Connect Customer Administrator Guide*.
+The endpoint of the customer for which the contact was initiated. For external audio contacts, this is usually the end customer's phone number. This value can only be updated for external audio contacts. For more information, see [Connect Customer Contact Lens integration](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-integration.html) in the *Connect Customer Administrator Guide*. For email contacts with an `OUTBOUND` or `AGENT_REPLY` initiation method, this value can be updated while the outbound email is still a draft, before you send it.
 Type: [Endpoint](API_Endpoint.md) object
 Required: No
 
@@ -119,7 +132,7 @@ Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: No
 
  ** [SystemEndpoint](#API_UpdateContact_RequestSyntax) **   <a name="connect-UpdateContact-request-SystemEndpoint"></a>
-External system endpoint for the contact was initiated. For external audio contacts, this is the phone number of the external system such as the contact center. This value can only be updated for external audio contacts. For more information, see [Connect Customer Contact Lens integration](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-integration.html) in the *Connect Customer Administrator Guide*.
+External system endpoint for the contact was initiated. For external audio contacts, this is the phone number of the external system such as the contact center. This value can only be updated for external audio contacts. For more information, see [Connect Customer Contact Lens integration](https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-integration.html) in the *Connect Customer Administrator Guide*. For email contacts with an `OUTBOUND` or `AGENT_REPLY` initiation method, this value can be updated while the outbound email is still a draft, before you send it.
 Type: [Endpoint](API_Endpoint.md) object
 Required: No
 

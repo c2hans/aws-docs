@@ -766,7 +766,9 @@ Contents of `SAMLMetaData.xml`:
             </ds:KeyInfo>
         </md:KeyDescriptor>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.example.com/saml/sso"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.example.com/saml/sso"/>
     </md:IDPSSODescriptor>
 </md:EntityDescriptor>
 ```
@@ -1723,11 +1725,11 @@ The following code example shows how to use `get-access-key-last-used`.
 
 **AWS CLI**
 **To retrieve information about when the specified access key was last used**
-The following `get-access-key-last-used` example retrieves information about when the access key `ABCDEXAMPLE` was last used.
+The following `get-access-key-last-used` example retrieves information about when the access key `AKIAIOSFODNN7EXAMPLE` was last used.
 
 ```
 aws iam get-access-key-last-used \
-    --access-key-id {{ABCDEXAMPLE}}
+    --access-key-id {{AKIAIOSFODNN7EXAMPLE}}
 ```
 Output:
 
@@ -5175,7 +5177,9 @@ Contents of `SAMLMetaData.xml`:
             </ds:KeyInfo>
         </md:KeyDescriptor>
         <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
         <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://adfs.example.com/adfs/ls/"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://adfs.example.com/adfs/ls/"/>
     </md:IDPSSODescriptor>
 </md:EntityDescriptor>
 ```

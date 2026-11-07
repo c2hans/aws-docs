@@ -654,13 +654,13 @@ The following code example shows how to use `derive-shared-secret`.
 **AWS CLI**
 **To derive a shared secret**
 The following `derive-shared-secret` example derives a shared secret using a key agreement algorithm.
-You must use an asymmetric NIST-recommended elliptic curve (ECC) or SM2 (China Regions only) KMS key pair with a `KeyUsage` value of `KEY_AGREEMENT` to call DeriveSharedSecret.
+You must use an asymmetric NIST-recommended elliptic curve (ECC) or SM2 (China Regions only) KMS key pair with a `KeyUsage` value of `KEY_AGREEMENT` to call DeriveSharedSecret. The `public_key.der` file contains the public key of the other party in DER format.
 
 ```
 aws kms derive-shared-secret \
     --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --key-agreement-algorithm {{ECDH}} \
-    --public-key {{"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvH3Yj0wbkLEpUl95Cv1cJVjsVNSjwGq3tCLnzXfhVwVvmzGN8pYj3U8nKwgouaHbBWNJYjP5VutbbkKS4Kv4GojwZBJyHN17kmxo8yTjRmjR15SKIQ8cqRA2uaERMLnpztIXdZp232PQPbWGxDyXYJ0aJ5EFSag"}}
+    --public-key {{fileb://public_key.der}}
 ```
 Output:
 
@@ -2121,7 +2121,7 @@ To specify the KMS key, use the `key-id` parameter. This example uses a key ID v
 ```
 aws kms untag-resource \
     --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --tag-key '{{Purpose}}'
+    --tag-keys '{{Purpose}}'
 ```
 This command produces no output. To view the tags on an AWS KMS KMS key, use the `list-resource-tags` command.
 For more information about using tags in AWS KMS, see [Tagging keys](https://docs.aws.amazon.com/kms/latest/developerguide/tagging-keys.html) in the *AWS Key Management Service Developer Guide*.

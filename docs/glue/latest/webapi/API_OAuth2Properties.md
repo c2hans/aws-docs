@@ -16,9 +16,9 @@ Type: [OAuth2ClientApplication](API_OAuth2ClientApplication.md) object
 Required: No
 
  ** OAuth2GrantType **   <a name="Glue-Type-OAuth2Properties-OAuth2GrantType"></a>
-The OAuth2 grant type. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, or `CLIENT_CREDENTIALS`.
+The OAuth2 grant type. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, `REFRESH_TOKEN`, or `CLIENT_CREDENTIALS`.
 Type: String
-Valid Values: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER`
+Valid Values: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER | REFRESH_TOKEN`
 Required: No
 
  ** TokenUrl **   <a name="Glue-Type-OAuth2Properties-TokenUrl"></a>

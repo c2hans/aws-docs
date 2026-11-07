@@ -1970,7 +1970,7 @@ The following `describe-replication-subnet-groups` example lists the available s
 
 ```
 aws dms describe-replication-subnet-groups \
-    --filter {{"Name=replication-subnet-group-id,Values=my-subnet-group"}}
+    --filters {{"Name=replication-subnet-group-id,Values=my-subnet-group"}}
 ```
 Output:
 
@@ -2482,7 +2482,7 @@ The following `modify-replication-subnet-group` example changes the lists of sub
 ```
 aws dms modify-replication-subnet-group \
     --replication-subnet-group-identifier {{my-subnet-group}} \
-    --subnet-id {{subnet-da327bf6}} {{subnet-bac383e0}}
+    --subnet-ids {{subnet-da327bf6}} {{subnet-bac383e0}}
 ```
 Output:
 

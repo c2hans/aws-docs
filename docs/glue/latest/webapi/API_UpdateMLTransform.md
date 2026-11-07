@@ -109,7 +109,7 @@ The type of predefined worker that is allocated when this task runs. Accepts a v
 + For the `G.1X` worker type, each worker provides 4 vCPU, 16 GB of memory and a 64GB disk, and 1 executor per worker.
 + For the `G.2X` worker type, each worker provides 8 vCPU, 32 GB of memory and a 128GB disk, and 1 executor per worker.
 Type: String
-Valid Values: `Standard | G.1X | G.2X | G.025X | G.4X | G.8X | Z.2X`
+Valid Values: `Standard | G.1X | G.2X | G.4X | G.8X | G.025X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X`
 Required: No
 
 ## Response Syntax

@@ -38,8 +38,8 @@ Contents of `storage-loc.json`:
 
 ```
 {
-    "Bucket":"MegaFrogRaceServer_NA_build_files"
-    "Key":"MegaFrogRaceServer_build_123.zip"
+    "Bucket":"MegaFrogRaceServer_NA_build_files",
+    "Key":"MegaFrogRaceServer_build_123.zip",
     "RoleArn":"arn:aws:iam::123456789012:role/gamelift"
 }
 ```
@@ -202,11 +202,14 @@ aws gamelift create-fleet \
 Contents of `runtime-config.json`:
 
 ```
-GameSessionActivationTimeoutSeconds=300,
-MaxConcurrentGameSessionActivations=2,
-ServerProcesses=[
-    {LaunchPath=C:\game\Bin64.Release.Dedicated\MegaFrogRace_Server.exe,Parameters=-debug,ConcurrentExecutions=1},
-    {LaunchPath=C:\game\Bin64.Release.Dedicated\MegaFrogRace_Server.exe,ConcurrentExecutions=1}]
+{
+    "GameSessionActivationTimeoutSeconds": 300,
+    "MaxConcurrentGameSessionActivations": 2,
+    "ServerProcesses": [
+        {"LaunchPath": "C:\\game\\Bin64.Release.Dedicated\\MegaFrogRace_Server.exe", "Parameters": "-debug", "ConcurrentExecutions": 1},
+        {"LaunchPath": "C:\\game\\Bin64.Release.Dedicated\\MegaFrogRace_Server.exe", "ConcurrentExecutions": 1}
+    ]
+}
 ```
 Output:
 
@@ -296,12 +299,10 @@ aws gamelift create-game-session-queue \
 Contents of `destinations.json`:
 
 ```
-{
-    "Destinations": [
-        {"DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111" },
-        {"DestinationArn": "arn:aws:gamelift:us-west-1::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE22222" }
-    ]
-}
+[
+    {"DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111" },
+    {"DestinationArn": "arn:aws:gamelift:us-west-1::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE22222" }
+]
 ```
 Output:
 
@@ -331,22 +332,18 @@ aws gamelift create-game-session-queue \
 Contents of `destinations.json`:
 
 ```
-{
-    "Destinations": [
-        { "DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111" },
-        { "DestinationArn": "arn:aws:gamelift:us-east-1::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE22222" }
-    ]
-}
+[
+    { "DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111" },
+    { "DestinationArn": "arn:aws:gamelift:us-east-1::fleet/fleet-a1b2c3d4-5678-90ab-cdef-EXAMPLE22222" }
+]
 ```
 Contents of `latency-policies.json`:
 
 ```
-{
-    "PlayerLatencyPolicies": [
-        {"MaximumIndividualPlayerLatencyMilliseconds": 200},
-        {"MaximumIndividualPlayerLatencyMilliseconds": 100, "PolicyDurationSeconds": 60}
-    ]
-}
+[
+    {"MaximumIndividualPlayerLatencyMilliseconds": 200},
+    {"MaximumIndividualPlayerLatencyMilliseconds": 100, "PolicyDurationSeconds": 60}
+]
 ```
 Output:
 
@@ -1166,24 +1163,20 @@ aws gamelift update-game-session-queue \
 Contents of `destinations.json`:
 
 ```
-{
-    "Destinations": [
-        {"DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"},
-        {"DestinationArn": "arn:aws:gamelift:us-east-1::fleet/fleet-5c6d3c4d-5e6f-7a8b-9c0d-1e2f3a4b5a2b"},
-        {"DestinationArn": "arn:aws:gamelift:us-east-1::alias/alias-11aa22bb-3c4d-5e6f-000a-1111aaaa22bb"}
-    ]
-}
+[
+    {"DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"},
+    {"DestinationArn": "arn:aws:gamelift:us-east-1::fleet/fleet-5c6d3c4d-5e6f-7a8b-9c0d-1e2f3a4b5a2b"},
+    {"DestinationArn": "arn:aws:gamelift:us-east-1::alias/alias-11aa22bb-3c4d-5e6f-000a-1111aaaa22bb"}
+]
 ```
 Contents of `latency-policies.json`:
 
 ```
-{
-    "PlayerLatencyPolicies": [
-        {"MaximumIndividualPlayerLatencyMilliseconds": 200},
-        {"MaximumIndividualPlayerLatencyMilliseconds": 150, "PolicyDurationSeconds": 120},
-        {"MaximumIndividualPlayerLatencyMilliseconds": 100, "PolicyDurationSeconds": 120}
-    ]
-}
+[
+    {"MaximumIndividualPlayerLatencyMilliseconds": 200},
+    {"MaximumIndividualPlayerLatencyMilliseconds": 150, "PolicyDurationSeconds": 120},
+    {"MaximumIndividualPlayerLatencyMilliseconds": 100, "PolicyDurationSeconds": 120}
+]
 ```
 Output:
 

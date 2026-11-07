@@ -60,7 +60,7 @@ An expression specifying the field in your JSON object from which the date shoul
 
 `Unit`  <a name="cfn-customerprofiles-calculatedattributedefinition-range-unit"></a>
 The unit of time.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Allowed values*: `DAYS`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -69,7 +69,7 @@ The unit of time.
 The amount of time of the specified unit.
 *Required*: No
 *Type*: Integer
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `2147483647`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

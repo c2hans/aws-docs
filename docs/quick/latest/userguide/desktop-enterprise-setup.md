@@ -67,6 +67,8 @@ To install the application, see [Getting started with the Amazon Quick desktop a
 
 If you use a dedicated identity provider configuration, your identity provider's session limits also apply. For more information, see [How sign-in works with a dedicated identity provider](desktop-enterprise-advanced-idp.md#desktop-enterprise-how-it-works).
 
+The desktop application stores its tokens in the operating system credential vault, with either sign-in method. For more information, see [Sign-in and credentials](desktop-security.md#desktop-security-sign-in).
+
 ## Moving from the desktop extension to the desktop connector
 <a name="desktop-enterprise-migrate"></a>
 

@@ -166,6 +166,7 @@ For event data stores, you can use only advanced event selectors to include data
 | AWS AppConfig | AWS AppConfig API activity for configuration operations such as calls to StartConfigurationSession and GetLatestConfiguration. For more information, see [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/logging-using-cloudtrail.html#appconfig-data-events-cloudtrail). | AWS AppConfig | `AWS::AppConfig::Configuration` |
 | CloudWatch Application Signals | API activity on `AWS::ApplicationSignals::InstrumentationConfig` resources. | AWS::ApplicationSignals::InstrumentationConfig | `AWS::ApplicationSignals::InstrumentationConfig` |
 | AWS AppSync | AWS AppSync API activity on AppSync GraphQL APIs. For more information, see [AWS AppSync](https://docs.aws.amazon.com/appsync/latest/devguide/cloudtrail-logging.html#cloudtrail-data-events). | AppSync GraphQL | `AWS::AppSync::GraphQLApi` |
+| aws assurance | API activity on `AWS::Assurance::Environment` resources. | AWS::Assurance::Environment | `AWS::Assurance::Environment` |
 | External anthropic workspace | API activity on `AWS::AWSExternalAnthropic::Workspace` resources. | External anthropic workspace | `AWS::AWSExternalAnthropic::Workspace` |
 | AWS B2B Data Interchange | B2B Data Interchange API activity for Transformer operations such as calls to GetTransformerJob and StartTransformerJob. | B2B Data Interchange | `AWS::B2BI::Transformer` |
 | AWS Backup access point | API activity on `AWS::Backup::BackupAccessPoint` resources. | AWS Backup access point | `AWS::Backup::BackupAccessPoint` |
@@ -311,6 +312,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon NovaAct | Amanzon NovaAct API activity on workflow runs. | Workflow run | `AWS::NovaAct::WorkflowRun` |
 | Amazon One Enterprise | Amazon One Enterprise API activity on a UKey. | Amazon One UKey | `AWS::One::UKey` |
 | Amazon One Enterprise | Amazon One Enterprise API activity on users. | Amazon One User | `AWS::One::User` |
+| Amazon OpenSearch Memory | Space level data events for Amazon OpenSearch Memory. | OpenSearch Memory Space Level Events | `AWS::Osm::Space` |
 | AWS Payment Cryptography | AWS Payment Cryptography API activity on aliases. | Payment Cryptography alias | `AWS::PaymentCryptography::Alias` |
 | AWS Payment Cryptography | AWS Payment Cryptography API activity on keys. | Payment Cryptography key | `AWS::PaymentCryptography::Key` |
 | AWS Private CA | AWS Private CA Connector for Active Directory API activity. | Private CA Connector for Active Directory | `AWS::PCAConnectorAD::Connector` |

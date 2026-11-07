@@ -1576,7 +1576,7 @@ The following `authorize-security-group-ingress` example uses the `ip-permission
 ```
 aws ec2 authorize-security-group-ingress \
     --group-id {{sg-1234567890abcdef0}} \
-    --ip-permissions 'IpProtocol=tcp,FromPort=3389,ToPort=3389,IpRanges=[{CidrIp=203.0.113.0/24,Description='RDP {{access}} {{from}} {{NY}} office'}]'
+    --ip-permissions '{{IpProtocol=tcp,FromPort=3389,ToPort=3389,IpRanges=[{CidrIp=203.0.113.0/24,Description="RDP access from NY office"}]}}'
 ```
 Output:
 
@@ -2538,7 +2538,7 @@ The following `create-dhcp-options` example creates a set of DHCP options that s
 
 ```
 aws ec2 create-dhcp-options \
-    --dhcp-configuration {{"Key=domain-name-servers,Values=10.2.5.1,10.2.5.2"}} {{"Key=domain-name,Values=example.com"}} {{"Key=netbios-node-type,Values=2"}}
+    --dhcp-configurations {{"Key=domain-name-servers,Values=10.2.5.1,10.2.5.2"}} {{"Key=domain-name,Values=example.com"}} {{"Key=netbios-node-type,Values=2"}}
 ```
 Output:
 
@@ -2993,7 +2993,7 @@ The following `create-instance-event-window` example creates an event window wit
 
 ```
 aws ec2 create-instance-event-window \
-    --time-range {{StartWeekDay=monday,StartHour=2,EndWeekDay=wednesday,EndHour=8}} \
+    --time-ranges {{StartWeekDay=monday,StartHour=2,EndWeekDay=wednesday,EndHour=8}} \
     --tag-specifications {{"ResourceType=instance-event-window,Tags=[{Key=K1,Value=V1}]"}} \
     --name {{myEventWindowName}}
 ```
@@ -5547,7 +5547,7 @@ The following `create-transit-gateway-vpc-attachment` example creates a transit 
 aws ec2 create-transit-gateway-vpc-attachment \
     --transit-gateway-id {{tgw-0262a0e521EXAMPLE}} \
     --vpc-id {{vpc-07e8ffd50f49335df}} \
-    --subnet-id {{subnet-0752213d59EXAMPLE}}
+    --subnet-ids {{subnet-0752213d59EXAMPLE}}
 ```
 Output:
 
@@ -6123,7 +6123,7 @@ aws ec2 create-vpc-endpoint \
     --vpc-endpoint-type {{Interface}} \
     --service-name {{com.amazonaws.us-west-2.s3}} \
     --subnet-ids {{subnet-7b16de0c}} \
-    --security-group-id {{sg-1a2b3c4d}} \
+    --security-group-ids {{sg-1a2b3c4d}} \
     --tag-specifications {{ResourceType=vpc-endpoint,Tags=[{Key=service,Value=S3}]}}
 ```
 Output:
@@ -6636,7 +6636,7 @@ aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
     --customer-gateway-id {{cgw-0abc1234def567890}} \
     --vpn-gateway-id {{vgw-1a1a1a1a1a1a2b2b2}} \
-    --tag-specification '{{ResourceType=vpn-connection,Tags=[{Key=Name,Value=BGP-VPN}]}}'
+    --tag-specifications '{{ResourceType=vpn-connection,Tags=[{Key=Name,Value=BGP-VPN}]}}'
 ```
 Output:
 
@@ -7109,7 +7109,7 @@ The following `delete-flow-logs` example deletes the specified flow log.
 
 ```
 aws ec2 delete-flow-logs \
-    --flow-log-id {{fl-11223344556677889}}
+    --flow-log-ids {{fl-11223344556677889}}
 ```
 Output:
 
@@ -9802,7 +9802,7 @@ The following `describe-classic-link-instances` example lists all of your linked
 
 ```
 aws ec2 describe-classic-link-instances \
-    --filter {{"Name=vpc-id,Values=vpc-88888888"}}
+    --filters {{"Name=vpc-id,Values=vpc-88888888"}}
 ```
 Output:
 
@@ -13564,7 +13564,7 @@ For Linux and macOS, use the following command.
 ```
 aws ec2 describe-instances \
     --filters {{Name=tag-key,Values=Name}} \
-    --query '{{Reservations[*].Instances[*].{Instance:InstanceId,AZ:Placement.AvailabilityZone,Name:Tags[?Key==`Name`]|[0].Value}}}' \
+    --query '{{Reservations[*].Instances[*].{Instance:InstanceId,AZ:Placement.AvailabilityZone,Name:Tags[?Key==`"Name"`]|[0].Value}}}' \
     --output {{table}}
 ```
 For Windows, use the following command.
@@ -14613,7 +14613,7 @@ The following `describe-nat-gateways` example describes the specified public NAT
 
 ```
 aws ec2 describe-nat-gateways \
-    --nat-gateway-id {{nat-01234567890abcdef}}
+    --nat-gateway-ids {{nat-01234567890abcdef}}
 ```
 Output:
 
@@ -14662,7 +14662,7 @@ The following `describe-nat-gateways` example describes the specified private NA
 
 ```
 aws ec2 describe-nat-gateways \
-    --nat-gateway-id {{nat-1234567890abcdef0}}
+    --nat-gateway-ids {{nat-1234567890abcdef0}}
 ```
 Output:
 
@@ -15357,7 +15357,7 @@ The following `describe-principal-id-format` example describes the ID format for
 
 ```
 aws ec2 describe-principal-id-format \
-    --resource {{instance}}
+    --resources {{instance}}
 ```
 Output:
 
@@ -17226,7 +17226,7 @@ The following `describe-spot-price-history` example returns the Spot Price histo
 ```
 aws ec2 describe-spot-price-history \
     --instance-types {{m1.xlarge}} \
-    --product-description {{"Linux/UNIX (Amazon VPC)"}} \
+    --product-descriptions {{"Linux/UNIX (Amazon VPC)"}} \
     --start-time {{2014-01-06T07:08:09}} \
     --end-time {{2014-01-06T08:09:10}}
 ```
@@ -18823,7 +18823,7 @@ The following `describe-vpc-classic-link` example lists the ClassicLink status o
 
 ```
 aws ec2 describe-vpc-classic-link \
-    --vpc-id {{vpc-88888888}}
+    --vpc-ids {{vpc-88888888}}
 ```
 Output:
 
@@ -18847,7 +18847,7 @@ The following `describe-vpc-classic-link` example lists only VPCs that are enabl
 
 ```
 aws ec2 describe-vpc-classic-link \
-    --filter {{"Name=is-classic-link-enabled,Values=true"}}
+    --filters {{"Name=is-classic-link-enabled,Values=true"}}
 ```
 +  For API details, see [DescribeVpcClassicLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-classic-link.html) in *AWS CLI Command Reference*.
 
@@ -19146,7 +19146,7 @@ The following `describe-vpc-endpoint-services` example lists the details of the 
 
 ```
 aws ec2 describe-vpc-endpoint-services \
-    --filter '{{Name=service-type,Values=Interface}}' {{Name=service-name,Values=com.amazonaws.us-west-2.s3}}
+    --filters '{{Name=service-type,Values=Interface}}' {{Name=service-name,Values=com.amazonaws.us-west-2.s3}}
 ```
 Output:
 
@@ -20600,7 +20600,7 @@ The following `disassociate-transit-gateway-multicast-domain` example disassocia
 ```
 aws ec2 disassociate-transit-gateway-multicast-domain \
     --transit-gateway-attachment-id {{tgw-attach-070e571cd1EXAMPLE}} \
-    --subnet-id {{subnet-000de86e3bEXAMPLE}} \
+    --subnet-ids {{subnet-000de86e3bEXAMPLE}} \
     --transit-gateway-multicast-domain-id {{tgw-mcast-domain-0c4905cef7EXAMPLE}}
 ```
 Output:
@@ -23177,7 +23177,7 @@ The following `get-vpn-connection-device-types` example lists the gateway device
 
 ```
 aws ec2 get-vpn-connection-device-types \
-    --query {{"VpnConnectionDeviceTypes[?Vendor==`Palo Alto Networks`]"}}
+    --query {{"VpnConnectionDeviceTypes[?Vendor=='Palo Alto Networks']"}}
 ```
 Output:
 
@@ -23392,7 +23392,7 @@ The following `list-snapshots-in-recycle-bin` example lists information about sn
 
 ```
 aws ec2 list-snapshots-in-recycle-bin \
-    --snapshot-id {{snap-01234567890abcdef}}
+    --snapshot-ids {{snap-01234567890abcdef}}
 ```
 Output:
 
@@ -23753,7 +23753,7 @@ The following `modify-hosts` example enables auto-placement for a Dedicated Host
 
 ```
 aws ec2 modify-hosts \
-    --host-id {{h-06c2f189b4EXAMPLE}} \
+    --host-ids {{h-06c2f189b4EXAMPLE}} \
     --auto-placement {{on}}
 ```
 Output:
@@ -23772,7 +23772,7 @@ The following `modify-hosts` example enables host recovery for the specified Ded
 
 ```
 aws ec2 modify-hosts \
-    --host-id {{h-06c2f189b4EXAMPLE}} \
+    --host-ids {{h-06c2f189b4EXAMPLE}} \
     --host-recovery {{on}}
 ```
 Output:
@@ -23981,13 +23981,18 @@ Input Length = 67
 Output Length = 152
 CertUtil: -encode command completed successfully.
 ```
+Contents of `UserData.base64.txt`:
+
+```
+IyEvYmluL2Jhc2gKeXVtIHVwZGF0ZSAteQpzZXJ2aWNlIGh0dHBkIHN0YXJ0CmNoa2NvbmZpZyBodHRwZCBvbgo=
+```
 Now you can reference that file in the following CLI command.
 
 ```
 aws ec2 modify-instance-attribute \
     --instance-id=i-09b5a14dbca622e76 \
     --attribute {{userData}} \
-    --value {{fileb://UserData.base64.txt}}
+    --value {{file://UserData.base64.txt}}
 ```
 This command produces no output.
 For more information, see [User Data and the AWS CLI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html#user-data-api-cli) in the *EC2 User Guide*.
@@ -24044,7 +24049,7 @@ The following `modify-instance-credit-specification` example modifies the credit
 
 ```
 aws ec2 modify-instance-credit-specification \
-    --instance-credit-specification {{"InstanceId=i-1234567890abcdef0,CpuCredits=unlimited"}}
+    --instance-credit-specifications {{"InstanceId=i-1234567890abcdef0,CpuCredits=unlimited"}}
 ```
 Output:
 
@@ -24105,7 +24110,7 @@ The following `modify-instance-event-window` example modifies the time range of 
 ```
 aws ec2 modify-instance-event-window \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
-    --time-range {{StartWeekDay=monday,StartHour=2,EndWeekDay=wednesday,EndHour=8}}
+    --time-ranges {{StartWeekDay=monday,StartHour=2,EndWeekDay=wednesday,EndHour=8}}
 ```
 Output:
 
@@ -24147,7 +24152,7 @@ The following `modify-instance-event-window` example modifies the time range of 
 ```
 aws ec2 modify-instance-event-window \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
-    --time-range '{{[{"StartWeekDay": "monday", "StartHour": 2, "EndWeekDay": "wednesday", "EndHour": 8},
+    --time-ranges '{{[{"StartWeekDay": "monday", "StartHour": 2, "EndWeekDay": "wednesday", "EndHour": 8},
         {"StartWeekDay": "thursday", "StartHour": 2, "EndWeekDay": "friday", "EndHour": 8}]}}'
 ```
 Output:
@@ -25098,7 +25103,7 @@ The following `modify-traffic-mirror-filter-network-services` example adds the A
 ```
 aws ec2 modify-traffic-mirror-filter-network-services \
     --traffic-mirror-filter-id {{tmf-04812ff784EXAMPLE}} \
-    --add-network-service {{amazon-dns}}
+    --add-network-services {{amazon-dns}}
 ```
 Output:
 
@@ -25816,7 +25821,7 @@ The following `modify-vpc-endpoint` example modifies interface endpoint `vpce-0f
 ```
 aws ec2 modify-vpc-endpoint \
     --vpc-endpoint-id {{vpce-0fe5b17a0707d6fa5}} \
-    --add-subnet-id {{subnet-d6fcaa8d}}
+    --add-subnet-ids {{subnet-d6fcaa8d}}
 ```
 Output:
 
@@ -26770,7 +26775,7 @@ The following `release-hosts` example releases a Dedicated host from your accoun
 
 ```
 aws ec2 release-hosts \
-    --host-id=h-0029d6e3cacf1b3da
+    --host-ids=h-0029d6e3cacf1b3da
 ```
 Output:
 
@@ -27752,7 +27757,7 @@ The following `revoke-security-group-egress` example command removes the rule th
 ```
 aws ec2 revoke-security-group-egress \
     --group-id {{sg-026c12253ce15eff7}} \
-    --ip-permissions {{[{IpProtocol=tcp,FromPort=80,ToPort=80,IpRanges=[{CidrIp=10.0.0.0/16}]}}
+    --ip-permissions '{{IpProtocol=tcp,FromPort=80,ToPort=80,IpRanges=[{CidrIp=10.0.0.0/16}]}}'
 ```
 This command produces no output.
 For more information, see [Security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) in the *Amazon EC2 User Guide*.

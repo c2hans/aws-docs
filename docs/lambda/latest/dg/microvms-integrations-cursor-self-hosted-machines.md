@@ -136,7 +136,7 @@ aws lambda-microvms list-microvms --image-identifier cursor-pool-worker
 | Image build fails (S3 or IAM) | Verify stack outputs ArtifactBucketName and BuildRoleArn; the zip must land in that bucket and the build role must be able to read it |
 | No MicroVM launches | Controller not running or unable to call RunMicrovm; confirm the cursor-pool-worker image exists and (for a local controller) that SpawnRoleArn is assumed |
 | Worker exits immediately | Guest is missing CURSOR\_API\_KEY (SSM /cursor-lambda-workers/cursor-api-key), or the /run hook did not start cursor-agent worker … start |
-| Exec format error on node | Image installed the wrong CLI architecture; MicroVMs here are aarch64 (arm64) |
+| Exec format error on node | CLI architecture mismatch. These images use ARM64 by default, so install the ARM64 build of the CLI. |
 | Service-account key reported invalid | CURSOR\_API\_ENDPOINT / CURSOR\_API\_URL were forwarded into the guest; these must stay unset so worker start uses the default auth host |
 | Image built before hooks enabled | Rebuild the MicroVM image so ready, validate, and run hooks are in the snapshot path |
 

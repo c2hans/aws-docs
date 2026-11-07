@@ -38,7 +38,56 @@ Once you have a ruleset definition (either recommended or your own), you call th
    "AdditionalRunOptions": {
       "CloudWatchMetricsEnabled": {{boolean}},
       "CompositeRuleEvaluationMethod": "{{string}}",
-      "ResultsS3Prefix": "{{string}}"
+      "CustomLogGroupPrefix": "{{string}}",
+      "DataQualityRuleResults": {
+         "CatalogTableConfig": {
+            "CatalogId": "{{string}}",
+            "DatabaseName": "{{string}}",
+            "S3Location": "{{string}}",
+            "TableName": "{{string}}"
+         },
+         "WriteDataQualityRuleResultsEnabled": {{boolean}}
+      },
+      "ObservationMode": "{{string}}",
+      "ObservationResults": {
+         "CatalogTableConfig": {
+            "CatalogId": "{{string}}",
+            "DatabaseName": "{{string}}",
+            "S3Location": "{{string}}",
+            "TableName": "{{string}}"
+         },
+         "WriteObservationResultsEnabled": {{boolean}}
+      },
+      "ObservationScope": "{{string}}",
+      "ProfilingResults": {
+         "CatalogTableConfig": {
+            "CatalogId": "{{string}}",
+            "DatabaseName": "{{string}}",
+            "S3Location": "{{string}}",
+            "TableName": "{{string}}"
+         },
+         "DistributionResults": {
+            "CatalogTableConfig": {
+               "CatalogId": "{{string}}",
+               "DatabaseName": "{{string}}",
+               "S3Location": "{{string}}",
+               "TableName": "{{string}}"
+            },
+            "WriteDistributionResultsEnabled": {{boolean}}
+         },
+         "WriteProfilingResultsEnabled": {{boolean}}
+      },
+      "ResultsS3Prefix": "{{string}}",
+      "RowLevelResults": {
+         "CatalogTableConfig": {
+            "CatalogId": "{{string}}",
+            "DatabaseName": "{{string}}",
+            "S3Location": "{{string}}",
+            "TableName": "{{string}}"
+         },
+         "MaxRowsToWrite": {{number}},
+         "ResultType": "{{string}}"
+      }
    },
    "ClientToken": "{{string}}",
    "DataSource": {

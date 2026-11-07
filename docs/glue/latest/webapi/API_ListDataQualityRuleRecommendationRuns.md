@@ -38,7 +38,10 @@ Lists the recommendation runs meeting the filter criteria.
       "StartedBefore": {{number}}
    },
    "MaxResults": {{number}},
-   "NextToken": "{{string}}"
+   "NextToken": "{{string}}",
+   "Tags": {
+      "{{string}}" : "{{string}}"
+   }
 }
 ```
 
@@ -65,6 +68,14 @@ A paginated token to offset the results.
 Type: String
 Required: No
 
+ ** [Tags](#API_ListDataQualityRuleRecommendationRuns_RequestSyntax) **   <a name="Glue-ListDataQualityRuleRecommendationRuns-request-Tags"></a>
+A list of key-value pair tags to filter recommendation runs.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 50 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: No
+
 ## Response Syntax
 <a name="API_ListDataQualityRuleRecommendationRuns_ResponseSyntax"></a>
 
@@ -73,6 +84,7 @@ Required: No
    "NextToken": "string",
    "Runs": [
       {
+         "CreatedRulesetName": "string",
          "DataSource": {
             "DataQualityGlueTable": {
                "AdditionalOptions": {
@@ -94,6 +106,7 @@ Required: No
                "TableName": "string"
             }
          },
+         "RecommendationMode": "string",
          "RunId": "string",
          "StartedOn": number,
          "Status": "string"

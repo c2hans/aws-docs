@@ -87,7 +87,7 @@ Record the following OIDC endpoints. You enter these values, together with the *
 Use your standard Okta domain (for example, `your-org.okta.com`) in these endpoints, not the `-admin` subdomain (`your-org-admin.okta.com`) shown in the address bar of the admin console. The `-admin` subdomain does not host the OAuth endpoints, so using it causes sign-in to fail with an HTTP 404 error.
 
 ## Step 2: Add the desktop connector with your identity provider configuration
-<a name="w2aac51c11c27c27c19"></a>
+<a name="w2aac51c53c15c27c27c19"></a>
 
 In the Amazon Quick console, add the desktop connector and enter the values that you recorded in Step 1.
 
@@ -129,7 +129,7 @@ Adding the desktop connector turns on desktop access for all users in your accou
 Adding the desktop connector is a one-time, account-level action. After the connector is enabled, all users in your account can sign in with your identity provider. Users don't need to turn anything on themselves.
 
 ## Step 3: Download, verify, and distribute the desktop application
-<a name="w2aac51c11c27c27c21"></a>
+<a name="w2aac51c53c15c27c27c21"></a>
 
 In this step, you install the desktop application, verify that enterprise sign-in works, and then distribute the application to your users.
 

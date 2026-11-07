@@ -65,7 +65,7 @@ The following `describe-load-balancer-policies` example describes the specified 
 ```
 aws elb describe-load-balancer-policies \
     --load-balancer-name {{my-load-balancer}} \
-    --policy-name {{my-authentication-policy}}
+    --policy-names {{my-authentication-policy}}
 ```
 Output:
 

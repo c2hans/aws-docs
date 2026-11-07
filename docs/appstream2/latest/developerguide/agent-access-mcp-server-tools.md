@@ -93,6 +93,8 @@ The app switcher is available only when the fleet's **Stream view** is set to **
 ## Session tools
 <a name="agent-access-mcp-tools-session"></a>
 
+The `close_session` tool is part of the stateless MCP protocol (version 2026-07-28). With the earlier MCP protocol versions, you end the session by closing the MCP client in your agent code, which sends an HTTP `DELETE` request instead. For more information, see [Session cleanup](agent-access-mcp-server-session-cleanup.md).
+
 **Note**
 To watch an agent while it works, code the agent to open a streaming URL in a browser. Keep the URL out of the model's context, because it grants session access. You can create the URL in one of two ways:
 Call the `CreateStreamingURL` API with the `stack`, `fleet`, and `userId` values from `get_session_info`, then open the returned URL in a browser.
@@ -103,3 +105,7 @@ In both cases, the agent's own code handles the URL, so it never exposes the ses
 Return information about the current session.
 Parameters: none.
 Returns the following identifier fields as the tool result: `mcpSessionId`, `stack`, `userId`, `workSpacesSessionId`, and `fleet`.
+
+`close_session`
+The agent calls this tool to end the current session. This closes the MCP session. By default, it does not expire the WorkSpaces Applications streaming session, and the streaming instance is preserved for reuse.
+Parameters: `expire_streaming_session` (optional, Boolean, default `false`). Set it to `true` to also expire the WorkSpaces Applications streaming session, which terminates the streaming instance and triggers the fleet's configured autoscaling policy. For more information about autoscaling, see [Fleet Auto Scaling for Amazon WorkSpaces Applications](autoscaling.md).

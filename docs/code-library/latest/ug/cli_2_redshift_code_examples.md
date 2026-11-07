@@ -139,7 +139,7 @@ The following `authorize-snapshot-access` example authorizes the AWS account `12
 
 ```
 aws redshift authorize-snapshot-access \
-    --snapshot-id {{my-snapshot-id}} \
+    --snapshot-identifier {{my-snapshot-id}} \
     --account-with-restore-access {{123456789111}}
 ```
 Output:
@@ -3458,7 +3458,7 @@ The following `revoke-snapshot-access` example revokes the authorization of the 
 
 ```
 aws redshift revoke-snapshot-access \
-    --snapshot-id {{my-snapshot-id}} \
+    --snapshot-identifier {{my-snapshot-id}} \
     --account-with-restore-access {{123456789111}}
 ```
 Output:

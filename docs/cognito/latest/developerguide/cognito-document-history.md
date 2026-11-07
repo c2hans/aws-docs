@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-do
 
 The following table describes important additions to the documentation for Amazon Cognito. We also make frequent minor updates to the documentation in response to the feedback that you send. To submit feedback, locate the **Feedback** link at the bottom of any page in Amazon Cognito documentation.
 
+For changes to the Amazon Cognito service itself, such as new features, behavior changes, deprecations, and new Regions, see [What's new in Amazon Cognito](cognito-whats-new.md).
+
 | Change | Description | Date |
 | --- |--- |--- |
 | [SCIM-compatible custom attribute names](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html#user-pool-settings-custom-attributes-scim) | Custom attribute names must now comply with the attribute-name rule of the System for Cross-domain Identity Management (SCIM) protocol in RFC 7644. Existing custom attributes aren't affected. | November 2, 2026 |

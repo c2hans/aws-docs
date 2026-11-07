@@ -14,6 +14,9 @@ Recommendation runs are automatically deleted after 90 days.
 
 ```
 {
+   "AdditionalRunOptions": {
+      "CustomLogGroupPrefix": "{{string}}"
+   },
    "ClientToken": "{{string}}",
    "CreatedRulesetName": "{{string}}",
    "DataQualitySecurityConfiguration": "{{string}}",
@@ -39,6 +42,7 @@ Recommendation runs are automatically deleted after 90 days.
       }
    },
    "NumberOfWorkers": {{number}},
+   "RecommendationMode": "{{string}}",
    "Role": "{{string}}",
    "Timeout": {{number}}
 }
@@ -50,6 +54,11 @@ Recommendation runs are automatically deleted after 90 days.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [AdditionalRunOptions](#API_StartDataQualityRuleRecommendationRun_RequestSyntax) **   <a name="Glue-StartDataQualityRuleRecommendationRun-request-AdditionalRunOptions"></a>
+Additional run options you can specify for a recommendation run.
+Type: [DataQualityRuleRecommendationRunAdditionalRunOptions](API_DataQualityRuleRecommendationRunAdditionalRunOptions.md) object
+Required: No
 
  ** [ClientToken](#API_StartDataQualityRuleRecommendationRun_RequestSyntax) **   <a name="Glue-StartDataQualityRuleRecommendationRun-request-ClientToken"></a>
 Used for idempotency and is recommended to be set to a random ID (such as a UUID) to avoid creating or starting multiple instances of the same resource.
@@ -82,8 +91,16 @@ The number of `G.1X` workers to be used in the run. The default is 5.
 Type: Integer
 Required: No
 
+ ** [RecommendationMode](#API_StartDataQualityRuleRecommendationRun_RequestSyntax) **   <a name="Glue-StartDataQualityRuleRecommendationRun-request-RecommendationMode"></a>
+The mode that AWS Glue Data Quality uses to recommend rules.
+The default is `BASIC`.
+Type: String
+Valid Values: `BASIC | ADVANCED`
+Required: No
+
  ** [Role](#API_StartDataQualityRuleRecommendationRun_RequestSyntax) **   <a name="Glue-StartDataQualityRuleRecommendationRun-request-Role"></a>
-An IAM role supplied to encrypt the results of the run.
+The IAM role that AWS Glue assumes to access resources for the run.
+For more information, see [Configure IAM permissions for AWS Glue Data Quality](https://docs.aws.amazon.com/glue/latest/dg/data-quality-authorization.html).
 Type: String
 Required: Yes
 

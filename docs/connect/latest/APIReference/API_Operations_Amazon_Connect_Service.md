@@ -369,6 +369,7 @@ The following actions are supported by Amazon Connect Service:
 +  [UpdateMetricContent](API_UpdateMetricContent.md)
 +  [UpdateMetricMetadata](API_UpdateMetricMetadata.md)
 +  [UpdateNotificationContent](API_UpdateNotificationContent.md)
++  [UpdateOutboundEmailContactMessage](API_UpdateOutboundEmailContactMessage.md)
 +  [UpdateParticipantAuthentication](API_UpdateParticipantAuthentication.md)
 +  [UpdateParticipantRoleConfig](API_UpdateParticipantRoleConfig.md)
 +  [UpdatePhoneNumber](API_UpdatePhoneNumber.md)

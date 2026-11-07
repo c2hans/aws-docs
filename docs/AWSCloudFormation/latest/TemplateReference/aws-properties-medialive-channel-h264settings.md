@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AdaptiveQuantization](#cfn-medialive-channel-h264settings-adaptivequantization)" : {{String}},
   "[AfdSignaling](#cfn-medialive-channel-h264settings-afdsignaling)" : {{String}},
+  "[AllowExplicitWeightedPrediction](#cfn-medialive-channel-h264settings-allowexplicitweightedprediction)" : {{String}},
   "[Bitrate](#cfn-medialive-channel-h264settings-bitrate)" : {{Integer}},
   "[BufFillPct](#cfn-medialive-channel-h264settings-buffillpct)" : {{Integer}},
   "[BufSize](#cfn-medialive-channel-h264settings-bufsize)" : {{Integer}},
@@ -74,6 +75,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AdaptiveQuantization](#cfn-medialive-channel-h264settings-adaptivequantization): {{String}}
   [AfdSignaling](#cfn-medialive-channel-h264settings-afdsignaling): {{String}}
+  [AllowExplicitWeightedPrediction](#cfn-medialive-channel-h264settings-allowexplicitweightedprediction): {{String}}
   [Bitrate](#cfn-medialive-channel-h264settings-bitrate): {{Integer}}
   [BufFillPct](#cfn-medialive-channel-h264settings-buffillpct): {{Integer}}
   [BufSize](#cfn-medialive-channel-h264settings-bufsize): {{Integer}}
@@ -132,6 +134,12 @@ The adaptive quantization. This allows intra-frame quantizers to vary to improve
 
 `AfdSignaling`  <a name="cfn-medialive-channel-h264settings-afdsignaling"></a>
 Indicates that AFD values will be written into the output stream. If afdSignaling is auto, the system tries to preserve the input AFD value (in cases where multiple AFD values are valid). If set to fixed, the AFD value is the value configured in the fixedAfd parameter.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AllowExplicitWeightedPrediction`  <a name="cfn-medialive-channel-h264settings-allowexplicitweightedprediction"></a>
+Specifies whether the encoder may apply explicit weighted prediction (EWP), an H.264 coding tool that can improve compression. EWP applies a scaling factor and offset to reference frames, which helps when brightness changes between frames, such as during a fade. When this setting is ENABLED, the encoder decides whether to apply EWP based on the output's other codec settings, such as profile and quality level. We recommend that you keep the default, ENABLED. When DISABLED, the encoder never applies EWP.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

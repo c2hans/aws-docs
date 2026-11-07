@@ -67,7 +67,7 @@ The following `create-distribution-configuration` example creates a distribution
 
 ```
 aws imagebuilder create-distribution-configuration \
-    --cli-input-json {{file:/create-distribution-configuration.json}}
+    --cli-input-json {{file://create-distribution-configuration.json}}
 ```
 Contents of `create-distribution-configuration.json`:
 
@@ -1360,7 +1360,7 @@ Contents of `tag-resource.json`:
 {
     "resourceArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-pipeline/mywindows2016pipeline",
     "tags": {
-        "KeyName: "KeyValue"
+        "KeyName": "KeyValue"
     }
 }
 ```
@@ -1494,7 +1494,7 @@ The following `update-infrastructure-configuration` example updates an infrastru
 
 ```
 aws imagebuilder update-infrastructure-configuration \
-    --cli-input-json {{file:/update-infrastructure-configuration.json}}
+    --cli-input-json {{file://update-infrastructure-configuration.json}}
 ```
 Contents of `update-infrastructure-configuration.json`:
 

@@ -12,6 +12,7 @@ Starts a column statistics task run schedule.
 
 ```
 {
+   "CatalogID": "{{string}}",
    "DatabaseName": "{{string}}",
    "TableName": "{{string}}"
 }
@@ -23,6 +24,13 @@ Starts a column statistics task run schedule.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CatalogID](#API_StartColumnStatisticsTaskRunSchedule_RequestSyntax) **   <a name="Glue-StartColumnStatisticsTaskRunSchedule-request-CatalogID"></a>
+The ID of the Data Catalog where the table resides. If none is supplied, the AWS account ID is used by default.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
 
  ** [DatabaseName](#API_StartColumnStatisticsTaskRunSchedule_RequestSyntax) **   <a name="Glue-StartColumnStatisticsTaskRunSchedule-request-DatabaseName"></a>
 The name of the database where the table resides.

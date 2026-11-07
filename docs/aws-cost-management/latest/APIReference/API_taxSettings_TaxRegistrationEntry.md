@@ -20,7 +20,7 @@ Required: Yes
  ** registrationType **   <a name="awscostmanagement-Type-taxSettings_TaxRegistrationEntry-registrationType"></a>
  Your tax registration type. This can be either `VAT` or `GST`.
 Type: String
-Valid Values: `VAT | GST | CPF | CNPJ | SST | TIN | NRIC | PAN | NIP`
+Valid Values: `VAT | GST | CPF | CNPJ | SST | TIN | NRIC | PAN | NIP | CUIT | CDI | RUT | NIE | CI`
 Required: Yes
 
  ** additionalTaxInformation **   <a name="awscostmanagement-Type-taxSettings_TaxRegistrationEntry-additionalTaxInformation"></a>

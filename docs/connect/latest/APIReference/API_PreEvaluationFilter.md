@@ -33,9 +33,11 @@ Valid Values: `EQUALS`
 Required: Yes
 
  ** ResourceType **   <a name="connect-Type-PreEvaluationFilter-ResourceType"></a>
-The type of resource to filter on. Valid values: `CONTACT`.
+The type of resource to filter on. Valid values:
++  `CONTACT` - Filter on attributes of the contact, such as tags assigned to the contact.
++  `CONTACT_EVALUATION` - Filter on attributes of the contact evaluation, such as tags assigned to the contact evaluation, for rules triggered on the `OnContactEvaluationSubmit` event source.
 Type: String
-Valid Values: `CONTACT`
+Valid Values: `CONTACT | CONTACT_EVALUATION`
 Required: Yes
 
 ## See Also

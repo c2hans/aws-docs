@@ -66,7 +66,7 @@ Use the training session APIs when you need:
 | --- | --- |
 | openai/gpt-oss-20b | us-east-1, us-west-2, ap-south-1 |
 | google/gemma-4-E2B-it | us-west-2 |
-| google/gemma-4-31B-it | us-west-2, ap-south-1 |
+| google/gemma-4-31B-it | us-east-1, us-west-2, ap-south-1 |
 | Qwen/Qwen3.6-27B | us-west-2, ap-south-1 |
 | Qwen/Qwen3.8-27B | us-west-2 |
 

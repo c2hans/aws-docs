@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/tnb/index.html
 title: 'AWS Telco Network Builder Documentation'
 canonical_url: https://docs.aws.amazon.com/tnb/
 source: aws-documentation
-generated_on: 2026-11-05
+generated_on: 2026-11-07
 ---
 
 # AWS Telco Network Builder Documentation

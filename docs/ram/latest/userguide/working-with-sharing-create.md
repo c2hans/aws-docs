@@ -78,6 +78,8 @@ If the selected managed permission has multiple versions, then AWS RAM automatic
 
    To display the actions that the managed permission allows, expand **View the policy template for this managed permission**.
 
+   If the managed permission that you select declares template parameters, the console prompts you to enter a value for each parameter. AWS RAM substitutes the values that you provide into the policy template when it applies permissions to the shared resources. For more information, see [Using parameterized managed permissions in AWS RAM](parameterized-managed-permissions.md).
+
 1. Choose **Next**.
 
 1. In **Step 3: Grant access to principals**, do the following:
@@ -152,6 +154,7 @@ Use the [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference
 
 **Note**
 If you want to use a customer managed permission with a resource type in this resource share, you can either use an existing customer managed permission or create a new customer managed permission. Make note of the ARN for the customer managed permission, and then create the resource share. For more information, see [Create a customer managed permission](create-customer-managed-permissions.md#create_cmp).
+If the managed permission declares template parameters, you must also include the `--permission-template-parameters` parameter to supply a value for each declared parameter. For more information, see [Using parameterized managed permissions in AWS RAM](parameterized-managed-permissions.md).
 
 ```
 $ aws ram create-resource-share \

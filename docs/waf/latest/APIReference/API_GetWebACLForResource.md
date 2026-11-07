@@ -132,6 +132,22 @@ Required: Yes
       "LabelNamespace": "string",
       "ManagedByFirewallManager": boolean,
       "MonetizationConfig": {
+         "ConnectedAccountConfigs": [
+            {
+               "ConnectedAccountArn": "string",
+               "PaymentNetworks": [
+                  {
+                     "Chain": "string",
+                     "Prices": [
+                        {
+                           "Amount": "string",
+                           "Currency": "string"
+                        }
+                     ]
+                  }
+               ]
+            }
+         ],
          "CryptoConfig": {
             "PaymentNetworks": [
                {

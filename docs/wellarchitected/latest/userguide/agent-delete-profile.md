@@ -7,7 +7,7 @@ AWS Well-Architected Agent is in preview release and is subject to change.
 # Deleting an agent profile
 <a name="agent-delete-profile"></a>
 
-**Important**
+**Warning**
  Deleting an agent profile also deletes all goals, application contexts, and recommendations in the profile. Before deleting, verify that you have saved any information you may need from the profile.
 
 ## Console
@@ -15,7 +15,7 @@ AWS Well-Architected Agent is in preview release and is subject to change.
 
 **To delete a profile**
 
-1. Choose **Agent profiles** in the left-hand navigation.
+1. Choose **Agent profiles** in the left navigation.
 
 1. Choose **Actions** on the profile, then **Delete profile**.
 
@@ -25,7 +25,7 @@ If the **Delete profile** option is unavailable (grayed out), termination protec
 
 **To disable termination protection**
 
-1. Choose **Agent profiles** in the left-hand navigation.
+1. Choose **Agent profiles** in the left navigation.
 
 1. Choose **Actions** on the profile, then **Edit profile**.
 

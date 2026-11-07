@@ -8,8 +8,8 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byo
 Bring Your Own Media (BYOM) for RDS for SQL Server lets you use your existing SQL Server licenses on Amazon RDS through Microsoft's License Mobility through Software Assurance benefit.
 
 You can license Microsoft SQL Server on Amazon RDS in two ways:
-+ **License Included** AWS provides the SQL Server license. The license fee is included in your RDS hourly rate.
-+ **Bring Your Own Media (BYOM)** You bring your existing SQL Server licenses through Microsoft's License Mobility through Software Assurance benefit. AWS does not charge a SQL Server license fee.
++ **License Included** – AWS provides the SQL Server license. The license fee is included in your Amazon RDS hourly rate.
++ **Bring Your Own Media (BYOM)** – You bring your existing SQL Server licenses through Microsoft's License Mobility through Software Assurance benefit. AWS does not charge a SQL Server license fee.
 
 Your use case and existing license agreements determine which model is more cost-effective for your workload. To use BYOM, you must have SQL Server licenses with active Software Assurance.
 

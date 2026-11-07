@@ -41,7 +41,7 @@ Mathematical expression and a list of attribute items specified in that expressi
 *Required*: Yes
 *Type*: Array of [AttributeItem](aws-properties-customerprofiles-calculatedattributedefinition-attributeitem.md)
 *Minimum*: `1`
-*Maximum*: `2`
+*Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Expression`  <a name="cfn-customerprofiles-calculatedattributedefinition-attributedetails-expression"></a>

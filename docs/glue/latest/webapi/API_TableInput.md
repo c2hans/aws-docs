@@ -24,6 +24,11 @@ Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 Required: No
 
+ ** FederatedTable **   <a name="Glue-Type-TableInput-FederatedTable"></a>
+A `FederatedTable` structure that references an entity outside the AWS Glue Data Catalog. Specify this field to create a federated table, which points to a table in an external metastore instead of describing data managed in the AWS Glue Data Catalog.
+Type: [FederatedTable](API_FederatedTable.md) object
+Required: No
+
  ** LastAccessTime **   <a name="Glue-Type-TableInput-LastAccessTime"></a>
 The last time that the table was accessed.
 Type: Timestamp

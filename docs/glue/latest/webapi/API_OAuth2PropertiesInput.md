@@ -26,9 +26,9 @@ Type: [OAuth2Credentials](API_OAuth2Credentials.md) object
 Required: No
 
  ** OAuth2GrantType **   <a name="Glue-Type-OAuth2PropertiesInput-OAuth2GrantType"></a>
-The OAuth2 grant type in the CreateConnection request. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, or `CLIENT_CREDENTIALS`.
+The OAuth2 grant type in the CreateConnection request. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, `REFRESH_TOKEN`, or `CLIENT_CREDENTIALS`.
 Type: String
-Valid Values: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER`
+Valid Values: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER | REFRESH_TOKEN`
 Required: No
 
  ** TokenUrl **   <a name="Glue-Type-OAuth2PropertiesInput-TokenUrl"></a>

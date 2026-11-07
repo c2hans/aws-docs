@@ -12,7 +12,7 @@ The Lustre metadata performance configuration of an Amazon FSx for Lustre file s
 
  ** Mode **   <a name="FSx-Type-FileSystemLustreMetadataConfiguration-Mode"></a>
 The metadata configuration mode for provisioning Metadata IOPS for the file system.
-+ In AUTOMATIC mode (supported only on SSD file systems), FSx for Lustre automatically provisions and scales the number of Metadata IOPS on your file system based on your file system storage capacity.
++ In AUTOMATIC mode, FSx for Lustre provisions and scales Metadata IOPS for you. For SSD file systems, the number is based on storage capacity. For Intelligent-Tiering file systems, it is based on throughput capacity.
 + In USER\_PROVISIONED mode, you can choose to specify the number of Metadata IOPS to provision for your file system.
 Type: String
 Valid Values: `AUTOMATIC | USER_PROVISIONED`
@@ -21,7 +21,7 @@ Required: Yes
  ** Iops **   <a name="FSx-Type-FileSystemLustreMetadataConfiguration-Iops"></a>
 The number of Metadata IOPS provisioned for the file system.
 + For SSD file systems, valid values are `1500`, `3000`, `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
-+ For Intelligent-Tiering file systems, valid values are `6000` and `12000`.
++ For Intelligent-Tiering file systems, valid values are `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
 Type: Integer
 Valid Range: Minimum value of 1500. Maximum value of 192000.
 Required: No

@@ -153,6 +153,12 @@ A resource to be created or added already exists.
 A message describing the problem.
 HTTP Status Code: 400
 
+ ** ConcurrentModificationException **
+Two processes are trying to modify a resource simultaneously.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 400
+
  ** EntityNotFoundException **
 A specified entity does not exist
  ** FromFederationSource **

@@ -145,7 +145,7 @@ The following `update-role-trust-policy` example updates the trust policy of a r
 
 ```
 aws emr-containers update-role-trust-policy \
-    --cluster {{example_cluster}} \
+    --cluster-name {{example_cluster}} \
     --namespace {{example_namespace}} \
     --role-name {{example_iam_role}}
 ```

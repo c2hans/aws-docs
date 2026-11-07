@@ -31,7 +31,7 @@ The following `batch-stop-job-run` example stops a job runs.
 ```
 aws glue batch-stop-job-run \
     --job-name {{"my-testing-job"}} \
-    --job-run-id {{jr_852f1de1f29fb62e0ba4166c33970803935d87f14f96cfdee5089d5274a61d3f}}
+    --job-run-ids {{jr_852f1de1f29fb62e0ba4166c33970803935d87f14f96cfdee5089d5274a61d3f}}
 ```
 Output:
 
@@ -60,19 +60,19 @@ The following `create-connection` example creates a connection in the AWS Glue D
 
 ```
 aws glue create-connection \
-    --connection-input '{{{ \
-        "Name":"conn-kafka-custom", \
-        "Description":"kafka connection with ssl to custom kafka", \
-        "ConnectionType":"KAFKA",  \
-        "ConnectionProperties":{  \
-            "KAFKA_BOOTSTRAP_SERVERS":"<Kafka-broker-server-url>:<SSL-Port>", \
-            "KAFKA_SSL_ENABLED":"true", \
-            "KAFKA_CUSTOM_CERT": "s3://amzn-s3-demo-bucket/prefix/cert-file.pem" \
-        }, \
-        "PhysicalConnectionRequirements":{ \
-            "SubnetId":"subnet-1234", \
-            "SecurityGroupIdList":["sg-1234"], \
-            "AvailabilityZone":"us-west-2a"} \
+    --connection-input '{{{
+        "Name":"conn-kafka-custom",
+        "Description":"kafka connection with ssl to custom kafka",
+        "ConnectionType":"KAFKA",
+        "ConnectionProperties":{
+            "KAFKA_BOOTSTRAP_SERVERS":"<Kafka-broker-server-url>:<SSL-Port>",
+            "KAFKA_SSL_ENABLED":"true",
+            "KAFKA_CUSTOM_CERT": "s3://amzn-s3-demo-bucket/prefix/cert-file.pem"
+        },
+        "PhysicalConnectionRequirements":{
+            "SubnetId":"subnet-1234",
+            "SecurityGroupIdList":["sg-1234"],
+            "AvailabilityZone":"us-west-2a"}
     }}}'
 ```
 This command produces no output.
@@ -92,7 +92,7 @@ The following `create-database` example creates a database in the AWS Glue Data 
 aws glue create-database \
     --database-input "{\"Name\":\"tempdb\"}" \
     --profile {{my_profile}} \
-    --endpoint {{https://glue.us-west-2.amazonaws.com}}
+    --endpoint-url {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining a Database in Your Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/define-database.html) in the *AWS Glue Developer Guide*.
@@ -111,13 +111,13 @@ The following `create-job` example creates a streaming job that runs a script st
 aws glue create-job \
     --name {{my-testing-job}} \
     --role {{AWSGlueServiceRoleDefault}} \
-    --command '{{{ \
-        "Name": "gluestreaming", \
-        "ScriptLocation": "s3://amzn-s3-demo-bucket/folder/" \
+    --command '{{{
+        "Name": "gluestreaming",
+        "ScriptLocation": "s3://amzn-s3-demo-bucket/folder/"
     }}}' \
-    --default-arguments '{{{ \
-        "--job-language":"scala", \
-        "--class":"GlueApp" \
+    --default-arguments '{{{
+        "--job-language":"scala",
+        "--class":"GlueApp"
     }}}' \
     --profile {{my-profile}}
 ```
@@ -193,25 +193,25 @@ The following `create-table` example creates a table in the AWS Glue Data Catalo
 ```
 aws glue create-table \
     --database-name {{tempdb}} \
-    --table-input  '{{{"Name":"test-kinesis-input", "StorageDescriptor":{ \
-            "Columns":[ \
-                {"Name":"sensorid", "Type":"int"}, \
-                {"Name":"currenttemperature", "Type":"int"}, \
+    --table-input  '{{{"Name":"test-kinesis-input", "StorageDescriptor":{
+            "Columns":[
+                {"Name":"sensorid", "Type":"int"},
+                {"Name":"currenttemperature", "Type":"int"},
                 {"Name":"status", "Type":"string"}
-            ], \
-            "Location":"my-testing-stream", \
-            "Parameters":{ \
-                "typeOfData":"kinesis","streamName":"my-testing-stream", \
-                "kinesisUrl":"https://kinesis.us-west-2.amazonaws.com" \
-            }, \
-            "SerdeInfo":{ \
-                "SerializationLibrary":"org.openx.data.jsonserde.JsonSerDe"} \
-        }, \
-        "Parameters":{ \
-            "classification":"json"} \
+            ],
+            "Location":"my-testing-stream",
+            "Parameters":{
+                "typeOfData":"kinesis","streamName":"my-testing-stream",
+                "kinesisUrl":"https://kinesis.us-west-2.amazonaws.com"
+            },
+            "SerdeInfo":{
+                "SerializationLibrary":"org.openx.data.jsonserde.JsonSerDe"}
+        },
+        "Parameters":{
+            "classification":"json"}
         }}}' \
     --profile {{my-profile}} \
-    --endpoint {{https://glue.us-west-2.amazonaws.com}}
+    --endpoint-url {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining Tables in the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/tables-described.html) in the *AWS Glue Developer Guide*.
@@ -221,25 +221,25 @@ The following `create-table` example creates a table in the AWS Glue Data Catalo
 ```
 aws glue create-table \
     --database-name {{tempdb}} \
-    --table-input  '{{{"Name":"test-kafka-input", "StorageDescriptor":{ \
-            "Columns":[ \
-                {"Name":"sensorid", "Type":"int"}, \
-                {"Name":"currenttemperature", "Type":"int"}, \
+    --table-input  '{{{"Name":"test-kafka-input", "StorageDescriptor":{
+            "Columns":[
+                {"Name":"sensorid", "Type":"int"},
+                {"Name":"currenttemperature", "Type":"int"},
                 {"Name":"status", "Type":"string"}
-            ], \
-            "Location":"glue-topic", \
-            "Parameters":{ \
-                "typeOfData":"kafka","topicName":"glue-topic", \
+            ],
+            "Location":"glue-topic",
+            "Parameters":{
+                "typeOfData":"kafka","topicName":"glue-topic",
                 "connectionName":"my-kafka-connection"
-            }, \
-            "SerdeInfo":{ \
-                "SerializationLibrary":"org.apache.hadoop.hive.serde2.OpenCSVSerde"} \
-        }, \
-        "Parameters":{ \
-            "separatorChar":","} \
+            },
+            "SerdeInfo":{
+                "SerializationLibrary":"org.apache.hadoop.hive.serde2.OpenCSVSerde"}
+        },
+        "Parameters":{
+            "separatorChar":","}
         }}}' \
     --profile {{my-profile}} \
-    --endpoint {{https://glue.us-west-2.amazonaws.com}}
+    --endpoint-url {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining Tables in the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/tables-described.html) in the *AWS Glue Developer Guide*.
@@ -249,21 +249,21 @@ The following `create-table` example creates a table in the AWS Glue Data Catalo
 ```
 aws glue create-table \
     --database-name {{tempdb}} \
-    --table-input  '{{{"Name":"s3-output", "StorageDescriptor":{ \
-            "Columns":[ \
-                {"Name":"s1", "Type":"string"}, \
-                {"Name":"s2", "Type":"int"}, \
+    --table-input  '{{{"Name":"s3-output", "StorageDescriptor":{
+            "Columns":[
+                {"Name":"s1", "Type":"string"},
+                {"Name":"s2", "Type":"int"},
                 {"Name":"s3", "Type":"string"}
-            ], \
-            "Location":"s3://amzn-s3-demo-bucket/", \
-            "SerdeInfo":{ \
-                "SerializationLibrary":"org.openx.data.jsonserde.JsonSerDe"} \
-        }, \
-        "Parameters":{ \
-            "classification":"json"} \
+            ],
+            "Location":"s3://amzn-s3-demo-bucket/",
+            "SerdeInfo":{
+                "SerializationLibrary":"org.openx.data.jsonserde.JsonSerDe"}
+        },
+        "Parameters":{
+            "classification":"json"}
         }}}' \
     --profile {{my-profile}} \
-    --endpoint {{https://glue.us-west-2.amazonaws.com}}
+    --endpoint-url {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining Tables in the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/tables-described.html) in the *AWS Glue Developer Guide*.
@@ -569,39 +569,39 @@ The following `get-plan` example retrieves the generated code for mapping column
 
 ```
 aws glue get-plan \
-    --mapping '{{[ \
-        { \
-            "SourcePath":"sensorid", \
-            "SourceTable":"anything", \
-            "SourceType":"int", \
-            "TargetPath":"sensorid", \
-            "TargetTable":"anything", \
-            "TargetType":"int" \
-        }, \
-        { \
-            "SourcePath":"currenttemperature", \
-            "SourceTable":"anything", \
-            "SourceType":"int", \
-            "TargetPath":"currenttemperature", \
-            "TargetTable":"anything", \
-            "TargetType":"int" \
-        }, \
-        { \
-            "SourcePath":"status", \
-            "SourceTable":"anything", \
-            "SourceType":"string", \
-            "TargetPath":"status", \
-            "TargetTable":"anything", \
-            "TargetType":"string" \
+    --mapping '{{[
+        {
+            "SourcePath":"sensorid",
+            "SourceTable":"anything",
+            "SourceType":"int",
+            "TargetPath":"sensorid",
+            "TargetTable":"anything",
+            "TargetType":"int"
+        },
+        {
+            "SourcePath":"currenttemperature",
+            "SourceTable":"anything",
+            "SourceType":"int",
+            "TargetPath":"currenttemperature",
+            "TargetTable":"anything",
+            "TargetType":"int"
+        },
+        {
+            "SourcePath":"status",
+            "SourceTable":"anything",
+            "SourceType":"string",
+            "TargetPath":"status",
+            "TargetTable":"anything",
+            "TargetType":"string"
         }]}}' \
-    --source '{{{ \
-        "DatabaseName":"tempdb", \
-        "TableName":"s3-source" \
+    --source '{{{
+        "DatabaseName":"tempdb",
+        "TableName":"s3-source"
     }}}' \
-    --sinks '{{[ \
-        { \
-            "DatabaseName":"tempdb", \
-            "TableName":"my-s3-sink" \
+    --sinks '{{[
+        {
+            "DatabaseName":"tempdb",
+            "TableName":"my-s3-sink"
         }]}}' \
     --language {{"scala"}} \
     --output {{"text"}}

@@ -111,7 +111,7 @@ You can use either `CmkSecretConfig` (with `SecretKey`) or `CustomSecretConfig` 
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FederatedIdentity`  <a name="cfn-datasync-locationobjectstorage-federatedidentity"></a>
-Property description not available.
+Specifies the federated identity configuration that allows DataSync to access your object storage using an OpenID Connect (OIDC) token instead of a long-term access key and secret key. Provide either `FederatedIdentity` or the `AccessKey`/`SecretKey` credentials, but not both.
 *Required*: No
 *Type*: [ObjectStorageFederatedIdentityConfig](aws-properties-datasync-locationobjectstorage-objectstoragefederatedidentityconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

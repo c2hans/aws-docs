@@ -382,7 +382,7 @@ The following `get-sampling-targets` example requests a sampling quota for rules
 
 ```
 aws xray get-sampling-targets \
-    --sampling-statistics-documents '{{[ { "RuleName": "base-scorekeep", "ClientID": "ABCDEF1234567890ABCDEF10", "Timestamp": "2018-07-07T00:20:06, "RequestCount": 110, "SampledCount": 20, "BorrowCount": 10 }, { "RuleName": "polling-scorekeep", 31, "BorrowCount": 0 } ]}}'
+    --sampling-statistics-documents '{{[ { "RuleName": "base-scorekeep", "ClientID": "ABCDEF1234567890ABCDEF10", "Timestamp": "2018-07-07T00:20:06", "RequestCount": 110, "SampledCount": 20, "BorrowCount": 10 }, { "RuleName": "polling-scorekeep", "ClientID": "ABCDEF1234567890ABCDEF10", "Timestamp": "2018-07-07T00:20:06", "RequestCount": 31, "SampledCount": 0, "BorrowCount": 0 } ]}}'
 ```
 Output:
 

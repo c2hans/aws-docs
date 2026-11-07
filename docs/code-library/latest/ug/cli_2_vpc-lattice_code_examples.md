@@ -642,7 +642,7 @@ The following `deregister-targets` example deregisters the specified target from
 
 ```
 aws vpc-lattice deregister-targets \
-    --targets {{i-07dd579bc5EXAMPLE}} \
+    --targets {{id=i-07dd579bc5EXAMPLE}} \
     --target-group-identifier {{tg-0eaa4b9ab4EXAMPLE}}
 ```
 Output:

@@ -589,7 +589,7 @@ aws cognito-idp admin-respond-to-auth-challenge \
     --client-id {{1example23456789}} \
     --challenge-name {{SOFTWARE_TOKEN_MFA}} \
     --challenge-responses {{USERNAME=diego@example.com,SOFTWARE_TOKEN_MFA_CODE=000000}} \
-    --session {{AYABeExample...}}
+    --session {{AYABeEXAMPLEsessionToken}}
 ```
 Output:
 
@@ -3116,7 +3116,7 @@ aws cognito-idp initiate-auth \
     --auth-flow {{USER_PASSWORD_AUTH}} \
     --client-id {{1example23456789}} \
     --analytics-metadata {{AnalyticsEndpointId=d70b2ba36a8c4dc5a04a0451aEXAMPLE}} \
-    --auth-parameters {{USERNAME=testuser,PASSWORD=[Password]}} \
+    --auth-parameters {{USERNAME=testuser,PASSWORD=ExamplePassword1!}} \
     --user-context-data {{EncodedData=mycontextdata}} \
     --client-metadata {{MyTestKey=MyTestValue}}
 ```
@@ -3771,8 +3771,8 @@ The following `respond-to-auth-challenge` example responds to a NEW\_PASSWORD\_R
 aws cognito-idp respond-to-auth-challenge \
     --client-id {{1example23456789}} \
     --challenge-name {{NEW_PASSWORD_REQUIRED}} \
-    --challenge-responses {{USERNAME=jane@example.com,NEW_PASSWORD=[Password]}} \
-    --session {{AYABeEv5HklEXAMPLE}}
+    --challenge-responses {{USERNAME=jane@example.com,NEW_PASSWORD=ExamplePassword1!}} \
+    --session {{AYABeEv5HklEXAMPLEsession}}
 ```
 Output:
 
@@ -3799,7 +3799,7 @@ The following `respond-to-auth-challenge` example chooses TOTP MFA as the MFA op
 ```
 aws cognito-idp respond-to-auth-challenge \
     --client-id {{1example23456789}} \
-    --session {{AYABeEv5HklEXAMPLE}} \
+    --session {{AYABeEv5HklEXAMPLEsession}} \
     --challenge-name {{SELECT_MFA_TYPE}} \
     --challenge-responses {{USERNAME=testuser,ANSWER=SOFTWARE_TOKEN_MFA}}
 ```
@@ -3808,7 +3808,7 @@ Output:
 ```
 {
     "ChallengeName": "SOFTWARE_TOKEN_MFA",
-    "Session": "AYABeEv5HklEXAMPLE",
+    "Session": "AYABeEv5HklEXAMPLEsession",
     "ChallengeParameters": {
         "FRIENDLY_DEVICE_NAME": "transparent"
     }
@@ -3821,7 +3821,7 @@ The following `respond-to-auth-challenge` example provides a TOTP MFA code and c
 ```
 aws cognito-idp respond-to-auth-challenge \
     --client-id {{1example23456789}} \
-    --session {{AYABeEv5HklEXAMPLE}} \
+    --session {{AYABeEv5HklEXAMPLEsession}} \
     --challenge-name {{SOFTWARE_TOKEN_MFA}} \
     --challenge-responses {{USERNAME=testuser,SOFTWARE_TOKEN_MFA_CODE=123456}}
 ```
@@ -4480,12 +4480,10 @@ Contents of `update-identity-provider.json`:
         "email_verified": "idp_email_verified",
         "username": "sub"
     },
-    "CreationDate": 1.701129701653E9,
     "IdpIdentifiers": [
         "corp",
         "dev"
     ],
-    "LastModifiedDate": 1.701129701653E9,
     "ProviderDetails": {
         "attributes_request_method": "GET",
         "attributes_url": "https://example.com/userInfo",

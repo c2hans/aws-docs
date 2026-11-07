@@ -157,7 +157,7 @@ The type of predefined worker that is allocated when this task runs. Accepts a v
 + If `WorkerType` is set, then `NumberOfWorkers` is required (and vice versa).
 +  `MaxCapacity` and `NumberOfWorkers` must both be at least 1.
 Type: String
-Valid Values: `Standard | G.1X | G.2X | G.025X | G.4X | G.8X | Z.2X`
+Valid Values: `Standard | G.1X | G.2X | G.4X | G.8X | G.025X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X`
 Required: No
 
 ## Response Syntax

@@ -30,7 +30,7 @@ The following `add-tags` example adds tags to the specified load balancer.
 
 ```
 aws elb add-tags \
-    --load-balancer-name {{my-load-balancer}} \
+    --load-balancer-names {{my-load-balancer}} \
     --tags {{"Key=project,Value=lima"}} {{"Key=department,Value=digital-media"}}
 ```
 This command produces no output.
@@ -636,7 +636,7 @@ The following `describe-load-balancer-policies` example describes the specified 
 ```
 aws elb describe-load-balancer-policies \
     --load-balancer-name {{my-load-balancer}} \
-    --policy-name {{my-authentication-policy}}
+    --policy-names {{my-authentication-policy}}
 ```
 Output:
 
@@ -873,7 +873,7 @@ The following `describe-load-balancers` example describes the specified load bal
 
 ```
 aws elb describe-load-balancers \
-    --load-balancer-name {{my-load-balancer}}
+    --load-balancer-names {{my-load-balancer}}
 ```
 The following example response is for an HTTPS load balancer in a VPC.
 Output:
@@ -982,7 +982,7 @@ The following `describe-tags` example describes the tags assigned to the specifi
 
 ```
 aws elb describe-tags \
-    --load-balancer-name {{my-load-balancer}}
+    --load-balancer-names {{my-load-balancer}}
 ```
 Output:
 
@@ -1182,7 +1182,7 @@ The following `remove-tags` example removes a tag from the specified load balanc
 
 ```
 aws elb remove-tags \
-    --load-balancer-name {{my-load-balancer}} \
+    --load-balancer-names {{my-load-balancer}} \
     --tags {{project}}
 ```
 This command produces no output.

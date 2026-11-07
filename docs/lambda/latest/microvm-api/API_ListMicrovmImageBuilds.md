@@ -20,11 +20,11 @@ GET /2025-09-09/microvm-images/{{imageIdentifier}}/versions/{{imageVersion}}/bui
 The request uses the following URI parameters.
 
  ** [architecture](#API_ListMicrovmImageBuilds_RequestSyntax) **   <a name="lambdamicrovm-ListMicrovmImageBuilds-request-uri-architecture"></a>
-Filters builds by target CPU architecture.
+Filters builds by target CPU architecture. Valid values are ARM\_64 and X86\_64.
 Valid Values: `ARM_64 | X86_64`
 
  ** [chipset](#API_ListMicrovmImageBuilds_RequestSyntax) **   <a name="lambdamicrovm-ListMicrovmImageBuilds-request-uri-chipset"></a>
-Filters builds by target chipset.
+Filters builds by target chipset. Valid values are GRAVITON and INTEL.
 Valid Values: `GRAVITON | INTEL`
 
  ** [chipsetGeneration](#API_ListMicrovmImageBuilds_RequestSyntax) **   <a name="lambdamicrovm-ListMicrovmImageBuilds-request-uri-chipsetGeneration"></a>

@@ -13,7 +13,7 @@ Configuration for inbound JWT-based authorization, specifying how incoming reque
  ** discoveryUrl **   <a name="bedrockagentcorecontrol-Type-CustomJWTAuthorizerConfiguration-discoveryUrl"></a>
 This URL is used to fetch OpenID Connect configuration or authorization server metadata for validating incoming tokens.
 Type: String
-Pattern: `.+/\.well-known/openid-configuration`
+Pattern: `[^\s?#]+/\.well-known/(openid-configuration|oauth-authorization-server)(/[^\s?#]+)?`
 Required: Yes
 
  ** advertisedScopeMapping **   <a name="bedrockagentcorecontrol-Type-CustomJWTAuthorizerConfiguration-advertisedScopeMapping"></a>

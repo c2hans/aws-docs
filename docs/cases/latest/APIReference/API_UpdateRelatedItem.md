@@ -37,6 +37,7 @@ The request uses the following URI parameters.
  ** [caseId](#API_connect-cases_UpdateRelatedItem_RequestSyntax) **   <a name="connect-connect-cases_UpdateRelatedItem-request-uri-caseId"></a>
 A unique identifier of the case.
 Length Constraints: Minimum length of 1. Maximum length of 500.
+Pattern: `[A-Za-z0-9\-._/:#=+-]*`
 Required: Yes
 
  ** [domainId](#API_connect-cases_UpdateRelatedItem_RequestSyntax) **   <a name="connect-connect-cases_UpdateRelatedItem-request-uri-domainId"></a>

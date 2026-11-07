@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/shield/index.html
 title: 'AWS Shield Documentation'
 canonical_url: https://docs.aws.amazon.com/shield/
 source: aws-documentation
-generated_on: 2026-11-05
+generated_on: 2026-11-06
 ---
 
 # AWS Shield Documentation

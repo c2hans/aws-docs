@@ -24,6 +24,12 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_connectcases-actions-as-permissions).
 
+- **   BatchCreateRelatedItem  **
+  - **IAM action:**  [cases:CreateRelatedItem](#list_connectcases-action-CreateRelatedItem)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   BatchGetCaseRule  **
   - **IAM action:**  [cases:BatchGetCaseRule](#list_connectcases-action-BatchGetCaseRule)
   - **Condition key:**
@@ -38,6 +44,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   BatchPutFieldOptions  **
   - **IAM action:**  [cases:BatchPutFieldOptions](#list_connectcases-action-BatchPutFieldOptions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   BatchUpdateCase  **
+  - **IAM action:**  [cases:UpdateCase](#list_connectcases-action-UpdateCase)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

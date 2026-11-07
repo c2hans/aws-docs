@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DataSync::LocationAzureBlob AzureOidcConfig
 <a name="aws-properties-datasync-locationazureblob-azureoidcconfig"></a>
 
-<a name="aws-properties-datasync-locationazureblob-azureoidcconfig-description"></a>The `AzureOidcConfig` property type specifies Property description not available. for an [AWS::DataSync::LocationAzureBlob](aws-resource-datasync-locationazureblob.md).
+External identity parameters for Azure Blob Storage.
 
 ## Syntax
 <a name="aws-properties-datasync-locationazureblob-azureoidcconfig-syntax"></a>
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-datasync-locationazureblob-azureoidcconfig-properties"></a>
 
 `ClientId`  <a name="cfn-datasync-locationazureblob-azureoidcconfig-clientid"></a>
-Property description not available.
+Azure client ID string.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$`
@@ -45,7 +45,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TenantId`  <a name="cfn-datasync-locationazureblob-azureoidcconfig-tenantid"></a>
-Property description not available.
+Azure tenant ID string.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$`

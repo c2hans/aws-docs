@@ -12,6 +12,11 @@ Retrieves information about the partitions in a table.
 
 ```
 {
+   "AuditContext": {
+      "AdditionalAuditContext": "{{string}}",
+      "AllColumnsRequested": {{boolean}},
+      "RequestedColumns": [ "{{string}}" ]
+   },
    "CatalogId": "{{string}}",
    "DatabaseName": "{{string}}",
    "ExcludeColumnSchema": {{boolean}},
@@ -34,6 +39,11 @@ Retrieves information about the partitions in a table.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [AuditContext](#API_GetPartitions_RequestSyntax) **   <a name="Glue-GetPartitions-request-AuditContext"></a>
+A structure containing the Lake Formation audit context.
+Type: [AuditContext](API_AuditContext.md) object
+Required: No
 
  ** [CatalogId](#API_GetPartitions_RequestSyntax) **   <a name="Glue-GetPartitions-request-CatalogId"></a>
 The ID of the Data Catalog where the partitions in question reside. If none is provided, the AWS account ID is used by default.

@@ -47,6 +47,9 @@ Content-type: application/json
    "agentRuntimeId": "string",
    "agentRuntimeName": "string",
    "agentRuntimeVersion": "string",
+   "allowedPorts": [
+      { ... }
+   ],
    "authorizerConfiguration": { ... },
    "capacityProviderConfiguration": {
       "capacityProviderArn": "string"
@@ -78,6 +81,8 @@ Content-type: application/json
    },
    "platformVersion": "string",
    "protocolConfiguration": {
+      "path": "string",
+      "port": number,
       "serverProtocol": "string"
    },
    "requestHeaderConfiguration": { ... },
@@ -121,6 +126,11 @@ The version of the AgentCore Runtime.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 5.
 Pattern: `([1-9][0-9]{0,4})`
+
+ ** [allowedPorts](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-allowedPorts"></a>
+The additional ports on the AgentCore Runtime that are reachable through the runtime's session URL.
+Type: Array of [AllowedPort](API_AllowedPort.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 5 items.
 
  ** [authorizerConfiguration](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-authorizerConfiguration"></a>
 The authorizer configuration for the AgentCore Runtime.
@@ -179,7 +189,7 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[^\s]+`
 
  ** [protocolConfiguration](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-protocolConfiguration"></a>
-The protocol configuration for an agent runtime. This structure defines how the agent runtime communicates with clients.
+The protocol configuration for the AgentCore Runtime, including the protocol, port, and path on which the agent server is available.
 Type: [ProtocolConfiguration](API_ProtocolConfiguration.md) object
 
  ** [requestHeaderConfiguration](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-requestHeaderConfiguration"></a>

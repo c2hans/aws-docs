@@ -107,7 +107,12 @@ After you enable SSH connections through Session Manager on a managed node, you 
             {
                 "Effect": "Allow",
                 "Action": "ssmmessages:OpenDataChannel",
-                "Resource": "arn:aws:ssm:*:*:session/${aws:userid}-*"
+                "Resource": "arn:aws:ssm:*:*:session/*",
+                "Condition": {
+                    "StringEquals": {
+                        "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                    }
+                }
             }
         ]
     }
@@ -143,7 +148,12 @@ After you enable SSH connections through Session Manager on a managed node, you 
             {
                 "Effect": "Allow",
                 "Action": "ssmmessages:OpenDataChannel",
-                "Resource": "arn:aws:ssm:*:*:session/${aws:userid}-*"
+                "Resource": "arn:aws:ssm:*:*:session/*",
+                "Condition": {
+                    "StringEquals": {
+                        "ssm:resourceTag/aws:ssmmessages:session-id": "${aws:userid}"
+                    }
+                }
             }
         ]
     }
