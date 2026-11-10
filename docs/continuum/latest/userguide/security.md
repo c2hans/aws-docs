@@ -16,5 +16,6 @@ This documentation helps you understand how to apply the shared responsibility m
 **Topics**
 + [Data protection in AWS Continuum](data-protection.md)
 + [Identity and access management for AWS Continuum](security-iam.md)
++ [Security for GitLab integrations in AWS Continuum](gitlab-integration-security.md)
 + [Compliance validation for AWS Continuum](compliance-validation.md)
 + [Resilience in AWS Continuum](disaster-recovery-resiliency.md)

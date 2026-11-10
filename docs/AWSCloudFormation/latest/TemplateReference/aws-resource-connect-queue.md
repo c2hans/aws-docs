@@ -124,7 +124,7 @@ The outbound email address ID for a specified queue.
 The Amazon Resource Names (ARN) of the of the quick connects available to agents who are working the queue.
 *Required*: No
 *Type*: Array of String
-*Minimum*: `1`
+*Minimum*: `0`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-connect-queue-status"></a>

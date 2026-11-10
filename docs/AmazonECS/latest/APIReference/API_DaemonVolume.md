@@ -15,6 +15,12 @@ The contents of the `host` parameter determine whether your bind mount host volu
 Type: [HostVolumeProperties](API_HostVolumeProperties.md) object
 Required: No
 
+ ** logDriverVolumeConfiguration **   <a name="ECS-Type-DaemonVolume-logDriverVolumeConfiguration"></a>
+The log driver volume configuration. With a log driver volume, the containers in a daemon task can read the log files that a log driver writes for the other tasks on the container instance. To read the log files, mount the volume into a container in the daemon task with `mountPoints`.
+Use `host` to bind mount a path on the container instance. Use `logDriverVolumeConfiguration` to read the log output of other tasks. You can't specify both for the same volume.
+Type: [LogDriverVolumeConfiguration](API_LogDriverVolumeConfiguration.md) object
+Required: No
+
  ** name **   <a name="ECS-Type-DaemonVolume-name"></a>
 The name of the volume. Up to 255 letters (uppercase and lowercase), numbers, underscores, and hyphens are allowed.
 Type: String

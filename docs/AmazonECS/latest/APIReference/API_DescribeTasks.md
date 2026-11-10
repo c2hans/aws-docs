@@ -215,6 +215,10 @@ Required: Yes
          ],
          "taskArn": "string",
          "taskDefinitionArn": "string",
+         "trustedExecutionSummary": {
+            "attestationPolicyStatus": "string",
+            "isolationMode": "string"
+         },
          "version": number
       }
    ]

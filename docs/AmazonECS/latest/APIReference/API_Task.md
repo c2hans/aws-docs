@@ -222,6 +222,12 @@ The ARN of the task definition that creates the task.
 Type: String
 Required: No
 
+ ** trustedExecutionSummary **   <a name="ECS-Type-Task-trustedExecutionSummary"></a>
+A summary of the trusted execution configuration for the task, including the isolation mode. This is a read-only view of the configuration that was set on the task definition.
+Trusted execution is supported only for Amazon ECS Managed Instances.
+Type: [TrustedExecutionSummary](API_TrustedExecutionSummary.md) object
+Required: No
+
  ** version **   <a name="ECS-Type-Task-version"></a>
 The version counter for the task. Every time a task experiences a change that starts a CloudWatch event, the version counter is incremented. If you replicate your Amazon ECS task state with CloudWatch Events, you can compare the version of a task reported by the Amazon ECS API actions with the version reported in CloudWatch Events for the task (inside the `detail` object) to verify that the version in your event stream is current.
 Type: Long

@@ -403,7 +403,7 @@ In PSTN Audio, you start a bot conversation with the `StartBotConversation` acti
     "Type": "StartBotConversation",
     "Parameters": {
         "CallId": "call-id-1",
-        "BotAliasArn": "arn:aws:lex:us-east-1:123456789:bot-alias/BOTID/ALIASID",
+        "BotAliasArn": "arn:aws:lex:us-east-1:123456789012:bot-alias/BOTID/ALIASID",
         "LocaleId": "en_US"
     }
 }

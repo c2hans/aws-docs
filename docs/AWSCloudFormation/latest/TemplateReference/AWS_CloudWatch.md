@@ -12,6 +12,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::CloudWatch::AccessProfile](aws-resource-cloudwatch-accessprofile.md)
 + [AWS::CloudWatch::Alarm](aws-resource-cloudwatch-alarm.md)
 + [AWS::CloudWatch::AlarmMuteRule](aws-resource-cloudwatch-alarmmuterule.md)
++ [AWS::CloudWatch::Alert](aws-resource-cloudwatch-alert.md)
 + [AWS::CloudWatch::AnomalyDetector](aws-resource-cloudwatch-anomalydetector.md)
 + [AWS::CloudWatch::CompositeAlarm](aws-resource-cloudwatch-compositealarm.md)
 + [AWS::CloudWatch::Dashboard](aws-resource-cloudwatch-dashboard.md)

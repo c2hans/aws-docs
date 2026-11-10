@@ -81,6 +81,8 @@ Content-type: application/json
                ],
                "TemplateId": "string"
             },
+            "EndAssociatedEmailsAction": {
+            },
             "EndAssociatedTasksAction": {
             },
             "EventBridgeAction": {

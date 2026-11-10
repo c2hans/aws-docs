@@ -19,9 +19,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[CustomActionDefaults](#cfn-quicksight-dashboard-assetoptions-customactiondefaults)" : {{VisualCustomActionDefaults}},
   "[ExcludedDataSetArns](#cfn-quicksight-dashboard-assetoptions-excludeddatasetarns)" : {{[ String, ... ]}},
   "[QBusinessInsightsStatus](#cfn-quicksight-dashboard-assetoptions-qbusinessinsightsstatus)" : {{String}},
   "[Timezone](#cfn-quicksight-dashboard-assetoptions-timezone)" : {{String}},
+  "[VisualMessages](#cfn-quicksight-dashboard-assetoptions-visualmessages)" : {{VisualMessages}},
   "[WeekStart](#cfn-quicksight-dashboard-assetoptions-weekstart)" : {{String}}
 }
 ```
@@ -30,15 +32,25 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-dashboard-assetoptions-syntax.yaml"></a>
 
 ```
+  [CustomActionDefaults](#cfn-quicksight-dashboard-assetoptions-customactiondefaults): {{
+    VisualCustomActionDefaults}}
   [ExcludedDataSetArns](#cfn-quicksight-dashboard-assetoptions-excludeddatasetarns): {{
     - String}}
   [QBusinessInsightsStatus](#cfn-quicksight-dashboard-assetoptions-qbusinessinsightsstatus): {{String}}
   [Timezone](#cfn-quicksight-dashboard-assetoptions-timezone): {{String}}
+  [VisualMessages](#cfn-quicksight-dashboard-assetoptions-visualmessages): {{
+    VisualMessages}}
   [WeekStart](#cfn-quicksight-dashboard-assetoptions-weekstart): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-quicksight-dashboard-assetoptions-properties"></a>
+
+`CustomActionDefaults`  <a name="cfn-quicksight-dashboard-assetoptions-customactiondefaults"></a>
+A list of visual custom actions for the analysis.
+*Required*: No
+*Type*: [VisualCustomActionDefaults](aws-properties-quicksight-dashboard-visualcustomactiondefaults.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ExcludedDataSetArns`  <a name="cfn-quicksight-dashboard-assetoptions-excludeddatasetarns"></a>
 A list of dataset ARNS to exclude from Dashboard Q&A.
@@ -59,6 +71,12 @@ Determines whether insight summaries from Amazon Q Business are allowed in Dashb
 Determines the timezone for the analysis.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VisualMessages`  <a name="cfn-quicksight-dashboard-assetoptions-visualmessages"></a>
+The configuration options for the messages that are displayed on visuals in the analysis.
+*Required*: No
+*Type*: [VisualMessages](aws-properties-quicksight-dashboard-visualmessages.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WeekStart`  <a name="cfn-quicksight-dashboard-assetoptions-weekstart"></a>

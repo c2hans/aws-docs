@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 <a name="harness-tools"></a>
 
 Tools are declarative. You list what the agent can call; AgentCore handles invocation, credentials, and results. The harness supports five tool types, plus the built-in filesystem and shell tools.
-+  **MCP servers:** Connect to any remote [Model Context Protocol](https://modelcontextprotocol.io) endpoint by URL. No Gateway required for simple cases.
++  ** [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers:** Connect to any remote MCP endpoint by URL. No Gateway required for simple cases.
 +  ** [AgentCore Gateway](gateway.md):** Governed connectivity to APIs and MCP servers with inbound/outbound auth, access control, and [policy enforcement](policy.md). Reference a gateway ARN and every tool configured on that gateway becomes available. Use Gateway when you need a managed, policy-backed tool surface.
 +  ** [AgentCore Browser](browser-tool.md):** Managed web browsing and automation.
 +  ** [AgentCore Code Interpreter](code-interpreter-tool.md):** Sandboxed Python/JavaScript/TypeScript code execution for data analysis and computation.
@@ -38,6 +38,11 @@ Supported patterns:
 
 ## Add tools
 <a name="_add_tools"></a>
+
+**Remote MCP security**
+Remote MCP connections originate inside the harness session microVM. MCP URLs can point to public or private endpoints that the runtime can reach.
+
+Before you invoke the harness for less-trusted application users, validate or replace caller-supplied tool configurations, including MCP URLs and headers. Scope the execution role and AgentCore Identity access to the resources and credentials the harness needs. For more information, see [Trust boundary and input validation](harness-security.md#harness-trust-boundary) and [MicroVM Metadata Service (MMDS)](security-credentials-management.md#mmds).
 
 **Example**
 Pass `tools` at create, update, or invoke time:

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 
 Prompt caches are per model. When a Claude model refuses a request and you retry the same conversation on a different model, the conversation prefix that was already cached for the first model is written into the new model's cache in full, at cache-write rates. Fallback credit removes this extra cost. The refusal carries a one-time credit token. When you include the token on the retry, the retry is billed as though the conversation had been on the fallback model from the start: the overlapping prefix is billed as cache-read tokens instead of cache-write tokens.
 
-To use fallback credit, include the beta flag `fallback-credit-2026-07-01` on both the original request and the retry. The earlier flag `fallback-credit-2026-06-01` is still accepted and behaves the same way. The `server-side-fallback-2026-07-01` flag is not supported on Amazon Bedrock and returns a `400` error.
+To use fallback credit, include the beta flag `fallback-credit-2026-07-01` on both the original request and the retry. The earlier flag `fallback-credit-2026-06-01` is still accepted and returns the same refusal fields. On Amazon Bedrock, a retry redeemed under `fallback-credit-2026-06-01` doesn't report `usage.fallback_credit`. Use `fallback-credit-2026-07-01` for new code. The `server-side-fallback-2026-07-01` flag is not supported on Amazon Bedrock and returns a `400` error.
 
 ## Supported models
 <a name="claude-messages-fallback-credit-supported-models"></a>
@@ -16,12 +16,15 @@ The following models issue a fallback credit token when they refuse a request. T
 
 | **Source model (issues the token)** | **Model ID** | **Valid fallback models (redeem the token)** |
 | --- | --- | --- |
-| Claude Fable 5 | anthropic.claude-fable-5 | Claude Opus 4.8 (anthropic.claude-opus-4-8) |
+| Claude Fable 5 | anthropic.claude-fable-5 | Claude Opus 5 (anthropic.claude-opus-5), Claude Opus 4.8 (anthropic.claude-opus-4-8) |
+| Claude Fable 5.1 | anthropic.claude-fable-5-1 | Claude Opus 5 (anthropic.claude-opus-5), Claude Opus 4.8 (anthropic.claude-opus-4-8) |
 | Claude Opus 5.5 | anthropic.claude-opus-5-5 | Claude Opus 5 (anthropic.claude-opus-5), Claude Opus 4.8 (anthropic.claude-opus-4-8) |
 | Claude Opus 5 | anthropic.claude-opus-5 | Claude Opus 4.8 (anthropic.claude-opus-4-8) |
 | Claude Sonnet 5.5 | anthropic.claude-sonnet-5-5 | Claude Sonnet 5 (anthropic.claude-sonnet-5) |
 
-Refusals from other models, including Claude Fable 5.1, Claude Mythos 5.1, and Claude Haiku 5.5, don't carry a fallback credit token. A retry after one of those refusals pays the full cost of writing the fallback model's prompt cache.
+Refusals from other models, including Claude Haiku 5.5, don't carry a fallback credit token. A retry after one of those refusals pays the full cost of writing the fallback model's prompt cache.
+
+A refusal from a source model doesn't always carry a token. When no credit is available for the refusal, `fallback_credit_token` and `fallback_has_prefill_claim` are both `null`. Check for a token before you build a redeeming retry.
 
 ## Supported endpoints
 <a name="claude-messages-fallback-credit-endpoints"></a>
@@ -31,9 +34,13 @@ Fallback credit works on both of the following endpoints. Where you pass the bet
 | **Endpoint** | **How to pass the beta flag** |
 | --- | --- |
 | bedrock-runtime (InvokeModel, InvokeModelWithResponseStream) | In the anthropic\_beta array of the request body. |
+| bedrock-runtime (/anthropic/v1/messages) | In the anthropic-beta HTTP header, or the betas parameter of the Anthropic SDK. |
 | bedrock-mantle (/anthropic/v1/messages) | In the anthropic-beta HTTP header, or the betas parameter of the Anthropic SDK. |
+| bedrock-runtime (Converse) | In the anthropic\_beta array of additionalModelRequestFields. |
 
 Fallback credit is available on each endpoint that the source model supports.
+
+With `Converse`, a refusal returns `stopReason: "content_filtered"`. To get the token, add `"/stop_details"` to `additionalModelResponseFieldPaths`, and pass `fallback_credit_token` on the retry in `additionalModelRequestFields`. `Converse` doesn't report `usage.fallback_credit`. To confirm that the credit applied, check that `cacheReadInputTokens` covers the conversation prefix and `cacheWriteInputTokens` doesn't.
 
 Redeem the token on the same endpoint that issued it. A token minted on `bedrock-mantle` can only be redeemed on `bedrock-mantle`, and a token minted on `bedrock-runtime` can only be redeemed on `bedrock-runtime`. A token sent to the other endpoint is rejected with a `request body ... does not match` error.
 
@@ -123,7 +130,7 @@ curl -X POST "https://bedrock-mantle.$BEDROCK_REGION.api.aws/anthropic/v1/messag
 | Target model | The retry must use a valid fallback model for the refused model. See [Supported models](#claude-messages-fallback-credit-supported-models). |
 | Fields that must match | system, messages, tools, tool\_choice, thinking, and cache\_control, plus output\_config, mcp\_servers, context\_management, and container if you use them. Send them as-is. Don't strip thinking or redacted\_thinking blocks from earlier turns. |
 | Fields that can change | model, max\_tokens, stop\_sequences, stream, metadata, and service\_tier. |
-| Beta flags | Send the same beta flags on the retry as on the refused request. A flag that is present on only one of the two requests causes a request body ... does not match error, even if the bodies are identical. Don't add or drop flags based on the target model. |
+| Beta flags | Send the same beta flags on the retry as on the refused request. A flag that is present on only one of the two requests causes a request body ... does not match error, even if the bodies are identical. Don't add or drop flags based on the target model. On models that include the 1M token context window by default, such as Claude Fable 5.1, Claude Fable 5, Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8, the context-1m-2025-08-07 flag has no effect. Omit it on both requests. |
 | Retry shape | Choose the retry body based on `fallback_has_prefill_claim`:+ `true` – The refused request body, unchanged, plus one appended `assistant` message whose `content` echoes the refused response's `content`. The fallback model continues the response from where the refused model stopped. Strip trailing whitespace from a final `text` block, and omit any client `tool_use` block that has no matching `tool_result`.<br />+ `false` – The refused request body, unchanged. The fallback model regenerates the response. |
 
 ## Error handling
@@ -177,11 +184,15 @@ A successfully redeemed retry also reports the redemption in `usage.fallback_cre
 
 If a redeemed retry shows no shift, the token was honored but there was nothing to reprice, for example because the fallback model's cache was already warm.
 
+Fallback credit reduces only the cost of the retry. The refused request itself is billed by its `stop_details.category`: before any output, `bio`, `frontier_llm`, and `reasoning_extraction` refusals are billed, and `cyber`, `general_harms`, and `null` refusals aren't. Amazon Bedrock always bills a mid-stream refusal. For details, see [Billing notes](model-cards-anthropic.md#model-cards-anthropic-billing-notes).
+
+A `reasoning_extraction` refusal has no recommended fallback model. Change the prompt instead of retrying on another model.
+
 ## Limitations
 <a name="claude-messages-fallback-credit-limitations"></a>
 + Refusals in batch inference jobs don't issue tokens. A token passed in a batch inference record is accepted but ignored.
 + Amazon Bedrock doesn't expose the `allowed_fallback_models` list. Use the table in [Supported models](#claude-messages-fallback-credit-supported-models).
-+ Server-side fallback (the `fallbacks` parameter and the `server-side-fallback-2026-07-01` flag) isn't supported on Amazon Bedrock. You build the retry yourself.
++ Server-side fallback (the `fallbacks` parameter and the `server-side-fallback-2026-07-01` flag) isn't supported on Amazon Bedrock. You build the retry yourself. Because of this, `stop_details.recommended_model` doesn't appear in Amazon Bedrock responses.
 + If the request used `output_config.format` or a `tool_choice` that forces tool use, and the refusal arrived after server tools had run, the token can't be redeemed by either retry shape. Retry without the token.
 
 ## Example workflow
@@ -199,6 +210,7 @@ The following Python example implements this workflow with `InvokeModel`, includ
 
 ```
 import json
+import time
 
 import boto3
 from botocore.exceptions import ClientError
@@ -226,12 +238,26 @@ def invoke(model_id, body):
     response = client.invoke_model(modelId=model_id, body=json.dumps(body))
     return json.loads(response["body"].read())
 
-def can_step_down(error):
+def invoke_with_transient_retry(model_id, body, tries=3):
+    # "redemption temporarily unavailable" is transient: resend the same body,
+    # with the same token, within the 5-minute window.
+    for attempt in range(tries):
+        try:
+            return invoke(model_id, body)
+        except ClientError as error:
+            transient = "redemption temporarily unavailable" in error.response["Error"]["Message"]
+            if not transient or attempt == tries - 1:
+                raise
+            time.sleep(2 ** attempt)
+
+def can_step_down(error, forfeit_next):
     message = error.response["Error"]["Message"]
-    return (
-        error.response["Error"]["Code"] == "ValidationException"
-        and "redemption temporarily unavailable" not in message
-    )
+    if error.response["Error"]["Code"] != "ValidationException":
+        return False
+    if "redemption temporarily unavailable" in message:
+        return False  # Still transient after retries: surface it, keep the token
+    # Drop the token only when the error names it.
+    return not forfeit_next or "fallback_credit_token" in message
 
 result = invoke(SOURCE_MODEL, request)
 details = result.get("stop_details") or {}
@@ -243,8 +269,9 @@ if result["stop_reason"] == "refusal" and token:
 
     # Prefer the continuation shape unless the claim is explicitly false.
     if details.get("fallback_has_prefill_claim") is not False and result["content"]:
-        echoed = result["content"]
-        if echoed[-1]["type"] == "text":
+        # Omit client tool_use blocks: they have no matching tool_result.
+        echoed = [block for block in result["content"] if block["type"] != "tool_use"]
+        if echoed and echoed[-1]["type"] == "text":
             echoed[-1]["text"] = echoed[-1]["text"].rstrip()
         attempts.append(
             {**exact_body, "messages": [*request["messages"], {"role": "assistant", "content": echoed}]}
@@ -255,10 +282,11 @@ if result["stop_reason"] == "refusal" and token:
 
     for body in attempts:
         try:
-            result = invoke(FALLBACK_MODEL, body)
+            result = invoke_with_transient_retry(FALLBACK_MODEL, body)
             break
         except ClientError as error:
-            if body is request or not can_step_down(error):
+            forfeit_next = attempts.index(body) == len(attempts) - 2
+            if body is request or not can_step_down(error, forfeit_next):
                 raise
 
 print(json.dumps({"stop_reason": result["stop_reason"], "usage": result["usage"]}, indent=2))

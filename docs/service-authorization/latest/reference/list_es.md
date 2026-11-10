@@ -1053,6 +1053,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_es-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateClone](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateClone.html)  **
+  - **Description:** Grants permission to manage an in-progress cloned blue/green upgrade of an OpenSearch Service domain
+  - **Resource types (\*required):** [domain\*](#list_es-resource-domain)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_es-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [UpdateDataSource](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateDataSource.html)  **
   - **Description:** Grants permission to update the data source for the OpenSearch Service domain
   - **Resource types (\*required):** [domain\*](#list_es-resource-domain)

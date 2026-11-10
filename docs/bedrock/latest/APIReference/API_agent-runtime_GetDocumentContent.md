@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 # GetDocumentContent
 <a name="API_agent-runtime_GetDocumentContent"></a>
 
-Retrieves the content of an ingested document from a knowledge base. Returns a pre-signed URL for secure document access.
+Retrieves the content of an ingested document from a knowledge base, or of an image embedded in the document. Returns a pre-signed URL for downloading the content. Use this operation to display the source of a `Retrieve` result.
 
 ## Request Syntax
 <a name="API_agent-runtime_GetDocumentContent_RequestSyntax"></a>
@@ -15,6 +15,7 @@ POST /knowledgebases/{{knowledgeBaseId}}/datasources/{{dataSourceId}}/documents/
 Content-type: application/json
 
 {
+   "mediaId": "{{string}}",
    "outputFormat": "{{string}}",
    "userContext": {
       "userId": "{{string}}"
@@ -50,8 +51,20 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [mediaId](#API_agent-runtime_GetDocumentContent_RequestSyntax) **   <a name="bedrock-agent-runtime_GetDocumentContent-request-mediaId"></a>
+The unique identifier (in UUID format) of an image embedded in the specified document. Set this parameter to the `_media_id` value in the metadata of the corresponding `Retrieve` result. If you specify this parameter, the response contains a pre-signed URL for the image instead of the document, and you must omit `outputFormat` or set it to `RAW`.
+Type: String
+Length Constraints: Fixed length of 36.
+Pattern: `[a-zA-Z0-9][a-zA-Z0-9-]{35}`
+Required: No
+
  ** [outputFormat](#API_agent-runtime_GetDocumentContent_RequestSyntax) **   <a name="bedrock-agent-runtime_GetDocumentContent-request-outputFormat"></a>
-The output format for the document content. `RAW` returns the original file. `EXTRACTED` returns parsed text as JSON. Defaults to `RAW`.
+The output format for the content. You can specify one of the following values:
+RAW
+Returns the original document, or the selected image if you specify `mediaId`.
+EXTRACTED
+Returns parsed document text as JSON.
+If you omit this parameter, the default is `RAW`. You can't use `EXTRACTED` with `mediaId`.
 Type: String
 Valid Values: `RAW | EXTRACTED`
 Required: No
@@ -83,15 +96,15 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [documentContentLength](#API_agent-runtime_GetDocumentContent_ResponseSyntax) **   <a name="bedrock-agent-runtime_GetDocumentContent-response-documentContentLength"></a>
-The size of the document content in bytes available at the pre-signed URL.
+The size, in bytes, of the content available at the pre-signed URL.
 Type: Long
 
  ** [mimeType](#API_agent-runtime_GetDocumentContent_ResponseSyntax) **   <a name="bedrock-agent-runtime_GetDocumentContent-response-mimeType"></a>
-The MIME type of the document content. For `RAW` format, this is the original file type (for example, `application/pdf`). For `EXTRACTED` format, this is always `application/json`.
+The MIME type of the returned content. For `RAW` format, this is the original file type (for example, `application/pdf`), or the image type (for example, `image/png`) if you specify `mediaId`. For `EXTRACTED` format, this is always `application/json`.
 Type: String
 
  ** [presignedUrl](#API_agent-runtime_GetDocumentContent_ResponseSyntax) **   <a name="bedrock-agent-runtime_GetDocumentContent-response-presignedUrl"></a>
-A pre-signed URL for downloading the document content. The URL expires after 5 minutes.
+A pre-signed URL for downloading the document content, or the selected image if you specify `mediaId`. The URL expires after 5 minutes.
 Type: String
 
 ## Errors
@@ -138,6 +151,37 @@ Content-type: application/json
 
 {
     "outputFormat": "RAW"
+}
+```
+
+### Retrieve an embedded image
+<a name="API_agent-runtime_GetDocumentContent_Example_2"></a>
+
+The following example shows the request body for retrieving an image embedded in a document. Specify the knowledge base, data source, and document in the request URI, as in the previous example, using the `documentId` from a `Retrieve` result. Set `mediaId` to the `_media_id` value from the metadata of the same result.
+
+#### Sample Request
+<a name="API_agent-runtime_GetDocumentContent_Example_2_Request"></a>
+
+```
+{
+    "outputFormat": "RAW",
+    "mediaId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+}
+```
+
+### Response for an embedded image
+<a name="API_agent-runtime_GetDocumentContent_Example_3"></a>
+
+The following example response contains a pre-signed URL for the image, the image's MIME type, and its size in bytes. The pre-signed URL is abbreviated.
+
+#### Sample Response
+<a name="API_agent-runtime_GetDocumentContent_Example_3_Response"></a>
+
+```
+{
+    "presignedUrl": "https://amzn-s3-demo-bucket1.s3.us-west-2.amazonaws.com/embedded-image.png?...",
+    "mimeType": "image/png",
+    "documentContentLength": 6800
 }
 ```
 

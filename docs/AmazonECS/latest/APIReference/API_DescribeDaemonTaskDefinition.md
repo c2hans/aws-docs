@@ -170,6 +170,9 @@ Required: Yes
             "host": {
                "sourcePath": "string"
             },
+            "logDriverVolumeConfiguration": {
+               "driver": "string"
+            },
             "name": "string"
          }
       ]

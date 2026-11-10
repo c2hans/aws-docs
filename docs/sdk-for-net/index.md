@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-net/index.html
 title: 'AWS SDK for .NET documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-net/
 source: aws-documentation
-generated_on: 2026-11-06
+generated_on: 2026-11-09
 ---
 
 # AWS SDK for .NET documentation

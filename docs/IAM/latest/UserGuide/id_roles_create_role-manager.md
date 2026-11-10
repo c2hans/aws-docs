@@ -76,6 +76,7 @@ For more information, see [PutAccountProperties](https://docs.aws.amazon.com/IAM
 
 Role manager supports role creation for the following AWS service consoles:
 + AWS Backup
++ Amazon Bedrock
 + AWS CloudFormation
 + Amazon CloudWatch
 + Amazon EKS

@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ContentType](#cfn-quicksight-dashboard-sheetdefinition-contenttype)" : {{String}},
+  "[CustomActionDefaults](#cfn-quicksight-dashboard-sheetdefinition-customactiondefaults)" : {{VisualCustomActionDefaults}},
   "[Description](#cfn-quicksight-dashboard-sheetdefinition-description)" : {{String}},
   "[FilterControls](#cfn-quicksight-dashboard-sheetdefinition-filtercontrols)" : {{[ FilterControl, ... ]}},
   "[Images](#cfn-quicksight-dashboard-sheetdefinition-images)" : {{[ SheetImage, ... ]}},
@@ -39,6 +40,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ContentType](#cfn-quicksight-dashboard-sheetdefinition-contenttype): {{String}}
+  [CustomActionDefaults](#cfn-quicksight-dashboard-sheetdefinition-customactiondefaults): {{
+    VisualCustomActionDefaults}}
   [Description](#cfn-quicksight-dashboard-sheetdefinition-description): {{String}}
   [FilterControls](#cfn-quicksight-dashboard-sheetdefinition-filtercontrols): {{
     - FilterControl}}
@@ -69,6 +72,12 @@ The layout content type of the sheet. Choose one of the following options:
 *Required*: No
 *Type*: String
 *Allowed values*: `PAGINATED | INTERACTIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CustomActionDefaults`  <a name="cfn-quicksight-dashboard-sheetdefinition-customactiondefaults"></a>
+A list of visual custom actions for the sheet.
+*Required*: No
+*Type*: [VisualCustomActionDefaults](aws-properties-quicksight-dashboard-visualcustomactiondefaults.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-quicksight-dashboard-sheetdefinition-description"></a>

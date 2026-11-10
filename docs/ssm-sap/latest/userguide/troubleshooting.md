@@ -15,7 +15,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/troubleshooting
 + [Maximum limit of resources](#troubleshoot7)
 + [Unauthorized user](#troubleshoot8)
 + [REFRESH\_FAILED; Database connection mismatch](#troubleshoot9)
-+ [Unsupported setup](#troubleshoot10)
 + [Input parameter errors](#troubleshoot11)
 + [Application status: FAILED](#troubleshoot12)
 + [StartApplication AccessDeniedException](#troubleshoot13)
@@ -127,13 +126,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/troubleshooting
 ```
 aws ssm-sap update-application-settings --application-id <ApplicationId> --database-arn <DatabaseArn>
 ```
-
-## Unsupported setup
-<a name="troubleshoot10"></a>
-
- **Problem** – `SSM-SAP only supports single-node SAP_ABAP deployment.`
-
- **Resolution** – Systems Manager for SAP currently only supports single-node SAP ABAP deployment registration. Your SAP ABAP application must be connected to a single-node SAP HANA instance that resides in the same Amazon EC2 instance. All components belonging to the SAP ABAP application (ASCS, dialog instances, etc.) must also reside on the same Amazon EC2 instance.
 
 ## Input parameter errors
 <a name="troubleshoot11"></a>

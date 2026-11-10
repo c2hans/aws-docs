@@ -287,6 +287,7 @@ The `AWSServiceRoleForAIDevOps` service-linked role trusts the `aidevops.amazona
 
 The role uses the managed policy `AWSServiceRoleForAIDevOpsPolicy` with the following permissions:
 + `cloudwatch:PutMetricData` – Publish usage metrics to the `AWS/AIDevOps` CloudWatch namespace. Scoped by a `cloudwatch:namespace` condition to only allow the `AWS/AIDevOps` namespace.
++ `cloudwatch:GetMetricData` – Read usage metrics from the `AWS/AIDevOps` CloudWatch namespace. This read-only action applies to all resources because the CloudWatch API does not support resource-level permissions or the `cloudwatch:namespace` condition for `GetMetricData`.
 + `vpc-lattice:CreateResourceGateway` – Create VPC Lattice resource gateways for private connections. Scoped by an `aws:RequestTag/AWSAIDevOpsManaged` condition so the service can only create resource gateways that carry the `AWSAIDevOpsManaged` tag.
 + `vpc-lattice:TagResource` – Tag VPC Lattice resource gateways. Scoped by an `aws:RequestTag/AWSAIDevOpsManaged` condition.
 + `vpc-lattice:DeleteResourceGateway` – Delete VPC Lattice resource gateways. Scoped by an `aws:ResourceTag/AWSAIDevOpsManaged` condition so the service can only delete resource gateways it created.

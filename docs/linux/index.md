@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/linux/index.html
 title: 'Amazon Linux Documentation'
 canonical_url: https://docs.aws.amazon.com/linux/
 source: aws-documentation
-generated_on: 2026-11-07
+generated_on: 2026-11-09
 ---
 
 # Amazon Linux Documentation

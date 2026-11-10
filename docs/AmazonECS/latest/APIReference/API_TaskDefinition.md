@@ -178,6 +178,12 @@ The short name or full Amazon Resource Name (ARN) of the AWS Identity and Access
 Type: String
 Required: No
 
+ ** trustedExecutionConfiguration **   <a name="ECS-Type-TaskDefinition-trustedExecutionConfiguration"></a>
+The trusted execution configuration for tasks that use this task definition, including the isolation mode and, if configured, an attestation policy.
+Trusted execution is supported only for Amazon ECS Managed Instances.
+Type: [TrustedExecutionConfiguration](API_TrustedExecutionConfiguration.md) object
+Required: No
+
  ** volumes **   <a name="ECS-Type-TaskDefinition-volumes"></a>
 The list of data volume definitions for the task. For more information, see [Using data volumes in tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_data_volumes.html) in the *Amazon Elastic Container Service Developer Guide*.
 The `host` and `sourcePath` parameters aren't supported for tasks run on AWS Fargate.

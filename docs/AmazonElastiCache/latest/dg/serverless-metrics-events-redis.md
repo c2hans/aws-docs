@@ -31,7 +31,7 @@ The `AWS/ElastiCache` namespace includes the following CloudWatch metrics for yo
 | SuccessfulReadRequestLatency | Latency of successful read requests. | Microseconds |
 | SuccessfulWriteRequestLatency | Latency of successful write requests | Microseconds |
 | TotalCmdsCount | Total count of all commands executed on your cache | Count |
-| CacheHitRate | Indicates the hit rate of your cache. This is calculated using `cache_hits` and `cache_misses` statistics in the following way: `cache_hits /(cache_hits + cache_misses)`. | Percent |
+| CacheHitRate | The hit rate of your cache, expressed as a ratio from 0 to 1. This is calculated as `CacheHits / (CacheHits + CacheMisses)` for each one-minute interval. For example, a value of 0.8 means that 80 percent of read-only key lookups were hits.<br />When you use the Average statistic over periods longer than one minute, the result is an average of the per-minute ratios. To get the exact hit rate over a longer period, use CloudWatch metric math: `CacheHits / (CacheHits + CacheMisses)`, with the Sum statistic for both metrics. To view it as a percentage, multiply by 100.<br />On node-based clusters, `CacheHitRate` is reported as a percentage from 0 to 100. If you reuse dashboards or alarms from a node-based cluster, divide their `CacheHitRate` thresholds by 100. | None |
 | CacheHits | The number of successful read-only key lookups in the cache. | Count |
 | CacheMisses | The number of unsuccessful read-only key lookups in the cache. | Count |
 | CurrConnections | The number of client connections to your cache. | Count |

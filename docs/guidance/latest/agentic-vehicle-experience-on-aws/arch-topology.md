@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experience-on-aws/arch-topology.html
 ---
 
-# Deployment topology
+# AVX deployment topology
 <a name="arch-topology"></a>
 
 AVX deploys as a single-region application, co-located with CMS, ADP, and Amazon Connect in `us-east-1`. All components — the AgentCore runtimes, the Lambda proxy handlers, the API Gateway, the Cognito user pools, and the CDK-provisioned infrastructure stacks — run in the same region.

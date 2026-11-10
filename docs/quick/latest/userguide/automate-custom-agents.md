@@ -51,11 +51,11 @@ The structured output configuration for Custom agents follows the same format as
 ## Using Custom Models in Custom Agent (Bring your own bedrock model)
 <a name="custom-agent-byom"></a>
 
-Integrate your desired or custom fine-tuned models hosted in AWS Bedrock with Quick Suite automation workflows.
+Integrate your desired or custom fine-tuned models hosted in Amazon Bedrock with Quick automation workflows.
 
 Before you begin, ensure you have the following:
-+ A fine-tuned model deployed and accessible in AWS Bedrock
-+ Quick Suite Admin access for creating connectors
++ A fine-tuned model deployed and accessible in Amazon Bedrock
++ Quick Admin access for creating connectors
 + An IAM role with Bedrock permissions for invoking models
 + Your model ID (for example, `us.anthropic.claude-3-5-sonnet-20241022-v2:0`)
 
@@ -84,7 +84,7 @@ Add and configure a custom agent to use your fine-tuned model:
 Once configured, your custom agent uses the fine-tuned model to process requests according to the instructions you provided. You can now incorporate this agent into your Quick Automate workflows.
 
 **Note**
-Ensure your model ID is correctly formatted and matches the model deployed in your AWS Bedrock account. You can find your model ID in the AWS Bedrock console under your provisioned models.
+Ensure your model ID is correctly formatted and matches the model deployed in your Amazon Bedrock account. You can find your model ID in the Amazon Bedrock console under your provisioned models.
 
 ## Custom agent testing
 <a name="custom-agent-testing"></a>

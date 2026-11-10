@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experience-on-aws/connect-channels.html
 ---
 
-# Channels and entry points
+# AVX channels and Amazon Connect entry points
 <a name="connect-channels"></a>
 
 AVX has two channels, voice and text, and both run in the tenant’s app or web surface. Amazon Connect is where a conversation goes when it needs a person. Both channels reach the same supervisor, and both escalate the same way: the P0 or P1 card, then `/escalate`, then a Connect chat. A phone rings only for the P0 callback.

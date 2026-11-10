@@ -222,6 +222,10 @@ You can specify a Docker networking mode for the containers in your task definit
       }
    ],
    "taskRoleArn": "{{string}}",
+   "trustedExecutionConfiguration": {
+      "attestationPolicy": "{{string}}",
+      "isolationMode": "{{string}}"
+   },
    "volumes": [
       {
          "configuredAtLaunch": {{boolean}},
@@ -410,6 +414,12 @@ Required: No
  ** [taskRoleArn](#API_RegisterTaskDefinition_RequestSyntax) **   <a name="ECS-RegisterTaskDefinition-request-taskRoleArn"></a>
 The short name or full Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role. For more information, see [IAM Roles for Tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html) in the *Amazon Elastic Container Service Developer Guide*.
 Type: String
+Required: No
+
+ ** [trustedExecutionConfiguration](#API_RegisterTaskDefinition_RequestSyntax) **   <a name="ECS-RegisterTaskDefinition-request-trustedExecutionConfiguration"></a>
+The trusted execution configuration for tasks that use this task definition, including the isolation mode and, if configured, an attestation policy.
+Trusted execution is supported only for Amazon ECS Managed Instances.
+Type: [TrustedExecutionConfiguration](API_TrustedExecutionConfiguration.md) object
 Required: No
 
  ** [volumes](#API_RegisterTaskDefinition_RequestSyntax) **   <a name="ECS-RegisterTaskDefinition-request-volumes"></a>
@@ -645,6 +655,10 @@ Required: No
       "status": "string",
       "taskDefinitionArn": "string",
       "taskRoleArn": "string",
+      "trustedExecutionConfiguration": {
+         "attestationPolicy": "string",
+         "isolationMode": "string"
+      },
       "volumes": [
          {
             "configuredAtLaunch": boolean,

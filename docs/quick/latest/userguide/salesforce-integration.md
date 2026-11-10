@@ -257,7 +257,7 @@ If you are using user authentication, enter the following connection details:
 | Name | A descriptive name (for example, "Salesforce ECA") |
 | Network | Public network |
 | Auth Type | Custom OAuth app |
-| Base URL | https://{{<your-domain>}}.my.salesforce.com/services/data/v60.0 |
+| Base URL | https://api.salesforce.com/platform/mcp/v1/platform/headless-360 |
 | Client ID | Consumer Key from Step 3 |
 | Client Secret | Consumer Secret from Step 3 |
 | Token URL | https://{{<your-domain>}}.my.salesforce.com/services/oauth2/token |
@@ -278,7 +278,7 @@ If you are using service authentication, enter the following connection details:
 | Name | A descriptive name (for example, "Salesforce Service Auth") |
 | Network | Public network |
 | Auth Type | Custom OAuth (Service Auth) |
-| Base URL | https://{{<your-domain>}}.my.salesforce.com/services/data/v60.0 |
+| Base URL | https://api.salesforce.com/platform/mcp/v1/platform/headless-360 |
 | Client ID | Consumer Key from Step 3 |
 | Client Secret | Consumer Secret from Step 3 |
 | Token URL | https://{{<your-domain>}}.my.salesforce.com/services/oauth2/token |

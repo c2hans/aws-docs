@@ -15,4 +15,4 @@ Amazon Chime SDK Voice Connector and Amazon Connect Customer are both voice tele
 + [Amazon Chime SDK Voice Connector and Amazon Connect Customer feature comparison](feature-comparison.md)
 + [Amazon Chime SDK Voice Connector and Amazon Connect Customer integrations](vc-connect-integrations.md)
 + [Using Amazon Chime SDK Voice Connector as a stepping stone to Amazon Connect Customer](stepping-stone.md)
-+ [Getting started](choosing-getting-started.md)
++ [Getting started with a telephony service](choosing-getting-started.md)

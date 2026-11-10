@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experience-on-aws/arch-request-flow.html
 ---
 
-# Request and data flow
+# AVX request and data flow
 <a name="arch-request-flow"></a>
 
 Regardless of the entry channel, every AVX interaction follows the same high-level flow.

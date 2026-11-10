@@ -114,7 +114,15 @@ For more information, see [Tool use](tool-use.html).
 
 Claude Fable 5.1 includes blocking classifiers for dual-use content in cybersecurity and life sciences. When a classifier blocks a request, the API returns a standard HTTP 200 response with `stop_reason: "refusal"` and a `stop_details` object containing the restriction category. Refusal rates on this model are materially higher than on previous Claude models.
 
-Customers should handle `stop_reason: "refusal"` as a primary response path. Prompt-stage refusals (blocked before inference begins) are not billed. Mid-stream refusals (blocked after partial output) are billed for tokens generated before the block.
+Customers should handle `stop_reason: "refusal"` as a primary response path. Whether a refused request is billed depends on its category and on whether output had started. For details, see [Billing notes](model-cards-anthropic.md#model-cards-anthropic-billing-notes).
+
+**Fallback credit for refused requests (beta)**
+
+When Claude Fable 5.1 refuses a request, the response can include a fallback credit token. Redeem the token when you retry the same request on a fallback model, and the retry is billed for the cached conversation prefix at cache-read rates instead of cache-write rates. Not every refusal carries a token. For more information, see [Fallback credit for refused requests (beta)](claude-messages-fallback-credit.html).
+
+| **Supported endpoints** | **Beta value** | **Valid fallback models** |
+| --- | --- | --- |
+| bedrock-runtime | fallback-credit-2026-07-01 | Claude Opus 5 (anthropic.claude-opus-5), Claude Opus 4.8 (anthropic.claude-opus-4-8) |
 
 ## Pricing
 <a name="model-card-anthropic-claude-fable-5-1-pricing"></a>

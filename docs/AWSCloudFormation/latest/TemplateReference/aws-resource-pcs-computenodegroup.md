@@ -26,12 +26,15 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[CustomLaunchTemplate](#cfn-pcs-computenodegroup-customlaunchtemplate)" : {{CustomLaunchTemplate}},
       "[IamInstanceProfileArn](#cfn-pcs-computenodegroup-iaminstanceprofilearn)" : {{String}},
       "[InstanceConfigs](#cfn-pcs-computenodegroup-instanceconfigs)" : {{[ InstanceConfig, ... ]}},
+      "[LaunchTemplateMode](#cfn-pcs-computenodegroup-launchtemplatemode)" : {{String}},
       "[Name](#cfn-pcs-computenodegroup-name)" : {{String}},
       "[NodeLifecycleActions](#cfn-pcs-computenodegroup-nodelifecycleactions)" : {{NodeLifecycleActions}},
       "[PurchaseOption](#cfn-pcs-computenodegroup-purchaseoption)" : {{String}},
       "[ScalingConfiguration](#cfn-pcs-computenodegroup-scalingconfiguration)" : {{ScalingConfiguration}},
+      "[SecurityGroupIds](#cfn-pcs-computenodegroup-securitygroupids)" : {{[ String, ... ]}},
       "[SlurmConfiguration](#cfn-pcs-computenodegroup-slurmconfiguration)" : {{SlurmConfiguration}},
       "[SpotOptions](#cfn-pcs-computenodegroup-spotoptions)" : {{SpotOptions}},
+      "[SshKeyName](#cfn-pcs-computenodegroup-sshkeyname)" : {{String}},
       "[SubnetIds](#cfn-pcs-computenodegroup-subnetids)" : {{[ String, ... ]}},
       "[Tags](#cfn-pcs-computenodegroup-tags)" : {{String}}
     }
@@ -51,16 +54,20 @@ Properties:
   [IamInstanceProfileArn](#cfn-pcs-computenodegroup-iaminstanceprofilearn): {{String}}
   [InstanceConfigs](#cfn-pcs-computenodegroup-instanceconfigs): {{
     - InstanceConfig}}
+  [LaunchTemplateMode](#cfn-pcs-computenodegroup-launchtemplatemode): {{String}}
   [Name](#cfn-pcs-computenodegroup-name): {{String}}
   [NodeLifecycleActions](#cfn-pcs-computenodegroup-nodelifecycleactions): {{
     NodeLifecycleActions}}
   [PurchaseOption](#cfn-pcs-computenodegroup-purchaseoption): {{String}}
   [ScalingConfiguration](#cfn-pcs-computenodegroup-scalingconfiguration): {{
     ScalingConfiguration}}
+  [SecurityGroupIds](#cfn-pcs-computenodegroup-securitygroupids): {{
+    - String}}
   [SlurmConfiguration](#cfn-pcs-computenodegroup-slurmconfiguration): {{
     SlurmConfiguration}}
   [SpotOptions](#cfn-pcs-computenodegroup-spotoptions): {{
     SpotOptions}}
+  [SshKeyName](#cfn-pcs-computenodegroup-sshkeyname): {{String}}
   [SubnetIds](#cfn-pcs-computenodegroup-subnetids): {{
     - String}}
   [Tags](#cfn-pcs-computenodegroup-tags): {{String}}
@@ -101,6 +108,13 @@ A list of EC2 instance configurations that AWS PCS can provision in the compute 
 *Type*: Array of [InstanceConfig](aws-properties-pcs-computenodegroup-instanceconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`LaunchTemplateMode`  <a name="cfn-pcs-computenodegroup-launchtemplatemode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `CUSTOM | MANAGED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Name`  <a name="cfn-pcs-computenodegroup-name"></a>
 The name that identifies the compute node group.
 *Required*: No
@@ -126,6 +140,12 @@ Specifies the boundaries of the compute node group auto scaling.
 *Type*: [ScalingConfiguration](aws-properties-pcs-computenodegroup-scalingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`SecurityGroupIds`  <a name="cfn-pcs-computenodegroup-securitygroupids"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `SlurmConfiguration`  <a name="cfn-pcs-computenodegroup-slurmconfiguration"></a>
 Additional options related to the Slurm scheduler.
 *Required*: No
@@ -136,6 +156,12 @@ Additional options related to the Slurm scheduler.
 Additional configuration when you specify `SPOT` as the `purchaseOption` for the `CreateComputeNodeGroup` API action.
 *Required*: No
 *Type*: [SpotOptions](aws-properties-pcs-computenodegroup-spotoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SshKeyName`  <a name="cfn-pcs-computenodegroup-sshkeyname"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubnetIds`  <a name="cfn-pcs-computenodegroup-subnetids"></a>

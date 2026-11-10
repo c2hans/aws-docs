@@ -451,12 +451,13 @@ To add a user group to a replication using the AWS Management Console, do the fo
 #### Assigning User Groups to Replication Groups Using the AWS CLI
 <a name="Users-groups-to-RGs-CLI"></a>
 
- The following AWS CLI operation creates a replication group with encryption in transit (TLS) enabled and the **user-group-ids** parameter with the value `{{my-user-group-id}}`. Replace the subnet group `sng-test` with a subnet group that exists.
+ The following AWS CLI operation creates a replication group that has encryption in transit (TLS) enabled and required, with the **user-group-ids** parameter with the value `{{new-group-1}}`. Replace the subnet group `cache-subnet-group` with a subnet group that exists.
 
 **Key Parameters**
 + **--engine** – Must be `valkey` or `redis`.
 + **--engine-version** – Must be 6.0 or later.
 + **--transit-encryption-enabled** – Required for authentication and for associating a user group.
++ **--transit-encryption-mode** – Must be `required` or omitted for authentication and for associating a user group.
 + **--user-group-ids** – This value provides the ID of the user group, comprised of users with specified access permissions for the cache.
 + **--cache-subnet-group** – Required for associating a user group.
 
@@ -486,7 +487,7 @@ aws elasticache create-replication-group ^
     --cache-subnet-group {{"cache-subnet-group"}}
 ```
 
-The following AWS CLI operation modifies a replication group with encryption in transit (TLS) enabled and the **user-group-ids** parameter with the value `{{my-user-group-id}}`.
+The following AWS CLI operation modifies a replication group that has encryption in transit (TLS) enabled and required, with the **user-group-ids** parameter with the value `{{new-group-2}}`.
 
 For Linux, macOS, or Unix:
 

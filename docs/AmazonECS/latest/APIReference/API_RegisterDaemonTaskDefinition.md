@@ -152,6 +152,9 @@ Each time you call `RegisterDaemonTaskDefinition`, a new revision of the daemon 
          "host": {
             "sourcePath": "{{string}}"
          },
+         "logDriverVolumeConfiguration": {
+            "driver": "{{string}}"
+         },
          "name": "{{string}}"
       }
    ]

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/talent/index.html
 title: 'Amazon Connect Talent'
 canonical_url: https://docs.aws.amazon.com/talent/
 source: aws-documentation
-generated_on: 2026-11-06
+generated_on: 2026-11-09
 ---
 
 # Amazon Connect Talent

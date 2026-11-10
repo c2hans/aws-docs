@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/managedservices/index.html
 title: 'AWS Managed Services Documentation'
 canonical_url: https://docs.aws.amazon.com/managedservices/
 source: aws-documentation
-generated_on: 2026-11-07
+generated_on: 2026-11-09
 ---
 
 # AWS Managed Services Documentation

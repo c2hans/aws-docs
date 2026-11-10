@@ -34,7 +34,7 @@ Required: No
  ** acceleratorNames **   <a name="ECS-Type-InstanceRequirementsRequest-acceleratorNames"></a>
 The specific accelerator names to include. For example, you can specify `a100`, `v100`, `k80`, or other specific accelerator models.
 Type: Array of strings
-Valid Values: `a100 | inferentia | k520 | k80 | m60 | radeon-pro-v520 | t4 | vu9p | v100 | a10g | h100 | t4g`
+Valid Values: `a100 | inferentia | k520 | k80 | m60 | radeon-pro-v520 | t4 | vu9p | v100 | a10g | h100 | t4g | l40s | l4`
 Required: No
 
  ** acceleratorTotalMemoryMiB **   <a name="ECS-Type-InstanceRequirementsRequest-acceleratorTotalMemoryMiB"></a>

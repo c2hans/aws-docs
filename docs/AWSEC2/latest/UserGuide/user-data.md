@@ -154,7 +154,7 @@ Adding these tasks at boot time adds to the amount of time it takes to boot an i
    ```
    #cloud-config
    package_update: true
-   package_upgrade: all
+   package_upgrade: true
 
    packages:
    - httpd
@@ -168,8 +168,8 @@ Adding these tasks at boot time adds to the amount of time it takes to boot an i
    - [ sh, -c, "usermod -a -G apache ec2-user" ]
    - [ sh, -c, "chown -R ec2-user:apache /var/www" ]
    - chmod 2775 /var/www
-   - [ find, /var/www, -type, d, -exec, chmod, 2775, {}, \; ]
-   - [ find, /var/www, -type, f, -exec, chmod, 0664, {}, \; ]
+   - [ find, /var/www, -type, d, -exec, chmod, "2775", "{}", ";" ]
+   - [ find, /var/www, -type, f, -exec, chmod, "0664", "{}", ";" ]
    - [ sh, -c, 'echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php' ]
    ```
 
@@ -179,7 +179,7 @@ Adding these tasks at boot time adds to the amount of time it takes to boot an i
    ```
    #cloud-config
    package_update: true
-   package_upgrade: all
+   package_upgrade: true
 
    packages:
    - httpd
@@ -192,8 +192,8 @@ Adding these tasks at boot time adds to the amount of time it takes to boot an i
    - [ sh, -c, "usermod -a -G apache ec2-user" ]
    - [ sh, -c, "chown -R ec2-user:apache /var/www" ]
    - chmod 2775 /var/www
-   - [ find, /var/www, -type, d, -exec, chmod, 2775, {}, \; ]
-   - [ find, /var/www, -type, f, -exec, chmod, 0664, {}, \; ]
+   - [ find, /var/www, -type, d, -exec, chmod, "2775", "{}", ";" ]
+   - [ find, /var/www, -type, f, -exec, chmod, "0664", "{}", ";" ]
    - [ sh, -c, 'echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php' ]
    ```
 

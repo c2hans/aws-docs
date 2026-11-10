@@ -5,6 +5,11 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-release-notes.html
 # Release notes
 <a name="mgn-release-notes"></a>
 
+## November 2026
+<a name="release-notes-nov-2026"></a>
++ Added support for the following operating systems:
+  + Ubuntu 26.04 LTS
+
 ## October 2026
 <a name="release-notes-oct-2026"></a>
 + Added support for the following operating systems:

@@ -13,7 +13,7 @@ Information about the action to be performed when a rule is triggered.
  ** ActionType **   <a name="connect-Type-RuleAction-ActionType"></a>
 The type of action that creates a rule.
 Type: String
-Valid Values: `CREATE_TASK | ASSIGN_CONTACT_CATEGORY | GENERATE_EVENTBRIDGE_EVENT | SEND_NOTIFICATION | CREATE_CASE | UPDATE_CASE | ASSIGN_SLA | END_ASSOCIATED_TASKS | SUBMIT_AUTO_EVALUATION | EXTRACT_INFORMATION | SEND_IN_APP_NOTIFICATION`
+Valid Values: `CREATE_TASK | ASSIGN_CONTACT_CATEGORY | GENERATE_EVENTBRIDGE_EVENT | SEND_NOTIFICATION | CREATE_CASE | UPDATE_CASE | ASSIGN_SLA | END_ASSOCIATED_TASKS | END_ASSOCIATED_EMAILS | SUBMIT_AUTO_EVALUATION | EXTRACT_INFORMATION | SEND_IN_APP_NOTIFICATION`
 Required: Yes
 
  ** AssignContactCategoryAction **   <a name="connect-Type-RuleAction-AssignContactCategoryAction"></a>
@@ -31,6 +31,12 @@ Required: No
 Information about the create case action.
 Supported only for `TriggerEventSource` values: `OnPostCallAnalysisAvailable` \| `OnPostChatAnalysisAvailable`.
 Type: [CreateCaseActionDefinition](API_CreateCaseActionDefinition.md) object
+Required: No
+
+ ** EndAssociatedEmailsAction **   <a name="connect-Type-RuleAction-EndAssociatedEmailsAction"></a>
+Information about the end associated emails action.
+Supported only for `TriggerEventSource` values: `OnCaseUpdate`.
+Type: [EndAssociatedEmailsActionDefinition](API_EndAssociatedEmailsActionDefinition.md) object
 Required: No
 
  ** EndAssociatedTasksAction **   <a name="connect-Type-RuleAction-EndAssociatedTasksAction"></a>

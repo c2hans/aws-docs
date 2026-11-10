@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/index.html
 title: 'AWS Schema Conversion Tool Documentation'
 canonical_url: https://docs.aws.amazon.com/SchemaConversionTool/
 source: aws-documentation
-generated_on: 2026-11-06
+generated_on: 2026-11-09
 ---
 
 # AWS Schema Conversion Tool Documentation

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/index.html
 title: 'Amazon SageMaker Documentation'
 canonical_url: https://docs.aws.amazon.com/next-generation-sagemaker/
 source: aws-documentation
-generated_on: 2026-11-06
+generated_on: 2026-11-09
 ---
 
 # Amazon SageMaker Documentation

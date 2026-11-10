@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/choosing-getting-started.html
 ---
 
-# Getting started
+# Getting started with a telephony service
 <a name="choosing-getting-started"></a>
 
 Are you ready to build? For customer-facing interactions, see the [Amazon Connect Customer](https://aws.amazon.com/connect/) page. For SIP trunking and PSTN connectivity, see [Managing Amazon Chime SDK Voice Connectors](voice-connectors.md).

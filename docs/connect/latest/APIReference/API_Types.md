@@ -179,6 +179,7 @@ The following data types are supported by Amazon Connect Service:
 +  [EmailReference](API_EmailReference.md)
 +  [EmptyFieldValue](API_EmptyFieldValue.md)
 +  [EncryptionConfig](API_EncryptionConfig.md)
++  [EndAssociatedEmailsActionDefinition](API_EndAssociatedEmailsActionDefinition.md)
 +  [EndAssociatedTasksActionDefinition](API_EndAssociatedTasksActionDefinition.md)
 +  [Endpoint](API_Endpoint.md)
 +  [EndpointInfo](API_EndpointInfo.md)

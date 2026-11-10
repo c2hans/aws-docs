@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experience-on-aws/overview-cost-intro.html
 ---
 
-# Cost Considerations
+# Cost Considerations for AVX
 <a name="overview-cost-intro"></a>
 
 AVX costs are driven primarily by three components:

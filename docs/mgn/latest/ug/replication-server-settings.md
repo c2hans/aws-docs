@@ -52,6 +52,8 @@ You can change the replication server instance type for servers that are replica
 + Servers with less than 26 disks – Change the instance type to **m5.large**. Increase the instance type to m5.xlarge or higher as needed.
 + Servers with more than 26 disks, or servers in AWS Regions that do not support m5 instance types – change the instance type to **m4.large**. Increase to m4.xlarge or higher, as needed.
 
+For information about evaluating and changing the replication server instance type for many source servers at once, based on their provisioned disk capacity, see [Right-Size AWS Transform MGN Replication Servers](https://aws.amazon.com/blogs/migration-and-modernization/right-size-aws-transform-mgn-replication-servers/) on the AWS Migration & Modernization Blog.
+
 **Note**
 Changing the replication server instance type will not affect data replication. Data replication will automatically continue from where it left off, using the new instance type you selected.
 By default, replication servers are automatically assigned a public IP address from Amazon's public IP space.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/clean-rooms/index.html
 title: 'AWS Clean Rooms Documentation'
 canonical_url: https://docs.aws.amazon.com/clean-rooms/
 source: aws-documentation
-generated_on: 2026-11-07
+generated_on: 2026-11-09
 ---
 
 # AWS Clean Rooms Documentation

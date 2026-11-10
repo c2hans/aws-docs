@@ -75,7 +75,7 @@ Before you configure Deny by Default, verify that the following prerequisites ar
 + **Identity configuration** – Your Quick account must be integrated with IAM Identity Center, Active Directory, or configured with Quick managed users.
 
 **Note**
-All API operations use Amazon QuickSight naming conventions. Permission strings use the `quicksight:` prefix.
+All API operations use Amazon Quick Sight naming conventions. Permission strings use the `quicksight:` prefix.
 
 ## How capabilities are evaluated
 <a name="custom-permissions-governance-evaluation"></a>

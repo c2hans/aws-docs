@@ -154,7 +154,7 @@ The type of configurations contained in the profile. AWS AppConfig supports `fea
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z\.]+`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Validators`  <a name="cfn-appconfig-configurationprofile-validators"></a>
 A list of methods for validating the configuration.

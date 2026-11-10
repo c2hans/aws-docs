@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/index.html
 title: 'AWS SDK for PHP Documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-php/
 source: aws-documentation
-generated_on: 2026-11-06
+generated_on: 2026-11-09
 ---
 
 # AWS SDK for PHP Documentation

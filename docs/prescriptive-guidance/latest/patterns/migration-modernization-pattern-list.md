@@ -7,5 +7,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 
 **Topics**
 + [Migration](migration-pattern-list.md)
-+ [Modernization](modernization-pattern-list.md)
 + [Mainframes](mainframe-pattern-list.md)

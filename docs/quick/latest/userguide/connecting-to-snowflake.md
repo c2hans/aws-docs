@@ -122,6 +122,9 @@ After you have successfully created a data source connection between your Quick 
 
 Quick Sight supports three-legged OAuth (3LO) with end-user identities for Snowflake.
 
+**Note**
+3LO with end-user permissions is supported only for Direct Query datasets. SPICE datasets don't support 3LO with end-user permissions.
+
 ### Administrator setup: Client application configuration
 <a name="create-connection-to-snowflake-3lo-admin-setup"></a>
 
@@ -165,6 +168,8 @@ After the administrator configures the client application, authors can create a 
 1. Choose **Snowflake**.
 
 1. Choose **3LO** as the authentication method.
+
+   In addition to choosing **3LO**, you must select the **Trusted Identity Propagation** check box. If this check box is cleared, the author's credentials are embedded in the data source connection.
 
 1. Enter the required connection information.
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/index.html
 title: 'AWS Systems Manager Documentation'
 canonical_url: https://docs.aws.amazon.com/systems-manager/
 source: aws-documentation
-generated_on: 2026-11-07
+generated_on: 2026-11-09
 ---
 
 # AWS Systems Manager Documentation

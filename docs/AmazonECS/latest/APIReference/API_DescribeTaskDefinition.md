@@ -266,6 +266,10 @@ Required: Yes
       "status": "string",
       "taskDefinitionArn": "string",
       "taskRoleArn": "string",
+      "trustedExecutionConfiguration": {
+         "attestationPolicy": "string",
+         "isolationMode": "string"
+      },
       "volumes": [
          {
             "configuredAtLaunch": boolean,

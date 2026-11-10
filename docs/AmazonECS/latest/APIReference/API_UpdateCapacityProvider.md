@@ -237,6 +237,7 @@ Required: Yes
                "securityGroups": [ "string" ],
                "subnets": [ "string" ]
             },
+            "nitroEnclavesEnabled": boolean,
             "storageConfiguration": {
                "storageSizeGiB": number
             }

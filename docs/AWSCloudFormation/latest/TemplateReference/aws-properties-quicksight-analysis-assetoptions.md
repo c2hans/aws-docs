@@ -19,7 +19,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[CustomActionDefaults](#cfn-quicksight-analysis-assetoptions-customactiondefaults)" : {{VisualCustomActionDefaults}},
   "[Timezone](#cfn-quicksight-analysis-assetoptions-timezone)" : {{String}},
+  "[VisualMessages](#cfn-quicksight-analysis-assetoptions-visualmessages)" : {{VisualMessages}},
   "[WeekStart](#cfn-quicksight-analysis-assetoptions-weekstart)" : {{String}}
 }
 ```
@@ -28,17 +30,33 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-analysis-assetoptions-syntax.yaml"></a>
 
 ```
+  [CustomActionDefaults](#cfn-quicksight-analysis-assetoptions-customactiondefaults): {{
+    VisualCustomActionDefaults}}
   [Timezone](#cfn-quicksight-analysis-assetoptions-timezone): {{String}}
+  [VisualMessages](#cfn-quicksight-analysis-assetoptions-visualmessages): {{
+    VisualMessages}}
   [WeekStart](#cfn-quicksight-analysis-assetoptions-weekstart): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-quicksight-analysis-assetoptions-properties"></a>
 
+`CustomActionDefaults`  <a name="cfn-quicksight-analysis-assetoptions-customactiondefaults"></a>
+A list of visual custom actions for the analysis.
+*Required*: No
+*Type*: [VisualCustomActionDefaults](aws-properties-quicksight-analysis-visualcustomactiondefaults.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Timezone`  <a name="cfn-quicksight-analysis-assetoptions-timezone"></a>
 Determines the timezone for the analysis.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VisualMessages`  <a name="cfn-quicksight-analysis-assetoptions-visualmessages"></a>
+The configuration options for the messages that are displayed on visuals in the analysis.
+*Required*: No
+*Type*: [VisualMessages](aws-properties-quicksight-analysis-visualmessages.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WeekStart`  <a name="cfn-quicksight-analysis-assetoptions-weekstart"></a>

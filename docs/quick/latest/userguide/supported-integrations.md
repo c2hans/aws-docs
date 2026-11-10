@@ -12,6 +12,7 @@ Amazon Quick supports integrations with various third-party applications and ser
 | Integration | Actions | Knowledge Base |
 | --- | --- | --- |
 | Adobe Marketing Agent | Yes | No |
+| Adobe CX Enterprise Coworker | Yes | No |
 | Airtable | Yes | No |
 | Amazon S3 | Yes | Yes |
 | Asana | Yes | No |
@@ -21,8 +22,10 @@ Amazon Quick supports integrations with various third-party applications and ser
 | BambooHR | Yes | No |
 | Box | Yes | No |
 | Canva | Yes | No |
+| Checkmarx | Yes | No |
 | Cisco Webex Meetings | Yes | No |
 | Cisco Webex Video Messaging | Yes | No |
+| Cisco Workspaces | Yes | No |
 | Dropbox | Yes | No |
 | Dun & Bradstreet | Yes | No |
 | Figma | Yes | No |

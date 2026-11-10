@@ -74,6 +74,14 @@ Type: String
 Valid Values: `BASIC | DETAILED`
 Required: No
 
+ ** nitroEnclavesEnabled **   <a name="ECS-Type-InstanceLaunchTemplate-nitroEnclavesEnabled"></a>
+Specifies whether instances that this capacity provider launches have [Nitro Sandbox](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro-sandboxes.html) enabled. Enable this setting to run tasks that use the `ISOLATED_SANDBOX` or `CONFIDENTIAL_SANDBOX` isolation mode.
+When you enable this setting, the capacity provider must include at least one instance type that supports Nitro Sandbox. You can't enable this setting together with local storage (the `useLocalStorage` setting in `localStorageConfiguration`).
+The default value is `false`.
+For more information, see [Isolated and confidential tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated-confidential-tasks.html) in *Amazon Elastic Container Service Developer Guide*.
+Type: Boolean
+Required: No
+
  ** storageConfiguration **   <a name="ECS-Type-InstanceLaunchTemplate-storageConfiguration"></a>
 The storage configuration for Amazon ECS Managed Instances. This defines the data volume properties for the instances.
 Type: [ManagedInstancesStorageConfiguration](API_ManagedInstancesStorageConfiguration.md) object

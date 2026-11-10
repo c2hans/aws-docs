@@ -142,7 +142,7 @@ Property description not available.
 The resource type this template should dynamically generate CloudWatch metric alarms for.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `CLOUDFRONT_DISTRIBUTION | MEDIALIVE_MULTIPLEX | MEDIALIVE_CHANNEL | MEDIALIVE_INPUT_DEVICE | MEDIAPACKAGE_CHANNEL | MEDIAPACKAGE_ORIGIN_ENDPOINT | MEDIACONNECT_FLOW | MEDIATAILOR_PLAYBACK_CONFIGURATION | S3_BUCKET`
+*Allowed values*: `CLOUDFRONT_DISTRIBUTION | ELEMENTAL_INFERENCE_FEED | MEDIALIVE_MULTIPLEX | MEDIALIVE_CHANNEL | MEDIALIVE_INPUT_DEVICE | MEDIAPACKAGE_CHANNEL | MEDIAPACKAGE_ORIGIN_ENDPOINT | MEDIACONNECT_FLOW | MEDIATAILOR_PLAYBACK_CONFIGURATION | S3_BUCKET`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Threshold`  <a name="cfn-medialive-cloudwatchalarmtemplate-threshold"></a>

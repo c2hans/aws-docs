@@ -84,15 +84,15 @@ Example trust policy:
 ## Create AWS services connector
 <a name="aws-builtin-services-setup"></a>
 
-After preparing your IAM role and permissions, follow these steps to set up AWS Actions in Quick Suite.
+After preparing your IAM role and permissions, follow these steps to set up AWS Actions in Quick.
 
 **Note**
-You need administrative access to Amazon Quick Suite to perform the following steps. See documentation on [Configure Amazon Quick subscriptions](managing-qbs-subscriptions.md) to learn more.
+You need administrative access to Amazon Quick to perform the following steps. See documentation on [Configure Amazon Quick subscriptions](managing-qbs-subscriptions.md) to learn more.
 
 ### Steps to create a new AWS integration
 <a name="aws-builtin-services-setup-steps"></a>
 
-1. Choose the **profile icon**, then select **Manage Quick Suite**.
+1. Choose the **profile icon**, then select **Manage account**.
 
 1. Select **AWS actions** under the **Permissions** section.
 
@@ -111,9 +111,9 @@ You need administrative access to Amazon Quick Suite to perform the following st
    + Provide **Owner access** for any users who need to edit, share, and delete the integration.
 **Note**
 Owner access is required to add integrations to Automation Groups in order to give access within Quick Automate.
-   + Provide **User access** for any users who need to invoke actions across Quick Suite.
+   + Provide **User access** for any users who need to invoke actions across Quick.
 
-     For a list of integrations supported in various Quick Suite capabilities, see [Connector compatibility matrix](action-connector-apis-supported-types.md#action-connector-compatibility-matrix).
+     For a list of integrations supported in various Quick capabilities, see [Connector compatibility matrix](action-connector-apis-supported-types.md#action-connector-compatibility-matrix).
 
 1. Select **Add** to finish creating the integration.
 

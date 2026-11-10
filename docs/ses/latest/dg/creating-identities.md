@@ -272,15 +272,21 @@ Now that you’ve created your email address identity, you must complete the ver
 ## Verifying an email address identity
 <a name="just-verify-email-proc"></a>
 
-After you’ve created your email address identity, you must complete the verification process.
+You must verify an email address identity before you can use it to send email with Amazon SES. Verification confirms that you own the email address.
 
 If you haven't created an email address identity, see [Creating an email address identity](#verify-email-addresses-procedure).
 
 **To verify an email address identity**
 
-1. Check the inbox of the email address used to create your identity and look for an email from no-reply-aws@amazon.com.
+1. Check the inbox of the email address that you used to create your identity.
+
+1. Look for a verification email from `no-reply-aws@amazon.com` or `no-reply-aws@verification.amazonses.com`.
+**Note**
+The sender address depends on the AWS Region where you created the identity.
 
 1. Open the email and click the link to complete the verification process for the email address. After it's complete, the **Identity status** updates to **Verified**.
+
+If you don't receive the verification email within five minutes, see [Troubleshooting email address verification](#verify-email-addresses-troubleshooting).
 
 ### Troubleshooting email address verification
 <a name="verify-email-addresses-troubleshooting"></a>
@@ -289,7 +295,8 @@ If you don't receive the verification email within five minutes of creating your
 + Make sure you entered the email address correctly.
 + Make sure the email address that you're attempting to verify can receive email. You can test this by using another email address to send a test email to the address that you want to verify.
 + Check your junk mail folder.
-+ The link in the verification email expires after 24 hours. To send a new verification email, choose **Resend** at the top of the identity details page.
++ If you filter incoming email, allow messages from `no-reply-aws@amazon.com` and `no-reply-aws@verification.amazonses.com`.
++ The link in the verification email expires after 24 hours. To send a new verification email, choose **Resend** on the identity details page.
 
 ## Create and verify an identity and assign a default configuration set at the same time
 <a name="default-config-set-at-create-api"></a>

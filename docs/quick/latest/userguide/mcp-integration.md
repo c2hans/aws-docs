@@ -138,6 +138,7 @@ Built-in connectors sync automatically. When the MCP server updates its tools, A
 
 **Custom MCP connectors**
 Custom connectors require the connector owner to trigger a sync manually. To sync a custom connector, open the connector details page, and then choose **Sync**.
+Custom MCP connectors that use a VPC connection don't support sync. To update the tool list for one of these connectors, delete the connector and create it again.
 Triggering a sync initiates a re-authorization flow. If the MCP server now requires OAuth scopes that were not granted during the original connection, the sync fails. Confirm that all required scopes are authorized before you sync.
 
 ## Security considerations
@@ -251,6 +252,7 @@ When you use MCP integrations in Amazon Quick, be aware of the following limitat
 + For MCP servers that you reach through a VPC connection, DNS resolution for the authorization server hostname must be reachable from the auth-server VPC connection's subnets and DNS resolver endpoints. This is the same constraint that applies to the resource-server VPC connection for the MCP server hostname. If you do not configure an auth-server VPC connection, the OAuth endpoints must be reachable over the public internet.
 + Custom HTTP headers are not supported in MCP operations. Only standard system headers are transmitted.
 + For custom MCP connectors, tool lists do not update automatically. To pick up server-side tool changes, open the connector details page and choose **Sync**. Built-in MCP connectors sync automatically. For more information, see [MCP Sync](#mcp-integration-sync).
++ Sync is not supported for custom MCP connectors that use a VPC connection. To update the tool list for one of these connectors, delete the connector and create it again.
 + Amazon Quick supports a maximum of 100 tools per MCP server connection. If the MCP server exposes more than 100 tools, only the first 100 are registered.
 + Connector creation might fail if the Amazon Quick callback URI is not allow-listed by third-party providers.
 + Server connectivity issues result in immediate failure without retry attempts.

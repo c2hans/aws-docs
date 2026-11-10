@@ -8,6 +8,8 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ## Module layout
 <a name="ca-module-layout"></a>
 
+The app source is organized into the following module groups:
+
 | Group | Responsibility |
 | --- | --- |
 |  `Api/`  | REST clients and wire models. `VSAClient` covers the AVX API plus the two CMS APIs the app calls directly; `AcquireCatalogClient` covers the Acquire journey; `AvxModels` and `RemoteCommandModels` carry the Finding, Action and command contracts; `TriageCoordinator` decides when to ask for a triage classification. |

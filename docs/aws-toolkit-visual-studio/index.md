@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/aws-toolkit-visual-studio/index.html
 title: 'AWS Toolkit for Visual Studio Documentation'
 canonical_url: https://docs.aws.amazon.com/aws-toolkit-visual-studio/
 source: aws-documentation
-generated_on: 2026-11-06
+generated_on: 2026-11-09
 ---
 
 # AWS Toolkit for Visual Studio Documentation

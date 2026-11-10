@@ -83,7 +83,7 @@ You can chat with your datasets in Amazon Quick to ask questions and get insight
 
 Amazon Quick chat supports the following dataset types:
 + SPICE datasets
-+ Direct Query datasets against Amazon Redshift, Athena, Aurora PostgreSQL, and Amazon S3 Tables
++ Direct Query datasets against Amazon Redshift, Athena, Aurora PostgreSQL, Amazon S3 Tables, Databricks, and Snowflake
 
 **Note**
 Direct Query datasets against other data sources are not yet supported for chat.

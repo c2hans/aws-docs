@@ -33,6 +33,9 @@ The following table lists the role template for each service that role manager s
 | Service | Role template | Template ARN | Parameters |
 | --- | --- | --- | --- |
 | AWS Backup | AWSBackupDefaultServiceRoleTemplate | arn:aws:iam::aws:role-template/backup.amazonaws.com/AWSBackupDefaultServiceRoleTemplate:1 | accountId, RoleName |
+| Amazon Bedrock | AmazonBedrockCloudwatchIntegrationRoleTemplate | arn:aws:iam::aws:role-template/bedrock.amazonaws.com/AmazonBedrockCloudwatchIntegrationRoleTemplate:1 | RoleName, accountId, logGroup, region |
+| Amazon Bedrock | AmazonBedrockImportModelRoleTemplate | arn:aws:iam::aws:role-template/bedrock.amazonaws.com/AmazonBedrockImportModelRoleTemplate:2 | CREATE\_NETWORK\_INTERFACE\_ENABLED, RoleName, accountId, bucket\_name\_and\_prefix, region, resourceAccountId, security\_group\_ids, subnet\_ids |
+| Amazon Bedrock | AmazonBedrockModelEvaluationRoleTemplate | arn:aws:iam::aws:role-template/bedrock.amazonaws.com/AmazonBedrockModelEvaluationRoleTemplate:1 | RoleName, accountId, region |
 | AWS CloudFormation | PowerUserRoleTemplate | arn:aws:iam::aws:role-template/iam.amazonaws.com/PowerUserRoleTemplate:1 | AWSServiceName, RoleName |
 | Amazon EKS | AmazonEKSAutoClusterRoleTemplate | arn:aws:iam::aws:role-template/eks.amazonaws.com/AmazonEKSAutoClusterRoleTemplate:1 | RoleName |
 | Amazon EKS | AmazonEKSAutoNodeRoleTemplate | arn:aws:iam::aws:role-template/ec2.amazonaws.com/AmazonEKSAutoNodeRoleTemplate:1 | RoleName |

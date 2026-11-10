@@ -103,6 +103,7 @@ Creates a capacity provider. Capacity providers are associated with a cluster an
             "securityGroups": [ "{{string}}" ],
             "subnets": [ "{{string}}" ]
          },
+         "nitroEnclavesEnabled": {{boolean}},
          "storageConfiguration": {
             "storageSizeGiB": {{number}}
          }
@@ -258,6 +259,7 @@ Required: No
                "securityGroups": [ "string" ],
                "subnets": [ "string" ]
             },
+            "nitroEnclavesEnabled": boolean,
             "storageConfiguration": {
                "storageSizeGiB": number
             }

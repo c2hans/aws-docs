@@ -74,7 +74,7 @@ At deployment, ensure that the correct credentials and connections are selected 
 ## Setting up triggers
 <a name="setting-up-triggers"></a>
 
-Triggers determine when and how your automations run. You can configure automations to start based on a predefined schedule or invoke them programmatically through the Amazon QuickSight API.
+Triggers determine when and how your automations run. You can configure automations to start based on a predefined schedule or invoke them programmatically through the Amazon Quick Sight API.
 
 ### Schedules
 <a name="setting-up-triggers-schedules"></a>
@@ -97,7 +97,7 @@ The Automation Job APIs include two operations:
 + **StartAutomationJob** – Starts a new job for a deployed automation with an optional input payload.
 + **DescribeAutomationJob** – Retrieves the status, timestamps, and optional input and output payloads for a specified job.
 
-These APIs are part of the Amazon QuickSight service namespace. You access them through the `quicksight` namespace in the AWS SDK and AWS CLI.
+These APIs are part of the Amazon Quick Sight service namespace. You access them through the `quicksight` namespace in the AWS SDK and AWS CLI.
 
 For more information about AWS SDKs and toolkits, see the [AWS Getting Started Resource Center](https://aws.amazon.com/getting-started/tools-sdks/).
 
@@ -174,7 +174,7 @@ Attach a policy that grants the `quicksight:DescribeAutomationJob` action. The r
 ```
 
 AWS recommends scoping each permission to the most specific resource ARN possible to follow the principle of least privilege. For more information, see the following:
-+ [IAM policy examples for Amazon QuickSight](https://docs.aws.amazon.com/quicksight/latest/user/iam-policy-examples.html)
++ [IAM policy examples for Quick](iam-policy-examples.md)
 + [Actions, resources, and condition keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonquicksight.html)
 + [IAM JSON policy elements](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html)
 
