@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/mission-control-d
 # Mission Control
 <a name="mission-control-desktop"></a>
 
-Mission Control is a centralized command center in the Amazon Quick desktop application that gives you full visibility and management over all your agents in one place. You monitor agent activity, review outputs, manage routines, and track performance metrics, so you do not need to check on agents individually.
+Mission Control is a centralized command center in the AWS Quick desktop application that gives you full visibility and management over all your agents in one place. You monitor agent activity, review outputs, manage routines, and track performance metrics, so you do not need to check on agents individually.
 
 ## Why use Mission Control
 <a name="mission-control-why"></a>

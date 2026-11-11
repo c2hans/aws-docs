@@ -30,7 +30,7 @@ The following steps describe the architecture:
 
 1. Snowflake serves as a virtual data warehouse with the ability to query Amazon S3 using external tables, and automated and continuous data ingestion using SnowPipe.
 
-1. SageMaker AI builds, trains, and deploys machine learning (ML) models and adds intelligence to your applications. [Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) provides ML-powered business intelligence (BI).
+1. SageMaker AI builds, trains, and deploys machine learning (ML) models and adds intelligence to your applications. [AWS Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) provides ML-powered business intelligence (BI).
 
 ## Further reading
 <a name="further-reading"></a>

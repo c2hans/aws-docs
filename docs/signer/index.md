@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/signer/index.html
 title: 'AWS Signer Documentation'
 canonical_url: https://docs.aws.amazon.com/signer/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # AWS Signer Documentation

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sqs/index.html
 title: 'Amazon Simple Queue Service Documentation'
 canonical_url: https://docs.aws.amazon.com/sqs/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Amazon Simple Queue Service Documentation

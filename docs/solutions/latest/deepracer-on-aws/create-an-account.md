@@ -12,7 +12,7 @@ You can create an account by signing up yourself, accepting an invitation from a
 
 To self-register as a new racer, choose **Sign up** on the DeepRacer on AWS sign-in page. Enter your email address, racer alias, optional two-letter country code, and password.
 
-![Self-registration form with email address](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_self_registration.png)
+![Self-registration form with email address, racer alias, optional country code, and password fields](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_self_registration.png)
 
 After you submit the form, you receive a verification code at your email address. Enter the code to verify your email address and complete registration.
 

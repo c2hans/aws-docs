@@ -31,7 +31,7 @@ The diagram below shows how the scheduler works at the iteration level. Each **i
 `max_num_batched_tokens`** (per-iteration budget)**: Total tokens processed per forward pass. Consumed by prefill tokens (thousands per new request) and decode tokens (1 per active sequence). Effectively a **prefill admission rate limiter**. Higher budgets improve **prefill throughput** (lower TTFT, better GPU utilization), but long prefills can monopolize the GPU and cause **decode stalls** (latency spikes for other requests). Lower budgets prevent stalls but slow prefill. Without chunked prefill, prompts exceeding the budget **queue**. With chunking, they split across iterations. Balance: 4096-8192 tokens. \*(vLLM: `--max-num-batched-tokens`)
 
 ### Enabling Chunked Prefill
-<a name="enabling-chunked-prefill.b4b9419e-9a8b-56bf-aab2-f030a46a8c35"></a>
+<a name="enabling-chunked-prefill.f2737881-c536-504e-8f33-a0a730131762"></a>
 
 **The problem:** A 32K-token prefill processed in one iteration monopolizes the GPU for hundreds of milliseconds, severely limiting concurrent decode operations. Without chunking, decode requests can only advance by **a single token** during the entire prefill, causing decode streams to effectively pause. These **decode stalls** appear as P95/P99 TPOT spikes whenever long-context requests arrive.
 
@@ -47,7 +47,7 @@ The diagram below shows how the scheduler works at the iteration level. Each **i
 Parallelism strategies determine how a model is distributed across multiple GPUs. This is the foundation of your serving architecture — all other optimizations (batching, caching, disaggregation) operate on top of your parallelism topology.
 
 ### Parallelism Strategies
-<a name="parallelism-strategies.1ff2002b-54b6-5f72-9e40-4feb418edd22"></a>
+<a name="parallelism-strategies.a39705e5-d40e-5c2d-ab8e-835d2689c734"></a>
 
 [**Tensor Parallelism**](https://docs.vllm.ai/en/latest/serving/distributed_serving.html#tensor-parallelism)** (TP)**: Splits each model layer across multiple GPUs. All GPUs work on the same request simultaneously.
 + **Why**: Fits large models in memory, reduces per-request latency
@@ -123,7 +123,7 @@ Many LLM workloads share prompt prefixes across requests. System prompts, few-sh
 **Design consideration:** Prefix caching trades GPU memory (cached KV blocks persist) for compute (skip redundant prefill). In memory-constrained scenarios, cached blocks may be evicted to make room for new requests. Eviction policies are typically LRU (least recently used). The next section addresses this limitation.
 
 ### Tiered KV Cache (Offloading Beyond Local GPU Memory)
-<a name="tiered-kv-cache--offloading-beyond-local-gpu-memory-.a6dc35e0-6bda-5779-832e-adb4a4d5874c"></a>
+<a name="tiered-kv-cache--offloading-beyond-local-gpu-memory-.e1d35920-da01-5126-8040-73b6e65584a7"></a>
 
 GPU memory is finite. Once the KV cache pool is full, the system must evict cached prefixes (reduced cache hit rate). **Tiered caching** extends effective cache capacity by offloading KV blocks elsewhere, such as slower, larger storage tiers:
 
@@ -235,7 +235,7 @@ How Disaggregation Works
 **Encode-Prefill-Decode (EPD) disaggregation for Vision Language Models**: VLMs add a compute-intensive **encoding** phase before prefill, where vision encoders process images or video frames into embeddings. EPD (Encoder-Prefill-Decode) disaggregation extends the two-pool architecture to three specialized pools: an encoder pool processes visual inputs, transfers embeddings to the prefill pool (which combines them with text tokens to generate KV cache), then KV cache transfers to the decode pool for token generation. This isolates vision workload from text processing, enables hardware specialization (vision-optimized accelerators for encoding, LLM-optimized GPUs for text), and allows independent scaling of encoder capacity for vision-heavy workloads.
 
 ### Performance Impact
-<a name="performance-impact.214abb85-14c6-5fb1-8ccd-c74776fd1f75"></a>
+<a name="performance-impact.aab4f3d6-2281-5ae9-a9bb-0c73e5f59112"></a>
 
 Disaggregation delivers several performance benefits. **Independent scaling** allows you to scale prefill and decode pools separately based on workload characteristics — add prefill capacity for long-input workloads or decode capacity for long-output scenarios without overprovisioning the other phase. **Hardware specialization** enables matching hardware to phase requirements: prefill pools use compute-optimized instances with high FLOPS (dense tensor cores), while decode pools use memory-bandwidth-optimized instances with high HBM bandwidth. **Eliminated interference** means decode latency is no longer impacted by concurrent prefill operations, delivering consistent TPOT across all active requests and substantially reducing P99 latency. **Higher utilization** comes from each pool running only the workload it's optimized for, eliminating the underutilization that occurs when a single GPU switches between compute-bound and memory-bound phases.
 

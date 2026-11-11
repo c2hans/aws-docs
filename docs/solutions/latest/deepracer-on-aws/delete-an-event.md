@@ -10,7 +10,7 @@ Only admins can delete an event.
 
 To delete an event, select it on the **Events** page and choose **Delete event**, then confirm.
 
-![Confirmation dialog for deleting an event](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_delete_event.png)
+![Confirmation dialog for deleting an event, warning that the event’s tracks, runs, laps, and rankings are also deleted and that the action cannot be undone](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_delete_event.png)
 
 Deleting an event also deletes everything belonging to it: its tracks, every run, every recorded lap, and every leaderboard result. The event disappears from the **Events** page immediately, and its records are removed in the background. For a large event with many racers and tracks, this can take a short while to finish.
 

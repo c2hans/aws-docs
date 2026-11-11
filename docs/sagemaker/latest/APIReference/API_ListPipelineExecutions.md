@@ -17,6 +17,7 @@ Gets a list of the pipeline executions.
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "PipelineName": "{{string}}",
+   "PipelineVersionAlias": "{{string}}",
    "SortBy": "{{string}}",
    "SortOrder": "{{string}}"
 }
@@ -59,6 +60,13 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:([0-9]{12}|aws):pipeline/.*)?([a-zA-Z0-9](-*[a-zA-Z0-9]){0,255})`
 Required: Yes
 
+ ** [PipelineVersionAlias](#API_ListPipelineExecutions_RequestSyntax) **   <a name="sagemaker-ListPipelineExecutions-request-PipelineVersionAlias"></a>
+The alias of a pipeline version. The response includes only the executions of the version that has this alias when you make the request. If no version of the pipeline has this alias, the request fails with a `ResourceNotFound` error.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+Required: No
+
  ** [SortBy](#API_ListPipelineExecutions_RequestSyntax) **   <a name="sagemaker-ListPipelineExecutions-request-SortBy"></a>
 The field by which to sort results. The default is `CreatedTime`.
 Type: String
@@ -84,6 +92,7 @@ Required: No
          "PipelineExecutionDisplayName": "string",
          "PipelineExecutionFailureReason": "string",
          "PipelineExecutionStatus": "string",
+         "PipelineVersionAliases": [ "string" ],
          "StartTime": number
       }
    ]

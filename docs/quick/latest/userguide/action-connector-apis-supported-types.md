@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-connector-
 # Supported connector types and available actions
 <a name="action-connector-apis-supported-types"></a>
 
-Amazon Quick supports multiple connector types, each with specific actions available:
+AWS Quick supports multiple connector types, each with specific actions available:
 
 ## External service connectors
 <a name="action-connector-apis-external-services"></a>
@@ -72,7 +72,7 @@ Amazon Quick supports multiple connector types, each with specific actions avail
 ## Connector compatibility matrix
 <a name="action-connector-compatibility-matrix"></a>
 
-The following table shows which Amazon Quick features each connector type supports:
+The following table shows which AWS Quick features each connector type supports:
 
 **Connector feature compatibility**
 

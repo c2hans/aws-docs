@@ -52,6 +52,6 @@ The following are some known limitations in running Amazon Linux 2023 on Hyper-V
 **Known Limitations with running AL2023 on Hyper-V**
 +  UEFI Secure Boot mode is not currently supported nor functional with AL2023 on Hyper-V
 +  Hot plugging and unplugging CPU, memory, or any other device type is not supported.
-+  Virtual Machine (VM) hibernation is not supported.
-+  Virtual Machine (VM) migration is not supported.
++  Virtual machine (VM) hibernation is not supported.
++  Virtual machine (VM) migration is not supported.
 +  Passthrough of any device such as through PCI Passthrough, or USB Passthrough is not supported.

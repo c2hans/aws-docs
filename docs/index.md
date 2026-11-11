@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Welcome to AWS Documentation
@@ -59,7 +59,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon Managed Service for Apache Flink](/managed-flink/?icmpid=docs_homepage_analytics): Process and analyze streaming data using Apache Flink
 - [Amazon Managed Streaming for Apache Kafka](/msk/?icmpid=docs_homepage_analytics): Fully managed Apache Kafka service
 - [Amazon OpenSearch Service](/opensearch-service/?icmpid=docs_homepage_analytics): Deploy, operate, and scale OpenSearch clusters in the AWS Cloud
-- [Amazon Quick](/quick/?icmpid=docs_homepage_analytics): Fast business analytics service
+- [AWS Quick](/quick/?icmpid=docs_homepage_analytics): Fast business analytics service
 - [Amazon Redshift](/redshift/?icmpid=docs_homepage_analytics): Fast, simple, cost-effective data warehouse service
 
 ### Application Integration

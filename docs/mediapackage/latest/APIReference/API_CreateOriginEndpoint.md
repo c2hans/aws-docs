@@ -21,6 +21,7 @@ Content-type: application/json
       {
          "AudioTimelinePattern": "{{string}}",
          "AvailabilityStartTimeConfiguration": { ... },
+         "BandwidthReportingMode": "{{string}}",
          "BaseUrls": [
             {
                "DvbPriority": {{number}},
@@ -337,6 +338,7 @@ Content-type: application/json
       {
          "AudioTimelinePattern": "string",
          "AvailabilityStartTimeConfiguration": { ... },
+         "BandwidthReportingMode": "string",
          "BaseUrls": [
             {
                "DvbPriority": number,

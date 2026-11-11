@@ -11,11 +11,11 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/user-driven-upgra
 
 **What are user-driven license upgrades?**
 
-User-driven license upgrades allow Amazon Quick users to request license upgrades directly from the console, such as upgrading from Reader to Author or from Standard to Pro subscriptions. All requests require administrator approval.
+User-driven license upgrades allow AWS Quick users to request license upgrades directly from the console, such as upgrading from Reader to Author or from Standard to Pro subscriptions. All requests require administrator approval.
 
 **Who can request license upgrades?**
 
-Any user with an active Amazon Quick account can request upgrades, provided the feature is enabled by their administrator and they meet the eligibility criteria for the requested upgrade type.
+Any user with an active AWS Quick account can request upgrades, provided the feature is enabled by their administrator and they meet the eligibility criteria for the requested upgrade type.
 
 **Can users downgrade their license tier?**
 

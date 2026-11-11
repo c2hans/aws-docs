@@ -95,7 +95,7 @@ With Amazon Nova Pro and Amazon Nova Premier, grounded RAG workflows extend into
 This capability makes Amazon Nova uniquely suited for industries that require deep understanding of rich media content, such as legal casework, insurance assessments, clinical records, or regulatory filings.
 
 ## Security and governance in RAG
-<a name="security-and-governance-in-rag.a49c2656-a5f2-525c-bcc1-307e2342a55f"></a>
+<a name="security-and-governance-in-rag.4fe8abd3-f5d9-5ab7-88cc-46f08bbfe966"></a>
 
 Grounding enterprise models introduces, such as through RAG, knowledge bases, or fine-tuning new responsibilities. You're injecting your own data and context into a foundation model. This introduces new responsibilities beyond just model selection and prompt crafting. AWS recommends the following controls, which work together with guardrails to support confident enterprise deployment:
 + **Source data quality assurance** - Grounded responses are only as reliable as the documents, databases, or APIs that they're based on.

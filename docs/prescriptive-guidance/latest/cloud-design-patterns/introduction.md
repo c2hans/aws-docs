@@ -32,17 +32,10 @@ The guide covers the following patterns:
 + [Transactional outbox](transactional-outbox.md)
 
 ## Targeted business outcomes
-<a name="targeted-business-outcomes.4261aab2-0ba0-5dfc-8adf-e79494ae8b4b"></a>
+<a name="targeted-business-outcomes.bd13a762-9d97-574d-a48c-4bfae29cbb2f"></a>
 
 By using the patterns discussed in this guide to modernize your applications, you can:
 + Design and implement reliable, secure, operationally efficient architectures that are optimized for cost and performance.
 + Reduce the cycle time for use cases that require these patterns, so you can focus on organization-specific challenges instead.
 + Accelerate development by standardizing pattern implementations by using AWS services.
 + Help your developers build modern applications without inheriting technical debt.
-
-### Attachments
-<a name="attachments-48f618e4-d8ad-490f-982b-7b304dbf76c9"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

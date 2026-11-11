@@ -11,7 +11,7 @@ An *IAM user* is an entity that you create in AWS Identity and Access Management
 ![Architecture diagram of an IAM user accessing Quick Suite.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/01bb1fdf-7a7f-42fb-a01a-90fc27c3f67e.png)
 
 The following are the characteristics of this architecture and access approach:
-+ The Amazon Quick user record is linked to the user in IAM.
++ The AWS Quick user record is linked to the user in IAM.
 + User passwords are managed in IAM.
 + You can invite IAM users directly or create an IAM identity-based policy that permits users to self-provision access.
 + This type of user can log in through the Quick console or through the AWS Management Console.
@@ -26,7 +26,7 @@ Although AWS generally doesn't recommend configuring access through IAM users, o
 + For the direct invitation approach, you need:
   + Administrative permissions in Quick (see IAM identity-based policies for the [Standard](https://docs.aws.amazon.com/quicksuite/latest/userguide/iam-policy-examples.html#security_iam_id-based-policy-examples-all-access-standard-edition) or [Enterprise](https://docs.aws.amazon.com/quicksuite/latest/userguide/iam-policy-examples.html#security_iam_id-based-policy-examples-all-access-enterprise-edition) editions)
   + The email address of the IAM user
-+ For the self-provisioned access approach, the user needs permissions to create Amazon Quick (see [IAM identity-based policies for Amazon Quick: creating users](https://docs.aws.amazon.com/quicksuite/latest/userguide/iam-policy-examples.html#security_iam_id-based-policy-examples-create-users))
++ For the self-provisioned access approach, the user needs permissions to create AWS Quick (see [IAM identity-based policies for AWS Quick: creating users](https://docs.aws.amazon.com/quicksuite/latest/userguide/iam-policy-examples.html#security_iam_id-based-policy-examples-create-users))
 + The IAM user must have a password associated with their IAM credentials
 
 ## Configuring access for an IAM user
@@ -48,7 +48,7 @@ The result of both options is the same: the IAM user can access Quick. However, 
 ### Direct invitation
 <a name="direct-invitation.d62dfb5a-f4f4-5308-bb54-b513dba4f2b6"></a>
 
-For instructions on how to configure access for an IAM user, see [Inviting users to access Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/managing-user-access-qs-iam.html#inviting-users). Note the following when configuring this type of user access:
+For instructions on how to configure access for an IAM user, see [Inviting users to access AWS Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/managing-user-access-qs-iam.html#inviting-users). Note the following when configuring this type of user access:
 + For the Quick username, enter the username of the IAM user. Allowed characters are letters, numbers, and the following characters: . \_ - (hyphen).
 + For **IAM user**, choose **Yes**.
 + The user has seven days to accept the invitation. If they don't accept within this time period, you can resend the invitation email.

@@ -51,6 +51,11 @@ The name of the pod for this job.
 Type: String
 Required: No
 
+ ** securityContext **   <a name="Batch-Type-EksPodPropertiesDetail-securityContext"></a>
+The security context applied to the pod. The settings apply to all containers in the pod unless an individual container specifies an overriding value.
+Type: [EksPodSecurityContext](API_EksPodSecurityContext.md) object
+Required: No
+
  ** serviceAccountName **   <a name="Batch-Type-EksPodPropertiesDetail-serviceAccountName"></a>
 The name of the service account that's used to run the pod. For more information, see [Kubernetes service accounts](https://docs.aws.amazon.com/eks/latest/userguide/service-accounts.html) and [Configure a Kubernetes service account to assume an IAM role](https://docs.aws.amazon.com/eks/latest/userguide/associate-service-account-role.html) in the *Amazon EKS User Guide* and [Configure service accounts for pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) in the *Kubernetes documentation*.
 Type: String

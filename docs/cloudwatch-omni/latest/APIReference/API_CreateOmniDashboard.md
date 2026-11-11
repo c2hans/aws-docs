@@ -129,7 +129,7 @@ The following example creates a dashboard in a space from a JSON dashboard defin
 
 ```
 {
-  "body": "{"widgets":[{"type":"metric","x":0,"y":0,"width":12,"height":6,"properties":{"metrics":[["AWS/Lambda","Errors","FunctionName","OrderProcessor"]],"region":"us-east-1","title":"Lambda Errors"}}]}",
+  "body": "{"panels":[{"type":"markdown","title":"Overview","layout":{"x":0,"y":0,"w":60,"h":120},"config":{"content":"Service health for OrderProcessor."}},{"type":"explore","title":"Lambda errors","layout":{"x":0,"y":120,"w":60,"h":400},"config":{"queries":[{"queryId":"A","queryLanguage":"promql","queryString":"sum(rate(aws_lambda_errors_sum{function_name=\"OrderProcessor\"}[5m]))"}],"visualization":"line"}}]}",
   "clientToken": "3f2a9c1e-7b04-4d8a-9e15-6c2b8d0f4a73",
   "description": "Overview of service health metrics.",
   "name": "service-health-overview",
@@ -147,7 +147,7 @@ The following example creates a dashboard in a space from a JSON dashboard defin
 {
   "omniDashboard": {
     "arn": "arn:aws:cloudwatch:us-east-1:123456789012:omni-dashboard/c3d4e5f6-7a8b-4c9d-8e0f-1a2b3c4d5e6f",
-    "body": "{"widgets":[{"type":"metric","x":0,"y":0,"width":12,"height":6,"properties":{"metrics":[["AWS/Lambda","Errors","FunctionName","OrderProcessor"]],"region":"us-east-1","title":"Lambda Errors"}}]}",
+    "body": "{"panels":[{"type":"markdown","title":"Overview","layout":{"x":0,"y":0,"w":60,"h":120},"config":{"content":"Service health for OrderProcessor."}},{"type":"explore","title":"Lambda errors","layout":{"x":0,"y":120,"w":60,"h":400},"config":{"queries":[{"queryId":"A","queryLanguage":"promql","queryString":"sum(rate(aws_lambda_errors_sum{function_name=\"OrderProcessor\"}[5m]))"}],"visualization":"line"}}]}",
     "createdAt": "2026-09-16T14:22:31Z",
     "createdBy": "arn:aws:iam::123456789012:role/ObservabilityAdmin",
     "dashboardId": "c3d4e5f6-7a8b-4c9d-8e0f-1a2b3c4d5e6f",

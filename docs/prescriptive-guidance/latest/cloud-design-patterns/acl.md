@@ -40,7 +40,7 @@ Consider using this pattern when:
 You can implement ACL inside your monolithic application as a class that's specific to the service that's being migrated, or as an independent service. The ACL must be decommissioned after all dependent services have been migrated into the microservices architecture.
 
 ### High-level architecture
-<a name="high-level-architecture.6a4e8098-b5a5-5cea-9b11-f82a881f76d3"></a>
+<a name="high-level-architecture.16dc21de-5aee-5c48-b45b-f8125eb8f46a"></a>
 
 In the following example architecture, a monolithic application has three services: user service, cart service, and account service. The cart service is dependent on the user service, and the application uses a monolithic relational database.
 

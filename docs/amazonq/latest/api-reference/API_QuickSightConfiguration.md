@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_QuickSi
 # QuickSightConfiguration
 <a name="API_QuickSightConfiguration"></a>
 
-The Amazon Quick configuration for an Amazon Q Business application that uses Quick as the identity provider. For more information, see [Creating an Amazon Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
+The AWS Quick configuration for an Amazon Q Business application that uses Quick as the identity provider. For more information, see [Creating an AWS Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
 
 ## Contents
 <a name="API_QuickSightConfiguration_Contents"></a>
 
  ** clientNamespace **   <a name="qbusiness-Type-QuickSightConfiguration-clientNamespace"></a>
-The Amazon Quick namespace that is used as the identity provider. For more information about Quick namespaces, see [Namespace operations](https://docs.aws.amazon.com/quicksight/latest/developerguide/namespace-operations.html).
+The AWS Quick namespace that is used as the identity provider. For more information about Quick namespaces, see [Namespace operations](https://docs.aws.amazon.com/quicksight/latest/developerguide/namespace-operations.html).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[a-zA-Z0-9._-]*`

@@ -30,17 +30,17 @@ In Amazon MSF, CMK is a feature where you can encrypt your application's data wi
 + [Supported KMS key types](#supported-kms-key-types)
 + [KMS key permissions](#kms-key-permissions)
 + [KMS encryption context and constraints](#kms-encryption-context-constraints)
-+ [Key rotation policy](#kms-key-rotation-policy)
++ [Key transition](#kms-key-transition)
 + [Least-privileged key policy statements](#kms-least-privilege-policy-examples)
-+ [Example AWS CloudTrail log entries](#kms-cloudtrail-log-entries)
++ [AWS CloudTrail log entries](#kms-cloudtrail-log-entries)
 
 ### What is encrypted with CMKs?
 <a name="what-is-encrypted-cmk"></a>
 
 In an Amazon MSF application, data subject to a Flink checkpoint or snapshot will be encrypted with a CMK you define for that application. Consquently, your CMK will encrypt data stored in either running application storage or durable application storage. The [following sections](manage-cmk-api.md) describe the procedure to set up CMKs for your Amazon MSF applications.
 
-**Key rotation policy**
-Amazon MSF doesn't manage the key rotation policy for your CMKs. You're responsible for your own key rotation. This is because you create and maintain CMKs. For information about how to use your key rotation policy with CMK in Amazon MSF, see [Key rotation policy](#kms-key-rotation-policy).
+**Key transition**
+When you change the CMK of an application to a different key, the operator (API caller) needs permissions for both the previous key and the new key. For more information, see [Key transition](#kms-key-transition).
 
 ### What isn't encrypted with CMKs?
 <a name="what-is-not-encrypted-cmk"></a>
@@ -94,19 +94,13 @@ CMK in Amazon MSF provides encryption context when accessing keys to read or wri
 
 When creating grant to provision encrypted running application storage, Amazon MSF CMK creates grants with constraint type [EncryptionContextSubset](https://docs.aws.amazon.com/kms/latest/developerguide/create-grant-overview.html#grant-constraints) ensuring that only [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation is allowed through `"kms:GrantOperations": "Decrypt"`.
 
-### Key rotation policy
-<a name="kms-key-rotation-policy"></a>
+### Key transition
+<a name="kms-key-transition"></a>
 
-Amazon MSF doesn't manage the key rotation policy for your CMKs. You're responsible for your own key rotation because you create and maintain CMKs.
-
-In KMS you use either automatic or manual key rotation to create new cryptographic material for your CMKs. For information about how to rotate your keys, see [Rotate AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html) in the *AWS Key Management Service Developer Guide*.
-
-When you rotate keys for CMKs in Amazon MSF, you must make sure that the operator (API caller) has permissions for both the previous and new key.
+A key transition is a change from one CMK to a different CMK. When you change the CMK of an application to a different key, make sure that the operator (API caller) has permissions for both the previous key and the new key.
 
 **Note**
 An application can start from a snapshot which was encrypted with AOK after it's configured to use CMK. An application can also start from a snapshot which was encrypted with an older CMK. To start an application from a snapshot, the operator (API caller) must have permissions for both the old and new key.
-
-In Amazon MSF, we recommend that you stop and restart your applications using CMK encryption. This ensures the new rotation master key is applied to all data in running application storage and durable application storage. If you don't stop and restart your application, the new key material will only be applied to durable application storage. Running application storage will continue to be encrypted using the previous rotation key material.
 
 If you're changing the AWS KMS key ARN used for CMK you should use [UpdateApplication](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_UpdateApplication.html) in Amazon MSF. This will ensure your Flink application will restart as part of `UpdateApplication` applying the CMK changes.
 
@@ -118,119 +112,9 @@ When you provide an alias or alias ARN, Amazon MSF resolves the alias to key ARN
 
 For information about key policy statements, see [Create a KMS key policy](manage-cmk-api.md#create-cmk-kms-key-policy) and [Application lifecycle operator (API caller) permissions](manage-cmk-api.md#create-cmk-kms-api-caller-permissions).
 
-### Example AWS CloudTrail log entries
+### AWS CloudTrail log entries
 <a name="kms-cloudtrail-log-entries"></a>
 
-When Amazon MSF uses CMKs in AWS KMS, AWS CloudTrail automatically logs all AWS KMS API calls and related details. These logs contain information, such as AWS service making the request, KMS key ARN, API actions performed, and timestamps excluding the encrypted data. These logs provide essential audit trails for compliance, security monitoring, and troubleshooting by showing which services accessed your keys and when.
+When Amazon MSF uses CMKs in AWS KMS, AWS CloudTrail logs the AWS KMS API calls. The log entries show the AWS service that made the request, the KMS key ARN, the API action, and the timestamp. They don't include the encrypted data.
 
-**Example 1: AWS KMS Decrypt API call using an assumed role in Amazon MSF**
-The following CloudTrail log shows Amazon MSF performing a test [kms:Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation on a CMK. Amazon MSF makes this request using an **Operator** role while using the [CreateApplication](https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CreateApplication.html) API. The following log includes essential details, such as the target KMS key ARN, associated Amazon MSF application ({{MyCmkApplication}}), and timestamp of the operation.
-
-```
-{
-    "eventVersion": "1.11",
-    "userIdentity": {
-        "type": "AssumedRole",
-        "principalId": "REDACTED",
-        "arn": "arn:aws:sts::{{123456789012}}:assumed-role/Operator/{{CmkTestingSession}}",
-        "accountId": "{{123456789012}}",
-        "accessKeyId": "REDACTED",
-        "sessionContext": {
-            "sessionIssuer": {
-                "type": "Role",
-                "principalId": "REDACTED",
-                "arn": "arn:aws:iam::{{123456789012}}:role/Operator",
-                "accountId": "{{123456789012}}",
-                "userName": "Operator"
-            },
-            "attributes": {
-                "creationDate": "2025-08-07T13:29:28Z",
-                "mfaAuthenticated": "false"
-            }
-        },
-        "invokedBy": "kinesisanalytics.amazonaws.com"
-    },
-    "eventTime": "2025-08-07T13:45:45Z",
-    "eventSource": "kms.amazonaws.com",
-    "eventName": "Decrypt",
-    "awsRegion": "{{us-east-1}}",
-    "sourceIPAddress": "kinesisanalytics.amazonaws.com",
-    "userAgent": "kinesisanalytics.amazonaws.com",
-    "errorCode": "DryRunOperationException",
-    "errorMessage": "The request would have succeeded, but the DryRun option is set.",
-    "requestParameters": {
-        "encryptionContext": {
-            "aws:kinesisanalytics:arn": "arn:aws:kinesisanalytics:{{us-east-1}}:{{123456789012}}:application/{{MyCmkApplication}}"
-        },
-        "keyId": "arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}}",
-        "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
-        "dryRun": true
-    },
-    "responseElements": null,
-    "additionalEventData": {
-        "keyMaterialId": "REDACTED"
-    },
-    "requestID": "56764d19-1eb1-48f1-8044-594aa7dd05c4",
-    "eventID": "1371b402-f1dc-4c47-8f3a-1004e4803c5a",
-    "readOnly": true,
-    "resources": [
-        {
-            "accountId": "{{123456789012}}",
-            "type": "AWS::KMS::Key",
-            "ARN": "arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}}"
-        }
-    ],
-    "eventType": "AwsApiCall",
-    "managementEvent": true,
-    "recipientAccountId": "{{123456789012}}",
-    "eventCategory": "Management"
-}
-```
-
-**Example 2: AWS KMS Decrypt API call in Amazon MSF with direct service authentication**
-The following CloudTrail log shows Amazon MSF performing a test [kms:Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation on a CMK. Amazon MSF makes this request through direct AWS service-to-service authentication instead of assuming a role. The following log includes essential details, such as the target KMS key ARN, associated Amazon MSF application ({{MyCmkApplication}}), and a shared event ID of the operation.
-
-```
-{
-    "eventVersion": "1.11",
-    "userIdentity": {
-        "type": "AWSService",
-        "invokedBy": "kinesisanalytics.amazonaws.com"
-    },
-    "eventTime": "2025-08-07T13:45:45Z",
-    "eventSource": "kms.amazonaws.com",
-    "eventName": "Decrypt",
-    "awsRegion": "{{us-east-1}}",
-    "sourceIPAddress": "kinesisanalytics.amazonaws.com",
-    "userAgent": "kinesisanalytics.amazonaws.com",
-    "errorCode": "DryRunOperationException",
-    "errorMessage": "The request would have succeeded, but the DryRun option is set.",
-    "requestParameters": {
-        "encryptionAlgorithm": "SYMMETRIC_DEFAULT",
-        "keyId": "arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}}",
-        "encryptionContext": {
-            "aws:kinesisanalytics:arn": "arn:aws:kinesisanalytics:{{us-east-1}}:{{123456789012}}:application/{{MyCmkApplication}}"
-        },
-        "dryRun": true
-    },
-    "responseElements": null,
-    "additionalEventData": {
-        "keyMaterialId": "REDACTED"
-    },
-    "requestID": "5fe45ada-7519-4608-be2f-5a9b8ddd62b2",
-    "eventID": "6206b08f-ce04-3011-9ec2-55951d357b2c",
-    "readOnly": true,
-    "resources": [
-        {
-            "accountId": "{{123456789012}}",
-            "type": "AWS::KMS::Key",
-            "ARN": "arn:aws:kms:{{us-east-1}}:{{123456789012}}:key/{{1234abcd-12ab-34cd-56ef-1234567890ab}}"
-        }
-    ],
-    "eventType": "AwsApiCall",
-    "managementEvent": true,
-    "recipientAccountId": "Application-account-ID",
-    "sharedEventID": "acbe4a39-ced9-4f53-9f3c-21ef7e89dc37",
-    "eventCategory": "Management"
-}
-```
+To find the calls that Amazon MSF makes, look for AWS KMS events where `userIdentity.invokedBy` is `kinesisanalytics.amazonaws.com`. The `aws:kinesisanalytics:arn` value in the encryption context of the event identifies the application. For more information, see [Logging AWS KMS API calls with AWS CloudTrail](https://docs.aws.amazon.com/kms/latest/developerguide/logging-using-cloudtrail.html) in the *AWS Key Management Service Developer Guide*.

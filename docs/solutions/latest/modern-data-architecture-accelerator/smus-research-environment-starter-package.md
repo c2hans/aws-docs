@@ -25,12 +25,14 @@ This architecture is particularly effective when:
 +  **IAM Roles** - Domain and data administration roles
 +  **Lake Formation Settings** - Account-level governance for fine-grained data access
 +  **Audit** - Encrypted S3 audit bucket and CloudTrail trail for S3 data events
++  **Data Lake** - S3 bucket for research data, onboarded as team1’s SMUS data source
 
 ## SMUS Components
 <a name="smus-components"></a>
 +  **SMUS Domain** - DataZone V2 domain with IAM Identity Center SSO integration
 +  **Project Profiles** - Standardized team environments
 +  **Team Projects** - Team1 and team2 projects with SSO group membership
++  **S3 Data Source** - The `research-data` connection, which registers the `raw/` prefix of the research data bucket as a data source in team1’s project
 
 ## Deployment Instructions
 <a name="deployment-instructions-9"></a>
@@ -94,6 +96,7 @@ npx @aws-mdaa/cli deploy
 
  **Step 4: Verify deployment**
 + Verify the SMUS domain, project profiles, and team projects are visible in the SageMaker Unified Studio console.
++ Verify the `<org>-dev-shared-datalake-research` S3 bucket has been created.
 
 ## Usage Instructions
 <a name="usage-instructions-9"></a>
@@ -103,5 +106,10 @@ npx @aws-mdaa/cli deploy
 1.  **Team projects** — Team1 and team2 each have an isolated project. Members can access shared data via Lake Formation governance.
 
 1.  **Add data sources** — Register Glue databases as data sources in your team’s SMUS project for analytics and ML workflows.
+
+1.  **Read the research data source** — In the `team1` project, navigate to **Data** > **S3 buckets** (and **Connections**) and confirm that the `research-data` connection appears. Reading objects through it requires a post-deploy access grant and a second deploy, because team1’s SMUS environment role doesn’t exist until the `sagemaker-project` module has deployed:
+   + In the SMUS portal, open the `team1` project’s **Project overview** and copy its environment user role ARN.
+   + In `shared/datalake.yaml`, add that ARN under `roles` and add an `accessPolicies` entry that grants it `ReadRoles` on the `raw/` prefix.
+   + Redeploy the `datalake` module.
 
 For more detailed information, refer to the README.md and USAGE.md files in the starter\_kits/smus\_research\_environment directory of the MDAA repository.

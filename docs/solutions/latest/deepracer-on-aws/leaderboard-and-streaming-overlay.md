@@ -13,9 +13,9 @@ The **Live leaderboard** displays the selected track’s current rankings. The p
 
 The **Streaming overlay** is a transparent browser source that you can use with Open Broadcaster Software (OBS) or similar streaming software. During a run, a panel in the bottom-left corner displays the racer’s name, a countdown, and lap-time indicators. Between runs, a panel in the top-right corner displays the top four leaderboard entries.
 
-![Transparent overlay showing racer name](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_streaming_overlay_stats.png)
+![Transparent overlay showing racer name, time remaining, fastest, previous, and current lap times during a run](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_streaming_overlay_stats.png)
 
-![Transparent overlay showing first](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_streaming_overlay_lb.png)
+![Transparent overlay showing first, second, and third place leaderboard entries between runs](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_streaming_overlay_lb.png)
 
 **Important**
 Anyone with a spectator-view link can view that track’s race data. Share links only with your intended audience.

@@ -12,6 +12,11 @@ Gets information about the Auto Scaling instances in the account and Region.
 
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
+ ** IncludeManagedResources **
+ Specifies whether to include managed Auto Scaling instances in the response. When set to `true` (default), the response includes managed Auto Scaling instances.
+Type: Boolean
+Required: No
+
  **InstanceIds.member.N**
 The IDs of the instances. If you omit this property, all Auto Scaling instances are described. If you specify an ID that does not exist, it is ignored with no error.
 Array Members: Maximum number of 50 items.
@@ -22,6 +27,7 @@ Required: No
 
  ** MaxRecords **
 The maximum number of items to return with this call. The default value is `50` and the maximum value is `50`.
+A response can contain fewer items than the value specified by `MaxRecords`, even when more items are available. To retrieve the additional items, use the `NextToken` value in a subsequent call rather than relying on the number of items in the response.
 Type: Integer
 Required: No
 

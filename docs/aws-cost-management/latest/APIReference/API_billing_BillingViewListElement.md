@@ -17,7 +17,12 @@ Pattern: `arn:aws[a-z-]*:(billing)::[0-9]{12}:billingview/[a-zA-Z0-9/:_\+=\.\-@]
 Required: No
 
  ** billingViewType **   <a name="awscostmanagement-Type-billing_BillingViewListElement-billingViewType"></a>
-The type of billing view.
+The type of billing view. The following values are valid:
++  `PRIMARY` - The billing view that contains all cost management data associated with an account.
++  `CUSTOM` - A billing view that a customer creates from one or more source views.
++  `BILLING_GROUP` - The billing view for an AWS Billing Conductor billing group.
++  `BILLING_TRANSFER` - The billing view for the billing data that a bill transfer account is financially responsible for.
++  `BILLING_TRANSFER_SHOWBACK` - The billing view for billing data configured for showback or chargeback purposes.
 Type: String
 Valid Values: `PRIMARY | BILLING_GROUP | CUSTOM | BILLING_TRANSFER | BILLING_TRANSFER_SHOWBACK`
 Required: No

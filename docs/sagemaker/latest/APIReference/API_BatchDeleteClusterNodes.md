@@ -33,7 +33,7 @@ The request accepts the following data in JSON format.
 The name of the SageMaker HyperPod cluster from which to delete the specified nodes.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
+Pattern: `((arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}))`
 Required: Yes
 
  ** [NodeIds](#API_BatchDeleteClusterNodes_RequestSyntax) **   <a name="sagemaker-BatchDeleteClusterNodes-request-NodeIds"></a>

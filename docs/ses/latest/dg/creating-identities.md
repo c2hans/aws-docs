@@ -21,7 +21,7 @@ To help clarify the verification inheritance and email sending capabilities disc
 
 *\*Advanced sending includes using the email address with configuration sets, policy authorizations for delegate sending, and configurations that override the domain settings.*
 
-To send email from the same domain or email address in more than one AWS Region, you must create and verify a separate identity for each Region. You can verify as many as 10,000 identities in each Region.
+To send email from the same domain or email address in more than one AWS Region, you must create and verify a separate identity for each Region.
 
 **When you create and verify domain and email address identities, consider the following:**
 + You can send email from any subdomain or email address of the verified domain without having to verify each one individually. For example, if you create and verify an identity for example.com, you don't need to create separate identities for a.example.com, a.b.example.com, user@example.com, user@a.example.com, and so on.
@@ -37,7 +37,6 @@ To send email from the same domain or email address in more than one AWS Region,
 + You can add labels to verified email addresses without performing additional verification steps. To add a label to an email address, add a plus sign (\+) between the account name and the "at" sign (@), followed by a text label. For example, if you already verified sender@example.com, you can use sender\+myLabel@example.com as the "From" or "Return-Path" address for your emails. You can use this feature to implement Variable Envelope Return Path (VERP). Then you can use VERP to detect and remove undeliverable email addresses from your mailing lists.
 + Domain names are case-insensitive. If you verify example.com, you can send from EXAMPLE.com also.
 + Email addresses *are* case sensitive. If you verify sender@EXAMPLE.com, you can't send email from sender@example.com unless you verify sender@example.com as well.
-+ In each AWS Region, you can verify as many as 10,000 identities (domains and email addresses, in any combination).
 
 **Tip**
 If you're a first time user of SES, you can use the [Get started wizard](setting-up.md#quick-start-verify-email-addresses) to create and verify your first identity (email address or domain).

@@ -15,7 +15,7 @@ Understanding how inference works at the model and the system level — what com
 The [transformer](https://aws.amazon.com/what-is/transformers-in-artificial-intelligence/) architecture, introduced in 2017, is the foundation behind the vast majority of modern AI models used in production inference today. Understanding how transformers work — and how different model families use them — is essential for reasoning about inference performance and optimization.
 
 ### Core components
-<a name="core-components.f4002433-4343-5fd9-8f1c-d1e5926397ff"></a>
+<a name="core-components.423e2cc1-4118-5ae8-84fd-5a412fe747f4"></a>
 
 At its heart, a transformer is built from a stack of identical **layers**, each containing several components working together:
 
@@ -30,7 +30,7 @@ Additionally, transformers use **embeddings** to convert input tokens (words, su
 Each layer transforms its input (a set of vectors representing the data) and passes it to the next layer. The final layer's output is used to produce predictions — whether that's the next word, an embedding vector, or a classification score.
 
 ### Encoder, decoder, and hybrid architectures
-<a name="encoder--decoder--and-hybrid-architectures.9866b825-4010-5672-9ab0-70846e5c497e"></a>
+<a name="encoder--decoder--and-hybrid-architectures.2b32e05f-d741-50ee-8ee6-082085c9aeae"></a>
 
 Transformers can be organized in different ways depending on the task. The diagram below shows the original transformer architecture from the 2017 ["Attention Is All You Need" paper](https://arxiv.org/abs/1706.03762), which combines an **encoder** (left) and **decoder** (right):
 
@@ -109,7 +109,7 @@ The distinction between prefill and decode is fundamentally about **arithmetic i
 **Vision-Language Models (VLMs)** extend the LLM inference pipeline with an additional encoding stage before prefill. They accept images (or video frames) alongside text and produce text outputs.
 
 ### How VLM inference works
-<a name="how-vlm-inference-works.65c60590-ddb6-56d8-80ce-44215bc23f55"></a>
+<a name="how-vlm-inference-works.98be19ec-5776-5a84-b395-4124f2490be9"></a>
 
 1. **Vision encoding**: A vision encoder (e.g., ViT, SigLIP) processes the input image into a sequence of visual tokens (patch embeddings)
 
@@ -125,7 +125,7 @@ The distinction between prefill and decode is fundamentally about **arithmetic i
 The **KV (Key-Value) cache** is the attention state stored in GPU memory that LLMs need to generate future tokens. It is one of the most critical concepts for understanding inference performance, memory consumption, and cost.
 
 ### Why the KV cache exists
-<a name="why-the-kv-cache-exists.f0de690d-e471-598d-8805-ec5e66351aff"></a>
+<a name="why-the-kv-cache-exists.4abafb1c-8a4a-5444-bbd4-13b7ddac7815"></a>
 
 LLMs are autoregressive — each new token must attend to every previous token in the sequence. Without caching, the model would need to recompute the Key and Value projections for the entire context at every single decode step.
 

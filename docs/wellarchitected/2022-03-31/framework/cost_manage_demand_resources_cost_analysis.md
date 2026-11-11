@@ -20,7 +20,7 @@ The analysis should include the predictability and repeatability of the demand, 
 
 Ensure that the analysis effort reflects the potential benefits of implementing scaling. Look at the expected total cost of the component, and any increases or decreases in usage and cost over the workload lifetime.
 
-You can use [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) or [Amazon Quick](https://aws.amazon.com/quicksight/) with the AWS Cost and Usage Report (CUR) or your application logs to perform a visual analysis of workload demand.
+You can use [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) or [AWS Quick](https://aws.amazon.com/quicksight/) with the AWS Cost and Usage Report (CUR) or your application logs to perform a visual analysis of workload demand.
 
 **Implementation steps**
 + ** Analyze existing workload data: **Analyze data from the existing workload, previous versions of the workload, or predicted usage patterns. Use log files and monitoring data to gain insight on how customers use the workload. Typical metrics are the actual demand in requests per second, the times when the rate of demand changes or when it is at different levels, and the rate of change of demand. Ensure you analyze a full cycle of the workload, ensuring you collect data for any seasonal changes such as end of month or end of year events. The effort reflected in the analysis should reflect the workload characteristics. The largest effort should be placed on high-value workloads that have the largest changes in demand. The least effort should be placed on low-value workloads that have minimal changes in demand. Common metrics for value are risk, brand awareness, revenue or workload cost.
@@ -34,4 +34,4 @@ You can use [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-c
 +  [AWS Instance Scheduler](https://aws.amazon.com/answers/infrastructure-management/instance-scheduler/)
 +  [Getting started with Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html)
 + [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
-+ [Amazon Quick](https://aws.amazon.com/quicksight/)
++ [AWS Quick](https://aws.amazon.com/quicksight/)

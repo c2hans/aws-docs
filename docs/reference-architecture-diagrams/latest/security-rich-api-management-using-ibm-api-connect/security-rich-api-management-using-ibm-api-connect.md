@@ -28,7 +28,7 @@ Take advantage of agility, security, and elasticity to create, manage, secure, a
 
 1.  Client applications (consuming applications) such as web apps, mobile apps, and IoT devices can invoke and consume the APIs.
 
-1.  The API analytics data can be offloaded to **Amazon Simple Storage Service** (Amazon S3), which integrates with **Amazon Quick Sight** to visualize using dashboards. You can review API traffic patterns, latency, consumption, and more, then make data driven insights into your API initiatives.
+1.  The API analytics data can be offloaded to **Amazon Simple Storage Service** (Amazon S3), which integrates with **AWS Quick Sight** to visualize using dashboards. You can review API traffic patterns, latency, consumption, and more, then make data driven insights into your API initiatives.
 
 ## Further reading
 <a name="further-reading"></a>

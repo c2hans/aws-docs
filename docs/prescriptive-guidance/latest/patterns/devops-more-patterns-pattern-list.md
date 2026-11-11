@@ -25,6 +25,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 + [Implement path-based API versioning by using custom domains in Amazon API Gateway](implement-path-based-api-versioning-by-using-custom-domains.md)
 + [Integrate Stonebranch Universal Controller with AWS Mainframe Modernization](integrate-stonebranch-universal-controller-with-aws-mainframe-modernization.md)
 + [Mainframe modernization: DevOps on AWS with Rocket Software Enterprise Suite](mainframe-modernization-devops-on-aws-with-micro-focus.md)
++ [Deploy real-time coding security validation by using an MCP server with Kiro](mcp-security-scanner-kiro.md)
 + [Migrate IIS-hosted applications to Amazon EC2 by using appcmd.exe](migrate-iis-hosted-applications-to-amazon-ec2-by-using-appcmd.md)
 + [Automate blue/green deployments of Amazon Aurora global databases by using IaC principles](p-automate-blue-green-deployments-aurora-global-databases-iac.md)
 + [Preserve routable IP space in multi-account VPC designs for non-workload subnets](preserve-routable-ip-space-in-multi-account-vpc-designs-for-non-workload-subnets.md)

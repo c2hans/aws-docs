@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::GameLift::GameSessionQueue
 <a name="aws-resource-gamelift-gamesessionqueue"></a>
 
-The `AWS::GameLift::GameSessionQueue` resource creates a placement queue that processes requests for new game sessions. A queue uses FleetIQ algorithms to determine the best placement locations and find an available game server, then prompts the game server to start a new game session. Queues can have destinations (GameLift fleets or aliases), which determine where the queue can place new game sessions. A queue can have destinations with varied fleet type (Spot and On-Demand), instance type, and AWS Region.
+The `AWS::GameLift::GameSessionQueue` resource creates a placement queue that processes requests for new game sessions. A queue finds the best available game server, then prompts it to start a new game session. Queues can have destinations (fleets or aliases), which determine where the queue can place new game sessions. A queue can have destinations with varied fleet type (Spot and On-Demand), instance type, and AWS Region.
 
 ## Syntax
 <a name="aws-resource-gamelift-gamesessionqueue-syntax"></a>
@@ -105,7 +105,7 @@ A set of policies that enforce a sliding cap on player latency when processing g
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PriorityConfiguration`  <a name="cfn-gamelift-gamesessionqueue-priorityconfiguration"></a>
-Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the FleetIQ default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process.
+Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process.
 *Required*: No
 *Type*: [PriorityConfiguration](aws-properties-gamelift-gamesessionqueue-priorityconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -157,7 +157,7 @@ A descriptive label that is associated with a game session queue. Names are uniq
 ### Create a Game Session Queue
 <a name="aws-resource-gamelift-gamesessionqueue--examples--Create_a_Game_Session_Queue"></a>
 
-The following example creates a GameLift game session queue named `MyGameSessionQueue`. The queue is configured with two destinations, one using a fleet ID and one using an alias ID. The queue has a latency policy.
+The following example creates a GameLift game session queue named `MyGameSessionQueue`. The queue is configured with two destinations, one using a fleet ID and one using an alias ID. The queue has a latency policy and delivers game session placement insight logs to Amazon CloudWatch Logs.
 
 #### JSON
 <a name="aws-resource-gamelift-gamesessionqueue--examples--Create_a_Game_Session_Queue--json"></a>
@@ -202,6 +202,14 @@ The following example creates a GameLift game session queue named `MyGameSession
                         "us-east-1",
                         "us-west-2"
                     ]
+                },
+                "LogConfiguration": {
+                    "DeliveryDestinations": [
+                        {
+                            "LogDestination": "CLOUDWATCH",
+                            "DestinationArn": "arn:aws:logs:us-west-2:111122223333:log-group:MyPlacementLogs"
+                        }
+                    ]
                 }
             }
         }
@@ -227,11 +235,11 @@ Resources:
       PlayerLatencyPolicies:
         - MaximumIndividualPlayerLatencyMilliseconds: 1000
           PolicyDurationSeconds: 60
-          PriorityConfiguration:
-          LocationOrder:
+      PriorityConfiguration:
+        LocationOrder:
           - 'us-west-2'
           - 'us-east-1'
-          PriorityOrder:
+        PriorityOrder:
           - 'COST'
           - 'LATENCY'
           - 'LOCATION'
@@ -240,10 +248,14 @@ Resources:
         AllowedLocations:
           - 'us-east-1'
           - 'us-west-2'
+      LogConfiguration:
+        DeliveryDestinations:
+          - LogDestination: CLOUDWATCH
+            DestinationArn: "arn:aws:logs:us-west-2:111122223333:log-group:MyPlacementLogs"
 ```
 
 ## See also
 <a name="aws-resource-gamelift-gamesessionqueue--seealso"></a>
-+ [ Create GameLift resources Using Amazon CloudFront](https://docs.aws.amazon.com/gamelift/latest/developerguide/resources-cloudformation.html) in the *Amazon GameLift Developer Guide*
++ [ Create GameLift resources Using AWS CloudFormation](https://docs.aws.amazon.com/gamelift/latest/developerguide/resources-cloudformation.html) in the *Amazon GameLift Developer Guide*
 + [ Setting up GameLift queues for game session placement](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-intro.html) in the *Amazon GameLift Developer Guide*
 + [CreateGameSessionQueue](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateGameSessionQueue.html) in the *Amazon GameLift API Reference*

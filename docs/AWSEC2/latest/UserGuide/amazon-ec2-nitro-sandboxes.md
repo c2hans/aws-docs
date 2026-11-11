@@ -5,215 +5,84 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro
 # Isolate workloads with AWS Nitro Sandboxes
 <a name="amazon-ec2-nitro-sandboxes"></a>
 
-An *AWS Nitro Sandbox* is a lightweight virtual machine, or child VM, that you can run alongside your workload on almost any Amazon EC2 instance. Nitro Sandboxes are built on the same AWS Nitro technology that isolates every Amazon EC2 instance. You don't rely on the guest operating system to hold the boundary. Instead, you trust Nitro, a minimized hypervisor that AWS maintains and patches. Nitro isolates each Nitro Sandbox from the parent instance, from other Nitro Sandboxes, and from AWS operators. As a result, you can isolate a workload even from your own operators, meaning the people and software that administer the parent instance. The parent contributes vCPU and memory. Nitro keeps the workload isolated and can attest to the code it runs.
+AWS Nitro Sandboxes is an Amazon EC2 feature that runs a workload in its own lightweight virtual machine, called a *Nitro Sandbox*. A Nitro Sandbox runs alongside an Amazon EC2 instance, called the *parent instance*, on vCPUs and memory that the parent instance contributes. A virtual machine monitor (VMM) on the parent instance manages it, and the AWS Nitro System enforces the boundary around it. To use Nitro Sandboxes, you must enable AWS Nitro Enclaves when you launch the parent instance.
 
-Nitro Sandboxes build on the same foundations as AWS Nitro Enclaves, but they provide the parent instance with mechanisms to implement a wide variety of virtual hardware, such as virtual network and virtual block devices. The parent instance can use them to proxy Elastic Network Adapter (ENA) interfaces or Amazon EBS volumes into the Nitro Sandbox. As a result, a Nitro Sandbox can use ordinary networking and block storage. Standard virtual machine monitors (VMMs) manage it from the parent instance. Nitro Sandboxes run on Intel, AMD, and AWS Graviton processors.
+You can use Nitro Sandboxes in the following ways:
++ For containers on Amazon Elastic Kubernetes Service (Amazon EKS), the service runs each pod in its own Nitro Sandbox. For more information, see [Sandboxing on Amazon EKS with isolated and confidential pods](https://docs.aws.amazon.com/eks/latest/userguide/sandboxing.html) in the *Amazon EKS User Guide*.
++ For containers on Amazon Elastic Container Service (Amazon ECS), the service runs each task in its own Nitro Sandbox. For more information, see [Isolated and confidential tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated-confidential-tasks.html) in the *Amazon Elastic Container Service Developer Guide*.
++ With your own orchestrator on an Amazon EC2 instance, you launch Nitro Sandboxes with Firecracker. For more information, see [Run Nitro Sandboxes with Firecracker](nitro-sandboxes-run-firecracker.md).
 
-Nitro Sandboxes suit a wide range of workloads that share an Amazon EC2 instance and need their own virtual machine boundary, such as agentic workloads that run untrusted code, multi-tenant containers, Kubernetes pods, and Amazon ECS tasks. You should use [AWS Nitro Enclaves](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html) for small, tightly scoped jobs, because an enclave connects to its parent instance through a single local vsock channel that keeps the exposed surface small. [Nested virtualization](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nested-virtualization.html) is best for workloads that must run their own hypervisor, like Windows Subsystem for Linux, and you want full control of that hypervisor. If you want to run workloads that stay isolated between tenants, and don't want to manage servers or networking, use [AWS Lambda MicroVMs](https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html) to offload your infrastructure management. For guidance on choosing Nitro Sandboxes for a given workload, see [When to use Nitro Sandboxes](#nitro-sandboxes-when-to-use) below.
+For confidential workloads, you verify the attestation of each Nitro Sandbox with an AWS Key Management Service (AWS KMS) key policy, whichever way you launch it.
+
+There are no additional charges for using Nitro Sandboxes. Nitro Sandboxes run on the vCPUs and memory of the parent instance, so you pay the standard charges for the Amazon EC2 instance and for the other AWS services that you use.
 
 **Topics**
 + [How it works](#nitro-sandboxes-how-it-works)
 + [Confidential and direct modes](#nitro-sandboxes-modes)
-+ [Supported features](#nitro-sandboxes-features)
 + [When to use Nitro Sandboxes](#nitro-sandboxes-when-to-use)
-+ [Run a Nitro Sandbox on an Amazon EC2 instance](#nitro-sandboxes-run-on-ec2)
-+ [Launch, resize, and attach storage to a Nitro Sandbox](#nitro-sandboxes-launch-size-storage)
++ [Supported features](#nitro-sandboxes-features)
++ [Cryptographic attestation](#nitro-sandboxes-attestation-overview)
 + [Considerations and limitations](#nitro-sandboxes-considerations)
++ [Run Nitro Sandboxes with Firecracker](nitro-sandboxes-run-firecracker.md)
++ [Attest a Nitro Sandbox](nitro-sandboxes-attestation.md)
 
 ## How it works
 <a name="nitro-sandboxes-how-it-works"></a>
 
-A Nitro Sandbox runs as a first-level, hardware-virtualized guest alongside your instance. The parent instance provides the Nitro Sandbox with vCPU, memory, and I/O, while the Nitro System enforces the isolation boundary and provides cryptographic attestation. Nitro Sandboxes are isolated from each other and from the parent instance. No matter what runs inside a Nitro Sandbox, it can't access another Nitro Sandbox or the parent.
+A Nitro Sandbox runs on the Nitro Hypervisor alongside its parent instance, the same way that an Amazon EC2 instance does, so its vCPUs run at Amazon EC2 instance level performance. The Nitro System isolates Nitro Sandboxes from each other, and code in a Nitro Sandbox can't access the memory of the parent instance. A Nitro Sandbox reaches the parent instance only through its virtual devices.
 
-You select a mode (confidential or direct) and a VMM when you create a Nitro Sandbox. For the difference between the modes, see [Confidential and direct modes](#nitro-sandboxes-modes). For the VMM options and how Firecracker drives a Nitro Sandbox, see [How Firecracker works](#nitro-sandboxes-firecracker).
+The VMM creates Nitro Sandboxes through the Nitro Enclaves driver on the parent instance and implements their virtual devices. Currently, Firecracker is the only VMM that supports Nitro Sandboxes, and the driver is available for Linux. For the supported versions, see [Prerequisites](nitro-sandboxes-run-firecracker.md#nitro-sandboxes-prerequisites).
 
 ## Confidential and direct modes
 <a name="nitro-sandboxes-modes"></a>
 
-Every Nitro Sandbox runs in one of two modes. You choose the mode when you create a Nitro Sandbox, and you can't change it while the Nitro Sandbox is running:
+For each Nitro Sandbox, you choose how much the parent instance can observe. You choose the mode at launch, and you can't change it later.
 
 Confidential mode (default)
-The Nitro System moves the Nitro Sandbox's memory out of the parent instance, so the parent can't read it, and the Nitro Sandbox can produce an attestation of the code it is running. The Nitro Sandbox includes a Nitro Security Module (NSM) for attestation, and virtio device queues use dedicated shared memory regions so that devices work without exposing the rest of guest memory. Use confidential mode for any workload that processes secrets, including protection from your own operators.
-In confidential mode, a workload can prove that it is running unmodified code before it receives secrets. You verify this attestation with an external service, commonly AWS KMS, by adding a condition to an AWS KMS key policy so that the service releases secrets only to a Nitro Sandbox whose measurements match the values you expect.
+The Nitro System removes the memory of the Nitro Sandbox from the parent instance, so neither the parent instance nor its administrators can read or change that memory. Each virtual device exchanges data through its own dedicated buffer. A Nitro Security Module (NSM) in the Nitro Sandbox provides cryptographic attestation.
+The parent instance still carries the device traffic, chooses the image, and controls when the Nitro Sandbox runs. Encrypt data that leaves the Nitro Sandbox, and use attestation to check its image before you give it secrets.
+Use confidential mode for workloads that you keep private from the administrators of the parent instance.
 
 Direct mode
-The parent shares the Nitro Sandbox's memory instead of taking exclusive ownership of it. There is no attestation, and the parent retains access to the Nitro Sandbox's memory. Direct mode is simpler and offers higher I/O throughput, although it is not confidential. Its trust model is equivalent to a standard nested virtual machine. Use direct mode when the Nitro Sandbox and the parent are operated by the same trusted party.
-
-## Supported features
-<a name="nitro-sandboxes-features"></a>
-
-A Nitro Sandbox presents a standard virtio-pci device model to the guest, so your workload runs without sandbox-specific code. The following features are available in a Nitro Sandbox:
-
-Block storage
-Attach block devices (virtio-blk) backed by local instance store or Amazon EBS. You can resize a block device while the Nitro Sandbox is running. A block device attaches to only one Nitro Sandbox at a time.
-
-Networking
-Attach network interfaces (virtio-net) for VPC connectivity, and reach instance metadata through the instance metadata service. Each Nitro Sandbox has its own isolated network stack and can't share the parent instance's network namespace.
-
-Host communication
-Use a vsock channel (virtio-vsock) between the Nitro Sandbox and the parent, for example to relay attestation traffic.
-
-Entropy
-Attach an entropy device (virtio-rng) in direct mode. Confidential mode doesn't support the entropy device. The guest uses its own entropy sources instead.
-
-Device hot plug
-Add block and network virtio devices to a running Nitro Sandbox when you enable hot plug. The devices that you hot plug count toward the instance's device limit. You can't hot-unplug a device.
+The parent instance shares the memory of the Nitro Sandbox and can read and write it. There is no NSM and no attestation. The virtual devices exchange data directly through the memory of the Nitro Sandbox, without dedicated buffers, and the trust model is equivalent to that of a nested virtual machine.
+Use direct mode when the same trusted party operates both the Nitro Sandbox and the parent instance.
 
 ## When to use Nitro Sandboxes
 <a name="nitro-sandboxes-when-to-use"></a>
 
-Use a Nitro Sandbox when you need a boundary as strong as a virtual machine around a container-scale workload, but you don't want the cost of a separate Amazon EC2 instance for each workload or the overhead of nested virtualization. Common use cases include:
-+ **Enhanced container isolation** – Make each pod or task a hard security boundary in multi-tenant clusters, while still packing many workloads onto each instance.
-+ **Attested containers** – Let regulated workloads or third-party models prove their isolation and integrity before they receive secrets.
-+ **Attested virtual machine workloads** – Use a Nitro Sandbox as an alternative to nested virtualization for lightweight virtual machines. It is available on all instance types that support Nitro Sandboxes and provides higher performance together with hardware-backed attestation.
-+ **Isolation from your own operators** – Run a workload so that neither the parent instance nor your own operators can read its memory or data.
-+ **Secret isolation** – Isolate secrets and sensitive logic from a larger application, so that a compromise of the application doesn't expose them.
-+ **Agentic workloads** – Sandbox AI agents that generate and run untrusted code, giving each agent session a hardware-isolated boundary.
+Choose by how much of the machinery you want to run yourself:
++ None of it: use [AWS Lambda MicroVMs](https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html), with no instances or networking to manage.
++ Your instance, with AWS enforcing the boundary between workloads: use Nitro Sandboxes. This is the general case for sharing an instance between independent workloads, such as AI agents that run code from their users, workloads of different tenants, and build jobs.
++ A small, tightly scoped job on highly sensitive data: use [Nitro Enclaves](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html). An enclave has no persistent storage, interactive access, or external networking, only a local socket to its parent instance. Choose it when that minimal interface is what your job needs.
++ Your own hypervisor or operating system: use [nested virtualization](amazon-ec2-nested-virtualization.md).
 
-**Note**
-You can use Nitro Sandboxes directly on Amazon EC2, or through a managed container service. If you run containers on Amazon EKS or Amazon ECS, then Amazon EKS and Amazon ECS provisions and attests a Nitro Sandbox for each pod or task for you. For more information, see [Sandboxing](https://docs.aws.amazon.com/eks/latest/userguide/sandboxing.html) in the *Amazon EKS User Guide* and [Isolated and confidential tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated-confidential-tasks.html) in the *Amazon ECS Developer Guide*. The rest of this topic describes the self-managed experience, in which your own orchestrator drives Nitro Sandboxes directly on Amazon EC2.
+Nitro Sandboxes run on instances with Intel, AMD, and AWS Graviton processors. Nested virtualization is available only on instances with Intel processors.
 
-## Run a Nitro Sandbox on an Amazon EC2 instance
-<a name="nitro-sandboxes-run-on-ec2"></a>
+## Supported features
+<a name="nitro-sandboxes-features"></a>
 
-You can use Nitro Sandboxes as a building block for Amazon EC2 workloads. The managed container integrations for Amazon EKS and Amazon ECS are layers built on top of this primitive. If you run your own orchestrator, it performs the same role that a managed service otherwise would: On each instance it launches Nitro Sandboxes, connects their I/O, accounts for the resources they consume, and relays attestation. The self-managed workflow has the following main steps.
+Your applications run unmodified in a Nitro Sandbox, which can use the following:
 
-**To run a workload in a self-managed Nitro Sandbox**
+Storage
+A Nitro Sandbox can use block devices on storage of the parent instance and resize them while it runs. Over the network, a workload can use Amazon Simple Storage Service (Amazon S3), Amazon Elastic File System (Amazon EFS), and other network storage through a client in your image.
 
-1. **Launch a supported instance and enable the feature.** Launch an instance type that supports AWS Nitro Enclaves, and enable it with the same instance option that enables Nitro Enclaves. For the instance launch parameters, see the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command.
+Networking
+Each Nitro Sandbox runs its own network stack. The network backend of the VMM on the parent instance decides how that stack connects to the network of the parent instance. A local socket (vsock) connects the Nitro Sandbox to the parent instance.
 
-1. **Build a guest image for your workload.** The image declares the capabilities it requires, such as the devices to attach and whether Nitro Sandboxes share CPU. These settings are part of the signed image and must match what you request at launch, which is what keeps attestation meaningful.
+## Cryptographic attestation
+<a name="nitro-sandboxes-attestation-overview"></a>
 
-1. **Launch the Nitro Sandbox with a VMM.** On the instance, use a standard VMM (we recommend Firecracker) to launch the Nitro Sandbox from your image, specifying the vCPU count, memory, and devices. Confidential mode is the default. You can instead select direct mode for higher throughput without attestation.
+In confidential mode, the Nitro System measures the boot image, the launch settings, the virtual devices at boot (unless you enable hot plug), and the identity of the parent instance. The NSM signs these measurements in an attestation document that the parent instance can't forge.
 
-1. **Attest the Nitro Sandbox before you release secrets.** At launch, the Nitro Sandbox measures its contents into the NSM. Your workload retrieves the attestation, and an external verifier (commonly AWS KMS, through a condition in a key policy) releases secrets only when the measurement matches. The parent instance can't forge the measurement.
-
-When you run your own orchestrator, you are the parent operator. You are responsible for the following tasks:
-+ Building guest images with the correct settings.
-+ Running the device backends, and treating all data from a Nitro Sandbox as untrusted input.
-+ Accounting for the memory and CPU you contribute, and zeroing memory before you contribute it.
-+ Terminating Nitro Sandboxes for an orderly shutdown.
-+ Relaying attestation traffic between the Nitro Sandbox and the external verifier.
-
-## Launch, resize, and attach storage to a Nitro Sandbox
-<a name="nitro-sandboxes-launch-size-storage"></a>
-
-When you run your own orchestrator, you use standard Amazon EC2 and VMM commands to launch a Nitro Sandbox, set its size, and attach storage. The examples in this section use Firecracker, the recommended VMM. For other VMMs, such as QEMU, you need to add Nitro Sandbox compatibility before you can use attestation or run a Nitro Sandbox in confidential mode.
-
-### How Firecracker works
-<a name="nitro-sandboxes-firecracker"></a>
-
-Firecracker can launch and manage Nitro Sandboxes as an alternative to KVM microVMs. Instead of creating a microVM through KVM, Firecracker uses the Nitro Enclaves driver on the parent instance to create, configure, and boot a Nitro Sandbox with a standard virtio-pci device model. Firecracker acts as the Nitro Sandbox's frontend: it owns the API socket, the device backends, and the Nitro Sandbox lifecycle. To launch a Nitro Sandbox, Firecracker does the following:
-
-1. Creates the Nitro Sandbox and checks the capabilities that the platform supports.
-
-1. Adds vCPUs, either as dedicated cores from the parent's CPU pool, as explicit CPU IDs, or as vCPUs that share the parent's remaining cores when you enable CPU overcommit.
-
-1. Allocates contiguous memory, writes the guest image into it, and donates the memory to the Nitro Sandbox.
-
-1. Registers each configured virtio device, such as block, network, vsock, and entropy devices.
-
-1. Starts the Nitro Sandbox. The Nitro System boots the image through UEFI firmware and presents a full PCIe topology to the guest.
-
-After the guest starts, the device backends in Firecracker serve I/O through shared queues: guest memory in direct mode, or dedicated device memory buffers in confidential mode. The guest sees ordinary virtio-pci devices and needs no sandbox-specific code. Nitro Sandbox memory isn't overcommitted: the parent donates the full memory size when the Nitro Sandbox starts, and that memory returns to the parent only when the Nitro Sandbox terminates.
-
-**Note**
-Because Nitro Sandboxes build on Nitro Enclaves, the Firecracker API uses the term *enclave* for the Nitro Sandbox configuration endpoint. Confidential mode is the default; direct mode is opt-in.
-
-### Launch a Nitro Sandbox
-<a name="nitro-sandboxes-launch"></a>
-
-First, launch an instance type that supports AWS Nitro Enclaves, and enable it with the `--enclave-options Enabled=true` parameter, the same option that enables Nitro Enclaves.
-
-```
-aws ec2 run-instances \
---image-id {{ami-id}} \
---instance-type {{instance-type}} \
---enclave-options Enabled=true
-```
-
-After the instance is running, use Firecracker, the recommended VMM, on the instance to launch the Nitro Sandbox from your guest image, specifying the vCPU count, memory, and devices. Firecracker drives a Nitro Sandbox through its API socket or a `--config-file` JSON file rather than through command-line machine flags. Confidential mode is the default, and we recommend it for any workload that processes secrets. Because confidential mode is the default, the empty `"enclave": {}` object is enough to mark the virtual machine as a Nitro Sandbox; you don't set a separate confidential flag.
-
-```
-{
-    "boot-source": {
-        "kernel_image_path": "sandbox-image"
-    },
-    "machine-config": {
-        "vcpu_count": 2,
-        "mem_size_mib": 2048
-    },
-    "drives": [
-        {
-            "drive_id": "rootfs",
-            "path_on_host": "rootfs.ext4",
-            "is_root_device": true,
-            "is_read_only": false
-        }
-    ],
-    "network-interfaces": [
-        {
-            "iface_id": "eth0",
-            "host_dev_name": "tap0"
-        }
-    ],
-    "enclave": {}
-}
-```
-
-Launch the Nitro Sandbox by passing the configuration file to Firecracker.
-
-```
-firecracker --config-file sandbox.json
-```
-
-To use direct mode instead (which shares memory with the parent, provides no attestation, and offers higher I/O throughput), set `direct_mode` to true in the enclave configuration. The parent keeps access to the Nitro Sandbox's memory.
-
-```
-"enclave": {
-    "direct_mode": true
-}
-```
-
-### Size and resize a Nitro Sandbox
-<a name="nitro-sandboxes-resize"></a>
-
-You set the size of a Nitro Sandbox at launch with the VMM. In the `machine-config` object, `vcpu_count` sets the number of vCPUs and `mem_size_mib` sets the memory in MiB (a multiple of 2).
-
-```
-"machine-config": {
-    "vcpu_count": 4,
-    "mem_size_mib": 2048
-}
-```
-
-By default, each vCPU consumes a dedicated physical core from the Nitro Enclaves CPU pool, and Nitro allocates cores whole (both SMT siblings together). To let vCPUs float over the parent's remaining CPUs instead of dedicating whole cores, set `cpu_overcommit` to true in the Nitro Sandbox (enclave) configuration when you launch it. Before you launch Nitro Sandboxes, provision the parent-side resource pools that back their size: a CPU pool for pinned vCPUs, a memory pool for the memory you contribute, and a device-slot budget large enough for the number of Nitro Sandboxes you plan to run.
-
-You can't change a Nitro Sandbox's vCPU and memory allocation during the life of the Nitro Sandbox. To change either value, terminate the Nitro Sandbox and re-create it at the new size. If the guest image enables PCIe hot plug, you can add devices to a running Nitro Sandbox; otherwise, attach all devices before you launch it. To run more or larger Nitro Sandboxes than the parent currently has capacity for, increase the parent-side CPU pool, memory pool, and device-slot budget before you launch them.
-
-### Attach storage to a Nitro Sandbox
-<a name="nitro-sandboxes-attach-storage"></a>
-
-A Nitro Sandbox reaches storage the same way an ordinary Amazon EC2 guest does, through the devices that the parent presents to it. You can attach the following types of storage:
-
-Local instance store
-Ephemeral NVMe storage on the parent host, which the parent presents to the Nitro Sandbox as a `virtio-blk` device. It is fast and included in the instance price, but you lose its contents when the instance stops or terminates. Use it for scratch space and caches.
-
-Amazon EBS
-Persistent, network-attached block volumes. The parent presents a volume to the Nitro Sandbox as a `virtio-blk` device. A block device attaches to only one Nitro Sandbox at a time. Don't mount the same volume from two Nitro Sandboxes at the same time, which corrupts the file system. Encrypt volumes with an AWS KMS key.
-
-Amazon S3 and other network storage
-Object and file storage that the Nitro Sandbox reaches over the network. The Nitro Sandbox needs network connectivity and an AWS identity. Amazon S3, Amazon EFS, and similar services are inherently shareable across many Nitro Sandboxes and ordinary instances. You control access with IAM and encrypt data with `SSE-KMS`.
-
-Storage isolation is independent of compute isolation. To keep data confidential from the parent operator, encrypt the volume or objects with an AWS KMS key whose policy releases the data key only to a Nitro Sandbox whose attestation matches the values you expect.
+AWS KMS releases a secret only when the document matches the conditions in your key policy. Always check the measurement of the image in the key policy. The measurements of the parent instance alone also match a Nitro Sandbox in debug mode, a development setting that shows the guest console and records no image measurements. For more information, see [Attest a Nitro Sandbox](nitro-sandboxes-attestation.md).
 
 ## Considerations and limitations
 <a name="nitro-sandboxes-considerations"></a>
 
-Keep the following considerations in mind when you use Nitro Sandboxes:
+The following considerations apply when you use Nitro Sandboxes:
 
 Supported instance types
-Nitro Sandboxes are available only on instance types that support AWS Nitro Enclaves. If an instance type can't run Nitro Enclaves, it can't run Nitro Sandboxes. The following instance types support Nitro Sandboxes:
+Nitro Sandboxes are not available on flex instances, such as C7i-flex, M7i-flex, C8i-flex, M8i-flex, and R8i-flex. The following instance types support Nitro Sandboxes.
 
 **General purpose instances that support Nitro Sandboxes**
 
@@ -262,7 +131,7 @@ Nitro Sandboxes are available only on instance types that support AWS Nitro Encl
 
 <table>
 <thead>
-  <tr><th>Instance family</th><th>Exceptions</th></tr>
+  <tr><th>Instance family</th><th>Instance types</th></tr>
 </thead>
 <tbody>
   <tr><td>C5</td><td>All instance types, <b>except</b>: <code>c5.large</code> | <code>c5.metal</code></td></tr>
@@ -365,6 +234,8 @@ Nitro Sandboxes are available only on instance types that support AWS Nitro Encl
 </tbody>
 </table>
 
+On accelerated computing instances, a Nitro Sandbox runs CPU workloads only.
+
 **Accelerated computing instances that support Nitro Sandboxes**
 
 <table>
@@ -372,29 +243,26 @@ Nitro Sandboxes are available only on instance types that support AWS Nitro Encl
   <tr><th>Instance family</th><th>Instance types</th></tr>
 </thead>
 <tbody>
-  <tr><td>G6</td><td><code>g6.xlarge</code>, <code>g6.2xlarge</code>, <code>g6.4xlarge</code>, <code>g6.8xlarge</code>, <code>g6.12xlarge</code>, <code>g6.16xlarge</code>, <code>g6.24xlarge</code>, <code>g6.48xlarge</code></td></tr>
-  <tr><td>Gr6</td><td><code>gr6.4xlarge</code>, <code>gr6.8xlarge</code></td></tr>
-  <tr><td>G6e</td><td><code>g6e.xlarge</code>, <code>g6e.2xlarge</code>, <code>g6e.4xlarge</code>, <code>g6e.8xlarge</code>, <code>g6e.12xlarge</code>, <code>g6e.16xlarge</code>, <code>g6e.24xlarge</code>, <code>g6e.48xlarge</code></td></tr>
-  <tr><td>G7</td><td><code>g7.2xlarge</code>, <code>g7.4xlarge</code>, <code>g7.8xlarge</code>, <code>g7.12xlarge</code>, <code>g7.24xlarge</code>, <code>g7.48xlarge</code></td></tr>
-  <tr><td>G7e</td><td><code>g7e.2xlarge</code>, <code>g7e.4xlarge</code>, <code>g7e.8xlarge</code>, <code>g7e.12xlarge</code>, <code>g7e.24xlarge</code>, <code>g7e.48xlarge</code></td></tr>
-  <tr><td>edg-8ad</td><td><code>edg-8ad.xlarge</code>, <code>edg-8ad.2xlarge</code>, <code>edg-8ad.4xlarge</code>, <code>edg-8ad.8xlarge</code>, <code>edg-8ad.16xlarge</code>, <code>edg-8ad.32xlarge</code></td></tr>
+  <tr><td>G5</td><td><code>g5.xlarge</code> | <code>g5.2xlarge</code> | <code>g5.4xlarge</code> | <code>g5.8xlarge</code> | <code>g5.12xlarge</code> | <code>g5.16xlarge</code> | <code>g5.24xlarge</code> | <code>g5.48xlarge</code></td></tr>
+  <tr><td>G5g</td><td><code>g5g.xlarge</code> | <code>g5g.2xlarge</code> | <code>g5g.4xlarge</code> | <code>g5g.8xlarge</code> | <code>g5g.16xlarge</code></td></tr>
+  <tr><td>G6</td><td><code>g6.xlarge</code> | <code>g6.2xlarge</code> | <code>g6.4xlarge</code> | <code>g6.8xlarge</code> | <code>g6.12xlarge</code> | <code>g6.16xlarge</code> | <code>g6.24xlarge</code> | <code>g6.48xlarge</code></td></tr>
+  <tr><td>G6e</td><td><code>g6e.xlarge</code> | <code>g6e.2xlarge</code> | <code>g6e.4xlarge</code> | <code>g6e.8xlarge</code> | <code>g6e.12xlarge</code> | <code>g6e.16xlarge</code> | <code>g6e.24xlarge</code> | <code>g6e.48xlarge</code></td></tr>
+  <tr><td>Gr6</td><td><code>gr6.4xlarge</code> | <code>gr6.8xlarge</code></td></tr>
+  <tr><td>G7</td><td><code>g7.2xlarge</code> | <code>g7.4xlarge</code> | <code>g7.8xlarge</code> | <code>g7.12xlarge</code> | <code>g7.24xlarge</code> | <code>g7.48xlarge</code></td></tr>
+  <tr><td>G7e</td><td><code>g7e.2xlarge</code> | <code>g7e.4xlarge</code> | <code>g7e.8xlarge</code> | <code>g7e.12xlarge</code> | <code>g7e.24xlarge</code> | <code>g7e.48xlarge</code></td></tr>
   <tr><td>P3dn</td><td><code>p3dn.24xlarge</code></td></tr>
-  <tr><td>G5</td><td><code>g5.xlarge</code>, <code>g5.2xlarge</code>, <code>g5.4xlarge</code>, <code>g5.8xlarge</code>, <code>g5.12xlarge</code>, <code>g5.16xlarge</code>, <code>g5.24xlarge</code>, <code>g5.48xlarge</code></td></tr>
-  <tr><td>G5g</td><td><code>g5g.xlarge</code>, <code>g5g.2xlarge</code>, <code>g5g.4xlarge</code>, <code>g5g.8xlarge</code>, <code>g5g.16xlarge</code></td></tr>
 </tbody>
 </table>
 
-Maximum Nitro Sandboxes per instance
-To maintain near-native Amazon EC2 performance, the total vCPUs allocated across all Nitro Sandboxes on an instance can't exceed 5 times the instance's vCPU count. This is a limit on total vCPU allocation, not on the number of Nitro Sandboxes: You can run up to 5 Nitro Sandboxes per vCPU only when each Nitro Sandbox uses a single vCPU. For example, on a 4-vCPU instance the budget is 20 vCPUs.
-The instance's available memory also limits how many Nitro Sandboxes you can run, because the memory of each Nitro Sandbox is dedicated and isn't overcommitted. The number of Nitro Sandboxes on an instance can't exceed whichever of these limits you reach first:
-+ 5 times the instance's vCPU count
-+ The amount of memory available on the instance
+Number of Nitro Sandboxes and vCPUs
+Each vCPU of a Nitro Sandbox either has a dedicated hardware thread of the parent instance or, with *CPU overcommit*, shares the vCPUs of the parent instance. You choose this for each Nitro Sandbox at launch.
+You can run up to 5 Nitro Sandboxes for each vCPU of the parent instance, and at most 896 Nitro Sandboxes on one parent instance. Each Nitro Sandbox can have at most as many vCPUs as the parent instance. With CPU overcommit, all Nitro Sandboxes together can have up to 5 times as many vCPUs as the parent instance. The following table shows an example.
 
-**Example: Nitro Sandbox budget on a 4-vCPU instance (20 vCPU total)**
+**Nitro Sandboxes with CPU overcommit on a parent instance with 4 vCPUs**
 <a name="nitro-sandboxes-budget-example"></a>
 <table>
 <thead>
-  <tr><th>vCPUs per Nitro Sandbox</th><th>Maximum Nitro Sandboxes</th></tr>
+  <tr><th>vCPUs for each Nitro Sandbox</th><th>Maximum Nitro Sandboxes</th></tr>
 </thead>
 <tbody>
   <tr><td>1</td><td>20</td></tr>
@@ -403,23 +271,35 @@ The instance's available memory also limits how many Nitro Sandboxes you can run
 </tbody>
 </table>
 
-Larger Nitro Sandboxes reduce the number that you can run on the instance.
+Without CPU overcommit, the vCPUs of all Nitro Sandboxes together can't exceed the vCPUs of the parent instance, minus the vCPUs of its first core. For more information, see [Set the size of a Nitro Sandbox](nitro-sandboxes-run-firecracker.md#nitro-sandboxes-resize).
 
-Device limits
-The instance, not the Nitro Sandbox, determines the number of devices you can attach to a Nitro Sandbox. The instance type sets the maximum number of attached devices, including any devices that you hot plug. For the device limits of each instance type, see [Amazon EBS volume limits for Amazon EC2 instances](volume_limits.md).
-When you run more than one Nitro Sandbox on the same instance, the Nitro Sandboxes share the instance's overall device limit.
+CPU on instances with two threads per core
+On instances with two threads per core, a core runs only one Nitro Sandbox, or only the parent instance, at a time. The compute available to Nitro Sandboxes is therefore bounded by the physical cores, about half the vCPUs. AWS Graviton instances have one thread per core.
 
 Memory
-The parent donates a Nitro Sandbox's full memory when the Nitro Sandbox starts, and that memory stays reserved until the Nitro Sandbox terminates. Nitro Sandbox memory isn't overcommitted.
+Nitro Sandbox memory comes from a memory pool that the parent instance reserves at boot. Each Nitro Sandbox uses its own memory plus 2 MiB of the pool, and in confidential mode another 16 MiB for each virtual device.
+Each running Nitro Sandbox also uses one of the Nitro Sandbox slots of the parent instance. The parent instance starts with 4 slots, and you can add more in steps of 8. Each step uses another 128 MiB of the pool. For more information, see [Prepare the parent instance](nitro-sandboxes-run-firecracker.md#nitro-sandboxes-prepare-parent).
+Give each Nitro Sandbox at least 256 MiB of memory.
 
-Storage
-A Nitro Sandbox reaches storage through the devices that the parent presents to it. You can use local instance store for ephemeral scratch space, Amazon EBS for persistent block storage, and Amazon S3, Amazon EFS, or other network storage for shared access. To keep data confidential from the parent operator, encrypt the volume with an attestation-gated AWS KMS key.
-
-Shared parent-instance resources
-The Nitro System isolates the compute and memory of each Nitro Sandbox, but the parent instance's network stack is a shared, per-instance resource. A single Nitro Sandbox can exhaust parent-side resources, such as the connection-tracking (conntrack) table or the DNS resolver budget, and deny network access to other Nitro Sandboxes on the same instance. As the parent operator, cap or rate-limit these resources for each Nitro Sandbox.
+Devices
+Each Nitro Sandbox supports up to 32 virtual devices, including devices that you hot plug. You can't remove a device from a running Nitro Sandbox.
 
 GPU passthrough
 GPU passthrough into a Nitro Sandbox is currently unavailable.
 
-Resizing
-You can't change a Nitro Sandbox's vCPU and memory allocation during the life of the Nitro Sandbox. To change either, terminate and re-create the Nitro Sandbox at the new size.
+Lifecycle
+When you stop, reboot, or terminate the parent instance, its Nitro Sandboxes stop too. You can't enable [hibernation](Hibernate.md) on a parent instance.
+You can't change the vCPUs or memory of a running Nitro Sandbox. Nitro Sandboxes do not support snapshot and restore, pause and resume, or live migration.
+
+Storage
+The parent instance can read every block device that it presents to a Nitro Sandbox, including encrypted Amazon Elastic Block Store (Amazon EBS) volumes. Amazon EBS encryption and server-side encryption with AWS KMS keys (SSE-KMS) do not protect data from the parent instance. To keep data confidential, encrypt it inside the Nitro Sandbox with a key that AWS KMS releases only to an attested Nitro Sandbox.
+
+Networking and instance metadata
+A Nitro Sandbox has no [instance metadata service (IMDS)](ec2-instance-metadata.md) of its own. If the parent instance routes traffic from a Nitro Sandbox, for example with NAT, the Nitro Sandbox can reach the IMDS of the parent instance and read its AWS Identity and Access Management (IAM) role credentials. IMDSv2 and the hop limit of 2 that Amazon Linux 2023 AMIs use do not prevent this. To block this access, reject traffic from Nitro Sandboxes to `169.254.169.254` on the parent instance.
+One Nitro Sandbox can exhaust network resources that all Nitro Sandboxes share on the parent instance, such as the connection tracking table, so limit these resources for each Nitro Sandbox.
+
+Nested virtualization
+You can't use Nitro Sandboxes or Nitro Enclaves on an instance that has [nested virtualization](amazon-ec2-nested-virtualization.md) enabled.
+
+Credential Guard
+You can't use Nitro Sandboxes and [Credential Guard](credential-guard.md) on the same instance during the same boot. If Credential Guard starts first, creating a Nitro Sandbox fails. If a Nitro Sandbox starts first, Windows stops with an error when Credential Guard starts. Nitro Enclaves on its own is not affected.

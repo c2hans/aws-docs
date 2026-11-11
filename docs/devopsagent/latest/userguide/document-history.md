@@ -92,5 +92,5 @@ The following table describes the important changes to the documentation since t
 | March 27, 2026 | [Connecting Azure Resources](connecting-azure-connecting-azure-resources.html) | Added Azure Resources connection guide. |
 | March 27, 2026 | [Connecting Azure DevOps](connecting-azure-connecting-azure-devops.html) | Added Azure DevOps connection guide. |
 | March 27, 2026 | [Connecting PagerDuty](connecting-to-ticketing-and-chat-connecting-pagerduty.html) | Added PagerDuty communication integration documentation. |
-| March 27, 2026 | [Migrating from Public Preview to GA](configuring-integrations-and-knowledge-migrating-from-public-preview-to-general-availability.html) | Added migration guide for Public Preview to General Availability. |
+| March 27, 2026 | Migrating from Public Preview to GA | Added migration guide for Public Preview to General Availability. This page was retired in November 2026. |
 | March 30, 2026 | General availability | This is the initial general availability release of AWS DevOps Agent. |

@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-accessibility.html
 ---
 
-# Accessing Amazon Quick Sight using keyboard shortcuts
+# Accessing AWS Quick Sight using keyboard shortcuts
 <a name="quicksight-accessibility"></a>
 
-You can use the following keyboard shortcuts to navigate a Amazon Quick Sight dashboard or analysis:
+You can use the following keyboard shortcuts to navigate a AWS Quick Sight dashboard or analysis:
 + Use the `TAB` key to navigate among menu options or visuals.
 + Use the `Shift+TAB` keys to move backward to the previous selection.
 + Use the `Enter` key to select a visual or menu option.

@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Indicates the minimum IMDS version that the notebook instance supports. When passed as part of `CreateNotebookInstance`, if no value is selected, then it defaults to IMDSv1. This means that both IMDSv1 and IMDSv2 are supported. If passed as part of `UpdateNotebookInstance`, there is no default.
 *Required*: Yes
 *Type*: String
-*Pattern*: `1|2`
+*Pattern*: `(1|2)`
 *Minimum*: `0`
 *Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

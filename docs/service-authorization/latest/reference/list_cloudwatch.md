@@ -583,6 +583,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetSpaceDataAccess  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:GetSpaceDataAccess](#list_cloudwatch-action-GetSpaceDataAccess)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetTelemetryQueryResults  **
   - **SDK client:** cloudwatchomni
   - **IAM action:**  [cloudwatch:GetTelemetryQueryResults](#list_cloudwatch-action-GetTelemetryQueryResults)
@@ -1256,6 +1263,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to get space credentials for an organization
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** Read
+
+- **   [GetSpaceDataAccess](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetSpaceDataAccess.html)  **
+  - **Description:** Grants permission to get temporary credentials, limited to the requested actions, for working with data in a space
+  - **Resource types (\*required):**
+  - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Read
 
 - **   [GetTelemetryQueryResults](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetTelemetryQueryResults.html)  **

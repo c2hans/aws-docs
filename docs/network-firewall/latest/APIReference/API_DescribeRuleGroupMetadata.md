@@ -42,10 +42,14 @@ Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** [Type](#API_DescribeRuleGroupMetadata_RequestSyntax) **   <a name="networkfirewall-DescribeRuleGroupMetadata-request-Type"></a>
-Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules.
+Indicates the type of the rule group. Valid values are:
++  `STATELESS` - Stateless rules, for use in a Classic Network Firewall policy.
++  `STATEFUL` - Stateful rules, for use in a Classic Network Firewall policy.
++  `FIREWALL` - Firewall engine rules, for use in a Next Generation policy.
++  `IPS` - IPS engine rules, for use in a Next Generation policy.
 This setting is required for requests that do not include the `RuleGroupARN`.
 Type: String
-Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN`
+Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN | FIREWALL | IPS`
 Required: No
 
 ## Response Syntax
@@ -117,10 +121,14 @@ Additional options governing how Network Firewall handles the rule group. You ca
 Type: [StatefulRuleOptions](API_StatefulRuleOptions.md) object
 
  ** [Type](#API_DescribeRuleGroupMetadata_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroupMetadata-response-Type"></a>
-Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules.
+Indicates the type of the rule group. Valid values are:
++  `STATELESS` - Stateless rules, for use in a Classic Network Firewall policy.
++  `STATEFUL` - Stateful rules, for use in a Classic Network Firewall policy.
++  `FIREWALL` - Firewall engine rules, for use in a Next Generation policy.
++  `IPS` - IPS engine rules, for use in a Next Generation policy.
 This setting is required for requests that do not include the `RuleGroupARN`.
 Type: String
-Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN`
+Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN | FIREWALL | IPS`
 
  ** [VendorName](#API_DescribeRuleGroupMetadata_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroupMetadata-response-VendorName"></a>
 The name of the AWS Marketplace vendor that provides this rule group.

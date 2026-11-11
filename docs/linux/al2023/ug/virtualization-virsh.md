@@ -21,7 +21,7 @@ Run `virsh` with `sudo`. The system libvirt instance (`qemu:///system`) authoriz
 ## Write the domain XML
 <a name="virtualization-virsh-xml"></a>
 
-Save the following as `al2023-demo.xml`. It describes a guest with two vCPUs, 2 GiB of memory, a virtio disk, user-mode networking, and a serial console. Point `source file` at a disk image you have already created, for example a copy of the AL2023 Kernel-based Virtual Machine (KVM) image, or a blank image from `qemu-img create`.
+Save the following as `al2023-demo.xml`. It describes a guest with two vCPUs, 2 GiB of memory, a virtio disk, user-mode networking, and a serial console. Point `source file` at a disk image you have already created, for example a copy of the AL2023 kernel-based virtual machine (KVM) image, or a blank image from `qemu-img create`.
 
 ```
 <domain type='kvm'>

@@ -24,6 +24,7 @@ Updates a pipeline.
    "PipelineDescription": "{{string}}",
    "PipelineDisplayName": "{{string}}",
    "PipelineName": "{{string}}",
+   "PipelineVersionAliases": [ "{{string}}" ],
    "RoleArn": "{{string}}"
 }
 ```
@@ -72,6 +73,15 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,255}`
 Required: Yes
+
+ ** [PipelineVersionAliases](#API_UpdatePipeline_RequestSyntax) **   <a name="sagemaker-UpdatePipeline-request-PipelineVersionAliases"></a>
+The aliases to assign to the new pipeline version that this update creates. You can specify aliases only when the update changes the pipeline definition. To change the aliases of an existing version, use `UpdatePipelineVersion`.
+An alias must be unique within the pipeline. To move an alias from an existing version to the new version, first remove the alias from the existing version with `UpdatePipelineVersion`.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+Required: No
 
  ** [RoleArn](#API_UpdatePipeline_RequestSyntax) **   <a name="sagemaker-UpdatePipeline-request-RoleArn"></a>
 The Amazon Resource Name (ARN) that the pipeline uses to execute.

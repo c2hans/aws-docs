@@ -23,7 +23,7 @@ Configure your CUR with the following customizations:
 + **Versioning:** Overwrite existing report
 + **Data integration:** Amazon Athena (Parquet format and compression)
 
-Use [AWS Glue](https://aws.amazon.com/glue/) to prepare the data for analysis, and use [Amazon Athena](https://aws.amazon.com/athena/) to perform data analysis, using SQL to query the data. You can also use [Amazon Quick](https://aws.amazon.com/quicksight/) to build custom and complex visualizations and distribute them throughout your organization.
+Use [AWS Glue](https://aws.amazon.com/glue/) to prepare the data for analysis, and use [Amazon Athena](https://aws.amazon.com/athena/) to perform data analysis, using SQL to query the data. You can also use [AWS Quick](https://aws.amazon.com/quicksight/) to build custom and complex visualizations and distribute them throughout your organization.
 
 **Implementation steps**
 + ** Configure the cost and usage report: **Using the billing console, configure at least one cost and usage report. Configure a report with hourly granularity that includes all identifiers and resource IDs. You can also create other reports with different granularities to provide higher-level summary information.
@@ -39,7 +39,7 @@ There will be associated costs with enabling this feature. For details, refer to
 +  [AWS Account Setup](https://wellarchitectedlabs.com/Cost/Cost_Fundamentals/100_1_AWS_Account_Setup/README.html)
 +  [AWS Cost and Usage Report (CUR)](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/)
 +  [AWS Glue](https://aws.amazon.com/glue/)
-+  [Amazon Quick](https://aws.amazon.com/quicksight/)
++  [AWS Quick](https://aws.amazon.com/quicksight/)
 +  [AWS Cost Management Pricing](https://aws.amazon.com/aws-cost-management/pricing/)
 +  [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
 +  [Analyzing your costs with AWS Budgets](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html)

@@ -1497,6 +1497,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateSecurityHubV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateSecurityHubV2.html)  **
+  - **Description:** Grants permission to update a Security Hub V2 resource configuration
+  - **Resource types (\*required):** [hubv2\*](#list_securityhub-resource-hubv2)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [UpdateStandardsControl](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateStandardsControl.html)  **
   - **Description:** Grants permission to update Security Hub standards controls
   - **Resource types (\*required):** [hub](#list_securityhub-resource-hub)

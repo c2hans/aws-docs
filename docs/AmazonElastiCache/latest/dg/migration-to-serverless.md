@@ -12,6 +12,8 @@ Zero downtime means zero Errors returned to the client during migration, measure
 
 These topics cover migration to an ElastiCache Serverless cache. To migrate to a node-based cluster instead, see [Online migration to ElastiCache node-based clusters](OnlineMigration.md).
 
+For more information about ElastiCache Serverless, see [Serverless caching](WhatIs.md#WhatIs.Overview).
+
 Online migration moves your self-managed Valkey or Redis OSS data into ElastiCache Serverless for Valkey while your application keeps serving traffic. You do not need a third-party replication tool or a maintenance window to switch over.
 
 During a migration, you point your application at the migration endpoint. The migration endpoint is your serverless cache's standard endpoint, so your application keeps using it after cutover. ElastiCache routes your application's requests to your source cache while it replicates your data to the target cache. When you complete the cutover, ElastiCache switches over at the next fully synced window, and your application is then served by ElastiCache Serverless.
@@ -20,8 +22,6 @@ During a migration, you point your application at the migration endpoint. The mi
 On the migration details page, the **Migration endpoint** field shows this address, and **Copy migration endpoint** copies it. The console hides the field while the migration is in Preparing migration, and shows it in every later state.
 
 You can stop the data sync while it is in progress. Your application continues to be served by your source cache.
-
-For more information about ElastiCache Serverless, see [Serverless caching](WhatIs.md#WhatIs.Overview).
 
 The following topics describe the requirements, source authentication, the console procedure, and cutover modes for online migration.
 
@@ -41,7 +41,7 @@ The following topics describe the requirements, source authentication, the conso
 
 A migration has four steps. You start three of them with an API operation: prepare the migration, start the data sync, and complete the cutover. The fourth, pointing your application at the migration endpoint, is your own action. ElastiCache publishes an event at every transition.
 
-**Prepare the migration.** ElastiCache validates your source cache against the migration requirements. It provisions the infrastructure that reads from your source and returns the migration endpoint. If a requirement is not met, the prepare step fails. ElastiCache reports a failure event on the cache that names the reason. The migration is rolled back, so the `Migration` object, the record of your migration that `describe-serverless-caches` returns, is removed and your cache returns to `available`. Correct the source or the network configuration, then try again. For more information, see [Prerequisites for online migration to ElastiCache Serverless](migration-to-serverless-prerequisites.md).
+**Prepare the migration.** ElastiCache validates your source cache and your target cache against the migration requirements. It provisions the infrastructure that reads from your source and returns the migration endpoint. If a requirement is not met, the prepare step fails. ElastiCache reports a failure event on the cache that names the reason. The migration is rolled back, so the `Migration` object, the record of your migration that `describe-serverless-caches` returns, is removed and your cache returns to `available`. Correct the source, the target, or the network configuration, then try again. For more information, see [Prerequisites for online migration to ElastiCache Serverless](migration-to-serverless-prerequisites.md).
 
 **Redirect your application.** Point your application at the migration endpoint and confirm that it is serving traffic through the endpoint. The console reminds you to do this before you start the data sync, because ElastiCache cannot detect whether your application has moved. Starting the data sync first does not affect the data on your target. If you use Auto-cutover, redirect your application before you start the data sync, because ElastiCache cuts over at the next fully synced window. A client that still connects straight to your source after cutover writes to a cache that no longer replicates to your target.
 
@@ -127,13 +127,13 @@ Where:
 + `my-cache` is the name of your target cache.
 + `120` is the number of minutes of events to return.
 
-To follow a migration's progress, check the migration state that `describe-serverless-caches` returns. Use the events to learn the reason when a step fails.
+To follow a migration's progress, check the migration state that `describe-serverless-caches` returns. Use the events to learn the reason when a step fails. An event can appear up to about a minute after the state changes.
 
 You read a migration's events on the target cache's Events tab, or on the Events page in the console navigation. The Events tab filter offers a fixed set of predefined groups, and no migration-specific filter is available. The Migrations page shows migrations that are in progress. A completed migration no longer appears there. To review a finished migration, read the target cache's events.
 
 The console reads the migration state from `DescribeServerlessCaches`, which returns the `Migration` object on your target cache. It uses `DescribeEvents` to refresh the Monitor tab. The console can lag the underlying state.
 
-There are no metrics specific to migration. You watch the target cache with the standard ElastiCache Serverless metrics. The migration details page in the console has a Monitor tab. The Monitor tab shows nine of the target cache's existing metrics: `BytesUsedForCache`, `CurrItems`, `NewConnections`, `NetworkBytesIn`, `NetworkBytesOut`, `GetTypeCmds`, `SetTypeCmds`, `Evictions`, and `CurrConnections`. The useful metrics for confirming that data is arriving are `BytesUsedForCache`, `CurrItems`, and `NetworkBytesIn`. For more information, see [Metrics and events for Valkey and Redis OSS serverless caches](serverless-metrics-events-redis.md).
+There are no metrics specific to migration. You watch the target cache with the standard ElastiCache Serverless metrics. The migration details page in the console has a Monitor tab. The Monitor tab shows nine of the target cache's existing metrics: `BytesUsedForCache`, `CurrItems`, `NewConnections`, `NetworkBytesIn`, `NetworkBytesOut`, `GetTypeCmds`, `SetTypeCmds`, `Evictions`, and `CurrConnections`. To confirm that replication is running, run `INFO replication` on each primary of your source. The migration appears there as a connected replica with `state=online` and a `lag` value. For more information, see [Metrics and events for Valkey and Redis OSS serverless caches](serverless-metrics-events-redis.md).
 
 The tab opens with an information banner, "Track your migration progress". It reads "These metrics show activity on your target cache. Use them to confirm your data is arriving during the migration and to verify traffic after cutover."
 

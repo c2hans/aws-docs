@@ -18,6 +18,11 @@ Metadata specific to cluster-level events.
 Type: [ClusterMetadata](API_ClusterMetadata.md) object
 Required: No
 
+ ** DatabaseConfiguration **   <a name="sagemaker-Type-EventMetadata-DatabaseConfiguration"></a>
+Metadata specific to events about the external Slurm accounting database of the cluster.
+Type: [DatabaseConfigurationMetadata](API_DatabaseConfigurationMetadata.md) object
+Required: No
+
  ** Instance **   <a name="sagemaker-Type-EventMetadata-Instance"></a>
 Metadata specific to instance-level events.
 Type: [InstanceMetadata](API_InstanceMetadata.md) object
@@ -31,6 +36,11 @@ Required: No
  ** InstanceGroupScaling **   <a name="sagemaker-Type-EventMetadata-InstanceGroupScaling"></a>
 Metadata related to instance group scaling events.
 Type: [InstanceGroupScalingMetadata](API_InstanceGroupScalingMetadata.md) object
+Required: No
+
+ ** SlurmHealth **   <a name="sagemaker-Type-EventMetadata-SlurmHealth"></a>
+Metadata specific to events about the health of the Slurm components on the controller node of the cluster.
+Type: [SlurmHealthMetadata](API_SlurmHealthMetadata.md) object
 Required: No
 
 ## See Also

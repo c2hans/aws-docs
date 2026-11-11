@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 # UpdateAccountCustomization
 <a name="update-account-customization"></a>
 
-Use the `UpdateAccountCustomization` API operation to update Amazon Quick Sight customizations in the current AWS Region. Currently, the only customization that you can use is a theme.
+Use the `UpdateAccountCustomization` API operation to update AWS Quick Sight customizations in the current AWS Region. Currently, the only customization that you can use is a theme.
 
 Following is an example AWS CLI command for this operation.
 
@@ -28,4 +28,4 @@ aws quicksight update-account-customization
 
 ------
 
-For more information about the `UpdateAccountCustomization` API operation, see [UpdateAccountCustomization](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAccountCustomization.html) in the *Amazon Quick Sight API Reference*.
+For more information about the `UpdateAccountCustomization` API operation, see [UpdateAccountCustomization](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAccountCustomization.html) in the *AWS Quick Sight API Reference*.

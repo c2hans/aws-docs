@@ -19,8 +19,14 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 Required: No
 
+ ** IncludeManagedResources **
+ Specifies whether to include scaling policies for managed Auto Scaling groups in the response. When set to `true` (default), the response includes scaling policies for managed Auto Scaling groups.
+Type: Boolean
+Required: No
+
  ** MaxRecords **
 The maximum number of items to be returned with each call. The default value is `50` and the maximum value is `100`.
+A response can contain fewer items than the value specified by `MaxRecords`, even when more items are available. To retrieve the additional items, use the `NextToken` value in a subsequent call rather than relying on the number of items in the response.
 Type: Integer
 Required: No
 

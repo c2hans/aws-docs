@@ -30,7 +30,7 @@ Follow these instructions to implement this pattern:
       },
       "Action": "sts:AssumeRole",
       "Condition": {
-        "StringLike": {
+        "ArnLike": {
           "aws:PrincipalArn": "arn:aws:iam::${PIPELINE_DEPLOYMENT_ACCOUNT_ID}:role/${AcceleratorQualifier}-*"
         }
       }
@@ -43,6 +43,44 @@ Follow these instructions to implement this pattern:
 
 **Note**
 By default, AWS IAM roles with prefix AcceleratorQualifier in the pipeline account are used by AWS CodeBuild to assume role in the management account and deploy resources. To protect these roles, you should implement additional security measures, such as Service control policies (SCPs).
+
+**Using the CLI with an external pipeline deployment**
+To use the Landing Zone Accelerator on AWS CLI with an external pipeline deployment, authenticate to the pipeline deployment account. Then export the following three environment variables. With these variables set, the toolkit assumes the `AcceleratorPipelineDeploymentRole` in the management account instead of treating your local credentials as the management account.
+
+```
+export MANAGEMENT_ACCOUNT_ID="management-account-id"
+export MANAGEMENT_ACCOUNT_ROLE_NAME="management-account-role-name"
+export PIPELINE_ACCOUNT_ID="pipeline-deployment-account-id"
+```
+If you don’t set these variables, the CLI treats the account you’re authenticated to as the management account. The CLI does the same when you’re authenticated to any account other than the pipeline deployment account. Cross-account and organization lookups then fail with an error such as `You don’t have permissions to access this resource.`
+
+With the preceding trust policy, you can assume the `AcceleratorPipelineDeploymentRole` only from roles whose names start with the AcceleratorQualifier prefix. To run the CLI with a different IAM role, complete the following steps:
+
+1. Add the following statement to the trust policy of the `AcceleratorPipelineDeploymentRole`. Replace *pipeline-deployment-account-id* with the ID of the pipeline deployment account. Replace *cli-role-name* with the name of the IAM role that you run the CLI with.
+
+   ```
+   {
+     "Effect": "Allow",
+     "Principal": {
+       "AWS": "arn:aws:iam::pipeline-deployment-account-id:root"
+     },
+     "Action": "sts:AssumeRole",
+     "Condition": {
+       "ArnEquals": {
+         "aws:PrincipalArn": "arn:aws:iam::pipeline-deployment-account-id:role/cli-role-name"
+       }
+     }
+   }
+   ```
+
+   If IAM Identity Center created the role, its name ends in a generated suffix. In that case, use the `ArnLike` condition operator and the `0` pattern. This pattern also matches role ARNs that don’t include a Region segment. IAM Identity Center uses these ARNs when its identity source is in us-east-1.
+
+1. In the identity-based policy of that role, allow the `sts:AssumeRole` action on the `AcceleratorPipelineDeploymentRole` ARN. If IAM Identity Center created the role, add this permission to the permission set instead.
+
+1. When you no longer need to run the CLI locally, remove the statement from the trust policy of the `AcceleratorPipelineDeploymentRole`.
+
+**ARNs in the AWS GovCloud (US) Regions and the China Regions**
+In the AWS GovCloud (US) Regions, use `arn:aws-us-gov:` in place of `arn:aws:` in these policies. In the China Regions, use `arn:aws-cn:`.
 
 After you create the IAM role in the management account, synthesize the Landing Zone Accelerator on AWS installer template configured for external deployments by following these instructions:
 

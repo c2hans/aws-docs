@@ -36,7 +36,7 @@ The following packages make up the virtualization stack. All of them are part of
 
 | Package | Description |
 | --- | --- |
-| qemu-kvm | The QEMU machine emulator, using the Kernel-based Virtual Machine (KVM) hypervisor for hardware-accelerated virtualization. The per-architecture packages are qemu-system-x86 and qemu-system-aarch64. |
+| qemu-kvm | The QEMU machine emulator, using the kernel-based virtual machine (KVM) hypervisor for hardware-accelerated virtualization. The per-architecture packages are qemu-system-x86 and qemu-system-aarch64. |
 | qemu-img | Tooling to create, convert, and inspect virtual machine disk images. |
 | qemu-user, qemu-user-static | Userspace (linux-user) emulation, which runs a single binary built for the other architecture without booting a guest. The -static variants have no shared library dependencies. |
 | qemu-user-binfmt | Registers the userspace emulators as binfmt\_misc handlers, so the kernel runs different architecture binaries transparently. |
@@ -98,7 +98,7 @@ For guest networking, `passt` provides user-mode networking, and bridged or tap 
 ## Limitations and unsupported functionality
 <a name="virtualization-limitations"></a>
 
-**Unsupported functionality**
+The following functionality is not supported:
 + **Live migration**: migrating a running guest between hosts is not supported.
 + **Saving and restoring a guest across QEMU versions**: suspending a guest and resuming it under a different QEMU version is not supported.
 + **UEFI Secure Boot in guests**: the EDK2 firmware shipped in `edk2-ovmf` and `edk2-aarch64` is built without Secure Boot support, and no Secure Boot enabled firmware variant is shipped. Secure Boot must be left disabled in the guest configuration.

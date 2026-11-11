@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/embedde
 # Embedding security
 <a name="embedded-analytics-security"></a>
 
-Amazon Quick Sight provides a secure platform that allows you to distribute dashboards and insights to tens of thousands of users with multiple-region availability and built-in redundancy. Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that is built to meet the requirements of the most security-sensitive organizations.
+AWS Quick Sight provides a secure platform that allows you to distribute dashboards and insights to tens of thousands of users with multiple-region availability and built-in redundancy. Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that is built to meet the requirements of the most security-sensitive organizations.
 
 ## Quick Sight manages who sees content
 <a name="embedded-analytics-security-who-sees-content"></a>

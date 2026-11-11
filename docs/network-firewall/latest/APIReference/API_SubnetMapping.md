@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # SubnetMapping
 <a name="API_SubnetMapping"></a>
 
-The ID for a subnet that's used in an association with a firewall. This is used in [CreateFirewall](API_CreateFirewall.md), [AssociateSubnets](API_AssociateSubnets.md), and [CreateVpcEndpointAssociation](API_CreateVpcEndpointAssociation.md). AWS Network Firewall creates an instance of the associated firewall in each subnet that you specify, to filter traffic in the subnet's Availability Zone.
+The ID for a subnet that's used in an association with a firewall. This is used in `CreateFirewall`, `AssociateSubnets`, and `CreateVpcEndpointAssociation`. AWS Network Firewall creates an instance of the associated firewall in each subnet that you specify, to filter traffic in the subnet's Availability Zone.
 
 ## Contents
 <a name="API_SubnetMapping_Contents"></a>

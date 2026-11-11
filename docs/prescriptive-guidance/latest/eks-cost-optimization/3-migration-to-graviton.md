@@ -29,7 +29,7 @@ Start by verifying your container images support multi-arch (most official image
 + Estimate savings: Graviton typically provides 20–40% cost reduction for compute workloads
 
 ### Migrate plugins and infrastructure components
-<a name="migrate-plugins-and-infrastructure-components.9a60f037-7012-5769-a28f-95389293cc68"></a>
+<a name="migrate-plugins-and-infrastructure-components.5357355b-41da-5ae1-a7a6-2e576b78d225"></a>
 
 Start with components that already have multi-arch support:
 

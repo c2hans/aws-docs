@@ -21,7 +21,7 @@ Required: No
 The source AWS Glue runtime version the job was running before auto-version was enabled.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 Required: No
 
  ** Status **   <a name="Glue-Type-AutoUpgradeMetadata-Status"></a>
@@ -34,7 +34,7 @@ Required: No
 The target AWS Glue runtime version the job is being upgraded to.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 Required: No
 
 ## See Also

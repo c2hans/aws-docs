@@ -22,4 +22,4 @@ The following steps describe the architecture:
 
 1. Use purpose-built services for analytics in your data lake or data warehouse.
 
-1. Visualize and consume data using [Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) and SageMaker AI Notebooks.
+1. Visualize and consume data using [AWS Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) and SageMaker AI Notebooks.

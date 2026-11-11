@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sns/index.html
 title: 'Amazon Simple Notification Service Documentation'
 canonical_url: https://docs.aws.amazon.com/sns/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Amazon Simple Notification Service Documentation

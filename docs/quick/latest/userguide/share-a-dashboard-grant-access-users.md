@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/share-a-dashboard-grant-access-users.html
 ---
 
-# Granting individual Amazon Quick Sight users and groups access to a dashboard in Amazon Quick Sight
+# Granting individual AWS Quick Sight users and groups access to a dashboard in AWS Quick Sight
 <a name="share-a-dashboard-grant-access-users"></a>
 
 Use the following procedure to grant access to a dashboard.

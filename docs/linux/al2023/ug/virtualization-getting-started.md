@@ -16,7 +16,7 @@ This page covers what an instance needs before it can run virtual machines, how 
 ## Enable hardware virtualization
 <a name="virtualization-requirements"></a>
 
-Enabling hardware virtualization is optional: without it QEMU emulates the guest processor in software, which works on any instance type. Kernel-based Virtual Machine (KVM) is the kernel component that lets QEMU use the processor's own virtualization extensions, which is what makes a guest run at close to native speed. The kernel exposes it as the device node `/dev/kvm`. Without that node, QEMU can still run a guest by translating every instruction in software, but it will be several times slower.
+Enabling hardware virtualization is optional: without it QEMU emulates the guest processor in software, which works on any instance type. Kernel-based virtual machine (KVM) is the kernel component that lets QEMU use the processor's own virtualization extensions, which is what makes a guest run at close to native speed. The kernel exposes it as the device node `/dev/kvm`. Without that node, QEMU can still run a guest by translating every instruction in software, but it will be several times slower.
 
 An Amazon EC2 instance only sees those processor extensions if the instance is bare metal, or if it is a virtual instance with *nested virtualization* turned on. Nested virtualization is not on by default. You opt into it, either when you launch the instance or by changing a stopped instance.
 

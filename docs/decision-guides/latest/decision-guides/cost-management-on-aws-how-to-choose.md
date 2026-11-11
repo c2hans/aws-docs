@@ -142,7 +142,7 @@ The following table highlights which services are optimized for which circumstan
 |  | Provides functionality to run an action when a budget exceeds a certain cost or usage threshold, either automatically or after manual approval. | [AWS Budget Actions](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-controls.html) |
 |  | Helps you use machine learning models to detect and alert on anomalous spend patterns in your deployed AWS services. | [AWS Cost Anomaly Detection](https://docs.aws.amazon.com/cost-management/latest/userguide/getting-started-ad.html) |
 |  | Consolidates billing and payment for multiple AWS accounts, allowing shared volume discounts across all accounts. | [AWS Consolidated Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html) |
-|  | Enables you to create billing and cost management data exports using basic SQL, and visualize data by integrating with Amazon Quick. | [AWS Data Exports](https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html) |
+|  | Enables you to create billing and cost management data exports using basic SQL, and visualize data by integrating with AWS Quick. | [AWS Data Exports](https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html) |
 |  **Track and allocate**  |  **Services optimized to track and analyze cost trends and drivers in aggregate.**  |  |
 | --- |--- |--- |
 |  | Provides visualization of cost and utilization with default reports, and creates specific views with filters and grouping. | [AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) |

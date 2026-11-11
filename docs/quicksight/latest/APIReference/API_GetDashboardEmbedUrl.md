@@ -14,9 +14,9 @@ Currently, you can use `GetDashboardEmbedURL` only from the server, not from the
 + You are charged only when the URL is used or there is interaction with Quick.
 + The resulting user session is valid for 15 minutes (default) up to 10 hours (maximum). You can use the optional `SessionLifetimeInMinutes` parameter to customize session duration.
 
-For more information, see [Embedding Analytics Using GetDashboardEmbedUrl](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-deprecated.html) in the *Amazon Quick User Guide*.
+For more information, see [Embedding Analytics Using GetDashboardEmbedUrl](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-deprecated.html) in the * AWS Quick User Guide*.
 
-For more information about the high-level steps for embedding and for an interactive demo of the ways you can customize embedding, visit the [Amazon Quick Developer Portal](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html).
+For more information about the high-level steps for embedding and for an interactive demo of the ways you can customize embedding, visit the [AWS Quick Developer Portal](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html).
 
 ## Request Syntax
 <a name="API_GetDashboardEmbedUrl_RequestSyntax"></a>
@@ -72,7 +72,7 @@ Adds persistence of state for the user session in an embedded dashboard. Persist
 Remove the undo/redo button on the embedded dashboard. The default is FALSE, which enables the undo/redo button.
 
  ** [UserArn](#API_GetDashboardEmbedUrl_RequestSyntax) **   <a name="QS-GetDashboardEmbedUrl-request-uri-UserArn"></a>
-The Amazon Quick user's Amazon Resource Name (ARN), for use with `QUICKSIGHT` identity type. You can use this for any Amazon Quick users in your account (readers, authors, or admins) authenticated as one of the following:
+The AWS Quick user's Amazon Resource Name (ARN), for use with `QUICKSIGHT` identity type. You can use this for any AWS Quick users in your account (readers, authors, or admins) authenticated as one of the following:
 + Active Directory (AD) users or group members
 + Invited nonfederated users
 + IAM users and IAM role-based sessions authenticated through Federated Single Sign-On using SAML, OpenID Connect, or IAM federation.

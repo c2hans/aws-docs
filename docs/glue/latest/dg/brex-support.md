@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/brex-support.html
+---
+
+# AWS Glue support for Brex
+<a name="brex-support"></a>
+
+AWS Glue supports Brex as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Brex.
+
+**Supported as a target?**
+No.
+
+**Supported Brex API versions**
+The following Brex API version is supported:
++ v2

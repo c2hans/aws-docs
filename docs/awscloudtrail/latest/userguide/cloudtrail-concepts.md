@@ -277,6 +277,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon SageMaker AI | Amazon SageMaker AI API activity on experiment trial components. For more information, see [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/experiments-monitoring.html). | SageMaker metrics experiment trial component | `AWS::SageMaker::ExperimentTrialComponent` |
 | Amazon SageMaker AI | Amazon SageMaker AI API activity on feature stores. | SageMaker Feature Store | `AWS::SageMaker::FeatureGroup` |
 | SageMaker hub | API activity on `AWS::SageMaker::Hub` resources. | SageMaker hub | `AWS::SageMaker::Hub` |
+| Amazon SageMaker | SageMaker inference router that routes real-time and asynchronous inference requests across Regions to backing SageMaker endpoints. | SageMaker inference router | `AWS::SageMaker::InferenceRouter` |
 | SageMaker jobs | API activity on `AWS::SageMaker::Job` resources. | SageMaker jobs | `AWS::SageMaker::Job` |
 | AWS SageMaker MlflowApp | API activity on `AWS::SageMaker::MlflowApp` resources. | AWS SageMaker MlflowApp | `AWS::SageMaker::MlflowApp` |
 | Amazon SageMaker AI | Amazon SageMaker AI MLflow API activity. | SageMaker MLflow | `AWS::SageMaker::MlflowTrackingServer` |

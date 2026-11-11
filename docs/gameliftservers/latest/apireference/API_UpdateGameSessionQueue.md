@@ -18,6 +18,12 @@ Updates the configuration of a game session queue, which determines how the queu
 
 ```
 {
+   "AddLogDeliveryDestinations": [
+      {
+         "DestinationArn": "{{string}}",
+         "LogDestination": "{{string}}"
+      }
+   ],
    "CustomEventData": "{{string}}",
    "Destinations": [
       {
@@ -39,6 +45,12 @@ Updates the configuration of a game session queue, which determines how the queu
       "LocationOrder": [ "{{string}}" ],
       "PriorityOrder": [ "{{string}}" ]
    },
+   "RemoveLogDeliveryDestinations": [
+      {
+         "DestinationArn": "{{string}}",
+         "LogDestination": "{{string}}"
+      }
+   ],
    "TimeoutInSeconds": {{number}}
 }
 ```
@@ -59,6 +71,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `^([a-zA-Z0-9-]+|arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+)$`
 Required: Yes
+
+ ** [AddLogDeliveryDestinations](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-AddLogDeliveryDestinations"></a>
+Log delivery destinations to add to the queue's log configuration (`LogConfiguration`).
+Type: Array of [LogDeliveryDestination](API_LogDeliveryDestination.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 3 items.
+Required: No
 
  ** [CustomEventData](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-CustomEventData"></a>
 Information to be added to all events that are related to this game session queue.
@@ -90,8 +108,14 @@ Type: Array of [PlayerLatencyPolicy](API_PlayerLatencyPolicy.md) objects
 Required: No
 
  ** [PriorityConfiguration](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-PriorityConfiguration"></a>
-Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the FleetIQ default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process. To remove an existing priority configuration, pass in an empty set.
+Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process. To remove an existing priority configuration, pass in an empty set.
 Type: [PriorityConfiguration](API_PriorityConfiguration.md) object
+Required: No
+
+ ** [RemoveLogDeliveryDestinations](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-RemoveLogDeliveryDestinations"></a>
+Log delivery destinations to remove from the queue's log configuration (`LogConfiguration`).
+Type: Array of [LogDeliveryDestination](API_LogDeliveryDestination.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 3 items.
 Required: No
 
  ** [TimeoutInSeconds](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-TimeoutInSeconds"></a>
@@ -117,6 +141,14 @@ Required: No
          "AllowedLocations": [ "string" ]
       },
       "GameSessionQueueArn": "string",
+      "LogConfiguration": {
+         "DeliveryDestinations": [
+            {
+               "DestinationArn": "string",
+               "LogDestination": "string"
+            }
+         ]
+      },
       "Name": "string",
       "NotificationTarget": "string",
       "PlayerLatencyPolicies": [
@@ -165,6 +197,66 @@ HTTP Status Code: 400
  ** UnauthorizedException **
 The client failed authentication. Clients should not retry such requests.
 HTTP Status Code: 400
+
+## Examples
+<a name="API_UpdateGameSessionQueue_Examples"></a>
+
+### Update the log delivery destinations for a game session queue
+<a name="API_UpdateGameSessionQueue_Example_1"></a>
+
+In this example, we want to replace a game session queue's log delivery destinations. We remove the Amazon CloudWatch Logs log group and add an Amazon S3 bucket and an Amazon Data Firehose delivery stream. We omit the bucket ARN so Amazon GameLift Servers automatically creates the bucket on our behalf.
+
+#### Sample Request
+<a name="API_UpdateGameSessionQueue_Example_1_Request"></a>
+
+```
+{
+    "Name": "matchmaker-queue",
+    "AddLogDeliveryDestinations": [
+        { "LogDestination": "S3" },
+        {
+            "LogDestination": "FIREHOSE",
+            "DestinationArn": "arn:aws:firehose:us-west-2:111122223333:deliverystream/placement-logs"
+        }
+    ],
+    "RemoveLogDeliveryDestinations": [
+        {
+            "LogDestination": "CLOUDWATCH",
+            "DestinationArn": "arn:aws:logs:us-west-2:111122223333:log-group:/gamelift/placement/matchmaker-queue"
+        }
+    ]
+}
+```
+
+#### Sample Response
+<a name="API_UpdateGameSessionQueue_Example_1_Response"></a>
+
+```
+{
+    "GameSessionQueue": {
+        "Name": "matchmaker-queue",
+        "GameSessionQueueArn": "arn:aws:gamelift:us-west-2:111122223333:gamesessionqueue/matchmaker-queue",
+        "TimeoutInSeconds": 600,
+        "NotificationTarget": "arn:aws:sns:us-west-2:111122223333:My_Placement_SNS_Topic",
+        "Destinations": [
+            {"DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"},
+            {"DestinationArn": "arn:aws:gamelift:us-east-1::fleet/fleet-5c6d3c4d-5e6f-7a8b-9c0d-1e2f3a4b5a2b"}
+        ],
+        "LogConfiguration": {
+            "DeliveryDestinations": [
+                {
+                    "LogDestination": "S3",
+                    "DestinationArn": "arn:aws:s3:::gameliftservers-matchmaker-queue-111122223333-us-west-2"
+                },
+                {
+                    "LogDestination": "FIREHOSE",
+                    "DestinationArn": "arn:aws:firehose:us-west-2:111122223333:deliverystream/placement-logs"
+                }
+            ]
+        }
+    }
+}
+```
 
 ## See Also
 <a name="API_UpdateGameSessionQueue_SeeAlso"></a>

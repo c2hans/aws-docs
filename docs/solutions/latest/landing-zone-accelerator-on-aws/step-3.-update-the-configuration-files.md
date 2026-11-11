@@ -12,7 +12,7 @@ Use the following procedure to customize Landing Zone Accelerator on AWS to fit 
 
 1. Sign in to the AWS Management Console and navigate to the **CodeCommit** console. Navigate to the repository named **aws-accelerator-configuration**. The repository shows the Landing Zone Accelerator on AWS configuration files.
 
-1. Each configuration file is named based on its purpose in Landing Zone Accelerator on AWS. A [sample configuration](https://github.com/awslabs/landing-zone-accelerator-on-aws/tree/main/reference/sample-configurations/lza-sample-config) is available on our GitHub repository. Customize each configuration file to deploy the additional AWS services and infrastructure required. You can use the CodeCommit console or a compatible Git client to manipulate these files. For more information, refer to [Edit the contents of a file in a CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-edit-file.html) in the *AWS CodeCommit User Guide*.
+1. Each configuration file is named based on its purpose in Landing Zone Accelerator on AWS. A sample configuration is available in the [LZA Universal Configuration](https://github.com/aws/lza-universal-configuration/tree/main/modules) GitHub repository. Customize each configuration file to deploy the additional AWS services and infrastructure required. You can use the CodeCommit console or a compatible Git client to manipulate these files. For more information, refer to [Edit the contents of a file in a CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-edit-file.html) in the *AWS CodeCommit User Guide*.
 
 1. When finished editing the configuration files, navigate to the AWS CodePipeline console. Select **AWSAccelerator-Pipeline**, then **Release change**. This initiates a new pipeline instantiation and deploy the configuration changes to your environment.
 
@@ -27,7 +27,7 @@ Use the following procedure to customize Landing Zone Accelerator on AWS to fit 
 
 1. Download the S3 object `zipped/aws-accelerator-config.zip` and extract the contents to view your Landing Zone Accelerator on AWS configuration files.
 
-1. Each conﬁguration ﬁle is named based on its purpose in Landing Zone Accelerator on AWS. A [sample conﬁguration](https://github.com/awslabs/landing-zone-accelerator-on-aws/tree/main/reference/sample-configurations/lza-sample-config) is available on our GitHub repository. Customize each conﬁguration ﬁle to deploy the additional AWS services and infrastructure required. Make desired changes to these files locally, then save your changes.
+1. Each configuration file is named based on its purpose in Landing Zone Accelerator on AWS. A sample configuration is available in the [LZA Universal Configuration](https://github.com/aws/lza-universal-configuration/tree/main/modules) GitHub repository. Customize each configuration file to deploy the additional AWS services and infrastructure required. Make desired changes to these files locally, then save your changes.
 
 1. When you’re ﬁnished editing the conﬁguration ﬁles, compress the files into a new zip archive file named `aws-accelerator-config.zip`. Upload this file to the same S3 object path `zipped/aws-accelerator-config.zip` used in Step 1.
 **Note**

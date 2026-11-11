@@ -42,6 +42,14 @@ When specifying `multiRegionProperties.witnessRegion`, permission to set a witne
 Resources: `arn:aws:dsql:region:account-id:cluster/*`
 Condition Keys: `dsql:WitnessRegion` (matching the specified witness region)
 
+kms:CreateGrant
+When specifying `kmsEncryptionKey`, permission to create grants on the KMS key.
+Resources: ARN of the specified KMS key
+
+kms:DescribeKey
+When specifying `kmsEncryptionKey`, permission to retrieve detailed information about the KMS key.
+Resources: ARN of the specified KMS key
+
 ## Syntax
 <a name="aws-resource-dsql-cluster-syntax"></a>
 
@@ -88,7 +96,12 @@ Whether deletion protection is enabled on this cluster.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsEncryptionKey`  <a name="cfn-dsql-cluster-kmsencryptionkey"></a>
-Property description not available.
+The KMS key identifier to use for encrypting the cluster. You can specify the KMS key using any of the following:
++ Key ID: A unique identifier for the key (e.g., `1234abcd-12ab-34cd-56ef-1234567890ab`)
++ Key ARN: The Amazon Resource Name (ARN) of the key (e.g., `arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab`)
++ Alias name: A display name for the key (e.g., `alias/my-key`)
++ Alias ARN: The ARN of the key alias (e.g., `arn:aws:kms:us-east-1:123456789012:alias/my-key`)
+If you don't specify a value, the service uses `AWS_OWNED_KEY` by default.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -128,11 +141,22 @@ The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of
 
 For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
+The following attributes are available for the `AWS::DSQL::Cluster` resource:
+
+EncryptionDetails
+The encryption configuration details for the cluster.
+EncryptionStatus
+The status of encryption for the cluster.
+EncryptionType
+The type of encryption that protects data in the cluster.
+KmsKeyArn
+The Amazon Resource Name (ARN) of the KMS key that encrypts data in the cluster.
+
 ####
 <a name="aws-resource-dsql-cluster-return-values-fn--getatt-fn--getatt"></a>
 
 `CreationTime`  <a name="CreationTime-fn::getatt"></a>
-The timestamp when the cluster was created, in ISO 8601 format.
+The time of when created the cluster.
 
 `Endpoint`  <a name="Endpoint-fn::getatt"></a>
 The connection endpoint for the created cluster.
@@ -144,7 +168,7 @@ The unique identifier assigned to the cluster upon creation.
 Property description not available.
 
 `ResourceArn`  <a name="ResourceArn-fn::getatt"></a>
-The Amazon Resource Name (ARN) of the cluster. Used for IAM permissions and resource identification.
+Amazon Resource Name.
 
 `Status`  <a name="Status-fn::getatt"></a>
 The current status of the cluster. Possible values include: CREATING, ACTIVE, DELETING, FAILED.
@@ -157,7 +181,7 @@ The cluster can have two additional status values when working with multi-Region
 Property description not available.
 
 `VpcEndpointServiceName`  <a name="VpcEndpointServiceName-fn::getatt"></a>
-The VPC Endpoint Service name for the cluster. This can be used to create a VPC endpoint to connect to the cluster from within a VPC.
+The name of the VPC endpoint service that provides access to your cluster. Use this endpoint to establish a private connection between your VPC and the cluster.
 
 ## See also
 <a name="aws-resource-dsql-cluster--seealso"></a>
@@ -167,3 +191,5 @@ The VPC Endpoint Service name for the cluster. This can be used to create a VPC 
  See [MultiRegionProperties](https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_MultiRegionProperties.html) for the data structure used for multi-Region clusters.
 
  See [Configuring multi-Region clusters using CloudFormation](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/mr-cluster-setup.html) to create multi-Region clusters using this CloudFormation resource.
+
+ See [Encrypting Aurora DSQL clusters](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/encryption.html) for more information about encryption options and using customer managed KMS keys.

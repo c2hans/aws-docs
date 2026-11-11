@@ -124,6 +124,12 @@ Creates an Amazon SageMaker HyperPod cluster. SageMaker HyperPod is a capability
          "ClusterArn": "{{string}}"
       },
       "Slurm": {
+         "AccountingDatabase": {
+            "Endpoint": "{{string}}",
+            "Name": "{{string}}",
+            "Port": {{number}},
+            "SecretArn": "{{string}}"
+         },
          "SlurmConfigStrategy": "{{string}}"
       }
    },

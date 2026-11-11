@@ -163,7 +163,7 @@ Configuration information about Amazon Q Apps.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `QuickSightConfiguration`  <a name="cfn-qbusiness-application-quicksightconfiguration"></a>
-The Amazon Quick configuration for an Amazon Q Business application that uses Quick as the identity provider.
+The AWS Quick configuration for an Amazon Q Business application that uses Quick as the identity provider.
 *Required*: No
 *Type*: [QuickSightConfiguration](aws-properties-qbusiness-application-quicksightconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

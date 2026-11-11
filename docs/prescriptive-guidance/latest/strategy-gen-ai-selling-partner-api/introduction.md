@@ -19,7 +19,7 @@ By providing these robust analytics and reporting capabilities, Amazon helps its
 ## Solution overview
 <a name="solution-overview"></a>
 
-You can use generative artificial intelligence (generative AI) and analytics services to enhance your business reporting for the Amazon marketplace. [Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html) and [Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) can help you analyze data from the Selling Partner API and improve your business reporting. By implementing data analytics and generative AI capabilities, you can unlock deeper insights, automate repetitive tasks, and enhance your customer experience on Amazon. This ultimately drives more sales and growth for your business.
+You can use generative artificial intelligence (generative AI) and analytics services to enhance your business reporting for the Amazon marketplace. [Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html) and [AWS Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) can help you analyze data from the Selling Partner API and improve your business reporting. By implementing data analytics and generative AI capabilities, you can unlock deeper insights, automate repetitive tasks, and enhance your customer experience on Amazon. This ultimately drives more sales and growth for your business.
 
 The following is an overview of the data analytics, DevOps, and generative AI capabilities that you can gain by implementing the recommendations in this guide:
 + Create custom reports and interactive dashboards that unlock insights from your Selling Partner API data.

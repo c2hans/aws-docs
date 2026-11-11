@@ -35,7 +35,7 @@ HyperPod implements a dual-layer autoscaling architecture. At the pod layer, [KE
 ### Inference engine choice
 <a name="inference-engine-choice.e82b3813-d623-5ed7-abe0-a8520bfd9fda"></a>
 
-Teams can choose [AWS Deep Learning Containers](https://github.com/aws/deep-learning-containers) optimized for generative AI serving engines, including vLLM, TGI, and SGLang. Alternatively, teams can bring custom container images with any inference framework or specialized dependencies.
+Teams can choose [AWS Deep Learning Containers](https://aws.amazon.com/ai/machine-learning/containers/) optimized for generative AI serving engines, including vLLM, TGI, and SGLang. Alternatively, teams can bring custom container images with any inference framework or specialized dependencies.
 
 ### Inference optimizations and configurations
 <a name="inference-optimizations-and-configurations.37fd43a7-c3b2-5153-9e6b-48f4e495138c"></a>

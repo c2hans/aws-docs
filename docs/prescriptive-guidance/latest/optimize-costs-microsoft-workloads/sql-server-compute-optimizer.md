@@ -5,21 +5,21 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 # Optimize SQL Server licensing by using Compute Optimizer
 <a name="sql-server-compute-optimizer"></a>
 
-Guidance on how to optimize licenses for SQL Server by using AWS Compute Optimizer.
+Guidance on how to optimize licenses for Microsoft SQL Server by using AWS Compute Optimizer.
 
 ## Overview
 <a name="sql-server-compute-optimizer-overview"></a>
 
-[AWS Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html) can recommend licensing optimization opportunities for Microsoft SQL Server workloads on Amazon Elastic Compute Cloud (Amazon EC2). Compute Optimizer can provide automated recommendations to reduce licensing costs. The recommendations from Compute Optimizer are listed next to each of your EC2 instances with Microsoft SQL Server licenses. The information that's provided includes recommended saving opportunities, EC2 instance On-Demand prices, and hourly bring your own license (BYOL) prices. This information can help you decide if you should downgrade your license edition.
+[AWS Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html) can recommend licensing optimization opportunities for Microsoft SQL Server workloads on Amazon Elastic Compute Cloud (Amazon EC2) and provide automated recommendations to reduce licensing costs. Compute Optimizer lists the recommendations next to each of your Amazon EC2 instances with Microsoft SQL Server licenses. The information includes recommended savings opportunities, Amazon EC2 instance On-Demand prices, and hourly bring your own license (BYOL) prices. This information can help you decide whether to downgrade your license edition.
 
-Compute Optimizer automatically discovers your SQL Server instances on Amazon EC2 by inferred workload type. To view the licensing recommendations, you can select the SQL Server instances in Compute Optimizer and then authenticate with [Amazon CloudWatch Application Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights.html) by using your read-only database credentials. Compute Optimizer analyzes if you are using any SQL Server Enterprise edition features. If no Enterprise edition features are being used, Compute Optimizer recommends that you downgrade to Standard edition to reduce licensing costs.
+Compute Optimizer automatically discovers your SQL Server instances on Amazon EC2 by inferred workload type. To view the licensing recommendations, select the SQL Server instances in Compute Optimizer and then authenticate with [Amazon CloudWatch Application Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-application-insights.html) by using your read-only database credentials. Compute Optimizer analyzes whether you use any SQL Server Enterprise edition features. If you don't use any Enterprise edition features, Compute Optimizer recommends that you downgrade to Standard edition to reduce licensing costs.
 
 You can also use Compute Optimizer to make sizing recommendations for your Amazon EC2 instances that run SQL Server workloads. For more information, see [Optimize SQL Server sizing by using Compute Optimizer](sql-server-sizing-compute-optimizer.md) in this guide.
 
 ## Cost optimization recommendations
 <a name="sql-server-compute-optimizer-recommendations"></a>
 
-The license recommendations in Compute Optimizer can help you evaluate the features you are using in Microsoft SQL Server and choose the most cost-effective edition for your workloads. SQL Server Enterprise edition is significantly more expensive than Standard edition. For more information, see [Compare SQL Server editions](sql-server-editions.md) in this guide and see [SQL Server 2022 pricing](https://www.microsoft.com/en-us/sql-server/sql-server-2022-pricing) on the Microsoft website. Investing the time to configure Compute Optimizer to evaluate your SQL Server fleet and provide recommendations can dramatically reduce your licensing costs.
+The license recommendations in Compute Optimizer can help you evaluate the features you are using in Microsoft SQL Server and choose a cost-effective edition for your workloads. SQL Server Enterprise edition costs more than Standard edition. For more information, see [Compare SQL Server editions](sql-server-editions.md) in this guide and see [SQL Server 2022 pricing](https://www.microsoft.com/en-us/sql-server/sql-server-2022-pricing) on the Microsoft website. Configuring Compute Optimizer to evaluate your SQL Server fleet and provide recommendations can help you reduce your licensing costs.
 
 The **License details** page provides the following information:
 + Use the table to compare your current license settings (such as edition, model, and number of instance cores) with Compute Optimizer recommendations.
@@ -32,7 +32,7 @@ For more information, see [Viewing details of a commercial software license reco
 
 Compute Optimizer analyzes commercial software licenses by using the `mssql_enterprise_features_used` metric. For more information about this metric, see [Metrics for commercial software licenses](https://docs.aws.amazon.com/compute-optimizer/latest/ug/metrics.html#license-metrics-analyzed).
 
-1. Make sure that you have the appropriate permissions to opt in to Compute Optimizer. For more information, see the following:
+1. Confirm that you have the permissions required to opt in to Compute Optimizer. For more information, see the following:
    + [Policy to opt in to Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.html#opting-in-access)
    + [Policies to grant access to Compute Optimizer for standalone AWS accounts](https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.html#standalone-account-access)
    + [Policies to grant access to Compute Optimizer for a management account of an organization](https://docs.aws.amazon.com/compute-optimizer/latest/ug/security-iam.html#organization-account-access)

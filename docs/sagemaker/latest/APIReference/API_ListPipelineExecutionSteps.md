@@ -158,6 +158,10 @@ Required: No
                "SucceededStepCount": number,
                "TotalStepCount": number
             },
+            "HubContent": {
+               "HubArn": "string",
+               "HubContentArn": "string"
+            },
             "InferenceComponent": {
                "Arn": "string"
             },

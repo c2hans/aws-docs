@@ -15,6 +15,8 @@ You cannot clone a physical model. Physical models are for physical car deployme
 
 To do this, from the home page, click the **Your models** tab in the left sidebar, and select the model that you would like to clone. With the model selected, click **Actions** > **Clone**. This will open the same wizard that is used for creating a model, but with the attributes of the model you selected populated in the wizard fields.
 
+In the **Model checkpoint** section of the wizard, choose which checkpoint of the original model the clone will start training from: **Best** (default), the checkpoint with the highest average completion during training, or **Last**, the most recently evaluated checkpoint. The checkpoint you choose is shown in the details of the cloned model.
+
 If you would like to keep the exact same configuration as the original model, simply click through the wizard and click **Create** at the end to create the model. Otherwise, you can make adjustments to any aspect of the original model’s configuration before creating it.
 
 ## Delete a model

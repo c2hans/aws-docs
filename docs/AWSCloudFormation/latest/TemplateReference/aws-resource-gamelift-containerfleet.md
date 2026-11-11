@@ -90,7 +90,7 @@ By default, this property is set to `ON_DEMAND`.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DeploymentConfiguration`  <a name="cfn-gamelift-containerfleet-deploymentconfiguration"></a>
-Set of rules for processing a deployment for a container fleet update.
+Set of rules for processing a deployment for a container fleet update. For how Amazon GameLift Servers validates and rolls out a deployment, see [Container fleet deployments](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/containers-deployment-validation.html).
 *Required*: No
 *Type*: [DeploymentConfiguration](aws-properties-gamelift-containerfleet-deploymentconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

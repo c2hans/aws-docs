@@ -339,7 +339,7 @@ The following table lists the ARNs to use for version ` syn-nodejs-puppeteer-18.
   - **Browser:** Chrome / **ARN:**  `arn:aws:lambda:il-central-1:313249807427:layer:Synthetics:57`
   - **Browser:** Firefox / **ARN:**  `arn:aws:lambda:il-central-1:313249807427:layer:AWS-CW-SyntheticsNodeJsPuppeteer-Firefox:24`
 
-- **  **
+- ** Middle East (Saudi Arabia) **
   - **Browser:** Chrome / **ARN:**  `arn:aws:lambda:me-west-1:833660969287:layer:Synthetics:16`
   - **Browser:** Firefox / **ARN:**  `arn:aws:lambda:me-west-1:833660969287:layer:AWS-CW-SyntheticsNodeJsPuppeteer-Firefox:12`
 
@@ -2338,7 +2338,7 @@ The following table lists the ARNs to use for version ` syn-nodejs-playwright-9.
   - **Browser:** Chrome / **ARN:**  `arn:aws:lambda:il-central-1:313249807427:layer:AWS-CW-SyntheticsNodeJsPlaywright:30`
   - **Browser:** Firefox / **ARN:**  `arn:aws:lambda:il-central-1:313249807427:layer:AWS-CW-SyntheticsNodeJsPlaywright-Firefox:24`
 
-- **  **
+- ** Middle East (Saudi Arabia) **
   - **Browser:** Chrome / **ARN:**  `arn:aws:lambda:me-west-1:833660969287:layer:AWS-CW-SyntheticsNodeJsPlaywright:13`
   - **Browser:** Firefox / **ARN:**  `arn:aws:lambda:me-west-1:833660969287:layer:AWS-CW-SyntheticsNodeJsPlaywright-Firefox:11`
 
@@ -3862,7 +3862,7 @@ The following table lists the ARNs to use for version ` syn-nodejs-5.3` of the C
 | Europe (London) |  `arn:aws:lambda:eu-west-2:565831452869:layer:AWS-CW-SyntheticsNodeJs:20`  |
 | Europe (Paris) |  `arn:aws:lambda:eu-west-3:469466506258:layer:AWS-CW-SyntheticsNodeJs:20`  |
 | Israel (Tel Aviv) |  `arn:aws:lambda:il-central-1:313249807427:layer:AWS-CW-SyntheticsNodeJs:20`  |
-|  |  `arn:aws:lambda:me-west-1:833660969287:layer:AWS-CW-SyntheticsNodeJs:10`  |
+| Middle East (Saudi Arabia) |  `arn:aws:lambda:me-west-1:833660969287:layer:AWS-CW-SyntheticsNodeJs:10`  |
 | Mexico (Central) |  `arn:aws:lambda:mx-central-1:654654265476:layer:AWS-CW-SyntheticsNodeJs:20`  |
 | South America (São Paulo) |  `arn:aws:lambda:sa-east-1:783765544751:layer:AWS-CW-SyntheticsNodeJs:20`  |
 | AWS GovCloud (US-East) |  `arn:aws-us-gov:lambda:us-gov-east-1:946759330430:layer:AWS-CW-SyntheticsNodeJs:20`  |
@@ -4268,7 +4268,7 @@ The following table lists the ARNs to use for version ` syn-python-selenium-13.0
 | Europe (London) |  `arn:aws:lambda:eu-west-2:565831452869:layer:Synthetics_Selenium:71`  |
 | Europe (Paris) |  `arn:aws:lambda:eu-west-3:469466506258:layer:Synthetics_Selenium:72`  |
 | Israel (Tel Aviv) |  `arn:aws:lambda:il-central-1:313249807427:layer:Synthetics_Selenium:56`  |
-|  |  `arn:aws:lambda:me-west-1:833660969287:layer:Synthetics_Selenium:10`  |
+| Middle East (Saudi Arabia) |  `arn:aws:lambda:me-west-1:833660969287:layer:Synthetics_Selenium:10`  |
 | Mexico (Central) |  `arn:aws:lambda:mx-central-1:654654265476:layer:Synthetics_Selenium:33`  |
 | South America (São Paulo) |  `arn:aws:lambda:sa-east-1:783765544751:layer:Synthetics_Selenium:73`  |
 | AWS GovCloud (US-East) |  `arn:aws-us-gov:lambda:us-gov-east-1:946759330430:layer:Synthetics_Selenium:68`  |

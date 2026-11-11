@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-a
 # What is the Agent Toolkit for AWS?
 <a name="what-is-agent-toolkit"></a>
 
-The Agent Toolkit for AWS gives AI coding agents the tools, knowledge, and guardrails they need to build, deploy, and manage applications on AWS. It works with the coding agents that developers already use, such as Kiro, Claude Code, Cursor, and Codex. You don't need to switch tools or learn a new workflow.
+The Agent Toolkit for AWS gives AI coding agents the tools, knowledge, and guardrails they need to build, deploy, and manage applications on AWS. It works with the coding agents that developers already use, such as Kiro, Claude Code, Cursor, Codex, and Devin. You don't need to switch tools or learn a new workflow.
 
 The Agent Toolkit for AWS is not itself an AI coding agent. It has no chat interface and no model of its own. It is the AWS-facing layer that your agent connects to: it provides the tools your agent calls to work in your AWS account, the current AWS documentation it reads, and the IAM-governed path it takes to reach AWS. To install it for your agent, see [Getting started](quick-start.md). To decide whether it fits what you are trying to do, see [When to use the Agent Toolkit for AWS](#agent-toolkit-when-to-use).
 

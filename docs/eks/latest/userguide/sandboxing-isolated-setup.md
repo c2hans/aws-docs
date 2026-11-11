@@ -18,6 +18,12 @@ You run isolated and confidential pods on EKS in one of two ways. Both run the p
 
 EKS Auto Mode (recommended)
 Auto Mode includes Nitro Sandbox support with no additional setup. You do not build or manage an AMI. Set `runtimeClassName: isolated-sandbox` (or `confidential-sandbox`) on the pod, and Auto Mode provisions a compatible node and runs the pod in a sandbox. This is the simplest path, and the rest of this topic uses it.
+**Set the Kubernetes version when you create the cluster**
+Nitro Sandboxes requires Kubernetes version 1.36 or later. If you create your cluster with `eksctl`, pass `--version`, because `eksctl` uses an older default version. For example:
+
+```
+eksctl create cluster --name sandbox-demo --region us-west-2 --version 1.37 --enable-auto-mode
+```
 
 Managed or self-managed node groups
 Alternatively, if you run your own node groups outside of Auto Mode, build a custom AMI that includes the Nitro Sandbox runtime, and use a supported instance type. Nitro Sandboxes run on a subset of the instance types that support Nitro Enclaves; for the list, see [supported instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nitro-sandboxes.html#nitro-sandboxes-considerations) in the *Amazon EC2 User Guide*. Launch the nodes with Nitro Enclaves enabled (`EnclaveOptions.Enabled=true`) in the node group’s launch template. Choosing an instance type that supports Nitro Enclaves is not sufficient on its own; without Nitro Enclaves enabled, the node never advertises sandbox capacity. Join those nodes to the cluster, then set the same `runtimeClassName` on the pod. For the build steps, see [Create and update a Nitro Sandbox AMI](sandboxing-ami-create-update.md).

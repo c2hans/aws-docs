@@ -23,7 +23,9 @@ You can enter a race by clicking the blue **Enter race** button at the upper-rig
 
 ![Enter a race](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_enter_race.png)
 
-To enter the race, select a model from the list of options and click **Enter race**. You will be directed back to the race details page where you will be able to see your model in the **Your submissions** tab.
+After selecting a model, choose which of its checkpoints to submit under **Model checkpoint**: **Best** (default), the checkpoint with the highest average completion during training, or **Last**, the most recently evaluated checkpoint, which may be faster but less consistent.
+
+To enter the race, select a model from the list of options and click **Enter race**. You will be directed back to the race details page where you will be able to see your model, and the checkpoint you submitted, in the **Your submissions** tab.
 
  **Monitoring progress**
 

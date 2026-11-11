@@ -18,6 +18,7 @@ The following actions are supported by AWS Sign-In Control Plane:
 
 The following actions are supported by AWS Sign-In Data Plane:
 +  [AuthorizeOAuth2Access](API_dataplane-signin_AuthorizeOAuth2Access.md)
++  [CreateBearerToken](API_dataplane-signin_CreateBearerToken.md)
 +  [CreateOAuth2PublicClient](API_dataplane-signin_CreateOAuth2PublicClient.md)
 +  [CreateOAuth2Token](API_dataplane-signin_CreateOAuth2Token.md)
 +  [CreateOAuth2TokenWithIAM](API_dataplane-signin_CreateOAuth2TokenWithIAM.md)

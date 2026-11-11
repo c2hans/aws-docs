@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/testrail-connector-limitations.html
+---
+
+# Limitations and notes for the TestRail connector
+<a name="testrail-connector-limitations"></a>
+
+The following are limitations and notes for the TestRail connector:
++ TestRail is supported as a source only. Writing to TestRail is not supported.
++ Job bookmarks are not supported.
++ Reading the `cases`, `milestones`, and `runs` entities requires a `project_id`.

@@ -14,7 +14,7 @@ A summary of customer reviews available for a listing, aggregated by review sour
 In the following list, the required parameters are described first.
 
  ** reviewSourceSummaries **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ReviewSummary-reviewSourceSummaries"></a>
-Review summaries from different sources, such as AWS Marketplace.
+Review summaries from different sources, such as AWS Marketplace, G2, and PeerSpot.
 Type: Array of [ReviewSourceSummary](API_marketplace-discovery_ReviewSourceSummary.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: Yes

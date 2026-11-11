@@ -5,18 +5,18 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gener
 # GenerateEmbedUrlForRegisteredUser
 <a name="API_GenerateEmbedUrlForRegisteredUser"></a>
 
-Generates an embed URL that you can use to embed an Amazon Quick experience in your website. This action can be used for any type of user registered in an Amazon Quick account. Before you use this action, make sure that you have configured the relevant Amazon Quick resource and permissions.
+Generates an embed URL that you can use to embed an AWS Quick experience in your website. This action can be used for any type of user registered in an AWS Quick account. Before you use this action, make sure that you have configured the relevant AWS Quick resource and permissions.
 
 The following rules apply to the generated URL:
 + It contains a temporary bearer token. It is valid for 5 minutes after it is generated. Once redeemed within this period, it cannot be re-used again.
 + The URL validity period should not be confused with the actual session lifetime that can be customized using the ` [SessionLifetimeInMinutes](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html#QS-GenerateEmbedUrlForRegisteredUser-request-SessionLifetimeInMinutes) ` parameter.
 
   The resulting user session is valid for 15 minutes (minimum) to 10 hours (maximum). The default session duration is 10 hours.
-+ You are charged only when the URL is used or there is interaction with Amazon Quick.
++ You are charged only when the URL is used or there is interaction with AWS Quick.
 
-For more information, see [Embedded Analytics](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html) in the *Amazon Quick User Guide*.
+For more information, see [Embedded Analytics](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html) in the * AWS Quick User Guide*.
 
-For more information about the high-level steps for embedding and for an interactive demo of the ways you can customize embedding, visit the [Amazon Quick Developer Portal](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html).
+For more information about the high-level steps for embedding and for an interactive demo of the ways you can customize embedding, visit the [AWS Quick Developer Portal](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html).
 
 ## Request Syntax
 <a name="API_GenerateEmbedUrlForRegisteredUser_RequestSyntax"></a>

@@ -63,7 +63,7 @@ Perform regular, proactive reviews of workload metrics to identify trends and de
 +  [OPS08-BP02 Define workload metrics](ops_workload_health_design_workload_metrics.md) - You must define workload metrics before collecting and analyzing them.
 
  **Related documents:**
-+ [ Power operational insights with Amazon Quick ](https://aws.amazon.com/blogs/big-data/power-operational-insights-with-amazon-quicksight/)
++ [ Power operational insights with AWS Quick](https://aws.amazon.com/blogs/big-data/power-operational-insights-with-amazon-quicksight/)
 + [ Using Amazon CloudWatch dashboards custom widgets ](https://aws.amazon.com/blogs/mt/introducing-amazon-cloudwatch-dashboards-custom-widgets/)
 
  **Related videos:**

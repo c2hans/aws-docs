@@ -21,10 +21,3 @@ In this guide:
 + [Forensics account](forensics-account.md)
 + [Contributors](contributors.md)
 + [Document history](doc-history.md)
-
-## Attachments
-<a name="attachments-4107c52b-4ef3-48bd-b4b6-a184f0f0df58"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

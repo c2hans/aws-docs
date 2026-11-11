@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/analysi
 # Analysis operations
 <a name="analysis-operations"></a>
 
-With analysis API operations, you can perform actions on Amazon Quick Sight analyses. For more information, see the following API operations.
+With analysis API operations, you can perform actions on AWS Quick Sight analyses. For more information, see the following API operations.
 
 **Topics**
 + [Analysis permissions operations](analysis-permissions.md)

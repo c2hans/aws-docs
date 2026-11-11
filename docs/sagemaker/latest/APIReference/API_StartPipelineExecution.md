@@ -26,7 +26,9 @@ Starts a pipeline execution.
          "Value": "{{string}}"
       }
    ],
+   "PipelineVersionAlias": "{{string}}",
    "PipelineVersionId": {{number}},
+   "RoleArn": "{{string}}",
    "SelectiveExecutionConfig": {
       "SelectedSteps": [
          {
@@ -90,10 +92,24 @@ Type: Array of [Parameter](API_Parameter.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No
 
+ ** [PipelineVersionAlias](#API_StartPipelineExecution_RequestSyntax) **   <a name="sagemaker-StartPipelineExecution-request-PipelineVersionAlias"></a>
+The alias of the pipeline version to start the execution from. You can't specify this with `PipelineVersionId`. If no version of the pipeline has this alias, the request fails with a `ResourceNotFound` error.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+Required: No
+
  ** [PipelineVersionId](#API_StartPipelineExecution_RequestSyntax) **   <a name="sagemaker-StartPipelineExecution-request-PipelineVersionId"></a>
-The ID of the pipeline version to start execution from.
+The ID of the pipeline version to start execution from. You can't specify this with `PipelineVersionAlias`.
 Type: Long
 Valid Range: Minimum value of 1.
+Required: No
+
+ ** [RoleArn](#API_StartPipelineExecution_RequestSyntax) **   <a name="sagemaker-StartPipelineExecution-request-RoleArn"></a>
+The Amazon Resource Name (ARN) of the IAM role that the execution uses. You must specify this parameter when you start an execution of a pipeline that AWS manages. You can't specify it for a pipeline that you create, because its executions use the pipeline's role.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
 Required: No
 
  ** [SelectiveExecutionConfig](#API_StartPipelineExecution_RequestSyntax) **   <a name="sagemaker-StartPipelineExecution-request-SelectiveExecutionConfig"></a>

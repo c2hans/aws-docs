@@ -7,9 +7,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::NetworkFirewall::Firewall VpcEndpoint
 <a name="aws-properties-networkfirewall-firewall-vpcendpoint"></a>
 
-The VPC and subnets for a proxy mode firewall endpoint. This is used in CreateFirewall when `NoSourcePreservation` is `TRUE`, to specify where Network Firewall creates the firewall endpoint.
+Contains the VPC and subnets for a proxy mode firewall endpoint. You use it in `CreateFirewall` when `NoSourcePreservation` is `TRUE`, to specify where Network Firewall creates the firewall endpoint.
 
-This differs from [AWS::NetworkFirewall::VpcEndpointAssociation](aws-resource-networkfirewall-vpcendpointassociation.md), which defines additional secondary endpoints for a firewall in other VPCs.
+This differs from `VpcEndpointAssociation`, which defines additional secondary endpoints for a firewall in other VPCs.
 
 ## Syntax
 <a name="aws-properties-networkfirewall-firewall-vpcendpoint-syntax"></a>

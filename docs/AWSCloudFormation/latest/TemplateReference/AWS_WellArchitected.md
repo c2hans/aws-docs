@@ -10,7 +10,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::WellArchitected::AgentContext](aws-resource-wellarchitected-agentcontext.md)
 + [AWS::WellArchitected::AgentGoal](aws-resource-wellarchitected-agentgoal.md)
++ [AWS::WellArchitected::AgentOrganizationalProfile](aws-resource-wellarchitected-agentorganizationalprofile.md)
 + [AWS::WellArchitected::AgentProfile](aws-resource-wellarchitected-agentprofile.md)
++ [AWS::WellArchitected::AgentProfilePolicy](aws-resource-wellarchitected-agentprofilepolicy.md)
 + [AWS::WellArchitected::Lens](aws-resource-wellarchitected-lens.md)
 + [AWS::WellArchitected::Profile](aws-resource-wellarchitected-profile.md)
 + [AWS::WellArchitected::ReviewTemplate](aws-resource-wellarchitected-reviewtemplate.md)

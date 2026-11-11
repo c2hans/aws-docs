@@ -46,7 +46,7 @@ Required: No
 The name of the HyperPod cluster to which you want to add nodes.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
+Pattern: `((arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}))`
 Required: Yes
 
  ** [NodesToAdd](#API_BatchAddClusterNodes_RequestSyntax) **   <a name="sagemaker-BatchAddClusterNodes-request-NodesToAdd"></a>

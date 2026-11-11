@@ -101,7 +101,11 @@ For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/la
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-networkfirewall-rulegroup-type"></a>
-Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules.
+Indicates the type of the rule group. Valid values are:
++ `STATELESS` - Stateless rules, for use in a Classic Network Firewall policy.
++ `STATEFUL` - Stateful rules, for use in a Classic Network Firewall policy.
++ `FIREWALL` - Firewall engine rules, for use in a Next Generation policy.
++ `IPS` - IPS engine rules, for use in a Next Generation policy.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `STATELESS | STATEFUL`

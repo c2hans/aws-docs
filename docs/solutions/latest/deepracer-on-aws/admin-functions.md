@@ -47,7 +47,7 @@ The users table on the **Manage instance** page shows all of the users who are r
 +  **Model storage** - the amount of storage currently being used by models and artifacts.
 +  **Date added** - the date when the user’s account was created.
 
-The **Actions** menu features various user management actions that can be performed when either 0 or 1 users in the table are selected. The sections in User management expand on these actions further.
+The **Actions** menu features various user management actions. Some actions are available when no user or one user is selected. Others, such as **Resend invitation** and **Update usage quotas**, can apply to several selected users at once. The sections in User management and Cost and usage management expand on these actions further.
 
 ## Race statistics
 <a name="race-statistics"></a>
@@ -56,7 +56,7 @@ The **Race statistics** page provides deployment-wide statistics for physical ra
 
 To open the page, choose **Race statistics** in the navigation pane.
 
-![Race Statistics page showing summary](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_race_statistics_summary.png)
+![Race Statistics page showing summary, performance, and events by country](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_race_statistics_summary.png)
 
 The page includes:
 + A summary of total events, racers, valid laps, countries, and completion rate.
@@ -64,7 +64,7 @@ The page includes:
 + Charts for events by country, activity over time, and event type breakdown.
 + A table of the fastest laps ever recorded across the deployment.
 
-![Race Statistics page showing activity over time](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_race_statistics_details.png)
+![Race Statistics page showing activity over time, event type breakdown, and fastest laps](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_race_statistics_details.png)
 
 ## User management
 <a name="user-management"></a>
@@ -167,9 +167,30 @@ Individual limits allow compute and storage usage limits to be set at the indivi
 
 The **individual usage limit** for a given user controls the number of compute hours that can be consumed by that users in a given month through training and evaluating models. By default, this is set to **Unlimited**.
 + This can be viewed on the **Manage instance** page in the **Users** table under the **Usage limit** column for a given user.
-+ This can be changed by selecting a given user’s row in the table, clicking **Actions > Update usage quotas**, and setting the value for **Usage limit (hours)**. Clicking **Confirm** will save your selection.
++ This can be changed by selecting a given user’s row in the table, clicking **Actions > Update usage quotas**, and setting the value for **Usage limit (hours)**. Clicking **Confirm** shows a confirmation prompt; click **Confirm** again to save your selection. To update several users at once, see Update quotas for multiple users.
 
 The **individual model limit** for a given user controls the number of models that can be created, imported, and otherwise stored by that user on the instance. By default, this is set to **Unlimited**.
+
+### Update quotas for multiple users
+<a name="update-quotas-for-multiple-users"></a>
+
+Instead of updating usage quotas one user at a time, admins can apply the same limits to many users at once. This is useful when you set up an event, class, or workshop with many participants.
+
+To update quotas for multiple users:
+
+1. On the **Manage instance** page, select up to 200 users in the **Users** table. To update more users, repeat these steps for the remaining users.
+
+1. Choose **Actions > Update usage quotas**.
+
+1. Enter a value for **Usage limit (hours)** and **Model count limit**, or check **Unlimited** for either one. Both values are required. When you select more than one user, the fields start empty. When you select one user, the fields show that user’s current limits.
+
+1. Choose **Confirm**. A confirmation prompt shows the number of users and the limits that will be applied.
+
+1. Choose **Confirm** to apply the limits, or **Back** to change them.
+
+The same limits replace the current individual limits of every selected user. The new limits apply only to new jobs and models. Jobs that are already running are not affected.
+
+If some updates fail, an error message appears and the form stays open. To retry the failed users, choose **Confirm** and confirm the update again. The retry applies only to the users that failed.
 
 ### New user limits
 <a name="new-user-limits"></a>

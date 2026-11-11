@@ -36,7 +36,7 @@ In this deployment architecture, [AWS WAF](https://aws.amazon.com/waf/) is attac
 
 In addition to the rules enforced by Firewall Manager, each application owner can add AWS WAF rules that are relevant to their application security to the web ACL. This allows for flexibility in each Application account** **while still retaining overall control in the Security Tooling account.
 
-Use the Firewall Manager logging option to centralize logs and send them to an S3 bucket in the Security Tooling account. Each application team is provided access to review the AWS WAF dashboards for their application. You can set up the dashboard by using a service such as Amazon Quick Sight. If any false positives are identified or other updates to the AWS WAF rules are needed, you can add application-level AWS WAF rules to the web ACL that's deployed by Firewall Manager. The logs are replicated to the Log Archive account and archived for security investigations.
+Use the Firewall Manager logging option to centralize logs and send them to an S3 bucket in the Security Tooling account. Each application team is provided access to review the AWS WAF dashboards for their application. You can set up the dashboard by using a service such as AWS Quick Sight. If any false positives are identified or other updates to the AWS WAF rules are needed, you can add application-level AWS WAF rules to the web ACL that's deployed by Firewall Manager. The logs are replicated to the Log Archive account and archived for security investigations.
 
 ## AWS Global Accelerator
 <a name="perimeter-individual-acct-global-accelerator"></a>
@@ -60,7 +60,7 @@ When you use services such as [CloudFront](https://aws.amazon.com/cloudfront/), 
 
 In this pattern, we configure CloudFront access logs and Global Accelerator flow logs in S3 buckets in individual Application accounts. Developers who want to analyze the logs for performance tuning or false positive reduction will have direct access to these logs without having to request access to a central log archive. Locally stored logs can also support regional compliance requirements such as data residency or PII obfuscation.
 
-Full AWS WAF logs are stored in the S3 buckets in the Log Archive account** **by** **using Firewall Manager logging. Application teams can view logs by using dashboards that are set up by using a service such as Amazon Quick Sight. In addition, each application team has access to the [sampled AWS WAF logs](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-testing-view-sample.html) from their own account for quick debugging.
+Full AWS WAF logs are stored in the S3 buckets in the Log Archive account** **by** **using Firewall Manager logging. Application teams can view logs by using dashboards that are set up by using a service such as AWS Quick Sight. In addition, each application team has access to the [sampled AWS WAF logs](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-testing-view-sample.html) from their own account for quick debugging.
 
 We recommend that you replicate logs to a centralized data lake that's located in the Log Archive account. Aggregating the logs in a centralized data lake gives you a comprehensive view of all the traffic to your AWS WAF resources and distributions. This helps security teams centrally analyze and respond to global security threat patterns.
 

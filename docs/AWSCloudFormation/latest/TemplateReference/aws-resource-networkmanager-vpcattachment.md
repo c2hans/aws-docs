@@ -22,6 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::NetworkManager::VpcAttachment",
   "Properties" : {
       "[CoreNetworkId](#cfn-networkmanager-vpcattachment-corenetworkid)" : {{String}},
+      "[NatGatewayRules](#cfn-networkmanager-vpcattachment-natgatewayrules)" : {{[ NatRule, ... ]}},
+      "[NatGatewaySupport](#cfn-networkmanager-vpcattachment-natgatewaysupport)" : {{String}},
       "[Options](#cfn-networkmanager-vpcattachment-options)" : {{VpcOptions}},
       "[RoutingPolicyLabel](#cfn-networkmanager-vpcattachment-routingpolicylabel)" : {{String}},
       "[SubnetArns](#cfn-networkmanager-vpcattachment-subnetarns)" : {{[ String, ... ]}},
@@ -38,6 +40,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::NetworkManager::VpcAttachment
 Properties:
   [CoreNetworkId](#cfn-networkmanager-vpcattachment-corenetworkid): {{String}}
+  [NatGatewayRules](#cfn-networkmanager-vpcattachment-natgatewayrules): {{
+    - NatRule}}
+  [NatGatewaySupport](#cfn-networkmanager-vpcattachment-natgatewaysupport): {{String}}
   [Options](#cfn-networkmanager-vpcattachment-options): {{
     VpcOptions}}
   [RoutingPolicyLabel](#cfn-networkmanager-vpcattachment-routingpolicylabel): {{String}}
@@ -56,6 +61,20 @@ The core network ID.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`NatGatewayRules`  <a name="cfn-networkmanager-vpcattachment-natgatewayrules"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [NatRule](aws-properties-networkmanager-vpcattachment-natrule.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NatGatewaySupport`  <a name="cfn-networkmanager-vpcattachment-natgatewaysupport"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLE | DISABLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Options`  <a name="cfn-networkmanager-vpcattachment-options"></a>
 Options for creating the VPC attachment.
@@ -126,6 +145,9 @@ The timestamp when the VPC attachment was created.
 The Region where the core network edge is located.
 
 `LastModificationErrors`  <a name="LastModificationErrors-fn::getatt"></a>
+Property description not available.
+
+`NatSystemRouteSupport`  <a name="NatSystemRouteSupport-fn::getatt"></a>
 Property description not available.
 
 `NetworkFunctionGroupName`  <a name="NetworkFunctionGroupName-fn::getatt"></a>

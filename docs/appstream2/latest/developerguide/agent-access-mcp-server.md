@@ -15,5 +15,6 @@ The WorkSpaces Applications MCP server is a fully managed service that provides 
 + [Connection modes](agent-access-mcp-server-connect-mode.md)
 + [Session cleanup](agent-access-mcp-server-session-cleanup.md)
 + [Available tools](agent-access-mcp-server-tools.md)
++ [Computer use interfaces](agent-access-computer-use-interfaces.md)
 + [MCP tool forwarding](agent-access-mcp-tool-forwarding-details.md)
 + [Monitoring](agent-access-mcp-server-monitoring.md)

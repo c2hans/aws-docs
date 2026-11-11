@@ -57,7 +57,7 @@ Application status checks are created and managed in Amazon EC2, not in Amazon E
 **Scheduled events**
 Amazon EC2 can occasionally schedule events on your instances to be run after a particular timestamp. For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
 
-If one of your instances is affected by a scheduled event, Amazon EC2 Auto Scaling considers the instance to be unhealthy and replaces it. The instance doesn't start shutting down until the date and time that's specified in the timestamp is reached.
+If one of your instances is affected by a scheduled event, Amazon EC2 Auto Scaling considers the instance to be unhealthy and replaces it. In cases where Amazon EC2 Auto Scaling has high confidence that the instance is impaired (for example, degraded GPUs), replacement occurs immediately. In other cases, Amazon EC2 Auto Scaling waits for the scheduled event to begin.
 
 ## Elastic Load Balancing health checks
 <a name="elastic-load-balancing-health-checks"></a>

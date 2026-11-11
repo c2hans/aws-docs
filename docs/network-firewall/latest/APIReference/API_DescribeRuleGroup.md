@@ -15,6 +15,7 @@ Returns the data objects for the specified rule group.
    "AnalyzeRuleGroup": {{boolean}},
    "RuleGroupArn": "{{string}}",
    "RuleGroupName": "{{string}}",
+   "RuleOutputFormat": "{{string}}",
    "Type": "{{string}}"
 }
 ```
@@ -47,11 +48,24 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
+ ** [RuleOutputFormat](#API_DescribeRuleGroup_RequestSyntax) **   <a name="networkfirewall-DescribeRuleGroup-request-RuleOutputFormat"></a>
+For a firewall engine rule group, the format in which to return the rules. Specify one of the following values:
++  `FIREWALL_RULES` - Returns the rules as structured `FirewallRule` objects.
++  `RULES_STRING` - Returns the rules as a Suricata-compatible firewall-mode rule string.
+If you don't specify a format, Network Firewall returns the rules in the format you provided them in. This setting applies only to `FIREWALL` and `IPS` rule groups; IPS engine rule groups support only `RULES_STRING`.
+Type: String
+Valid Values: `FIREWALL_RULES | RULES_STRING`
+Required: No
+
  ** [Type](#API_DescribeRuleGroup_RequestSyntax) **   <a name="networkfirewall-DescribeRuleGroup-request-Type"></a>
-Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules.
+Indicates the type of the rule group. Valid values are:
++  `STATELESS` - Stateless rules, for use in a Classic Network Firewall policy.
++  `STATEFUL` - Stateful rules, for use in a Classic Network Firewall policy.
++  `FIREWALL` - Firewall engine rules, for use in a Next Generation policy.
++  `IPS` - IPS engine rules, for use in a Next Generation policy.
 This setting is required for requests that do not include the `RuleGroupARN`.
 Type: String
-Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN`
+Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN | FIREWALL | IPS`
 Required: No
 
 ## Response Syntax
@@ -59,6 +73,84 @@ Required: No
 
 ```
 {
+   "FirewallRuleGroup": {
+      "ReferenceSets": {
+         "IPSetReferences": {
+            "string" : {
+               "ReferenceArn": "string"
+            }
+         }
+      },
+      "RulesSource": {
+         "FirewallRules": [
+            {
+               "AcceptPriorHooks": boolean,
+               "Action": "string",
+               "ActionScope": "string",
+               "AlertEnabled": boolean,
+               "BypassIPSEnabled": boolean,
+               "DestIPs": "string",
+               "DestPorts": "string",
+               "Hook": "string",
+               "Protocol": "string",
+               "RuleMetadata": {
+                  "RuleDescription": "string",
+                  "RuleEnabled": boolean
+               },
+               "RuleOptions": [
+                  {
+                     "Keyword": "string",
+                     "Settings": [ "string" ]
+                  }
+               ],
+               "SourceIPs": "string",
+               "SourcePorts": "string"
+            }
+         ],
+         "RulesSourceList": {
+            "GeneratedRulesType": "string",
+            "Targets": [ "string" ],
+            "TargetTypes": [ "string" ]
+         },
+         "RulesString": "string"
+      },
+      "RuleVariables": {
+         "IPSets": {
+            "string" : {
+               "Definition": [ "string" ]
+            }
+         },
+         "PortSets": {
+            "string" : {
+               "Definition": [ "string" ]
+            }
+         }
+      }
+   },
+   "IpsRuleGroup": {
+      "ReferenceSets": {
+         "IPSetReferences": {
+            "string" : {
+               "ReferenceArn": "string"
+            }
+         }
+      },
+      "RulesSource": {
+         "RulesString": "string"
+      },
+      "RuleVariables": {
+         "IPSets": {
+            "string" : {
+               "Definition": [ "string" ]
+            }
+         },
+         "PortSets": {
+            "string" : {
+               "Definition": [ "string" ]
+            }
+         }
+      }
+   },
    "RuleGroup": {
       "ReferenceSets": {
          "IPSetReferences": {
@@ -212,6 +304,14 @@ Required: No
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [FirewallRuleGroup](#API_DescribeRuleGroup_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroup-response-FirewallRuleGroup"></a>
+The object that defines the rules in a firewall engine rule group, for use in a Next Generation policy.
+Type: [FirewallRuleGroup](API_FirewallRuleGroup.md) object
+
+ ** [IpsRuleGroup](#API_DescribeRuleGroup_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroup-response-IpsRuleGroup"></a>
+The object that defines the rules in an IPS engine rule group, for use in a Next Generation policy.
+Type: [IpsRuleGroup](API_IpsRuleGroup.md) object
 
  ** [RuleGroup](#API_DescribeRuleGroup_ResponseSyntax) **   <a name="networkfirewall-DescribeRuleGroup-response-RuleGroup"></a>
 The object that defines the rules in a rule group. This, along with [RuleGroupResponse](API_RuleGroupResponse.md), define the rule group. You can retrieve all objects for a rule group by calling [DescribeRuleGroup](#API_DescribeRuleGroup).

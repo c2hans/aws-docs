@@ -22,7 +22,7 @@ The valid values for each frequency are the following:
 + Year - 1
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 5.
-Pattern: `1Y|Y|([1-9]|1[0-1])M|M|[1-4]W|W|[1-6]D|D|([1-9]|1[0-9]|2[0-3])H|H|([1-9]|[1-5][0-9])min`
+Pattern: `(1Y|Y|([1-9]|1[0-1])M|M|[1-4]W|W|[1-6]D|D|([1-9]|1[0-9]|2[0-3])H|H|([1-9]|[1-5][0-9])min)`
 Required: Yes
 
  ** ForecastHorizon **   <a name="sagemaker-Type-TimeSeriesForecastingJobConfig-ForecastHorizon"></a>

@@ -38,7 +38,7 @@ The following diagram shows a sample architecture for data and analytics that co
 
 1. The MES microservice consists of the cloud components of a microservice within MES.
 
-1. Analytics services support serverless querying of data from data lakes, data warehouses (Amazon Athena), interactive visualization using business intelligence services (Amazon Quick), an optional cloud data warehouse to run complex queries (Amazon Redshift), and optional advance data processing (Amazon EMR).
+1. Analytics services support serverless querying of data from data lakes, data warehouses (Amazon Athena), interactive visualization using business intelligence services (AWS Quick), an optional cloud data warehouse to run complex queries (Amazon Redshift), and optional advance data processing (Amazon EMR).
 
 1. Frontend web services include Amazon Cognito to authenticate users, Amazon Route 53 as a DNS service, and Amazon CloudFront to deliver content to end-users with low latency.
 

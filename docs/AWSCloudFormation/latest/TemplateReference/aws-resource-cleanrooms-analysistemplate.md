@@ -91,7 +91,7 @@ The configuration that specifies the level of detail in error messages returned 
 The format of the analysis template.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `SQL | PYSPARK_1_0`
+*Allowed values*: `SQL | PYSPARK_1_0 | PYSPARK_2_0`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MembershipIdentifier`  <a name="cfn-cleanrooms-analysistemplate-membershipidentifier"></a>

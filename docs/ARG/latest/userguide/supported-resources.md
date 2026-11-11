@@ -2174,7 +2174,7 @@ Rules in custom event buses aren't supported in Tag Editor.
 | `AWS::QLDB::Stream` |  ![](https://docs.aws.amazon.com/ARG/latest/userguide/images/icon-no.png) No |  ![](https://docs.aws.amazon.com/ARG/latest/userguide/images/icon-yes.png) Yes |  ![](https://docs.aws.amazon.com/ARG/latest/userguide/images/icon-yes.png) Yes |
 | `AWS::QLDB::Table` |  ![](https://docs.aws.amazon.com/ARG/latest/userguide/images/icon-no.png) No |  ![](https://docs.aws.amazon.com/ARG/latest/userguide/images/icon-yes.png) Yes |  ![](https://docs.aws.amazon.com/ARG/latest/userguide/images/icon-no.png) No |
 
-## Amazon Quick
+## AWS Quick
 <a name="services-quicksight"></a>
 
 | **Resources** | **Tag Editor Tagging** | **Tag-based Groups** | **CloudFormation Stack-based Groups** |

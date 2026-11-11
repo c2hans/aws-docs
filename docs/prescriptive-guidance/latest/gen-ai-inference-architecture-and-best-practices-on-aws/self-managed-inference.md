@@ -28,7 +28,7 @@ Customers are charged based on provisioned compute instances, storage, and netwo
 The environment accommodates any model format or architecture, enabling deployment of models built with any framework, custom architectures, or proprietary implementations.
 
 ## Automatic scaling
-<a name="automatic-scaling.bb1d7e80-2d22-5ebe-a0ed-7409cf4660f6"></a>
+<a name="automatic-scaling.7da1d834-7072-512f-92a7-6d4c0bd91ce4"></a>
 
 Scaling mechanisms are tailored to each AWS service's capabilities:
 + **Amazon EKS** – [Kubernetes Horizontal Pod Autoscaler (HPA)](https://docs.aws.amazon.com/eks/latest/userguide/horizontal-pod-autoscaler.html) or [KEDA](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment-autoscaling.html#sagemaker-hyperpod-model-deployment-autoscaling-kubectl) adjust pod replicas based on resource utilization or custom metrics. Also, for Amazon EKS, [Karpenter](https://karpenter.sh/) dynamically provisions and scales nodes to match workload demands efficiently.
@@ -40,7 +40,7 @@ All approaches can respond to built-in metrics (such as CPU, memory, and network
 ## Inference engine choice
 <a name="inference-engine-choice.654677a1-a34a-5bea-a9f7-982da432f823"></a>
 
-You can select from [Deep Learning Container](https://github.com/aws/deep-learning-containers/blob/master/available_images.md) images that are optimized for popular frameworks and maintained by AWS. Or, they can deploy custom container images with any inference engine or specialized software stack.
+You can select from [Deep Learning Container](https://aws.amazon.com/ai/machine-learning/containers/) images that are optimized for popular frameworks and maintained by AWS. Or, they can deploy custom container images with any inference engine or specialized software stack.
 
 ## Inference configuration
 <a name="inference-configuration.5f7f0f69-3b8c-5f2a-8dbf-eab6904aa58d"></a>

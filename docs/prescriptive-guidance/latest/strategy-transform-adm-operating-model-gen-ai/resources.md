@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 + [Amazon Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/)
 + [Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/)
 + [Amazon Bedrock Security and Privacy](https://aws.amazon.com/bedrock/security-compliance/)
-+ [Answering business questions with Amazon Quick Q](https://docs.aws.amazon.com/quicksight/latest/user/working-with-quicksight-q.html)
++ [Answering business questions with AWS Quick Q](https://docs.aws.amazon.com/quicksight/latest/user/working-with-quicksight-q.html)
 + [What is Amazon Q Business?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html)
 + [What is Amazon Q Developer?](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)
 

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::NetworkFirewall::Firewall NatGatewayMapping
 <a name="aws-properties-networkfirewall-firewall-natgatewaymapping"></a>
 
-A NAT gateway that a proxy mode firewall uses to proxy traffic. This is used in CreateFirewall when `NoSourcePreservation` is `TRUE`.
+A NAT gateway that a proxy mode firewall uses to proxy traffic. This is used in `CreateFirewall` when `NoSourcePreservation` is `TRUE`.
 
 ## Syntax
 <a name="aws-properties-networkfirewall-firewall-natgatewaymapping-syntax"></a>

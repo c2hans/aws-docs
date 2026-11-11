@@ -10,6 +10,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Convert JSON Oracle queries into PostgreSQL database SQL](convert-json-oracle-queries-into-postgresql-database-sql.md)
 + [Convert VARCHAR2(1) data type for Oracle to Boolean data type for Amazon Aurora PostgreSQL](convert-varchar2-1-data-type-for-oracle-to-boolean-data-type-for-amazon-aurora-postgresql.md)
 + [Emulate Oracle DR by using a PostgreSQL-compatible Aurora global database](emulate-oracle-dr-by-using-a-postgresql-compatible-aurora-global-database.md)
++ [Emulate Oracle PL/SQL associative arrays in Amazon Aurora PostgreSQL and Amazon RDS for PostgreSQL](emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql.md)
 + [Estimate the Amazon RDS engine size for an Oracle database by using AWR reports](estimate-the-amazon-rds-engine-size-for-an-oracle-database-by-using-awr-reports.md)
 + [Handle anonymous blocks in Dynamic SQL statements in Aurora PostgreSQL](handle-anonymous-blocks-in-dynamic-sql-statements-in-aurora-postgresql.md)
 + [Load BLOB files into TEXT by using file encoding in Aurora PostgreSQL-Compatible](load-blob-files-into-text-by-using-file-encoding-in-aurora-postgresql-compatible.md)

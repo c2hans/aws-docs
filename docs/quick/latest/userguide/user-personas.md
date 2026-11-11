@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/user-personas.htm
 # User personas
 <a name="user-personas"></a>
 
-Amazon Quick Flows serves three types of users:
+AWS Quick Flows serves three types of users:
 
 ## Creator
 <a name="creator-persona"></a>
@@ -20,7 +20,7 @@ End users run flows that creators have built. They interact with flows to comple
 ## Admin
 <a name="admin-persona"></a>
 
-Admins configure and manage governance controls for Amazon Quick Flows within Amazon Quick. They can:
+Admins configure and manage governance controls for AWS Quick Flows within AWS Quick. They can:
 + Enable or disable Quick Flows for the account
 + Restrict access to Quick Flows for specific users
 + Enable or disable Bedrock models for output refinement

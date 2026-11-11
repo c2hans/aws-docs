@@ -16,7 +16,7 @@ Without rigorous validation, teams risk the following issues:
 To help avoid these issues, modern generative AI systems demand multi-layered validation across infrastructure, logic, and AI behavior.
 
 ## Testing types for serverless AI
-<a name="testing-types-for-serverless-ai.d8a50849-e866-5f19-acac-0bc4f1332ad3"></a>
+<a name="testing-types-for-serverless-ai.7dd6db82-84b8-508d-a7fa-704673197abc"></a>
 
 Testing serverless AI applications requires a comprehensive approach that addresses both traditional application testing needs and AI-specific concerns. This section describes testing types that are essential for ensuring reliability, security, and performance.
 
@@ -114,7 +114,7 @@ The following HITL quality assurance (QA) panel example demonstrates an evaluati
 1. Flag hallucinations or inappropriate language
 
 ### Security and boundary tests
-<a name="security-and-boundary-tests.83b863c0-cd01-5523-849a-75f199dde86c"></a>
+<a name="security-and-boundary-tests.cf8e3bd9-24c4-57fe-bce2-1f2179fa78d0"></a>
 
 Security and boundary tests ensure tools and agents don't exceed scope. These tests are critical because they verify role-based access control (RBAC), prompt injection resilience, and principle of least privilege. They help to ensure prompt safety and agent control boundaries.
 

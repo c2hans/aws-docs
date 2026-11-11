@@ -77,7 +77,7 @@ Properties:
 <a name="aws-resource-pcs-computenodegroup-properties"></a>
 
 `AmiId`  <a name="cfn-pcs-computenodegroup-amiid"></a>
-The ID of the Amazon Machine Image (AMI) that AWS PCS uses to launch instances. If not provided, AWS PCS uses the AMI ID specified in the custom launch template.
+The ID of the Amazon Machine Image (AMI) that AWS PCS uses to launch instances. This value overrides the AMI ID in the custom launch template. If not provided, AWS PCS uses the AMI ID specified in the custom launch template. You must provide this value if `LaunchTemplateMode` is `MANAGED`.
 *Required*: No
 *Type*: String
 *Pattern*: `^ami-[a-z0-9]+$`
@@ -90,7 +90,7 @@ The ID of the cluster of the compute node group.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CustomLaunchTemplate`  <a name="cfn-pcs-computenodegroup-customlaunchtemplate"></a>
-An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
+An Amazon EC2 launch template AWS PCS uses to launch compute nodes. Specify this property when `LaunchTemplateMode` is `CUSTOM`, which is the default. Don't specify it when `LaunchTemplateMode` is `MANAGED`. If you remove this property from the template and don't specify `LaunchTemplateMode`, CloudFormation sets `LaunchTemplateMode` to `MANAGED` and removes the custom launch template from the compute node group. Removing the association doesn't delete the launch template.
 *Required*: No
 *Type*: [CustomLaunchTemplate](aws-properties-pcs-computenodegroup-customlaunchtemplate.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -109,7 +109,10 @@ A list of EC2 instance configurations that AWS PCS can provision in the compute 
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `LaunchTemplateMode`  <a name="cfn-pcs-computenodegroup-launchtemplatemode"></a>
-Property description not available.
+Specifies whether the compute node group uses a custom launch template or a launch template that AWS PCS manages. The default value is `CUSTOM`. Valid values:
++ `CUSTOM` – The compute node group uses the launch template in `CustomLaunchTemplate`.
++ `MANAGED` – AWS PCS creates and manages the launch template from the compute node group settings. Don't specify `CustomLaunchTemplate`, and specify `AmiId` and `SecurityGroupIds`.
+If you add `CustomLaunchTemplate` to a compute node group that uses `MANAGED` and don't specify this property, CloudFormation switches the compute node group to `CUSTOM`.
 *Required*: No
 *Type*: String
 *Allowed values*: `CUSTOM | MANAGED`
@@ -141,7 +144,7 @@ Specifies the boundaries of the compute node group auto scaling.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecurityGroupIds`  <a name="cfn-pcs-computenodegroup-securitygroupids"></a>
-Property description not available.
+The IDs of the EC2 security groups to configure directly on the compute node group. The security groups must be in the same VPC as the cluster. AWS PCS uses these security groups instead of the security groups in the custom launch template. You can't specify this property if the custom launch template defines network interfaces. If not provided, AWS PCS uses the security groups in the custom launch template. You must provide this value if `LaunchTemplateMode` is `MANAGED`. If you remove this property from the template, AWS PCS uses the security groups in the custom launch template.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -159,7 +162,7 @@ Additional configuration when you specify `SPOT` as the `purchaseOption` for the
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SshKeyName`  <a name="cfn-pcs-computenodegroup-sshkeyname"></a>
-Property description not available.
+The name of the EC2 key pair to configure directly on the compute node group. The key pair must exist in your account and Region. AWS PCS uses this key pair instead of the key pair in the custom launch template. If not provided, AWS PCS uses the key pair in the custom launch template, if one is specified. You must have permission for `ec2:DescribeKeyPairs`. If you remove this property from the template, AWS PCS uses the key pair in the custom launch template. If you delete the key pair later, future instance launches can fail.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

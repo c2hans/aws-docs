@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 
-Creates a placement queue that processes requests for new game sessions. A queue uses FleetIQ algorithms to locate the best available placement locations for a new game session, and then prompts the game server process to start a new game session.
+Creates a placement queue that processes requests for new game sessions. A queue finds the best available game server, then prompts it to start a new game session.
 
 A game session queue is configured with a set of destinations (Amazon GameLift Servers fleets or aliases) that determine where the queue can place new game sessions. These destinations can span multiple AWS Regions, can use different instance types, and can include both Spot and On-Demand fleets. If the queue includes multi-location fleets, the queue can place game sessions in any of a fleet's remote locations.
 
@@ -28,6 +28,9 @@ Use this operation to make these common types of requests.
 + Create a queue with special rules for processing player latency data.
   + Required parameters `Name` and `Destinations`
   +  `PlayerLatencyPolicies`
++ Create a queue that delivers game session placement insight logs to one or more log destinations.
+  + Required parameters `Name` and `Destinations`
+  +  `LogConfiguration`
 
  **Results**
 
@@ -56,6 +59,14 @@ If successful, this operation returns a new `GameSessionQueue` object with an as
    ],
    "FilterConfiguration": {
       "AllowedLocations": [ "{{string}}" ]
+   },
+   "LogConfiguration": {
+      "DeliveryDestinations": [
+         {
+            "DestinationArn": "{{string}}",
+            "LogDestination": "{{string}}"
+         }
+      ]
    },
    "Name": "{{string}}",
    "NotificationTarget": "{{string}}",
@@ -113,6 +124,11 @@ A list of locations where a queue is allowed to place new game sessions. Locatio
 Type: [FilterConfiguration](API_FilterConfiguration.md) object
 Required: No
 
+ ** [LogConfiguration](#API_CreateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-CreateGameSessionQueue-request-LogConfiguration"></a>
+An optional configuration that delivers game session placement insight logs to one or more destinations of your choice. Use these logs to diagnose why a game session placement is `FULFILLED`, `CANCELLED`, `TIMED_OUT`, or `FAILED`, which locations were evaluated, and the latency and cost factors that influenced each decision.
+Type: [GameSessionQueueLogConfiguration](API_GameSessionQueueLogConfiguration.md) object
+Required: No
+
  ** [NotificationTarget](#API_CreateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-CreateGameSessionQueue-request-NotificationTarget"></a>
 An SNS topic ARN that is set up to receive game session placement notifications. See [ Setting up notifications for game session placement](https://docs.aws.amazon.com/gamelift/latest/developerguide/queue-notification.html).
 Type: String
@@ -126,7 +142,7 @@ Type: Array of [PlayerLatencyPolicy](API_PlayerLatencyPolicy.md) objects
 Required: No
 
  ** [PriorityConfiguration](#API_CreateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-CreateGameSessionQueue-request-PriorityConfiguration"></a>
-Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the FleetIQ default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process.
+Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process.
 Type: [PriorityConfiguration](API_PriorityConfiguration.md) object
 Required: No
 
@@ -159,6 +175,14 @@ Required: No
          "AllowedLocations": [ "string" ]
       },
       "GameSessionQueueArn": "string",
+      "LogConfiguration": {
+         "DeliveryDestinations": [
+            {
+               "DestinationArn": "string",
+               "LogDestination": "string"
+            }
+         ]
+      },
       "Name": "string",
       "NotificationTarget": "string",
       "PlayerLatencyPolicies": [
@@ -222,7 +246,7 @@ HTTP Status Code: 400
 ### Create and configure a game session queue
 <a name="API_CreateGameSessionQueue_Example_1"></a>
 
-In this example, we want to create a game session queue with two single-location destinations, each residing in different Regions. We configure the queue so that requests for new game sessions expire after 10 minutes. The queue will process game session requests with player latency data, so we provide a set of latency cap policies that initially start at 100ms and then relax to 200ms after one minute. We opt to use the default sort approach for FleetIQ.
+In this example, we want to create a game session queue with two single-location destinations, each residing in different Regions. We configure the queue so that requests for new game sessions expire after 10 minutes. The queue will process game session requests with player latency data, so we provide a set of latency cap policies that initially start at 100 ms and then relax to 200 ms after one minute. We opt to use the queue's default prioritization algorithm, and deliver game session placement insight logs for the queue to Amazon CloudWatch Logs.
 
 #### Sample Request
 <a name="API_CreateGameSessionQueue_Example_1_Request"></a>
@@ -239,7 +263,15 @@ In this example, we want to create a game session queue with two single-location
         { "MaximumIndividualPlayerLatencyMilliseconds": 200 },
         { "MaximumIndividualPlayerLatencyMilliseconds": 100, "PolicyDurationSeconds": 60 }
     ],
-    "TimeoutInSeconds": 600
+    "TimeoutInSeconds": 600,
+    "LogConfiguration": {
+        "DeliveryDestinations": [
+            {
+                "LogDestination": "CLOUDWATCH",
+                "DestinationArn": "arn:aws:logs:us-west-2:111122223333:log-group:/gamelift/placement/matchmaker-queue"
+            }
+        ]
+    }
 }
 ```
 
@@ -265,7 +297,15 @@ In this example, we want to create a game session queue with two single-location
         "Destinations": [
             {"DestinationArn": "arn:aws:gamelift:us-west-2::fleet/fleet-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"},
             {"DestinationArn": "arn:aws:gamelift:us-east-1::fleet/fleet-5c6d3c4d-5e6f-7a8b-9c0d-1e2f3a4b5a2b"}
-        ]
+        ],
+        "LogConfiguration": {
+            "DeliveryDestinations": [
+                {
+                    "LogDestination": "CLOUDWATCH",
+                    "DestinationArn": "arn:aws:logs:us-west-2:111122223333:log-group:/gamelift/placement/matchmaker-queue"
+                }
+            ]
+        }
     }
 }
 ```
@@ -275,7 +315,7 @@ In this example, we want to create a game session queue with two single-location
 
 In this example, we want to create a game session queue to place game sessions with two multi-location Spot fleets and one single-location On-Demand fleet. The multi-location fleets have remote locations in (`us-west-1`, `us-east-2`, `sa-east-1`).
 
-We also want to change how FleetIQ prioritizes destinations and locations for placement. We opt to have FleetIQ prioritize by location first (with a custom location order provided), and then by destination list order. Based on our priority configuration, the queue will always try to place game sessions in the `us-west-1` remote location of the first listed destination fleet. If no game servers are available there, the queue will try to place in the `us-west-1` home Region of the second listed destination fleet, and so on.
+We also want to change how the queue prioritizes destinations and locations for placement. We opt to have the queue prioritize by location first (with a custom location order provided), and then by destination list order. Based on our priority configuration, the queue will always try to place game sessions in the `us-west-1` remote location of the first listed destination fleet. If no game servers are available there, the queue will try to place in the `us-west-1` home Region of the second listed destination fleet, and so on.
 
 #### Sample Request
 <a name="API_CreateGameSessionQueue_Example_2_Request"></a>

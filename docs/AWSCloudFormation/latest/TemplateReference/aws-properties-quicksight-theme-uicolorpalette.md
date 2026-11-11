@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::Theme UIColorPalette
 <a name="aws-properties-quicksight-theme-uicolorpalette"></a>
 
-The theme colors that apply to UI and to charts, excluding data colors. The colors description is a hexadecimal color code that consists of six alphanumerical characters, prefixed with `#`, for example \#37BFF5. For more information, see [Using Themes in Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/themes-in-quicksight.html) in the *Amazon Quick User Guide.*
+The theme colors that apply to UI and to charts, excluding data colors. The colors description is a hexadecimal color code that consists of six alphanumerical characters, prefixed with `#`, for example \#37BFF5. For more information, see [Using Themes in AWS Quick](https://docs.aws.amazon.com/quicksight/latest/user/themes-in-quicksight.html) in the *AWS Quick User Guide.*
 
 ## Syntax
 <a name="aws-properties-quicksight-theme-uicolorpalette-syntax"></a>

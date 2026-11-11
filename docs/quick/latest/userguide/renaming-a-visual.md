@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/renaming-a-visual.html
 ---
 
-# Renaming Amazon Quick Sight visuals
+# Renaming AWS Quick Sight visuals
 <a name="renaming-a-visual"></a>
 
 Use the following procedure to rename a visual.

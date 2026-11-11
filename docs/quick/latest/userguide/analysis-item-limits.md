@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/analysis-item-limits.html
 ---
 
-# Item limits for Amazon Quick Sight analyses in the Quick Sight APIs
+# Item limits for AWS Quick Sight analyses in the Quick Sight APIs
 <a name="analysis-item-limits"></a>
 
-Use the following table to review the current limits or quotas for different analysis items in Amazon Quick Sight that are created and managed with the Amazon Quick Sight APIs. If your analysis contains more than the supported number of analysis items, remove items to optimize the performance of the analysis. New analysis items cannot be added to an analysis that contains more than the supported number of analysis items.
+Use the following table to review the current limits or quotas for different analysis items in AWS Quick Sight that are created and managed with the AWS Quick Sight APIs. If your analysis contains more than the supported number of analysis items, remove items to optimize the performance of the analysis. New analysis items cannot be added to an analysis that contains more than the supported number of analysis items.
 
 | Analysis item | Limit |
 | --- | --- |

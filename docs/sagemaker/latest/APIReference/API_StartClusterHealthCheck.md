@@ -34,7 +34,7 @@ The request accepts the following data in JSON format.
 The string name or the Amazon Resource Name (ARN) of the SageMaker HyperPod cluster.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
+Pattern: `((arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}))`
 Required: Yes
 
  ** [DeepHealthCheckConfigurations](#API_StartClusterHealthCheck_RequestSyntax) **   <a name="sagemaker-StartClusterHealthCheck-request-DeepHealthCheckConfigurations"></a>

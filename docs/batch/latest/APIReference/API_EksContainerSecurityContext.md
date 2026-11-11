@@ -15,6 +15,11 @@ Whether or not a container or a Kubernetes pod is allowed to gain more privilege
 Type: Boolean
 Required: No
 
+ ** capabilities **   <a name="Batch-Type-EksContainerSecurityContext-capabilities"></a>
+Adds or removes Linux capabilities from the container's default capability set. With Linux capabilities, you can grant specific privileges without granting full root permissions.
+Type: [EksContainerLinuxCapabilities](API_EksContainerLinuxCapabilities.md) object
+Required: No
+
  ** privileged **   <a name="Batch-Type-EksContainerSecurityContext-privileged"></a>
 When this parameter is `true`, the container is given elevated permissions on the host container instance. The level of permissions are similar to the `root` user permissions. The default value is `false`. This parameter maps to `privileged` policy in the [Privileged pod security policies](https://kubernetes.io/docs/concepts/security/pod-security-policy/#privileged) in the *Kubernetes documentation*.
 Type: Boolean
@@ -26,7 +31,7 @@ Type: Boolean
 Required: No
 
  ** runAsGroup **   <a name="Batch-Type-EksContainerSecurityContext-runAsGroup"></a>
-When this parameter is specified, the container is run as the specified group ID (`gid`). If this parameter isn't specified, the default is the group that's specified in the image metadata. This parameter maps to `RunAsGroup` and `MustRunAs` policy in the [Users and groups pod security policies](https://kubernetes.io/docs/concepts/security/pod-security-policy/#users-and-groups) in the *Kubernetes documentation*.
+When this parameter is specified, the container is run as the specified group ID (`gid`). If this parameter isn't specified, the default is the group that's specified in the image metadata. The supported value range is `0` through `2147483647`. This parameter maps to `RunAsGroup` and `MustRunAs` policy in the [Users and groups pod security policies](https://kubernetes.io/docs/concepts/security/pod-security-policy/#users-and-groups) in the *Kubernetes documentation*.
 Type: Long
 Required: No
 
@@ -36,8 +41,13 @@ Type: Boolean
 Required: No
 
  ** runAsUser **   <a name="Batch-Type-EksContainerSecurityContext-runAsUser"></a>
-When this parameter is specified, the container is run as the specified user ID (`uid`). If this parameter isn't specified, the default is the user that's specified in the image metadata. This parameter maps to `RunAsUser` and `MustRanAs` policy in the [Users and groups pod security policies](https://kubernetes.io/docs/concepts/security/pod-security-policy/#users-and-groups) in the *Kubernetes documentation*.
+When this parameter is specified, the container is run as the specified user ID (`uid`). If this parameter isn't specified, the default is the user that's specified in the image metadata. The supported value range is `0` through `2147483647`. This parameter maps to `RunAsUser` and `MustRunAs` policy in the [Users and groups pod security policies](https://kubernetes.io/docs/concepts/security/pod-security-policy/#users-and-groups) in the *Kubernetes documentation*.
 Type: Long
+Required: No
+
+ ** seccompProfile **   <a name="Batch-Type-EksContainerSecurityContext-seccompProfile"></a>
+The seccomp profile for the container. A container-level seccomp profile overrides the profile in the pod security context, which defines security settings that apply to all containers in the pod unless a container overrides them. If this parameter isn't specified, the container uses the pod security context's seccomp profile when one is specified.
+Type: [EksSeccompProfile](API_EksSeccompProfile.md) object
 Required: No
 
 ## See Also

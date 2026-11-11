@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.h
 # AWS CLI
 <a name="aws-cli"></a>
 
-The AWS CLI provides commands to set up AI coding agents with the Agent Toolkit for AWS. You can manage installed AWS skills from the command line. The CLI works with any AI coding agent that the toolkit detects on your system, including Kiro, Cursor, and Claude Code.
+The AWS CLI provides commands to set up AI coding agents with the Agent Toolkit for AWS. You can manage installed AWS skills from the command line. The CLI works with any AI coding agent that the toolkit detects on your system, including Kiro, Cursor, Claude Code, and Devin.
 
 Use the CLI when you want to install skills and configure the AWS MCP Server in a single step.
 
@@ -31,6 +31,8 @@ The `aws configure agent-toolkit` command runs an interactive setup wizard. It d
 ```
 aws configure agent-toolkit
 ```
+
+The wizard configures the MCP Proxy for AWS to sign requests with your default AWS credentials, so configure credentials before you start your agent. If your agent reports `No AWS credentials available`, see [Troubleshooting authentication errors](getting-started-aws-mcp-server.md#troubleshooting-auth-errors).
 
 After the wizard completes, your selected agents can use the AWS MCP Server and the installed skills. Restart your agent client to load the new configuration.
 

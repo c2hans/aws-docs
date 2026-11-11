@@ -55,7 +55,7 @@ The request accepts the following data in JSON format.
 Specify the name or the Amazon Resource Name (ARN) of the SageMaker HyperPod cluster you want to update for security patching.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
+Pattern: `((arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}))`
 Required: Yes
 
  ** [DeploymentConfig](#API_UpdateClusterSoftware_RequestSyntax) **   <a name="sagemaker-UpdateClusterSoftware-request-DeploymentConfig"></a>
@@ -75,7 +75,7 @@ If you choose to use a custom AMI (`CustomAmiId`), ensure it meets the following
 When updating the instance group's AMI through the `UpdateClusterSoftware` operation, if an instance group uses a custom AMI, you must provide an `ImageId` or use the default as input. Note that if you don't specify an instance group in your `UpdateClusterSoftware` request, then all of the instance groups are patched with the specified image.
 Type: String
 Length Constraints: Minimum length of 7. Maximum length of 21.
-Pattern: `ami-[0-9a-fA-F]{8,17}|default`
+Pattern: `(ami-[0-9a-fA-F]{8,17}|default)`
 Required: No
 
  ** [InstanceGroups](#API_UpdateClusterSoftware_RequestSyntax) **   <a name="sagemaker-UpdateClusterSoftware-request-InstanceGroups"></a>

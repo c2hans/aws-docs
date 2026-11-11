@@ -29,7 +29,7 @@ For new accounts and workloads, incorporate these recommendations from the desig
 + [Viewing session tags in CloudTrail](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html#id_session-tags_ctlogs) (IAM documentation)
 
 ### Post-quantum cryptography resources
-<a name="post-quantum-cryptography-resources.f53aa505-a4cf-5acb-9435-e666458bbddb"></a>
+<a name="post-quantum-cryptography-resources.6f7befcd-ac8a-5274-999a-d22d62fe443d"></a>
 + [NIST FIPS 204: Module-Lattice-Based Digital Signature Standard](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.204.pdf) (NIST documentation)
 + [IAM Roles Anywhere ML-DSA certificate support announcement](https://aws.amazon.com/about-aws/whats-new/2026/03/iam-roles-anywhere-post-quantum-digital-certificates/) (AWS What's New post)
 + [Post-quantum cryptography on AWS](https://aws.amazon.com/blogs/security/tag/post-quantum-cryptography/) (AWS Security Blog)

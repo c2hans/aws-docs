@@ -56,7 +56,7 @@ X-RateLimit-Reset: 1640995200
 Additionally, consider load shedding to protect the overall service when no single customer is exceeding a rate limit but the load is impacting the system's performance.
 
 ### Best practices for controlling load
-<a name="best-practices-for-controlling-load.4689455f-6589-5d78-bf8e-cdc33592ef94"></a>
+<a name="best-practices-for-controlling-load9999999999999999nbsp-.4689455f-6589-5d78-bf8e-cdc33592ef94"></a>
 + **Choose a rate-limiting approach** – Plan to rate limit individual users based on either their use of downstream resources or through their use of your MCP server and tools.
 + **Consider load shedding** – Protect your MCP server fleet from general overload that is not driven by a single or handful of customers.
 

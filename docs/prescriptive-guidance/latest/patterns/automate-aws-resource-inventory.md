@@ -10,9 +10,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ## Summary
 <a name="automate-aws-resource-inventory-summary"></a>
 
-This pattern outlines an automated approach to maintaining a comprehensive inventory of AWS resources across multiple accounts and AWS Regions. It is designed to help infrastructure and security engineers improve their resource management practices. It uses AWS Config to track resource changes, Amazon Athena for querying, and Amazon Quick Sight for interactive dashboards. You implement this solution by deploying an AWS CloudFormation stack.
+This pattern outlines an automated approach to maintaining a comprehensive inventory of AWS resources across multiple accounts and AWS Regions. It is designed to help infrastructure and security engineers improve their resource management practices. It uses AWS Config to track resource changes, Amazon Athena for querying, and AWS Quick Sight for interactive dashboards. You implement this solution by deploying an AWS CloudFormation stack.
 
-This solution is similar to the one presented in [Visualizing AWS Config data using Amazon Athena and Amazon Quick Sight](https://aws.amazon.com/blogs/mt/visualizing-aws-config-data-using-amazon-athena-and-amazon-quicksight/) (AWS blog post). This pattern expands on that solution to address the following common requirements and provide the following key benefits:
+This solution is similar to the one presented in [Visualizing AWS Config data using Amazon Athena and AWS Quick Sight](https://aws.amazon.com/blogs/mt/visualizing-aws-config-data-using-amazon-athena-and-amazon-quicksight/) (AWS blog post). This pattern expands on that solution to address the following common requirements and provide the following key benefits:
 + **Compliance-focused** – This approach can help you meet regulatory requirements such as [PCI DSS](https://www.pcisecuritystandards.org/), [NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final), [ISO/IEC 27001](https://www.iso.org/standard/27001), [HIPAA](https://www.hhs.gov/programs/hipaa/index.html), [GDPR](https://gdpr.eu/), and others that mandate accurate asset inventories.
 + **Customization framework** – It provides a foundation for creating Quick Sight dashboards for various AWS resources, so that you can customize the solution to your specific requirements.
 + **User-driven enhancements** – This approach incorporates feedback from real-world use cases and addresses requests for a more comprehensive solution.
@@ -30,7 +30,7 @@ Infrastructure, security, and finance teams often face visibility and collaborat
 + In the audit account, an AWS Config [aggregator](https://docs.aws.amazon.com/config/latest/developerguide/aggregate-data.html) that collects and aggregates configuration data from your target accounts and Regions
 + In the log archive account, set up the following:
   + An Amazon Simple Storage Service (Amazon S3) [bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) where you store the data from the AWS Config aggregator
-  + An Amazon Quick [subscription](https://docs.aws.amazon.com/quicksight/latest/user/signing-up.html)
+  + An AWS Quick [subscription](https://docs.aws.amazon.com/quicksight/latest/user/signing-up.html)
   + An [authorized connection](https://docs.aws.amazon.com/quicksight/latest/user/athena.html) between Quick Sight and Amazon Athena
   + [Permissions](https://docs.aws.amazon.com/athena/latest/ug/s3-permissions.html) to access the Amazon S3 bucket through an Athena query
 + AWS Command Line Interface (AWS CLI), [installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
@@ -79,7 +79,7 @@ The diagram shows the following workflow:
 + [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) is a fully managed extract, transform, and load (ETL) service. It helps you reliably categorize, clean, enrich, and move data between data stores and data streams. This pattern uses an AWS Glue [Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/components-overview.html#data-catalog-intro) and [Schema registry](https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html).
 + [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) is a compute service that helps you run code without needing to provision or manage servers. It runs your code only when needed and scales automatically, so you pay only for the compute time that you use.
 + [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) is an account management service that helps you consolidate multiple AWS accounts into an organization that you create and centrally manage.
-+ [Amazon Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/quick-bi.html) is a business intelligence (BI) service that helps you transform raw data into meaningful insights through interactive visualizations, dashboards, and reports. Quick Sight is a core component of Amazon Quick.
++ [AWS Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/quick-bi.html) is a business intelligence (BI) service that helps you transform raw data into meaningful insights through interactive visualizations, dashboards, and reports. Quick Sight is a core component of AWS Quick.
 + [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud-based object storage service that helps you store, protect, and retrieve any amount of data.
 + [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html) helps you manage your applications and infrastructure running in the AWS Cloud. It simplifies application and resource management, shortens the time to detect and resolve operational problems, and helps you manage your AWS resources securely at scale. [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html) simplifies common maintenance, deployment, and remediation tasks for many AWS services.
 
@@ -136,7 +136,7 @@ The AWS CloudFormation template for this pattern is available in the [AWS Config
 
 | Issue | Solution |
 | --- | --- |
-| Amazon Quick is attempting to connect to the `us-east-1` AWS Region, but the creation of resources in that Region is not permitted. | A service control policy is restricting your subscription to Amazon Quick in this Region. In the service control policy, manually specify the target AWS Region. Replace `<REGION_ID>` with the appropriate Region identifier:<pre>https://<REGION_ID>.quicksight.aws.amazon.com/sn/start/dashboards</pre><br />The following is an example:<pre>https://eu-central-1.quicksight.aws.amazon.com/sn/start/dashboards</pre> |
+| AWS Quick is attempting to connect to the `us-east-1` AWS Region, but the creation of resources in that Region is not permitted. | A service control policy is restricting your subscription to AWS Quick in this Region. In the service control policy, manually specify the target AWS Region. Replace `<REGION_ID>` with the appropriate Region identifier:<pre>https://<REGION_ID>.quicksight.aws.amazon.com/sn/start/dashboards</pre><br />The following is an example:<pre>https://eu-central-1.quicksight.aws.amazon.com/sn/start/dashboards</pre> |
 | In Amazon Athena, you encounter the following message:<br />`Before you run your first query, you need to set up a query result location in Amazon S3.` | Make sure that you have prepared an Amazon S3 bucket where you will store the query results from Amazon Athena. Then follow the instructions in [Specify a query result location using the Amazon Athena console](https://docs.aws.amazon.com/athena/latest/ug/query-results-specify-location-console.html). |
 
 ## Related resources
@@ -144,12 +144,12 @@ The AWS CloudFormation template for this pattern is available in the [AWS Config
 
 **AWS documentation**
 + [AWS Config documentation](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)
-+ [Amazon Quick documentation](https://docs.aws.amazon.com/quicksuite/latest/userguide/what-is.html)
++ [AWS Quick documentation](https://docs.aws.amazon.com/quicksuite/latest/userguide/what-is.html)
 
 **AWS blog post**
 + [Automate AWS Config data visualization with AWS Systems Manager](https://aws.amazon.com/blogs/mt/automate-aws-config-data-visualization-with-aws-systems-manager/)
 + [How to record resource configuration changes periodically with AWS Config](https://aws.amazon.com/blogs/mt/how-to-record-resource-configuration-changes-periodically-with-aws-config/)
 
 **Other resources**
-+ [Amazon Quick Community Learning Center](https://community.amazonquicksight.com/c/learning-center/10/none)
-+ [Amazon Quick Community Gallery](https://community.amazonquicksight.com/c/gallery/44)
++ [AWS Quick Community Learning Center](https://community.amazonquicksight.com/c/learning-center/10/none)
++ [AWS Quick Community Gallery](https://community.amazonquicksight.com/c/gallery/44)

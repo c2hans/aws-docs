@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 
 AI agents deliver value by interacting with external tools, APIs, and data sources to perform useful tasks. The right tool integration strategy directly impacts your agent's capabilities, security posture, and long-term flexibility.
 
-This section helps you navigate the tool integration landscape with a focus on open standards that maximize your freedom and flexibility. The section highlights the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) for tool integration and reviews framework-specific tools and specialized meta-tools that enhance agent workflows.
+This section helps you navigate the tool integration landscape with a focus on open standards that support flexibility and portability. This section highlights the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) for tool integration and reviews framework-specific tools and specialized meta-tools that enhance agent workflows.
 
 **In this section:**
 + Tool categories

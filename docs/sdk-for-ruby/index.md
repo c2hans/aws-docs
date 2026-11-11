@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/index.html
 title: 'AWS SDK for Ruby Documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-ruby/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # AWS SDK for Ruby Documentation

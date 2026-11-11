@@ -31,7 +31,12 @@ Pattern: `arn:aws[a-z-]*:(billing)::[0-9]{12}:billingview/[a-zA-Z0-9/:_\+=\.\-@]
 Required: Yes
 
  ** [sourceViews](#API_billing_AssociateSourceViews_RequestSyntax) **   <a name="awscostmanagement-billing_AssociateSourceViews-request-sourceViews"></a>
- A list of ARNs of the source billing views to associate.
+A list of ARNs of the source billing views to associate. Source views can be of the following types:
++  `PRIMARY` - The billing view that contains all cost management data associated with an account.
++  `CUSTOM` - A billing view that a customer creates from one or more source views.
++  `BILLING_GROUP` - The billing view for an AWS Billing Conductor billing group.
++  `BILLING_TRANSFER` - The billing view for the billing data that a bill transfer account is financially responsible for.
++  `BILLING_TRANSFER_SHOWBACK` - The billing view for billing data configured for showback or chargeback purposes.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Pattern: `arn:aws[a-z-]*:(billing)::[0-9]{12}:billingview/[a-zA-Z0-9/:_\+=\.\-@]{0,75}[a-zA-Z0-9]`

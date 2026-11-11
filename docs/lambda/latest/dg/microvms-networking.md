@@ -93,15 +93,15 @@ The `X-aws-proxy-*` header namespace is reserved by Lambda for request metadata,
 ### Request/response bandwidth
 <a name="microvms-networking-bandwidth"></a>
 
-Each Lambda MicroVM has an ingress bandwidth that scales with its size at 2 MB/s per vCPU, with a burst allowance of 10 MB/s per vCPU for up to 5 seconds. This bandwidth applies to all traffic through the MicroVM endpoint, both inbound requests and outbound responses.
+Each Lambda MicroVM has an ingress bandwidth that scales with its size at 2 MB/s per vCPU, with a burst allowance of 10 MB per vCPU. This bandwidth applies to all traffic through the MicroVM endpoint, both inbound requests and outbound responses.
 
-| MicroVM size (baseline) | Sustained bandwidth | Burst bandwidth (up to 5 s) |
+| MicroVM size (baseline) | Sustained bandwidth | Burst bandwidth |
 | --- | --- | --- |
-| 0.5 GB, 0.25 vCPU | 0.5 MB/s | 2.5 MB/s |
-| 1 GB, 0.5 vCPU | 1 MB/s | 5 MB/s |
-| 2 GB, 1 vCPU | 2 MB/s | 10 MB/s |
-| 4 GB, 2 vCPU | 4 MB/s | 20 MB/s |
-| 8 GB, 4 vCPU | 8 MB/s | 40 MB/s |
+| 0.5 GB, 0.25 vCPU | 0.5 MB/s | 2.5 MB |
+| 1 GB, 0.5 vCPU | 1 MB/s | 5 MB |
+| 2 GB, 1 vCPU | 2 MB/s | 10 MB |
+| 4 GB, 2 vCPU | 4 MB/s | 20 MB |
+| 8 GB, 4 vCPU | 8 MB/s | 40 MB |
 
 If you experience increased request latency due to network saturation, either reduce your request concurrency or payload size, or select a larger MicroVM size to increase the available bandwidth.
 

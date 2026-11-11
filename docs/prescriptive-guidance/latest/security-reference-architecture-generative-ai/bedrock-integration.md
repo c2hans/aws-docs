@@ -25,7 +25,7 @@ You can build and scale enterprise generative AI applications around various use
 The Application account hosts the primary infrastructure and services to run and maintain an enterprise application. In this context, the Application account acts as the traditional cloud workload, which interacts with the Amazon Bedrock managed service in the Generative AI account. For general security best practices for securing this account, see [Workloads OU - Application account](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/application.html) in the *AWS SRA – core architecture guide*.
 
 ### Identity propagation and access control
-<a name="identity-propagation-and-access-control.1342b5bc-34a9-54a6-8ba6-32c6b35289bd"></a>
+<a name="identity-propagation-and-access-control.996f5500-76f6-5bf9-85d3-20cc2f0e4096"></a>
 
 Implement identity propagation throughout your generative AI application architecture. When your application uses Retrieval Augmented Generation (RAG), propagate the user's identity from the application in the form of metadata to the knowledge base. The knowledge base enforces controls through metadata filtering, ensuring users only access data they are authorized to view.
 

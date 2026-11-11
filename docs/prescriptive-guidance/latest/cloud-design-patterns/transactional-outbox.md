@@ -104,7 +104,7 @@ You can implement a transactional outbox pattern by enabling streams on the Dyna
 <a name="transactional-outbox-code"></a>
 
 ### Using an outbox table
-<a name="using-an-outbox-table.0948c3c2-e393-5c8d-932e-6f72eb809fa5"></a>
+<a name="using-an-outbox-table.31c3c135-7890-50bc-a3ea-f16e89610220"></a>
 
 The sample code in this section shows how you can implement the transactional outbox pattern by using an outbox table. To view the complete code, see the [GitHub repository](https://github.com/aws-samples/transactional-outbox-pattern) for this example.
 

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/what-is-fl
 
 AWS Elemental MediaPackage uses just-in-time format conversion to deliver over-the-top (OTT) video from a single source to a wide variety of playback devices or content delivery networks (CDNs).
 
-In the processing flow for live content, encoders send live HLS streams to MediaPackage. MediaPackage then packages the content, formatting it in response to playback requests from downstream devices.
+In the processing flow for live content, encoders send live HLS or CMAF streams to MediaPackage. MediaPackage then packages the content, formatting it in response to playback requests from downstream devices.
 
 The following sections describe the live processing flows.
 

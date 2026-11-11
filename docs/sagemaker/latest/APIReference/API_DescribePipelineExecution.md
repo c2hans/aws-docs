@@ -74,7 +74,9 @@ Required: Yes
       "ExperimentName": "string",
       "TrialName": "string"
    },
+   "PipelineVersionAliases": [ "string" ],
    "PipelineVersionId": number,
+   "RoleArn": "string",
    "SelectiveExecutionConfig": {
       "SelectedSteps": [
          {
@@ -156,10 +158,23 @@ Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded | CompletedWi
 Specifies the names of the experiment and trial created by a pipeline.
 Type: [PipelineExperimentConfig](API_PipelineExperimentConfig.md) object
 
+ ** [PipelineVersionAliases](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-PipelineVersionAliases"></a>
+The aliases currently assigned to the pipeline version that the execution ran.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+
  ** [PipelineVersionId](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-PipelineVersionId"></a>
 The ID of the pipeline version.
 Type: Long
 Valid Range: Minimum value of 1.
+
+ ** [RoleArn](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-RoleArn"></a>
+The Amazon Resource Name (ARN) of the IAM role that the execution uses. SageMaker returns this value only for executions of pipelines that AWS manages.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
 
  ** [SelectiveExecutionConfig](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-SelectiveExecutionConfig"></a>
 The selective execution configuration applied to the pipeline run.

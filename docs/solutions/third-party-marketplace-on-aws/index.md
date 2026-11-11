@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/third-party-marketplace-on-aws
 title: 'Guidance for Third-Party Marketplace on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/third-party-marketplace-on-aws/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Guidance for Third-Party Marketplace on AWS

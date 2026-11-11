@@ -48,7 +48,7 @@ Use the event sourcing pattern when:
 <a name="event-sourcing-implementation"></a>
 
 ### High-level architecture
-<a name="high-level-architecture.790b88d8-c45e-5add-901c-d91776ea63b5"></a>
+<a name="high-level-architecture.89114102-ad74-55b7-ada9-358d8588a12d"></a>
 
 **Commands and events**
 

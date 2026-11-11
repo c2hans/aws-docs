@@ -36,14 +36,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-cloudwatch-space-encryptionconfiguration-properties"></a>
 
 `EncryptionStrategy`  <a name="cfn-cloudwatch-space-encryptionconfiguration-encryptionstrategy"></a>
-Whether the space is encrypted with an AWS owned key or a customer managed key.
+Which kind of key to use. Required.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `AWS_OWNED | CUSTOMER_MANAGED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsKeyArn`  <a name="cfn-cloudwatch-space-encryptionconfiguration-kmskeyarn"></a>
-The Amazon Resource Name (ARN) of the customer managed KMS key. Required when encryptionStrategy is CUSTOMER\_MANAGED.
+Customer managed KMS key ARN. Required when encryptionStrategy is CUSTOMER\_MANAGED, and must be omitted when it is AWS\_OWNED. Must be a symmetric ENCRYPT\_DECRYPT key in the caller's account and region.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:(aws|aws-cn|aws-us-gov):kms:[a-z0-9-]+:[0-9]{12}:key/(?:mrk-)?[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`

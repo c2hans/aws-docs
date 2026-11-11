@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/sorting-visual-data.html
 ---
 
-# Sorting visual data in Amazon Quick
+# Sorting visual data in AWS Quick
 <a name="sorting-visual-data"></a>
 
 You can sort data using multiple methods for most visual types. You can choose the sort order of on-visual data by using the quick sort option or field wells. You can also use field wells to sort data by an off-visual metric. The visual element you can sort by depends on the visual type and whether sorting is supported for that visual. For more information on which visual types support sorting, see [Analytics formatting per type in Quick](analytics-format-options.md).

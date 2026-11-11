@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # VpcEndpoint
 <a name="API_VpcEndpoint"></a>
 
-The VPC and subnets for a proxy mode firewall endpoint. This is used in [CreateFirewall](API_CreateFirewall.md) when `NoSourcePreservation` is `TRUE`, to specify where Network Firewall creates the firewall endpoint.
+Contains the VPC and subnets for a proxy mode firewall endpoint. You use it in `CreateFirewall` when `NoSourcePreservation` is `TRUE`, to specify where Network Firewall creates the firewall endpoint.
 
-This differs from [VpcEndpointAssociation](API_VpcEndpointAssociation.md), which defines additional secondary endpoints for a firewall in other VPCs.
+This differs from `VpcEndpointAssociation`, which defines additional secondary endpoints for a firewall in other VPCs.
 
 ## Contents
 <a name="API_VpcEndpoint_Contents"></a>

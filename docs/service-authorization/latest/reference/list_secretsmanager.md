@@ -37,6 +37,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateSecret  **
   - **IAM action:**  [secretsmanager:CreateSecret](#list_secretsmanager-action-CreateSecret)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [secretsmanager:PutResourcePolicy](#list_secretsmanager-action-PutResourcePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [secretsmanager:ReplicateSecretToRegions](#list_secretsmanager-action-ReplicateSecretToRegions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [secretsmanager:TagResource](#list_secretsmanager-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 

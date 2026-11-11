@@ -27,7 +27,7 @@ The implementation of robust data protection and governance measures addresses s
 <a name="iot-data-remediations"></a>
 
 ### Data protection
-<a name="data-protection.dbd951d1-5956-510c-b409-b8aff1d847e3"></a>
+<a name="data-protection.a9713cc2-b32e-56ba-b881-1402e0f9a615"></a>
 
 **Data at rest encryption**:** **Information that's stored on deployed devices such as sensors or cameras might seem harmless, but when the physical control of a device isn't guaranteed, that information can be a target for unauthorized actors. Examples include cached videos on consumer cameras, proprietary machine learning (ML) models in industrial applications, and configuration data for operational environments. For deployed devices, the best practice is to encrypt all data that's stored at rest when possible. This includes:
 + Device storage: Encrypt local storage on IoT devices by using hardware-based encryption (when available) or strong software encryption.

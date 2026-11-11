@@ -131,7 +131,7 @@ Type: [EvaluationMetrics](API_EvaluationMetrics.md) object
 This value determines which version of AWS Glue this machine learning transform is compatible with. Glue 1.0 is recommended for most customers. If the value is not set, the Glue compatibility defaults to Glue 0.9. For more information, see [AWS Glue Versions](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html#release-notes-versions) in the developer guide.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 
  ** [InputRecordTables](#API_GetMLTransform_ResponseSyntax) **   <a name="Glue-GetMLTransform-response-InputRecordTables"></a>
 A list of AWS Glue table definitions used by the transform.

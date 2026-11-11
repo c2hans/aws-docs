@@ -30,7 +30,7 @@ You can configure automatic scaling policies that adjust the number of instances
 ## Inference engine choice
 <a name="inference-engine-choice.aa6a3458-83d1-5bf3-9152-a2013462d8cd"></a>
 
-Teams can choose [AWS Deep Learning Containers](https://github.com/aws/deep-learning-containers) images that are optimized for popular frameworks and maintained by AWS. Alternatively, teams can bring custom container images that include specialized inference engines or dependencies.
+Teams can choose [AWS Deep Learning Containers](https://aws.amazon.com/ai/machine-learning/containers/) images that are optimized for popular frameworks and maintained by AWS. Alternatively, teams can bring custom container images that include specialized inference engines or dependencies.
 
 ## Inference optimizations and configurations
 <a name="inference-optimizations-and-configurations.abf1ec7e-ac32-55fa-ad22-bcfe8fa9460b"></a>

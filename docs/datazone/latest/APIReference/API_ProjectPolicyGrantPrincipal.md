@@ -13,7 +13,7 @@ The project policy grant principal.
  ** projectDesignation **   <a name="datazone-Type-ProjectPolicyGrantPrincipal-projectDesignation"></a>
 The project designation of the project policy grant principal.
 Type: String
-Valid Values: `OWNER | CONTRIBUTOR | PROJECT_CATALOG_STEWARD`
+Valid Values: `OWNER | CONTRIBUTOR | PROJECT_CATALOG_STEWARD | USER_CREATED_DESIGNATION`
 Required: Yes
 
  ** projectGrantFilter **   <a name="datazone-Type-ProjectPolicyGrantPrincipal-projectGrantFilter"></a>
@@ -24,6 +24,12 @@ Required: No
 
  ** projectIdentifier **   <a name="datazone-Type-ProjectPolicyGrantPrincipal-projectIdentifier"></a>
 The project ID of the project policy grant principal.
+Type: String
+Pattern: `[a-zA-Z0-9_-]{1,36}`
+Required: No
+
+ ** userCreatedDesignationId **   <a name="datazone-Type-ProjectPolicyGrantPrincipal-userCreatedDesignationId"></a>
+The ID of the user-created designation granted to the project principal. Required when `projectDesignation` is `USER_CREATED_DESIGNATION`; must not be provided otherwise.
 Type: String
 Pattern: `[a-zA-Z0-9_-]{1,36}`
 Required: No

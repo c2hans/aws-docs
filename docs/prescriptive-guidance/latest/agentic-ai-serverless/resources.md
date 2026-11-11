@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 For more information about agentic AI, see the following resources:
 
 ## AWS Blogs
-<a name="9999999999999999aws--blogs.b23a8bba-ff0f-5b84-8954-ce84c1ce8113"></a>
+<a name="9999999999999999aws--blogs.42932712-481c-559c-8335-20ea0ab83466"></a>
 + [Best practices to build generative AI applications on AWS](https://aws.amazon.com/blogs/machine-learning/best-practices-to-build-generative-ai-applications-on-aws/)
 + [Build agentic systems with CrewAI and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/build-agentic-systems-with-crewai-and-amazon-bedrock/)
 + [Build RAG and agent-based generative AI applications with new Amazon Titan Text Premier model, available in Amazon Bedrock](https://aws.amazon.com/blogs/aws/build-rag-and-agent-based-generative-ai-applications-with-new-amazon-titan-text-premier-model-available-in-amazon-bedrock/)
@@ -31,7 +31,7 @@ For more information about agentic AI, see the following resources:
 + [Using Amazon Nova with Amazon Bedrock agents](https://docs.aws.amazon.com/nova/latest/userguide/agents-use-nova.html#agents-bedrock)
 
 ## Other AWS resources
-<a name="other-9999999999999999aws--resources.f24f8fbd-f63d-5414-a08e-d5fa1c8d470e"></a>
+<a name="other-9999999999999999aws--resources.1f6d8643-6dea-5cd2-997f-076aa68d116b"></a>
 + [Amazon Bedrock Agent Flow](https://aws.amazon.com/bedrock/flows/)
 + [Amazon Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/)
 + [Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/)

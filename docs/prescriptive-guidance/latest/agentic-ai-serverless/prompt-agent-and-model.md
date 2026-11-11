@@ -17,7 +17,7 @@ Without proper lifecycle management, enterprises face the following risks:
 + Lack of reproducibility or traceability in critical flows
 
 ## Best practices for prompt, agent, and model management
-<a name="best-practices-for-prompt--agent--and-model-management.066117a4-7473-563b-8b41-59b1792d8560"></a>
+<a name="best-practices-for-prompt--agent--and-model-management.a85fdc79-51f1-51a9-87f3-827026e2bf80"></a>
 
 Consider implementing the following best practices for managing prompts, agents, and models:
 + **Version-control prompts and agent configurations** - Prompts are as critical as code. Versioning enables rollback when behavior changes, supports A/B testing, and provides an audit trail of how agent logic evolves.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/builtin-services-
 # AWS service connectors
 <a name="builtin-services-integration"></a>
 
-With AWS service connectors in Amazon Quick, you can create connectors that interact directly with AWS services like Amazon Bedrock, Amazon Textract, and Amazon Comprehend. These connectors enable automated workflows that leverage AWS AI and machine learning capabilities.
+With AWS service connectors in AWS Quick, you can create connectors that interact directly with AWS services like Amazon Bedrock, Amazon Textract, and Amazon Comprehend. These connectors enable automated workflows that leverage AWS AI and machine learning capabilities.
 
 ## What you can do
 <a name="aws-builtin-services-capabilities"></a>
@@ -13,12 +13,12 @@ With AWS service connectors in Amazon Quick, you can create connectors that inte
 AWS service connectors enable you to integrate powerful AWS capabilities into your automated workflows. For example, you can use Amazon Bedrock to generate content with foundation models, Amazon Textract to extract text and data from documents, or Amazon Comprehend to analyze sentiment and extract insights from text. These connectors allow you to build sophisticated automation workflows that combine multiple AWS services for document processing, content generation, and data analysis—all while maintaining security through IAM role-based authentication.
 
 **Note**
-AWS services connectors can only be used with Amazon Quick Automate because they require an IAM identity for authentication. These connectors are created through the admin console and provide direct access to AWS service APIs.
+AWS services connectors can only be used with AWS Quick Automate because they require an IAM identity for authentication. These connectors are created through the admin console and provide direct access to AWS service APIs.
 
 ## Supported AWS services
 <a name="aws-builtin-services-supported"></a>
 
-Amazon Quick supports the following AWS services for connectors:
+AWS Quick supports the following AWS services for connectors:
 + **Amazon Bedrock Agent** - Invoke Bedrock agents for complex AI workflows.
 + **Amazon Bedrock Runtime** - Access foundation models for text generation and conversation.
 + **Amazon Bedrock Data Automation** - Automate data processing workflows with AI.
@@ -33,31 +33,31 @@ Amazon Quick supports the following AWS services for connectors:
 Before you set up an AWS service connectors, make sure you have the following:
 + AWS account with access to the desired AWS services.
 + IAM role with appropriate permissions for the AWS services you want to use.
-+ Amazon Quick Admin access to create connectors.
-+ Amazon Quick Automate access to use the connectors in workflows.
++ AWS Quick Admin access to create connectors.
++ AWS Quick Automate access to use the connectors in workflows.
 
 ## Prepare IAM role and permissions
 <a name="aws-builtin-services-authentication"></a>
 
-Before setting up the connectors in Amazon Quick, prepare your IAM role with the necessary permissions for the AWS services you want to use.
+Before setting up the connectors in AWS Quick, prepare your IAM role with the necessary permissions for the AWS services you want to use.
 
 ### Required IAM permissions
 <a name="aws-builtin-services-iam-permissions"></a>
 
-Configure your IAM role with the appropriate permissions based on the AWS services you plan to use. Make sure your IAM role includes a trust policy that allows Amazon Quick to assume the role for executing actions.
+Configure your IAM role with the appropriate permissions based on the AWS services you plan to use. Make sure your IAM role includes a trust policy that allows AWS Quick to assume the role for executing actions.
 
 ### IAM Role for Resource Access
 <a name="aws-builtin-services-iam-role-setup"></a>
 
-First, you will need to create an IAM role that will be used by Amazon Quick to call the AWS service needed in your Amazon Quick Automate workflow.
+First, you will need to create an IAM role that will be used by AWS Quick to call the AWS service needed in your AWS Quick Automate workflow.
 
-1. Log in to the AWS Console of the AWS account where the Amazon Quick subscription resides.
+1. Log in to the AWS Console of the AWS account where the AWS Quick subscription resides.
 
 1. Open IAM and create a new IAM role.
 
 1. Give it all the permissions for the AWS service you want to invoke via connectors. For example, you can assign a managed policy like `AmazonS3FullAccess` if you need to invoke Amazon S3.
 
-1. In the trust relationship, give the assume role permission to `quicksight.amazonaws.com`. This allows Amazon Quick to assume this role and call AWS services on your behalf.
+1. In the trust relationship, give the assume role permission to `quicksight.amazonaws.com`. This allows AWS Quick to assume this role and call AWS services on your behalf.
 
 1. Once the Customer Role is created, take a note of the IAM role ARN.
 
@@ -87,7 +87,7 @@ Example trust policy:
 After preparing your IAM role and permissions, follow these steps to set up AWS Actions in Quick.
 
 **Note**
-You need administrative access to Amazon Quick to perform the following steps. See documentation on [Configure Amazon Quick subscriptions](managing-qbs-subscriptions.md) to learn more.
+You need administrative access to AWS Quick to perform the following steps. See documentation on [Configure AWS Quick subscriptions](managing-qbs-subscriptions.md) to learn more.
 
 ### Steps to create a new AWS integration
 <a name="aws-builtin-services-setup-steps"></a>

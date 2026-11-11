@@ -10,12 +10,14 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ## Summary
 <a name="automate-deletion-cloudformation-stacks-associated-resources-summary"></a>
 
-[AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) is a widely-used service for managing cloud infrastructure as code (IaC). When you use CloudFormation, you manage related resources as a single unit called a *stack*. You create, update, and delete a collection of resources by creating, updating, and deleting stacks.
+*This is a sample pattern, for non-production usage. You should work with your security and legal teams to meet your organizational security, regulatory and compliance requirements before deployment.*
 
-Sometimes, you no longer need the resources in a CloudFormation stack. Depending on the resources and their configurations, it can be complicated to delete a stack and its associated resources. In real-world production systems, deletions sometimes fail or take a long time due to conflicting conditions or restrictions that CloudFormation cannot override. It can require careful planning and execution to make sure that all resources are properly deleted in an efficient and consistent manner. This pattern describes how to set up a framework that helps you manage the deletion of CloudFormation stacks that involve the following complexities:
+[AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) is a widely used service for managing cloud infrastructure as code (IaC). When you use CloudFormation, you manage related resources as a single unit called a *stack*. You create, update, and delete a collection of resources by creating, updating, and deleting stacks.
+
+Sometimes, you no longer need the resources in a CloudFormation stack. Depending on the resources and their configurations, deleting a stack and its associated resources can be complicated. In real-world production systems, deletions sometimes fail or take a long time because of conflicting conditions or restrictions that CloudFormation can't override. Careful planning and execution help you delete all resources properly, efficiently, and consistently. This pattern describes how to set up a framework that helps you manage the deletion of CloudFormation stacks that involve the following complexities:
 + **Resources with delete protection** – Some resources might have delete protection enabled. Common examples are [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) tables and [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) buckets. Delete protection prevents automated deletion, such as deletion through CloudFormation. If you want to delete these resources, you must manually or programmatically override or temporarily disable the delete protection. You should carefully consider the implication of deleting these resources before proceeding.
-+ **Resources with retention policies** – Certain resources, such as AWS Key Management Service (AWS KMS) keys and Amazon S3 buckets, might have retention policies that specify how long they should be retained after deletion is requested. You should account for these policies in the cleanup strategy to maintain compliance with organizational policies and regulatory requirements.
-+ **Delayed deletion of Lambda functions that are attached to a VPC** – Deleting an [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) function that is attached to a virtual private cloud (VPC) can take 5–40 minutes, depending the multiple interconnected dependencies involved in the process. If you detach the function from the VPC before deleting the stack, you can reduce this delay to under 1 minute.
++ **Resources with retention policies** – Certain resources, such as AWS Key Management Service (AWS KMS) keys and Amazon S3 buckets, might have retention policies that specify how long they must be retained after you request deletion. AWS KMS keys have a waiting period of 7 to 30 days before deletion, and Amazon S3 Object Lock retention prevents object versions from being deleted until the retention period expires. Account for these waiting periods in your cleanup strategy to help maintain compliance with organizational policies and regulatory requirements.
++ **Delayed deletion of Lambda functions that are attached to a VPC** – Deleting an [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) function that is attached to a virtual private cloud (VPC) can take up to 20 minutes, depending on the multiple interconnected dependencies involved in the process. If you detach the function from the VPC before deleting the stack, you can reduce this delay to under 1 minute.
 + **Resources not directly created by CloudFormation** – In certain application designs, resources might be created outside of the original CloudFormation stack, either by the application itself or by resources provisioned through the stack. The following are two examples:
   + CloudFormation might provision an [Amazon Elastic Compute Cloud (Amazon EC2)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) instance that runs a user data script. Then, this script might create an [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html) parameter to store application-related data. This parameter is not managed through CloudFormation.
   + CloudFormation might provision a Lambda function that automatically generates an [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) group for storing logs. This log group is not managed through CloudFormation.
@@ -27,23 +29,26 @@ Although these guardrails can cause complexity, they are intentional and critica
 **Targeted business outcomes**
 
 By implementing this framework, you can achieve the following benefits:
-+ **Cost management** – Regular and efficient cleanup of temporary environments, such as end-to-end or user-acceptance testing environments, helps prevent resources from running longer than necessary. This can significantly reduce costs.
-+ **Security** – Automated cleanup of outdated or unused resources reduces the attack surface and helps maintain a secure AWS environment.
++ **Cost management** – Regular and efficient cleanup of temporary environments, such as end-to-end or user-acceptance testing environments, helps prevent resources from running longer than necessary. This can help reduce costs.
++ **Security** – Automated cleanup of outdated or unused resources can help reduce the attack surface in your AWS environment.
 + **Operational efficiency** – Regular and automated cleanup can provide the following operational benefits:
   + Automated scripts that remove old log groups or empty Amazon S3 buckets can improve operational efficiency by keeping the environment clean and manageable.
   + Quickly deleting and recreating stacks supports rapid iteration for design and implementation, which can lead to a more robust and resilient architecture.
-  + Regularly deleting and rebuilding environments can help you identify and fix potential issues. This can help you make sure that the infrastructure can withstand real-world scenarios.
+  + Regularly deleting and rebuilding environments can help you identify and fix potential issues and validate that the infrastructure is designed to withstand real-world scenarios.
 
 ## Prerequisites and limitations
 <a name="automate-deletion-cloudformation-stacks-associated-resources-prereqs"></a>
 
 **Prerequisites**
 + An active AWS account
-+ Python version 3.6 or later, [installed](https://www.python.org/downloads/)
-+ AWS Command Line Interface (AWS CLI), [installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
++ Python version 3.13 or later, [installed](https://www.python.org/downloads/)
++ pipx, [installed](https://pipx.pypa.io/stable/how-to/install-pipx.html)
++ AWS Command Line Interface (AWS CLI), [installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [configured ](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)for a non-production account
 
 **Limitations**
-+ A naming convention is used to identify the resources that should be deleted. The sample code in this pattern uses a prefix for the resource name, but you can define your own naming convention. Resources that do not use this naming convention will not be identified or subsequently deleted.
++ The framework uses a naming convention to identify the resources to delete. The sample code in this pattern uses a prefix for the resource name, but you can define your own naming convention. The framework doesn't identify or delete resources that don't use this naming convention.
++ The framework deletes every resource in the selected AWS Region whose name starts with a specified prefix. Use prefixes that only your temporary environments use.
++ AWS CloudFormation deletes stack resources with your credentials unless the stack has a [service role](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-servicerole.html). The credentials need permission to delete the resources in your stacks.
 
 ## Architecture
 <a name="automate-deletion-cloudformation-stacks-associated-resources-architecture"></a>
@@ -54,28 +59,27 @@ The following diagram shows how this framework identifies the target CloudFormat
 
 The diagram shows the following workflow:
 
-1. **Gather resources** – The automation framework uses a naming convention to return all relevant CloudFormation stacks, Amazon Elastic Container Registry (Amazon ECR) repositories, DynamoDB tables, and Amazon S3 buckets.
+1. **Gather resources** – The automation framework uses a naming convention to return all relevant CloudFormation stacks, Amazon Elastic Container Registry (Amazon ECR) repositories, and Amazon Simple Storage Service (Amazon S3) buckets. It then returns the DynamoDB tables in those stacks.
 **Note**
-The functions for this stage use [paginators](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html), a feature in Boto3 that abstracts the process of iterating over a truncated API result set. This makes sure that all resources are processed. To further optimize performance, consider applying [server-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results) filtering or consider using JMESPath to perform [client-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results-with-jmespath) filtering.
+The functions for this stage use [paginators](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html), a feature in Boto3 that abstracts the process of iterating over a truncated API result set. This helps make sure that the functions process all resources. To further optimize performance, consider applying [server-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results) filtering or using JMESPath to perform [client-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results-with-jmespath) filtering.
 
-1. **Pre-processing** – The automation framework identifies and addresses the service constraints that must be overridden in order to allow CloudFormation to delete the resources. For example, it changes the `DeletionProtectionEnabled` setting for DynamoDB tables to `False`. In the command-line interface, for each resource, you receive a prompt asking if you want to override the constraint.
+1. **Pre-processing** – The automation framework identifies and addresses the service constraints that you must override to allow CloudFormation to delete the resources. For example, it changes the `DeletionProtectionEnabled` setting for DynamoDB tables to `False`. In the command-line interface, for each resource, you receive a prompt asking if you want to override the constraint.
 
 1. **Delete stack** – The automation framework deletes the CloudFormation stack. In the command-line interface, you receive a prompt asking if you want to delete the stack.
 
-1. **Post-processing** – The automation framework deletes any related resources that were not directly provisioned through CloudFormation as part of the stack. Examples of these resource types include Systems Manager parameters and CloudWatch log groups. Separate functions gather these resources, pre-process them, and then delete them. In the command-line interface, for each resource, you receive a prompt asking if you want to delete the resource.
+1. **Post-processing** – The automation framework deletes any related resources that CloudFormation did not directly provision as part of the stack. Examples of these resource types include Systems Manager parameters and CloudWatch log groups. Separate functions gather these resources, pre-process them, and then delete them. In the command-line interface, for each resource, you receive a prompt asking if you want to delete the resource.
 **Note**
-The functions for this stage use [paginators](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html), a feature in Boto3 that abstracts the process of iterating over a truncated API result set. This makes sure that all resources are processed. To further optimize performance, consider applying [server-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results) filtering or consider using JMESPath to perform [client-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results-with-jmespath) filtering.
+The functions for this stage use [paginators](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html), a feature in Boto3 that abstracts the process of iterating over a truncated API result set. This helps make sure that the functions process all resources. To further optimize performance, consider applying [server-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results) filtering or using JMESPath to perform [client-side](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results-with-jmespath) filtering.
 
 **Automation and scale**
 
-If your CloudFormation stack includes other resources that are not included in the sample code, or if the stack has a constraint that has not been addressed in this pattern, then you can adapt the automation framework for your use case. Follow the same methodology of gathering resources, pre-processing, deleting the stack, and then post-processing.
+If your CloudFormation stack includes other resources that the sample code does not include, or if the stack has a constraint that this pattern does not address, you can adapt the automation framework for your use case. Follow the same methodology of gathering resources, pre-processing, deleting the stack, and then post-processing.
 
 ## Tools
 <a name="automate-deletion-cloudformation-stacks-associated-resources-tools"></a>
 
 **AWS services**
 + [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) helps you set up AWS resources, provision them quickly and consistently, and manage them throughout their lifecycle across AWS accounts and AWS Regions.
-+ [CloudFormation Command Line Interface (CFN-CLI)](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html) is an open source tool that helps you develop and test AWS and third-party extensions and then register them for use in CloudFormation.
 + [AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) is a software development kit that helps you integrate your Python application, library, or script with AWS services.
 
 **Other tools**
@@ -90,8 +94,8 @@ The code for this pattern is available in the GitHub [cloudformation-stack-clean
 
 ## Best practices
 <a name="automate-deletion-cloudformation-stacks-associated-resources-best-practices"></a>
-+ **Tag resources for easy identification** – Implement a [tagging strategy](https://aws.amazon.com/solutions/guidance/tagging-on-aws/) to identify resources that are created for different environments and purposes. Tags can simplify the cleanup process by helping you filter resources based on their tags.
-+ **Set up resource life cycles** – Define resource life cycles in order to automatically delete resources after a certain period. This practice helps you make sure that temporary environments do not become permanent cost liabilities.
++ **Tag resources for easy identification** – Implement a [tagging strategy](https://aws.amazon.com/solutions/guidance/tagging-on-aws/) to identify resources that you create for different environments and purposes. Tags can simplify the cleanup process by helping you filter resources based on their tags.
++ **Set up resource lifecycles** – Define resource lifecycles to automatically delete resources after a specified period. This practice helps ensure that temporary environments don't become permanent cost liabilities.
 
 ## Epics
 <a name="automate-deletion-cloudformation-stacks-associated-resources-epics"></a>
@@ -103,31 +107,30 @@ The code for this pattern is available in the GitHub [cloudformation-stack-clean
 | --- | --- | --- |
 | Clone the repository. | 1. Create a folder in your virtual environment. Name it with your project name.<br />2. Open a terminal on your local machine, and navigate to this folder.<br />3. Enter the following command to clone the [cloudformation-stack-cleanup](https://github.com/aws-samples/cloudformation-stack-cleanup/) repository to your project directory:<pre>git clone https://github.com/aws-samples/cloudformation-stack-cleanup.git</pre> | DevOps engineer |
 | Install Poetry. | Follow the [instructions](https://python-poetry.org/docs/) (Poetry documentation) to install Poetry in the target virtual environment. | DevOps engineer |
-| Install dependencies. | 1. Enter the following command to navigate to the project directory:<pre>cd cloudformation-stack-cleanup</pre><br />2. Enter the following command:<pre>poetry install</pre><br />This installs all of the required dependencies, such as Boto3, [click](https://click.palletsprojects.com/en/8.1.x/), and the source code for the [CloudFormation CLI](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html). | DevOps engineer |
-| (Optional) Install Pyenv. | Follow the [instructions](https://github.com/pyenv/pyenv#installation) (GitHub) to install Pyenv. | DevOps engineer |
+| Install dependencies. | 1. Enter the following command to navigate to the project directory:<pre>cd cloudformation-stack-cleanup</pre><br />2. Enter the following command:<pre>poetry install<br />eval $(poetry env activate)</pre><br />This installs all of the required dependencies, such as Boto3, [click](https://click.palletsprojects.com/en/8.1.x/), and the source code for the [CloudFormation CLI](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html). | DevOps engineer |
 
 ### (Optional) Customize the framework
 <a name="optional-customize-the-framework"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create functions that gather, pre-process, and delete the target resources. | 1. In the cloned repository, enter the following command to navigate to the `cli` directory:<pre>cd cfncli/cli</pre><br />2. Open the **cleanup\_enviornment.py** file.<br />3. Create a new Python function that gathers the type of resource that you want to modify. For an example, see the `gather_ddb_tables` function in this file.<br />4. Create a new Python function that overrides the service constraints for the target resource. For an example, see the `remove_ddb_deletion_protection` function in this file.<br />5. Create a new Python function that collects unmanaged target resources. For an example, see the `gather_log_groups` function in this file.<br />6. Create a new Python function that deletes unmanaged target resources. For an example, see the `delete_log_group` function in this file.<br />7. Save and close the **cleanup\_enviornment.py** file. | DevOps engineer, Python |
+| Create functions that gather, pre-process, and delete the target resources. | 1. In the cloned repository, enter the following command to navigate to the `cli` directory:<pre>cd cfncli/cli</pre><br />2. Open the **cleanup\_environment.py** file.<br />3. Create a new Python function that gathers the type of resource that you want to modify. For an example, see the `gather_ddb_tables` function in this file.<br />4. Create a new Python function that overrides the service constraints for the target resource. For an example, see the `remove_ddb_deletion_protection` function in this file.<br />5. Create a new Python function that collects unmanaged target resources. For an example, see the `gather_log_groups` function in this file.<br />6. Create a new Python function that deletes unmanaged target resources. For an example, see the `delete_log_group` function in this file.<br />7. Save and close the **cleanup\_environment.py** file. | DevOps engineer, Python |
 
 ### Create sample resources
 <a name="create-sample-resources"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a CloudFormation stack. | 1. Navigate to the project directory.<br />2. Enter the following command to create a CloudFormation stack that provisions a DynamoDB table and a security group. Update the value for `<VPCID>`:<pre>aws cloudformation create-stack \<br />  --stack-name sampleforcleanup-Stack \<br />  --template-body file://samples/sample-cfn-stack.yaml \<br />  --parameters ParameterKey=VpcId,ParameterValue=<VPCID> \<br />  --region us-east-1</pre> | AWS DevOps |
+| Create a CloudFormation stack. | 1. Navigate to the project directory.<br />2. Enter the following command to create a CloudFormation stack that provisions a security group, two Amazon S3 buckets, an AWS KMS key, and a DynamoDB table. Replace `<VPCID>` with your VPC ID.<pre>aws cloudformation create-stack \<br />  --stack-name sampleforcleanup-Stack \<br />  --template-body file://samples/sample-cfn-stack.yaml \<br />  --parameters ParameterKey=VpcId,ParameterValue=<VPCID> \<br />  --region us-east-1</pre> | AWS DevOps |
 | Create a Systems Manager parameter. | Enter the following command to create a Systems Manager parameter that isn't provisioned through CloudFormation:<pre>aws ssm put-parameter \<br />  --name "/sampleforcleanup/database/password" \<br />  --value "your_db_password" \<br />  --type "SecureString" \<br />  --description "Database password for my app" \<br />  --tier "Standard" \<br />  --region "us-east-1"</pre> | AWS DevOps |
-| Create an Amazon S3 bucket. | Enter the following command to create an Amazon S3 bucket that isn't provisioned through CloudFormation:<pre>aws s3api create-bucket \<br />  --bucket samplesorcleanup-unmanagedbucket-<UniqueIdentifier> \<br />  --region us-east-1 \<br />  --create-bucket-configuration LocationConstraint=us-east-1</pre> | AWS DevOps |
+| Create an Amazon S3 bucket. | Enter the following command to create an Amazon S3 bucket that you don't provision through CloudFormation:<br />Replace `<REGION>` and `<ACCOUNT_ID>` with your AWS Region and account ID.<pre>aws s3api create-bucket \<br />  --bucket sampleforcleanup-unmanagedbucket-<REGION>-<ACCOUNT_ID> \<br />  --region us-east-1</pre> | AWS DevOps |
 
 ### Delete the sample resources
 <a name="delete-the-sample-resources"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the CloudFormation stack. | 1. Enter the following command to delete the sample CloudFormation stack, Systems Manager parameter, and Amazon S3 bucket that you created:<pre>cfncli --region us-east-1  \<br />dev cleanup-env \<br />--prefix-list sampleforcleanup</pre><br />2. When prompted, enter `Y` to continue. | AWS DevOps |
+| Delete the CloudFormation stack. | 1. Enter the following command to delete the sample CloudFormation stack, Systems Manager parameter, and Amazon S3 bucket that you created:<pre>cfncli --region us-east-1  \<br />dev cleanup-env \<br />--prefix-list sampleforcleanup</pre><br />2. When prompted, enter `Y` to continue.Amazon S3 delivers server access logs [on a best-effort basis, usually within a few hours](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html). If a log arrives in `sampleforcleanup-access-logs-<REGION>-<ACCOUNT_ID>` after `cfncli` empties it, the stack deletion fails because the bucket isn't empty. Run the command again. The `cfncli` tool selects the stack in `DELETE_FAILED` status, empties the bucket again, and retries the deletion. | AWS DevOps |
 | Validate resource deletion. | In the output, confirm that all of the sample resources have been deleted. For a sample output, see the [Additional resources](#automate-deletion-cloudformation-stacks-associated-resources-additional) section of this pattern. | AWS DevOps |
 
 ## Related resources
@@ -143,26 +146,34 @@ The code for this pattern is available in the GitHub [cloudformation-stack-clean
 The following is a sample output from the `cfncli` command:
 
 ```
-cfncli --region aus-east-1  dev cleanup-env --prefix-list sampleforcleanup
-https://sts.us-east-1.amazonaws.com
-Cleaning up: ['sampleforcleanup'] in xxxxxxxxxx:us-east-1
-Do you want to proceed? [Y/n]: Y
-No S3 buckets
+cfncli -r us-east-1 dev cleanup-env --prefix-list sampleforcleanup
+Cleaning up: ['sampleforcleanup'] in <ACCOUNT_ID>:us-east-1
+Do you want to proceed? [y/N]: y
+The following S3 buckets will be emptied
+sampleforcleanup-access-logs-us-east-1-<ACCOUNT_ID>
+sampleforcleanup-unmanagedbucket-us-east-1-<ACCOUNT_ID>
+Do you want to proceed with emptying these S3 buckets? [y/N]: y
+Emptied S3 bucket: sampleforcleanup-access-logs-us-east-1-<ACCOUNT_ID>
+Emptied S3 bucket: sampleforcleanup-unmanagedbucket-us-east-1-<ACCOUNT_ID>
 No ECR repositories
 No Lambda functions in VPC
 The following DynamoDB tables will have their deletion protection removed:
-sampleforcleanup-MyDynamoDBTable
-Do you want to proceed with removing deletion protection from these tables? [Y/n]: Y
-Deletion protection disabled for DynamoDB table 'sampleforcleanup-MyDynamoDBTable'.
+sampleforcleanup-MyDynamoDBTable-us-east-1-<ACCOUNT_ID>
+Do you want to proceed with removing deletion protection from these tables? [y/N]: y
+Deletion protection disabled for DynamoDB table 'sampleforcleanup-MyDynamoDBTable-us-east-1-<ACCOUNT_ID>'.
 The following CloudFormation stacks will be deleted:
 sampleforcleanup-Stack
-Do you want to proceed with deleting these CloudFormation stacks? [Y/n]: Y
-Initiated deletion of CloudFormation stack: `sampleforcleanup-Stack`
-Waiting for stack `sampleforcleanup-Stack` to be deleted...
-CloudFormation stack `sampleforcleanup-Stack` deleted successfully.
+Do you want to proceed with deleting these CloudFormation stacks? [y/N]: y
+Initiated deletion of CloudFormation stack: sampleforcleanup-Stack
+Waiting for stack sampleforcleanup-Stack to be deleted...
+CloudFormation stack sampleforcleanup-Stack deleted successfully.
+The following s3_buckets will be deleted:
+sampleforcleanup-unmanagedbucket-us-east-1-<ACCOUNT_ID>
+Do you want to proceed with deleting these s3_buckets? [y/N]: y
+Deleted S3 bucket: sampleforcleanup-unmanagedbucket-us-east-1-<ACCOUNT_ID>
 The following ssm_params will be deleted:
 /sampleforcleanup/database/password
-Do you want to proceed with deleting these ssm_params? [Y/n]: Y
+Do you want to proceed with deleting these ssm_params? [y/N]: y
 Deleted SSM Parameter: /sampleforcleanup/database/password
 Cleaned up: ['sampleforcleanup']
 ```

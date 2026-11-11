@@ -30,7 +30,7 @@ Deploying this solution with the default parameters deploys the following compon
 
 1. Multiple AWS CodeBuild deployment stages deploy the resources that were defined in the solution configuration files to your multi-account environment. An optional manual review stage can be included, allowing you to view all the changes that these stages will apply.
 
-1. The solution deploys resources that monitor AWS Control Tower lifecycle events to detect potential drift against a known good state (in other words, when the actual configuration of an infrastructure resource differs from its expected configuration). The solution also deploys resources that can automate the enrollment of new AWS accounts into your multi-account environment. When using AWS Control Tower with this solution, ensure that accounts and organizational units (OUs) within your AWS Control Tower environment are properly enrolled. You can manage this through the AWS Control Tower console.
+1. The solution deploys resources that validate your multi-account environment against the solution configuration and that automate the creation and enrollment of new AWS accounts into your multi-account environment. If you use AWS Control Tower with this solution, confirm that your accounts and organizational units (OUs) are enrolled in AWS Control Tower. You can manage enrollment through the AWS Control Tower console.
 **Note**
 We provide guidance in [For AWS Organizations based installation (without AWS Control Tower)](prerequisites.md#for-aws-organizations-based-installation-without-aws-control-tower) later in this document if you wish not to use AWS Control Tower.
 
@@ -39,4 +39,4 @@ We provide guidance in [For AWS Organizations based installation (without AWS Co
 1. The solution provisions the audit account with resources to [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) log groups to the centralized logging infrastructure in the LogArchive account.
 
 **Note**
-Initial deployment includes, at a minimum, account creation, drift detection, key management, and centralized logging infrastructure. These mandatory components are part of the core feature set of the solution and are described further in [Architecture details](architecture-details.md). Remaining infrastructure that the solution deploys depends on the content of the user-defined configuration files.
+Initial deployment includes, at a minimum, account creation and enrollment, key management, and centralized logging infrastructure. These mandatory components are part of the core feature set of the solution. For more information, see [Architecture details](architecture-details.md). The remaining infrastructure that the solution deploys depends on the content of your configuration files.

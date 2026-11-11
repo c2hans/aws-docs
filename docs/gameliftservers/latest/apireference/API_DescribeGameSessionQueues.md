@@ -70,6 +70,14 @@ Required: No
             "AllowedLocations": [ "string" ]
          },
          "GameSessionQueueArn": "string",
+         "LogConfiguration": {
+            "DeliveryDestinations": [
+               {
+                  "DestinationArn": "string",
+                  "LogDestination": "string"
+               }
+            ]
+         },
          "Name": "string",
          "NotificationTarget": "string",
          "PlayerLatencyPolicies": [

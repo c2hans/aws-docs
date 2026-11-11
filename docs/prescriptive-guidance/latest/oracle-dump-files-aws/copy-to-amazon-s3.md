@@ -5,21 +5,21 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 # Transferring Oracle Database dump files to Amazon S3
 <a name="copy-to-amazon-s3"></a>
 
-Amazon S3 is an object storage service that offers industry-leading scalability, security, and performance. When you use Amazon S3, you can store and retrieve any amount of data from anywhere at any time.
+[Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) is an object storage service designed for scalability, security, and performance. When you use Amazon S3, you can store and retrieve any amount of data from anywhere at any time.
 
 |
 |
-| Note: When you store data in an S3 bucket, Amazon S3 provides data protection for data at rest through server-side encryption and client-side encryption. For more information about protecting data in Amazon S3, see the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html). |
+| Note: When you store data in an S3 bucket, you can help protect data at rest by using server-side encryption or client-side encryption. For more information about protecting data in Amazon S3, see [Protecting data with encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html) in the Amazon S3 documentation. |
 | --- |
 
 ## AWS CLI setup
 <a name="aws-cli-setup"></a>
 
-To use Amazon S3 as a target for transferring the Oracle Database dump files, you must configure the AWS CLI on the source server. For information on how to install and configure the AWS CLI, see the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+To use [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) as a target for transferring the Oracle Database dump files, you must configure the AWS Command Line Interface (AWS CLI) on the source server. For information about how to install and configure the AWS CLI, see [Getting started with the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) in the AWS CLI documentation.
 
-After you configure the AWS CLI, run the following statements on the source server to validate the configuration and confirm that setup is successful:
-+ **Windows machine** – At the command prompt, run `aws --version`. If the setup is successful, it will display the installed version of the AWS CLI.
-+ **Linux machine** – At the shell prompt, run `aws --version`. If the setup is successful it will display the installed version of the AWS CLI.
+After you configure the AWS CLI, run the following commands on the source server to validate the configuration:
++ **Windows machine** – At the command prompt, run `aws --version`. If the setup is successful, the command displays the installed version of the AWS CLI.
++ **Linux machine** – At the shell prompt, run `aws --version`. If the setup is successful, the command displays the installed version of the AWS CLI.
 
 ## Copy the source Oracle Database dump files to Amazon S3
 <a name="copy-to-s3"></a>

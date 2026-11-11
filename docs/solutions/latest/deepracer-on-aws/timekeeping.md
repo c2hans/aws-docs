@@ -7,10 +7,10 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/timeke
 
 The **timekeeping** page is where a race facilitator runs each racer’s attempt: starting the run, recording each lap as the car crosses the line, and submitting the result to the leaderboard. Open it from the **Timekeep** link on the event’s **Tracks** tab or from the sidebar navigation.
 
+![The timekeeping page showing race setup, the timing mode and timer selector, run controls, the countdown, and the recorded laps table](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_timekeeping.png)
+
 **Note**
 Using the **Timekeep** link from an Event will automatically select that event and track in the Top Nav Bar. If navigating via the side bar menu, you must select an Event and Track from the Top Nav Bar menu in order to Start a new Run.
-
-![The timekeeping page showing race setup](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_timekeeping.png)
 
 **Important**
 Timekeeping is only available while the event is **In progress**. Until then, the **Timekeep** link is unavailable.
@@ -53,6 +53,52 @@ Use **Pause** and **Resume** to suspend and restart timing. Pausing also pauses 
 **Note**
 If you reload the timekeeping page during a run, the countdown and the current lap stopwatch cannot be restored, because neither is saved. The run itself and every lap already recorded are unaffected. Use the run controls to end or discard the run, then start a new one.
 
+## Record laps automatically with a timer
+<a name="record-laps-automatically"></a>
+
+With a Raspberry Pi timer and track sensors, you can have the timekeeping page record a lap each time the car crosses the finish line, instead of choosing **Record lap** yourself. To set up a timer, see [Activate a Raspberry Pi timer](activate-a-raspberry-pi-timer.md).
+
+ **To time a run automatically**
+
+1. From the **Timer** list, choose the timer installed on this track. The list shows timers that are currently online.
+
+1. For **Timing mode**, choose **Automatic**. **Automatic** is available only after you select a timer.
+
+1. Start the run as usual.
+
+   In **Automatic** mode, a sensor crossing also starts a **Ready** run or resumes a **Paused** run, so you don’t need to choose **Start** or **Resume** yourself.
+
+1. Each later crossing of the finish line records a lap. The timer measures the lap time from the previous crossing. If there is no previous crossing, for example because you started the run with **Start** or the timer restarted, the browser times the lap from the start of the lap.
+
+A status indicator next to the **Timer** list shows the state of the selected timer.
+
+| Status | Meaning |
+| --- | --- |
+|  **No timer selected**  | Select a timer to use **Automatic** mode. |
+|  **Connecting to timer**  | The page is connecting to the timer’s event stream. |
+|  **Timer online**  | The timer is connected and sending events. |
+|  **Timer not responding**  | No event or heartbeat has arrived from the timer for more than about a minute. Check the Raspberry Pi’s power and network connection. |
+|  **Unable to connect to timer**  | The page couldn’t connect to the timer’s event stream. Reload the page or use **Manual** mode. |
+
+You can switch between **Manual** and **Automatic** at any time, including during a run. Switching modes doesn’t end the current lap. The manual controls (**Record lap**, **Did not finish**, **Mark lap invalid**, **Car reset**, and the run controls) stay available in both modes, so you can step in if a sensor misses the car.
+
+To change the timer, switch back to **Manual** first. Selecting a different track resets the mode to **Manual**.
+
+The timer ignores any further crossing within 2 seconds of the last one, from either sensor, so a single pass that trips both sensors or bounces records one lap. If a crossing arrives after the run has stopped, the page doesn’t record a lap and shows a message instead.
+
+### Laps that need review
+<a name="laps-that-need-review"></a>
+
+Sensors can double-trigger or miss the car, so you review automatically recorded laps whose times look wrong before they count. The solution flags a lap for review in these cases:
+
+| Condition | Likely cause |
+| --- | --- |
+| The lap time is shorter than 3 seconds. | A sensor double-trigger. |
+| The lap time is longer than 300 seconds (5 minutes). | A missed crossing. |
+| Crossings were lost before this lap. | The timer restarted or a lap couldn’t be saved. The recorded time may span more than one lap. |
+
+The solution saves a flagged lap as invalid and shows **Needs review** in the **Recorded laps** table. Choose **Approve** to count the lap as valid, or **Reject** to keep it invalid. If you finish a run that still has laps needing review, a warning on the **Runs** table reminds you that submitting now counts those laps as invalid.
+
 ## End a lap that should not count
 <a name="end-a-lap-that-should-not-count"></a>
 
@@ -75,7 +121,9 @@ After either action the run is paused. Choose **Resume** when the car and racer 
 ## Change the validity of a recorded lap
 <a name="change-the-validity-of-a-recorded-lap"></a>
 
-Separately from the timing controls, you can change the validity of any lap already in the **Recorded laps** table. Use the action on the lap’s row to mark it valid or invalid. Invalid laps remain visible in the table but are ignored when the run is scored.
+Separately from the timing controls, you can change the validity of any lap already in the **Recorded laps** table. Use the action on the lap’s row to mark it valid or invalid. For a lap that shows **Needs review**, choose **Approve** or **Reject** instead. Invalid laps remain visible in the table but are ignored when the run is scored.
+
+Admins and race facilitators can also change lap validity, including approving or rejecting laps that need review, on the **Runs** tab of the event details page.
 
 This works at any time, including after the run has been submitted. If the run has already been submitted, changing a lap’s validity rescores the run and updates the leaderboard.
 
@@ -92,4 +140,4 @@ When timing has stopped and the run is **Finished**, review the recorded laps an
 If you ended a run by mistake, choose **Resume** to return it to **In progress** and continue timing.
 
 **Note**
-A run with no valid laps cannot be submitted, because there is nothing to score. Either record a valid lap or discard the run.
+You can’t submit a run with no valid laps, because there is nothing to score. Either record a valid lap or discard the run. Laps that still show **Needs review** count as invalid, so approve or reject them before you submit.

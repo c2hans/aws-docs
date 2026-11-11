@@ -47,7 +47,7 @@ Both IoT Greengrass and Lambda@Edge are fully integrated with [AWS Identity and 
 + Fine-grained IAM roles to limit data access at the edge
 
 ## Comparing AWS IoT Greengrass and Lambda@Edge
-<a name="comparing-9999999999999999gg--and-9999999999999999lam--edge.5c6aa954-a352-5ca6-9492-9846af95a5f5"></a>
+<a name="comparing-9999999999999999gg--and-9999999999999999lam--edge.e14c4495-3d88-560b-8b57-3253c390a15f"></a>
 
 The following table compares key operational aspects of AWS IoT Greengrass and Lambda@Edge in the context of edge inference.
 

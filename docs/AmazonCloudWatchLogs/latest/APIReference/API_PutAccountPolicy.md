@@ -14,7 +14,7 @@ Creates an account-level data protection policy, subscription filter policy, fie
 
 When both an account-level policy and a log-group-level policy of the same type apply to a log group, the resolution depends on the policy type:
 +  *Data protection* — The two policies are cumulative. Any sensitive term specified in either the account-level or the log-group-level policy is masked.
-+  *Subscription filters* — Account-level and log-group-level subscription filters are additive. A log group can have up to 1 account-level and up to 2 log-group-level subscription filters.
++  *Subscription filters* — Account-level and log-group-level subscription filters are additive. A log group can have up to 1 account-level and up to 5 log-group-level subscription filters.
 +  *Transformers* — A log-group-level transformer overrides the account-level transformer. If a log group has its own transformer, it ignores the account-level transformer policy.
 +  *Field index policies* — If a log group has its own field index policy (created with `PutIndexPolicy`), any account-level policy that uses `LogGroupNamePrefix` selection criteria or has no selection criteria is ignored for that log group. However, account-level policies that use `DataSourceName` and `DataSourceType` selection criteria still apply alongside the log-group-level policy.
 +  *Metric extraction policies* — Metric extraction policies are account-level only and have no log-group-level equivalent, so no conflict resolution applies.

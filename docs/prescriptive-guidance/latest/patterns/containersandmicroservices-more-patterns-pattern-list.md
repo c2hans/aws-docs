@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 <a name="containersandmicroservices-more-patterns-pattern-list"></a>
 
 **Topics**
++ [Automate deletion of AWS CloudFormation stacks and associated resources](automate-deletion-cloudformation-stacks-associated-resources.md)
 + [Containerize mainframe workloads that have been modernized by Blu Age](containerize-mainframe-workloads-that-have-been-modernized-by-blu-age.md)
 + [Deploy agentic systems on Amazon Bedrock with the CrewAI framework by using Terraform](deploy-agentic-systems-on-amazon-bedrock-with-the-crewai-framework.md)
 + [Implement AI-powered Kubernetes diagnostics and troubleshooting with K8sGPT and Amazon Bedrock integration](implement-ai-powered-kubernetes-diagnostics-and-troubleshooting-with-k8sgpt-and-amazon-bedrock-integration.md)

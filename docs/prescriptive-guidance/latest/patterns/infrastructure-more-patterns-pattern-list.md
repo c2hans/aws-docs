@@ -9,6 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 + [Add HA to Oracle PeopleSoft on Amazon RDS Custom by using a read replica](add-ha-to-oracle-peoplesoft-on-amazon-rds-custom-by-using-a-read-replica.md)
 + [Automatically audit AWS security groups that allow access from public IP addresses](audit-security-groups-access-public-ip.md)
 + [Automate adding or updating Windows registry entries using AWS Systems Manager](automate-adding-or-updating-windows-registry-entries-using-aws-systems-manager.md)
++ [Automate deletion of AWS CloudFormation stacks and associated resources](automate-deletion-cloudformation-stacks-associated-resources.md)
 + [Automate RabbitMQ configuration in Amazon MQ](automate-rabbitmq-configuration-in-amazon-mq.md)
 + [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.md)
 + [Build a data pipeline to ingest, transform, and analyze Google Analytics data using the AWS DataOps Development Kit](build-a-data-pipeline-to-ingest-transform-and-analyze-google-analytics-data-using-the-aws-dataops-development-kit.md)

@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Creates a theme.
 
-A *theme* is set of configuration options for color and layout. Themes apply to analyses and dashboards. For more information, see [Using Themes in Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/themes-in-quicksight.html) in the *Amazon Quick User Guide*.
+A *theme* is set of configuration options for color and layout. Themes apply to analyses and dashboards. For more information, see [Using Themes in AWS Quick](https://docs.aws.amazon.com/quicksight/latest/user/themes-in-quicksight.html) in the *AWS Quick User Guide*.
 
 ## Syntax
 <a name="aws-resource-quicksight-theme-syntax"></a>

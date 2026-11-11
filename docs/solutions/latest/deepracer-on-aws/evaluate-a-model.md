@@ -20,12 +20,15 @@ To submit a trained model for evaluation, click the Evaluation tab in the model 
 +  **Race track** - the type of track to evaluate your model on.
 +  **Track direction** - the direction in which you would like your vehicle to travel.
 +  **Number of laps** - the number of laps you would like your vehicle to attempt.
++  **Model checkpoint** - the checkpoint of your model to evaluate. Each option shows its iteration, and for models trained on the deployment, its average completion during training.
+  +  **Best** (default) - the checkpoint with the highest average completion during training.
+  +  **Last** - the most recently evaluated checkpoint, which may be faster but less consistent. If your model has no last checkpoint, this option will show as **Not available for this model**.
 
 When you’re ready to proceed, click **Start evaluation**.
 
  **Monitoring progress**
 
-After submitting a model for evaluation, you will see a new entry in the **Evaluations** **selector** and details of the evaluation below. The evaluation status will show as "initializing" before beginning, this usually takes a few minutes. You can find the details of the evaluation you have configured below in the **Evaluation configuration** section.
+After submitting a model for evaluation, you will see a new entry in the **Evaluations** **selector** and details of the evaluation below. The evaluation status will show as "initializing" before beginning, this usually takes a few minutes, or about 10–15 seconds if a warm instance is available (see [Service quotas](quotas.md)). You can find the details of the evaluation you have configured, including the checkpoint used, below in the **Evaluation configuration** section.
 
 When the evaluation begins, you will be able to see your vehicle’s progress around the selected track in the video player. You will also see lap results being posted in the **Evaluation results** table to the right of the video player as the car completes each lap around the track.
 

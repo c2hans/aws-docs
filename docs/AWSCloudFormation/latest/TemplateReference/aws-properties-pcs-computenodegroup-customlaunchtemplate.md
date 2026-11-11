@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::PCS::ComputeNodeGroup CustomLaunchTemplate
 <a name="aws-properties-pcs-computenodegroup-customlaunchtemplate"></a>
 
-An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
+An Amazon EC2 launch template AWS PCS uses to launch compute nodes. Specify `TemplateId` and `Version`.
 
 ## Syntax
 <a name="aws-properties-pcs-computenodegroup-customlaunchtemplate-syntax"></a>
@@ -36,13 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-pcs-computenodegroup-customlaunchtemplate-properties"></a>
 
 `TemplateId`  <a name="cfn-pcs-computenodegroup-customlaunchtemplate-templateid"></a>
-The ID of the EC2 launch template to use to provision instances.
+The ID of the EC2 launch template to use to provision instances. Specify this value together with `Version`.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Version`  <a name="cfn-pcs-computenodegroup-customlaunchtemplate-version"></a>
-The version of the EC2 launch template to use to provision instances.
+The version of the EC2 launch template to use to provision instances. Specify this value together with `TemplateId`.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

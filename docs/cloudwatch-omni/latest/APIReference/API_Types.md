@@ -28,6 +28,7 @@ The following data types are supported:
 +  [ApiKeyCredential](API_ApiKeyCredential.md)
 +  [AwsCredentials](API_AwsCredentials.md)
 +  [ContributorSummary](API_ContributorSummary.md)
++  [DataAccessTarget](API_DataAccessTarget.md)
 +  [Domain](API_Domain.md)
 +  [DomainSummary](API_DomainSummary.md)
 +  [Edge](API_Edge.md)

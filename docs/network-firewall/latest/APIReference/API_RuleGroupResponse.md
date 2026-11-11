@@ -102,9 +102,13 @@ Array Members: Minimum number of 1 item. Maximum number of 200 items.
 Required: No
 
  ** Type **   <a name="networkfirewall-Type-RuleGroupResponse-Type"></a>
-Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules.
+Indicates the type of the rule group. Valid values are:
++  `STATELESS` - Stateless rules, for use in a Classic Network Firewall policy.
++  `STATEFUL` - Stateful rules, for use in a Classic Network Firewall policy.
++  `FIREWALL` - Firewall engine rules, for use in a Next Generation policy.
++  `IPS` - IPS engine rules, for use in a Next Generation policy.
 Type: String
-Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN`
+Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN | FIREWALL | IPS`
 Required: No
 
 ## See Also

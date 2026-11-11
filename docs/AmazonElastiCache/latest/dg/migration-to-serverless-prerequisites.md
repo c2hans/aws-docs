@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to
 # Prerequisites for online migration to ElastiCache Serverless
 <a name="migration-to-serverless-prerequisites"></a>
 
-Before you start an online migration, confirm that your source cache and your target cache meet the following requirements. ElastiCache checks these requirements when you prepare the migration and checks some of them again when you start the data sync. If a requirement is not met, the step fails. ElastiCache reports a failure event on the cache that names the requirement. If the prepare step fails, the migration is rolled back, so the `Migration` object, the record of your migration that `describe-serverless-caches` returns, is removed and your cache returns to `available`. Correct the requirement, then try again.
+Before you start an online migration, confirm that your source cache and your target cache meet the following requirements. ElastiCache checks these requirements when you prepare the migration and checks some of them again when you start the data sync. If a requirement is not met, the step fails. ElastiCache reports a failure event on the cache that names the requirement. If the prepare step fails, the migration is rolled back and your cache returns to `available`. Correct the requirement, then try again.
 
 ## Source cache requirements
 <a name="w2aac20c13c33b5"></a>
@@ -16,7 +16,7 @@ Your source cache must meet the following requirements. ElastiCache checks each 
 | --- | --- | --- |
 | Engine and version | Valkey 7.2 through 8.1, or Redis OSS 4.0 through 7.2. Later versions are not supported as a source. | Prepare and start |
 | Version not higher than the target | No higher than the version of your target ElastiCache Serverless cache. Migrating from a higher source version to a lower target version is rejected. | Prepare and start |
-| Cluster mode | Runs in cluster mode. A cluster-mode-disabled source is rejected. A source that leaves cluster mode during a migration fails the migration. | Prepare, and during the migration |
+| Cluster mode | Runs in cluster mode. Prepare rejects a source that has cluster mode disabled. If your source stops running in cluster mode after prepare, the migration fails. | Prepare, and during the migration |
 | Deployment | A self-managed cache running on Amazon EC2. ElastiCache managed caches and Amazon MemoryDB caches are not supported as sources. | Prepare |
 | Memory per node | Up to 32 GB of data, measured as used\_memory | Prepare |
 | Shards | Up to 166 shards | Prepare |
@@ -72,7 +72,7 @@ ElastiCache connects to your source from the VPC of your target cache. Confirm t
 
 Your source nodes must listen on addresses that this VPC can reach. The default Valkey and Redis OSS configuration file binds to `127.0.0.1`, which accepts only local connections, so bind each node to its private IP address. Each node must also report a reachable address in its cluster topology, because ElastiCache discovers the rest of your nodes from the first one. For the security group rule, allow inbound TCP traffic on your source port from the security group of your target cache, or from the IPv4 CIDR ranges of its subnets.
 
-Create your target cache with at least three subnets in different Availability Zones, each with free IP addresses. You cannot change the subnets of a serverless cache after you create it. If the prepare step or the data sync fails on subnets, the error message names the Availability Zones that need a subnet.
+Create your target cache with at least three subnets in different Availability Zones, each with free IP addresses. You cannot change the subnets of a serverless cache after you create it. If the prepare step or the data sync fails on subnets, the error message names the Availability Zones that need a subnet. Because you cannot change the subnets of a serverless cache, create a new target cache with a subnet in each Availability Zone that the message names, and prepare the migration again.
 
 Preparing a migration creates network interfaces in the subnets of your target cache. They use the security groups of your target cache, and ElastiCache deletes them when the migration completes. The prepare step fails if your target's subnets have no free IP addresses or your VPC has no network interface quota headroom.
 
@@ -85,11 +85,11 @@ While your application is served through the migration endpoint, ElastiCache Ser
 
 Commands that ElastiCache Serverless does not support are rejected at the migration endpoint, the same as they would be on any serverless cache.
 
-Some commands behave differently on ElastiCache Serverless than on a self-managed cache. These include `FLUSH`, the `CLUSTER` commands, and the publish and subscribe commands. Review your application's use of these commands before you start. For more information, see [Supported and restricted Valkey, Memcached, and Redis OSS commands](SupportedCommands.md).
+Some commands behave differently on ElastiCache Serverless than on a self-managed cache. These include `FLUSH`, the `CLUSTER` commands, and the publish and subscribe commands. ElastiCache Serverless requires every Lua script call to declare at least one key. A call such as `EVALSHA` with zero keys returns `ERR Lua scripts without any input keys are not supported`. Review your application's use of these commands before you start. For more information, see [Supported and restricted Valkey, Memcached, and Redis OSS commands](SupportedCommands.md).
 
 **Do not send writes directly to your source during the migration.** Commands that ElastiCache Serverless does not support are not replicated. A client can bypass the migration endpoint and write an unsupported command straight to your source. That makes your target diverge. ElastiCache reports a migration error event when it detects this. After ElastiCache reports that error, you cannot start the migration again. To end it, you complete the migration with force, which accepts the inconsistency.
 
-**Scripts.** Scripts you loaded on your source before the migration are not replicated to your target. Re-issue `SCRIPT LOAD` for them through the migration endpoint. A script that is missing on the target returns `NOSCRIPT` after cutover.
+**Scripts.** Scripts you loaded on your source before the migration are not replicated to your target. Re-issue `SCRIPT LOAD` for them through the migration endpoint any time after the migration reaches `ready-to-sync` and before cutover. A script that is missing on the target returns `NOSCRIPT` after cutover.
 
 **Pub/sub subscriptions.** Pub/sub subscriptions do not survive cutover. Subscribed clients are disconnected at cutover and have to reconnect and re-subscribe.
 
@@ -130,7 +130,7 @@ The ElastiCache Service Level Agreement applies to your ElastiCache Serverless c
 
 **Force complete.** Force complete does not roll back. It skips the pre-cutover health check and the cluster-wide convergence check. For more information, see [Cutover modes for online migration to ElastiCache Serverless](migration-to-serverless-cutover.md).
 
-**Rollback after cutover.** There is no rollback after cutover. To return to your source cache, you must move your application traffic back to it yourself. For more information, see [Cutover modes for online migration to ElastiCache Serverless](migration-to-serverless-cutover.md).
+**Rollback after cutover.** There is no rollback after cutover. To return to your source cache, you must move your application traffic back to it yourself. Writes that your application makes after cutover exist only on your target. For more information, see [Cutover modes for online migration to ElastiCache Serverless](migration-to-serverless-cutover.md).
 
 **The reader endpoint is not supported during a migration.** Send your traffic to the migration endpoint and not the cache's reader endpoint.
 

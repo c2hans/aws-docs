@@ -21,7 +21,8 @@ Content-type: application/json
    "membershipAssignments": [
       {
          "designation": "{{string}}",
-         "member": { ... }
+         "member": { ... },
+         "userCreatedDesignationId": "{{string}}"
       }
    ],
    "name": "{{string}}",

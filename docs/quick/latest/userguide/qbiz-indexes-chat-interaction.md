@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-chat
 # Interacting with your Amazon Q Business indexes
 <a name="qbiz-indexes-chat-interaction"></a>
 
-Once you've connected your Amazon Q Business index to Amazon Quick, you can interact with it through chat using agents.
+Once you've connected your Amazon Q Business index to AWS Quick, you can interact with it through chat using agents.
 
 1. From the left navigation menu in the console, select **Agents**.
 
@@ -17,7 +17,7 @@ When you ask questions, the agent analyzes data from your Amazon Q Business inde
 
 You can ask complex questions in plain language about your enterprise data and get detailed responses that draw from your Amazon Q Business index's indexed content. The chat interface allows you to:
 + Query your enterprise data using natural language
-+ Get contextual responses that combine data from your Amazon Q Business index with other Amazon Quick data sources
++ Get contextual responses that combine data from your Amazon Q Business index with other AWS Quick data sources
 + View source citations with clickable references to see where information originated
 + Continue conversations and build on previous queries
 

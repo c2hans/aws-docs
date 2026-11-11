@@ -1512,6 +1512,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateGateway  **
   - **SDK client:** bedrock-agentcore-control
+  - **IAM action:**  [bedrock-agentcore:CreateGateway](#list_bedrock-agentcore-action-CreateGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [bedrock-agentcore:UpdateGateway](#list_bedrock-agentcore-action-UpdateGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** bedrock-agentcore.amazonaws.com / **Access level:** Write
 

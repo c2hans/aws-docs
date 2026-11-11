@@ -16,12 +16,12 @@ Building agent systems involves three main categories of tools.
 + [**Anthropic tool use**](https://docs.claude.com/en/docs/agents-and-tools/tool-use/implement-tool-use#tool-use-system-prompt) – A variation on OpenAI function calling for proprietary tools specific to Anthropic Claude models.
 
 ## Framework-native tools
-<a name="framework-native-tools.eef27b25-1e30-5ee5-ad9f-98fda4e2d9a2"></a>
+<a name="framework-native-tools.e88aae50-782b-5832-8ea7-ee022f388750"></a>
 
 [Framework-native tools](framework-native-tools.md) are built directly into specific agent frameworks:
 + **Strands Agents tools** – Lightweight, quick-to-implement tools that are specific to the Strands Agents framework.
-+ **LangChain tools** – Python-based tools that are tightly integrated with the LangChain ecosystem.
-+ **LlamaIndex tools** – Tools that are optimized for data retrieval and processing within LlamaIndex.
++ **LangChain tools** – Python-based tools that integrate tightly with the LangChain framework.
++ **LlamaIndex tools** – Tools designed for data retrieval and processing within LlamaIndex.
 
 ## Meta-tools
 <a name="meta-tools.a320701c-8355-511f-ad67-baa4215aefdc"></a>

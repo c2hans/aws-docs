@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 # Protocol-based tools
 <a name="protocol-based-tools"></a>
 
-When considering protocol-based tools, the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) provides the most comprehensive and flexible foundation for tool integration. As stated in the [AWS Open Source blog post on agent interoperability](https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/), AWS has embraced MCP as a strategic protocol, actively contributing to its development.
+When considering protocol-based tools, the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) provides a comprehensive and flexible foundation for tool integration. As stated in the [AWS Open Source blog post on agent interoperability](https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/), AWS has embraced MCP as a strategic protocol, actively contributing to its development.
 
 The following table describes options for MCP tool deployment.
 
@@ -51,6 +51,6 @@ To implement MCP for tool integration, take the following actions:
 1. Join the [MCP community](https://github.com/modelcontextprotocol/modelcontextprotocol) to influence the protocol's evolution.
 
 ## Explore AgentCore Gateway
-<a name="explore-9999999999999999brac--gateway.21dd769b-7c4e-5e6b-93d1-3acf2955ae10"></a>
+<a name="explore-9999999999999999brac--gateway.e1e7d676-e2be-536a-9b34-c6e146cfbd97"></a>
 
-[Amazon Bedrock AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html) provides an easy and secure way for developers to build, deploy, discover, and connect to MCP tools, and other target endpoints at scale. With AgentCore Gateway, developers can convert APIs, AWS Lambda functions, and existing services into MCP-compatible tools. Then, with just a few lines of code, they can make these tools available to agents through AgentCore Gateway endpoints. AgentCore Gateway supports OpenAPI, Smithy, and Lambda as input types, and is the only solution that provides both comprehensive ingress authentication and egress authentication in a fully-managed service.
+[Amazon Bedrock AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html) helps developers build, deploy, discover, and connect to MCP tools and other target endpoints at scale. With AgentCore Gateway, developers can convert APIs, AWS Lambda functions, and existing services into MCP-compatible tools. Then, developers can make these tools available to agents through AgentCore Gateway endpoints with minimal code. AgentCore Gateway supports OpenAPI, Smithy, and Lambda as input types, and provides both ingress authentication and egress authentication in a fully managed service.

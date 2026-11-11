@@ -15,7 +15,7 @@ For the deployment manifest, see the [single-ca-multi-az.yaml](https://github.co
 Consolidate multiple per-AZ Cluster Autoscaler deployments into a single instance with `--balance-similar-node-groups=true`. This prevents one AZ from scaling up while another has idle capacity, eliminating cross-AZ over-provisioning.
 
 ### Cost impact
-<a name="cost-impact.a6c24389-3049-5674-b0e9-7db6f728f2e9"></a>
+<a name="cost-impact.fb248ac0-bc7e-5d91-858b-8ae1cd49fc1e"></a>
 
 |
 |

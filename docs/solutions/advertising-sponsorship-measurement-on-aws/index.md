@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/advertising-sponsorship-measur
 title: 'Guidance for Advertising Sponsorship Measurement on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/advertising-sponsorship-measurement-on-aws/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Guidance for Advertising Sponsorship Measurement on AWS
@@ -45,5 +45,5 @@ This architecture diagram illustrates how to build and operate Advertising Spons
 1. **Step 8**: The “frame analyzer” Amazon ECS task runs video-frame-level brand detection using an Anthropic Claude Sonnet model on Amazon Bedrock.
 1. **Step 9**: The “aggregator” AWS Lambda aggregates screen time, Share of Voice, and brand placement information.
 1. **Step 10**: Amazon DynamoDB stores job status and metrics. Amazon S3 stores detection summaries, and Amazon S3 Tables (Apache Iceberg) stores analytics data. AWS KMS keys encrypt all data at rest.
-1. **Step 11**: AWS Glue catalogs the analytics data. Amazon Athena provides the data lake query interface. The web portal embeds Amazon Quick to deliver a hybrid visual and agentic AI analytics experience.
+1. **Step 11**: AWS Glue catalogs the analytics data. Amazon Athena provides the data lake query interface. The web portal embeds AWS Quick to deliver a hybrid visual and agentic AI analytics experience.
 [Read usage guidelines](/solutions/guidance-disclaimers/)

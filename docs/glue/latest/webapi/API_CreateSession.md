@@ -78,7 +78,7 @@ Required: No
 The AWS Glue version determines the versions of Apache Spark and Python that AWS Glue supports. The GlueVersion must be greater than 2.0.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 Required: No
 
  ** [Id](#API_CreateSession_RequestSyntax) **   <a name="Glue-CreateSession-request-Id"></a>

@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 
 **Topics**
 + [Build a Micro Focus Enterprise Server PAC with Amazon EC2 Auto Scaling and Systems Manager](build-a-micro-focus-enterprise-server-pac-with-amazon-ec2-auto-scaling-and-systems-manager.md)
++ [Build an advanced mainframe file viewer in the AWS Cloud](build-an-advanced-mainframe-file-viewer-in-the-aws-cloud.md)
 + [Containerize mainframe workloads that have been modernized by Blu Age](containerize-mainframe-workloads-that-have-been-modernized-by-blu-age.md)
 + [Convert and unpack EBCDIC data to ASCII on AWS by using Python](convert-and-unpack-ebcdic-data-to-ascii-on-aws-by-using-python.md)
 + [Generate Db2 z/OS data insights by using AWS Mainframe Modernization and Amazon Q in Quick Sight](generate-db2-zos-data-insights-aws-mainframe-modernization-amazon-q-in-quicksight.md)

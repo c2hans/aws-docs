@@ -67,7 +67,7 @@ The following example output shows a build that failed because a component step 
 ```
 {
     "status": "FAILED",
-    "reason": "Workflow Execution ID: 'wf-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111' failed with reason: Component 'arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0/1' failed in the 'build' phase at step 'InstallPackages' (ExecuteBash): exit status 1. See the component log in CloudWatch (or console.log on the instance) for the step's output.",
+    "reason": "Workflow Execution ID: 'wf-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111' failed with reason: Document arn:aws:imagebuilder:us-west-2:111122223333:component/my-example-component/1.0.0/1 failed!",
     "failureContext": {
         "imageStatus": "BUILDING",
         "workflowExecutionId": "wf-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
@@ -92,7 +92,7 @@ The next example output shows an image that built and tested successfully, then 
 ```
 {
     "status": "FAILED",
-    "reason": "Integration failed with JobId 'a1b2c3d4-5678-90ab-cdef-EXAMPLE33333', status = 'Failed' for ARN 'arn:aws:imagebuilder:us-west-2:123456789012:image/my-example-recipe/1.0.0/1'. …",
+    "reason": "Integration failed with JobId 'a1b2c3d4-5678-90ab-cdef-EXAMPLE33333', status = 'Failed' for ARN 'arn:aws:imagebuilder:us-west-2:111122223333:image/my-example-recipe/1.0.0/1'. …",
     "failureContext": {
         "imageStatus": "INTEGRATING",
         "distributionFailure": {
@@ -126,7 +126,7 @@ To find the failed builds in an account without inspecting each one, list image 
 
 ```
 aws imagebuilder list-image-build-versions \
-    --image-version-arn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image/{{my-example-recipe}}/1.0.0 \
+    --image-version-arn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image/{{my-example-recipe}}/1.0.0 \
     --query "imageSummaryList[?state.status=='FAILED'].[arn, state.failureContext]"
 ```
 
@@ -144,7 +144,7 @@ The `State` property includes `Status`, `Reason`, and `FailureContext`. `Failure
 To find the failed builds in an account without inspecting each one, run the [Get-EC2IBImageBuildVersionList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBImageBuildVersionList.html) cmdlet and filter on the image status. The following example returns the failed builds for an image, with the failure context for each:
 
 ```
-Get-EC2IBImageBuildVersionList -ImageVersionArn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:image/{{my-example-recipe}}/1.0.0 |
+Get-EC2IBImageBuildVersionList -ImageVersionArn arn:aws:imagebuilder:{{us-west-2}}:{{111122223333}}:image/{{my-example-recipe}}/1.0.0 |
     Where-Object { $_.State.Status -eq "FAILED" } |
     Select-Object Arn, @{Name="FailureContext"; Expression={$_.State.FailureContext}}
 ```
@@ -208,8 +208,8 @@ Image Builder streams the component logs to Amazon CloudWatch Logs when the buil
 Failure context is designed to be read by automation as well as by people. An AI agent that troubleshoots a failed build reads the named fields and uses their values as arguments to the next API call it makes. That makes a diagnosis repeatable, and it keeps the agent from guessing which component or AWS Region to investigate.
 
 You can use failure context in either of the following ways:
-+ **Troubleshoot in the Image Builder AWS Management Console** – The Troubleshoot feature, powered by AWS DevOps Agent, uses failure context to scope its investigation to the workflow step and component that failed before it examines logs and related resources. For more information, see [Troubleshoot failed builds with AI - Preview](devops-agent-troubleshooting.md).
-+ **Your own AI coding agent** – An agent that calls `GetImage` receives failure context in the response and can follow it the same way. To give your agent the broader Image Builder knowledge it needs to act on what it finds, see [Troubleshoot builds with an AI coding agent](agent-toolkit-skill.md).
++ **Troubleshoot in the Image Builder AWS Management Console** – The Troubleshoot feature, powered by AWS DevOps Agent, uses failure context to scope its investigation to the workflow step and component that failed before it examines logs and related resources. For more information, see [Troubleshoot failed builds with AI](devops-agent-troubleshooting.md).
++ **Your own AI coding agent** – An agent that calls `GetImage` receives failure context in the response and can follow it the same way. To give your agent the broader Image Builder knowledge it needs to act on what it finds, see [Use Image Builder with an AI coding agent](agent-toolkit-skill.md).
 
 If you build your own automation on failure context, treat every member as optional and check for the members you use rather than for the presence of `failureContext` itself. Which members Image Builder returns depends on the failure, and Image Builder can add members over time.
 

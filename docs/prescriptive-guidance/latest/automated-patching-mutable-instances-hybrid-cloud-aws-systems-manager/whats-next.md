@@ -26,7 +26,7 @@ For more information, see the [Resources](#resources) section.
 + [Amazon EC2](https://docs.aws.amazon.com/ec2/)
 + [IAM](https://docs.aws.amazon.com/iam/)
 + [AWS Lambda](https://docs.aws.amazon.com/lambda/)
-+ [Amazon Quick](https://docs.aws.amazon.com/quicksight)
++ [AWS Quick](https://docs.aws.amazon.com/quicksight)
 + [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager)
 
 ### Other resources

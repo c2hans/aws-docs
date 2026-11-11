@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/xero-connector-limitations.html
+---
+
+# Limitations and notes for the Xero connector
+<a name="xero-connector-limitations"></a>
+
+The following are limitations and notes for the Xero connector:
++ Xero is supported as a source only. Writing to Xero is not supported.
++ Job bookmarks are not supported.

@@ -44,6 +44,6 @@ The cost to run your fleet per hour. Amazon GameLift Servers uses the provided c
 
 ## See also
 <a name="aws-properties-gamelift-fleet-anywhereconfiguration--seealso"></a>
-+ [ Create GameLift resources using Amazon CloudFront](https://docs.aws.amazon.com/gamelift/latest/developerguide/resources-cloudformation.html) in the *Amazon GameLift Developer Guide*
++ [ Create GameLift resources using AWS CloudFormation](https://docs.aws.amazon.com/gamelift/latest/developerguide/resources-cloudformation.html) in the *Amazon GameLift Developer Guide*
 + [ Create an Amazon GameLift Anywhere fleet](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-creating-anywhere.html) in the *Amazon GameLift Developer Guide*
 + [LocationModel](https://docs.aws.amazon.com/gamelift/latest/apireference/API_LocationModel.html) in the *Amazon GameLift API Reference*

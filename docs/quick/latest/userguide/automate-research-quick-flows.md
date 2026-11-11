@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/automate-research
 # Automating research with Quick Flows
 <a name="automate-research-quick-flows"></a>
 
-Amazon Quick Research can be integrated into Quick Flows to automate your research workflows. This allows you to standardize research processes, schedule recurring research reports, and share proven research methods across your organization.
+AWS Quick Research can be integrated into Quick Flows to automate your research workflows. This allows you to standardize research processes, schedule recurring research reports, and share proven research methods across your organization.
 
 ## When to use research in Quick Flows
 <a name="when-to-use-research-in-flows"></a>

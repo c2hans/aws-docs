@@ -76,7 +76,7 @@ S3 Metadata accelerates data discovery by automatically capturing metadata for t
 
 By default, S3 Metadata provides [system-defined object metadata](#SysMetadata), such as an object's creation time and storage class, and custom metadata, such as tags, [user-defined metadata](#UserMetadata), and annotations. S3 Metadata also provides event metadata, such as when an object is updated or deleted, and the AWS account that made the request.
 
-Metadata tables are stored in S3 table buckets, which provide storage that's optimized for tabular data. To query your metadata, you can integrate your table bucket with AWS analytics services, such as Amazon Athena, Amazon Redshift, and Amazon Quick.
+Metadata tables are stored in S3 table buckets, which provide storage that's optimized for tabular data. To query your metadata, you can integrate your table bucket with AWS analytics services, such as Amazon Athena, Amazon Redshift, and AWS Quick.
 
 For more information about S3 Metadata, see [Discovering your data with S3 Metadata tables](metadata-tables-overview.md).
 

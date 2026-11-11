@@ -12,7 +12,7 @@ This guide is part of a library that provides architectural blueprints and techn
 This guide represents a foundation for the recommended AWS security architecture. It is the starting point that applies to all organizations, regardless of their industry, application type, or any other considerations. This foundation helps you build a strong and scalable architecture on AWS and helps create a strong AWS multi-account security baseline that securely scales as your business grows.
 
 ## AWS SRA – deep dive architectures
-<a name="aws-sra---deep-dive-architectures.6bccbf03-3027-5380-a8cf-c2c9e5d75749"></a>
+<a name="aws-sra---deep-dive-architectures.c25267c3-601d-5c8f-bb82-c2c979cfb00c"></a>
 
 The AWS SRA – core architecture guide is complemented by additional publications that provide architectural patterns aligned to specific security capabilities, application types, and compliance or regulatory requirements. These patterns extend the core architecture and should be used in conjunction with the AWS SRA – core architecture guide.
 

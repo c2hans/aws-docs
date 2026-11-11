@@ -17,10 +17,12 @@ To get started with AWS, you need an AWS account. There are two ways to sign up 
 ## Prerequisites
 <a name="quick-start-prerequisites"></a>
 + [uv](https://docs.astral.sh/uv/) installed on your system (required for the MCP proxy).
-+ (Optional) An AWS account with IAM credentials set up on your local machine. Credentials are required for tools that execute AWS API calls and run scripts, but not for searching documentation or discovering skills. If you do not have credentials configured, see [Setting up the AWS MCP Server](getting-started-aws-mcp-server.md) for detailed instructions.
++ (Optional for plugin installs) An AWS account with IAM credentials set up on your local machine. You need credentials to use tools that execute AWS API calls and run scripts. The plugins for Claude Code, Codex, and Devin connect without credentials, which is enough for searching documentation and discovering skills. The MCP configurations that the `aws configure agent-toolkit` wizard writes, the Kiro configuration, and configurations for other agents require credentials when your agent starts, unless you add `--skip-auth`. With that flag and no credentials, the proxy sends requests unsigned, and only documentation search and skills work. For more information, see [Troubleshooting authentication errors](getting-started-aws-mcp-server.md#troubleshooting-auth-errors). If you do not have credentials configured, see [Setting up the AWS MCP Server](getting-started-aws-mcp-server.md) for detailed instructions.
 
 ## Step 1: Install
 <a name="quick-start-install"></a>
+
+To set up multiple agents with a single command, you can instead run the `aws configure agent-toolkit` wizard, whose MCP configuration requires configured AWS credentials when your agent starts (see [Setting up with the AWS CLI](aws-cli.md#aws-cli-setup)).
 
 **Claude Code**
 
@@ -96,7 +98,7 @@ If you have the AWS CLI installed (version `2.35.0` or later), you can run an in
 aws configure agent-toolkit
 ```
 
-The wizard works with multiple agents, including Kiro, Cursor, and Claude Code.
+The wizard works with multiple agents, including Kiro, Cursor, Claude Code, and Devin.
 
 To install and manage individual skills from the command line, see [AWS CLI](aws-cli.md).
 

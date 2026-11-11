@@ -99,6 +99,7 @@ The following actions are supported by Amazon OpenSearch Service:
 +  [StartServiceSoftwareUpdate](API_StartServiceSoftwareUpdate.md)
 +  [SwitchoverReplication](API_SwitchoverReplication.md)
 +  [UpdateApplication](API_UpdateApplication.md)
++  [UpdateClone](API_UpdateClone.md)
 +  [UpdateDataSource](API_UpdateDataSource.md)
 +  [UpdateDirectQueryDataSource](API_UpdateDirectQueryDataSource.md)
 +  [UpdateDomainConfig](API_UpdateDomainConfig.md)

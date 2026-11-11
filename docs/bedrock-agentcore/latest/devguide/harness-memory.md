@@ -169,7 +169,7 @@ If you update your BYO Memory instance’s strategies (add or remove) after atta
 
 When conversation history grows beyond the model’s context window, the harness applies a truncation strategy. Configure truncation on the harness with `CreateHarness` or `UpdateHarness`.
 + The `sliding_window` strategy keeps the most recent N messages. It is simple and predictable.
-+ The `summarization` strategy compresses older messages into a summary, so you preserve more context in fewer tokens.
++ The `summarization` strategy, the current default, compresses older messages into a summary, so you preserve more context in fewer tokens.
 + The `none` strategy doesn’t truncate the conversation history, so use it only if you manage context size yourself.
 
 The following AWS CLI `update-harness` command sets the `sliding_window` strategy and its settings on the harness. Replace {{MyHarness-UuFdkQoXSL}} with your harness ID.

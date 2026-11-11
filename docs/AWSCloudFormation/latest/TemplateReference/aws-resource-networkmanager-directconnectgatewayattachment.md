@@ -24,6 +24,9 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[CoreNetworkId](#cfn-networkmanager-directconnectgatewayattachment-corenetworkid)" : {{String}},
       "[DirectConnectGatewayArn](#cfn-networkmanager-directconnectgatewayattachment-directconnectgatewayarn)" : {{String}},
       "[EdgeLocations](#cfn-networkmanager-directconnectgatewayattachment-edgelocations)" : {{[ String, ... ]}},
+      "[NatGatewayRules](#cfn-networkmanager-directconnectgatewayattachment-natgatewayrules)" : {{[ NatRule, ... ]}},
+      "[NatGatewaySupport](#cfn-networkmanager-directconnectgatewayattachment-natgatewaysupport)" : {{String}},
+      "[NatSystemRouteSupport](#cfn-networkmanager-directconnectgatewayattachment-natsystemroutesupport)" : {{Boolean}},
       "[RoutingPolicyLabel](#cfn-networkmanager-directconnectgatewayattachment-routingpolicylabel)" : {{String}},
       "[Tags](#cfn-networkmanager-directconnectgatewayattachment-tags)" : {{[ Tag, ... ]}}
     }
@@ -40,6 +43,10 @@ Properties:
   [DirectConnectGatewayArn](#cfn-networkmanager-directconnectgatewayattachment-directconnectgatewayarn): {{String}}
   [EdgeLocations](#cfn-networkmanager-directconnectgatewayattachment-edgelocations): {{
     - String}}
+  [NatGatewayRules](#cfn-networkmanager-directconnectgatewayattachment-natgatewayrules): {{
+    - NatRule}}
+  [NatGatewaySupport](#cfn-networkmanager-directconnectgatewayattachment-natgatewaysupport): {{String}}
+  [NatSystemRouteSupport](#cfn-networkmanager-directconnectgatewayattachment-natsystemroutesupport): {{Boolean}}
   [RoutingPolicyLabel](#cfn-networkmanager-directconnectgatewayattachment-routingpolicylabel): {{String}}
   [Tags](#cfn-networkmanager-directconnectgatewayattachment-tags): {{
     - Tag}}
@@ -67,6 +74,26 @@ The Direct Connect gateway attachment ARN.
 Property description not available.
 *Required*: Yes
 *Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NatGatewayRules`  <a name="cfn-networkmanager-directconnectgatewayattachment-natgatewayrules"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [NatRule](aws-properties-networkmanager-directconnectgatewayattachment-natrule.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NatGatewaySupport`  <a name="cfn-networkmanager-directconnectgatewayattachment-natgatewaysupport"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLE | DISABLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NatSystemRouteSupport`  <a name="cfn-networkmanager-directconnectgatewayattachment-natsystemroutesupport"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RoutingPolicyLabel`  <a name="cfn-networkmanager-directconnectgatewayattachment-routingpolicylabel"></a>

@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/checkmarx-integra
 # Checkmarx integration
 <a name="checkmarx-integration"></a>
 
-Bring Checkmarx One application security data into Amazon Quick using natural language. With the Checkmarx connector, you can trigger scans, retrieve findings, and query your security posture without leaving Amazon Quick. You can also use Checkmarx tools inside Amazon Quick Flows to run reusable security workflows on demand or on a schedule.
+Bring Checkmarx One application security data into AWS Quick using natural language. With the Checkmarx connector, you can trigger scans, retrieve findings, and query your security posture without leaving AWS Quick. You can also use Checkmarx tools inside AWS Quick Flows to run reusable security workflows on demand or on a schedule.
 
-This connector supports Predefined OAuth Client authentication. The connector authenticates through a Checkmarx OAuth login workflow that uses a fixed, pre-registered OAuth client (client ID `cx-mcp-client`). For more information about the authentication methods that Amazon Quick supports, see [Authentication methods](quick-action-auth.md).
+This connector supports Predefined OAuth Client authentication. The connector authenticates through a Checkmarx OAuth login workflow that uses a fixed, pre-registered OAuth client (client ID `cx-mcp-client`). For more information about the authentication methods that AWS Quick supports, see [Authentication methods](quick-action-auth.md).
 
 ## Prerequisites
 <a name="checkmarx-integration-prerequisites"></a>
@@ -16,28 +16,28 @@ Before you set up the connector, verify that you have the following resources an
 + An active Checkmarx One account with access to the tenant that you want to query.
 + Checkmarx license packages that cover the tools you plan to use. Only licensed tools and scanners are available through the connector. Remediation tools require a Checkmarx One Assist, AI Protection, or Checkmarx Developer Assist license.
 + Checkmarx One IAM permissions for the operations you want to run. Tool access follows your user permissions.
-+ The ability to register the Amazon Quick callback URL as a redirect URI for the OAuth client. See [Configuring Checkmarx](#checkmarx-source-setup).
++ The ability to register the AWS Quick callback URL as a redirect URI for the OAuth client. See [Configuring Checkmarx](#checkmarx-source-setup).
 + A subscription that meets the requirements described in [Set up integrations in the console](integration-console-setup-process.md).
 
 ## Configuring Checkmarx
 <a name="checkmarx-source-setup"></a>
 
-Prepare the OAuth configuration on the Checkmarx side before you create the connector in Amazon Quick.
+Prepare the OAuth configuration on the Checkmarx side before you create the connector in AWS Quick.
 
-1. Identify the AWS Region where you run Amazon Quick, for example `us-east-1`.
+1. Identify the AWS Region where you run AWS Quick, for example `us-east-1`.
 
-1. Register the Amazon Quick callback URL as a redirect URI for the predefined OAuth client (`cx-mcp-client`): `https://{{region}}.quicksight.aws.amazon.com/sn/oauthcallback`. Replace {{region}} with your AWS Region. If you cannot register the redirect URI yourself, contact Checkmarx Support.
+1. Register the AWS Quick callback URL as a redirect URI for the predefined OAuth client (`cx-mcp-client`): `https://{{region}}.quicksight.aws.amazon.com/sn/oauthcallback`. Replace {{region}} with your AWS Region. If you cannot register the redirect URI yourself, contact Checkmarx Support.
 
 1. Confirm the Checkmarx Model Context Protocol (MCP) Server URL for your tenant and keep it available for the next procedure.
 
 For more information about the Checkmarx MCP Server, see [Checkmarx MCP Server](https://docs.checkmarx.com/en/34965-659697-1-checkmarx-mcp-server.html) on the Checkmarx website.
 
-## Setting up the integration in Amazon Quick
+## Setting up the integration in AWS Quick
 <a name="checkmarx-integration-setup"></a>
 
-After you configure Checkmarx, create the connector in Amazon Quick.
+After you configure Checkmarx, create the connector in AWS Quick.
 
-1. In the Amazon Quick console, choose **Connectors**, and then choose **Model Context Protocol** to start a new custom MCP connector.
+1. In the AWS Quick console, choose **Connectors**, and then choose **Model Context Protocol** to start a new custom MCP connector.
 
 1. For **Name**, enter a descriptive name. For **MCP Server URL**, enter the Checkmarx MCP Server URL for your tenant.
 
@@ -64,7 +64,7 @@ After you set up the connector, you can use the following categories of tools fr
 | Scan history | Retrieve prior scan results for a project. |
 | Triage | Review and act on findings. For example, getTenantVulnerabilitiesSummary returns a vulnerability summary across the tenant. |
 
-To see the current set of tools available to you, open the connector's **Available actions** view in the Amazon Quick console.
+To see the current set of tools available to you, open the connector's **Available actions** view in the AWS Quick console.
 
 ## Troubleshooting
 <a name="checkmarx-integration-troubleshooting"></a>
@@ -76,7 +76,7 @@ The following issues can occur when you set up or use the connector.
 ### Connector creation fails during authorization
 <a name="checkmarx-troubleshoot-auth-fail"></a>
 
-The Amazon Quick callback URI is not registered for the OAuth client. Contact Checkmarx Support to configure the redirect URI for your tenant, and then create the connector again.
+The AWS Quick callback URI is not registered for the OAuth client. Contact Checkmarx Support to configure the redirect URI for your tenant, and then create the connector again.
 
 ### A tool does not appear or returns a permission error
 <a name="checkmarx-troubleshoot-permission"></a>
@@ -91,4 +91,4 @@ Publishing returns a `Creation failed` message when a tool's input schema isn't 
 ### A tool call fails with HTTP 424 (timeout)
 <a name="checkmarx-troubleshoot-http424"></a>
 
-The operation exceeded the Amazon Quick timeout. Limit the scope of the request, or use `triggerScan` to start scans asynchronously.
+The operation exceeded the AWS Quick timeout. Limit the scope of the request, or use `triggerScan` to start scans asynchronously.

@@ -31,7 +31,7 @@ The saga choreography pattern is suitable when there are only a few participants
 ![Saga choreography pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/4e92e053-6d80-4959-9ffb-067d67d205d7.png)
 
 ## Saga orchestration
-<a name="saga-orchestration.6a38a249-1551-54ac-a92b-4fce80cf3e99"></a>
+<a name="saga-orchestration.1163a5b7-8153-5d4e-8144-6df3741eeedc"></a>
 
 The saga orchestration pattern has a central coordinator called an *orchestrator*. The saga orchestrator manages and coordinates the entire transaction lifecycle. It is aware of the series of steps to be performed to complete the transaction. To run a step, it sends a message to the participant microservice to perform the operation. The participant microservice completes the operation and sends a message back to the orchestrator. Based on the message it receives, the orchestrator decides which microservice to run next in the transaction.
 

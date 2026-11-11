@@ -17,7 +17,7 @@ Overlapping deep health check configurations will be merged into a single operat
 A list of deep health checks to be performed.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 3 items.
-Valid Values: `InstanceStress | InstanceConnectivity`
+Valid Values: `InstanceStress | InstanceConnectivity | MultiNodeTrainingValidation`
 Required: Yes
 
  ** InstanceGroupName **   <a name="sagemaker-Type-InstanceGroupHealthCheckConfiguration-InstanceGroupName"></a>

@@ -34,6 +34,16 @@ Type: [DashAvailabilityStartTimeConfiguration](API_DashAvailabilityStartTimeConf
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
+ ** BandwidthReportingMode **   <a name="mediapackage-Type-GetDashManifestConfiguration-BandwidthReportingMode"></a>
+Specifies how MediaPackage calculates the `bandwidth` attribute of regular (non-iFrame) video `Representation` elements in the DASH manifest. Audio, subtitle, image, and iFrame-only (trick-play) representations are unchanged.
+The allowed values are:
++  `AVERAGE` – MediaPackage reports the average bitrate of the source video track. This is the default.
++  `MAX` – MediaPackage reports the peak bitrate of the video stream.
+For information about bandwidth reporting, see [DASH bandwidth reporting](https://docs.aws.amazon.com/mediapackage/latest/userguide/dash-bandwidth-reporting.html) in the * AWS Elemental MediaPackage v2 User Guide*.
+Type: String
+Valid Values: `AVERAGE | MAX`
+Required: No
+
  ** BaseUrls **   <a name="mediapackage-Type-GetDashManifestConfiguration-BaseUrls"></a>
 The base URL to use for retrieving segments.
 Type: Array of [DashBaseUrl](API_DashBaseUrl.md) objects

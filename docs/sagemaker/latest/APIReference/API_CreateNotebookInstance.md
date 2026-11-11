@@ -135,7 +135,7 @@ Required: Yes
 The platform identifier of the notebook instance runtime environment. The default value is `notebook-al2023-v1`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 20.
-Pattern: `(notebook-al1-v1|notebook-al2-v1|notebook-al2-v2|notebook-al2-v3|notebook-al2023-v1)`
+Pattern: `(notebook-al1-v1|notebook-al2-v1|notebook-al2-v2|notebook-al2-v3|notebook-al2023-v1|notebook-al2023-v2)`
 Required: No
 
  ** [RoleArn](#API_CreateNotebookInstance_RequestSyntax) **   <a name="sagemaker-CreateNotebookInstance-request-RoleArn"></a>

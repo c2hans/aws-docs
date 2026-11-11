@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/we
 **Topics**
 + [Access container applications privately on Amazon ECS by using AWS Fargate, AWS PrivateLink, and a Network Load Balancer](access-container-applications-privately-on-amazon-ecs-by-using-aws-fargate-aws-privatelink-and-a-network-load-balancer.md)
 + [Access container applications privately on Amazon ECS by using AWS PrivateLink and a Network Load Balancer](access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.md)
++ [Automate deletion of AWS CloudFormation stacks and associated resources](automate-deletion-cloudformation-stacks-associated-resources.md)
 + [Restrict access based on IP address or geolocation by using AWS WAF](aws-waf-restrict-access-geolocation.md)
 + [Build a serverless React Native mobile app by using AWS Amplify](build-a-serverless-react-native-mobile-app-by-using-aws-amplify.md)
 + [Build and test iOS apps with AWS CodeCommit, AWS CodePipeline, and AWS Device Farm](build-and-test-ios-apps-with-aws-codecommit-aws-codepipeline-and-aws-device-farm.md)

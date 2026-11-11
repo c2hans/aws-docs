@@ -31,7 +31,7 @@ Outdated software and firmware present another substantial challenge. Unpatched 
 <a name="device-identities-remediations"></a>
 
 ### Data protection
-<a name="data-protection.73aeba05-bc40-58f5-bd08-300d49a1721b"></a>
+<a name="data-protection.b19237bb-9703-5580-a718-aec5c1d927aa"></a>
 
 Implement cryptographic signing and verification for all software and firmware updates to help ensure authenticity and integrity. Use [AWS Signer](https://docs.aws.amazon.com/signer/latest/developerguide/) for code signing capabilities to help ensure the trust and integrity of code that's created for IoT devices. Store updates securely by using [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3) with appropriate permissions, access roles, and encryption settings, such as server-side encryption by using AWS managed keys or customer managed keys. Implement version control and rollback capabilities by using [AWS IoT Jobs](https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html) and [AWS IoT Device Management Software Package Catalog](https://docs.aws.amazon.com/iot/latest/developerguide/software-package-catalog.html) to maintain version history and to revert to previous versions if necessary.
 

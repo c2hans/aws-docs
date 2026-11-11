@@ -42,7 +42,7 @@ Use the scatter-gather pattern when:
 <a name="scatter-gather-implementation"></a>
 
 ### High-level architecture
-<a name="high-level-architecture.bff238f5-b571-51c6-b150-6f537d652b53"></a>
+<a name="high-level-architecture.7a909ffa-d0e4-5617-bfbd-07d1deff0601"></a>
 
 The scatter-gather pattern uses a root controller to distribute requests to recipients that will process the requests. During the scatter phase, this pattern can use two mechanisms to send messages to recipients:
 + Scatter by distribution: The application has a known list of recipients that must be called to get the results. The recipients can be different processes that have unique functions or a single process that has been scaled out to distribute the processing load. If any of the processing nodes time out or show delays in responding, the controller can redistribute processing to another node.
@@ -58,7 +58,7 @@ In the scatter by distribution method, the root controller divides the incoming 
 The controller (data file processor) orchestrates the entire set of invocations, and is aware of all the booking endpoints to call. It can configure a timeout parameter to ignore responses that take too long. When the requests have been sent, the aggregator waits for the responses back from each endpoint. To implement resilience, each microservice can be deployed with multiple instances for load balancing. The aggregator gets the results, combines them into a single response message, and removes duplicate data before further processing. The responses that time out are ignored. The controller can also act as an aggregator instead of using a separate aggregator service.
 
 #### Scatter by auction
-<a name="scatter-by-auction.da54d17c-e970-5845-b263-10bfb001e3a0"></a>
+<a name="scatter-by-auction.2b9c0c9a-c83f-58d6-a2bb-da7697241281"></a>
 
 If the controller isn't aware of the recipients or the recipients are loosely coupled, you can use the scatter by auction method. In this method, the recipients subscribe to a topic and the controller publishes the request to the topic. Recipients publish the results to a response queue. Because the root controller isn't aware of the recipients, the gathering process uses an aggregator (another messaging pattern) to collect the responses and distill them into a single response message. The aggregator uses a unique ID to identify a group of requests.
 

@@ -50,7 +50,7 @@ Pattern: `^arn:aws.*`
 Required: Yes
 
  ** [SubnetMapping](#API_CreateVpcEndpointAssociation_RequestSyntax) **   <a name="networkfirewall-CreateVpcEndpointAssociation-request-SubnetMapping"></a>
-The ID for a subnet that's used in an association with a firewall. This is used in [CreateFirewall](API_CreateFirewall.md), [AssociateSubnets](API_AssociateSubnets.md), and [CreateVpcEndpointAssociation](#API_CreateVpcEndpointAssociation). AWS Network Firewall creates an instance of the associated firewall in each subnet that you specify, to filter traffic in the subnet's Availability Zone.
+The ID for a subnet that's used in an association with a firewall. This is used in `CreateFirewall`, `AssociateSubnets`, and `CreateVpcEndpointAssociation`. AWS Network Firewall creates an instance of the associated firewall in each subnet that you specify, to filter traffic in the subnet's Availability Zone.
 Type: [SubnetMapping](API_SubnetMapping.md) object
 Required: Yes
 

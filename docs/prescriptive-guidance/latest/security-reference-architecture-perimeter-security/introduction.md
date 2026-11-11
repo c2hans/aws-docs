@@ -24,10 +24,3 @@ In this guide:
 + [Additional AWS services for perimeter security](perimeter-additional-services.md)
 + [Contributors](contributors.md)
 + [Document history](doc-history.md)
-
-## Attachments
-<a name="attachments-36fc75a2-a16a-4cf6-bea6-724dfeddb825"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

@@ -70,7 +70,7 @@ For more information about the available AWS Glue versions and corresponding Spa
 If not provided in the update request, the Glue version retains the value from the existing job definition.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 Required: No
 
  ** JobMode **   <a name="Glue-Type-JobUpdate-JobMode"></a>

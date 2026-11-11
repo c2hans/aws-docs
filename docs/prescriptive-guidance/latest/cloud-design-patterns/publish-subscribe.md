@@ -52,10 +52,10 @@ In a publish-subscribe pattern, the asynchronous messaging subsystem known as a 
 ![](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/2449baf1-8239-4783-b872-e10082388898.png)
 
 ### Implementation using AWS services
-<a name="implementation-using-aws-services.c575238e-a60c-5f67-a114-6c5b593dfda3"></a>
+<a name="implementation-using-aws-services.9eaaa60b-8538-5199-8da1-05775854fa13"></a>
 
 #### Amazon SNS
-<a name="amazon-sns.347c2fe1-3ca4-5c0c-9b10-738d19696804"></a>
+<a name="amazon-sns.eac63337-7ae0-5a1a-958f-694b1f03d745"></a>
 
 Amazon SNS is a fully managed publisher-subscriber service that provides application-to-application (A2A) messaging to decouple distributed applications. It also provides application-to-person (A2P) messaging  for sending SMS, email, and other push notifications.
 

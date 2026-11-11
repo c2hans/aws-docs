@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/versioning.html
 # Versioning
 <a name="versioning"></a>
 
-Amazon Quick Flows uses versioning to let you edit a flow without affecting the version that others are using. You can have up to three versions of a flow at any time.
+AWS Quick Flows uses versioning to let you edit a flow without affecting the version that others are using. You can have up to three versions of a flow at any time.
 
 ## How versioning works
 <a name="how-versioning-works"></a>

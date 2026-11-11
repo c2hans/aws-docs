@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-usin
 # Using Amazon Q Business index knowledge bases
 <a name="qbiz-indexes-using"></a>
 
-Once created, Amazon Q Business index knowledge bases can be used in Amazon Quick just like any other knowledge base:
+Once created, Amazon Q Business index knowledge bases can be used in AWS Quick just like any other knowledge base:
 
 ## Using in spaces
 <a name="qbiz-indexes-in-spaces"></a>
@@ -60,9 +60,9 @@ Admins can add Amazon Q Business index knowledge bases to automations:
 ## Querying knowledge bases
 <a name="qbiz-indexes-querying"></a>
 
-Readers can query Amazon Q Business index knowledge bases through the Amazon Quick web application. However, a user will only be able to get a response from the Amazon Q Business index if they also have access to the Amazon Q Business application. To query the knowledge base:
+Readers can query Amazon Q Business index knowledge bases through the AWS Quick web application. However, a user will only be able to get a response from the Amazon Q Business index if they also have access to the Amazon Q Business application. To query the knowledge base:
 
-1. Navigate to the Amazon Quick web application.
+1. Navigate to the AWS Quick web application.
 
 1. Select a space that contains the Amazon Q Business index knowledge base or use the default agent.
 

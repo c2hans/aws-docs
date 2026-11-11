@@ -49,7 +49,7 @@ This architecture enables you to use AWS IoT Core to modernize workloads, proces
 
 1.  **AWS IoT FleetWise** helps you more intelligently collect vehicle data. You can improve data relevance by creating time and event-based data collection campaigns that send the exact data you need to the cloud to **Amazon Timestream** or **Amazon S3**.
 
-1.  Use **Amazon SageMaker AI** to improve ADAS/AV models and optimize vehicle design for performance and efficiency. Use **Amazon Quick Sight** to continually improve vehicle quality, safety, and autonomy using near real-time data from **AWS IoT FleetWise**.
+1.  Use **Amazon SageMaker AI** to improve ADAS/AV models and optimize vehicle design for performance and efficiency. Use **AWS Quick Sight** to continually improve vehicle quality, safety, and autonomy using near real-time data from **AWS IoT FleetWise**.
 
 1.  Using **AWS IoT Core Device Shadow** can make a vehicle’s state available to apps and other downstream services whether the device is connected to **AWS IoT Core** or not, providing a built-in mechanism to update the vehicle's state from the cloud.
 

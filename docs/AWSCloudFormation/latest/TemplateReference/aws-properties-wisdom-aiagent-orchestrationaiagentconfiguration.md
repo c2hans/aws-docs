@@ -20,9 +20,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ConnectInstanceArn](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-connectinstancearn)" : {{String}},
+  "[InputSchemas](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-inputschemas)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
   "[Locale](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-locale)" : {{String}},
+  "[MultiAgentConfigurations](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-multiagentconfigurations)" : {{[ MultiAgentConfiguration, ... ]}},
   "[OrchestrationAIGuardrailId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaiguardrailid)" : {{String}},
   "[OrchestrationAIPromptId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaipromptid)" : {{String}},
+  "[OutputSchemas](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-outputschemas)" : {{[ {{{Key}}: {{Value}}, ...}, ... ]}},
   "[ToolConfigurations](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-toolconfigurations)" : {{[ ToolConfiguration, ... ]}}
 }
 ```
@@ -32,9 +35,17 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ConnectInstanceArn](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-connectinstancearn): {{String}}
+  [InputSchemas](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-inputschemas): {{
+    -
+    {{Key}}: {{Value}}}}
   [Locale](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-locale): {{String}}
+  [MultiAgentConfigurations](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-multiagentconfigurations): {{
+    - MultiAgentConfiguration}}
   [OrchestrationAIGuardrailId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaiguardrailid): {{String}}
   [OrchestrationAIPromptId](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaipromptid): {{String}}
+  [OutputSchemas](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-outputschemas): {{
+    -
+    {{Key}}: {{Value}}}}
   [ToolConfigurations](#cfn-wisdom-aiagent-orchestrationaiagentconfiguration-toolconfigurations): {{
     - ToolConfiguration}}
 ```
@@ -51,11 +62,24 @@ The Amazon Resource Name (ARN) of the Amazon Connect instance used by the Orches
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`InputSchemas`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-inputschemas"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of Object
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Locale`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-locale"></a>
 The locale setting for the Orchestration AI Agent.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MultiAgentConfigurations`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-multiagentconfigurations"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [MultiAgentConfiguration](aws-properties-wisdom-aiagent-multiagentconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OrchestrationAIGuardrailId`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaiguardrailid"></a>
@@ -67,9 +91,16 @@ The AI Guardrail identifier used by the Orchestration AI Agent.
 
 `OrchestrationAIPromptId`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-orchestrationaipromptid"></a>
 The AI Prompt identifier used by the Orchestration AI Agent.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Pattern*: `^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(:[A-Z0-9_$]+){0,1}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OutputSchemas`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-outputschemas"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of Object
+*Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ToolConfigurations`  <a name="cfn-wisdom-aiagent-orchestrationaiagentconfiguration-toolconfigurations"></a>

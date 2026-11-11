@@ -2158,7 +2158,7 @@ To gain visibility into the real-time recommendations that agent assist provides
 #### Forecasting data in Connect Customer Analytics data lake
 <a name="forecasting-data-oct24"></a>
 
-You can use published forecast (short-term and long-term) data in the data lake. This makes it easier for you to generate reports and insights from this data. For example, you can build dashboards that compare forecasts against actuals or view this data in conjunction with other data sets such as sales forecasts. You can also automate ingestion of this data in business intelligence tools. To generate these reports and insights, you can use Amazon Athena with Amazon Quick or another business intelligence tool of your choice.
+You can use published forecast (short-term and long-term) data in the data lake. This makes it easier for you to generate reports and insights from this data. For example, you can build dashboards that compare forecasts against actuals or view this data in conjunction with other data sets such as sales forecasts. You can also automate ingestion of this data in business intelligence tools. To generate these reports and insights, you can use Amazon Athena with AWS Quick or another business intelligence tool of your choice.
 
 For more information about the content of the forecasting tables in the data lake, see [Forecasting data in the Connect Customer analytics data lake](data-lake-forecasting-data.md).
 

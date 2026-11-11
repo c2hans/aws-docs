@@ -144,7 +144,7 @@ For more information about the available AWS Glue versions and corresponding Spa
 Jobs that are created without specifying a Glue version default to the latest Glue version available.
 *Required*: No
 *Type*: String
-*Pattern*: `^(\w+\.)+\w+$`
+*Pattern*: `^((\w+\.)+\w+|auto)$`
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

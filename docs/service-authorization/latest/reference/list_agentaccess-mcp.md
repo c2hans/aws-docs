@@ -29,6 +29,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 |   [CheckConnectionStatus](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to check the connection status of a streaming session |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Read |
 |   [CloseSession](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to close a desktop session |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
 |   [DoubleClick](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to perform double click at coordinates |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
+|   [ExecuteSequence](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to use execute sequence tool |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
 |   [GetScreenshot](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to capture screen state |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Read |
 |   [GetSessionInfo](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to retrieve information about the current session |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Read |
 |   [HoldKey](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to hold key down |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
@@ -46,6 +47,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 |   [ToggleAppSwitcher](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to toggle the application switcher overlay |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
 |   [TripleClick](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to perform triple click at coordinates |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
 |   [TypeText](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to type text string |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
+|   [Wait](https://docs.aws.amazon.com/appstream2/latest/developerguide/)  | Grants permission to use wait tool |  | [agentaccess-mcp:StackArn](#list_agentaccess-mcp-agentaccess-mcp_StackArn) | Write |
 
 ## Resource types defined by Amazon WorkSpaces AgentAccess MCP Server
 <a name="list_agentaccess-mcp-resources-for-iam-policies"></a>

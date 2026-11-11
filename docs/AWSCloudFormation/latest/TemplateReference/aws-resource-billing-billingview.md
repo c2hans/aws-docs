@@ -100,7 +100,12 @@ A list of key value map specifying tags associated to the billing view being cre
  The Amazon Resource Name (ARN) that can be used to uniquely identify the billing view.
 
 `BillingViewType`  <a name="BillingViewType-fn::getatt"></a>
-The type of billing group.
+The type of billing view. The following values are valid:
++ `PRIMARY` - The billing view that contains all cost management data associated with an account.
++ `CUSTOM` - A billing view that a customer creates from one or more source views.
++ `BILLING_GROUP` - The billing view for an AWS Billing Conductor billing group.
++ `BILLING_TRANSFER` - The billing view for the billing data that a bill transfer account is financially responsible for.
++ `BILLING_TRANSFER_SHOWBACK` - The billing view for billing data configured for showback or chargeback purposes.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The time when the billing view was created.

@@ -62,7 +62,7 @@ Required: No
  ** [Type](#API_ListRuleGroups_RequestSyntax) **   <a name="networkfirewall-ListRuleGroups-request-Type"></a>
 Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules.
 Type: String
-Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN`
+Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN | FIREWALL | IPS`
 Required: No
 
 ## Response Syntax

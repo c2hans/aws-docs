@@ -125,6 +125,12 @@ Updates a SageMaker HyperPod cluster.
          "ClusterArn": "{{string}}"
       },
       "Slurm": {
+         "AccountingDatabase": {
+            "Endpoint": "{{string}}",
+            "Name": "{{string}}",
+            "Port": {{number}},
+            "SecretArn": "{{string}}"
+         },
          "SlurmConfigStrategy": "{{string}}"
       }
    },
@@ -205,7 +211,7 @@ Required: No
 Specify the name of the SageMaker HyperPod cluster you want to update.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
+Pattern: `((arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}))`
 Required: Yes
 
  ** [ClusterRole](#API_UpdateCluster_RequestSyntax) **   <a name="sagemaker-UpdateCluster-request-ClusterRole"></a>

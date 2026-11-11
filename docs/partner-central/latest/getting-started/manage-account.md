@@ -12,6 +12,7 @@ From the navigation menu, partners have two settings: one for managing their AWS
 + [Associating domains for AWS Training and Certification tracking](associating-domains.md)
 + [Tags](#tags)
 + [Marketplace settings](marketplace-settings.md)
++ [Business plans](working-with-business-plans.md)
 
 ## Tags
 <a name="tags"></a>

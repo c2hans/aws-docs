@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ## Suggestion 11.3.3 – Use serverless resources for unpredictable or spiky workloads
 <a name="suggestion-11.3.3---use-on-demand-instance-resources-for-transient-workloads-or-short-term-development-and-testing-needs."></a>
 
- Use serverless analytics services, such as Amazon Redshift Serverless, Amazon EMR, Amazon Athena, Amazon Quick Serverless, and Amazon Managed Streaming for Apache Kafka (Amazon MSK) Serverless, to perform analytical queries, processing and streaming, with pay-as-you-go pricing. This helps remove the cost associated with idle resources.
+ Use serverless analytics services, such as Amazon Redshift Serverless, Amazon EMR, Amazon Athena, AWS Quick Serverless, and Amazon Managed Streaming for Apache Kafka (Amazon MSK) Serverless, to perform analytical queries, processing and streaming, with pay-as-you-go pricing. This helps remove the cost associated with idle resources.
 
  You can also use serverless resources for development and testing needs.
 

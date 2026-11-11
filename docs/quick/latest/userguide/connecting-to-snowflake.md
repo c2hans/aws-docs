@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/connecting-to-snowflake.html
 ---
 
-# Using Snowflake with Amazon Quick Sight
+# Using Snowflake with AWS Quick Sight
 <a name="connecting-to-snowflake"></a>
 
 Snowflake is an AI data cloud platform that provides data solutions from data warehousing and collaboration to data science and generative AI. Snowflake is an [AWS Partner](https://partners.amazonaws.com/partners/001E000000d8qQcIAI/Snowflake) with multiple AWS accreditations that include AWS ISV Competencies in Generative AI, Machine Learning, Data and Analytics, and Retail.
 
-Amazon Quick Sight offers multiple ways to connect to Snowflake: with your Snowflake login credentials, with OAuth client credentials, or with three-legged OAuth (3LO) using end-user identities. Use the following sections to learn about these methods of connection.
+AWS Quick Sight offers multiple ways to connect to Snowflake: with your Snowflake login credentials, with OAuth client credentials, or with three-legged OAuth (3LO) using end-user identities. Use the following sections to learn about these methods of connection.
 
 **Topics**
 + [Creating an Quick Sight data source connection to Snowflake with login credentials](#create-connection-to-snowflake)
@@ -31,7 +31,7 @@ Amazon Quick Sight offers multiple ways to connect to Snowflake: with your Snowf
 
    1. For **Data source name**, enter a descriptive name for your Snowflake data source connection. Because you can create many datasets from a connection to Snowflake, it's bets to keep the name simple.
 
-   1. For **Connection type**, choose the type of network that you're using. Choose **Public network** if your data is shared publicly. Choose **VPC** if your data is located inside a VPC. To configure a VPC connection in Quick Sight, see [Managing VPC connection in Amazon Quick](vpc-creating-a-connection-in-quicksight.md).
+   1. For **Connection type**, choose the type of network that you're using. Choose **Public network** if your data is shared publicly. Choose **VPC** if your data is located inside a VPC. To configure a VPC connection in Quick Sight, see [Managing VPC connection in AWS Quick](vpc-creating-a-connection-in-quicksight.md).
 
    1. For **Database server** enter the hostname specified in your Snowflake connection details.
 

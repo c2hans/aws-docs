@@ -29,7 +29,7 @@ The implementation of secure edge computing and connectivity in IoT, IIoT, and O
 <a name="secure-edge-remediations"></a>
 
 ### Data protection
-<a name="data-protection.35c6a9b9-73a8-50e6-8990-86eb1058312d"></a>
+<a name="data-protection.cc44a390-39d3-5f50-942e-0b4ecbe18b42"></a>
 
 To address data protection concerns, implement encryption for data in transit and at rest. Use secure protocols such as MQTT over TLS, HTTPS, and WebSockets over HTTPS. For communications with IoT devices, and generally within IoT industrial edge environments, consider using secure versions of industrial protocols such as CIP Security, Modbus Secure, and Open Platform Communications Unified Architecture (OPC UA) with security mode enabled. When secure protocols aren't natively supported, employ [protocol converters](https://aws.amazon.com/blogs/iot/aws-iot-sitewise-adds-support-for-10-new-industrial-protocols-with-domatica-easyedge-integration/) or gateways to translate insecure protocols into secure ones as close to the data source as possible. For critical systems that require strict data flow control, consider implementing unidirectional gateways or data diodes. Use [AWS IoT SiteWise Edge](https://aws.amazon.com/iot-sitewise/sitewise-edge/) gateways with OPC UA security mode for industrial data sources, and use [AWS IoT Greengrass](https://docs.aws.amazon.com/greengrass/v2/developerguide/what-is-iot-greengrass.html) for secure local MQTT broker configurations. When protocol-level security isn't possible, consider implementing an encryption overlay by using VPNs or other tunneling technologies to protect data in transit.
 

@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/brex-reading-from-entities.html
+---
+
+# Reading from Brex entities
+<a name="brex-reading-from-entities"></a>
+
+**Prerequisites**
+
+A Brex object you want to read from. For the available entities, see the following supported entities table.
+
+**Supported entities for source**
+
+| Entity | Can be filtered | Supports limit | Supports select \* | Supports order by | Supports partitioning |
+| --- | --- | --- | --- | --- | --- |
+| card-account | No | Yes | Yes | No | No |
+| card-statement | No | Yes | Yes | No | No |
+| card-transaction | Yes | Yes | Yes | No | No |
+
+**Example – Reading from a Brex entity**
+The following example reads from the `card-account` entity. Replace {{connectionName}} with the name of your Brex connection:
+
+```
+read_df = glueContext.create_dynamic_frame.from_options(
+    connection_type="brex",
+    connection_options={
+        "connectionName": "{{connectionName}}",
+        "ENTITY_NAME": "card-account"
+    }
+)
+```

@@ -25,7 +25,7 @@ This topic provides an overview of the available options and describes what to c
 
 **Requirements for Nitro Sandboxes**
 To run isolated and confidential pods with Nitro Sandboxes on the cluster:
-Use a supported Kubernetes version (1.36 or later, limited to the two latest versions).
+Use a supported Kubernetes version (1.36 or later, limited to the two latest versions). If you create the cluster with `eksctl`, pass `--version` to select 1.36 or later, because `eksctl` uses an older default version.
 Run them on instance types that support Nitro Enclaves.
 For more information, see [Sandboxing on Amazon EKS with isolated and confidential pods](sandboxing.md).
 

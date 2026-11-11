@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/knowledge-desktop
 # Knowledge
 <a name="knowledge-desktop"></a>
 
-The **Knowledge** tab in **Customize** is where you give Amazon Quick access to files on your computer and control how Quick indexes them. For each folder, choose whether Quick uploads its files for full-content search, extracts information from them into your knowledge graph, both, or neither. When you add a folder, Quick can read its files on your computer, but it doesn't upload them until you turn on indexing.
+The **Knowledge** tab in **Customize** is where you give AWS Quick access to files on your computer and control how Quick indexes them. For each folder, choose whether Quick uploads its files for full-content search, extracts information from them into your knowledge graph, both, or neither. When you add a folder, Quick can read its files on your computer, but it doesn't upload them until you turn on indexing.
 
 ## Indexing options
 <a name="knowledge-indexing-options"></a>

@@ -25,6 +25,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[CoreNetworkId](#cfn-networkmanager-connectattachment-corenetworkid)" : {{String}},
       "[EdgeLocation](#cfn-networkmanager-connectattachment-edgelocation)" : {{String}},
+      "[NatGatewayRules](#cfn-networkmanager-connectattachment-natgatewayrules)" : {{[ NatRule, ... ]}},
+      "[NatGatewaySupport](#cfn-networkmanager-connectattachment-natgatewaysupport)" : {{String}},
       "[NetworkFunctionGroupName](#cfn-networkmanager-connectattachment-networkfunctiongroupname)" : {{String}},
       "[Options](#cfn-networkmanager-connectattachment-options)" : {{ConnectAttachmentOptions}},
       "[RoutingPolicyLabel](#cfn-networkmanager-connectattachment-routingpolicylabel)" : {{String}},
@@ -42,6 +44,9 @@ Type: AWS::NetworkManager::ConnectAttachment
 Properties:
   [CoreNetworkId](#cfn-networkmanager-connectattachment-corenetworkid): {{String}}
   [EdgeLocation](#cfn-networkmanager-connectattachment-edgelocation): {{String}}
+  [NatGatewayRules](#cfn-networkmanager-connectattachment-natgatewayrules): {{
+    - NatRule}}
+  [NatGatewaySupport](#cfn-networkmanager-connectattachment-natgatewaysupport): {{String}}
   [NetworkFunctionGroupName](#cfn-networkmanager-connectattachment-networkfunctiongroupname): {{String}}
   [Options](#cfn-networkmanager-connectattachment-options): {{
     ConnectAttachmentOptions}}
@@ -68,6 +73,20 @@ The Region where the edge is located.
 *Minimum*: `1`
 *Maximum*: `63`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`NatGatewayRules`  <a name="cfn-networkmanager-connectattachment-natgatewayrules"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [NatRule](aws-properties-networkmanager-connectattachment-natrule.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NatGatewaySupport`  <a name="cfn-networkmanager-connectattachment-natgatewaysupport"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLE | DISABLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkFunctionGroupName`  <a name="cfn-networkmanager-connectattachment-networkfunctiongroupname"></a>
 The name of the network function group.
@@ -141,6 +160,9 @@ The ARN of the core network.
 The timestamp when the Connect attachment was created.
 
 `LastModificationErrors`  <a name="LastModificationErrors-fn::getatt"></a>
+Property description not available.
+
+`NatSystemRouteSupport`  <a name="NatSystemRouteSupport-fn::getatt"></a>
 Property description not available.
 
 `OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>

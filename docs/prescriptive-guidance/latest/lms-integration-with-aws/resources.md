@@ -60,7 +60,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integra
 
 ## Case studies
 <a name="case-studies.9b30dee7-7fee-5640-bbb3-6cf87b27d65c"></a>
-+ [Anthology uses embedded analytics offered by Amazon Quick Sight to democratize decision making for higher education](https://aws.amazon.com/blogs/business-intelligence/anthology-uses-embedded-analytics-offered-by-amazon-quicksight-to-democratize-decision-making-for-higher-education/)
++ [Anthology uses embedded analytics offered by AWS Quick Sight to democratize decision making for higher education](https://aws.amazon.com/blogs/business-intelligence/anthology-uses-embedded-analytics-offered-by-amazon-quicksight-to-democratize-decision-making-for-higher-education/)
 + [Canvas (LMS) integration with Amazon Connect](https://aws.amazon.com/blogs/publicsector/ut-austin-connects-students-answers-faster-using-amazon-connect/)
 + [Coventry University Migrates Moodle to AWS](https://aws.amazon.com/blogs/publicsector/coventry-university-migrates-moodle-to-aws/)
 + [How UCL migrated its Moodle virtual learning environment to the cloud in 10 weeks](https://aws.amazon.com/blogs/publicsector/how-ucl-migrated-moodle-virtual-learning-environment-cloud-10-weeks/)

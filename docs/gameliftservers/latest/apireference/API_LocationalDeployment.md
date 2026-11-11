@@ -15,12 +15,12 @@ In the following list, the required parameters are described first.
 
  ** DeploymentStatus **   <a name="gameliftservers-Type-LocationalDeployment-DeploymentStatus"></a>
 The status of fleet deployment activity in the location.
-+  `IN_PROGRESS` -- The deployment is in progress.
-+  `IMPAIRED` -- The deployment failed and the fleet has some impaired containers.
-+  `COMPLETE` -- The deployment has completed successfully.
-+  `ROLLBACK_IN_PROGRESS` -- The deployment failed and rollback has been initiated.
-+  `ROLLBACK_IN_COMPLETE` -- The deployment failed and rollback has been completed.
-+  `CANCELLED` -- The deployment was cancelled.
++  `IN_PROGRESS` -- The deployment is in progress in the location. This status covers validation as well as the replacement of the location's containers.
++  `IMPAIRED` -- The deployment failed validation in the location, and the location kept the containers that failed validation so that you can inspect them. A location reaches this status when the deployment's impairment strategy is `MAINTAIN`.
++  `COMPLETE` -- The deployment has completed successfully in the location.
++  `ROLLBACK_IN_PROGRESS` -- The deployment failed and rollback has been initiated in the location. A location reaches this status when the deployment's impairment strategy is `ROLLBACK`.
++  `ROLLBACK_COMPLETE` -- The deployment failed and rollback has been completed in the location. The location is running the configuration from the last successful deployment.
++  `CANCELLED` -- The deployment was cancelled because a new deployment started for the same fleet.
 Type: String
 Valid Values: `IN_PROGRESS | IMPAIRED | COMPLETE | ROLLBACK_IN_PROGRESS | ROLLBACK_COMPLETE | CANCELLED | PENDING`
 Required: No

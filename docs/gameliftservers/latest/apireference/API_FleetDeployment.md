@@ -31,13 +31,15 @@ Pattern: `^[a-zA-Z0-9\-]+$`
 Required: No
 
  ** DeploymentStatus **   <a name="gameliftservers-Type-FleetDeployment-DeploymentStatus"></a>
-The status of fleet deployment activity in the location.
-+  `IN_PROGRESS` -- The deployment is in progress.
-+  `IMPAIRED` -- The deployment failed and the fleet has some impaired containers.
-+  `COMPLETE` -- The deployment has completed successfully.
-+  `ROLLBACK_IN_PROGRESS` -- The deployment failed and rollback has been initiated.
-+  `ROLLBACK_IN_COMPLETE` -- The deployment failed and rollback has been completed.
-+  `CANCELLED` -- The deployment was cancelled.
+The status of the fleet deployment. For per-location status, see `LocationalDeployment`.
++  `PENDING` -- Amazon GameLift Servers has accepted the deployment and hasn't started it yet.
++  `IN_PROGRESS` -- The deployment is in progress. This status covers validation as well as the replacement of the fleet's containers.
++  `IMPAIRED` -- The deployment failed validation, and the fleet kept the containers that failed validation so that you can inspect them. A deployment reaches this status when its impairment strategy is `MAINTAIN`.
++  `COMPLETE` -- The deployment has completed successfully in every fleet location.
++  `ROLLBACK_IN_PROGRESS` -- The deployment failed and rollback has been initiated. A deployment reaches this status when its impairment strategy is `ROLLBACK`.
++  `ROLLBACK_COMPLETE` -- The deployment failed and rollback has been completed. The fleet is running the configuration from the last successful deployment.
++  `CANCELLED` -- The deployment was cancelled because a new deployment started for the same fleet.
+For how to debug an impaired deployment or cancel one, see [Container fleet deployments](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/containers-deployment-validation.html).
 Type: String
 Valid Values: `IN_PROGRESS | IMPAIRED | COMPLETE | ROLLBACK_IN_PROGRESS | ROLLBACK_COMPLETE | CANCELLED | PENDING`
 Required: No

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshooting-d
 # My visual can’t find the query table
 <a name="troubleshooting-dataset-changed-tables"></a>
 
-In this case, the visuals in your analysis aren't working as expected. The error message says `"Amazon Quick Sight can’t find the query table."`
+In this case, the visuals in your analysis aren't working as expected. The error message says `"AWS Quick Sight can’t find the query table."`
 
 The most common cause of this error is that your data source schema changed. For example, it's possible a table name changed from `x_table` to `y_table`.
 

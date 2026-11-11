@@ -17,6 +17,11 @@ The number of AWS Glue data processing units (DPUs) allocated to runs of this jo
 Type: Integer
 Required: No
 
+ ** AutoUpgradeMetadata **   <a name="Glue-Type-Job-AutoUpgradeMetadata"></a>
+The auto-upgrade assessment information for a job configured with `GlueVersion=auto`. This field is null when the job is not configured to auto.
+Type: [AutoUpgradeMetadata](API_AutoUpgradeMetadata.md) object
+Required: No
+
  ** CodeGenConfigurationNodes **   <a name="Glue-Type-Job-CodeGenConfigurationNodes"></a>
 The representation of a directed acyclic graph on which both the Glue Studio visual component and Glue Studio code generation is based.
 Type: String to [CodeGenConfigurationNode](API_CodeGenConfigurationNode.md) object map
@@ -73,10 +78,10 @@ Required: No
 In Spark jobs, `GlueVersion` determines the versions of Apache Spark and Python that AWS Glue available in a job. The Python version indicates the version supported for jobs of type Spark.
 Ray jobs should set `GlueVersion` to `4.0` or greater. However, the versions of Ray, Python and additional libraries available in your Ray job are determined by the `Runtime` parameter of the Job command.
 For more information about the available AWS Glue versions and corresponding Spark and Python versions, see [Glue version](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
-Jobs that are created without specifying a Glue version default to Glue 5.1.
+Jobs that are created without specifying a Glue version default to Glue 6.0.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 Required: No
 
  ** JobMode **   <a name="Glue-Type-Job-JobMode"></a>

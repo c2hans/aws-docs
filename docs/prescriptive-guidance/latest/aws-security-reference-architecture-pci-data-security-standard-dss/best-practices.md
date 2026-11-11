@@ -16,7 +16,7 @@ The AWS SRA defines the following core OUs and accounts:
 + Workloads OU – Application account(s) — Hosts application workloads; isolated per service rather than per team to improve resilience
 
 ## PCI DSS Scoping for an Account or Infrastructure Component
-<a name="pci-dss-scoping-for-an-account-or-infrastructure-component.cf8186ed-d49a-5526-a2ed-b8b567ac9cdb"></a>
+<a name="pci-dss-scoping-for-an-account-or-infrastructure-component.4d48fffd-1f8a-5345-9f4d-beec0fc17f51"></a>
 
 Under PCI DSS 4.0.1, the scoping process begins by identifying all system components — people, processes, and technologies — that interact with or could impact the security of cardholder data (CHD) or sensitive authentication data (SAD). The PCI Council defines three scoping categories that directly map to how AWS accounts and infrastructure should be classified:
 
@@ -34,12 +34,12 @@ The key determinants for scoping any AWS account or infrastructure part is answe
 + Shared infrastructure — Is any underlying infrastructure (Transit Gateway, DNS, Active Directory) shared between CDE and non-CDE workloads?
 
 ### The AWS SRA Recommendations supporting PCI DSS Requirements
-<a name="the-aws-sra-recommendations-supporting-pci-dss-requirements.1204f7fe-04c4-549a-8377-38ee9a5bc1a9"></a>
+<a name="the-aws-sra-recommendations-supporting-pci-dss-requirements.dd2bb1da-5da9-56f1-bc28-276262fdc648"></a>
 
 The AWS SRA's multi-account, multi-OU architecture directly maps to and accelerates compliance with PCI DSS 4.0 requirements across two critical dimensions: segmentation and resource visibility.
 
 ### Segmentation
-<a name="segmentation.96196265-f94a-52ba-bb82-2523669f3bba"></a>
+<a name="segmentation.63ee0d6d-1c87-5ded-8324-e35628ad89f2"></a>
 
 The PCI Council's Guidance for PCI DSS Scoping and Network Segmentation advises the CDE to be isolated from systems that could impact its security. The AWS SRA supports this through multiple layers:
 + Account-level segmentation — Placing CDE workloads in dedicated AWS accounts within a PCI Workloads OU creates a hard boundary that is not dependent on network configuration alone (Refer to recommended OU and account structure depicted later in this guide under Account and OU structure) . This directly reduces PCI DSS scope by ensuring out-of-scope systems have no connectivity path to CDE accounts by default.
@@ -50,7 +50,7 @@ The PCI Council's Guidance for PCI DSS Scoping and Network Segmentation advises 
 The updated AWS whitepaper [Architecting for PCI DSS Scoping and Segmentation on AWS](https://d1.awsstatic.com/whitepapers/compliance/architecting-pci-dss-segmentation-scoping-aws.pdf) provides actionable network design patterns and reference architectures for OU and account structures specifically designed for PCI DSS 4.0 compliance.
 
 ### Resource Visibility
-<a name="resource-visibility.e88b9797-0434-5cb1-8f89-9e1e6cda1e8d"></a>
+<a name="resource-visibility.0bae602f-546c-5ae6-b9e6-d53dd14b5fd8"></a>
 
 PCI DSS Requirement 12.5.1 requires maintaining an inventory of all in-scope system components, and Requirement 12.5.2 requires that PCI DSS scope is documented and confirmed at least once every 12 months. Requirement 6.3.2 also requires an accurate, up-to-date Software Bill of Materials (SBOM) or software inventory for all bespoke, custom, and third-party software components. The AWS SRA supports continuous, automated resource discovery through:
 + AWS Config (deployed in the Security Tooling account) — [AWS Config](https://aws.amazon.com/config/) Continuously records configuration state of all resources across all accounts and Regions, providing a real-time inventory of in-scope system components.
@@ -62,7 +62,7 @@ PCI DSS Requirement 12.5.1 requires maintaining an inventory of all in-scope sys
 Together, these AWS SRA-recommended services create a continuously validated, automatically documented inventory of the CDE — reducing the manual effort of annual scoping exercises and providing auditors with real-time evidence of compliance posture. Additionally you should also design a strong change management process implemented through Infrastructure as Code (IaC) to ensure you have an accurate inventory of your AWS environment and only authorized changes are introduced.
 
 ## Workload Account Structure: CDE and Connected-To Accounts
-<a name="workload-account-structure--cde-and-connected-to-accounts.7d50b921-69cd-5613-baf8-3a758eadc80c"></a>
+<a name="workload-account-structure--cde-and-connected-to-accounts.3fb94a89-2a44-5853-b49a-48e94378d13e"></a>
 
 For PCI DSS environment, we need to extend the AWS SRA Workload OU and account structure further, as this is where the CDE is hosted. The AWS SRA's Workloads OU houses application accounts, but for PCI DSS environments, a flat "one Workloads OU" model is not recommended for controlling the scope. The AWS Architecting for PCI DSS Scoping and Segmentation on AWS whitepaper recommends structuring the Workloads OU — and the broader organization — around the three scoping categories above, using dedicated child OUs and accounts to make scope boundaries explicit, enforceable, and auditable.
 
@@ -100,7 +100,7 @@ The following diagram provides a visual representation of different OU types as 
 ![](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-security-reference-architecture-pci-data-security-standard-dss/images/guide-img/348f03a4-c34e-48e6-ab09-09381dffd794/images/5a8918da-bc42-44e0-9563-3c3297d4a202.jpeg)
 
 ### Segmentation Boundary Enforcement Across the OU Structure
-<a name="segmentation-boundary-enforcement-across-the-ou-structure.7f5d3320-b80a-5656-bffb-bf7df760eac9"></a>
+<a name="segmentation-boundary-enforcement-across-the-ou-structure.8b0cfaf5-fbe3-5213-bdfd-77b1d87ac77d"></a>
 
 The power of the AWS SRA's multi-account model for PCI DSS is that segmentation is enforced at multiple independent layers simultaneously — making it resilient to misconfiguration at any single layer:
 + Account boundary — No default connectivity between accounts; cross-account access requires explicit IAM trust
@@ -117,7 +117,7 @@ The power of the AWS SRA's multi-account model for PCI DSS is that segmentation 
 PCI DSS Requirement 12.5.1 mandates that an organization maintain an inventory of all in-scope system components, including a description of function/use for each. Requirement 12.5.2 further requires that this inventory be reviewed at least once every 12 months and updated whenever the environment changes. On AWS, the dynamic, API-driven nature of cloud infrastructure — where resources can be provisioned and deprovisioned in seconds — makes a manual inventory approach both impractical and unreliable. The AWS SRA addresses this through a layered, automated inventory architecture built entirely on native AWS services.
 
 ##### Layer 1 — Continuous Resource Discovery: AWS Config
-<a name="layer-1---continuous-resource-discovery--aws-config.2dd07669-adec-5cf0-b221-9bc23dcd3869"></a>
+<a name="layer-1---continuous-resource-discovery--aws-config.e83fbdad-9107-5bd4-995a-2272a73b5cc4"></a>
 
 AWS Config is the foundational service for PCI DSS inventory on AWS. When enabled across all accounts in the organization — which AWS Control Tower enforces automatically upon account enrollment — Config continuously records the configuration state of every supported resource type, generating a [Configuration Item (CI)](https://docs.aws.amazon.com/config/latest/developerguide/config-item-table.html) each time a resource is created, modified, or deleted.
 
@@ -129,7 +129,7 @@ For PCI DSS inventory purposes, Config provides three critical capabilities:
 You can extend this further by pairing the [Config Aggregator with Amazon Athena ](https://aws.amazon.com/blogs/mt/exploring-aws-config-data-using-amazon-athena-and-amazon-managed-grafana/)for historical querying and [Amazon QuickSight ](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-aws-resource-inventory.html)for interactive compliance dashboards — enabling teams to visualize their in-scope resource inventory, track changes over time, and produce audit-ready reports.
 
 ##### Layer 2 — Software and OS-Level Inventory: AWS Systems Manager Inventory, Amazon Inspector
-<a name="layer-2---software-and-os-level-inventory--aws-systems-manager-inventory--amazon-inspector.0d0a1199-7699-5c21-8383-db233991ac44"></a>
+<a name="layer-2---software-and-os-level-inventory--aws-systems-manager-inventory--amazon-inspector9999999999999999nbsp-.0d0a1199-7699-5c21-8383-db233991ac44"></a>
 
 AWS Config tracks infrastructure-level resources (EC2 instances, S3 buckets, RDS databases, etc.), but PCI DSS Requirement 12.5.1 also requires documenting the function and use of each system component — which demands visibility into what is running inside those resources. AWS Systems Manager (SSM) Inventory fills this gap by collecting metadata from managed nodes at configurable intervals (minimum every 30 minutes).
 
@@ -166,7 +166,7 @@ None of the above services can distinguish in-scope from out-of-scope resources 
 | compliance-boundary | pci-cde-prod | Groups resources into named compliance boundaries |
 
 ##### Putting It Together — The Inventory Architecture
-<a name="putting-it-together---the-inventory-architecture.526fad14-c461-5d7e-b724-f58057d32558"></a>
+<a name="putting-it-together---the-inventory-architecture.2aa5057c-180a-5f61-8588-25ddec14fb07"></a>
 
 The three layers combine into following continuous, automated inventory pipeline:
 + AWS Config (with Aggregator) → discovers and tracks all infrastructure-level resources across all accounts in real time

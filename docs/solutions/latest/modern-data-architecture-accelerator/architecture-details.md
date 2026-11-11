@@ -124,7 +124,9 @@ MDAA provides comprehensive support for building and deploying generative AI app
 ### Bedrock
 <a name="bedrock"></a>
 
-Amazon Bedrock helps you build and scale generative AI applications with foundation models. The Bedrock Builder CDK application helps you configure and deploy secure Bedrock Agents, Knowledge Bases, and associated resources with just a few lines of configuration. Because the Bedrock module integrates with the platform’s S3 data lake and governance layer, Knowledge Bases can be populated from governed datasets, and Agents can access platform data through the same fine-grained access controls that govern all other consumers on the platform.
+Amazon Bedrock helps you build and scale generative AI applications with foundation models. The Bedrock Builder CDK application helps you configure and deploy secure Amazon Bedrock AgentCore Harnesses and Gateways, Knowledge Bases, and associated resources with just a few lines of configuration. Because the Bedrock module integrates with the platform’s S3 data lake and governance layer, Knowledge Bases can be populated from governed datasets, and harnesses reach platform data through gateway tools that are subject to the same fine-grained access controls that govern all other consumers on the platform.
+
+MDAA 1.10.0 removed the Bedrock Agent module (`@aws-mdaa/bedrock-agent-l3-construct`), which was deprecated in 1.7.0, along with the Bedrock Builder `agents` and `agentBucketArn` properties. A configuration that still sets either property fails at synth. To migrate an agent, move it to a harness (`harnesses`) and an AgentCore Gateway: the agent’s `foundationModel` becomes the harness `modelId`, `instruction` becomes `systemPrompt`, action groups become Lambda gateway targets (`lambdaArn`), knowledge base associations become `knowledgeBase` gateway targets, and the agent guardrail becomes the harness `guardrail`. Removing `agents` from a deployed configuration deletes those agents on the next deploy, along with their SSM parameters and stack outputs (`agent/<name>/id`, `arn`, `alias-id`), so move anything that reads them to the harness and gateway equivalents. The [GenAI Foundation Starter Package](genai-foundation-starter-package.md) is a worked example.
 
 ### Agentcore Runtime
 <a name="agentcore-runtime"></a>
@@ -138,14 +140,14 @@ MDAA’s Agentcore Runtime module deploys and configures the following:
 + Support for custom agent runtimes with configurable compute and scaling
 + Integration with the platform’s governance and observability layers
 
-### Bedrock Agent Configuration
-<a name="bedrock-agent-configuration"></a>
+### AgentCore Harness Configuration
+<a name="agentcore-harness-configuration"></a>
 
-When you deploy a Bedrock Agent using this CDK application, you get a complete setup that includes:
-+ A fully configured Amazon Bedrock Agent that automates your workflows using foundation models
-+ A comprehensive execution policy that manages access to your Knowledge Base, Foundation Model, and Bedrock Guardrails
-+ An Agent Execution Role with Bedrock Service as a Trusted Principal
-+ A dedicated KMS key for encrypting Agent resources
+When you deploy an AgentCore Harness using this CDK application, you get a complete setup that includes:
++ A declarative agent loop that combines a foundation model (`modelId`), a system prompt (`systemPrompt`), and the tools the agent can call
++ A harness execution role scoped to the harness’s resolved model, guardrail, gateway, and image grants, with an `sts:AssumeRole` deny. You can supply your own role, or omit it and the module creates one
++ Sessions that run in VPC-only network mode in the subnets and security groups you configure
++ Harness log groups encrypted with a customer-managed KMS key, with an always-on PII masking baseline that you can extend through configuration
 
 ### Lambda Integration Capabilities
 <a name="lambda-integration-capabilities"></a>
@@ -155,7 +157,7 @@ The CDK application offers flexible Lambda function integration options:
 #### Lambda Layers and Functions
 <a name="lambda-layers-and-functions"></a>
 + Create custom Lambda layers for code reuse across functions
-+ Deploy specific Lambda functions for Agent Action Groups
++ Deploy Lambda functions that serve AgentCore Gateway tools, act as gateway interceptors, or run Knowledge Base custom transformations
 + Maintain consistent functionality across your agent operations
 + Enable CloudWatch observability features for comprehensive monitoring and debugging
 
@@ -165,13 +167,14 @@ The CDK application offers flexible Lambda function integration options:
 + Choose between existing security groups or create new ones
 + Implement secure networking with configurable egress rules
 
-### Action Groups and Security Controls
-<a name="action-groups-and-security-controls"></a>
+### Gateway Tools and Security Controls
+<a name="gateway-tools-and-security-controls"></a>
 
 You can enhance your agent’s capabilities through:
-+ Action Group Configuration: Create custom action groups by either using existing Lambda functions or deploying new ones
-+ Guardrail Implementation: Add optional Bedrock Guardrails to strengthen security
-+ Automated Policy Management: The system automatically updates execution policies to include necessary guardrail permissions
++ Gateway Target Configuration: Expose Lambda functions as tools through `lambda` gateway targets, using either functions this module deploys or existing function ARNs, and expose Knowledge Bases as a `Retrieve` tool through `knowledgeBase` gateway targets. An AgentCore Gateway serves its targets to a harness, which authenticates to the gateway with AWS IAM
++ Tool Allowlist: Limit the tools a harness may select with `allowedTools`
++ Guardrail Implementation: Add an optional Bedrock Guardrail to the harness’s model calls
++ Automated Policy Management: The module attaches the permissions the harness needs, including guardrail and gateway access, to the harness execution role
 
 ### Best Practices and Recommendations
 <a name="best-practices-and-recommendations"></a>
@@ -179,11 +182,12 @@ You can enhance your agent’s capabilities through:
 To make the most of your Bedrock Builder deployment:
 + Review and plan your security configurations before deployment
 + Document your guardrail settings for future reference
++ Grant `bedrock-agentcore:InvokeHarness` only to trusted principals. A caller can override the harness’s model and tool list on each invocation, and a caller that passes its own model bypasses the harness guardrail
 + Use meaningful names for your Lambda functions and layers
 + Regularly review and update your execution policies
 + Enable CloudWatch observability for Lambda functions to monitor performance and troubleshoot issues
 
-The Bedrock Builder CDK application simplifies the deployment and management of secure Bedrock Agents. By automating the configuration process and providing flexible integration options, you can focus on building generative AI solutions that use your platform’s governed data assets rather than managing infrastructure.
+The Bedrock Builder CDK application simplifies the deployment and management of secure AgentCore Harnesses and Gateways. By automating the configuration process and providing flexible integration options, you can focus on building generative AI solutions that use your platform’s governed data assets rather than managing infrastructure.
 
 ### GenAI Chatbot v2
 <a name="genai-chatbot-v2"></a>

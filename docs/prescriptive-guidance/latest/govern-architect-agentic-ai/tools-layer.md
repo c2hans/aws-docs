@@ -15,7 +15,7 @@ The tools component enables agents to interact with external systems, execute fu
 Organizations can implement tool access through three primary architectural patterns, each offering tradeoffs between simplicity, governance, and operational control:
 
 ### In-runtime tools
-<a name="in-runtime-tools.284877c7-78fa-569f-88d7-32ba24766253"></a>
+<a name="in-runtime-tools.fe65970a-c4af-5095-92ab-210af90c9386"></a>
 
 Tools execute directly within the agent's runtime environment as inline function calls.
 
@@ -26,7 +26,7 @@ This pattern is characterized by:
 + Direct integration within the agent execution context
 
 ### Direct access with remote tools
-<a name="direct-access-with-remote-tools.4d1b286a-949f-5512-bcc3-5666ba46f935"></a>
+<a name="direct-access-with-remote-tools.7df6d45f-e09c-5e5d-90fc-994753236344"></a>
 
 Agents invoke tools through direct connections to remote services using standardized protocols such as the Model Context Protocol (MCP). Tools run in separate processes or services but are accessed without intermediary gateways.
 
@@ -37,7 +37,7 @@ This pattern provides:
 + Better isolation while maintaining reasonable latency
 
 ### Tools gateway pattern
-<a name="tools-gateway-pattern.99e05c42-4e84-54d4-a5dc-31d6157c1372"></a>
+<a name="tools-gateway-pattern.180ab9fa-5b6a-5bde-9b3f-b8ab78dd45ae"></a>
 
 A centralized gateway service manages tool discovery, security, versioning, and invocation. Agents dispatch requests to the gateway, which forwards them to the tools.
 

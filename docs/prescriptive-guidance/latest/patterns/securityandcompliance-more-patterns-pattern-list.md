@@ -28,6 +28,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Generate an AWS CloudFormation template containing AWS Config managed rules using Troposphere](generate-an-aws-cloudformation-template-containing-aws-config-managed-rules-using-troposphere.md)
 + [Implement SAML 2.0 authentication for Amazon WorkSpaces by using Auth0 and AWS Managed Microsoft AD](implement-saml-authentication-for-amazon-workspaces-by-using-auth0-and-aws-managed-microsoft-ad.md)
 + [Ingest and migrate EC2 Windows instances into an AWS Managed Services account](ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.md)
++ [Deploy real-time coding security validation by using an MCP server with Kiro](mcp-security-scanner-kiro.md)
 + [Migrate Amazon RDS for Oracle to Amazon RDS for PostgreSQL in SSL mode by using AWS DMS](migrate-amazon-rds-for-oracle-to-amazon-rds-for-postgresql-in-ssl-mode-by-using-aws-dms.md)
 + [Send AWS WAF logs to Splunk by using AWS Firewall Manager and Amazon Data Firehose](send-aws-waf-logs-to-splunk-by-using-aws-firewall-manager-and-amazon-data-firehose.md)
 + [Serve static content in an Amazon S3 bucket through a VPC by using Amazon CloudFront](serve-static-content-in-an-amazon-s3-bucket-through-a-vpc-by-using-amazon-cloudfront.md)

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/folders.html
 ---
 
-# Organizing assets into folders for Amazon Quick
+# Organizing assets into folders for AWS Quick
 <a name="folders"></a>
 
 |  |

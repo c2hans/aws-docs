@@ -56,6 +56,6 @@ There are some known limitations in running AL2027 on KVM.
 **Known limitations running AL2027 on KVM**
 +  The KVM guest agent is not currently packaged or supported.
 +  Hot plugging and unplugging CPU, memory, or any other device type is not supported.
-+  Virtual Machine (VM) hibernation is not supported.
++  Virtual machine (VM) hibernation is not supported.
 +  VM migration is not supported.
 +  Passthrough of any device such as through PCI Passthrough, or USB Passthrough is not supported.

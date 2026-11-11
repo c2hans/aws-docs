@@ -168,7 +168,7 @@ Examples include:
 The primary tradeoff is increased communication overhead between GPUs, which can impact latency and throughput depending on the interconnect technology. For more information about sharding techniques, go to the model optimization section.
 
 ### Accelerator eligibility
-<a name="accelerator-eligibility.108a8384-4ae8-5e90-9e4b-797509005ac2"></a>
+<a name="accelerator-eligibility.6d725230-b58a-5280-b185-8049f261bc71"></a>
 
 After estimating model weights and KV cache requirements, the total memory footprint can be compared against available instance types.
 
@@ -178,8 +178,8 @@ For example:
 |
 | AWS Instance Family | NVIDIA Accelerator | Memory |
 | --- |--- |--- |
-| g6 | L4 | 22 GB |
-| g6e | L40S | 44 GB |
+| g6 | L4 | 24 GB |
+| g6e | L40S | 48 GB |
 | g7e | RTX PRO™ 6000 Blackwell | 96 GB |
 | p5 | H100 | 80 GB |
 | p5en | H200 | 141 GB |
@@ -348,7 +348,7 @@ Common examples include:
 + Token throughput per node
 
 ### Request queue length
-<a name="request-queue-length.7ead13de-d104-57e0-a2f3-94da1c4392a9"></a>
+<a name="request-queue-length.d871e2b1-53b7-5d47-9d66-996f6c46275d"></a>
 
 Queue depth is often one of the most useful indicators of insufficient capacity.
 

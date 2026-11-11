@@ -39,6 +39,7 @@ The following actions are supported:
 +  [GetOmniDashboard](API_GetOmniDashboard.md)
 +  [GetSpace](API_GetSpace.md)
 +  [GetSpaceCredentialsForOrganization](API_GetSpaceCredentialsForOrganization.md)
++  [GetSpaceDataAccess](API_GetSpaceDataAccess.md)
 +  [GetTelemetryQueryResults](API_GetTelemetryQueryResults.md)
 +  [GetView](API_GetView.md)
 +  [ListAccessGrants](API_ListAccessGrants.md)

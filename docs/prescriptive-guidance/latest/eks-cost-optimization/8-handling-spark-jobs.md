@@ -18,7 +18,7 @@ Implement Spark-specific node management and scheduling optimizations. Refer to 
 For sample commands to create dynamic allocation scales executors based on pending tasks,see [this GitHub repository](https://github.com/aws-samples/sample-eks-cost-optimization-guide/blob/main/09-spark-jobs-optimization/spark-cost-optimized-config.yaml)
 
 ### Spark job lifecycle optimization
-<a name="spark-job-lifecycle-optimization.0ce341f5-d3ea-5553-ace0-6379dc3a1cb1"></a>
+<a name="spark-job-lifecycle-optimization.dd2d5624-5473-52a0-b3ff-95fe8fda258f"></a>
 
 |
 |

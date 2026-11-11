@@ -11,13 +11,13 @@ The following table provides an overview of agentic protocols that enable multip
 |
 | Protocol | Ideal for | Considerations |
 | --- |--- |--- |
-| [MCP inter-agent communication](https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/) | Organizations seeking flexible agent collaboration patterns | + An extension to the Model Context Protocol (MCP) proposed by AWS that builds on its existing foundation for agent-to-agent communication<br />+ Enables seamless agent collaboration with OAuth-based security |
-| [A2A protocol](https://github.com/a2aproject/A2A) | Cross-platform agent ecosystems | + Backed by Google<br />+ Newer standard with more limited adoption compared to MCP |
+| [MCP inter-agent communication](https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/) | Organizations seeking flexible agent collaboration patterns | + An extension to the Model Context Protocol (MCP) proposed by AWS that builds on its existing foundation for agent-to-agent communication<br />+ Enables agent collaboration with OAuth-based authentication and authorization |
+| [Agent2Agent (A2A) protocol](https://github.com/a2aproject/A2A) | Agent collaboration across different frameworks and vendors | + Backed by Google<br />+ Newer standard with more limited adoption compared to MCP |
 
 ## Deciding among protocol options
-<a name="deciding-among-protocol-options.38a4e70b-e8c9-5317-967c-d93f902ed4b3"></a>
+<a name="deciding-among-protocol-options.5d014a73-1fe1-54a1-a56a-060c110970c8"></a>
 
-When implementing agent-to-agent communication, match your specific communication requirements with the appropriate protocol capabilities. Different interaction patterns require different protocol features. The following table outlines common communication patterns and recommends the most suitable protocol choices for each scenario.
+When implementing agent-to-agent communication, match your specific communication requirements with protocol capabilities. Different interaction patterns require different protocol features. The following table outlines common communication patterns and suggests protocol choices for each scenario.
 
 |
 |
@@ -36,5 +36,5 @@ Beyond communication patterns, several technical and organizational factors can 
 | --- |--- |--- |
 | Security model | Authentication and authorization requirements | OAuth 2.0 in MCP |
 | Deployment environment | Where agents will run and communicate | Distributed or single machine |
-| Ecosystem compatibility | Integration with existing agent frameworks | LangChain or Strands Agents |
+| Framework compatibility | Integration with existing agent frameworks | LangChain or Strands Agents |
 | Scalability needs | Expected growth in agent interactions | Streaming capabilities of MCP |

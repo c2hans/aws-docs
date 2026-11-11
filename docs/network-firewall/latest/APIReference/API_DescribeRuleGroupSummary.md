@@ -50,7 +50,7 @@ The type of rule group you want a summary for. This is a required field.
 Valid value: `STATEFUL`
 Note that `STATELESS` exists but is not currently supported. If you provide `STATELESS`, an exception is returned.
 Type: String
-Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN`
+Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN | FIREWALL | IPS`
 Required: No
 
 ## Response Syntax

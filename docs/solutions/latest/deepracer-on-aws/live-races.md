@@ -16,7 +16,7 @@ Live races appear alongside community races on the **Races** page, distinguished
 ## Entering a live race
 <a name="entering-a-live-race"></a>
 
-Racers enter a live race by submitting a [trained model](train-and-evaluate-models.md), using the same workflow as community races. From the **Races** page, click on the "See race details" button from the live race card to view its details, then click **Enter race**. Select a model from the list of eligible trained models and confirm your submission.
+Racers enter a live race by submitting a [trained model](train-and-evaluate-models.md), using the same workflow as community races. From the **Races** page, click on the "See race details" button from the live race card to view its details, then click **Enter race**. Select a model from the list of eligible trained models, choose its **Model checkpoint** (**Best** or **Last**), and confirm your submission.
 
 ![Live race details page](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_details.png)
 

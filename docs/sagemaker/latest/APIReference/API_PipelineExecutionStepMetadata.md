@@ -98,6 +98,11 @@ The metadata for the ForEach step execution.
 Type: [ForEachStepMetadata](API_ForEachStepMetadata.md) object
 Required: No
 
+ ** HubContent **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-HubContent"></a>
+The metadata for the HubContent step execution.
+Type: [HubContentStepMetadata](API_HubContentStepMetadata.md) object
+Required: No
+
  ** InferenceComponent **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-InferenceComponent"></a>
  The metadata of the inference component used in pipeline execution step.
 Type: [InferenceComponentMetadata](API_InferenceComponentMetadata.md) object

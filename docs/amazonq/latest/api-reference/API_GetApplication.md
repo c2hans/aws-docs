@@ -162,7 +162,7 @@ Settings for whether end users can create and use Amazon Q Apps in the web exper
 Type: [QAppsConfiguration](API_QAppsConfiguration.md) object
 
  ** [quickSightConfiguration](#API_GetApplication_ResponseSyntax) **   <a name="qbusiness-GetApplication-response-quickSightConfiguration"></a>
-The Amazon Quick authentication configuration for the Amazon Q Business application.
+The AWS Quick authentication configuration for the Amazon Q Business application.
 Type: [QuickSightConfiguration](API_QuickSightConfiguration.md) object
 
  ** [roleArn](#API_GetApplication_ResponseSyntax) **   <a name="qbusiness-GetApplication-response-roleArn"></a>

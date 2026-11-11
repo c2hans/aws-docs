@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/index.html
 title: 'AWS Decision Guides'
 canonical_url: https://docs.aws.amazon.com/decision-guides/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # AWS Decision Guides
@@ -21,6 +21,7 @@ Decision guides provide structured comparisons and guidance to help you evaluate
 
 ## Recently updated
 
+- [Choosing an AWS container service](/decision-guides/latest/decision-guides/choosing-aws-container-service.html): Evaluate container orchestration options and choose between managed services for running containerized applications. **Last updated: November 2026**
 - [Choosing a vector database for your generative AI applications](/decision-guides/latest/decision-guides/vector-database-guide.html): Compare AWS vector database and vector search options for generative AI workloads across managed RAG, search, operational databases, in-memory, and low-cost storage. **Last updated: October 2026**
 - [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: October 2026**
 - [Choosing an AWS serverless service](/decision-guides/latest/decision-guides/choosing-aws-serverless-service.html): Evaluate serverless compute, API, integration, data, and deployment services to choose the right combination for your workload. **Last updated: September 2026**

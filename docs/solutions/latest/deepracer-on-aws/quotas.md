@@ -39,10 +39,12 @@ As a result, it is recommended to consider in advance the number of jobs that ma
 
 1. When you are ready to submit the request, click **Request**.
 
-#### SageMaker managed warm pools (live race events)
-<a name="sagemaker-managed-warm-pools-live-race-events"></a>
+#### SageMaker managed warm pools (evaluations and races)
+<a name="sagemaker-warm-pools"></a>
 
-If you plan to host live race events and want to reduce per-evaluation startup latency, requesting an increase for the SageMaker managed warm pool quota is recommended. The default quota is 0, meaning every evaluation incurs a cold start without an increase. If you decide that you would like to request a service quota increase, you may do so by:
+DeepRacer on AWS keeps the instance used by an evaluation or race submission (community or live) warm, so that the next evaluation or race submission, from any racer, can start on it without waiting for a new instance and for the simulation image to download. This reduces the startup time from about 2–3 minutes to about 10–15 seconds. Training jobs are not kept warm.
+
+If you plan to host live race events, or expect many evaluations and race submissions in a short period (i.e. classes, workshops etc.), requesting an increase for the SageMaker managed warm pool quota is recommended. The default quota is 0, meaning every evaluation incurs a cold start without an increase. If you decide that you would like to request a service quota increase, you may do so by:
 
 1. Accessing the **AWS Management Console**
 
@@ -57,7 +59,10 @@ If you plan to host live race events and want to reduce per-evaluation startup l
 1. When you are ready to submit the request, click **Request**.
 
 **Note**
-Warm pool instances remain allocated for up to 1 hour after the last evaluation completes. If another evaluation starts within that window, the warm pool is reused and the timer resets. Standard SageMaker instance pricing applies while the warm pool is active.
+Warm pool instances remain allocated for up to 1 hour after the last evaluation or race submission completes. If another evaluation or race submission starts within that window, the warm pool is reused and the timer resets. Standard SageMaker instance pricing applies while the warm pool is active, so an evaluation or race submission that is not followed by another can keep an instance billed for up to 1 hour.
+
+**Note**
+Warm pool instances count toward the **ml.c7i.4xlarge for training job usage** quota described above. The warm pool quota is part of that limit, not added to it. While instances are kept warm, fewer new training jobs can start. If no capacity is available, a new training job does not start and the racer is asked to try again later.
 
 ### AWS Lambda functions
 <a name="aws-lambda-functions-2"></a>

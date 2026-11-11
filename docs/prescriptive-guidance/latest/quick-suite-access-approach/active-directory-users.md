@@ -6,12 +6,12 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 <a name="active-directory-users"></a>
 
 **Note**
-This access approach is available only for the Enterprise edition of Amazon Quick. For more information, see [User management for Enterprise edition](https://docs.aws.amazon.com/quicksuite/latest/userguide/editions.html#edition-user-management-enterprise) in the Quick documentation.
+This access approach is available only for the Enterprise edition of AWS Quick. For more information, see [User management for Enterprise edition](https://docs.aws.amazon.com/quicksuite/latest/userguide/editions.html#edition-user-management-enterprise) in the Quick documentation.
 
 ![Architecture diagram of an Active Directory user accessing Quick Suite.](https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite-access-approach/images/guide-img/ec03a023-a3ad-4a10-93bb-22dcf4ea49a5/images/83d22259-07c3-4bbe-8756-7a6b79764a07.png)
 
 The following are the characteristics of this architecture and access approach:
-+ The Amazon Quick user record is linked to the user in Active Directory.
++ The AWS Quick user record is linked to the user in Active Directory.
 + You assign Quick admin, author, or reader access to Active Directory groups.
 + Quick access is provisioned based on the mapped Active Directory group memberships.
 + User passwords are managed in Active Directory.
@@ -36,7 +36,7 @@ This is not the only access approach that uses Active Directory. In this approac
 ## Prerequisites
 <a name="ad-prereqs"></a>
 + Enterprise edition of Quick
-+ Permissions to subscribe to Quick, create users, and manage Active Directory (see [IAM identity-based policies for Amazon Quick: all access for Enterprise edition](https://docs.aws.amazon.com/quicksuite/latest/userguide/iam-policy-examples.html#security_iam_id-based-policy-examples-all-access-enterprise-edition))
++ Permissions to subscribe to Quick, create users, and manage Active Directory (see [IAM identity-based policies for AWS Quick: all access for Enterprise edition](https://docs.aws.amazon.com/quicksuite/latest/userguide/iam-policy-examples.html#security_iam_id-based-policy-examples-all-access-enterprise-edition))
 
 ## Configuring access for Active Directory users
 <a name="ad-configuration"></a>

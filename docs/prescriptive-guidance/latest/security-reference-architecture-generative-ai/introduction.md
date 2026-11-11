@@ -18,7 +18,7 @@ Depending on your use case, you can use a managed service where the provider han
 This guide focuses on the middle layer, which provides access to all the models and tools you need to build and scale generative AI applications and applications on AWS. Although AI (machine learning and LLMs) can be used for security purposes, this guide focuses on the foundational security controls to protect AI workloads deployed on AWS.
 
 ## Intended audience
-<a name="intended-audience.3509e8c7-6c15-55c2-b32a-bd9dbbc00e76"></a>
+<a name="intended-audience.6209d9e9-38ac-5230-8212-afb360a404b8"></a>
 
 The intended audience for this guidance is security professionals, architects, and developers who are responsible for securely integrating generative AI capabilities into their organizations and applications using AWS services.
 
@@ -28,10 +28,3 @@ The intended audience for this guidance is security professionals, architects, a
 + Generative AI capabilities
 + Integrating a traditional cloud workload with Amazon Bedrock
 + Conclusion
-
-### Attachments
-<a name="attachments-a349f18f-a9fd-43a3-9a48-27534bf6412a"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

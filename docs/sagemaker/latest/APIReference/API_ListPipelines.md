@@ -14,6 +14,7 @@ Gets a list of pipelines.
 {
    "CreatedAfter": {{number}},
    "CreatedBefore": {{number}},
+   "ManagedBy": "{{string}}",
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "PipelineNamePrefix": "{{string}}",
@@ -37,6 +38,12 @@ Required: No
  ** [CreatedBefore](#API_ListPipelines_RequestSyntax) **   <a name="sagemaker-ListPipelines-request-CreatedBefore"></a>
 A filter that returns the pipelines that were created before a specified time.
 Type: Timestamp
+Required: No
+
+ ** [ManagedBy](#API_ListPipelines_RequestSyntax) **   <a name="sagemaker-ListPipelines-request-ManagedBy"></a>
+Filters the pipelines by who manages them. Specify `AWS` to return pipelines that AWS manages, or `CUSTOMER` to return pipelines that you created. If you don't specify a value, the response includes both.
+Type: String
+Valid Values: `AWS | CUSTOMER`
 Required: No
 
  ** [MaxResults](#API_ListPipelines_RequestSyntax) **   <a name="sagemaker-ListPipelines-request-MaxResults"></a>

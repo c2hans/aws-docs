@@ -139,7 +139,7 @@ The name of the new notebook instance.
 The platform identifier of the notebook instance runtime environment. The default value is `notebook-al2023-v1`.
 *Required*: No
 *Type*: String
-*Pattern*: `(notebook-al1-v1|notebook-al2-v1|notebook-al2-v2|notebook-al2-v3|notebook-al2023-v1)`
+*Pattern*: `(notebook-al1-v1|notebook-al2-v1|notebook-al2-v2|notebook-al2-v3|notebook-al2023-v1|notebook-al2023-v2)`
 *Minimum*: `0`
 *Maximum*: `20`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

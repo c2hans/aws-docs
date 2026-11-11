@@ -63,6 +63,7 @@ Required: Yes
             "instanceType": "string"
          }
       ],
+      "launchTemplateMode": "string",
       "modifiedAt": "string",
       "name": "string",
       "nodeLifecycleActions": {
@@ -101,6 +102,7 @@ Required: Yes
          "maxInstanceCount": number,
          "minInstanceCount": number
       },
+      "securityGroupIds": [ "string" ],
       "slurmConfiguration": {
          "gresCustomSettings": [
             {
@@ -118,6 +120,7 @@ Required: Yes
       "spotOptions": {
          "allocationStrategy": "string"
       },
+      "sshKeyName": "string",
       "status": "string",
       "subnetIds": [ "string" ]
    }

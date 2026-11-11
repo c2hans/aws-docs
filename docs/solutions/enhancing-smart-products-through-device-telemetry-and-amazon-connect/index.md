@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/enhancing-smart-products-throu
 title: 'Guidance on Enhancing Smart Products through Device Telemetry and Amazon Connect Customer Customer'
 canonical_url: https://docs.aws.amazon.com/solutions/enhancing-smart-products-through-device-telemetry-and-amazon-connect/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Guidance on Enhancing Smart Products through Device Telemetry and Amazon Connect Customer Customer
@@ -50,7 +50,7 @@ These technical details feature an architecture diagram to illustrate how to eff
 1. **Step 11**: Users of the Control UI App can Start an Amazon Connect Customer Support Session within the Device Details page.
 1. **Step 12**: A dedicated AWS Lambda function collects the latest Telemetry report, alerts and Deep Dive Info and adds it as context to the built-up Amazon Connect Customer Session.
 1. **Step 13**: A Call Center 1st Line Agent (human or AI based) has all high-level Device details at hand within the Amazon Connect Customer Chat Interface. Specialist Persona, working next to 1st line agents, can work with a statistical Deep Dive Analysis.
-1. **Step 14**: Support SMEs and Support Specialists might use Amazon Quick Suite, to conduct AI guided Analytics on the Telemetry and Diagnostics Datasets.
+1. **Step 14**: Support SMEs and Support Specialists might use AWS Quick Suite, to conduct AI guided Analytics on the Telemetry and Diagnostics Datasets.
 ## Deploy with confidence
 
 Everything you need to launch this Guidance in your account is right here.

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-connect-to-datasources.html
 ---
 
-# Data source connectivity issues for Amazon Quick Sight
+# Data source connectivity issues for AWS Quick Sight
 <a name="troubleshoot-connect-to-datasources"></a>
 
 Use the following section to help you troubleshoot connections to data sources. Before you continue, verify that your database is currently available. Also, verify that you have the correct connection information and valid credentials.

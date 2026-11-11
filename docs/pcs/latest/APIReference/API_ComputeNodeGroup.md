@@ -25,11 +25,6 @@ The date and time the resource was created.
 Type: Timestamp
 Required: Yes
 
- ** customLaunchTemplate **   <a name="PCS-Type-ComputeNodeGroup-customLaunchTemplate"></a>
-An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
-Type: [CustomLaunchTemplate](API_CustomLaunchTemplate.md) object
-Required: Yes
-
  ** iamInstanceProfileArn **   <a name="PCS-Type-ComputeNodeGroup-iamInstanceProfileArn"></a>
 The Amazon Resource Name (ARN) of the IAM instance profile used to pass an IAM role when launching EC2 instances. The role contained in your instance profile must have the `pcs:RegisterComputeNodeGroupInstance` permission and the role name must start with `AWSPCS` or must have the path `/aws-pcs/`. For more information, see [IAM instance profiles for AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/security-instance-profiles.html) in the * AWS PCS User Guide*.
 Type: String
@@ -79,14 +74,28 @@ Pattern: `subnet-\w{8,17}`
 Required: Yes
 
  ** amiId **   <a name="PCS-Type-ComputeNodeGroup-amiId"></a>
-The ID of the Amazon Machine Image (AMI) that AWS PCS uses to launch instances. If not provided, AWS PCS uses the AMI ID specified in the custom launch template.
+The ID of the Amazon Machine Image (AMI) that AWS PCS uses to launch instances. If not present, AWS PCS uses the AMI ID specified in the custom launch template.
 Type: String
 Pattern: `ami-[a-z0-9]+`
+Required: No
+
+ ** customLaunchTemplate **   <a name="PCS-Type-ComputeNodeGroup-customLaunchTemplate"></a>
+The custom Amazon EC2 launch template associated with the compute node group. This value is present when `launchTemplateMode` is `CUSTOM` and isn't present when `launchTemplateMode` is `MANAGED`.
+Type: [CustomLaunchTemplate](API_CustomLaunchTemplate.md) object
 Required: No
 
  ** errorInfo **   <a name="PCS-Type-ComputeNodeGroup-errorInfo"></a>
 The list of errors that occurred during compute node group provisioning.
 Type: Array of [ErrorInfo](API_ErrorInfo.md) objects
+Required: No
+
+ ** launchTemplateMode **   <a name="PCS-Type-ComputeNodeGroup-launchTemplateMode"></a>
+Indicates whether the compute node group uses a custom launch template or a launch template that AWS PCS manages. The default value is `CUSTOM`.
+Valid values:
++  `CUSTOM` – The compute node group uses the launch template in `customLaunchTemplate`.
++  `MANAGED` – AWS PCS creates and manages the launch template.
+Type: String
+Valid Values: `CUSTOM | MANAGED`
 Required: No
 
  ** nodeLifecycleActions **   <a name="PCS-Type-ComputeNodeGroup-nodeLifecycleActions"></a>
@@ -100,6 +109,12 @@ Type: String
 Valid Values: `ONDEMAND | SPOT | CAPACITY_BLOCK | INTERRUPTIBLE_CAPACITY_RESERVATION`
 Required: No
 
+ ** securityGroupIds **   <a name="PCS-Type-ComputeNodeGroup-securityGroupIds"></a>
+The IDs of the EC2 security groups configured directly on the compute node group. AWS PCS uses these security groups instead of the security groups in the custom launch template. This value isn't present if security groups aren't configured directly on the compute node group. In that case, AWS PCS uses the security groups in the custom launch template.
+Type: Array of strings
+Pattern: `sg-\w{8,17}`
+Required: No
+
  ** slurmConfiguration **   <a name="PCS-Type-ComputeNodeGroup-slurmConfiguration"></a>
 Additional options related to the Slurm scheduler.
 Type: [ComputeNodeGroupSlurmConfiguration](API_ComputeNodeGroupSlurmConfiguration.md) object
@@ -108,6 +123,12 @@ Required: No
  ** spotOptions **   <a name="PCS-Type-ComputeNodeGroup-spotOptions"></a>
 Additional configuration when you specify `SPOT` as the `purchaseOption` for the `CreateComputeNodeGroup` API action.
 Type: [SpotOptions](API_SpotOptions.md) object
+Required: No
+
+ ** sshKeyName **   <a name="PCS-Type-ComputeNodeGroup-sshKeyName"></a>
+The name of the EC2 key pair configured directly on the compute node group. AWS PCS uses this key pair instead of the key pair in the custom launch template. This value isn't present if a key pair isn't configured directly on the compute node group. In that case, AWS PCS uses the key pair in the custom launch template, if one is specified.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
 ## See Also

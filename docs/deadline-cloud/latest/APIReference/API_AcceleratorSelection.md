@@ -26,11 +26,12 @@ Required: Yes
 Specifies the runtime driver to use for the GPU accelerator. You must use the same runtime for all GPUs in a fleet.
 You can choose from the following runtimes:
 +  `latest` - Use the latest runtime available for the chip. If you specify `latest` and a new version of the runtime is released, the new version of the runtime is used.
++  `grid:r595` - [NVIDIA vGPU software 20](https://docs.nvidia.com/vgpu/20.0/index.html)
 +  `grid:r580` - [NVIDIA vGPU software 19](https://docs.nvidia.com/vgpu/19.0/index.html)
 If you don't specify a runtime, AWS Deadline Cloud uses `latest` as the default. However, if you have multiple accelerators and specify `latest` for some and leave others blank, AWS Deadline Cloud raises an exception.
-All accelerator types support `grid:r580`.
+All accelerator types support `grid:r595` and `grid:r580`.
 All accelerators in a fleet must use the same runtime version. You cannot mix different runtime versions within a single fleet.
-When you specify `latest`, it resolves to `grid:r580` for all currently supported accelerators.
+When you specify `latest`, it resolves to `grid:r595` for all currently supported accelerators.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Required: No

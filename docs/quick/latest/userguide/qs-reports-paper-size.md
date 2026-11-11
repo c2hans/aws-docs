@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qs-reports-paper-
 # Changing paper size, margins, and orientation
 <a name="qs-reports-paper-size"></a>
 
-After you create a pixel perfect report in Amazon Quick Sight, you can change the report format, orientation, and margins from the **Analysis settings** menu whenever you want.
+After you create a pixel perfect report in AWS Quick Sight, you can change the report format, orientation, and margins from the **Analysis settings** menu whenever you want.
 
 ## To change the paper size of a pixel perfect report
 <a name="paginated-reports-paper-size"></a>

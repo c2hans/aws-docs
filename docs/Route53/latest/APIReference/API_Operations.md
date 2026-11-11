@@ -181,6 +181,7 @@ The following actions are supported by Route 53 Profiles:
 +  [ListTagsForResource](API_route53profiles_ListTagsForResource.md)
 +  [TagResource](API_route53profiles_TagResource.md)
 +  [UntagResource](API_route53profiles_UntagResource.md)
++  [UpdateProfileAssociation](API_route53profiles_UpdateProfileAssociation.md)
 +  [UpdateProfileResourceAssociation](API_route53profiles_UpdateProfileResourceAssociation.md)
 
 The following actions are supported by Amazon Route 53 Resolver:

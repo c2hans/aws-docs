@@ -60,6 +60,8 @@ AWS Identity and Access Management (IAM) roles are used to grant specific permis
 
 1. User roles: Allows for granular access control to be applied by user type.
 
+1. Device activation roles: Allow AWS Systems Manager to manage the vehicles and timers that you activate. Vehicles use a role with the Systems Manager core permissions only. Raspberry Pi timers use a separate role that adds permission to publish to the solution’s timer topics in AWS IoT Core, and to no other topic.
+
 These roles follow the principle of least privilege, granting only the permissions necessary for each component to perform its functions.
 
 ### Log retention and monitoring
@@ -149,11 +151,11 @@ DeepRacer on AWS and its dependencies are continuously monitored by AWS for secu
 ### Mitigate OS vulnerabilities with Ubuntu Pro
 <a name="mitigate-vulns-with-ubuntu-pro"></a>
 
-DeepRacer on AWS uses a container image that is based on Ubuntu 24.04 and it is possible for Common Vulnerabilities and Exposures “CVEs” to appear. Customers may at their sole option, obtain an [Ubuntu Pro 24.04](https://ubuntu.com/pro) license which may provide additional security assurance and follow the provided instructions linked below to modify the solution to use Ubuntu Pro 24.04 as the operating system for applicable containers.
+DeepRacer on AWS uses a container image that is based on Ubuntu 26.04 and it is possible for Common Vulnerabilities and Exposures “CVEs” to appear. Customers may at their sole option, obtain an [Ubuntu Pro 26.04](https://ubuntu.com/pro) license which may provide additional security assurance and follow the provided instructions linked below to modify the solution to use Ubuntu Pro 26.04 as the operating system for applicable containers.
 
-Choosing to obtain and use Ubuntu Pro 24.04 is solely at the customer’s option and is not required to use any features of DeepRacer on AWS. Obtaining the Ubuntu Pro 24.04 license may only provide access to patched versions of core Ubuntu packages and may not provide access to patched versions of third-party or open-source dependencies. Use of Ubuntu Pro 24.04 may reduce the number of CVEs reported against core packages by providing access to patched versions and does not guarantee a reduction of CVEs at any given time.
+Choosing to obtain and use Ubuntu Pro 26.04 is solely at the customer’s option and is not required to use any features of DeepRacer on AWS. Obtaining the Ubuntu Pro 26.04 license may only provide access to patched versions of core Ubuntu packages and may not provide access to patched versions of third-party or open-source dependencies. Use of Ubuntu Pro 26.04 may reduce the number of CVEs reported against core packages by providing access to patched versions and does not guarantee a reduction of CVEs at any given time.
 
-Customers are solely responsible for securing and complying with any Ubuntu Pro 24.04 licenses and AWS is not responsible for any licensing or support of Ubuntu Pro 24.04. For instructions on implementing Ubuntu Pro 24.04, please see below.
+Customers are solely responsible for securing and complying with any Ubuntu Pro 26.04 licenses and AWS is not responsible for any licensing or support of Ubuntu Pro 26.04. For instructions on implementing Ubuntu Pro 26.04, please see below.
 
 #### Activating Ubuntu Pro
 <a name="activating-ubuntu-pro"></a>

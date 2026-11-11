@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/autograph.html
 # Using AutoGraph
 <a name="autograph"></a>
 
-AutoGraph isn't a visual type itself, but instead lets you tell Amazon Quick to choose the visual type for you. When you create a visual by choosing AutoGraph and then selecting fields, Amazon Quick uses the most appropriate visual type for the number and data types of the fields you select.
+AutoGraph isn't a visual type itself, but instead lets you tell AWS Quick to choose the visual type for you. When you create a visual by choosing AutoGraph and then selecting fields, AWS Quick uses the most appropriate visual type for the number and data types of the fields you select.
 
 ## Creating a visual using AutoGraph
 <a name="create-autograph"></a>

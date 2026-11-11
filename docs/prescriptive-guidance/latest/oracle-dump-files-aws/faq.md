@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 # FAQ
 <a name="faq"></a>
 
-Some quotas, limitations, and restrictions are associated with the services used in this process.
+The services in this process have quotas and limitations that you should review before you begin.
 
 ## What are the restrictions and limitations of Amazon S3?
 <a name="q-1"></a>

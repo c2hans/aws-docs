@@ -38,6 +38,12 @@ Required: Yes
    "Jobs": [
       {
          "AllocatedCapacity": number,
+         "AutoUpgradeMetadata": {
+            "AnalysisId": "string",
+            "SourceVersion": "string",
+            "Status": "string",
+            "TargetVersion": "string"
+         },
          "CodeGenConfigurationNodes": {
             "string" : {
                "Aggregate": {

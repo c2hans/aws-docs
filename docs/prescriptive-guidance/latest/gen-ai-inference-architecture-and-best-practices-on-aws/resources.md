@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 + [Amazon SageMaker HyperPod workshop](https://catalog.workshops.aws/sagemaker-hyperpod/en-US) (AWS Workshop)
 
 ## Other resources
-<a name="other-resources.06462393-2600-5fae-a7bb-0989b1b9b0bb"></a>
+<a name="other-resources.98602f59-042c-5f29-a017-d5cb1061ab18"></a>
 + [EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test](https://arxiv.org/html/2503.01840v1) (arXiv)
-+ [An Introduction to Speculative Decoding for Reducing Latency in AI Inference](https://developer.nvidia.com/blog/an-introduction-to-speculative-decoding-for-reducing-latency-in-ai-inference/) (Nvidia)
++ [An Introduction to Speculative Decoding for Reducing Latency in AI Inference](https://developer.nvidia.com/blog/an-introduction-to-speculative-decoding-for-reducing-latency-in-ai-inference/) (NVIDIA)
 + [Overview of quantization techniques](https://huggingface.co/docs/transformers/quantization/overview) (Hugging Face)

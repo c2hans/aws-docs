@@ -22,6 +22,9 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::NetworkManager::SiteToSiteVpnAttachment",
   "Properties" : {
       "[CoreNetworkId](#cfn-networkmanager-sitetositevpnattachment-corenetworkid)" : {{String}},
+      "[NatGatewayRules](#cfn-networkmanager-sitetositevpnattachment-natgatewayrules)" : {{[ NatRule, ... ]}},
+      "[NatGatewaySupport](#cfn-networkmanager-sitetositevpnattachment-natgatewaysupport)" : {{String}},
+      "[NatSystemRouteSupport](#cfn-networkmanager-sitetositevpnattachment-natsystemroutesupport)" : {{Boolean}},
       "[NetworkFunctionGroupName](#cfn-networkmanager-sitetositevpnattachment-networkfunctiongroupname)" : {{String}},
       "[RoutingPolicyLabel](#cfn-networkmanager-sitetositevpnattachment-routingpolicylabel)" : {{String}},
       "[Tags](#cfn-networkmanager-sitetositevpnattachment-tags)" : {{[ Tag, ... ]}},
@@ -37,6 +40,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::NetworkManager::SiteToSiteVpnAttachment
 Properties:
   [CoreNetworkId](#cfn-networkmanager-sitetositevpnattachment-corenetworkid): {{String}}
+  [NatGatewayRules](#cfn-networkmanager-sitetositevpnattachment-natgatewayrules): {{
+    - NatRule}}
+  [NatGatewaySupport](#cfn-networkmanager-sitetositevpnattachment-natgatewaysupport): {{String}}
+  [NatSystemRouteSupport](#cfn-networkmanager-sitetositevpnattachment-natsystemroutesupport): {{Boolean}}
   [NetworkFunctionGroupName](#cfn-networkmanager-sitetositevpnattachment-networkfunctiongroupname): {{String}}
   [RoutingPolicyLabel](#cfn-networkmanager-sitetositevpnattachment-routingpolicylabel): {{String}}
   [Tags](#cfn-networkmanager-sitetositevpnattachment-tags): {{
@@ -52,6 +59,26 @@ Property description not available.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`NatGatewayRules`  <a name="cfn-networkmanager-sitetositevpnattachment-natgatewayrules"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [NatRule](aws-properties-networkmanager-sitetositevpnattachment-natrule.md)
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NatGatewaySupport`  <a name="cfn-networkmanager-sitetositevpnattachment-natgatewaysupport"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `ENABLE | DISABLE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NatSystemRouteSupport`  <a name="cfn-networkmanager-sitetositevpnattachment-natsystemroutesupport"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkFunctionGroupName`  <a name="cfn-networkmanager-sitetositevpnattachment-networkfunctiongroupname"></a>
 The name of the network function group.

@@ -15,7 +15,7 @@ In the following list, the required parameters are described first.
 
  ** RowLevelPermissionTags **   <a name="QS-Type-SnapshotAnonymousUser-RowLevelPermissionTags"></a>
 The tags to be used for row-level security (RLS). Make sure that the relevant datasets have RLS tags configured before you start a snapshot export job. You can configure the RLS tags of a dataset with a `DataSet$RowLevelPermissionTagConfiguration` API call.
-These are not the tags that are used for AWS resource tagging. For more information on row level security in Amazon Quick Sight, see [Using Row-Level Security (RLS) with Tags](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-rls-tags.html)in the *Amazon Quick User Guide*.
+These are not the tags that are used for AWS resource tagging. For more information on row level security in Amazon Quick Sight, see [Using Row-Level Security (RLS) with Tags](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-rls-tags.html)in the * AWS Quick User Guide*.
 Type: Array of [SessionTag](API_SessionTag.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Required: No

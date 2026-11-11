@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 <a name="amazon-bedrock"></a>
 
 ## Amazon Bedrock
-<a name="amazon-bedrock.1502b2aa-fcd4-5bd7-861c-ae038b712a6f"></a>
+<a name="amazon-bedrock.d465481c-ec1e-51cd-9360-79cbffcb0f37"></a>
 
 [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) is a fully managed service that offers a choice of industry leading foundation models (FMs) along with a broad set of capabilities that you need to build generative AI applications and agents. Amazon Bedrock provides foundation model access, model customization, agent development, safety controls, and cost optimization — all behind a unified API. Since Amazon Bedrock is serverless, you don't have to manage any infrastructure, and you can securely integrate and deploy generative AI capabilities directly into your applications.
 
@@ -16,7 +16,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 AWS manages the complete infrastructure lifecycle, including provisioning, scaling, and maintenance. This capability allows teams to focus on application development.
 
 ### Pricing model
-<a name="pricing-model.ea0604fd-cdba-597a-ac27-01fba17b3cd7"></a>
+<a name="pricing-model.030d96e4-0cae-537e-834e-8542ab9845d7"></a>
 
 Amazon Bedrock offers flexible pricing based on API consumption. Organizations pay for input and output tokens processed during on-demand usage, or they can use and scale [imported FMs](https://docs.aws.amazon.com/bedrock/latest/userguide/import-pre-trained-model.html) measured in capacity units.
 
@@ -65,7 +65,7 @@ These features are available across the inference APIs:
 [Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/) is the safeguard layer that provides six configurable filter types that operate on inputs, outputs, or both. Guardrails can block up to 88% of harmful content, and the Automated Reasoning checks can identify correct responses with up to 99% accuracy. Guardrails can be applied during a regular inference call or invoked independently via the ApplyGuardrail API to protect non-Bedrock model traffic.
 
 ### Supported clients and protocols
-<a name="supported-clients-and-protocols.ef3c13af-adab-5093-905c-933cad4d3bdd"></a>
+<a name="supported-clients-and-protocols.2031fd46-165f-5a5b-b449-52f728359d51"></a>
 
 Applications can access models in Amazon Bedrock through the [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html), [Converse](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html) API. Applications can also connect to Amazon Bedrock via model provider specific APIs [Responses API](https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-mantle.html), Chat Completions API or [Messages API](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-messages-api.html). Further integration using the [AWS SDK](https://aws.amazon.com/what-is/sdk/) is also possible. These approaches provide straightforward integration paths for various application architectures. You can also use third-party open source libraries like [Strands Agents](https://strandsagents.com/docs/user-guide/concepts/model-providers/amazon-bedrock/) or [Crew AI](https://docs.crewai.com/en/concepts/llms#aws-bedrock) to interact with Amazon Bedrock. You can also integrate third-party applications like Claude Code and CoWork from Anthropic or Codex from OpenAI.
 
@@ -101,7 +101,7 @@ Additional features available across endpoints: structured output (validated JSO
 | Converse API | bedrock-runtime | Bedrock-native, model-agnostic |
 
 ##### Client and Tooling Compatibility
-<a name="client-and-tooling-compatibility.9325670d-56fb-5b8f-adaf-1265106602a5"></a>
+<a name="client-and-tooling-compatibility.fe9417ad-c783-5b32-b98d-806480c54d84"></a>
 
 Because Bedrock exposes the OpenAI Responses and Anthropic Messages wire formats on the Mantle endpoint — alongside the native Converse and Invoke APIs on bedrock-runtime — many existing developer tools can route their inference through Bedrock with a configuration change rather than a code change. The qualifier matters: the client has to let you set the base URL (or have explicit Bedrock support) and accept Bedrock-issued credentials.
 
@@ -157,7 +157,7 @@ Cross-region inference (CRIS) profiles let Bedrock route requests across AWS Reg
 [Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/) is the technical-safeguard layer that AWS Prescriptive Guidance recommends as part of an RAI program. It provides six configurable filter types that operate on inputs, outputs, or both. Guardrails can block up to 88% of harmful content, and the Automated Reasoning checks can identify correct responses with up to 99% accuracy. Guardrails can be applied during a regular inference call or invoked independently via the ApplyGuardrail API to protect non-Bedrock model traffic.
 
 ##### Six Filter Types
-<a name="six-filter-types.4c5cdb5f-99ab-5577-8557-f7a434696637"></a>
+<a name="six-filter-types.fff01d14-b43a-5fd0-a88d-090852477c85"></a>
 
 ##### 1. Content Filters
 <a name="1.-content-filters.4d29d57d-6f22-5c64-8212-008e3405274b"></a>
@@ -186,7 +186,7 @@ Block specific custom words or phrases (exact match). Includes a ready-to-use pr
 Block or mask PII and sensitive data (SSN, date of birth, address, etc.). Detection is probabilistic. Custom regex patterns supported for organization-specific PII.
 
 ##### 5. Contextual Grounding Checks
-<a name="5.-contextual-grounding-checks.e511a9fd-a055-5484-86f7-fe6e24bfaa00"></a>
+<a name="5.-contextual-grounding-checks.0963da85-596a-51d7-8fd1-48503c2503df"></a>
 
 Detect hallucinations in model responses that are not grounded in the provided source or are irrelevant to the user's query. Particularly useful for Retrieval Augmented Generation (RAG) applications.
 
@@ -218,12 +218,12 @@ Guardrails maps to the **technical safeguards** layer of the AWS Prescriptive Gu
 <a name="amazon-bedrock-service-tiers-and-reservations"></a>
 
 ##### Overview
-<a name="overview.ad344b35-5d81-505a-a091-00679274f0b4"></a>
+<a name="overview.eb40e3da-36c1-576d-97aa-845d4f178ec6"></a>
 
 Bedrock exposes four inference [service tiers](https://aws.amazon.com/bedrock/service-tiers/) — **Reserved**, **Priority**, **Standard**, and **Flex** — that let a workload trade off availability, latency, and cost without changing models or APIs. Three of them (Priority, Standard, Flex) are on-demand and share a single per-model quota; tier selection is just a request-time parameter. The fourth (Reserved) is a separate pool with its own SLA and minimum commitment. This sits alongside Bedrock's other capacity controls — *Provisioned Throughput* for custom and imported models, *batch inference*, and *cross-region inference* — and is usually the first lever to reach for on shared on-demand models.
 
 ##### The Four Tiers
-<a name="the-four-tiers.20dcd6dd-afed-5e4d-99de-748bbfc6d01f"></a>
+<a name="the-four-tiers.a62fc01b-d251-5fab-8438-a495566ac45d"></a>
 
 |
 |
@@ -254,12 +254,12 @@ Fastest response times at a per-token premium over Standard on-demand. No reserv
 The default. Consistent performance for content generation, analysis, and routine document workloads. If service\_tier is omitted, requests resolve to Standard. You can also explicitly set `"service_tier": "default"`.
 
 ##### Flex Tier
-<a name="flex-tier.20e36d4b-07eb-5685-abc3-f766bd923e01"></a>
+<a name="flex-tier.890f27ca-8ac7-5e20-8954-c54d8695d7df"></a>
 
 Discounted on-demand pricing in exchange for tolerating longer processing times. Aligned with the docs' guidance, the right candidates are model evaluations, content summarization, and agentic workflows where extra seconds don't change the outcome. Set `"service_tier": "flex"` on the request.
 
 ##### How Tier Selection Works
-<a name="how-tier-selection-works.212bbf84-6cd4-583a-8790-e1d9f54f83d5"></a>
+<a name="how-tier-selection-works.f69955a8-5719-5c6c-959e-026ffc30b492"></a>
 
 Tier is a per-request parameter on the runtime API:
 

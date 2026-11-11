@@ -28,7 +28,7 @@ The following steps describe the architecture:
 
 1. Cloud-based extract-transform-load (ETL) platforms extract data from non-migrated data warehouse systems. These platforms load the data into Snowflake Data Warehouse.
 
-1. [Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) receives data for analysis and reporting. Tableau and cloud business intelligence (BI) tools also receive the data.
+1. [AWS Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) receives data for analysis and reporting. Tableau and cloud business intelligence (BI) tools also receive the data.
 
 1. Cloud-based and on-premises BI tools can query OLAP data directly from Snowflake for historical reporting. These tools can also query OLTP data directly from Amazon Aurora for operational reporting.
 

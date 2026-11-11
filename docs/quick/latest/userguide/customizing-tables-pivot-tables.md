@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/customizing-tables-pivot-tables.html
 ---
 
-# Customizing tables and pivot tables in Amazon Quick Sight
+# Customizing tables and pivot tables in AWS Quick Sight
 <a name="customizing-tables-pivot-tables"></a>
 
 Reader customization for tables and pivot tables is enabled by default. You can change the visual to fit your analysis needs without requesting updates from the dashboard author. Your customizations are private – other readers of the same dashboard don't see your changes unless you share them.
@@ -93,7 +93,7 @@ You can schedule and export your customized table or pivot table in the followin
 + CSV
 + Excel
 
-This is useful for sharing data with stakeholders who don't have Amazon Quick Sight access or for offline analysis.
+This is useful for sharing data with stakeholders who don't have AWS Quick Sight access or for offline analysis.
 
 ## Embedding behavior
 <a name="customizing-tables-embedding-behavior"></a>

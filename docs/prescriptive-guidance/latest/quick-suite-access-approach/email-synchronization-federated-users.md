@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 <a name="email-synchronization-federated-users"></a>
 
 **Note**
-This feature is available only for the Enterprise edition of Amazon Quick.
+This feature is available only for the Enterprise edition of AWS Quick.
 
 When IAM users self-provision access to Quick, administrators can't control which email address the user provides to Quick. Users could enter a personal email address instead of their work email address. This might not be acceptable for some organizations. However, when you're using an identity provider to provide federated access to Quick Enterprise edition, Quick has a feature that ensures the user's email address in Quick matches the user's email address in the identity provider.
 

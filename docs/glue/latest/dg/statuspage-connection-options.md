@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/statuspage-connection-options.html
+---
+
+# Statuspage connection options
+<a name="statuspage-connection-options"></a>
+
+The following are connection options for Statuspage:
++ `ENTITY_NAME` – (Required) Used for Read. The name of the Statuspage object to read.
++ `SELECTED_FIELDS` – Default: empty (SELECT \*). Used for Read. The columns you want to select for the object.
+
+Server-side (pushed-down) filtering is not supported for Statuspage. Apply any filtering in your AWS Glue ETL job.

@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 <a name="securityandcompliance-pattern-list"></a>
 
 **Topics**
++ [Automate incident response and forensics](automate-incident-response-and-forensics.md)
 + [Automatically audit AWS security groups that allow access from public IP addresses](audit-security-groups-access-public-ip.md)
 + [Automatically remediate unencrypted Amazon RDS DB instances and clusters](automatically-remediate-unencrypted-amazon-rds-db-instances-and-clusters.md)
 + [Choose an Amazon Cognito authentication flow for enterprise applications](choose-an-amazon-cognito-authentication-flow-for-enterprise-applications.md)

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/dashboard-bookmarks-create.html
 ---
 
-# Creating bookmarks in Amazon Quick Sight
+# Creating bookmarks in AWS Quick Sight
 <a name="dashboard-bookmarks-create"></a>
 
 Use the following procedure to create a bookmark for a dashboard.

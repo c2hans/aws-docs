@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/developing-a-data-and-ai-found
 title: 'Guidance for Developing a Data & AI Foundation with Amazon SageMaker'
 canonical_url: https://docs.aws.amazon.com/solutions/developing-a-data-and-ai-foundation-with-amazon-sagemaker/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Guidance for Developing a Data & AI Foundation with Amazon SageMaker
@@ -50,7 +50,7 @@ These technical details feature an architecture diagram to illustrate how to eff
 1. **Step 9**: Data Governance: Use Amazon SageMaker Catalog to create curated data assets and to visualize data quality and data lineage. The governance policies within Amazon SageMaker are used to ensure data access and alignment with business requirements.
 1. **Step 10**: Data Collaboration: Use the producer project to produce data assets. Subscribe to data assets and consume them from the consumer project.
 1. **Step 11**: Data Analytics: Use Amazon Athena to query data from the data lake, hive, or iceberg, whether stored in an Amazon S3 bucket or table. Implement deep analytics using Amazon EMR.
-1. **Step 12**: Visualization: Use Amazon Quick Suite to generate AI powered dashboards and reports using data in Lakehouse. Amazon Quick Suite provides unified intelligence across all your enterprise data sources and bridges the critical "last-mile gap" between insights and action. With the built-in agents for research and automation in Amazon Quick Suite, you can explore data conversationally and take actions directly from dashboards.
+1. **Step 12**: Visualization: Use AWS Quick Suite to generate AI powered dashboards and reports using data in Lakehouse. AWS Quick Suite provides unified intelligence across all your enterprise data sources and bridges the critical "last-mile gap" between insights and action. With the built-in agents for research and automation in AWS Quick Suite, you can explore data conversationally and take actions directly from dashboards.
 1. **Step 13**: AI/ML: Use Amazon SageMaker AI to develop Machine learning and AI applications.
 1. **Step 14**: GenAI and Agentic AI: Amazon SageMaker Unified Studio integrates with Amazon Bedrock, providing access to a range of high-performing foundation models (FMs) that can be used as the core intelligence for your agents. Leverage features like Amazon Bedrock Knowledge Bases, Amazon Bedrock Guardrails, Amazon Bedrock AgentCore (a comprehensive set of enterprise-grade services for securely deploying and operating AI agents at scale), and Flows within the Studio environment - to develop GenAI and Agentic AI applications - consuming data products from Amazon SageMaker.
 ## Deploy with confidence

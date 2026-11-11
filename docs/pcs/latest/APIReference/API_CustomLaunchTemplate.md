@@ -5,19 +5,19 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_CustomLaunch
 # CustomLaunchTemplate
 <a name="API_CustomLaunchTemplate"></a>
 
-An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
+An Amazon EC2 launch template AWS PCS uses to launch compute nodes. The structure contains the launch template ID and version.
 
 ## Contents
 <a name="API_CustomLaunchTemplate_Contents"></a>
 
  ** id **   <a name="PCS-Type-CustomLaunchTemplate-id"></a>
-The ID of the EC2 launch template to use to provision instances.
+The ID of the EC2 launch template to use to provision instances. Specify this value together with `version`.
  Example: `lt-xxxx`
 Type: String
 Required: Yes
 
  ** version **   <a name="PCS-Type-CustomLaunchTemplate-version"></a>
-The version of the EC2 launch template to use to provision instances.
+The version of the EC2 launch template to use to provision instances. Specify this value together with `id`.
 Type: String
 Required: Yes
 

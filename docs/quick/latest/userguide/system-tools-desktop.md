@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/system-tools-desk
 # System tools
 <a name="system-tools-desktop"></a>
 
-Amazon Quick on desktop includes built-in system tools that provide core capabilities such as web search, file operations, browser automation, image generation, and code execution. You enable or disable each tool individually and configure granular permission controls. Manage system tools in **Customize**, on the **Connectors** tab.
+AWS Quick on desktop includes built-in system tools that provide core capabilities such as web search, file operations, browser automation, image generation, and code execution. You enable or disable each tool individually and configure granular permission controls. Manage system tools in **Customize**, on the **Connectors** tab.
 
 ## Managing permissions
 <a name="desktop-settings-manage-permissions"></a>
@@ -38,7 +38,7 @@ Below the access level, each tool lists its operations grouped into read and wri
 ## System tool permissions
 <a name="desktop-security-tool-permissions"></a>
 
-Amazon Quick on desktop uses the same access levels for system tools, for connectors to third-party services such as Slack, Microsoft Outlook, and Gmail, and for local tools that run on your computer. You can turn each one on or off and set each operation to **Always Allow**, **Ask Each Time**, or **Always Deny**.
+AWS Quick on desktop uses the same access levels for system tools, for connectors to third-party services such as Slack, Microsoft Outlook, and Gmail, and for local tools that run on your computer. You can turn each one on or off and set each operation to **Always Allow**, **Ask Each Time**, or **Always Deny**.
 
 Quick stores your permission choices and applies them whenever an agent acts on your behalf, including scheduled agents. An agent can take only the actions that you allow, and you can review or change these permissions at any time.
 

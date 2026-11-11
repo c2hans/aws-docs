@@ -75,6 +75,7 @@ Required: No
          "CreationTime": number,
          "LastExecutionPipelineExecutionArn": "string",
          "PipelineArn": "string",
+         "PipelineVersionAliases": [ "string" ],
          "PipelineVersionDescription": "string",
          "PipelineVersionDisplayName": "string",
          "PipelineVersionId": number

@@ -84,7 +84,7 @@ Modern Data Architecture Accelerator (MDAA) provides a comprehensive set of pre-
 
 | Purpose | SageMaker Unified Studio (SMUS) for multi-team research in a single account |
 | --- | --- |
-| Key Features |  +  SMUS domain (DataZone V2) with IAM Identity Center SSO integration <br />+  Project profiles for standardized team environments <br />+  Team-based access control via IAM Identity Center groups <br />+  Lake Formation governance for fine-grained data access <br />+  Glue Catalog encryption and IAM roles for domain/data administration   |
+| Key Features |  +  SMUS domain (DataZone V2) with IAM Identity Center SSO integration <br />+  Project profiles for standardized team environments <br />+  Team-based access control via IAM Identity Center groups <br />+  Lake Formation governance for fine-grained data access <br />+  Glue Catalog encryption and IAM roles for domain/data administration <br />+  S3 research data bucket onboarded as a SMUS data source for a team project   |
 | Best For |  +  Multi-team research environments with shared governance in a single account <br />+  Self-service ML platform access via the SMUS portal <br />+  Rapid onboarding of research teams with standardized project profiles   |
 
 #### 7. SMUS Data Mesh
@@ -106,9 +106,9 @@ Modern Data Architecture Accelerator (MDAA) provides a comprehensive set of pre-
 #### 9. GenAI Foundation
 <a name="9-genai-foundation"></a>
 
-| Purpose | Bedrock-based Customer Support Agent with RAG and guardrails |
+| Purpose | AgentCore-based Customer Support Agent with RAG, gateway tools, and guardrails |
 | --- | --- |
-| Key Features |  +  Bedrock Agents with custom action groups for customer support <br />+  Knowledge Bases with vector stores for efficient retrieval <br />+  Guardrails for content safety and appropriate responses <br />+  Multi-sync architecture for concurrent file uploads <br />+  KMS-encrypted S3 buckets for knowledge base data sources <br />+  IAM roles with least-privilege Bedrock permissions   |
+| Key Features |  +  AgentCore Harness agent with a managed agent loop, running in your VPC subnets <br />+  AgentCore Gateway with AWS IAM auth, serving Lambda-backed customer support tools and knowledge base search <br />+  Knowledge Bases with vector stores for efficient retrieval, exposed to the agent as a gateway tool <br />+  Guardrails for content safety and appropriate responses <br />+  Multi-sync architecture for concurrent file uploads <br />+  KMS-encrypted S3 buckets for knowledge base data sources, and KMS-encrypted agent and gateway logs <br />+  IAM roles with least-privilege Bedrock and AgentCore permissions   |
 | Best For |  +  Customer support agents with natural language interaction <br />+  Knowledge base search and retrieval over internal documents <br />+  Document processing with Retrieval Augmented Generation (RAG)   |
 
 #### 10. GAIA Chatbot

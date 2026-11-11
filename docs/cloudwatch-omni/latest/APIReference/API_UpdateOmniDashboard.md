@@ -121,7 +121,7 @@ The following example updates only the body of a dashboard; the name and descrip
 
 ```
 {
-  "body": "{"widgets":[{"type":"metric","x":0,"y":0,"width":24,"height":6,"properties":{"metrics":[["AWS/Lambda","Errors","FunctionName","OrderProcessor"],["AWS/Lambda","Throttles","FunctionName","OrderProcessor"]],"region":"us-east-1","title":"Lambda Errors and Throttles"}}]}",
+  "body": "{"panels":[{"type":"markdown","title":"Overview","layout":{"x":0,"y":0,"w":60,"h":120},"config":{"content":"Service health for OrderProcessor."}},{"type":"divider","title":"Errors","layout":{"x":0,"y":120,"w":60,"h":40}},{"type":"explore","title":"Lambda errors (5-minute rate)","layout":{"x":0,"y":160,"w":60,"h":400},"config":{"queries":[{"queryId":"A","queryLanguage":"promql","queryString":"sum(rate(aws_lambda_errors_sum{function_name=\"OrderProcessor\"}[5m]))"}],"visualization":"line"}}]}",
   "dashboardId": "c3d4e5f6-7a8b-4c9d-8e0f-1a2b3c4d5e6f",
   "spaceId": "a1b2c3d4-5e6f-4a3b-8c9d-0e1f2a3b4c5d"
 }
@@ -134,7 +134,7 @@ The following example updates only the body of a dashboard; the name and descrip
 {
   "omniDashboard": {
     "arn": "arn:aws:cloudwatch:us-east-1:123456789012:omni-dashboard/c3d4e5f6-7a8b-4c9d-8e0f-1a2b3c4d5e6f",
-    "body": "{"widgets":[{"type":"metric","x":0,"y":0,"width":24,"height":6,"properties":{"metrics":[["AWS/Lambda","Errors","FunctionName","OrderProcessor"],["AWS/Lambda","Throttles","FunctionName","OrderProcessor"]],"region":"us-east-1","title":"Lambda Errors and Throttles"}}]}",
+    "body": "{"panels":[{"type":"markdown","title":"Overview","layout":{"x":0,"y":0,"w":60,"h":120},"config":{"content":"Service health for OrderProcessor."}},{"type":"divider","title":"Errors","layout":{"x":0,"y":120,"w":60,"h":40}},{"type":"explore","title":"Lambda errors (5-minute rate)","layout":{"x":0,"y":160,"w":60,"h":400},"config":{"queries":[{"queryId":"A","queryLanguage":"promql","queryString":"sum(rate(aws_lambda_errors_sum{function_name=\"OrderProcessor\"}[5m]))"}],"visualization":"line"}}]}",
     "createdAt": "2026-09-16T14:22:31Z",
     "createdBy": "arn:aws:iam::123456789012:role/ObservabilityAdmin",
     "dashboardId": "c3d4e5f6-7a8b-4c9d-8e0f-1a2b3c4d5e6f",

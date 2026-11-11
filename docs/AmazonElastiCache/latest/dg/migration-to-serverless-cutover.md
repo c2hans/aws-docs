@@ -38,7 +38,7 @@ There is no way to poll migration health on demand. Prepare the migration close 
 ## Manual cutover
 <a name="w2aac20c13c39c11"></a>
 
-You decide when to complete the migration. ElastiCache keeps replicating and reports the migration as `syncing` until you act. This gives you time to validate your target cache before you cut over.
+You decide when to complete the migration. ElastiCache keeps replicating and reports the migration as `syncing` until you act. This lets you choose when to switch, for example during a period of low write traffic.
 
 When you are ready, complete the migration:
 
@@ -145,7 +145,7 @@ Where:
 
 Your migration endpoint now serves from your ElastiCache Serverless cache, and your application needs no change. Your source cache is no longer part of the path. You can decommission it on your own schedule after you confirm that your application is healthy on the target.
 
-Before you decommission your source, confirm that your data arrived on your target. Compare the `CurrItems` metric of your target with the number of keys on your source, and read a few keys that your application wrote during the migration. After the migration completes, remove what you set up only for the migration: the inbound rule on your source security group, any test client you started, and the secret and the customer managed key if nothing else uses them.
+Before you decommission your source, confirm that your data arrived on your target. Compare the `CurrItems` metric of your target with the number of keys on your source, and read a few keys that your application wrote during the migration. Wait a few minutes after the completion event before you compare. Right after completion, `CurrItems` and `DBSIZE` can briefly read higher than the final count. Your target can hold more keys than your source, because after cutover your application writes only to your target. After the migration completes, remove what you set up only for the migration: the inbound rule on your source security group, any test client you started, and the secret and the customer managed key if nothing else uses them.
 
 Completing the migration ends the migration charges. Your ElastiCache Serverless cache continues to bill at the standard data storage and ECPU rates, as it would at any other time.
 

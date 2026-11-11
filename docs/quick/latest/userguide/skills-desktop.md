@@ -119,7 +119,7 @@ The **Skills** tab lists every skill you can use.
 ## Browsing for more skills
 <a name="desktop-browsing-more-skills"></a>
 
-To find skills beyond the ones in your list, choose **Browse all** on the **Skills** tab. This opens **Add to Quick**, scoped to skills, with two ways to find them: **Official** (curated, first-party skills provided by Amazon Quick) and **Shared with me** (skills that people or teams in your organization have shared with you). Search by name, filter by Owner and Category, and sort the results. Choose a skill to preview its description and details before you add it.
+To find skills beyond the ones in your list, choose **Browse all** on the **Skills** tab. This opens **Add to Quick**, scoped to skills, with two ways to find them: **Official** (curated, first-party skills provided by AWS Quick) and **Shared with me** (skills that people or teams in your organization have shared with you). Search by name, filter by Owner and Category, and sort the results. Choose a skill to preview its description and details before you add it.
 
 When you add a skill from Official or Shared with me, it enters your list as a reference to the owner's published version, not a copy. It stays in sync and updates automatically as the owner republishes. To make a version you can change, duplicate it.
 

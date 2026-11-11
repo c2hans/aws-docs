@@ -8,20 +8,20 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ## Overview
 <a name="modernize-sql-server-overview"></a>
 
-If you're starting on a journey toward modernizing legacy databases for scalability, performance, and cost optimization, you may be facing challenges with commercial databases like SQL Server. Commercial databases are expensive, lock customers in, and offer punitive licensing terms. This section provides a high-level overview of the options for migrating and modernizing from SQL Server to open-source databases and information about choosing the best option for your workload.
+If you're modernizing legacy databases for scalability, performance, and cost optimization, you might face challenges with commercial databases like Microsoft SQL Server, such as licensing costs and restrictive licensing terms. This section provides a high-level overview of the options for migrating and modernizing from SQL Server to open-source databases. It also helps you choose the option that fits your workload.
 
-You can refactor your SQL Server databases to open-source databases like Amazon Aurora PostgreSQL to save on Windows and SQL Server licensing costs. Cloud-native modern databases like Aurora merge the flexibility and low cost of open-source databases with the robust, enterprise-grade features of commercial databases. If you have variable workloads or multi-tenant workloads, you can also migrate to [Aurora serverless V2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html). This can reduce costs by to 90 percent, depending on workload characteristics. Additionally, AWS offers capabilities like [Babelfish for Aurora PostgreSQL](https://aws.amazon.com/rds/aurora/babelfish/), tools like [AWS Schema Conversion Tool (AWS SCT)](https://aws.amazon.com/dms/schema-conversion-tool/), and services like [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/) to simplify the migration and modernization of SQL Server databases on AWS.
+You can refactor your SQL Server databases to open-source databases like Amazon Aurora PostgreSQL to save on Microsoft Windows and SQL Server licensing costs. Cloud-native modern databases like Aurora combine the flexibility and low cost of open-source databases with the performance and availability of commercial databases. If you have variable workloads or multi-tenant workloads, you can also migrate to [Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html). This can reduce costs by up to 90 percent, depending on workload characteristics. Additionally, AWS offers capabilities like [Babelfish for Aurora PostgreSQL](https://aws.amazon.com/rds/aurora/babelfish/), tools like [AWS Schema Conversion Tool (AWS SCT)](https://aws.amazon.com/dms/schema-conversion-tool/), and services like [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/) to simplify the migration and modernization of SQL Server databases on AWS.
 
 ## Database offerings
 <a name="modernize-sql-server-database"></a>
 
-Migrating from SQL Server on Windows to open-source database like Amazon Aurora, Amazon RDS for MySQL, or Amazon RDS for PostgreSQL can offer significant cost savings without compromise on performance or features. Consider the following:
-+ Switching from SQL Server Enterprise edition on Amazon EC2 to Amazon RDS for PostgreSQL or Amazon RDS for MySQL can result in cost savings up to 80 percent.
-+ Switching from SQL Server Enterprise edition on Amazon EC2 to Amazon Aurora PostgreSQL-Compatible Edition or Amazon Aurora MySQL-Compatible Edition can result in cost savings up to 70 percent.
+Migrating from SQL Server on Windows to open-source databases like Amazon Aurora, Amazon RDS for MySQL, or Amazon RDS for PostgreSQL can help you reduce costs while maintaining performance and features. Consider the following:
++ Switching from SQL Server Enterprise edition on Amazon EC2 to Amazon RDS for PostgreSQL or Amazon RDS for MySQL can result in cost savings of up to 80 percent.
++ Switching from SQL Server Enterprise edition on Amazon EC2 to Amazon Aurora PostgreSQL-Compatible Edition or Amazon Aurora MySQL-Compatible Edition can result in cost savings of up to 70 percent.
 
-For traditional database workloads, Amazon RDS for PostgreSQL and Amazon RDS for MySQL address requirements and provide a cost-effective solution for relational databases. Aurora adds numerous availability and performance features previously limited to expensive commercial vendors. The resiliency features in Aurora are an added cost. However, in comparison to similar features by other commercial vendors, the resiliency costs of Aurora are still cheaper than what commercial software charges for the same type of features. Aurora architecture is optimized to deliver significant improvements in performance as compared to standard MySQL and PostgreSQL deployments.
+For traditional database workloads, Amazon RDS for PostgreSQL and Amazon RDS for MySQL meet common relational database requirements and provide a cost-effective solution. Aurora adds numerous availability and performance features that were previously limited to commercial vendors. The resiliency features in Aurora add cost. However, this cost is typically lower than what commercial vendors charge for similar features. The Aurora architecture is designed to deliver improved performance compared to standard MySQL and PostgreSQL deployments.
 
-Because Aurora is compatible with open-source PostgreSQL and MySQL databases, there is the additional benefit of portability. Whether the best option is Amazon RDS for PostgreSQL, Amazon RDS for MySQL, or Aurora comes down to understanding business requirements and mapping necessary features to the best option.
+Because Aurora is compatible with open-source PostgreSQL and MySQL databases, you also benefit from portability. Choosing between Amazon RDS for PostgreSQL, Amazon RDS for MySQL, and Aurora depends on understanding your business requirements and mapping the necessary features to the option that meets them.
 
 ## Amazon RDS and Aurora comparison
 <a name="modernize-sql-server-rds-aurora"></a>
@@ -32,13 +32,13 @@ The following table summarizes the key differences between Amazon RDS and Amazon
 |
 | Category | Amazon RDS for PostgreSQL or Amazon RDS for MySQL | Aurora PostgreSQL or Aurora MySQL |
 | --- |--- |--- |
-| Performance | Good performance | 3x or better performance |
+| Performance | Good performance | Up to 3x higher performance |
 | Failover | Typically 60-120 seconds\* | Typically 30 seconds |
-| Scalability | Up to 5 read replica<br />Lag in seconds | Up to 15 read replicas<br />Lag in milliseconds |
+| Scalability | Up to 15 read replicas<br />Lag in seconds | Up to 15 read replicas<br />Lag in milliseconds |
 | Storage | Up to 64 TB | Up to 128 TB |
-| Storage HA | Multi-AZ with one or two standby, each with database copy | 6 copies of data across 3 Availability Zones by default |
+| Storage high availability | Multi-AZ with one or two standbys, each with a database copy | 6 copies of data across 3 Availability Zones by default |
 | Backup | Daily snapshot and log backups | Continuous, asynchronous backup to Amazon S3 |
-| Innovations with Aurora | NA | 100 GB<br />Fast database cloning |
+| Innovations with Aurora | Not applicable | 100 GB<br />Fast database cloning |
 |   | Auto-scaling read replicas |   |
 |   | Query plan management |   |
 |   | Aurora Serverless |   |
@@ -71,9 +71,9 @@ The following table shows the estimated monthly cost of the different database s
 ## Cost optimization recommendations
 <a name="modernize-sql-server-opt-rec"></a>
 
-Heterogenous database migrations typically require converting database schema from the source to the target database engine and migrating data from source to target database. The first step toward migration is to evaluate and convert SQL server schema and code objects to the target database engine.
+Heterogeneous database migrations typically require converting the database schema from the source to the target database engine and migrating data from the source to the target database. The first step toward migration is to evaluate and convert SQL Server schema and code objects to the target database engine.
 
-You can use the [AWS Schema Conversion Tool (AWS SCT)](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html) to evaluate and assess the database for compatibility with various target open-source database options like Amazon RDS for MySQL or Amazon RDS for PostgreSQL, Aurora MySQL, and PostgreSQL. You can also use the Babelfish Compass tool for assessing compatibility with Babelfish for Aurora PostgreSQL. This makes the AWS SCT and Compass powerful tools to understand the upfront work involved before deciding on a migration strategy. Should you decide to proceed, AWS SCT automates the changes required to the schema. The core philosophy behind Babelfish Compass is to allow the SQL database to move to Aurora with no, or very few, modifications. Compass will evaluate the existing SQL database to determine if this can be accomplished. This way, the outcome is known before any effort is spent on migrating data from SQL Server to Aurora.
+You can use the [AWS Schema Conversion Tool (AWS SCT)](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Welcome.html) to evaluate and assess the database for compatibility with various target open-source database options such as Amazon RDS for MySQL, Amazon RDS for PostgreSQL, Aurora MySQL, and PostgreSQL. You can also use the Babelfish Compass tool to assess compatibility with Babelfish for Aurora PostgreSQL. Both AWS SCT and Compass help you understand the upfront work involved before you decide on a migration strategy. If you decide to proceed, AWS SCT automates the changes required to the schema. The goal of Babelfish Compass is to help you move the SQL database to Aurora with no, or very few, modifications. Compass evaluates the existing SQL database to determine if you can accomplish this. This way, you know the outcome before you spend any effort on migrating data from SQL Server to Aurora.
 
 AWS SCT automates conversion and migration of the database schema and code to the target database engine. You can use Babelfish for Aurora PostgreSQL to migrate your database and application from SQL Server to Aurora PostgreSQL with no or minimal schema changes. This can accelerate your migrations.
 
@@ -86,9 +86,9 @@ This section explores the following tools in more detail:
 + AWS Database Migration Service
 
 ### AWS Schema Conversion Tool
-<a name="9999999999999999awssctlong-.35ae02d3-509b-568a-8399-7e6129a45681"></a>
+<a name="9999999999999999awssctlong-.15f1ad32-623c-5a1c-987d-63e9bb09a3aa"></a>
 
-You can use AWS SCT to evaluate your existing SQL Server databases and assess compatibility with Amazon RDS or Aurora. To simplify the migration process, you can also use AWS SCT to convert the schema from one database engine to another in a heterogeneous database migration. You can use AWS SCT to evaluate your application and convert embedded application code for applications written C\#, C\+\+, Java, and other languages. For more information, see [Converting application SQL using AWS SCT](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Converting.App.html) in the AWS SCT documentation.
+You can use AWS SCT to evaluate your existing SQL Server databases and assess compatibility with Amazon RDS or Aurora. To simplify the migration process, you can also use AWS SCT to convert the schema from one database engine to another in a heterogeneous database migration. You can use AWS SCT to evaluate your application and convert embedded application code for applications written in C\#, C\+\+, Java, and other languages. For more information, see [Converting application SQL using AWS SCT](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Converting.App.html) in the AWS SCT documentation.
 
 AWS SCT is a free AWS tool that supports many database [sources](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Source.html). To use AWS SCT, you point it to the source database and then run an assessment. Then, [AWS SCT](https://aws.amazon.com/blogs/database/convert-database-schemas-and-application-sql-using-the-aws-schema-conversion-tool-cli/) evaluates the schema and generates the assessment report. Assessment reports include an executive summary, complexity and migration effort, suitable target database engines, and recommendations for conversion. To download AWS SCT, see [Installing, verifying, and updating AWS SCT](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Installing.html) in the AWS SCT documentation.
 
@@ -111,29 +111,29 @@ The following table shows an example Executive Summary generated by AWS SCT to s
 An AWS SCT report also provides details on the schema elements that cannot be automatically converted. You can close the AWS SCT conversion gaps and optimize target schemas by referring to [AWS migration playbooks](https://aws.amazon.com/blogs/database/the-database-migration-playbook-has-landed/). There are many database migration playbooks to assist with heterogeneous migrations.
 
 ### Babelfish for Aurora PostgreSQL
-<a name="babelfish-for-9999999999999999aurpostgres-.14e1bb22-5594-5a2d-b41d-7dd1f05c90d1"></a>
+<a name="babelfish-for-9999999999999999aurpostgres-.c01bfd58-227c-5ed6-b099-47829ee04389"></a>
 
-Babelfish for Aurora PostgreSQL extends Aurora PostgreSQL with the ability to accept database connections from SQL Server clients. Babelfish enables applications that were originally built for SQL Server to work directly with Aurora PostgreSQL, with few code changes and without changing database drivers. Babelfish turns Aurora PostgreSQL bilingual so that Aurora PostgreSQL can work with both the T-SQL and PL/pgSQL languages. Babelfish minimizes the efforts to migrate from SQL Server to Aurora PostgreSQL. This accelerates migrations, minimizes risk, and reduces migration costs significantly. You can continue to use T-SQL post migrations, but there is also an [option of using PostgreSQL native tools](https://aws.amazon.com/blogs/database/category/database/amazon-aurora/babelfish-for-aurora-postgresql/) for development.
+Babelfish for Aurora PostgreSQL extends Aurora PostgreSQL with the ability to accept database connections from SQL Server clients. Babelfish enables applications that were originally built for SQL Server to work directly with Aurora PostgreSQL, with few code changes and without changing database drivers. Babelfish makes Aurora PostgreSQL bilingual so that Aurora PostgreSQL can work with both the T-SQL and PL/pgSQL languages. Babelfish helps reduce the effort to migrate from SQL Server to Aurora PostgreSQL. This can accelerate migrations, help reduce risk, and lower migration costs. You can continue to use T-SQL after migration, or you can [use PostgreSQL native tools](https://aws.amazon.com/blogs/database/category/database/amazon-aurora/babelfish-for-aurora-postgresql/) for development.
 
 The following diagram illustrates how an application using T-SQL connects to the default port 1433 in SQL Server and uses the Babelfish translator to communicate with the Aurora PostgreSQL database, while an application using PL/pgSQL can directly and simultaneously connect to the Aurora PostgreSQL database using the default port 5432 in Aurora PostgreSQL.
 
 ![Babelfish for Aurora PostgreSQL](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/25476077-5267-4265-bce6-adbe528d9e5b.png)
 
-Babelfish doesn't support certain SQL Server T-SQL features. For this reason, Amazon provides assessment tools to do a line-by-line analysis of your SQL statements and determine if any of them are unsupported by Babelfish.
+Babelfish doesn't support certain SQL Server T-SQL features. For this reason, AWS provides assessment tools that perform a line-by-line analysis of your SQL statements and determine if Babelfish doesn't support any of them.
 
 There are two options for Babelfish assessments. AWS SCT can assess the compatibility of your SQL Server database with Babelfish. Another option is the Babelfish Compass tool, which is a recommended solution because the Compass tool is updated in line with new releases of Babelfish for Aurora PostgreSQL.
 
 ### Babelfish Compass
-<a name="babelfish-compass.efa51bcd-c058-5983-937d-6909a82c80cc"></a>
+<a name="babelfish-compass.fa252f14-8217-5af8-a657-9a45ad9b4320"></a>
 
-[Babelfish Compass](https://github.com/babelfish-for-postgresql/babelfish_compass) is a free downloadable tool that aligns with the latest release of Babelfish for Aurora PostgreSQL. In contrast, AWS SCT will support newer Babelfish versions after some time. [Babelfish Compass](https://github.com/babelfish-for-postgresql/babelfish_compass/blob/main/README.md) is run against the SQL Server database schema. You can also extract the source SQL Server database schema by using tools like SQL Server Management Studio (SSMS). Then, you can run the schema through Babelfish Compass. This generates the report detailing the compatibility of SQL Server schema with Babelfish and if any changes are needed before migrating. The Babelfish Compass tool can also automate many of these changes and ultimately accelerate your migrations.
+[Babelfish Compass](https://github.com/babelfish-for-postgresql/babelfish_compass) is a free downloadable tool that aligns with the latest release of Babelfish for Aurora PostgreSQL. In contrast, AWS SCT adds support for newer Babelfish versions after a delay. You run [Babelfish Compass](https://github.com/babelfish-for-postgresql/babelfish_compass/blob/main/README.md) against the SQL Server database schema. You can extract the source SQL Server database schema by using tools such as SQL Server Management Studio (SSMS), and then run the schema through Babelfish Compass. This generates a report that details the compatibility of the SQL Server schema with Babelfish and identifies any changes you need to make before migrating. The Babelfish Compass tool can also automate many of these changes, which can accelerate your migrations.
 
 After the assessment and changes are completed, you can migrate the schema to Aurora PostgreSQL by using SQL Server native tools like SSMS or sqlcmd. For instructions, see the [Migrate from SQL Server to Amazon Aurora using Babelfish](https://aws.amazon.com/blogs/database/migrate-from-sql-server-to-amazon-aurora-using-babelfish/) post on the AWS Database Blog.
 
 ### AWS Database Migration Service
-<a name="9999999999999999dmslong-.1abd1dc1-1a82-50da-a458-00df6cd6e253"></a>
+<a name="9999999999999999dmslong-.4fcd01e5-9f87-51ca-8071-3e7b0c37e760"></a>
 
-After the schema is migrated, you can use AWS Database Migration Service (AWS DMS) to migrate the data to AWS with minimal downtime. AWS DMS not only does a full data load, but also replicates changes from source to destination while the source system is up and running. After both source and target databases are in sync, the cutover activity can take place where the application is pointed to the target database completing the migration. AWS DMS currently only performs full data load with Babelfish for an Aurora PostgreSQL target and doesn't replicate changes. For more information, see [Using Babelfish as a target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Babelfish.html) in the AWS DMS documentation.
+After you migrate the schema, you can use AWS Database Migration Service (AWS DMS) to migrate the data to AWS with minimal downtime. AWS DMS performs a full data load and also replicates changes from the source to the target while the source system remains operational. After the source and target databases are in sync, you can perform the cutover by pointing the application to the target database, which completes the migration. AWS DMS currently performs only a full data load with an Aurora PostgreSQL target that uses Babelfish, and doesn't replicate changes. For more information, see [Using Babelfish as a target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Babelfish.html) in the AWS DMS documentation.
 
 AWS DMS can do both homogeneous (across the same database engine) and heterogeneous (across different database engines) migrations. AWS DMS supports many source and destination database engines. For more information, see the [Migrating your SQL Server database to Amazon RDS for SQL Server using AWS DMS](https://aws.amazon.com/blogs/database/migrating-your-sql-server-database-to-amazon-rds-for-sql-server-using-aws-dms/) post in the AWS Database Blog.
 

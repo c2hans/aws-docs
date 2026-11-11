@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QBusiness::Application QuickSightConfiguration
 <a name="aws-properties-qbusiness-application-quicksightconfiguration"></a>
 
-The Amazon Quick configuration for an Amazon Q Business application that uses Quick as the identity provider. For more information, see [Creating an Amazon Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
+The AWS Quick configuration for an Amazon Q Business application that uses Quick as the identity provider. For more information, see [Creating an AWS Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
 
 ## Syntax
 <a name="aws-properties-qbusiness-application-quicksightconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-qbusiness-application-quicksightconfiguration-properties"></a>
 
 `ClientNamespace`  <a name="cfn-qbusiness-application-quicksightconfiguration-clientnamespace"></a>
-The Amazon Quick namespace that is used as the identity provider. For more information about Quick namespaces, see [Namespace operations](https://docs.aws.amazon.com/quicksight/latest/developerguide/namespace-operations.html).
+The AWS Quick namespace that is used as the identity provider. For more information about Quick namespaces, see [Namespace operations](https://docs.aws.amazon.com/quicksight/latest/developerguide/namespace-operations.html).
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9._-]*$`

@@ -20,7 +20,7 @@ Use [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/) to se
 
 Implement notifications on cost and usage to ensure that changes in cost and usage can be acted upon quickly if they are unexpected. [AWS Cost Anomaly Detection](https://aws.amazon.com/aws-cost-management/aws-cost-anomaly-detection/) allows you to reduce cost surprises and enhance control without slowing innovation. AWS Cost Anomaly Detection identifies anomalous spend and root causes, which helps to reduce the risk of billing surprises. With three simple steps, you can create your own contextualized monitor and receive alerts when any anomalous spend is detected.
 
-You can also use [Amazon Quick](https://aws.amazon.com/quicksight/) with AWS Cost and Usage Report (CUR) data, to provide highly customized reporting with more granular data. Amazon Quick allows you to schedule reports and receive periodic Cost Report emails for historical cost and usage, or cost-saving opportunities.
+You can also use [AWS Quick](https://aws.amazon.com/quicksight/) with AWS Cost and Usage Report (CUR) data, to provide highly customized reporting with more granular data. AWS Quick allows you to schedule reports and receive periodic Cost Report emails for historical cost and usage, or cost-saving opportunities.
 
 Use [AWS Trusted Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/), which provides guidance to verify whether provisioned resources are aligned with AWS best practices for cost optimization.
 

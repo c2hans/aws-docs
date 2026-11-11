@@ -19,7 +19,7 @@ Required: Yes
 A container for the Amazon S3 Storage Lens configuration ID.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[a-zA-Z0-9\-\_\.]+`
+Pattern: `[a-zA-Z0-9\-\_]+`
 Required: Yes
 
  ** IsEnabled **   <a name="AmazonS3-Type-control_StorageLensConfiguration-IsEnabled"></a>

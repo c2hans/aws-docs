@@ -13,7 +13,7 @@ A map of user or group profiles to designations that need to be assigned in the 
  ** designation **   <a name="datazone-Type-ProjectMembershipAssignment-designation"></a>
 The designation of the project membership.
 Type: String
-Valid Values: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD`
+Valid Values: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD | USER_CREATED_DESIGNATION`
 Required: Yes
 
  ** member **   <a name="datazone-Type-ProjectMembershipAssignment-member"></a>
@@ -21,6 +21,12 @@ The details about a project member.
 Type: [Member](API_Member.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** userCreatedDesignationId **   <a name="datazone-Type-ProjectMembershipAssignment-userCreatedDesignationId"></a>
+The ID of the user-created designation to assign to this member when creating the project. Required when `designation` is `USER_CREATED_DESIGNATION`; must not be provided otherwise.
+Type: String
+Pattern: `[a-zA-Z0-9_-]{1,36}`
+Required: No
 
 ## See Also
 <a name="API_ProjectMembershipAssignment_SeeAlso"></a>

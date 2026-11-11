@@ -42,7 +42,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
 
  ** Principal **   <a name="QS-Type-Permission-Principal"></a>
-The Amazon Resource Name (ARN) of the principal. This can be an Amazon Quick user, group or namespace associated with the flow. Namespace principal can only be set as a viewer and will grant everyone in the same namespace viewer permissions.
+The Amazon Resource Name (ARN) of the principal. This can be an AWS Quick user, group or namespace associated with the flow. Namespace principal can only be set as a viewer and will grant everyone in the same namespace viewer permissions.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes

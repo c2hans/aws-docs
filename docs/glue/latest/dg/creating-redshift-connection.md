@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-redshift-connect
 +  redshift-serverless:ListNamespaces
 
 ## Overview
-<a name="w2aac25c29c13c11b5"></a>
+<a name="w2aac25c29c17c11b5"></a>
 
  When adding an Amazon Redshift connection, you can choose an existing Amazon Redshift connection or create a new connection when adding a **Data source - Redshift** node in AWS Glue Studio.
 

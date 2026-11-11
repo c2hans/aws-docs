@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 # Active Directory
 <a name="active-directory-main"></a>
 
-Amazon Elastic Compute Cloud (Amazon EC2) running Windows Server is a secure, reliable, and high-performance environment for deploying Windows-based applications and workloads. You can provision instances quickly and scale up or scale down as needed, while only paying for what you use. Active Directory services are used as the primary source of identity management in Windows Server environments.
+Amazon Elastic Compute Cloud (Amazon EC2) running Windows Server is a secure, reliable, and high-performance environment for deploying Windows-based applications and workloads. You can provision instances quickly and scale up or scale down as needed, while paying only for what you use. Windows Server environments typically use Active Directory services as the primary source of identity management.
 
 This section covers the following topics:
 + [Self-managed Active Directory on Amazon EC2](active-directory-self-managed.md)

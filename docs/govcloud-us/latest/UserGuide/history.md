@@ -9,6 +9,7 @@ The following table describes important changes to the documentation since the l
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon Quick](govcloud-aqs.md) | Removed the note stating that Amazon Quick and interface VPC endpoints (AWS PrivateLink) are not available in AWS GovCloud (US), as this capability is now available. | November 10, 2026 |
 | [AWS Organizations](govcloud-organizations.md) |  AWS Organizations now supports declarative policies for Security Hub, Amazon Inspector, and Amazon GuardDuty. | November 3, 2026 |
 | [Amazon EC2 Image Builder](#history) | EC2 Image Builder ISO disk file import is now available in AWS GovCloud (US) Regions. See [EC2 Image Builder](govcloud-ec2ib.md). | October 23, 2026 |
 | [Amazon EC2 Image Builder](govcloud-ec2ib.md) |  Image Builder now supports ISO disk file import. | October 23, 2026 |

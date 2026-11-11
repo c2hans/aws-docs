@@ -31,6 +31,7 @@ The following data types are supported:
 +  [AuthenticationConfigurationInput](API_AuthenticationConfigurationInput.md)
 +  [AuthorizationCodeProperties](API_AuthorizationCodeProperties.md)
 +  [AutoDataQuality](API_AutoDataQuality.md)
++  [AutoUpgradeMetadata](API_AutoUpgradeMetadata.md)
 +  [BackfillError](API_BackfillError.md)
 +  [BasicAuthenticationCredentials](API_BasicAuthenticationCredentials.md)
 +  [BasicAuthenticationProperties](API_BasicAuthenticationProperties.md)

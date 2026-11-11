@@ -9,6 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Access, query, and join Amazon DynamoDB tables using Athena](access-query-and-join-amazon-dynamodb-tables-using-athena.md)
 + [Automate the setup of inter-Region peering with AWS Transit Gateway](automate-the-setup-of-inter-region-peering-with-aws-transit-gateway.md)
 + [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.md)
++ [Build an advanced mainframe file viewer in the AWS Cloud](build-an-advanced-mainframe-file-viewer-in-the-aws-cloud.md)
 + [Calculate value at risk (VaR) by using AWS services](calculate-value-at-risk-var-by-using-aws-services.md)
 + [Deploy an Amazon API Gateway API on an internal website using private endpoints and an Application Load Balancer](deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.md)
 + [Dynamically generate an IAM policy with IAM Access Analyzer by using Step Functions](dynamically-generate-an-iam-policy-with-iam-access-analyzer-by-using-step-functions.md)

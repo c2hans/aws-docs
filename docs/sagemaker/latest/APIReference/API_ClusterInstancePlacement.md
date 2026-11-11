@@ -19,7 +19,7 @@ Required: No
  ** AvailabilityZoneId **   <a name="sagemaker-Type-ClusterInstancePlacement-AvailabilityZoneId"></a>
 The unique identifier (ID) of the Availability Zone where the node in the SageMaker HyperPod cluster is launched.
 Type: String
-Pattern: `[a-z]{3}\d-az\d`
+Pattern: `[a-z]{3,5}\d-az\d`
 Required: No
 
 ## See Also

@@ -29,6 +29,14 @@ Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:([0-9]{12}|aws):pipeline/.*`
 Required: No
 
+ ** PipelineVersionAliases **   <a name="sagemaker-Type-PipelineVersionSummary-PipelineVersionAliases"></a>
+The aliases assigned to the pipeline version.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+Required: No
+
  ** PipelineVersionDescription **   <a name="sagemaker-Type-PipelineVersionSummary-PipelineVersionDescription"></a>
 The description of the pipeline version.
 Type: String

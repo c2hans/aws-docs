@@ -80,7 +80,7 @@ Additional custom claim validations applied to the inbound JWT.
 The OpenID Connect discovery URL used to retrieve the identity provider's metadata and signing keys.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^.+/\.well-known/openid-configuration$`
+*Pattern*: `^[^\s?#]+/\.well-known/(openid-configuration|oauth-authorization-server)(/[^\s?#]+)?$`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

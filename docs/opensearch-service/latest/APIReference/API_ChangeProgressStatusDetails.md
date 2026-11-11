@@ -28,6 +28,11 @@ The specific stages that the domain is going through to perform the configuratio
 Type: Array of [ChangeProgressStage](API_ChangeProgressStage.md) objects
 Required: No
 
+ ** ClonedBlueGreenUpgradeDetails **   <a name="opensearchservice-Type-ChangeProgressStatusDetails-ClonedBlueGreenUpgradeDetails"></a>
+Details about a cloned blue/green upgrade, when the change is one.
+Type: [ClonedBlueGreenUpgradeDetails](API_ClonedBlueGreenUpgradeDetails.md) object
+Required: No
+
  ** CompletedProperties **   <a name="opensearchservice-Type-ChangeProgressStatusDetails-CompletedProperties"></a>
 The list of properties in the domain configuration change that have completed.
 Type: Array of strings

@@ -26,8 +26,11 @@ The `AWS/ElastiCache` namespace includes the following CloudWatch metrics for yo
 
 | Metric | Description | Unit |
 | --- | --- | --- |
-| BytesUsedForCache | The total number of bytes used by the data stored in your cache. | Bytes |
+| BytesUsedForCache | The total number of bytes used by the data stored in your cache, including search indexes. | Bytes |
 | ElastiCacheProcessingUnits | The total number of ElastiCacheProcessingUnits (ECPUs) consumed by the requests executed on your cache | Count |
+| SearchNumberOfIndexes | Number of search indexes. | Count |
+| SearchTotalIndexedDocuments | Total number of keys in all search indexes. | Count |
+| SearchBytesUsedForCache | The total number of bytes that search indexes add to the data stored in your cache. | Bytes |
 | SuccessfulReadRequestLatency | Latency of successful read requests. | Microseconds |
 | SuccessfulWriteRequestLatency | Latency of successful write requests | Microseconds |
 | TotalCmdsCount | Total count of all commands executed on your cache | Count |
@@ -70,6 +73,8 @@ ElastiCache also emits the following command level metrics. For each command typ
 | JsonBasedGetCmdsECPUs | ECPUs consumed by JSON read-only commands. | Count |
 | JsonBasedSetCmds | The total number of JSON write commands. This is derived from the Valkey or Redis OSS commandstats statistic by summing all JSON write commands that act upon JSON keys. | Count |
 | JsonBasedSetCmdsECPUs | ECPUs consumed by JSON write commands. | Count |
+| SearchBasedCmds | Total number of search commands. | Count |
+| SearchBasedCmdsECPUs | ECPUs consumed by search commands. | Count |
 | KeyBasedCmds | The total number of commands that are key-based. This is derived from the Valkey or Redis OSS commandstats statistic by summing all of the commands that act upon one or more keys across multiple data structures (del, expire, rename, and so on.). | Count |
 | KeyBasedCmdsECPUs | ECPUs consumed by key-based commands. | Count |
 | ListBasedCmds | The total number of commands that are list-based. This is derived from the Valkey or Redis OSS commandstats statistic by summing all of the commands that act upon one or more lists (lindex, lrange, lpush, ltrim, and so on). | Count |

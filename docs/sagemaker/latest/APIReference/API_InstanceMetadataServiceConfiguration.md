@@ -14,7 +14,7 @@ Information on the IMDS configuration of the notebook instance
 Indicates the minimum IMDS version that the notebook instance supports. When passed as part of `CreateNotebookInstance`, if no value is selected, then it defaults to IMDSv1. This means that both IMDSv1 and IMDSv2 are supported. If passed as part of `UpdateNotebookInstance`, there is no default.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1.
-Pattern: `1|2`
+Pattern: `(1|2)`
 Required: Yes
 
 ## See Also

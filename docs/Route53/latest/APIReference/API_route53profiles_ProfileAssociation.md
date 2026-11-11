@@ -39,6 +39,12 @@ Type: String
 Length Constraints: Minimum length of 12. Maximum length of 32.
 Required: No
 
+ ** Priority **   <a name="Route53Profiles-Type-route53profiles_ProfileAssociation-Priority"></a>
+ The priority of the Profile association. Route 53 VPC Resolver evaluates the Profile associations for a VPC in priority order, starting with the lowest value. Associations created without a priority have priority 100.
+Type: Integer
+Valid Range: Minimum value of 100. Maximum value of 9900.
+Required: No
+
  ** ProfileId **   <a name="Route53Profiles-Type-route53profiles_ProfileAssociation-ProfileId"></a>
  ID of the Profile.
 Type: String

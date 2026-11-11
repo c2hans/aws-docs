@@ -13,7 +13,7 @@ The details of a project member.
  ** designation **   <a name="datazone-Type-ProjectMember-designation"></a>
 The designated role of a project member.
 Type: String
-Valid Values: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD`
+Valid Values: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD | USER_CREATED_DESIGNATION`
 Required: Yes
 
  ** memberDetails **   <a name="datazone-Type-ProjectMember-memberDetails"></a>
@@ -21,6 +21,12 @@ The membership details of a project member.
 Type: [MemberDetails](API_MemberDetails.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** userCreatedDesignationId **   <a name="datazone-Type-ProjectMember-userCreatedDesignationId"></a>
+The ID of the user-created designation held by the project member when `designation` is `USER_CREATED_DESIGNATION`.
+Type: String
+Pattern: `[a-zA-Z0-9_-]{1,36}`
+Required: No
 
 ## See Also
 <a name="API_ProjectMember_SeeAlso"></a>

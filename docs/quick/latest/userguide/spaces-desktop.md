@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/spaces-desktop.ht
 # Spaces
 <a name="spaces-desktop"></a>
 
-Spaces are curated collections of documents and Amazon Quick resources that an agent uses as a source of information. On desktop you browse spaces, chat with them as context, and create new ones by navigating to **Spaces** in the left navigation or through chat.
+Spaces are curated collections of documents and AWS Quick resources that an agent uses as a source of information. On desktop you browse spaces, chat with them as context, and create new ones by navigating to **Spaces** in the left navigation or through chat.
 
 ## Browsing spaces
 <a name="spaces-browsing"></a>
@@ -25,4 +25,4 @@ Choose **Create** to make a new space. Selecting a space opens it as a tab, so y
 Uploading your local files and folders makes them searchable in natural language. After your files are uploaded and reach a Ready status, you can query them in natural language.
 
 **Note**
-Adding documents to spaces consumes index cost. For details, see [Amazon Quick pricing](https://aws.amazon.com/quick/pricing/).
+Adding documents to spaces consumes index cost. For details, see [AWS Quick pricing](https://aws.amazon.com/quick/pricing/).

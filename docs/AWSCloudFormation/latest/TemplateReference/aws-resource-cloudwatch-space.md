@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::Space
 <a name="aws-resource-cloudwatch-space"></a>
 
-Resource type definition for `AWS::CloudWatch::Space`
+Resource Type definition for `AWS::CloudWatch::Space`. A space is where you work in CloudWatch Omni. It gives you access to telemetry from the account and Region in which the space is hosted, and controls who can see it.
 
 ## Syntax
 <a name="aws-resource-cloudwatch-space-syntax"></a>
@@ -51,7 +51,7 @@ Properties:
 <a name="aws-resource-cloudwatch-space-properties"></a>
 
 `AgentCoreEvaluationRoleArn`  <a name="cfn-cloudwatch-space-agentcoreevaluationrolearn"></a>
-The Amazon Resource Name (ARN) of the IAM role used for AgentCore evaluation.
+The ARN of the IAM role used by AgentCore online evaluation. Absent when the space was created without one.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:.+$`
@@ -60,7 +60,7 @@ The Amazon Resource Name (ARN) of the IAM role used for AgentCore evaluation.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DataAccessRoleArn`  <a name="cfn-cloudwatch-space-dataaccessrolearn"></a>
-The Amazon Resource Name (ARN) of the IAM role the space uses to access observability data.
+The ARN of the IAM role used for data access.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:.+$`
@@ -69,20 +69,20 @@ The Amazon Resource Name (ARN) of the IAM role the space uses to access observab
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DomainId`  <a name="cfn-cloudwatch-space-domainid"></a>
-The identifier of the domain the space belongs to.
+The ID of the domain to create the space in.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^d-[0-9a-z]{1,25}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EncryptionConfiguration`  <a name="cfn-cloudwatch-space-encryptionconfiguration"></a>
-The encryption configuration for the space.
+How the space's data at rest is encrypted. Always populated.
 *Required*: No
 *Type*: [EncryptionConfiguration](aws-properties-cloudwatch-space-encryptionconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-cloudwatch-space-name"></a>
-The name of the space.
+A name that identifies the space.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-z0-9]+(-[a-z0-9]+)*$`
@@ -121,19 +121,19 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 The Amazon Resource Name (ARN) of the space.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-The time the space was created.
+The timestamp when the space was created.
 
 `OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
-The AWS account that owns the space.
+AWS account ID that owns this space.
 
 `Region`  <a name="Region-fn::getatt"></a>
-The AWS Region the space resides in.
+The region where this space was created.
 
 `SpaceId`  <a name="SpaceId-fn::getatt"></a>
-The unique identifier of the space.
+The unique ID of the space.
 
 `Status`  <a name="Status-fn::getatt"></a>
 The status of the space.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time the space was last updated.
+The timestamp when the space was last updated.

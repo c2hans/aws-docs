@@ -13,6 +13,7 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 | single field | Yes | Yes | Yes | Yes | Yes |
 | compound | Yes | Yes | Yes | Yes | Yes |
 | multi-key | Yes | Yes | Yes | Yes | Yes |
+| wildcard | No | No | No | No | No |
 
 Use the unique option to ensure uniqueness for the field(s) across documents in a collection.
 

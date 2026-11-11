@@ -20,7 +20,7 @@ These sample MDAA configurations (starter kits) are provided as a starting point
 +  [SMUS Research Environment](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/smus_research_environment) - Multi-team research environment on SageMaker Unified Studio in a single account
 +  [SMUS Data Mesh](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/smus_data_mesh) - Multi-account SageMaker Unified Studio deployment with cross-account data sharing and custom blueprints
 +  [MLOps Platform](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/mlops_platform) - End-to-end ML lifecycle: training, deployment, and monitoring with CI/CD
-+  [GenAI Foundation](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/genai_foundation) - Bedrock-based customer support agent with RAG, knowledge bases, and guardrails
++  [GenAI Foundation](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/genai_foundation) - AgentCore-based customer support agent with RAG knowledge bases, gateway tools, and guardrails
 +  [GAIA Chatbot](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/genai_gaia_chatbot) - Production-ready GenAI chatbot backend with Cognito auth, AppSync streaming, and CloudFront
 +  [Health Data Accelerator](https://github.com/aws/modern-data-architecture-accelerator/tree/main/starter_kits/health_data_accelerator) - Healthcare-focused data lake with AWS DMS change-data-capture ingestion, three-zone S3 storage, and Step Functions-orchestrated Glue ETL pipelines
 

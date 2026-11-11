@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/rudderstack-connector-limitations.html
+---
+
+# Limitations and notes for the RudderStack connector
+<a name="rudderstack-connector-limitations"></a>
+
+The following are limitations and notes for the RudderStack connector:
++ RudderStack is supported as a source only. Writing to RudderStack is not supported.
++ Job bookmarks are not supported.

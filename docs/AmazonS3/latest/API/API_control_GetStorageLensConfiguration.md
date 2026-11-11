@@ -30,7 +30,7 @@ The request uses the following URI parameters.
  ** [storagelensid](#API_control_GetStorageLensConfiguration_RequestSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-request-uri-uri-ConfigId"></a>
 The ID of the Amazon S3 Storage Lens configuration.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[a-zA-Z0-9\-\_\.]+`
+Pattern: `[a-zA-Z0-9\-\_]+`
 Required: Yes
 
  ** [x-amz-account-id](#API_control_GetStorageLensConfiguration_RequestSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-request-header-AccountId"></a>
@@ -221,7 +221,7 @@ Type: [StorageLensExpandedPrefixesDataExport](API_control_StorageLensExpandedPre
 A container for the Amazon S3 Storage Lens configuration ID.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[a-zA-Z0-9\-\_\.]+`
+Pattern: `[a-zA-Z0-9\-\_]+`
 
  ** [Include](#API_control_GetStorageLensConfiguration_ResponseSyntax) **   <a name="AmazonS3-control_GetStorageLensConfiguration-response-Include"></a>
 A container for what is included in this configuration. This container can only be valid if there is no `Exclude` container submitted, and it's not empty.

@@ -61,7 +61,8 @@ Content-type: application/json
    "members": [
       {
          "designation": "string",
-         "memberDetails": { ... }
+         "memberDetails": { ... },
+         "userCreatedDesignationId": "string"
       }
    ],
    "nextToken": "string"

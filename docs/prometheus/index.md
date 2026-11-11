@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/prometheus/index.html
 title: 'Amazon Managed Service for Prometheus Documentation'
 canonical_url: https://docs.aws.amazon.com/prometheus/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Amazon Managed Service for Prometheus Documentation

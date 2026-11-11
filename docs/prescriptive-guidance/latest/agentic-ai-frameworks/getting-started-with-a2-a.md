@@ -25,7 +25,7 @@ A2A supports interactions ranging from simple stateless requests to multi-step n
 + **Capability-based discovery**, enabling emergent division of labor
 + **Session anchoring** for stateful multi-step interactions
 
-By adopting open, agent-native protocols like A2A, organizations create AI systems that are modular, interoperable, and capable of cross-boundary collaboration. A2A ensures that agent ecosystems remain flexible and evolvable as new agents, teams, or external systems are introduced, without requiring rigid orchestration layers or prior coupling.
+By adopting open, agent-native protocols like A2A, organizations create AI systems that are modular, interoperable, and capable of cross-boundary collaboration. A2A helps agent systems remain flexible and evolvable as new agents, teams, or external systems are introduced, without requiring rigid orchestration layers or prior coupling.
 
 To implement the A2A protocol in your agent architecture, take the following actions:
 

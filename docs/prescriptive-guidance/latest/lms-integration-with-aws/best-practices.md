@@ -39,7 +39,7 @@ The LMS plugin integration architecture connects the Learning Management System 
 *Figure 1: LMS Plugin Integration Pattern*
 
 ### User Flow
-<a name="user-flow.09d6c3f2-4890-53c8-a7ea-742167a1653c"></a>
+<a name="user-flow.5dfa3a5f-f1dc-5ab7-a21a-8eb298322c77"></a>
 
 When a user interacts with the plugin in the LMS:
 
@@ -60,7 +60,7 @@ When a user interacts with the plugin in the LMS:
 This architecture ensures secure communication between the LMS and AWS while maintaining a seamless user experience within the familiar LMS environment.
 
 ### Implementation Technologies
-<a name="implementation-technologies.301982c2-24ce-5626-8759-0318480fa6dc"></a>
+<a name="implementation-technologies.04543af6-77e2-5f8a-8a82-ffa8c730e957"></a>
 
 The plugin implementation depends on the LMS platform's technology stack:
 + **Moodle**: PHP with specific plugin structure requirements
@@ -92,7 +92,7 @@ When integrating AWSservices from an LMS plugin, the recommended approach is to 
 This architecture creates a clear security boundary between the LMS and AWS environments. The LMS plugin only needs to know the API Gateway endpoint URL and appropriate authentication method for the API (such as IAM Role or OAuth token). Regardless of the specific integration approach, LMS plugin development requires careful consideration of security, performance, and maintainability. Proper authentication, authorization, and data protection mechanisms must be implemented to ensure the integrity of the overall system.
 
 ### Advantages
-<a name="advantages.3d0d07eb-c586-541d-aa11-93cc2a4ed32c"></a>
+<a name="advantages.05d8e7c9-7dcc-5dc8-92a8-f248428f2a37"></a>
 + **Tight UI/UX integration**: The plugin becomes part of the native LMS interface, providing a seamless experience for users who don't want to leave the LMS environment.
 + **Direct Access to the LMS Context**: Plugins have access to course context, user roles, and other LMS-specific data that external applications would need to request.
 + **Leverage Existing Authentication**: Can utilize the LMS's authentication and authorization mechanisms, simplifying security implementation.
@@ -116,7 +116,7 @@ However, the integration of Generative AI tools presents even more demanding req
 For modern educational technology needs, LTI often serves best as one component of a larger integration strategy. Many successful implementations use LTI for its strengths (secure launches, basic data passing, grade return) while supplementing it with additional integration methods for more complex requirements.
 
 ### Architecture and Components
-<a name="architecture-and-components.4edeceac-65e5-5271-a295-d5bc6ea4739a"></a>
+<a name="architecture-and-components.99a5f9ac-7c37-5b57-aa19-4f01f69ef43b"></a>
 
 The LTI integration architecture consists of:
 
@@ -161,7 +161,7 @@ When a user interacts with the LTI plugin in the LMS:
 + **Hosting**: Commonly deployed as a containerized application on [Amazon Elastic Container Service (Amazon ECS)](https://aws.amazon.com/ecs/) / [Amazon Elastic Kubernetes Service (Amazon EKS)](https://aws.amazon.com/eks/) or as a serverless application using API Gateway and Lambda
 
 ### Authentication and Security
-<a name="authentication-and-security.b8077b10-528b-5f9d-b10c-707f6e20a42d"></a>
+<a name="authentication-and-security.c7e9893e-510f-5a71-84f8-52d4127d8248"></a>
 
 LTI implements a secure authentication mechanism based on OAuth 2.0:
 
@@ -295,7 +295,7 @@ When an event occurs in the LMS, the following process takes place:
 This architecture ensures secure communication between the LMS and AWS services allowing LMS platform capabilities to be extended with AWS services.
 
 ### Implementation Technologies
-<a name="implementation-technologies.75be0a7c-9fbd-5f90-a7c8-244d1d391cb2"></a>
+<a name="implementation-technologies.dd3b934d-dd88-56af-8eab-1c4c63c3217c"></a>
 
 The LMS plugin implementation depends on the platform's technology stack, for example:
 + **Moodle**: [The Moodle Events API](https://docs.moodle.org/dev/Events_API) can be used with a [local plugin](https://moodledev.io/docs/4.5/apis/plugintypes/local) to send the events to EventBridge.
@@ -385,7 +385,7 @@ ETL (Extract, Transform, Load) integration focuses on batch processing of LMS da
 <a name="implementation-technologies.5c6fabf8-1cbf-55f6-88b4-e3c51e1248c6"></a>
 + **ETL Processing**: AWS Glue for serverless data integration
 + **Data Storage**: Amazon S3 for the data lake architecture
-+ **Analytics**: Amazon Athena for SQL queries, Amazon Quick Sight for visualization
++ **Analytics**: Amazon Athena for SQL queries, AWS Quick Sight for visualization
 + **Scheduling**: Amazon EventBridge or AWS Glue triggers for triggering extraction on schedule
 + **Optional Processing**: AWS Lambda for additional transformations or writing data back to LMS
 

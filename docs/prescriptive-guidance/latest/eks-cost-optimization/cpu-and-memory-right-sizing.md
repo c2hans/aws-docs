@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 Over-provisioned requests are the \#1 hidden cost in Kubernetes. Pods requesting more than they use prevent bin-packing and force unnecessary nodes.
 
 ## Identify Over-Provisioned Workloads
-<a name="identify-over-provisioned-workloads.9d454aa4-b549-5466-b262-d145ca08d0c8"></a>
+<a name="identify-over-provisioned-workloads.9413539c-fb97-58eb-a0d3-62a7cea0f824"></a>
 
 Compare resource requests against actual usage to find pods consuming significantly less than they reserve. Pods using less than 30% of their CPU request are candidates for right-sizing.
 

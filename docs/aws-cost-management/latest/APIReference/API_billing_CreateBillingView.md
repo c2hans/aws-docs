@@ -82,7 +82,12 @@ Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No
 
  ** [sourceViews](#API_billing_CreateBillingView_RequestSyntax) **   <a name="awscostmanagement-billing_CreateBillingView-request-sourceViews"></a>
-A list of billing views used as the data source for the custom billing view.
+A list of billing views used as the data source for the custom billing view. Source views can be of the following types:
++  `PRIMARY` - The billing view that contains all cost management data associated with an account.
++  `CUSTOM` - A billing view that a customer creates from one or more source views.
++  `BILLING_GROUP` - The billing view for an AWS Billing Conductor billing group.
++  `BILLING_TRANSFER` - The billing view for the billing data that a bill transfer account is financially responsible for.
++  `BILLING_TRANSFER_SHOWBACK` - The billing view for billing data configured for showback or chargeback purposes.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Pattern: `arn:aws[a-z-]*:(billing)::[0-9]{12}:billingview/[a-zA-Z0-9/:_\+=\.\-@]{0,75}[a-zA-Z0-9]`

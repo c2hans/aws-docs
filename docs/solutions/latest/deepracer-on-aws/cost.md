@@ -27,6 +27,8 @@ The training job compute usage for the examples in this section is figured using
 
 Total SageMaker cost = [(212.5 hours) \* ($0.714/instance hour)] \+ ($1.40 storage cost) = $153.13
 
+SageMaker managed warm pools can add up to about USD $0.71 (one instance hour) for each evaluation or race submission. For details, see [SageMaker managed warm pools](quotas.md#sagemaker-warm-pools).
+
 ## Training and evaluation cost examples
 <a name="training-and-evaluation-cost-examples"></a>
 

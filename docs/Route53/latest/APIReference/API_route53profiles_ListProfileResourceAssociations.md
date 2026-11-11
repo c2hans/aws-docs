@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 <a name="API_route53profiles_ListProfileResourceAssociations_RequestSyntax"></a>
 
 ```
-GET /profileresourceassociations/profileid/{{ProfileId}}?maxResults={{MaxResults}}&nextToken={{NextToken}}&resourceType={{ResourceType}} HTTP/1.1
+GET /profileresourceassociations/profileid/{{ProfileId}}?maxResults={{MaxResults}}&nextToken={{NextToken}}&resourceArn={{ResourceArn}}&resourceType={{ResourceType}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -32,6 +32,10 @@ When you request a list of objects, at most the number of objects specified by `
  The ID of the Profile.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
+
+ ** [ResourceArn](#API_route53profiles_ListProfileResourceAssociations_RequestSyntax) **   <a name="Route53Profiles-route53profiles_ListProfileResourceAssociations-request-uri-ResourceArn"></a>
+ The Amazon Resource Name (ARN) of the resource. When you specify this optional parameter, the list is filtered to return only the resource associations for the specified resource.
+Length Constraints: Minimum length of 1. Maximum length of 255.
 
  ** [ResourceType](#API_route53profiles_ListProfileResourceAssociations_RequestSyntax) **   <a name="Route53Profiles-route53profiles_ListProfileResourceAssociations-request-uri-ResourceType"></a>
  ID of a resource if you want information on only one type.

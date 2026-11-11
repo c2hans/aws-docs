@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sms-voice/index.html
 title: 'AWS End User Messaging SMS'
 canonical_url: https://docs.aws.amazon.com/sms-voice/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # AWS End User Messaging SMS

@@ -8,28 +8,28 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ## Overview
 <a name="byol-ded-hosts-overview"></a>
 
-If you have significant investments in Microsoft workloads and existing enterprise licensing agreements, you can choose from several AWS options to support these workloads, including [license included (provided by AWS)](https://aws.amazon.com/windows/faq/#buy-win-serv-inc) and [Bring Your Own License (BYOL)](https://aws.amazon.com/windows/faq/#byol) options. You can use [Amazon EC2 Dedicated Hosts](https://aws.amazon.com/ec2/dedicated-hosts/) to fully take advantage of existing Microsoft licensing agreements and bring Windows Server to AWS. This can save you up to 50 percent on Amazon EC2 instance costs. Since Windows licenses account for approximately half of the instance costs, bringing Windows Server to AWS on Dedicated Hosts can result in substantial cost savings. Because Windows Server can't be brought to [default (shared) tenancy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.html), Dedicated Hosts is the ideal choice if you want to use your existing licenses for Windows Server on AWS.
+If you have significant investments in Microsoft workloads and existing enterprise licensing agreements, you can choose from several AWS options to support these workloads, including [license included (provided by AWS)](https://aws.amazon.com/windows/faq/#buy-win-serv-inc) and [Bring Your Own License (BYOL)](https://aws.amazon.com/windows/faq/#byol) options. You can use [Amazon EC2 Dedicated Hosts](https://aws.amazon.com/ec2/dedicated-hosts/) to use your existing Microsoft licensing agreements and bring Windows Server to AWS. This can save you up to 50 percent on Amazon EC2 instance costs. Because Windows licenses account for approximately half of the instance costs, bringing Windows Server to AWS on Dedicated Hosts can help you reduce costs. Because Windows Server can't be brought to [default (shared) tenancy](https://docs.aws.amazon.com/autoscaling/ec2/userguide/advanced-settings-for-your-launch-template.html), Dedicated Hosts is a suitable choice if you want to use your existing licenses for Windows Server on AWS.
 
-Dedicated Hosts are not just for Windows Server BYOL instances. They also offer you the flexibility to match your on-premises licensing for existing SQL Server workloads. Dedicated Hosts expose the physical cores of the underlying server, and enable you to license SQL Server at the physical core level. This isn't possible in default (shared) tenancy where SQL Server licensing is based on the number of virtual CPUs allocated to the instance. This feature enables you to license SQL Server workloads on AWS in a way that's consistent with your on-premises licensing strategy. Consequently, you can save up to 50 percent on SQL Server licensing costs compared to default (shared) tenancy, in addition to cost savings on instance costs, by using eligible Windows licenses. For more information about this scenario, see the [Understand SQL Server licensing](sql-server-licensing.md) section of this guide.
+Dedicated Hosts aren't only for Windows Server BYOL instances. They also give you the flexibility to match your on-premises licensing for existing SQL Server workloads. Dedicated Hosts expose the physical cores of the underlying server and enable you to license SQL Server at the physical core level. This isn't possible in default (shared) tenancy, where SQL Server licensing is based on the number of virtual CPUs allocated to the instance. This feature enables you to license SQL Server workloads on AWS in a way that's consistent with your on-premises licensing strategy. As a result, you can save up to 50 percent on SQL Server licensing costs compared to default (shared) tenancy, in addition to cost savings on instance costs, by using eligible Windows licenses. For more information about this scenario, see the [Understand SQL Server licensing](sql-server-licensing.md) section of this guide.
 
 ## Amazon EC2 Dedicated Hosts
 <a name="byol-ded-hosts-ec2"></a>
 
-An Amazon EC2 Dedicated Host is essentially the same EC2 host that AWS uses to run its EC2 compute offerings. The difference is that these hosts are fully dedicated to a single customer and provide exclusive access to the underlying physical infrastructure. You can use Dedicated Hosts to run your instances on hardware that's entirely dedicated to your use, instead of sharing resources with other AWS customers. This gives you greater control over cloud resources and enables you to reduce costs by bringing your own software licenses, such as Windows Server and SQL Server, to AWS.
+An [Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) Dedicated Host is the same EC2 host that AWS uses to run its EC2 compute offerings. The difference is that these hosts are fully dedicated to a single customer and provide exclusive access to the underlying physical infrastructure. You can use Dedicated Hosts to run your instances on hardware that's entirely dedicated to your use, instead of sharing resources with other AWS customers. This gives you greater control over cloud resources and enables you to reduce costs by bringing your own software licenses, such as Windows Server and SQL Server, to AWS.
 
 Keep in mind the following:
 + A Dedicated Host is a physical server fully dedicated to a single customer. You get visibility into the sockets and physical cores of the Dedicated Host so that you can address licensing compliance requirements, such as per-socket, per-core, or per-VM software licensing agreements.
 + Dedicated Hosts that can support multiple instance sizes of the same instance family are known as heterogeneous Dedicated Hosts. These [instance families](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html?icmpid=docs_ec2_console#dedicated-hosts-allocating) include T3, A1, C5, M5, R5, C5n, R5n, and M5n. In contrast, other instance families support only one instance size on the same Dedicated Host. These are called homogeneous Dedicated Hosts.
-+ Dedicated Hosts are billed on a per-host basis. This means that you are charged per Dedicated Host regardless of how many instances are running on it. Dedicated Host pricing varies based on the instance family, Region, and payment option selected. You can choose the optimal configuration for your workload to achieve your desired performance and cost outcomes.
++ Dedicated Hosts are billed on a per-host basis. This means that you are charged per Dedicated Host regardless of how many instances are running on it. Dedicated Host pricing varies based on the instance family, Region, and payment option that you select. You can choose the configuration that meets your workload requirements to achieve your desired performance and cost outcomes.
 
 This diagram illustrates the differences between shared tenancy instances and Dedicated Hosts.
 
 ![Comparison of shared tenancy and Dedicated Hosts](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/48a38dd7-be5d-479a-89ae-550423687e68.png)
 
-### Homogenous Dedicated Hosts
-<a name="homogenous-dedicated-hosts.4b602fa9-043f-508b-a408-19fe80a38e40"></a>
+### Homogeneous Dedicated Hosts
+<a name="homogeneous-dedicated-hosts.c03f935e-9779-5254-8555-93199c7f278c"></a>
 
-Consider a scenario where an M6i Dedicated Host is used. M6i and R6i Dedicated Hosts have two sockets, 64 physical cores, and support instance types of the same size. These are called homogenous Dedicated Hosts. This means that the number of instances that you can launch on a single M6i Dedicated Host depends on the instance size.
+Consider a scenario where you use an M6i Dedicated Host. M6i and R6i Dedicated Hosts have two sockets, 64 physical cores, and support instance types of the same size. These are called homogeneous Dedicated Hosts. This means that the number of instances that you can launch on a single M6i Dedicated Host depends on the instance size.
 
 For example:
 + In the case of xlarge (4 vCPUs), you can launch a maximum of 32 m6i.xlarge instances on this Dedicated Host.
@@ -40,21 +40,21 @@ The following diagram shows the Dedicated Host options for M6 instances.
 
 ![Dedicated Host options for M6 instances](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/4ac40d2c-9bdf-4185-8a63-9c7f0f29ad66.png)
 
-### Heterogenous Dedicated Hosts
-<a name="heterogenous-dedicated-hosts.fc7e13b9-bdfe-51da-b24e-3d7baeaf7aca"></a>
+### Heterogeneous Dedicated Hosts
+<a name="heterogeneous-dedicated-hosts.f24bd1c3-e323-5f16-88f8-3abacd2903a1"></a>
 
-Dedicated Hosts that support multiple instance sizes on the same host are referred to as a heterogenous Amazon EC2 Dedicated Hosts. The following diagram shows an example of C5, M5, and R5 Dedicated Hosts with various instance sizes, such as 2xlarge, xlarge, and 4xlarge.
+Dedicated Hosts that support multiple instance sizes on the same host are heterogeneous Amazon EC2 Dedicated Hosts. The following diagram shows an example of C5, M5, and R5 Dedicated Hosts with various instance sizes, such as 2xlarge, xlarge, and 4xlarge.
 
 ![C5, M5, and R5 Dedicated Host examples](https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-costs-microsoft-workloads/images/guide-img/480a01db-b8a4-4c65-9cb9-61f06d23096c/images/1ee795af-7f97-4f49-a060-b5aefda7ad7e.png)
 
 ### Dedicated Host management
-<a name="dedicated-host-management.1d7e60d0-1403-5da0-8791-ec6628d60a68"></a>
+<a name="dedicated-host-management.c1a2184c-f8c8-5510-be15-4a261669ac43"></a>
 
-We recommend that you consider the following in regard to managing Amazon EC2 Dedicated Hosts:
+Consider the following when you manage Amazon EC2 Dedicated Hosts:
 + To take full advantage of Dedicated Hosts, you can [share a single host between multiple accounts within your organization](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dh-sharing.html). Host sharing enables resource optimization and can result in cost savings by using every available slot on the host. By sharing a Dedicated Host between business units, you can centralize your IT infrastructure and improve resource utilization, while still maintaining separation between workloads. If you're part of an organization in AWS Organizations and sharing is enabled within your organization, then consumers in your organization are automatically granted access to the shared Dedicated Host. Otherwise, consumers receive an invitation to join the resource share and are granted access to the shared Dedicated Host after accepting the invitation.
-+ You can run Windows Server 2022 on Dedicated Hosts under the license-included model, as Windows Server 2019 is the latest version where you can BYOL. If you want to use Windows Server 2022 on Dedicated Hosts, you must use Windows Server 2022 license-included instances.
-+ [AWS License Manager](https://aws.amazon.com/license-manager/) is a comprehensive solution for managing software licenses from various vendors across AWS and on-premises environments. If you [use License Manager](https://catalog.us-east-1.prod.workshops.aws/workshops/c7d505a0-b48b-4178-922a-9ee675dfb81c/en-US/license-manager), you can gain greater visibility and control over how software licenses are used, leading to cost savings and improved compliance. You can use License Manager to set rules to emulate your unique licensing terms. This enables you to enforce those rules and prevent license misuse. This can reduce the risk of noncompliance and improve license management processes.
-+ You can use License Manager to automate the placement, release, and recovery of hosts by using [host resource groups](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html). This can increase productivity and reduce management overhead. License Manager also provides a centralized view of license usage across AWS and on-premises environments based on licensing rules, making it easy to manage incremental licensing purchases, compliance, and vendor audits across your organization. Furthermore, License Manager integrates with AWS Organizations and AWS Resource Access Manager (AWS RAM) to share license configurations across accounts and Regions. This enables you to create reports for your entire environment based on a schedule and manage licensing rules centrally in one AWS account. Ultimately, this can improve governance and reduce complexity.
++ You can run Windows Server 2022 on Dedicated Hosts under the license-included model, as Windows Server 2019 is the latest version where you can bring your own license (BYOL). If you want to use Windows Server 2022 on Dedicated Hosts, you must use Windows Server 2022 license-included instances.
++ [AWS License Manager](https://aws.amazon.com/license-manager/) helps you manage software licenses from various vendors across AWS and on-premises environments. If you [use License Manager](https://catalog.us-east-1.prod.workshops.aws/workshops/c7d505a0-b48b-4178-922a-9ee675dfb81c/en-US/license-manager), you can gain greater visibility and control over how you use software licenses, which can help you save costs and improve compliance. You can use License Manager to set rules that reflect your licensing terms. This enables you to enforce those rules and helps prevent license misuse. This can reduce the risk of noncompliance and improve license management processes.
++ You can use License Manager to automate the placement, release, and recovery of hosts by using [host resource groups](https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html). This can increase productivity and reduce management overhead. License Manager also provides a centralized view of license usage across AWS and on-premises environments based on licensing rules, which helps you manage incremental licensing purchases, compliance, and vendor audits across your organization. Furthermore, License Manager integrates with AWS Organizations and AWS Resource Access Manager (AWS RAM) to share license configurations across accounts and Regions. This enables you to create reports for your entire environment based on a schedule and manage licensing rules centrally in one AWS account. This can improve governance and reduce complexity.
 + When designing high availability for Dedicated Hosts within a single Region, make sure that you've allocated a minimum of two Dedicated Hosts in a minimum of two Availability Zones for production-critical workloads. For more information, see the [Amazon EC2 Dedicated Hosts for Microsoft Windows on AWS](https://aws.amazon.com/quickstart/architecture/microsoft-dedicated-host/) reference deployment.
 + For each Dedicated Host instance family, there is a limit on the number of instances that you can run for each instance size. For more information, see [Dedicated Hosts Configuration Table](https://aws.amazon.com/ec2/dedicated-hosts/pricing/?nc1=h_ls#Dedicated_Hosts_Configuration_Table) in the Amazon EC2 documentation.
 
@@ -62,18 +62,18 @@ We recommend that you consider the following in regard to managing Amazon EC2 De
 <a name="byol-licensing-options"></a>
 
 Licenses are classified into the following primary categories:
-+ **License included **– This licensing option enables you to purchase and use licenses on demand, paying solely for what you use. It's ideal for use cases where you're seeking flexibility in your licensing usage and wish to avoid upfront costs. You can choose from a variety of Windows Server, SQL Server, and other Microsoft products.
-+ **BYOL products with License Mobility **– If you already have existing licenses and want to use them in the cloud, this licensing option allows you to bring your own licenses to the cloud through the [Microsoft License Mobility program](https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility). Products with license mobility, such as SQL Server with Software Assurance (SA), can be brought to either shared or dedicated tenancy. This reduces AWS instance costs.
-+ **BYOL products without License Mobility **– For Microsoft products like Windows Server that lack License Mobility, AWS provides dedicated options for using these products in the cloud. Additionally, Dedicated Hosts enable licensing at the physical core level, making it possible to save 50 percent or more on the licenses needed to run your workloads. Dedicated Hosts are an excellent choice for stable and predictable workloads that run most of the time.
++ **License included **– This licensing option enables you to purchase and use licenses on demand, paying solely for what you use. It's suited to use cases where you want flexibility in your licensing usage and wish to avoid upfront costs. You can choose from a variety of Windows Server, SQL Server, and other Microsoft products.
++ **Bring your own license (BYOL) products with License Mobility **– If you already have existing licenses and want to use them in the cloud, this licensing option allows you to bring your own licenses to the cloud through the [Microsoft License Mobility program](https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility). You can bring products with License Mobility, such as SQL Server with Software Assurance (SA), to either shared or dedicated tenancy. This can help reduce AWS instance costs.
++ **BYOL products without License Mobility **– For Microsoft products like Windows Server that lack License Mobility, AWS provides dedicated options for using these products in the cloud. Additionally, Amazon EC2 Dedicated Hosts enable licensing at the physical core level, which can help reduce the number of licenses needed to run your workloads. Dedicated Hosts are designed for stable and predictable workloads that run most of the time.
 
 ## Bringing Windows Server licenses
 <a name="byol-licensing-windows"></a>
 
-Bringing your own Windows licenses is one of the most effective strategies for license optimization because it enables you to take advantage of existing investments and reduce your AWS expenses. Specific BYOL scenarios don't require SA or License Mobility benefits, but Amazon EC2 dedicated infrastructure is always necessary. To be eligible, you must have purchased perpetual licenses before October 1, 2019 or added them as a true-up under an active Enterprise Enrollment effective before October 1, 2019. In these specific BYOL scenarios, you can upgrade only licenses to versions available prior to October 1, 2019. For example, if you dropped SA in 2017, you have the rights to deploy only up to Windows Server 2016, not 2019. However, 2019 is the last version eligible for BYOL to AWS. For more information, see [Licensing – Windows Server](https://aws.amazon.com/windows/faq/#licensing-winserv) in the AWS documentation.
+Bringing your own Windows licenses is an effective strategy for license optimization because it enables you to take advantage of existing investments and reduce your AWS expenses. Specific bring your own license (BYOL) scenarios don't require Software Assurance (SA) or License Mobility benefits, but Amazon EC2 dedicated infrastructure is required. To be eligible, you must have purchased perpetual licenses before October 1, 2019 or added them as a true-up under an active Enterprise Enrollment effective before October 1, 2019. In these specific BYOL scenarios, you can upgrade licenses only to versions available prior to October 1, 2019. For example, if you dropped SA in 2017, you have the rights to deploy only up to Windows Server 2016, not 2019. However, 2019 is the last version eligible for BYOL to AWS. For more information, see [Licensing – Windows Server](https://aws.amazon.com/windows/faq/#licensing-winserv) in the AWS documentation.
 
-Bringing licenses can significantly impact the cost of running Microsoft workloads on AWS. When you bring your own licenses, you're not required to pay additional licensing costs for the instances running in the cloud, which can lead to considerable cost savings.
+Bringing your own licenses can affect the cost of running Microsoft workloads on AWS. When you bring your own licenses, you don't pay additional licensing costs for the instances that run in the cloud, which can reduce your costs.
 
-The following table show the on-demand monthly cost of running a single c5.xlarge instance 24/7 on various configurations.
+The following table shows the on-demand monthly cost of running a single c5.xlarge instance 24/7 on various configurations. LI indicates license included.
 
 |
 |
@@ -84,17 +84,17 @@ The following table show the on-demand monthly cost of running a single c5.xlarg
 | Windows Server only | $259.00 (LI) |
 | Compute only (Linux) | $127.00 |
 
-You  can use your existing licenses to reduce licensing costs and save money on your overall AWS bill.
+You can use your existing licenses to reduce licensing costs on your overall AWS bill.
 
-To be eligible for BYOL on Amazon EC2 Dedicated Hosts, you must bring your own software licenses, such as for Windows Server and SQL Server. BYOL allows you to use your existing licenses on AWS and can result in cost savings. To bring your own licenses, you must have the license entitlements from the software vendor and must also provide the installation media or image for the software. The installation media or image can be used to launch instances on Dedicated Hosts. To learn more about creating a BYOL AMI, see [How to create Windows Server Bring-Your-Own-License AMIs from on-premises with VM Import/Export](https://aws.amazon.com/blogs/modernizing-with-aws/how-to-create-windows-server-bring-your-own-license-amis-from-on-premises-with-vm-import-export/) in the Microsoft Workloads on AWS blog.
+To be eligible for BYOL on Amazon EC2 Dedicated Hosts, you must bring your own software licenses, such as for Windows Server and SQL Server. BYOL allows you to use your existing licenses on AWS, which can reduce costs. To bring your own licenses, you must have the license entitlements from the software vendor and must also provide the installation media or image for the software. You can use the installation media or image to launch instances on Dedicated Hosts. To learn more about creating a BYOL Amazon Machine Image (AMI), see [How to create Windows Server Bring-Your-Own-License AMIs from on-premises with VM Import/Export](https://aws.amazon.com/blogs/modernizing-with-aws/how-to-create-windows-server-bring-your-own-license-amis-from-on-premises-with-vm-import-export/) in the Microsoft Workloads on AWS blog.
 
 **Note**
-A license type set to **Auto** is the equivalent of an [AWS license-included option](https://docs.aws.amazon.com/vm-import/latest/userguide/licensing.html). This option can result in unwanted on-demand spending. You will need to switch [licensing types](https://aws.amazon.com/blogs/mt/use-aws-flexible-licensing-options-to-optimize-cost/).
+A license type set to **Auto** is equivalent to an [AWS license-included option](https://docs.aws.amazon.com/vm-import/latest/userguide/licensing.html). This option can result in unexpected on-demand spending. To avoid this, switch to a different [licensing type](https://aws.amazon.com/blogs/mt/use-aws-flexible-licensing-options-to-optimize-cost/).
 
 ## Cost optimization scenarios
 <a name="byol-licensing-opt-scenarios"></a>
 
-Right sizing and optimizing licenses is a key component of cost optimization on AWS. If you implement the right strategies, you can reduce licensing costs, maintain compliance, and achieve the best possible value from your licensing investment by using Amazon EC2 Dedicated Hosts and the BYOL option.
+Right sizing and optimizing licenses is a key component of cost optimization on AWS. If you implement effective strategies, you can reduce licensing costs, maintain compliance, and increase the value of your licensing investment by using Amazon EC2 Dedicated Hosts and the bring your own license (BYOL) option.
 
 This section covers the following example scenarios:
 + Cost savings with T3 Dedicated Hosts
@@ -102,16 +102,16 @@ This section covers the following example scenarios:
 + Highly available SQL Server deployments
 
 ### Cost savings with T3 Dedicated Hosts
-<a name="cost-savings-with-t3-dedicated-hosts.a0f97dea-da6f-5370-b7b2-afb9c2045c2a"></a>
+<a name="cost-savings-with-t3-dedicated-hosts.cb1a7370-9fce-559b-a2ff-14f87a484834"></a>
 
 T3 Dedicated Hosts differ from other Amazon EC2 Dedicated Hosts that traditionally provide fixed CPU resources. T3 Dedicated Hosts, in contrast, support burstable instances that are capable of sharing CPU resources, providing baseline CPU performance, and bursting when needed. Sharing CPU resources, also known as oversubscription, is what enables a single T3 Dedicated Host to support up to four times more instances than comparable general-purpose Dedicated Hosts.
 
-T3 Dedicated Hosts drive a lower TCO by delivering higher instance density than any other Amazon EC2 Dedicated Host. Burstable T3 instances enable you to consolidate a higher number of instances with low-to-moderate average CPU utilization on fewer hosts than ever before. T3 Dedicated Hosts also offer smaller instance sizes in a greater number of vCPU and memory combinations than other Amazon EC2 Dedicated Hosts. Smaller instance sizes can contribute to lower TCO and help deliver consolidation ratios equivalent to or greater than on-premises hosts.
+T3 Dedicated Hosts can help lower total cost of ownership (TCO) by delivering higher instance density than other Amazon EC2 Dedicated Hosts. Burstable T3 instances enable you to consolidate a higher number of instances with low-to-moderate average CPU utilization on fewer hosts. T3 Dedicated Hosts also offer smaller instance sizes in a greater number of vCPU and memory combinations than other Amazon EC2 Dedicated Hosts. Smaller instance sizes can contribute to lower TCO and help deliver consolidation ratios equivalent to or greater than on-premises hosts.
 
-T3 Dedicated Hosts are best suited for running BYOL software with low-to-moderate CPU utilization and eligible per-socket, per-core, or per-VM software licenses, including Microsoft Windows desktop, Windows Server, SQL Server, and Oracle Databases.
+T3 Dedicated Hosts are well suited for running BYOL software with low-to-moderate CPU utilization and eligible per-socket, per-core, or per-VM software licenses, including Microsoft Windows desktop, Windows Server, SQL Server, and Oracle Database.
 
 #### Use T3 Dedicated Hosts to reduce Windows Server Datacenter licenses (per core)
-<a name="use-t3-dedicated-hosts-to-reduce-windows-server-datacenter-licenses--per-core-.17f7bd9c-8ea9-5e2f-b1fb-0901d62afdda"></a>
+<a name="use-t3-dedicated-hosts-to-reduce-windows-server-datacenter-licenses--per-core-.e1eff5d6-a99a-5881-90ee-96c284b43fd3"></a>
 
 In on-premises environments, you're taking advantage of the fact that you can easily oversubscribe your physical CPUs on VMware hosts and achieve high levels of consolidation.
 
@@ -131,9 +131,9 @@ You can now achieve much higher levels of consolidation by moving your virtual m
 | Total Windows Server Datacenter licenses (per core) = (Number of servers \* Physical core count) | 10 \* 36 = 360 | 5 \* 48 = 240 | 33% |
 
 ### Comparing shared tenancy to Dedicated Hosts with SQL Server BYOL
-<a name="comparing-shared-tenancy-to-dedicated-hosts-with-sql-server-byol.ff17b4ce-a045-5a8e-a2fa-bb1a1ebecf80"></a>
+<a name="comparing-shared-tenancy-to-dedicated-hosts-with-sql-server-byol.4912a4b4-cb45-5bfb-a053-9dd3b529eb1b"></a>
 
-Consider a practical example to demonstrate the value of Amazon EC2 Dedicated Hosts. In this scenario, an organization runs a SQL Server workload in on-premises environment with 240 cores and wants to deploy the same workload cost-effectively on AWS. If this organization brings their own licenses (BYOL), they continue to pay for SA and reducing the number of cores directly affects their costs.
+Consider a practical example to demonstrate the value of Amazon EC2 Dedicated Hosts. In this scenario, an organization runs a SQL Server workload in an on-premises environment with 240 cores and wants to deploy the same workload cost-effectively on AWS. If this organization brings its own licenses (BYOL), it continues to pay for Software Assurance (SA), and reducing the number of cores directly affects its costs.
 
 The following diagram compares AWS savings between Microsoft entitlements and SQL Server.
 
@@ -146,7 +146,7 @@ Amazon EC2 Dedicated Hosts enable you to license SQL Server at the physical core
 In this case, the organization pays approximately $341,000 annually in SA costs. After right sizing on shared tenancy, they reduce costs to $197,000 with 140 vCPUs. Amazon EC2 Dedicated Hosts further reduces costs to $151,000 (an approximately 56 percent decrease).
 
 ### Highly available SQL Server deployments
-<a name="highly-available-sql-server-deployments.8f8aa58e-d75a-5a41-a4d7-23b01abf53ef"></a>
+<a name="highly-available-sql-server-deployments.e1870961-7c58-566d-a1b8-ffec6dde59bb"></a>
 
 This example analyzes how cost can influence a SQL Server deployment on AWS with various licensing considerations. Suppose an organization needs to deploy six SQL Server Enterprise servers on AWS to support three applications. These servers require high availability and have 16 vCPUs and 256 GB of RAM each. See the following scenario details:
 + **Server** – SQL Server
@@ -156,7 +156,7 @@ This example analyzes how cost can influence a SQL Server deployment on AWS with
 + **Memory (GB)** – 256
 + **Quantity **– 6
 
-To optimize costs on AWS without sacrificing performance, we recommend that you right size instances based on CPU, memory, network, and disk (IOPS/BW) utilization. After right sizing the workloads, place them on the x2iedn.4xlarge instance type, which offers 16 vCPUs. However, this instance type also includes twice the necessary memory for the workloads. Further optimization is still possible.
+To optimize costs on AWS without sacrificing performance, right size instances based on CPU, memory, network, and disk (input/output operations per second and bandwidth) utilization. After right sizing the workloads, place them on the x2iedn.4xlarge instance type, which offers 16 vCPUs. However, this instance type also includes twice the necessary memory for the workloads. Further optimization is still possible.
 
 #### Scenario 1
 <a name="scenario-1.a90df4b8-75be-5781-9352-bc7d394f3f1d"></a>
@@ -171,9 +171,9 @@ An organization deploys six SQL Server Enterprise servers on AWS shared tenancy 
 + **Monthly cost for 6 servers **– $44,108
 
 #### Scenario 2
-<a name="scenario-2.51a54bec-3e54-5458-8140-4ddd0487009e"></a>
+<a name="scenario-2.2933dd18-12d1-576f-8cd1-bde2639da966"></a>
 
-An organization has SA and BYOL for SQL Server on shared tenancy. This means that the organization uses the license-included option for Windows, but provides their own SQL Server licenses based on the number of vCPUs allocated to the instance. Since the organization has six SQL Server Enterprise servers with 16 vCPUs each, a total of 96 vCPUs is required. See the following scenario details:
+An organization has SA and BYOL for SQL Server on shared tenancy. This means that the organization uses the license-included option for Windows, but provides its own SQL Server licenses based on the number of vCPUs allocated to the instance. Because the organization has six SQL Server Enterprise servers with 16 vCPUs each, it requires a total of 96 vCPUs. See the following scenario details:
 + **Shared tenancy (instance)** – x2iedn.4xlarge
 + **Hourly cost (USD)** – $4.0705
 + **Monthly cost per unit (USD)** – $2971.47
@@ -186,9 +186,9 @@ An organization has SA and BYOL for SQL Server on shared tenancy. This means tha
 By bringing their own SQL Server licenses with SA, the organization in this scenario can achieve cost savings compared to using the license-included option for SQL Server. The precise cost savings depend on the specific licensing agreement's pricing and terms. In this scenario, AWS costs decrease by $26,280 per month when bringing SQL Server Enterprise licenses to AWS.
 
 #### Scenario 3
-<a name="scenario-3.08dbc2a9-3c31-53b5-9cce-7f81745d501c"></a>
+<a name="scenario-3.62868e55-d955-5278-b7c9-7189102e9d6e"></a>
 
-An organization has BYOL for both Windows and SQL Server on Amazon EC2 Dedicated Hosts. This means that the organization will assign licenses at the physical core level, enabling them to license only the host's physical cores. Licensing at the physical core level allows you to deploy the maximum number of instances without affecting the required licenses. This licensing model is commonly used with Windows Server Datacenter and SQL Server Enterprise edition.
+An organization has BYOL for both Windows and SQL Server on Amazon EC2 Dedicated Hosts. This means that the organization assigns licenses at the physical core level, which enables it to license only the host's physical cores. Licensing at the physical core level allows the organization to deploy more instances without increasing the required licenses. This licensing model is commonly used with Windows Server Datacenter and SQL Server Enterprise edition.
 
 This scenario uses two X2iezn Amazon EC2 Dedicated Hosts. Each host has 24 physical cores and 48 vCPUs. This provides adequate capacity for the six SQL Server Enterprise servers with 16 vCPUs and 256 GB of RAM each. See the following scenario details:
 + **Number of dedicated hosts** – 2
@@ -203,7 +203,7 @@ This scenario uses two X2iezn Amazon EC2 Dedicated Hosts. Each host has 24 physi
 
 The total cost for two X2iezn family Amazon EC2 Dedicated Hosts is $16,073 per month. For more information about pricing, see the AWS Pricing Calculator [estimate](https://calculator.aws/#/estimate) for this scenario. The organization in this scenario can save $1,755.65 per month by bringing their Windows licenses. If they use Amazon EC2 Dedicated Hosts, they can also reduce the number of required SQL Server licenses. In shared tenancy, they would need 96 SQL Server Enterprise licenses to cover the six SQL Server Enterprise servers with 16 vCPUs each. However, by using Amazon EC2 Dedicated Hosts and licensing at the physical core level, they can reduce the number of required licenses to 48 cores.
 
-The following details compare the costs from example 3 and show how much you can save by deploying workloads on Amazon EC2 Dedicated Hosts with the BYOL option compared to other scenarios.
+The following details compare the costs of Scenarios 1, 2, and 3 and show how much you can save by deploying workloads on Amazon EC2 Dedicated Hosts with the BYOL option compared to the other scenarios.
 + **On-premises server** – SQL Server
 + **vCPU** – 16
 + **Memory**  – 256
@@ -220,7 +220,7 @@ Consider the following payment options for Amazon EC2 Dedicated Hosts:
 + [Dedicated Host Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-billing.html#dedicated-host-reservations) (Amazon EC2 documentation)
 + [Savings Plans](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-billing.html#dedicated-hosts-savings-plans) (Amazon EC2 documentation)
 
-The [AWS Pricing Calculator](https://aws.amazon.com/about-aws/whats-new/2023/01/aws-pricing-calculator-optimized-pricing-estimation-ec2-dedicated-hosts/) now supports Dedicated Host pricing. This can help you choose the appropriate underlying Dedicated Host.
+The [AWS Pricing Calculator](https://aws.amazon.com/about-aws/whats-new/2023/01/aws-pricing-calculator-optimized-pricing-estimation-ec2-dedicated-hosts/) supports Dedicated Host pricing. You can use it to estimate costs and compare Dedicated Host options for your workload.
 
 ## Cost optimization recommendations
 <a name="byol-ded-hosts-next-steps"></a>
@@ -231,15 +231,15 @@ We recommend that you take the following next steps to optimize your costs by us
 
 1. Use Cost Explorer to [view and analyze the costs and usage](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-exploring-data.html) of your Amazon EC2 Dedicated Host deployments.
 
-1. Validate that you're running BYOL. You can display the following platform details and usage operation values on the instances or AMI pages in the Amazon EC2 console, or in the response that's returned by the `describe-images` or `describe-instances` command.
-   + **Platform details: **Windows , **Usage operation:** RunInstances:0002  (License included)
+1. Validate that you're running bring your own license (BYOL). You can display the following platform details and usage operation values on the instances or Amazon Machine Image (AMI) pages in the Amazon EC2 console, or in the response of the `describe-images` or `describe-instances` command.
+   + **Platform details: **Windows, **Usage operation:** RunInstances:0002 (License included)
    + **Platform details**: Windows BYOL, **Usage operation:** RunInstances:0800
 
 ## Additional resources
 <a name="byol-ded-hosts-resources"></a>
 + [Eligible license types for license type conversion](https://docs.aws.amazon.com/license-manager/latest/userguide/conversion-types.html) (AWS License Manager documentation)
 + [AWS License Manager & Dedicated Host workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/c7d505a0-b48b-4178-922a-9ee675dfb81c/en-US/license-manager) (AWS License Manager Workshop)
-+ [Amazon EC2 Dedicated Hosts FAQs](https://www.amazonaws.cn/en/ec2/dedicated-hosts/faqs/) (AWS documentation)
++ [Amazon EC2 Dedicated Hosts FAQs](https://aws.amazon.com/ec2/dedicated-hosts/faqs/) (AWS documentation)
 + [How to create Windows Server Bring-Your-Own-License AMIs from on-premises with VM Import/Export](https://aws.amazon.com/blogs/modernizing-with-aws/how-to-create-windows-server-bring-your-own-license-amis-from-on-premises-with-vm-import-export/) (Microsoft Workloads on AWS blog)
 + [VM Import/Export](https://aws.amazon.com/ec2/vm-import/) (AWS documentation)
 + [Amazon Web Services and Microsoft: Frequently Asked Questions](https://aws.amazon.com/windows/faq/) (AWS documentation)

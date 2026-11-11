@@ -26,7 +26,7 @@ The trade-off is potential quality degradation — though modern quantization te
 Prefer pre-quantized checkpoints where available, so scale factors are computed offline instead of at runtime.
 
 ### Precision hierarchy
-<a name="precision-hierarchy.ec595485-05ca-55b3-874f-a119cd4b4a74"></a>
+<a name="precision-hierarchy.0da8b68c-259f-52b9-9ebf-fdfde107e567"></a>
 
 |
 |
@@ -72,7 +72,7 @@ Model compilation optimizes how operations are executed on hardware. At inferenc
 **Example: vLLM uses CUDA graphs by default for maximum throughput, but provides the **`--enforce-eager`** flag for flexibility.**
 
 ### Kernel Optimization During Compilation
-<a name="kernel-optimization-during-compilation.b8cdec2e-1765-5eeb-9fbe-ac1ae64e73d9"></a>
+<a name="kernel-optimization-during-compilation.ab05676f-3965-5885-a147-94b900628d2d"></a>
 
 When inference engines compile a model into a CUDA graph or execution plan, they replace generic operations with specialized, fused kernels optimized for the target hardware and model architecture. This kernel selection happens at graph capture time and can significantly impact performance.
 
@@ -106,7 +106,7 @@ All speculative decoding variants follow the same basic loop:
 The techniques differ in how they produce proposals, which can be grouped into three categories:
 
 ### Model-less Speculation
-<a name="model-less-speculation.c89f8eb0-64e1-5d30-9e56-0dd84764d59e"></a>
+<a name="model-less-speculation.4b2d1c9f-5b07-5140-a209-b97fac520b7d"></a>
 
 **Technique**: Pattern matching against already-generated text — no separate model needed.
 
@@ -125,7 +125,7 @@ The techniques differ in how they produce proposals, which can be grouped into t
 **Example:** Suffix-based speculative decoding uses a **suffix tree** built from the prompt tokens to speculatively predict future tokens (matching repeated patterns/suffixes in the input), configured in vLLM via `--speculative-config '{"method": "suffix",...`
 
 ### Draft Model Speculation
-<a name="draft-model-speculation.a7dd806e-80b9-5f41-bb3b-c9bfea304e02"></a>
+<a name="draft-model-speculation.d1495528-e522-55b8-80e7-da10479f838f"></a>
 
 **Technique**: Use a smaller, faster model to generate candidate tokens.
 
@@ -152,7 +152,7 @@ vllm serve meta-llama/Llama-3.1-70B-Instruct \
 ```
 
 ### Decoding Head Speculation
-<a name="decoding-head-speculation.d80e066e-43d8-53d4-b9b6-c98d5649462b"></a>
+<a name="decoding-head-speculation.bac6c9c3-3a9d-5545-8278-5c0aa6e8400e"></a>
 
 **Technique**: Train and/or use a lightweight "draft head" that predicts tokens using the target model's internal hidden states.
 
@@ -224,7 +224,7 @@ Multi-LoRA serving is most valuable when you need to serve many variants of a ba
 + **Domain adaptation**: Industry-specific variants (legal, medical, finance) without separate deployments
 
 ### Configuration Examples
-<a name="configuration-examples.6dbe83e4-db23-54d0-a3ce-6f4f5474f6a2"></a>
+<a name="configuration-examples.8666b842-190b-5827-9576-99a5ac6ef189"></a>
 
 In SageMaker AI, you can leverage the efficient multi-adapter inference as a native feature. More details in [this blog post](https://aws.amazon.com/blogs/machine-learning/easily-deploy-and-manage-hundreds-of-lora-adapters-with-sagemaker-efficient-multi-adapter-inference/). In addition, the following configuration shows how to use multi-adapter LLM inference natively in vLLM.
 

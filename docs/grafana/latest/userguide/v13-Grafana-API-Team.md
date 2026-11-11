@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-Grafana-API
 # Team API
 <a name="v13-Grafana-API-Team"></a>
 
-Use the Team API to work with teams in an Amazon Managed Grafana workspace. All actions in this API require that you have the Admin role.
+Use the Team API to work with teams in an Amazon Managed Grafana workspace. All operations in this API require that you have the Admin role.
 
 **Note**
 To use a Grafana API with your Amazon Managed Grafana workspace, you must have a valid service account token. You include this in the `Authorization` field in the API request.

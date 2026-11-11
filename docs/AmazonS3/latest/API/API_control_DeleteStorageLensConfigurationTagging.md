@@ -30,7 +30,7 @@ The request uses the following URI parameters.
  ** [storagelensid](#API_control_DeleteStorageLensConfigurationTagging_RequestSyntax) **   <a name="AmazonS3-control_DeleteStorageLensConfigurationTagging-request-uri-uri-ConfigId"></a>
 The ID of the S3 Storage Lens configuration.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[a-zA-Z0-9\-\_\.]+`
+Pattern: `[a-zA-Z0-9\-\_]+`
 Required: Yes
 
  ** [x-amz-account-id](#API_control_DeleteStorageLensConfigurationTagging_RequestSyntax) **   <a name="AmazonS3-control_DeleteStorageLensConfigurationTagging-request-header-AccountId"></a>

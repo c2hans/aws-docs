@@ -65,14 +65,19 @@ The Amazon Resource Name (ARN) of the profile association to a VPC.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Priority`  <a name="cfn-route53profiles-profileassociation-priority"></a>
-Property description not available.
+The priority of the Profile association, from 100 to 9900. Route 53 VPC Resolver evaluates the Profile associations for a VPC in priority order, starting with the lowest value. A lower value means a higher priority.
+Priority is optional when the VPC has no other Profile associations and defaults to 100. When the VPC already has a Profile association, you must specify a `Priority` that no other Profile association for that VPC uses.
+Changing `Priority` updates the association in place without replacement. Only the account that created the Profile association can change its priority.
+This value sets the evaluation order of the Profiles associated with a VPC. It's different from the DNS Firewall rule group priority in the `ResourceProperties` of a `ProfileResourceAssociation`.
 *Required*: No
 *Type*: Integer
+*Minimum*: `100`
+*Maximum*: `9900`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProfileId`  <a name="cfn-route53profiles-profileassociation-profileid"></a>
  ID of the Profile.
-Update to this property requires update to the `ResourceId` property as well, because you can only associate one Profile per VPC. For more information, see [Route 53 Profiles](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles.html).
+A VPC can have up to two Profile associations. For more information, see [Route 53 Profiles](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profiles.html).
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

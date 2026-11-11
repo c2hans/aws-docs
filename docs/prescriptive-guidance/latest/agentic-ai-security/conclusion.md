@@ -22,12 +22,12 @@ The follow frameworks and publications were used as reference in developing this
 + [Security in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/security.html) – This section of the Amazon Bedrock documentation can help you meet security and compliance objectives when building with Amazon Bedrock.
 
 ### NIST resources
-<a name="nist-resources.f9334538-ab89-5383-9e24-0a62115f4f14"></a>
+<a name="nist-resources.f410c8f2-26f1-521c-abb6-03b22a453e21"></a>
 + [NIST AI risk management framework (RMF) playbook](https://airc.nist.gov/airmf-resources/playbook/) – This playbook provides practical guidance and resources for implementing AI-specific risk-management practices and helps you comply with the NIST AI RMF standards.
 + [Secure software development practices for generative AI and dual-use foundation models](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.pdf) – This publication provides secure software development practices specifically for generative AI and dual-use foundation models as a community profile of the Secure Software Development Framework (SSDF).
 + [Security and privacy controls for information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf) – This publication provides a catalog of security and privacy controls for federal information systems and organizations to help protect against cybersecurity threats and privacy risks.
 
 ### OWASP resources
-<a name="owasp-resources.f8921281-8c99-5ced-9ab3-85ca373feb27"></a>
+<a name="owasp-resources.c802e9aa-90d1-55b2-acf1-1057684cfd92"></a>
 + [Agentic AI threats and mitigations](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) – This resource documents key security threats and mitigation strategies specifically for agentic AI systems and focuses on vulnerabilities and risks.
 + [OWASP top 10 for LLM applications 2025](https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/) – This lists critical security vulnerabilities and risks that are specific to LLM applications and provides essential guidance for securing AI systems against emerging threats.

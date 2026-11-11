@@ -39,9 +39,13 @@ For more information about creating target tracking policies using high resoluti
 
 Target tracking supports the following predefined metrics:
 + `ASGAverageCPUUtilization`—Average CPU utilization of the Auto Scaling group.
++ `ASGAverageCPUUtilizationHighResolution`—Average CPU utilization of the Auto Scaling group using a high-resolution metric.
 + `ASGAverageNetworkIn`—Average number of bytes received on all network interfaces by the Auto Scaling group.
 + `ASGAverageNetworkOut`—Average number of bytes sent out on all network interfaces by the Auto Scaling group.
 + `ALBRequestCountPerTarget`—Average Application Load Balancer request count per target for your Auto Scaling group.
+
+**Important**
+To help ensure that target tracking has metric data to use for the `ASGAverageCPUUtilizationHighResolution` metric type, configure the Auto Scaling group's launch template and existing instances to publish high-resolution CPU utilization metrics.
 
 **Important**
 Other valuable information about the metrics for CPU utilization, network I/O, and Application Load Balancer request count per target can be found in the [List the available CloudWatch metrics for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html) topic in the *Amazon EC2 User Guide* and the [CloudWatch metrics for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html) topic in the *User Guide for Application Load Balancers*, respectively.

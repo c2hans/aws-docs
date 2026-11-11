@@ -282,6 +282,7 @@ The following table lists the quota for Resolver on second-generation AWS Outpos
 | --- | --- |
 | Number of Route 53 Profiles per AWS account in a Region |  5<br />[Request a higher quota](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/route53/quotas). |
 | Number of VPCs that can be associated to a Profile | 1000<br />[Request a higher quota](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/route53/quotas). |
+| Number of Route 53 Profiles that can be associated to a VPC | 2 |
 | Number of DNS Firewall rule groups per Profile |  5 |
 | Number of Resolver rules per Profile | 1000<br />[Request a higher quota](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/route53/quotas). |
 | Number of private hosted zones per a Profile | 5000<br />[Request a higher quota](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/route53/quotas). |

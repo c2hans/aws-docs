@@ -11,4 +11,4 @@ OpenSearch Serverless is an on-demand, pre-provisioned serverless configuration 
 
 To learn more about OpenSearch Serverless, see [What is Amazon OpenSearch Serverless?](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-overview.html)
 
-This document was last published on November 9, 2026.
+This document was last published on November 11, 2026.

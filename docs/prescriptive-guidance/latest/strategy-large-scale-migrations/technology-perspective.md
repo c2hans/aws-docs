@@ -58,7 +58,7 @@ We recommend building an automated migration reporting dashboard to track and re
 
 To perform their roles, these stakeholders require live data. For example, network teams must know the upcoming migration waves to understand the impact on the shared connection between on-premises resources and AWS. Leadership teams want to understand how much of the migration is complete. Having a dependable, automated live feed of data prevents miscommunications and provides a basis on which decisions can be made.
 
-A large healthcare customer was working toward a data center exit with an upcoming deadline. Given the scale and complexity, a significant amount of time was initially spent on tracking and communicating the migration status between stakeholders. The migration team later used [Amazon Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/quick-bi.html) to build automated dashboards that visualized the data, significantly simplifying tracking and communications while increasing the migration velocity.
+A large healthcare customer was working toward a data center exit with an upcoming deadline. Given the scale and complexity, a significant amount of time was initially spent on tracking and communicating the migration status between stakeholders. The migration team later used [AWS Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/quick-bi.html) to build automated dashboards that visualized the data, significantly simplifying tracking and communications while increasing the migration velocity.
 
 ### Explore tooling that can facilitate your migration
 <a name="explore-tooling-that-can-facilitate-your-migration.3e678658-a181-5bb6-b7f1-e86049c76eb5"></a>

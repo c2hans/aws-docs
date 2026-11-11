@@ -21,6 +21,7 @@ Updates a compute node group. You can update many of the fields related to your 
       "version": "{{string}}"
    },
    "iamInstanceProfileArn": "{{string}}",
+   "launchTemplateMode": "{{string}}",
    "nodeLifecycleActions": {
       "scriptCachingPolicy": "{{string}}",
       "stages": {
@@ -57,6 +58,7 @@ Updates a compute node group. You can update many of the fields related to your 
       "maxInstanceCount": {{number}},
       "minInstanceCount": {{number}}
    },
+   "securityGroupIds": [ "{{string}}" ],
    "slurmConfiguration": {
       "gresCustomSettings": [
          {
@@ -74,6 +76,7 @@ Updates a compute node group. You can update many of the fields related to your 
    "spotOptions": {
       "allocationStrategy": "{{string}}"
    },
+   "sshKeyName": "{{string}}",
    "subnetIds": [ "{{string}}" ]
 }
 ```
@@ -86,13 +89,13 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [amiId](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-amiId"></a>
-The ID of the Amazon Machine Image (AMI) that AWS PCS uses to launch instances. If not provided, AWS PCS uses the AMI ID specified in the custom launch template.
+The ID of the Amazon Machine Image (AMI) that AWS PCS uses to launch instances. This value overrides the AMI ID in the custom launch template. Specify an empty string (`""`) to remove the AMI ID from the compute node group and use the AMI ID specified in the custom launch template. Omit this value to leave the current setting unchanged.
 Type: String
-Pattern: `ami-[a-z0-9]+`
+Pattern: `(ami-[a-z0-9]+)?`
 Required: No
 
  ** [clientToken](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-clientToken"></a>
-A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. Idempotency ensures that an API request completes only once. With an idempotent request, if the original request completes successfully, the subsequent retries with the same client token return the result from the original successful request and they have no additional effect. If you don't specify a client token, the AWS CLI and SDK automatically generate 1 for you.
+A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. Idempotency ensures that an API request completes only once. With an idempotent request, if the original request completes successfully, the subsequent retries with the same client token return the result from the original successful request and they have no additional effect. If you don't specify a client token, the AWS CLI and SDK automatically generate one for you.
 Type: String
 Length Constraints: Minimum length of 8. Maximum length of 100.
 Required: No
@@ -110,7 +113,7 @@ Pattern: `(pcs_[a-zA-Z0-9]+|[A-Za-z][A-Za-z0-9-]{2,25})`
 Required: Yes
 
  ** [customLaunchTemplate](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-customLaunchTemplate"></a>
-An Amazon EC2 launch template AWS PCS uses to launch compute nodes.
+The custom Amazon EC2 launch template to associate with the compute node group. To set or change the custom launch template, specify `id` and `version`. If you provide this value and omit `launchTemplateMode`, the compute node group must already use `CUSTOM` mode. To switch from `MANAGED` to `CUSTOM`, specify `launchTemplateMode` as `CUSTOM` and provide this value. If the compute node group already uses `CUSTOM`, omit this value while also omitting `launchTemplateMode`, or while specifying `CUSTOM`, to keep the existing custom launch template. For more information, see [Migrating a compute node group from a custom launch template](https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cng_instance-settings-migrate.html) in the * AWS PCS User Guide*.
 Type: [CustomLaunchTemplate](API_CustomLaunchTemplate.md) object
 Required: No
 
@@ -118,6 +121,16 @@ Required: No
 The Amazon Resource Name (ARN) of the IAM instance profile used to pass an IAM role when launching EC2 instances. The role contained in your instance profile must have the `pcs:RegisterComputeNodeGroupInstance` permission and the role name must start with `AWSPCS` or must have the path `/aws-pcs/`. For more information, see [IAM instance profiles for AWS PCS](https://docs.aws.amazon.com/pcs/latest/userguide/security-instance-profiles.html) in the * AWS PCS User Guide*.
 Type: String
 Pattern: `arn:aws([a-zA-Z-]{0,10})?:iam::[0-9]{12}:instance-profile/([!-~]{1,510}/)?([\w+=,.@-]{1,128})`
+Required: No
+
+ ** [launchTemplateMode](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-launchTemplateMode"></a>
+Specifies whether the compute node group uses a custom launch template or a launch template that AWS PCS manages. Omit this value to keep the current mode.
+Valid values:
++  `CUSTOM` – Use a custom launch template. To switch from `MANAGED`, also provide `customLaunchTemplate`. If the compute node group already uses `CUSTOM` and you omit `customLaunchTemplate`, the existing launch template is unchanged.
++  `MANAGED` – Use a launch template created and managed by AWS PCS. Omit `customLaunchTemplate`. Switching to this mode removes the custom launch template association but doesn't delete the launch template.
+When switching to `MANAGED`, the compute node group must have `amiId` and `securityGroupIds` configured. You can set these values in the same request.
+Type: String
+Valid Values: `CUSTOM | MANAGED`
 Required: No
 
  ** [nodeLifecycleActions](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-nodeLifecycleActions"></a>
@@ -136,6 +149,12 @@ Specifies the boundaries of the compute node group auto scaling.
 Type: [ScalingConfigurationRequest](API_ScalingConfigurationRequest.md) object
 Required: No
 
+ ** [securityGroupIds](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-securityGroupIds"></a>
+The IDs of the EC2 security groups to configure directly on the compute node group. The security groups must be in the same VPC as the cluster. AWS PCS uses these security groups instead of the security groups in the custom launch template. You can't specify this value if the custom launch template defines network interfaces. Specify an empty list (`[]`) to remove the security groups from the compute node group and use the security groups in the custom launch template. Omit this value to leave the current setting unchanged.
+Type: Array of strings
+Pattern: `sg-\w{8,17}`
+Required: No
+
  ** [slurmConfiguration](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-slurmConfiguration"></a>
 Additional options related to the Slurm scheduler.
 Type: [UpdateComputeNodeGroupSlurmConfigurationRequest](API_UpdateComputeNodeGroupSlurmConfigurationRequest.md) object
@@ -144,6 +163,12 @@ Required: No
  ** [spotOptions](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-spotOptions"></a>
 Additional configuration when you specify `SPOT` as the `purchaseOption` for the `CreateComputeNodeGroup` API action.
 Type: [SpotOptions](API_SpotOptions.md) object
+Required: No
+
+ ** [sshKeyName](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-sshKeyName"></a>
+The name of the EC2 key pair to configure directly on the compute node group. The key pair must exist in your account and AWS Region. AWS PCS uses this key pair instead of the key pair in the custom launch template. Specify an empty string (`""`) to remove the key pair from the compute node group and use the key pair in the custom launch template. Omit this value to leave the current setting unchanged. You must have permission for `ec2:DescribeKeyPairs` to specify a key pair. If you delete the key pair later, future instance launches can fail.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
  ** [subnetIds](#API_UpdateComputeNodeGroup_RequestSyntax) **   <a name="PCS-UpdateComputeNodeGroup-request-subnetIds"></a>
@@ -178,6 +203,7 @@ Required: No
             "instanceType": "string"
          }
       ],
+      "launchTemplateMode": "string",
       "modifiedAt": "string",
       "name": "string",
       "nodeLifecycleActions": {
@@ -216,6 +242,7 @@ Required: No
          "maxInstanceCount": number,
          "minInstanceCount": number
       },
+      "securityGroupIds": [ "string" ],
       "slurmConfiguration": {
          "gresCustomSettings": [
             {
@@ -233,6 +260,7 @@ Required: No
       "spotOptions": {
          "allocationStrategy": "string"
       },
+      "sshKeyName": "string",
       "status": "string",
       "subnetIds": [ "string" ]
    }

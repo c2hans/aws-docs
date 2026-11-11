@@ -11,5 +11,5 @@ The following table describes significant changes to this guide. To receive noti
 |
 | Date | Description |
 | --- |--- |
-| 9 Sep, 2025 | Update to include AgentCore gateway capabilities |
-| 28 Jul, 2025 | Initial publication |
+| September 9, 2025 | Update to include AgentCore gateway capabilities |
+| July 28, 2025 | Initial publication |

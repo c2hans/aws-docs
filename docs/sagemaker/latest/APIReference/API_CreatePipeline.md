@@ -25,6 +25,7 @@ Creates a pipeline using a JSON pipeline definition.
    "PipelineDescription": "{{string}}",
    "PipelineDisplayName": "{{string}}",
    "PipelineName": "{{string}}",
+   "PipelineVersionAliases": [ "{{string}}" ],
    "RoleArn": "{{string}}",
    "Tags": [
       {
@@ -85,6 +86,14 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,255}`
 Required: Yes
+
+ ** [PipelineVersionAliases](#API_CreatePipeline_RequestSyntax) **   <a name="sagemaker-CreatePipeline-request-PipelineVersionAliases"></a>
+The aliases to assign to the first version of the pipeline. You can use an alias instead of a pipeline version ID to start an execution, describe the pipeline, or list its executions. Each alias can contain 1-128 letters, numbers, periods (.), hyphens (-), and underscores (\_), and can't consist of numbers only. An alias must be unique within the pipeline, and a version can have up to 10 aliases.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+Required: No
 
  ** [RoleArn](#API_CreatePipeline_RequestSyntax) **   <a name="sagemaker-CreatePipeline-request-RoleArn"></a>
 The Amazon Resource Name (ARN) of the role used by the pipeline to access and create resources.

@@ -5,16 +5,16 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gener
 # GenerateEmbedUrlForAnonymousUser
 <a name="API_GenerateEmbedUrlForAnonymousUser"></a>
 
-Generates an embed URL that you can use to embed an Amazon Quick dashboard or visual in your website, without having to register any reader users. Before you use this action, make sure that you have configured the dashboards and permissions.
+Generates an embed URL that you can use to embed an AWS Quick dashboard or visual in your website, without having to register any reader users. Before you use this action, make sure that you have configured the dashboards and permissions.
 
 The following rules apply to the generated URL:
 + It contains a temporary bearer token. It is valid for 5 minutes after it is generated. Once redeemed within this period, it cannot be re-used again.
 + The URL validity period should not be confused with the actual session lifetime that can be customized using the ` [SessionLifetimeInMinutes](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForAnonymousUser.html#QS-GenerateEmbedUrlForAnonymousUser-request-SessionLifetimeInMinutes) ` parameter. The resulting user session is valid for 15 minutes (minimum) to 10 hours (maximum). The default session duration is 10 hours.
-+ You are charged only when the URL is used or there is interaction with Amazon Quick.
++ You are charged only when the URL is used or there is interaction with AWS Quick.
 
-For more information, see [Embedded Analytics](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html) in the *Amazon Quick User Guide*.
+For more information, see [Embedded Analytics](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html) in the * AWS Quick User Guide*.
 
-For more information about the high-level steps for embedding and for an interactive demo of the ways you can customize embedding, visit the [Amazon Quick Developer Portal](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html).
+For more information about the high-level steps for embedding and for an interactive demo of the ways you can customize embedding, visit the [AWS Quick Developer Portal](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-portal.html).
 
 ## Request Syntax
 <a name="API_GenerateEmbedUrlForAnonymousUser_RequestSyntax"></a>
@@ -92,7 +92,7 @@ Type: [AnonymousUserEmbeddingExperienceConfiguration](API_AnonymousUserEmbedding
 Required: Yes
 
  ** [Namespace](#API_GenerateEmbedUrlForAnonymousUser_RequestSyntax) **   <a name="QS-GenerateEmbedUrlForAnonymousUser-request-Namespace"></a>
-The Amazon Quick Sight namespace that the anonymous user virtually belongs to. If you are not using an Amazon Quick custom namespace, set this to `default`.
+The Amazon Quick Sight namespace that the anonymous user virtually belongs to. If you are not using an AWS Quick custom namespace, set this to `default`.
 Type: String
 Length Constraints: Maximum length of 64.
 Pattern: `^[a-zA-Z0-9._-]*$`
@@ -117,7 +117,7 @@ When using `SessionTags` in `GenerateEmbedUrlForAnonymousUser`,
 + Implement server-side controls. Ensure that `SessionTags` are set exclusively by your trusted backend services, not by parameters that end users can modify.
 + Protect `SessionTags` from enumeration. Ensure that users in one tenant cannot discover or guess sessionTag values belonging to other tenants.
 + Review your architecture. If downstream customers or partners are allowed to call the `GenerateEmbedUrlForAnonymousUser` API directly, evaluate whether those parties could specify sessionTag values for tenants they should not access.
-Besides, these are not the tags used for the AWS resource tagging feature. For more information, see [Using Row-Level Security (RLS) with Tags](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-rls-tags.html) in the *Amazon Quick User Guide*.
+Besides, these are not the tags used for the AWS resource tagging feature. For more information, see [Using Row-Level Security (RLS) with Tags](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-dev-rls-tags.html) in the * AWS Quick User Guide*.
 Type: Array of [SessionTag](API_SessionTag.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Required: No
@@ -147,7 +147,7 @@ The HTTP status of the request.
 The following data is returned in JSON format by the service.
 
  ** [AnonymousUserArn](#API_GenerateEmbedUrlForAnonymousUser_ResponseSyntax) **   <a name="QS-GenerateEmbedUrlForAnonymousUser-response-AnonymousUserArn"></a>
-The Amazon Resource Name (ARN) to use for the anonymous Amazon Quick user.
+The Amazon Resource Name (ARN) to use for the anonymous AWS Quick user.
 Type: String
 
  ** [EmbedUrl](#API_GenerateEmbedUrlForAnonymousUser_ResponseSyntax) **   <a name="QS-GenerateEmbedUrlForAnonymousUser-response-EmbedUrl"></a>

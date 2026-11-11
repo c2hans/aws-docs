@@ -1,0 +1,191 @@
+---
+source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateDesignation.html
+---
+
+# CreateDesignation
+<a name="API_CreateDesignation"></a>
+
+Creates a new user-defined designation with a Cedar permit policy. The designation defines a named role that can be assigned to project members through `CreateProjectMembership` or granted through `AddPolicyGrant`.
+
+## Request Syntax
+<a name="API_CreateDesignation_RequestSyntax"></a>
+
+```
+POST /v2/domains/{{domainIdentifier}}/designations HTTP/1.1
+Content-type: application/json
+
+{
+   "deletionProtection": {{boolean}},
+   "description": "{{string}}",
+   "name": "{{string}}",
+   "policy": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_CreateDesignation_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [domainIdentifier](#API_CreateDesignation_RequestSyntax) **   <a name="datazone-CreateDesignation-request-uri-domainIdentifier"></a>
+The identifier of the Amazon DataZone domain in which the designation is created.
+Pattern: `dzd[-_][a-zA-Z0-9_-]{1,36}`
+Required: Yes
+
+## Request Body
+<a name="API_CreateDesignation_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [deletionProtection](#API_CreateDesignation_RequestSyntax) **   <a name="datazone-CreateDesignation-request-deletionProtection"></a>
+Specifies whether deletion protection is enabled for this designation. Defaults to `true` when omitted. When enabled, `DeleteDesignation` is rejected until protection is disabled through `UpdateDesignation`.
+Type: Boolean
+Required: No
+
+ ** [description](#API_CreateDesignation_RequestSyntax) **   <a name="datazone-CreateDesignation-request-description"></a>
+A human-readable description of the designation and its intended use.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
+
+ ** [name](#API_CreateDesignation_RequestSyntax) **   <a name="datazone-CreateDesignation-request-name"></a>
+The name of the designation. The name must be unique within the domain.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[\w -]+`
+Required: Yes
+
+ ** [policy](#API_CreateDesignation_RequestSyntax) **   <a name="datazone-CreateDesignation-request-policy"></a>
+The Cedar permit policy that defines the actions holders of this designation are allowed to perform.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 10000.
+Required: Yes
+
+## Response Syntax
+<a name="API_CreateDesignation_ResponseSyntax"></a>
+
+```
+HTTP/1.1 201
+Content-type: application/json
+
+{
+   "createdAt": "string",
+   "createdBy": "string",
+   "deletionProtection": boolean,
+   "description": "string",
+   "designationType": "string",
+   "domainId": "string",
+   "id": "string",
+   "lastUpdatedAt": "string",
+   "name": "string",
+   "policy": "string"
+}
+```
+
+## Response Elements
+<a name="API_CreateDesignation_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 201 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [createdAt](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-createdAt"></a>
+The date and time when the designation was created.
+Type: Timestamp
+
+ ** [createdBy](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-createdBy"></a>
+The identifier of the Amazon DataZone user who created the designation.
+Type: String
+
+ ** [deletionProtection](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-deletionProtection"></a>
+Specifies whether deletion protection is enabled for this designation. When `true`, `DeleteDesignation` is rejected until protection is disabled through `UpdateDesignation`.
+Type: Boolean
+
+ ** [description](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-description"></a>
+A human-readable description of the designation and its intended use.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+
+ ** [designationType](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-designationType"></a>
+The classification of this designation. Valid values:
++  `MANAGED` — System-defined designations that cannot be modified or deleted.
++  `USER_CREATED` — Designations created through `CreateDesignation`.
+Type: String
+Valid Values: `MANAGED | USER_CREATED`
+
+ ** [domainId](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-domainId"></a>
+The identifier of the Amazon DataZone domain in which the designation was created.
+Type: String
+Pattern: `dzd[-_][a-zA-Z0-9_-]{1,36}`
+
+ ** [id](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-id"></a>
+The unique ID of the designation.
+Type: String
+Pattern: `[a-zA-Z0-9_-]{1,36}`
+
+ ** [lastUpdatedAt](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-lastUpdatedAt"></a>
+The date and time when the designation was last updated.
+Type: Timestamp
+
+ ** [name](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-name"></a>
+The name of the designation. The name is unique within the domain.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[\w -]+`
+
+ ** [policy](#API_CreateDesignation_ResponseSyntax) **   <a name="datazone-CreateDesignation-response-policy"></a>
+The Cedar permit policy that governs the actions holders of this designation are allowed to perform.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 10000.
+
+## Errors
+<a name="API_CreateDesignation_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** ConflictException **
+There is a conflict while performing this action.
+HTTP Status Code: 409
+
+ ** InternalServerException **
+The request has failed because of an unknown error, exception or failure.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The specified resource cannot be found.
+HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+The request has exceeded the specified service quota.
+HTTP Status Code: 402
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 429
+
+ ** UnauthorizedException **
+You do not have permission to perform this action.
+HTTP Status Code: 401
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by the AWS service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_CreateDesignation_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/datazone-2018-05-10/CreateDesignation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/datazone-2018-05-10/CreateDesignation)

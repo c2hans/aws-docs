@@ -109,6 +109,14 @@ For more information, see [Tool use](tool-use.html).
 | text\_editor\_20250728 | None required |
 | memory\_20250818 | None required |
 
+**Compaction using `bedrock-runtime` endpoint**
+
+For more information, see [Compaction](claude-messages-compaction.html).
+
+| **Compaction supported** | **Beta value** |
+| --- | --- |
+| Yes | compact-2026-09-04, compact-2026-01-12 |
+
 ## Content Restrictions
 <a name="model-card-anthropic-claude-fable-5-1-content-restrictions"></a>
 
@@ -293,7 +301,7 @@ client = Anthropic(
 
 response = client.messages.create(
     model="global.anthropic.claude-fable-5-1",
-    max_tokens=1024,
+    max_tokens=16000,
     messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}],
 )
 
@@ -313,7 +321,7 @@ response = client.invoke_model(
     body=json.dumps({
             'anthropic_version': 'bedrock-2023-05-31',
             'messages': [{ 'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}],
-            'max_tokens': 1024
+            'max_tokens': 16000
     })
 )
 print(json.loads(response['body'].read()))

@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chai
 # Resources
 <a name="resources"></a>
 
-## Amazon Quick documentation
+## AWS Quick documentation
 <a name="quicksight-resources"></a>
-+ [Getting started with Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/getting-started.html)
++ [Getting started with AWS Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/getting-started.html)
 + [Using table calculations in pivot tables](https://docs.aws.amazon.com/quicksuite/latest/userguide/working-with-calculations.html)
 + [Pivot table best practices](https://docs.aws.amazon.com/quicksuite/latest/userguide/pivot-table-best-practices.html)
 

@@ -13,6 +13,7 @@ Describes the details of a pipeline.
 ```
 {
    "PipelineName": "{{string}}",
+   "PipelineVersionAlias": "{{string}}",
    "PipelineVersionId": {{number}}
 }
 ```
@@ -31,8 +32,15 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:([0-9]{12}|aws):pipeline/.*)?([a-zA-Z0-9](-*[a-zA-Z0-9]){0,255})`
 Required: Yes
 
+ ** [PipelineVersionAlias](#API_DescribePipeline_RequestSyntax) **   <a name="sagemaker-DescribePipeline-request-PipelineVersionAlias"></a>
+The alias of the pipeline version to describe. You can't specify this with `PipelineVersionId`. If no version of the pipeline has this alias, the request fails with a `ResourceNotFound` error. If you specify neither, SageMaker describes the latest version of the pipeline.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+Required: No
+
  ** [PipelineVersionId](#API_DescribePipeline_RequestSyntax) **   <a name="sagemaker-DescribePipeline-request-PipelineVersionId"></a>
-The ID of the pipeline version to describe.
+The ID of the pipeline version to describe. You can't specify this with `PipelineVersionAlias`.
 Type: Long
 Valid Range: Minimum value of 1.
 Required: No
@@ -74,6 +82,7 @@ Required: No
    "PipelineDisplayName": "string",
    "PipelineName": "string",
    "PipelineStatus": "string",
+   "PipelineVersionAliases": [ "string" ],
    "PipelineVersionDescription": "string",
    "PipelineVersionDisplayName": "string",
    "RoleArn": "string"
@@ -145,6 +154,13 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,255}`
 The status of the pipeline execution.
 Type: String
 Valid Values: `Active | Deleting`
+
+ ** [PipelineVersionAliases](#API_DescribePipeline_ResponseSyntax) **   <a name="sagemaker-DescribePipeline-response-PipelineVersionAliases"></a>
+The aliases assigned to the pipeline version.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
 
  ** [PipelineVersionDescription](#API_DescribePipeline_ResponseSyntax) **   <a name="sagemaker-DescribePipeline-response-PipelineVersionDescription"></a>
 The description of the pipeline version.

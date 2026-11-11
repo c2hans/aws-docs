@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/interacting-with-paginated-reports.html
 ---
 
-# Interacting with pixel perfect reports in Amazon Quick Sight
+# Interacting with pixel perfect reports in AWS Quick Sight
 <a name="interacting-with-paginated-reports"></a>
 
 To access a pixel perfect report that you've been invited to share, follow the instructions in the invitation email. You can also access a pixel perfect report if it's embedded into an application or website that you already have access to.

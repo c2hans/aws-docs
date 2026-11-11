@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/dashboard-bookmarks-update.html
 ---
 
-# Updating bookmarks in Amazon Quick Sight
+# Updating bookmarks in AWS Quick Sight
 <a name="dashboard-bookmarks-update"></a>
 
 At any time, you can change a bookmark dashboard view and update the bookmark to always reflect those changes.

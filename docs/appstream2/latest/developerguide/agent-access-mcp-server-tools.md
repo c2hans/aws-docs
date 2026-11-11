@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-a
 # Available tools
 <a name="agent-access-mcp-server-tools"></a>
 
-The Model Context Protocol (MCP) server provides the following tools, grouped into mouse, keyboard, screen, application, and session tools. Agents use them to operate the desktop during a streaming session. All tool names use the `agentaccess___` prefix.
+The Model Context Protocol (MCP) server provides the following tools, grouped into mouse, keyboard, screen, application, sequencing, and session tools. Agents use them to operate the desktop during a streaming session. All tool names use the `agentaccess___` prefix.
 
 ## Mouse tools
 <a name="agent-access-mcp-tools-mouse"></a>
@@ -89,6 +89,54 @@ Open or close the app-switcher overlay.
 Parameters: none.
 This tool only toggles the overlay. To bring a particular application to the foreground, follow up with a `left_click` on its thumbnail, using coordinates read from a screenshot. No tool reports which application is currently in the foreground, so an agent that needs to know must capture a screenshot and look.
 The app switcher is available only when the fleet's **Stream view** is set to **Application**, which displays only the windows of applications that users open. It is not available when **Stream view** is set to **Desktop**, because WorkSpaces Applications then provides the standard desktop and taskbar for the operating system.
+
+## Sequencing tools
+<a name="agent-access-mcp-tools-sequencing"></a>
+
+Use these tools to run several actions in one call, and to pace them, instead of making a separate tool call for each step.
+
+`execute_sequence`
+Run several tool calls in one call, in order. Each item in the `actions` list is an object with a `type` that names the tool to run. Write the `type` the same way the tool appears in `tools/list`, for example `agentaccess___left_click` or `agentaccess___wait`. Include that tool's own arguments as sibling keys, not nested. For example:
+
+```
+[{"type": "agentaccess___type_text", "text": "hello"},
+ {"type": "agentaccess___key", "keys": "Tab"}]
+```
+The sequence stops at the first failure. You cannot use `screenshot` or `execute_sequence` inside a sequence. If the sequence succeeds, the MCP server pauses briefly and returns a final screenshot. If the last action in the sequence is a `wait`, the server skips this pause. You can end a sequence with a `wait` to set your own delay after a slow action, such as opening a window. If an action fails or the sequence reaches the time limit, the MCP server returns text only. It includes guidance to take a screenshot before the next action.
+A sequence has the following limits. If a sequence exceeds any limit, the MCP server rejects it before any action runs:
++ A sequence can include at most 20 actions.
++ Each `wait` lasts 0.001 to 5 seconds, and all waits together last at most 10 seconds.
++ All `type_text` text together totals at most 10,000 characters.
++ The entire sequence stops after 60 seconds.
+Parameters: `actions` (required, a list of action objects).
+The following example request fills in a form and submits it. It enters text in three fields, presses Enter to submit, and ends with a `wait` so the page has time to update:
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "tools/call",
+  "id": 5,
+  "params": {
+    "name": "agentaccess___execute_sequence",
+    "arguments": {
+      "actions": [
+        {"type": "agentaccess___left_click", "x": 450, "y": 320},
+        {"type": "agentaccess___type_text", "text": "Jane Doe"},
+        {"type": "agentaccess___key", "keys": "Tab"},
+        {"type": "agentaccess___type_text", "text": "Seattle"},
+        {"type": "agentaccess___key", "keys": "Tab"},
+        {"type": "agentaccess___type_text", "text": "Please add me to the newsletter."},
+        {"type": "agentaccess___key", "keys": "Enter"},
+        {"type": "agentaccess___wait", "duration": 2}
+      ]
+    }
+  }
+}
+```
+
+`wait`
+Pause for `duration` seconds without interacting with the desktop. Use `wait` on its own, or as an action inside `execute_sequence` to pace actions that need time to settle.
+Parameters: `duration` (required, 0.001 to 5 seconds).
 
 ## Session tools
 <a name="agent-access-mcp-tools-session"></a>

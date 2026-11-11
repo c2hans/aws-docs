@@ -13,7 +13,7 @@ Abstracting the available tools into MCP servers decouples your agent developmen
 There are three options for hosting your MCP servers: running them locally on an end-user machine, hosting them remotely, or hosting them through an MCP gateway. Each option has advantages and tradeoffs.
 
 ### Local hosting
-<a name="local-hosting.06f822c9-a71e-527a-a675-cb813afe5538"></a>
+<a name="local-hosting9999999999999999nbsp-.06f822c9-a71e-527a-a675-cb813afe5538"></a>
 
 Local hosting runs the MCP server as a subprocess on your local machine along with the agent that communicates with the server by using JSON-RPC over standard input and output streams. This approach does not require authentication between the client and the server. Tools can interact with local applications and files, use locally stored credentials, and they inherit the network access of the user's local machine. This is the simplest hosting pattern and has several benefits.
 
@@ -28,7 +28,7 @@ There are public MCP registries, such as [Official MCP Registry](https://registr
 However, local hosting introduces operational challenges that organizations should consider. First, end-users must discover, download, and configure MCP servers independently. This can add complexity to get started with each individual MCP server they use locally. Second, you cannot control the MCP server lifecycle, meaning that users may continue running outdated versions locally with security vulnerabilities or missing features. This can complicate meeting compliance requirements. Some IDEs and CLI tools, such as [Kiro](https://aws.amazon.com/documentation-overview/kiro/), allow organizations to [manage and control which MCP tools are available](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/mcp-governance.html), ensuring consistency and security across teams.
 
 ### Remote hosting
-<a name="remote-hosting.c9835526-95b7-5ed0-be74-449d97f97894"></a>
+<a name="remote-hosting9999999999999999nbsp-.c9835526-95b7-5ed0-be74-449d97f97894"></a>
 
 The second option is to host remote MCP servers that are accessed over HTTP or HTTPS. This provides access to any network-connected client. Using remote hosting allows you to centrally control access to MCP resources and capabilities, implement authentication and authorization, and control the versioning and updates of the MCP server logic. Remote hosting still requires the use of an MCP registry so that end-users can discover the MCP servers that they want to use with their agent. The following image shows the remote hosting approach.
 
@@ -37,7 +37,7 @@ The second option is to host remote MCP servers that are accessed over HTTP or H
 From an agent development perspective, the experience is similar whether the MCP server is local or remote. The most significant change is implementing authentication and authorization, including both the agent's access to the MCP server and the server's access to external resources. Remote MCP server implementations must be carefully planned to consider multi-tenant access and privilege management. The [MCP governance strategy](mcp-governance-strategy.md) chapter contains more information about authentication and authorization considerations.
 
 ### MCP gateway
-<a name="mcp-gateway.932dbbf8-7ab7-5bb4-850f-d1035413add9"></a>
+<a name="mcp-gateway9999999999999999nbsp-.932dbbf8-7ab7-5bb4-850f-d1035413add9"></a>
 
 The final option is using an MCP gateway. MCP gateways act as a centralized proxy between MCP clients and servers, and they orchestrate access to the registered MCP servers. Without a gateway, each agent needs to register every remote MCP server that it might want to use. A gateway allows the agent to connect to a single endpoint that manages the authentication, authorization, routing, and protocol translation. New MCP servers and tools can be added dynamically and made immediately available to the agent. The following image shows the MCP gateway approach.
 

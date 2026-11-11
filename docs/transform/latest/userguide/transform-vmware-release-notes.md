@@ -5,9 +5,13 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 # Release notes
 <a name="transform-vmware-release-notes"></a>
 
-The following release notes cover the latest changes to AWS Transform for migrations, including [Migration assessments](transform-app-assessments.md) and [Migrations (including VMware)](transform-app-vmware.md). For a list of changes across the full AWS Transform service, see the [changelog](https://docs.aws.amazon.com/transform/latest/userguide/change-log.html).
+The following release notes cover the latest changes to AWS Transform for migrations, including [Migrations (including VMware)](transform-app-vmware.md) and [Migration assessments](transform-app-assessments.md). For a list of changes across the full AWS Transform service, see the [changelog](https://docs.aws.amazon.com/transform/latest/userguide/change-log.html).
 
 For supported AWS Transform regions, see [Supported Regions](https://docs.aws.amazon.com/transform/latest/userguide/regions.html). For supported target regions, see the [account connector setup page](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions).
+
+## November 2026
+<a name="transform-vmware-release-notes-november-2026"></a>
++ AWS Transform for migrations now combines migration assessments and migration planning in one job. After you upload your inventory, you can build a business case, plan migration waves, or both, in either order, in the same job. [Learn more about combining discovery, assessment, and migration planning](https://docs.aws.amazon.com/transform/latest/userguide/transform-migrations-discover-assess-plan.html).
 
 ## October 2026
 <a name="transform-vmware-release-notes-october-2026"></a>

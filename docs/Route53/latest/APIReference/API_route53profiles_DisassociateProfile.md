@@ -48,6 +48,7 @@ Content-type: application/json
       "ModificationTime": number,
       "Name": "string",
       "OwnerId": "string",
+      "Priority": number,
       "ProfileId": "string",
       "ResourceId": "string",
       "Status": "string",

@@ -10,12 +10,35 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026
 <a name="_november_2026"></a>
 
+### Harness: Strands-powered managed defaults and built-in tools
+<a name="_harness_strands_powered_managed_defaults_and_built_in_tools_2"></a>
+
+Amazon Bedrock AgentCore harness now uses Strands Harness to provide an upgraded managed experience. Harnesses that use managed defaults receive the current recommended model. In commercial AWS Regions, that model is Claude Opus 5. Managed defaults also provide task-oriented instructions, conversation summarization when the conversation exceeds the model’s context window, and automatic prompt caching for supported Amazon Bedrock models. Built-in tools support planning, web retrieval, filesystem access, context offloading, and subagent delegation. Explicit model, system prompt, truncation, and `allowedTools` settings continue to take precedence. Managed defaults can evolve. Configure these settings and list individual tool selectors when you need fixed behavior or a fixed capability boundary.
+
+For more information, see [Models and instructions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-models.html) and [Tools](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-tools.html) in the *Amazon Bedrock AgentCore Developer Guide*.
+
+### Web Search: Search the web from your code with the InvokeWebSearch API
+<a name="_web_search_search_the_web_from_your_code_with_the_invokewebsearch_api_2"></a>
+
+Amazon Bedrock AgentCore now offers the Web Search API (`InvokeWebSearch`), which lets your applications and agents search the web with the AWS SDKs or the AWS CLI, without setting up a gateway. Use it to bring current information from the web into code that you write yourself, such as an agent loop or a data pipeline. The Web Search API is available in the US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Ireland) AWS Regions.
+
+For more information, see [Search the web using Amazon Bedrock AgentCore Web Search](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-search-api.html) in the *Amazon Bedrock AgentCore Developer Guide*.
+
 ### Gateway: Get cited web answers with the Web Answer connector
 <a name="_gateway_get_cited_web_answers_with_the_web_answer_connector_2"></a>
 
 Web Answer is a built-in connector for Amazon Bedrock AgentCore Gateway, now generally available in US East (N. Virginia) `us-east-1`. With Web Answer, your agent can ask a natural-language question and get a synthesized answer with citations to current web sources, from one tool call.
 
 For more information, see [Web Answer](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-answer-tool.html) in the *Amazon Bedrock AgentCore Developer Guide*.
+
+### Runtime: Support for MCP protocol version 2026-07-28
+<a name="_runtime_support_for_mcp_protocol_version_2026_07_28_2"></a>
+
+Amazon Bedrock AgentCore Runtime now supports Model Context Protocol (MCP) version `2026-07-28` for MCP servers on both the microVMs and Instances compute types. For clients that use this version, error responses use HTTP status codes that align with the MCP specification. AgentCore Runtime also uses the `X-Amzn-Bedrock-AgentCore-Runtime-Session-Id` header to keep requests in the same session.
+
+Clients that use earlier protocol versions are unaffected. For version `2025-11-25` and earlier, both stateful and stateless mode are supported. For more information about MCP support in AgentCore Runtime, see [MCP protocol contract](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp-protocol-contract.html).
+
+To give AgentCore Runtime a reliable health signal, implement the `GET /ping` health endpoint on your MCP server’s serving port. The endpoint reports health independent of the MCP protocol version. Without `GET /ping`, AgentCore Runtime can detect only that a server on version `2026-07-28` has stopped responding. It can also detect errors other than the `ping` rejection, such as server errors.
 
 ### Runtime: Platform version V2 now available in five additional Regions
 <a name="_runtime_platform_version_v2_now_available_in_five_additional_regions_2"></a>
@@ -139,15 +162,6 @@ For more information, see [AgentCore CLI reference](https://docs.aws.amazon.com/
 Amazon Bedrock AgentCore Evaluations now includes the failure analysis evaluator (`Builtin.FailureAnalysis`), which finds failures in your agent sessions, determines the root cause of each failure, and groups the findings across sessions into insights. Each insight includes the root causes behind the pattern and suggested fixes, such as changes to your system prompt or tool definitions. You can run the evaluator alone or together with other evaluators in a batch evaluation, and read the insights in the `insightResults` field of the `GetBatchEvaluation` response.
 
 For more information, see [Insights in batch evaluation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-evaluations-insights.html) and [Insight evaluators](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/insight-evaluators.html).
-
-### Runtime: Support for MCP protocol version 2026-07-28
-<a name="_runtime_support_for_mcp_protocol_version_2026_07_28_2"></a>
-
-Amazon Bedrock AgentCore Runtime now supports Model Context Protocol (MCP) version `2026-07-28` for MCP servers on both the microVMs and Instances compute types. For clients that use this version, error responses use HTTP status codes that align with the MCP specification. AgentCore Runtime also uses the `X-Amzn-Bedrock-AgentCore-Runtime-Session-Id` header to keep requests in the same session.
-
-Clients that use earlier protocol versions are unaffected. For version `2025-11-25` and earlier, both stateful and stateless mode are supported. For more information about MCP support in AgentCore Runtime, see [MCP protocol contract](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp-protocol-contract.html).
-
-To give AgentCore Runtime a reliable health signal, implement the `GET /ping` health endpoint on your MCP server’s serving port. The endpoint reports health independent of the MCP protocol version. Without `GET /ping`, AgentCore Runtime can detect only that a server on version `2026-07-28` has stopped responding. It can also detect errors other than the `ping` rejection, such as server errors.
 
 ### Memory: Time-to-live for long-term memory records
 <a name="_memory_time_to_live_for_long_term_memory_records_2"></a>
@@ -428,7 +442,7 @@ AgentCore Runtime default service quotas have been increased to support higher-s
 ### Web Search Tool is now Generally Available
 <a name="_web_search_tool_is_now_generally_available_2"></a>
 
-Web Search is a fully managed tool that enables agents to ground responses in current, accurate web knowledge while keeping data residency within your secured AWS environment with zero data egress. Built on Amazon’s search infrastructure, it combines a proprietary web index with structured knowledge graph data. The tool is exposed as a built-in connector target on AgentCore gateway using the Model Context Protocol (MCP), returning ranked results with relevant snippets, source URLs, titles, and publication dates optimized for agentic retrieval. See [Web Search documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/web-search.html).
+Web Search Tool on Amazon Bedrock AgentCore is a fully managed tool that lets agents ground responses in current, accurate web knowledge while keeping data residency within your secured AWS environment with zero data egress. Built on Amazon’s search infrastructure, it combines a proprietary web index with structured knowledge graph data. The tool is exposed as a built-in connector target on AgentCore Gateway using the Model Context Protocol (MCP). It returns ranked results with relevant snippets, source URLs, titles, and publication dates optimized for agentic retrieval. For more information about Web Search Tool, see [Web Search Tool](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-search-tool.html).
 
 ### AgentCore Policy Now Supports Bedrock Guardrails
 <a name="_agentcore_policy_now_supports_bedrock_guardrails_2"></a>

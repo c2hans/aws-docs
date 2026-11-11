@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/index.ht
 title: 'AWS Reference Architecture Diagrams'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # AWS Reference Architecture Diagrams
@@ -33,11 +33,11 @@ Search or filter by category to find reference architecture diagrams across AWS 
 
 ### Agriculture
 
-- [Connected Home: Machine Learning at the Edge](/reference-architecture-diagrams/latest/connected-home-ml-edge/connected-home-ml-edge.html): Run machine learning inference on IoT home devices by using AWS IoT Greengrass and Amazon SageMaker.
-- [Edge Inference for Agriculture](/reference-architecture-diagrams/latest/edge-inference-agriculture/edge-inference-agriculture.html): Enable edge inference in rural and remote agricultural environments by using AWS IoT Greengrass and Amazon SageMaker Neo.
-- [Fleet Management Solution for Connected Farm](/reference-architecture-diagrams/latest/fleet-management-for-connected-farm/fleet-management-for-connected-farm.html): This architecture enables you to create an intelligent fleet management solution for farming, using data from Internet of Things (IoT) sensors and cameras at strategic locations and in assets such as tractors and combine harvesters. Increasingly, these assets are equipped with multiple sensors for monitoring environmental conditions, hazards, and detecting changes in operations.
-- [Livestock Counting at the Edge](/reference-architecture-diagrams/latest/livestock-counting-at-the-edge/livestock-counting-at-the-edge.html): This architecture enables you to build a near real-time, automated counting application for livestock. Use Amazon SageMaker and AWS IoT Greengrass to build and deploy a livestock counting application at the edge.
-- [Smart Farm on AWS](/reference-architecture-diagrams/latest/smart-farm-on-aws/smart-farm-on-aws.html): This Connected Farm reference architecture enables sensors, computer vision, and edge inference in agriculture by focusing on ensuring scalability, elasticity, and a responsiveness for each operation's growing and changing needs.
+- [Connected Home: Machine Learning at the Edge](/reference-architecture-diagrams/latest/agriculture/connected-home-ml-edge.html): Run machine learning inference on IoT home devices by using AWS IoT Greengrass and Amazon SageMaker.
+- [Edge Inference for Agriculture](/reference-architecture-diagrams/latest/agriculture/edge-inference-agriculture.html): Enable edge inference in rural and remote agricultural environments by using AWS IoT Greengrass and Amazon SageMaker Neo.
+- [Fleet Management Solution for Connected Farm](/reference-architecture-diagrams/latest/agriculture/fleet-management-for-connected-farm.html): This architecture enables you to create an intelligent fleet management solution for farming, using data from Internet of Things (IoT) sensors and cameras at strategic locations and in assets such as tractors and combine harvesters. Increasingly, these assets are equipped with multiple sensors for monitoring environmental conditions, hazards, and detecting changes in operations.
+- [Livestock Counting at the Edge](/reference-architecture-diagrams/latest/agriculture/livestock-counting-at-the-edge.html): This architecture enables you to build a near real-time, automated counting application for livestock. Use Amazon SageMaker and AWS IoT Greengrass to build and deploy a livestock counting application at the edge.
+- [Smart Farm on AWS](/reference-architecture-diagrams/latest/agriculture/smart-farm-on-aws.html): This Connected Farm reference architecture enables sensors, computer vision, and edge inference in agriculture by focusing on ensuring scalability, elasticity, and a responsiveness for each operation's growing and changing needs.
 
 ### Automotive
 

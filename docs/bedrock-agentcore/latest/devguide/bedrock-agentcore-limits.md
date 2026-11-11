@@ -16,6 +16,7 @@ To request a quota increase, contact AWS support.
 + [AgentCore Identity Service Quotas](#identity-service-limits)
 + [AgentCore Gateway Service Quotas](#gateway-endpoints-quotas)
 + [AgentCore Browser Service Quotas](#browser-service-limits)
++ [AgentCore Web Search Service Quotas](#web-search-service-limits)
 + [AgentCore Code Interpreter Service Quotas](#code-interpreter-service-limits)
 + [AgentCore Evaluations Service Quotas](#evaluation-service-limits)
 + [AgentCore Batch Evaluation Service Quotas](#optimization-batch-evaluation-limits)
@@ -372,6 +373,15 @@ The following table describes the rate limits for the Browser tool APIs after wh
 | GetBrowserProfile API rate | 30 TPS | Yes | Transactions per second per account |
 | ListBrowserProfiles API rate | 30 TPS | Yes | Transactions per second per account |
 | DeleteBrowserProfile API rate | 5 TPS | Yes | Transactions per second per account |
+
+## AgentCore Web Search Service Quotas
+<a name="web-search-service-limits"></a>
+
+The following table describes the rate limit for [AgentCore Web Search](web-search-api.md) after which you will be throttled. The quota applies to each account in each Region.
+
+| Limit | Value | Adjustable | Notes |
+| --- | --- | --- | --- |
+| InvokeWebSearch API rate | 10 TPS | Yes | Transactions per second per account |
 
 ## AgentCore Code Interpreter Service Quotas
 <a name="code-interpreter-service-limits"></a>

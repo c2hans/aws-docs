@@ -13,6 +13,6 @@ To effectively implement agentic protocols across your organization, consider th
 
 1. **Contribute to open standards** – Participate in protocol development communities.
 
-1. **Monitor protocol evolution** –Stay informed about emerging standards and updates.
+1. **Monitor protocol evolution** – Stay informed about emerging standards and updates.
 
 1. **Test interoperability regularly** – Verify that your implementations remain compatible.

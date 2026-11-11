@@ -12,6 +12,8 @@ This page walks you through an online migration from a self-managed Valkey or Re
 
 Before you begin, confirm that your source cache and your target cache meet the migration requirements. For more information, see [Prerequisites for online migration to ElastiCache Serverless](migration-to-serverless-prerequisites.md). If your source requires authentication or TLS, set that up first. For more information, see [Source authentication for online migration to ElastiCache Serverless](migration-to-serverless-auth.md).
 
+Before you migrate, test your workload on an ElastiCache Serverless cache to see how it scales and how many ElastiCache Processing Units (ECPUs) it consumes. For more information, see [Scaling ElastiCache Serverless clusters](Scaling-serverless.md).
+
 Confirm that you have the following:
 + An ElastiCache Serverless for Valkey cache that is available and empty, with the IPv4 network type and no public endpoint.
 + A self-managed Valkey or Redis OSS source on Amazon EC2 that meets the source requirements.
@@ -46,7 +48,11 @@ Your source does not require authentication.
 
    If you choose **Verify CA**, under **Certificate authority** choose **Public CA** or **Private CA**, and provide the PEM-encoded CA certificates that issued your source's server certificate. Provide them for public and private authorities alike. For more information about why, see [Source authentication for online migration to ElastiCache Serverless](migration-to-serverless-auth.md).
 
-1. Under **Target details**, for **Choose target cache**, choose your cache. Only compatible caches are listed.
+1.
+**Important**
+Your target cache must be empty when you create the migration. If it contains any keys, the prepare step fails and the target's Events tab shows "The serverless cache must have no keys before migration can begin." To empty the target, run `FLUSHALL` on it before you create the migration. `FLUSHALL` removes every key in the cache. You can have ElastiCache clear the target for you only when you start the data sync.
+
+   Under **Target details**, for **Choose target cache**, choose your cache. Only compatible caches are listed.
 
 1. Choose **Create**.
 
@@ -66,7 +72,7 @@ How long the prepare step takes depends on the size of your source. While **Curr
 
 While **Current state** reads **Preparing migration**, the migration endpoint does not accept connections. Before you prepare a migration, and after a prepare step that fails, the endpoint serves your target cache, which is empty. Point your application at the migration endpoint only when **Current state** reads **Ready to sync**.
 
-When **Current state** reads **Ready to sync**, the banner reads "Migration is ready to sync" and "Your migration endpoint is active and traffic is routed to your source. Update your application to point to the migration endpoint, then choose Start migration when ready." The **Migration endpoint** field now shows the address. Update your application to connect to the migration endpoint. Connect with TLS, and allow your application in your target cache's security group. For more information, see [Client configuration](migration-to-serverless-prerequisites.md#migration-to-serverless-client-config). To copy the address, choose **Copy migration endpoint**. Before you move all of your traffic, connect to the migration endpoint with TLS and read a key that exists on your source. When the read returns the value from your source, the endpoint is routing to your source. Your traffic is routed to your source until cutover. The console reminds you to do this before you start the data sync, because ElastiCache cannot detect whether your application has moved. Starting the data sync first does not affect the data on your target. If you use Auto-cutover, redirect your application before you start the data sync, because ElastiCache cuts over at the next fully synced window. A client that still connects straight to your source after cutover writes to a cache that no longer replicates to your target.
+When **Current state** reads **Ready to sync**, the banner reads "Migration is ready to sync" and "Your migration endpoint is active and traffic is routed to your source. Update your application to point to the migration endpoint, then choose Start migration when ready." The **Migration endpoint** field now shows the address. The migration endpoint is your serverless cache's standard endpoint, so your application keeps using it after cutover. Update your application to connect to the migration endpoint. Connect with TLS, and allow your application in your target cache's security group. For more information, see [Client configuration](migration-to-serverless-prerequisites.md#migration-to-serverless-client-config). To copy the address, choose **Copy migration endpoint**. Before you move all of your traffic, connect to the migration endpoint with TLS and read a key that exists on your source. When the read returns the value from your source, the endpoint is routing to your source. Your traffic is routed to your source until cutover. The console reminds you to do this before you start the data sync, because ElastiCache cannot detect whether your application has moved. Starting the data sync first does not affect the data on your target. If you use Auto-cutover, redirect your application before you start the data sync, because ElastiCache cuts over at the next fully synced window. A client that still connects straight to your source after cutover writes to a cache that no longer replicates to your target.
 
 ## Start the data sync
 <a name="w2aac20c13c37c13"></a>

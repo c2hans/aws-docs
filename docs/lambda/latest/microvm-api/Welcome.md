@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/Welcome.html
 
  AWS Lambda MicroVMs provides APIs to create, manage, and operate MicroVMs and their associated MicroVM Image environments.
 
-This document was last published on November 9, 2026.
+This document was last published on November 11, 2026.

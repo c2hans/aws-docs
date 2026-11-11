@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/import-visuals.html
 ---
 
-# Importing Amazon Quick Sight visuals to an analysis
+# Importing AWS Quick Sight visuals to an analysis
 <a name="import-visuals"></a>
 
 Quick Sight authors can import Quick Sight visuals from one analysis or dashboard to a new analysis that has access privileges. When you import a visual from a Quick Sight analysis or dashboard to another Quick Sight analysis, the following dependencies are imported along with the visual.

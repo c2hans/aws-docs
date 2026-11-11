@@ -44,7 +44,7 @@ Agentic AI applications face security risks that extend beyond those of traditio
 This section reviews the AWS services and features that address the risks that are specific to this capability.
 
 ### Data protection
-<a name="data-protection.32178887-6355-5ba3-887e-b7fa55010738"></a>
+<a name="data-protection.fa4bbe7b-e331-51f1-8f0e-6fd6487a07f2"></a>
 
 Implement session isolation through [Amazon Bedrock AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html), which runs each user session in a dedicated microVM with isolated CPU, memory, and file system resources. This architecture provides complete separation between user sessions, preventing cross-session data contamination even when agents process requests concurrently. After session completion, AgentCore Runtime terminates the microVM and sanitizes memory, ensuring no data persists between sessions.
 

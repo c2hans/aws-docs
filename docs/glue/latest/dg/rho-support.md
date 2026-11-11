@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/rho-support.html
+---
+
+# AWS Glue support for Rho
+<a name="rho-support"></a>
+
+AWS Glue supports Rho as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Rho.
+
+**Supported as a target?**
+No.
+
+**Supported Rho API versions**
+The following Rho API version is supported:
++ v1

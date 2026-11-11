@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon
 
 Stores a pronunciation lexicon in an AWS Region. If a lexicon with the same name already exists in the region, it is overwritten by the new lexicon. Lexicon operations have eventual consistency, therefore, it might take some time before the lexicon is available to the SynthesizeSpeech operation.
 
+Overwriting a lexicon keeps its existing tags. You can specify tags only when you create a lexicon. If you specify tags for a lexicon that already exists, the request fails with a `ValidationException`. To change the tags of an existing lexicon, use `TagResource` and `UntagResource`.
+
 For more information, see [Managing Lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html).
 
 ## Request Syntax
@@ -17,7 +19,10 @@ PUT /v1/lexicons/{{LexiconName}} HTTP/1.1
 Content-type: application/json
 
 {
-   "Content": "{{string}}"
+   "Content": "{{string}}",
+   "Tags": {
+      "{{string}}" : "{{string}}"
+   }
 }
 ```
 
@@ -27,7 +32,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [LexiconName](#API_PutLexicon_RequestSyntax) **   <a name="polly-PutLexicon-request-uri-Name"></a>
-Name of the lexicon. The name must follow the regular express format [0-9A-Za-z]{1,20}. That is, the name is a case-sensitive alphanumeric string up to 20 characters long.
+Name of the lexicon. The name must follow the regular expression format [0-9A-Za-z]{1,20}. That is, the name is a case-sensitive alphanumeric string up to 20 characters long.
 Pattern: `[0-9A-Za-z]{1,20}`
 Required: Yes
 
@@ -40,6 +45,14 @@ The request accepts the following data in JSON format.
 Content of the PLS lexicon as string data.
 Type: String
 Required: Yes
+
+ ** [Tags](#API_PutLexicon_RequestSyntax) **   <a name="polly-PutLexicon-request-Tags"></a>
+The metadata that you apply to the lexicon to help you categorize and organize it. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters. You can't replace the tags of an existing lexicon by overwriting it with PutLexicon.
+Type: String to string map
+Map Entries: Maximum number of 200 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: No
 
 ## Response Syntax
 <a name="API_PutLexicon_ResponseSyntax"></a>
@@ -62,6 +75,10 @@ For information about the errors that are common to all actions, see [Common Err
 Amazon Polly can't find the specified lexicon. Verify that the lexicon's name is spelled correctly, and then try again.
 HTTP Status Code: 400
 
+ ** InvalidTagParameterException **
+The resource ARN or a tag in the request isn't valid. Specify the ARN of a supported resource in the AWS account and Region of the request. Tag keys can have a maximum length of 128 characters, and tag values can have a maximum length of 256 characters. Correct the ARN or the tags, and then try again.
+HTTP Status Code: 400
+
  ** LexiconSizeExceededException **
 The maximum size of the specified lexicon would be exceeded by this operation.
 HTTP Status Code: 400
@@ -78,12 +95,24 @@ HTTP Status Code: 400
 An unknown condition has caused a service failure.
 HTTP Status Code: 500
 
+ ** TooManyTagsException **
+The list of tags on the resource is over the limit. The maximum number of tags that can be applied to a resource is 50. Remove unused tags or reduce the number of tags in the request, and then try again.
+HTTP Status Code: 400
+
  ** UnsupportedPlsAlphabetException **
 The alphabet specified by the lexicon is not a supported alphabet. Valid values are `ipa`, `x-sampa`, `x-amazon-pinyin`, `x-amazon-jyutping`, `x-amazon-pron-kana`, and `x-amazon-yomigana`. Replace the unsupported alphabet with one of the valid values and resubmit your request.
 HTTP Status Code: 400
 
  ** UnsupportedPlsLanguageException **
 The language specified in the lexicon is unsupported. For a list of supported languages, see [Lexicon Attributes](https://docs.aws.amazon.com/polly/latest/dg/API_LexiconAttributes.html).
+HTTP Status Code: 400
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by the service.
+ ** fields **
+The fields that caused the validation error.
+ ** reason **
+The reason the request failed validation.
 HTTP Status Code: 400
 
 ## See Also

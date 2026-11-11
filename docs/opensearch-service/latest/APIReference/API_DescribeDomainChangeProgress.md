@@ -54,6 +54,17 @@ Content-type: application/json
             "Status": "string"
          }
       ],
+      "ClonedBlueGreenUpgradeDetails": {
+         "RetentionInHours": number,
+         "ScheduledAction": {
+            "Action": "string",
+            "ScheduledTime": number
+         },
+         "TrafficSplit": {
+            "CloneReadTrafficPercent": number,
+            "PrimaryReadTrafficPercent": number
+         }
+      },
       "CompletedProperties": [ "string" ],
       "ConfigChangeStatus": "string",
       "InitiatedBy": "string",

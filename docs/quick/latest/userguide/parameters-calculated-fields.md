@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/parameters-calculated-fields.html
 ---
 
-# Using calculated fields with parameters in Amazon Quick
+# Using calculated fields with parameters in AWS Quick
 <a name="parameters-calculated-fields"></a>
 
 You can pass the value of a parameter to a calculated field in an analysis. When you create a calculation, you can choose existing parameters from the list of parameters under **Parameter list**. You can't create a calculated field that contains a multivalued parameter—those with a multiselect drop-down control.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/data-preparation-
 # Data preparation limits
 <a name="data-preparation-limits"></a>
 
-Amazon Quick Sight's data preparation experience is designed to handle enterprise-scale datasets while maintaining optimal performance. The following limits ensure reliable functionality.
+AWS Quick Sight's data preparation experience is designed to handle enterprise-scale datasets while maintaining optimal performance. The following limits ensure reliable functionality.
 
 ## Dataset size limits (SPICE)
 <a name="dataset-size-limits"></a>

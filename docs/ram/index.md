@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ram/index.html
 title: 'AWS Resource Access Manager Documentation'
 canonical_url: https://docs.aws.amazon.com/ram/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # AWS Resource Access Manager Documentation

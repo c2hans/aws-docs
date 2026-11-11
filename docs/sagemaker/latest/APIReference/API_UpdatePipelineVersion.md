@@ -13,6 +13,10 @@ Updates a pipeline version.
 ```
 {
    "PipelineArn": "{{string}}",
+   "PipelineVersionAliasOperations": {
+      "Add": [ "{{string}}" ],
+      "Remove": [ "{{string}}" ]
+   },
    "PipelineVersionDescription": "{{string}}",
    "PipelineVersionDisplayName": "{{string}}",
    "PipelineVersionId": {{number}}
@@ -32,6 +36,11 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:([0-9]{12}|aws):pipeline/.*`
 Required: Yes
+
+ ** [PipelineVersionAliasOperations](#API_UpdatePipelineVersion_RequestSyntax) **   <a name="sagemaker-UpdatePipelineVersion-request-PipelineVersionAliasOperations"></a>
+The aliases to add to or remove from the pipeline version.
+Type: [AliasOperations](API_AliasOperations.md) object
+Required: No
 
  ** [PipelineVersionDescription](#API_UpdatePipelineVersion_RequestSyntax) **   <a name="sagemaker-UpdatePipelineVersion-request-PipelineVersionDescription"></a>
 The description of the pipeline version.

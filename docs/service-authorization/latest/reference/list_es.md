@@ -268,6 +268,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [es:StartElasticsearchServiceSoftwareUpdate](#list_es-action-StartElasticsearchServiceSoftwareUpdate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [es:StartServiceSoftwareUpdate](#list_es-action-StartServiceSoftwareUpdate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
+- **   UpdateClone  **
+  - **IAM action:**  [es:UpdateClone](#list_es-action-UpdateClone)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateElasticsearchDomainConfig  **
   - **IAM action:**  [es:UpdateDomainConfig](#list_es-action-UpdateDomainConfig)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [es:UpdateElasticsearchDomainConfig](#list_es-action-UpdateElasticsearchDomainConfig)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

@@ -49,7 +49,7 @@ As a developer, you can add more files for additional code logic in the plugin. 
 Authenticating a plugin against your backend services is crucial to ensure only authorized users can make calls to your APIs and access AWS resources. In this example we will be using the [Token](https://docs.moodle.org/500/en/Using_web_services) feature of the Moodle Web Services to generate a token that can be validated by an [API GatewayLambda Authorizer](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html).
 
 ### Plugin code
-<a name="plugin-code.8a072f95-8e9b-569f-ac28-f968737d765a"></a>
+<a name="plugin-code.a3bb6da0-b340-52e2-aab7-09128396a057"></a>
 
 The block plugin requires 2 functions as part of its structure:
 
@@ -104,7 +104,7 @@ private function get_user_token() {
 In this example the `ai_translator` service is a custom service that has been configured with appropriately scoped permissions, see [Using web services](https://docs.moodle.org/500/en/Using_web_services).
 
 ### Setting up the backend
-<a name="setting-up-the-backend.5e57a86b-9113-544b-a1dd-35f2b0eef0f9"></a>
+<a name="setting-up-the-backend.2d5108cf-47b8-58d5-9f1f-2e1283c29e00"></a>
 
 To set up the backend, create an API Gateway REST API.
 
@@ -221,7 +221,7 @@ The LTI process works using a handshake system, where both Moodle and the LTI co
 The end user, inside Moodle, clicks on a course activity that makes use of a LTI compliant tool. The following sections will explain in more details how the tool can be configured to integrate with Moodle.
 
 ### Tool registration
-<a name="tool-registration.6d9d835e-6757-561e-be4d-2ae96c2c9e5c"></a>
+<a name="tool-registration.00268fa4-bbe5-5baf-9c50-e37bc4c29c9b"></a>
 
 When creating a tool, you need to provide Moodle parameters and endpoints which will be used by the LMS to communicate with the tool.
 
@@ -246,7 +246,7 @@ Once the tool is registered, Moodle will then provide you with parameters that w
 | **Authentication request URL** | The URL of Moodle's auth service | [https://moodle-publi-472qkfavulvq-48382734.us-east-2.elb.amazonaws.com/mod/lti/auth.php](https://moodle-publi-472qkfavulvq-48382734.us-east-2.elb.amazonaws.com/mod/lti/auth.php) |
 
 ### Login request
-<a name="login-request.668f4ee6-9634-541e-ae3e-6095a5318cd9"></a>
+<a name="login-request.8ed46b38-df60-554e-9674-b3f3be9cd6a6"></a>
 
 When Moodle tries to launch your tool in an iframe/window (depending on the tool configuration), it makes a POST request to your `/login` endpoint with information such as `login_hint` (user ID) and `lti_message_hint` (launch context). The purpose of this endpoint is to redirect back to Moodle's authentication page, passing along these hints along with your tool's client ID and redirect URI.
 
@@ -291,7 +291,7 @@ In this code, we use the values Moodle provided for the **CLIENT\_ID** and **RED
 The application running in the iframe is then redirected to the Auth service, which upon completion will do another POST request to the `/launch` endpoint.
 
 ### POST request to /launch signed with JWT token
-<a name="post-request-to--launch-signed-with-jwt-token.0c7bd868-caf6-5a64-b7f1-49099c25befe"></a>
+<a name="post-request-to--launch-signed-with-jwt-token.ba16d60f-3d22-506a-b729-8287fe0b9ec9"></a>
 
 In the POST request Moodle makes to the `/launch` endpoint, it adds to the payload a JWT token. Decoding this token will provide the LTI tool the ability to extract information about the user launching the tool and the course that it is launched from. It can also decode any custom parameters that Moodle is configured to send to this tool. The launch endpoint needs to follow these steps:
 
@@ -380,7 +380,7 @@ A complete sample for this pattern is available in the [sample-moodle-integratio
 + Event Handlers (CDK): `/cdk/constructs/moodle_event_handlers.py`
 
 ### Create the plugin structure
-<a name="create-the-plugin-structure.d2849b1c-1a2b-54ed-83d7-753f6ae3cc81"></a>
+<a name="create-the-plugin-structure.4b928131-f521-5f37-ae1c-9530a2c60557"></a>
 
 The plugin uses Moodle's [local plugin](https://moodledev.io/docs/4.5/apis/plugintypes/local) type, which is the recommended approach for event consumers that communicate with external systems.
 
@@ -408,7 +408,7 @@ The `settings.php` file allows an administrator to configure the plugin with the
 The code first creates the setting page and adds a number of different options for configuring the plugin. The options would include how to authenticate with the AWS API and the name of the target EventBridge event bus.
 
 ### Define the event subscriptions
-<a name="define-the-event-subscriptions.bf531c53-c88f-5eee-b460-658d4ced39b2"></a>
+<a name="define-the-event-subscriptions.c3a11299-a114-5c0b-83c7-2b9bb697f2a0"></a>
 
 The `events.php` file is used to configure which events the plugin should process. The snippet below is subscribing to the `course_module_created` event.
 
@@ -444,7 +444,7 @@ class observer {
 ```
 
 ### Send the event to EventBridge
-<a name="send-the-event-to-9999999999999999ev-.2888c222-f524-5d63-bd3d-95e2eb200e89"></a>
+<a name="send-the-event-to-9999999999999999ev-.b23950d8-659e-5cc9-9f23-acee339aae18"></a>
 
 The constructor in the `aws_eventbridge` class retrieves the connection details from the `CFG` object. An `EventBridgeClient` is created using the AWS SDK for PHP and the event bus name is stored in a local property. The client is declared as a static variable to enable connection reuse across multiple invocations of the observer. This is a performance optimization that prevents the overhead of creating a new AWS SDK client for each event processed.
 

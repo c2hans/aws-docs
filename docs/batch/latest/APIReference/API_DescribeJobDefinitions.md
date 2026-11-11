@@ -359,11 +359,19 @@ Content-type: application/json
                      },
                      "securityContext": {
                         "allowPrivilegeEscalation": boolean,
+                        "capabilities": {
+                           "add": [ "string" ],
+                           "drop": [ "string" ]
+                        },
                         "privileged": boolean,
                         "readOnlyRootFilesystem": boolean,
                         "runAsGroup": number,
                         "runAsNonRoot": boolean,
-                        "runAsUser": number
+                        "runAsUser": number,
+                        "seccompProfile": {
+                           "localhostProfile": "string",
+                           "type": "string"
+                        }
                      },
                      "volumeMounts": [
                         {
@@ -405,11 +413,19 @@ Content-type: application/json
                      },
                      "securityContext": {
                         "allowPrivilegeEscalation": boolean,
+                        "capabilities": {
+                           "add": [ "string" ],
+                           "drop": [ "string" ]
+                        },
                         "privileged": boolean,
                         "readOnlyRootFilesystem": boolean,
                         "runAsGroup": number,
                         "runAsNonRoot": boolean,
-                        "runAsUser": number
+                        "runAsUser": number,
+                        "seccompProfile": {
+                           "localhostProfile": "string",
+                           "type": "string"
+                        }
                      },
                      "volumeMounts": [
                         {
@@ -429,6 +445,16 @@ Content-type: application/json
                      "string" : "string"
                   },
                   "namespace": "string"
+               },
+               "securityContext": {
+                  "fsGroup": number,
+                  "runAsGroup": number,
+                  "runAsNonRoot": boolean,
+                  "runAsUser": number,
+                  "seccompProfile": {
+                     "localhostProfile": "string",
+                     "type": "string"
+                  }
                },
                "serviceAccountName": "string",
                "shareProcessNamespace": boolean,
@@ -749,11 +775,19 @@ Content-type: application/json
                               },
                               "securityContext": {
                                  "allowPrivilegeEscalation": boolean,
+                                 "capabilities": {
+                                    "add": [ "string" ],
+                                    "drop": [ "string" ]
+                                 },
                                  "privileged": boolean,
                                  "readOnlyRootFilesystem": boolean,
                                  "runAsGroup": number,
                                  "runAsNonRoot": boolean,
-                                 "runAsUser": number
+                                 "runAsUser": number,
+                                 "seccompProfile": {
+                                    "localhostProfile": "string",
+                                    "type": "string"
+                                 }
                               },
                               "volumeMounts": [
                                  {
@@ -795,11 +829,19 @@ Content-type: application/json
                               },
                               "securityContext": {
                                  "allowPrivilegeEscalation": boolean,
+                                 "capabilities": {
+                                    "add": [ "string" ],
+                                    "drop": [ "string" ]
+                                 },
                                  "privileged": boolean,
                                  "readOnlyRootFilesystem": boolean,
                                  "runAsGroup": number,
                                  "runAsNonRoot": boolean,
-                                 "runAsUser": number
+                                 "runAsUser": number,
+                                 "seccompProfile": {
+                                    "localhostProfile": "string",
+                                    "type": "string"
+                                 }
                               },
                               "volumeMounts": [
                                  {
@@ -819,6 +861,16 @@ Content-type: application/json
                               "string" : "string"
                            },
                            "namespace": "string"
+                        },
+                        "securityContext": {
+                           "fsGroup": number,
+                           "runAsGroup": number,
+                           "runAsNonRoot": boolean,
+                           "runAsUser": number,
+                           "seccompProfile": {
+                              "localhostProfile": "string",
+                              "type": "string"
+                           }
                         },
                         "serviceAccountName": "string",
                         "shareProcessNamespace": boolean,

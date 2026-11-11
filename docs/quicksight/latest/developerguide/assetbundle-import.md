@@ -111,7 +111,7 @@ aws quicksight describe-asset-bundle-import-job
   --aws-account-id {{AWSACCOUNTID}} \
   --asset-bundle-import-job-id {{JOBID}}
 
-# grant yourself or others permissions to view/modify the imported resources (for more information, see [UpdateDashboardPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPermissions.html) in the Amazon Quick Sight API Reference)
+# grant yourself or others permissions to view/modify the imported resources (for more information, see [UpdateDashboardPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPermissions.html) in the AWS Quick Sight API Reference)
 
 # open your Quick Sight site in your browser and confirm the imported resources (important)
 ```
@@ -132,7 +132,7 @@ aws quicksight describe-asset-bundle-import-job
   --aws-account-id {{AWSACCOUNTID}} \
   --asset-bundle-import-job-id {{JOBID}}
 
-# grant yourself or others permissions to view/modify the imported resources (for more information, see [UpdateDashboardPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPermissions.html) in the Amazon Quick Sight API Reference)
+# grant yourself or others permissions to view/modify the imported resources (for more information, see [UpdateDashboardPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPermissions.html) in the AWS Quick Sight API Reference)
 
 # open your Quick Sight site in your browser and confirm the imported resources (important)
 ```

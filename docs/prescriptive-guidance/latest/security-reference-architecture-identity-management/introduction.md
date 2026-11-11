@@ -28,10 +28,3 @@ In this guide:
 + [Customer identity management](customer-identity-management.md)
 + [Contributors](contributors.md)
 + [Document history](doc-history.md)
-
-## Attachments
-<a name="attachments-1bf8562a-50f2-4dfa-9a24-c4edfe7b936c"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

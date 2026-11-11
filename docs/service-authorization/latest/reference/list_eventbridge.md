@@ -524,10 +524,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   StartReplay  **
   - **SDK client:** events
-  - **IAM action:**  [events:StartReplay](#list_eventbridge-action-StartReplay)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [events:StartReplay](#list_eventbridge-action-StartReplay)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [events:TagResource](#list_eventbridge-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   TagResource  **
   - **SDK client:** events

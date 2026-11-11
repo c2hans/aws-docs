@@ -36,7 +36,7 @@ Valid Values: `AWS_IAM_IDP_SAML | AWS_IAM_IDP_OIDC | AWS_IAM_IDC | AWS_QUICKSIGH
 Required: No
 
  ** quickSightConfiguration **   <a name="qbusiness-Type-Application-quickSightConfiguration"></a>
-The Amazon Quick configuration for an Amazon Q Business application that uses Quick as the identity provider.
+The AWS Quick configuration for an Amazon Q Business application that uses Quick as the identity provider.
 Type: [QuickSightConfiguration](API_QuickSightConfiguration.md) object
 Required: No
 

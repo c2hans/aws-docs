@@ -127,6 +127,22 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/troubl
 
    A run cannot be submitted unless it has at least one valid lap, because there would be no time to score. Check the **Recorded laps** table for laps marked invalid. Either mark a lap valid, record a valid lap, or discard the run.
 
+1.  *The Timer list shows No online timers, or the status shows Timer not responding*
+
+   The timer hasn’t sent an event or heartbeat recently. Check that the Raspberry Pi has power and a network connection, and that the timer service is running. Until the timer is back online, use **Manual** mode.
+
+1.  *The page shows "A timer crossing couldn’t start or resume the run"*
+
+   The crossing arrived but the run couldn’t be started or resumed. Choose **Start** or **Resume** yourself. After the run is in progress, crossings record laps as usual.
+
+1.  *The page shows "A timer crossing arrived after the run stopped, so no lap was recorded"*
+
+   The run was already paused or finished when the crossing arrived. If the lap should count, choose **Resume** and record the lap with **Record lap**.
+
+1.  *When activating a device, the Timer device type is unavailable*
+
+   Timers publish lap crossings to AWS IoT Core, so the **Timer** device type is unavailable when the deployment has no AWS IoT Core endpoint configured.
+
 1.  *The combined leaderboard is missing*
 
    A combined leaderboard is created automatically once an event has two or more tracks, and the event must have a **Combined scoring strategy** set. An event with a single track has only that track’s leaderboard.

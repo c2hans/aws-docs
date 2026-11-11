@@ -2,13 +2,13 @@
 source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/droid-dashboard.html
 ---
 
-# Database Resilience, Operations, and Insights (DROID) Dashboard
+# Data Resilience, Operations, and Insights (DROID) Dashboard
 <a name="droid-dashboard"></a>
 
 ## Introduction
 <a name="introduction"></a>
 
-The Database Resilience, Operations, and Insights (DROID) Dashboard provides comprehensive visibility into Amazon RDS and Amazon Aurora fleet health. It covers engine version status, end-of-support exposure, security and resiliency configuration, backup coverage, and cost. This dashboard combines AWS Cost and Usage Report (CUR) data with inventory and reference data collected by the Cloud Intelligence Dashboards Data Collection framework to deliver actionable insights for operating your database fleet across accounts and Regions.
+The Data Resilience, Operations, and Insights (DROID) Dashboard provides comprehensive visibility into Amazon RDS and Amazon Aurora fleet health. It covers engine version status, end-of-support exposure, security and resiliency configuration, backup coverage, and cost. This dashboard combines AWS Cost and Usage Report (CUR) data with inventory and reference data collected by the Cloud Intelligence Dashboards Data Collection framework to deliver actionable insights for operating your database fleet across accounts and Regions.
 
 The DROID Dashboard provides the following key capabilities:
 + Fleet inventory across accounts, Regions, engines, and instance classes, with Graviton adoption

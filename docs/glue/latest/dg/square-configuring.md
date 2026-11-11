@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/square-configuring.html
+---
+
+# Configuring Square
+<a name="square-configuring"></a>
+
+Before you can use AWS Glue to transfer data from Square, you must meet the following requirements:
+
+## Minimum requirements
+<a name="square-configuring-min-requirements"></a>
++ You have a Square account with API access.
++ You have an AWS account with access to AWS Glue.

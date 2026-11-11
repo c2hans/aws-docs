@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/connecting-datase
 # Connecting to Quick datasets in apps in Quick
 <a name="connecting-datasets-apps"></a>
 
-Alongside built-in app storage, your app can query a Amazon Quick dataset directly, so app users see current data every time they open the app. The app does not copy the data. Each app user's visuals query the dataset in real time under that app user's own identity, so your row-level and column-level security keeps applying.
+Alongside built-in app storage, your app can query a AWS Quick dataset directly, so app users see current data every time they open the app. The app does not copy the data. Each app user's visuals query the dataset in real time under that app user's own identity, so your row-level and column-level security keeps applying.
 
 ## Add a dataset to your app
 <a name="apps-live-data-add"></a>

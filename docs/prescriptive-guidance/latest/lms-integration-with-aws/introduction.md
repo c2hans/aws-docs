@@ -34,7 +34,7 @@ After reading this guide, you will be able to:
 + Familiarity with REST APIs and web application architecture
 
 ### Service limitations
-<a name="service-limitations.aac72c43-f7cd-5c67-b7b2-1be74ac48896"></a>
+<a name="service-limitations.eb37def0-86d5-5573-beca-b8b2ed03d4f8"></a>
 
 Some AWS services aren't available in all AWS Regions. For Region availability, see AWS[ services by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). For specific endpoints, see the [Service endpoints and quotas page](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html), and choose the link for the service.
 
@@ -49,10 +49,3 @@ When effectively implemented, LMS-AWS integration can deliver several valuable c
 + **Cost Efficiency**: Adopt a pay-as-you-go model for specialized data and AI processing capabilities, avoiding large upfront investments in educational technology infrastructure.
 
 Successful implementation requires careful consideration of several factors: technical expertise in both AWS services and LMS platforms; effective change management to help educators and students adapt to new capabilities; comprehensive data governance policies to ensure responsible data handling; and appropriate cost monitoring and quota management mechanisms to manage the pay-as-you-go model effectively.
-
-## Attachments
-<a name="attachments-0295b1b3-2981-4c83-b66b-d5ae2700aca8"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

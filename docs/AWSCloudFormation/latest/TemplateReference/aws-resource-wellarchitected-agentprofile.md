@@ -65,7 +65,7 @@ The aggregation configuration that defines which AWS accounts and Regions to ana
 *Required*: Yes
 *Type*: [Array](aws-properties-wellarchitected-agentprofile-aggregationconfiguration.md) of [AggregationConfiguration](aws-properties-wellarchitected-agentprofile-aggregationconfiguration.md)
 *Minimum*: `0`
-*Maximum*: `100`
+*Maximum*: `1000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BusinessOverview`  <a name="cfn-wellarchitected-agentprofile-businessoverview"></a>

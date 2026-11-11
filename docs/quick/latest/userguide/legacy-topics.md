@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/legacy-topics.htm
 
 |  |
 | --- |
-|    Intended audience:  Amazon Quick administrators and authors  |
+|    Intended audience:  AWS Quick administrators and authors  |
 
 If you created Topics before the multi-dataset Topics feature launched, your existing Topics are now classified as *legacy Topics*. Legacy Topics continue to work as before — their behavior and capabilities are unchanged.
 

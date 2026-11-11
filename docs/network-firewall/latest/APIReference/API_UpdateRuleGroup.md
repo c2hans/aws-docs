@@ -21,6 +21,84 @@ To update a rule group, first call [DescribeRuleGroup](API_DescribeRuleGroup.md)
       "KeyId": "{{string}}",
       "Type": "{{string}}"
    },
+   "FirewallRuleGroup": {
+      "ReferenceSets": {
+         "IPSetReferences": {
+            "{{string}}" : {
+               "ReferenceArn": "{{string}}"
+            }
+         }
+      },
+      "RulesSource": {
+         "FirewallRules": [
+            {
+               "AcceptPriorHooks": {{boolean}},
+               "Action": "{{string}}",
+               "ActionScope": "{{string}}",
+               "AlertEnabled": {{boolean}},
+               "BypassIPSEnabled": {{boolean}},
+               "DestIPs": "{{string}}",
+               "DestPorts": "{{string}}",
+               "Hook": "{{string}}",
+               "Protocol": "{{string}}",
+               "RuleMetadata": {
+                  "RuleDescription": "{{string}}",
+                  "RuleEnabled": {{boolean}}
+               },
+               "RuleOptions": [
+                  {
+                     "Keyword": "{{string}}",
+                     "Settings": [ "{{string}}" ]
+                  }
+               ],
+               "SourceIPs": "{{string}}",
+               "SourcePorts": "{{string}}"
+            }
+         ],
+         "RulesSourceList": {
+            "GeneratedRulesType": "{{string}}",
+            "Targets": [ "{{string}}" ],
+            "TargetTypes": [ "{{string}}" ]
+         },
+         "RulesString": "{{string}}"
+      },
+      "RuleVariables": {
+         "IPSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
+         "PortSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         }
+      }
+   },
+   "IpsRuleGroup": {
+      "ReferenceSets": {
+         "IPSetReferences": {
+            "{{string}}" : {
+               "ReferenceArn": "{{string}}"
+            }
+         }
+      },
+      "RulesSource": {
+         "RulesString": "{{string}}"
+      },
+      "RuleVariables": {
+         "IPSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
+         "PortSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         }
+      }
+   },
    "RuleGroup": {
       "ReferenceSets": {
          "IPSetReferences": {
@@ -173,6 +251,16 @@ A complex type that contains settings for encryption of your rule group resource
 Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
 Required: No
 
+ ** [FirewallRuleGroup](#API_UpdateRuleGroup_RequestSyntax) **   <a name="networkfirewall-UpdateRuleGroup-request-FirewallRuleGroup"></a>
+An object that defines the rules in a firewall engine rule group, for use in a Next Generation policy.
+Type: [FirewallRuleGroup](API_FirewallRuleGroup.md) object
+Required: No
+
+ ** [IpsRuleGroup](#API_UpdateRuleGroup_RequestSyntax) **   <a name="networkfirewall-UpdateRuleGroup-request-IpsRuleGroup"></a>
+An object that defines the rules in an IPS engine rule group, for use in a Next Generation policy.
+Type: [IpsRuleGroup](API_IpsRuleGroup.md) object
+Required: No
+
  ** [RuleGroup](#API_UpdateRuleGroup_RequestSyntax) **   <a name="networkfirewall-UpdateRuleGroup-request-RuleGroup"></a>
 An object that defines the rule group rules.
 You must provide either this rule group setting or a `Rules` setting, but not both.
@@ -215,10 +303,14 @@ Type: [SummaryConfiguration](API_SummaryConfiguration.md) object
 Required: No
 
  ** [Type](#API_UpdateRuleGroup_RequestSyntax) **   <a name="networkfirewall-UpdateRuleGroup-request-Type"></a>
-Indicates whether the rule group is stateless or stateful. If the rule group is stateless, it contains stateless rules. If it is stateful, it contains stateful rules.
+Indicates the type of the rule group. Valid values are:
++  `STATELESS` - Stateless rules, for use in a Classic Network Firewall policy.
++  `STATEFUL` - Stateful rules, for use in a Classic Network Firewall policy.
++  `FIREWALL` - Firewall engine rules, for use in a Next Generation policy.
++  `IPS` - IPS engine rules, for use in a Next Generation policy.
 This setting is required for requests that do not include the `RuleGroupARN`.
 Type: String
-Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN`
+Valid Values: `STATELESS | STATEFUL | STATEFUL_DOMAIN | FIREWALL | IPS`
 Required: No
 
  ** [UpdateToken](#API_UpdateRuleGroup_RequestSyntax) **   <a name="networkfirewall-UpdateRuleGroup-request-UpdateToken"></a>

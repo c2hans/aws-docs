@@ -57,6 +57,7 @@ Content-type: application/json
          "ModificationTime": number,
          "Name": "string",
          "OwnerId": "string",
+         "Priority": number,
          "ProfileId": "string",
          "ResourceId": "string",
          "Status": "string",
@@ -155,6 +156,7 @@ X-Amzn-Trace-Id: Root=1-65fa10fe-6e5a93a56a325ab8example
             "OwnerId": "123456789012",
             "ProfileId": "rp-4987774726example",
             "ResourceId": "vpc-0af3b96b3example",
+            "Priority": 100,
             "Status": "COMPLETE",
             "StatusMessage": "Created Profile Association"
         }

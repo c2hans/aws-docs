@@ -43,7 +43,7 @@ Use the following AWS and other resources related to autonomous agent developmen
 + [AWS MCP Servers](https://github.com/awslabs/mcp) (GitHub repository)
 
 ## Other resources
-<a name="other-resources.31ecd737-95cc-5324-be16-54dd6da130e2"></a>
+<a name="other-resources.d35290d0-0f85-5f8a-97b1-5098e190ed65"></a>
 + [AutoGen documentation](https://www.microsoft.com/en-us/research/project/autogen/) (Microsoft)
 + [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) (Anthropic)
 + [CrewAI GitHub repository](https://github.com/joaomdmoura/crewAI)
@@ -52,5 +52,5 @@ Use the following AWS and other resources related to autonomous agent developmen
 + [LlamaIndex documentation](https://developers.llamaindex.ai/)
 + [Model Context Protocol documentation](https://modelcontextprotocol.io/)
 + [Strands Agents documentation](https://strandsagents.com/)
-+ [Strands Agents Tools Overview](https://strandsagents.com/0.1.x/user-guide/concepts/tools/tools_overview/)
-+ [Strands Agents Quickstart Guide](https://strandsagents.com/0.1.x/user-guide/quickstart/)
++ [Strands Agents tools overview](https://strandsagents.com/0.1.x/user-guide/concepts/tools/tools_overview/)
++ [Strands Agents quickstart guide](https://strandsagents.com/0.1.x/user-guide/quickstart/)

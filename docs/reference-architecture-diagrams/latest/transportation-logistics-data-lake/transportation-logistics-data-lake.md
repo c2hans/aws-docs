@@ -22,7 +22,7 @@ The following steps describe the architecture:
 
 1. Create an [Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) data lake where you can store, organize, and access business-critical data securely. Use Amazon EMR for fine-grained control over extraction, transformation, and loading (ETL) jobs. Use [AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/what-is-glue.html) to manage your data catalog.
 
-1. Turn raw data into actionable knowledge with [Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) and [Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html). Disseminate key business intelligence insights across your organization. Use SageMaker AI to deliver ML-based predictive and prescriptive analytics.
+1. Turn raw data into actionable knowledge with [Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html) and [AWS Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html). Disseminate key business intelligence insights across your organization. Use SageMaker AI to deliver ML-based predictive and prescriptive analytics.
 
 1. Use AWS fully managed databases to deliver specific capabilities: Amazon Neptune graph database for network optimization, Amazon Aurora for fast relational queries, and [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) for interactive mobile and web apps with real-time updates. Avoid data latency with live data stream ingestion from Amazon Kinesis.
 

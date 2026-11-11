@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # NatGatewayMapping
 <a name="API_NatGatewayMapping"></a>
 
-A NAT gateway that a proxy mode firewall uses to proxy traffic. This is used in [CreateFirewall](API_CreateFirewall.md) when `NoSourcePreservation` is `TRUE`.
+A NAT gateway that a proxy mode firewall uses to proxy traffic. This is used in `CreateFirewall` when `NoSourcePreservation` is `TRUE`.
 
 ## Contents
 <a name="API_NatGatewayMapping_Contents"></a>

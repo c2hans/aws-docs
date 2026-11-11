@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com//solutions/modern-data-architecture-acce
 title: 'Modern Data Architecture Accelerator'
 canonical_url: https://docs.aws.amazon.com/solutions/modern-data-architecture-accelerator/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # Modern Data Architecture Accelerator
 
 Rapidly deploy and manage sophisticated data foundation on AWS
 
-- **Version**: 1.9.0
-- **Released**: 10/2026
+- **Version**: 1.10.0
+- **Released**: 11/2026
 - **Author**: AWS
 - **Estimated cost**: [See details](/solutions/latest/modern-data-architecture-accelerator/cost.html)
 

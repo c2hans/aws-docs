@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DeploymentConfiguration
 <a name="API_DeploymentConfiguration"></a>
 
-Set of rules for processing a deployment for a container fleet update.
+Set of rules for processing a deployment for a container fleet update. For how Amazon GameLift Servers validates and rolls out a deployment, see [Container fleet deployments](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/containers-deployment-validation.html).
 
 ## Contents
 <a name="API_DeploymentConfiguration_Contents"></a>
@@ -14,19 +14,27 @@ Set of rules for processing a deployment for a container fleet update.
 In the following list, the required parameters are described first.
 
  ** ImpairmentStrategy **   <a name="gameliftservers-Type-DeploymentConfiguration-ImpairmentStrategy"></a>
-Determines what actions to take if a deployment fails. If the fleet is multi-location, this strategy applies across all fleet locations. With a rollback strategy, updated fleet instances are rolled back to the last successful deployment. Alternatively, you can maintain a few impaired containers for the purpose of debugging, while all other tasks return to the last successful deployment.
+Determines what actions to take if a deployment fails validation. If the fleet is multi-location, this strategy applies across all fleet locations.
++  `ROLLBACK` -- Returns all of the fleet's containers to the last successful deployment.
++  `MAINTAIN` -- Keeps the containers that failed validation in place so that you can inspect them, and returns all other containers to the last successful deployment. Use this option when you're deploying a container image that you want to be able to debug on failure.
+Default value: `MAINTAIN`
 Type: String
 Valid Values: `MAINTAIN | ROLLBACK`
 Required: No
 
  ** MinimumHealthyPercentage **   <a name="gameliftservers-Type-DeploymentConfiguration-MinimumHealthyPercentage"></a>
-Sets a minimum level of healthy tasks to maintain during deployment activity.
+Sets the minimum percentage of the fleet's game server container groups to keep healthy during deployment activity. A low value favors deployment speed; a high value favors game server availability. For example, if the fleet runs 20 game server container groups and this value is 75, Amazon GameLift Servers keeps at least 15 of them healthy, so it replaces no more than 5 at a time.
+Default value: 75
 Type: Integer
 Valid Range: Minimum value of 30. Maximum value of 75.
 Required: No
 
  ** ProtectionStrategy **   <a name="gameliftservers-Type-DeploymentConfiguration-ProtectionStrategy"></a>
-Determines how fleet deployment activity affects active game sessions on the fleet. With protection, a deployment honors game session protection, and delays actions that would interrupt a protected active game session until the game session ends. Without protection, deployment activity can shut down all running tasks, including active game sessions, regardless of game session protection.
+Determines how fleet deployment activity affects active game sessions on the fleet. A protected game session can't be terminated while it's active; a fleet sets the default protection for its new game sessions with `NewGameSessionProtectionPolicy`.
++  `WITH_PROTECTION` -- The deployment honors game session protection, and delays actions that would interrupt a protected active game session until the game session ends.
++  `IGNORE_PROTECTION` -- The deployment replaces containers regardless of game session activity, including active game sessions. This option is useful during development and testing.
+This setting also affects how long deployment validation can take. When the fleet's `NewGameSessionProtectionPolicy` is `FullProtection` and the deployment uses `WITH_PROTECTION`, validation waits for protected game sessions to end.
+Default value: `WITH_PROTECTION`
 Type: String
 Valid Values: `WITH_PROTECTION | IGNORE_PROTECTION`
 Required: No

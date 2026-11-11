@@ -115,7 +115,7 @@ Establish secure data ingestion pipelines that validate and sanitize incoming tr
 Implement temporary elevated access management for access to training data when feasible, granting time-limited permissions that automatically expire after use. Log all user activity through CloudTrail and configure CloudWatch alarms to detect anomalous access patterns to sensitive training datasets.
 
 ### Cross-account security and governance
-<a name="cross-account-security-and-governance.71bba4f5-80f5-5888-a681-586fc80e302d"></a>
+<a name="cross-account-security-and-governance.1bca7e73-88e4-5b09-ac0a-90211e6a3752"></a>
 
 Implement centralized security monitoring through [AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html) and Amazon GuardDuty deployed across all three account types, with findings aggregated in a dedicated security account. Use [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) to enforce consistent security baselines while allowing account-specific security enhancements, particularly for the training account's heightened security requirements.
 
@@ -140,7 +140,7 @@ Configure response transformation to strip sensitive metadata from model outputs
 Monitor the effectiveness of these controls through CloudWatch [custom metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html) that track prompt characteristics, response times, and error rates. Create [CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html) to identify anomalous patterns that potentially indicate attacks or system degradation, enabling rapid response to emerging threats.
 
 ### Data security
-<a name="data-security.9975cb43-87cf-5e32-bd3b-893b264db8d9"></a>
+<a name="data-security.de435fd7-7e31-51b0-949d-d245c130b678"></a>
 
 Deploy Amazon Macie [automated data discovery](https://docs.aws.amazon.com/macie/latest/user/discovery-asdd.html) to identify and classify sensitive data in your AI inference workloads. Configure Macie to scan Amazon S3 buckets that contain the following:
 + User prompts and conversation logs

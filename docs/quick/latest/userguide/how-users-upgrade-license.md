@@ -12,9 +12,9 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/how-users-upgrade
 ## To upgrade from the Home Page
 <a name="upgrade-from-home-page"></a>
 
-1. Navigate to the Amazon Quick Home Page
+1. Navigate to the AWS Quick Home Page
 
-1. Locate the "Explore the powerful new features of Amazon Quick" section at the top of the page
+1. Locate the "Explore the powerful new features of AWS Quick" section at the top of the page
 
 1. If needed, choose **Show More** to view all available feature cards
 

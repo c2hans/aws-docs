@@ -31,7 +31,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-a-data-set
 
    If you choose **Edit/Preview data**, you can specify a dataset name as part of preparing the data. Otherwise, the dataset name matches the name of the manifest file.
 
-   To learn more about data preparation, see [Preparing data in Amazon Quick Sight](preparing-data.md).
+   To learn more about data preparation, see [Preparing data in AWS Quick Sight](preparing-data.md).
 
 ## Creating datasets based on multiple Amazon S3 files
 <a name="data-sets-based-on-multiple-s3-files"></a>

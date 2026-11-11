@@ -10,7 +10,7 @@ Only admins can create an event.
 
 To create an event, choose **Events** in the left sidebar, then choose **Create event**.
 
-![The Events page listing events with their type](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_events_list.png)
+![The Events page listing events with their type, date, status, and race format](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_events_list.png)
 
 The form is divided into two sections.
 

@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/actions-exception
 # Exception handling
 <a name="actions-exception-handling"></a>
 
-Exception handling allows you to manage errors and unexpected conditions in your automations. Amazon Quick Automate provides capabilities for creating, raising, and handling exceptions appropriately to ensure robust error management and process continuity.
+Exception handling allows you to manage errors and unexpected conditions in your automations. AWS Quick Automate provides capabilities for creating, raising, and handling exceptions appropriately to ensure robust error management and process continuity.
 
 ## Types of exceptions
 <a name="types-of-exceptions"></a>
 
-Amazon Quick Automate supports two types of exceptions:
+AWS Quick Automate supports two types of exceptions:
 + Business exceptions - Used for expected errors from business rule violations such as:
   + Missing required data
   + Invalid input values

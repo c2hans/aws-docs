@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Bucket](#cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-bucket)" : {{String}},
-  "[KeyPrefix](#cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-keyprefix)" : {{String}}
+  "[KeyPrefix](#cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-keyprefix)" : {{String}},
+  "[ResultFormat](#cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-resultformat)" : {{String}}
 }
 ```
 
@@ -30,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Bucket](#cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-bucket): {{String}}
   [KeyPrefix](#cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-keyprefix): {{String}}
+  [ResultFormat](#cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-resultformat): {{String}}
 ```
 
 ## Properties
@@ -50,4 +52,11 @@ The S3 prefix to unload the protected job results.
 *Pattern*: `[\w!.=*/-]*`
 *Minimum*: `0`
 *Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResultFormat`  <a name="cfn-cleanrooms-membership-protectedjobs3outputconfigurationinput-resultformat"></a>
+The file format of the protected job results. If you don't specify a format, results are written as CSV.
+*Required*: No
+*Type*: String
+*Allowed values*: `CSV | PARQUET`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

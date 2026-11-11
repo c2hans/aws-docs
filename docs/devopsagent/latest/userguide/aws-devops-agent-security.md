@@ -41,6 +41,7 @@ AWS DevOps Agent will securely route your inference requests to available comput
 + Inference requests originating in the United States will be processed within the United States.
 + Inference requests originating in Australia will be processed within Australia.
 + Inference requests originating within Japan will be processed within Japan.
++ Inference requests originating in Canada will be processed within Canada.
 + If an inference request originates in an area not listed, it will be processed by default within the United States.
 + DevOps Agent and Bedrock are not impacted by customer policies in Service Control Policies (SCPs) or Control Tower that restrict customer content to specific regions
 + Bedrock may use regions other than the originating region within your geography to perform stateless inference to optimize performance and availability

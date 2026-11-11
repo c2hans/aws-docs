@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/parameters-connections.html
 ---
 
-# Connecting to parameters in Amazon Quick
+# Connecting to parameters in AWS Quick
 <a name="parameters-connections"></a>
 
 Use this section after you have a parameter set up, to connect it and make it work.

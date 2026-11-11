@@ -8,10 +8,10 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ## Overview
 <a name="sql-server-editions-overview"></a>
 
-Microsoft SQL Server licensing is one of the largest expenses for a Windows workload environment. Licensing costs for SQL Server can easily extend beyond the compute costs to run the workload. If you choose the wrong edition, you could pay for features that you aren't using or don't even need. This section compares the following SQL Server editions, including their features and relative costs:
+Microsoft SQL Server licensing is one of the largest expenses for a Windows workload environment. Licensing costs for SQL Server can extend beyond the compute costs to run the workload. If you choose an edition that doesn't match your requirements, you might pay for features that you don't use or need. This section compares the following SQL Server editions, including their features and relative costs:
 + **Enterprise** – SQL Server Enterprise edition provides data center capabilities with high performance, unlimited virtualization, and several business intelligence (BI) tools.
 + **Standard** – SQL Server Standard edition provides basic data management and business intelligence for smaller organizations and departments.
-+ **Web** – SQL Server Web edition is suitable for companies that are web hosters or web value added providers (VAPs). This edition offers a low total cost of ownership, and it provides scalability and manageability capabilities for small to large scale web properties.
++ **Web** – SQL Server Web edition is suitable for companies that are web hosters or web value-added providers (VAPs). This edition offers a low total cost of ownership, and it provides scalability and manageability capabilities for small to large-scale web properties.
 
 <table>
 <tbody>
@@ -19,7 +19,7 @@ Microsoft SQL Server licensing is one of the largest expenses for a Windows work
 </table>
 
 + **Developer** – SQL Server Developer edition includes all the functionality of Enterprise edition, but it's intended for development purposes only.
-+ **Express** – SQL Server Express edition is a free database and can be used for learning or for building desktop applications. You can update Express edition to other editions.
++ **Express** – SQL Server Express edition is a free database that you can use for learning or for building desktop applications. You can upgrade Express edition to other editions.
 
 |
 |
@@ -29,13 +29,13 @@ Microsoft SQL Server licensing is one of the largest expenses for a Windows work
 ## Cost impact
 <a name="sql-server-editions-cost-impact"></a>
 
-You can purchase SQL Server licenses from a Microsoft reseller and bring them to AWS with Software Assurance. Alternatively, you can use SQL Server licenses with a pay-as-you-go model that has license-included Amazon EC2 AMIs.
+You can purchase SQL Server licenses from a Microsoft reseller and bring them to AWS with Software Assurance. Alternatively, you can use SQL Server licenses with a pay-as-you-go model that has license-included Amazon EC2 Amazon Machine Images (AMIs).
 
-If you purchase SQL Server licenses from Microsoft resellers, the core licenses are sold in packs of two and you must license a minimum of four cores per server. The following table shows a cost comparison between Enterprise and Standard editions.
+If you purchase SQL Server licenses from Microsoft resellers, resellers sell core licenses in packs of two, and you must license a minimum of four cores per server. The following table shows a cost comparison between Enterprise and Standard editions.
 
 |
 |
-| Version | SQL Server Enterprise edition (2 cores pack) | SQL Server Standard edition (2 cores pack) | Savings |
+| Version | SQL Server Enterprise edition (2-core pack) | SQL Server Standard edition (2-core pack) | Savings |
 | --- |--- |--- |--- |
 | 2022 | $15,123 | $3,945 | 74% |
 | 2019 | $13,748 | $3,586 | 74% |
@@ -54,10 +54,10 @@ The following cost comparison shows hosting different editions of SQL Server wit
 | R6i.xlarge (Linux) | $183.96 | – | – | $183.96 |
 | R6i.xlarge \+ Windows | $183.96 | $134.32 | – | $318.28 |
 | R6i.xlarge \+ SQL Server Web edition | $183.96 | $134.32 | $49.35 | $367.63 |
-| R6i.xlarge \+ SQL Server Standard edition | $183.96 | $134.32 | $350.4 | $668.68 |
-| R6i.xlarge \+ SQL Enterprise edition | $183.96 | $134.32 | $1,095 | $1,413.28 |
+| R6i.xlarge \+ SQL Server Standard edition | $183.96 | $134.32 | $350.40 | $668.68 |
+| R6i.xlarge \+ SQL Server Enterprise edition | $183.96 | $134.32 | $1,095 | $1,413.28 |
 
-You can save up to 95 percent on SQL Server licensing costs by selecting the right SQL Server edition for your workload. The following table compares the cost of SQL Server licenses on r6i.xlarge instances.
+You can save up to 95 percent on SQL Server licensing costs by selecting the SQL Server edition that meets your workload requirements. The following table compares the cost of SQL Server licenses on r6i.xlarge instances.
 
 |
 |
@@ -67,15 +67,15 @@ You can save up to 95 percent on SQL Server licensing costs by selecting the rig
 | Web compared to Standard | 86% |
 | Web compared to Enterprise | 95% |
 
-In most scenarios, organizations switch from Enterprise to Standard edition, but there are some cases where switching from Standard or Enterprise edition down to Web edition is possible.
+In most scenarios, organizations switch from Enterprise to Standard edition. In some cases, you can also switch from Standard or Enterprise edition to Web edition.
 
 ## Cost optimization recommendations
 <a name="sql-server-editions-opt-rec"></a>
 
-You can choose the best edition for your workload based on scaling limits, high availability, performance, and security. The following table shows features that are supported across SQL Server editions. This can help you decide which edition to use. This comparison applies to [SQL Server 2016 SP1 and later versions](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16).
+You can choose the edition that fits your workload based on scaling limits, high availability, performance, and security. The following tables show features that SQL Server editions support, to help you decide which edition to use. This comparison applies to [SQL Server 2016 SP1 and later versions](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2022?view=sql-server-ver16).
 
 ### Scaling limits
-<a name="scaling-limits.601cb7fd-1185-5cff-89fb-1448079c2bc2"></a>
+<a name="scaling-limits.7590bbcf-3446-5953-84a9-4f2b5833d49f"></a>
 
 The following table compares the scaling limits of the different SQL Server editions.
 
@@ -93,12 +93,12 @@ If your application requires fewer than 16 cores (32 vCPUs) and 64 GB of RAM, th
 
 You can use SQL Server Web edition to support public and internet accessible webpages, websites, web applications, and web services, but you can't use SQL Server Web edition to support line of business applications. For more information about use cases for SQL Server Web edition, contact [Microsoft Licensing Support](https://www.microsoft.com/licensing/docs/view/Licensing-Use-Rights) or your Microsoft reseller.
 
-You can use SQL Server Standard edition for workloads up to 24 cores (48 vCPUs) and 128 GB memory. However, you can use [buffer pool extensions](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/buffer-pool-extension?view=sql-server-ver16) to enable SQL Server Standard edition to utilize [local instance storage](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html), like those present in r6id EC2 instances. This extends memory up to the size of four times the maximum memory configuration. This combination of features can delay a server from having to upgrade to Enterprise edition when memory requirements start to rise.
+You can use SQL Server Standard edition for workloads up to 24 cores (48 vCPUs) and 128 GB memory. However, you can use [buffer pool extensions](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/buffer-pool-extension?view=sql-server-ver16) to enable SQL Server Standard edition to use [local instance storage](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html), such as the storage in r6id EC2 instances. This extends memory up to four times the maximum memory configuration. This combination of features can help you postpone an upgrade to Enterprise edition when memory requirements start to rise.
 
-You can identify memory utilization by finding the databases pages in the buffer pool and [page life expectancy](https://learn.microsoft.com/en-us/sql/relational-databases/performance-monitor/sql-server-buffer-node?view=sql-server-ver16) counters. Page life expectancy tells you how long the page is in memory before being flushed back to disk. This counter default value is 300. If pages are residing in memory for hours or days, then there is a chance of reducing allocated memory.
+You can identify memory utilization by checking the database pages in the buffer pool and the [page life expectancy](https://learn.microsoft.com/en-us/sql/relational-databases/performance-monitor/sql-server-buffer-node?view=sql-server-ver16) counters. Page life expectancy tells you how long a page stays in memory before SQL Server flushes it back to disk. The default value of this counter is 300 seconds. If pages reside in memory for hours or days, you might be able to reduce the allocated memory.
 
 ### High availability
-<a name="high-availability.5e759dee-36a7-5451-b3b8-cd827ec63912"></a>
+<a name="high-availability.8adc764a-9a20-5ee4-9fa6-680531d88553"></a>
 
 The following table compares the high availability capabilities of the different SQL Server editions.
 
@@ -125,7 +125,7 @@ The following table compares the high availability capabilities of the different
 | Failover servers for high availability | Yes | Yes | No | No |
 
 ### Other common features
-<a name="other-common-features.a066cc20-0b7f-5b92-bc59-f385787ca4c1"></a>
+<a name="other-common-features.61ed11b5-5b0b-52f8-9fab-e561d44f4ea5"></a>
 
 The following table compares the most common features of the different SQL Server editions. For an extensive list of features, see [Editions and supported features of SQL Server 2019](https://learn.microsoft.com/en-us/sql/sql-server/editions-and-components-of-sql-server-2019?view=sql-server-ver16) in the Microsoft documentation.
 
@@ -141,25 +141,25 @@ The following table compares the most common features of the different SQL Serve
 | Change data capture | Yes | Yes | No | No |
 
 ### SQL Server Developer edition
-<a name="sql-server-developer-edition.98593dc2-e705-575e-9078-a25b50eeaa2b"></a>
+<a name="sql-server-developer-edition.e4197d5f-44ea-53d5-9be2-6a6ee10eba40"></a>
 
-All non-production workloads, such as development, QA, testing, staging, and UAT environments, can use SQL Server Developer edition to save 100 percent on SQL Server licensing costs. After you [download SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads), you can install SQL Server Developer edition on EC2 instances by using shared tenancy. Dedicated infrastructure isn't required for SQL Server Developer edition. For more information, see this guide's recommendation for [SQL Server Developer edition](sql-server-dev.md).
+Non-production workloads, such as development, QA, testing, staging, and user acceptance testing (UAT) environments, can use SQL Server Developer edition to avoid SQL Server licensing costs. After you [download SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads), you can install SQL Server Developer edition on EC2 instances by using shared tenancy. Dedicated infrastructure isn't required for SQL Server Developer edition. For more information, see this guide's recommendation for [SQL Server Developer edition](sql-server-dev.md).
 
 ### Switching editions
-<a name="switching-editions.0f70926c-40bf-53fe-9688-50729ca4e302"></a>
+<a name="switching-editions.bc31966c-507c-5b19-bc35-414076fc86da"></a>
 
 For existing workloads, switching from one edition to another edition requires extensive testing. It's a best practice to check workloads running on Enterprise or Standard editions to see if edition-specific features are used and if there are any alternative solutions for those features. For example, if you want to see if your databases are using any Enterprise-level features, you can run [dynamic management views (DMV)](https://learn.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-persisted-sku-features-transact-sql?view=azuresqldb-current) on all databases as the following example command shows.
 
 `SELECT feature_name FROM sys.dm_db_persisted_sku_features; GO`
 
-There are some Enterprise edition features that can't be captured in T-SQL, such as online re-indexing as part of SQL maintenance jobs. These must be manually verified.
+T-SQL can't capture some Enterprise edition features, such as online re-indexing as part of SQL maintenance jobs. You must verify these features manually.
 
 ### Migration considerations
-<a name="migration-considerations.5740074a-8d3d-574e-8cdd-342579246c11"></a>
+<a name="migration-considerations.744825a4-1514-5f4c-8163-d82fc8405619"></a>
 
-How you license SQL Server will determine your options for switching editions. AMIs, including SQL Server AMIs, have the licensing cost included in the price of the EC2 instance—the licensing cost is bound to the AMI. You can use [AWS billing codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-info-fields.html) to verify the SQL Server version included in your AMI. For AWS license-included instances, changing the SQL Server edition inside the operating system won't change the billing associated with the AMI. You must migrate your databases to a new EC2 instance with an AMI running the new edition of SQL Server.
+How you license SQL Server determines your options for switching editions. Amazon Machine Images (AMIs), including SQL Server AMIs, include the licensing cost in the price of the EC2 instance—the licensing cost is bound to the AMI. You can use [AWS billing codes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/billing-info-fields.html) to verify the SQL Server version included in your AMI. For AWS license-included instances, changing the SQL Server edition inside the operating system won't change the billing associated with the AMI. You must migrate your databases to a new EC2 instance with an AMI running the new edition of SQL Server.
 
-If you're bringing your own license, then you have more flexibility. It's usually still recommended to migrate to another EC2 instance that's running the new version. This allows for easy failback if something doesn't go as planned. However, if you must use the existing server, you can still do a side-by-side installation of SQL Server and migrate the databases between instances. For more detailed steps about side-by-side edition downgrades, see [Edition Upgrade and Downgrade in SQL Server](https://www.mssqltips.com/sqlservertip/6686/edition-upgrade-and-downgrade-in-sql-server/) on the MSSQLTips website.
+If you bring your own license, you have more flexibility. We still recommend that you migrate to another EC2 instance that runs the new edition. This approach helps you fail back if the migration doesn't go as planned. However, if you must use the existing server, you can install SQL Server side by side and migrate the databases between instances. For more detailed steps about side-by-side edition downgrades, see [Edition Upgrade and Downgrade in SQL Server](https://www.mssqltips.com/sqlservertip/6686/edition-upgrade-and-downgrade-in-sql-server/) on the MSSQLTips website.
 
 ## Additional resources
 <a name="sql-server-editions-resources"></a>

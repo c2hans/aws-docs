@@ -18,6 +18,12 @@ Content-type: application/json
    "AdvancedOptions": {
       "{{string}}" : "{{string}}"
    },
+   "DeploymentStrategyOptions": {
+      "ClonedBlueGreenOptions": {
+         "RetentionOptions": { ... }
+      },
+      "DeploymentStrategy": "{{string}}"
+   },
    "DomainName": "{{string}}",
    "PerformCheckOnly": {{boolean}},
    "TargetVersion": "{{string}}"
@@ -37,6 +43,11 @@ The request accepts the following data in JSON format.
  ** [AdvancedOptions](#API_UpgradeDomain_RequestSyntax) **   <a name="opensearchservice-UpgradeDomain-request-AdvancedOptions"></a>
 Only supports the `override_main_response_version` parameter and not other advanced options. You can only include this option when upgrading to an OpenSearch version. Specifies whether the domain reports its version as 7.10 so that it continues to work with Elasticsearch OSS clients and plugins.
 Type: String to string map
+Required: No
+
+ ** [DeploymentStrategyOptions](#API_UpgradeDomain_RequestSyntax) **   <a name="opensearchservice-UpgradeDomain-request-DeploymentStrategyOptions"></a>
+Overrides the deployment strategy for this upgrade. To run a cloned blue/green upgrade, set `DeploymentStrategy` to `ClonedBlueGreen`.
+Type: [DeploymentStrategyOverrideOptions](API_DeploymentStrategyOverrideOptions.md) object
 Required: No
 
  ** [DomainName](#API_UpgradeDomain_RequestSyntax) **   <a name="opensearchservice-UpgradeDomain-request-DomainName"></a>
@@ -77,6 +88,12 @@ Content-type: application/json
       "Message": "string",
       "StartTime": number
    },
+   "DeploymentStrategyOptions": {
+      "ClonedBlueGreenOptions": {
+         "RetentionOptions": { ... }
+      },
+      "DeploymentStrategy": "string"
+   },
    "DomainName": "string",
    "PerformCheckOnly": boolean,
    "TargetVersion": "string",
@@ -98,6 +115,10 @@ Type: String to string map
  ** [ChangeProgressDetails](#API_UpgradeDomain_ResponseSyntax) **   <a name="opensearchservice-UpgradeDomain-response-ChangeProgressDetails"></a>
 Container for information about a configuration change happening on a domain.
 Type: [ChangeProgressDetails](API_ChangeProgressDetails.md) object
+
+ ** [DeploymentStrategyOptions](#API_UpgradeDomain_ResponseSyntax) **   <a name="opensearchservice-UpgradeDomain-response-DeploymentStrategyOptions"></a>
+The deployment strategy override used for the upgrade.
+Type: [DeploymentStrategyOverrideOptions](API_DeploymentStrategyOverrideOptions.md) object
 
  ** [DomainName](#API_UpgradeDomain_ResponseSyntax) **   <a name="opensearchservice-UpgradeDomain-response-DomainName"></a>
 The name of the domain that was upgraded.

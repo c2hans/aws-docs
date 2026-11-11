@@ -5,7 +5,17 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 # AssociateProfile
 <a name="API_route53profiles_AssociateProfile"></a>
 
- Associates a Route 53 Profiles profile with a VPC. A VPC can have only one Profile associated with it, but a Profile can be associated with 1000 of VPCs (and you can request a higher quota). For more information, see [https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html#limits-api-entities](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html#limits-api-entities).
+ Associates a Route 53 Profiles profile with a VPC. A VPC can have up to two Profile associations. A Profile can be associated with up to 1,000 VPCs, and you can request a higher quota for the number of VPCs. For more information, see [Quotas on Route 53 Profiles](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html#limits-api-entities-route53-profiles).
+
+ Route 53 VPC Resolver evaluates the Profile associations for a VPC in priority order, starting with the lowest `Priority` value. If the VPC has no other Profile associations, you can omit `Priority`, and the association gets priority 100. When the VPC already has a Profile association, you must specify a `Priority`, and each Profile association for the VPC must have a unique priority. To change the priority of an existing association, use `UpdateProfileAssociation`.
+
+The request fails with a `ValidationException` in these cases:
++ You omit `Priority`, and the VPC already has a Profile association.
++ Another Profile association for the VPC already uses the priority that you specify.
++ The priority is outside the range 100–9900.
++ The Profile is already associated with the VPC, and you specify a different `Name` or `Priority`. To change the priority, use [UpdateProfileAssociation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_UpdateProfileAssociation.html).
+
+ The request fails with a `LimitExceededException` if the VPC already has the maximum number of Profile associations.
 
 ## Request Syntax
 <a name="API_route53profiles_AssociateProfile_RequestSyntax"></a>
@@ -16,6 +26,7 @@ Content-type: application/json
 
 {
    "Name": "{{string}}",
+   "Priority": {{number}},
    "ProfileId": "{{string}}",
    "ResourceId": "{{string}}",
    "Tags": [
@@ -43,6 +54,13 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 64.
 Pattern: `(?!^[0-9]+$)([a-zA-Z0-9\-_' ']+)`
 Required: Yes
+
+ ** [Priority](#API_route53profiles_AssociateProfile_RequestSyntax) **   <a name="Route53Profiles-route53profiles_AssociateProfile-request-Priority"></a>
+ The priority of the Profile association. Route 53 VPC Resolver evaluates the Profile associations for a VPC in priority order, starting with the lowest value.
+ When the VPC already has a Profile association, you must specify a priority that no other Profile association for the VPC uses. If you omit the priority for the first association with a VPC, the association gets priority 100.
+Type: Integer
+Valid Range: Minimum value of 100. Maximum value of 9900.
+Required: No
 
  ** [ProfileId](#API_route53profiles_AssociateProfile_RequestSyntax) **   <a name="Route53Profiles-route53profiles_AssociateProfile-request-ProfileId"></a>
  ID of the Profile.
@@ -76,6 +94,7 @@ Content-type: application/json
       "ModificationTime": number,
       "Name": "string",
       "OwnerId": "string",
+      "Priority": number,
       "ProfileId": "string",
       "ResourceId": "string",
       "Status": "string",
@@ -192,6 +211,7 @@ X-Amzn-Trace-Id: Root=1-65fa10fe-6e5a93a56a32afsdfd3example
         "OwnerId": "123456789012",
         "ProfileId": "rp-4987774726example",
         "ResourceId": "vpc-0af3b96b3example",
+        "Priority": 100,
         "Status": "CREATING",
         "StatusMessage": "Creating Profile Association"
     }

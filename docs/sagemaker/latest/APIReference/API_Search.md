@@ -2091,6 +2091,7 @@ Required: No
             },
             "LastModifiedTime": number,
             "PipelineArn": "string",
+            "PipelineVersionAliases": [ "string" ],
             "PipelineVersionDescription": "string",
             "PipelineVersionDisplayName": "string",
             "PipelineVersionId": number

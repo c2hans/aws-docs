@@ -58,7 +58,7 @@ Development endpoints that are created without specifying a Glue version default
 You can specify a version of Python support for development endpoints by using the `Arguments` parameter in the `CreateDevEndpoint` or `UpdateDevEndpoint` APIs. If no arguments are provided, the version defaults to Python 2.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 Required: No
 
  ** LastModifiedTimestamp **   <a name="Glue-Type-DevEndpoint-LastModifiedTimestamp"></a>

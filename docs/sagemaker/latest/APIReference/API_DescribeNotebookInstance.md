@@ -159,7 +159,7 @@ Valid Values: `Pending | InService | Stopping | Stopped | Failed | Deleting | Up
 The platform identifier of the notebook instance runtime environment.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 20.
-Pattern: `(notebook-al1-v1|notebook-al2-v1|notebook-al2-v2|notebook-al2-v3|notebook-al2023-v1)`
+Pattern: `(notebook-al1-v1|notebook-al2-v1|notebook-al2-v2|notebook-al2-v3|notebook-al2023-v1|notebook-al2023-v2)`
 
  ** [RoleArn](#API_DescribeNotebookInstance_ResponseSyntax) **   <a name="sagemaker-DescribeNotebookInstance-response-RoleArn"></a>
 The Amazon Resource Name (ARN) of the IAM role associated with the instance.

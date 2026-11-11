@@ -21,6 +21,8 @@ You can specify a different AWS Region as your migration target. This means you 
 
 Whether you need an end-to-end migration or want to tackle a specific phase, AWS Transform offers several types of migration jobs to choose from. In addition to these preset options, you can add or remove any step from your job at any time to customize your migration workflow.
 
+Migration assessments are part of the migration job. In any job that includes discovery, you can assess costs and build a total cost of ownership (TCO) business case, plan migration waves, or both. For more information, see [Discovery, assessment, and planning](transform-migrations-discover-assess-plan.md).
+
 ### End-to-end migration
 <a name="end-to-end"></a>
 
@@ -41,11 +43,20 @@ Best for complete migrations where you want AWS Transform to handle everything f
 ### Discovery and migration planning
 <a name="discovery-and-migration-planning"></a>
 
-Use this when you want to assess your environment and build a wave plan before committing to execution.
+Use this when you want to assess your environment and build a wave plan before committing to execution. You can also assess costs and build a business case in the same job.
 
 1. Perform discovery
 
 1. Build migration plan
+
+### Migration assessment
+<a name="migration-assessment-only"></a>
+
+Use this when you want a cost estimate and business case before you plan or migrate. After the business case is ready, you can add wave planning to the same job. For more information, see [Migration assessments](transform-app-assessments.md).
+
+1. Perform discovery
+
+1. Assess costs and build the business case
 
 ### Network migration
 <a name="network-migration-only"></a>

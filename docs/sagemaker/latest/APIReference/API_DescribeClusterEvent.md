@@ -28,7 +28,7 @@ The request accepts the following data in JSON format.
 The name or Amazon Resource Name (ARN) of the HyperPod cluster associated with the event.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62})`
+Pattern: `((arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:cluster/[a-z0-9]{12})|([a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}))`
 Required: Yes
 
  ** [EventId](#API_DescribeClusterEvent_RequestSyntax) **   <a name="sagemaker-DescribeClusterEvent-request-EventId"></a>

@@ -11,9 +11,9 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-sharing.ht
 
 |  |
 | --- |
-|    Intended audience:  Amazon Quick administrators and authors  |
+|    Intended audience:  AWS Quick administrators and authors  |
 
-After you create and publish a Topic, share it with others in your organization. Sharing a Topic allows your users to ask questions in Amazon Quick chat and use the Topic as a data model in analysis sheets.
+After you create and publish a Topic, share it with others in your organization. Sharing a Topic allows your users to ask questions in AWS Quick chat and use the Topic as a data model in analysis sheets.
 
 **To share a Topic**
 

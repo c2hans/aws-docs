@@ -25,7 +25,7 @@ The main components of this architecture support the technical tenets for a mode
 
 1. Select the **right service for the right job.** Consider functionality, scalability, data latency, the effort required to run the service, resilience, integration, and automation when you choose a component.
 
-   You can consider [Amazon Athena](https://aws.amazon.com/athena/), [Amazon EMR](https://aws.amazon.com/emr/), [AWS Glue](https://aws.amazon.com/glue/), [Amazon OpenSearch Service](https://aws.amazon.com/what-is/opensearch), [Amazon Kinesis](https://aws.amazon.com/kinesis/), [Amazon Redshift](https://aws.amazon.com/redshift/), [Amazon Managed Streaming for Apache Kafka (Amazon MSK](https://aws.amazon.com/msk/)), and [Amazon Quick](https://aws.amazon.com/quicksuite/) to manage your tasks. For example, you can perform real-time streaming with Kinesis or Amazon MSK, data processing with Amazon EMR or AWS Glue, search with Amazon OpenSearch, ad-hoc queries with Athena, and data warehousing with Amazon Redshift.
+   You can consider [Amazon Athena](https://aws.amazon.com/athena/), [Amazon EMR](https://aws.amazon.com/emr/), [AWS Glue](https://aws.amazon.com/glue/), [Amazon OpenSearch Service](https://aws.amazon.com/what-is/opensearch), [Amazon Kinesis](https://aws.amazon.com/kinesis/), [Amazon Redshift](https://aws.amazon.com/redshift/), [Amazon Managed Streaming for Apache Kafka (Amazon MSK](https://aws.amazon.com/msk/)), and [AWS Quick](https://aws.amazon.com/quicksuite/) to manage your tasks. For example, you can perform real-time streaming with Kinesis or Amazon MSK, data processing with Amazon EMR or AWS Glue, search with Amazon OpenSearch, ad-hoc queries with Athena, and data warehousing with Amazon Redshift.
 
 1. Use **artificial intelligence (AI)** and **machine learning (ML)**.
 
@@ -37,6 +37,6 @@ The main components of this architecture support the technical tenets for a mode
 
 1. **Test the hypotheses** of your data initiatives and **measure their results**.
 
-   You can use the [Amazon OpenSearch Service](https://aws.amazon.com/what-is/opensearch) dashboard or [Amazon Quick](https://aws.amazon.com/quicksuite/) to work with business outcome metrics and test results, and validate your hypotheses.
+   You can use the [Amazon OpenSearch Service](https://aws.amazon.com/what-is/opensearch) dashboard or [AWS Quick](https://aws.amazon.com/quicksuite/) to work with business outcome metrics and test results, and validate your hypotheses.
 
 For examples of sample architectures for different use cases, see the reference architecture diagrams in the [AWS Architecture Center](https://aws.amazon.com/architecture/). Your technical team should use these diagrams for reference only and customize them based on your own requirements, environments, and projects.

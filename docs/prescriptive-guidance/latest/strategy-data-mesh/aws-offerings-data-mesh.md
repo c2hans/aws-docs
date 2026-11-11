@@ -20,7 +20,7 @@ These three options use the following AWS services:
 + [Amazon Kinesis](https://docs.aws.amazon.com/kinesis/)
 + [AWS Lake Formation](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)
 + [Amazon Managed Streaming for Apache Kafka (Amazon MSK)](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html)
-+ [Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
++ [AWS Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html)
 + [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)
 + [AWS Resource Access Manager (AWS RAM)](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html)
 + [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)

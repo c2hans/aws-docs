@@ -408,6 +408,8 @@ The `BedrockModelInvocation` sample statement above allows invocation of all fou
 
 For production workloads, scope `Resource` values down to the specific ARNs your harness needs rather than using `"*"`.
 
+Tool selection is a separate security boundary from IAM permissions. `allowedTools: ["*"]` permits every configured tool that resolves successfully and every tool in the current recommended built-in set, including shell and filesystem tools. For least-privilege tool access, list only the individual selectors the agent needs. See [Tools](harness-tools.md).
+
 ### Additional permissions for optional features
 <a name="_additional_permissions_for_optional_features"></a>
 

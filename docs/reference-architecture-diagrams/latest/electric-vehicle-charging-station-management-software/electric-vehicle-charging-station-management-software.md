@@ -74,7 +74,7 @@ This reference architecture demonstrates how to build a highly-scalable, low-lat
 
 1.  Get security alerts from **AWS IoT Device Defender** and analyze IoT logs in **Amazon CloudWatch**. Use **AWS IoT** fleet indexing to manage state, connectivity, and device violations and to organize, investigate, and troubleshoot your fleet of devices.
 
-1.  Build your business logic applications serving different user personas from fleet management operators to utilities, mobility solution providers or vehicle OEMs. Use AWS services such as **Amazon SageMaker AI** for energy demand forecasting or EV routing algorithms, **Amazon Quick Sight** to build fleet management dashboards, or **Amazon API Gateway** to provide API access to your data to third parties, partners, and customers.
+1.  Build your business logic applications serving different user personas from fleet management operators to utilities, mobility solution providers or vehicle OEMs. Use AWS services such as **Amazon SageMaker AI** for energy demand forecasting or EV routing algorithms, **AWS Quick Sight** to build fleet management dashboards, or **Amazon API Gateway** to provide API access to your data to third parties, partners, and customers.
 
 ## Further reading
 <a name="further-reading"></a>

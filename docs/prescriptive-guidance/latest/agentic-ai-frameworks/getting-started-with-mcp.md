@@ -17,7 +17,7 @@ To implement the MCP in your agent architecture, take the following actions:
 
 1. Join the [MCP community](https://github.com/orgs/modelcontextprotocol/discussions) to influence the protocol's evolution.
 
-MCP provides a communication layer that enables agents to interact with external data and services and can also be used to enable agents to interact with other agents. The protocol's [Streamable HTTP transport](https://modelcontextprotocol.io/docs/concepts/transports#streamable-http) implementation gives developers a comprehensive set of interaction patterns without having to reinvent the wheel. These patterns support both stateless request/response flows and stateful session management with persistent IDs.
+MCP provides a communication layer that enables agents to interact with external data and services, and you can also use it to enable agents to interact with other agents. The protocol's [Streamable HTTP transport](https://modelcontextprotocol.io/docs/concepts/transports#streamable-http) implementation gives you a set of interaction patterns so that you don't have to build custom communication mechanisms. These patterns support both stateless request/response flows and stateful session management with persistent IDs.
 
 By adopting open protocols like MCP, you position your organization to build agent systems that remain flexible, interoperable, and adaptable as AI technology evolves.
 

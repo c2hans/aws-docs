@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 # AWS Security Reference Architecture - Payment Card Industry (PCI) Data Security Standard (DSS)
 <a name="introduction"></a>
 
-*Avik Mukherjee, Amazon Web Services*
+*Avik Mukherjee and Akanksha Chaturvedi, Amazon Web Services*
 
 This guidance extends the [AWS Security Reference Architecture (AWS SRA) - Core Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/welcome.html) to help organizations design and operate a multi-account AWS environment that aligns with the [Payment Card Industry Data Security Standard (PCI DSS)](https://www.pcisecuritystandards.org/document_library/). It is an architecture guide that shows how to apply AWS SRA security best practices in a way that satisfies PCI DSS requirements for workloads that store, process, or transmit cardholder data.
 
@@ -16,7 +16,7 @@ This guide is intended for:
 + Qualified Security Assessors (QSAs) and Internal Security Assessors (ISAs) who want to understand how AWS SRA patterns satisfy PCI DSS intent
 
 ## PCI DSS Primer
-<a name="pci-dss-primer.cdeca00d-efda-5dae-84ef-a5a2692759a4"></a>
+<a name="pci-dss-primer.2840d014-bb35-54c5-9f51-ce2bfbf97bcb"></a>
 
 The Payment Card Industry Data Security Standard (PCI DSS) is an information security standard maintained by the [PCI Security Standards Council (PCI SSC)](https://www.pcisecuritystandards.org/). It applies to any organization that stores, processes, or transmits payment card data, regardless of size, transaction volume, or geography.
 

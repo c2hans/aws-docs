@@ -62,7 +62,7 @@ In the following architecture, a Lambda function implements the hexagonal archit
 ![Implementing the hexagonal architecture pattern on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/images/guide-img/48f618e4-d8ad-490f-982b-7b304dbf76c9/images/f273b3f8-2959-4a44-a928-670044ecfa8f.png)
 
 ### Sample code
-<a name="sample-code.e1feab8e-6db3-51f4-a7ea-9e1dc7f625d2"></a>
+<a name="sample-code.67f90372-2532-5c02-810f-51133f36820f"></a>
 
 The sample code in this section shows how to implement the domain model by using Lambda, separate it from infrastructure code (such as the code to access DynamoDB), and implement unit testing for the function.
 
@@ -97,7 +97,7 @@ class Recipient:
 ```
 
 #### Input port
-<a name="input-port.9d17616d-d410-5772-ad63-c3491f857041"></a>
+<a name="input-port.6f7fbe6d-b5a4-5976-8084-d7450e3b2679"></a>
 
 The `RecipientInputPort` class connects to the recipient class and runs the domain logic.
 
@@ -143,7 +143,7 @@ class RecipientInputPort(IRecipientInputPort):
 ```
 
 #### DynamoDB adapter class
-<a name="9999999999999999ddb--adapter-class.63247bb8-9c59-55e3-bd1f-2dd5c9cd063d"></a>
+<a name="9999999999999999ddb--adapter-class.74a89e01-e308-5736-a0d4-a21b2a82f3fc"></a>
 
 The `DDBRecipientAdapter` class implements access to the DynamoDB tables.
 
@@ -241,4 +241,4 @@ For a complete implementation of the sample architecture for this pattern, see t
 
 The following video (in Japanese) discusses the use of hexagonal architecture in the implementation of a domain model by using a Lambda function.
 
-[https://www.youtube-nocookie.com/embed/whQ-P05QeDQ?controls=0](https://www.youtube-nocookie.com/embed/whQ-P05QeDQ?controls=0)
+[https://www.youtube-nocookie.com/embed/whQ-P05QeDQ?controls=0&rel=1](https://www.youtube-nocookie.com/embed/whQ-P05QeDQ?controls=0&rel=1)

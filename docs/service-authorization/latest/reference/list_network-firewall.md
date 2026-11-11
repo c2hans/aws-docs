@@ -69,6 +69,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [network-firewall:ListTLSInspectionConfigurations](#list_network-firewall-action-ListTLSInspectionConfigurations)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
   - **IAM action:**  [network-firewall:TagResource](#list_network-firewall-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateFirewallPolicyV2  **
+  - **IAM action:**  [network-firewall:CreateFirewallPolicyV2](#list_network-firewall-action-CreateFirewallPolicyV2)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [network-firewall:ListRuleGroups](#list_network-firewall-action-ListRuleGroups)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [network-firewall:ListTLSInspectionConfigurations](#list_network-firewall-action-ListTLSInspectionConfigurations)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [network-firewall:TagResource](#list_network-firewall-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateProxy  **
   - **IAM action:**  [network-firewall:CreateProxy](#list_network-firewall-action-CreateProxy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [network-firewall:TagResource](#list_network-firewall-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -115,6 +121,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteFirewallPolicy  **
   - **IAM action:**  [network-firewall:DeleteFirewallPolicy](#list_network-firewall-action-DeleteFirewallPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteFirewallPolicyV2  **
+  - **IAM action:**  [network-firewall:DeleteFirewallPolicyV2](#list_network-firewall-action-DeleteFirewallPolicyV2)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -193,6 +205,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeFirewallPolicy  **
   - **IAM action:**  [network-firewall:DescribeFirewallPolicy](#list_network-firewall-action-DescribeFirewallPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeFirewallPolicyV2  **
+  - **IAM action:**  [network-firewall:DescribeFirewallPolicyV2](#list_network-firewall-action-DescribeFirewallPolicyV2)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -307,6 +325,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListFirewallPolicies  **
   - **IAM action:**  [network-firewall:ListFirewallPolicies](#list_network-firewall-action-ListFirewallPolicies)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListFirewallPoliciesV2  **
+  - **IAM action:**  [network-firewall:ListFirewallPoliciesV2](#list_network-firewall-action-ListFirewallPoliciesV2)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -459,6 +483,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   UpdateFirewallPolicyV2  **
+  - **IAM action:**  [network-firewall:ListRuleGroups](#list_network-firewall-action-ListRuleGroups)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [network-firewall:ListTLSInspectionConfigurations](#list_network-firewall-action-ListTLSInspectionConfigurations)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+  - **IAM action:**  [network-firewall:UpdateFirewallPolicyV2](#list_network-firewall-action-UpdateFirewallPolicyV2)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   UpdateLoggingConfiguration  **
   - **IAM action:**  [network-firewall:UpdateLoggingConfiguration](#list_network-firewall-action-UpdateLoggingConfiguration)

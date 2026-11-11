@@ -43,6 +43,14 @@ Type: String
 Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded | CompletedWithFailures`
 Required: No
 
+ ** PipelineVersionAliases **   <a name="sagemaker-Type-PipelineExecutionSummary-PipelineVersionAliases"></a>
+The aliases currently assigned to the pipeline version that the execution ran.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9._\-]{1,128}`
+Required: No
+
  ** StartTime **   <a name="sagemaker-Type-PipelineExecutionSummary-StartTime"></a>
 The start time of the pipeline execution.
 Type: Timestamp

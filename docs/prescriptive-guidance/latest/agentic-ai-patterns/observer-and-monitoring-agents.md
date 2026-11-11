@@ -73,7 +73,7 @@ You can build an observer and monitoring agent using the following tools and AWS
 
 The following are additional applications:
 + [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) for security log monitoring
-+ [Amazon Quick](https://aws.amazon.com/quicksight/?amazon-quicksight-whats-new.sort-by=item.additionalFields.postDateTime&amazon-quicksight-whats-new.sort-order=desc) for visualizing agent outputs
++ [AWS Quick](https://aws.amazon.com/quicksight/?amazon-quicksight-whats-new.sort-by=item.additionalFields.postDateTime&amazon-quicksight-whats-new.sort-order=desc) for visualizing agent outputs
 
 ## Summary
 <a name="summary.70073ad4-9e9c-5a2c-adb3-754235aae684"></a>

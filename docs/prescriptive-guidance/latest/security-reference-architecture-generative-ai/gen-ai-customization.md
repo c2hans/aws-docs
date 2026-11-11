@@ -130,7 +130,7 @@ Configure Lambda functions within virtual private clouds (VPCs) for network isol
 Configure automatic credential rotation where supported by external services. Use fine-grained IAM policies to control which AI applications can retrieve specific credentials. Enable CloudTrail logging for all secret access operations to maintain audit trails.
 
 ### Amazon Bedrock Guardrails
-<a name="9999999999999999br--guardrails.c870959a-fb37-538e-836e-580355e88e63"></a>
+<a name="9999999999999999br--guardrails.ef765470-0eb5-5d63-8255-fe51d0679c61"></a>
 
 [Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) enables content filtering and validation for tool inputs and outputs. Configure content filters to block harmful content across multiple categories: hate, insults, sexual, violence, misconduct, and prompt attacks. Set filter strength for each category based on your risk tolerance.
 

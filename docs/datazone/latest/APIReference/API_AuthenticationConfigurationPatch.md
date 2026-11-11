@@ -15,6 +15,11 @@ The basic authentication credentials of a connection.
 Type: [BasicAuthenticationCredentials](API_BasicAuthenticationCredentials.md) object
 Required: No
 
+ ** oAuth2Properties **   <a name="datazone-Type-AuthenticationConfigurationPatch-oAuth2Properties"></a>
+The OAuth2 properties, such as the client application, grant type, and token URL, that you want to update for a connection. Only the properties that you specify are updated; the connection keeps its existing values for the properties that you omit.
+Type: [OAuth2PropertiesPatch](API_OAuth2PropertiesPatch.md) object
+Required: No
+
  ** secretArn **   <a name="datazone-Type-AuthenticationConfigurationPatch-secretArn"></a>
 The secret ARN of a connection.
 Type: String

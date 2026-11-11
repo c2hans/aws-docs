@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed-agents-openai-troubleshooting.html
 ---
 
-# Troubleshooting
+# Troubleshooting managed agents by OpenAI
 <a name="bedrock-managed-agents-openai-troubleshooting"></a>
 
 Use the HTTP response, session error details, event stream, and execution-environment logs together. An API request can be accepted before the agent or its execution environment is ready to complete work.

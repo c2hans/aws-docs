@@ -133,7 +133,7 @@ Type: [QAppsConfiguration](API_QAppsConfiguration.md) object
 Required: No
 
  ** [quickSightConfiguration](#API_CreateApplication_RequestSyntax) **   <a name="qbusiness-CreateApplication-request-quickSightConfiguration"></a>
-The Amazon Quick configuration for an Amazon Q Business application that uses Quick for authentication. This configuration is required if your application uses Quick as the identity provider. For more information, see [Creating an Amazon Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
+The AWS Quick configuration for an Amazon Q Business application that uses Quick for authentication. This configuration is required if your application uses Quick as the identity provider. For more information, see [Creating an AWS Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
 Type: [QuickSightConfiguration](API_QuickSightConfiguration.md) object
 Required: No
 

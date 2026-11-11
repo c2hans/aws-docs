@@ -28,10 +28,3 @@ In this guide:
 + [IoT security capabilities](iot-capabilities.md)
 + [Contributors](contributors.md)
 + [Document history](doc-history.md)
-
-## Attachments
-<a name="attachments-11475282-b3b8-4c97-8919-9954329a1c00"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

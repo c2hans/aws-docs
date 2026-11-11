@@ -22,10 +22,10 @@ The generative AI End-User Solutions Component provides capabilities that includ
 
 Organizations can implement this layer using these AWS solutions:
 
-### Amazon Quick
+### AWS Quick
 <a name="9999999999999999qslong-.2ddf6fc2-62fe-5862-a6d4-46f365326843"></a>
 
-[ Amazon Quick](https://aws.amazon.com/quick/getting-started/) provides a unified productivity platform that delivers:
+[AWS Quick](https://aws.amazon.com/quick/getting-started/) provides a unified productivity platform that delivers:
 + Enterprise-wide AI-powered search and knowledge management across structured and unstructured company data
 + No-code/low-code agent creation capabilities enabling citizen developers to build custom agents
 + Integrated workflows and automation through Quick Flows
@@ -69,7 +69,7 @@ End-user solutions in this layer integrate with the underlying architecture thro
 <a name="implementation-approaches"></a>
 
 Organizations can choose between two primary approaches:
-+ Off-the-shelf solutions – Platforms like [ Amazon Quick](https://aws.amazon.com/quick/getting-started/) , [Kiro](https://kiro.dev/), and [Claude Code with Amazon Bedrock](https://aws.amazon.com/solutions/guidance/claude-code-with-amazon-bedrock/) that provide immediate productivity gains with minimal configuration
++ Off-the-shelf solutions – Platforms like [AWS Quick](https://aws.amazon.com/quick/getting-started/) , [Kiro](https://kiro.dev/), and [Claude Code with Amazon Bedrock](https://aws.amazon.com/solutions/guidance/claude-code-with-amazon-bedrock/) that provide immediate productivity gains with minimal configuration
 + Custom applications – Tailored implementations to meet specific organizational requirements
 
 This modular approach allows organizations to balance speed of deployment with customization needs, selecting the right solution based on their technical capabilities, timeline, and specific use case requirements.

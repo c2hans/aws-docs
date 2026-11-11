@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/termino
 # Terminology and concepts
 <a name="terminology-and-concepts"></a>
 
-Following, you can find a list of terms and concepts used to describe Amazon Quick Sight development in the *Amazon Quick Sight Developer Guide*.
+Following, you can find a list of terms and concepts used to describe AWS Quick Sight development in the *AWS Quick Sight Developer Guide*.
 
 **Anonymous Quick Sight user** – A temporary Quick Sight user identity that virtually belongs to a namespace and that you can use only with embedding. You can use tag-based rules to implement row-level security for such users.
 

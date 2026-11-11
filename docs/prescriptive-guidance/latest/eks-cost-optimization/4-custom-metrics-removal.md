@@ -46,7 +46,7 @@ Audit custom metrics and replace them with default metrics or built-in integrati
 For sample commands to list custom metrics, estimate their monthly cost, and identify ones that duplicate Container Insights defaults, see this [audit-custom-metrics.sh](https://github.com/aws-samples/sample-eks-cost-optimization-guide/blob/main/08-vendor-custom-metrics-reduction/audit-custom-metrics.sh)
 
 ### Common replacements
-<a name="common-replacements.93a4227e-cc3b-52d6-9977-dcbb8877c69b"></a>
+<a name="common-replacements.627d637d-c26e-5aac-ae49-c62a593d76b9"></a>
 
 |
 |
@@ -60,7 +60,7 @@ For sample commands to list custom metrics, estimate their monthly cost, and ide
 | Custom request count | ALB metrics / Service Mesh | Built-in |
 
 ### Cleanup steps
-<a name="cleanup-steps.40db8475-458d-5b55-aab0-3571beeea338"></a>
+<a name="cleanup-steps.0794e665-b98b-57c5-9c52-ee4e7f394e61"></a>
 
 1. **Inventory** – List all custom metrics and their associated costs
 

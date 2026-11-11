@@ -161,7 +161,7 @@ Use Amazon Macie to detect and generate alerts on potential sensitive data in Am
 This section discusses the AWS services that are recommended to build this capability securely. In addition to the services in this section, use Amazon CloudWatch and AWS CloudTrail as explained in Capability 2.
 
 ### Amazon OpenSearch Serverless
-<a name="amazon-9999999999999999opensearch--serverless.a96a447e-84c6-590b-9196-d65f8bda13e3"></a>
+<a name="amazon-9999999999999999opensearch--serverless.4dc0ac21-9655-5ebe-a534-552100cb723c"></a>
 
 [Amazon OpenSearch Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html) is an on-demand, auto-scaling configuration for Amazon OpenSearch Service. An OpenSearch Serverless collection is an OpenSearch cluster that scales compute capacity based on your application's needs. Amazon Bedrock knowledge bases use OpenSearchServerless for [embeddings](https://aws.amazon.com/what-is/embeddings-in-machine-learning/) and Amazon S3 for the [data sources](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-ds.html) that [sync](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-ingest.html) with the OpenSearch Serverless [vector index](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html).
 

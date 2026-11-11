@@ -16,7 +16,8 @@ Content-type: application/json
 
 {
    "designation": "{{string}}",
-   "member": { ... }
+   "member": { ... },
+   "userCreatedDesignationId": "{{string}}"
 }
 ```
 
@@ -43,7 +44,7 @@ The request accepts the following data in JSON format.
  ** [designation](#API_CreateProjectMembership_RequestSyntax) **   <a name="datazone-CreateProjectMembership-request-designation"></a>
 The designation of the project membership.
 Type: String
-Valid Values: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD`
+Valid Values: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD | USER_CREATED_DESIGNATION`
 Required: Yes
 
  ** [member](#API_CreateProjectMembership_RequestSyntax) **   <a name="datazone-CreateProjectMembership-request-member"></a>
@@ -51,6 +52,12 @@ The project member whose project membership was created.
 Type: [Member](API_Member.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** [userCreatedDesignationId](#API_CreateProjectMembership_RequestSyntax) **   <a name="datazone-CreateProjectMembership-request-userCreatedDesignationId"></a>
+The ID of the user-created designation to assign to the project member. Required when `designation` is `USER_CREATED_DESIGNATION`; must not be provided otherwise.
+Type: String
+Pattern: `[a-zA-Z0-9_-]{1,36}`
+Required: No
 
 ## Response Syntax
 <a name="API_CreateProjectMembership_ResponseSyntax"></a>

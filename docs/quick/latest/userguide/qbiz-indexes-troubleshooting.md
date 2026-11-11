@@ -41,4 +41,4 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-trou
 + Unable to complete knowledge base creation process
 
 **Resolution**
-+ If this is the first time creating a knowledge base in Amazon Quick, wait 5 minutes and retry the operation
++ If this is the first time creating a knowledge base in AWS Quick, wait 5 minutes and retry the operation

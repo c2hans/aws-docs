@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/tk-dotnet-refactoring/index.html
 title: 'AWS Toolkit for .NET Refactoring Documentation'
 canonical_url: https://docs.aws.amazon.com/tk-dotnet-refactoring/
 source: aws-documentation
-generated_on: 2026-11-09
+generated_on: 2026-11-11
 ---
 
 # AWS Toolkit for .NET Refactoring Documentation

@@ -22,7 +22,7 @@ Two primary patterns exist for model access, each with advantages and disadvanta
 + Enterprise-grade observability, security and governance features embedded in managed services
 
 ## LLM gateway pattern
-<a name="llm-gateway-pattern.ff7522bb-ad37-50a7-b2e8-bb7629bce1d1"></a>
+<a name="llm-gateway-pattern.68243baf-ba10-5fa3-b902-d4ee7770b3f9"></a>
 + Unified API interfaces across multiple model providers through a controlled intermediary
 + Uniform and centralized policy enforcement across model providers for security and compliance
 + Consistent monitoring, cost management, and API normalization

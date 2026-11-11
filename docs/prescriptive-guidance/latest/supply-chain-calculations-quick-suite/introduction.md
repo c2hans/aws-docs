@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/supply-chain-calculations-quick-suite/introduction.html
 ---
 
-# Supply chain calculations for Amazon Quick
+# Supply chain calculations for AWS Quick
 <a name="introduction"></a>
 
 *Jill Hays, Amazon Web Services*
 
-[Amazon Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/what-is.html) is a business intelligence platform that makes it easy to analyze data, create visualizations, automate workflows, and collaborate across your organization. It can help you understand your supply chain data through interactive dashboards and visualizations. Quick is powered by machine learning (ML) and artificial intelligence (AI), which can provide advanced analytics and predictive insights into your supply chain, such as accurate forecasting and analysis of what-if scenarios.
+[AWS Quick](https://docs.aws.amazon.com/quicksuite/latest/userguide/what-is.html) is a business intelligence platform that makes it easy to analyze data, create visualizations, automate workflows, and collaborate across your organization. It can help you understand your supply chain data through interactive dashboards and visualizations. Quick is powered by machine learning (ML) and artificial intelligence (AI), which can provide advanced analytics and predictive insights into your supply chain, such as accurate forecasting and analysis of what-if scenarios.
 
 Supply chain metrics, also known as *key performance indicators (KPIs)*, are the specific parameters that you use to quantify and define supply chain performance. Working with the right metrics helps supply chains be more productive, more transparent, and ultimately, more profitable. Metrics are often quantitatively measured by using one or more calculations in a business intelligence service.
 

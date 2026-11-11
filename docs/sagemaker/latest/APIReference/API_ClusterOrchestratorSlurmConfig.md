@@ -10,6 +10,12 @@ The configuration settings for the Slurm orchestrator used with the SageMaker Hy
 ## Contents
 <a name="API_ClusterOrchestratorSlurmConfig_Contents"></a>
 
+ ** AccountingDatabase **   <a name="sagemaker-Type-ClusterOrchestratorSlurmConfig-AccountingDatabase"></a>
+The external database that stores the Slurm accounting data for the cluster, such as job history, associations, and usage. When you omit this field, Slurm accounting uses a database on the cluster's controller node.
+This field is only supported for clusters using `Continuous` as the `NodeProvisioningMode`.
+Type: [ClusterAccountingDatabase](API_ClusterAccountingDatabase.md) object
+Required: No
+
  ** SlurmConfigStrategy **   <a name="sagemaker-Type-ClusterOrchestratorSlurmConfig-SlurmConfigStrategy"></a>
 The strategy for managing partitions for the Slurm configuration. Valid values are `Managed`, `Overwrite`, and `Merge`.
 Type: String

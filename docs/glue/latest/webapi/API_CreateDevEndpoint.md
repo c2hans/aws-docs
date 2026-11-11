@@ -70,7 +70,7 @@ Development endpoints that are created without specifying a Glue version default
 You can specify a version of Python support for development endpoints by using the `Arguments` parameter in the `CreateDevEndpoint` or `UpdateDevEndpoint` APIs. If no arguments are provided, the version defaults to Python 2.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 Required: No
 
  ** [NumberOfNodes](#API_CreateDevEndpoint_RequestSyntax) **   <a name="Glue-CreateDevEndpoint-request-NumberOfNodes"></a>
@@ -210,7 +210,7 @@ Glue version determines the versions of Apache Spark and Python that AWS Glue su
 For more information about the available AWS Glue versions and corresponding Spark and Python versions, see [Glue version](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^(\w+\.)+\w+$`
+Pattern: `^((\w+\.)+\w+|auto)$`
 
  ** [NumberOfNodes](#API_CreateDevEndpoint_ResponseSyntax) **   <a name="Glue-CreateDevEndpoint-response-NumberOfNodes"></a>
 The number of AWS Glue Data Processing Units (DPUs) allocated to this DevEndpoint.

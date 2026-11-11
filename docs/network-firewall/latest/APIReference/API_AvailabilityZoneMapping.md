@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # AvailabilityZoneMapping
 <a name="API_AvailabilityZoneMapping"></a>
 
-Defines the mapping between an Availability Zone and a firewall endpoint for a transit gateway-attached firewall. Each mapping represents where the firewall can process traffic. You use these mappings when calling [CreateFirewall](API_CreateFirewall.md), [AssociateAvailabilityZones](API_AssociateAvailabilityZones.md), and [DisassociateAvailabilityZones](API_DisassociateAvailabilityZones.md).
+Defines the mapping between an Availability Zone and a firewall endpoint for a transit gateway-attached firewall. Each mapping represents where the firewall can process traffic. You use these mappings when calling `CreateFirewall`, `AssociateAvailabilityZones`, and `DisassociateAvailabilityZones`.
 
-To retrieve the current Availability Zone mappings for a firewall, use [DescribeFirewall](API_DescribeFirewall.md).
+To retrieve the current Availability Zone mappings for a firewall, use `DescribeFirewall`.
 
 ## Contents
 <a name="API_AvailabilityZoneMapping_Contents"></a>

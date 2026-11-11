@@ -9,7 +9,7 @@ An event runs on one or more **tracks**, up to a maximum of 10. Each track keeps
 
 Tracks are managed from the **Tracks** tab of the event details page.
 
-![The Tracks tab of an event](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_event_detail_tracks.png)
+![The Tracks tab of an event, listing each track with links to timekeeping and its leaderboard](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_event_detail_tracks.png)
 
 To add a track, choose **Edit event**, then choose the **Add track** icon (**\+**) and provide:
 +  **Header text**: the name for this track, displayed at the top of its leaderboard.

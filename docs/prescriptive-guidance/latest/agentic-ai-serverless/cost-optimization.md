@@ -24,7 +24,7 @@ The following factors contribute to costs in serverless AI systems:
 + **Data movement** – Excessive cross-Region traffic, unnecessary RAG indexing, or repeated knowledge base fetches can become costly.
 
 ## Cost optimization strategies
-<a name="cost-optimization-strategies.be53ab7e-a37b-5f32-8316-bb2c18afaf82"></a>
+<a name="cost-optimization-strategies.74b4c631-69d4-5cb8-8cdc-68386f34ea16"></a>
 
 Consider implementing the following strategies to optimize costs in your serverless AI workloads:
 + **Use tiered model selection** – Models, such as Amazon Nova, Amazon Titan, and Anthropic Claude, offer different pricing models with tradeoffs in cost, speed, and accuracy. To implement this strategy, route low-complexity prompts to Amazon Nova Micro and escalate only when confidence is low.

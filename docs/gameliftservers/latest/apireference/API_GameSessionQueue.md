@@ -37,6 +37,11 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `^arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+$`
 Required: No
 
+ ** LogConfiguration **   <a name="gameliftservers-Type-GameSessionQueue-LogConfiguration"></a>
+An optional configuration that delivers game session placement insight logs to one or more destinations of your choice. Use these logs to diagnose why a game session placement is `FULFILLED`, `CANCELLED`, `TIMED_OUT`, or `FAILED`, which locations were evaluated, and the latency and cost factors that influenced each decision.
+Type: [GameSessionQueueLogConfiguration](API_GameSessionQueueLogConfiguration.md) object
+Required: No
+
  ** Name **   <a name="gameliftservers-Type-GameSessionQueue-Name"></a>
 A descriptive label that is associated with game session queue. Queue names must be unique within each Region.
 Type: String
@@ -57,7 +62,7 @@ Type: Array of [PlayerLatencyPolicy](API_PlayerLatencyPolicy.md) objects
 Required: No
 
  ** PriorityConfiguration **   <a name="gameliftservers-Type-GameSessionQueue-PriorityConfiguration"></a>
-Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the FleetIQ default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process.
+Custom settings to use when prioritizing destinations and locations for game session placements. This configuration replaces the default prioritization process. Priority types that are not explicitly named will be automatically applied at the end of the prioritization process.
 Type: [PriorityConfiguration](API_PriorityConfiguration.md) object
 Required: No
 

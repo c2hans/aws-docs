@@ -22,6 +22,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Copy Amazon DynamoDB tables across accounts using AWS Backup](copy-amazon-dynamodb-tables-across-accounts-using-aws-backup.md)
 + [Copy Amazon DynamoDB tables across accounts using a custom implementation](copy-amazon-dynamodb-tables-across-accounts-using-a-custom-implementation.md)
 + [Create detailed cost and usage reports for Amazon RDS and Amazon Aurora](create-detailed-cost-and-usage-reports-for-amazon-rds-and-amazon-aurora.md)
++ [Emulate Oracle PL/SQL associative arrays in Amazon Aurora PostgreSQL and Amazon RDS for PostgreSQL](emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql.md)
 + [Enable encrypted connections for PostgreSQL DB instances in Amazon RDS](enable-encrypted-connections-for-postgresql-db-instances-in-amazon-rds.md)
 + [Encrypt an existing Amazon RDS for PostgreSQL DB instance](encrypt-an-existing-amazon-rds-for-postgresql-db-instance.md)
 + [Estimate the cost of a DynamoDB table for on-demand capacity](estimate-the-cost-of-a-dynamodb-table-for-on-demand-capacity.md)

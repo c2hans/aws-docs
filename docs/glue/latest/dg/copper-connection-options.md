@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/copper-connection-options.html
+---
+
+# Copper connection options
+<a name="copper-connection-options"></a>
+
+The following are connection options for Copper:
++ `ENTITY_NAME` – (Required) Used for Read. The name of the Copper object to read.
++ `SELECTED_FIELDS` – Default: empty (SELECT \*). Used for Read. The columns you want to select for the object.
+
+Server-side (pushed-down) filtering is not supported for Copper. The connector reads all records of an entity; apply any filtering in your AWS Glue ETL job.

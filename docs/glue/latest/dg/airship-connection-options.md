@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/airship-connection-options.html
+---
+
+# Airship connection options
+<a name="airship-connection-options"></a>
+
+The following are connection options for Airship:
++ `ENTITY_NAME` – (Required) Used for Read. The name of the Airship object to read.
++ `SELECTED_FIELDS` – Default: empty (SELECT \*). Used for Read. The columns you want to select for the object.
+
+Server-side (pushed-down) filtering is not supported for Airship. The connector reads all records of an entity; apply any filtering in your AWS Glue ETL job.

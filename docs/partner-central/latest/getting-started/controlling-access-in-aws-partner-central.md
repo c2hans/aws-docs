@@ -262,3 +262,27 @@ Filters access by benefit fulfillment types.
 
 Filters access by program.
 + **Type:** `ArrayOfString`
+
+### partnercentral:BusinessPlanItemType
+<a name="partnercentral-businessplanitemtype"></a>
+
+Filters access by the type of a business plan item.
++ **Type:** `String`
+
+  **Valid values:** `[GOAL | KPI | INITIATIVE | ACTIVITY | PARTNERSHIP_GOAL | STRATEGIC_GOAL]`
+
+### partnercentral:BusinessPlanItemStage
+<a name="partnercentral-businessplanitemstage"></a>
+
+Filters access by the stage of a business plan item.
++ **Type:** `String`
+
+  **Valid values:** `[ONBOARD | BUILD | MARKET | SELL]`
+
+### partnercentral:AllowAwsEngagement
+<a name="partnercentral-allowawsengagement"></a>
+
+Filters access by whether you allow AWS to make changes to your business plans.
++ **Type:** `String`
+
+  **Valid values:** `[ENABLED | DISABLED]`

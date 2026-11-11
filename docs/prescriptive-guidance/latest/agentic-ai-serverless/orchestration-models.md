@@ -156,7 +156,7 @@ Whether using rule-based or AI-native orchestration, events are the mechanism th
 This reactive model ensures scalability, resilience, and modular design, allowing parts of the system to evolve independently.
 
 ## Strategic perspective
-<a name="strategic-perspective.f86014b2-5875-5022-a05b-2a482adf77b2"></a>
+<a name="strategic-perspective.37fb059b-a942-565d-be14-2dbe2658f35e"></a>
 
 EDA supports both rule-based orchestration and AI-native orchestration models, and it enables both models to coexist. Step Functions provides reliable, repeatable automation and Amazon Bedrock Agents introduces dynamic, context-aware intelligence.
 

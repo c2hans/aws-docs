@@ -12,7 +12,7 @@ Amazon Bedrock is particularly valuable for LMS integration as it provides acces
 These patterns demonstrate how to leverage these capabilities to enhance teaching and learning experiences while maintaining appropriate content safeguards.
 
 ## Pattern comparison
-<a name="pattern-comparison.a9cca74b-330e-5aaf-bbcd-a61dd868446e"></a>
+<a name="pattern-comparison.2fccb401-23cc-5323-9340-df354dd21e06"></a>
 
 |
 |
@@ -93,7 +93,7 @@ The architecture follows this flow:
 1. Plugin displays the results to the user within the LMS interface
 
 #### Moodle Plugin Implementation Approach
-<a name="moodle-plugin-implementation-approach.8325fea7-fabd-5466-8da5-a7ef2e90878b"></a>
+<a name="moodle-plugin-implementation-approach.8ee36fa7-5447-5b8c-afb7-6dcf8fc31991"></a>
 
 Moodle plugins are extensions that allow institutions to extend Moodle's core functionality with customized features. For educational applications, these plugins can leverage Amazon Bedrock's generative AI capabilities to enhance teaching and learning experiences. To integrate Amazon Bedrock with Moodle, you can create a custom plugin based on the specific integration point you need. Moodle supports several plugin types that are well-suited for generative AI implementations:
 
@@ -151,7 +151,7 @@ Administrators can decide which actions and placements to enable for each provid
 The AI subsystem supports system and user level quotas to help manage LLM costs.
 
 #### Implementation with Amazon Bedrock
-<a name="implementation-with-amazon-bedrock.46527d86-9178-55b1-8c5d-2b8cc6508bc3"></a>
+<a name="implementation-with-amazon-bedrock.14f21e38-3e7f-5175-9f57-e0c8f84ec9b4"></a>
 
 The [aiprovider\_bedrock ](https://moodle.org/plugins/aiprovider_bedrock)plugin allows Moodle administrators to:
 
@@ -241,7 +241,7 @@ The Agents integration leverages Amazon Bedrock Agents to create purposeful, int
 The example below uses an LTI for integration but this could also be an LMS plugin.
 
 #### Architecture with AWS services
-<a name="architecture-with-9999999999999999aws--services.b1d7ffeb-fbea-52c0-9a6a-9291ac9da274"></a>
+<a name="architecture-with-9999999999999999aws--services.db9caeb0-9260-57d6-85da-567821bd2b1f"></a>
 
 ![LTI tool invokes Amazon Bedrock Agents with knowledge base and action groups.](https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integration-with-aws/images/guide-img/0295b1b3-2981-4c83-b66b-d5ae2700aca8/images/ada62d99-8a02-46d2-8731-6dd7ba93d9e8.png)
 

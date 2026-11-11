@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/data-se
 # Dataset operations
 <a name="data-set-operations"></a>
 
-With dataset operations, you can perform actions on Amazon Quick Sight datasets. For more information, see the following API operations.
+With dataset operations, you can perform actions on AWS Quick Sight datasets. For more information, see the following API operations.
 
 **Topics**
 + [Dataset permissions operations](data-set-permissions.md)

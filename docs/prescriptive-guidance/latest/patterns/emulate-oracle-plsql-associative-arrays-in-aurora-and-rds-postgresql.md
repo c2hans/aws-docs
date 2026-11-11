@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/em
 
 This pattern describes how to emulate Oracle PL/SQL associative arrays with empty index positions in [Amazon Aurora PostgreSQL](https://aws.amazon.com/rds/aurora/) and [Amazon RDS for PostgreSQL](https://aws.amazon.com/rds/postgresql/) environments. It also describes some of the differences between Oracle PL/SQL associative arrays and PostgreSQL arrays with regard to how each handles empty index positions during migrations.
 
-We provide a PostgreSQL alternative to using `aws_oracle_ext` functions for handling empty index positions when migrating an Oracle database. This pattern uses an additional column to store index positions, and it maintains Oracle's handling of sparse arrays while incorporating native PostgreSQL capabilities.
+This pattern provides a PostgreSQL alternative to using `aws_oracle_ext` functions for handling empty index positions when migrating an Oracle database. It uses an additional column to store index positions, and it maintains Oracle's handling of sparse arrays while incorporating native PostgreSQL capabilities.
 
 *Oracle*
 
@@ -22,19 +22,18 @@ This flexibility allows for sparse array structures where elements can be popula
 
 *PostgreSQL (Amazon Aurora and Amazon RDS)*
 
-PostgreSQL handles empty values differently from `NULL` values. It stores empty values as distinct entities that use one byte of storage. When an array has empty values, PostgreSQL assigns sequential index positions just like non-empty values. But sequential indexing requires additional processing because the system must iterate through all indexed positions, including the empty ones. This makes traditional array creation inefficient for sparse datasets.
+PostgreSQL handles empty values differently from `NULL` values. It stores empty values as distinct entities that use one byte of storage. When an array has empty values, PostgreSQL assigns sequential index positions just like non-empty values. However, sequential indexing requires additional processing because the system must iterate through all indexed positions, including the empty ones. This makes traditional array creation inefficient for sparse datasets.
 
 *AWS Schema Conversion Tool*
 
-The [AWS Schema Conversion Tool (AWS SCT)](https://docs.aws.amazon.com/SchemaConversionTool/) typically handles Oracle-to-PostgreSQL migrations using `aws_oracle_ext` functions. In this pattern, we propose an alternative approach that uses native PostgreSQL capabilities, which combines PostgreSQL array types with an additional column for storing index positions. The system can then iterate through arrays using just the index column.
+The [AWS Schema Conversion Tool (AWS SCT)](https://docs.aws.amazon.com/SchemaConversionTool/) typically handles Oracle-to-PostgreSQL migrations by using `aws_oracle_ext` functions. This pattern proposes an alternative approach that uses native PostgreSQL capabilities. It combines PostgreSQL array types with an additional column for storing index positions, so the system can iterate through arrays by using only the index column.
 
 ## Prerequisites and limitations
 <a name="emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql-prereqs"></a>
 
 **Prerequisites**
 + An active AWS account
-+ Administrator permissions in AWS Identity and Access Management (IAM)
-+ An instance that’s compatible with Amazon RDS or Aurora PostgreSQL
++ A database instance that’s compatible with Amazon RDS or Aurora PostgreSQL
 + Database architect or developer skills with Oracle and PostgreSQL
 
 **Limitations**
@@ -46,7 +45,7 @@ This pattern was tested with the following versions:
 + Amazon Aurora PostgreSQL 13.3
 + Amazon RDS for PostgreSQL 13.3
 + AWS SCT 1.0.674
-+ Oracle 19c EE
++ Oracle Database 19c Enterprise Edition
 
 ## Architecture
 <a name="emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql-architecture"></a>
@@ -81,7 +80,7 @@ The diagram shows the following:
 
 **Other tools**
 + [Oracle SQL Developer](https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html) is an integrated development environment that simplifies the development and management of Oracle databases in both traditional and cloud-based deployments.
-+ [pgAdmin](https://www.pgadmin.org/) is an open source management tool for PostgreSQL. It provides a graphical interface that helps you create, maintain, and use database objects. In this pattern, pgAdmin connects to the RDS for PostgreSQL database instance and queries the data. Alternatively, you can use the psql command line client.
++ [pgAdmin](https://www.pgadmin.org/) is an open source management tool for PostgreSQL. It provides a graphical interface that helps you create, maintain, and use database objects. In this pattern, pgAdmin connects to the Amazon Relational Database Service for PostgreSQL DB instance and queries the data. Alternatively, you can use the psql command line client.
 
 ## Best practices
 <a name="emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql-best-practices"></a>
@@ -143,9 +142,9 @@ The diagram shows the following:
 <a name="emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql-additional"></a>
 
 *Performance considerations*
-+ This approach reduces iteration overhead by 50% or more for sparse arrays compared to native PostgreSQL arrays with NULL placeholders.
-+ Storage efficiency improves because only actual data is stored, not empty index positions.
++ This approach can reduce iteration overhead for sparse arrays compared to native PostgreSQL arrays with NULL placeholders. Actual results depend on array size and sparsity, so test with your own workload.
++ Storage efficiency improves because this approach stores only actual data, not empty index positions.
 
 *Compatibility notes*
 + This pattern maintains Oracle's sparse array semantics while using PostgreSQL's native array capabilities.
-+ The solution is compatible with all PostgreSQL versions that support user-defined composite types.
++ The solution is designed for PostgreSQL versions that support user-defined composite types. Verify compatibility with your specific version before you implement it.

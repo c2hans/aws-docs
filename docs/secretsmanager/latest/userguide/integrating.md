@@ -51,7 +51,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 + [Amazon Q](integrating-amazonq.md)
 + [Amazon OpenSearch Ingestion](integrating-opensearch.md)
 + [AWS OpsWorks for Chef Automate](integrating_how-services-use-secrets_opsworks-cm.md)
-+ [Amazon Quick](integrating_how-services-use-secrets_QS.md)
++ [AWS Quick](integrating_how-services-use-secrets_QS.md)
 + [Amazon RDS](integrating_how-services-use-secrets_RDS.md)
 + [Amazon Redshift](integrating_how-services-use-secrets_RS.md)
 + [Amazon Redshift query editor v2](integrating_how-services-use-secrets_sqlworkbench.md)
