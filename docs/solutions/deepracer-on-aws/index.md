@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/deepracer-on-aws//index.html
 title: 'DeepRacer on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deepracer-on-aws/
 source: aws-documentation
-generated_on: 2026-11-12
+generated_on: 2026-11-13
 ---
 
 # DeepRacer on AWS
 
 Developers of all skill levels can get hands on with machine learning through a 3D racing simulator and fully autonomous 1/18th scale race cars driven by reinforcement learning.
 
-- **Version**: 1.4.0
+- **Version**: 1.4.1
 - **Release**: 11/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
@@ -125,10 +125,6 @@ Follow these links for direct access to the artifacts for this AWS Solution.
 - **Training an AWS DeepRacer Model using Amazon SageMaker AI**: This Guidance demonstrates how software developers can use an Amazon SageMaker AI Notebook instance to directly train and evaluate AWS DeepRacer models with full control.
 
 [Go to Guidance](https://aws.amazon.com/solutions/guidance/training-an-aws-deepracer-model-using-amazon-sagemaker/)
-
-- **AWS DeepRacer Event Management**: This Guidance demonstrates how to deploy and configure DeepRacer Event Manager (DREM), a set of tools that simplify the hosting of AWS DeepRacer events.
-
-[Go to Guidance](https://aws.amazon.com/solutions/guidance/aws-deepracer-event-management/)
 
 ## Customer stories
 

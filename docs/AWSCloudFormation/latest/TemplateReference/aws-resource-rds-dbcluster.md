@@ -804,8 +804,12 @@ Valid for: Aurora DB clusters and Multi-AZ DB clusters
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WithExpressConfiguration`  <a name="cfn-rds-dbcluster-withexpressconfiguration"></a>
-Specifies to create an Aurora DB Cluster with express configuration in seconds. Express configuration provides a cluster with a writer instance and feature specific values set to all other input parameters of this API.
+Specifies whether Amazon RDS creates the DB cluster with express configuration.
 Valid for Cluster Type: Aurora DB clusters
+Express configuration creates a writer DB instance and sets defaults for the remaining properties. For more information about express configuration, see [Create with express configuration](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_GettingStartedAurora.AuroraPostgreSQL.ExpressConfig.html) in the *Amazon Aurora User Guide*.
+CloudFormation doesn't manage the writer DB instance. To manage it, import it into your stack as an `AWS::RDS::DBInstance` resource. For more information about importing resources, see [Import existing resources into a CloudFormation stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/import-resources.html) in the *CloudFormation User Guide*.
+Only Aurora PostgreSQL DB clusters support this setting.
+When CloudFormation deletes the DB cluster, it also deletes the writer DB instance.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -906,6 +910,7 @@ For an example that adds a scaling policy for a DB cluster with Application Auto
 + [Creating an Amazon Aurora Serverless v1 DB cluster](#aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_Serverless_v1_DB_cluster)
 + [Create a Secrets Manager secret for a master password](#aws-resource-rds-dbcluster--examples--Create_a_Secrets_Manager_secret_for_a_master_password)
 + [Restoring an Amazon Aurora DB cluster](#aws-resource-rds-dbcluster--examples--Restoring_an_Amazon_Aurora_DB_cluster)
++ [Creating an Aurora PostgreSQL DB cluster with express configuration](#aws-resource-rds-dbcluster--examples--Creating_an_Aurora_PostgreSQL_DB_cluster_with_express_configuration)
 
 ### Creating an Amazon Aurora DB cluster with two DB instances
 <a name="aws-resource-rds-dbcluster--examples--Creating_an_Amazon_Aurora_DB_cluster_with_two_DB_instances"></a>
@@ -1700,4 +1705,58 @@ Resources:
       StorageType: io1
       Iops: 1000
       PubliclyAccessible: true
+```
+
+### Creating an Aurora PostgreSQL DB cluster with express configuration
+<a name="aws-resource-rds-dbcluster--examples--Creating_an_Aurora_PostgreSQL_DB_cluster_with_express_configuration"></a>
+
+With express configuration, Amazon RDS creates a writer DB instance and sets defaults for the remaining properties. The following example creates an Aurora PostgreSQL DB cluster with express configuration:
+
+#### JSON
+<a name="aws-resource-rds-dbcluster--examples--Creating_an_Aurora_PostgreSQL_DB_cluster_with_express_configuration--json"></a>
+
+```
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "CloudFormation Sample Template ExpressCluster: Sample template showing how to create an Amazon Aurora PostgreSQL DB cluster with WithExpressConfiguration set to true. **WARNING** This template creates an Amazon Aurora DB cluster and a DB instance. You will be billed for the resources used if you create a stack from this template.",
+  "Resources": {
+    "ExpressCluster": {
+      "Type": "AWS::RDS::DBCluster",
+      "Properties": {
+        "Engine": "aurora-postgresql",
+        "DBClusterIdentifier": "my-express-cluster",
+        "WithExpressConfiguration": true,
+        "Tags": [
+          {
+            "Key": "CreatedWith",
+            "Value": "ExpressConfiguration"
+          }
+        ]
+      }
+    }
+  }
+}
+```
+
+#### YAML
+<a name="aws-resource-rds-dbcluster--examples--Creating_an_Aurora_PostgreSQL_DB_cluster_with_express_configuration--yaml"></a>
+
+```
+AWSTemplateFormatVersion: 2010-09-09
+Description: >-
+  CloudFormation Sample Template ExpressCluster: Sample template
+  showing how to create an Amazon Aurora PostgreSQL DB cluster with
+  WithExpressConfiguration set to true. **WARNING** This template creates
+  an Amazon Aurora DB cluster and a DB instance. You will be billed for the
+  resources used if you create a stack from this template.
+Resources:
+  ExpressCluster:
+    Type: 'AWS::RDS::DBCluster'
+    Properties:
+      Engine: aurora-postgresql
+      DBClusterIdentifier: my-express-cluster
+      WithExpressConfiguration: true
+      Tags:
+        - Key: CreatedWith
+          Value: ExpressConfiguration
 ```
