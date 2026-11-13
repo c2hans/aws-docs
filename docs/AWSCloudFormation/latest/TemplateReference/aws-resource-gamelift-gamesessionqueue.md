@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[CustomEventData](#cfn-gamelift-gamesessionqueue-customeventdata)" : {{String}},
       "[Destinations](#cfn-gamelift-gamesessionqueue-destinations)" : {{[ GameSessionQueueDestination, ... ]}},
       "[FilterConfiguration](#cfn-gamelift-gamesessionqueue-filterconfiguration)" : {{FilterConfiguration}},
+      "[LogConfiguration](#cfn-gamelift-gamesessionqueue-logconfiguration)" : {{LogConfiguration}},
       "[Name](#cfn-gamelift-gamesessionqueue-name)" : {{String}},
       "[NotificationTarget](#cfn-gamelift-gamesessionqueue-notificationtarget)" : {{String}},
       "[PlayerLatencyPolicies](#cfn-gamelift-gamesessionqueue-playerlatencypolicies)" : {{[ PlayerLatencyPolicy, ... ]}},
@@ -45,6 +46,8 @@ Properties:
     - GameSessionQueueDestination}}
   [FilterConfiguration](#cfn-gamelift-gamesessionqueue-filterconfiguration): {{
     FilterConfiguration}}
+  [LogConfiguration](#cfn-gamelift-gamesessionqueue-logconfiguration): {{
+    LogConfiguration}}
   [Name](#cfn-gamelift-gamesessionqueue-name): {{String}}
   [NotificationTarget](#cfn-gamelift-gamesessionqueue-notificationtarget): {{String}}
   [PlayerLatencyPolicies](#cfn-gamelift-gamesessionqueue-playerlatencypolicies): {{
@@ -78,6 +81,12 @@ A list of fleets and/or fleet aliases that can be used to fulfill game session p
 A list of locations where a queue is allowed to place new game sessions. Locations are specified in the form of AWS Region codes, such as `us-west-2`. If this parameter is not set, game sessions can be placed in any queue location.
 *Required*: No
 *Type*: [FilterConfiguration](aws-properties-gamelift-gamesessionqueue-filterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LogConfiguration`  <a name="cfn-gamelift-gamesessionqueue-logconfiguration"></a>
+An optional configuration that delivers game session placement insight logs to one or more destinations of your choice. Use these logs to diagnose why a game session placement is `FULFILLED`, `CANCELLED`, `TIMED_OUT`, or `FAILED`, which locations were evaluated, and the latency and cost factors that influenced each decision.
+*Required*: No
+*Type*: [LogConfiguration](aws-properties-gamelift-gamesessionqueue-logconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-gamelift-gamesessionqueue-name"></a>

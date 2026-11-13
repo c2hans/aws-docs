@@ -13,6 +13,7 @@ Returns a paginated list of data quality execution results for your account, fil
 ```
 {
    "Filter": {
+      "DataQualityEvaluationConfig": "{{string}}",
       "DataSource": {
          "DataQualityGlueTable": {
             "AdditionalOptions": {
@@ -38,6 +39,7 @@ Returns a paginated list of data quality execution results for your account, fil
          "{{string}}" : "{{string}}"
       },
       "EvaluationContext": "{{string}}",
+      "EvaluationRunMode": "{{string}}",
       "PublishedAfter": {{number}},
       "PublishedBefore": {{number}}
    },
@@ -77,6 +79,7 @@ Required: No
    "NextToken": "string",
    "Results": [
       {
+         "DataQualityEvaluationConfig": "string",
          "DataSource": {
             "DataQualityGlueTable": {
                "AdditionalOptions": {
@@ -105,6 +108,7 @@ Required: No
             "string" : "string"
          },
          "EvaluationContext": "string",
+         "EvaluationRunMode": "string",
          "ResultId": "string",
          "ResultPublishedOn": number
       }

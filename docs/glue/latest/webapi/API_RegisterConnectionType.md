@@ -617,7 +617,7 @@ The following data is returned in JSON format by the service.
 The Amazon Resource Name (ARN) of the registered connection type. This unique identifier can be used to reference the connection type in other AWS Glue operations.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 
 ## Errors
 <a name="API_RegisterConnectionType_Errors"></a>

@@ -515,7 +515,7 @@ Amazon Q in Connect has the following endpoints.
 | Supervisors per staffing group | Each supported Region: 100 | No | The maximum number of supervisors per staffing group in the current region. |
 | User hierarchy groups per instance | Each supported Region: 500 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/connect/quotas/L-D68AAAE4)  | The maximum number of user hierarchy groups you can create in this instance in the current Region. |
 | Users per instance | Each supported Region: 500 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/connect/quotas/L-9A46857E)  | The maximum number of users you can create in this instance in the current Region. |
-| Values per data table | us-east-1: 3,000<br />ap-northeast-2: 3,000<br />ap-south-1: 3,000<br />ca-central-1: 5,000<br />eu-central-1: 5,000<br />Each of the other supported Regions: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/connect/quotas/L-735CD262)  | The maximum number of values that can be stored per data table. |
+| Values per data table | af-south-1: 3,000<br />Each of the other supported Regions: 5,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/connect/quotas/L-735CD262)  | The maximum number of values that can be stored per data table. |
 | Voice ID integration associations per instance | Each supported Region: 1 | No | The maximum number of Voice ID integration associations you can create in this instance in the current Region. |
 | Workspaces per instance | Each supported Region: 20 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/connect/quotas/L-6402A996)  | The maximum number of workspaces you can create in this instance in the current Region. |
 

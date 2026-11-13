@@ -16,6 +16,12 @@ Type: [Oauth2Discovery](API_Oauth2Discovery.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
 
+ ** certificateConfigurations **   <a name="bedrockagentcorecontrol-Type-CustomOauth2ProviderConfigInput-certificateConfigurations"></a>
+The private certificate authority (CA) configurations for the identity provider. Use this to have AgentCore Identity trust a private CA when establishing TLS connections to identity provider endpoints. You can specify only one certificate authority configuration in this list. Provide the certificate by reference to an Amazon S3 object or an AWS Secrets Manager secret. You can use this only together with `privateEndpoint`.
+Type: Array of [CertificateConfiguration](API_CertificateConfiguration.md) objects
+Array Members: Fixed number of 1 item.
+Required: No
+
  ** clientAuthenticationMethod **   <a name="bedrockagentcorecontrol-Type-CustomOauth2ProviderConfigInput-clientAuthenticationMethod"></a>
 The client authentication method to use when authenticating with the token endpoint.
 Type: String

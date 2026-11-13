@@ -13,7 +13,7 @@ Evaluation metrics provide an estimate of the quality of your machine learning t
  ** TransformType **   <a name="Glue-Type-EvaluationMetrics-TransformType"></a>
 The type of machine learning transform.
 Type: String
-Valid Values: `FIND_MATCHES`
+Valid Values: `FIND_MATCHES | FILL_MISSING_VALUES`
 Required: Yes
 
  ** FindMatchesMetrics **   <a name="Glue-Type-EvaluationMetrics-FindMatchesMetrics"></a>

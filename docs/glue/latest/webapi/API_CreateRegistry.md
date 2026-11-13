@@ -80,7 +80,7 @@ Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 The Amazon Resource Name (ARN) of the newly created registry.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 
  ** [RegistryName](#API_CreateRegistry_ResponseSyntax) **   <a name="Glue-CreateRegistry-response-RegistryName"></a>
 The name of the registry.

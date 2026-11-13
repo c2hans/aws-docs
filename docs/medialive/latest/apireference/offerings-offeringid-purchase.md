@@ -51,6 +51,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 {
   "count": integer,
   "name": "string",
+  "renewalSettings": {
+    "automaticRenewal": enum,
+    "renewalCount": integer
+  },
   "requestId": "string",
   "start": "string",
   "tags": {
@@ -244,6 +248,7 @@ PurchaseOffering request
 | --- |--- |--- |--- |
 | count | integer<br />Minimum: 1 | True | Number of resources |
 | name | string | False | Name for the new reservation |
+| renewalSettings | [RenewalSettings](#offerings-offeringid-purchase-model-renewalsettings) | False | Renewal settings for the reservation |
 | requestId | string | False | Unique request ID to be specified. This is needed to prevent retries from creating multiple resources. |
 | start | string | False | Requested reservation start time (UTC) in ISO-8601 format. The specified time must be between the first day of the current month and one year from now. If no value is given, the default is now. |
 | tags | [Tags](#offerings-offeringid-purchase-model-tags) | False | A collection of key-value pairs |
@@ -256,6 +261,16 @@ PurchaseOffering response
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | reservation | [Reservation](#offerings-offeringid-purchase-model-reservation) | False |  |
+
+### RenewalSettings
+<a name="offerings-offeringid-purchase-model-renewalsettings"></a>
+
+The Renewal settings for Reservations
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| automaticRenewal | [ReservationAutomaticRenewal](#offerings-offeringid-purchase-model-reservationautomaticrenewal) | False | Automatic renewal status for the reservation |
+| renewalCount | integer<br />Minimum: 1 | False | Count for the reservation renewal |
 
 ### Reservation
 <a name="offerings-offeringid-purchase-model-reservation"></a>
@@ -282,6 +297,14 @@ Reserved resources available to use
 | state | [ReservationState](#offerings-offeringid-purchase-model-reservationstate) | False | Current state of reservation, e.g. 'ACTIVE' |
 | tags | [Tags](#offerings-offeringid-purchase-model-tags) | False | A collection of key-value pairs |
 | usagePrice | number | False | Recurring usage charge for each reserved resource, e.g. '157.0' |
+
+### ReservationAutomaticRenewal
+<a name="offerings-offeringid-purchase-model-reservationautomaticrenewal"></a>
+
+Automatic Renewal Status for Reservation
++ `DISABLED`
++ `ENABLED`
++ `UNAVAILABLE`
 
 ### ReservationCodec
 <a name="offerings-offeringid-purchase-model-reservationcodec"></a>

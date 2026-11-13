@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityTeleme
  ** Engine **   <a name="Glue-Type-DataQualityTelemetry-Engine"></a>
 
 Type: String
-Valid Values: `SPARK | PYTHON`
+Valid Values: `SPARK | PYTHON | DUCK`
 Required: No
 
  ** FlagsEnabled **   <a name="Glue-Type-DataQualityTelemetry-FlagsEnabled"></a>

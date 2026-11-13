@@ -56,6 +56,9 @@ Required: Yes
       "agreementValue": "string",
       "currencyCode": "string"
    },
+   "freeTrialSummary": {
+      "trialEndTime": number
+   },
    "initialAgreementId": "string",
    "proposalSummary": {
       "offerId": "string",
@@ -116,6 +119,10 @@ Type: [EndTimeBehavior](API_marketplace-agreements_EndTimeBehavior.md) object
 The estimated cost of the agreement.
 Type: [EstimatedCharges](API_marketplace-agreements_EstimatedCharges.md) object
 
+ ** [freeTrialSummary](#API_marketplace-agreements_DescribeAgreement_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_DescribeAgreement-response-freeTrialSummary"></a>
+The free trial details of the agreement. This field is present only when the agreement includes a free trial.
+Type: [FreeTrialSummary](API_marketplace-agreements_FreeTrialSummary.md) object
+
  ** [initialAgreementId](#API_marketplace-agreements_DescribeAgreement_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-agreements_DescribeAgreement-response-initialAgreementId"></a>
 The unique identifier of the very first agreement in a chain of related agreements, such as renewals or replacements. It stays the same across all agreements in that chain, which lets you trace an agreement back to the original. When an agreement isn't derived from another agreement, its `InitialAgreementId` is its own `AgreementId`.
 Type: String
@@ -159,7 +166,7 @@ Description of the error.
 The reason for the access denied exception.
  ** requestId **
 The unique identifier for the error.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
 Unexpected error during processing of request.
@@ -179,7 +186,7 @@ The unique identifier for the error.
 The unique identifier for the resource.
  ** resourceType **
 The type of resource.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 Request was denied due to request throttling.
@@ -187,7 +194,7 @@ Request was denied due to request throttling.
 Description of the error.
  ** requestId **
 The unique identifier for the error.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 The input fails to satisfy the constraints specified by the service.

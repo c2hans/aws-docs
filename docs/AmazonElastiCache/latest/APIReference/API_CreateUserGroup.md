@@ -20,6 +20,11 @@ Required: Yes
 
  ** UserGroupId **
 The ID of the user group. This value is stored as a lowercase string.
+Constraints:
++ The ID can be up to 40 characters long by default.
++ The ID can contain only ASCII letters, digits, and hyphens.
++ The first character must be a letter.
++ The ID cannot contain two consecutive hyphens.
 Type: String
 Required: Yes
 

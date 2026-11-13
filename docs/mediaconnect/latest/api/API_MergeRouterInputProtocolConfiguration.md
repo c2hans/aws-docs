@@ -23,6 +23,16 @@ The configuration settings for a Router Input using the RTP (Real-Time Transport
 Type: [RtpRouterInputConfiguration](API_RtpRouterInputConfiguration.md) object
 Required: No
 
+ ** srtCaller **   <a name="mediaconnect-Type-MergeRouterInputProtocolConfiguration-srtCaller"></a>
+The configuration settings for a router input using the SRT (Secure Reliable Transport) protocol in caller mode, including the source address and port, minimum latency, stream ID, and decryption key configuration.
+Type: [SrtCallerRouterInputConfiguration](API_SrtCallerRouterInputConfiguration.md) object
+Required: No
+
+ ** srtListener **   <a name="mediaconnect-Type-MergeRouterInputProtocolConfiguration-srtListener"></a>
+The configuration settings for a router input using the SRT (Secure Reliable Transport) protocol in listener mode, including the port, minimum latency, and decryption key configuration.
+Type: [SrtListenerRouterInputConfiguration](API_SrtListenerRouterInputConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_MergeRouterInputProtocolConfiguration_SeeAlso"></a>
 

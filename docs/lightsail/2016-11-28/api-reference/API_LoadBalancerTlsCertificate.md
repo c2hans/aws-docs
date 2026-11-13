@@ -118,7 +118,7 @@ The resource type (`LoadBalancerTlsCertificate`).
 +  ** `Disk` ** - A Lightsail block storage disk
 +  ** `DiskSnapshot` ** - A block storage disk snapshot
 Type: String
-Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket`
+Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket | Subdomain`
 Required: No
 
  ** revocationReason **   <a name="Lightsail-Type-LoadBalancerTlsCertificate-revocationReason"></a>

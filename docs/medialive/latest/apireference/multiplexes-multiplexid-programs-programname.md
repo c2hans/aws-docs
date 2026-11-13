@@ -146,6 +146,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
     }
   },
   "packetIdentifiersMap": {
+    "aribCaptionsPid": integer,
     "audioPids": [
       integer
     ],
@@ -153,6 +154,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
       integer
     ],
     "dvbTeletextPid": integer,
+    "dvbTeletextPids": [
+      integer
+    ],
+    "ecmPid": integer,
     "etvPlatformPid": integer,
     "etvSignalPid": integer,
     "klvDataPids": [
@@ -165,6 +170,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
       integer
     ],
     "scte35Pid": integer,
+    "smpte2038Pid": integer,
     "timedMetadataPid": integer,
     "videoPid": integer
   },
@@ -202,6 +208,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
       }
     },
     "packetIdentifiersMap": {
+      "aribCaptionsPid": integer,
       "audioPids": [
         integer
       ],
@@ -209,6 +216,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
         integer
       ],
       "dvbTeletextPid": integer,
+      "dvbTeletextPids": [
+        integer
+      ],
+      "ecmPid": integer,
       "etvPlatformPid": integer,
       "etvSignalPid": integer,
       "klvDataPids": [
@@ -221,6 +232,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
         integer
       ],
       "scte35Pid": integer,
+      "smpte2038Pid": integer,
       "timedMetadataPid": integer,
       "videoPid": integer
     },
@@ -395,9 +407,12 @@ Packet identifiers map for a given Multiplex program.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| aribCaptionsPid | integer | False |  |
 | audioPids | Array of type integer | False |  |
 | dvbSubPids | Array of type integer | False |  |
 | dvbTeletextPid | integer | False |  |
+| dvbTeletextPids | Array of type integer | False |  |
+| ecmPid | integer | False |  |
 | etvPlatformPid | integer | False |  |
 | etvSignalPid | integer | False |  |
 | klvDataPids | Array of type integer | False |  |
@@ -406,6 +421,7 @@ Packet identifiers map for a given Multiplex program.
 | privateMetadataPid | integer | False |  |
 | scte27Pids | Array of type integer | False |  |
 | scte35Pid | integer | False |  |
+| smpte2038Pid | integer | False |  |
 | timedMetadataPid | integer | False |  |
 | videoPid | integer | False |  |
 
@@ -450,7 +466,7 @@ Statmux rate control settings
 | --- |--- |--- |--- |
 | maximumBitrate | integer<br />Minimum: 100000<br />Maximum: 100000000 | False | Maximum statmux bitrate. |
 | minimumBitrate | integer<br />Minimum: 100000<br />Maximum: 100000000 | False | Minimum statmux bitrate. |
-| priority | integer<br />Minimum: -5<br />Maximum: 5 | False | The purpose of the priority is to use a combination of the\\nmultiplex rate control algorithm and the QVBR capability of the\\nencoder to prioritize the video quality of some channels in a\\nmultiplex over others. Channels that have a higher priority will\\nget higher video quality at the expense of the video quality of\\nother channels in the multiplex with lower priority. |
+| priority | integer<br />Minimum: -5<br />Maximum: 5 | False | The purpose of the priority is to use a combination of the multiplex rate control algorithm and the QVBR capability of the encoder to prioritize the video quality of some channels in a multiplex over others. Channels that have a higher priority will get higher video quality at the expense of the video quality of other channels in the multiplex with lower priority. |
 
 ### MultiplexVideoSettings
 <a name="multiplexes-multiplexid-programs-programname-model-multiplexvideosettings"></a>

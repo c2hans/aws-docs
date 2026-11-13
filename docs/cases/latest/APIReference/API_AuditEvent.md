@@ -28,10 +28,16 @@ Required: Yes
 
  ** type **   <a name="connect-Type-connect-cases_AuditEvent-type"></a>
 The type of audit history event.
-Valid Values: `Case.Created` \| `Case.Updated` \| `RelatedItem.Created` \| `RelatedItem.Updated` \| `RelatedItem.Deleted`
+Valid Values: `Case.Created` \| `Case.Updated` \| `RelatedItem.Created` \| `RelatedItem.Updated` \| `RelatedItem.Deleted` \| `Case.Merged`
+ `Case.Merged` summarizes a merge on each of the two cases that took part in it.
 Type: String
-Valid Values: `Case.Created | Case.Updated | RelatedItem.Created | RelatedItem.Deleted | RelatedItem.Updated`
+Valid Values: `Case.Created | Case.Updated | RelatedItem.Created | RelatedItem.Deleted | RelatedItem.Updated | Case.Merged`
 Required: Yes
+
+ ** mergeMetadata **   <a name="connect-Type-connect-cases_AuditEvent-mergeMetadata"></a>
+Information about the merge that produced this audit event. Present only on audit events produced by a merge. For more information, see [StartMergeCases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_StartMergeCases.html).
+Type: [AuditMergeMetadata](API_connect-cases_AuditMergeMetadata.md) object
+Required: No
 
  ** performedBy **   <a name="connect-Type-connect-cases_AuditEvent-performedBy"></a>
 Information of the user which performed the audit.

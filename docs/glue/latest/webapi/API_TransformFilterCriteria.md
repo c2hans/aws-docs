@@ -59,7 +59,7 @@ Required: No
  ** TransformType **   <a name="Glue-Type-TransformFilterCriteria-TransformType"></a>
 The type of machine learning transform that is used to filter the machine learning transforms.
 Type: String
-Valid Values: `FIND_MATCHES`
+Valid Values: `FIND_MATCHES | FILL_MISSING_VALUES`
 Required: No
 
 ## See Also

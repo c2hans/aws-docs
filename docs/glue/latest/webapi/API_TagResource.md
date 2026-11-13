@@ -30,7 +30,7 @@ The request accepts the following data in JSON format.
 The ARN of the AWS Glue resource to which to add the tags. For more information about AWS Glue resource ARNs, see the [AWS Glue ARN string pattern](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-common.html#aws-glue-api-regex-aws-glue-arn-id).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 Required: Yes
 
  ** [TagsToAdd](#API_TagResource_RequestSyntax) **   <a name="Glue-TagResource-request-TagsToAdd"></a>

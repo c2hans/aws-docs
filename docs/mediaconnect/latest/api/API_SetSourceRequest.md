@@ -75,7 +75,7 @@ Required: No
  The protocol that is used by the source.
  AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
 Type: String
-Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq`
+Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq | rtmp-push`
 Required: No
 
  ** routerIntegrationState **   <a name="mediaconnect-Type-SetSourceRequest-routerIntegrationState"></a>
@@ -87,6 +87,11 @@ Required: No
  ** routerIntegrationTransitDecryption **   <a name="mediaconnect-Type-SetSourceRequest-routerIntegrationTransitDecryption"></a>
 The decryption configuration for the flow source when router integration is enabled. Specifies how the source content should be decrypted when router integration is used.
 Type: [FlowTransitEncryption](API_FlowTransitEncryption.md) object
+Required: No
+
+ ** rtmpPushSettings **   <a name="mediaconnect-Type-SetSourceRequest-rtmpPushSettings"></a>
+The settings for the RTMP (Real-Time Messaging Protocol) source.
+Type: [SetRtmpPushSourceSettings](API_SetRtmpPushSourceSettings.md) object
 Required: No
 
  ** senderControlPort **   <a name="mediaconnect-Type-SetSourceRequest-senderControlPort"></a>

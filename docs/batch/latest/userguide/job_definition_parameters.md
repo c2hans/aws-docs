@@ -738,7 +738,7 @@ Type: String to string map
 Value Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 `securityContext`
-The security context for a job. For more information, see [Configure a security context for a pod or container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) in the *Kubernetes documentation*.
+Specifies privilege and access control settings for a container, such as user and group IDs and Linux capabilities. If you specify the same setting at both levels, the container-level value overrides the value in the pod security context. For more information, see [Configure a security context for a pod or container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) in the *Kubernetes documentation*.
 Type: [EksContainerSecurityContext](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksContainerSecurityContext.html) object
 Required: No
 `capabilities`
@@ -818,7 +818,7 @@ The init containers for the Amazon EKS pod. Init containers support the same con
 Type: Array of [EksContainer](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksContainer.html) objects
 Required: No
 `securityContext`
-The security context for the Amazon EKS pod. Pod-level values apply to every application and init container unless that container specifies its own value for the same setting.
+Specifies privilege and access control settings for the pod. These values apply to all containers in the pod unless overridden at the container level. For more information, see [Configure a security context for a pod or container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) in the *Kubernetes documentation*.
 Type: [EksPodSecurityContext](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPodSecurityContext.html) object
 Required: No
 `fsGroup`
@@ -865,8 +865,8 @@ Specifies the configuration of a Kubernetes `emptyDir` volume. An `emptyDir` vol
 Type: [EksEmptyDir](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksEmptyDir.html) object
 Required: No
 medium
-The medium to store the volume. The default value is an empty string, which uses the storage of the node.
-""
+The medium to store the volume. The default value is null, which uses the storage of the node.
+null
 **(Default)** Use the disk storage of the node.
 "Memory"
 Use the `tmpfs` volume that's backed by the RAM of the node. Contents of the volume are lost when the node reboots, and any storage on the volume counts against the container's memory limit.

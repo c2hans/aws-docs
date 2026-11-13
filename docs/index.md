@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-11
+generated_on: 2026-11-12
 ---
 
 # Welcome to AWS Documentation
@@ -231,6 +231,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [AWS Coding Plugin for SAP ABAP](/coding-plugin-for-sap-abap/latest/devguide/?icmpid=docs_homepage_devtools): Agentic development for the SAP ABAP language, powered by Kiro
 - [Amazon Connect Health](/connecthealth/?icmpid=docs_homepage_devtools): Agentic AI for healthcare that's built around the people that deliver it
 - [Amazon Corretto](/corretto/?icmpid=docs_homepage_devtools): A no-cost, multiplatform, production-ready distribution of OpenJDK
+- [AWS Emulator](/emulator/?icmpid=docs_homepage_devtools): Test your code against the AWS APIs locally with no AWS account
 - [AWS SDK for .NET](/sdk-for-net/?icmpid=docs_homepage_devtools): Develop applications with .NET-specific APIs and libraries
 - [AWS SDK for C++](/sdk-for-cpp/?icmpid=docs_homepage_devtools): Develop applications with C++-specific APIs
 - [AWS SDK for Go](/sdk-for-go/?icmpid=docs_homepage_devtools): Develop applications with Go-specific APIs and libraries

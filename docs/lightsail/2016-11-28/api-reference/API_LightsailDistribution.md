@@ -55,6 +55,7 @@ Required: No
 
  ** customErrorResponses **   <a name="Lightsail-Type-LightsailDistribution-customErrorResponses"></a>
 An array of objects that describe the custom error responses configured for the distribution.
+This value is returned only when you specify `distributionName` in your `GetDistributions` request. It isn't included in the response when you list all of your distributions.
 Type: Array of [DistributionCustomErrorResponse](API_DistributionCustomErrorResponse.md) objects
 Required: No
 
@@ -65,6 +66,7 @@ Required: No
 
  ** defaultRootObject **   <a name="Lightsail-Type-LightsailDistribution-defaultRootObject"></a>
 The object (for example, `index.html`) that the distribution returns when a viewer requests the root URL of the distribution (`/`) instead of a specific object.
+This value is returned only when you specify `distributionName` in your `GetDistributions` request. It isn't included in the response when you list all of your distributions.
 Type: String
 Required: No
 
@@ -111,12 +113,17 @@ Required: No
  ** resourceType **   <a name="Lightsail-Type-LightsailDistribution-resourceType"></a>
 The Lightsail resource type (`Distribution`).
 Type: String
-Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket`
+Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket | Subdomain`
 Required: No
 
  ** status **   <a name="Lightsail-Type-LightsailDistribution-status"></a>
 The status of the distribution.
 Type: String
+Required: No
+
+ ** subdomain **   <a name="Lightsail-Type-LightsailDistribution-subdomain"></a>
+An object that describes the Lightsail subdomain that's associated with the distribution, or is being associated with it.
+Type: [LightsailDistributionSubdomain](API_LightsailDistributionSubdomain.md) object
 Required: No
 
  ** supportCode **   <a name="Lightsail-Type-LightsailDistribution-supportCode"></a>

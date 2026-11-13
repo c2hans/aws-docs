@@ -16,10 +16,21 @@ Each `UsageAllocation` indicates the usage quantity for a specific set of tags.
 In the following list, the required parameters are described first.
 
  ** AllocatedUsageQuantity **   <a name="AWSMarketplaceService-Type-marketplace-metering_UsageAllocation-AllocatedUsageQuantity"></a>
-The total quantity allocated to this bucket of usage.
+ *This member has been deprecated.*
+The total quantity allocated to this bucket of usage, as a whole number.
+Use `AllocatedUsageQuantityAsDecimal` instead. Each allocation must specify exactly one of `AllocatedUsageQuantity` or `AllocatedUsageQuantityAsDecimal`.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 2147483647.
-Required: Yes
+Required: No
+
+ ** AllocatedUsageQuantityAsDecimal **   <a name="AWSMarketplaceService-Type-marketplace-metering_UsageAllocation-AllocatedUsageQuantityAsDecimal"></a>
+The total quantity allocated to this bucket of usage, as a decimal string. Use this when the usage quantity of the request or usage record is specified as a decimal (`UsageQuantityAsDecimal` or `QuantityAsDecimal`).
+A non-negative decimal number, for example `17.42`.
+Each allocation must specify exactly one of `AllocatedUsageQuantity` or `AllocatedUsageQuantityAsDecimal`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 17.
+Pattern: `^(0|[1-9][0-9]{0,9})(\.[0-9]{1,6})?$`
+Required: No
 
  ** Tags **   <a name="AWSMarketplaceService-Type-marketplace-metering_UsageAllocation-Tags"></a>
 The set of tags that define the bucket of usage. For the bucket of items with no tags, this parameter can be left out.

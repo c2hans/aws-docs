@@ -37,7 +37,7 @@ Required: No
  ** RoleArn **   <a name="Glue-Type-IcebergOptimizationProperties-RoleArn"></a>
 The Amazon Resource Name (ARN) of the IAM role that will be assumed to perform Iceberg table optimization operations.
 Type: String
-Pattern: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
+Pattern: `^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
 Required: No
 
 ## See Also

@@ -13,6 +13,7 @@ Returns all data quality execution results for your account.
 ```
 {
    "Filter": {
+      "DataQualityEvaluationConfig": "{{string}}",
       "DataSource": {
          "DataQualityGlueTable": {
             "AdditionalOptions": {
@@ -34,6 +35,7 @@ Returns all data quality execution results for your account.
             "TableName": "{{string}}"
          }
       },
+      "EvaluationRunMode": "{{string}}",
       "JobName": "{{string}}",
       "JobRunId": "{{string}}",
       "StartedAfter": {{number}},
@@ -75,6 +77,7 @@ Required: No
    "NextToken": "string",
    "Results": [
       {
+         "DataQualityEvaluationConfig": "string",
          "DataSource": {
             "DataQualityGlueTable": {
                "AdditionalOptions": {
@@ -96,6 +99,7 @@ Required: No
                "TableName": "string"
             }
          },
+         "EvaluationRunMode": "string",
          "JobName": "string",
          "JobRunId": "string",
          "ResultId": "string",

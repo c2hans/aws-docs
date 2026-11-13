@@ -165,6 +165,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon OpenSearch Serverless | API activity on `AWS::AOSS::Collection` resources. | AWS::AOSS::Collection | `AWS::AOSS::Collection` |
 | AWS AppConfig | AWS AppConfig API activity for configuration operations such as calls to StartConfigurationSession and GetLatestConfiguration. For more information, see [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/logging-using-cloudtrail.html#appconfig-data-events-cloudtrail). | AWS AppConfig | `AWS::AppConfig::Configuration` |
 | CloudWatch Application Signals | API activity on `AWS::ApplicationSignals::InstrumentationConfig` resources. | AWS::ApplicationSignals::InstrumentationConfig | `AWS::ApplicationSignals::InstrumentationConfig` |
+| AWS App Monetization | AWS App Monetization usage event and entitlement check activity on apps. | App Monetization app | `AWS::AppMonetization::App` |
 | AWS AppSync | AWS AppSync API activity on AppSync GraphQL APIs. For more information, see [AWS AppSync](https://docs.aws.amazon.com/appsync/latest/devguide/cloudtrail-logging.html#cloudtrail-data-events). | AppSync GraphQL | `AWS::AppSync::GraphQLApi` |
 | aws assurance | API activity on `AWS::Assurance::Environment` resources. | AWS::Assurance::Environment | `AWS::Assurance::Environment` |
 | External anthropic workspace | API activity on `AWS::AWSExternalAnthropic::Workspace` resources. | External anthropic workspace | `AWS::AWSExternalAnthropic::Workspace` |
@@ -190,6 +191,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon Bedrock | Amazon Bedrock API activity on sessions. | Bedrock session | `AWS::Bedrock::Session` |
 | Amazon Bedrock | Amazon Bedrock Tool API activity. | Bedrock Tool | `AWS::Bedrock::Tool` |
 | Bedrock-AgentCore ABTest | API activity on `AWS::BedrockAgentCore::ABTest` resources. | Bedrock-AgentCore ABTest | `AWS::BedrockAgentCore::ABTest` |
+| Amazon Bedrock AgentCore | Agent Insight Stores for Bedrock AgentCore Evaluations. | Agent Insight Store for Bedrock AgentCore Evaluations | `AWS::BedrockAgentCore::AgentInsightStore` |
 | Amazon Bedrock | Amazon Bedrock APIKey CredentialProvider API activity. | Bedrock-AgentCore APIKey CredentialProvider | `AWS::BedrockAgentCore::APIKeyCredentialProvider` |
 | BedrockAgentCore batch evaluate | API activity on `AWS::BedrockAgentCore::BatchEvaluate` resources. | BedrockAgentCore batch evaluate | `AWS::BedrockAgentCore::BatchEvaluate` |
 | Amazon Bedrock | Amazon Bedrock Browser API activity. | Bedrock-AgentCore Browser | `AWS::BedrockAgentCore::Browser` |
@@ -198,6 +200,7 @@ For event data stores, you can use only advanced event selectors to include data
 | BedrockAgentCore CapacityProvider | API activity on `AWS::BedrockAgentCore::CapacityProvider` resources. | BedrockAgentCore CapacityProvider | `AWS::BedrockAgentCore::CapacityProvider` |
 | Amazon Bedrock | Amazon Bedrock Code-Interpreter API activity. | Bedrock-AgentCore Code-Interpreter | `AWS::BedrockAgentCore::CodeInterpreter` |
 | Amazon Bedrock | Amazon Bedrock Code-Interpreter-Custom API activity. | Bedrock-AgentCore Code-Interpreter-Custom | `AWS::BedrockAgentCore::CodeInterpreterCustom` |
+| Amazon Bedrock AgentCore Evaluations | Dataset for AgentCore Evaluations. | AgentCore Evaluation Dataset | `AWS::BedrockAgentCore::Dataset` |
 | Amazon Bedrock AgentCore | Bedrock AgentCore API activity on evaluators. | Bedrock-AgentCore Evaluator | `AWS::BedrockAgentCore::Evaluator` |
 | Amazon Bedrock | Amazon Bedrock Gateway API activity. | Bedrock-AgentCore Gateway | `AWS::BedrockAgentCore::Gateway` |
 | Amazon Bedrock | Amazon Bedrock Memory API activity. | Bedrock-AgentCore Memory | `AWS::BedrockAgentCore::Memory` |
@@ -412,6 +415,7 @@ For event data stores, you can use only advanced event selectors to include data
 | UXC account customization | API activity on `AWS::UXC::AccountCustomization` resources. | UXC account customization | `AWS::UXC::AccountCustomization` |
 | Amazon Verified Permissions | Amazon Verified Permissions API activity on a policy store. | Amazon Verified Permissions | `AWS::VerifiedPermissions::PolicyStore` |
 | Well-Architected agent recommendation | API activity on `AWS::WellArchitected::AgentRecommendation` resources. | Well-Architected agent recommendation | `AWS::WellArchitected::AgentRecommendation` |
+| AWS Workload Telemetry Service | Certificate discovery and automation telemetry that AWS Workload Credentials Provider agents send for an AWS account in a Region. | Workload Telemetry certificate telemetry | `AWS::WorkloadTelemetry::CertificateTelemetry` |
 | AWS X-Ray | X-Ray API activity on traces. For more information, see [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-cloudtrail.html#cloudtrail-data-events). | X-Ray trace | `AWS::XRay::Trace` |
 
 Data events are not logged by default when you create a trail or event data store. To record CloudTrail data events, you must explicitly add the supported resources or resource types for which you want to collect activity. For more information, see [Creating a trail with the CloudTrail console](cloudtrail-create-a-trail-using-the-console-first-time.md) and [Create an event data store for CloudTrail events with the console](query-event-data-store-cloudtrail.md).

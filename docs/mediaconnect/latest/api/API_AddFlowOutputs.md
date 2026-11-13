@@ -69,6 +69,14 @@ Content-type: application/json
             "encryptionKeyConfiguration": { ... },
             "encryptionKeyType": "{{string}}"
          },
+         "rtmpPushSettings": {
+            "applicationName": "{{string}}",
+            "streamName": "{{string}}",
+            "tlsEncryption": {
+               "encryptionConfiguration": { ... },
+               "encryptionType": "{{string}}"
+            }
+         },
          "senderControlPort": {{number}},
          "smoothingLatency": {{number}},
          "streamId": "{{string}}",
@@ -177,6 +185,19 @@ Content-type: application/json
             "ndiSpeedHqQuality": number,
             "protocol": "string",
             "remoteId": "string",
+            "rtmpPushOutputSettings": {
+               "applicationName": "string",
+               "streamName": "string",
+               "tlsEncryption": {
+                  "encryptionConfiguration": { ... },
+                  "encryptionType": "string"
+               }
+            },
+            "rtmpPushSourceSettings": {
+               "applicationName": "string",
+               "namingType": "string",
+               "streamName": "string"
+            },
             "senderControlPort": number,
             "senderIpAddress": "string",
             "smoothingLatency": number,

@@ -98,7 +98,11 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/reservatio
 
 ```
 {
-  "name": "string"
+  "name": "string",
+  "renewalSettings": {
+    "automaticRenewal": enum,
+    "renewalCount": integer
+  }
 }
 ```
 
@@ -315,6 +319,16 @@ Units for duration, e.g. 'MONTHS'
 Offering type, e.g. 'NO\_UPFRONT'
 + `NO_UPFRONT`
 
+### RenewalSettings
+<a name="reservations-reservationid-model-renewalsettings"></a>
+
+The Renewal settings for Reservations
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| automaticRenewal | [ReservationAutomaticRenewal](#reservations-reservationid-model-reservationautomaticrenewal) | False | Automatic renewal status for the reservation |
+| renewalCount | integer<br />Minimum: 1 | False | Count for the reservation renewal |
+
 ### Reservation
 <a name="reservations-reservationid-model-reservation"></a>
 
@@ -340,6 +354,14 @@ Reserved resources available to use
 | state | [ReservationState](#reservations-reservationid-model-reservationstate) | False | Current state of reservation, e.g. 'ACTIVE' |
 | tags | [Tags](#reservations-reservationid-model-tags) | False | A collection of key-value pairs |
 | usagePrice | number | False | Recurring usage charge for each reserved resource, e.g. '157.0' |
+
+### ReservationAutomaticRenewal
+<a name="reservations-reservationid-model-reservationautomaticrenewal"></a>
+
+Automatic Renewal Status for Reservation
++ `DISABLED`
++ `ENABLED`
++ `UNAVAILABLE`
 
 ### ReservationCodec
 <a name="reservations-reservationid-model-reservationcodec"></a>
@@ -455,6 +477,7 @@ UpdateReservation request
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | name | string | False | Name of the reservation |
+| renewalSettings | [RenewalSettings](#reservations-reservationid-model-renewalsettings) | False | Renewal settings for the reservation |
 
 ### UpdateReservationResultModel
 <a name="reservations-reservationid-model-updatereservationresultmodel"></a>

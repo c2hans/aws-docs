@@ -12,3 +12,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::KinesisAnalyticsV2::ApplicationCloudWatchLoggingOption](aws-resource-kinesisanalyticsv2-applicationcloudwatchloggingoption.md)
 + [AWS::KinesisAnalyticsV2::ApplicationOutput](aws-resource-kinesisanalyticsv2-applicationoutput.md)
 + [AWS::KinesisAnalyticsV2::ApplicationReferenceDataSource](aws-resource-kinesisanalyticsv2-applicationreferencedatasource.md)
++ [AWS::KinesisAnalyticsV2::Snapshot](aws-resource-kinesisanalyticsv2-snapshot.md)

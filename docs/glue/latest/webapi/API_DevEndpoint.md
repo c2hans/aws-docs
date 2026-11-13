@@ -107,7 +107,7 @@ Required: No
  ** RoleArn **   <a name="Glue-Type-DevEndpoint-RoleArn"></a>
 The Amazon Resource Name (ARN) of the IAM role used in this `DevEndpoint`.
 Type: String
-Pattern: `arn:aws:iam::\d{12}:role/.*`
+Pattern: `arn:aws[a-z0-9-]*:iam::\d{12}:role/.*`
 Required: No
 
  ** SecurityConfiguration **   <a name="Glue-Type-DevEndpoint-SecurityConfiguration"></a>
@@ -144,7 +144,7 @@ The type of predefined worker that is allocated to the development endpoint. Acc
 + For the `G.2X` worker type, each worker maps to 2 DPU (8 vCPU, 32 GB of memory, 128 GB disk), and provides 1 executor per worker. We recommend this worker type for memory-intensive jobs.
 Known issue: when a development endpoint is created with the `G.2X` `WorkerType` configuration, the Spark drivers for the development endpoint will run on 4 vCPU, 16 GB of memory, and a 64 GB disk.
 Type: String
-Valid Values: `Standard | G.1X | G.2X | G.4X | G.8X | G.025X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X`
+Valid Values: `Standard | G.1X | G.2X | G.4X | G.8X | G.025X | Z.2X | G.12X | G.16X | R.1X | R.2X | R.4X | R.8X | G.1X.GRAVITON | G.2X.GRAVITON | G.4X.GRAVITON | G.8X.GRAVITON | G.12X.GRAVITON | G.16X.GRAVITON | R.1X.GRAVITON | R.2X.GRAVITON | R.4X.GRAVITON | R.8X.GRAVITON`
 Required: No
 
  ** YarnEndpointAddress **   <a name="Glue-Type-DevEndpoint-YarnEndpointAddress"></a>

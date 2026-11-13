@@ -12,6 +12,7 @@ Returns information about all Amazon Lightsail virtual private servers, or *inst
 
 ```
 {
+   "includeHealthStatus": {{boolean}},
    "pageToken": "{{string}}"
 }
 ```
@@ -22,6 +23,12 @@ Returns information about all Amazon Lightsail virtual private servers, or *inst
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [includeHealthStatus](#API_GetInstances_RequestSyntax) **   <a name="Lightsail-GetInstances-request-includeHealthStatus"></a>
+Specifies whether to include the instance health status checks of each instance in the response of your request.
+When set to `true`, the response includes the `instanceStatus` and `systemStatus` of each instance. When omitted or set to `false`, the response doesn't include them.
+Type: Boolean
+Required: No
 
  ** [pageToken](#API_GetInstances_RequestSyntax) **   <a name="Lightsail-GetInstances-request-pageToken"></a>
 The token to advance to the next page of results from your request.
@@ -94,6 +101,16 @@ Required: No
             ],
             "ramSizeInGb": number
          },
+         "instanceStatus": {
+            "details": [
+               {
+                  "impairedSince": number,
+                  "name": "string",
+                  "status": "string"
+               }
+            ],
+            "status": "string"
+         },
          "ipAddressType": "string",
          "ipv6Addresses": [ "string" ],
          "isStaticIp": boolean,
@@ -137,6 +154,16 @@ Required: No
             "name": "string"
          },
          "supportCode": "string",
+         "systemStatus": {
+            "details": [
+               {
+                  "impairedSince": number,
+                  "name": "string",
+                  "status": "string"
+               }
+            ],
+            "status": "string"
+         },
          "tags": [
             {
                "key": "string",

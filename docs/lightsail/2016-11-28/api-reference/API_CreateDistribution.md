@@ -64,6 +64,7 @@ A distribution is a globally distributed network of caching servers that improve
       "regionName": "{{string}}",
       "responseTimeout": {{number}}
    },
+   "subdomainName": "{{string}}",
    "tags": [
       {
          "key": "{{string}}",
@@ -181,6 +182,12 @@ The distribution pulls, caches, and serves content from the origin.
 Type: [InputOrigin](API_InputOrigin.md) object
 Required: Yes
 
+ ** [subdomainName](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-subdomainName"></a>
+The Lightsail subdomain to create and associate with the distribution (for example, `mysite`, for the web address `mysite.amazonlightsail.com`).
+After the distribution is deployed, Lightsail creates the subdomain and associates it with the distribution. If Lightsail can't create or associate the subdomain, it still creates the distribution, but the `CreateDistribution` operation fails and the `state` of the distribution's `subdomain` is `Error`. To check the status, use the `subdomain` parameter of the distribution.
+Type: String
+Required: No
+
  ** [tags](#API_CreateDistribution_RequestSyntax) **   <a name="Lightsail-CreateDistribution-request-tags"></a>
 The tag keys and optional values to add to the distribution during create.
 Use the `TagResource` action to tag a resource after it's created.
@@ -270,6 +277,12 @@ Required: No
       "originPublicDNS": "string",
       "resourceType": "string",
       "status": "string",
+      "subdomain": {
+         "errorCode": "string",
+         "errorDetails": "string",
+         "name": "string",
+         "state": "string"
+      },
       "supportCode": "string",
       "tags": [
          {

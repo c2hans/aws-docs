@@ -17,6 +17,7 @@ Content-type: application/json
 {
    "destinationProperties": {
       "destinationArn": "{{string}}",
+      "expectedBucketOwner": "{{string}}",
       "kmsKeyArn": "{{string}}"
    }
 }

@@ -113,7 +113,13 @@ Required: Yes
             },
             "ExpectedBucketOwner": "string",
             "OutputLocation": "string"
-         }
+         },
+         "SystemTableStatuses": [
+            {
+               "Enabled": boolean,
+               "TableName": "string"
+            }
+         ]
       },
       "CreationTime": number,
       "Description": "string",

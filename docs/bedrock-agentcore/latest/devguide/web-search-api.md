@@ -56,4 +56,4 @@ By default, each account can send up to 10 `InvokeWebSearch` requests per second
 ## Acceptable use
 <a name="web-search-api-acceptable-use"></a>
 
-The acceptable use terms for Web Search Tool also apply to results that you get from the `InvokeWebSearch` API. These terms include the requirement to retain and display the source citations and links that come with each result. For more information about the terms, see [Acceptable use](gateway-target-connector-web-search-tool.md#gateway-target-connector-web-search-tool-acceptable-use).
+If you use Web Search, you are responsible for your use, and any use by your end users, of content retrieved from Web Search ("Search Results"). You must retain and display the source citations and links provided with each Search Result in any output you surface to your end users that uses the Search Result. You may not use Web Search to (a) extract, store, or reproduce content from Search Results in bulk, or (b) build or populate a competing index or database.

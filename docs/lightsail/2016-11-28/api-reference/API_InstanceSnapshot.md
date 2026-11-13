@@ -73,7 +73,7 @@ Required: No
  ** resourceType **   <a name="Lightsail-Type-InstanceSnapshot-resourceType"></a>
 The type of resource (usually `InstanceSnapshot`).
 Type: String
-Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket`
+Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket | Subdomain`
 Required: No
 
  ** sizeInGb **   <a name="Lightsail-Type-InstanceSnapshot-sizeInGb"></a>

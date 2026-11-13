@@ -110,6 +110,8 @@ Commonly used limits are `MemoryHigh` to specify a throttling limit on memory us
 **Example Using `systemd` to set memory usage limits on services**
 In this example we will set a hard memory usage limit for `memcached`, a simple key-value cache, and show how the OOM Killer is invoked for that service rather than the whole system.
 
+**To install and start `memcached`**
+
 1. First, we need to install the packages required for this example.
 
    ```
@@ -166,6 +168,8 @@ In this example we will set a hard memory usage limit for `memcached`, a simple 
         CGroup: /system.slice/memcached.service
                 └─68690 /usr/bin/memcached -p 11211 -u memcached -m 64 -c 1024 -l 127.0.0.1,::1
    ```
+
+**To set a memory limit on `memcached.service`**
 
 1. Use the `MemoryMax` property to set a hard limit for the `memcached.service` where, if hit, the OOM Killer will be invoked. Additional options can be set for the service by adding them to an override file. This can be done either by directly editing the `/etc/systemd/system/memcached.service.d/override.conf` file, or interactively using the `edit` command of `systemctl`.
 

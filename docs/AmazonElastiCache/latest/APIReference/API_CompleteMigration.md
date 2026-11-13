@@ -13,7 +13,7 @@ Completes the migration of data.
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** Force **
-Forces the migration to stop without ensuring that data is in sync. It is recommended to use this option only to abort the migration and not recommended when application wants to continue migration to ElastiCache.
+Specifies whether to skip the pre-cutover health check and the cluster-wide convergence check for a serverless cache migration. Each shard still runs the full cutover process and tries to cut over with consistent data. Use this option to abandon a migration or to end a migration that has reported an error. To abandon a migration, first move your application traffic back to your source, and then use this option. Do not use it to finish a healthy migration that is still syncing. The serverless cache can be left with incomplete or inconsistent data if it was not in sync with the source. There is no automated rollback. If you use this option before the data sync starts, the serverless cache has no data. This option is required when the migration is `ready-to-sync` or when an automatic cutover is pending. For a replication group migration, this option stops the migration without ensuring that data is in sync.
 Type: Boolean
 Required: No
 
@@ -66,7 +66,7 @@ The requested replication group is not in the `available` state.
 HTTP Status Code: 400
 
  ** InvalidServerlessCacheStateFault **
-The account for these credentials is not currently active.
+The serverless cache or the migration is not in a state that allows the operation.
 HTTP Status Code: 400
 
  ** MigrationHealthFault **

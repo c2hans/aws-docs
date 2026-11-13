@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::DevOpsAgent::Association",
   "Properties" : {
       "[AgentSpaceId](#cfn-devopsagent-association-agentspaceid)" : {{String}},
+      "[Capabilities](#cfn-devopsagent-association-capabilities)" : {{Capabilities}},
       "[Configuration](#cfn-devopsagent-association-configuration)" : {{ServiceConfiguration}},
       "[LinkedAssociationIds](#cfn-devopsagent-association-linkedassociationids)" : {{[ String, ... ]}},
       "[ServiceId](#cfn-devopsagent-association-serviceid)" : {{String}}
@@ -36,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::DevOpsAgent::Association
 Properties:
   [AgentSpaceId](#cfn-devopsagent-association-agentspaceid): {{String}}
+  [Capabilities](#cfn-devopsagent-association-capabilities): {{
+    Capabilities}}
   [Configuration](#cfn-devopsagent-association-configuration): {{
     ServiceConfiguration}}
   [LinkedAssociationIds](#cfn-devopsagent-association-linkedassociationids): {{
@@ -53,6 +56,12 @@ The unique identifier of the Agent Space.
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: Updates are not supported.
+
+`Capabilities`  <a name="cfn-devopsagent-association-capabilities"></a>
+Property description not available.
+*Required*: No
+*Type*: [Capabilities](aws-properties-devopsagent-association-capabilities.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Configuration`  <a name="cfn-devopsagent-association-configuration"></a>
 The configuration that directs how the Agent Space interacts with the given service. You can specify only one configuration type per association.

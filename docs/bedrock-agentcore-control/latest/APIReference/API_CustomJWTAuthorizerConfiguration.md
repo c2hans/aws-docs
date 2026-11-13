@@ -51,6 +51,12 @@ The configuration that restricts which workloads in the request's identity chain
 Type: [AllowedWorkloadConfiguration](API_AllowedWorkloadConfiguration.md) object
 Required: No
 
+ ** certificateConfigurations **   <a name="bedrockagentcorecontrol-Type-CustomJWTAuthorizerConfiguration-certificateConfigurations"></a>
+The private certificate authority (CA) configurations for the identity provider. Use this to have AgentCore Identity trust a private CA when establishing TLS connections to identity provider endpoints. You can specify only one certificate authority configuration in this list. Provide the certificate by reference to an Amazon S3 object or an AWS Secrets Manager secret. You can use this only together with `privateEndpoint`.
+Type: Array of [CertificateConfiguration](API_CertificateConfiguration.md) objects
+Array Members: Fixed number of 1 item.
+Required: No
+
  ** customClaims **   <a name="bedrockagentcorecontrol-Type-CustomJWTAuthorizerConfiguration-customClaims"></a>
 An array of objects that define a custom claim validation name, value, and operation
 Type: Array of [CustomClaimValidationType](API_CustomClaimValidationType.md) objects

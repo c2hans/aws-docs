@@ -50,6 +50,7 @@ Content-type: application/json
    },
    "AdditionalLaunchArgs": [ "string" ],
    "ApplicationArn": "string",
+   "ApplicationStartedAt": number,
    "Arn": "string",
    "ConnectionTimeoutSeconds": number,
    "CreatedAt": number,
@@ -79,6 +80,8 @@ Content-type: application/json
    "Status": "string",
    "StatusReason": "string",
    "StreamGroupId": "string",
+   "StreamingEndedAt": number,
+   "StreamingStartedAt": number,
    "UserId": "string",
    "WebSdkProtocolUrl": "string"
 }
@@ -113,6 +116,10 @@ This value is an [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/la
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `arn:aws:gameliftstreams:([^: ]*):([0-9]{12}):([^: ]*)`
+
+ ** [ApplicationStartedAt](#API_GetStreamSession_ResponseSyntax) **   <a name="gameliftstreams-GetStreamSession-response-ApplicationStartedAt"></a>
+A timestamp that indicates when the application launched for this stream session. Timestamps are expressed using in ISO8601 format, such as: `2022-12-27T22:29:40+00:00` (UTC).
+Type: Timestamp
 
  ** [Arn](#API_GetStreamSession_ResponseSyntax) **   <a name="gameliftstreams-GetStreamSession-response-Arn"></a>
 The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) that's assigned to a stream session resource. When combined with the stream group resource ID, this value uniquely identifies the stream session across all AWS Regions. Format is `arn:aws:gameliftstreams:[AWS Region]:[AWS account]:streamsession/[stream group resource ID]/[stream session resource ID]`.
@@ -220,6 +227,14 @@ The unique identifier for the Amazon GameLift Streams stream group that is hosti
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
 Pattern: `[a-zA-Z0-9-]+`
+
+ ** [StreamingEndedAt](#API_GetStreamSession_ResponseSyntax) **   <a name="gameliftstreams-GetStreamSession-response-StreamingEndedAt"></a>
+A timestamp that indicates when streaming ended for this stream session. Timestamps are expressed using in ISO8601 format, such as: `2022-12-27T22:29:40+00:00` (UTC).
+Type: Timestamp
+
+ ** [StreamingStartedAt](#API_GetStreamSession_ResponseSyntax) **   <a name="gameliftstreams-GetStreamSession-response-StreamingStartedAt"></a>
+A timestamp that indicates when streaming started for this stream session, which is when a client connected to the stream session. Timestamps are expressed using in ISO8601 format, such as: `2022-12-27T22:29:40+00:00` (UTC).
+Type: Timestamp
 
  ** [UserId](#API_GetStreamSession_ResponseSyntax) **   <a name="gameliftstreams-GetStreamSession-response-UserId"></a>
  An opaque, unique identifier for an end-user, defined by the developer.

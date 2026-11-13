@@ -16,6 +16,12 @@ Type: String
 Valid Values: `SKIP_RESTORE_FROM_SNAPSHOT | RESTORE_FROM_LATEST_SNAPSHOT | RESTORE_FROM_CUSTOM_SNAPSHOT`
 Required: Yes
 
+ ** SnapshotArn **   <a name="APIReference-Type-ApplicationRestoreConfiguration-SnapshotArn"></a>
+The identifier of an existing enhanced snapshot of application state to use to restart an application. The application uses this value if `RESTORE_FROM_CUSTOM_SNAPSHOT` is specified for the `ApplicationRestoreType` and `SnapshotMode` is `ENHANCED_SNAPSHOTS`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Required: No
+
  ** SnapshotName **   <a name="APIReference-Type-ApplicationRestoreConfiguration-SnapshotName"></a>
 The identifier of an existing snapshot of application state to use to restart an application. The application uses this value if `RESTORE_FROM_CUSTOM_SNAPSHOT` is specified for the `ApplicationRestoreType`.
 Type: String

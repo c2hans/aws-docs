@@ -13,13 +13,14 @@ A structure containing details of a representation to update or create a Lake Fo
  ** Dialect **   <a name="Glue-Type-ViewRepresentationInput-Dialect"></a>
 A parameter that specifies the engine type of a specific representation.
 Type: String
-Valid Values: `REDSHIFT | ATHENA | SPARK`
+Valid Values: `REDSHIFT | ATHENA | SPARK | DUCKDB`
 Required: No
 
  ** DialectVersion **   <a name="Glue-Type-ViewRepresentationInput-DialectVersion"></a>
 A parameter that specifies the version of the engine of a specific representation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z0-9_.-]+`
 Required: No
 
  ** ValidationConnection **   <a name="Glue-Type-ViewRepresentationInput-ValidationConnection"></a>

@@ -18,6 +18,11 @@ The configuration settings for a router input using the RIST (Reliable Internet 
 Type: [RistRouterInputConfiguration](API_RistRouterInputConfiguration.md) object
 Required: No
 
+ ** rtmpPush **   <a name="mediaconnect-Type-FailoverRouterInputProtocolConfiguration-rtmpPush"></a>
+The configuration settings for a failover router input that uses the RTMP protocol.
+Type: [RtmpPushRouterInputConfiguration](API_RtmpPushRouterInputConfiguration.md) object
+Required: No
+
  ** rtp **   <a name="mediaconnect-Type-FailoverRouterInputProtocolConfiguration-rtp"></a>
 The configuration settings for a Router Input using the RTP (Real-Time Transport Protocol) protocol, including the port and forward error correction state.
 Type: [RtpRouterInputConfiguration](API_RtpRouterInputConfiguration.md) object

@@ -10,6 +10,8 @@ Deletes the related item resource under a case.
 **Note**
 This API cannot be used on a FILE type related attachment. To delete this type of file, use the [DeleteAttachedFile](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteAttachedFile.html) API
 
+If the case is the secondary case of a merge that is running, the request fails with a `ConflictException`. For more information, see [StartMergeCases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_StartMergeCases.html).
+
 ## Request Syntax
 <a name="API_connect-cases_DeleteRelatedItem_RequestSyntax"></a>
 
@@ -63,6 +65,10 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
+
+ ** ConflictException **
+The requested operation would cause a conflict with the current state of a service resource associated with the request. Resolve the conflict before retrying this request. See the accompanying error message for details.
+HTTP Status Code: 409
 
  ** InternalServerException **
 We couldn't process your request because of an issue with the server. Try again later.

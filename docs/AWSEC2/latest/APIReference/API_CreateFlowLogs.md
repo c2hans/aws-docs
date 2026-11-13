@@ -70,7 +70,7 @@ Valid Values: `cloud-watch-logs | s3 | kinesis-data-firehose`
 Required: No
 
  **LogFormat**
-The fields to include in the flow log record. List the fields in the order in which they should appear. If you omit this parameter, the flow log is created using the default format. If you specify this parameter, you must include at least one field. For more information about the available fields, see [Flow log records](https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html) in the *Amazon VPC User Guide* or [Transit Gateway Flow Log records](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-flow-logs.html#flow-log-records) in the * AWS Transit Gateway Guide*.
+The fields to include in the flow log record. List the fields in the order in which they should appear. If you omit this parameter, the flow log is created using the default format. If you specify this parameter, you must include at least one field. For more information about the available fields, see [Flow log records](https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html) in the *Amazon VPC User Guide*, [Transit Gateway Flow Log records](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-flow-logs.html#flow-log-records) in the * AWS Transit Gateway Guide*, or [Cloud WAN Flow Log records](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flow-logs.html) in the * AWS Cloud WAN User Guide*.
 Specify the fields using the `${field-id}` format, separated by spaces.
 Type: String
 Required: No
@@ -82,7 +82,7 @@ Type: String
 Required: No
 
  **MaxAggregationInterval**
-The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. The possible values are 60 seconds (1 minute) or 600 seconds (10 minutes). This parameter must be 60 seconds for transit gateway resource types.
+The maximum interval of time during which a flow of packets is captured and aggregated into a flow log record. The possible values are 60 seconds (1 minute) or 600 seconds (10 minutes). This parameter must be 60 seconds for transit gateway and Cloud WAN resource types.
 When a network interface is attached to a [Nitro-based instance](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html), the aggregation interval is always 60 seconds or less, regardless of the value that you specify.
 Default: 600
 Type: Integer
@@ -112,7 +112,7 @@ Type: Array of [TagSpecification](API_TagSpecification.md) objects
 Required: No
 
  **TrafficType**
-The type of traffic to monitor (accepted traffic, rejected traffic, or all traffic). This parameter is not supported for transit gateway resource types. It is required for the other resource types.
+The type of traffic to monitor (accepted traffic, rejected traffic, or all traffic). This parameter is not supported for transit gateway or Cloud WAN resource types. It is required for the other resource types.
 Type: String
 Valid Values: `ACCEPT | REJECT | ALL`
 Required: No

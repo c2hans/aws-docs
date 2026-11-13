@@ -30,6 +30,7 @@ Creates a Managed Service for Apache Flink application. For information about cr
          "KeyType": "{{string}}"
       },
       "ApplicationSnapshotConfiguration": {
+         "SnapshotMode": "{{string}}",
          "SnapshotsEnabled": {{boolean}}
       },
       "ApplicationSystemRollbackConfiguration": {
@@ -249,7 +250,7 @@ Required: No
  ** [RuntimeEnvironment](#API_CreateApplication_RequestSyntax) **   <a name="APIReference-CreateApplication-request-RuntimeEnvironment"></a>
 The runtime environment for the application.
 Type: String
-Valid Values: `SQL-1_0 | FLINK-1_6 | FLINK-1_8 | ZEPPELIN-FLINK-1_0 | FLINK-1_11 | FLINK-1_13 | ZEPPELIN-FLINK-2_0 | FLINK-1_15 | ZEPPELIN-FLINK-3_0 | FLINK-1_18 | FLINK-1_19 | FLINK-1_20`
+Valid Values: `SQL-1_0 | FLINK-1_6 | FLINK-1_8 | ZEPPELIN-FLINK-1_0 | FLINK-1_11 | FLINK-1_13 | ZEPPELIN-FLINK-2_0 | FLINK-1_15 | ZEPPELIN-FLINK-3_0 | FLINK-1_18 | FLINK-1_19 | FLINK-1_20 | FLINK-2_2 | FLINK-2_3`
 Required: Yes
 
  ** [ServiceExecutionRole](#API_CreateApplication_RequestSyntax) **   <a name="APIReference-CreateApplication-request-ServiceExecutionRole"></a>
@@ -291,6 +292,7 @@ Required: No
             "KeyType": "string"
          },
          "ApplicationSnapshotConfigurationDescription": {
+            "SnapshotMode": "string",
             "SnapshotsEnabled": boolean
          },
          "ApplicationSystemRollbackConfigurationDescription": {
@@ -330,6 +332,7 @@ Required: No
          "RunConfigurationDescription": {
             "ApplicationRestoreConfigurationDescription": {
                "ApplicationRestoreType": "string",
+               "SnapshotArn": "string",
                "SnapshotName": "string"
             },
             "FlinkRunConfigurationDescription": {
@@ -529,7 +532,7 @@ The user-provided application code (query) is not valid. This can be a simple sy
 HTTP Status Code: 400
 
  ** ConcurrentModificationException **
-Exception thrown as a result of concurrent modifications to an application. This error can be the result of attempting to modify an application without using the current application ID.
+Exception thrown as a result of concurrent modifications to an application or snapshot. This error can be the result of attempting to modify an application without using the current application ID.
 HTTP Status Code: 400
 
  ** InvalidArgumentException **
@@ -545,7 +548,7 @@ The number of allowed resources has been exceeded.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
-The application is not available for this operation.
+The application or snapshot is not available for this operation.
 HTTP Status Code: 400
 
  ** TooManyTagsException **

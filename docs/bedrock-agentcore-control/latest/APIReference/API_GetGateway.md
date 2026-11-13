@@ -46,6 +46,10 @@ Content-type: application/json
       }
    },
    "description": "string",
+   "domainOverride": {
+      "alternateDomains": [ "string" ],
+      "default": "string"
+   },
    "exceptionLevel": "string",
    "gatewayArn": "string",
    "gatewayId": "string",
@@ -115,6 +119,10 @@ Type: [CustomTransformConfiguration](API_CustomTransformConfiguration.md) object
 The description of the gateway.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
+
+ ** [domainOverride](#API_GetGateway_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetGateway-response-domainOverride"></a>
+The public domain names that the gateway advertises in its OAuth discovery URLs instead of the inbound Host header.
+Type: [DomainOverride](API_DomainOverride.md) object
 
  ** [exceptionLevel](#API_GetGateway_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetGateway-response-exceptionLevel"></a>
 The level of detail in error messages returned when invoking the gateway.

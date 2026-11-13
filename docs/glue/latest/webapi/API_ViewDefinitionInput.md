@@ -54,7 +54,7 @@ Required: No
  ** SubObjects **   <a name="Glue-Type-ViewDefinitionInput-SubObjects"></a>
 A list of base table ARNs that make up the view.
 Type: Array of strings
-Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 250 items.
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Required: No
 

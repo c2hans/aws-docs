@@ -104,7 +104,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/multiplexe
     "transportStreamId": integer,
     "transportStreamReservedBitrate": integer
   },
-  "name": "string"
+  "name": "string",
+  "packetIdentifiersMapping": {
+  }
 }
 ```
 
@@ -353,6 +355,38 @@ Multiplex output destination settings
 | --- |--- |--- |--- |
 | mediaConnectSettings | [MultiplexMediaConnectOutputDestinationSettings](#multiplexes-multiplexid-model-multiplexmediaconnectoutputdestinationsettings) | False | Multiplex MediaConnect output destination settings. |
 
+### MultiplexPacketIdentifiersMapping
+<a name="multiplexes-multiplexid-model-multiplexpacketidentifiersmapping"></a>
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| `*` | object | False |  |
+
+### MultiplexProgramPacketIdentifiersMap
+<a name="multiplexes-multiplexid-model-multiplexprogrampacketidentifiersmap"></a>
+
+Packet identifiers map for a given Multiplex program.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| aribCaptionsPid | integer | False |  |
+| audioPids | Array of type integer | False |  |
+| dvbSubPids | Array of type integer | False |  |
+| dvbTeletextPid | integer | False |  |
+| dvbTeletextPids | Array of type integer | False |  |
+| ecmPid | integer | False |  |
+| etvPlatformPid | integer | False |  |
+| etvSignalPid | integer | False |  |
+| klvDataPids | Array of type integer | False |  |
+| pcrPid | integer | False |  |
+| pmtPid | integer | False |  |
+| privateMetadataPid | integer | False |  |
+| scte27Pids | Array of type integer | False |  |
+| scte35Pid | integer | False |  |
+| smpte2038Pid | integer | False |  |
+| timedMetadataPid | integer | False |  |
+| videoPid | integer | False |  |
+
 ### MultiplexSettings
 <a name="multiplexes-multiplexid-model-multiplexsettings"></a>
 
@@ -407,6 +441,7 @@ The current state of the multiplex.
 | --- |--- |--- |--- |
 | multiplexSettings | [MultiplexSettings](#multiplexes-multiplexid-model-multiplexsettings) | False | The new settings for a multiplex. |
 | name | string | False | Name of the multiplex. |
+| packetIdentifiersMapping | [MultiplexPacketIdentifiersMapping](#multiplexes-multiplexid-model-multiplexpacketidentifiersmapping) | False |  |
 
 ### UpdateMultiplexResultModel
 <a name="multiplexes-multiplexid-model-updatemultiplexresultmodel"></a>

@@ -17,7 +17,7 @@ With Amazon EFS, you can use the Network File System version 4 (NFSv4.1 and NFSv
 
 The `amazon-efs-utils` package is available in the AL2027 repositories.
 
-**Install the `amazon-efs-utils` package on AL2027**
+**To install the `amazon-efs-utils` package on AL2027**
 + Install `amazon-efs-utils` using the following command.
 
   ```
@@ -29,7 +29,7 @@ The `amazon-efs-utils` package is available in the AL2027 repositories.
 
 After you install `amazon-efs-utils`, you can mount an Amazon EFS file system on your AL2027 instance.
 
-**Mount an Amazon EFS file system on AL2027**
+**To mount an Amazon EFS file system on AL2027**
 + To mount using the file system ID, use the following command.
 
   ```

@@ -71,7 +71,7 @@ Pattern: `\w[\w\-]*\w`
  ** [resourceType](#API_GetAutoSnapshots_ResponseSyntax) **   <a name="Lightsail-GetAutoSnapshots-response-resourceType"></a>
 The resource type of the automatic snapshot. The possible values are `Instance`, and `Disk`.
 Type: String
-Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket`
+Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket | Subdomain`
 
 ## Errors
 <a name="API_GetAutoSnapshots_Errors"></a>

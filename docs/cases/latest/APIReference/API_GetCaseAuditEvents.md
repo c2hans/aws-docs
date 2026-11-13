@@ -71,6 +71,11 @@ Content-type: application/json
                "oldValue": { ... }
             }
          ],
+         "mergeMetadata": {
+            "mergeEventId": "string",
+            "primaryCaseId": "string",
+            "secondaryCaseId": "string"
+         },
          "performedBy": {
             "iamPrincipalArn": "string",
             "user": { ... }

@@ -234,6 +234,12 @@ The operation timed out.
 A message describing the problem.
 HTTP Status Code: 400
 
+ ** ResourceNumberLimitExceededException **
+A resource numerical limit was exceeded.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 400
+
 ## See Also
 <a name="API_StartDataQualityRulesetEvaluationRun_SeeAlso"></a>
 

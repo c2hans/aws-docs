@@ -75,7 +75,7 @@ Valid Range: Minimum value of 1. Maximum value of 999999999.
 <a name="API_DeleteApplicationInputProcessingConfiguration_Errors"></a>
 
  ** ConcurrentModificationException **
-Exception thrown as a result of concurrent modifications to an application. This error can be the result of attempting to modify an application without using the current application ID.
+Exception thrown as a result of concurrent modifications to an application or snapshot. This error can be the result of attempting to modify an application without using the current application ID.
 HTTP Status Code: 400
 
  ** InvalidArgumentException **
@@ -87,11 +87,11 @@ The request JSON is not valid for the operation.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
-The application is not available for this operation.
+The application or snapshot is not available for this operation.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
-Specified application can't be found.
+The specified application, snapshot, or snapshot operation can't be found.
 HTTP Status Code: 400
 
 ## See Also

@@ -12,7 +12,7 @@ While it is recommended to use [Resource control with systemd](resource-limiting
 
 The following example covers running the `stress-ng` stress test (from the `stress-ng` package) while limiting its CPU and memory usage using utilities from the `libcgroup-tools` package, and the tunables in `sysfs`.
 
-**Use `libcgroup-tools` on the command line to limit resource usage**
+**To use `libcgroup-tools` on the command line to limit resource usage**
 
 1. Install the `libcgroup-tools` package.
 

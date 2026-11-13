@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-inferencesettings-properties"></a>
 
 `AudioFeedInputs`  <a name="cfn-medialive-channel-inferencesettings-audiofeedinputs"></a>
-Property description not available.
+A list of audio feed inputs. Each audio feed input maps an audio selector in the channel to a feed input on the associated Elemental Inference feed. If the input attachment has no audio selectors, you can omit this property. MediaLive then sends the default audio from the input to the feed.
 *Required*: No
 *Type*: Array of [AudioFeedInput](aws-properties-medialive-channel-audiofeedinput.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

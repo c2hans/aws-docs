@@ -45,6 +45,7 @@ Content-type: application/json
    "destinationId": "string",
    "destinationProperties": {
       "destinationArn": "string",
+      "expectedBucketOwner": "string",
       "kmsKeyArn": "string"
    },
    "destinationType": "string",

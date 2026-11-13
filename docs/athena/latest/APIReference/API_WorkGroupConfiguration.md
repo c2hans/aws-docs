@@ -45,7 +45,7 @@ Type: [EngineConfiguration](API_EngineConfiguration.md) object
 Required: No
 
  ** EngineVersion **   <a name="athena-Type-WorkGroupConfiguration-EngineVersion"></a>
-The engine version that all queries running on the workgroup use. Queries on the `AmazonAthenaPreviewFunctionality` workgroup run on the preview engine regardless of this setting.
+The engine version that all queries running on the workgroup use.
 Type: [EngineVersion](API_EngineVersion.md) object
 Required: No
 
@@ -89,6 +89,12 @@ Required: No
  ** ResultConfiguration **   <a name="athena-Type-WorkGroupConfiguration-ResultConfiguration"></a>
 The configuration for the workgroup, which includes the location in Amazon S3 where query and calculation results are stored and the encryption option, if any, used for query and calculation results. To run the query, you must specify the query results location using one of the ways: either in the workgroup using this setting, or for individual queries (client-side), using [ResultConfiguration:OutputLocation](API_ResultConfiguration.md#athena-Type-ResultConfiguration-OutputLocation). If none of them is set, Athena issues an error that no output location is provided.
 Type: [ResultConfiguration](API_ResultConfiguration.md) object
+Required: No
+
+ ** SystemTableStatuses **   <a name="athena-Type-WorkGroupConfiguration-SystemTableStatuses"></a>
+The read-only enablement status of each system table for the account. This field is returned by [GetWorkGroup](API_GetWorkGroup.md) and is ignored on write.
+Type: Array of [SystemTableStatus](API_SystemTableStatus.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
 
 ## See Also

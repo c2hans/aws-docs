@@ -31,7 +31,7 @@ Required: No
  ** KmsKeyArn **   <a name="Glue-Type-AuthenticationConfigurationInput-KmsKeyArn"></a>
 The ARN of the KMS key used to encrypt the connection. Only taken an as input in the request and stored in the Secret Manager.
 Type: String
-Pattern: `^$|arn:aws[a-z0-9-]*:kms:.*`
+Pattern: `^($|arn:aws[a-z0-9-]*:kms:.*)$`
 Required: No
 
  ** OAuth2Properties **   <a name="Glue-Type-AuthenticationConfigurationInput-OAuth2Properties"></a>
@@ -42,7 +42,6 @@ Required: No
  ** SecretArn **   <a name="Glue-Type-AuthenticationConfigurationInput-SecretArn"></a>
 The secret manager ARN to store credentials in the CreateConnection request.
 Type: String
-Pattern: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:secretsmanager:.*$`
 Required: No
 
 ## See Also

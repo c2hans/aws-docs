@@ -73,7 +73,7 @@ Turns on or off data lake access for Apache Spark applications that access Amazo
 A role that will be assumed by AWS Glue for transferring data into/out of the staging bucket during a query.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
+*Pattern*: `^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsKey`  <a name="cfn-glue-catalog-datalakeaccessproperties-kmskey"></a>

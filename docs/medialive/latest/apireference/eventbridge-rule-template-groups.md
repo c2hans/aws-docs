@@ -77,7 +77,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/eventbridg
 ```
 {
   "description": "string",
-  "name": "string"
+  "name": "string",
+  "requestId": "string",
+  "tags": {
+  }
 }
 ```
 
@@ -200,6 +203,8 @@ Updating or deleting a resource can cause an inconsistent state.
 | --- |--- |--- |--- |
 | description | string<br />MinLength: 0<br />MaxLength: 1024 | False | A resource's optional description. |
 | name | string<br />Pattern: `^[^\s]+$`<br />MinLength: 1<br />MaxLength: 255 | True | A resource's name. Names must be unique within the scope of a resource type in a specific region. |
+| requestId | string<br />MinLength: 1<br />MaxLength: 256 | False | An ID that you assign to a create request. This ID ensures idempotency when creating resources. |
+| tags | [Tags](#eventbridge-rule-template-groups-model-tags) | False |  |
 
 ### CreateEventBridgeRuleTemplateGroupResponseContent
 <a name="eventbridge-rule-template-groups-model-createeventbridgeruletemplategroupresponsecontent"></a>
@@ -260,6 +265,13 @@ Request references a resource which does not exist.
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | message | string | False | Exception error message. |
+
+### Tags
+<a name="eventbridge-rule-template-groups-model-tags"></a>
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| `*` | string | False |  |
 
 ### TooManyRequestsExceptionResponseContent
 <a name="eventbridge-rule-template-groups-model-toomanyrequestsexceptionresponsecontent"></a>

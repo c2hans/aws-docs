@@ -37,34 +37,34 @@ AL2027 is currently available for preview. It is intended for evaluation and tes
 
  Amazon Linux packages a TS compiler in the same way as other globally installed node modules, such as *npm*, for each Node.js version. Amazon Linux namespaces packages and binaries, and includes the major version of Node.js in their names. The *alternatives* tool manages the default executable name of the compiler, *tsc*, at runtime. It points *tsc* to the Node.js version that the compiler was installed for and runs under. This selection doesn't depend on the current Node.js runtime version. You can also use the namespaced name of a compiler, for example *tsc-{MAJOR\_VERSION}*, regardless of what the default *tsc* name points to.
 
-**Some useful commands for managing the active version of a TS compiler**
+Use the following `alternatives` commands to manage the active TypeScript compiler (`tsc`) version.
 
-1. Check what *alternatives* is configured for
+List what `alternatives` manages
 
-   ```
-   alternatives --list
-   ```
+```
+alternatives --list
+```
 
-1. Check *tsc*'s current configuration
+Display the current `tsc` configuration
 
-   ```
-   alternatives --display tsc
-   ```
+```
+alternatives --display tsc
+```
 
-1. Interactively change the *tsc* version
+Change the `tsc` version interactively
 
-   ```
-   alternatives --config tsc
-   ```
+```
+alternatives --config tsc
+```
 
-1. Switch to manual mode and select a specific version
+Select a specific version (manual mode)
 
-   ```
-   alternatives --set tsc /usr/bin/tsc-{MAJOR_VERSION}
-   ```
+```
+alternatives --set tsc /usr/bin/tsc-{MAJOR_VERSION}
+```
 
-1. Switch back to auto version selection mode
+Return to automatic version selection
 
-   ```
-   alternatives --auto tsc
-   ```
+```
+alternatives --auto tsc
+```

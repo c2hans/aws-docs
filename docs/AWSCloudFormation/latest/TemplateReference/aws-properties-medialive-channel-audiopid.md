@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-audiopid-properties"></a>
 
 `DolbyEDecode`  <a name="cfn-medialive-channel-audiopid-dolbyedecode"></a>
-Property description not available.
+Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. When using the 'pids' array, if this field is not specified and Dolby E content is present, the decoder will extract the specified program. To maintain legacy behavior (allPrograms), explicitly set programSelection to "allChannels".
 *Required*: No
 *Type*: [AudioDolbyEDecode](aws-properties-medialive-channel-audiodolbyedecode.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

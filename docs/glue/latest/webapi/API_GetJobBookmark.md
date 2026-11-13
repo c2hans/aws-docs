@@ -18,7 +18,8 @@ For more information about enabling and using job bookmarks, see:
 ```
 {
    "JobName": "{{string}}",
-   "RunId": "{{string}}"
+   "RunId": "{{string}}",
+   "Version": {{number}}
 }
 ```
 
@@ -37,6 +38,11 @@ Required: Yes
  ** [RunId](#API_GetJobBookmark_RequestSyntax) **   <a name="Glue-GetJobBookmark-request-RunId"></a>
 The unique run identifier associated with this job run.
 Type: String
+Required: No
+
+ ** [Version](#API_GetJobBookmark_RequestSyntax) **   <a name="Glue-GetJobBookmark-request-Version"></a>
+The version of the job.
+Type: Integer
 Required: No
 
 ## Response Syntax

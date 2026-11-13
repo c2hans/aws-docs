@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation since t
 
 | Date | Change | Description |
 | --- | --- | --- |
+| November 11, 2026 | Slack code channels | Added [Using Slack code channels](connecting-to-ticketing-and-chat-using-slack-code-channels.html), about opening a Slack code channel for an investigation. Added a section to [Connecting Slack](connecting-to-ticketing-and-chat-connecting-slack.html#updating-slack-permissions-for-an-existing-workspace) about updating the Slack permissions of an existing workspace. |
 | November 3, 2026 | [Repository content and external references](release-management-release-readiness-code-review.html#repository-content-and-external-references) | Added information about how release readiness code reviews handle content in connected repositories and external references, and how to restrict outbound network access during automatic verification testing. |
 | November 2, 2026 | [Content safety guardrail](aws-devops-agent-security.html#content-safety-guardrail) | Added a section about turning the content safety guardrail on or off for an Agent Space. |
 | October 27, 2026 | Datadog authentication and updates | The Datadog page now explains how to choose OAuth, an API key and application key, or an access token. It also shows how to update the credentials of a Datadog registration. For more information about these sections, see [Connecting Datadog](connecting-telemetry-sources-connecting-datadog.html). |

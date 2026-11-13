@@ -10,6 +10,13 @@ Describes a data quality result returned by `ListDataQualityResultsV2`.
 ## Contents
 <a name="API_DataQualityResultsV2Description_Contents"></a>
 
+ ** DataQualityEvaluationConfig **   <a name="Glue-Type-DataQualityResultsV2Description-DataQualityEvaluationConfig"></a>
+The name of the data quality evaluation configuration that started the evaluation run, returned when `EvaluationRunMode` is `EVALUATION_CONFIG`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** DataSource **   <a name="Glue-Type-DataQualityResultsV2Description-DataSource"></a>
 The table associated with the data quality result, if any.
 Type: [DataSource](API_DataSource.md) object
@@ -40,6 +47,12 @@ The evaluation context for the data quality result. This value identifies a spec
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
+ ** EvaluationRunMode **   <a name="Glue-Type-DataQualityResultsV2Description-EvaluationRunMode"></a>
+How the evaluation run that produced the result started: `ON_DEMAND` for a run started by `StartDataQualityRulesetEvaluationRun`, or `EVALUATION_CONFIG` for a run started by a data quality evaluation configuration. Not returned for results that no evaluation run produced, such as results from any ETL job.
+Type: String
+Valid Values: `ON_DEMAND | EVALUATION_CONFIG`
 Required: No
 
  ** ResultId **   <a name="Glue-Type-DataQualityResultsV2Description-ResultId"></a>

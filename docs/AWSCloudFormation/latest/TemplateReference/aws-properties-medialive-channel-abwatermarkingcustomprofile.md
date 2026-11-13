@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::MediaLive::Channel AbWatermarkingCustomProfile
 <a name="aws-properties-medialive-channel-abwatermarkingcustomprofile"></a>
 
-<a name="aws-properties-medialive-channel-abwatermarkingcustomprofile-description"></a>The `AbWatermarkingCustomProfile` property type specifies Property description not available. for an [AWS::MediaLive::Channel](aws-resource-medialive-channel.md).
+The vendor-specified custom profile options
 
 ## Syntax
 <a name="aws-properties-medialive-channel-abwatermarkingcustomprofile-syntax"></a>
@@ -38,19 +38,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-abwatermarkingcustomprofile-properties"></a>
 
 `EmbeddingFrequency`  <a name="cfn-medialive-channel-abwatermarkingcustomprofile-embeddingfrequency"></a>
-Property description not available.
+The frequency with which watermarks will be embedded, in milliseconds.
 *Required*: No
 *Type*: Number
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SceneCut`  <a name="cfn-medialive-channel-abwatermarkingcustomprofile-scenecut"></a>
-Property description not available.
+The number of frames after scene-cut to embed the watermark.
 *Required*: No
 *Type*: Number
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetPsnr`  <a name="cfn-medialive-channel-abwatermarkingcustomprofile-targetpsnr"></a>
-Property description not available.
+The target PSNR of the watermarked frame
 *Required*: No
 *Type*: Number
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

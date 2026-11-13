@@ -48,7 +48,7 @@ The encryption-at-rest mode for encrypting Data Catalog data.
 The role that AWS Glue assumes to encrypt and decrypt the Data Catalog objects on the caller's behalf.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
+*Pattern*: `^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SseAwsKmsKeyId`  <a name="cfn-glue-datacatalogencryptionsettings-encryptionatrest-sseawskmskeyid"></a>

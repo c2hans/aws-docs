@@ -68,7 +68,7 @@ The user name to connect to the downstream system. This applies only if the down
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VirtualSourceAddress`  <a name="cfn-medialive-channel-outputdestinationsettings-virtualsourceaddress"></a>
-Property description not available.
+Specifies the source IP address for outbound multicast packets.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -38,6 +38,8 @@ RBAC is designed to support the introduction of [ACL](https://valkey.io/topics/a
   <tr><td>Users per user group</td><td>100</td></tr>
   <tr><td>Number of users</td><td>1000</td></tr>
   <tr><td>Number of user groups</td><td>100</td></tr>
+  <tr><td>User ID length</td><td>40 characters by default</td></tr>
+  <tr><td>User group ID length</td><td>40 characters by default</td></tr>
 </tbody>
 </table>
 
@@ -135,6 +137,10 @@ These steps are described in detail as follows.
 <a name="Users-management"></a>
 
 The user information for RBAC users is a user ID, user name, and optionally a password and an access string. The access string provides the permission level on keys and commands. The user ID is unique to the user, and the user name is what is passed to the engine.
+
+A user ID can be up to 40 characters long by default. It must begin with a letter, can contain only ASCII letters, digits, and hyphens, and can't contain two consecutive hyphens. A user group ID follows the same rules.
+
+For an IAM-enabled user, the user name must match the user ID, so the same length limit applies to the user name. For more information, see [Authenticating with IAM in ElastiCache](auth-iam.md).
 
 Make sure that the user permissions you provide make sense with the intended purpose of the user group. For example, if you create a user group called `Administrators`, any user you add to that group should have its access string set to full access to keys and commands. For users in an `e-commerce` user group, you might set their access strings to read-only access.
 

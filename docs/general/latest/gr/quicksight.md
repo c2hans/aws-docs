@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/general/latest/gr/quicksight.html
 ---
 
-# Amazon Quick Sight
+# AWS Quick Sight
 <a name="quicksight"></a>
 
 To connect programmatically to an AWS service, you use an endpoint. AWS services offer the following endpoint types in some or all of the AWS Regions that the service supports: IPv4 endpoints, dual-stack endpoints, and FIPS endpoints. Some services provide global endpoints. For more information, see [AWS service endpoints](rande.md).
@@ -14,7 +14,7 @@ The following are the service endpoints and service quotas for this service.
 ## Service endpoints
 <a name="quicksight_region"></a>
 
-### QuickSight
+### Quick Sight
 <a name="quicksight-core"></a>
 
 | Region Name | Region | Endpoint | Protocol |
@@ -45,7 +45,7 @@ The following are the service endpoints and service quotas for this service.
 |  AWS GovCloud (US-East) | us-gov-east-1 |  quicksight.us-gov-east-1.amazonaws.com  | HTTPS |
 |  AWS GovCloud (US-West) | us-gov-west-1 |  quicksight.us-gov-west-1.amazonaws.com  | HTTPS |
 
-### QuickSight Websites
+### Quick Sight Websites
 <a name="quicksight-websites"></a>
 
 | Region Name | Region | Endpoint |

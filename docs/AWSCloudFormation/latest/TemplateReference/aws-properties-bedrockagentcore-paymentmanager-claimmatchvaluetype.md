@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 A single string value to match against the claim.
 *Required*: No
 *Type*: String
-*Pattern*: `^[A-Za-z0-9_.-]+$`
+*Pattern*: `^[A-Za-z0-9_.:/-]+$`
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -50,6 +50,6 @@ A single string value to match against the claim.
 An array of string values to match against the claim.
 *Required*: No
 *Type*: Array of String
-*Minimum*: `1`
 *Maximum*: `255`
+*Minimum*: `1 | 1`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

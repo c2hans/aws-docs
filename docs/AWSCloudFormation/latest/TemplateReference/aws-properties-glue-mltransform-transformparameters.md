@@ -47,5 +47,5 @@ The type of machine learning transform. `FIND_MATCHES` is the only option.
 For information about the types of machine learning transforms, see [Working with machine learning transforms](https://docs.aws.amazon.com/glue/latest/dg/console-machine-learning-transforms.html).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `FIND_MATCHES`
+*Allowed values*: `FIND_MATCHES | FILL_MISSING_VALUES`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

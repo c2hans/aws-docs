@@ -24,7 +24,7 @@ Required: Yes
  ** eventExpiryDuration **   <a name="bedrockagentcorecontrol-Type-Memory-eventExpiryDuration"></a>
 The number of days after which memory events will expire.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 365.
+Valid Range: Minimum value of 1. Maximum value of 3650.
 Required: Yes
 
  ** id **   <a name="bedrockagentcorecontrol-Type-Memory-id"></a>

@@ -63,6 +63,13 @@ Content-type: application/json
    "filesystemConfigurations": [
       { ... }
    ],
+   "hooksConfiguration": {
+      "build": {
+         "warmup": {
+            "action": { ... }
+         }
+      }
+   },
    "lastUpdatedAt": "string",
    "lifecycleConfiguration": {
       "idleRuntimeSessionTimeout": number,
@@ -86,6 +93,11 @@ Content-type: application/json
       "serverProtocol": "string"
    },
    "requestHeaderConfiguration": { ... },
+   "resourceConfigurations": [
+      {
+         "minimumMemoryInMiB": number
+      }
+   ],
    "roleArn": "string",
    "status": "string",
    "workloadIdentityDetails": {
@@ -166,6 +178,10 @@ The filesystem configurations mounted into the AgentCore Runtime.
 Type: Array of [FilesystemConfiguration](API_FilesystemConfiguration.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 
+ ** [hooksConfiguration](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-hooksConfiguration"></a>
+The lifecycle hooks configuration for the AgentCore Runtime.
+Type: [RuntimeHooksConfiguration](API_RuntimeHooksConfiguration.md) object
+
  ** [lastUpdatedAt](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-lastUpdatedAt"></a>
 The timestamp when the AgentCore Runtime was last updated.
 Type: Timestamp
@@ -196,6 +212,11 @@ Type: [ProtocolConfiguration](API_ProtocolConfiguration.md) object
 Configuration for HTTP request headers that will be passed through to the runtime.
 Type: [RequestHeaderConfiguration](API_RequestHeaderConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
+ ** [resourceConfigurations](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-resourceConfigurations"></a>
+The resource configurations for the AgentCore Runtime.
+Type: Array of [ResourceConfiguration](API_ResourceConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 
  ** [roleArn](#API_GetAgentRuntime_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetAgentRuntime-response-roleArn"></a>
 The IAM role ARN that provides permissions for the AgentCore Runtime.

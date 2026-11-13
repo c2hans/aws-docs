@@ -61,11 +61,11 @@ The number of allowed resources has been exceeded.
 HTTP Status Code: 400
 
  ** ResourceInUseException **
-The application is not available for this operation.
+The application or snapshot is not available for this operation.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
-Specified application can't be found.
+The specified application, snapshot, or snapshot operation can't be found.
 HTTP Status Code: 400
 
  ** UnsupportedOperationException **

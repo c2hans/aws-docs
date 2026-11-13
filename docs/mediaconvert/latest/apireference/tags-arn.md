@@ -44,7 +44,7 @@ Retrieve the tags for a MediaConvert resource.
 
 **Operation ID:** `UntagResource`
 
-Remove tags from a MediaConvert queue, preset, or job template. For information about tagging, see the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/tagging-resources.html
+Remove tags from a MediaConvert queue, preset, job, or job template. For information about tagging, see the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/tagging-mediaconvert-resources.html.
 
 **Path parameters**
 
@@ -155,7 +155,7 @@ Supports CORS preflight requests.
 ### ListTagsForResourceRequest
 <a name="tags-arn-model-listtagsforresourcerequest"></a>
 
-List the tags for your AWS Elemental MediaConvert resource by sending a request with the Amazon Resource Name (ARN) of the resource. To get the ARN, send a GET request with the resource name.
+List the tags for a MediaConvert queue, preset, job, or job template by sending a request with the Amazon Resource Name (ARN) of the resource. To get the ARN for a MediaConvert resource, send a GET request with the resource name.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
@@ -183,7 +183,7 @@ The Amazon Resource Name (ARN) and tags for an AWS Elemental MediaConvert resour
 ### UntagResourceRequest
 <a name="tags-arn-model-untagresourcerequest"></a>
 
-To remove tags from a resource, send a request with the Amazon Resource Name (ARN) of the resource and the keys of the tags that you want to remove.
+To remove tags from a MediaConvert queue, preset, job, or job template, send a request with the Amazon Resource Name (ARN) of the resource and the keys of the tags that you want to remove.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |

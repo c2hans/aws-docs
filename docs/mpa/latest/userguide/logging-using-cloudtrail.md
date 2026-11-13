@@ -3190,7 +3190,7 @@ The following example shows a CloudTrail event that demonstrates the `CreateAppl
     "portalOptions": {
       "signInOptions": {
         "origin": "APPLICATION",
-        "applicationUrl": "https://example-id.alpha-mpa-portal.us-east-1.on.aws/"
+        "applicationUrl": "https://example-id.mpa-portal.us-east-1.on.aws/"
       },
       "visibility": "ENABLED"
     },
@@ -3313,9 +3313,7 @@ The following example shows a CloudTrail event that demonstrates the `PutApplica
               "Effect": "Allow",
               "Principal": {
                 "Service": [
-                  "us-east-1.alpha.mpa.awsfluffy.aws.internal",
-                  "test.awsagora.aws.internal",
-                  "developer.awsagora.aws.internal"
+                  "mpa.amazonaws.com"
                 ]
               },
               "Action": [
@@ -3448,9 +3446,7 @@ The following example shows a CloudTrail event that demonstrates the `PutApplica
               "Effect": "Allow",
               "Principal": {
                 "Service": [
-                  "us-east-1.alpha.mpa.awsfluffy.aws.internal",
-                  "test.awsagora.aws.internal",
-                  "developer.awsagora.aws.internal"
+                  "mpa.amazonaws.com"
                 ]
               },
               "Action": [

@@ -83,6 +83,7 @@ Required: No
 
  ** EfaEnabled **   <a name="FSx-Type-CreateFileSystemLustreConfiguration-EfaEnabled"></a>
 (Optional) Specifies whether Elastic Fabric Adapter (EFA) and GPUDirect Storage (GDS) support is enabled for the Amazon FSx for Lustre file system.
+On file systems that use the Intelligent-Tiering storage class, you can enable EFA only when `ThroughputCapacity` is 4000 MBps or a multiple of 4000 MBps.
 (Default = `false`)
 Type: Boolean
 Required: No
@@ -138,7 +139,7 @@ Type: [LustreRootSquashConfiguration](API_LustreRootSquashConfiguration.md) obje
 Required: No
 
  ** ThroughputCapacity **   <a name="FSx-Type-CreateFileSystemLustreConfiguration-ThroughputCapacity"></a>
-Specifies the throughput of an FSx for Lustre file system using the Intelligent-Tiering storage class, measured in megabytes per second (MBps). Valid values are 4000 MBps or multiples of 4000 MBps. You pay for the amount of throughput that you provision.
+Specifies the throughput of an FSx for Lustre file system using the Intelligent-Tiering storage class, measured in megabytes per second (MBps). Valid values are 1000 MBps, 2000 MBps, and multiples of 4000 MBps, up to a maximum of 2000000 MBps. You pay for the amount of throughput that you provision.
 Type: Integer
 Valid Range: Minimum value of 4000. Maximum value of 2000000.
 Required: No

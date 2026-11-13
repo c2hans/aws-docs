@@ -23,7 +23,7 @@ Required: Yes
  ** Iops **   <a name="FSx-Type-CreateFileSystemLustreMetadataConfiguration-Iops"></a>
 (USER\_PROVISIONED mode only) Specifies the number of Metadata IOPS to provision for the file system. This parameter sets the maximum rate of metadata disk IOPS supported by the file system.
 + For SSD file systems, valid values are `1500`, `3000`, `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
-+ For Intelligent-Tiering file systems, valid values are `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
++ For Intelligent-Tiering file systems, valid values are `1500`, `3000`, `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
 You can't provision fewer Metadata IOPS than AUTOMATIC mode provisions for your file system.
  `Iops` doesn’t have a default value. If you're using USER\_PROVISIONED mode, you can choose to specify a valid value. If you're using AUTOMATIC mode, you cannot specify a value because FSx for Lustre automatically sets the value based on your file system's storage capacity for SSD file systems, and on throughput capacity for Intelligent-Tiering file systems.
 Type: Integer

@@ -45,13 +45,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 The dialect of the query engine.
 *Required*: No
 *Type*: String
-*Allowed values*: `REDSHIFT | ATHENA | SPARK`
+*Allowed values*: `REDSHIFT | ATHENA | SPARK | DUCKDB`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DialectVersion`  <a name="cfn-glue-table-viewrepresentation-dialectversion"></a>
 The version of the dialect of the query engine. For example, 3.0.0.
 *Required*: No
 *Type*: String
+*Pattern*: `[a-zA-Z0-9_.-]+`
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

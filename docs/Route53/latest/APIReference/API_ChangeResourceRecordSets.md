@@ -20,6 +20,10 @@ For example, suppose a change batch request contains two changes: it deletes the
 **Note**
 If you try to delete the same resource record set more than once in a single change batch, Route 53 returns an `InvalidChangeBatch` error.
 
+ **Protected Resource Record Sets**
+
+If a resource record set protection exists for a name and type, Route 53 rejects any change in the change batch that creates, updates, or deletes a resource record set with that name and type. Because change batches are transactional, Route 53 rejects the entire request and returns an `InvalidChangeBatch` error. Route 53 identifies each protected resource record set in the error message and includes the protection's comment, if any. To make the change, first delete the protection by using `DeleteResourceRecordSetProtections`. To see which resource record sets are protected, use `ListResourceRecordSetProtections`.
+
  **Traffic Flow**
 
 To create resource record sets for complex routing configurations, use either the traffic flow visual editor in the Route 53 console or the API actions for traffic policies and traffic policy instances. Save the configuration as a traffic policy, then associate the traffic policy with one or more domain names (such as example.com) or subdomain names (such as www.example.com), in the same hosted zone or in multiple hosted zones. You can roll back the updates if the new configuration isn't performing as expected. For more information, see [Using Traffic Flow to Route DNS Traffic](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/traffic-flow.html) in the *Amazon Route 53 Developer Guide*.
@@ -168,6 +172,7 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidChangeBatch **
 This exception contains a list of messages that might contain one or more error messages. Each error message indicates one error in the change batch.
+Route 53 also returns this error when the change batch creates, updates, or deletes a resource record set whose name and type have a resource record set protection. To make the change, first delete the protection by using `DeleteResourceRecordSetProtections`.
  ** messages **
 
 HTTP Status Code: 400

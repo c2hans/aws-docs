@@ -141,6 +141,7 @@ This parameter is required when `StorageType` is set to `HDD` and `DeploymentTyp
 
 `EfaEnabled`  <a name="cfn-fsx-filesystem-lustreconfiguration-efaenabled"></a>
 (Optional) Specifies whether Elastic Fabric Adapter (EFA) and GPUDirect Storage (GDS) support is enabled for the Amazon FSx for Lustre file system.
+On file systems that use the Intelligent-Tiering storage class, you can enable EFA only when `ThroughputCapacity` is 4000 MBps or a multiple of 4000 MBps.
 (Default = `false`)
 *Required*: No
 *Type*: Boolean

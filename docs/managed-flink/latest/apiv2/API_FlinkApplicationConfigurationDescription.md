@@ -16,7 +16,7 @@ Type: [CheckpointConfigurationDescription](API_CheckpointConfigurationDescriptio
 Required: No
 
  ** JobPlanDescription **   <a name="APIReference-Type-FlinkApplicationConfigurationDescription-JobPlanDescription"></a>
-The job plan for an application. For more information about the job plan, see [Jobs and Scheduling](https://nightlies.apache.org/flink/flink-docs-release-1.20/internals/job_scheduling.html) in the [Apache Flink Documentation](https://nightlies.apache.org/flink/flink-docs-release-1.20/). To retrieve the job plan for the application, use the [DescribeApplication:IncludeAdditionalDetails](API_DescribeApplication.md#APIReference-DescribeApplication-request-IncludeAdditionalDetails) parameter of the [DescribeApplication](API_DescribeApplication.md) operation.
+The job plan for an application. For more information about the job plan, see [Jobs and Scheduling](https://nightlies.apache.org/flink/flink-docs-release-2.3/internals/job_scheduling.html) in the [Apache Flink Documentation](https://nightlies.apache.org/flink/flink-docs-release-2.3/). To retrieve the job plan for the application, use the [DescribeApplication:IncludeAdditionalDetails](API_DescribeApplication.md#APIReference-DescribeApplication-request-IncludeAdditionalDetails) parameter of the [DescribeApplication](API_DescribeApplication.md) operation.
 Type: String
 Required: No
 

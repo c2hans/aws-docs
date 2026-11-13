@@ -188,9 +188,11 @@ The values for authentication flow options include the following.
 +  `ALLOW_USER_PASSWORD_AUTH`: Enable user password-based authentication. In this flow, Amazon Cognito receives the password in the request instead of using the SRP protocol to verify passwords.
 +  `ALLOW_USER_SRP_AUTH`: Enable SRP-based authentication.
 +  `ALLOW_REFRESH_TOKEN_AUTH`: Enable authflow to refresh tokens.
++  `ALLOW_TOKEN_EXCHANGE_IMPERSONATION` – Use this flow to request `GetDerivedToken` token exchanges without an `ActorToken`. The issued token represents the subject user directly.
++  `ALLOW_TOKEN_EXCHANGE_DELEGATION` – Use this flow to request `GetDerivedToken` token exchanges that include an `ActorToken`. The issued token carries an `act` claim that identifies the intermediary acting on the behalf of the subject.
 In some environments, you will see the values `ADMIN_NO_SRP_AUTH`, `CUSTOM_AUTH_FLOW_ONLY`, or `USER_PASSWORD_AUTH`. You can't assign these legacy `ExplicitAuthFlows` values to user pool clients at the same time as values that begin with `ALLOW_`, like `ALLOW_USER_SRP_AUTH`.
 Type: Array of strings
-Valid Values: `ADMIN_NO_SRP_AUTH | CUSTOM_AUTH_FLOW_ONLY | USER_PASSWORD_AUTH | ALLOW_ADMIN_USER_PASSWORD_AUTH | ALLOW_CUSTOM_AUTH | ALLOW_USER_PASSWORD_AUTH | ALLOW_USER_SRP_AUTH | ALLOW_REFRESH_TOKEN_AUTH | ALLOW_USER_AUTH`
+Valid Values: `ADMIN_NO_SRP_AUTH | CUSTOM_AUTH_FLOW_ONLY | USER_PASSWORD_AUTH | ALLOW_ADMIN_USER_PASSWORD_AUTH | ALLOW_CUSTOM_AUTH | ALLOW_USER_PASSWORD_AUTH | ALLOW_USER_SRP_AUTH | ALLOW_REFRESH_TOKEN_AUTH | ALLOW_USER_AUTH | ALLOW_TOKEN_EXCHANGE_DELEGATION | ALLOW_TOKEN_EXCHANGE_IMPERSONATION`
 Required: No
 
  ** [GenerateSecret](#API_CreateUserPoolClient_RequestSyntax) **   <a name="CognitoUserPools-CreateUserPoolClient-request-GenerateSecret"></a>

@@ -9,13 +9,15 @@ This API is currently available as a preview. This feature is available in the f
 
 Retrieves the results and status of a specific GuardDuty investigation.
 
+GuardDuty returns the results, including the summary and the scope of the investigation, only when the investigation status is `COMPLETED`. By default, GuardDuty returns the summary as text in `Summary`. To return a typed summary in `SummaryData` instead, set `SummaryFormat` to `STRUCTURED`.
+
 An administrator account can retrieve any investigation within the organization. Member accounts can only retrieve investigations that belong to them.
 
 ## Request Syntax
 <a name="API_GetInvestigation_RequestSyntax"></a>
 
 ```
-GET /detector/{{DetectorId}}/investigation/{{InvestigationId}} HTTP/1.1
+GET /detector/{{DetectorId}}/investigation/{{InvestigationId}}?summaryFormat={{SummaryFormat}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -34,6 +36,13 @@ The unique identifier of the investigation to retrieve.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[a-fA-F0-9\-]+`
 Required: Yes
+
+ ** [SummaryFormat](#API_GetInvestigation_RequestSyntax) **   <a name="guardduty-GetInvestigation-request-uri-SummaryFormat"></a>
+The format in which to return the investigation summary. Possible values:
++  `STRING` – (Default) Returns the summary as text in `Summary`.
++  `STRUCTURED` – Returns a typed summary in `SummaryData`.
+GuardDuty returns a summary only when the investigation status is `COMPLETED`.
+Valid Values: `STRING | STRUCTURED`
 
 ## Request Body
 <a name="API_GetInvestigation_RequestBody"></a>
@@ -67,9 +76,171 @@ Content-type: application/json
       },
       "risk": "string",
       "riskLevel": "string",
+      "scope": {
+         "accountId": "string",
+         "adminAccountId": "string",
+         "findingId": "string",
+         "investigationType": "string",
+         "queryTimeWindow": {
+            "endTime": number,
+            "startTime": number
+         }
+      },
       "startTime": number,
       "status": "string",
       "summary": "string",
+      "summaryData": {
+         "accountAnalysis": {
+            "affectedResources": [
+               {
+                  "findingCount": number,
+                  "identifier": "string",
+                  "type": "string"
+               }
+            ],
+            "findingsSummary": {
+               "byTimeWindow": [
+                  {
+                     "endTime": number,
+                     "findingCount": number,
+                     "startTime": number
+                  }
+               ],
+               "severityBreakdown": {
+                  "critical": number,
+                  "high": number,
+                  "info": number,
+                  "low": number,
+                  "medium": number
+               },
+               "topFindingTypes": [
+                  {
+                     "count": number,
+                     "findingType": "string"
+                  }
+               ],
+               "totalFindings": number
+            },
+            "tacticCoverage": [
+               {
+                  "findingCount": number,
+                  "findingTypes": [ "string" ],
+                  "phase": "string",
+                  "techniques": [
+                     {
+                        "findingCount": number,
+                        "findingTypes": [ "string" ],
+                        "technique": {
+                           "name": "string",
+                           "uid": "string"
+                        }
+                     }
+                  ]
+               }
+            ]
+         },
+         "countermeasures": [
+            {
+               "actions": [
+                  {
+                     "affectedResources": [
+                        {
+                           "arn": "string",
+                           "identifier": "string",
+                           "type": "string"
+                        }
+                     ],
+                     "cliCommands": [ "string" ],
+                     "defenseTechnique": "string",
+                     "description": "string",
+                     "disposition": "string",
+                     "dispositionId": number,
+                     "mitigates": [ "string" ],
+                     "priority": "string",
+                     "title": "string"
+                  }
+               ],
+               "defenseTactic": "string",
+               "description": "string"
+            }
+         ],
+         "findingType": "string",
+         "keyObservations": {
+            "narrative": "string",
+            "observations": [ "string" ],
+            "title": "string"
+         },
+         "organizationAnalysis": {
+            "accountBreakdown": [
+               {
+                  "accountId": "string",
+                  "findingCount": number
+               }
+            ],
+            "findingsSummary": {
+               "affectedAccountCount": number,
+               "byTimeWindow": [
+                  {
+                     "endTime": number,
+                     "findingCount": number,
+                     "startTime": number
+                  }
+               ],
+               "severityBreakdown": {
+                  "critical": number,
+                  "high": number,
+                  "info": number,
+                  "low": number,
+                  "medium": number
+               },
+               "topFindingTypes": [
+                  {
+                     "count": number,
+                     "findingType": "string"
+                  }
+               ],
+               "totalAccountCount": number,
+               "totalFindings": number
+            }
+         },
+         "recommendations": [
+            {
+               "category": "string",
+               "cliCommands": [ "string" ],
+               "priority": "string",
+               "rationale": "string",
+               "title": "string"
+            }
+         ],
+         "threatAssessment": {
+            "attackProgression": [
+               {
+                  "attacks": [
+                     {
+                        "findings": [
+                           {
+                              "findingType": "string",
+                              "uid": "string"
+                           }
+                        ],
+                        "tactic": {
+                           "name": "string",
+                           "uid": "string"
+                        },
+                        "technique": {
+                           "name": "string",
+                           "uid": "string"
+                        },
+                        "version": "string"
+                     }
+                  ],
+                  "description": "string",
+                  "phase": "string"
+               }
+            ],
+            "threatActorProfile": "string"
+         }
+      },
       "triggeredBy": "string",
       "triggerPrompt": "string"
    }

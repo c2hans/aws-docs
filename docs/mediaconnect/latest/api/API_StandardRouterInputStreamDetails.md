@@ -10,6 +10,11 @@ Configuration details for a standard router input stream type.
 ## Contents
 <a name="API_StandardRouterInputStreamDetails_Contents"></a>
 
+ ** rtmpPush **   <a name="mediaconnect-Type-StandardRouterInputStreamDetails-rtmpPush"></a>
+The RTMP stream details for the standard router input stream, including the application and stream names.
+Type: [RtmpPushStreamDetails](API_RtmpPushStreamDetails.md) object
+Required: No
+
  ** sourceIpAddress **   <a name="mediaconnect-Type-StandardRouterInputStreamDetails-sourceIpAddress"></a>
 The source IP address for the standard router input stream.
 Type: String

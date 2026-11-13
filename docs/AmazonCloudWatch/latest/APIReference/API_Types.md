@@ -43,6 +43,7 @@ The following data types are supported:
 +  [MetricAlarm](API_MetricAlarm.md)
 +  [MetricCharacteristics](API_MetricCharacteristics.md)
 +  [MetricDataQuery](API_MetricDataQuery.md)
++  [MetricDataQueryDefinitionSummary](API_MetricDataQueryDefinitionSummary.md)
 +  [MetricDataResult](API_MetricDataResult.md)
 +  [MetricDatum](API_MetricDatum.md)
 +  [MetricMathAnomalyDetector](API_MetricMathAnomalyDetector.md)

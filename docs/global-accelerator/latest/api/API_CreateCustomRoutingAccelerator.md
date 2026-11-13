@@ -54,7 +54,7 @@ Required: Yes
 Optionally, if you've added your own IP address pool to Global Accelerator (BYOIP), you can choose an IPv4 address from your own pool to use for the accelerator's static IPv4 address when you create an accelerator.
 After you bring an address range to AWS, it appears in your account as an address pool. When you create an accelerator, you can assign one IPv4 address from your range to it. Global Accelerator assigns you a second static IPv4 address from an Amazon IP address range. If you bring two IPv4 address ranges to AWS, you can assign one IPv4 address from each range to your accelerator. This restriction is because Global Accelerator assigns each address range to a different network zone, for high availability.
 You can specify one or two addresses, separated by a space. Do not include the /32 suffix.
-Note that you can't update IP addresses for an existing accelerator. To change them, you must create a new accelerator with the new addresses.
+If you create an accelerator with only IP addresses provided by Global Accelerator, you can't update it later to use BYOIP addresses. If you create an accelerator with at least one BYOIP address, you can update its IP addresses later. For more information, see [Update an accelerator to change your IP addresses](https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip.update-accelerator.html) in the * AWS Global Accelerator Developer Guide*.
 For more information, see [Bring your own IP addresses (BYOIP)](https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip.html) in the * AWS Global Accelerator Developer Guide*.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 2 items.

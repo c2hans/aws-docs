@@ -202,6 +202,14 @@ The specified resource was not found.
 HTTP Status Code: 404
 HTTP Status Code: 404
 
+ ** RetryableConflictException **
+The request conflicted with a concurrent modification of the same resource and did not take effect.
+ ** resourceId **
+The identifier of the resource involved in the concurrent modification.
+ ** resourceType **
+The type of the resource involved in the concurrent modification.
+HTTP Status Code: 409
+
 ## See Also
 <a name="API_UpdatePlan_SeeAlso"></a>
 

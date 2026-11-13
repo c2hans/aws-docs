@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 # StopMigration
 <a name="API_StopMigration"></a>
 
-Stops an ongoing data sync between the source and the serverless cache. The migration remains open and the data sync can be restarted. This operation is valid only while the migration is syncing; during cutover it returns `InvalidServerlessCacheStateFault`.
+Stops an ongoing data sync between the source and the serverless cache. The migration returns to `ready-to-sync`, and you can start the data sync again. If the migration has reported an error, a later `StartMigration` is rejected, and you must use `CompleteMigration` with `Force` to end the migration. This operation is valid only while the migration is syncing. While the migration is `cutting-over`, `StopMigration` fails with `InvalidServerlessCacheStateFault`.
 
 ## Request Parameters
 <a name="API_StopMigration_RequestParameters"></a>
@@ -38,7 +38,7 @@ A parameter value is invalid.
 HTTP Status Code: 400
 
  ** InvalidServerlessCacheStateFault **
-The account for these credentials is not currently active.
+The serverless cache or the migration is not in a state that allows the operation.
 HTTP Status Code: 400
 
  ** ServerlessCacheNotFoundFault **

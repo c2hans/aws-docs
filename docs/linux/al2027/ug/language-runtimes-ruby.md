@@ -30,34 +30,34 @@ sudo alternatives --install /usr/bin/ri ri /usr/bin/ruby3.4-ri 34
 
  The *alternatives* tool provides a single command for switching between installed Ruby versions. By default, *alternatives* is configured to be in auto mode, which uses priorities to determine the currently active Ruby version. However, you can activate any installed version at any time.
 
-**Some useful examples of using *alternatives***
+Use the following `alternatives` commands to manage the active Ruby version.
 
-1. Check what *alternatives* is configured for
+List what `alternatives` manages
 
-   ```
-   alternatives --list
-   ```
+```
+alternatives --list
+```
 
-1. Check *ruby*'s current configuration
+Display the current `ruby` configuration
 
-   ```
-   alternatives --display ruby
-   ```
+```
+alternatives --display ruby
+```
 
-1. Interactively change the Ruby version
+Change the Ruby version interactively
 
-   ```
-   alternatives --config ruby
-   ```
+```
+alternatives --config ruby
+```
 
-1. Switch to manual mode and select a specific version
+Select a specific version (manual mode)
 
-   ```
-   alternatives --set ruby /usr/bin/ruby{MAJOR.MINOR}
-   ```
+```
+alternatives --set ruby /usr/bin/ruby{MAJOR.MINOR}
+```
 
-1. Switch back to auto version selection mode
+Return to automatic version selection
 
-   ```
-   alternatives --auto ruby
-   ```
+```
+alternatives --auto ruby
+```

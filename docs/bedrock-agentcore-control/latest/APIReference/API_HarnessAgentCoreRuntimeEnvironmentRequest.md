@@ -17,7 +17,7 @@ Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: No
 
  ** lifecycleConfiguration **   <a name="bedrockagentcorecontrol-Type-HarnessAgentCoreRuntimeEnvironmentRequest-lifecycleConfiguration"></a>
-LifecycleConfiguration lets you manage the lifecycle of runtime sessions and resources in AgentCore Runtime. This configuration helps optimize resource utilization by automatically cleaning up idle sessions and preventing long-running instances from consuming resources indefinitely.
+The lifecycle configuration for the harness's runtime environment. For a harness, `idleRuntimeSessionTimeout` and `maxLifetime` each accept a value between 60 and 28800 seconds (8 hours), and `idleRuntimeSessionTimeout` must be less than or equal to `maxLifetime`. Values above 28800 seconds are rejected with a `ValidationException`.
 Type: [LifecycleConfiguration](API_LifecycleConfiguration.md) object
 Required: No
 

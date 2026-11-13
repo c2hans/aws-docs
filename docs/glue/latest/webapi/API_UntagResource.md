@@ -28,7 +28,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the resource from which to remove the tags.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 Required: Yes
 
  ** [TagsToRemove](#API_UntagResource_RequestSyntax) **   <a name="Glue-UntagResource-request-TagsToRemove"></a>

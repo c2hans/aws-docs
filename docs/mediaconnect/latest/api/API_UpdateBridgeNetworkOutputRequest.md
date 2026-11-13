@@ -29,7 +29,7 @@ Required: No
 The network output protocol.
  AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
 Type: String
-Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq`
+Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq | rtmp-push`
 Required: No
 
  ** ttl **   <a name="mediaconnect-Type-UpdateBridgeNetworkOutputRequest-ttl"></a>

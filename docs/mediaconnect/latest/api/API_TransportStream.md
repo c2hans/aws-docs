@@ -45,6 +45,11 @@ The frame resolution used by the video stream.
 Type: [FrameResolution](API_FrameResolution.md) object
 Required: No
 
+ ** language **   <a name="mediaconnect-Type-TransportStream-language"></a>
+The language of the elementary stream.
+Type: String
+Required: No
+
  ** sampleRate **   <a name="mediaconnect-Type-TransportStream-sampleRate"></a>
  The sample rate used by the audio stream.
 Type: Integer
@@ -53,6 +58,12 @@ Required: No
  ** sampleSize **   <a name="mediaconnect-Type-TransportStream-sampleSize"></a>
  The sample bit size used by the audio stream.
 Type: Integer
+Required: No
+
+ ** scanMode **   <a name="mediaconnect-Type-TransportStream-scanMode"></a>
+The scan mode used by the video stream.
+Type: String
+Valid Values: `progressive | interlace | progressive-segmented-frame`
 Required: No
 
 ## See Also

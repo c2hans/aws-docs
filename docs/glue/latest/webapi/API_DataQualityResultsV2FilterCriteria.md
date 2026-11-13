@@ -10,6 +10,13 @@ Describes the criteria used to filter the data quality results returned by `List
 ## Contents
 <a name="API_DataQualityResultsV2FilterCriteria_Contents"></a>
 
+ ** DataQualityEvaluationConfig **   <a name="Glue-Type-DataQualityResultsV2FilterCriteria-DataQualityEvaluationConfig"></a>
+Filter results by the evaluation configuration name which started the evaluation run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** DataSource **   <a name="Glue-Type-DataQualityResultsV2FilterCriteria-DataSource"></a>
 The data source used to filter the results. For example, you can retrieve all results for an AWS Glue table. `DatabaseName` and `TableName` are required. If you omit `CatalogId`, the catalog of the calling account is used.
 When you filter by data source, a page of results can be empty but still include a `NextToken`. Keep requesting pages until `NextToken` is absent.
@@ -31,6 +38,12 @@ The evaluation context to filter results by.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
+ ** EvaluationRunMode **   <a name="Glue-Type-DataQualityResultsV2FilterCriteria-EvaluationRunMode"></a>
+Filter results by how their evaluation run started: `ON_DEMAND` or `EVALUATION_CONFIG`. Results that no evaluation run produced match neither value.
+Type: String
+Valid Values: `ON_DEMAND | EVALUATION_CONFIG`
 Required: No
 
  ** PublishedAfter **   <a name="Glue-Type-DataQualityResultsV2FilterCriteria-PublishedAfter"></a>

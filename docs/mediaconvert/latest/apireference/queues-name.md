@@ -313,7 +313,7 @@ You can use queues to manage the resources that are available to your AWS accoun
 | createdAt | string<br />Format: date-time | False | The timestamp in epoch seconds for when you created the queue. |
 | description | string | False | An optional description that you create for each queue. |
 | lastUpdated | string<br />Format: date-time | False | The timestamp in epoch seconds for when you most recently updated the queue. |
-| maximumConcurrentFeeds | integer<br />Format: int32<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
+| maximumConcurrentFeeds | integer<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
 | name | string | True | A name that you create for each queue. Each name must be unique within your account. |
 | pricingPlan | [PricingPlan](#queues-name-model-pricingplan) | False | Specifies whether the pricing plan for the queue is on-demand or reserved. For on-demand, you pay per minute, billed in increments of .01 minute. For reserved, you pay for the transcoding capacity of the entire queue, regardless of how much or how little you use it. Reserved pricing requires a 12-month commitment. |
 | progressingJobsCount | integer<br />Format: int64 | False | The estimated number of jobs with a PROGRESSING status. |
@@ -395,7 +395,7 @@ Modify a queue by sending a request with the queue name and any changes to the q
 | --- |--- |--- |--- |
 | concurrentJobs | integer<br />Format: int64 | False | Specify the maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, update your reservation plan instead in order to increase your yearly commitment. |
 | description | string | False | The new description for the queue, if you are changing it. |
-| maximumConcurrentFeeds | integer<br />Format: int32<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
+| maximumConcurrentFeeds | integer<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
 | name | string | False | The name of the queue that you are modifying. |
 | reservationPlanSettings | [ReservationPlanSettings](#queues-name-model-reservationplansettings) | False | The new details of your pricing plan for your reserved queue. When you set up a new pricing plan to replace an expired one, you enter into another 12-month commitment. When you add capacity to your queue by increasing the number of RTS, you extend the term of your commitment to 12 months from when you add capacity. After you make these commitments, you can't cancel them. |
 | status | [QueueStatus](#queues-name-model-queuestatus) | False | Pause or activate a queue by changing its status between ACTIVE and PAUSED. If you pause a queue, jobs in that queue won't begin. Jobs that are running when you pause the queue continue to run until they finish or result in an error. |

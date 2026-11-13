@@ -31,7 +31,7 @@ Type: String
 Required: No
 
  ** resourceType **
-The type of resource (`ec2:Instance` or `ec2:LaunchTemplate`).
+The type of resource (`ec2:Instance` \| `ec2:LaunchTemplate` \| `imagebuilder:ImageRecipe` \| `imagebuilder:ContainerRecipe`).
 Type: String
 Required: No
 

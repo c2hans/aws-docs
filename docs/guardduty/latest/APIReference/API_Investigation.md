@@ -77,14 +77,25 @@ Length Constraints: Minimum length of 1. Maximum length of 300.
 Valid Values: `Info | Low | Medium | High | Critical`
 Required: No
 
+ ** scope **   <a name="guardduty-Type-Investigation-scope"></a>
+Information about what the investigation analyzed, including the investigation type, the finding, account, or organization that was analyzed, and, for `ACCOUNT` and `ORGANIZATION` investigations, the time window over which the investigation queried data. Returned only when the investigation status is `COMPLETED`.
+Type: [InvestigationScope](API_InvestigationScope.md) object
+Required: No
+
  ** startTime **   <a name="guardduty-Type-Investigation-startTime"></a>
 The timestamp at which the investigation started.
 Type: Timestamp
 Required: No
 
  ** summary **   <a name="guardduty-Type-Investigation-summary"></a>
-A structured summary of the investigation findings, including affected resources, threat assessment, and recommended remediation steps.
+A summary of the investigation results as text, up to 262,144 characters. Returned only when the investigation status is `COMPLETED`. When you set `SummaryFormat` to `STRUCTURED`, the summary is returned in `SummaryData` instead, unless it isn't available in a structured form, in which case it's returned in this field.
 Type: String
+Length Constraints: Minimum length of 0. Maximum length of 262144.
+Required: No
+
+ ** summaryData **   <a name="guardduty-Type-Investigation-summaryData"></a>
+A structured summary of the investigation results. GuardDuty returns this field only when you set `SummaryFormat` to `STRUCTURED`, the investigation status is `COMPLETED`, and the summary is available in a structured form. When this field is returned, `Summary` isn't returned.
+Type: [InvestigationSummaryData](API_InvestigationSummaryData.md) object
 Required: No
 
 ## See Also

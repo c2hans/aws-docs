@@ -34,6 +34,7 @@ The following data types are supported by AWS Marketplace Agreement Service:
 +  [FixedPercentage](API_marketplace-agreements_FixedPercentage.md)
 +  [FixedUpfrontPricingTerm](API_marketplace-agreements_FixedUpfrontPricingTerm.md)
 +  [FreeTrialPricingTerm](API_marketplace-agreements_FreeTrialPricingTerm.md)
++  [FreeTrialSummary](API_marketplace-agreements_FreeTrialSummary.md)
 +  [GrantItem](API_marketplace-agreements_GrantItem.md)
 +  [InvoiceBillingPeriod](API_marketplace-agreements_InvoiceBillingPeriod.md)
 +  [InvoicingEntity](API_marketplace-agreements_InvoicingEntity.md)

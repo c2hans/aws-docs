@@ -18,7 +18,7 @@ Type: Boolean
 Required: No
 
  ** ClearTargetCacheData **
-Specifies whether ElastiCache deletes existing data in the serverless cache before migration begins. After `StopMigration`, `StartMigration` requires this option to restart the data sync.
+Specifies whether ElastiCache deletes existing data in the serverless cache before migration begins. After `StopMigration` or an earlier failed `StartMigration`, `StartMigration` requires this option to restart the data sync if the serverless cache contains data.
 Type: Boolean
 Required: No
 
@@ -76,7 +76,7 @@ The requested replication group is not in the `available` state.
 HTTP Status Code: 400
 
  ** InvalidServerlessCacheStateFault **
-The account for these credentials is not currently active.
+The serverless cache or the migration is not in a state that allows the operation.
 HTTP Status Code: 400
 
  ** MigrationHealthFault **

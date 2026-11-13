@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/zscal
 
 The Zscaler setup on AWS reads log data from Amazon S3 buckets using Amazon SQS notifications for new object events.
 
-Configure the Zscalar source using the following parameters:
+Configure the Zscaler source using the following parameters:
 
 ```
 source:
@@ -15,7 +15,7 @@ source:
     aws:
       region: "us-east-1"
       sts_role_arn: "arn:aws:iam::<account>:role/<role-name>"
-    compression: "gzip"
+    compression: "automatic"
     codec:
       ndjson:
     data_source_name: "zscaler_internetaccess"

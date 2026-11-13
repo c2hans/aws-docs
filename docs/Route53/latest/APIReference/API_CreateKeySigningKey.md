@@ -224,7 +224,7 @@ The following is an example of a `KeyManagementServiceArn` key policy that grant
             "Sid": "Allow full access for Key Administrators",
             "Effect": "Allow",
             "Principal": {
-                "AWS": "arn:aws:iam::1234567891234:role/admin"
+                "AWS": "arn:aws:iam::123456789012:role/admin"
             },
             "Action": "*",
             "Resource": "*"

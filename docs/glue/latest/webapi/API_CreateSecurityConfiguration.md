@@ -87,6 +87,12 @@ Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** AccessDeniedException **
+Access to a resource was denied.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 400
+
  ** AlreadyExistsException **
 A resource to be created or added already exists.
  ** Message **

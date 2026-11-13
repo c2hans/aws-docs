@@ -140,7 +140,7 @@ If you previously created an endpoint with a public key, you must remove that ke
 The Amazon Resource Name (ARN) of the IAM role used in this `DevEndpoint`.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:aws:iam::\d{12}:role/.*`
+*Pattern*: `arn:aws[a-z0-9-]*:iam::\d{12}:role/.*`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecurityConfiguration`  <a name="cfn-glue-devendpoint-securityconfiguration"></a>

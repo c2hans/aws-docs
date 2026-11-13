@@ -110,10 +110,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         "actionName": "string",
         "scheduleActionSettings": {
           "hlsId3SegmentTaggingSettings": {
+            "id3": "string",
             "tag": "string"
           },
           "hlsTimedMetadataSettings": {
             "id3": "string"
+          },
+          "id3SegmentTaggingSettings": {
+            "id3": "string",
+            "tag": "string"
           },
           "inputPrepareSettings": {
             "inputAttachmentNameReference": "string",
@@ -161,6 +166,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "pipelineId": enum
               }
             ]
+          },
+          "scte35InputSettings": {
+            "inputAttachmentNameReference": "string",
+            "mode": enum
           },
           "scte35ReturnToNetworkSettings": {
             "spliceEventId": integer
@@ -214,6 +223,35 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "staticImageDeactivateSettings": {
             "fadeOut": integer,
             "layer": integer
+          },
+          "staticImageOutputActivateSettings": {
+            "duration": integer,
+            "fadeIn": integer,
+            "fadeOut": integer,
+            "height": integer,
+            "image": {
+              "passwordParam": "string",
+              "uri": "string",
+              "username": "string"
+            },
+            "imageX": integer,
+            "imageY": integer,
+            "layer": integer,
+            "opacity": integer,
+            "outputNames": [
+              "string"
+            ],
+            "width": integer
+          },
+          "staticImageOutputDeactivateSettings": {
+            "fadeOut": integer,
+            "layer": integer,
+            "outputNames": [
+              "string"
+            ]
+          },
+          "timedMetadataSettings": {
+            "id3": "string"
           }
         },
         "scheduleActionStartSettings": {
@@ -261,10 +299,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
       "actionName": "string",
       "scheduleActionSettings": {
         "hlsId3SegmentTaggingSettings": {
+          "id3": "string",
           "tag": "string"
         },
         "hlsTimedMetadataSettings": {
           "id3": "string"
+        },
+        "id3SegmentTaggingSettings": {
+          "id3": "string",
+          "tag": "string"
         },
         "inputPrepareSettings": {
           "inputAttachmentNameReference": "string",
@@ -312,6 +355,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
               "pipelineId": enum
             }
           ]
+        },
+        "scte35InputSettings": {
+          "inputAttachmentNameReference": "string",
+          "mode": enum
         },
         "scte35ReturnToNetworkSettings": {
           "spliceEventId": integer
@@ -365,6 +412,35 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         "staticImageDeactivateSettings": {
           "fadeOut": integer,
           "layer": integer
+        },
+        "staticImageOutputActivateSettings": {
+          "duration": integer,
+          "fadeIn": integer,
+          "fadeOut": integer,
+          "height": integer,
+          "image": {
+            "passwordParam": "string",
+            "uri": "string",
+            "username": "string"
+          },
+          "imageX": integer,
+          "imageY": integer,
+          "layer": integer,
+          "opacity": integer,
+          "outputNames": [
+            "string"
+          ],
+          "width": integer
+        },
+        "staticImageOutputDeactivateSettings": {
+          "fadeOut": integer,
+          "layer": integer,
+          "outputNames": [
+            "string"
+          ]
+        },
+        "timedMetadataSettings": {
+          "id3": "string"
         }
       },
       "scheduleActionStartSettings": {
@@ -395,10 +471,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         "actionName": "string",
         "scheduleActionSettings": {
           "hlsId3SegmentTaggingSettings": {
+            "id3": "string",
             "tag": "string"
           },
           "hlsTimedMetadataSettings": {
             "id3": "string"
+          },
+          "id3SegmentTaggingSettings": {
+            "id3": "string",
+            "tag": "string"
           },
           "inputPrepareSettings": {
             "inputAttachmentNameReference": "string",
@@ -446,6 +527,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "pipelineId": enum
               }
             ]
+          },
+          "scte35InputSettings": {
+            "inputAttachmentNameReference": "string",
+            "mode": enum
           },
           "scte35ReturnToNetworkSettings": {
             "spliceEventId": integer
@@ -499,6 +584,35 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "staticImageDeactivateSettings": {
             "fadeOut": integer,
             "layer": integer
+          },
+          "staticImageOutputActivateSettings": {
+            "duration": integer,
+            "fadeIn": integer,
+            "fadeOut": integer,
+            "height": integer,
+            "image": {
+              "passwordParam": "string",
+              "uri": "string",
+              "username": "string"
+            },
+            "imageX": integer,
+            "imageY": integer,
+            "layer": integer,
+            "opacity": integer,
+            "outputNames": [
+              "string"
+            ],
+            "width": integer
+          },
+          "staticImageOutputDeactivateSettings": {
+            "fadeOut": integer,
+            "layer": integer,
+            "outputNames": [
+              "string"
+            ]
+          },
+          "timedMetadataSettings": {
+            "id3": "string"
           }
         },
         "scheduleActionStartSettings": {
@@ -522,10 +636,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         "actionName": "string",
         "scheduleActionSettings": {
           "hlsId3SegmentTaggingSettings": {
+            "id3": "string",
             "tag": "string"
           },
           "hlsTimedMetadataSettings": {
             "id3": "string"
+          },
+          "id3SegmentTaggingSettings": {
+            "id3": "string",
+            "tag": "string"
           },
           "inputPrepareSettings": {
             "inputAttachmentNameReference": "string",
@@ -573,6 +692,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "pipelineId": enum
               }
             ]
+          },
+          "scte35InputSettings": {
+            "inputAttachmentNameReference": "string",
+            "mode": enum
           },
           "scte35ReturnToNetworkSettings": {
             "spliceEventId": integer
@@ -626,6 +749,35 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "staticImageDeactivateSettings": {
             "fadeOut": integer,
             "layer": integer
+          },
+          "staticImageOutputActivateSettings": {
+            "duration": integer,
+            "fadeIn": integer,
+            "fadeOut": integer,
+            "height": integer,
+            "image": {
+              "passwordParam": "string",
+              "uri": "string",
+              "username": "string"
+            },
+            "imageX": integer,
+            "imageY": integer,
+            "layer": integer,
+            "opacity": integer,
+            "outputNames": [
+              "string"
+            ],
+            "width": integer
+          },
+          "staticImageOutputDeactivateSettings": {
+            "fadeOut": integer,
+            "layer": integer,
+            "outputNames": [
+              "string"
+            ]
+          },
+          "timedMetadataSettings": {
+            "id3": "string"
           }
         },
         "scheduleActionStartSettings": {
@@ -845,7 +997,8 @@ Settings for the action to insert a user-defined ID3 tag in each HLS segment
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| tag | string | False | ID3 tag to insert into each segment. Supports special keyword identifiers to substitute in segment-related values.\\nSupported keyword identifiers: https://docs.aws.amazon.com/medialive/latest/ug/variable-data-identifiers.html |
+| id3 | string | False | Complete this parameter if you want to specify the entire ID3 metadata. Enter a base64 string that contains one or more fully formed ID3 tags, according to the ID3 specification: http://id3.org/id3v2.4.0-structure |
+| tag | string | False | ID3 tag to insert into each segment. Supports special keyword identifiers to substitute in segment-related values. Supported keyword identifiers: https://docs.aws.amazon.com/medialive/latest/ug/variable-data-identifiers.html |
 
 ### HlsTimedMetadataScheduleActionSettings
 <a name="channels-channelid-schedule-model-hlstimedmetadatascheduleactionsettings"></a>
@@ -855,6 +1008,16 @@ Settings for the action to emit HLS metadata
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | id3 | string | True | Base64 string formatted according to the ID3 specification: http://id3.org/id3v2.4.0-structure |
+
+### Id3SegmentTaggingScheduleActionSettings
+<a name="channels-channelid-schedule-model-id3segmenttaggingscheduleactionsettings"></a>
+
+Settings for the action to insert ID3 metadata in every segment, in applicable output groups.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| id3 | string | False | Complete this parameter if you want to specify the entire ID3 metadata. Enter a base64 string that contains one or more fully formed ID3 tags, according to the ID3 specification: http://id3.org/id3v2.4.0-structure |
+| tag | string | False | Complete this parameter if you want to specify only the metadata, not the entire frame. MediaLive will insert the metadata in a TXXX frame. Enter the value as plain text. You can include standard MediaLive variable data such as the current segment number. |
 
 ### ImmediateModeScheduleActionStartSettings
 <a name="channels-channelid-schedule-model-immediatemodescheduleactionstartsettings"></a>
@@ -884,7 +1047,7 @@ Input Location
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | passwordParam | string | False | key used to extract the password from EC2 Parameter store |
-| uri | string | True | Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live". |
+| uri | string<br />MaxLength: 2048 | True | Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live". |
 | username | string | False | Username if credentials are required to access a file or publishing point. This can be either a plaintext username, or a reference to an AWS parameter store name from which the username can be retrieved. AWS Parameter store format: "ssm://<parameter name>" |
 
 ### InputPrepareScheduleActionSettings
@@ -1013,16 +1176,21 @@ Holds the settings for a single schedule action.
 | --- |--- |--- |--- |
 | hlsId3SegmentTaggingSettings | [HlsId3SegmentTaggingScheduleActionSettings](#channels-channelid-schedule-model-hlsid3segmenttaggingscheduleactionsettings) | False | Action to insert HLS ID3 segment tagging |
 | hlsTimedMetadataSettings | [HlsTimedMetadataScheduleActionSettings](#channels-channelid-schedule-model-hlstimedmetadatascheduleactionsettings) | False | Action to insert HLS metadata |
+| id3SegmentTaggingSettings | [Id3SegmentTaggingScheduleActionSettings](#channels-channelid-schedule-model-id3segmenttaggingscheduleactionsettings) | False | Action to insert ID3 metadata in every segment, in applicable output groups |
 | inputPrepareSettings | [InputPrepareScheduleActionSettings](#channels-channelid-schedule-model-inputpreparescheduleactionsettings) | False | Action to prepare an input for a future immediate input switch |
 | inputSwitchSettings | [InputSwitchScheduleActionSettings](#channels-channelid-schedule-model-inputswitchscheduleactionsettings) | False | Action to switch the input |
 | motionGraphicsImageActivateSettings | [MotionGraphicsActivateScheduleActionSettings](#channels-channelid-schedule-model-motiongraphicsactivatescheduleactionsettings) | False | Action to activate a motion graphics image overlay |
 | motionGraphicsImageDeactivateSettings | [MotionGraphicsDeactivateScheduleActionSettings](#channels-channelid-schedule-model-motiongraphicsdeactivatescheduleactionsettings) | False | Action to deactivate a motion graphics image overlay |
 | pauseStateSettings | [PauseStateScheduleActionSettings](#channels-channelid-schedule-model-pausestatescheduleactionsettings) | False | Action to pause or unpause one or both channel pipelines |
+| scte35InputSettings | [Scte35InputScheduleActionSettings](#channels-channelid-schedule-model-scte35inputscheduleactionsettings) | False | Action to specify scte35 input |
 | scte35ReturnToNetworkSettings | [Scte35ReturnToNetworkScheduleActionSettings](#channels-channelid-schedule-model-scte35returntonetworkscheduleactionsettings) | False | Action to insert SCTE-35 return\_to\_network message |
 | scte35SpliceInsertSettings | [Scte35SpliceInsertScheduleActionSettings](#channels-channelid-schedule-model-scte35spliceinsertscheduleactionsettings) | False | Action to insert SCTE-35 splice\_insert message |
 | scte35TimeSignalSettings | [Scte35TimeSignalScheduleActionSettings](#channels-channelid-schedule-model-scte35timesignalscheduleactionsettings) | False | Action to insert SCTE-35 time\_signal message |
 | staticImageActivateSettings | [StaticImageActivateScheduleActionSettings](#channels-channelid-schedule-model-staticimageactivatescheduleactionsettings) | False | Action to activate a static image overlay |
 | staticImageDeactivateSettings | [StaticImageDeactivateScheduleActionSettings](#channels-channelid-schedule-model-staticimagedeactivatescheduleactionsettings) | False | Action to deactivate a static image overlay |
+| staticImageOutputActivateSettings | [StaticImageOutputActivateScheduleActionSettings](#channels-channelid-schedule-model-staticimageoutputactivatescheduleactionsettings) | False | Action to activate a static image overlay in one or more specified outputs |
+| staticImageOutputDeactivateSettings | [StaticImageOutputDeactivateScheduleActionSettings](#channels-channelid-schedule-model-staticimageoutputdeactivatescheduleactionsettings) | False | Action to deactivate a static image overlay in one or more specified outputs |
+| timedMetadataSettings | [TimedMetadataScheduleActionSettings](#channels-channelid-schedule-model-timedmetadatascheduleactionsettings) | False | Action to insert ID3 metadata once, in applicable output groups |
 
 ### ScheduleActionStartSettings
 <a name="channels-channelid-schedule-model-scheduleactionstartsettings"></a>
@@ -1095,6 +1263,23 @@ Corresponds to the device\_restrictions parameter in a segmentation\_descriptor.
 + `RESTRICT_GROUP0`
 + `RESTRICT_GROUP1`
 + `RESTRICT_GROUP2`
+
+### Scte35InputMode
+<a name="channels-channelid-schedule-model-scte35inputmode"></a>
+
+Whether the SCTE-35 input should be the active input or a fixed input.
++ `FIXED`
++ `FOLLOW_ACTIVE`
+
+### Scte35InputScheduleActionSettings
+<a name="channels-channelid-schedule-model-scte35inputscheduleactionsettings"></a>
+
+Scte35Input Schedule Action Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| inputAttachmentNameReference | string | False | In fixed mode, enter the name of the input attachment that you want to use as a SCTE-35 input. (Don't enter the ID of the input.)" |
+| mode | [Scte35InputMode](#channels-channelid-schedule-model-scte35inputmode) | True | Whether the SCTE-35 input should be the active input or a fixed input. |
 
 ### Scte35NoRegionalBlackoutFlag
 <a name="channels-channelid-schedule-model-scte35noregionalblackoutflag"></a>
@@ -1201,6 +1386,36 @@ Settings for the action to deactivate the image in a specific layer.
 | fadeOut | integer<br />Minimum: 0 | False | The time in milliseconds for the image to fade out. Default is 0 (no fade-out). |
 | layer | integer<br />Minimum: 0<br />Maximum: 7 | False | The image overlay layer to deactivate, 0 to 7. Default is 0. |
 
+### StaticImageOutputActivateScheduleActionSettings
+<a name="channels-channelid-schedule-model-staticimageoutputactivatescheduleactionsettings"></a>
+
+Settings for the action to activate a static image.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| duration | integer<br />Minimum: 0 | False | The duration in milliseconds for the image to remain on the video. If omitted or set to 0 the duration is unlimited and the image will remain until it is explicitly deactivated. |
+| fadeIn | integer<br />Minimum: 0 | False | The time in milliseconds for the image to fade in. The fade-in starts at the start time of the overlay. Default is 0 (no fade-in). |
+| fadeOut | integer<br />Minimum: 0 | False | Applies only if a duration is specified. The time in milliseconds for the image to fade out. The fade-out starts when the duration time is hit, so it effectively extends the duration. Default is 0 (no fade-out). |
+| height | integer<br />Minimum: 1 | False | The height of the image when inserted into the video, in pixels. The overlay will be scaled up or down to the specified height. Leave blank to use the native height of the overlay. |
+| image | [InputLocation](#channels-channelid-schedule-model-inputlocation) | True | The location and filename of the image file to overlay on the video. The file must be a 32-bit BMP, PNG, or TGA file, and must not be larger (in pixels) than the input video. |
+| imageX | integer<br />Minimum: 0 | False | Placement of the left edge of the overlay relative to the left edge of the video frame, in pixels. 0 (the default) is the left edge of the frame. If the placement causes the overlay to extend beyond the right edge of the underlying video, then the overlay is cropped on the right. |
+| imageY | integer<br />Minimum: 0 | False | Placement of the top edge of the overlay relative to the top edge of the video frame, in pixels. 0 (the default) is the top edge of the frame. If the placement causes the overlay to extend beyond the bottom edge of the underlying video, then the overlay is cropped on the bottom. |
+| layer | integer<br />Minimum: 0<br />Maximum: 7 | False | The number of the layer, 0 to 7. There are 8 layers that can be overlaid on the video, each layer with a different image. The layers are in Z order, which means that overlays with higher values of layer are inserted on top of overlays with lower values of layer. Default is 0. |
+| opacity | integer<br />Minimum: 0<br />Maximum: 100 | False | Opacity of image where 0 is transparent and 100 is fully opaque. Default is 100. |
+| outputNames | Array of type string | True | The name(s) of the output(s) the activation should apply to. |
+| width | integer<br />Minimum: 1 | False | The width of the image when inserted into the video, in pixels. The overlay will be scaled up or down to the specified width. Leave blank to use the native width of the overlay. |
+
+### StaticImageOutputDeactivateScheduleActionSettings
+<a name="channels-channelid-schedule-model-staticimageoutputdeactivatescheduleactionsettings"></a>
+
+Settings for the action to deactivate the image in a specific layer.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| fadeOut | integer<br />Minimum: 0 | False | The time in milliseconds for the image to fade out. Default is 0 (no fade-out). |
+| layer | integer<br />Minimum: 0<br />Maximum: 7 | False | The image overlay layer to deactivate, 0 to 7. Default is 0. |
+| outputNames | Array of type string | True | The name(s) of the output(s) the deactivation should apply to. |
+
 ### StopTimecode
 <a name="channels-channelid-schedule-model-stoptimecode"></a>
 
@@ -1210,6 +1425,15 @@ Settings to identify the end of the clip.
 | --- |--- |--- |--- |
 | lastFrameClippingBehavior | [LastFrameClippingBehavior](#channels-channelid-schedule-model-lastframeclippingbehavior) | False | If you specify a StopTimecode in an input (in order to clip the file), you can specify if you want the clip to exclude (the default) or include the frame specified by the timecode. |
 | timecode | string | False | The timecode for the frame where you want to stop the clip. Optional; if not specified, the clip continues to the end of the file. Enter the timecode as HH:MM:SS:FF or HH:MM:SS;FF. |
+
+### TimedMetadataScheduleActionSettings
+<a name="channels-channelid-schedule-model-timedmetadatascheduleactionsettings"></a>
+
+Settings for the action to insert ID3 metadata (as a one-time action) in applicable output groups.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| id3 | string | True | Enter a base64 string that contains one or more fully formed ID3 tags.See the ID3 specification: http://id3.org/id3v2.4.0-structure |
 
 ### ValidationError
 <a name="channels-channelid-schedule-model-validationerror"></a>

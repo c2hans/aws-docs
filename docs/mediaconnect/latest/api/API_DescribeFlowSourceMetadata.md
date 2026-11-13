@@ -84,6 +84,34 @@ Content-type: application/json
          }
       ]
    },
+   "rtmpInfo": {
+      "applicationName": "string",
+      "mediaInfo": {
+         "streams": [
+            {
+               "channels": number,
+               "codec": "string",
+               "color": {
+                  "colorimetry": "string",
+                  "matrixCoefficients": "string",
+                  "transferCharacteristics": "string"
+               },
+               "frameRate": "string",
+               "frameResolution": {
+                  "frameHeight": number,
+                  "frameWidth": number
+               },
+               "language": "string",
+               "sampleRate": number,
+               "sampleSize": number,
+               "scanMode": "string",
+               "streamId": number,
+               "streamType": "string"
+            }
+         ]
+      },
+      "streamName": "string"
+   },
    "timestamp": "string",
    "transportMediaInfo": {
       "programs": [
@@ -106,9 +134,11 @@ Content-type: application/json
                      "frameHeight": number,
                      "frameWidth": number
                   },
+                  "language": "string",
                   "pid": number,
                   "sampleRate": number,
                   "sampleSize": number,
+                  "scanMode": "string",
                   "streamType": "string"
                }
             ]
@@ -137,6 +167,10 @@ Type: Array of [MessageDetail](API_MessageDetail.md) objects
  ** [ndiInfo](#API_DescribeFlowSourceMetadata_ResponseSyntax) **   <a name="mediaconnect-DescribeFlowSourceMetadata-response-ndiInfo"></a>
  The NDI® specific information about the flow's source. This includes the current active NDI sender, a list of all discovered NDI senders, the associated media streams for the active NDI sender, and any relevant status messages.
 Type: [NdiSourceMetadataInfo](API_NdiSourceMetadataInfo.md) object
+
+ ** [rtmpInfo](#API_DescribeFlowSourceMetadata_ResponseSyntax) **   <a name="mediaconnect-DescribeFlowSourceMetadata-response-rtmpInfo"></a>
+The RTMP (Real-Time Messaging Protocol) specific information about the flow's source. This includes the application name, the stream name, and the associated audio and video streams.
+Type: [RtmpSourceMetadataInfo](API_RtmpSourceMetadataInfo.md) object
 
  ** [timestamp](#API_DescribeFlowSourceMetadata_ResponseSyntax) **   <a name="mediaconnect-DescribeFlowSourceMetadata-response-timestamp"></a>
  The timestamp of the most recent change in metadata for this flow’s source.

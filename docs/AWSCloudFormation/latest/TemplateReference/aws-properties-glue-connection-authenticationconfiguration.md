@@ -68,7 +68,7 @@ Property description not available.
 The Amazon Resource Name (ARN) of the KMS key used to encrypt sensitive authentication information. This key is used to protect credentials and other sensitive data stored within the authentication configuration.
 *Required*: No
 *Type*: String
-*Pattern*: `^$|arn:aws[a-z0-9-]*:kms:.*`
+*Pattern*: `^($|arn:aws[a-z0-9-]*:kms:.*)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OAuth2Properties`  <a name="cfn-glue-connection-authenticationconfiguration-oauth2properties"></a>
@@ -81,5 +81,4 @@ The properties for OAuth2 authentication.
 The secret manager ARN to store credentials.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:secretsmanager:.*$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

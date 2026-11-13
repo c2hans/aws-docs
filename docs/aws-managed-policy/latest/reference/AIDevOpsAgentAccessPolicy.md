@@ -18,13 +18,13 @@ You can attach `AIDevOpsAgentAccessPolicy` to your users, groups, and roles.
 <a name="AIDevOpsAgentAccessPolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: March 26, 2026, 03:42 UTC
-+ **Edited time:** November 06, 2026, 21:57 UTC
++ **Edited time:** November 11, 2026, 00:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AIDevOpsAgentAccessPolicy`
 
 ## Policy version
 <a name="AIDevOpsAgentAccessPolicy-version"></a>
 
-**Policy version:** v14 (default)
+**Policy version:** v15 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -204,16 +204,26 @@ The policy's default version is the version that defines the permissions for the
         "cloudtrail:LookupEvents",
         "cloudwatch:Describe*",
         "cloudwatch:GenerateQuery",
+        "cloudwatch:GetAlert",
+        "cloudwatch:GetContextGraph",
         "cloudwatch:GetDashboard",
         "cloudwatch:GetInsightRuleReport",
+        "cloudwatch:GetIntelligenceConfiguration",
         "cloudwatch:GetMetricData",
         "cloudwatch:GetMetricStatistics",
         "cloudwatch:GetMetricStream",
         "cloudwatch:GetOTelEnrichment",
         "cloudwatch:GetProfileRecords",
+        "cloudwatch:GetRecords",
         "cloudwatch:GetService",
         "cloudwatch:GetServiceLevelObjective",
+        "cloudwatch:GetSpace",
+        "cloudwatch:GetTelemetryQueryResults",
         "cloudwatch:List*",
+        "cloudwatch:StartTelemetryQuery",
+        "cloudwatch:StartTelemetryQuerySession",
+        "cloudwatch:StopTelemetryQuery",
+        "cloudwatch:StopTelemetryQuerySession",
         "codeartifact:Describe*",
         "codeartifact:GetDomainPermissionsPolicy",
         "codeartifact:GetRepositoryPermissionsPolicy",
@@ -713,6 +723,7 @@ The policy's default version is the version that defines the permissions for the
         "oam:GetSink",
         "oam:GetSinkPolicy",
         "oam:List*",
+        "observabilityadmin:ListDatasetIntegrations",
         "omics:GetAnnotationStore",
         "omics:GetReferenceStore",
         "omics:GetRunGroup",

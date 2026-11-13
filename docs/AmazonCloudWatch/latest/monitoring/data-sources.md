@@ -88,7 +88,7 @@ The following table lists the supported direct third-party integrations:
 | Wazuh Platform | API | Security monitoring and threat detection |
 | Wiz CNAPP | API | Cloud security |
 | Zeek | S3 Delivery | Network security monitoring |
-| Zscaler ZIA/ZPA | S3 Delivery | Network security |
+| Zscaler Internet Access (ZIA) | S3 Delivery | Network security |
 
 For detailed setup procedures, prerequisites, and configuration steps for each integration, see [Third-party data sources integration](third-party-integration-setup.md).
 

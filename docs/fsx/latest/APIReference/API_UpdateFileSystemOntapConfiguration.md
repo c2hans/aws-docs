@@ -51,7 +51,7 @@ Pattern: `^[^\u0000\u0085\u2028\u2029\r\n]{8,50}$`
 Required: No
 
  ** HAPairs **   <a name="FSx-Type-UpdateFileSystemOntapConfiguration-HAPairs"></a>
-Use to update the number of high-availability (HA) pairs for a second-generation single-AZ file system. If you increase the number of HA pairs for your file system, you must specify proportional increases for `StorageCapacity`, `Iops`, and `ThroughputCapacity`. For more information, see [High-availability (HA) pairs](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/administering-file-systems.html#HA-pairs) in the FSx for ONTAP user guide. Block storage protocol support (iSCSI and NVMe over TCP) is disabled on file systems with more than 6 HA pairs. For more information, see [Using block storage protocols](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html#using-block-storage).
+Use to update the number of high-availability (HA) pairs for a second-generation or third-generation single-AZ file system. If you increase the number of HA pairs for your file system, you must specify proportional increases for `StorageCapacity`, `Iops`, and `ThroughputCapacity`. For more information, see [High-availability (HA) pairs](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/administering-file-systems.html#HA-pairs) in the FSx for ONTAP user guide. Block storage protocol support (iSCSI and NVMe over TCP) is disabled on file systems with more than 6 HA pairs. For more information, see [Using block storage protocols](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html#using-block-storage).
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 12.
 Required: No
@@ -80,9 +80,11 @@ This field and `ThroughputCapacity` are the same for file systems with one HA pa
 + For `SINGLE_AZ_1` and `MULTI_AZ_1` file systems, valid values are 128, 256, 512, 1024, 2048, or 4096 MBps.
 + For `SINGLE_AZ_2`, valid values are 1536, 3072, or 6144 MBps.
 + For `MULTI_AZ_2`, valid values are 384, 768, 1536, 3072, or 6144 MBps.
++ For `SINGLE_AZ_3`, valid values are 1536, 3072, 6144, 12288, or 18432 MBps.
++ For `MULTI_AZ_3`, valid values are 384, 768, 1536, 3072, 6144, 12288, or 18432 MBps.
 Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following conditions:
 + The value of `ThroughputCapacity` and `ThroughputCapacityPerHAPair` are not the same value for file systems with one HA pair.
-+ The value of deployment type is `SINGLE_AZ_2` and `ThroughputCapacity` / `ThroughputCapacityPerHAPair` is not a valid HA pair (a value between 1 and 12).
++ The value of deployment type is `SINGLE_AZ_2` or `SINGLE_AZ_3` and `ThroughputCapacity` / `ThroughputCapacityPerHAPair` is not a valid HA pair (a value between 1 and 12).
 + The value of `ThroughputCapacityPerHAPair` is not a valid value.
 Type: Integer
 Valid Range: Minimum value of 128. Maximum value of 6144.

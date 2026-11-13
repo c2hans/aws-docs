@@ -74,11 +74,11 @@ Type: String
 Valid Values: `AUTO_UPGRADE`
 
  ** [autoUpgradeEligibilitySummary](#API_GetJobUpgradeAnalysis_ResponseSyntax) **   <a name="Glue-GetJobUpgradeAnalysis-response-autoUpgradeEligibilitySummary"></a>
-The Amazon S3 URI of the consent report summarizing upgrade assessment findings. Populated when the analysis reaches `WAITING_FOR_CONSENT` and remains available in all subsequent states.
+A presigned URL for downloading the auto upgrade eligibility summary, which lists the compatibility results for the job. Available once the analysis reaches `WAITING_FOR_CONSENT` and in all subsequent states. The URL expires after 1 hour. Calling `GetJobUpgradeAnalysis` again returns a new URL.
 Type: String
 
  ** [autoUpgradeEvaluationSummary](#API_GetJobUpgradeAnalysis_ResponseSyntax) **   <a name="Glue-GetJobUpgradeAnalysis-response-autoUpgradeEvaluationSummary"></a>
-The Amazon S3 URI of the terminal-state evaluation summary, available once the analysis reaches a terminal status (`SUCCEEDED` or `FAILED`).
+A presigned URL for downloading the auto upgrade evaluation summary for the analysis. Available once the analysis reaches a terminal status (`SUCCEEDED` or `FAILED`). The URL expires after 1 hour. Calling `GetJobUpgradeAnalysis` again returns a new URL.
 Type: String
 
  ** [errorMessage](#API_GetJobUpgradeAnalysis_ResponseSyntax) **   <a name="Glue-GetJobUpgradeAnalysis-response-errorMessage"></a>

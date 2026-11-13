@@ -223,7 +223,7 @@ Create an on-demand queue by sending a CreateQueue request with the name of the 
 | --- |--- |--- |--- |
 | concurrentJobs | integer<br />Format: int64 | False | Specify the maximum number of jobs your queue can process concurrently. For on-demand queues, the value you enter is constrained by your service quotas for Maximum concurrent jobs, per on-demand queue and Maximum concurrent jobs, per account. For reserved queues, specify the number of jobs you can process concurrently in your reservation plan instead. |
 | description | string | False | Optional. A description of the queue that you are creating. |
-| maximumConcurrentFeeds | integer<br />Format: int32<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
+| maximumConcurrentFeeds | integer<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
 | name | string | True | The name of the queue that you are creating. |
 | pricingPlan | [PricingPlan](#queues-model-pricingplan) | False | Specifies whether the pricing plan for the queue is on-demand or reserved. For on-demand, you pay per minute, billed in increments of .01 minute. For reserved, you pay for the transcoding capacity of the entire queue, regardless of how much or how little you use it. Reserved pricing requires a 12-month commitment. When you use the API to create a queue, the default is on-demand. |
 | reservationPlanSettings | [ReservationPlanSettings](#queues-model-reservationplansettings) | False | Details about the pricing plan for your reserved queue. Required for reserved queues and not applicable to on-demand queues. |
@@ -296,7 +296,7 @@ You can use queues to manage the resources that are available to your AWS accoun
 | createdAt | string<br />Format: date-time | False | The timestamp in epoch seconds for when you created the queue. |
 | description | string | False | An optional description that you create for each queue. |
 | lastUpdated | string<br />Format: date-time | False | The timestamp in epoch seconds for when you most recently updated the queue. |
-| maximumConcurrentFeeds | integer<br />Format: int32<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
+| maximumConcurrentFeeds | integer<br />Minimum: 0 | False | Specify the maximum number of Elemental Inference feeds MediaConvert can process concurrently. |
 | name | string | True | A name that you create for each queue. Each name must be unique within your account. |
 | pricingPlan | [PricingPlan](#queues-model-pricingplan) | False | Specifies whether the pricing plan for the queue is on-demand or reserved. For on-demand, you pay per minute, billed in increments of .01 minute. For reserved, you pay for the transcoding capacity of the entire queue, regardless of how much or how little you use it. Reserved pricing requires a 12-month commitment. |
 | progressingJobsCount | integer<br />Format: int64 | False | The estimated number of jobs with a PROGRESSING status. |

@@ -19,7 +19,7 @@ Required: No
  ** KmsKeyArn **   <a name="Glue-Type-AuthenticationConfiguration-KmsKeyArn"></a>
 The Amazon Resource Name (ARN) of the KMS key used to encrypt sensitive authentication information. This key is used to protect credentials and other sensitive data stored within the authentication configuration.
 Type: String
-Pattern: `^$|arn:aws[a-z0-9-]*:kms:.*`
+Pattern: `^($|arn:aws[a-z0-9-]*:kms:.*)$`
 Required: No
 
  ** OAuth2Properties **   <a name="Glue-Type-AuthenticationConfiguration-OAuth2Properties"></a>
@@ -30,7 +30,6 @@ Required: No
  ** SecretArn **   <a name="Glue-Type-AuthenticationConfiguration-SecretArn"></a>
 The secret manager ARN to store credentials.
 Type: String
-Pattern: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:secretsmanager:.*$`
 Required: No
 
 ## See Also

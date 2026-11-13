@@ -63,6 +63,7 @@ Required: Yes
                "Name": "string"
             }
          ],
+         "DataQualityEvaluationConfig": "string",
          "DataSource": {
             "DataQualityGlueTable": {
                "AdditionalOptions": {
@@ -91,6 +92,7 @@ Required: Yes
             "string" : "string"
          },
          "EvaluationContext": "string",
+         "EvaluationRunMode": "string",
          "ExecutionCompletedOn": number,
          "ExecutionStartedOn": number,
          "Observations": [

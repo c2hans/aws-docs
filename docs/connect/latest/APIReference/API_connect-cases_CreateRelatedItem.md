@@ -23,6 +23,7 @@ Following are examples of related items that you may want to associate with a ca
 + If you are associating a contact to a case by passing in `Contact` for a `type`, you must have [DescribeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html) permission on the ARN of the contact that you provide in `content.contact.contactArn`.
 + A Related Item is a resource that is associated with a case. It may or may not have an external identifier linking it to an external resource (for example, a `contactArn`). All Related Items have their own internal identifier, the `relatedItemArn`. Examples of related items include `comments` and `contacts`.
 + If you provide a value for `performedBy.userArn`, you must also have [DescribeUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeUser.html) permission on the ARN of the user that you provide.
++ If the case is the secondary case of a merge that is running, the request fails with a `ConflictException`. For more information, see [StartMergeCases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_StartMergeCases.html).
 
  **Endpoints**: See [Connect Customer endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/connect_region.html).
 
@@ -117,6 +118,10 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
+
+ ** ConflictException **
+The requested operation would cause a conflict with the current state of a service resource associated with the request. Resolve the conflict before retrying this request. See the accompanying error message for details.
+HTTP Status Code: 409
 
  ** InternalServerException **
 We couldn't process your request because of an issue with the server. Try again later.

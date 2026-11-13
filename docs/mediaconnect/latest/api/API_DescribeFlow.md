@@ -177,6 +177,19 @@ Content-type: application/json
                "ndiSpeedHqQuality": number,
                "protocol": "string",
                "remoteId": "string",
+               "rtmpPushOutputSettings": {
+                  "applicationName": "string",
+                  "streamName": "string",
+                  "tlsEncryption": {
+                     "encryptionConfiguration": { ... },
+                     "encryptionType": "string"
+                  }
+               },
+               "rtmpPushSourceSettings": {
+                  "applicationName": "string",
+                  "namingType": "string",
+                  "streamName": "string"
+               },
                "senderControlPort": number,
                "senderIpAddress": "string",
                "smoothingLatency": number,
@@ -254,6 +267,19 @@ Content-type: application/json
             "ndiSpeedHqQuality": number,
             "protocol": "string",
             "remoteId": "string",
+            "rtmpPushOutputSettings": {
+               "applicationName": "string",
+               "streamName": "string",
+               "tlsEncryption": {
+                  "encryptionConfiguration": { ... },
+                  "encryptionType": "string"
+               }
+            },
+            "rtmpPushSourceSettings": {
+               "applicationName": "string",
+               "namingType": "string",
+               "streamName": "string"
+            },
             "senderControlPort": number,
             "senderIpAddress": "string",
             "smoothingLatency": number,
@@ -362,6 +388,19 @@ Content-type: application/json
                "ndiSpeedHqQuality": number,
                "protocol": "string",
                "remoteId": "string",
+               "rtmpPushOutputSettings": {
+                  "applicationName": "string",
+                  "streamName": "string",
+                  "tlsEncryption": {
+                     "encryptionConfiguration": { ... },
+                     "encryptionType": "string"
+                  }
+               },
+               "rtmpPushSourceSettings": {
+                  "applicationName": "string",
+                  "namingType": "string",
+                  "streamName": "string"
+               },
                "senderControlPort": number,
                "senderIpAddress": "string",
                "smoothingLatency": number,

@@ -86,7 +86,7 @@ Valid Values: `AVRO | JSON | PROTOBUF`
 The Amazon Resource Name (ARN) of the schema.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 
  ** [SchemaDefinition](#API_GetSchemaVersion_ResponseSyntax) **   <a name="Glue-GetSchemaVersion-response-SchemaDefinition"></a>
 The schema definition for the schema ID.

@@ -78,5 +78,5 @@ An array of objects that define a custom claim validation name, value, and opera
 This URL is used to fetch OpenID Connect configuration or authorization server metadata for validating incoming tokens.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^.+/\.well-known/openid-configuration$`
+*Pattern*: `^[^\s?#]+/\.well-known/(openid-configuration|oauth-authorization-server)(/[^\s?#]+)?$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

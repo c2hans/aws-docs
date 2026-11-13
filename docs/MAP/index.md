@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/MAP/index.html
 title: 'AWS Migration Acceleration Program Documentation'
 canonical_url: https://docs.aws.amazon.com/MAP/
 source: aws-documentation
-generated_on: 2026-11-11
+generated_on: 2026-11-12
 ---
 
 # AWS Migration Acceleration Program Documentation

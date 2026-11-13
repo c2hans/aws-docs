@@ -278,6 +278,8 @@ The resource type this template should dynamically generate cloudwatch metric al
 + `MEDIAPACKAGE_ORIGIN_ENDPOINT`
 + `MEDIACONNECT_FLOW`
 + `S3_BUCKET`
++ `MEDIATAILOR_PLAYBACK_CONFIGURATION`
++ `ELEMENTAL_INFERENCE_FEED`
 
 ### CloudWatchAlarmTemplateTreatMissingData
 <a name="cloudwatch-alarm-templates-identifier-model-cloudwatchalarmtemplatetreatmissingdata"></a>

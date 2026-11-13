@@ -19,11 +19,32 @@ Content-type: application/json
    "clientToken": "{{string}}",
    "configuration": { ... },
    "fabricConfiguration": {
-      "recoveryLatencyMode": "{{string}}"
+      "recoveryLatencyMode": "{{string}}",
+      "switchingConfiguration": { ... },
+      "switchingMode": "{{string}}"
    },
    "maintenanceConfiguration": { ... },
    "maximumBitrate": {{number}},
    "name": "{{string}}",
+   "processors": {
+      "singleProgramTransportStreamPidMap": {
+         "auto": {
+            "pidsPerProgram": {{number}},
+            "startPid": {{number}}
+         },
+         "defaultAction": "{{string}}",
+         "programClockReferencePid": { ... },
+         "programMapTablePid": { ... },
+         "programNumber": { ... },
+         "rules": [
+            {
+               "action": "{{string}}",
+               "matchExpression": "{{string}}"
+            }
+         ],
+         "transportStreamId": { ... }
+      }
+   },
    "regionName": "{{string}}",
    "routingScope": "{{string}}",
    "tags": {
@@ -83,6 +104,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: Yes
 
+ ** [processors](#API_CreateRouterOutput_RequestSyntax) **   <a name="mediaconnect-CreateRouterOutput-request-processors"></a>
+The processor settings for the router output. For more information, see [Using MediaConnect processors](https://docs.aws.amazon.com/mediaconnect/latest/ug/using-mediaconnect-processors.html) in the * AWS Elemental MediaConnect User Guide*.
+Type: [RouterOutputProcessors](API_RouterOutputProcessors.md) object
+Required: No
+
  ** [regionName](#API_CreateRouterOutput_RequestSyntax) **   <a name="mediaconnect-CreateRouterOutput-request-regionName"></a>
 The AWS Region for the router output. Defaults to the current region if not specified.
 Type: String
@@ -126,7 +152,9 @@ Content-type: application/json
       "configuration": { ... },
       "createdAt": "string",
       "fabricConfiguration": {
-         "recoveryLatencyMode": "string"
+         "recoveryLatencyMode": "string",
+         "switchingConfiguration": { ... },
+         "switchingMode": "string"
       },
       "id": "string",
       "ipAddress": "string",
@@ -143,6 +171,25 @@ Content-type: application/json
       ],
       "name": "string",
       "outputType": "string",
+      "processors": {
+         "singleProgramTransportStreamPidMap": {
+            "auto": {
+               "pidsPerProgram": number,
+               "startPid": number
+            },
+            "defaultAction": "string",
+            "programClockReferencePid": { ... },
+            "programMapTablePid": { ... },
+            "programNumber": { ... },
+            "rules": [
+               {
+                  "action": "string",
+                  "matchExpression": "string"
+               }
+            ],
+            "transportStreamId": { ... }
+         }
+      },
       "regionName": "string",
       "routedInputArn": "string",
       "routedState": "string",

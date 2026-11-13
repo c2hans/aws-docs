@@ -90,6 +90,12 @@ Type: Array of [SecurityConfiguration](API_SecurityConfiguration.md) objects
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** AccessDeniedException **
+Access to a resource was denied.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 400
+
  ** EntityNotFoundException **
 A specified entity does not exist
  ** FromFederationSource **

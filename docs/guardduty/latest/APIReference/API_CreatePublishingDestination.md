@@ -18,6 +18,7 @@ Content-type: application/json
    "clientToken": "{{string}}",
    "destinationProperties": {
       "destinationArn": "{{string}}",
+      "expectedBucketOwner": "{{string}}",
       "kmsKeyArn": "{{string}}"
    },
    "destinationType": "{{string}}",

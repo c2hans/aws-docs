@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[ConnectedAccountConfigs](#cfn-wafv2-rulegroup-monetizationconfig-connectedaccountconfigs)" : {{[ ConnectedAccountConfig, ... ]}},
   "[CryptoConfig](#cfn-wafv2-rulegroup-monetizationconfig-cryptoconfig)" : {{CryptoConfig}},
   "[CurrencyMode](#cfn-wafv2-rulegroup-monetizationconfig-currencymode)" : {{String}}
 }
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-wafv2-rulegroup-monetizationconfig-syntax.yaml"></a>
 
 ```
+  [ConnectedAccountConfigs](#cfn-wafv2-rulegroup-monetizationconfig-connectedaccountconfigs): {{
+    - ConnectedAccountConfig}}
   [CryptoConfig](#cfn-wafv2-rulegroup-monetizationconfig-cryptoconfig): {{
     CryptoConfig}}
   [CurrencyMode](#cfn-wafv2-rulegroup-monetizationconfig-currencymode): {{String}}
@@ -35,6 +38,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-wafv2-rulegroup-monetizationconfig-properties"></a>
+
+`ConnectedAccountConfigs`  <a name="cfn-wafv2-rulegroup-monetizationconfig-connectedaccountconfigs"></a>
+The connected account configurations for settling AI bot payments through a connected account with a supported third-party payment provider (Stripe), as an alternative to the self-managed wallets in `CryptoConfig`. You can provide `CryptoConfig`, `ConnectedAccountConfigs`, or both; however, a given blockchain network (chain) can be used by only one of them. Currently supports exactly one connected account.
+*Required*: No
+*Type*: Array of [ConnectedAccountConfig](aws-properties-wafv2-rulegroup-connectedaccountconfig.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CryptoConfig`  <a name="cfn-wafv2-rulegroup-monetizationconfig-cryptoconfig"></a>
 The cryptocurrency payment configuration, including the blockchain networks and wallet addresses where you receive payments.

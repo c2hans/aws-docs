@@ -93,7 +93,7 @@ Description of the error.
 The reason for the access denied exception.
  ** requestId **
 The unique identifier for the error.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConflictException **
 Request was denied due to a resource conflict.
@@ -105,7 +105,7 @@ The unique identifier for the error.
 The unique identifier of the resource involved in the conflict.
  ** resourceType **
 The type of the resource involved in the conflict.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Unexpected error during processing of request.
@@ -121,7 +121,7 @@ Request was denied due to request throttling.
 Description of the error.
  ** requestId **
 The unique identifier for the error.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 The input fails to satisfy the constraints specified by the service.

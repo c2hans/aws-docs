@@ -20,11 +20,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AllowPrivilegeEscalation](#cfn-batch-jobdefinition-ekscontainersecuritycontext-allowprivilegeescalation)" : {{Boolean}},
+  "[Capabilities](#cfn-batch-jobdefinition-ekscontainersecuritycontext-capabilities)" : {{EksContainerLinuxCapabilities}},
   "[Privileged](#cfn-batch-jobdefinition-ekscontainersecuritycontext-privileged)" : {{Boolean}},
   "[ReadOnlyRootFilesystem](#cfn-batch-jobdefinition-ekscontainersecuritycontext-readonlyrootfilesystem)" : {{Boolean}},
   "[RunAsGroup](#cfn-batch-jobdefinition-ekscontainersecuritycontext-runasgroup)" : {{Integer}},
   "[RunAsNonRoot](#cfn-batch-jobdefinition-ekscontainersecuritycontext-runasnonroot)" : {{Boolean}},
-  "[RunAsUser](#cfn-batch-jobdefinition-ekscontainersecuritycontext-runasuser)" : {{Integer}}
+  "[RunAsUser](#cfn-batch-jobdefinition-ekscontainersecuritycontext-runasuser)" : {{Integer}},
+  "[SeccompProfile](#cfn-batch-jobdefinition-ekscontainersecuritycontext-seccompprofile)" : {{EksSeccompProfile}}
 }
 ```
 
@@ -33,11 +35,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AllowPrivilegeEscalation](#cfn-batch-jobdefinition-ekscontainersecuritycontext-allowprivilegeescalation): {{Boolean}}
+  [Capabilities](#cfn-batch-jobdefinition-ekscontainersecuritycontext-capabilities): {{
+    EksContainerLinuxCapabilities}}
   [Privileged](#cfn-batch-jobdefinition-ekscontainersecuritycontext-privileged): {{Boolean}}
   [ReadOnlyRootFilesystem](#cfn-batch-jobdefinition-ekscontainersecuritycontext-readonlyrootfilesystem): {{Boolean}}
   [RunAsGroup](#cfn-batch-jobdefinition-ekscontainersecuritycontext-runasgroup): {{Integer}}
   [RunAsNonRoot](#cfn-batch-jobdefinition-ekscontainersecuritycontext-runasnonroot): {{Boolean}}
   [RunAsUser](#cfn-batch-jobdefinition-ekscontainersecuritycontext-runasuser): {{Integer}}
+  [SeccompProfile](#cfn-batch-jobdefinition-ekscontainersecuritycontext-seccompprofile): {{
+    EksSeccompProfile}}
 ```
 
 ## Properties
@@ -47,6 +53,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Whether or not a container or a Kubernetes pod is allowed to gain more privileges than its parent process. The default value is `false`.
 *Required*: No
 *Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Capabilities`  <a name="cfn-batch-jobdefinition-ekscontainersecuritycontext-capabilities"></a>
+Adds or removes Linux capabilities from the container's default capability set. With Linux capabilities, you can grant specific privileges without granting full root permissions.
+*Required*: No
+*Type*: [EksContainerLinuxCapabilities](aws-properties-batch-jobdefinition-ekscontainerlinuxcapabilities.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Privileged`  <a name="cfn-batch-jobdefinition-ekscontainersecuritycontext-privileged"></a>
@@ -77,4 +89,10 @@ When this parameter is specified, the container is run as a user with a `uid` ot
 When this parameter is specified, the container is run as the specified user ID (`uid`). If this parameter isn't specified, the default is the user that's specified in the image metadata. The supported value range is `0` through `2147483647`. This parameter maps to `RunAsUser` and `MustRunAs` policy in the [Users and groups pod security policies](https://kubernetes.io/docs/concepts/security/pod-security-policy/#users-and-groups) in the *Kubernetes documentation*.
 *Required*: No
 *Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SeccompProfile`  <a name="cfn-batch-jobdefinition-ekscontainersecuritycontext-seccompprofile"></a>
+The seccomp profile for the container. A container-level seccomp profile overrides the profile in the pod security context, which defines security settings that apply to all containers in the pod unless a container overrides them. If this parameter isn't specified, the container uses the pod security context's seccomp profile when one is specified.
+*Required*: No
+*Type*: [EksSeccompProfile](aws-properties-batch-jobdefinition-eksseccompprofile.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -93,7 +93,7 @@ Information about the SCTE-27 captions to extract from the input.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SmartSubtitleSourceSettings`  <a name="cfn-medialive-channel-captionselectorsettings-smartsubtitlesourcesettings"></a>
-Property description not available.
+Information about the subtitles that AWS Elemental Inference generates from the channel audio (Smart Subtitles). The channel's InferenceSettings must specify an Elemental Inference feed (InferenceSettings.FeedArn).
 *Required*: No
 *Type*: [SmartSubtitleSourceSettings](aws-properties-medialive-channel-smartsubtitlesourcesettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

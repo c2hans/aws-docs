@@ -17,6 +17,8 @@ The handling of `MeterUsage` requests varies between Amazon Bedrock AgentCore Ru
 
 If you submit records more than six hours after events occur, the records won't be accepted. The timestamp in your request determines when an event is recorded.
 
+To report fractional usage, use `UsageQuantityAsDecimal` instead of `UsageQuantity`.
+
 You can optionally include multiple usage allocations, to provide customers with usage data split into buckets by tags that you define or allow the customer to define.
 
 For AWS Regions that support `MeterUsage`, see [MeterUsage Region support for Amazon EC2](https://docs.aws.amazon.com/marketplace/latest/APIReference/metering-regions.html#meterusage-region-support-ec2) and [MeterUsage Region support for Amazon ECS and Amazon EKS](https://docs.aws.amazon.com/marketplace/latest/APIReference/metering-regions.html#meterusage-region-support-ecs-eks).
@@ -33,6 +35,7 @@ For AWS Regions that support `MeterUsage`, see [MeterUsage Region support for Am
    "UsageAllocations": [
       {
          "AllocatedUsageQuantity": {{number}},
+         "AllocatedUsageQuantityAsDecimal": "{{string}}",
          "Tags": [
             {
                "Key": "{{string}}",
@@ -42,7 +45,8 @@ For AWS Regions that support `MeterUsage`, see [MeterUsage Region support for Am
       }
    ],
    "UsageDimension": "{{string}}",
-   "UsageQuantity": {{number}}
+   "UsageQuantity": {{number}},
+   "UsageQuantityAsDecimal": "{{string}}"
 }
 ```
 
@@ -90,15 +94,27 @@ Required: No
 
  ** [UsageAllocations](#API_marketplace-metering_MeterUsage_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-metering_MeterUsage-request-UsageAllocations"></a>
 The set of `UsageAllocations` to submit.
-The sum of all `UsageAllocation` quantities must equal the `UsageQuantity` of the `MeterUsage` request, and each `UsageAllocation` must have a unique set of tags (include no tags).
+The sum of all `UsageAllocation` quantities must equal the usage quantity of the `MeterUsage` request (`UsageQuantity` or `UsageQuantityAsDecimal`), and each `UsageAllocation` must have a unique set of tags (include no tags). Allocations must use the same type of quantity as the request: `AllocatedUsageQuantity` with `UsageQuantity`, or `AllocatedUsageQuantityAsDecimal` with `UsageQuantityAsDecimal`.
 Type: Array of [UsageAllocation](API_marketplace-metering_UsageAllocation.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 2500 items.
 Required: No
 
  ** [UsageQuantity](#API_marketplace-metering_MeterUsage_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-metering_MeterUsage-request-UsageQuantity"></a>
-Consumption value for the hour. Defaults to `0` if not specified.
+ *This parameter has been deprecated.*
+The consumption value for the hour, as a whole number. Defaults to `0` if neither `UsageQuantity` nor `UsageQuantityAsDecimal` is specified.
+Use `UsageQuantityAsDecimal` instead. You can't specify both `UsageQuantity` and `UsageQuantityAsDecimal`.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 2147483647.
+Required: No
+
+ ** [UsageQuantityAsDecimal](#API_marketplace-metering_MeterUsage_RequestSyntax) **   <a name="AWSMarketplaceService-marketplace-metering_MeterUsage-request-UsageQuantityAsDecimal"></a>
+The consumption value for the hour, as a decimal string. Use this instead of `UsageQuantity` to report fractional usage.
+A non-negative decimal number, for example `17.42`.
+You can't specify both `UsageQuantity` and `UsageQuantityAsDecimal`. If you provide `UsageAllocations`, each allocation must use `AllocatedUsageQuantityAsDecimal`.
+Quantities are compared by value when checking for duplicate or retried requests, so `17`, `17.0`, and `17.00` are the same quantity, whether you send it in `UsageQuantity` or `UsageQuantityAsDecimal`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 17.
+Pattern: `^(0|[1-9][0-9]{0,9})(\.[0-9]{1,6})?$`
 Required: No
 
 ## Response Syntax
@@ -131,7 +147,7 @@ Exception thrown when the customer does not have a valid subscription for the pr
 HTTP Status Code: 400
 
  ** DuplicateRequestException **
-A metering record has already been emitted by the same EC2 instance, ECS task, or EKS pod for the given {`usageDimension`, `timestamp`} with a different `usageQuantity`.
+A metering record has already been emitted by the same EC2 instance, ECS task, or EKS pod for the given {`usageDimension`, `timestamp`} with a different `usageQuantity`. Quantities are compared by value, so a whole-number and a decimal quantity with the same value (for example, `17` and `17.00`) are not different.
 HTTP Status Code: 400
 
  ** IdempotencyConflictException **
@@ -155,7 +171,7 @@ The tag is invalid, or the number of tags is greater than 5.
 HTTP Status Code: 400
 
  ** InvalidUsageAllocationsException **
-Sum of allocated usage quantities is not equal to the usage quantity.
+Sum of allocated usage quantities is not equal to the usage quantity, or the allocations don't use the same type of quantity (whole number or decimal) as the usage quantity.
 HTTP Status Code: 400
 
  ** InvalidUsageDimensionException **

@@ -11,6 +11,7 @@ For changes to the Amazon Cognito service itself, such as new features, behavior
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Session management for user pools](https://docs.aws.amazon.com/cognito/latest/developerguide/managing-user-sessions.html) | You can now manage user sessions in your user pools, including viewing active sessions and revoking them. | November 5, 2026 |
 | [SCIM-compatible custom attribute names](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-attributes.html#user-pool-settings-custom-attributes-scim) | Custom attribute names must now comply with the attribute-name rule of the System for Cross-domain Identity Management (SCIM) protocol in RFC 7644. Existing custom attributes aren't affected. | November 2, 2026 |
 | [Reorganized API and endpoint references](#cognito-document-history) | The user pool endpoints and managed login reference is now a top-level section of the guide. The guide no longer links to the Amazon Cognito user pools, Amazon Cognito identity pools, and Amazon Cognito Sync API references. These API references remain available in their respective API reference guides. | October 8, 2026 |
 | [Reserved resource server identifiers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.html#cognito-user-pools-define-resource-servers-about-resource-servers) | You can't create a resource server identifier that is `aws.cognito`, or that begins with `aws.cognito/`, because Amazon Cognito reserves them for AWS use. | October 2, 2026 |

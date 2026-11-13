@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/account-access-runtime/latest/APIReferen
 
 Use the Account Access Runtime API to list the roles that you can access and retrieve temporary Amazon Web Services credentials for those roles. You authenticate with a bearer token from IAM Identity Center with the `account_access:read_only` and `account_access:assume` scopes. Each request is scoped to a tenant.
 
-This document was last published on November 11, 2026.
+This document was last published on November 12, 2026.

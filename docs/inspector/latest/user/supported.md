@@ -182,6 +182,7 @@ Ubuntu
 | Debian Server (Trixie) | 13 | DSA CVE | Fixed, Open | Yes | Yes |
 | Fedora | 43 | CVE Errata | Fixed | Yes | Yes |
 | Fedora | 44 | CVE Errata | Fixed | Yes | Yes |
+| Fedora | 45 | CVE Errata | Fixed | Yes | No |
 | Oracle Linux | 8 | CVE Errata | Fixed | Yes | Yes |
 | Oracle Linux | 9 | CVE Errata | Fixed | Yes | Yes |
 | Oracle Linux | 10 | CVE Errata | Fixed | Yes | Yes |

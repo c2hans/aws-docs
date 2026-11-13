@@ -85,7 +85,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/signal-map
   "eventBridgeRuleTemplateGroupIdentifiers": [
     "string"
   ],
-  "name": "string"
+  "name": "string",
+  "requestId": "string",
+  "tags": {
+  }
 }
 ```
 
@@ -236,6 +239,8 @@ Updating or deleting a resource can cause an inconsistent state.
 | discoveryEntryPointArn | string<br />MinLength: 1<br />MaxLength: 2048 | True | A top-level supported Amazon Web Services resource ARN to discover a signal map from. |
 | eventBridgeRuleTemplateGroupIdentifiers | Array of type string<br />Pattern: `^[^\s]+$` | False | An eventbridge rule template group's identifier. Can be either be its id or current name. |
 | name | string<br />Pattern: `^[^\s]+$`<br />MinLength: 1<br />MaxLength: 255 | True | A resource's name. Names must be unique within the scope of a resource type in a specific region. |
+| requestId | string<br />MinLength: 1<br />MaxLength: 256 | False | An ID that you assign to a create request. This ID ensures idempotency when creating resources. |
+| tags | [Tags](#signal-maps-model-tags) | False |  |
 
 ### CreateSignalMapResponseContent
 <a name="signal-maps-model-createsignalmapresponsecontent"></a>
@@ -399,6 +404,13 @@ Represents the latest successful monitor deployment of a signal map.
 | --- |--- |--- |--- |
 | detailsUri | string<br />MinLength: 1<br />MaxLength: 2048 | True | URI associated with a signal map's monitor deployment. |
 | status | [SignalMapMonitorDeploymentStatus](#signal-maps-model-signalmapmonitordeploymentstatus) | True | A signal map's monitor deployment status. |
+
+### Tags
+<a name="signal-maps-model-tags"></a>
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| `*` | string | False |  |
 
 ### TooManyRequestsExceptionResponseContent
 <a name="signal-maps-model-toomanyrequestsexceptionresponsecontent"></a>

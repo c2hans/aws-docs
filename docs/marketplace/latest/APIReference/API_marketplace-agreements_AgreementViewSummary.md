@@ -70,6 +70,12 @@ A list of entitlements associated with the agreement.
 Type: Array of [Entitlement](API_marketplace-agreements_Entitlement.md) objects
 Required: No
 
+ ** freeTrialEndTime **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AgreementViewSummary-freeTrialEndTime"></a>
+The date and time when the free trial of the agreement ends. This field is present only when the agreement includes a free trial.
+For an agreement that includes both a free trial and usage-based pricing, the agreement converts to paid usage at this time.
+Type: Timestamp
+Required: No
+
  ** initialAgreementId **   <a name="AWSMarketplaceService-Type-marketplace-agreements_AgreementViewSummary-initialAgreementId"></a>
 The unique identifier of the very first agreement in a chain of related agreements, such as renewals or replacements. It stays the same across all agreements in that chain, which lets you trace an agreement back to the original. You can also use it as the `InitialAgreementId` filter value to return every agreement in the same chain.
 Type: String

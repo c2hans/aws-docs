@@ -167,7 +167,7 @@ Description of the error.
 The reason for the access denied exception.
  ** requestId **
 The unique identifier for the error.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConflictException **
 Request was denied due to a resource conflict.
@@ -179,7 +179,7 @@ The unique identifier for the error.
 The unique identifier of the resource involved in the conflict.
  ** resourceType **
 The type of the resource involved in the conflict.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Unexpected error during processing of request.
@@ -199,7 +199,7 @@ The unique identifier for the error.
 The unique identifier for the resource.
  ** resourceType **
 The type of resource.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ServiceQuotaExceededException **
 Request exceeded the maximum allowed limit (quota) for a specific resource or API operation.
@@ -215,7 +215,7 @@ The unique identifier of the resource that exceeded the quota.
 The type of the resource that exceeded the quota.
  ** serviceCode **
 The code of the service whose quota was exceeded.
-HTTP Status Code: 400
+HTTP Status Code: 402
 
  ** ThrottlingException **
 Request was denied due to request throttling.
@@ -223,7 +223,7 @@ Request was denied due to request throttling.
 Description of the error.
  ** requestId **
 The unique identifier for the error.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ValidationException **
 The input fails to satisfy the constraints specified by the service.

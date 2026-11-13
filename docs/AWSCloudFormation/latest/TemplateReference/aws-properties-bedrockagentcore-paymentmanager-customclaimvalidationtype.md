@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue)" : {{AuthorizingClaimMatchValue}},
+  "[AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue)" : {{AuthorizingClaimMatchValueType}},
   "[InboundTokenClaimName](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname)" : {{String}},
   "[InboundTokenClaimValueType](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimvaluetype)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue): {{
-    AuthorizingClaimMatchValue}}
+    AuthorizingClaimMatchValueType}}
   [InboundTokenClaimName](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname): {{String}}
   [InboundTokenClaimValueType](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimvaluetype): {{String}}
 ```
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `AuthorizingClaimMatchValue`  <a name="cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue"></a>
 The value or values to match against the claim.
 *Required*: Yes
-*Type*: [AuthorizingClaimMatchValue](aws-properties-bedrockagentcore-paymentmanager-authorizingclaimmatchvalue.md)
+*Type*: [AuthorizingClaimMatchValueType](aws-properties-bedrockagentcore-paymentmanager-authorizingclaimmatchvaluetype.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `InboundTokenClaimName`  <a name="cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname"></a>

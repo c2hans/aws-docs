@@ -13,6 +13,11 @@ Metadata information associated with the router input, including stream details 
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** rtmpInfo **   <a name="mediaconnect-Type-RouterInputMetadata-rtmpInfo"></a>
+The RTMP (Real-Time Messaging Protocol) specific information about the router input's source. This includes the application name, the stream name, and the associated audio and video streams.
+Type: [RtmpSourceMetadataInfo](API_RtmpSourceMetadataInfo.md) object
+Required: No
+
  ** transportStreamMediaInfo **   <a name="mediaconnect-Type-RouterInputMetadata-transportStreamMediaInfo"></a>
  The metadata of the transport stream in the current flow's source.
 Type: [TransportMediaInfo](API_TransportMediaInfo.md) object

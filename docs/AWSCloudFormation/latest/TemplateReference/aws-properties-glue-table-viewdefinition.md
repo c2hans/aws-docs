@@ -68,5 +68,5 @@ A list of table Amazon Resource Names (ARNs).
 *Required*: No
 *Type*: Array of String
 *Minimum*: `0`
-*Maximum*: `10`
+*Maximum*: `250`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

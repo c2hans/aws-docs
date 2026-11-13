@@ -154,7 +154,7 @@ Specifies a job definition.
 + `Running` – Boolean.
 
   This field is reserved for future use.
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #79](aws-glue-api-common.md#regex_79).
 
   In Spark jobs, `GlueVersion` determines the versions of Apache Spark and Python that AWS Glue available in a job. The Python version indicates the version supported for jobs of type Spark.
 
@@ -163,6 +163,8 @@ Specifies a job definition.
   For more information about the available AWS Glue versions and corresponding Spark and Python versions, see [Glue version](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
 
   Jobs that are created without specifying a Glue version default to Glue 6.0.
+
+  Set `GlueVersion` to `auto` to turn on automatic version upgrades for the job. For more information, see [Automatic version upgrades for AWS Glue jobs](https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html) in the developer guide. For the job requirements, see [Before you start](https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html#auto-version-upgrades-before-you-start).
 + `CodeGenConfigurationNodes` – A map array of key-value pairs.
 
   Each key is a UTF-8 string, matching the [Custom string pattern #65](aws-glue-api-common.md#regex_65).
@@ -348,7 +350,7 @@ Specifies information used to update an existing job definition. The previous jo
 + `NotificationProperty` – A [NotificationProperty](aws-glue-api-jobs-runs.md#aws-glue-api-jobs-runs-NotificationProperty) object.
 
   Specifies the configuration properties of a job notification.
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #79](aws-glue-api-common.md#regex_79).
 
   In Spark jobs, `GlueVersion` determines the versions of Apache Spark and Python that AWS Glue available in a job. The Python version indicates the version supported for jobs of type Spark.
 
@@ -357,6 +359,8 @@ Specifies information used to update an existing job definition. The previous jo
   For more information about the available AWS Glue versions and corresponding Spark and Python versions, see [Glue version](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
 
   If not provided in the update request, the Glue version retains the value from the existing job definition.
+
+  Set `GlueVersion` to `auto` to turn on automatic version upgrades for the job. For more information, see [Automatic version upgrades for AWS Glue jobs](https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html) in the developer guide. For the job requirements, see [Before you start](https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html#auto-version-upgrades-before-you-start).
 + `CodeGenConfigurationNodes` – A map array of key-value pairs.
 
   Each key is a UTF-8 string, matching the [Custom string pattern #65](aws-glue-api-common.md#regex_65).
@@ -423,13 +427,13 @@ The details for a source control configuration for a job, allowing synchronizati
 The auto-upgrade assessment information for a job configured with `GlueVersion=auto`.
 
 **Fields**
-+ `TargetVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `TargetVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #79](aws-glue-api-common.md#regex_79).
 
   The target AWS Glue runtime version the job is being upgraded to.
-+ `SourceVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `SourceVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #79](aws-glue-api-common.md#regex_79).
 
   The source AWS Glue runtime version the job was running before auto-version was enabled.
-+ `Status` – UTF-8 string (valid values: `OBSERVING=""` \| `UPGRADING=""` \| `UPGRADE_SUCCEEDED=""` \| `UPGRADE_FAILED=""` \| `STOPPED=""` \| `WAITING_FOR_CONSENT=""`).
++ `Status` – UTF-8 string (valid values: `OBSERVING` \| `UPGRADING` \| `UPGRADE_SUCCEEDED` \| `UPGRADE_FAILED` \| `STOPPED` \| `WAITING_FOR_CONSENT`).
 
   The current auto-upgrade lifecycle status (OBSERVING, UPGRADING, UPGRADE\_SUCCEEDED, UPGRADE\_FAILED, STOPPED, WAITING\_FOR\_CONSENT).
 + `AnalysisId` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Single-line string pattern](aws-glue-api-common.md#aws-glue-api-regex-oneLine).
@@ -555,7 +559,7 @@ Creates a new job definition.
 + `NotificationProperty` – A [NotificationProperty](aws-glue-api-jobs-runs.md#aws-glue-api-jobs-runs-NotificationProperty) object.
 
   Specifies configuration properties of a job notification.
-+ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #45](aws-glue-api-common.md#regex_45).
++ `GlueVersion` – UTF-8 string, not less than 1 or more than 255 bytes long, matching the [Custom string pattern #79](aws-glue-api-common.md#regex_79).
 
   In Spark jobs, `GlueVersion` determines the versions of Apache Spark and Python that AWS Glue available in a job. The Python version indicates the version supported for jobs of type Spark.
 
@@ -564,6 +568,8 @@ Creates a new job definition.
   For more information about the available AWS Glue versions and corresponding Spark and Python versions, see [Glue version](https://docs.aws.amazon.com/glue/latest/dg/add-job.html) in the developer guide.
 
   Jobs that are created without specifying a Glue version default to Glue 6.0.
+
+  Set `GlueVersion` to `auto` to turn on automatic version upgrades for the job. For more information, see [Automatic version upgrades for AWS Glue jobs](https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html) in the developer guide. For the job requirements, see [Before you start](https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades.html#auto-version-upgrades-before-you-start).
 + `NumberOfWorkers` – Number (integer).
 
   The number of workers of a defined `workerType` that are allocated when a job runs.

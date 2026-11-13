@@ -16,6 +16,8 @@ Specifies the FSx for ONTAP file system deployment type to use in creating the f
 +  `MULTI_AZ_2` - A high availability file system configured for Multi-AZ redundancy to tolerate temporary AZ unavailability. This is a second-generation FSx for ONTAP file system.
 +  `SINGLE_AZ_1` - A file system configured for Single-AZ redundancy. This is a first-generation FSx for ONTAP file system.
 +  `SINGLE_AZ_2` - A file system configured with multiple high-availability (HA) pairs for Single-AZ redundancy. This is a second-generation FSx for ONTAP file system.
++  `MULTI_AZ_3` - A high availability file system configured for Multi-AZ redundancy to tolerate temporary AZ unavailability. This is a third-generation FSx for ONTAP file system.
++  `SINGLE_AZ_3` - A file system configured with multiple high-availability (HA) pairs for Single-AZ redundancy. This is a third-generation FSx for ONTAP file system.
 For information about the use cases for Multi-AZ and Single-AZ deployments, refer to [Choosing a file system deployment type](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/high-availability-AZ.html).
 Type: String
 Valid Values: `MULTI_AZ_1 | SINGLE_AZ_1 | SINGLE_AZ_2 | MULTI_AZ_2`
@@ -61,16 +63,16 @@ Pattern: `^[^\u0000\u0085\u2028\u2029\r\n]{8,50}$`
 Required: No
 
  ** HAPairs **   <a name="FSx-Type-CreateFileSystemOntapConfiguration-HAPairs"></a>
-Specifies how many high-availability (HA) pairs of file servers will power your file system. First-generation file systems are powered by 1 HA pair. Second-generation multi-AZ file systems are powered by 1 HA pair. Second generation single-AZ file systems are powered by up to 12 HA pairs. The default value is 1. The value of this property affects the values of `StorageCapacity`, `Iops`, and `ThroughputCapacity`. For more information, see [High-availability (HA) pairs](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/administering-file-systems.html#HA-pairs) in the FSx for ONTAP user guide. Block storage protocol support (iSCSI and NVMe over TCP) is disabled on file systems with more than 6 HA pairs. For more information, see [Using block storage protocols](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html#using-block-storage).
+Specifies how many high-availability (HA) pairs of file servers will power your file system. First-generation file systems are powered by 1 HA pair. Second-generation and third-generation multi-AZ file systems are powered by 1 HA pair. Second-generation and third-generation single-AZ file systems are powered by up to 12 HA pairs. The default value is 1. The value of this property affects the values of `StorageCapacity`, `Iops`, and `ThroughputCapacity`. For more information, see [High-availability (HA) pairs](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/administering-file-systems.html#HA-pairs) in the FSx for ONTAP user guide. Block storage protocol support (iSCSI and NVMe over TCP) is disabled on file systems with more than 6 HA pairs. For more information, see [Using block storage protocols](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html#using-block-storage).
 Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following conditions:
 + The value of `HAPairs` is less than 1 or greater than 12.
-+ The value of `HAPairs` is greater than 1 and the value of `DeploymentType` is `SINGLE_AZ_1`, `MULTI_AZ_1`, or `MULTI_AZ_2`.
++ The value of `HAPairs` is greater than 1 and the value of `DeploymentType` is `SINGLE_AZ_1`, `MULTI_AZ_1`, `MULTI_AZ_2`, or `MULTI_AZ_3`.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 12.
 Required: No
 
  ** PreferredSubnetId **   <a name="FSx-Type-CreateFileSystemOntapConfiguration-PreferredSubnetId"></a>
-Required when `DeploymentType` is set to `MULTI_AZ_1` or `MULTI_AZ_2`. This specifies the subnet in which you want the preferred file server to be located.
+Required when `DeploymentType` is set to `MULTI_AZ_1`, `MULTI_AZ_2`, or `MULTI_AZ_3`. This specifies the subnet in which you want the preferred file server to be located.
 Type: String
 Length Constraints: Minimum length of 15. Maximum length of 24.
 Pattern: `^(subnet-[0-9a-f]{8,})$`
@@ -101,9 +103,11 @@ This field and `ThroughputCapacity` are the same for file systems powered by one
 + For `SINGLE_AZ_1` and `MULTI_AZ_1` file systems, valid values are 128, 256, 512, 1024, 2048, or 4096 MBps.
 + For `SINGLE_AZ_2`, valid values are 1536, 3072, or 6144 MBps.
 + For `MULTI_AZ_2`, valid values are 384, 768, 1536, 3072, or 6144 MBps.
++ For `SINGLE_AZ_3`, valid values are 1536, 3072, 6144, 12288, or 18432 MBps.
++ For `MULTI_AZ_3`, valid values are 384, 768, 1536, 3072, 6144, 12288, or 18432 MBps.
 Amazon FSx responds with an HTTP status code 400 (Bad Request) for the following conditions:
 + The value of `ThroughputCapacity` and `ThroughputCapacityPerHAPair` are not the same value for file systems with one HA pair.
-+ The value of deployment type is `SINGLE_AZ_2` and `ThroughputCapacity` / `ThroughputCapacityPerHAPair` is not a valid HA pair (a value between 1 and 12).
++ The value of deployment type is `SINGLE_AZ_2` or `SINGLE_AZ_3` and `ThroughputCapacity` / `ThroughputCapacityPerHAPair` is not a valid HA pair (a value between 1 and 12).
 + The value of `ThroughputCapacityPerHAPair` is not a valid value.
 Type: Integer
 Valid Range: Minimum value of 128. Maximum value of 6144.

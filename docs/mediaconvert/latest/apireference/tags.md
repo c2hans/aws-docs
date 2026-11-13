@@ -18,7 +18,7 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/tags.ht
 
 **Operation ID:** `TagResource`
 
-Add tags to a MediaConvert queue, preset, or job template. For information about tagging, see the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/tagging-resources.html
+Add tags to a MediaConvert queue, preset, job, or job template. For information about tagging, see the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/tagging-mediaconvert-resources.html.
 
 **Responses**
 
@@ -94,7 +94,7 @@ Supports CORS preflight requests.
 ### TagResourceRequest
 <a name="tags-model-tagresourcerequest"></a>
 
-To add tags to a queue, preset, or job template, send a request with the Amazon Resource Name (ARN) of the resource and the tags that you want to add.
+To add tags to a MediaConvert queue, preset, job, or job template, send a request with the Amazon Resource Name (ARN) of the resource and the tags that you want to add.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |

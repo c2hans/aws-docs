@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[EnableTLSSessionHolding](#cfn-networkfirewall-firewallpolicy-firewallpolicy-enabletlssessionholding)" : {{Boolean}},
   "[PolicyVariables](#cfn-networkfirewall-firewallpolicy-firewallpolicy-policyvariables)" : {{PolicyVariables}},
+  "[Route53ResolvedIPValidation](#cfn-networkfirewall-firewallpolicy-firewallpolicy-route53resolvedipvalidation)" : {{Route53ResolvedIPValidation}},
   "[StatefulDefaultActions](#cfn-networkfirewall-firewallpolicy-firewallpolicy-statefuldefaultactions)" : {{[ String, ... ]}},
   "[StatefulEngineOptions](#cfn-networkfirewall-firewallpolicy-firewallpolicy-statefulengineoptions)" : {{StatefulEngineOptions}},
   "[StatefulRuleGroupReferences](#cfn-networkfirewall-firewallpolicy-firewallpolicy-statefulrulegroupreferences)" : {{[ StatefulRuleGroupReference, ... ]}},
@@ -39,6 +40,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [EnableTLSSessionHolding](#cfn-networkfirewall-firewallpolicy-firewallpolicy-enabletlssessionholding): {{Boolean}}
   [PolicyVariables](#cfn-networkfirewall-firewallpolicy-firewallpolicy-policyvariables): {{
     PolicyVariables}}
+  [Route53ResolvedIPValidation](#cfn-networkfirewall-firewallpolicy-firewallpolicy-route53resolvedipvalidation): {{
+    Route53ResolvedIPValidation}}
   [StatefulDefaultActions](#cfn-networkfirewall-firewallpolicy-firewallpolicy-statefuldefaultactions): {{
     - String}}
   [StatefulEngineOptions](#cfn-networkfirewall-firewallpolicy-firewallpolicy-statefulengineoptions): {{
@@ -69,6 +72,12 @@ When true, prevents TCP and TLS packets from reaching destination servers until 
 Contains variables that you can use to override default Suricata settings in your firewall policy.
 *Required*: No
 *Type*: [PolicyVariables](aws-properties-networkfirewall-firewallpolicy-policyvariables.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Route53ResolvedIPValidation`  <a name="cfn-networkfirewall-firewallpolicy-firewallpolicy-route53resolvedipvalidation"></a>
+The settings that enable resolved IP validation for the policy. Resolved IP validation verifies that a connection's destination IP address is one that the Amazon Route 53 Resolver returned in a DNS response for a domain. A VPC that's associated with the Route 53 Resolver DNS Firewall rule group that you specify must send the response. This checks how the destination IP address was obtained, instead of relying only on the domain that the client asserts in its TLS Server Name Indication (SNI) or HTTP `Host` header. For more information, see [Route53ResolvedIPValidation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkfirewall-firewallpolicy-firewallpolicy.html#cfn-networkfirewall-firewallpolicy-firewallpolicy-route53resolvedipvalidation).
+*Required*: No
+*Type*: [Route53ResolvedIPValidation](aws-properties-networkfirewall-firewallpolicy-route53resolvedipvalidation.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StatefulDefaultActions`  <a name="cfn-networkfirewall-firewallpolicy-firewallpolicy-statefuldefaultactions"></a>

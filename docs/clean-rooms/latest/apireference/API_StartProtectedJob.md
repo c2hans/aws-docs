@@ -88,7 +88,10 @@ Content-type: application/json
       "createTime": number,
       "error": {
          "code": "string",
-         "message": "string"
+         "message": "string",
+         "retry": {
+            "retryable": boolean
+         }
       },
       "id": "string",
       "jobComputePayerAccountId": "string",

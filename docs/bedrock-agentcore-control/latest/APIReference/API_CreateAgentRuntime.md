@@ -32,6 +32,13 @@ Content-type: application/json
    "filesystemConfigurations": [
       { ... }
    ],
+   "hooksConfiguration": {
+      "build": {
+         "warmup": {
+            "action": { ... }
+         }
+      }
+   },
    "lifecycleConfiguration": {
       "idleRuntimeSessionTimeout": {{number}},
       "maxLifetime": {{number}}
@@ -51,6 +58,11 @@ Content-type: application/json
       "serverProtocol": "{{string}}"
    },
    "requestHeaderConfiguration": { ... },
+   "resourceConfigurations": [
+      {
+         "minimumMemoryInMiB": {{number}}
+      }
+   ],
    "roleArn": "{{string}}",
    "tags": {
       "{{string}}" : "{{string}}"
@@ -124,6 +136,11 @@ Type: Array of [FilesystemConfiguration](API_FilesystemConfiguration.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: No
 
+ ** [hooksConfiguration](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-hooksConfiguration"></a>
+The lifecycle hooks configuration for the AgentCore Runtime. Use lifecycle hooks to run actions in the agent's container at fixed points in the runtime's lifecycle, such as warming up the agent before sessions are created.
+Type: [RuntimeHooksConfiguration](API_RuntimeHooksConfiguration.md) object
+Required: No
+
  ** [lifecycleConfiguration](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-lifecycleConfiguration"></a>
 The life cycle configuration for the AgentCore Runtime.
 Type: [LifecycleConfiguration](API_LifecycleConfiguration.md) object
@@ -150,6 +167,12 @@ Required: No
 Configuration for HTTP request headers that will be passed through to the runtime.
 Type: [RequestHeaderConfiguration](API_RequestHeaderConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
+ ** [resourceConfigurations](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-resourceConfigurations"></a>
+The resource configurations for the AgentCore Runtime, such as the minimum amount of memory to allocate to the runtime. You can specify at most one resource configuration.
+Type: Array of [ResourceConfiguration](API_ResourceConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** [roleArn](#API_CreateAgentRuntime_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateAgentRuntime-request-roleArn"></a>

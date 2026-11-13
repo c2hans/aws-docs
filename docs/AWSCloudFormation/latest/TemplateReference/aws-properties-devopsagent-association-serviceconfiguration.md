@@ -32,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[MCPServerSigV4](#cfn-devopsagent-association-serviceconfiguration-mcpserversigv4)" : {{MCPServerSigV4Configuration}},
   "[MCPServerSplunk](#cfn-devopsagent-association-serviceconfiguration-mcpserversplunk)" : {{MCPServerSplunkConfiguration}},
   "[PagerDuty](#cfn-devopsagent-association-serviceconfiguration-pagerduty)" : {{PagerDutyConfiguration}},
+  "[ReleaseManagement](#cfn-devopsagent-association-serviceconfiguration-releasemanagement)" : {{ReleaseManagementConfiguration}},
   "[ServiceNow](#cfn-devopsagent-association-serviceconfiguration-servicenow)" : {{ServiceNowConfiguration}},
   "[Slack](#cfn-devopsagent-association-serviceconfiguration-slack)" : {{SlackConfiguration}},
   "[SourceAws](#cfn-devopsagent-association-serviceconfiguration-sourceaws)" : {{SourceAwsConfiguration}}
@@ -68,6 +69,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     MCPServerSplunkConfiguration}}
   [PagerDuty](#cfn-devopsagent-association-serviceconfiguration-pagerduty): {{
     PagerDutyConfiguration}}
+  [ReleaseManagement](#cfn-devopsagent-association-serviceconfiguration-releasemanagement): {{
+    ReleaseManagementConfiguration}}
   [ServiceNow](#cfn-devopsagent-association-serviceconfiguration-servicenow): {{
     ServiceNowConfiguration}}
   [Slack](#cfn-devopsagent-association-serviceconfiguration-slack): {{
@@ -155,6 +158,12 @@ Configuration for Splunk MCP server integration. Specifies the server name, endp
 Configuration for PagerDuty integration. Specifies the customer email, service IDs, and webhook settings to enable the Agent Space to access incident data, on-call schedules, and service information.
 *Required*: No
 *Type*: [PagerDutyConfiguration](aws-properties-devopsagent-association-pagerdutyconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ReleaseManagement`  <a name="cfn-devopsagent-association-serviceconfiguration-releasemanagement"></a>
+Property description not available.
+*Required*: No
+*Type*: [ReleaseManagementConfiguration](aws-properties-devopsagent-association-releasemanagementconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ServiceNow`  <a name="cfn-devopsagent-association-serviceconfiguration-servicenow"></a>

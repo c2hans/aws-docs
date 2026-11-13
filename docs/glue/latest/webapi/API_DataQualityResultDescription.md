@@ -10,9 +10,22 @@ Describes a data quality result.
 ## Contents
 <a name="API_DataQualityResultDescription_Contents"></a>
 
+ ** DataQualityEvaluationConfig **   <a name="Glue-Type-DataQualityResultDescription-DataQualityEvaluationConfig"></a>
+The name of the data quality evaluation configuration that started the evaluation run, returned when `EvaluationRunMode` is `EVALUATION_CONFIG`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** DataSource **   <a name="Glue-Type-DataQualityResultDescription-DataSource"></a>
 The table name associated with the data quality result.
 Type: [DataSource](API_DataSource.md) object
+Required: No
+
+ ** EvaluationRunMode **   <a name="Glue-Type-DataQualityResultDescription-EvaluationRunMode"></a>
+How the evaluation run that produced the result started: `ON_DEMAND` for a run started by `StartDataQualityRulesetEvaluationRun`, or `EVALUATION_CONFIG` for a run started by a data quality evaluation configuration. Not returned for results that no evaluation run produced, such as results from any ETL job.
+Type: String
+Valid Values: `ON_DEMAND | EVALUATION_CONFIG`
 Required: No
 
  ** JobName **   <a name="Glue-Type-DataQualityResultDescription-JobName"></a>

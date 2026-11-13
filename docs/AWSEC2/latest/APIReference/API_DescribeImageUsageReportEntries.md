@@ -23,7 +23,7 @@ Required: No
 The filters.
 +  `account-id` - A 12-digit AWS account ID.
 +  `creation-time` - The time when the report was created, in the ISO 8601 format in the UTC time zone (YYYY-MM-DDThh:mm:ss.sssZ), for example, `2025-11-29T11:04:43.305Z`. You can use a wildcard (`*`), for example, `2025-11-29T*`, which matches an entire day.
-+  `resource-type` - The resource type (`ec2:Instance` \| `ec2:LaunchTemplate`).
++  `resource-type` - The resource type (`ec2:Instance` \| `ec2:LaunchTemplate` \| `imagebuilder:ImageRecipe` \| `imagebuilder:ContainerRecipe`).
 Type: Array of [Filter](API_Filter.md) objects
 Required: No
 

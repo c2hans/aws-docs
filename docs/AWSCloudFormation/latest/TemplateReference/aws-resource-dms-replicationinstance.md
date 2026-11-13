@@ -210,6 +210,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-dms-replicationinstance-return-values-fn--getatt-fn--getatt"></a>
 
+`ReplicationInstanceArn`  <a name="ReplicationInstanceArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the replication instance.
+
 `ReplicationInstancePrivateIpAddresses`  <a name="ReplicationInstancePrivateIpAddresses-fn::getatt"></a>
 One or more private IP addresses for the replication instance.
 

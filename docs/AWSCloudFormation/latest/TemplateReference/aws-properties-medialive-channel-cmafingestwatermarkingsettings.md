@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::MediaLive::Channel CmafIngestWatermarkingSettings
 <a name="aws-properties-medialive-channel-cmafingestwatermarkingsettings"></a>
 
-<a name="aws-properties-medialive-channel-cmafingestwatermarkingsettings-description"></a>The `CmafIngestWatermarkingSettings` property type specifies Property description not available. for an [AWS::MediaLive::Channel](aws-resource-medialive-channel.md).
+A/B Watermarker settings for CMAF Ingest output groups.
 
 ## Syntax
 <a name="aws-properties-medialive-channel-cmafingestwatermarkingsettings-syntax"></a>

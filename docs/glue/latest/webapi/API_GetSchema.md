@@ -96,7 +96,7 @@ Valid Range: Minimum value of 1. Maximum value of 100000.
 The Amazon Resource Name (ARN) of the registry.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 
  ** [RegistryName](#API_GetSchema_ResponseSyntax) **   <a name="Glue-GetSchema-response-RegistryName"></a>
 The name of the registry.
@@ -108,7 +108,7 @@ Pattern: `[a-zA-Z0-9-_$#.]+`
 The Amazon Resource Name (ARN) of the schema.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 
  ** [SchemaCheckpoint](#API_GetSchema_ResponseSyntax) **   <a name="Glue-GetSchema-response-SchemaCheckpoint"></a>
 The version number of the checkpoint (the last time the compatibility mode was changed).

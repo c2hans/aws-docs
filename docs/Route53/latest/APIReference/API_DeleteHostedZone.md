@@ -18,6 +18,8 @@ If you want to avoid the monthly charge for the hosted zone, you can transfer DN
 
 You can delete a hosted zone only if it contains only the default SOA and NS records and has DNSSEC signing disabled. If the hosted zone contains other records or has DNSSEC enabled, you must delete the records and disable DNSSEC before deletion. Attempting to delete a hosted zone with additional records or DNSSEC enabled returns a `HostedZoneNotEmpty` error. For information about deleting records, see [ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html).
 
+You also can't delete a hosted zone that has resource record set protections. To see the protections in a hosted zone, use `ListResourceRecordSetProtections`. To delete them, use `DeleteResourceRecordSetProtections`.
+
 To verify that the hosted zone has been deleted, do one of the following:
 + Use the `GetHostedZone` action to request information about the hosted zone.
 + Use the `ListHostedZones` action to get a list of the hosted zones associated with the current AWS account.

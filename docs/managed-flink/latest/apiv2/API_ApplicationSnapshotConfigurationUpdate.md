@@ -15,6 +15,14 @@ Describes updates to whether snapshots are enabled for an application.
 Type: Boolean
 Required: Yes
 
+ ** SnapshotModeUpdate **   <a name="APIReference-Type-ApplicationSnapshotConfigurationUpdate-SnapshotModeUpdate"></a>
+Describes updates to the snapshot mode of a Managed Service for Apache Flink application. You can update the snapshot mode from `APPLICATION_SNAPSHOTS_LEGACY` to `ENHANCED_SNAPSHOTS`. You can't use `UpdateApplication` to change the snapshot mode back to `APPLICATION_SNAPSHOTS_LEGACY`.
+To return to `APPLICATION_SNAPSHOTS_LEGACY`, use `RollbackApplication`. After you update an application that uses `ENHANCED_SNAPSHOTS`, you can't roll it back to `APPLICATION_SNAPSHOTS_LEGACY`.
+To use `ENHANCED_SNAPSHOTS`, the application must use Apache Flink version 1.20 or later.
+Type: String
+Valid Values: `APPLICATION_SNAPSHOTS_LEGACY | ENHANCED_SNAPSHOTS`
+Required: No
+
 ## See Also
 <a name="API_ApplicationSnapshotConfigurationUpdate_SeeAlso"></a>
 

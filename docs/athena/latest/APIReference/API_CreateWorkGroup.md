@@ -90,7 +90,13 @@ Creates a workgroup with the specified name. A workgroup can be an Apache Spark 
          },
          "ExpectedBucketOwner": "{{string}}",
          "OutputLocation": "{{string}}"
-      }
+      },
+      "SystemTableStatuses": [
+         {
+            "Enabled": {{boolean}},
+            "TableName": "{{string}}"
+         }
+      ]
    },
    "Description": "{{string}}",
    "Name": "{{string}}",

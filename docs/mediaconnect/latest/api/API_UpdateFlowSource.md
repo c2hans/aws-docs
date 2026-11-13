@@ -72,6 +72,9 @@ Content-type: application/json
       "encryptionKeyConfiguration": { ... },
       "encryptionKeyType": "{{string}}"
    },
+   "rtmpPushSettings": {
+      "namingConfiguration": { ... }
+   },
    "senderControlPort": {{number}},
    "senderIpAddress": "{{string}}",
    "sourceListenerAddress": "{{string}}",
@@ -162,7 +165,7 @@ Required: No
 The protocol that the source uses to deliver the content to MediaConnect.
  AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
 Type: String
-Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq`
+Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq | rtmp-push`
 Required: No
 
  ** [routerIntegrationState](#API_UpdateFlowSource_RequestSyntax) **   <a name="mediaconnect-UpdateFlowSource-request-routerIntegrationState"></a>
@@ -174,6 +177,11 @@ Required: No
  ** [routerIntegrationTransitDecryption](#API_UpdateFlowSource_RequestSyntax) **   <a name="mediaconnect-UpdateFlowSource-request-routerIntegrationTransitDecryption"></a>
 The encryption configuration for the flow source when router integration is enabled.
 Type: [FlowTransitEncryption](API_FlowTransitEncryption.md) object
+Required: No
+
+ ** [rtmpPushSettings](#API_UpdateFlowSource_RequestSyntax) **   <a name="mediaconnect-UpdateFlowSource-request-rtmpPushSettings"></a>
+The settings for the RTMP (Real-Time Messaging Protocol) source.
+Type: [SetRtmpPushSourceSettings](API_SetRtmpPushSourceSettings.md) object
 Required: No
 
  ** [senderControlPort](#API_UpdateFlowSource_RequestSyntax) **   <a name="mediaconnect-UpdateFlowSource-request-senderControlPort"></a>
@@ -285,6 +293,19 @@ Content-type: application/json
          "ndiSpeedHqQuality": number,
          "protocol": "string",
          "remoteId": "string",
+         "rtmpPushOutputSettings": {
+            "applicationName": "string",
+            "streamName": "string",
+            "tlsEncryption": {
+               "encryptionConfiguration": { ... },
+               "encryptionType": "string"
+            }
+         },
+         "rtmpPushSourceSettings": {
+            "applicationName": "string",
+            "namingType": "string",
+            "streamName": "string"
+         },
          "senderControlPort": number,
          "senderIpAddress": "string",
          "smoothingLatency": number,

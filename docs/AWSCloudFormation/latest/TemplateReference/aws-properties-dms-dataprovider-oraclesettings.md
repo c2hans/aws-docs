@@ -23,6 +23,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CertificateArn](#cfn-dms-dataprovider-oraclesettings-certificatearn)" : {{String}},
   "[DatabaseName](#cfn-dms-dataprovider-oraclesettings-databasename)" : {{String}},
   "[Port](#cfn-dms-dataprovider-oraclesettings-port)" : {{Integer}},
+  "[S3AccessRoleArn](#cfn-dms-dataprovider-oraclesettings-s3accessrolearn)" : {{String}},
+  "[S3Path](#cfn-dms-dataprovider-oraclesettings-s3path)" : {{String}},
   "[SecretsManagerOracleAsmAccessRoleArn](#cfn-dms-dataprovider-oraclesettings-secretsmanageroracleasmaccessrolearn)" : {{String}},
   "[SecretsManagerOracleAsmSecretId](#cfn-dms-dataprovider-oraclesettings-secretsmanageroracleasmsecretid)" : {{String}},
   "[SecretsManagerSecurityDbEncryptionAccessRoleArn](#cfn-dms-dataprovider-oraclesettings-secretsmanagersecuritydbencryptionaccessrolearn)" : {{String}},
@@ -40,6 +42,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [CertificateArn](#cfn-dms-dataprovider-oraclesettings-certificatearn): {{String}}
   [DatabaseName](#cfn-dms-dataprovider-oraclesettings-databasename): {{String}}
   [Port](#cfn-dms-dataprovider-oraclesettings-port): {{Integer}}
+  [S3AccessRoleArn](#cfn-dms-dataprovider-oraclesettings-s3accessrolearn): {{String}}
+  [S3Path](#cfn-dms-dataprovider-oraclesettings-s3path): {{String}}
   [SecretsManagerOracleAsmAccessRoleArn](#cfn-dms-dataprovider-oraclesettings-secretsmanageroracleasmaccessrolearn): {{String}}
   [SecretsManagerOracleAsmSecretId](#cfn-dms-dataprovider-oraclesettings-secretsmanageroracleasmsecretid): {{String}}
   [SecretsManagerSecurityDbEncryptionAccessRoleArn](#cfn-dms-dataprovider-oraclesettings-secretsmanagersecuritydbencryptionaccessrolearn): {{String}}
@@ -73,6 +77,18 @@ Database name for the endpoint.
 Endpoint TCP port.
 *Required*: Yes
 *Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`S3AccessRoleArn`  <a name="cfn-dms-dataprovider-oraclesettings-s3accessrolearn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`S3Path`  <a name="cfn-dms-dataprovider-oraclesettings-s3path"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecretsManagerOracleAsmAccessRoleArn`  <a name="cfn-dms-dataprovider-oraclesettings-secretsmanageroracleasmaccessrolearn"></a>

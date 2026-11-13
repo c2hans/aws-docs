@@ -34,6 +34,8 @@ The **Finding** column on the **EC2 instances recommendations** page provides a 
 
 The following findings classifications apply to EC2 instances.
 
+**Amazon EC2 instance finding classifications**
+
 | Classification | Description |
 | --- | --- |
 | Under-provisioned | An EC2 instance is considered under-provisioned when at least one specification of your instance, such as CPU, memory, or network, does not meet the performance requirements of your workload. Under-provisioned EC2 instances might lead to poor application performance. |
@@ -46,6 +48,8 @@ The following findings classifications apply to EC2 instances.
 The **Finding reasons** column on the **EC2 instances recommendations** and **EC2 instance details** pages shows which specification of an instance is under-provisioned or over-provisioned.
 
 The following finding reasons apply to instances:
+
+**Amazon EC2 instance finding reasons**
 
 | Finding reason | Description |
 | --- | --- |
@@ -111,6 +115,8 @@ The **Platform differences** column on the **EC2 instance details** page describ
 
 The following platform differences apply to EC2 instances:
 
+**Amazon EC2 instance platform differences**
+
 | Platform difference | Description |
 | --- | --- |
 | Architecture | The CPU architecture of the recommended instance type is different than that of the current instance type. For example, the recommended instance type might use an Arm CPU architecture and the current instance type might use a different one, such as x86. Before migrating, consider recompiling the software on your instance for the new architecture. Alternatively, you might switch to an Amazon Machine Image (AMI) that supports the new architecture. For more information about the CPU architecture for each instance type, see [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/). |
@@ -167,6 +173,8 @@ You can change the graphs to display data for the last 24 hours, 3 days, 1 week,
 For periods of time when your instances are in a stopped state, the utilization graphs show a value of 0.
 
 The following utilization graphs are displayed on the details page:
+
+**Amazon EC2 instance utilization graphs**
 
 | Graph name | Description |
 | --- | --- |

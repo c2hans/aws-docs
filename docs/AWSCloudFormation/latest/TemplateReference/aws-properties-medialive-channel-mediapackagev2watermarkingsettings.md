@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::MediaLive::Channel MediaPackageV2WatermarkingSettings
 <a name="aws-properties-medialive-channel-mediapackagev2watermarkingsettings"></a>
 
-<a name="aws-properties-medialive-channel-mediapackagev2watermarkingsettings-description"></a>The `MediaPackageV2WatermarkingSettings` property type specifies Property description not available. for an [AWS::MediaLive::Channel](aws-resource-medialive-channel.md).
+A/B Watermarker settings for MediaPackage V2 output groups.
 
 ## Syntax
 <a name="aws-properties-medialive-channel-mediapackagev2watermarkingsettings-syntax"></a>

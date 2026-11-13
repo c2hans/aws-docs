@@ -188,7 +188,8 @@ AWS DevOps Agent supports several integration types, each with its own security 
 + **Native bidirectional integrations** – Built-in integrations that can send data to the agent and receive updates from the agent. This uses the vendor’s authentication methods
 + **MCP servers** – Remote Model Context Protocol servers that use OAuth 2.0 authentication flows and API keys to securely communicate with external systems.
 + **Webhook triggers** – Investigation triggers from remote services such as tickets or observability systems. Webhooks use either Hash-based Message Authentication Code (HMAC) signatures or an API key (bearer token) for security.
-+ **Outbound communication** – Integrations like Slack, Microsoft Teams, and ticketing systems receive updates from the agent. Slack also supports bidirectional communication in private channels, where you can mention the app to start and continue conversations with the agent. For more information, see [Connecting Slack](connecting-to-ticketing-and-chat-connecting-slack.html) and [Connecting Microsoft Teams](connecting-to-ticketing-and-chat-connecting-microsoft-teams.html).
++ **Outbound communication** – The agent sends updates to integrations such as Slack, Microsoft Teams, and ticketing systems. In private Slack channels, mention the app to start and continue bidirectional conversations with the agent. For instructions on connecting Slack and Microsoft Teams, see [Connecting Slack](connecting-to-ticketing-and-chat-connecting-slack.html) and [Connecting Microsoft Teams](connecting-to-ticketing-and-chat-connecting-microsoft-teams.html).
++ **Slack code channels** – In a private Slack code channel for an investigation, the agent answers every message without a mention. For more information, see [Using Slack code channels](connecting-to-ticketing-and-chat-using-slack-code-channels.html).
 
 ### Registration providers
 <a name="registration-providers"></a>

@@ -86,8 +86,11 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/cloudwatch
   "metricName": "string",
   "name": "string",
   "period": number,
+  "requestId": "string",
   "standardDeviationThreshold": number,
   "statistic": enum,
+  "tags": {
+  },
   "targetResourceType": enum,
   "threshold": number,
   "treatMissingData": enum
@@ -277,6 +280,8 @@ The resource type this template should dynamically generate cloudwatch metric al
 + `MEDIAPACKAGE_ORIGIN_ENDPOINT`
 + `MEDIACONNECT_FLOW`
 + `S3_BUCKET`
++ `MEDIATAILOR_PLAYBACK_CONFIGURATION`
++ `ELEMENTAL_INFERENCE_FEED`
 
 ### CloudWatchAlarmTemplateTreatMissingData
 <a name="cloudwatch-alarm-templates-model-cloudwatchalarmtemplatetreatmissingdata"></a>
@@ -309,10 +314,12 @@ Updating or deleting a resource can cause an inconsistent state.
 | metricName | string<br />MaxLength: 64 | True | The name of the metric associated with the alarm. Must be compatible with targetResourceType. |
 | name | string<br />Pattern: `^[^\s]+$`<br />MinLength: 1<br />MaxLength: 255 | True | A resource's name. Names must be unique within the scope of a resource type in a specific region. |
 | period | number<br />Minimum: 10<br />Maximum: 86400 | True | The period, in seconds, over which the specified statistic is applied. |
+| requestId | string<br />MinLength: 1<br />MaxLength: 256 | False | An ID that you assign to a create request. This ID ensures idempotency when creating resources. |
 | standardDeviationThreshold | number<br />Minimum: 1 | False | The number of standard deviations by which the metric value can deviate from the expected value before the alarm is triggered. |
 | statistic | [CloudWatchAlarmTemplateStatistic](#cloudwatch-alarm-templates-model-cloudwatchalarmtemplatestatistic) | True | The statistic to apply to the alarm's metric data. |
+| tags | [Tags](#cloudwatch-alarm-templates-model-tags) | False |  |
 | targetResourceType | [CloudWatchAlarmTemplateTargetResourceType](#cloudwatch-alarm-templates-model-cloudwatchalarmtemplatetargetresourcetype) | True | The resource type this template should dynamically generate CloudWatch metric alarms for. |
-| threshold | number<br />Format: double | False | The threshold value to compare with the specified statistic. |
+| threshold | number<br />Format: double | True | The threshold value to compare with the specified statistic. |
 | treatMissingData | [CloudWatchAlarmTemplateTreatMissingData](#cloudwatch-alarm-templates-model-cloudwatchalarmtemplatetreatmissingdata) | True | Specifies how missing data points are treated when evaluating the alarm's condition. |
 
 ### CreateCloudWatchAlarmTemplateResponseContent
@@ -372,6 +379,13 @@ Request references a resource which does not exist.
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | message | string | False | Exception error message. |
+
+### Tags
+<a name="cloudwatch-alarm-templates-model-tags"></a>
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| `*` | string | False |  |
 
 ### TooManyRequestsExceptionResponseContent
 <a name="cloudwatch-alarm-templates-model-toomanyrequestsexceptionresponsecontent"></a>

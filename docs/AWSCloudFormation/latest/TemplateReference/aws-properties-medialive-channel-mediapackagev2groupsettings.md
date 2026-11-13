@@ -127,7 +127,7 @@ Set to enabled to pass through ID3 metadata from the input sources.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WatermarkingSettings`  <a name="cfn-medialive-channel-mediapackagev2groupsettings-watermarkingsettings"></a>
-Property description not available.
+Specifies the type of watermarking technology to use.
 *Required*: No
 *Type*: [MediaPackageV2WatermarkingSettings](aws-properties-medialive-channel-mediapackagev2watermarkingsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -12,7 +12,7 @@ A resource type to include in the report. Associated options can also be specifi
 
  ** ResourceType **
 The resource type.
-Valid values: `ec2:Instance` \| `ec2:LaunchTemplate`
+Valid values: `ec2:Instance` \| `ec2:LaunchTemplate` \| `imagebuilder:ImageRecipe` \| `imagebuilder:ContainerRecipe`
 Type: String
 Required: No
 

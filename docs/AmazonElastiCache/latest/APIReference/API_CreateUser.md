@@ -26,6 +26,11 @@ Required: Yes
 
  ** UserId **
 The ID of the user. This value is stored as a lowercase string.
+Constraints:
++ The ID can be up to 40 characters long by default.
++ The ID can contain only ASCII letters, digits, and hyphens.
++ The first character must be a letter.
++ The ID cannot contain two consecutive hyphens.
 Type: String
 Length Constraints: Minimum length of 1.
 Pattern: `[a-zA-Z][a-zA-Z0-9\-]*`

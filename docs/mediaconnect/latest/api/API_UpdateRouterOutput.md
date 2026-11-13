@@ -17,11 +17,32 @@ Content-type: application/json
 {
    "configuration": { ... },
    "fabricConfiguration": {
-      "recoveryLatencyMode": "{{string}}"
+      "recoveryLatencyMode": "{{string}}",
+      "switchingConfiguration": { ... },
+      "switchingMode": "{{string}}"
    },
    "maintenanceConfiguration": { ... },
    "maximumBitrate": {{number}},
    "name": "{{string}}",
+   "processors": {
+      "singleProgramTransportStreamPidMap": {
+         "auto": {
+            "pidsPerProgram": {{number}},
+            "startPid": {{number}}
+         },
+         "defaultAction": "{{string}}",
+         "programClockReferencePid": { ... },
+         "programMapTablePid": { ... },
+         "programNumber": { ... },
+         "rules": [
+            {
+               "action": "{{string}}",
+               "matchExpression": "{{string}}"
+            }
+         ],
+         "transportStreamId": { ... }
+      }
+   },
    "routingScope": "{{string}}",
    "tier": "{{string}}"
 }
@@ -70,6 +91,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: No
 
+ ** [processors](#API_UpdateRouterOutput_RequestSyntax) **   <a name="mediaconnect-UpdateRouterOutput-request-processors"></a>
+The updated processor settings for the router output. When you update the processors, include every setting that you want to keep. MediaConnect resets the settings that you don't specify to their defaults. For more information, see [Using MediaConnect processors](https://docs.aws.amazon.com/mediaconnect/latest/ug/using-mediaconnect-processors.html) in the * AWS Elemental MediaConnect User Guide*.
+Type: [RouterOutputProcessors](API_RouterOutputProcessors.md) object
+Required: No
+
  ** [routingScope](#API_UpdateRouterOutput_RequestSyntax) **   <a name="mediaconnect-UpdateRouterOutput-request-routingScope"></a>
 Specifies whether the router output can take inputs that are in different Regions. REGIONAL (default) - can only take inputs from same Region. GLOBAL - can take inputs from any Region.
 Type: String
@@ -103,7 +129,9 @@ Content-type: application/json
       "configuration": { ... },
       "createdAt": "string",
       "fabricConfiguration": {
-         "recoveryLatencyMode": "string"
+         "recoveryLatencyMode": "string",
+         "switchingConfiguration": { ... },
+         "switchingMode": "string"
       },
       "id": "string",
       "ipAddress": "string",
@@ -120,6 +148,25 @@ Content-type: application/json
       ],
       "name": "string",
       "outputType": "string",
+      "processors": {
+         "singleProgramTransportStreamPidMap": {
+            "auto": {
+               "pidsPerProgram": number,
+               "startPid": number
+            },
+            "defaultAction": "string",
+            "programClockReferencePid": { ... },
+            "programMapTablePid": { ... },
+            "programNumber": { ... },
+            "rules": [
+               {
+                  "action": "string",
+                  "matchExpression": "string"
+               }
+            ],
+            "transportStreamId": { ... }
+         }
+      },
       "regionName": "string",
       "routedInputArn": "string",
       "routedState": "string",

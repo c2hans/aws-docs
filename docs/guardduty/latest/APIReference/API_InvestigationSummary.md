@@ -15,6 +15,11 @@ The AWS account ID associated with the investigation.
 Type: String
 Required: No
 
+ ** adminAccountId **   <a name="guardduty-Type-InvestigationSummary-adminAccountId"></a>
+For an `ORGANIZATION` investigation, the ID of the administrator account of the organization that the investigation analyzed. GuardDuty sets this field when the investigation completes.
+Type: String
+Required: No
+
  ** confidence **   <a name="guardduty-Type-InvestigationSummary-confidence"></a>
 The confidence level of the investigation's assessment.
 Type: String
@@ -27,11 +32,23 @@ The timestamp at which the investigation completed.
 Type: Timestamp
 Required: No
 
+ ** findingId **   <a name="guardduty-Type-InvestigationSummary-findingId"></a>
+For a `FINDING` investigation, the ID of the finding that the investigation analyzed. GuardDuty sets this field when the investigation completes.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 300.
+Required: No
+
  ** investigationId **   <a name="guardduty-Type-InvestigationSummary-investigationId"></a>
 The unique identifier of the investigation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[a-fA-F0-9\-]+`
+Required: No
+
+ ** investigationType **   <a name="guardduty-Type-InvestigationSummary-investigationType"></a>
+The type of investigation. Possible values are `FINDING`, `ACCOUNT`, and `ORGANIZATION`. GuardDuty sets this field when the investigation completes.
+Type: String
+Valid Values: `FINDING | ACCOUNT | ORGANIZATION`
 Required: No
 
  ** riskLevel **   <a name="guardduty-Type-InvestigationSummary-riskLevel"></a>

@@ -13,7 +13,7 @@ Specifies how Amazon Simple Storage Service (Amazon S3) data should be encrypted
  ** KmsKeyArn **   <a name="Glue-Type-S3Encryption-KmsKeyArn"></a>
 The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
 Type: String
-Pattern: `^$|arn:aws[a-z0-9-]*:kms:.*`
+Pattern: `^($|arn:aws[a-z0-9-]*:kms:.*)$`
 Required: No
 
  ** S3EncryptionMode **   <a name="Glue-Type-S3Encryption-S3EncryptionMode"></a>

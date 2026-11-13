@@ -54,7 +54,7 @@ Minimum statmux bitrate.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Priority`  <a name="cfn-medialive-multiplexprogram-multiplexstatmuxvideosettings-priority"></a>
-The purpose of the priority is to use a combination of the\\nmultiplex rate control algorithm and the QVBR capability of the\\nencoder to prioritize the video quality of some channels in a\\nmultiplex over others. Channels that have a higher priority will\\nget higher video quality at the expense of the video quality of\\nother channels in the multiplex with lower priority.
+The purpose of the priority is to use a combination of the multiplex rate control algorithm and the QVBR capability of the encoder to prioritize the video quality of some channels in a multiplex over others. Channels that have a higher priority will get higher video quality at the expense of the video quality of other channels in the multiplex with lower priority.
 *Required*: No
 *Type*: Integer
 *Minimum*: `-5`

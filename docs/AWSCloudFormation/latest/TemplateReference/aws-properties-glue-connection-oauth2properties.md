@@ -68,7 +68,7 @@ Property description not available.
 The OAuth2 grant type. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, `REFRESH_TOKEN`, or `CLIENT_CREDENTIALS`.
 *Required*: No
 *Type*: String
-*Allowed values*: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER | REFRESH_TOKEN`
+*Allowed values*: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER | REFRESH_TOKEN | TOKEN_EXCHANGE`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TokenUrl`  <a name="cfn-glue-connection-oauth2properties-tokenurl"></a>

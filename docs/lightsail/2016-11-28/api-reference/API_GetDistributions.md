@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 
 Returns information about one or more of your Amazon Lightsail content delivery network (CDN) distributions.
 
+**Note**
+The `defaultRootObject` and `customErrorResponses` values are returned only when you specify `distributionName` to retrieve a single distribution. When you call `GetDistributions` without a distribution name to list all distributions, these two fields aren't included in the response.
+
 ## Request Syntax
 <a name="API_GetDistributions_RequestSyntax"></a>
 
@@ -107,6 +110,12 @@ Required: No
          "originPublicDNS": "string",
          "resourceType": "string",
          "status": "string",
+         "subdomain": {
+            "errorCode": "string",
+            "errorDetails": "string",
+            "name": "string",
+            "state": "string"
+         },
          "supportCode": "string",
          "tags": [
             {

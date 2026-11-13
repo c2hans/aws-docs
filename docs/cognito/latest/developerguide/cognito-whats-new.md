@@ -29,6 +29,19 @@ For changes to this guide that don't change the service, see [Document history](
 ## November 2026
 <a name="whats-new-2026-11"></a>
 
+### Session management for user pools
+<a name="whats-new-2026-11-11-session-management"></a>
+
+New · User pools, Managed login · Essentials, Plus · November 11, 2026
+
+You can now list a user's active single sign-on (SSO) and token sessions across their devices and app clients, and revoke any of them. You can revoke one session, with or without its linked sessions, or sign the user out of all sessions. You can also limit the number of active token sessions for each user.
+
+You can now configure how long each app client reuses a managed login SSO session. Previously, the duration was fixed at one hour.
+
+Session tracking is off by default. You turn it on for each user pool.
+
+See [Managing user sessions](managing-user-sessions.md) and the [What's New post](https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-session-management/) on the AWS website.
+
 ### 99.99% Service Level Agreement for Plus feature plan
 <a name="whats-new-2026-11-05-plus-sla"></a>
 

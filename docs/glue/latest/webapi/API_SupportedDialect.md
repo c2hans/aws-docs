@@ -13,13 +13,14 @@ A structure specifying the dialect and dialect version used by the query engine.
  ** Dialect **   <a name="Glue-Type-SupportedDialect-Dialect"></a>
 The dialect of the query engine.
 Type: String
-Valid Values: `REDSHIFT | ATHENA | SPARK`
+Valid Values: `REDSHIFT | ATHENA | SPARK | DUCKDB`
 Required: No
 
  ** DialectVersion **   <a name="Glue-Type-SupportedDialect-DialectVersion"></a>
 The version of the dialect of the query engine. For example, 3.0.0.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z0-9_.-]+`
 Required: No
 
 ## See Also

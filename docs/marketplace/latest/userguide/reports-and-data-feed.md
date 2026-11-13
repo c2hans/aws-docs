@@ -22,3 +22,4 @@ For more information about reports, datafeeds, and dashboards in AWS Marketplace
 + [Seller delivery data feeds in AWS Marketplace](data-feed-service.md)
 + [Supplementary reports](supplementary-reports.md)
 + [Seller dashboards](dashboards.md)
++ [Granting agents access to seller reporting data](agent-reporting-data-access.md)

@@ -144,6 +144,7 @@ Required if the policy type is `StepScaling`. (Not used with any other policy ty
 A target tracking scaling policy. Provides support for predefined or custom metrics.
 The following predefined metrics are available:
 +  `ASGAverageCPUUtilization`
++  `ASGAverageCPUUtilizationHighResolution`
 +  `ASGAverageNetworkIn`
 +  `ASGAverageNetworkOut`
 +  `ALBRequestCountPerTarget`

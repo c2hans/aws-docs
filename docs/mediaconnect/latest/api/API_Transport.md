@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Transport.ht
  The protocol that is used by the source or output.
  AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
 Type: String
-Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq`
+Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq | rtmp-push`
 Required: Yes
 
  ** cidrAllowList **   <a name="mediaconnect-Type-Transport-cidrAllowList"></a>
@@ -74,6 +74,16 @@ Required: No
  ** remoteId **   <a name="mediaconnect-Type-Transport-remoteId"></a>
  The remote ID for the Zixi-pull stream.
 Type: String
+Required: No
+
+ ** rtmpPushOutputSettings **   <a name="mediaconnect-Type-Transport-rtmpPushOutputSettings"></a>
+The settings for an output that pushes a stream to a destination using the RTMP (Real-Time Messaging Protocol) protocol, or RTMPS (RTMP over TLS) when TLS encryption is specified.
+Type: [RtmpPushOutputSettings](API_RtmpPushOutputSettings.md) object
+Required: No
+
+ ** rtmpPushSourceSettings **   <a name="mediaconnect-Type-Transport-rtmpPushSourceSettings"></a>
+The settings for the RTMP (Real-Time Messaging Protocol) source.
+Type: [RtmpPushSourceSettings](API_RtmpPushSourceSettings.md) object
 Required: No
 
  ** senderControlPort **   <a name="mediaconnect-Type-Transport-senderControlPort"></a>

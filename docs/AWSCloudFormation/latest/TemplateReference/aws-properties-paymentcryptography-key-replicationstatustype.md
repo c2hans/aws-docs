@@ -21,8 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[KmsKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmskeyarn)" : {{String}},
-  "[KmsKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmskeyid)" : {{String}},
+  "[KmsEncryptionKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyarn)" : {{String}},
+  "[KmsEncryptionKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyid)" : {{String}},
   "[Status](#cfn-paymentcryptography-key-replicationstatustype-status)" : {{String}},
   "[StatusMessage](#cfn-paymentcryptography-key-replicationstatustype-statusmessage)" : {{String}}
 }
@@ -32,8 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-paymentcryptography-key-replicationstatustype-syntax.yaml"></a>
 
 ```
-  [KmsKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmskeyarn): {{String}}
-  [KmsKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmskeyid): {{String}}
+  [KmsEncryptionKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyarn): {{String}}
+  [KmsEncryptionKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyid): {{String}}
   [Status](#cfn-paymentcryptography-key-replicationstatustype-status): {{String}}
   [StatusMessage](#cfn-paymentcryptography-key-replicationstatustype-statusmessage): {{String}}
 ```
@@ -41,7 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ## Properties
 <a name="aws-properties-paymentcryptography-key-replicationstatustype-properties"></a>
 
-`KmsKeyArn`  <a name="cfn-paymentcryptography-key-replicationstatustype-kmskeyarn"></a>
+`KmsEncryptionKeyArn`  <a name="cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyarn"></a>
 Property description not available.
 *Required*: No
 *Type*: String
@@ -50,7 +50,7 @@ Property description not available.
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`KmsKeyId`  <a name="cfn-paymentcryptography-key-replicationstatustype-kmskeyid"></a>
+`KmsEncryptionKeyId`  <a name="cfn-paymentcryptography-key-replicationstatustype-kmsencryptionkeyid"></a>
 Property description not available.
 *Required*: No
 *Type*: String

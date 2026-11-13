@@ -7,13 +7,11 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/delete
 
 Use the following steps to delete your custom line items.
 
-**To edit a custom line item**
+**To delete a custom line item**
 
 1. Open AWS Billing Conductor at [https://console.aws.amazon.com/billingconductor/](https://console.aws.amazon.com/billingconductor/).
 
 1. In the navigation pane, choose **Custom line items**.
-
-1. Choose **Create custom line item**.
 
 1. Choose the custom line item that you want to delete.
 

@@ -10,6 +10,8 @@ If you provide a value for `PerformedBy.UserArn`, you must also have the [connec
 
 Updates the values of fields on a case. Fields to be updated are received as an array of id/value pairs identical to the `CreateCase` input.
 
+If the case is the secondary case of a merge that is running, the request fails with a `ConflictException`. For more information, see [StartMergeCases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_StartMergeCases.html).
+
 If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
 
 ## Request Syntax
@@ -83,6 +85,10 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
+
+ ** ConflictException **
+The requested operation would cause a conflict with the current state of a service resource associated with the request. Resolve the conflict before retrying this request. See the accompanying error message for details.
+HTTP Status Code: 409
 
  ** InternalServerException **
 We couldn't process your request because of an issue with the server. Try again later.

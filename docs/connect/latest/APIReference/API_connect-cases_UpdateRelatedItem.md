@@ -13,6 +13,7 @@ Updates the content of a related item associated with a case. The following rela
 + When updating a Custom related item, all existing and new fields, and their associated values should be included in the request. Fields not included as part of this request will be removed.
 + If you provide a value for `performedBy.userArn`, you must also have [DescribeUser](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeUser.html) permission on the ARN of the user that you provide.
 +  [System case fields](https://docs.aws.amazon.com/connect/latest/adminguide/case-fields.html#system-case-fields) cannot be used in a custom related item.
++ If the case is the secondary case of a merge that is running, the request fails with a `ConflictException`. For more information, see [StartMergeCases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_StartMergeCases.html).
 
  **Endpoints**: See [Connect Customer endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/connect_region.html).
 
@@ -141,6 +142,10 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
+
+ ** ConflictException **
+The requested operation would cause a conflict with the current state of a service resource associated with the request. Resolve the conflict before retrying this request. See the accompanying error message for details.
+HTTP Status Code: 409
 
  ** InternalServerException **
 We couldn't process your request because of an issue with the server. Try again later.

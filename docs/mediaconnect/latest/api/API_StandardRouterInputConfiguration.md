@@ -25,7 +25,7 @@ Required: Yes
  ** protocol **   <a name="mediaconnect-Type-StandardRouterInputConfiguration-protocol"></a>
 The protocol used by the standard router input.
 Type: String
-Valid Values: `RTP | RIST | SRT_CALLER | SRT_LISTENER`
+Valid Values: `RTP | RIST | SRT_CALLER | SRT_LISTENER | RTMP_PUSH`
 Required: No
 
 ## See Also

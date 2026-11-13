@@ -150,6 +150,11 @@ Type: String
 Valid Values: `WINDOW`
 Required: No
 
+ ** processors **   <a name="mediaconnect-Type-RouterOutput-processors"></a>
+The processor settings for the router output.
+Type: [RouterOutputProcessors](API_RouterOutputProcessors.md) object
+Required: No
+
  ** routedInputArn **   <a name="mediaconnect-Type-RouterOutput-routedInputArn"></a>
 The Amazon Resource Name (ARN) of the router input associated with the output.
 Type: String

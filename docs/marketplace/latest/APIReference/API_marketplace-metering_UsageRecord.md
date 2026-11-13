@@ -53,13 +53,25 @@ Pattern: `^arn:aws[a-zA-Z-]*:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,
 Required: No
 
  ** Quantity **   <a name="AWSMarketplaceService-Type-marketplace-metering_UsageRecord-Quantity"></a>
-The quantity of usage consumed by the customer for the given dimension and time. Defaults to `0` if not specified.
+ *This member has been deprecated.*
+The quantity of usage consumed by the customer for the given dimension and time, as a whole number. Defaults to `0` if neither `Quantity` nor `QuantityAsDecimal` is specified.
+Use `QuantityAsDecimal` instead. You can't specify both `Quantity` and `QuantityAsDecimal` in a usage record.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 2147483647.
 Required: No
 
+ ** QuantityAsDecimal **   <a name="AWSMarketplaceService-Type-marketplace-metering_UsageRecord-QuantityAsDecimal"></a>
+The quantity of usage consumed by the customer for the given dimension and time, as a decimal string. Use this instead of `Quantity` to report fractional usage.
+A non-negative decimal number, for example `17.42`.
+You can't specify both `Quantity` and `QuantityAsDecimal` in a usage record. If you provide `UsageAllocations`, each allocation must use `AllocatedUsageQuantityAsDecimal`. If any usage record fails these checks, the entire `BatchMeterUsage` request fails and no records are processed.
+Quantities are compared by value when checking for duplicate records, so `17`, `17.0`, and `17.00` are the same quantity, whether you send it in `Quantity` or `QuantityAsDecimal`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 17.
+Pattern: `^(0|[1-9][0-9]{0,9})(\.[0-9]{1,6})?$`
+Required: No
+
  ** UsageAllocations **   <a name="AWSMarketplaceService-Type-marketplace-metering_UsageRecord-UsageAllocations"></a>
-The set of `UsageAllocations` to submit. The sum of all `UsageAllocation` quantities must equal the Quantity of the `UsageRecord`.
+The set of `UsageAllocations` to submit. The sum of all `UsageAllocation` quantities must equal the quantity of the `UsageRecord` (`Quantity` or `QuantityAsDecimal`). Allocations must use the same type of quantity as the usage record: `AllocatedUsageQuantity` with `Quantity`, or `AllocatedUsageQuantityAsDecimal` with `QuantityAsDecimal`.
 Type: Array of [UsageAllocation](API_marketplace-metering_UsageAllocation.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 2500 items.
 Required: No

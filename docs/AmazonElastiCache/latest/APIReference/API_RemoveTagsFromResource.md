@@ -76,7 +76,7 @@ The state of the serverless cache snapshot was not received. Available for Valke
 HTTP Status Code: 400
 
  ** InvalidServerlessCacheStateFault **
-The account for these credentials is not currently active.
+The serverless cache or the migration is not in a state that allows the operation.
 HTTP Status Code: 400
 
  ** ReplicationGroupNotFoundFault **

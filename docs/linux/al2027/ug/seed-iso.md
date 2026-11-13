@@ -23,7 +23,7 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/seed-iso.html
 ** `network-config` (optional) **
  This file typically provides a network configuration for the virtual machine that overrides the default configuration. The default configuration is to use DHCP on the first available network interface.
 
-**Create the `seed.iso` disk image**
+**To create the `seed.iso` disk image**
 
 1. On a Linux or macOS computer, create a new folder named `seedconfig` and navigate into it.
 **Note**

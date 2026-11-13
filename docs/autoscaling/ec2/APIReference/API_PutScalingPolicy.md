@@ -115,6 +115,7 @@ Required: No
 A target tracking scaling policy. Provides support for predefined or custom metrics.
 The following predefined metrics are available:
 +  `ASGAverageCPUUtilization`
++  `ASGAverageCPUUtilizationHighResolution`
 +  `ASGAverageNetworkIn`
 +  `ASGAverageNetworkOut`
 +  `ALBRequestCountPerTarget`

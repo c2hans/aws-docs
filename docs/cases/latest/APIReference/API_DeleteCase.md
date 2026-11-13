@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_DeleteCase
 + Access audit history
 + Perform any operations that require the CaseID
 
+You can't delete a case while it's part of a merge that is running, as either the primary or the secondary case. The request fails with a `ConflictException`. For more information, see [StartMergeCases](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_StartMergeCases.html).
+
 **Important**
 This action is irreversible. After you delete a case, you cannot recover its data.
 
@@ -61,6 +63,10 @@ For information about the errors that are common to all actions, see [Common Err
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
+
+ ** ConflictException **
+The requested operation would cause a conflict with the current state of a service resource associated with the request. Resolve the conflict before retrying this request. See the accompanying error message for details.
+HTTP Status Code: 409
 
  ** InternalServerException **
 We couldn't process your request because of an issue with the server. Try again later.

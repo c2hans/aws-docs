@@ -14,7 +14,7 @@ Defines a short-term free pricing model where the buyers aren’t charged anythi
 In the following list, the required parameters are described first.
 
  ** duration **   <a name="AWSMarketplaceService-Type-marketplace-agreements_FreeTrialPricingTerm-duration"></a>
-Duration of the free trial period (5–31 days).
+Duration of the free trial period. The allowed duration depends on the product type. For SaaS products, the free trial lasts 7 to 90 days.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`

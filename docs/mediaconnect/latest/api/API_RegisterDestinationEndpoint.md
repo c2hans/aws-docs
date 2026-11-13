@@ -51,8 +51,8 @@ Required: Yes
  ** [description](#API_RegisterDestinationEndpoint_RequestSyntax) **   <a name="mediaconnect-RegisterDestinationEndpoint-request-description"></a>
 A description to help you identify the destination endpoint.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 1000.
-Pattern: `[ a-zA-Z_0-9\-.',@:;\(\)\[\]*]+`
+Length Constraints: Minimum length of 0. Maximum length of 1000.
+Pattern: `[ a-zA-Z_0-9\-.',@:;\(\)]*`
 Required: No
 
  ** [regionName](#API_RegisterDestinationEndpoint_RequestSyntax) **   <a name="mediaconnect-RegisterDestinationEndpoint-request-regionName"></a>

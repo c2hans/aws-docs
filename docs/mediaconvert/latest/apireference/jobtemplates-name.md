@@ -132,6 +132,11 @@ Supports CORS preflight requests.
   "category": "string",
   "queue": "string",
   "name": "string",
+  "elementalInferenceSettings": {
+    "feedConfigurationSource": {
+      "feedArn": "string"
+    }
+  },
   "settings": {
     "timecodeConfig": {
       "anchor": "string",
@@ -243,7 +248,8 @@ Supports CORS preflight requests.
                 "cslgAtom": enum,
                 "paddingControl": enum,
                 "reference": enum,
-                "mpeg2FourCCControl": enum
+                "mpeg2FourCCControl": enum,
+                "audioDuration": enum
               },
               "mp4Settings": {
                 "cslgAtom": enum,
@@ -412,6 +418,11 @@ Supports CORS preflight requests.
                     "payload": integer,
                     "strength": enum
                   }
+                },
+                "durationControl": {
+                  "integerDurationTrimThresholdMilliseconds": integer,
+                  "integerDurationMaximumCompressionNumerator": integer,
+                  "integerDurationMaximumCompressionDenominator": integer
                 }
               },
               "timecodeInsertion": enum,
@@ -436,9 +447,13 @@ Supports CORS preflight requests.
                     "qvbrQualityLevel": integer,
                     "qvbrQualityLevelFineTune": number
                   },
+                  "bitrate": integer,
                   "maxBitrate": integer,
+                  "slidingWindowPeakBitrate": integer,
+                  "slidingWindowMs": integer,
                   "adaptiveQuantization": enum,
                   "spatialAdaptiveQuantization": enum,
+                  "sceneChangeDetect": enum,
                   "framerateControl": enum,
                   "framerateConversionAlgorithm": enum,
                   "framerateNumerator": integer,
@@ -492,6 +507,8 @@ Supports CORS preflight requests.
                   "gopBReference": enum,
                   "hrdBufferSize": integer,
                   "maxBitrate": integer,
+                  "slidingWindowPeakBitrate": integer,
+                  "slidingWindowMs": integer,
                   "slowPal": enum,
                   "parDenominator": integer,
                   "spatialAdaptiveQuantization": enum,
@@ -522,6 +539,7 @@ Supports CORS preflight requests.
                   "parControl": enum,
                   "numberBFramesBetweenReferenceFrames": integer,
                   "repeatPps": enum,
+                  "explicitWeightedPrediction": enum,
                   "writeMp4PackagingType": enum,
                   "dynamicSubGop": enum,
                   "hrdBufferFinalFillPercentage": integer,
@@ -548,6 +566,8 @@ Supports CORS preflight requests.
                   "gopBReference": enum,
                   "hrdBufferSize": integer,
                   "maxBitrate": integer,
+                  "slidingWindowPeakBitrate": integer,
+                  "slidingWindowMs": integer,
                   "slowPal": enum,
                   "parDenominator": integer,
                   "spatialAdaptiveQuantization": enum,
@@ -608,6 +628,8 @@ Supports CORS preflight requests.
                   "gopSize": number,
                   "hrdBufferSize": integer,
                   "maxBitrate": integer,
+                  "slidingWindowPeakBitrate": integer,
+                  "slidingWindowMs": integer,
                   "slowPal": enum,
                   "parDenominator": integer,
                   "spatialAdaptiveQuantization": enum,
@@ -707,7 +729,8 @@ Supports CORS preflight requests.
                 "xavcSettings": {
                   "profile": enum,
                   "xavcHdIntraCbgProfileSettings": {
-                    "xavcClass": enum
+                    "xavcClass": enum,
+                    "interlaceMode": enum
                   },
                   "xavc4kIntraCbgProfileSettings": {
                     "xavcClass": enum
@@ -752,7 +775,9 @@ Supports CORS preflight requests.
                 },
                 "passthroughSettings": {
                   "videoSelectorMode": enum,
-                  "frameControl": enum
+                  "frameControl": enum,
+                  "segmentationMode": enum,
+                  "gopsPerSegment": integer
                 }
               },
               "afdSignaling": enum,
@@ -797,6 +822,7 @@ Supports CORS preflight requests.
                     "targetLoudnessRange": integer,
                     "loudnessMeasurementMode": enum,
                     "sampleRate": integer,
+                    "passthroughControl": enum,
                     "specification": enum
                   },
                   "ac3Settings": {
@@ -948,7 +974,11 @@ Supports CORS preflight requests.
             "nameModifier": "string",
             "captionDescriptions": [
               {
+                "source": enum,
                 "captionSelectorName": "string",
+                "audioSourceNames": [
+                  "string"
+                ],
                 "destinationSettings": {
                   "destinationType": enum,
                   "burninDestinationSettings": {
@@ -1022,7 +1052,15 @@ Supports CORS preflight requests.
                     ]
                   },
                   "ttmlDestinationSettings": {
-                    "stylePassthrough": enum
+                    "stylePassthrough": enum,
+                    "backgroundColor": enum,
+                    "backgroundOpacity": integer,
+                    "fontColor": enum,
+                    "fontOpacity": integer,
+                    "fontSize": integer,
+                    "fontStyle": enum,
+                    "fontWeight": enum,
+                    "textDecoration": enum
                   },
                   "imscDestinationSettings": {
                     "stylePassthrough": enum,
@@ -1140,7 +1178,17 @@ Supports CORS preflight requests.
               "intervalCadence": enum,
               "thumbnailInterval": number
             },
-            "captionSegmentLengthControl": enum
+            "captionSegmentLengthControl": enum,
+            "imageBasedTrickPlayVariants": [
+              {
+                "thumbnailHeight": integer,
+                "thumbnailWidth": integer,
+                "tileHeight": integer,
+                "tileWidth": integer,
+                "intervalCadence": enum,
+                "thumbnailInterval": number
+              }
+            ]
           },
           "dashIsoGroupSettings": {
             "audioChannelConfigSchemeIdUri": enum,
@@ -1204,7 +1252,20 @@ Supports CORS preflight requests.
               "thumbnailInterval": number
             },
             "videoCompositionOffsets": enum,
-            "dashManifestStyle": enum
+            "dashManifestStyle": enum,
+            "dashAdaptationSetGrouping": [
+              enum
+            ],
+            "imageBasedTrickPlayVariants": [
+              {
+                "thumbnailHeight": integer,
+                "thumbnailWidth": integer,
+                "tileHeight": integer,
+                "tileWidth": integer,
+                "intervalCadence": enum,
+                "thumbnailInterval": number
+              }
+            ]
           },
           "fileGroupSettings": {
             "destination": "string",
@@ -1319,7 +1380,7 @@ Supports CORS preflight requests.
                 "url": "string"
               },
               "type": enum,
-              "clearLead": enum
+              "clearLeadSegments": integer
             },
             "minBufferTime": integer,
             "fragmentLength": integer,
@@ -1345,7 +1406,20 @@ Supports CORS preflight requests.
               "thumbnailInterval": number
             },
             "videoCompositionOffsets": enum,
-            "dashManifestStyle": enum
+            "dashManifestStyle": enum,
+            "dashAdaptationSetGrouping": [
+              enum
+            ],
+            "imageBasedTrickPlayVariants": [
+              {
+                "thumbnailHeight": integer,
+                "thumbnailWidth": integer,
+                "tileHeight": integer,
+                "tileWidth": integer,
+                "intervalCadence": enum,
+                "thumbnailInterval": number
+              }
+            ]
           },
           "perFrameMetrics": [
             enum
@@ -1418,6 +1492,22 @@ Supports CORS preflight requests.
         "framerateDenominator": integer
       }
     },
+    "motionImageInserters": [
+      {
+        "insertionMode": enum,
+        "input": "string",
+        "offset": {
+          "imageX": integer,
+          "imageY": integer
+        },
+        "startTime": "string",
+        "playback": enum,
+        "framerate": {
+          "framerateNumerator": integer,
+          "framerateDenominator": integer
+        }
+      }
+    ],
     "esam": {
       "signalProcessingNotification": {
         "sccXml": "string"
@@ -1659,6 +1749,11 @@ Supports CORS preflight requests.
     "queue": "string",
     "name": "string",
     "type": enum,
+    "elementalInferenceSettings": {
+      "feedConfigurationSource": {
+        "feedArn": "string"
+      }
+    },
     "settings": {
       "timecodeConfig": {
         "anchor": "string",
@@ -1770,7 +1865,8 @@ Supports CORS preflight requests.
                   "cslgAtom": enum,
                   "paddingControl": enum,
                   "reference": enum,
-                  "mpeg2FourCCControl": enum
+                  "mpeg2FourCCControl": enum,
+                  "audioDuration": enum
                 },
                 "mp4Settings": {
                   "cslgAtom": enum,
@@ -1939,6 +2035,11 @@ Supports CORS preflight requests.
                       "payload": integer,
                       "strength": enum
                     }
+                  },
+                  "durationControl": {
+                    "integerDurationTrimThresholdMilliseconds": integer,
+                    "integerDurationMaximumCompressionNumerator": integer,
+                    "integerDurationMaximumCompressionDenominator": integer
                   }
                 },
                 "timecodeInsertion": enum,
@@ -1963,9 +2064,13 @@ Supports CORS preflight requests.
                       "qvbrQualityLevel": integer,
                       "qvbrQualityLevelFineTune": number
                     },
+                    "bitrate": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "adaptiveQuantization": enum,
                     "spatialAdaptiveQuantization": enum,
+                    "sceneChangeDetect": enum,
                     "framerateControl": enum,
                     "framerateConversionAlgorithm": enum,
                     "framerateNumerator": integer,
@@ -2019,6 +2124,8 @@ Supports CORS preflight requests.
                     "gopBReference": enum,
                     "hrdBufferSize": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "slowPal": enum,
                     "parDenominator": integer,
                     "spatialAdaptiveQuantization": enum,
@@ -2049,6 +2156,7 @@ Supports CORS preflight requests.
                     "parControl": enum,
                     "numberBFramesBetweenReferenceFrames": integer,
                     "repeatPps": enum,
+                    "explicitWeightedPrediction": enum,
                     "writeMp4PackagingType": enum,
                     "dynamicSubGop": enum,
                     "hrdBufferFinalFillPercentage": integer,
@@ -2075,6 +2183,8 @@ Supports CORS preflight requests.
                     "gopBReference": enum,
                     "hrdBufferSize": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "slowPal": enum,
                     "parDenominator": integer,
                     "spatialAdaptiveQuantization": enum,
@@ -2135,6 +2245,8 @@ Supports CORS preflight requests.
                     "gopSize": number,
                     "hrdBufferSize": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "slowPal": enum,
                     "parDenominator": integer,
                     "spatialAdaptiveQuantization": enum,
@@ -2234,7 +2346,8 @@ Supports CORS preflight requests.
                   "xavcSettings": {
                     "profile": enum,
                     "xavcHdIntraCbgProfileSettings": {
-                      "xavcClass": enum
+                      "xavcClass": enum,
+                      "interlaceMode": enum
                     },
                     "xavc4kIntraCbgProfileSettings": {
                       "xavcClass": enum
@@ -2279,7 +2392,9 @@ Supports CORS preflight requests.
                   },
                   "passthroughSettings": {
                     "videoSelectorMode": enum,
-                    "frameControl": enum
+                    "frameControl": enum,
+                    "segmentationMode": enum,
+                    "gopsPerSegment": integer
                   }
                 },
                 "afdSignaling": enum,
@@ -2324,6 +2439,7 @@ Supports CORS preflight requests.
                       "targetLoudnessRange": integer,
                       "loudnessMeasurementMode": enum,
                       "sampleRate": integer,
+                      "passthroughControl": enum,
                       "specification": enum
                     },
                     "ac3Settings": {
@@ -2475,7 +2591,11 @@ Supports CORS preflight requests.
               "nameModifier": "string",
               "captionDescriptions": [
                 {
+                  "source": enum,
                   "captionSelectorName": "string",
+                  "audioSourceNames": [
+                    "string"
+                  ],
                   "destinationSettings": {
                     "destinationType": enum,
                     "burninDestinationSettings": {
@@ -2549,7 +2669,15 @@ Supports CORS preflight requests.
                       ]
                     },
                     "ttmlDestinationSettings": {
-                      "stylePassthrough": enum
+                      "stylePassthrough": enum,
+                      "backgroundColor": enum,
+                      "backgroundOpacity": integer,
+                      "fontColor": enum,
+                      "fontOpacity": integer,
+                      "fontSize": integer,
+                      "fontStyle": enum,
+                      "fontWeight": enum,
+                      "textDecoration": enum
                     },
                     "imscDestinationSettings": {
                       "stylePassthrough": enum,
@@ -2667,7 +2795,17 @@ Supports CORS preflight requests.
                 "intervalCadence": enum,
                 "thumbnailInterval": number
               },
-              "captionSegmentLengthControl": enum
+              "captionSegmentLengthControl": enum,
+              "imageBasedTrickPlayVariants": [
+                {
+                  "thumbnailHeight": integer,
+                  "thumbnailWidth": integer,
+                  "tileHeight": integer,
+                  "tileWidth": integer,
+                  "intervalCadence": enum,
+                  "thumbnailInterval": number
+                }
+              ]
             },
             "dashIsoGroupSettings": {
               "audioChannelConfigSchemeIdUri": enum,
@@ -2731,7 +2869,20 @@ Supports CORS preflight requests.
                 "thumbnailInterval": number
               },
               "videoCompositionOffsets": enum,
-              "dashManifestStyle": enum
+              "dashManifestStyle": enum,
+              "dashAdaptationSetGrouping": [
+                enum
+              ],
+              "imageBasedTrickPlayVariants": [
+                {
+                  "thumbnailHeight": integer,
+                  "thumbnailWidth": integer,
+                  "tileHeight": integer,
+                  "tileWidth": integer,
+                  "intervalCadence": enum,
+                  "thumbnailInterval": number
+                }
+              ]
             },
             "fileGroupSettings": {
               "destination": "string",
@@ -2846,7 +2997,7 @@ Supports CORS preflight requests.
                   "url": "string"
                 },
                 "type": enum,
-                "clearLead": enum
+                "clearLeadSegments": integer
               },
               "minBufferTime": integer,
               "fragmentLength": integer,
@@ -2872,7 +3023,20 @@ Supports CORS preflight requests.
                 "thumbnailInterval": number
               },
               "videoCompositionOffsets": enum,
-              "dashManifestStyle": enum
+              "dashManifestStyle": enum,
+              "dashAdaptationSetGrouping": [
+                enum
+              ],
+              "imageBasedTrickPlayVariants": [
+                {
+                  "thumbnailHeight": integer,
+                  "thumbnailWidth": integer,
+                  "tileHeight": integer,
+                  "tileWidth": integer,
+                  "intervalCadence": enum,
+                  "thumbnailInterval": number
+                }
+              ]
             },
             "perFrameMetrics": [
               enum
@@ -2945,6 +3109,22 @@ Supports CORS preflight requests.
           "framerateDenominator": integer
         }
       },
+      "motionImageInserters": [
+        {
+          "insertionMode": enum,
+          "input": "string",
+          "offset": {
+            "imageX": integer,
+            "imageY": integer
+          },
+          "startTime": "string",
+          "playback": enum,
+          "framerate": {
+            "framerateNumerator": integer,
+            "framerateDenominator": integer
+          }
+        }
+      ],
       "esam": {
         "signalProcessingNotification": {
           "sccXml": "string"
@@ -3175,6 +3355,11 @@ Supports CORS preflight requests.
     "queue": "string",
     "name": "string",
     "type": enum,
+    "elementalInferenceSettings": {
+      "feedConfigurationSource": {
+        "feedArn": "string"
+      }
+    },
     "settings": {
       "timecodeConfig": {
         "anchor": "string",
@@ -3286,7 +3471,8 @@ Supports CORS preflight requests.
                   "cslgAtom": enum,
                   "paddingControl": enum,
                   "reference": enum,
-                  "mpeg2FourCCControl": enum
+                  "mpeg2FourCCControl": enum,
+                  "audioDuration": enum
                 },
                 "mp4Settings": {
                   "cslgAtom": enum,
@@ -3455,6 +3641,11 @@ Supports CORS preflight requests.
                       "payload": integer,
                       "strength": enum
                     }
+                  },
+                  "durationControl": {
+                    "integerDurationTrimThresholdMilliseconds": integer,
+                    "integerDurationMaximumCompressionNumerator": integer,
+                    "integerDurationMaximumCompressionDenominator": integer
                   }
                 },
                 "timecodeInsertion": enum,
@@ -3479,9 +3670,13 @@ Supports CORS preflight requests.
                       "qvbrQualityLevel": integer,
                       "qvbrQualityLevelFineTune": number
                     },
+                    "bitrate": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "adaptiveQuantization": enum,
                     "spatialAdaptiveQuantization": enum,
+                    "sceneChangeDetect": enum,
                     "framerateControl": enum,
                     "framerateConversionAlgorithm": enum,
                     "framerateNumerator": integer,
@@ -3535,6 +3730,8 @@ Supports CORS preflight requests.
                     "gopBReference": enum,
                     "hrdBufferSize": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "slowPal": enum,
                     "parDenominator": integer,
                     "spatialAdaptiveQuantization": enum,
@@ -3565,6 +3762,7 @@ Supports CORS preflight requests.
                     "parControl": enum,
                     "numberBFramesBetweenReferenceFrames": integer,
                     "repeatPps": enum,
+                    "explicitWeightedPrediction": enum,
                     "writeMp4PackagingType": enum,
                     "dynamicSubGop": enum,
                     "hrdBufferFinalFillPercentage": integer,
@@ -3591,6 +3789,8 @@ Supports CORS preflight requests.
                     "gopBReference": enum,
                     "hrdBufferSize": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "slowPal": enum,
                     "parDenominator": integer,
                     "spatialAdaptiveQuantization": enum,
@@ -3651,6 +3851,8 @@ Supports CORS preflight requests.
                     "gopSize": number,
                     "hrdBufferSize": integer,
                     "maxBitrate": integer,
+                    "slidingWindowPeakBitrate": integer,
+                    "slidingWindowMs": integer,
                     "slowPal": enum,
                     "parDenominator": integer,
                     "spatialAdaptiveQuantization": enum,
@@ -3750,7 +3952,8 @@ Supports CORS preflight requests.
                   "xavcSettings": {
                     "profile": enum,
                     "xavcHdIntraCbgProfileSettings": {
-                      "xavcClass": enum
+                      "xavcClass": enum,
+                      "interlaceMode": enum
                     },
                     "xavc4kIntraCbgProfileSettings": {
                       "xavcClass": enum
@@ -3795,7 +3998,9 @@ Supports CORS preflight requests.
                   },
                   "passthroughSettings": {
                     "videoSelectorMode": enum,
-                    "frameControl": enum
+                    "frameControl": enum,
+                    "segmentationMode": enum,
+                    "gopsPerSegment": integer
                   }
                 },
                 "afdSignaling": enum,
@@ -3840,6 +4045,7 @@ Supports CORS preflight requests.
                       "targetLoudnessRange": integer,
                       "loudnessMeasurementMode": enum,
                       "sampleRate": integer,
+                      "passthroughControl": enum,
                       "specification": enum
                     },
                     "ac3Settings": {
@@ -3991,7 +4197,11 @@ Supports CORS preflight requests.
               "nameModifier": "string",
               "captionDescriptions": [
                 {
+                  "source": enum,
                   "captionSelectorName": "string",
+                  "audioSourceNames": [
+                    "string"
+                  ],
                   "destinationSettings": {
                     "destinationType": enum,
                     "burninDestinationSettings": {
@@ -4065,7 +4275,15 @@ Supports CORS preflight requests.
                       ]
                     },
                     "ttmlDestinationSettings": {
-                      "stylePassthrough": enum
+                      "stylePassthrough": enum,
+                      "backgroundColor": enum,
+                      "backgroundOpacity": integer,
+                      "fontColor": enum,
+                      "fontOpacity": integer,
+                      "fontSize": integer,
+                      "fontStyle": enum,
+                      "fontWeight": enum,
+                      "textDecoration": enum
                     },
                     "imscDestinationSettings": {
                       "stylePassthrough": enum,
@@ -4183,7 +4401,17 @@ Supports CORS preflight requests.
                 "intervalCadence": enum,
                 "thumbnailInterval": number
               },
-              "captionSegmentLengthControl": enum
+              "captionSegmentLengthControl": enum,
+              "imageBasedTrickPlayVariants": [
+                {
+                  "thumbnailHeight": integer,
+                  "thumbnailWidth": integer,
+                  "tileHeight": integer,
+                  "tileWidth": integer,
+                  "intervalCadence": enum,
+                  "thumbnailInterval": number
+                }
+              ]
             },
             "dashIsoGroupSettings": {
               "audioChannelConfigSchemeIdUri": enum,
@@ -4247,7 +4475,20 @@ Supports CORS preflight requests.
                 "thumbnailInterval": number
               },
               "videoCompositionOffsets": enum,
-              "dashManifestStyle": enum
+              "dashManifestStyle": enum,
+              "dashAdaptationSetGrouping": [
+                enum
+              ],
+              "imageBasedTrickPlayVariants": [
+                {
+                  "thumbnailHeight": integer,
+                  "thumbnailWidth": integer,
+                  "tileHeight": integer,
+                  "tileWidth": integer,
+                  "intervalCadence": enum,
+                  "thumbnailInterval": number
+                }
+              ]
             },
             "fileGroupSettings": {
               "destination": "string",
@@ -4362,7 +4603,7 @@ Supports CORS preflight requests.
                   "url": "string"
                 },
                 "type": enum,
-                "clearLead": enum
+                "clearLeadSegments": integer
               },
               "minBufferTime": integer,
               "fragmentLength": integer,
@@ -4388,7 +4629,20 @@ Supports CORS preflight requests.
                 "thumbnailInterval": number
               },
               "videoCompositionOffsets": enum,
-              "dashManifestStyle": enum
+              "dashManifestStyle": enum,
+              "dashAdaptationSetGrouping": [
+                enum
+              ],
+              "imageBasedTrickPlayVariants": [
+                {
+                  "thumbnailHeight": integer,
+                  "thumbnailWidth": integer,
+                  "tileHeight": integer,
+                  "tileWidth": integer,
+                  "intervalCadence": enum,
+                  "thumbnailInterval": number
+                }
+              ]
             },
             "perFrameMetrics": [
               enum
@@ -4461,6 +4715,22 @@ Supports CORS preflight requests.
           "framerateDenominator": integer
         }
       },
+      "motionImageInserters": [
+        {
+          "insertionMode": enum,
+          "input": "string",
+          "offset": {
+            "imageX": integer,
+            "imageY": integer
+          },
+          "startTime": "string",
+          "playback": enum,
+          "framerate": {
+            "framerateNumerator": integer,
+            "framerateDenominator": integer
+          }
+        }
+      ],
       "esam": {
         "signalProcessingNotification": {
           "sccXml": "string"
@@ -4731,6 +5001,13 @@ Choose the loudness measurement mode for your audio content. For music or advert
 + `PROGRAM`
 + `ANCHOR`
 
+### AacPassthroughControl
+<a name="jobtemplates-name-model-aacpassthroughcontrol"></a>
+
+When set to WHEN\_POSSIBLE, input AAC audio will be passed through if it is present on the input. This detection is dynamic over the life of the transcode. Inputs that alternate between AAC and non-AAC content will have a consistent AAC output as the system alternates between passthrough and encoding.
++ `WHEN_POSSIBLE`
++ `NO_PASSTHROUGH`
+
 ### AacRateControlMode
 <a name="jobtemplates-name-model-aacratecontrolmode"></a>
 
@@ -4757,6 +5034,7 @@ Required when you set Codec to the value AAC. The service accepts one of two mut
 | codecProfile | [AacCodecProfile](#jobtemplates-name-model-aaccodecprofile) | False | Specify the AAC profile. For the widest player compatibility and where higher bitrates are acceptable: Keep the default profile, LC (AAC-LC) For improved audio performance at lower bitrates: Choose HEV1 or HEV2. HEV1 (AAC-HE v1) adds spectral band replication to improve speech audio at low bitrates. HEV2 (AAC-HE v2) adds parametric stereo, which optimizes for encoding stereo audio at very low bitrates. For improved audio quality at lower bitrates, adaptive audio bitrate switching, and loudness control: Choose XHE. |
 | codingMode | [AacCodingMode](#jobtemplates-name-model-aaccodingmode) | False | The Coding mode that you specify determines the number of audio channels and the audio channel layout metadata in your AAC output. Valid coding modes depend on the Rate control mode and Profile that you select. The following list shows the number of audio channels and channel layout for each coding mode. \* 1.0 Audio Description (Receiver Mix): One channel, C. Includes audio description data from your stereo input. For more information see ETSI TS 101 154 Annex E. \* 1.0 Mono: One channel, C. \* 2.0 Stereo: Two channels, L, R. \* 5.1 Surround: Six channels, C, L, R, Ls, Rs, LFE. To follow the number of channels from your input audio, choose CODING\_MODE\_AUTO, and the service will automatically choose from one of the coding modes above. |
 | loudnessMeasurementMode | [AacLoudnessMeasurementMode](#jobtemplates-name-model-aacloudnessmeasurementmode) | False | Choose the loudness measurement mode for your audio content. For music or advertisements: We recommend that you keep the default value, Program. For speech or other content: We recommend that you choose Anchor. When you do, MediaConvert optimizes the loudness of your output for clarify by applying speech gates. |
+| passthroughControl | [AacPassthroughControl](#jobtemplates-name-model-aacpassthroughcontrol) | False | When set to WHEN\_POSSIBLE, input AAC audio will be passed through if it is present on the input. This detection is dynamic over the life of the transcode. Inputs that alternate between AAC and non-AAC content will have a consistent AAC output as the system alternates between passthrough and encoding. |
 | rapInterval | integer<br />Minimum: 2000<br />Maximum: 30000 | False | Specify the RAP (Random Access Point) interval for your xHE-AAC audio output. A RAP allows a decoder to decode audio data mid-stream, without the need to reference previous audio frames, and perform adaptive audio bitrate switching. To specify the RAP interval: Enter an integer from 2000 to 30000, in milliseconds. Smaller values allow for better seeking and more frequent stream switching, while large values improve compression efficiency. To have MediaConvert automatically determine the RAP interval: Leave blank. |
 | rateControlMode | [AacRateControlMode](#jobtemplates-name-model-aacratecontrolmode) | False | Specify the AAC rate control mode. For a constant bitrate: Choose CBR. Your AAC output bitrate will be equal to the value that you choose for Bitrate. For a variable bitrate: Choose VBR. Your AAC output bitrate will vary according to your audio content and the value that you choose for Bitrate quality. |
 | rawFormat | [AacRawFormat](#jobtemplates-name-model-aacrawformat) | False | Enables LATM/LOAS AAC output. Note that if you use LATM/LOAS AAC in an output, you must choose "No container" for the output container. |
@@ -5085,7 +5363,7 @@ Specify the QuickTime audio channel layout tags for the audio channels in this a
 ### AudioCodec
 <a name="jobtemplates-name-model-audiocodec"></a>
 
-Choose the audio codec for this output. Note that the option Dolby Digital passthrough applies only to Dolby Digital and Dolby Digital Plus audio inputs. Make sure that you choose a codec that's supported with your output container: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#reference-codecs-containers-output-audio For audio-only outputs, make sure that both your input audio codec and your output audio codec are supported for audio-only workflows. For more information, see: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers-input.html\#reference-codecs-containers-input-audio-only and https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#audio-only-output
+Choose the audio codec for this output. Note that the option passthrough applies only to Dolby Digital, Dolby Digital Plus, AAC LC, AAC HEV1, and AAC HEV2 audio inputs. Make sure that you choose a codec that's supported with your output container: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#reference-codecs-containers-output-audio For audio-only outputs, make sure that both your input audio codec and your output audio codec are supported for audio-only workflows. For more information, see: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers-input.html\#reference-codecs-containers-input-audio-only and https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#audio-only-output
 + `AAC`
 + `MP2`
 + `MP3`
@@ -5111,7 +5389,7 @@ Settings related to audio encoding. The settings in this group vary depending on
 | ac3Settings | [Ac3Settings](#jobtemplates-name-model-ac3settings) | False | Required when you set Codec to the value AC3. |
 | ac4Settings | [Ac4Settings](#jobtemplates-name-model-ac4settings) | False | Required when you set Codec to the value AC4. |
 | aiffSettings | [AiffSettings](#jobtemplates-name-model-aiffsettings) | False | Required when you set Codec to the value AIFF. |
-| codec | [AudioCodec](#jobtemplates-name-model-audiocodec) | False | Choose the audio codec for this output. Note that the option Dolby Digital passthrough applies only to Dolby Digital and Dolby Digital Plus audio inputs. Make sure that you choose a codec that's supported with your output container: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#reference-codecs-containers-output-audio For audio-only outputs, make sure that both your input audio codec and your output audio codec are supported for audio-only workflows. For more information, see: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers-input.html\#reference-codecs-containers-input-audio-only and https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#audio-only-output |
+| codec | [AudioCodec](#jobtemplates-name-model-audiocodec) | False | Choose the audio codec for this output. Note that the option passthrough applies only to Dolby Digital, Dolby Digital Plus, AAC LC, AAC HEV1, and AAC HEV2 audio inputs. Make sure that you choose a codec that's supported with your output container: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#reference-codecs-containers-output-audio For audio-only outputs, make sure that both your input audio codec and your output audio codec are supported for audio-only workflows. For more information, see: https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers-input.html\#reference-codecs-containers-input-audio-only and https://docs.aws.amazon.com/mediaconvert/latest/ug/reference-codecs-containers.html\#audio-only-output |
 | eac3AtmosSettings | [Eac3AtmosSettings](#jobtemplates-name-model-eac3atmossettings) | False | Required when you set Codec to the value EAC3\_ATMOS. |
 | eac3Settings | [Eac3Settings](#jobtemplates-name-model-eac3settings) | False | Required when you set Codec to the value EAC3. |
 | flacSettings | [FlacSettings](#jobtemplates-name-model-flacsettings) | False | Required when you set Codec, under AudioDescriptions>CodecSettings, to the value FLAC. |
@@ -5237,6 +5515,7 @@ Use Audio selectors to specify a track or set of tracks from the input that you 
 | programSelection | integer<br />Minimum: 0<br />Maximum: 8 | False | Use this setting for input streams that contain Dolby E, to have the service extract specific program data from the track. To select multiple programs, create multiple selectors with the same Track and different Program numbers. In the console, this setting is visible when you set Selector type to Track. Choose the program number from the dropdown list. If your input file has incorrect metadata, you can choose All channels instead of a program number to have the service ignore the program IDs and include all the programs in the track. |
 | remixSettings | [RemixSettings](#jobtemplates-name-model-remixsettings) | False | Use these settings to reorder the audio channels of one input to match those of another input. This allows you to combine the two files into a single output, one after the other. |
 | selectorType | [AudioSelectorType](#jobtemplates-name-model-audioselectortype) | False | Specify how MediaConvert selects audio content within your input. The default is Track. PID: Select audio by specifying the Packet Identifier (PID) values for MPEG Transport Stream inputs. Use this when you know the exact PID values of your audio streams. Track: Default. Select audio by track number. This is the most common option and works with most input container formats. If more types of audio data get recognized in the future, these numberings may shift, but the numberings used for Stream mode will not. Language code: Select audio by language using an ISO 639-2 or ISO 639-3 three-letter code in all capital letters. Use this when your source has embedded language metadata and you want to select tracks based on their language. HLS rendition group: Select audio from an HLS rendition group. Use this when your input is an HLS package with multiple audio renditions and you want to select specific rendition groups. All PCM: Select all uncompressed PCM audio tracks from your input automatically. This is useful when you want to include all PCM audio tracks without specifying individual track numbers. Stream: Select audio by stream number. Stream numbers include all tracks in the source file, regardless of type, and correspond to either the order of tracks in the file, or if applicable, the stream number metadata of the track. Although all tracks count toward these stream numbers, in this audio selector context, only the stream number of a track containing audio data may be used. If your source file contains a track which is not recognized by the service, then the corresponding stream number will still be reserved for future use. If more types of audio data get recognized in the future, these numberings will not shift. |
+| smpte337Passthrough | [AudioSmpte337Passthrough](#jobtemplates-name-model-audiosmpte337passthrough) | False | Specify whether to pass SMPTE 337M-wrapped audio (such as Dolby E) through without unwrapping. Choose Enabled to pass the SMPTE 337M container through unchanged, treating the track as raw PCM. Choose Disabled (default) to automatically detect and unwrap SMPTE 337M data, extracting the underlying Dolby E programs as separate audio tracks for encoding. When this field is absent, the service defaults to Disabled (auto-unwrap). |
 | streams | Array of type integer<br />Minimum: 1<br />Maximum: 2147483647 | False | Identify a track from the input audio to include in this selector by entering the stream index number. These numberings count all tracks in the input file, but only a track containing audio data may be used here. To include several tracks in a single audio selector, specify multiple tracks as follows. Using the console, enter a comma-separated list. For example, type "1,2,3" to include tracks 1 through 3. |
 | tracks | Array of type integer<br />Minimum: 1<br />Maximum: 2147483647 | False | Identify a track from the input audio to include in this selector by entering the track index number. These numberings include only tracks recognized as audio. If the service recognizes more types of audio tracks in the future, these numberings may shift. To include several tracks in a single audio selector, specify multiple tracks as follows. Using the console, enter a comma-separated list. For example, type "1,2,3" to include tracks 1 through 3. |
 
@@ -5259,6 +5538,13 @@ Specify how MediaConvert selects audio content within your input. The default is
 + `HLS_RENDITION_GROUP`
 + `ALL_PCM`
 + `STREAM`
+
+### AudioSmpte337Passthrough
+<a name="jobtemplates-name-model-audiosmpte337passthrough"></a>
+
+Specify whether to pass SMPTE 337M-wrapped audio (such as Dolby E) through without unwrapping. Choose Enabled to pass the SMPTE 337M container through unchanged, treating the track as raw PCM. Choose Disabled (default) to automatically detect and unwrap SMPTE 337M data, extracting the underlying Dolby E programs as separate audio tracks for encoding. When this field is absent, the service defaults to Disabled (auto-unwrap).
++ `ENABLED`
++ `DISABLED`
 
 ### AudioTypeControl
 <a name="jobtemplates-name-model-audiotypecontrol"></a>
@@ -5356,8 +5642,17 @@ Settings for quality-defined variable bitrate encoding with the AV1 codec. Use t
 ### Av1RateControlMode
 <a name="jobtemplates-name-model-av1ratecontrolmode"></a>
 
-'With AV1 outputs, for rate control mode, MediaConvert supports only quality-defined variable bitrate (QVBR). You can''t use CBR or VBR.'
+'With AV1 outputs, for rate control mode, MediaConvert supports quality-defined variable bitrate (QVBR) and constant bitrate (CBR). You can''t use VBR.'
++ `CBR`
 + `QVBR`
+
+### Av1SceneChangeDetect
+<a name="jobtemplates-name-model-av1scenechangedetect"></a>
+
+Optional. Use this setting to have the service insert I-frames at scene changes that it automatically detects. For AV1, scene change detection is disabled by default. Choose Enabled to insert I-frames at detected scene changes, which can improve video quality. If this output uses QVBR, you can instead choose Transition detection for further video quality improvement. For more information about QVBR, see https://docs.aws.amazon.com/console/mediaconvert/cbr-vbr-qvbr.
++ `DISABLED`
++ `ENABLED`
++ `TRANSITION_DETECTION`
 
 ### Av1Settings
 <a name="jobtemplates-name-model-av1settings"></a>
@@ -5368,6 +5663,7 @@ Required when you set Codec, under VideoDescription>CodecSettings to the value A
 | --- |--- |--- |--- |
 | adaptiveQuantization | [Av1AdaptiveQuantization](#jobtemplates-name-model-av1adaptivequantization) | False | Specify the strength of any adaptive quantization filters that you enable. The value that you choose here applies to Spatial adaptive quantization. |
 | bitDepth | [Av1BitDepth](#jobtemplates-name-model-av1bitdepth) | False | Specify the Bit depth. You can choose 8-bit or 10-bit. |
+| bitrate | integer<br />Minimum: 1000<br />Maximum: 1152000000 | False | Specify the average bitrate in bits per second. Required when Rate control mode is CBR. |
 | filmGrainSynthesis | [Av1FilmGrainSynthesis](#jobtemplates-name-model-av1filmgrainsynthesis) | False | Film grain synthesis replaces film grain present in your content with similar quality synthesized AV1 film grain. We recommend that you choose Enabled to reduce the bandwidth of your QVBR quality level 5, 6, 7, or 8 outputs. For QVBR quality level 9 or 10 outputs we recommend that you keep the default value, Disabled. When you include Film grain synthesis, you cannot include the Noise reducer preprocessor. |
 | framerateControl | [Av1FramerateControl](#jobtemplates-name-model-av1frameratecontrol) | False | Use the Framerate setting to specify the frame rate for this output. If you want to keep the same frame rate as the input video, choose Follow source. If you want to do frame rate conversion, choose a frame rate from the dropdown list or choose Custom. The framerates shown in the dropdown list are decimal approximations of fractions. If you choose Custom, specify your frame rate as a fraction. |
 | framerateConversionAlgorithm | [Av1FramerateConversionAlgorithm](#jobtemplates-name-model-av1framerateconversionalgorithm) | False | Choose the method that you want MediaConvert to use when increasing or decreasing your video's frame rate. For numerically simple conversions, such as 60 fps to 30 fps: We recommend that you keep the default value, Drop duplicate. For numerically complex conversions, to avoid stutter: Choose Interpolate. This results in a smooth picture, but might introduce undesirable video artifacts. For complex frame rate conversions, especially if your source video has already been converted from its original cadence: Choose FrameFormer to do motion-compensated interpolation. FrameFormer uses the best conversion method frame by frame. Note that using FrameFormer increases the transcoding time and incurs a significant add-on cost. When you choose FrameFormer, your input video resolution must be at least 128x96. To create an output with the same number of frames as your input: Choose Maintain frame count. When you do, MediaConvert will not drop, interpolate, add, or otherwise change the frame count from your input to your output. Note that since the frame count is maintained, the duration of your output will become shorter at higher frame rates and longer at lower frame rates. |
@@ -5377,9 +5673,12 @@ Required when you set Codec, under VideoDescription>CodecSettings to the value A
 | maxBitrate | integer<br />Minimum: 1000<br />Maximum: 1152000000 | False | Maximum bitrate in bits/second. For example, enter five megabits per second as 5000000. Required when Rate control mode is QVBR. |
 | numberBFramesBetweenReferenceFrames | integer<br />Minimum: 0<br />Maximum: 15 | False | Specify from the number of B-frames, in the range of 0-15. For AV1 encoding, we recommend using 7 or 15. Choose a larger number for a lower bitrate and smaller file size; choose a smaller number for better video quality. |
 | perFrameMetrics | Array of type [frameMetricType](#jobtemplates-name-model-framemetrictype) | False | Optionally choose one or more per frame metric reports to generate along with your output. You can use these metrics to analyze your video output according to one or more commonly used image quality metrics. You can specify per frame metrics for output groups or for individual outputs. When you do, MediaConvert writes a CSV (Comma-Separated Values) file to your S3 output destination, named after the output name and metric type. For example: videofile\_PSNR.csv Jobs that generate per frame metrics will take longer to complete, depending on the resolution and complexity of your output. For example, some 4K jobs might take up to twice as long to complete. Note that when analyzing the video quality of your output, or when comparing the video quality of multiple different outputs, we generally also recommend a detailed visual review in a controlled environment. You can choose from the following per frame metrics: \* PSNR: Peak Signal-to-Noise Ratio \* SSIM: Structural Similarity Index Measure \* MS\_SSIM: Multi-Scale Similarity Index Measure \* PSNR\_HVS: Peak Signal-to-Noise Ratio, Human Visual System \* VMAF: Video Multi-Method Assessment Fusion \* QVBR: Quality-Defined Variable Bitrate. This option is only available when your output uses the QVBR rate control mode. \* SHOT\_CHANGE: Shot Changes |
-| qvbrSettings | [Av1QvbrSettings](#jobtemplates-name-model-av1qvbrsettings) | False | Settings for quality-defined variable bitrate encoding with the H.265 codec. Use these settings only when you set QVBR for Rate control mode. |
-| rateControlMode | [Av1RateControlMode](#jobtemplates-name-model-av1ratecontrolmode) | False | 'With AV1 outputs, for rate control mode, MediaConvert supports only quality-defined variable bitrate (QVBR). You can''t use CBR or VBR.' |
+| qvbrSettings | [Av1QvbrSettings](#jobtemplates-name-model-av1qvbrsettings) | False | Settings for quality-defined variable bitrate encoding with the AV1 codec. Use these settings only when you set QVBR for Rate control mode. |
+| rateControlMode | [Av1RateControlMode](#jobtemplates-name-model-av1ratecontrolmode) | False | 'With AV1 outputs, for rate control mode, MediaConvert supports quality-defined variable bitrate (QVBR) and constant bitrate (CBR). You can''t use VBR.' |
+| sceneChangeDetect | [Av1SceneChangeDetect](#jobtemplates-name-model-av1scenechangedetect) | False | Optional. Use this setting to have the service insert I-frames at scene changes that it automatically detects. For AV1, scene change detection is disabled by default. Choose Enabled to insert I-frames at detected scene changes, which can improve video quality. If this output uses QVBR, you can instead choose Transition detection for further video quality improvement. For more information about QVBR, see https://docs.aws.amazon.com/console/mediaconvert/cbr-vbr-qvbr. |
 | slices | integer<br />Minimum: 1<br />Maximum: 32 | False | Specify the number of slices per picture. This value must be 1, 2, 4, 8, 16, or 32. For progressive pictures, this value must be less than or equal to the number of macroblock rows. For interlaced pictures, this value must be less than or equal to half the number of macroblock rows. |
+| slidingWindowMs | integer<br />Minimum: 1000<br />Maximum: 3000 | False | Optional. Specify the duration, in milliseconds, of the sliding window over which MediaConvert enforces your Peak bitrate. When you specify a Peak bitrate but omit this value, MediaConvert uses a default sliding window of 1000. |
+| slidingWindowPeakBitrate | integer<br />Minimum: 1000<br />Maximum: 1152000000 | False | Optional. Specify an instantaneous peak bitrate ceiling, in bits/second, that MediaConvert enforces over the sliding window set by Peak bitrate window. For example, enter fifty megabits per second as 50000000. Applies in the QVBR rate control mode. When you specify a value below Max bitrate, MediaConvert raises it to Max bitrate. |
 | spatialAdaptiveQuantization | [Av1SpatialAdaptiveQuantization](#jobtemplates-name-model-av1spatialadaptivequantization) | False | Keep the default value, Enabled, to adjust quantization within each frame based on spatial variation of content complexity. When you enable this feature, the encoder uses fewer bits on areas that can sustain more distortion with no noticeable visual degradation and uses more bits on areas where any small distortion will be noticeable. For example, complex textured blocks are encoded with fewer bits and smooth textured blocks are encoded with more bits. Enabling this feature will almost always improve your video quality. Note, though, that this feature doesn't take into account where the viewer's attention is likely to be. If viewers are likely to be focusing their attention on a part of the screen with a lot of complex texture, you might choose to disable this feature. Related setting: When you enable spatial adaptive quantization, set the value for Adaptive quantization depending on your content. For homogeneous content, such as cartoons and video games, set it to Low. For content with a wider variety of textures, set it to High or Higher. |
 
 ### Av1SpatialAdaptiveQuantization
@@ -5642,11 +5941,13 @@ This object holds groups of settings related to captions for one output. For eac
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| audioSourceNames | Array of type string<br />MinLength: 1 | False | Specifies the audio selector or audio selector group that MediaConvert uses to generate Smart subtitles. The audio selector you choose must exist in all inputs for the job. If MediaConvert can't detect speech in the audio, it can't generate subtitles. Required when source is SMART\_SUBTITLE; not allowed otherwise. |
 | captionSelectorName | string<br />MinLength: 1 | False | Specifies which "Caption Selector":\#inputs-caption\_selector to use from each input when generating captions. The name should be of the format "Caption Selector <N>", which denotes that the Nth Caption Selector will be used from each input. |
 | customLanguageCode | string<br />Pattern: `^[A-Za-z]{2,3}(-[A-Za-z-]+)?$` | False | Specify the language for this captions output track. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information when automatically selecting the font script for rendering the captions text. For all outputs, you can use an ISO 639-2 or ISO 639-3 code. For streaming outputs, you can also use any other code in the full RFC-5646 specification. Streaming outputs are those that are in one of the following output groups: CMAF, DASH ISO, Apple HLS, or Microsoft Smooth Streaming. |
 | destinationSettings | [CaptionDestinationSettings](#jobtemplates-name-model-captiondestinationsettings) | False | Settings related to one captions tab on the MediaConvert console. Usually, one captions tab corresponds to one output captions track. Depending on your output captions format, one tab might correspond to a set of output captions tracks. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/including-captions.html. |
 | languageCode | [LanguageCode](#jobtemplates-name-model-languagecode) | False | Specify the language of this captions output track. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text. |
 | languageDescription | string | False | Specify a label for this set of output captions. For example, "English", "Director commentary", or "track\_2". For streaming outputs, MediaConvert passes this information into destination manifests for display on the end-viewer's player device. For outputs in other output groups, the service ignores this setting. |
+| source | [CaptionSource](#jobtemplates-name-model-captionsource) | False | Specify the source of the captions for this caption description. Choose Captions input source (INPUT\_CAPTION\_SELECTOR) to use a caption selector from your input. Choose Smart subtitling (SMART\_SUBTITLE) to have MediaConvert and Elemental Inference generate subtitles automatically from an audio source that you specify. |
 
 ### CaptionDestinationSettings
 <a name="jobtemplates-name-model-captiondestinationsettings"></a>
@@ -5693,6 +5994,13 @@ Use captions selectors to specify the captions data from your input that you use
 | customLanguageCode | string<br />Pattern: `^[A-Za-z]{3}$`<br />MinLength: 3<br />MaxLength: 3 | False | The specific language to extract from source, using the ISO 639-2 or ISO 639-3 three-letter language code. If input is SCTE-27, complete this field and/or PID to select the caption language to extract. If input is DVB-Sub and output is Burn-in, complete this field and/or PID to select the caption language to extract. If input is DVB-Sub that is being passed through, omit this field (and PID field); there is no way to extract a specific language with pass-through captions. |
 | languageCode | [LanguageCode](#jobtemplates-name-model-languagecode) | False | The specific language to extract from source. If input is SCTE-27, complete this field and/or PID to select the caption language to extract. If input is DVB-Sub and output is Burn-in, complete this field and/or PID to select the caption language to extract. If input is DVB-Sub that is being passed through, omit this field (and PID field); there is no way to extract a specific language with pass-through captions. |
 | sourceSettings | [CaptionSourceSettings](#jobtemplates-name-model-captionsourcesettings) | False | If your input captions are SCC, TTML, STL, SMI, SRT, or IMSC in an xml file, specify the URI of the input captions source file. If your input captions are IMSC in an IMF package, use TrackSourceSettings instead of FileSoureSettings. |
+
+### CaptionSource
+<a name="jobtemplates-name-model-captionsource"></a>
+
+Specify the source of the captions for this caption description. Choose Captions input source (INPUT\_CAPTION\_SELECTOR) to use a caption selector from your input. Choose Smart subtitling (SMART\_SUBTITLE) to have MediaConvert and Elemental Inference generate subtitles automatically from an audio source that you specify.
++ `INPUT_CAPTION_SELECTOR`
++ `SMART_SUBTITLE`
 
 ### CaptionSourceByteRateLimit
 <a name="jobtemplates-name-model-captionsourcebyteratelimit"></a>
@@ -5821,7 +6129,7 @@ Settings for CMAF encryption
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| clearLead | [HlsClearLead](#jobtemplates-name-model-hlsclearlead) | False | Enable Clear Lead DRM to reduce video startup latency by leaving the first segment unencrypted while DRM license retrieval occurs in parallel. This optimization allows immediate playback startup while maintaining content protection for the remainder of the stream. When enabled, the first output segment remains fully unencrypted, and encryption begins at the start of the second segment. The HLS manifest will omit \#EXT-X-KEY tags during the clear segment and insert the first \#EXT-X-KEY immediately before the first encrypted fragment. This feature is supported exclusively for CMAF HLS (fMP4) outputs and is compatible with all existing key provider integrations (SPEKE v1, SPEKE v2, and Static Key encryption). Supported codecs: H.264, H.265, and AV1 video codecs, and AAC audio codec. Choose Enabled to activate Clear Lead DRM optimization. Choose Disabled to use standard encryption where all segments are encrypted from the beginning. |
+| clearLeadSegments | integer<br />Minimum: 1<br />Maximum: 9999 | False | Reduce video startup latency by leaving initial segments unencrypted while DRM license retrieval occurs in parallel. This optimization allows immediate playback startup while maintaining content protection for the remainder of the stream. Specify the number of initial segments to leave unencrypted. Omit this field to disable Clear Lead. The HLS manifest will omit \#EXT-X-KEY tags during clear segments and insert the first \#EXT-X-KEY immediately before the first encrypted segment. Because encryption is applied at the fragment level, the actual duration of unencrypted content may be slightly longer than expected if the segment length is not evenly divisible by the fragment length. In such cases, encryption begins at the next fragment boundary after the specified clear lead segments, rather than at the exact segment boundary. This feature is supported exclusively for CMAF HLS (fMP4) outputs and is compatible with all existing key provider integrations (SPEKE v1, SPEKE v2, and Static Key encryption). Supported codecs: H.264, H.265, and AV1 video codecs, and AAC audio codec. |
 | constantInitializationVector | string<br />Pattern: `^[0-9a-fA-F]{32}$`<br />MinLength: 32<br />MaxLength: 32 | False | This is a 128-bit, 16-byte hex value represented by a 32-character text string. If this parameter is not set then the Initialization Vector will follow the segment number by default. |
 | encryptionMethod | [CmafEncryptionType](#jobtemplates-name-model-cmafencryptiontype) | False | Specify the encryption scheme that you want the service to use when encrypting your CMAF segments. Choose AES-CBC subsample or AES\_CTR. |
 | initializationVectorInManifest | [CmafInitializationVectorInManifest](#jobtemplates-name-model-cmafinitializationvectorinmanifest) | False | When you use DRM with CMAF outputs, choose whether the service writes the 128-bit encryption initialization vector in the HLS and DASH manifests. |
@@ -5847,14 +6155,16 @@ Settings related to your CMAF output package. For more information, see https://
 | baseUrl | string | False | A partial URI prefix that will be put in the manifest file at the top level BaseURL element. Can be used if streams are delivered from a different URL than the manifest file. |
 | clientCache | [CmafClientCache](#jobtemplates-name-model-cmafclientcache) | False | Disable this setting only when your workflow requires the \#EXT-X-ALLOW-CACHE:no tag. Otherwise, keep the default value Enabled and control caching in your video distribution set up. For example, use the Cache-Control http header. |
 | codecSpecification | [CmafCodecSpecification](#jobtemplates-name-model-cmafcodecspecification) | False | Specification to use (RFC-6381 or the default RFC-4281) during m3u8 playlist generation. |
+| dashAdaptationSetGrouping | Array of type [DashAdaptationSetGrouping](#jobtemplates-name-model-dashadaptationsetgrouping) | False | Specify additional criteria for partitioning video outputs into separate AdaptationSets. These criteria are applied on top of the grouping produced by DashManifestStyle. |
 | dashIFrameTrickPlayNameModifier | string<br />MinLength: 1<br />MaxLength: 256 | False | Specify whether MediaConvert generates I-frame only video segments for DASH trick play, also known as trick mode. When specified, the I-frame only video segments are included within an additional AdaptationSet in your DASH output manifest. To generate I-frame only video segments: Enter a name as a text string, up to 256 character long. This name is appended to the end of this output group's base filename, that you specify as part of your destination URI, and used for the I-frame only video segment files. You may also include format identifiers. For more information, see: https://docs.aws.amazon.com/mediaconvert/latest/ug/using-variables-in-your-job-settings.html\#using-settings-variables-with-streaming-outputs To not generate I-frame only video segments: Leave blank. |
 | dashManifestStyle | [DashManifestStyle](#jobtemplates-name-model-dashmanifeststyle) | False | Specify how MediaConvert writes SegmentTimeline in your output DASH manifest. To write a SegmentTimeline for outputs that you also specify a Name modifier for: Keep the default value, Basic. Note that if you do not specify a name modifier for an output, MediaConvert will not write a SegmentTimeline for it. To write a common SegmentTimeline in the video AdaptationSet: Choose Compact. Note that MediaConvert will still write a SegmentTimeline in any Representation that does not share a common timeline. To write a video AdaptationSet for each different output framerate, and a common SegmentTimeline in each AdaptationSet: Choose Distinct. To write a SegmentTimeline in each AdaptationSet: Choose Full. |
 | destination | string<br />Pattern: `^s3:\/\/.*$` | False | Use Destination to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file. |
 | destinationSettings | [DestinationSettings](#jobtemplates-name-model-destinationsettings) | False | Settings associated with the destination. Will vary based on the type of destination |
 | encryption | [CmafEncryptionSettings](#jobtemplates-name-model-cmafencryptionsettings) | False | DRM settings. |
 | fragmentLength | integer<br />Minimum: 1<br />Maximum: 2147483647 | False | Specify the length, in whole seconds, of the mp4 fragments. When you don't specify a value, MediaConvert defaults to 2. Related setting: Use Fragment length control to specify whether the encoder enforces this value strictly. |
-| imageBasedTrickPlay | [CmafImageBasedTrickPlay](#jobtemplates-name-model-cmafimagebasedtrickplay) | False | Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. When you enable Write HLS manifest, MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. When you enable Write DASH manifest, MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md |
+| imageBasedTrickPlay | [CmafImageBasedTrickPlay](#jobtemplates-name-model-cmafimagebasedtrickplay) | False | Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. Choose Advanced to customize thumbnail and tile settings for a single trick play variant. Choose Variants to specify multiple trick play variants, each with its own thumbnail and tile settings. When you enable Write HLS manifest, MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. When you enable Write DASH manifest, MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md |
 | imageBasedTrickPlaySettings | [CmafImageBasedTrickPlaySettings](#jobtemplates-name-model-cmafimagebasedtrickplaysettings) | False | Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED |
+| imageBasedTrickPlayVariants | Array of type [CmafImageBasedTrickPlayVariant](#jobtemplates-name-model-cmafimagebasedtrickplayvariant) | False | Specify multiple image-based trick play variants. Each entry creates a separate set of JPEG tile images with its own resolution, tile layout, and cadence settings. Set imageBasedTrickPlay to VARIANTS when using this setting. |
 | manifestCompression | [CmafManifestCompression](#jobtemplates-name-model-cmafmanifestcompression) | False | When set to GZIP, compresses HLS playlist. |
 | manifestDurationFormat | [CmafManifestDurationFormat](#jobtemplates-name-model-cmafmanifestdurationformat) | False | Indicates whether the output manifest should use floating point values for segment duration. |
 | minBufferTime | integer<br />Minimum: 0<br />Maximum: 2147483647 | False | Minimum time of initially buffered media that is needed to ensure smooth playout. |
@@ -5875,11 +6185,12 @@ Settings related to your CMAF output package. For more information, see https://
 ### CmafImageBasedTrickPlay
 <a name="jobtemplates-name-model-cmafimagebasedtrickplay"></a>
 
-Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. When you enable Write HLS manifest, MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. When you enable Write DASH manifest, MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
+Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. Choose Advanced to customize thumbnail and tile settings for a single trick play variant. Choose Variants to specify multiple trick play variants, each with its own thumbnail and tile settings. When you enable Write HLS manifest, MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. When you enable Write DASH manifest, MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
 + `NONE`
 + `THUMBNAIL`
 + `THUMBNAIL_AND_FULLFRAME`
 + `ADVANCED`
++ `VARIANTS`
 
 ### CmafImageBasedTrickPlaySettings
 <a name="jobtemplates-name-model-cmafimagebasedtrickplaysettings"></a>
@@ -5892,7 +6203,21 @@ Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED
 | thumbnailHeight | integer<br />Minimum: 2<br />Maximum: 4096 | False | Height of each thumbnail within each tile image, in pixels. Leave blank to maintain aspect ratio with thumbnail width. If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected. Must be divisible by 2. |
 | thumbnailInterval | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Enter the interval, in seconds, that MediaConvert uses to generate thumbnails. If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate. For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails. |
 | thumbnailWidth | integer<br />Minimum: 8<br />Maximum: 4096 | False | Width of each thumbnail within each tile image, in pixels. Default is 312. Must be divisible by 8. |
-| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 2 and 2048. Must be divisible by 2. |
+| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 1 and 2048. |
+| tileWidth | integer<br />Minimum: 1<br />Maximum: 512 | False | Number of thumbnails in each row of a tile image. Set a value between 1 and 512. |
+
+### CmafImageBasedTrickPlayVariant
+<a name="jobtemplates-name-model-cmafimagebasedtrickplayvariant"></a>
+
+Settings for one image-based trick play variant. Each variant produces its own set of JPEG tile images and corresponding manifest entries.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| intervalCadence | [CmafIntervalCadence](#jobtemplates-name-model-cmafintervalcadence) | False | The cadence MediaConvert follows for generating thumbnails. If set to FOLLOW\_IFRAME, MediaConvert generates thumbnails for each IDR frame in the output (matching the GOP cadence). If set to FOLLOW\_CUSTOM, MediaConvert generates thumbnails according to the interval you specify in thumbnailInterval. If set to FOLLOW\_SEGMENTATION, MediaConvert generates thumbnail playlist entries that align exactly with video segment boundaries. FOLLOW\_SEGMENTATION requires 1x1 tiling. |
+| thumbnailHeight | integer<br />Minimum: 2<br />Maximum: 4096 | False | Height of each thumbnail within each tile image, in pixels. Leave blank to maintain aspect ratio with thumbnail width. If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected. Must be divisible by 2. |
+| thumbnailInterval | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Enter the interval, in seconds, that MediaConvert uses to generate thumbnails. If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate. For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails. |
+| thumbnailWidth | integer<br />Minimum: 8<br />Maximum: 4096 | False | Width of each thumbnail within each tile image, in pixels. Default is 312. Must be divisible by 8. |
+| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 1 and 2048. |
 | tileWidth | integer<br />Minimum: 1<br />Maximum: 512 | False | Number of thumbnails in each row of a tile image. Set a value between 1 and 512. |
 
 ### CmafInitializationVectorInManifest
@@ -6070,9 +6395,10 @@ Use this setting only when you specify SCTE-35 markers from ESAM. Choose INSERT 
 ### CmfcScte35Source
 <a name="jobtemplates-name-model-cmfcscte35source"></a>
 
-Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output.
+Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output. When your input is an HLS manifest, choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest.
 + `PASSTHROUGH`
 + `NONE`
++ `MANIFEST_CUES`
 
 ### CmfcSettings
 <a name="jobtemplates-name-model-cmfcsettings"></a>
@@ -6092,7 +6418,7 @@ These settings relate to the fragmented MP4 container for the segments in your C
 | klvMetadata | [CmfcKlvMetadata](#jobtemplates-name-model-cmfcklvmetadata) | False | To include key-length-value metadata in this output: Set KLV metadata insertion to Passthrough. MediaConvert reads KLV metadata present in your input and writes each instance to a separate event message box in the output, according to MISB ST1910.1. To exclude this KLV metadata: Set KLV metadata insertion to None or leave blank. |
 | manifestMetadataSignaling | [CmfcManifestMetadataSignaling](#jobtemplates-name-model-cmfcmanifestmetadatasignaling) | False | To add an InbandEventStream element in your output MPD manifest for each type of event message, set Manifest metadata signaling to Enabled. For ID3 event messages, the InbandEventStream element schemeIdUri will be same value that you specify for ID3 metadata scheme ID URI. For SCTE35 event messages, the InbandEventStream element schemeIdUri will be "urn:scte:scte35:2013:bin". To leave these elements out of your output MPD manifest, set Manifest metadata signaling to Disabled. To enable Manifest metadata signaling, you must also set SCTE-35 source to Passthrough, ESAM SCTE-35 to insert, or ID3 metadata to Passthrough. |
 | scte35Esam | [CmfcScte35Esam](#jobtemplates-name-model-cmfcscte35esam) | False | Use this setting only when you specify SCTE-35 markers from ESAM. Choose INSERT to put SCTE-35 markers in this output at the insertion points that you specify in an ESAM XML document. Provide the document in the setting SCC XML. |
-| scte35Source | [CmfcScte35Source](#jobtemplates-name-model-cmfcscte35source) | False | Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output. |
+| scte35Source | [CmfcScte35Source](#jobtemplates-name-model-cmfcscte35source) | False | Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output. When your input is an HLS manifest, choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest. |
 | signingKmsKey | string<br />Pattern: `^(arn:aws(-us-gov\|-cn)?:kms:[a-z-]{2,6}-(east\|west\|central\|((north\|south)(east\|west)?))-[1-9]{1,2}:\d{12}:key/)?[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}\|mrk-[a-fA-F0-9]{32}$`<br />MinLength: 1 | False | Specify the ID or ARN of the AWS KMS key used to sign the C2PA manifest in your MP4 output. Provide a valid KMS key ARN. Note that your MediaConvert service role must allow access to this key. |
 | timedMetadata | [CmfcTimedMetadata](#jobtemplates-name-model-cmfctimedmetadata) | False | To include ID3 metadata in this output: Set ID3 metadata to Passthrough. Specify this ID3 metadata in Custom ID3 metadata inserter. MediaConvert writes each instance of ID3 metadata in a separate Event Message (eMSG) box. To exclude this ID3 metadata: Set ID3 metadata to None or leave blank. |
 | timedMetadataBoxVersion | [CmfcTimedMetadataBoxVersion](#jobtemplates-name-model-cmfctimedmetadataboxversion) | False | Specify the event message box (eMSG) version for ID3 timed metadata in your output. For more information, see ISO/IEC 23009-1:2022 section 5.10.3.3.3 Syntax. Leave blank to use the default value Version 0. When you specify Version 1, you must also set ID3 metadata to Passthrough. |
@@ -6228,6 +6554,12 @@ The action to take on copy and redistribution control XDS packets. If you select
 + `PASSTHROUGH`
 + `STRIP`
 
+### DashAdaptationSetGrouping
+<a name="jobtemplates-name-model-dashadaptationsetgrouping"></a>
+
+Specify additional criteria for partitioning video outputs into separate AdaptationSets. These criteria are applied on top of the grouping produced by DashManifestStyle.
++ `CODEC`
+
 ### DashAdditionalManifest
 <a name="jobtemplates-name-model-dashadditionalmanifest"></a>
 
@@ -6245,7 +6577,7 @@ Specifies DRM settings for DASH outputs.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| playbackDeviceCompatibility | [DashIsoPlaybackDeviceCompatibility](#jobtemplates-name-model-dashisoplaybackdevicecompatibility) | False | This setting can improve the compatibility of your output with video players on obsolete devices. It applies only to DASH H.264 outputs with DRM encryption. Choose Unencrypted SEI only to correct problems with playback on older devices. Otherwise, keep the default setting CENC v1. If you choose Unencrypted SEI, for that output, the service will exclude the access unit delimiter and will leave the SEI NAL units unencrypted. |
+| playbackDeviceCompatibility | [DashIsoPlaybackDeviceCompatibility](#jobtemplates-name-model-dashisoplaybackdevicecompatibility) | False | This setting can improve the compatibility of your output with video players on obsolete devices. It applies only to DASH outputs with DRM encryption. Choose Unencrypted SEI only to correct problems with playback on older H.264 devices. Choose CENC v1 unencrypted headers to leave NAL unit headers and slice headers unencrypted for H.265 outputs, improving compatibility with strict HEVC decoders. Otherwise, keep the default setting CENC v1. |
 | spekeKeyProvider | [SpekeKeyProvider](#jobtemplates-name-model-spekekeyprovider) | False | If your output group type is HLS, DASH, or Microsoft Smooth, use these settings when doing DRM encryption with a SPEKE-compliant key provider. If your output group type is CMAF, use the SpekeKeyProviderCmaf settings instead. |
 
 ### DashIsoGroupAudioChannelConfigSchemeIdUri
@@ -6265,6 +6597,7 @@ Settings related to your DASH output package. For more information, see https://
 | additionalManifests | Array of type [DashAdditionalManifest](#jobtemplates-name-model-dashadditionalmanifest) | False | By default, the service creates one .mpd DASH manifest for each DASH ISO output group in your job. This default manifest references every output in the output group. To create additional DASH manifests that reference a subset of the outputs in the output group, specify a list of them here. |
 | audioChannelConfigSchemeIdUri | [DashIsoGroupAudioChannelConfigSchemeIdUri](#jobtemplates-name-model-dashisogroupaudiochannelconfigschemeiduri) | False | Use this setting only when your audio codec is a Dolby one (AC3, EAC3, or Atmos) and your downstream workflow requires that your DASH manifest use the Dolby channel configuration tag, rather than the MPEG one. For example, you might need to use this to make dynamic ad insertion work. Specify which audio channel configuration scheme ID URI MediaConvert writes in your DASH manifest. Keep the default value, MPEG channel configuration, to have MediaConvert write this: urn:mpeg:mpegB:cicp:ChannelConfiguration. Choose Dolby channel configuration to have MediaConvert write this instead: tag:dolby.com,2014:dash:audio\_channel\_configuration:2011. |
 | baseUrl | string | False | A partial URI prefix that will be put in the manifest (.mpd) file at the top level BaseURL element. Can be used if streams are delivered from a different URL than the manifest file. |
+| dashAdaptationSetGrouping | Array of type [DashAdaptationSetGrouping](#jobtemplates-name-model-dashadaptationsetgrouping) | False | Specify additional criteria for partitioning video outputs into separate AdaptationSets. These criteria are applied on top of the grouping produced by DashManifestStyle. |
 | dashIFrameTrickPlayNameModifier | string<br />MinLength: 1<br />MaxLength: 256 | False | Specify whether MediaConvert generates I-frame only video segments for DASH trick play, also known as trick mode. When specified, the I-frame only video segments are included within an additional AdaptationSet in your DASH output manifest. To generate I-frame only video segments: Enter a name as a text string, up to 256 character long. This name is appended to the end of this output group's base filename, that you specify as part of your destination URI, and used for the I-frame only video segment files. You may also include format identifiers. For more information, see: https://docs.aws.amazon.com/mediaconvert/latest/ug/using-variables-in-your-job-settings.html\#using-settings-variables-with-streaming-outputs To not generate I-frame only video segments: Leave blank. |
 | dashManifestStyle | [DashManifestStyle](#jobtemplates-name-model-dashmanifeststyle) | False | Specify how MediaConvert writes SegmentTimeline in your output DASH manifest. To write a SegmentTimeline for outputs that you also specify a Name modifier for: Keep the default value, Basic. Note that if you do not specify a name modifier for an output, MediaConvert will not write a SegmentTimeline for it. To write a common SegmentTimeline in the video AdaptationSet: Choose Compact. Note that MediaConvert will still write a SegmentTimeline in any Representation that does not share a common timeline. To write a video AdaptationSet for each different output framerate, and a common SegmentTimeline in each AdaptationSet: Choose Distinct. To write a SegmentTimeline in each AdaptationSet: Choose Full. |
 | destination | string<br />Pattern: `^s3:\/\/.*$` | False | Use Destination to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file. |
@@ -6272,8 +6605,9 @@ Settings related to your DASH output package. For more information, see https://
 | encryption | [DashIsoEncryptionSettings](#jobtemplates-name-model-dashisoencryptionsettings) | False | DRM settings. |
 | fragmentLength | integer<br />Minimum: 1<br />Maximum: 2147483647 | False | Length of fragments to generate (in seconds). Fragment length must be compatible with GOP size and Framerate. Note that fragments will end on the next keyframe after this number of seconds, so actual fragment length may be longer. When Emit Single File is checked, the fragmentation is internal to a single output file and it does not cause the creation of many output files as in other output types. |
 | hbbtvCompliance | [DashIsoHbbtvCompliance](#jobtemplates-name-model-dashisohbbtvcompliance) | False | Supports HbbTV specification as indicated |
-| imageBasedTrickPlay | [DashIsoImageBasedTrickPlay](#jobtemplates-name-model-dashisoimagebasedtrickplay) | False | Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md |
+| imageBasedTrickPlay | [DashIsoImageBasedTrickPlay](#jobtemplates-name-model-dashisoimagebasedtrickplay) | False | Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. Choose Advanced to customize thumbnail and tile settings for a single trick play variant. Choose Variants to specify multiple trick play variants, each with its own thumbnail and tile settings. MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md |
 | imageBasedTrickPlaySettings | [DashIsoImageBasedTrickPlaySettings](#jobtemplates-name-model-dashisoimagebasedtrickplaysettings) | False | Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED |
+| imageBasedTrickPlayVariants | Array of type [DashIsoImageBasedTrickPlayVariant](#jobtemplates-name-model-dashisoimagebasedtrickplayvariant) | False | Specify multiple image-based trick play variants. Each entry creates a separate set of JPEG tile images with its own resolution, tile layout, and cadence settings. Set imageBasedTrickPlay to VARIANTS when using this setting. |
 | minBufferTime | integer<br />Minimum: 0<br />Maximum: 2147483647 | False | Minimum time of initially buffered media that is needed to ensure smooth playout. |
 | minFinalSegmentLength | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Keep this setting at the default value of 0, unless you are troubleshooting a problem with how devices play back the end of your video asset. If you know that player devices are hanging on the final segment of your video because the length of your final segment is too short, use this setting to specify a minimum final segment length, in seconds. Choose a value that is greater than or equal to 1 and less than your segment length. When you specify a value for this setting, the encoder will combine any final segment that is shorter than the length that you specify with the previous segment. For example, your segment length is 3 seconds and your final segment is .5 seconds without a minimum final segment length; when you set the minimum final segment length to 1, your final segment is 3.5 seconds. |
 | mpdManifestBandwidthType | [DashIsoMpdManifestBandwidthType](#jobtemplates-name-model-dashisompdmanifestbandwidthtype) | False | Specify how the value for bandwidth is determined for each video Representation in your output MPD manifest. We recommend that you choose a MPD manifest bandwidth type that is compatible with your downstream player configuration. Max: Use the same value that you specify for Max bitrate in the video output, in bits per second. Average: Use the calculated average bitrate of the encoded video output, in bits per second. |
@@ -6295,11 +6629,12 @@ Supports HbbTV specification as indicated
 ### DashIsoImageBasedTrickPlay
 <a name="jobtemplates-name-model-dashisoimagebasedtrickplay"></a>
 
-Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
+Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. Choose Advanced to customize thumbnail and tile settings for a single trick play variant. Choose Variants to specify multiple trick play variants, each with its own thumbnail and tile settings. MediaConvert adds an entry in the .mpd manifest for each set of images that you generate. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
 + `NONE`
 + `THUMBNAIL`
 + `THUMBNAIL_AND_FULLFRAME`
 + `ADVANCED`
++ `VARIANTS`
 
 ### DashIsoImageBasedTrickPlaySettings
 <a name="jobtemplates-name-model-dashisoimagebasedtrickplaysettings"></a>
@@ -6312,7 +6647,21 @@ Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED
 | thumbnailHeight | integer<br />Minimum: 1<br />Maximum: 4096 | False | Height of each thumbnail within each tile image, in pixels. Leave blank to maintain aspect ratio with thumbnail width. If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected. Must be divisible by 2. |
 | thumbnailInterval | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Enter the interval, in seconds, that MediaConvert uses to generate thumbnails. If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate. For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails. |
 | thumbnailWidth | integer<br />Minimum: 8<br />Maximum: 4096 | False | Width of each thumbnail within each tile image, in pixels. Default is 312. Must be divisible by 8. |
-| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 2 and 2048. Must be divisible by 2. |
+| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 1 and 2048. |
+| tileWidth | integer<br />Minimum: 1<br />Maximum: 512 | False | Number of thumbnails in each row of a tile image. Set a value between 1 and 512. |
+
+### DashIsoImageBasedTrickPlayVariant
+<a name="jobtemplates-name-model-dashisoimagebasedtrickplayvariant"></a>
+
+Settings for one image-based trick play variant. Each variant produces its own set of JPEG tile images and corresponding manifest entries.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| intervalCadence | [DashIsoIntervalCadence](#jobtemplates-name-model-dashisointervalcadence) | False | The cadence MediaConvert follows for generating thumbnails. If set to FOLLOW\_IFRAME, MediaConvert generates thumbnails for each IDR frame in the output (matching the GOP cadence). If set to FOLLOW\_CUSTOM, MediaConvert generates thumbnails according to the interval you specify in thumbnailInterval. If set to FOLLOW\_SEGMENTATION, MediaConvert generates thumbnail playlist entries that align exactly with video segment boundaries. FOLLOW\_SEGMENTATION requires 1x1 tiling. |
+| thumbnailHeight | integer<br />Minimum: 2<br />Maximum: 4096 | False | Height of each thumbnail within each tile image, in pixels. Leave blank to maintain aspect ratio with thumbnail width. If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected. Must be divisible by 2. |
+| thumbnailInterval | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Enter the interval, in seconds, that MediaConvert uses to generate thumbnails. If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate. For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails. |
+| thumbnailWidth | integer<br />Minimum: 8<br />Maximum: 4096 | False | Width of each thumbnail within each tile image, in pixels. Default is 312. Must be divisible by 8. |
+| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 1 and 2048. |
 | tileWidth | integer<br />Minimum: 1<br />Maximum: 512 | False | Number of thumbnails in each row of a tile image. Set a value between 1 and 512. |
 
 ### DashIsoIntervalCadence
@@ -6340,9 +6689,10 @@ Specify whether your DASH profile is on-demand or main. When you choose Main pro
 ### DashIsoPlaybackDeviceCompatibility
 <a name="jobtemplates-name-model-dashisoplaybackdevicecompatibility"></a>
 
-This setting can improve the compatibility of your output with video players on obsolete devices. It applies only to DASH H.264 outputs with DRM encryption. Choose Unencrypted SEI only to correct problems with playback on older devices. Otherwise, keep the default setting CENC v1. If you choose Unencrypted SEI, for that output, the service will exclude the access unit delimiter and will leave the SEI NAL units unencrypted.
+This setting can improve the compatibility of your output with video players on obsolete devices. It applies only to DASH outputs with DRM encryption. Choose Unencrypted SEI only to correct problems with playback on older H.264 devices. Choose CENC v1 unencrypted headers to leave NAL unit headers and slice headers unencrypted for H.265 outputs, improving compatibility with strict HEVC decoders. Otherwise, keep the default setting CENC v1.
 + `CENC_V1`
 + `UNENCRYPTED_SEI`
++ `CENC_V1_UNENCRYPTED_HEADERS`
 
 ### DashIsoPtsOffsetHandlingForBFrames
 <a name="jobtemplates-name-model-dashisoptsoffsethandlingforbframes"></a>
@@ -6506,6 +6856,17 @@ Required when you enable Dolby Vision. Use Profile 5 to include frame-interleave
 Applies only to 29.97 fps outputs. When this feature is enabled, the service will use drop-frame timecode on outputs. If it is not possible to use drop-frame timecode, the system will fall back to non-drop-frame. This setting is enabled by default when Timecode insertion or Timecode track is enabled.
 + `DISABLED`
 + `ENABLED`
+
+### DurationControl
+<a name="jobtemplates-name-model-durationcontrol"></a>
+
+Settings for integer-second duration normalization. When this preprocessor is present, the output duration will be adjusted to an exact integer-second boundary. If the input is within the trim threshold of an integer second, trailing frames are dropped. If within the compression threshold and less than 500ms over the previous integer second, the output is sped up slightly. Otherwise, black frames are padded to the next integer second.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| integerDurationMaximumCompressionDenominator | integer<br />Minimum: 1<br />Maximum: 2147483647 | False | Required. Denominator of the maximum allowed compression ratio. |
+| integerDurationMaximumCompressionNumerator | integer<br />Minimum: 0<br />Maximum: 2147483647 | False | Required. Numerator of the maximum allowed compression ratio, defined as overrun divided by target duration. For example, numerator 5 with denominator 100 means max 5% compression. Set to 0 to disable compression entirely (only trim or pad will be used). |
+| integerDurationTrimThresholdMilliseconds | integer<br />Minimum: 0<br />Maximum: 500 | False | Maximum number of fractional milliseconds past an integer second that qualify for the trim path (frame dropping). Default is 0 (trimming disabled). |
 
 ### DvbNitSettings
 <a name="jobtemplates-name-model-dvbnitsettings"></a>
@@ -6960,6 +7321,24 @@ When encoding 2/0 audio, sets whether Dolby Surround is matrix encoded into the 
 + `ENABLED`
 + `DISABLED`
 
+### ElementalInferenceFeedConfigurationSource
+<a name="jobtemplates-name-model-elementalinferencefeedconfigurationsource"></a>
+
+The source of your Elemental Inference Feed configuration.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| feedArn | string<br />Pattern: `^arn:aws:elemental-inference:.*:feed/[a-z0-9]{19}$` | False | The ARN of an Elemental Inference Feed. |
+
+### ElementalInferenceSettings
+<a name="jobtemplates-name-model-elementalinferencesettings"></a>
+
+The Elemental Inference settings used in this job.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| feedConfigurationSource | [ElementalInferenceFeedConfigurationSource](#jobtemplates-name-model-elementalinferencefeedconfigurationsource) | False | Optional. The source of your Elemental Inference Feed configuration. MediaConvert will reference this configuration source when you specify job settings which use Elemental Inference. |
+
 ### EmbeddedConvert608To708
 <a name="jobtemplates-name-model-embeddedconvert608to708"></a>
 
@@ -7273,6 +7652,13 @@ Entropy encoding mode. Use CABAC (must be in Main or High profile) or CAVLC.
 + `CABAC`
 + `CAVLC`
 
+### H264ExplicitWeightedPrediction
+<a name="jobtemplates-name-model-h264explicitweightedprediction"></a>
+
+Enable or disable explicit weighted prediction for the H.264 encoder. Weighted prediction improves compression efficiency for content with fading or brightness changes between frames.
++ `DISABLED`
++ `ENABLED`
+
 ### H264FieldEncoding
 <a name="jobtemplates-name-model-h264fieldencoding"></a>
 
@@ -7407,6 +7793,7 @@ Required when you set Codec to the value H\_264.
 | dynamicSubGop | [H264DynamicSubGop](#jobtemplates-name-model-h264dynamicsubgop) | False | Specify whether to allow the number of B-frames in your output GOP structure to vary or not depending on your input video content. To improve the subjective video quality of your output that has high-motion content: Leave blank or keep the default value Adaptive. MediaConvert will use fewer B-frames for high-motion video content than low-motion content. The maximum number of B- frames is limited by the value that you choose for B-frames between reference frames. To use the same number B-frames for all types of content: Choose Static. |
 | endOfStreamMarkers | [H264EndOfStreamMarkers](#jobtemplates-name-model-h264endofstreammarkers) | False | Optionally include or suppress markers at the end of your output that signal the end of the video stream. To include end of stream markers: Leave blank or keep the default value, Include. To not include end of stream markers: Choose Suppress. This is useful when your output will be inserted into another stream. |
 | entropyEncoding | [H264EntropyEncoding](#jobtemplates-name-model-h264entropyencoding) | False | Entropy encoding mode. Use CABAC (must be in Main or High profile) or CAVLC. |
+| explicitWeightedPrediction | [H264ExplicitWeightedPrediction](#jobtemplates-name-model-h264explicitweightedprediction) | False | Enable or disable explicit weighted prediction for the H.264 encoder. Weighted prediction improves compression efficiency for content with fading or brightness changes between frames. |
 | fieldEncoding | [H264FieldEncoding](#jobtemplates-name-model-h264fieldencoding) | False | The video encoding method for your MPEG-4 AVC output. Keep the default value, PAFF, to have MediaConvert use PAFF encoding for interlaced outputs. Choose Force field to disable PAFF encoding and create separate interlaced fields. Choose MBAFF to disable PAFF and have MediaConvert use MBAFF encoding for interlaced outputs. |
 | flickerAdaptiveQuantization | [H264FlickerAdaptiveQuantization](#jobtemplates-name-model-h264flickeradaptivequantization) | False | Only use this setting when you change the default value, AUTO, for the setting H264AdaptiveQuantization. When you keep all defaults, excluding H264AdaptiveQuantization and all other adaptive quantization from your JSON job specification, MediaConvert automatically applies the best types of quantization for your video content. When you set H264AdaptiveQuantization to a value other than AUTO, the default value for H264FlickerAdaptiveQuantization is Disabled. Change this value to Enabled to reduce I-frame pop. I-frame pop appears as a visual flicker that can arise when the encoder saves bits by copying some macroblocks many times from frame to frame, and then refreshes them at the I-frame. When you enable this setting, the encoder updates these macroblocks slightly more often to smooth out the flicker. To manually enable or disable H264FlickerAdaptiveQuantization, you must set Adaptive quantization to a value other than AUTO. |
 | framerateControl | [H264FramerateControl](#jobtemplates-name-model-h264frameratecontrol) | False | If you are using the console, use the Framerate setting to specify the frame rate for this output. If you want to keep the same frame rate as the input video, choose Follow source. If you want to do frame rate conversion, choose a frame rate from the dropdown list or choose Custom. The framerates shown in the dropdown list are decimal approximations of fractions. If you choose Custom, specify your frame rate as a fraction. |
@@ -7437,6 +7824,8 @@ Required when you set Codec to the value H\_264.
 | scanTypeConversionMode | [H264ScanTypeConversionMode](#jobtemplates-name-model-h264scantypeconversionmode) | False | Use this setting for interlaced outputs, when your output frame rate is half of your input frame rate. In this situation, choose Optimized interlacing to create a better quality interlaced output. In this case, each progressive frame from the input corresponds to an interlaced field in the output. Keep the default value, Basic interlacing, for all other output frame rates. With basic interlacing, MediaConvert performs any frame rate conversion first and then interlaces the frames. When you choose Optimized interlacing and you set your output frame rate to a value that isn't suitable for optimized interlacing, MediaConvert automatically falls back to basic interlacing. Required settings: To use optimized interlacing, you must set Telecine to None or Soft. You can't use optimized interlacing for hard telecine outputs. You must also set Interlace mode to a value other than Progressive. |
 | sceneChangeDetect | [H264SceneChangeDetect](#jobtemplates-name-model-h264scenechangedetect) | False | Enable this setting to insert I-frames at scene changes that the service automatically detects. This improves video quality and is enabled by default. If this output uses QVBR, choose Transition detection for further video quality improvement. For more information about QVBR, see https://docs.aws.amazon.com/console/mediaconvert/cbr-vbr-qvbr. |
 | slices | integer<br />Minimum: 1<br />Maximum: 32 | False | Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures. |
+| slidingWindowMs | integer<br />Minimum: 1000<br />Maximum: 3000 | False | Optional. Specify the duration, in milliseconds, of the sliding window over which MediaConvert enforces your Peak bitrate. When you specify a Peak bitrate but omit this value, MediaConvert uses a default sliding window of 1000. |
+| slidingWindowPeakBitrate | integer<br />Minimum: 1000<br />Maximum: 1152000000 | False | Optional. Specify an instantaneous peak bitrate ceiling, in bits/second, that MediaConvert enforces over the sliding window set by Peak bitrate window. For example, enter fifty megabits per second as 50000000. Applies in the VBR, CBR, and QVBR rate control modes. When you specify a value below Max bitrate, MediaConvert raises it to Max bitrate. |
 | slowPal | [H264SlowPal](#jobtemplates-name-model-h264slowpal) | False | Ignore this setting unless your input frame rate is 23.976 or 24 frames per second (fps). Enable slow PAL to create a 25 fps output. When you enable slow PAL, MediaConvert relabels the video frames to 25 fps and resamples your audio to keep it synchronized with the video. Note that enabling this setting will slightly reduce the duration of your video. Required settings: You must also set Framerate to 25. |
 | softness | integer<br />Minimum: 0<br />Maximum: 128 | False | Ignore this setting unless you need to comply with a specification that requires a specific value. If you don't have a specification requirement, we recommend that you adjust the softness of your output by using a lower value for the setting Sharpness or by enabling a noise reducer filter. The Softness setting specifies the quantization matrices that the encoder uses. Keep the default value, 0, for flat quantization. Choose the value 1 or 16 to use the default JVT softening quantization matricies from the H.264 specification. Choose a value from 17 to 128 to use planar interpolation. Increasing values from 17 to 128 result in increasing reduction of high-frequency data. The value 128 results in the softest video. |
 | spatialAdaptiveQuantization | [H264SpatialAdaptiveQuantization](#jobtemplates-name-model-h264spatialadaptivequantization) | False | Only use this setting when you change the default value, Auto, for the setting H264AdaptiveQuantization. When you keep all defaults, excluding H264AdaptiveQuantization and all other adaptive quantization from your JSON job specification, MediaConvert automatically applies the best types of quantization for your video content. When you set H264AdaptiveQuantization to a value other than AUTO, the default value for H264SpatialAdaptiveQuantization is Enabled. Keep this default value to adjust quantization within each frame based on spatial variation of content complexity. When you enable this feature, the encoder uses fewer bits on areas that can sustain more distortion with no noticeable visual degradation and uses more bits on areas where any small distortion will be noticeable. For example, complex textured blocks are encoded with fewer bits and smooth textured blocks are encoded with more bits. Enabling this feature will almost always improve your video quality. Note, though, that this feature doesn't take into account where the viewer's attention is likely to be. If viewers are likely to be focusing their attention on a part of the screen with a lot of complex texture, you might choose to set H264SpatialAdaptiveQuantization to Disabled. Related setting: When you enable spatial adaptive quantization, set the value for Adaptive quantization depending on your content. For homogeneous content, such as cartoons and video games, set it to Low. For content with a wider variety of textures, set it to High or Higher. To manually enable or disable H264SpatialAdaptiveQuantization, you must set Adaptive quantization to a value other than AUTO. |
@@ -7733,6 +8122,8 @@ Settings for H265 codec
 | scanTypeConversionMode | [H265ScanTypeConversionMode](#jobtemplates-name-model-h265scantypeconversionmode) | False | Use this setting for interlaced outputs, when your output frame rate is half of your input frame rate. In this situation, choose Optimized interlacing to create a better quality interlaced output. In this case, each progressive frame from the input corresponds to an interlaced field in the output. Keep the default value, Basic interlacing, for all other output frame rates. With basic interlacing, MediaConvert performs any frame rate conversion first and then interlaces the frames. When you choose Optimized interlacing and you set your output frame rate to a value that isn't suitable for optimized interlacing, MediaConvert automatically falls back to basic interlacing. Required settings: To use optimized interlacing, you must set Telecine to None or Soft. You can't use optimized interlacing for hard telecine outputs. You must also set Interlace mode to a value other than Progressive. |
 | sceneChangeDetect | [H265SceneChangeDetect](#jobtemplates-name-model-h265scenechangedetect) | False | Enable this setting to insert I-frames at scene changes that the service automatically detects. This improves video quality and is enabled by default. If this output uses QVBR, choose Transition detection for further video quality improvement. For more information about QVBR, see https://docs.aws.amazon.com/console/mediaconvert/cbr-vbr-qvbr. |
 | slices | integer<br />Minimum: 1<br />Maximum: 32 | False | Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures. |
+| slidingWindowMs | integer<br />Minimum: 1000<br />Maximum: 3000 | False | Optional. Specify the duration, in milliseconds, of the sliding window over which MediaConvert enforces your Peak bitrate. When you specify a Peak bitrate but omit this value, MediaConvert uses a default sliding window of 1000. |
+| slidingWindowPeakBitrate | integer<br />Minimum: 1000<br />Maximum: 1466400000 | False | Optional. Specify an instantaneous peak bitrate ceiling, in bits/second, that MediaConvert enforces over the sliding window set by Peak bitrate window. For example, enter fifty megabits per second as 50000000. Applies in the VBR, CBR, and QVBR rate control modes. When you specify a value below Max bitrate, MediaConvert raises it to Max bitrate. |
 | slowPal | [H265SlowPal](#jobtemplates-name-model-h265slowpal) | False | Ignore this setting unless your input frame rate is 23.976 or 24 frames per second (fps). Enable slow PAL to create a 25 fps output. When you enable slow PAL, MediaConvert relabels the video frames to 25 fps and resamples your audio to keep it synchronized with the video. Note that enabling this setting will slightly reduce the duration of your video. Required settings: You must also set Framerate to 25. |
 | spatialAdaptiveQuantization | [H265SpatialAdaptiveQuantization](#jobtemplates-name-model-h265spatialadaptivequantization) | False | Keep the default value, Enabled, to adjust quantization within each frame based on spatial variation of content complexity. When you enable this feature, the encoder uses fewer bits on areas that can sustain more distortion with no noticeable visual degradation and uses more bits on areas where any small distortion will be noticeable. For example, complex textured blocks are encoded with fewer bits and smooth textured blocks are encoded with more bits. Enabling this feature will almost always improve your video quality. Note, though, that this feature doesn't take into account where the viewer's attention is likely to be. If viewers are likely to be focusing their attention on a part of the screen with a lot of complex texture, you might choose to disable this feature. Related setting: When you enable spatial adaptive quantization, set the value for Adaptive quantization depending on your content. For homogeneous content, such as cartoons and video games, set it to Low. For content with a wider variety of textures, set it to High or Higher. |
 | telecine | [H265Telecine](#jobtemplates-name-model-h265telecine) | False | This field applies only if the Streams > Advanced > Framerate field is set to 29.970. This field works with the Streams > Advanced > Preprocessors > Deinterlacer field and the Streams > Advanced > Interlaced Mode field to identify the scan type for the output: Progressive, Interlaced, Hard Telecine or Soft Telecine. - Hard: produces 29.97i output from 23.976 input. - Soft: produces 23.976; the player converts this output to 29.97i. |
@@ -7921,13 +8312,6 @@ Set Caption segment length control to Match video to create caption segments tha
 + `LARGE_SEGMENTS`
 + `MATCH_VIDEO`
 
-### HlsClearLead
-<a name="jobtemplates-name-model-hlsclearlead"></a>
-
-Enable Clear Lead DRM to reduce video startup latency by leaving the first segment unencrypted while DRM license retrieval occurs in parallel. This optimization allows immediate playback startup while maintaining content protection for the remainder of the stream. When enabled, the first output segment remains fully unencrypted, and encryption begins at the start of the second segment. The HLS manifest will omit \#EXT-X-KEY tags during the clear segment and insert the first \#EXT-X-KEY immediately before the first encrypted fragment. This feature is supported exclusively for CMAF HLS (fMP4) outputs and is compatible with all existing key provider integrations (SPEKE v1, SPEKE v2, and Static Key encryption). Supported codecs: H.264, H.265, and AV1 video codecs, and AAC audio codec. Choose Enabled to activate Clear Lead DRM optimization. Choose Disabled to use standard encryption where all segments are encrypted from the beginning.
-+ `ENABLED`
-+ `DISABLED`
-
 ### HlsClientCache
 <a name="jobtemplates-name-model-hlsclientcache"></a>
 
@@ -7998,8 +8382,9 @@ Settings related to your HLS output package. For more information, see https://d
 | destinationSettings | [DestinationSettings](#jobtemplates-name-model-destinationsettings) | False | Settings associated with the destination. Will vary based on the type of destination |
 | directoryStructure | [HlsDirectoryStructure](#jobtemplates-name-model-hlsdirectorystructure) | False | Indicates whether segments should be placed in subdirectories. |
 | encryption | [HlsEncryptionSettings](#jobtemplates-name-model-hlsencryptionsettings) | False | DRM settings. |
-| imageBasedTrickPlay | [HlsImageBasedTrickPlay](#jobtemplates-name-model-hlsimagebasedtrickplay) | False | Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md |
+| imageBasedTrickPlay | [HlsImageBasedTrickPlay](#jobtemplates-name-model-hlsimagebasedtrickplay) | False | Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. Choose Advanced to customize thumbnail and tile settings for a single trick play variant. Choose Variants to specify multiple trick play variants, each with its own thumbnail and tile settings. MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md |
 | imageBasedTrickPlaySettings | [HlsImageBasedTrickPlaySettings](#jobtemplates-name-model-hlsimagebasedtrickplaysettings) | False | Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED |
+| imageBasedTrickPlayVariants | Array of type [HlsImageBasedTrickPlayVariant](#jobtemplates-name-model-hlsimagebasedtrickplayvariant) | False | Specify multiple image-based trick play variants. Each entry creates a separate set of JPEG tile images with its own resolution, tile layout, and cadence settings. Set imageBasedTrickPlay to VARIANTS when using this setting. |
 | manifestCompression | [HlsManifestCompression](#jobtemplates-name-model-hlsmanifestcompression) | False | When set to GZIP, compresses HLS playlist. |
 | manifestDurationFormat | [HlsManifestDurationFormat](#jobtemplates-name-model-hlsmanifestdurationformat) | False | Indicates whether the output manifest should use floating point values for segment duration. |
 | minFinalSegmentLength | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Keep this setting at the default value of 0, unless you are troubleshooting a problem with how devices play back the end of your video asset. If you know that player devices are hanging on the final segment of your video because the length of your final segment is too short, use this setting to specify a minimum final segment length, in seconds. Choose a value that is greater than or equal to 1 and less than your segment length. When you specify a value for this setting, the encoder will combine any final segment that is shorter than the length that you specify with the previous segment. For example, your segment length is 3 seconds and your final segment is .5 seconds without a minimum final segment length; when you set the minimum final segment length to 1, your final segment is 3.5 seconds. |
@@ -8029,11 +8414,12 @@ Generate a variant manifest that lists only the I-frames for this rendition. You
 ### HlsImageBasedTrickPlay
 <a name="jobtemplates-name-model-hlsimagebasedtrickplay"></a>
 
-Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
+Specify whether MediaConvert generates images for trick play. Keep the default value, None, to not generate any images. Choose Thumbnail to generate tiled thumbnails. Choose Thumbnail and full frame to generate tiled thumbnails and full-resolution images of single frames. Choose Advanced to customize thumbnail and tile settings for a single trick play variant. Choose Variants to specify multiple trick play variants, each with its own thumbnail and tile settings. MediaConvert creates a child manifest for each set of images that you generate and adds corresponding entries to the parent manifest. A common application for these images is Roku trick mode. The thumbnails and full-frame images that MediaConvert creates with this feature are compatible with this Roku specification: https://developer.roku.com/docs/developer-program/media-playback/trick-mode/hls-and-dash.md
 + `NONE`
 + `THUMBNAIL`
 + `THUMBNAIL_AND_FULLFRAME`
 + `ADVANCED`
++ `VARIANTS`
 
 ### HlsImageBasedTrickPlaySettings
 <a name="jobtemplates-name-model-hlsimagebasedtrickplaysettings"></a>
@@ -8046,7 +8432,21 @@ Tile and thumbnail settings applicable when imageBasedTrickPlay is ADVANCED
 | thumbnailHeight | integer<br />Minimum: 2<br />Maximum: 4096 | False | Height of each thumbnail within each tile image, in pixels. Leave blank to maintain aspect ratio with thumbnail width. If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected. Must be divisible by 2. |
 | thumbnailInterval | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Enter the interval, in seconds, that MediaConvert uses to generate thumbnails. If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate. For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails. |
 | thumbnailWidth | integer<br />Minimum: 8<br />Maximum: 4096 | False | Width of each thumbnail within each tile image, in pixels. Default is 312. Must be divisible by 8. |
-| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 2 and 2048. Must be divisible by 2. |
+| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 1 and 2048. |
+| tileWidth | integer<br />Minimum: 1<br />Maximum: 512 | False | Number of thumbnails in each row of a tile image. Set a value between 1 and 512. |
+
+### HlsImageBasedTrickPlayVariant
+<a name="jobtemplates-name-model-hlsimagebasedtrickplayvariant"></a>
+
+Settings for one image-based trick play variant. Each variant produces its own set of JPEG tile images and corresponding manifest entries.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| intervalCadence | [HlsIntervalCadence](#jobtemplates-name-model-hlsintervalcadence) | False | The cadence MediaConvert follows for generating thumbnails. If set to FOLLOW\_IFRAME, MediaConvert generates thumbnails for each IDR frame in the output (matching the GOP cadence). If set to FOLLOW\_CUSTOM, MediaConvert generates thumbnails according to the interval you specify in thumbnailInterval. If set to FOLLOW\_SEGMENTATION, MediaConvert generates thumbnail playlist entries that align exactly with video segment boundaries. FOLLOW\_SEGMENTATION requires 1x1 tiling. |
+| thumbnailHeight | integer<br />Minimum: 2<br />Maximum: 4096 | False | Height of each thumbnail within each tile image, in pixels. Leave blank to maintain aspect ratio with thumbnail width. If following the aspect ratio would lead to a total tile height greater than 4096, then the job will be rejected. Must be divisible by 2. |
+| thumbnailInterval | number<br />Format: float<br />Minimum: 0.0<br />Maximum: 2.147483647E9 | False | Enter the interval, in seconds, that MediaConvert uses to generate thumbnails. If the interval you enter doesn't align with the output frame rate, MediaConvert automatically rounds the interval to align with the output frame rate. For example, if the output frame rate is 29.97 frames per second and you enter 5, MediaConvert uses a 150 frame interval to generate thumbnails. |
+| thumbnailWidth | integer<br />Minimum: 8<br />Maximum: 4096 | False | Width of each thumbnail within each tile image, in pixels. Default is 312. Must be divisible by 8. |
+| tileHeight | integer<br />Minimum: 1<br />Maximum: 2048 | False | Number of thumbnails in each column of a tile image. Set a value between 1 and 2048. |
 | tileWidth | integer<br />Minimum: 1<br />Maximum: 512 | False | Number of thumbnails in each row of a tile image. Set a value between 1 and 512. |
 
 ### HlsInitializationVectorInManifest
@@ -8365,6 +8765,7 @@ A job template is a pre-made set of encoding instructions that you can use to qu
 | category | string | False | An optional category you create to organize your job templates. |
 | createdAt | string<br />Format: date-time | False | The timestamp in epoch seconds for Job template creation. |
 | description | string | False | An optional description you create for each job template. |
+| elementalInferenceSettings | [ElementalInferenceSettings](#jobtemplates-name-model-elementalinferencesettings) | False | The Elemental Inference settings used in this job. |
 | hopDestinations | Array of type [HopDestination](#jobtemplates-name-model-hopdestination) | False | Optional list of hop destinations. |
 | lastUpdated | string<br />Format: date-time | False | The timestamp in epoch seconds when the Job template was last updated. |
 | name | string | True | A name you create for each job template. Each name must be unique within your account. |
@@ -8390,6 +8791,7 @@ JobTemplateSettings contains all the transcode settings saved in the template th
 | inputs | Array of type [InputTemplate](#jobtemplates-name-model-inputtemplate) | False | Use Inputs to define the source file used in the transcode job. There can only be one input in a job template. Using the API, you can include multiple inputs when referencing a job template. |
 | kantarWatermark | [KantarWatermarkSettings](#jobtemplates-name-model-kantarwatermarksettings) | False | Use these settings only when you use Kantar watermarking. Specify the values that MediaConvert uses to generate and place Kantar watermarks in your output audio. These settings apply to every output in your job. In addition to specifying these values, you also need to store your Kantar credentials in AWS Secrets Manager. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/kantar-watermarking.html. |
 | motionImageInserter | [MotionImageInserter](#jobtemplates-name-model-motionimageinserter) | False | Overlay motion graphics on top of your video. The motion graphics that you specify here appear on all outputs in all output groups. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/motion-graphic-overlay.html. |
+| motionImageInserters | Array of type [MotionImageInserter](#jobtemplates-name-model-motionimageinserter) | False | Array of motion image inserters for overlaying multiple independent motion graphics. Compositing order follows array index. Mutually exclusive with motionImageInserter. |
 | nielsenConfiguration | [NielsenConfiguration](#jobtemplates-name-model-nielsenconfiguration) | False | Settings for your Nielsen configuration. If you don't do Nielsen measurement and analytics, ignore these settings. When you enable Nielsen configuration, MediaConvert enables PCM to ID3 tagging for all outputs in the job. |
 | nielsenNonLinearWatermark | [NielsenNonLinearWatermarkSettings](#jobtemplates-name-model-nielsennonlinearwatermarksettings) | False | Ignore these settings unless you are using Nielsen non-linear watermarking. Specify the values that MediaConvert uses to generate and place Nielsen watermarks in your output audio. In addition to specifying these values, you also need to set up your cloud TIC server. These settings apply to every output in your job. The MediaConvert implementation is currently with the following Nielsen versions: Nielsen Watermark SDK Version 6.0.13 Nielsen NLM Watermark Engine Version 1.3.3 Nielsen Watermark Authenticator [SID\_TIC] Version [7.0.0] |
 | outputGroups | Array of type [OutputGroup](#jobtemplates-name-model-outputgroup) | False | Contains one group of settings for each set of outputs that share a common package type. All unpackaged files (MPEG-4, MPEG-2 TS, Quicktime, MXF, and no container) are grouped in a single output group as well. Required in is a group of settings that apply to the whole group. This required object depends on the value you set for Type. Type, settings object pairs are as follows. \* FILE\_GROUP\_SETTINGS, FileGroupSettings \* HLS\_GROUP\_SETTINGS, HlsGroupSettings \* DASH\_ISO\_GROUP\_SETTINGS, DashIsoGroupSettings \* MS\_SMOOTH\_GROUP\_SETTINGS, MsSmoothGroupSettings \* CMAF\_GROUP\_SETTINGS, CmafGroupSettings |
@@ -8408,7 +8810,7 @@ Use these settings only when you use Kantar watermarking. Specify the values tha
 | credentialsSecretName | string<br />Pattern: `^(arn:[a-z-]+:secretsmanager:[\w-]+:\d{12}:secret:)?[a-zA-Z0-9_\/_+=.@-]*$`<br />MinLength: 1<br />MaxLength: 2048 | False | Provide the name of the AWS Secrets Manager secret where your Kantar credentials are stored. Note that your MediaConvert service role must provide access to this secret. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/granting-permissions-for-mediaconvert-to-access-secrets-manager-secret.html. For instructions on creating a secret, see https://docs.aws.amazon.com/secretsmanager/latest/userguide/tutorials\_basic.html, in the AWS Secrets Manager User Guide. |
 | fileOffset | number<br />Format: float<br />Minimum: 0.0 | False | Optional. Specify an offset, in whole seconds, from the start of your output and the beginning of the watermarking. When you don't specify an offset, Kantar defaults to zero. |
 | kantarLicenseId | integer<br />Minimum: 0<br />Maximum: 2147483647 | False | Provide your Kantar license ID number. You should get this number from Kantar. |
-| kantarServerUrl | string<br />Format: uri<br />Pattern: `^https:\/\/.*.kantarmedia.*$` | False | Provide the HTTPS endpoint to the Kantar server. You should get this endpoint from Kantar. |
+| kantarServerUrl | string<br />Format: uri<br />Pattern: `^https:\/\/.*.(kantarmedia\|55-prod).*$` | False | Provide the HTTPS endpoint to the Kantar server. You should get this endpoint from Kantar. |
 | logDestination | string<br />Format: uri<br />Pattern: `^s3:\/\/.*$` | False | Optional. Specify the Amazon S3 bucket where you want MediaConvert to store your Kantar watermark XML logs. When you don't specify a bucket, MediaConvert doesn't save these logs. Note that your MediaConvert service role must provide access to this location. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html |
 | metadata3 | string<br />MinLength: 1<br />MaxLength: 50 | False | You can optionally use this field to specify the first timestamp that Kantar embeds during watermarking. Kantar suggests that you be very cautious when using this Kantar feature, and that you use it only on channels that are managed specifically for use with this feature by your Audience Measurement Operator. For more information about this feature, contact Kantar technical support. |
 | metadata4 | string<br />MinLength: 1<br />MaxLength: 50 | False | Additional metadata that MediaConvert sends to Kantar. Maximum length is 50 characters. |
@@ -8717,9 +9119,10 @@ Settings for SCTE-35 signals from ESAM. Include this in your job settings to put
 ### M2tsScte35Source
 <a name="jobtemplates-name-model-m2tsscte35source"></a>
 
-For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. For SCTE-35 markers from an ESAM XML document-- Choose None. Also provide the ESAM XML as a string in the setting Signal processing notification XML. Also enable ESAM SCTE-35 (include the property scte35Esam).
+For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. When your input is an HLS manifest, choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest. For SCTE-35 markers from an ESAM XML document-- Choose None. Also provide the ESAM XML as a string in the setting Signal processing notification XML. Also enable ESAM SCTE-35 (include the property scte35Esam).
 + `PASSTHROUGH`
 + `NONE`
++ `MANIFEST_CUES`
 
 ### M2tsSegmentationMarkers
 <a name="jobtemplates-name-model-m2tssegmentationmarkers"></a>
@@ -8782,7 +9185,7 @@ MPEG-2 TS container settings. These apply to outputs in a File output group when
 | rateMode | [M2tsRateMode](#jobtemplates-name-model-m2tsratemode) | False | When set to CBR, inserts null packets into transport stream to fill specified bitrate. When set to VBR, the bitrate setting acts as the maximum bitrate, but the output will not be padded up to that bitrate. |
 | scte35Esam | [M2tsScte35Esam](#jobtemplates-name-model-m2tsscte35esam) | False | Include this in your job settings to put SCTE-35 markers in your HLS and transport stream outputs at the insertion points that you specify in an ESAM XML document. Provide the document in the setting SCC XML. |
 | scte35Pid | integer<br />Minimum: 32<br />Maximum: 8182 | False | Specify the packet identifier (PID) of the SCTE-35 stream in the transport stream. |
-| scte35Source | [M2tsScte35Source](#jobtemplates-name-model-m2tsscte35source) | False | For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. For SCTE-35 markers from an ESAM XML document-- Choose None. Also provide the ESAM XML as a string in the setting Signal processing notification XML. Also enable ESAM SCTE-35 (include the property scte35Esam). |
+| scte35Source | [M2tsScte35Source](#jobtemplates-name-model-m2tsscte35source) | False | For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. When your input is an HLS manifest, choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest. For SCTE-35 markers from an ESAM XML document-- Choose None. Also provide the ESAM XML as a string in the setting Signal processing notification XML. Also enable ESAM SCTE-35 (include the property scte35Esam). |
 | segmentationMarkers | [M2tsSegmentationMarkers](#jobtemplates-name-model-m2tssegmentationmarkers) | False | Inserts segmentation markers at each segmentation\_time period. rai\_segstart sets the Random Access Indicator bit in the adaptation field. rai\_adapt sets the RAI bit and adds the current timecode in the private data bytes. psi\_segstart inserts PAT and PMT tables at the start of segments. ebp adds Encoder Boundary Point information to the adaptation field as per OpenCable specification OC-SP-EBP-I01-130118. ebp\_legacy adds Encoder Boundary Point information to the adaptation field using a legacy proprietary format. |
 | segmentationStyle | [M2tsSegmentationStyle](#jobtemplates-name-model-m2tssegmentationstyle) | False | The segmentation style parameter controls how segmentation markers are inserted into the transport stream. With avails, it is possible that segments may be truncated, which can influence where future segmentation markers are inserted. When a segmentation style of "reset\_cadence" is selected and a segment is truncated due to an avail, we will reset the segmentation cadence. This means the subsequent segment will have a duration of of $segmentation\_time seconds. When a segmentation style of "maintain\_cadence" is selected and a segment is truncated due to an avail, we will not reset the segmentation cadence. This means the subsequent segment will likely be truncated as well. However, all segments after that will have a duration of $segmentation\_time seconds. Note that EBP lookahead is a slight exception to this rule. |
 | segmentationTime | number<br />Format: float<br />Minimum: 0.0 | False | Specify the length, in seconds, of each segment. Required unless markers is set to \_none\_. |
@@ -8821,9 +9224,10 @@ When set to PCR\_EVERY\_PES\_PACKET a Program Clock Reference value is inserted 
 ### M3u8Scte35Source
 <a name="jobtemplates-name-model-m3u8scte35source"></a>
 
-For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. For SCTE-35 markers from an ESAM XML document-- Choose None if you don't want manifest conditioning. Choose Passthrough and choose Ad markers if you do want manifest conditioning. In both cases, also provide the ESAM XML as a string in the setting Signal processing notification XML.
+For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. For SCTE-35 markers from an ESAM XML document-- Choose None if you don't want manifest conditioning. Choose Passthrough and choose Ad markers if you do want manifest conditioning. In both cases, also provide the ESAM XML as a string in the setting Signal processing notification XML. For SCTE-35 markers from your input HLS manifest-- Choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest.
 + `PASSTHROUGH`
 + `NONE`
++ `MANIFEST_CUES`
 
 ### M3u8Settings
 <a name="jobtemplates-name-model-m3u8settings"></a>
@@ -8849,7 +9253,7 @@ These settings relate to the MPEG-2 transport stream (MPEG2-TS) container for th
 | ptsOffset | integer<br />Minimum: 0<br />Maximum: 3600 | False | Manually specify the initial PTS offset, in seconds, when you set PTS offset to Seconds. Enter an integer from 0 to 3600. Leave blank to keep the default value 2. |
 | ptsOffsetMode | [TsPtsOffset](#jobtemplates-name-model-tsptsoffset) | False | Specify the initial presentation timestamp (PTS) offset for your transport stream output. To let MediaConvert automatically determine the initial PTS offset: Keep the default value, Auto. We recommend that you choose Auto for the widest player compatibility. The initial PTS will be at least two seconds and vary depending on your output's bitrate, HRD buffer size and HRD buffer initial fill percentage. To manually specify an initial PTS offset: Choose Seconds or Milliseconds. Then specify the number of seconds or milliseconds with PTS offset. |
 | scte35Pid | integer<br />Minimum: 32<br />Maximum: 8182 | False | Packet Identifier (PID) of the SCTE-35 stream in the transport stream. |
-| scte35Source | [M3u8Scte35Source](#jobtemplates-name-model-m3u8scte35source) | False | For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. For SCTE-35 markers from an ESAM XML document-- Choose None if you don't want manifest conditioning. Choose Passthrough and choose Ad markers if you do want manifest conditioning. In both cases, also provide the ESAM XML as a string in the setting Signal processing notification XML. |
+| scte35Source | [M3u8Scte35Source](#jobtemplates-name-model-m3u8scte35source) | False | For SCTE-35 markers from your input-- Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want SCTE-35 markers in this output. For SCTE-35 markers from an ESAM XML document-- Choose None if you don't want manifest conditioning. Choose Passthrough and choose Ad markers if you do want manifest conditioning. In both cases, also provide the ESAM XML as a string in the setting Signal processing notification XML. For SCTE-35 markers from your input HLS manifest-- Choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest. |
 | timedMetadata | [TimedMetadata](#jobtemplates-name-model-timedmetadata) | False | Set ID3 metadata to Passthrough to include ID3 metadata in this output. This includes ID3 metadata from the following features: ID3 timestamp period, and Custom ID3 metadata inserter. To exclude this ID3 metadata in this output: set ID3 metadata to None or leave blank. |
 | timedMetadataPid | integer<br />Minimum: 32<br />Maximum: 8182 | False | Packet Identifier (PID) of the ID3 metadata stream in the transport stream. |
 | transportStreamId | integer<br />Minimum: 0<br />Maximum: 65535 | False | The value of the transport stream ID field in the Program Map Table. |
@@ -8965,6 +9369,7 @@ These settings relate to your QuickTime MOV output container.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| audioDuration | [CmfcAudioDuration](#jobtemplates-name-model-cmfcaudioduration) | False | Specify this setting only when your output will be consumed by a downstream repackaging workflow that is sensitive to very small duration differences between video and audio. For this situation, choose Match video duration. In all other cases, keep the default value, Default codec duration. When you choose Match video duration, MediaConvert pads the output audio streams with silence or trims them to ensure that the total duration of each audio stream is at least as long as the total duration of the video stream. After padding or trimming, the audio stream duration is no more than one frame longer than the video stream. MediaConvert applies audio padding or trimming only to the end of the last segment of the output. For unsegmented outputs, MediaConvert adds padding only to the end of the file. When you keep the default value, any minor discrepancies between audio and video duration will depend on your output audio codec. |
 | clapAtom | [MovClapAtom](#jobtemplates-name-model-movclapatom) | False | When enabled, include 'clap' atom if appropriate for the video output settings. |
 | cslgAtom | [MovCslgAtom](#jobtemplates-name-model-movcslgatom) | False | When enabled, file composition times will start at zero, composition times in the 'ctts' (composition time to sample) box for B-frames will be negative, and a 'cslg' (composition shift least greatest) box will be included per 14496-1 amendment 1. This improves compatibility with Apple players and tools. |
 | mpeg2FourCCControl | [MovMpeg2FourCCControl](#jobtemplates-name-model-movmpeg2fourcccontrol) | False | When set to XDCAM, writes MPEG2 video streams into the QuickTime file using XDCAM fourcc codes. This increases compatibility with Apple editors and players, but may decrease compatibility with other players. Only applicable when the video codec is MPEG2. |
@@ -9107,9 +9512,10 @@ Use this setting only when you specify SCTE-35 markers from ESAM. Choose INSERT 
 ### MpdScte35Source
 <a name="jobtemplates-name-model-mpdscte35source"></a>
 
-Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output.
+Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output. When your input is an HLS manifest, choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest.
 + `PASSTHROUGH`
 + `NONE`
++ `MANIFEST_CUES`
 
 ### MpdSettings
 <a name="jobtemplates-name-model-mpdsettings"></a>
@@ -9126,7 +9532,7 @@ These settings relate to the fragmented MP4 container for the segments in your D
 | klvMetadata | [MpdKlvMetadata](#jobtemplates-name-model-mpdklvmetadata) | False | To include key-length-value metadata in this output: Set KLV metadata insertion to Passthrough. MediaConvert reads KLV metadata present in your input and writes each instance to a separate event message box in the output, according to MISB ST1910.1. To exclude this KLV metadata: Set KLV metadata insertion to None or leave blank. |
 | manifestMetadataSignaling | [MpdManifestMetadataSignaling](#jobtemplates-name-model-mpdmanifestmetadatasignaling) | False | To add an InbandEventStream element in your output MPD manifest for each type of event message, set Manifest metadata signaling to Enabled. For ID3 event messages, the InbandEventStream element schemeIdUri will be same value that you specify for ID3 metadata scheme ID URI. For SCTE35 event messages, the InbandEventStream element schemeIdUri will be "urn:scte:scte35:2013:bin". To leave these elements out of your output MPD manifest, set Manifest metadata signaling to Disabled. To enable Manifest metadata signaling, you must also set SCTE-35 source to Passthrough, ESAM SCTE-35 to insert, or ID3 metadata to Passthrough. |
 | scte35Esam | [MpdScte35Esam](#jobtemplates-name-model-mpdscte35esam) | False | Use this setting only when you specify SCTE-35 markers from ESAM. Choose INSERT to put SCTE-35 markers in this output at the insertion points that you specify in an ESAM XML document. Provide the document in the setting SCC XML. |
-| scte35Source | [MpdScte35Source](#jobtemplates-name-model-mpdscte35source) | False | Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output. |
+| scte35Source | [MpdScte35Source](#jobtemplates-name-model-mpdscte35source) | False | Ignore this setting unless you have SCTE-35 markers in your input video file. Choose Passthrough if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None if you don't want those SCTE-35 markers in this output. When your input is an HLS manifest, choose Manifest cues to pass through CUE markers in your HLS manifest as segment boundaries and SCTE-35 markers in this output at each EXT-X-CUE-OUT splice point in the input manifest. |
 | signingKmsKey | string<br />Pattern: `^(arn:aws(-us-gov\|-cn)?:kms:[a-z-]{2,6}-(east\|west\|central\|((north\|south)(east\|west)?))-[1-9]{1,2}:\d{12}:key/)?[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}\|mrk-[a-fA-F0-9]{32}$`<br />MinLength: 1 | False | Specify the ID or ARN of the AWS KMS key used to sign the C2PA manifest in your MP4 output. Provide a valid KMS key ARN. Note that your MediaConvert service role must allow access to this key. |
 | timedMetadata | [MpdTimedMetadata](#jobtemplates-name-model-mpdtimedmetadata) | False | To include ID3 metadata in this output: Set ID3 metadata to Passthrough. Specify this ID3 metadata in Custom ID3 metadata inserter. MediaConvert writes each instance of ID3 metadata in a separate Event Message (eMSG) box. To exclude this ID3 metadata: Set ID3 metadata to None or leave blank. |
 | timedMetadataBoxVersion | [MpdTimedMetadataBoxVersion](#jobtemplates-name-model-mpdtimedmetadataboxversion) | False | Specify the event message box (eMSG) version for ID3 timed metadata in your output. For more information, see ISO/IEC 23009-1:2022 section 5.10.3.3.3 Syntax. Leave blank to use the default value Version 0. When you specify Version 1, you must also set ID3 metadata to Passthrough. |
@@ -9293,6 +9699,8 @@ Required when you set Codec to the value MPEG2.
 | rateControlMode | [Mpeg2RateControlMode](#jobtemplates-name-model-mpeg2ratecontrolmode) | False | Use Rate control mode to specify whether the bitrate is variable (vbr) or constant (cbr). |
 | scanTypeConversionMode | [Mpeg2ScanTypeConversionMode](#jobtemplates-name-model-mpeg2scantypeconversionmode) | False | Use this setting for interlaced outputs, when your output frame rate is half of your input frame rate. In this situation, choose Optimized interlacing to create a better quality interlaced output. In this case, each progressive frame from the input corresponds to an interlaced field in the output. Keep the default value, Basic interlacing, for all other output frame rates. With basic interlacing, MediaConvert performs any frame rate conversion first and then interlaces the frames. When you choose Optimized interlacing and you set your output frame rate to a value that isn't suitable for optimized interlacing, MediaConvert automatically falls back to basic interlacing. Required settings: To use optimized interlacing, you must set Telecine to None or Soft. You can't use optimized interlacing for hard telecine outputs. You must also set Interlace mode to a value other than Progressive. |
 | sceneChangeDetect | [Mpeg2SceneChangeDetect](#jobtemplates-name-model-mpeg2scenechangedetect) | False | Enable this setting to insert I-frames at scene changes that the service automatically detects. This improves video quality and is enabled by default. |
+| slidingWindowMs | integer<br />Minimum: 1000<br />Maximum: 3000 | False | Optional. Specify the duration, in milliseconds, of the sliding window over which MediaConvert enforces your Peak bitrate. When you specify a Peak bitrate but omit this value, MediaConvert uses a default sliding window of 1000. |
+| slidingWindowPeakBitrate | integer<br />Minimum: 1000<br />Maximum: 300000000 | False | Optional. Specify an instantaneous peak bitrate ceiling, in bits/second, that MediaConvert enforces over the sliding window set by Peak bitrate window. For example, enter fifty megabits per second as 50000000. Applies in the VBR and CBR rate control modes. When you specify a value below Max bitrate, MediaConvert raises it to Max bitrate. |
 | slowPal | [Mpeg2SlowPal](#jobtemplates-name-model-mpeg2slowpal) | False | Ignore this setting unless your input frame rate is 23.976 or 24 frames per second (fps). Enable slow PAL to create a 25 fps output. When you enable slow PAL, MediaConvert relabels the video frames to 25 fps and resamples your audio to keep it synchronized with the video. Note that enabling this setting will slightly reduce the duration of your video. Required settings: You must also set Framerate to 25. |
 | softness | integer<br />Minimum: 0<br />Maximum: 128 | False | Ignore this setting unless you need to comply with a specification that requires a specific value. If you don't have a specification requirement, we recommend that you adjust the softness of your output by using a lower value for the setting Sharpness or by enabling a noise reducer filter. The Softness setting specifies the quantization matrices that the encoder uses. Keep the default value, 0, to use the AWS Elemental default matrices. Choose a value from 17 to 128 to use planar interpolation. Increasing values from 17 to 128 result in increasing reduction of high-frequency data. The value 128 results in the softest video. |
 | spatialAdaptiveQuantization | [Mpeg2SpatialAdaptiveQuantization](#jobtemplates-name-model-mpeg2spatialadaptivequantization) | False | Keep the default value, Enabled, to adjust quantization within each frame based on spatial variation of content complexity. When you enable this feature, the encoder uses fewer bits on areas that can sustain more distortion with no noticeable visual degradation and uses more bits on areas where any small distortion will be noticeable. For example, complex textured blocks are encoded with fewer bits and smooth textured blocks are encoded with more bits. Enabling this feature will almost always improve your video quality. Note, though, that this feature doesn't take into account where the viewer's attention is likely to be. If viewers are likely to be focusing their attention on a part of the screen with a lot of complex texture, you might choose to disable this feature. Related setting: When you enable spatial adaptive quantization, set the value for Adaptive quantization depending on your content. For homogeneous content, such as cartoons and video games, set it to Low. For content with a wider variety of textures, set it to High or Higher. |
@@ -9549,7 +9957,7 @@ Enable the Noise reducer feature to remove noise from your video output if neces
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| filter | [NoiseReducerFilter](#jobtemplates-name-model-noisereducerfilter) | False | Use Noise reducer filter to select one of the following spatial image filtering functions. To use this setting, you must also enable Noise reducer. \* Bilateral preserves edges while reducing noise. \* Mean (softest), Gaussian, Lanczos, and Sharpen (sharpest) do convolution filtering. \* Conserve does min/max noise reduction. \* Spatial does frequency-domain filtering based on JND principles. \* Temporal optimizes video quality for complex motion. |
+| filter | [NoiseReducerFilter](#jobtemplates-name-model-noisereducerfilter) | False | Use Noise reducer filter to select one of the following spatial image filtering functions. To use this setting, you must also enable Noise reducer. \* Bilateral preserves edges while reducing noise. \* Mean (softest), Gaussian, Lanczos, and Sharpen (sharpest) do convolution filtering. \* Conserve does min/max noise reduction. \* Spatial does frequency-domain filtering based on JND principles. \* Temporal optimizes video quality for complex motion. \* Perceptual exploits perceptual masking, avoiding encoding bits spent on imperceptible detail. \* None disables noise reduction, including the perceptual filter that MediaConvert otherwise applies by default for AVC, HEVC, AV1, MPEG-2, VP8, and VP9 outputs. MediaConvert doesn't apply that default to mezzanine and archival outputs (AVC-Intra, XAVC, Apple ProRes, VC3, Uncompressed), to frame capture outputs, or to outputs that use Dolby Vision, which doesn't support any noise reducer. |
 | filterSettings | [NoiseReducerFilterSettings](#jobtemplates-name-model-noisereducerfiltersettings) | False | Settings for a noise reducer filter |
 | spatialFilterSettings | [NoiseReducerSpatialFilterSettings](#jobtemplates-name-model-noisereducerspatialfiltersettings) | False | Noise reducer filter settings for spatial filter. |
 | temporalFilterSettings | [NoiseReducerTemporalFilterSettings](#jobtemplates-name-model-noisereducertemporalfiltersettings) | False | Noise reducer filter settings for temporal filter. |
@@ -9557,7 +9965,7 @@ Enable the Noise reducer feature to remove noise from your video output if neces
 ### NoiseReducerFilter
 <a name="jobtemplates-name-model-noisereducerfilter"></a>
 
-Use Noise reducer filter to select one of the following spatial image filtering functions. To use this setting, you must also enable Noise reducer. \* Bilateral preserves edges while reducing noise. \* Mean (softest), Gaussian, Lanczos, and Sharpen (sharpest) do convolution filtering. \* Conserve does min/max noise reduction. \* Spatial does frequency-domain filtering based on JND principles. \* Temporal optimizes video quality for complex motion.
+Use Noise reducer filter to select one of the following spatial image filtering functions. To use this setting, you must also enable Noise reducer. \* Bilateral preserves edges while reducing noise. \* Mean (softest), Gaussian, Lanczos, and Sharpen (sharpest) do convolution filtering. \* Conserve does min/max noise reduction. \* Spatial does frequency-domain filtering based on JND principles. \* Temporal optimizes video quality for complex motion. \* Perceptual exploits perceptual masking, avoiding encoding bits spent on imperceptible detail. \* None disables noise reduction, including the perceptual filter that MediaConvert otherwise applies by default for AVC, HEVC, AV1, MPEG-2, VP8, and VP9 outputs. MediaConvert doesn't apply that default to mezzanine and archival outputs (AVC-Intra, XAVC, Apple ProRes, VC3, Uncompressed), to frame capture outputs, or to outputs that use Dolby Vision, which doesn't support any noise reducer.
 + `BILATERAL`
 + `MEAN`
 + `GAUSSIAN`
@@ -9566,6 +9974,8 @@ Use Noise reducer filter to select one of the following spatial image filtering 
 + `CONSERVE`
 + `SPATIAL`
 + `TEMPORAL`
++ `PERCEPTUAL`
++ `NONE`
 
 ### NoiseReducerFilterSettings
 <a name="jobtemplates-name-model-noisereducerfiltersettings"></a>
@@ -9709,6 +10119,14 @@ If you work with a third party video watermarking partner, use the group of sett
 | --- |--- |--- |--- |
 | nexguardFileMarkerSettings | [NexGuardFileMarkerSettings](#jobtemplates-name-model-nexguardfilemarkersettings) | False | For forensic video watermarking, MediaConvert supports Nagra NexGuard File Marker watermarking. MediaConvert supports both PreRelease Content (NGPR/G2) and OTT Streaming workflows. |
 
+### PassthroughSegmentationMode
+<a name="jobtemplates-name-model-passthroughsegmentationmode"></a>
+
+Choose how MediaConvert determines segment boundaries when you passthrough video to a segmented ABR output (HLS, DASH, or CMAF). This setting applies only to ABR outputs. Keep the default value, Auto, to let MediaConvert choose based on your input: when your input is a segmented HLS or DASH source, MediaConvert reproduces your input's own segment boundaries, with one output segment per input segment; for all other inputs, MediaConvert places boundaries by duration, cutting at the first eligible IDR-frame at or after each configured Segment length or Fragment length target. Choose Duration based to always place boundaries by duration, at the first eligible IDR-frame at or after each configured Segment length or Fragment length target, regardless of your input. When your input GOP duration does not evenly divide your target segment length, output segment durations will vary. Choose GOP count to place a fixed number of input GOPs in every segment, and specify GOPs per segment. Every segment contains the same number of input GOPs, which produces consistent segment durations when your input GOP cadence is constant. In this mode MediaConvert ignores your configured Segment length and Fragment length for video boundary placement. Ad avails and input discontinuities are still honored as segment boundaries.
++ `AUTO`
++ `DURATION_BASED`
++ `GOP_COUNT`
+
 ### PassthroughSettings
 <a name="jobtemplates-name-model-passthroughsettings"></a>
 
@@ -9717,6 +10135,8 @@ Optional settings when you set Codec to the value Passthrough.
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | frameControl | [FrameControl](#jobtemplates-name-model-framecontrol) | False | Choose how MediaConvert handles start and end times for input clipping with video passthrough. Your input video codec must be H.264 or H.265 to use IFRAME. To clip at the nearest IDR-frame: Choose Nearest IDR. If an IDR-frame is not found at the frame that you specify, MediaConvert uses the next compatible IDR-frame. Note that your output may be shorter than your input clip duration. To clip at the nearest I-frame: Choose Nearest I-frame. If an I-frame is not found at the frame that you specify, MediaConvert uses the next compatible I-frame. Note that your output may be shorter than your input clip duration. We only recommend this setting for special workflows, and when you choose this setting your output may not be compatible with most players. |
+| gopsPerSegment | integer<br />Minimum: 1<br />Maximum: 100 | False | Specify how many input GOPs MediaConvert places in each output segment when you set Passthrough segmentation mode to GOP count. For example, if your input has a closed GOP every 1.92 seconds and you specify 2, each output segment is 3.84 seconds. In this mode, output segment duration is determined by your input GOP structure rather than by your configured Segment length or Fragment length, so segment durations are consistent only when your input GOP cadence is constant. Segments at input discontinuities or ad avails may contain fewer GOPs. |
+| segmentationMode | [PassthroughSegmentationMode](#jobtemplates-name-model-passthroughsegmentationmode) | False | Choose how MediaConvert determines segment boundaries when you passthrough video to a segmented ABR output (HLS, DASH, or CMAF). This setting applies only to ABR outputs. Keep the default value, Auto, to let MediaConvert choose based on your input: when your input is a segmented HLS or DASH source, MediaConvert reproduces your input's own segment boundaries, with one output segment per input segment; for all other inputs, MediaConvert places boundaries by duration, cutting at the first eligible IDR-frame at or after each configured Segment length or Fragment length target. Choose Duration based to always place boundaries by duration, at the first eligible IDR-frame at or after each configured Segment length or Fragment length target, regardless of your input. When your input GOP duration does not evenly divide your target segment length, output segment durations will vary. Choose GOP count to place a fixed number of input GOPs in every segment, and specify GOPs per segment. Every segment contains the same number of input GOPs, which produces consistent segment durations when your input GOP cadence is constant. In this mode MediaConvert ignores your configured Segment length and Fragment length for video boundary placement. Ad avails and input discontinuities are still honored as segment boundaries. |
 | videoSelectorMode | [VideoSelectorMode](#jobtemplates-name-model-videoselectormode) | False | AUTO will select the highest bitrate input in the video selector source. REMUX\_ALL will passthrough all the selected streams in the video selector source. When selecting streams from multiple renditions (i.e. using Stream video selector type): REMUX\_ALL will only remux all streams selected, and AUTO will use the highest bitrate video stream among the selected streams as source. |
 
 ### PresetSpeke20Audio
@@ -9952,6 +10372,7 @@ Specify the S3 storage class to use for this output. To use your destination's d
 + `INTELLIGENT_TIERING`
 + `GLACIER`
 + `DEEP_ARCHIVE`
++ `GLACIER_IR`
 
 ### SampleRangeConversion
 <a name="jobtemplates-name-model-samplerangeconversion"></a>
@@ -10188,6 +10609,15 @@ Specify the initial presentation timestamp (PTS) offset for your transport strea
 + `SECONDS`
 + `MILLISECONDS`
 
+### TtmlBackgroundColor
+<a name="jobtemplates-name-model-ttmlbackgroundcolor"></a>
+
+Specify the background color for TTML captions output.
++ `NONE`
++ `BLACK`
++ `WHITE`
++ `AUTO`
+
 ### TtmlDestinationSettings
 <a name="jobtemplates-name-model-ttmldestinationsettings"></a>
 
@@ -10195,7 +10625,41 @@ Settings related to TTML captions. TTML is a sidecar format that holds captions 
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| backgroundColor | [TtmlBackgroundColor](#jobtemplates-name-model-ttmlbackgroundcolor) | False | Specify the color of the rectangle behind the captions. If Style passthrough is set to enabled, leave blank or set to Auto to pass through the background color from your input captions. If Style passthrough is set to disabled, leave blank or set to Auto to use the default black. |
+| backgroundOpacity | integer<br />Minimum: 0<br />Maximum: 255 | False | Specify the opacity of the background rectangle. Enter a value from 0 to 255, where 0 is transparent and 255 is opaque. If Style passthrough is set to enabled, leave blank to pass through the background style information in your input captions to your output captions. If Style passthrough is set to disabled and backgroundColor is set, leave blank to use a value of 255 (opaque). |
+| fontColor | [TtmlFontColor](#jobtemplates-name-model-ttmlfontcolor) | False | Specify the color of the captions text. If Style passthrough is set to enabled, leave blank or set to Auto to pass through the font color from your input captions. If Style passthrough is set to disabled, leave blank or set to Auto to use the default white. |
+| fontOpacity | integer<br />Minimum: 0<br />Maximum: 255 | False | Specify the opacity of the captions. Enter a value from 0 to 255, where 0 is transparent and 255 is opaque. If Style passthrough is set to enabled, leave blank to pass through the font opacity information in your input captions to your output captions. If Style passthrough is set to disabled and fontColor is set, leave blank to use a value of 255 (opaque). |
+| fontSize | integer<br />Minimum: 0<br />Maximum: 96 | False | Specify the Font size in pixels. Must be a positive integer. Set to 0, or leave blank, for automatic font size. |
+| fontStyle | [TtmlFontStyle](#jobtemplates-name-model-ttmlfontstyle) | False | Specify the font style of the caption text. If Style passthrough is set to enabled, leave blank to pass through the font style from your input captions. If Style passthrough is set to disabled, leave blank to use the default normal style. |
+| fontWeight | [TtmlFontWeight](#jobtemplates-name-model-ttmlfontweight) | False | Specify the font weight of the caption text. If Style passthrough is set to enabled, leave blank to pass through the font weight from your input captions. If Style passthrough is set to disabled, leave blank to use the default normal weight. |
 | stylePassthrough | [TtmlStylePassthrough](#jobtemplates-name-model-ttmlstylepassthrough) | False | Pass through style and position information from a TTML-like input source (TTML, IMSC, SMPTE-TT) to the TTML output. |
+| textDecoration | [TtmlTextDecoration](#jobtemplates-name-model-ttmltextdecoration) | False | Specify the text decoration of the caption text. If Style passthrough is set to enabled, leave blank to pass through the text decoration from your input captions. If Style passthrough is set to disabled, leave blank to use the default of none. |
+
+### TtmlFontColor
+<a name="jobtemplates-name-model-ttmlfontcolor"></a>
+
+Specify the font color for TTML captions output.
++ `WHITE`
++ `BLACK`
++ `YELLOW`
++ `RED`
++ `GREEN`
++ `BLUE`
++ `AUTO`
+
+### TtmlFontStyle
+<a name="jobtemplates-name-model-ttmlfontstyle"></a>
+
+Specify the font style for TTML captions output.
++ `NORMAL`
++ `ITALIC`
+
+### TtmlFontWeight
+<a name="jobtemplates-name-model-ttmlfontweight"></a>
+
+Specify the font weight for TTML captions output.
++ `NORMAL`
++ `BOLD`
 
 ### TtmlStylePassthrough
 <a name="jobtemplates-name-model-ttmlstylepassthrough"></a>
@@ -10203,6 +10667,13 @@ Settings related to TTML captions. TTML is a sidecar format that holds captions 
 Pass through style and position information from a TTML-like input source (TTML, IMSC, SMPTE-TT) to the TTML output.
 + `ENABLED`
 + `DISABLED`
+
+### TtmlTextDecoration
+<a name="jobtemplates-name-model-ttmltextdecoration"></a>
+
+Specify the text decoration for TTML captions output.
++ `NONE`
++ `UNDERLINE`
 
 ### Type
 <a name="jobtemplates-name-model-type"></a>
@@ -10288,6 +10759,7 @@ Modify a job template by sending a request with the job template name and any of
 | accelerationSettings | [AccelerationSettings](#jobtemplates-name-model-accelerationsettings) | False | Accelerated transcoding can significantly speed up jobs with long, visually complex content. Outputs that use this feature incur pro-tier pricing. For information about feature limitations, see the AWS Elemental MediaConvert User Guide. |
 | category | string | False | The new category for the job template, if you are changing it. |
 | description | string | False | The new description for the job template, if you are changing it. |
+| elementalInferenceSettings | [ElementalInferenceSettings](#jobtemplates-name-model-elementalinferencesettings) | False | The Elemental Inference settings used in this job. |
 | hopDestinations | Array of type [HopDestination](#jobtemplates-name-model-hopdestination) | False | Optional list of hop destinations. |
 | name | string | False | The name of the job template you are modifying |
 | priority | integer<br />Format: int32<br />Minimum: -50<br />Maximum: 50 | False | Specify the relative priority for this job. In any given queue, the service begins processing the job with the highest value first. When more than one job has the same priority, the service begins processing the job that you submitted first. If you don't specify a priority, the service uses the default value 0. |
@@ -10547,6 +11019,7 @@ Find additional transcoding features under Preprocessors. Enable the features at
 | colorCorrector | [ColorCorrector](#jobtemplates-name-model-colorcorrector) | False | Use these settings to convert the color space or to modify properties such as hue and contrast for this output. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/converting-the-color-space.html. |
 | deinterlacer | [Deinterlacer](#jobtemplates-name-model-deinterlacer) | False | Use the deinterlacer to produce smoother motion and a clearer picture. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-scan-type.html. |
 | dolbyVision | [DolbyVision](#jobtemplates-name-model-dolbyvision) | False | Enable Dolby Vision feature to produce Dolby Vision compatible video output. |
+| durationControl | [DurationControl](#jobtemplates-name-model-durationcontrol) | False | Enable integer-second duration normalization. When enabled, the output duration is adjusted to land on an exact integer-second boundary. The adjustment method (trim, compress, or pad) is chosen automatically based on how far the input duration is from the nearest integer second. |
 | hdr10Plus | [Hdr10Plus](#jobtemplates-name-model-hdr10plus) | False | Enable HDR10\+ analysis and metadata injection. Compatible with HEVC only. |
 | imageInserter | [ImageInserter](#jobtemplates-name-model-imageinserter) | False | Enable the Image inserter feature to include a graphic overlay on your video. Enable or disable this feature for each output individually. This setting is disabled by default. |
 | noiseReducer | [NoiseReducer](#jobtemplates-name-model-noisereducer) | False | Enable the Noise reducer feature to remove noise from your video output if necessary. Enable or disable this feature for each output individually. This setting is disabled by default. When you enable Noise reducer, you must also select a value for Noise reducer filter. For AVC outputs, when you include Noise reducer, you cannot include the Bandwidth reduction filter. |
@@ -10925,6 +11398,7 @@ Required when you set Profile to the value XAVC\_HD\_INTRA\_CBG.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| interlaceMode | [XavcInterlaceMode](#jobtemplates-name-model-xavcinterlacemode) | False | Choose the scan line type for the output. Keep the default value, Progressive, to create a progressive output, regardless of the scan type of your input. To create an interlaced output, choose Top field first or Follow, default top. Outputs that you create with this profile are always top field first when they are interlaced. When you create an interlaced output, set your output frame rate to 25 or 29.97. |
 | xavcClass | [XavcHdIntraCbgProfileClass](#jobtemplates-name-model-xavchdintracbgprofileclass) | False | Specify the XAVC Intra HD (CBG) Class to set the bitrate of your output. Outputs of the same class have similar image quality over the operating points that are valid for that class. |
 
 ### XavcHdProfileBitrateClass
@@ -10980,7 +11454,7 @@ Choose the scan line type for the output. Keep the default value, Progressive to
 ### XavcProfile
 <a name="jobtemplates-name-model-xavcprofile"></a>
 
-Specify the XAVC profile for this output. For more information, see the Sony documentation at https://www.xavc-info.org/. Note that MediaConvert doesn't support the interlaced video XAVC operating points for XAVC\_HD\_INTRA\_CBG. To create an interlaced XAVC output, choose the profile XAVC\_HD.
+Specify the XAVC profile for this output. For more information, see the Sony documentation at https://www.xavc-info.org/. Note that when you choose XAVC\_HD\_INTRA\_CBG, MediaConvert supports interlaced outputs only when they are top field first and your output frame rate is 25 or 29.97 fps.
 + `XAVC_HD_INTRA_CBG`
 + `XAVC_4K_INTRA_CBG`
 + `XAVC_4K_INTRA_VBR`
@@ -11001,7 +11475,7 @@ Required when you set Codec to the value XAVC.
 | framerateDenominator | integer<br />Minimum: 1<br />Maximum: 1001 | False | When you use the API for transcode jobs that use frame rate conversion, specify the frame rate as a fraction. For example, 24000 / 1001 = 23.976 fps. Use FramerateDenominator to specify the denominator of this fraction. In this example, use 1001 for the value of FramerateDenominator. When you use the console for transcode jobs that use frame rate conversion, provide the value as a decimal number for Frame rate. In this example, specify 23.976. |
 | framerateNumerator | integer<br />Minimum: 24<br />Maximum: 60000 | False | When you use the API for transcode jobs that use frame rate conversion, specify the frame rate as a fraction. For example, 24000 / 1001 = 23.976 fps. Use FramerateNumerator to specify the numerator of this fraction. In this example, use 24000 for the value of FramerateNumerator. When you use the console for transcode jobs that use frame rate conversion, provide the value as a decimal number for Framerate. In this example, specify 23.976. |
 | perFrameMetrics | Array of type [frameMetricType](#jobtemplates-name-model-framemetrictype) | False | Optionally choose one or more per frame metric reports to generate along with your output. You can use these metrics to analyze your video output according to one or more commonly used image quality metrics. You can specify per frame metrics for output groups or for individual outputs. When you do, MediaConvert writes a CSV (Comma-Separated Values) file to your S3 output destination, named after the output name and metric type. For example: videofile\_PSNR.csv Jobs that generate per frame metrics will take longer to complete, depending on the resolution and complexity of your output. For example, some 4K jobs might take up to twice as long to complete. Note that when analyzing the video quality of your output, or when comparing the video quality of multiple different outputs, we generally also recommend a detailed visual review in a controlled environment. You can choose from the following per frame metrics: \* PSNR: Peak Signal-to-Noise Ratio \* SSIM: Structural Similarity Index Measure \* MS\_SSIM: Multi-Scale Similarity Index Measure \* PSNR\_HVS: Peak Signal-to-Noise Ratio, Human Visual System \* VMAF: Video Multi-Method Assessment Fusion \* QVBR: Quality-Defined Variable Bitrate. This option is only available when your output uses the QVBR rate control mode. \* SHOT\_CHANGE: Shot Changes |
-| profile | [XavcProfile](#jobtemplates-name-model-xavcprofile) | False | Specify the XAVC profile for this output. For more information, see the Sony documentation at https://www.xavc-info.org/. Note that MediaConvert doesn't support the interlaced video XAVC operating points for XAVC\_HD\_INTRA\_CBG. To create an interlaced XAVC output, choose the profile XAVC\_HD. |
+| profile | [XavcProfile](#jobtemplates-name-model-xavcprofile) | False | Specify the XAVC profile for this output. For more information, see the Sony documentation at https://www.xavc-info.org/. Note that when you choose XAVC\_HD\_INTRA\_CBG, MediaConvert supports interlaced outputs only when they are top field first and your output frame rate is 25 or 29.97 fps. |
 | slowPal | [XavcSlowPal](#jobtemplates-name-model-xavcslowpal) | False | Ignore this setting unless your input frame rate is 23.976 or 24 frames per second (fps). Enable slow PAL to create a 25 fps output by relabeling the video frames and resampling your audio. Note that enabling this setting will slightly reduce the duration of your video. Related settings: You must also set Frame rate to 25. |
 | softness | integer<br />Minimum: 0<br />Maximum: 128 | False | Ignore this setting unless your downstream workflow requires that you specify it explicitly. Otherwise, we recommend that you adjust the softness of your output by using a lower value for the setting Sharpness or by enabling a noise reducer filter. The Softness setting specifies the quantization matrices that the encoder uses. Keep the default value, 0, for flat quantization. Choose the value 1 or 16 to use the default JVT softening quantization matricies from the H.264 specification. Choose a value from 17 to 128 to use planar interpolation. Increasing values from 17 to 128 result in increasing reduction of high-frequency data. The value 128 results in the softest video. |
 | spatialAdaptiveQuantization | [XavcSpatialAdaptiveQuantization](#jobtemplates-name-model-xavcspatialadaptivequantization) | False | The best way to set up adaptive quantization is to keep the default value, Auto, for the setting Adaptive quantization. When you do so, MediaConvert automatically applies the best types of quantization for your video content. Include this setting in your JSON job specification only when you choose to change the default value for Adaptive quantization. For this setting, keep the default value, Enabled, to adjust quantization within each frame based on spatial variation of content complexity. When you enable this feature, the encoder uses fewer bits on areas that can sustain more distortion with no noticeable visual degradation and uses more bits on areas where any small distortion will be noticeable. For example, complex textured blocks are encoded with fewer bits and smooth textured blocks are encoded with more bits. Enabling this feature will almost always improve your video quality. Note, though, that this feature doesn't take into account where the viewer's attention is likely to be. If viewers are likely to be focusing their attention on a part of the screen with a lot of complex texture, you might choose to disable this feature. Related setting: When you enable spatial adaptive quantization, set the value for Adaptive quantization depending on your content. For homogeneous content, such as cartoons and video games, set it to Low. For content with a wider variety of textures, set it to High or Higher. |

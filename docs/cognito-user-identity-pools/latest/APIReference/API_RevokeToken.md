@@ -17,6 +17,7 @@ Amazon Cognito doesn't evaluate AWS Identity and Access Management (IAM) policie
 {
    "ClientId": "{{string}}",
    "ClientSecret": "{{string}}",
+   "RevokeAssociatedSessions": "{{string}}",
    "Token": "{{string}}"
 }
 ```
@@ -40,6 +41,12 @@ The client secret of the requested app client, if the client has a secret.
 Type: String
 Length Constraints: Minimum length of 24. Maximum length of 64.
 Pattern: `[\w+]+`
+Required: No
+
+ ** [RevokeAssociatedSessions](#API_RevokeToken_RequestSyntax) **   <a name="CognitoUserPools-RevokeToken-request-RevokeAssociatedSessions"></a>
+Specifies whether to also revoke the SSO session that is linked to the token session being revoked. `NONE`, the default, revokes only the token session that is associated with the refresh token. `LINKED` also revokes the parent SSO session that the token session came through; the other token sessions that came through that SSO session aren't revoked. `LINKED` has no effect when session tracking is disabled or when the token session has no parent SSO session.
+Type: String
+Valid Values: `NONE | LINKED`
 Required: No
 
  ** [Token](#API_RevokeToken_RequestSyntax) **   <a name="CognitoUserPools-RevokeToken-request-Token"></a>

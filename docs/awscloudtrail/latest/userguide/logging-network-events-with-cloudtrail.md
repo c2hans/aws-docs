@@ -151,6 +151,7 @@ The following advanced event selector fields are required to log network activit
   + `ecs.amazonaws.com`
   + `elasticfilesystem.amazonaws.com`
   + `elasticloadbalancing.amazonaws.com`
+  + `elb-proxy.amazonaws.com`
   + `end-user-messaging.amazonaws.com`
   + `events.amazonaws.com`
   + `eventsv2.amazonaws.com`

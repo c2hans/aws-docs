@@ -18,6 +18,21 @@ Type: String
 Valid Values: `BALANCED | LOW_LATENCY`
 Required: Yes
 
+ ** switchingConfiguration **   <a name="mediaconnect-Type-FabricConfiguration-switchingConfiguration"></a>
+The configuration settings for the switching mode.
+Type: [FabricSwitchingConfiguration](API_FabricSwitchingConfiguration.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
+ ** switchingMode **   <a name="mediaconnect-Type-FabricConfiguration-switchingMode"></a>
+The switching mode that the router output uses when it switches to a new router input. Valid values include the following:
++  `IMMEDIATE` (default) – Switches to the new router input immediately.
++  `KEY_FRAME` – Waits for a key frame on the new router input before it switches.
+If you specify it, it must match the switching configuration.
+Type: String
+Valid Values: `IMMEDIATE | KEY_FRAME`
+Required: No
+
 ## See Also
 <a name="API_FabricConfiguration_SeeAlso"></a>
 

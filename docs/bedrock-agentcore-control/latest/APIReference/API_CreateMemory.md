@@ -79,9 +79,9 @@ Pattern: `arn:[a-z0-9-\.]{1,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{0,63}:[a-z0-9-\.]{
 Required: No
 
  ** [eventExpiryDuration](#API_CreateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateMemory-request-eventExpiryDuration"></a>
-The duration after which memory events expire. Specified as an ISO 8601 duration.
+The number of days after which memory events expire, between 7 and 3650 days.
 Type: Integer
-Valid Range: Minimum value of 3. Maximum value of 365.
+Valid Range: Minimum value of 3. Maximum value of 3650.
 Required: Yes
 
  ** [indexedKeys](#API_CreateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateMemory-request-indexedKeys"></a>

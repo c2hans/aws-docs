@@ -53,7 +53,9 @@ Content-type: application/json
          "configuration": { ... },
          "createdAt": "string",
          "fabricConfiguration": {
-            "recoveryLatencyMode": "string"
+            "recoveryLatencyMode": "string",
+            "switchingConfiguration": { ... },
+            "switchingMode": "string"
          },
          "id": "string",
          "ipAddress": "string",
@@ -70,6 +72,25 @@ Content-type: application/json
          ],
          "name": "string",
          "outputType": "string",
+         "processors": {
+            "singleProgramTransportStreamPidMap": {
+               "auto": {
+                  "pidsPerProgram": number,
+                  "startPid": number
+               },
+               "defaultAction": "string",
+               "programClockReferencePid": { ... },
+               "programMapTablePid": { ... },
+               "programNumber": { ... },
+               "rules": [
+                  {
+                     "action": "string",
+                     "matchExpression": "string"
+                  }
+               ],
+               "transportStreamId": { ... }
+            }
+         },
          "regionName": "string",
          "routedInputArn": "string",
          "routedState": "string",

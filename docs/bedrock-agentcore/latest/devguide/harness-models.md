@@ -123,7 +123,7 @@ Both flags and wizards reject inline secrets. The CLI flags accept files or stdi
 
 Use models from Amazon Bedrock, OpenAI, Google Gemini, or other providers through LiteLLM, including OpenAI-compatible endpoints. Switch providers between turns of the same session and the conversation continues. Context carries over.
 
-If you create a harness with the API or `agentcore harness create` and omit the model, the harness uses the service default: the current AgentCore recommended model for your partition. In commercial AWS Regions, that model is Anthropic’s Claude Opus 5 on Amazon Bedrock (`global.anthropic.claude-opus-5`).
+If you create a harness with the API or `agentcore harness create` and omit the model, the harness uses the service default: the current AgentCore recommended model for your partition. In commercial AWS Regions, that model is Anthropic’s Claude Opus 5 on Amazon Bedrock (`global.anthropic.claude-opus-5`). The service default can change. To keep a model fixed, set `model` on the harness.
 
 The AgentCore CLI sets its own model for new projects. If you omit `--model`, `agentcore add harness` writes `global.anthropic.claude-sonnet-5-5` to `harness.yaml`, so that harness uses Claude Sonnet 5.5 instead of the service default. The CLI’s create/add wizards prefill provider-specific model IDs: `global.anthropic.claude-sonnet-5-5` for Bedrock, `gpt-6.1-sol` for OpenAI, `gemini-3.8-flash` for Gemini, and `bedrock/global.anthropic.claude-sonnet-5-5` for LiteLLM. These CLI defaults don’t change the service default or guarantee model access. You can configure a model on the harness or override it per invocation at any time.
 

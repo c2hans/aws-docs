@@ -25,7 +25,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ApplicationSystemRollbackConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-applicationsystemrollbackconfiguration)" : {{ApplicationSystemRollbackConfiguration}},
   "[EnvironmentProperties](#cfn-kinesisanalyticsv2-application-applicationconfiguration-environmentproperties)" : {{EnvironmentProperties}},
   "[FlinkApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-flinkapplicationconfiguration)" : {{FlinkApplicationConfiguration}},
-  "[SqlApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-sqlapplicationconfiguration)" : {{SqlApplicationConfiguration}},
   "[VpcConfigurations](#cfn-kinesisanalyticsv2-application-applicationconfiguration-vpcconfigurations)" : {{[ VpcConfiguration, ... ]}},
   "[ZeppelinApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-zeppelinapplicationconfiguration)" : {{ZeppelinApplicationConfiguration}}
 }
@@ -47,8 +46,6 @@ To declare this entity in your CloudFormation template, use the following syntax
     EnvironmentProperties}}
   [FlinkApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-flinkapplicationconfiguration): {{
     FlinkApplicationConfiguration}}
-  [SqlApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-sqlapplicationconfiguration): {{
-    SqlApplicationConfiguration}}
   [VpcConfigurations](#cfn-kinesisanalyticsv2-application-applicationconfiguration-vpcconfigurations): {{
     - VpcConfiguration}}
   [ZeppelinApplicationConfiguration](#cfn-kinesisanalyticsv2-application-applicationconfiguration-zeppelinapplicationconfiguration): {{
@@ -92,12 +89,6 @@ Describes execution properties for a Managed Service for Apache Flink applicatio
 The creation and update parameters for a Managed Service for Apache Flink application.
 *Required*: No
 *Type*: [FlinkApplicationConfiguration](aws-properties-kinesisanalyticsv2-application-flinkapplicationconfiguration.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`SqlApplicationConfiguration`  <a name="cfn-kinesisanalyticsv2-application-applicationconfiguration-sqlapplicationconfiguration"></a>
-The creation and update parameters for a SQL-based Kinesis Data Analytics application.
-*Required*: No
-*Type*: [SqlApplicationConfiguration](aws-properties-kinesisanalyticsv2-application-sqlapplicationconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VpcConfigurations`  <a name="cfn-kinesisanalyticsv2-application-applicationconfiguration-vpcconfigurations"></a>

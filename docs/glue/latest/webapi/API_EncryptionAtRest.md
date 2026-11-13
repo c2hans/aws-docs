@@ -19,7 +19,7 @@ Required: Yes
  ** CatalogEncryptionServiceRole **   <a name="Glue-Type-EncryptionAtRest-CatalogEncryptionServiceRole"></a>
 The role that AWS Glue assumes to encrypt and decrypt the Data Catalog objects on the caller's behalf.
 Type: String
-Pattern: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
+Pattern: `^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
 Required: No
 
  ** SseAwsKmsKeyId **   <a name="Glue-Type-EncryptionAtRest-SseAwsKmsKeyId"></a>

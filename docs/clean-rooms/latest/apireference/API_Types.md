@@ -227,6 +227,7 @@ The following data types are supported:
 +  [QueryConstraint](API_QueryConstraint.md)
 +  [QueryConstraintRequireOverlap](API_QueryConstraintRequireOverlap.md)
 +  [ReceiverConfiguration](API_ReceiverConfiguration.md)
++  [RetryInfo](API_RetryInfo.md)
 +  [S3Location](API_S3Location.md)
 +  [Schema](API_Schema.md)
 +  [SchemaAnalysisRuleRequest](API_SchemaAnalysisRuleRequest.md)

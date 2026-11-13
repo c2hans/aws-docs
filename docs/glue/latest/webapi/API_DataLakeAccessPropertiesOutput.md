@@ -25,7 +25,7 @@ Required: No
  ** DataTransferRole **   <a name="Glue-Type-DataLakeAccessPropertiesOutput-DataTransferRole"></a>
 A role that will be assumed by AWS Glue for transferring data into/out of the staging bucket during a query.
 Type: String
-Pattern: `^arn:aws(-(cn|us-gov|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
+Pattern: `^arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:iam::[0-9]{12}:role/.+`
 Required: No
 
  ** KmsKey **   <a name="Glue-Type-DataLakeAccessPropertiesOutput-KmsKey"></a>

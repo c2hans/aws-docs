@@ -100,7 +100,10 @@ Content-type: application/json
       },
       "error": {
          "code": "string",
-         "message": "string"
+         "message": "string",
+         "retry": {
+            "retryable": boolean
+         }
       },
       "id": "string",
       "membershipArn": "string",

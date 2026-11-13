@@ -15,6 +15,11 @@ The index number (0 or 1) assigned to this source in the failover configuration.
 Type: Integer
 Required: Yes
 
+ ** rtmpPush **   <a name="mediaconnect-Type-FailoverRouterInputIndexedStreamDetails-rtmpPush"></a>
+The RTMP stream details for this indexed stream, including the application and stream names.
+Type: [RtmpPushStreamDetails](API_RtmpPushStreamDetails.md) object
+Required: No
+
  ** sourceIpAddress **   <a name="mediaconnect-Type-FailoverRouterInputIndexedStreamDetails-sourceIpAddress"></a>
 The IP address of the source for this indexed stream.
 Type: String

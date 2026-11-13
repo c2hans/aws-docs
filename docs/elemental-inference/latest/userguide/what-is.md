@@ -11,7 +11,7 @@ AWS Elemental Inference is a real-time service that applies machine learning mod
 + **Smart subtitles** – Uses automatic speech recognition (ASR) to generate Timed Text Markup Language (TTML) subtitles from the audio in your source media.
 + **Contextual metadata** – Classifies your video content at the shot level and at the scene level. You can use these classifications to target ads to the content that a viewer is watching. For more information about contextual metadata, see [Querying contextual metadata](query-metadata-query.md#query-metadata-contextual).
 
-To preview smart cropping on a recorded video without setting up a live feed, use the Elemental Inference playground. For more information about the playground, see [Using the Elemental Inference playground](playground.md).
+To preview smart cropping on its own, or together with event clipping, smart subtitles, and contextual metadata, on a recorded video without setting up a live feed, use the Elemental Inference playground. For more information about the playground, see [Using the Elemental Inference playground](playground.md).
 
 **Topics**
 + [Accessing Elemental Inference](what-is-accessing.md)

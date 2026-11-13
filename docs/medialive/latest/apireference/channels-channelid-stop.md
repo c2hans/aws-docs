@@ -57,9 +57,22 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
   "destinations": [
     {
       "id": "string",
+      "logicalInterfaceNames": [
+        "string"
+      ],
+      "mediaConnectRouterSettings": [
+        {
+          "encryptionType": enum,
+          "secretArn": "string"
+        }
+      ],
       "mediaPackageSettings": [
         {
-          "channelId": "string"
+          "channelEndpointId": "string",
+          "channelGroup": "string",
+          "channelId": "string",
+          "channelName": "string",
+          "mediaPackageRegionName": "string"
         }
       ],
       "multiplexSettings": {
@@ -71,7 +84,17 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "passwordParam": "string",
           "streamName": "string",
           "url": "string",
-          "username": "string"
+          "username": "string",
+          "virtualSourceAddress": "string"
+        }
+      ],
+      "srtSettings": [
+        {
+          "connectionMode": enum,
+          "encryptionPassphraseSecretArn": "string",
+          "listenerPort": integer,
+          "streamId": "string",
+          "url": "string"
         }
       ]
     }
@@ -84,6 +107,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
   "encoderSettings": {
     "audioDescriptions": [
       {
+        "audioDashRoles": [
+          enum
+        ],
         "audioNormalizationSettings": {
           "algorithm": enum,
           "algorithmControl": enum,
@@ -104,7 +130,13 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "nielsenDistributionType": enum,
             "nielsenNaesIiNwSettings": {
               "checkDigitString": "string",
-              "sid": number
+              "sid": number,
+              "timezone": enum
+            },
+            "nielsenNwOnlySettings": {
+              "checkDigitString": "string",
+              "sid": number,
+              "timezone": enum
             }
           }
         },
@@ -121,6 +153,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "vbrQuality": enum
           },
           "ac3Settings": {
+            "attenuationControl": enum,
             "bitrate": number,
             "bitstreamMode": enum,
             "codingMode": enum,
@@ -128,6 +161,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "drcProfile": enum,
             "lfeFilter": enum,
             "metadataControl": enum
+          },
+          "eac3AtmosSettings": {
+            "bitrate": number,
+            "codingMode": enum,
+            "dialnorm": integer,
+            "drcLine": enum,
+            "drcRf": enum,
+            "heightTrim": number,
+            "surroundTrim": number
           },
           "eac3Settings": {
             "attenuationControl": enum,
@@ -164,6 +206,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "sampleRate": number
           }
         },
+        "dvbDashAccessibility": enum,
         "languageCode": "string",
         "languageCodeControl": enum,
         "name": "string",
@@ -195,6 +238,14 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     },
     "availConfiguration": {
       "availSettings": {
+        "esam": {
+          "acquisitionPointId": "string",
+          "adAvailOffset": integer,
+          "passwordParam": "string",
+          "poisEndpoint": "string",
+          "username": "string",
+          "zoneIdentity": "string"
+        },
         "scte35SpliceInsert": {
           "adAvailOffset": integer,
           "noRegionalBlackoutFlag": enum,
@@ -205,7 +256,8 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
           "noRegionalBlackoutFlag": enum,
           "webDeliveryAllowedFlag": enum
         }
-      }
+      },
+      "scte35SegmentationScope": enum
     },
     "blackoutSlate": {
       "blackoutSlateImage": {
@@ -224,6 +276,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     },
     "captionDescriptions": [
       {
+        "accessibility": enum,
+        "captionDashRoles": [
+          enum
+        ],
         "captionSelectorName": "string",
         "destinationSettings": {
           "aribDestinationSettings": {
@@ -247,6 +303,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "shadowOpacity": integer,
             "shadowXOffset": integer,
             "shadowYOffset": integer,
+            "subtitleRows": enum,
             "teletextGridControl": enum,
             "xPosition": integer,
             "yPosition": integer
@@ -270,12 +327,15 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "shadowOpacity": integer,
             "shadowXOffset": integer,
             "shadowYOffset": integer,
+            "subtitleRows": enum,
             "teletextGridControl": enum,
             "xPosition": integer,
             "yPosition": integer
           },
           "ebuTtDDestinationSettings": {
             "copyrightHolder": "string",
+            "defaultFontSize": integer,
+            "defaultLineHeight": integer,
             "fillLineGap": enum,
             "fontFamily": "string",
             "styleControl": enum
@@ -311,13 +371,24 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "styleControl": enum
           }
         },
+        "dvbDashAccessibility": enum,
         "languageCode": "string",
         "languageDescription": "string",
         "name": "string"
       }
     ],
+    "colorCorrectionSettings": {
+      "globalColorCorrections": [
+        {
+          "inputColorSpace": enum,
+          "outputColorSpace": enum,
+          "uri": "string"
+        }
+      ]
+    },
     "featureActivations": {
-      "inputPrepareScheduleActions": enum
+      "inputPrepareScheduleActions": enum,
+      "outputStaticImageOverlayScheduleActions": enum
     },
     "globalConfiguration": {
       "initialAudioGain": integer,
@@ -334,6 +405,19 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         "repeatFrameMsec": integer
       },
       "outputLockingMode": enum,
+      "outputLockingSettings": {
+        "disabledLockingSettings": {
+          "customEpoch": "string"
+        },
+        "epochLockingSettings": {
+          "customEpoch": "string",
+          "jamSyncTime": "string"
+        },
+        "pipelineLockingSettings": {
+          "customEpoch": "string",
+          "pipelineLockingMethod": enum
+        }
+      },
       "outputTimingSource": enum,
       "supportLowFramerateInputs": enum
     },
@@ -365,7 +449,58 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "rolloverInterval": integer
           },
           "cmafIngestGroupSettings": {
-            "scte35Type": enum
+            "additionalDestinations": [
+              {
+                "destination": {
+                  "destinationRefId": "string"
+                }
+              }
+            ],
+            "captionLanguageMappings": [
+              {
+                "captionChannel": integer,
+                "languageCode": "string"
+              }
+            ],
+            "destination": {
+              "destinationRefId": "string"
+            },
+            "id3Behavior": enum,
+            "id3NameModifier": "string",
+            "klvBehavior": enum,
+            "klvNameModifier": "string",
+            "nielsenId3Behavior": enum,
+            "nielsenId3NameModifier": "string",
+            "scte35NameModifier": "string",
+            "scte35Type": enum,
+            "segmentLength": integer,
+            "segmentLengthUnits": enum,
+            "sendDelayMs": integer,
+            "timedMetadataId3Frame": enum,
+            "timedMetadataId3Period": integer,
+            "timedMetadataPassthrough": enum,
+            "watermarkingSettings": {
+              "cmafIngestAbWatermarkerIrdetoSettings": {
+                "additionalDestinationsAlternateDestinations": [
+                  {
+                    "destinationRefId": "string"
+                  }
+                ],
+                "alternateDestination": {
+                  "destinationRefId": "string"
+                },
+                "customProfile": {
+                  "embeddingFrequency": number,
+                  "sceneCut": number,
+                  "targetPsnr": number
+                },
+                "license": "string",
+                "operatorId": integer,
+                "polyPeriod": integer,
+                "profile": enum,
+                "watermarkIdLength": enum
+              }
+            }
           },
           "frameCaptureGroupSettings": {
             "destination": {
@@ -476,12 +611,62 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "timestampDeltaMilliseconds": integer,
             "tsFileMode": enum
           },
+          "mediaConnectRouterGroupSettings": {
+            "availabilityZones": [
+              "string"
+            ]
+          },
           "mediaPackageGroupSettings": {
             "destination": {
               "destinationRefId": "string"
             },
             "mediapackageV2GroupSettings": {
-              "scte35Type": enum
+              "additionalDestinations": [
+                {
+                  "destination": {
+                    "destinationRefId": "string"
+                  }
+                }
+              ],
+              "captionLanguageMappings": [
+                {
+                  "captionChannel": integer,
+                  "languageCode": "string",
+                  "languageDescription": "string"
+                }
+              ],
+              "captionLanguageSetting": enum,
+              "id3Behavior": enum,
+              "klvBehavior": enum,
+              "nielsenId3Behavior": enum,
+              "scte35Type": enum,
+              "segmentLength": integer,
+              "segmentLengthUnits": enum,
+              "timedMetadataId3Frame": enum,
+              "timedMetadataId3Period": integer,
+              "timedMetadataPassthrough": enum,
+              "watermarkingSettings": {
+                "mediaPackageV2AbWatermarkerIrdetoSettings": {
+                  "additionalDestinationsAlternateDestinations": [
+                    {
+                      "destinationRefId": "string"
+                    }
+                  ],
+                  "alternateDestination": {
+                    "destinationRefId": "string"
+                  },
+                  "customProfile": {
+                    "embeddingFrequency": number,
+                    "sceneCut": number,
+                    "targetPsnr": number
+                  },
+                  "license": "string",
+                  "operatorId": integer,
+                  "polyPeriod": integer,
+                  "profile": enum,
+                  "watermarkIdLength": enum
+                }
+              }
             }
           },
           "msSmoothGroupSettings": {
@@ -517,8 +702,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "cacheFullBehavior": enum,
             "cacheLength": integer,
             "captionData": enum,
+            "includeFillerNalUnits": enum,
             "inputLossAction": enum,
             "restartDelay": integer
+          },
+          "srtGroupSettings": {
+            "inputLossAction": enum
           },
           "udpGroupSettings": {
             "inputLossAction": enum,
@@ -590,6 +779,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                     "scte27Pids": "string",
                     "scte35Control": enum,
                     "scte35Pid": "string",
+                    "scte35PrerollPullupMilliseconds": number,
                     "segmentationMarkers": enum,
                     "segmentationStyle": enum,
                     "segmentationTime": number,
@@ -602,6 +792,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                   }
                 },
                 "extension": "string",
+                "nameModifier": "string"
+              },
+              "cmafIngestOutputSettings": {
                 "nameModifier": "string"
               },
               "frameCaptureOutputSettings": {
@@ -633,6 +826,8 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                       "audioFramesPerPes": integer,
                       "audioPids": "string",
                       "ecmPid": "string",
+                      "klvBehavior": enum,
+                      "klvDataPids": "string",
                       "nielsenId3Behavior": enum,
                       "patInterval": integer,
                       "pcrControl": enum,
@@ -653,10 +848,84 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "nameModifier": "string",
                 "segmentModifier": "string"
               },
+              "mediaConnectRouterOutputSettings": {
+                "connectedRouterInputs": {
+                  "pipeline0": "string",
+                  "pipeline1": "string"
+                },
+                "containerSettings": {
+                  "m2tsSettings": {
+                    "absentInputAudioBehavior": enum,
+                    "arib": enum,
+                    "aribCaptionsPid": "string",
+                    "aribCaptionsPidControl": enum,
+                    "audioBufferModel": enum,
+                    "audioFramesPerPes": integer,
+                    "audioPids": "string",
+                    "audioStreamType": enum,
+                    "bitrate": integer,
+                    "bufferModel": enum,
+                    "ccDescriptor": enum,
+                    "dvbNitSettings": {
+                      "networkId": integer,
+                      "networkName": "string",
+                      "repInterval": integer
+                    },
+                    "dvbSdtSettings": {
+                      "outputSdt": enum,
+                      "repInterval": integer,
+                      "serviceName": "string",
+                      "serviceProviderName": "string"
+                    },
+                    "dvbSubPids": "string",
+                    "dvbTdtSettings": {
+                      "repInterval": integer
+                    },
+                    "dvbTeletextPid": "string",
+                    "ebif": enum,
+                    "ebpAudioInterval": enum,
+                    "ebpLookaheadMs": integer,
+                    "ebpPlacement": enum,
+                    "ecmPid": "string",
+                    "esRateInPes": enum,
+                    "etvPlatformPid": "string",
+                    "etvSignalPid": "string",
+                    "fragmentTime": number,
+                    "klv": enum,
+                    "klvDataPids": "string",
+                    "nielsenId3Behavior": enum,
+                    "nullPacketBitrate": number,
+                    "patInterval": integer,
+                    "pcrControl": enum,
+                    "pcrPeriod": integer,
+                    "pcrPid": "string",
+                    "pmtInterval": integer,
+                    "pmtPid": "string",
+                    "programNum": integer,
+                    "rateMode": enum,
+                    "scte27Pids": "string",
+                    "scte35Control": enum,
+                    "scte35Pid": "string",
+                    "scte35PrerollPullupMilliseconds": number,
+                    "segmentationMarkers": enum,
+                    "segmentationStyle": enum,
+                    "segmentationTime": number,
+                    "timedMetadataBehavior": enum,
+                    "timedMetadataPid": "string",
+                    "transportStreamId": integer,
+                    "videoPid": "string"
+                  }
+                },
+                "destination": {
+                  "destinationRefId": "string"
+                }
+              },
               "mediaPackageOutputSettings": {
                 "mediaPackageV2DestinationSettings": {
                   "audioGroupId": "string",
                   "audioRenditionSets": "string",
+                  "hlsAutoSelect": enum,
+                  "hlsDefault": enum,
                   "outputUsage": [
                     enum
                   ]
@@ -667,6 +936,24 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "nameModifier": "string"
               },
               "multiplexOutputSettings": {
+                "containerSettings": {
+                  "multiplexM2tsSettings": {
+                    "absentInputAudioBehavior": enum,
+                    "arib": enum,
+                    "audioBufferModel": enum,
+                    "audioFramesPerPes": integer,
+                    "audioStreamType": enum,
+                    "ccDescriptor": enum,
+                    "ebif": enum,
+                    "esRateInPes": enum,
+                    "klv": enum,
+                    "nielsenId3Behavior": enum,
+                    "pcrControl": enum,
+                    "pcrPeriod": integer,
+                    "scte35Control": enum,
+                    "scte35PrerollPullupMilliseconds": number
+                  }
+                },
                 "destination": {
                   "destinationRefId": "string"
                 }
@@ -678,6 +965,77 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                   "destinationRefId": "string"
                 },
                 "numRetries": integer
+              },
+              "srtOutputSettings": {
+                "bufferMsec": integer,
+                "containerSettings": {
+                  "m2tsSettings": {
+                    "absentInputAudioBehavior": enum,
+                    "arib": enum,
+                    "aribCaptionsPid": "string",
+                    "aribCaptionsPidControl": enum,
+                    "audioBufferModel": enum,
+                    "audioFramesPerPes": integer,
+                    "audioPids": "string",
+                    "audioStreamType": enum,
+                    "bitrate": integer,
+                    "bufferModel": enum,
+                    "ccDescriptor": enum,
+                    "dvbNitSettings": {
+                      "networkId": integer,
+                      "networkName": "string",
+                      "repInterval": integer
+                    },
+                    "dvbSdtSettings": {
+                      "outputSdt": enum,
+                      "repInterval": integer,
+                      "serviceName": "string",
+                      "serviceProviderName": "string"
+                    },
+                    "dvbSubPids": "string",
+                    "dvbTdtSettings": {
+                      "repInterval": integer
+                    },
+                    "dvbTeletextPid": "string",
+                    "ebif": enum,
+                    "ebpAudioInterval": enum,
+                    "ebpLookaheadMs": integer,
+                    "ebpPlacement": enum,
+                    "ecmPid": "string",
+                    "esRateInPes": enum,
+                    "etvPlatformPid": "string",
+                    "etvSignalPid": "string",
+                    "fragmentTime": number,
+                    "klv": enum,
+                    "klvDataPids": "string",
+                    "nielsenId3Behavior": enum,
+                    "nullPacketBitrate": number,
+                    "patInterval": integer,
+                    "pcrControl": enum,
+                    "pcrPeriod": integer,
+                    "pcrPid": "string",
+                    "pmtInterval": integer,
+                    "pmtPid": "string",
+                    "programNum": integer,
+                    "rateMode": enum,
+                    "scte27Pids": "string",
+                    "scte35Control": enum,
+                    "scte35Pid": "string",
+                    "scte35PrerollPullupMilliseconds": number,
+                    "segmentationMarkers": enum,
+                    "segmentationStyle": enum,
+                    "segmentationTime": number,
+                    "timedMetadataBehavior": enum,
+                    "timedMetadataPid": "string",
+                    "transportStreamId": integer,
+                    "videoPid": "string"
+                  }
+                },
+                "destination": {
+                  "destinationRefId": "string"
+                },
+                "encryptionType": enum,
+                "latency": integer
               },
               "udpOutputSettings": {
                 "bufferMsec": integer,
@@ -734,6 +1092,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                     "scte27Pids": "string",
                     "scte35Control": enum,
                     "scte35Pid": "string",
+                    "scte35PrerollPullupMilliseconds": number,
                     "segmentationMarkers": enum,
                     "segmentationStyle": enum,
                     "segmentationTime": number,
@@ -758,6 +1117,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
         ]
       }
     ],
+    "thumbnailConfiguration": {
+      "state": enum
+    },
     "timecodeConfig": {
       "source": enum,
       "syncThreshold": integer
@@ -766,12 +1128,61 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
       {
         "border": integer,
         "codecSettings": {
+          "av1Settings": {
+            "afdSignaling": enum,
+            "bitDepth": enum,
+            "bitrate": integer,
+            "bufSize": integer,
+            "colorSpaceSettings": {
+              "colorSpacePassthroughSettings": {
+              },
+              "hdr10Settings": {
+                "maxCll": integer,
+                "maxFall": integer
+              },
+              "hlg2020Settings": {
+              },
+              "rec601Settings": {
+              },
+              "rec709Settings": {
+              }
+            },
+            "fixedAfd": enum,
+            "framerateDenominator": integer,
+            "framerateNumerator": integer,
+            "gopSize": number,
+            "gopSizeUnits": enum,
+            "level": enum,
+            "lookAheadRateControl": enum,
+            "maxBitrate": integer,
+            "minBitrate": integer,
+            "minIInterval": integer,
+            "parDenominator": integer,
+            "parNumerator": integer,
+            "qvbrQualityLevel": integer,
+            "rateControlMode": enum,
+            "sceneChangeDetect": enum,
+            "spatialAq": enum,
+            "temporalAq": enum,
+            "timecodeBurninSettings": {
+              "fontSize": enum,
+              "position": enum,
+              "prefix": "string"
+            },
+            "timecodeInsertion": enum
+          },
           "frameCaptureSettings": {
             "captureInterval": integer,
-            "captureIntervalUnits": enum
+            "captureIntervalUnits": enum,
+            "timecodeBurninSettings": {
+              "fontSize": enum,
+              "position": enum,
+              "prefix": "string"
+            }
           },
           "h264Settings": {
             "adaptiveQuantization": enum,
+            "allowExplicitWeightedPrediction": enum,
             "afdSignaling": enum,
             "bitrate": integer,
             "bufFillPct": integer,
@@ -787,6 +1198,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             },
             "entropyEncoding": enum,
             "filterSettings": {
+              "bandwidthReductionFilterSettings": {
+                "postFilterSharpening": enum,
+                "strength": enum
+              },
               "temporalFilterSettings": {
                 "postFilterSharpening": enum,
                 "strength": enum
@@ -806,7 +1221,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "level": enum,
             "lookAheadRateControl": enum,
             "maxBitrate": integer,
+            "minBitrate": integer,
             "minIInterval": integer,
+            "minQp": integer,
             "numRefFrames": integer,
             "parControl": enum,
             "parDenominator": integer,
@@ -823,6 +1240,11 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "subgopLength": enum,
             "syntax": enum,
             "temporalAq": enum,
+            "timecodeBurninSettings": {
+              "fontSize": enum,
+              "position": enum,
+              "prefix": "string"
+            },
             "timecodeInsertion": enum
           },
           "h265Settings": {
@@ -835,16 +1257,25 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "colorSpaceSettings": {
               "colorSpacePassthroughSettings": {
               },
+              "dolbyVision81Settings": {
+              },
               "hdr10Settings": {
                 "maxCll": integer,
                 "maxFall": integer
+              },
+              "hlg2020Settings": {
               },
               "rec601Settings": {
               },
               "rec709Settings": {
               }
             },
+            "deblocking": enum,
             "filterSettings": {
+              "bandwidthReductionFilterSettings": {
+                "postFilterSharpening": enum,
+                "strength": enum
+              },
               "temporalFilterSettings": {
                 "postFilterSharpening": enum,
                 "strength": enum
@@ -854,13 +1285,19 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "flickerAq": enum,
             "framerateDenominator": integer,
             "framerateNumerator": integer,
+            "gopBReference": enum,
             "gopClosedCadence": integer,
+            "gopNumBFrames": integer,
             "gopSize": number,
             "gopSizeUnits": enum,
             "level": enum,
             "lookAheadRateControl": enum,
             "maxBitrate": integer,
+            "minBitrate": integer,
             "minIInterval": integer,
+            "minQp": integer,
+            "mvOverPictureBoundaries": enum,
+            "mvTemporalPredictor": enum,
             "parDenominator": integer,
             "parNumerator": integer,
             "profile": enum,
@@ -869,8 +1306,18 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "scanType": enum,
             "sceneChangeDetect": enum,
             "slices": integer,
+            "subgopLength": enum,
             "tier": enum,
-            "timecodeInsertion": enum
+            "tileHeight": integer,
+            "tilePadding": enum,
+            "tileWidth": integer,
+            "timecodeBurninSettings": {
+              "fontSize": enum,
+              "position": enum,
+              "prefix": "string"
+            },
+            "timecodeInsertion": enum,
+            "treeblockSize": enum
           },
           "mpeg2Settings": {
             "adaptiveQuantization": enum,
@@ -893,8 +1340,19 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "gopSizeUnits": enum,
             "scanType": enum,
             "subgopLength": enum,
+            "timecodeBurninSettings": {
+              "fontSize": enum,
+              "position": enum,
+              "prefix": "string"
+            },
             "timecodeInsertion": enum
           }
+        },
+        "cropRectangle": {
+          "height": integer,
+          "width": integer,
+          "x": integer,
+          "y": integer
         },
         "height": integer,
         "name": "string",
@@ -955,6 +1413,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "pid": integer,
                 "pids": [
                   {
+                    "dolbyEDecode": {
+                      "programSelection": enum
+                    },
                     "pid": integer,
                     "premixSettings": {
                       "audioNormalizationSettings": {
@@ -986,6 +1447,9 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 ]
               },
               "audioTrackSelection": {
+                "dolbyEDecode": {
+                  "programSelection": enum
+                },
                 "tracks": [
                   {
                     "track": integer,
@@ -1049,6 +1513,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
                 "ocrLanguage": enum,
                 "pid": integer
               },
+              "smartSubtitleSourceSettings": {
+                "captionSynchronizationMode": enum,
+                "inferenceFeedOutput": "string"
+              },
               "teletextSourceSettings": {
                 "outputRectangle": {
                   "height": number,
@@ -1073,8 +1541,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             "retryInterval": integer,
             "scte35Source": enum
           },
+          "multicastInputSettings": {
+            "sourceIpAddress": "string"
+          },
           "serverValidation": enum
         },
+        "scte35Pid": integer,
         "smpte2038DataPreference": enum,
         "sourceEndBehavior": enum,
         "videoSelector": {
@@ -1095,7 +1567,10 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
             }
           }
         }
-      }
+      },
+      "logicalInterfaceNames": [
+        "string"
+      ]
     }
   ],
   "inputSpecification": {
@@ -1140,6 +1615,12 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/channels-c
     ]
   },
   "inferenceSettings": {
+    "audioFeedInputs": [
+      {
+        "audioSelectorName": "string",
+        "feedInput": "string"
+      }
+    ],
     "enrichmentMethods": [
       enum
     ],
@@ -1295,6 +1776,42 @@ Aac Vbr Quality
 + `MEDIUM_HIGH`
 + `MEDIUM_LOW`
 
+### AbWatermarkerIdLength
+<a name="channels-channelid-stop-model-abwatermarkeridlength"></a>
+
+Ab Watermarker Id Length
++ `ID_2048`
++ `ID_512`
+
+### AbWatermarkingCustomProfile
+<a name="channels-channelid-stop-model-abwatermarkingcustomprofile"></a>
+
+The vendor-specified custom profile options
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| embeddingFrequency | number<br />Minimum: 250<br />Maximum: 5000 | True | The frequency with which watermarks will be embedded, in milliseconds. |
+| sceneCut | number<br />Minimum: -1<br />Maximum: 5 | True | The number of frames after scene-cut to embed the watermark. |
+| targetPsnr | number<br />Minimum: 32<br />Maximum: 46 | True | The target PSNR of the watermarked frame |
+
+### AbWatermarkingProfile
+<a name="channels-channelid-stop-model-abwatermarkingprofile"></a>
+
+Ab Watermarking Profile
++ `CAMCORDING`
++ `CUSTOM`
++ `DEFAULT`
++ `HQ`
++ `MEZZANINE`
++ `ROBUST`
+
+### Ac3AttenuationControl
+<a name="channels-channelid-stop-model-ac3attenuationcontrol"></a>
+
+Ac3 Attenuation Control
++ `ATTENUATE_3_DB`
++ `NONE`
+
 ### Ac3BitstreamMode
 <a name="channels-channelid-stop-model-ac3bitstreammode"></a>
 
@@ -1345,6 +1862,7 @@ Ac3 Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| attenuationControl | [Ac3AttenuationControl](#channels-channelid-stop-model-ac3attenuationcontrol) | False | Applies a 3 dB attenuation to the surround channels. Applies only when the coding mode parameter is CODING\_MODE\_3\_2\_LFE. |
 | bitrate | number | False | Average bitrate in bits/second. Valid bitrates depend on the coding mode. |
 | bitstreamMode | [Ac3BitstreamMode](#channels-channelid-stop-model-ac3bitstreammode) | False | Specifies the bitstream mode (bsmod) for the emitted AC-3 stream. See ATSC A/52-2012 for background on these values. |
 | codingMode | [Ac3CodingMode](#channels-channelid-stop-model-ac3codingmode) | False | Dolby Digital coding mode. Determines number of channels. |
@@ -1359,6 +1877,22 @@ Ac3 Settings
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | message | string | False |  |
+
+### AccessibilityType
+<a name="channels-channelid-stop-model-accessibilitytype"></a>
+
+Accessibility Type
++ `DOES_NOT_IMPLEMENT_ACCESSIBILITY_FEATURES`
++ `IMPLEMENTS_ACCESSIBILITY_FEATURES`
+
+### AdditionalDestinations
+<a name="channels-channelid-stop-model-additionaldestinations"></a>
+
+Additional output destinations for a CMAF Ingest output group
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| destination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True | The destination location |
 
 ### AfdSignaling
 <a name="channels-channelid-stop-model-afdsignaling"></a>
@@ -1464,6 +1998,7 @@ Audio Codec Settings
 | --- |--- |--- |--- |
 | aacSettings | [AacSettings](#channels-channelid-stop-model-aacsettings) | False |  |
 | ac3Settings | [Ac3Settings](#channels-channelid-stop-model-ac3settings) | False |  |
+| eac3AtmosSettings | [Eac3AtmosSettings](#channels-channelid-stop-model-eac3atmossettings) | False |  |
 | eac3Settings | [Eac3Settings](#channels-channelid-stop-model-eac3settings) | False |  |
 | mp2Settings | [Mp2Settings](#channels-channelid-stop-model-mp2settings) | False |  |
 | passThroughSettings | [PassThroughSettings](#channels-channelid-stop-model-passthroughsettings) | False |  |
@@ -1476,15 +2011,17 @@ Audio Description
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| audioDashRoles | Array of type [DashRoleAudio](#channels-channelid-stop-model-dashroleaudio) | False | Identifies the DASH roles to assign to this audio output. Applies only when the audio output is configured for DVB DASH accessibility signaling. |
 | audioNormalizationSettings | [AudioNormalizationSettings](#channels-channelid-stop-model-audionormalizationsettings) | False | Advanced audio normalization settings. |
 | audioSelectorName | string | True | The name of the AudioSelector used as the source for this AudioDescription. |
 | audioType | [AudioType](#channels-channelid-stop-model-audiotype) | False | Applies only if audioTypeControl is useConfigured. The values for audioType are defined in ISO-IEC 13818-1. |
 | audioTypeControl | [AudioDescriptionAudioTypeControl](#channels-channelid-stop-model-audiodescriptionaudiotypecontrol) | False | Determines how audio type is determined. followInput: If the input contains an ISO 639 audioType, then that value is passed through to the output. If the input contains no ISO 639 audioType, the value in Audio Type is included in the output. useConfigured: The value in Audio Type is included in the output. Note that this field and audioType are both ignored if inputType is broadcasterMixedAd. |
 | audioWatermarkingSettings | [AudioWatermarkSettings](#channels-channelid-stop-model-audiowatermarksettings) | False | Settings to configure one or more solutions that insert audio watermarks in the audio encode |
 | codecSettings | [AudioCodecSettings](#channels-channelid-stop-model-audiocodecsettings) | False | Audio codec settings. |
+| dvbDashAccessibility | [DvbDashAccessibility](#channels-channelid-stop-model-dvbdashaccessibility) | False | Identifies DVB DASH accessibility signaling in this audio output. Used in Microsoft Smooth Streaming outputs to signal accessibility information to packagers. |
 | languageCode | string<br />MinLength: 1<br />MaxLength: 35 | False | RFC 5646 language code representing the language of the audio output track. Only used if languageControlMode is useConfigured, or there is no ISO 639 language code specified in the input. |
 | languageCodeControl | [AudioDescriptionLanguageCodeControl](#channels-channelid-stop-model-audiodescriptionlanguagecodecontrol) | False | Choosing followInput will cause the ISO 639 language code of the output to follow the ISO 639 language code of the input. The languageCode will be used when useConfigured is set, or when followInput is selected but there is no ISO 639 language code specified by the input. |
-| name | string | True | The name of this AudioDescription. Outputs will use this name to uniquely identify this AudioDescription. Description names should be unique within this Live Event. |
+| name | string<br />MaxLength: 255 | True | The name of this AudioDescription. Outputs will use this name to uniquely identify this AudioDescription. Description names should be unique within this Live Event. |
 | remixSettings | [RemixSettings](#channels-channelid-stop-model-remixsettings) | False | Settings that control how input audio channels are remixed into the output audio channels. |
 | streamName | string | False | Used for MS Smooth and Apple HLS outputs. Indicates the name displayed by the player (eg. English, or Director Commentary). |
 
@@ -1501,6 +2038,25 @@ Audio Description Audio Type Control
 Audio Description Language Code Control
 + `FOLLOW_INPUT`
 + `USE_CONFIGURED`
+
+### AudioDolbyEDecode
+<a name="channels-channelid-stop-model-audiodolbyedecode"></a>
+
+Audio Dolby EDecode
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| programSelection | [DolbyEProgramSelection](#channels-channelid-stop-model-dolbyeprogramselection) | True | Applies only to Dolby E. Enter the program ID (according to the metadata in the audio) of the Dolby E program to extract from the specified track. One program extracted per audio selector. To select multiple programs, create multiple selectors with the same Track and different Program numbers. “All channels” means to ignore the program IDs and include all the channels in this selector; useful if metadata is known to be incorrect. |
+
+### AudioFeedInput
+<a name="channels-channelid-stop-model-audiofeedinput"></a>
+
+Maps an audio selector in the channel to a feed input on the associated Elemental Inference feed.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| audioSelectorName | string | False | The name of the audio selector in the channel that will be sent to the Elemental Inference feed input. |
+| feedInput | string | False | The name of the feed input on the Elemental Inference feed that will receive the audio from the specified audio selector. |
 
 ### AudioHlsRenditionSelection
 <a name="channels-channelid-stop-model-audiohlsrenditionselection"></a>
@@ -1599,6 +2155,7 @@ Contains the packet identifier (PID) value and optional pre-mixer settings for a
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| dolbyEDecode | [AudioDolbyEDecode](#channels-channelid-stop-model-audiodolbyedecode) | False | Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. When using the 'pids' array, if this field is not specified and Dolby E content is present, the decoder will extract the specified program. To maintain legacy behavior (allPrograms), explicitly set programSelection to "allChannels". |
 | pid | integer<br />Minimum: 0<br />Maximum: 8191 | True | The packet identifier (PID) value from within the source. |
 | premixSettings | [AudioPreMixerSettings](#channels-channelid-stop-model-audiopremixersettings) | False | The optional audio pre-mixer settings for this PID. When specified, the service applies channel remixing, gain adjustment, and loudness normalization to this PID before interleaving. |
 
@@ -1671,6 +2228,7 @@ Audio Track Selection
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| dolbyEDecode | [AudioDolbyEDecode](#channels-channelid-stop-model-audiodolbyedecode) | False | Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337 |
 | tracks | Array of type [AudioTrack](#channels-channelid-stop-model-audiotrack) | True | Selects one or more unique audio tracks from within a source. |
 
 ### AudioType
@@ -1710,6 +2268,128 @@ The settings for Automatic Input Failover.
 | inputPreference | [InputPreference](#channels-channelid-stop-model-inputpreference) | False | Input preference when deciding which input to make active when a previously failed input has recovered. |
 | secondaryInputId | string | True | The input ID of the secondary input in the automatic input failover pair. |
 
+### Av1BitDepth
+<a name="channels-channelid-stop-model-av1bitdepth"></a>
+
+Av1 Bit Depth
++ `DEPTH_10`
++ `DEPTH_8`
+
+### Av1ColorSpaceSettings
+<a name="channels-channelid-stop-model-av1colorspacesettings"></a>
+
+Av1 Color Space Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| colorSpacePassthroughSettings | [ColorSpacePassthroughSettings](#channels-channelid-stop-model-colorspacepassthroughsettings) | False |  |
+| hdr10Settings | [Hdr10Settings](#channels-channelid-stop-model-hdr10settings) | False |  |
+| hlg2020Settings | [Hlg2020Settings](#channels-channelid-stop-model-hlg2020settings) | False |  |
+| rec601Settings | [Rec601Settings](#channels-channelid-stop-model-rec601settings) | False |  |
+| rec709Settings | [Rec709Settings](#channels-channelid-stop-model-rec709settings) | False |  |
+
+### Av1GopSizeUnits
+<a name="channels-channelid-stop-model-av1gopsizeunits"></a>
+
+Av1 Gop Size Units
++ `FRAMES`
++ `SECONDS`
+
+### Av1Level
+<a name="channels-channelid-stop-model-av1level"></a>
+
+Av1 Level
++ `AV1_LEVEL_2`
++ `AV1_LEVEL_2_1`
++ `AV1_LEVEL_3`
++ `AV1_LEVEL_3_1`
++ `AV1_LEVEL_4`
++ `AV1_LEVEL_4_1`
++ `AV1_LEVEL_5`
++ `AV1_LEVEL_5_1`
++ `AV1_LEVEL_5_2`
++ `AV1_LEVEL_5_3`
++ `AV1_LEVEL_6`
++ `AV1_LEVEL_6_1`
++ `AV1_LEVEL_6_2`
++ `AV1_LEVEL_6_3`
++ `AV1_LEVEL_AUTO`
+
+### Av1LookAheadRateControl
+<a name="channels-channelid-stop-model-av1lookaheadratecontrol"></a>
+
+Av1 Look Ahead Rate Control
++ `HIGH`
++ `LOW`
++ `MEDIUM`
+
+### Av1RateControlMode
+<a name="channels-channelid-stop-model-av1ratecontrolmode"></a>
+
+Av1 Rate Control Mode
++ `CBR`
++ `QVBR`
+
+### Av1SceneChangeDetect
+<a name="channels-channelid-stop-model-av1scenechangedetect"></a>
+
+Av1 Scene Change Detect
++ `DISABLED`
++ `ENABLED`
+
+### Av1Settings
+<a name="channels-channelid-stop-model-av1settings"></a>
+
+Av1 Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| afdSignaling | [AfdSignaling](#channels-channelid-stop-model-afdsignaling) | False | Configures whether MediaLive will write AFD values into the video. AUTO: MediaLive will try to preserve the input AFD value (in cases where multiple AFD values are valid). FIXED: the AFD value will be the value configured in the fixedAfd parameter. NONE: MediaLive won't write AFD into the video |
+| bitDepth | [Av1BitDepth](#channels-channelid-stop-model-av1bitdepth) | False | Specifies the bit depth for the output encode. Choose a value. Or leave the field empty to use the default, which is 8 bit. |
+| bitrate | integer<br />Minimum: 50000<br />Maximum: 12000000 | False | Average bitrate in bits/second. Required when the rate control mode is CBR. Not used for QVBR. |
+| bufSize | integer<br />Minimum: 50000<br />Maximum: 24000000 | False | The size of the buffer (HRD buffer model) in bits. |
+| colorSpaceSettings | [Av1ColorSpaceSettings](#channels-channelid-stop-model-av1colorspacesettings) | False | Specify the type of color space to apply or choose to pass through. The default is to pass through the color space that is in the source. |
+| fixedAfd | [FixedAfd](#channels-channelid-stop-model-fixedafd) | False | Complete this property only if you set the afdSignaling property to FIXED. Choose the AFD value (4 bits) to write on all frames of the video encode. |
+| framerateDenominator | integer<br />Minimum: 1<br />Maximum: 3003 | True | The denominator for the framerate. Framerate is a fraction, for example, 24000 / 1001. |
+| framerateNumerator | integer<br />Minimum: 1 | True | The numerator for the framerate. Framerate is a fraction, for example, 24000 / 1001. |
+| gopSize | number<br />Minimum: 0 | False | The GOP size (keyframe interval). If GopSizeUnits is frames, GopSize must be a whole number and must be greater than or equal to 1. If GopSizeUnits is seconds, GopSize must be greater than 0, but it can be a decimal. |
+| gopSizeUnits | [Av1GopSizeUnits](#channels-channelid-stop-model-av1gopsizeunits) | False | Choose the units for the GOP size: FRAMES or SECONDS. For SECONDS, MediaLive converts the size into a frame count at run time. |
+| level | [Av1Level](#channels-channelid-stop-model-av1level) | False | Sets the level. This parameter is one of the properties of the encoding scheme for AV1. |
+| lookAheadRateControl | [Av1LookAheadRateControl](#channels-channelid-stop-model-av1lookaheadratecontrol) | False | Sets the amount of lookahead. A value of LOW can decrease latency and memory usage. A value of HIGH can produce better quality for certain content. |
+| maxBitrate | integer<br />Minimum: 50000<br />Maximum: 12000000 | False | The maximum bitrate to assign. For recommendations, see the description for qvbrQualityLevel. |
+| minBitrate | integer<br />Minimum: 0<br />Maximum: 8000000 | False | Used for QVBR rate control mode only. Optional. Enter a minimum bitrate if you want to keep the output bitrate about a threshold, in order to prevent the downstream system from de-allocating network bandwidth for this output. |
+| minIInterval | integer<br />Minimum: 0<br />Maximum: 30 | False | Applies only if you enable SceneChangeDetect. Sets the interval between frames. This property ensures a minimum separation between repeated (cadence) I-frames and any I-frames inserted by scene change detection (SCD frames). Enter a number for the interval, measured in number of frames. If an SCD frame and a cadence frame are closer than the specified number of frames, MediaLive shrinks or stretches the GOP to include the SCD frame. Then normal cadence resumes in the next GOP. For GOP stretch to succeed, you must enable LookAheadRateControl. Note that the maximum GOP stretch = (GOP size) \+ (Minimum I-interval) - 1 |
+| parDenominator | integer<br />Minimum: 1 | False | The denominator for the output pixel aspect ratio (PAR). |
+| parNumerator | integer<br />Minimum: 1 | False | The numerator for the output pixel aspect ratio (PAR). |
+| qvbrQualityLevel | integer<br />Minimum: 1<br />Maximum: 10 | False | Controls the target quality for the video encode. With QVBR rate control mode, the final quality is the target quality, constrained by the maxBitrate. Set values for the qvbrQualityLevel property and maxBitrate property that suit your most important viewing devices. To let MediaLive set the quality level (AUTO mode), leave the qvbrQualityLevel field empty. In this case, MediaLive uses the maximum bitrate, and the quality follows from that: more complex content might have a lower quality. Or set a target quality level and a maximum bitrate. With more complex content, MediaLive will try to achieve the target quality, but it won't exceed the maximum bitrate. With less complex content, This option will use only the bitrate needed to reach the target quality. Recommended values are: Primary screen: qvbrQualityLevel: Leave empty. maxBitrate: 4,000,000 PC or tablet: qvbrQualityLevel: Leave empty. maxBitrate: 1,500,000 to 3,000,000 Smartphone: qvbrQualityLevel: Leave empty. maxBitrate: 1,000,000 to 1,500,000 |
+| rateControlMode | [Av1RateControlMode](#channels-channelid-stop-model-av1ratecontrolmode) | False | Rate control mode. QVBR: Quality will match the specified quality level except when it is constrained by the maximum bitrate. Recommended if you or your viewers pay for bandwidth. CBR: Quality varies, depending on the video complexity. Recommended only if you distribute your assets to devices that cannot handle variable bitrates. |
+| sceneChangeDetect | [Av1SceneChangeDetect](#channels-channelid-stop-model-av1scenechangedetect) | False | Controls whether MediaLive inserts I-frames when it detects a scene change. ENABLED or DISABLED. |
+| spatialAq | [Av1SpatialAq](#channels-channelid-stop-model-av1spatialaq) | False | Spatial AQ makes adjustments within each frame based on spatial variation of content complexity. Enabled: MediaLive will determine the appropriate level of spatial AQ to apply. Disabled: No spatial AQ. For more information, see the topic about video adaptive quantization in the MediaLive user guide. |
+| temporalAq | [Av1TemporalAq](#channels-channelid-stop-model-av1temporalaq) | False | Temporal AQ makes adjustments within each frame based on variations in content complexity over time. Enabled: MediaLive will determine the appropriate level of temporal AQ to apply. Disabled: No temporal AQ. For more information, see the topic about video adaptive quantization in the MediaLive user guide. |
+| timecodeBurninSettings | [TimecodeBurninSettings](#channels-channelid-stop-model-timecodeburninsettings) | False | Configures the timecode burn-in feature. If you enable this feature, the timecode will become part of the video. |
+| timecodeInsertion | [Av1TimecodeInsertionBehavior](#channels-channelid-stop-model-av1timecodeinsertionbehavior) | False | Controls how MediaLive inserts timecodes into the video output encode. DISABLED: Do not insert timecodes. METADATA\_OBU: Include timecodes. MediaLive inserts timecode metadata based on the timecode from the source specified in the Timecode Config property. The timecode metadata is a metadata OBU (Open Bitstream Unit) of type METADATA\_TYPE\_TIMECODE, in accordance with https://aomediacodec.github.io/av1-spec/\#metadata-timecode-syntax. |
+
+### Av1SpatialAq
+<a name="channels-channelid-stop-model-av1spatialaq"></a>
+
+Av1 Spatial Aq
++ `DISABLED`
++ `ENABLED`
+
+### Av1TemporalAq
+<a name="channels-channelid-stop-model-av1temporalaq"></a>
+
+Av1 Temporal Aq
++ `DISABLED`
++ `ENABLED`
+
+### Av1TimecodeInsertionBehavior
+<a name="channels-channelid-stop-model-av1timecodeinsertionbehavior"></a>
+
+Av1 Timecode Insertion Behavior
++ `DISABLED`
++ `METADATA_OBU`
+
 ### AvailBlanking
 <a name="channels-channelid-stop-model-availblanking"></a>
 
@@ -1735,6 +2415,7 @@ Avail Configuration
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | availSettings | [AvailSettings](#channels-channelid-stop-model-availsettings) | False | Ad avail settings. |
+| scte35SegmentationScope | [Scte35SegmentationScope](#channels-channelid-stop-model-scte35segmentationscope) | False | Configures whether SCTE 35 passthrough triggers segment breaks in all output groups that use segmented outputs. Insertion of a SCTE 35 message typically results in a segment break, in addition to the regular cadence of breaks. The segment breaks appear in video outputs, audio outputs, and captions outputs (if any). ALL\_OUTPUT\_GROUPS: Default. Insert the segment break in all output groups that have segmented outputs. This is the legacy behavior. SCTE35\_ENABLED\_OUTPUT\_GROUPS: Insert the segment break only in output groups that have SCTE 35 passthrough enabled. This is the recommended value, because it reduces unnecessary segment breaks. |
 
 ### AvailSettings
 <a name="channels-channelid-stop-model-availsettings"></a>
@@ -1743,6 +2424,7 @@ Avail Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| esam | [Esam](#channels-channelid-stop-model-esam) | False |  |
 | scte35SpliceInsert | [Scte35SpliceInsert](#channels-channelid-stop-model-scte35spliceinsert) | False |  |
 | scte35TimeSignalApos | [Scte35TimeSignalApos](#channels-channelid-stop-model-scte35timesignalapos) | False |  |
 
@@ -1752,6 +2434,35 @@ Avail Settings
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | message | string | False |  |
+
+### BandwidthReductionFilterSettings
+<a name="channels-channelid-stop-model-bandwidthreductionfiltersettings"></a>
+
+Bandwidth Reduction Filter Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| postFilterSharpening | [BandwidthReductionPostFilterSharpening](#channels-channelid-stop-model-bandwidthreductionpostfiltersharpening) | False | Configures the sharpening control, which is available when the bandwidth reduction filter is enabled. This control sharpens edges and contours, which produces a specific artistic effect that you might want. We recommend that you test each of the values (including DISABLED) to observe the sharpening effect on the content. |
+| strength | [BandwidthReductionFilterStrength](#channels-channelid-stop-model-bandwidthreductionfilterstrength) | False | Enables the bandwidth reduction filter. The filter strengths range from 1 to 4. We recommend that you always enable this filter and use AUTO, to let MediaLive apply the optimum filtering for the context. |
+
+### BandwidthReductionFilterStrength
+<a name="channels-channelid-stop-model-bandwidthreductionfilterstrength"></a>
+
+Bandwidth Reduction Filter Strength
++ `AUTO`
++ `STRENGTH_1`
++ `STRENGTH_2`
++ `STRENGTH_3`
++ `STRENGTH_4`
+
+### BandwidthReductionPostFilterSharpening
+<a name="channels-channelid-stop-model-bandwidthreductionpostfiltersharpening"></a>
+
+Bandwidth Reduction Post Filter Sharpening
++ `DISABLED`
++ `SHARPENING_1`
++ `SHARPENING_2`
++ `SHARPENING_3`
 
 ### BlackoutSlate
 <a name="channels-channelid-stop-model-blackoutslate"></a>
@@ -1817,9 +2528,18 @@ Burn In Destination Settings
 | shadowOpacity | integer<br />Minimum: 0<br />Maximum: 255 | False | Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter out is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match. |
 | shadowXOffset | integer | False | Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match. |
 | shadowYOffset | integer | False | Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match. |
+| subtitleRows | [BurnInDestinationSubtitleRows](#channels-channelid-stop-model-burnindestinationsubtitlerows) | False | Applies only when the input captions are Teletext and the output captions are DVB-Sub or Burn-In. Choose the number of lines for the captions bitmap. The captions bitmap is 700 wide × 576 high and will be laid over the video. For example, a value of 16 divides the bitmap into 16 lines, with each line 36 pixels high (16 × 36 = 576). The default is 24 (24 pixels high). Enter the same number in every encode in every output that converts the same Teletext source to DVB-Sub or Burn-in. |
 | teletextGridControl | [BurnInTeletextGridControl](#channels-channelid-stop-model-burninteletextgridcontrol) | False | Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs. |
 | xPosition | integer<br />Minimum: 0 | False | Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. All burn-in and DVB-Sub font settings must match. |
 | yPosition | integer<br />Minimum: 0 | False | Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. All burn-in and DVB-Sub font settings must match. |
+
+### BurnInDestinationSubtitleRows
+<a name="channels-channelid-stop-model-burnindestinationsubtitlerows"></a>
+
+Burn In Destination Subtitle Rows
++ `ROWS_16`
++ `ROWS_20`
++ `ROWS_24`
 
 ### BurnInFontColor
 <a name="channels-channelid-stop-model-burninfontcolor"></a>
@@ -1865,8 +2585,11 @@ Caption Description
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| accessibility | [AccessibilityType](#channels-channelid-stop-model-accessibilitytype) | False | Indicates whether the caption track implements accessibility features such as written descriptions of spoken dialog, music, and sounds. |
+| captionDashRoles | Array of type [DashRoleCaption](#channels-channelid-stop-model-dashrolecaption) | False | Identifies the DASH roles to assign to this captions output. Applies only when the captions output is configured for DVB DASH accessibility signaling. |
 | captionSelectorName | string | True | Specifies which input caption selector to use as a caption source when generating output captions. This field should match a captionSelector name. |
 | destinationSettings | [CaptionDestinationSettings](#channels-channelid-stop-model-captiondestinationsettings) | False | Additional settings for captions destination that depend on the destination type. |
+| dvbDashAccessibility | [DvbDashAccessibility](#channels-channelid-stop-model-dvbdashaccessibility) | False | Identifies DVB DASH accessibility signaling in this captions output. Used in Microsoft Smooth Streaming outputs to signal accessibility information to packagers. |
 | languageCode | string | False | ISO 639-2 three-digit code: http://www.loc.gov/standards/iso639-2/ |
 | languageDescription | string | False | Human readable information to indicate captions available for players (eg. English, or Spanish). |
 | name | string | True | Name of the caption description. Used to associate a caption description with an output. Names must be unique within an event. |
@@ -1939,7 +2662,17 @@ Caption Selector Settings
 | embeddedSourceSettings | [EmbeddedSourceSettings](#channels-channelid-stop-model-embeddedsourcesettings) | False |  |
 | scte20SourceSettings | [Scte20SourceSettings](#channels-channelid-stop-model-scte20sourcesettings) | False |  |
 | scte27SourceSettings | [Scte27SourceSettings](#channels-channelid-stop-model-scte27sourcesettings) | False |  |
+| smartSubtitleSourceSettings | [SmartSubtitleSourceSettings](#channels-channelid-stop-model-smartsubtitlesourcesettings) | False | Settings for a caption selector that uses subtitles that AWS Elemental Inference generates from the channel audio (Smart Subtitles). The channel must include `InferenceSettings` that associate the channel with an Elemental Inference feed. |
 | teletextSourceSettings | [TeletextSourceSettings](#channels-channelid-stop-model-teletextsourcesettings) | False |  |
+
+### CaptionSynchronizationMode
+<a name="channels-channelid-stop-model-captionsynchronizationmode"></a>
+
+Controls how MediaLive synchronizes subtitles that AWS Elemental Inference generates with the video output. Valid values:
++ `VIDEO_ALIGNED_CAPTIONS` – MediaLive delays the video so that the captions appear at the same time as the speech they transcribe. This is the default.
++ `NO_VIDEO_DELAY` – MediaLive doesn't delay the video. It inserts the captions into the video as they become available from Elemental Inference, so captions appear later than the speech they transcribe.
++ `NO_VIDEO_DELAY`
++ `VIDEO_ALIGNED_CAPTIONS`
 
 ### CdiInputResolution
 <a name="channels-channelid-stop-model-cdiinputresolution"></a>
@@ -2010,6 +2743,39 @@ A standard channel has two encoding pipelines and a single pipeline channel only
 + `UPDATING`
 + `UPDATE_FAILED`
 
+### CmafId3Behavior
+<a name="channels-channelid-stop-model-cmafid3behavior"></a>
+
+Cmaf Id3 Behavior
++ `DISABLED`
++ `ENABLED`
+
+### CmafIngestAbWatermarkerIrdetoSettings
+<a name="channels-channelid-stop-model-cmafingestabwatermarkerirdetosettings"></a>
+
+A/B Watermarker settings for CMAF Ingest output groups.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| additionalDestinationsAlternateDestinations | Array of type [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | False | The "B" pipeline renditions for the additional destinations. |
+| alternateDestination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True | The "B" pipeline renditions for the main destination. |
+| customProfile | [AbWatermarkingCustomProfile](#channels-channelid-stop-model-abwatermarkingcustomprofile) | False | The vendor-provided custom profile values. |
+| license | string | False | The name of the Secrets Manager secret containing the license file. |
+| operatorId | integer<br />Minimum: 1<br />Maximum: 511 | True | The vendor-provided Operator ID. |
+| polyPeriod | integer<br />Minimum: 1<br />Maximum: 1000 | False | The number of segments per watermarking bit. The total duration of the watermarking bit should be the LCM (least common multiple) of all segments sizes emitted by the downstream packager. |
+| profile | [AbWatermarkingProfile](#channels-channelid-stop-model-abwatermarkingprofile) | True | The vendor-provided profile choice. |
+| watermarkIdLength | [AbWatermarkerIdLength](#channels-channelid-stop-model-abwatermarkeridlength) | False | The number of bits that compose the watermarking identifier to be embedded. |
+
+### CmafIngestCaptionLanguageMapping
+<a name="channels-channelid-stop-model-cmafingestcaptionlanguagemapping"></a>
+
+Add an array item for each language. Follow the order of the caption descriptions. For example, if the first caption description is for German, then the first array item must be for German, and its caption channel must be set to 1. The second array item must be 2, and so on.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| captionChannel | integer<br />Minimum: 1<br />Maximum: 4 | True | A number for the channel for this caption, 1 to 4. |
+| languageCode | string<br />MinLength: 3<br />MaxLength: 3 | True | Language code for the language of the caption in this channel. For example, ger/deu. See http://www.loc.gov/standards/iso639-2 |
+
 ### CmafIngestGroupSettings
 <a name="channels-channelid-stop-model-cmafingestgroupsettings"></a>
 
@@ -2017,12 +2783,149 @@ Contains the settings for a Common Media Application Format (CMAF) Ingest output
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| scte35Type | [Scte35Type](#channels-channelid-stop-model-scte35type) | False | The SCTE-35 insertion behavior for this CMAF Ingest output group. If you don't specify a value, the channel doesn't insert SCTE-35 messages (NONE). |
+| additionalDestinations | Array of type [AdditionalDestinations](#channels-channelid-stop-model-additionaldestinations) | False | Optional an array of additional destinational HTTP destinations for the OutputGroup outputs |
+| captionLanguageMappings | Array of type [CmafIngestCaptionLanguageMapping](#channels-channelid-stop-model-cmafingestcaptionlanguagemapping) | False | An array that identifies the languages in the four caption channels in the embedded captions. |
+| destination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True | A HTTP destination for the tracks |
+| id3Behavior | [CmafId3Behavior](#channels-channelid-stop-model-cmafid3behavior) | False | Set to ENABLED to enable ID3 metadata insertion. To include metadata, you configure other parameters in the output group, or you add an ID3 action to the channel schedule. |
+| id3NameModifier | string<br />MaxLength: 100 | False | Change the modifier that MediaLive automatically adds to the Streams() name that identifies an ID3 track. The default is "id3", which means the default name will be Streams(id3.cmfm). Any string you enter here will replace the "id3" string. The modifier can only contain: numbers, letters, plus (\+), minus (-), underscore (\_) and period (.) and has a maximum length of 100 characters. |
+| klvBehavior | [CmafKLVBehavior](#channels-channelid-stop-model-cmafklvbehavior) | False | If set to passthrough, passes any KLV data from the input source to this output. |
+| klvNameModifier | string<br />MaxLength: 100 | False | Change the modifier that MediaLive automatically adds to the Streams() name that identifies a KLV track. The default is "klv", which means the default name will be Streams(klv.cmfm). Any string you enter here will replace the "klv" string. The modifier can only contain: numbers, letters, plus (\+), minus (-), underscore (\_) and period (.) and has a maximum length of 100 characters. |
+| nielsenId3Behavior | [CmafNielsenId3Behavior](#channels-channelid-stop-model-cmafnielsenid3behavior) | False | If set to passthrough, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output. |
+| nielsenId3NameModifier | string<br />MaxLength: 100 | False | Change the modifier that MediaLive automatically adds to the Streams() name that identifies a Nielsen ID3 track. The default is "nid3", which means the default name will be Streams(nid3.cmfm). Any string you enter here will replace the "nid3" string. The modifier can only contain: numbers, letters, plus (\+), minus (-), underscore (\_) and period (.) and has a maximum length of 100 characters. |
+| scte35NameModifier | string<br />MaxLength: 100 | False | Change the modifier that MediaLive automatically adds to the Streams() name for a SCTE 35 track. The default is "scte", which means the default name will be Streams(scte.cmfm). Any string you enter here will replace the "scte" string. The modifier can only contain: numbers, letters, plus (\+), minus (-), underscore (\_) and period (.) and has a maximum length of 100 characters. |
+| scte35Type | [Scte35Type](#channels-channelid-stop-model-scte35type) | False | The SCTE-35 insertion behavior for this CMAF Ingest output group. Valid values:+ `NONE` – The channel does not insert SCTE-35 messages.<br />+ `SCTE_35_WITHOUT_IDR` – The channel inserts SCTE-35 messages without an Instantaneous Decoder Refresh (IDR) frame at the cue point.<br />+ `SCTE_35_WITHOUT_SEGMENTATION` – The channel inserts SCTE-35 messages with an IDR frame, but without a new segment boundary.<br />If you don't specify a value, the channel doesn't insert SCTE-35 messages (`NONE`). |
+| segmentLength | integer<br />Minimum: 1 | False | The nominal duration of segments. The units are specified in SegmentLengthUnits. The segments will end on the next keyframe after the specified duration, so the actual segment length might be longer, and it might be a fraction of the units. |
+| segmentLengthUnits | [CmafIngestSegmentLengthUnits](#channels-channelid-stop-model-cmafingestsegmentlengthunits) | False | Time unit for segment length parameter. |
+| sendDelayMs | integer<br />Minimum: 0<br />Maximum: 2000 | False | Number of milliseconds to delay the output from the second pipeline. |
+| timedMetadataId3Frame | [CmafTimedMetadataId3Frame](#channels-channelid-stop-model-cmaftimedmetadataid3frame) | False | Set to none if you don't want to insert a timecode in the output. Otherwise choose the frame type for the timecode. |
+| timedMetadataId3Period | integer<br />Minimum: 0<br />Maximum: 10000 | False | If you set up to insert a timecode in the output, specify the frequency for the frame, in seconds. |
+| timedMetadataPassthrough | [CmafTimedMetadataPassthrough](#channels-channelid-stop-model-cmaftimedmetadatapassthrough) | False | Set to enabled to pass through ID3 metadata from the input sources. |
+| watermarkingSettings | [CmafIngestWatermarkingSettings](#channels-channelid-stop-model-cmafingestwatermarkingsettings) | False | Specifies the type of watermarking technology to use. |
+
+### CmafIngestOutputSettings
+<a name="channels-channelid-stop-model-cmafingestoutputsettings"></a>
+
+Cmaf Ingest Output Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| nameModifier | string | False | String concatenated to the end of the destination filename. Required for multiple outputs of the same type. |
+
+### CmafIngestSegmentLengthUnits
+<a name="channels-channelid-stop-model-cmafingestsegmentlengthunits"></a>
+
+Cmaf Ingest Segment Length Units
++ `MILLISECONDS`
++ `SECONDS`
+
+### CmafIngestWatermarkingSettings
+<a name="channels-channelid-stop-model-cmafingestwatermarkingsettings"></a>
+
+A/B Watermarker settings for CMAF Ingest output groups.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| cmafIngestAbWatermarkerIrdetoSettings | [CmafIngestAbWatermarkerIrdetoSettings](#channels-channelid-stop-model-cmafingestabwatermarkerirdetosettings) | False |  |
+
+### CmafKLVBehavior
+<a name="channels-channelid-stop-model-cmafklvbehavior"></a>
+
+Cmaf KLVBehavior
++ `NO_PASSTHROUGH`
++ `PASSTHROUGH`
+
+### CmafNielsenId3Behavior
+<a name="channels-channelid-stop-model-cmafnielsenid3behavior"></a>
+
+Cmaf Nielsen Id3 Behavior
++ `NO_PASSTHROUGH`
++ `PASSTHROUGH`
+
+### CmafTimedMetadataId3Frame
+<a name="channels-channelid-stop-model-cmaftimedmetadataid3frame"></a>
+
+Cmaf Timed Metadata Id3 Frame
++ `NONE`
++ `PRIV`
++ `TDRL`
+
+### CmafTimedMetadataPassthrough
+<a name="channels-channelid-stop-model-cmaftimedmetadatapassthrough"></a>
+
+Cmaf Timed Metadata Passthrough
++ `DISABLED`
++ `ENABLED`
+
+### ColorCorrection
+<a name="channels-channelid-stop-model-colorcorrection"></a>
+
+Property of ColorCorrectionSettings. Used for custom color space conversion. The object identifies one 3D LUT file and specifies the input/output color space combination that the file will be used for.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| inputColorSpace | [ColorSpace](#channels-channelid-stop-model-colorspace) | True | The color space of the input. |
+| outputColorSpace | [ColorSpace](#channels-channelid-stop-model-colorspace) | True | The color space of the output. |
+| uri | string | True | The URI of the 3D LUT file. The protocol must be 's3:' or 's3ssl:':. |
+
+### ColorCorrectionSettings
+<a name="channels-channelid-stop-model-colorcorrectionsettings"></a>
+
+Property of encoderSettings. Controls color conversion when you are using 3D LUT files to perform color conversion on video.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| globalColorCorrections | Array of type [ColorCorrection](#channels-channelid-stop-model-colorcorrection) | True | An array of colorCorrections that applies when you are using 3D LUT files to perform color conversion on video. Each colorCorrection contains one 3D LUT file (that defines the color mapping for converting an input color space to an output color space), and the input/output combination that this 3D LUT file applies to. MediaLive reads the color space in the input metadata, determines the color space that you have specified for the output, and finds and uses the LUT file that applies to this combination. |
+
+### ColorSpace
+<a name="channels-channelid-stop-model-colorspace"></a>
+
+Property of colorCorrections. When you are using 3D LUT files to perform color conversion on video, these are the supported color spaces.
++ `HDR10`
++ `HLG_2020`
++ `REC_601`
++ `REC_709`
 
 ### ColorSpacePassthroughSettings
 <a name="channels-channelid-stop-model-colorspacepassthroughsettings"></a>
 
 Passthrough applies no color space conversion to the output
+
+### ConnectionMode
+<a name="channels-channelid-stop-model-connectionmode"></a>
++ `CALLER`
++ `LISTENER`
+
+### DashRoleAudio
+<a name="channels-channelid-stop-model-dashroleaudio"></a>
+
+Dash Role Audio
++ `ALTERNATE`
++ `COMMENTARY`
++ `DESCRIPTION`
++ `DUB`
++ `EMERGENCY`
++ `ENHANCED-AUDIO-INTELLIGIBILITY`
++ `KARAOKE`
++ `MAIN`
++ `SUPPLEMENTARY`
+
+### DashRoleCaption
+<a name="channels-channelid-stop-model-dashrolecaption"></a>
+
+Dash Role Caption
++ `ALTERNATE`
++ `CAPTION`
++ `COMMENTARY`
++ `DESCRIPTION`
++ `DUB`
++ `EASYREADER`
++ `EMERGENCY`
++ `FORCED-SUBTITLE`
++ `KARAOKE`
++ `MAIN`
++ `METADATA`
++ `SUBTITLE`
++ `SUPPLEMENTARY`
 
 ### DescribeInferenceSettings
 <a name="channels-channelid-stop-model-describeinferencesettings"></a>
@@ -2031,8 +2934,49 @@ Contains the Elemental Inference configuration for a channel, as returned by Des
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| audioFeedInputs | Array of type [AudioFeedInput](#channels-channelid-stop-model-audiofeedinput) | False | A list of audio feed inputs that map audio selectors in the channel to feed inputs on the associated AWS Elemental Inference feed. |
 | enrichmentMethods | Array of type [EnrichmentMethod](#channels-channelid-stop-model-enrichmentmethod) | False | The Contextual Metadata Enrichment methods enabled for this channel. Each method defines how the channel augments its output with contextual metadata from the Elemental Inference feed. Valid values:+ `SCTE35_ELEMENTAL_INFERENCE_QUERY_PARAMS` – Enriches outbound SCTE-35 messages with query parameters that downstream systems can use to call the Elemental Inference GetMetadata API. |
 | feedArn | string | False | The Amazon Resource Name (ARN) of the feed resource that is associated with this channel. The feed is a resource in the Elemental Inference service. |
+
+### DisabledLockingSettings
+<a name="channels-channelid-stop-model-disabledlockingsettings"></a>
+
+Disabled Locking Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| customEpoch | string | False | Optional. Only applies to CMAF Ingest Output Group and MediaPackage V2 Output Group. Enter a value here to use a custom epoch, instead of the standard epoch (which started at 1970-01-01T00:00:00 UTC). Specify the start time of the custom epoch, in YYYY-MM-DDTHH:MM:SS in UTC. The time must be 2000-01-01T00:00:00 or later. Always set the MM:SS portion to 00:00. |
+
+### DolbyEProgramSelection
+<a name="channels-channelid-stop-model-dolbyeprogramselection"></a>
+
+Dolby EProgram Selection
++ `ALL_CHANNELS`
++ `PROGRAM_1`
++ `PROGRAM_2`
++ `PROGRAM_3`
++ `PROGRAM_4`
++ `PROGRAM_5`
++ `PROGRAM_6`
++ `PROGRAM_7`
++ `PROGRAM_8`
+
+### DolbyVision81Settings
+<a name="channels-channelid-stop-model-dolbyvision81settings"></a>
+
+Dolby Vision81 Settings
+
+### DvbDashAccessibility
+<a name="channels-channelid-stop-model-dvbdashaccessibility"></a>
+
+Dvb Dash Accessibility
++ `DVBDASH_1_VISUALLY_IMPAIRED`
++ `DVBDASH_2_HARD_OF_HEARING`
++ `DVBDASH_3_SUPPLEMENTAL_COMMENTARY`
++ `DVBDASH_4_DIRECTORS_COMMENTARY`
++ `DVBDASH_5_EDUCATIONAL_NOTES`
++ `DVBDASH_6_MAIN_PROGRAM`
++ `DVBDASH_7_CLEAN_FEED`
 
 ### DvbNitSettings
 <a name="channels-channelid-stop-model-dvbnitsettings"></a>
@@ -2125,6 +3069,7 @@ Dvb Sub Destination Settings
 | shadowOpacity | integer<br />Minimum: 0<br />Maximum: 255 | False | Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match. |
 | shadowXOffset | integer | False | Specifies the horizontal offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels to the left. All burn-in and DVB-Sub font settings must match. |
 | shadowYOffset | integer | False | Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match. |
+| subtitleRows | [DvbSubDestinationSubtitleRows](#channels-channelid-stop-model-dvbsubdestinationsubtitlerows) | False | Applies only when the input captions are Teletext and the output captions are DVB-Sub or Burn-In. Choose the number of lines for the captions bitmap. The captions bitmap is 700 wide × 576 high and will be laid over the video. For example, a value of 16 divides the bitmap into 16 lines, with each line 36 pixels high (16 × 36 = 576). The default is 24 (24 pixels high). Enter the same number in every encode in every output that converts the same Teletext source to DVB-Sub or Burn-in. |
 | teletextGridControl | [DvbSubDestinationTeletextGridControl](#channels-channelid-stop-model-dvbsubdestinationteletextgridcontrol) | False | Controls whether a fixed grid size will be used to generate the output subtitles bitmap. Only applicable for Teletext inputs and DVB-Sub/Burn-in outputs. |
 | xPosition | integer<br />Minimum: 0 | False | Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit xPosition is provided, the horizontal caption position will be determined by the alignment parameter. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match. |
 | yPosition | integer<br />Minimum: 0 | False | Specifies the vertical position of the caption relative to the top of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the top of the output. If no explicit yPosition is provided, the caption will be positioned towards the bottom of the output. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match. |
@@ -2136,6 +3081,14 @@ Dvb Sub Destination Shadow Color
 + `BLACK`
 + `NONE`
 + `WHITE`
+
+### DvbSubDestinationSubtitleRows
+<a name="channels-channelid-stop-model-dvbsubdestinationsubtitlerows"></a>
+
+Dvb Sub Destination Subtitle Rows
++ `ROWS_16`
++ `ROWS_20`
++ `ROWS_24`
 
 ### DvbSubDestinationTeletextGridControl
 <a name="channels-channelid-stop-model-dvbsubdestinationteletextgridcontrol"></a>
@@ -2173,6 +3126,51 @@ DVB Time and Date Table (SDT)
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | repInterval | integer<br />Minimum: 1000<br />Maximum: 30000 | False | The number of milliseconds between instances of this table in the output transport stream. |
+
+### Eac3AtmosCodingMode
+<a name="channels-channelid-stop-model-eac3atmoscodingmode"></a>
+
+Eac3 Atmos Coding Mode
++ `CODING_MODE_5_1_4`
++ `CODING_MODE_7_1_4`
++ `CODING_MODE_9_1_6`
+
+### Eac3AtmosDrcLine
+<a name="channels-channelid-stop-model-eac3atmosdrcline"></a>
+
+Eac3 Atmos Drc Line
++ `FILM_LIGHT`
++ `FILM_STANDARD`
++ `MUSIC_LIGHT`
++ `MUSIC_STANDARD`
++ `NONE`
++ `SPEECH`
+
+### Eac3AtmosDrcRf
+<a name="channels-channelid-stop-model-eac3atmosdrcrf"></a>
+
+Eac3 Atmos Drc Rf
++ `FILM_LIGHT`
++ `FILM_STANDARD`
++ `MUSIC_LIGHT`
++ `MUSIC_STANDARD`
++ `NONE`
++ `SPEECH`
+
+### Eac3AtmosSettings
+<a name="channels-channelid-stop-model-eac3atmossettings"></a>
+
+Eac3 Atmos Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| bitrate | number | False | Average bitrate in bits/second. Valid bitrates depend on the coding mode. |
+| codingMode | [Eac3AtmosCodingMode](#channels-channelid-stop-model-eac3atmoscodingmode) | False | Dolby Digital Plus with Dolby Atmos coding mode. Determines number of channels. |
+| dialnorm | integer<br />Minimum: 1<br />Maximum: 31 | False | Sets the dialnorm for the output. Default 23. |
+| drcLine | [Eac3AtmosDrcLine](#channels-channelid-stop-model-eac3atmosdrcline) | False | Sets the Dolby dynamic range compression profile. |
+| drcRf | [Eac3AtmosDrcRf](#channels-channelid-stop-model-eac3atmosdrcrf) | False | Sets the profile for heavy Dolby dynamic range compression, ensures that the instantaneous signal peaks do not exceed specified levels. |
+| heightTrim | number | False | Height dimensional trim. Sets the maximum amount to attenuate the height channels when the downstream player isn't configured to handle Dolby Digital Plus with Dolby Atmos and must remix the channels. |
+| surroundTrim | number | False | Surround dimensional trim. Sets the maximum amount to attenuate the surround channels when the downstream player isn't configured to handle Dolby Digital Plus with Dolby Atmos and must remix the channels. |
 
 ### Eac3AttenuationControl
 <a name="channels-channelid-stop-model-eac3attenuationcontrol"></a>
@@ -2324,6 +3322,8 @@ Ebu Tt DDestination Settings
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | copyrightHolder | string<br />MaxLength: 1000 | False | Applies only if you plan to convert these source captions to EBU-TT-D or TTML in an output. Complete this field if you want to include the name of the copyright holder in the copyright metadata tag in the TTML |
+| defaultFontSize | integer<br />Minimum: 1<br />Maximum: 800 | False | Specifies the default font size as a percentage of the computed cell size. Valid only if the defaultLineHeight is also set. If you leave this field empty, the default font size is 80% of the cell size. |
+| defaultLineHeight | integer<br />Minimum: 80<br />Maximum: 800 | False |  |
 | fillLineGap | [EbuTtDFillLineGapControl](#channels-channelid-stop-model-ebuttdfilllinegapcontrol) | False | Specifies how to handle the gap between the lines (in multi-line captions). - enabled: Fill with the captions background color (as specified in the input captions). - disabled: Leave the gap unfilled. |
 | fontFamily | string | False | Specifies the font family to include in the font data attached to the EBU-TT captions. Valid only if styleControl is set to include. If you leave this field empty, the font family is set to "monospaced". (If styleControl is set to exclude, the font family is always set to "monospaced".) You specify only the font family. All other style information (color, bold, position and so on) is copied from the input captions. The size is always set to 100% to allow the downstream player to choose the size. - Enter a list of font families, as a comma-separated list of font names, in order of preference. The name can be a font family (such as “Arial”), or a generic font family (such as “serif”), or “default” (to let the downstream player choose the font). - Leave blank to set the family to “monospace”. |
 | styleControl | [EbuTtDDestinationStyleControl](#channels-channelid-stop-model-ebuttddestinationstylecontrol) | False | Specifies the style information (font color, font position, and so on) to include in the font data that is attached to the EBU-TT captions. - include: Take the style information (font color, font position, and so on) from the source captions and include that information in the font data attached to the EBU-TT captions. This option is valid only if the source captions are Embedded or Teletext. - exclude: In the font data attached to the EBU-TT captions, set the font family to "monospaced". Do not include any other style information. |
@@ -2411,11 +3411,13 @@ Encoder Settings
 | availConfiguration | [AvailConfiguration](#channels-channelid-stop-model-availconfiguration) | False | Event-wide configuration settings for ad avail insertion. |
 | blackoutSlate | [BlackoutSlate](#channels-channelid-stop-model-blackoutslate) | False | Settings for blackout slate. |
 | captionDescriptions | Array of type [CaptionDescription](#channels-channelid-stop-model-captiondescription) | False | Settings for caption decriptions |
+| colorCorrectionSettings | [ColorCorrectionSettings](#channels-channelid-stop-model-colorcorrectionsettings) | False | Color Correction Settings |
 | featureActivations | [FeatureActivations](#channels-channelid-stop-model-featureactivations) | False | Feature Activations |
 | globalConfiguration | [GlobalConfiguration](#channels-channelid-stop-model-globalconfiguration) | False | Configuration settings that apply to the event as a whole. |
 | motionGraphicsConfiguration | [MotionGraphicsConfiguration](#channels-channelid-stop-model-motiongraphicsconfiguration) | False | Settings for motion graphics. |
 | nielsenConfiguration | [NielsenConfiguration](#channels-channelid-stop-model-nielsenconfiguration) | False | Nielsen configuration settings. |
 | outputGroups | Array of type [OutputGroup](#channels-channelid-stop-model-outputgroup) | True |  |
+| thumbnailConfiguration | [ThumbnailConfiguration](#channels-channelid-stop-model-thumbnailconfiguration) | False | Thumbnail configuration settings. |
 | timecodeConfig | [TimecodeConfig](#channels-channelid-stop-model-timecodeconfig) | True | Contains settings used to acquire and adjust timecode information from inputs. |
 | videoDescriptions | Array of type [VideoDescription](#channels-channelid-stop-model-videodescription) | True |  |
 
@@ -2424,6 +3426,30 @@ Encoder Settings
 
 A Contextual Metadata Enrichment method. For the valid values, see the `enrichmentMethods` field in `InferenceSettings`.
 + `SCTE35_ELEMENTAL_INFERENCE_QUERY_PARAMS`
+
+### EpochLockingSettings
+<a name="channels-channelid-stop-model-epochlockingsettings"></a>
+
+Epoch Locking Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| customEpoch | string | False | Optional. Enter a value here to use a custom epoch, instead of the standard epoch (which started at 1970-01-01T00:00:00 UTC). Specify the start time of the custom epoch, in YYYY-MM-DDTHH:MM:SS in UTC. The time must be 2000-01-01T00:00:00 or later. Always set the MM:SS portion to 00:00. |
+| jamSyncTime | string | False | Optional. Enter a time for the jam sync. The default is midnight UTC. When epoch locking is enabled, MediaLive performs a daily jam sync on every output encode to ensure timecodes don’t diverge from the wall clock. The jam sync applies only to encodes with frame rate of 29.97 or 59.94 FPS. To override, enter a time in HH:MM:SS in UTC. Always set the MM:SS portion to 00:00. |
+
+### Esam
+<a name="channels-channelid-stop-model-esam"></a>
+
+Esam
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| acquisitionPointId | string<br />MaxLength: 256 | True | Sent as acquisitionPointIdentity to identify the MediaLive channel to the POIS. |
+| adAvailOffset | integer<br />Minimum: -1000<br />Maximum: 1000 | False | When specified, this offset (in milliseconds) is added to the input Ad Avail PTS time. This only applies to embedded SCTE 104/35 messages and does not apply to OOB messages. |
+| passwordParam | string | False |  |
+| poisEndpoint | string<br />MaxLength: 2048 | True | The URL of the signal conditioner endpoint on the Placement Opportunity Information System (POIS). MediaLive sends SignalProcessingEvents here when SCTE-35 messages are read. |
+| username | string | False |  |
+| zoneIdentity | string<br />MaxLength: 256 | False | Optional data sent as zoneIdentity to identify the MediaLive channel to the POIS. |
 
 ### FailoverCondition
 <a name="channels-channelid-stop-model-failovercondition"></a>
@@ -2453,11 +3479,19 @@ Feature Activations
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | inputPrepareScheduleActions | [FeatureActivationsInputPrepareScheduleActions](#channels-channelid-stop-model-featureactivationsinputpreparescheduleactions) | False | Enables the Input Prepare feature. You can create Input Prepare actions in the schedule only if this feature is enabled. If you disable the feature on an existing schedule, make sure that you first delete all input prepare actions from the schedule. |
+| outputStaticImageOverlayScheduleActions | [FeatureActivationsOutputStaticImageOverlayScheduleActions](#channels-channelid-stop-model-featureactivationsoutputstaticimageoverlayscheduleactions) | False | Enables the output static image overlay feature. Enabling this feature allows you to send channel schedule updates to display/clear/modify image overlays on an output-by-output bases. |
 
 ### FeatureActivationsInputPrepareScheduleActions
 <a name="channels-channelid-stop-model-featureactivationsinputpreparescheduleactions"></a>
 
 Feature Activations Input Prepare Schedule Actions
++ `DISABLED`
++ `ENABLED`
+
+### FeatureActivationsOutputStaticImageOverlayScheduleActions
+<a name="channels-channelid-stop-model-featureactivationsoutputstaticimageoverlayscheduleactions"></a>
+
+Feature Activations Output Static Image Overlay Schedule Actions
 + `DISABLED`
 + `ENABLED`
 
@@ -2586,6 +3620,7 @@ Frame Capture Settings
 | --- |--- |--- |--- |
 | captureInterval | integer<br />Minimum: 1<br />Maximum: 3600000 | False | The frequency at which to capture frames for inclusion in the output. May be specified in either seconds or milliseconds, as specified by captureIntervalUnits. |
 | captureIntervalUnits | [FrameCaptureIntervalUnit](#channels-channelid-stop-model-framecaptureintervalunit) | False | Unit for the frame capture interval. |
+| timecodeBurninSettings | [TimecodeBurninSettings](#channels-channelid-stop-model-timecodeburninsettings) | False | Timecode burn-in settings |
 
 ### GatewayTimeoutException
 <a name="channels-channelid-stop-model-gatewaytimeoutexception"></a>
@@ -2605,6 +3640,7 @@ Global Configuration
 | inputEndAction | [GlobalConfigurationInputEndAction](#channels-channelid-stop-model-globalconfigurationinputendaction) | False | Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input. When "none" is configured the encoder will transcode either black, a solid color, or a user specified slate images per the "Input Loss Behavior" configuration until the next input switch occurs (which is controlled through the Channel Schedule API). |
 | inputLossBehavior | [InputLossBehavior](#channels-channelid-stop-model-inputlossbehavior) | False | Settings for system actions when input is lost. |
 | outputLockingMode | [GlobalConfigurationOutputLockingMode](#channels-channelid-stop-model-globalconfigurationoutputlockingmode) | False | Indicates how MediaLive pipelines are synchronized. PIPELINE\_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other. EPOCH\_LOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch. |
+| outputLockingSettings | [OutputLockingSettings](#channels-channelid-stop-model-outputlockingsettings) | False | Advanced output locking settings |
 | outputTimingSource | [GlobalConfigurationOutputTimingSource](#channels-channelid-stop-model-globalconfigurationoutputtimingsource) | False | Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream. |
 | supportLowFramerateInputs | [GlobalConfigurationLowFramerateInputs](#channels-channelid-stop-model-globalconfigurationlowframerateinputs) | False | Adjusts video input buffer for streams with very low video framerates. This is commonly set to enabled for music channels with less than one video frame per second. |
 
@@ -2626,6 +3662,7 @@ Global Configuration Low Framerate Inputs
 <a name="channels-channelid-stop-model-globalconfigurationoutputlockingmode"></a>
 
 Global Configuration Output Locking Mode
++ `DISABLED`
 + `EPOCH_LOCKING`
 + `PIPELINE_LOCKING`
 
@@ -2647,6 +3684,13 @@ H264 Adaptive Quantization
 + `MAX`
 + `MEDIUM`
 + `OFF`
+
+### H264AllowExplicitWeightedPrediction
+<a name="channels-channelid-stop-model-h264allowexplicitweightedprediction"></a>
+
+Specifies whether the encoder may apply explicit weighted prediction (EWP).
++ `DISABLED`
++ `ENABLED`
 
 ### H264ColorMetadata
 <a name="channels-channelid-stop-model-h264colormetadata"></a>
@@ -2680,6 +3724,7 @@ H264 Filter Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| bandwidthReductionFilterSettings | [BandwidthReductionFilterSettings](#channels-channelid-stop-model-bandwidthreductionfiltersettings) | False |  |
 | temporalFilterSettings | [TemporalFilterSettings](#channels-channelid-stop-model-temporalfiltersettings) | False |  |
 
 ### H264FlickerAq
@@ -2804,6 +3849,7 @@ H264 Settings
 | --- |--- |--- |--- |
 | adaptiveQuantization | [H264AdaptiveQuantization](#channels-channelid-stop-model-h264adaptivequantization) | False | Enables or disables adaptive quantization, which is a technique MediaLive can apply to video on a frame-by-frame basis to produce more compression without losing quality. There are three types of adaptive quantization: flicker, spatial, and temporal. Set the field in one of these ways: Set to Auto. Recommended. For each type of AQ, MediaLive will determine if AQ is needed, and if so, the appropriate strength. Set a strength (a value other than Auto or Disable). This strength will apply to any of the AQ fields that you choose to enable. Set to Disabled to disable all types of adaptive quantization. |
 | afdSignaling | [AfdSignaling](#channels-channelid-stop-model-afdsignaling) | False | Indicates that AFD values will be written into the output stream. If afdSignaling is "auto", the system will try to preserve the input AFD value (in cases where multiple AFD values are valid). If set to "fixed", the AFD value will be the value configured in the fixedAfd parameter. |
+| allowExplicitWeightedPrediction | [H264AllowExplicitWeightedPrediction](#channels-channelid-stop-model-h264allowexplicitweightedprediction) | False | Specifies whether the encoder may apply explicit weighted prediction (EWP), an H.264 coding tool that can improve compression. EWP applies a scaling factor and offset to reference frames, which helps when brightness changes between frames, such as during a fade. When this setting is ENABLED, the encoder decides whether to apply EWP based on the output's other codec settings, such as profile and quality level. We recommend that you keep the default, ENABLED. When DISABLED, the encoder never applies EWP. |
 | bitrate | integer<br />Minimum: 1000 | False | Average bitrate in bits/second. Required when the rate control mode is VBR or CBR. Not used for QVBR. In an MS Smooth output group, each output must have a unique value when its bitrate is rounded down to the nearest multiple of 1000. |
 | bufFillPct | integer<br />Minimum: 0<br />Maximum: 100 | False | Percentage of the buffer that should initially be filled (HRD buffer model). |
 | bufSize | integer<br />Minimum: 0 | False | Size of buffer (HRD buffer model) in bits. |
@@ -2825,7 +3871,9 @@ H264 Settings
 | level | [H264Level](#channels-channelid-stop-model-h264level) | False | H.264 Level. |
 | lookAheadRateControl | [H264LookAheadRateControl](#channels-channelid-stop-model-h264lookaheadratecontrol) | False | Amount of lookahead. A value of low can decrease latency and memory usage, while high can produce better quality for certain content. |
 | maxBitrate | integer<br />Minimum: 1000 | False | For QVBR: See the tooltip for Quality level For VBR: Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video. |
+| minBitrate | integer<br />Minimum: 0 | False | Used for QVBR rate control mode only. Optional. Enter a minimum bitrate if you want to keep the output bitrate about a threshold, in order to prevent the downstream system from de-allocating network bandwidth for this output. |
 | minIInterval | integer<br />Minimum: 0<br />Maximum: 30 | False | Only meaningful if sceneChangeDetect is set to enabled. Defaults to 5 if multiplex rate control is used. Enforces separation between repeated (cadence) I-frames and I-frames inserted by Scene Change Detection. If a scene change I-frame is within I-interval frames of a cadence I-frame, the GOP is shrunk and/or stretched to the scene change I-frame. GOP stretch requires enabling lookahead as well as setting I-interval. The normal cadence resumes for the next GOP. Note: Maximum GOP stretch = GOP size \+ Min-I-interval - 1 |
+| minQp | integer<br />Minimum: 1<br />Maximum: 51 | False | Sets the minimum QP. If you aren't familiar with quantization adjustment, leave the field empty. MediaLive will apply an appropriate value. |
 | numRefFrames | integer<br />Minimum: 1<br />Maximum: 6 | False | Number of reference frames to use. The encoder may use more than requested if using B-frames and/or interlaced encoding. |
 | parControl | [H264ParControl](#channels-channelid-stop-model-h264parcontrol) | False | This field indicates how the output pixel aspect ratio is specified. If "specified" is selected then the output video pixel aspect ratio is determined by parNumerator and parDenominator, else if "initializeFromSource" is selected then the output pixsel aspect ratio will be set equal to the input video pixel aspect ratio of the first input. |
 | parDenominator | integer<br />Minimum: 1 | False | Pixel Aspect Ratio denominator. |
@@ -2842,6 +3890,7 @@ H264 Settings
 | subgopLength | [H264SubGopLength](#channels-channelid-stop-model-h264subgoplength) | False | If set to fixed, use gopNumBFrames B-frames per sub-GOP. If set to dynamic, optimize the number of B-frames used for each sub-GOP to improve visual quality. |
 | syntax | [H264Syntax](#channels-channelid-stop-model-h264syntax) | False | Produces a bitstream compliant with SMPTE RP-2027. |
 | temporalAq | [H264TemporalAq](#channels-channelid-stop-model-h264temporalaq) | False | Temporal makes adjustments within each frame based on temporal variation of content complexity. The value to enter in this field depends on the value in the Adaptive quantization field: If you have set the Adaptive quantization field to Auto, MediaLive ignores any value in this field. MediaLive will determine if temporal AQ is appropriate and will apply the appropriate strength. If you have set the Adaptive quantization field to a strength, you can set this field to Enabled or Disabled. Enabled: MediaLive will apply temporal AQ using the specified strength. Disabled: MediaLive won't apply temporal AQ. If you have set the Adaptive quantization to Disabled, MediaLive ignores any value in this field and doesn't apply temporal AQ. |
+| timecodeBurninSettings | [TimecodeBurninSettings](#channels-channelid-stop-model-timecodeburninsettings) | False | Timecode burn-in settings |
 | timecodeInsertion | [H264TimecodeInsertionBehavior](#channels-channelid-stop-model-h264timecodeinsertionbehavior) | False | Determines how timecodes should be inserted into the video elementary stream. - 'disabled': Do not include timecodes - 'picTimingSei': Pass through picture timing SEI messages from the source specified in Timecode Config |
 
 ### H264SpatialAq
@@ -2913,9 +3962,18 @@ H265 Color Space Settings
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | colorSpacePassthroughSettings | [ColorSpacePassthroughSettings](#channels-channelid-stop-model-colorspacepassthroughsettings) | False |  |
+| dolbyVision81Settings | [DolbyVision81Settings](#channels-channelid-stop-model-dolbyvision81settings) | False |  |
 | hdr10Settings | [Hdr10Settings](#channels-channelid-stop-model-hdr10settings) | False |  |
+| hlg2020Settings | [Hlg2020Settings](#channels-channelid-stop-model-hlg2020settings) | False |  |
 | rec601Settings | [Rec601Settings](#channels-channelid-stop-model-rec601settings) | False |  |
 | rec709Settings | [Rec709Settings](#channels-channelid-stop-model-rec709settings) | False |  |
+
+### H265Deblocking
+<a name="channels-channelid-stop-model-h265deblocking"></a>
+
+H265 Deblocking
++ `DISABLED`
++ `ENABLED`
 
 ### H265FilterSettings
 <a name="channels-channelid-stop-model-h265filtersettings"></a>
@@ -2924,12 +3982,20 @@ H265 Filter Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| bandwidthReductionFilterSettings | [BandwidthReductionFilterSettings](#channels-channelid-stop-model-bandwidthreductionfiltersettings) | False |  |
 | temporalFilterSettings | [TemporalFilterSettings](#channels-channelid-stop-model-temporalfiltersettings) | False |  |
 
 ### H265FlickerAq
 <a name="channels-channelid-stop-model-h265flickeraq"></a>
 
 H265 Flicker Aq
++ `DISABLED`
++ `ENABLED`
+
+### H265GopBReference
+<a name="channels-channelid-stop-model-h265gopbreference"></a>
+
+H265 Gop BReference
 + `DISABLED`
 + `ENABLED`
 
@@ -2966,6 +4032,20 @@ H265 Look Ahead Rate Control
 + `HIGH`
 + `LOW`
 + `MEDIUM`
+
+### H265MvOverPictureBoundaries
+<a name="channels-channelid-stop-model-h265mvoverpictureboundaries"></a>
+
+H265 Mv Over Picture Boundaries
++ `DISABLED`
++ `ENABLED`
+
+### H265MvTemporalPredictor
+<a name="channels-channelid-stop-model-h265mvtemporalpredictor"></a>
+
+H265 Mv Temporal Predictor
++ `DISABLED`
++ `ENABLED`
 
 ### H265Profile
 <a name="channels-channelid-stop-model-h265profile"></a>
@@ -3010,18 +4090,25 @@ H265 Settings
 | bufSize | integer<br />Minimum: 100000<br />Maximum: 80000000 | False | Size of buffer (HRD buffer model) in bits. |
 | colorMetadata | [H265ColorMetadata](#channels-channelid-stop-model-h265colormetadata) | False | Includes colorspace metadata in the output. |
 | colorSpaceSettings | [H265ColorSpaceSettings](#channels-channelid-stop-model-h265colorspacesettings) | False | Color Space settings |
+| deblocking | [H265Deblocking](#channels-channelid-stop-model-h265deblocking) | False | Enable or disable the deblocking filter for this codec. The filter reduces blocking artifacts at block boundaries, which improves overall video quality. If the filter is disabled, visible block edges might appear in the output, especially at lower bitrates. |
 | filterSettings | [H265FilterSettings](#channels-channelid-stop-model-h265filtersettings) | False | Optional filters that you can apply to an encode. |
 | fixedAfd | [FixedAfd](#channels-channelid-stop-model-fixedafd) | False | Four bit AFD value to write on all frames of video in the output stream. Only valid when afdSignaling is set to 'Fixed'. |
 | flickerAq | [H265FlickerAq](#channels-channelid-stop-model-h265flickeraq) | False | If set to enabled, adjust quantization within each frame to reduce flicker or 'pop' on I-frames. |
 | framerateDenominator | integer<br />Minimum: 1<br />Maximum: 3003 | True | Framerate denominator. |
 | framerateNumerator | integer<br />Minimum: 1 | True | Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps. |
+| gopBReference | [H265GopBReference](#channels-channelid-stop-model-h265gopbreference) | False | Allows the encoder to use a B-Frame as a reference frame as well. ENABLED: B-frames will also serve as reference frames. DISABLED: B-frames won't be reference frames. Must be DISABLED if resolution is greater than 1080p or when using tiled hevc encoding. |
 | gopClosedCadence | integer<br />Minimum: 0 | False | Frequency of closed GOPs. In streaming applications, it is recommended that this be set to 1 so a decoder joining mid-stream will receive an IDR frame as quickly as possible. Setting this value to 0 will break output segmenting. |
+| gopNumBFrames | integer<br />Minimum: 0<br />Maximum: 3 | False | Sets the number of B-frames between reference frames. Set to 2 if resolution is greater than 1080p or when using tiled hevc encoding. |
 | gopSize | number | False | GOP size (keyframe interval) in units of either frames or seconds per gopSizeUnits. If gopSizeUnits is frames, gopSize must be an integer and must be greater than or equal to 1. If gopSizeUnits is seconds, gopSize must be greater than 0, but need not be an integer. |
 | gopSizeUnits | [H265GopSizeUnits](#channels-channelid-stop-model-h265gopsizeunits) | False | Indicates if the gopSize is specified in frames or seconds. If seconds the system will convert the gopSize into a frame count at run time. |
 | level | [H265Level](#channels-channelid-stop-model-h265level) | False | H.265 Level. |
 | lookAheadRateControl | [H265LookAheadRateControl](#channels-channelid-stop-model-h265lookaheadratecontrol) | False | Amount of lookahead. A value of low can decrease latency and memory usage, while high can produce better quality for certain content. |
 | maxBitrate | integer<br />Minimum: 100000<br />Maximum: 40000000 | False | For QVBR: See the tooltip for Quality level |
+| minBitrate | integer<br />Minimum: 0<br />Maximum: 40000000 | False | Used for QVBR rate control mode only. Optional. Enter a minimum bitrate if you want to keep the output bitrate about a threshold, in order to prevent the downstream system from de-allocating network bandwidth for this output. |
 | minIInterval | integer<br />Minimum: 0<br />Maximum: 30 | False | Only meaningful if sceneChangeDetect is set to enabled. Defaults to 5 if multiplex rate control is used. Enforces separation between repeated (cadence) I-frames and I-frames inserted by Scene Change Detection. If a scene change I-frame is within I-interval frames of a cadence I-frame, the GOP is shrunk and/or stretched to the scene change I-frame. GOP stretch requires enabling lookahead as well as setting I-interval. The normal cadence resumes for the next GOP. Note: Maximum GOP stretch = GOP size \+ Min-I-interval - 1 |
+| minQp | integer<br />Minimum: 1<br />Maximum: 51 | False | Sets the minimum QP. If you aren't familiar with quantization adjustment, leave the field empty. MediaLive will apply an appropriate value. |
+| mvOverPictureBoundaries | [H265MvOverPictureBoundaries](#channels-channelid-stop-model-h265mvoverpictureboundaries) | False | If you are setting up the picture as a tile, you must set this to "disabled". In all other configurations, you typically enter "enabled". |
+| mvTemporalPredictor | [H265MvTemporalPredictor](#channels-channelid-stop-model-h265mvtemporalpredictor) | False | If you are setting up the picture as a tile, you must set this to "disabled". In other configurations, you typically enter "enabled". |
 | parDenominator | integer<br />Minimum: 1 | False | Pixel Aspect Ratio denominator. |
 | parNumerator | integer<br />Minimum: 1 | False | Pixel Aspect Ratio numerator. |
 | profile | [H265Profile](#channels-channelid-stop-model-h265profile) | False | H.265 Profile. |
@@ -3030,8 +4117,21 @@ H265 Settings
 | scanType | [H265ScanType](#channels-channelid-stop-model-h265scantype) | False | Sets the scan type of the output to progressive or top-field-first interlaced. |
 | sceneChangeDetect | [H265SceneChangeDetect](#channels-channelid-stop-model-h265scenechangedetect) | False | Scene change detection. |
 | slices | integer<br />Minimum: 1<br />Maximum: 16 | False | Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures. This field is optional; when no value is specified the encoder will choose the number of slices based on encode resolution. |
+| subgopLength | [H265SubGopLength](#channels-channelid-stop-model-h265subgoplength) | False | Sets the number of B-frames in each sub-GOP. FIXED: Use the value in Num B-frames. DYNAMIC: Optimizes the number of B-frames in each sub-GOP to improve visual quality. Must be FIXED if resolution is greater than 1080p or when using tiled hevc encoding. |
 | tier | [H265Tier](#channels-channelid-stop-model-h265tier) | False | H.265 Tier. |
+| tileHeight | integer<br />Minimum: 64<br />Maximum: 2160 | False | Set this field to set up the picture as a tile. You must also set tileWidth. The tile height must result in 22 or fewer rows in the frame. The tile width must result in 20 or fewer columns in the frame. And finally, the product of the column count and row count must be 64 of less. If the tile width and height are specified, MediaLive will override the video codec slices field with a value that MediaLive calculates |
+| tilePadding | [H265TilePadding](#channels-channelid-stop-model-h265tilepadding) | False | Set to "padded" to force MediaLive to add padding to the frame, to obtain a frame that is a whole multiple of the tile size. If you are setting up the picture as a tile, you must enter "padded". In all other configurations, you typically enter "none". |
+| tileWidth | integer<br />Minimum: 256<br />Maximum: 3840 | False | Set this field to set up the picture as a tile. See tileHeight for more information. |
+| timecodeBurninSettings | [TimecodeBurninSettings](#channels-channelid-stop-model-timecodeburninsettings) | False | Timecode burn-in settings |
 | timecodeInsertion | [H265TimecodeInsertionBehavior](#channels-channelid-stop-model-h265timecodeinsertionbehavior) | False | Determines how timecodes should be inserted into the video elementary stream. - 'disabled': Do not include timecodes - 'picTimingSei': Pass through picture timing SEI messages from the source specified in Timecode Config |
+| treeblockSize | [H265TreeblockSize](#channels-channelid-stop-model-h265treeblocksize) | False | Select the tree block size used for encoding. If you enter "auto", the encoder will pick the best size. If you are setting up the picture as a tile, you must set this to 32x32. In all other configurations, you typically enter "auto". |
+
+### H265SubGopLength
+<a name="channels-channelid-stop-model-h265subgoplength"></a>
+
+H265 Sub Gop Length
++ `DYNAMIC`
++ `FIXED`
 
 ### H265Tier
 <a name="channels-channelid-stop-model-h265tier"></a>
@@ -3040,12 +4140,26 @@ H265 Tier
 + `HIGH`
 + `MAIN`
 
+### H265TilePadding
+<a name="channels-channelid-stop-model-h265tilepadding"></a>
+
+H265 Tile Padding
++ `NONE`
++ `PADDED`
+
 ### H265TimecodeInsertionBehavior
 <a name="channels-channelid-stop-model-h265timecodeinsertionbehavior"></a>
 
 H265 Timecode Insertion Behavior
 + `DISABLED`
 + `PIC_TIMING_SEI`
+
+### H265TreeblockSize
+<a name="channels-channelid-stop-model-h265treeblocksize"></a>
+
+H265 Treeblock Size
++ `AUTO`
++ `TREE_SIZE_32X32`
 
 ### Hdr10Settings
 <a name="channels-channelid-stop-model-hdr10settings"></a>
@@ -3056,6 +4170,11 @@ Hdr10 Settings
 | --- |--- |--- |--- |
 | maxCll | integer<br />Minimum: 0<br />Maximum: 32768 | False | Maximum Content Light Level An integer metadata value defining the maximum light level, in nits, of any single pixel within an encoded HDR video stream or file. |
 | maxFall | integer<br />Minimum: 0<br />Maximum: 32768 | False | Maximum Frame Average Light Level An integer metadata value defining the maximum average light level, in nits, for any single frame within an encoded HDR video stream or file. |
+
+### Hlg2020Settings
+<a name="channels-channelid-stop-model-hlg2020settings"></a>
+
+Hlg2020 Settings
 
 ### HlsAdMarkers
 <a name="channels-channelid-stop-model-hlsadmarkers"></a>
@@ -3086,6 +4205,14 @@ Hls Akamai Settings
 | restartDelay | integer<br />Minimum: 0<br />Maximum: 15 | False | If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart. |
 | salt | string | False | Salt for authenticated Akamai. |
 | token | string | False | Token parameter for authenticated akamai. If not specified, \_gda\_ is used. |
+
+### HlsAutoSelect
+<a name="channels-channelid-stop-model-hlsautoselect"></a>
+
+Hls Auto Select
++ `NO`
++ `OMIT`
++ `YES`
 
 ### HlsBasicPutSettings
 <a name="channels-channelid-stop-model-hlsbasicputsettings"></a>
@@ -3133,6 +4260,14 @@ Hls Client Cache
 Hls Codec Specification
 + `RFC_4281`
 + `RFC_6381`
+
+### HlsDefault
+<a name="channels-channelid-stop-model-hlsdefault"></a>
+
+Hls Default
++ `NO`
++ `OMIT`
++ `YES`
 
 ### HlsDirectoryStructure
 <a name="channels-channelid-stop-model-hlsdirectorystructure"></a>
@@ -3432,6 +4567,14 @@ When set to "standard", an I-Frame only playlist will be written out for each vi
 + `DISABLED`
 + `STANDARD`
 
+### IncludeFillerNalUnits
+<a name="channels-channelid-stop-model-includefillernalunits"></a>
+
+Include Filler Nal Units
++ `AUTO`
++ `DROP`
++ `INCLUDE`
+
 ### InputAttachment
 <a name="channels-channelid-stop-model-inputattachment"></a>
 
@@ -3441,6 +4584,7 @@ When set to "standard", an I-Frame only playlist will be written out for each vi
 | inputAttachmentName | string | False | User-specified name for the attachment. This is required if the user wants to use this input in an input switch action. |
 | inputId | string | False | The ID of the input |
 | inputSettings | [InputSettings](#channels-channelid-stop-model-inputsettings) | False | Settings of an input (caption selector, etc.) |
+| logicalInterfaceNames | Array of type string | False | Optional assignment of an input to a logical interface on the Node. Only applies to on premises channels. |
 
 ### InputChannelLevel
 <a name="channels-channelid-stop-model-inputchannellevel"></a>
@@ -3490,7 +4634,7 @@ Input Location
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | passwordParam | string | False | key used to extract the password from EC2 Parameter store |
-| uri | string | True | Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live". |
+| uri | string<br />MaxLength: 2048 | True | Uniform Resource Identifier - This should be a path to a file accessible to the Live system (eg. a http:// URI) depending on the output type. For example, a RTMP destination should have a uri simliar to: "rtmp://fmsserver/live". |
 | username | string | False | Username if credentials are required to access a file or publishing point. This can be either a plaintext username, or a reference to an AWS parameter store name from which the username can be retrieved. AWS Parameter store format: "ssm://<parameter name>" |
 
 ### InputLossActionForHlsOut
@@ -3588,6 +4732,7 @@ Live Event input parameters. There can be multiple inputs in a single Live Event
 | filterStrength | integer<br />Minimum: 1<br />Maximum: 5 | False | Adjusts the magnitude of filtering from 1 (minimal) to 5 (strongest). |
 | inputFilter | [InputFilter](#channels-channelid-stop-model-inputfilter) | False | Turns on the filter for this input. MPEG-2 inputs have the deblocking filter enabled by default. 1) auto - filtering will be applied depending on input type/quality 2) disabled - no filtering will be applied to the input 3) forced - filtering will be applied regardless of input type |
 | networkInputSettings | [NetworkInputSettings](#channels-channelid-stop-model-networkinputsettings) | False | Input settings. |
+| scte35Pid | integer<br />Minimum: 32<br />Maximum: 8191 | False | PID from which to read SCTE-35 messages. If left undefined, EML will select the first SCTE-35 PID found in the input. |
 | smpte2038DataPreference | [Smpte2038DataPreference](#channels-channelid-stop-model-smpte2038datapreference) | False | Specifies whether to extract applicable ancillary data from a SMPTE-2038 source in this input. Applicable data types are captions, timecode, AFD, and SCTE-104 messages. - PREFER: Extract from SMPTE-2038 if present in this input, otherwise extract from another source (if any). - IGNORE: Never extract any ancillary data from SMPTE-2038. |
 | sourceEndBehavior | [InputSourceEndBehavior](#channels-channelid-stop-model-inputsourceendbehavior) | False | Loop input if it is a file. This allows a file input to be streamed indefinitely. |
 | videoSelector | [VideoSelector](#channels-channelid-stop-model-videoselector) | False | Informs which video elementary stream to decode for input types that have multiple available. |
@@ -3826,6 +4971,7 @@ M2ts Settings
 | scte27Pids | string | False | Packet Identifier (PID) for input source SCTE-27 data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values. Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6). |
 | scte35Control | [M2tsScte35Control](#channels-channelid-stop-model-m2tsscte35control) | False | Optionally pass SCTE-35 signals from the input source to this output. |
 | scte35Pid | string | False | Packet Identifier (PID) of the SCTE-35 stream in the transport stream. Can be entered as a decimal or hexadecimal value. Valid values are 32 (or 0x20)..8182 (or 0x1ff6). |
+| scte35PrerollPullupMilliseconds | number<br />Minimum: 0<br />Maximum: 5000 | False | Defines the amount SCTE-35 preroll will be increased (in milliseconds) on the output. Preroll is the amount of time between the presence of a SCTE-35 indication in a transport stream and the PTS of the video frame it references. Zero means don't add pullup (it doesn't mean set the preroll to zero). Negative pullup is not supported, which means that you can't make the preroll shorter. Be aware that latency in the output will increase by the pullup amount. |
 | segmentationMarkers | [M2tsSegmentationMarkers](#channels-channelid-stop-model-m2tssegmentationmarkers) | False | Inserts segmentation markers at each segmentationTime period. raiSegstart sets the Random Access Indicator bit in the adaptation field. raiAdapt sets the RAI bit and adds the current timecode in the private data bytes. psiSegstart inserts PAT and PMT tables at the start of segments. ebp adds Encoder Boundary Point information to the adaptation field as per OpenCable specification OC-SP-EBP-I01-130118. ebpLegacy adds Encoder Boundary Point information to the adaptation field using a legacy proprietary format. |
 | segmentationStyle | [M2tsSegmentationStyle](#channels-channelid-stop-model-m2tssegmentationstyle) | False | The segmentation style parameter controls how segmentation markers are inserted into the transport stream. With avails, it is possible that segments may be truncated, which can influence where future segmentation markers are inserted. When a segmentation style of "resetCadence" is selected and a segment is truncated due to an avail, we will reset the segmentation cadence. This means the subsequent segment will have a duration of $segmentationTime seconds. When a segmentation style of "maintainCadence" is selected and a segment is truncated due to an avail, we will not reset the segmentation cadence. This means the subsequent segment will likely be truncated as well. However, all segments after that will have a duration of $segmentationTime seconds. Note that EBP lookahead is a slight exception to this rule. |
 | segmentationTime | number<br />Minimum: 1 | False | The length in seconds of each segment. Required unless markers is set to \_none\_. |
@@ -3838,6 +4984,13 @@ M2ts Settings
 <a name="channels-channelid-stop-model-m2tstimedmetadatabehavior"></a>
 
 M2ts Timed Metadata Behavior
++ `NO_PASSTHROUGH`
++ `PASSTHROUGH`
+
+### M3u8KlvBehavior
+<a name="channels-channelid-stop-model-m3u8klvbehavior"></a>
+
+M3u8 Klv Behavior
 + `NO_PASSTHROUGH`
 + `PASSTHROUGH`
 
@@ -3872,6 +5025,8 @@ Settings information for the .m3u8 container
 | audioFramesPerPes | integer<br />Minimum: 0 | False | The number of audio frames to insert for each PES packet. |
 | audioPids | string | False | Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values. |
 | ecmPid | string | False | This parameter is unused and deprecated. |
+| klvBehavior | [M3u8KlvBehavior](#channels-channelid-stop-model-m3u8klvbehavior) | False | If set to passthrough, passes any KLV data from the input source to this output. |
+| klvDataPids | string | False | Packet Identifier (PID) for input source KLV data to this output. Multiple values are accepted, and can be entered in ranges and/or by comma separation. Can be entered as decimal or hexadecimal values. Each PID specified must be in the range of 32 (or 0x20)..8182 (or 0x1ff6). |
 | nielsenId3Behavior | [M3u8NielsenId3Behavior](#channels-channelid-stop-model-m3u8nielsenid3behavior) | False | If set to passthrough, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output. |
 | patInterval | integer<br />Minimum: 0<br />Maximum: 1000 | False | The number of milliseconds between instances of this table in the output transport stream. A value of \\"0\\" writes out the PMT once per segment file. |
 | pcrControl | [M3u8PcrControl](#channels-channelid-stop-model-m3u8pcrcontrol) | False | When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream. |
@@ -3916,6 +5071,71 @@ The currently selected maintenance day.
 | maintenanceScheduledDate | string<br />Format: string | False | The currently scheduled maintenance date and time. Date and time is in ISO. |
 | maintenanceStartTime | string | False | The currently selected maintenance start time. Time is in UTC. |
 
+### MediaConnectRouterContainerSettings
+<a name="channels-channelid-stop-model-mediaconnectroutercontainersettings"></a>
+
+Media Connect Router Container Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| m2tsSettings | [M2tsSettings](#channels-channelid-stop-model-m2tssettings) | False |  |
+
+### MediaConnectRouterGroupSettings
+<a name="channels-channelid-stop-model-mediaconnectroutergroupsettings"></a>
+
+Media Connect Router Group Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| availabilityZones | Array of type string | False | The names of the Availability Zones in which to write output to MediaConnect Router. |
+
+### MediaConnectRouterOutputConnectionMap
+<a name="channels-channelid-stop-model-mediaconnectrouteroutputconnectionmap"></a>
+
+Map of MediaLive pipeline IDs to the ARNs of the MediaConnect Router Inputs to which this Output is connected.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| pipeline0 | string | False | The ARN of the MediaConnect Router Input connected to pipeline 0. |
+| pipeline1 | string | False | The ARN of the MediaConnect Router Input connected to pipeline 1. |
+
+### MediaConnectRouterOutputDestinationSettings
+<a name="channels-channelid-stop-model-mediaconnectrouteroutputdestinationsettings"></a>
+
+MediaConnect Router Output Destination Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| encryptionType | [MediaConnectRouterOutputEncryptionType](#channels-channelid-stop-model-mediaconnectrouteroutputencryptiontype) | False | Encryption configuration for MediaConnect router. When using SECRETS\_MANAGER encryption, you must provide the ARN of the secret used to encrypt data in transit. When using AUTOMATIC encryption, a service-managed secret will be used instead. |
+| secretArn | string | False | ARN of the secret used to encrypt this input. Used only with the SECRETS\_MANAGER encryption type. |
+
+### MediaConnectRouterOutputEncryptionType
+<a name="channels-channelid-stop-model-mediaconnectrouteroutputencryptiontype"></a>
+
+Encryption configuration for MediaConnect router. When using SECRETS\_MANAGER encryption, you must provide the ARN of the secret used to encrypt data in transit. When using AUTOMATIC encryption, a service-managed secret will be used instead.
++ `AUTOMATIC`
++ `SECRETS_MANAGER`
+
+### MediaConnectRouterOutputSettings
+<a name="channels-channelid-stop-model-mediaconnectrouteroutputsettings"></a>
+
+Media Connect Router Output Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| connectedRouterInputs | [MediaConnectRouterOutputConnectionMap](#channels-channelid-stop-model-mediaconnectrouteroutputconnectionmap) | False | This parameter is deprecated and unused. |
+| containerSettings | [MediaConnectRouterContainerSettings](#channels-channelid-stop-model-mediaconnectroutercontainersettings) | True |  |
+| destination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True | Destination for this MediaConnect Router Output. The referenced OutputDestination must have MediaConnect Router settings configured. |
+
+### MediaPackageAdditionalDestinations
+<a name="channels-channelid-stop-model-mediapackageadditionaldestinations"></a>
+
+Additional output destinations for a CMAF Ingest output group
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| destination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True | The destination location |
+
 ### MediaPackageGroupSettings
 <a name="channels-channelid-stop-model-mediapackagegroupsettings"></a>
 
@@ -3933,7 +5153,11 @@ MediaPackage Output Destination Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| channelEndpointId | string<br />MinLength: 1 | False | Endpoint 1 or 2 of the channel in MediaPackageV2. Only use if you are sending CMAF Ingest output to a CMAF ingest endpoint on a MediaPackage channel that uses MediaPackage v2. |
+| channelGroup | string<br />MinLength: 1 | False | Name of the channel group in MediaPackageV2. Only use if you are sending CMAF Ingest output to a CMAF ingest endpoint on a MediaPackage channel that uses MediaPackage v2. |
 | channelId | string<br />MinLength: 1 | False | ID of the channel in MediaPackage that is the destination for this output group. You do not need to specify the individual inputs in MediaPackage; MediaLive will handle the connection of the two MediaLive pipelines to the two MediaPackage inputs. The MediaPackage channel and MediaLive channel must be in the same region. |
+| channelName | string<br />MinLength: 1 | False | Name of the channel in MediaPackageV2. Only use if you are sending CMAF Ingest output to a CMAF ingest endpoint on a MediaPackage channel that uses MediaPackage v2. |
+| mediaPackageRegionName | string<br />MinLength: 1 | False | Region the channel group and channel are located in for MediaPackageV2. Only use if you are sending CMAF Ingest output to a CMAF ingest endpoint on a MediaPackage channel that uses MediaPackage v2. |
 
 ### MediaPackageOutputSettings
 <a name="channels-channelid-stop-model-mediapackageoutputsettings"></a>
@@ -3944,6 +5168,29 @@ Media Package Output Settings
 | --- |--- |--- |--- |
 | mediaPackageV2DestinationSettings | [MediaPackageV2DestinationSettings](#channels-channelid-stop-model-mediapackagev2destinationsettings) | False | Settings that apply only when the destination is a MediaPackage V2 channel. |
 
+### MediaPackageV2AbWatermarkerIrdetoSettings
+<a name="channels-channelid-stop-model-mediapackagev2abwatermarkerirdetosettings"></a>
+
+A/B Watermarker settings for MediaPackage V2 output groups.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| additionalDestinationsAlternateDestinations | Array of type [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | False | The "B" pipeline renditions for the additional destinations. |
+| alternateDestination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True | The "B" pipeline renditions for the main destination. |
+| customProfile | [AbWatermarkingCustomProfile](#channels-channelid-stop-model-abwatermarkingcustomprofile) | False | The vendor-provided custom profile values. |
+| license | string | False | The name of the Secrets Manager secret containing the license file. |
+| operatorId | integer<br />Minimum: 1<br />Maximum: 511 | True | The vendor-provided Operator ID. |
+| polyPeriod | integer<br />Minimum: 1<br />Maximum: 1000 | False | The number of segments per watermarking bit. The total duration of the watermarking bit should be the LCM (least common multiple) of all segments sizes emitted by the downstream packager. |
+| profile | [AbWatermarkingProfile](#channels-channelid-stop-model-abwatermarkingprofile) | True | The vendor-provided profile choice. |
+| watermarkIdLength | [AbWatermarkerIdLength](#channels-channelid-stop-model-abwatermarkeridlength) | False | The number of bits that compose the watermarking identifier to be embedded. |
+
+### MediaPackageV2CaptionLanguageSetting
+<a name="channels-channelid-stop-model-mediapackagev2captionlanguagesetting"></a>
+
+The CLOSED-CAPTIONS signaling that AWS Elemental MediaPackage V2 writes into the HLS manifest it delivers. For the valid values, see the `captionLanguageSetting` field in `MediaPackageV2GroupSettings`.
++ `AUTO`
++ `NONE`
+
 ### MediaPackageV2DestinationSettings
 <a name="channels-channelid-stop-model-mediapackagev2destinationsettings"></a>
 
@@ -3953,6 +5200,8 @@ Settings for an output that is delivered to a MediaPackage V2 channel.
 | --- |--- |--- |--- |
 | audioGroupId | string | False | Applies only to an output that contains audio. If you want to put several audio encodes into one audio rendition group, decide on a name (ID) for the group. Then in every audio output that you want to belong to that group, enter that ID in this field. This information is part of the HLS specification (not the CMAF specification), but if you include it then MediaPackage includes it in the manifest that it creates for the video player. |
 | audioRenditionSets | string | False | Applies only to an output that contains video, and only if you want to associate one or more audio groups with this video. In this field, assign the groups that you created (in the Group ID fields in the various audio outputs). Enter one group ID, or enter a comma-separated list of group IDs. This information is part of the HLS specification (not the CMAF specification), but if you include it then MediaPackage includes it in the manifest that it creates for the video player. |
+| hlsAutoSelect | [HlsAutoSelect](#channels-channelid-stop-model-hlsautoselect) | False | Specifies whether MediaPackage should set this output as the auto-select rendition in the HLS manifest. YES means this must be the auto-select. NO means this should never be the auto-select. OMIT means MediaPackage decides what to set on this rendition. When you consider all the renditions, follow these guidelines. You can set zero or one renditions to YES. You can set zero or more renditions to NO, but you can't set all renditions to NO. You can set zero, some, or all to OMIT. |
+| hlsDefault | [HlsDefault](#channels-channelid-stop-model-hlsdefault) | False | Specifies whether MediaPackage should set this output as the default rendition in the HLS manifest. YES means this must be the default. NO means this should never be the default. OMIT means MediaPackage decides what to set on this rendition. When you consider all the renditions, follow these guidelines. You can set zero or one renditions to YES. You can set zero or more renditions to NO, but you can't set all renditions to NO. You can set zero, some, or all to OMIT. |
 | outputUsage | Array of type [OutputUsage](#channels-channelid-stop-model-outputusage) | False | A list of usage tags that declare how this MediaPackage V2 output participates in multiview. Valid values:+ `MULTIVIEW_EQUAL_SIZE_VIEW` – The output is one of several equally sized views in the multiview layout.<br />+ `MULTIVIEW_PRIMARY_VIEW` – The output is the primary view in the multiview layout.<br />+ `MULTIVIEW_SECONDARY_VIEW` – The output is a secondary view in the multiview layout.<br />Leave this field empty (the default) if the output has no multiview role.<br />If any video-carrying MediaPackage V2 output in an output group specifies a multiview value, then every video-carrying MediaPackage V2 output in that group must also specify a multiview value. Put standalone video outputs in a separate output group. |
 
 ### MediaPackageV2GroupSettings
@@ -3962,7 +5211,28 @@ Contains the settings for a MediaPackage V2 output group, including SCTE-35 inse
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| scte35Type | [Scte35Type](#channels-channelid-stop-model-scte35type) | False | The SCTE-35 insertion behavior for this MediaPackage V2 output group. If you don't specify a value, the channel doesn't insert SCTE-35 messages (NONE). |
+| additionalDestinations | Array of type [MediaPackageAdditionalDestinations](#channels-channelid-stop-model-mediapackageadditionaldestinations) | False | Optional an array of additional destinational HTTP destinations for the OutputGroup outputs |
+| captionLanguageMappings | Array of type [CaptionLanguageMapping](#channels-channelid-stop-model-captionlanguagemapping) | False | Mapping of up to 4 caption channels to caption languages. |
+| captionLanguageSetting | [MediaPackageV2CaptionLanguageSetting](#channels-channelid-stop-model-mediapackagev2captionlanguagesetting) | False | Applies only to 608 Embedded output captions. Controls the CLOSED-CAPTIONS signaling that AWS Elemental MediaPackage V2 writes into the HLS manifest it delivers. Valid values:+ `AUTO` – The default. If `captionLanguageMappings` is non-empty, the HLS manifest includes a CLOSED-CAPTIONS line for each mapped caption channel. If `captionLanguageMappings` is empty, the manifest omits the CLOSED-CAPTIONS line.<br />+ `NONE` – The HLS manifest carries CLOSED-CAPTIONS=NONE on each EXT-X-STREAM-INF tag. This signals to players that the stream has no closed captions, so players stop offering a CC track. You cannot combine `NONE` with a non-empty `captionLanguageMappings`. |
+| id3Behavior | [CmafId3Behavior](#channels-channelid-stop-model-cmafid3behavior) | False | Set to ENABLED to enable ID3 metadata insertion. To include metadata, you configure other parameters in the output group, or you add an ID3 action to the channel schedule. |
+| klvBehavior | [CmafKLVBehavior](#channels-channelid-stop-model-cmafklvbehavior) | False | If set to passthrough, passes any KLV data from the input source to this output. |
+| nielsenId3Behavior | [CmafNielsenId3Behavior](#channels-channelid-stop-model-cmafnielsenid3behavior) | False | If set to passthrough, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output. |
+| scte35Type | [Scte35Type](#channels-channelid-stop-model-scte35type) | False | The SCTE-35 insertion behavior for this MediaPackage V2 output group. Valid values:+ `NONE` – The channel does not insert SCTE-35 messages.<br />+ `SCTE_35_WITHOUT_IDR` – The channel inserts SCTE-35 messages without an Instantaneous Decoder Refresh (IDR) frame at the cue point.<br />+ `SCTE_35_WITHOUT_SEGMENTATION` – The channel inserts SCTE-35 messages with an IDR frame, but without a new segment boundary.<br />If you don't specify a value, the channel doesn't insert SCTE-35 messages (`NONE`). |
+| segmentLength | integer<br />Minimum: 1 | False | The nominal duration of segments. The units are specified in SegmentLengthUnits. The segments will end on the next keyframe after the specified duration, so the actual segment length might be longer, and it might be a fraction of the units. |
+| segmentLengthUnits | [CmafIngestSegmentLengthUnits](#channels-channelid-stop-model-cmafingestsegmentlengthunits) | False | Time unit for segment length parameter. |
+| timedMetadataId3Frame | [CmafTimedMetadataId3Frame](#channels-channelid-stop-model-cmaftimedmetadataid3frame) | False | Set to none if you don't want to insert a timecode in the output. Otherwise choose the frame type for the timecode. |
+| timedMetadataId3Period | integer<br />Minimum: 0<br />Maximum: 10000 | False | If you set up to insert a timecode in the output, specify the frequency for the frame, in seconds. |
+| timedMetadataPassthrough | [CmafTimedMetadataPassthrough](#channels-channelid-stop-model-cmaftimedmetadatapassthrough) | False | Set to enabled to pass through ID3 metadata from the input sources. |
+| watermarkingSettings | [MediaPackageV2WatermarkingSettings](#channels-channelid-stop-model-mediapackagev2watermarkingsettings) | False | Specifies the type of watermarking technology to use. |
+
+### MediaPackageV2WatermarkingSettings
+<a name="channels-channelid-stop-model-mediapackagev2watermarkingsettings"></a>
+
+A/B Watermarker settings for MediaPackage V2 output groups.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| mediaPackageV2AbWatermarkerIrdetoSettings | [MediaPackageV2AbWatermarkerIrdetoSettings](#channels-channelid-stop-model-mediapackagev2abwatermarkerirdetosettings) | False |  |
 
 ### MotionGraphicsConfiguration
 <a name="channels-channelid-stop-model-motiongraphicsconfiguration"></a>
@@ -4084,6 +5354,7 @@ Mpeg2 Settings
 | gopSizeUnits | [Mpeg2GopSizeUnits](#channels-channelid-stop-model-mpeg2gopsizeunits) | False | Relates to the GOP structure. Specifies whether the gopSize is specified in frames or seconds. If you do not plan to change the default gopSize, leave the default. If you specify SECONDS, MediaLive will internally convert the gop size to a frame count. |
 | scanType | [Mpeg2ScanType](#channels-channelid-stop-model-mpeg2scantype) | False | Set the scan type of the output to PROGRESSIVE or INTERLACED (top field first). |
 | subgopLength | [Mpeg2SubGopLength](#channels-channelid-stop-model-mpeg2subgoplength) | False | Relates to the GOP structure. If you do not know what GOP is, use the default. FIXED: Set the number of B-frames in each sub-GOP to the value in gopNumBFrames. DYNAMIC: Let MediaLive optimize the number of B-frames in each sub-GOP, to improve visual quality. |
+| timecodeBurninSettings | [TimecodeBurninSettings](#channels-channelid-stop-model-timecodeburninsettings) | False | Timecode burn-in settings |
 | timecodeInsertion | [Mpeg2TimecodeInsertionBehavior](#channels-channelid-stop-model-mpeg2timecodeinsertionbehavior) | False | Determines how MediaLive inserts timecodes in the output video. For detailed information about setting up the input and the output for a timecode, see the section on \\"MediaLive Features - Timecode configuration\\" in the MediaLive User Guide. DISABLED: do not include timecodes. GOP\_TIMECODE: Include timecode metadata in the GOP header. |
 
 ### Mpeg2SubGopLength
@@ -4144,10 +5415,50 @@ Ms Smooth Output Settings
 | h265PackagingType | [MsSmoothH265PackagingType](#channels-channelid-stop-model-mssmoothh265packagingtype) | False | Only applicable when this output is referencing an H.265 video description. Specifies whether MP4 segments should be packaged as HEV1 or HVC1. |
 | nameModifier | string | False | String concatenated to the end of the destination filename. Required for multiple outputs of the same type. |
 
+### MulticastInputSettings
+<a name="channels-channelid-stop-model-multicastinputsettings"></a>
+
+Multicast-specific input settings.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| sourceIpAddress | string | False | Optionally, a source ip address to filter by for Source-specific Multicast (SSM) |
+
+### MultiplexContainerSettings
+<a name="channels-channelid-stop-model-multiplexcontainersettings"></a>
+
+Multiplex Container Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| multiplexM2tsSettings | [MultiplexM2tsSettings](#channels-channelid-stop-model-multiplexm2tssettings) | False |  |
+
 ### MultiplexGroupSettings
 <a name="channels-channelid-stop-model-multiplexgroupsettings"></a>
 
 Multiplex Group Settings
+
+### MultiplexM2tsSettings
+<a name="channels-channelid-stop-model-multiplexm2tssettings"></a>
+
+Multiplex M2ts Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| absentInputAudioBehavior | [M2tsAbsentInputAudioBehavior](#channels-channelid-stop-model-m2tsabsentinputaudiobehavior) | False | When set to drop, output audio streams will be removed from the program if the selected input audio stream is removed from the input. This allows the output audio configuration to dynamically change based on input configuration. If this is set to encodeSilence, all output audio streams will output encoded silence when not connected to an active input stream. |
+| arib | [M2tsArib](#channels-channelid-stop-model-m2tsarib) | False | When set to enabled, uses ARIB-compliant field muxing and removes video descriptor. |
+| audioBufferModel | [M2tsAudioBufferModel](#channels-channelid-stop-model-m2tsaudiobuffermodel) | False | When set to dvb, uses DVB buffer model for Dolby Digital audio. When set to atsc, the ATSC model is used. |
+| audioFramesPerPes | integer<br />Minimum: 0 | False | The number of audio frames to insert for each PES packet. |
+| audioStreamType | [M2tsAudioStreamType](#channels-channelid-stop-model-m2tsaudiostreamtype) | False | When set to atsc, uses stream type = 0x81 for AC3 and stream type = 0x87 for EAC3. When set to dvb, uses stream type = 0x06. |
+| ccDescriptor | [M2tsCcDescriptor](#channels-channelid-stop-model-m2tsccdescriptor) | False | When set to enabled, generates captionServiceDescriptor in PMT. |
+| ebif | [M2tsEbifControl](#channels-channelid-stop-model-m2tsebifcontrol) | False | If set to passthrough, passes any EBIF data from the input source to this output. |
+| esRateInPes | [M2tsEsRateInPes](#channels-channelid-stop-model-m2tsesrateinpes) | False | Include or exclude the ES Rate field in the PES header. |
+| klv | [M2tsKlv](#channels-channelid-stop-model-m2tsklv) | False | If set to passthrough, passes any KLV data from the input source to this output. |
+| nielsenId3Behavior | [M2tsNielsenId3Behavior](#channels-channelid-stop-model-m2tsnielsenid3behavior) | False | If set to passthrough, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output. |
+| pcrControl | [M2tsPcrControl](#channels-channelid-stop-model-m2tspcrcontrol) | False | When set to pcrEveryPesPacket, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream. |
+| pcrPeriod | integer<br />Minimum: 0<br />Maximum: 500 | False | Maximum time in milliseconds between Program Clock Reference (PCRs) inserted into the transport stream. |
+| scte35Control | [M2tsScte35Control](#channels-channelid-stop-model-m2tsscte35control) | False | SCTE-35 control. Option "none" indicates that a SCTE-35 marker will not be inserted, nor will an IDR be inserted at the SCTE-35 cue point, nor will the segment be segmented. Option "scte35WithoutIdr" indicates that a SCTE-35 marker will be inserted to indicate the cue point, but MediaLive will not insert an IDR on that frame nor will it introduce a new segment boundary there if it wasn't already going to be one (this option is required for use with downstream multiview bitstream stitching workflows). Option "passthrough" indicates that a SCTE-35 marker will be inserted to indicate the cue point, and an IDR will be inserted on that frame, and MediaLive itself will introduce a new segment boundary there. |
+| scte35PrerollPullupMilliseconds | number<br />Minimum: 0<br />Maximum: 5000 | False | Defines the amount SCTE-35 preroll will be increased (in milliseconds) on the output. Preroll is the amount of time between the presence of a SCTE-35 indication in a transport stream and the PTS of the video frame it references. Zero means don't add pullup (it doesn't mean set the preroll to zero). Negative pullup is not supported, which means that you can't make the preroll shorter. Be aware that latency in the output will increase by the pullup amount. |
 
 ### MultiplexOutputSettings
 <a name="channels-channelid-stop-model-multiplexoutputsettings"></a>
@@ -4156,6 +5467,7 @@ Multiplex Output Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| containerSettings | [MultiplexContainerSettings](#channels-channelid-stop-model-multiplexcontainersettings) | False |  |
 | destination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True | Destination is a Multiplex. |
 
 ### MultiplexProgramChannelDestinationSettings
@@ -4183,6 +5495,7 @@ Network source to transcode. Must be accessible to the Elemental Live node that 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | hlsInputSettings | [HlsInputSettings](#channels-channelid-stop-model-hlsinputsettings) | False | Specifies HLS input settings when the uri is for a HLS manifest. |
+| multicastInputSettings | [MulticastInputSettings](#channels-channelid-stop-model-multicastinputsettings) | False | Specifies multicast input settings when the uri is for a multicast event. |
 | serverValidation | [NetworkInputServerValidation](#channels-channelid-stop-model-networkinputservervalidation) | False | Check HTTPS server certificates. When set to checkCryptographyOnly, cryptography in the certificate will be checked, but not the server's name. Certain subdomains (notably S3 buckets that use dots in the bucket name) do not strictly match the corresponding certificate's wildcard pattern and would otherwise cause the event to error. This setting is ignored for protocols that do not use https. |
 
 ### NielsenCBET
@@ -4215,6 +5528,18 @@ Nielsen Naes Ii Nw
 | --- |--- |--- |--- |
 | checkDigitString | string<br />MinLength: 2<br />MaxLength: 2 | True | Enter the check digit string for the watermark |
 | sid | number<br />Minimum: 1<br />Maximum: 65535 | True | Enter the Nielsen Source ID (SID) to include in the watermark |
+| timezone | [NielsenWatermarkTimezones](#channels-channelid-stop-model-nielsenwatermarktimezones) | False | Choose the timezone for the time stamps in the watermark. If not provided, the timestamps will be in Coordinated Universal Time (UTC) |
+
+### NielsenNwOnly
+<a name="channels-channelid-stop-model-nielsennwonly"></a>
+
+Nielsen Nw Only
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| checkDigitString | string<br />MinLength: 2<br />MaxLength: 2 | True | Enter the check digit string for the watermark |
+| sid | number<br />Minimum: 1<br />Maximum: 65535 | True | Enter the Nielsen Source ID (SID) to include in the watermark |
+| timezone | [NielsenWatermarkTimezones](#channels-channelid-stop-model-nielsenwatermarktimezones) | False | Choose the timezone for the time stamps in the watermark. If not provided, the timestamps will be in Coordinated Universal Time (UTC) |
 
 ### NielsenPcmToId3TaggingState
 <a name="channels-channelid-stop-model-nielsenpcmtoid3taggingstate"></a>
@@ -4222,6 +5547,21 @@ Nielsen Naes Ii Nw
 State of Nielsen PCM to ID3 tagging
 + `DISABLED`
 + `ENABLED`
+
+### NielsenWatermarkTimezones
+<a name="channels-channelid-stop-model-nielsenwatermarktimezones"></a>
+
+Nielsen Watermark Timezones
++ `AMERICA_PUERTO_RICO`
++ `US_ALASKA`
++ `US_ARIZONA`
++ `US_CENTRAL`
++ `US_EASTERN`
++ `US_HAWAII`
++ `US_MOUNTAIN`
++ `US_PACIFIC`
++ `US_SAMOA`
++ `UTC`
 
 ### NielsenWatermarksCbetStepaside
 <a name="channels-channelid-stop-model-nielsenwatermarkscbetstepaside"></a>
@@ -4247,6 +5587,7 @@ Nielsen Watermarks Settings
 | nielsenCbetSettings | [NielsenCBET](#channels-channelid-stop-model-nielsencbet) | False | Complete these fields only if you want to insert watermarks of type Nielsen CBET |
 | nielsenDistributionType | [NielsenWatermarksDistributionTypes](#channels-channelid-stop-model-nielsenwatermarksdistributiontypes) | False | Choose the distribution types that you want to assign to the watermarks: - PROGRAM\_CONTENT - FINAL\_DISTRIBUTOR |
 | nielsenNaesIiNwSettings | [NielsenNaesIiNw](#channels-channelid-stop-model-nielsennaesiinw) | False | Complete these fields only if you want to insert watermarks of type Nielsen NAES II (N2) and Nielsen NAES VI (NW). |
+| nielsenNwOnlySettings | [NielsenNwOnly](#channels-channelid-stop-model-nielsennwonly) | False | Complete these fields only if you want to insert watermarks of type Nielsen NAES VI (NW) only, without inserting NAES II (N2) watermarks. |
 
 ### Output
 <a name="channels-channelid-stop-model-output"></a>
@@ -4267,9 +5608,12 @@ Output settings. There can be multiple outputs within a group.
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | id | string | False | User-specified id. This is used in an output group or an output. |
+| logicalInterfaceNames | Array of type string | False | Optional assignment of an output to a logical interface on the Node. Only applies to on premises channels. |
+| mediaConnectRouterSettings | Array of type [MediaConnectRouterOutputDestinationSettings](#channels-channelid-stop-model-mediaconnectrouteroutputdestinationsettings) | False | Destination settings for a MediaConnect Router output; one destination for each redundant encoder. |
 | mediaPackageSettings | Array of type [MediaPackageOutputDestinationSettings](#channels-channelid-stop-model-mediapackageoutputdestinationsettings) | False | Destination settings for a MediaPackage output; one destination for both encoders. |
 | multiplexSettings | [MultiplexProgramChannelDestinationSettings](#channels-channelid-stop-model-multiplexprogramchanneldestinationsettings) | False | Destination settings for a Multiplex output; one destination for both encoders. |
 | settings | Array of type [OutputDestinationSettings](#channels-channelid-stop-model-outputdestinationsettings) | False | Destination settings for a standard output; one destination for each redundant encoder. |
+| srtSettings | Array of type [SrtOutputDestinationSettings](#channels-channelid-stop-model-srtoutputdestinationsettings) | False | SRT settings for an SRT output; one destination for each redundant encoder. |
 
 ### OutputDestinationSettings
 <a name="channels-channelid-stop-model-outputdestinationsettings"></a>
@@ -4280,6 +5624,7 @@ Output settings. There can be multiple outputs within a group.
 | streamName | string | False | Stream name for RTMP destinations (URLs of type rtmp://) |
 | url | string | False | A URL specifying a destination |
 | username | string | False | username for destination |
+| virtualSourceAddress | string | False | Specifies the source IP address for outbound multicast packets. |
 
 ### OutputGroup
 <a name="channels-channelid-stop-model-outputgroup"></a>
@@ -4303,10 +5648,12 @@ Output Group Settings
 | cmafIngestGroupSettings | [CmafIngestGroupSettings](#channels-channelid-stop-model-cmafingestgroupsettings) | False |  |
 | frameCaptureGroupSettings | [FrameCaptureGroupSettings](#channels-channelid-stop-model-framecapturegroupsettings) | False |  |
 | hlsGroupSettings | [HlsGroupSettings](#channels-channelid-stop-model-hlsgroupsettings) | False |  |
+| mediaConnectRouterGroupSettings | [MediaConnectRouterGroupSettings](#channels-channelid-stop-model-mediaconnectroutergroupsettings) | False |  |
 | mediaPackageGroupSettings | [MediaPackageGroupSettings](#channels-channelid-stop-model-mediapackagegroupsettings) | False |  |
 | msSmoothGroupSettings | [MsSmoothGroupSettings](#channels-channelid-stop-model-mssmoothgroupsettings) | False |  |
 | multiplexGroupSettings | [MultiplexGroupSettings](#channels-channelid-stop-model-multiplexgroupsettings) | False |  |
 | rtmpGroupSettings | [RtmpGroupSettings](#channels-channelid-stop-model-rtmpgroupsettings) | False |  |
+| srtGroupSettings | [SrtGroupSettings](#channels-channelid-stop-model-srtgroupsettings) | False |  |
 | udpGroupSettings | [UdpGroupSettings](#channels-channelid-stop-model-udpgroupsettings) | False |  |
 
 ### OutputLocationRef
@@ -4318,6 +5665,17 @@ Reference to an OutputDestination ID defined in the channel
 | --- |--- |--- |--- |
 | destinationRefId | string | False |  |
 
+### OutputLockingSettings
+<a name="channels-channelid-stop-model-outputlockingsettings"></a>
+
+Output Locking Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| disabledLockingSettings | [DisabledLockingSettings](#channels-channelid-stop-model-disabledlockingsettings) | False |  |
+| epochLockingSettings | [EpochLockingSettings](#channels-channelid-stop-model-epochlockingsettings) | False |  |
+| pipelineLockingSettings | [PipelineLockingSettings](#channels-channelid-stop-model-pipelinelockingsettings) | False |  |
+
 ### OutputSettings
 <a name="channels-channelid-stop-model-outputsettings"></a>
 
@@ -4326,12 +5684,15 @@ Output Settings
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | archiveOutputSettings | [ArchiveOutputSettings](#channels-channelid-stop-model-archiveoutputsettings) | False |  |
+| cmafIngestOutputSettings | [CmafIngestOutputSettings](#channels-channelid-stop-model-cmafingestoutputsettings) | False |  |
 | frameCaptureOutputSettings | [FrameCaptureOutputSettings](#channels-channelid-stop-model-framecaptureoutputsettings) | False |  |
 | hlsOutputSettings | [HlsOutputSettings](#channels-channelid-stop-model-hlsoutputsettings) | False |  |
+| mediaConnectRouterOutputSettings | [MediaConnectRouterOutputSettings](#channels-channelid-stop-model-mediaconnectrouteroutputsettings) | False |  |
 | mediaPackageOutputSettings | [MediaPackageOutputSettings](#channels-channelid-stop-model-mediapackageoutputsettings) | False |  |
 | msSmoothOutputSettings | [MsSmoothOutputSettings](#channels-channelid-stop-model-mssmoothoutputsettings) | False |  |
 | multiplexOutputSettings | [MultiplexOutputSettings](#channels-channelid-stop-model-multiplexoutputsettings) | False |  |
 | rtmpOutputSettings | [RtmpOutputSettings](#channels-channelid-stop-model-rtmpoutputsettings) | False |  |
+| srtOutputSettings | [SrtOutputSettings](#channels-channelid-stop-model-srtoutputsettings) | False |  |
 | udpOutputSettings | [UdpOutputSettings](#channels-channelid-stop-model-udpoutputsettings) | False |  |
 
 ### OutputUsage
@@ -4359,6 +5720,23 @@ Runtime details of a pipeline when a channel is running.
 | activeMotionGraphicsActionName | string | False | The name of the motion graphics activate action that occurred most recently and that resulted in the current graphics URI for this pipeline. |
 | activeMotionGraphicsUri | string | False | The current URI being used for HTML5 motion graphics for this pipeline. |
 | pipelineId | string | False | Pipeline ID |
+
+### PipelineLockingMethod
+<a name="channels-channelid-stop-model-pipelinelockingmethod"></a>
+
+Pipeline Locking Method
++ `SOURCE_TIMECODE`
++ `VIDEO_ALIGNMENT`
+
+### PipelineLockingSettings
+<a name="channels-channelid-stop-model-pipelinelockingsettings"></a>
+
+Pipeline Locking Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| customEpoch | string | False | Optional. Only applies to CMAF Ingest Output Group and MediaPackage V2 Output Group Only. Enter a value here to use a custom epoch, instead of the standard epoch (which started at 1970-01-01T00:00:00 UTC). Specify the start time of the custom epoch, in YYYY-MM-DDTHH:MM:SS in UTC. The time must be 2000-01-01T00:00:00 or later. Always set the MM:SS portion to 00:00. |
+| pipelineLockingMethod | [PipelineLockingMethod](#channels-channelid-stop-model-pipelinelockingmethod) | False | The method to use to lock the video frames in the pipelines. sourceTimecode (default): Use the timecode in the source. videoAlignment: Lock frames that the encoder identifies as having matching content. If videoAlignment is selected, existing timecodes will not be used for any locking decisions. |
 
 ### RawSettings
 <a name="channels-channelid-stop-model-rawsettings"></a>
@@ -4438,6 +5816,7 @@ Rtmp Group Settings
 | cacheFullBehavior | [RtmpCacheFullBehavior](#channels-channelid-stop-model-rtmpcachefullbehavior) | False | Controls behavior when content cache fills up. If remote origin server stalls the RTMP connection and does not accept content fast enough the 'Media Cache' will fill up. When the cache reaches the duration specified by cacheLength the cache will stop accepting new content. If set to disconnectImmediately, the RTMP output will force a disconnect. Clear the media cache, and reconnect after restartDelay seconds. If set to waitForServer, the RTMP output will wait up to 5 minutes to allow the origin server to begin accepting data again. |
 | cacheLength | integer<br />Minimum: 30 | False | Cache length, in seconds, is used to calculate buffer size. |
 | captionData | [RtmpCaptionData](#channels-channelid-stop-model-rtmpcaptiondata) | False | Controls the types of data that passes to onCaptionInfo outputs. If set to 'all' then 608 and 708 carried DTVCC data will be passed. If set to 'field1AndField2608' then DTVCC data will be stripped out, but 608 data from both fields will be passed. If set to 'field1608' then only the data carried in 608 from field 1 video will be passed. |
+| includeFillerNalUnits | [IncludeFillerNalUnits](#channels-channelid-stop-model-includefillernalunits) | False | Applies only when the rate control mode (in the codec settings) is CBR (constant bit rate). Controls whether the RTMP output stream is padded (with FILL NAL units) in order to achieve a constant bit rate that is truly constant. When there is no padding, the bandwidth varies (up to the bitrate value in the codec settings). We recommend that you choose Auto. |
 | inputLossAction | [InputLossActionForRtmpOut](#channels-channelid-stop-model-inputlossactionforrtmpout) | False | Controls the behavior of this RTMP group if input becomes unavailable. - emitOutput: Emit a slate until input returns. - pauseOutput: Stop transmitting data until input returns. This does not close the underlying RTMP connection. |
 | restartDelay | integer<br />Minimum: 0 | False | If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart. |
 
@@ -4531,6 +5910,13 @@ Scte35 Apos Web Delivery Allowed Behavior
 + `FOLLOW`
 + `IGNORE`
 
+### Scte35SegmentationScope
+<a name="channels-channelid-stop-model-scte35segmentationscope"></a>
+
+Scte35 Segmentation Scope
++ `ALL_OUTPUT_GROUPS`
++ `SCTE35_ENABLED_OUTPUT_GROUPS`
+
 ### Scte35SpliceInsert
 <a name="channels-channelid-stop-model-scte35spliceinsert"></a>
 
@@ -4570,13 +5956,20 @@ Scte35 Time Signal Apos
 ### Scte35Type
 <a name="channels-channelid-stop-model-scte35type"></a>
 
-The SCTE-35 insertion behavior for the output group. Valid values:
-+ `NONE` – The channel does not insert SCTE-35 messages.
-+ `SCTE_35_WITHOUT_IDR` – The channel inserts SCTE-35 messages without an Instantaneous Decoder Refresh (IDR) frame at the cue point.
-+ `SCTE_35_WITHOUT_SEGMENTATION` – The channel inserts SCTE-35 messages with an IDR frame, but without a new segment boundary.
+The SCTE-35 insertion behavior for the output group. For the valid values, see the `scte35Type` field in `CmafIngestGroupSettings` or `MediaPackageV2GroupSettings`.
 + `NONE`
 + `SCTE_35_WITHOUT_IDR`
 + `SCTE_35_WITHOUT_SEGMENTATION`
+
+### SmartSubtitleSourceSettings
+<a name="channels-channelid-stop-model-smartsubtitlesourcesettings"></a>
+
+Contains the settings for a Smart Subtitles caption selector. The caption source is a subtitling output on the AWS Elemental Inference feed that `InferenceSettings` associates with the channel.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| captionSynchronizationMode | [CaptionSynchronizationMode](#channels-channelid-stop-model-captionsynchronizationmode) | False | Controls whether MediaLive delays video to synchronize captions with audio and video output. Valid values:+ `VIDEO_ALIGNED_CAPTIONS` – MediaLive delays the video so that the captions appear at the same time as the speech they transcribe. This is the default.<br />+ `NO_VIDEO_DELAY` – MediaLive doesn't delay the video. It inserts the captions into the video as they become available from Elemental Inference, so captions appear later than the speech they transcribe. |
+| inferenceFeedOutput | string | False | The name of the Elemental Inference feed output that supplies subtitle input into this caption selector. |
 
 ### SmoothGroupAudioOnlyTimecodeControl
 <a name="channels-channelid-stop-model-smoothgroupaudioonlytimecodecontrol"></a>
@@ -4647,6 +6040,47 @@ Smpte2038 Data Preference
 <a name="channels-channelid-stop-model-smptettdestinationsettings"></a>
 
 Smpte Tt Destination Settings
+
+### SrtEncryptionType
+<a name="channels-channelid-stop-model-srtencryptiontype"></a>
+
+Srt Encryption Type
++ `AES128`
++ `AES192`
++ `AES256`
+
+### SrtGroupSettings
+<a name="channels-channelid-stop-model-srtgroupsettings"></a>
+
+Srt Group Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| inputLossAction | [InputLossActionForUdpOut](#channels-channelid-stop-model-inputlossactionforudpout) | False | Specifies behavior of last resort when input video is lost, and no more backup inputs are available. When dropTs is selected the entire transport stream will stop being emitted. When dropProgram is selected the program can be dropped from the transport stream (and replaced with null packets to meet the TS bitrate requirement). Or, when emitProgram is chosen the transport stream will continue to be produced normally with repeat frames, black frames, or slate frames substituted for the absent input video. |
+
+### SrtOutputDestinationSettings
+<a name="channels-channelid-stop-model-srtoutputdestinationsettings"></a>
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| connectionMode | [ConnectionMode](#channels-channelid-stop-model-connectionmode) | False | Specifies the mode the output should use for connection establishment. CALLER mode requires URL, LISTENER mode requires port. |
+| encryptionPassphraseSecretArn | string | False | Arn used to extract the password from Secrets Manager |
+| listenerPort | integer<br />Minimum: 1<br />Maximum: 65535 | False | Port number for listener mode connections (required when connectionMode is LISTENER, must not be provided when connectionMode is CALLER). |
+| streamId | string | False | Stream id for SRT destinations (URLs of type srt://) |
+| url | string | False | A URL specifying a destination |
+
+### SrtOutputSettings
+<a name="channels-channelid-stop-model-srtoutputsettings"></a>
+
+Srt Output Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| bufferMsec | integer<br />Minimum: 0<br />Maximum: 10000 | False | SRT output buffering in milliseconds. A higher value increases latency through the encoder. But the benefits are that it helps to maintain a constant, low-jitter SRT output, and it accommodates clock recovery, input switching, input disruptions, picture reordering, and so on. Range: 0-10000 milliseconds. |
+| containerSettings | [UdpContainerSettings](#channels-channelid-stop-model-udpcontainersettings) | True |  |
+| destination | [OutputLocationRef](#channels-channelid-stop-model-outputlocationref) | True |  |
+| encryptionType | [SrtEncryptionType](#channels-channelid-stop-model-srtencryptiontype) | False | The encryption level for the content. Valid values are AES128, AES192, AES256. You and the downstream system should plan how to set this field because the values must not conflict with each other. |
+| latency | integer<br />Minimum: 40<br />Maximum: 16000 | False | The latency value, in milliseconds, that is proposed during the SRT connection handshake. SRT will choose the maximum of the values proposed by the sender and receiver. On the sender side, latency is the amount of time a packet is held to give it a chance to be delivered successfully. On the receiver side, latency is the amount of time the packet is held before delivering to the application, aiding in packet recovery and matching as closely as possible the packet timing of the sender. Range: 40-16000 milliseconds. |
 
 ### StandardHlsSettings
 <a name="channels-channelid-stop-model-standardhlssettings"></a>
@@ -4739,6 +6173,56 @@ Specifies the position of TTML or WebVTT output captions when `styleControl` is 
 | --- |--- |--- |--- |
 | yPositionPercentage | integer<br />Minimum: 0<br />Maximum: 100 | False | Specifies the vertical position of the top edge of the caption relative to the top of the output as a percentage. A value of 0 places the caption at the top of the output and 100 at the bottom. |
 
+### ThumbnailConfiguration
+<a name="channels-channelid-stop-model-thumbnailconfiguration"></a>
+
+Thumbnail Configuration
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| state | [ThumbnailState](#channels-channelid-stop-model-thumbnailstate) | True | Enables the thumbnail feature. The feature generates thumbnails of the incoming video in each pipeline in the channel. AUTO turns the feature on, DISABLE turns the feature off. |
+
+### ThumbnailState
+<a name="channels-channelid-stop-model-thumbnailstate"></a>
+
+Thumbnail State
++ `AUTO`
++ `DISABLED`
+
+### TimecodeBurninFontSize
+<a name="channels-channelid-stop-model-timecodeburninfontsize"></a>
+
+Timecode Burnin Font Size
++ `EXTRA_SMALL_10`
++ `LARGE_48`
++ `MEDIUM_32`
++ `SMALL_16`
+
+### TimecodeBurninPosition
+<a name="channels-channelid-stop-model-timecodeburninposition"></a>
+
+Timecode Burnin Position
++ `BOTTOM_CENTER`
++ `BOTTOM_LEFT`
++ `BOTTOM_RIGHT`
++ `MIDDLE_CENTER`
++ `MIDDLE_LEFT`
++ `MIDDLE_RIGHT`
++ `TOP_CENTER`
++ `TOP_LEFT`
++ `TOP_RIGHT`
+
+### TimecodeBurninSettings
+<a name="channels-channelid-stop-model-timecodeburninsettings"></a>
+
+Timecode Burnin Settings
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| fontSize | [TimecodeBurninFontSize](#channels-channelid-stop-model-timecodeburninfontsize) | True | Choose a timecode burn-in font size |
+| position | [TimecodeBurninPosition](#channels-channelid-stop-model-timecodeburninposition) | True | Choose a timecode burn-in output position |
+| prefix | string<br />MaxLength: 255 | False | Create a timecode burn-in prefix (optional) |
+
 ### TimecodeConfig
 <a name="channels-channelid-stop-model-timecodeconfig"></a>
 
@@ -4746,7 +6230,7 @@ Timecode Config
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| source | [TimecodeConfigSource](#channels-channelid-stop-model-timecodeconfigsource) | True | Identifies the source for the timecode that will be associated with the events outputs. -Embedded (embedded): Initialize the output timecode with timecode from the the source. If no embedded timecode is detected in the source, the system falls back to using "Start at 0" (zerobased). -System Clock (systemclock): Use the UTC time. -Start at 0 (zerobased): The time of the first frame of the event will be 00:00:00:00. |
+| source | [TimecodeConfigSource](#channels-channelid-stop-model-timecodeconfigsource) | True | Identifies the source for the timecode that will be associated with the events outputs. -Embedded (embedded): Initialize the output timecode with timecode from the source. If no embedded timecode is detected in the source, the system falls back to using "Start at 0" (zerobased). -System Clock (systemclock): Use the UTC time. -Start at 0 (zerobased): The time of the first frame of the event will be 00:00:00:00. |
 | syncThreshold | integer<br />Minimum: 1<br />Maximum: 1000000 | False | Threshold in frames beyond which output timecode is resynchronized to the input timecode. Discrepancies below this threshold are permitted to avoid unnecessary discontinuities in the output timecode. No timecode sync when this is not specified. |
 
 ### TimecodeConfigSource
@@ -4830,6 +6314,7 @@ Video Codec Settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| av1Settings | [Av1Settings](#channels-channelid-stop-model-av1settings) | False |  |
 | frameCaptureSettings | [FrameCaptureSettings](#channels-channelid-stop-model-framecapturesettings) | False |  |
 | h264Settings | [H264Settings](#channels-channelid-stop-model-h264settings) | False |  |
 | h265Settings | [H265Settings](#channels-channelid-stop-model-h265settings) | False |  |
@@ -4844,11 +6329,12 @@ Video settings for this stream.
 | --- |--- |--- |--- |
 | border | integer<br />Minimum: 0<br />Maximum: 100 | False | The width, in pixels, of the black border to insert around each edge of the encoded picture. Must be an even integer from 0 (no border, which is the default) through 100. The border is applied to every side, so the width and height of this VideoDescription must each be greater than twice this value. You can't use this field together with outputPositionRectangle, because both fields govern the position of the encoded content within the output frame. |
 | codecSettings | [VideoCodecSettings](#channels-channelid-stop-model-videocodecsettings) | False | Video codec settings. |
+| cropRectangle | [VideoPositionRectangle](#channels-channelid-stop-model-videopositionrectangle) | False | Region of the input video to crop before scaling. If not specified, the entire input frame is used. Note: Unlike outputPositionRectangle, the bounds of cropRectangle are validated at ingest time by the encoder/scaler rather than at the API level, because the input resolution is not known until the source is probed. Field-level constraints on (x, y, width, height) defined on VideoPositionRectangle still apply. |
 | height | integer | False | Output video height, in pixels. Must be an even number. For most codecs, you can leave this field and width blank in order to use the height and width (resolution) from the source. Note, however, that leaving blank is not recommended. For the Frame Capture codec, height and width are required. |
 | name | string | True | The name of this VideoDescription. Outputs will use this name to uniquely identify this Description. Description names should be unique within this Live Event. |
 | outputPositionRectangle | [VideoPositionRectangle](#channels-channelid-stop-model-videopositionrectangle) | False | The position of the encoded video within the output frame. The area outside the rectangle is filled with black. If you don't specify this field, the video fills the entire output frame. If you do specify it, you must also explicitly specify the width and height of this VideoDescription, so that MediaLive can validate the rectangle against the output frame. |
 | respondToAfd | [VideoDescriptionRespondToAfd](#channels-channelid-stop-model-videodescriptionrespondtoafd) | False | Indicates how MediaLive will respond to the AFD values that might be in the input video. If you do not know what AFD signaling is, or if your downstream system has not given you guidance, choose PASSTHROUGH. RESPOND: MediaLive clips the input video using a formula that uses the AFD values (configured in afdSignaling ), the input display aspect ratio, and the output display aspect ratio. MediaLive also includes the AFD values in the output, unless the codec for this encode is FRAME\_CAPTURE. PASSTHROUGH: MediaLive ignores the AFD values and does not clip the video. But MediaLive does include the values in the output. NONE: MediaLive does not clip the input video and does not include the AFD values in the output |
-| scalingBehavior | [VideoDescriptionScalingBehavior](#channels-channelid-stop-model-videodescriptionscalingbehavior) | False | STRETCH\_TO\_OUTPUT configures the output position to stretch the video to the specified output resolution (height and width). This option will override any position value. DEFAULT may insert black boxes (pillar boxes or letter boxes) around the video to provide the specified output resolution. |
+| scalingBehavior | [VideoDescriptionScalingBehavior](#channels-channelid-stop-model-videodescriptionscalingbehavior) | False | Configures how MediaLive transforms the video picture to match the output frame (height and width). Valid values:+ `DEFAULT` – MediaLive inserts pillar boxes or letter boxes around the video, as needed, to fill the output frame. The video isn't distorted.<br />+ `STRETCH_TO_OUTPUT` – MediaLive stretches the video to fill the output frame. This option overrides any position value. The video might be distorted.<br />+ `SMART_CROP` – MediaLive crops the video to the aspect ratio of the output frame. MediaLive keeps the region of interest that AWS Elemental Inference detects in the source. This value requires `InferenceSettings` with a `feedArn` that identifies an Elemental Inference feed that has a cropping output. For more information about smart cropping, see [Smart cropping video using Elemental Inference](https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-smart-crop.html) in the *MediaLive User Guide*. |
 | sharpness | integer<br />Minimum: 0<br />Maximum: 100 | False | Changes the strength of the anti-alias filter used for scaling. 0 is the softest setting, 100 is the sharpest. A setting of 50 is recommended for most content. |
 | width | integer | False | Output video width, in pixels. Must be an even number. For most codecs, you can leave this field and height blank in order to use the height and width (resolution) from the source. Note, however, that leaving blank is not recommended. For the Frame Capture codec, height and width are required. |
 
@@ -4863,8 +6349,14 @@ Video Description Respond To Afd
 ### VideoDescriptionScalingBehavior
 <a name="channels-channelid-stop-model-videodescriptionscalingbehavior"></a>
 
-Video Description Scaling Behavior
+Specifies how MediaLive transforms the video picture to match the output frame. Valid values:
++ `DEFAULT` – MediaLive inserts pillar boxes or letter boxes around the video, as needed, to fill the output frame.
++ `STRETCH_TO_OUTPUT` – MediaLive stretches the video to fill the output frame.
++ `SMART_CROP` – MediaLive crops the video to the aspect ratio of the output frame, keeping the region of interest that AWS Elemental Inference detects.
+
+For details, see the `scalingBehavior` field in `VideoDescription`.
 + `DEFAULT`
++ `SMART_CROP`
 + `STRETCH_TO_OUTPUT`
 
 ### VideoPositionRectangle

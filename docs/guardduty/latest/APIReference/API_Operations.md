@@ -75,6 +75,7 @@ The following actions are supported:
 +  [ListDetectors](API_ListDetectors.md)
 +  [ListFilters](API_ListFilters.md)
 +  [ListFindings](API_ListFindings.md)
++  [ListInvestigationRecords](API_ListInvestigationRecords.md)
 +  [ListInvestigations](API_ListInvestigations.md)
 +  [ListInvitations](API_ListInvitations.md)
 +  [ListIPSets](API_ListIPSets.md)

@@ -12,7 +12,7 @@ Generates a CloudFormation template that streamlines and automates the integrati
 + Create a set of named queries in Athena that you can use to get started quickly
 
 **Note**
- `GetFlowLogsIntegrationTemplate` does not support integration between AWS Transit Gateway Flow Logs and Amazon Athena.
+ `GetFlowLogsIntegrationTemplate` does not support integration between AWS Transit Gateway Flow Logs or AWS Cloud WAN Flow Logs and Amazon Athena.
 
 ## Request Parameters
 <a name="API_GetFlowLogsIntegrationTemplate_RequestParameters"></a>

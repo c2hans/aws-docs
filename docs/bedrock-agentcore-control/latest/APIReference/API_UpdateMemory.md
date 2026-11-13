@@ -121,9 +121,9 @@ Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
 
  ** [eventExpiryDuration](#API_UpdateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateMemory-request-eventExpiryDuration"></a>
-The number of days after which memory events will expire, between 7 and 365 days.
+The number of days after which memory events expire, between 7 and 3650 days.
 Type: Integer
-Valid Range: Minimum value of 3. Maximum value of 365.
+Valid Range: Minimum value of 3. Maximum value of 3650.
 Required: No
 
  ** [memoryExecutionRoleArn](#API_UpdateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateMemory-request-memoryExecutionRoleArn"></a>

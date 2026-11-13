@@ -19,7 +19,7 @@ Required: No
  ** KmsKeyArn **   <a name="Glue-Type-CloudWatchEncryption-KmsKeyArn"></a>
 The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
 Type: String
-Pattern: `^$|arn:aws[a-z0-9-]*:kms:.*`
+Pattern: `^($|arn:aws[a-z0-9-]*:kms:.*)$`
 Required: No
 
 ## See Also

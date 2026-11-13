@@ -33,7 +33,7 @@ Describes the type of administrative action, as follows:
 +  `VOLUME_RESTORE` - An Amazon FSx for OpenZFS volume is returned to the state saved by the specified snapshot, initiated from an API (`RestoreVolumeFromSnapshot`) or CLI (`restore-volume-from-snapshot`).
 +  `SNAPSHOT_UPDATE` - A snapshot update to an Amazon FSx for OpenZFS volume initiated from the Amazon FSx console, API (`UpdateSnapshot`), or CLI (`update-snapshot`).
 +  `RELEASE_NFS_V3_LOCKS` - Tracks the release of Network File System (NFS) V3 locks on an Amazon FSx for OpenZFS file system.
-+  `DOWNLOAD_DATA_FROM_BACKUP` - An FSx for ONTAP backup is being restored to a new volume on a second-generation file system. Once the all the file metadata is loaded onto the volume, you can mount the volume with read-only access. during this process.
++  `DOWNLOAD_DATA_FROM_BACKUP` - An FSx for ONTAP backup is being restored to a new volume on a second-generation or third-generation file system. Once the all the file metadata is loaded onto the volume, you can mount the volume with read-only access. during this process.
 +  `VOLUME_INITIALIZE_WITH_SNAPSHOT` - A volume is being created from a snapshot on a different FSx for OpenZFS file system. You can initiate this from the Amazon FSx console, API (`CreateVolume`), or CLI (`create-volume`) when using the using the `FULL_COPY` strategy.
 +  `VOLUME_UPDATE_WITH_SNAPSHOT` - A volume is being updated from a snapshot on a different FSx for OpenZFS file system. You can initiate this from the Amazon FSx console, API (`CopySnapshotAndUpdateVolume`), or CLI (`copy-snapshot-and-update-volume`).
 Type: String
@@ -75,10 +75,10 @@ The status of the administrative action, as follows:
 +  `PENDING` - Amazon FSx is waiting to process the administrative action.
 +  `COMPLETED` - Amazon FSx has finished processing the administrative task.
 
-  For a backup restore to a second-generation FSx for ONTAP file system, indicates that all data has been downloaded to the volume, and clients now have read-write access to volume.
+  For a backup restore to a second-generation or third-generation FSx for ONTAP file system, indicates that all data has been downloaded to the volume, and clients now have read-write access to volume.
 +  `UPDATED_OPTIMIZING` - For a storage-capacity increase update, Amazon FSx has updated the file system with the new storage capacity, and is now performing the storage-optimization process.
-+  `PENDING` - For a backup restore to a second-generation FSx for ONTAP file system, indicates that the file metadata is being downloaded onto the volume. The volume's Lifecycle state is CREATING.
-+  `IN_PROGRESS` - For a backup restore to a second-generation FSx for ONTAP file system, indicates that all metadata has been downloaded to the new volume and client can access data with read-only access while Amazon FSx downloads the file data to the volume. Track the progress of this process with the `ProgressPercent` element.
++  `PENDING` - For a backup restore to a second-generation or third-generation FSx for ONTAP file system, indicates that the file metadata is being downloaded onto the volume. The volume's Lifecycle state is CREATING.
++  `IN_PROGRESS` - For a backup restore to a second-generation or third-generation FSx for ONTAP file system, indicates that all metadata has been downloaded to the new volume and client can access data with read-only access while Amazon FSx downloads the file data to the volume. Track the progress of this process with the `ProgressPercent` element.
 Type: String
 Valid Values: `FAILED | IN_PROGRESS | PENDING | COMPLETED | UPDATED_OPTIMIZING | OPTIMIZING | PAUSED | CANCELLED`
 Required: No

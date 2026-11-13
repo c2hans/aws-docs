@@ -25,6 +25,10 @@ Content-type: application/json
       }
    },
    "description": "{{string}}",
+   "domainOverride": {
+      "alternateDomains": [ "{{string}}" ],
+      "default": "{{string}}"
+   },
    "exceptionLevel": "{{string}}",
    "interceptorConfigurations": [
       {
@@ -91,6 +95,11 @@ Required: No
 The updated description for the gateway.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
+Required: No
+
+ ** [domainOverride](#API_UpdateGateway_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateGateway-request-domainOverride"></a>
+The updated public domain names that the gateway advertises in its OAuth discovery URLs instead of the inbound Host header. Specify this when clients reach the gateway through your own proxy or custom domain.
+Type: [DomainOverride](API_DomainOverride.md) object
 Required: No
 
  ** [exceptionLevel](#API_UpdateGateway_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateGateway-request-exceptionLevel"></a>
@@ -166,6 +175,10 @@ Content-type: application/json
       }
    },
    "description": "string",
+   "domainOverride": {
+      "alternateDomains": [ "string" ],
+      "default": "string"
+   },
    "exceptionLevel": "string",
    "gatewayArn": "string",
    "gatewayId": "string",
@@ -235,6 +248,10 @@ Type: [CustomTransformConfiguration](API_CustomTransformConfiguration.md) object
 The updated description of the gateway.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
+
+ ** [domainOverride](#API_UpdateGateway_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateGateway-response-domainOverride"></a>
+The public domain names that the gateway advertises in its OAuth discovery URLs instead of the inbound Host header.
+Type: [DomainOverride](API_DomainOverride.md) object
 
  ** [exceptionLevel](#API_UpdateGateway_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateGateway-response-exceptionLevel"></a>
 The level of detail in error messages returned when invoking the gateway.

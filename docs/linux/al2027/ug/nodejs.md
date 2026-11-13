@@ -20,34 +20,34 @@ AL2027 is currently available for preview. It is intended for evaluation and tes
 
  The *alternatives* tool provides a single command for switching between Node.js versions. By default, *alternatives* runs in auto mode and uses priorities to determine the active Node.js version. However, you can activate any installed version at any time. All supported versions of Node.js currently have equal priority, so Amazon Linux activates the first version that you install.
 
-**Some useful examples of using *alternatives***
+Use the following `alternatives` commands to manage the active Node.js version.
 
-1. Check what *alternatives* is configured for
+List what `alternatives` manages
 
-   ```
-   alternatives --list
-   ```
+```
+alternatives --list
+```
 
-1. Check *node*'s current configuration
+Display the current `node` configuration
 
-   ```
-   alternatives --display node
-   ```
+```
+alternatives --display node
+```
 
-1. Interactively change the Node.js version
+Change the Node.js version interactively
 
-   ```
-   alternatives --config node
-   ```
+```
+alternatives --config node
+```
 
-1. Switch to manual mode and select a specific version
+Select a specific version (manual mode)
 
-   ```
-   alternatives --set node /usr/bin/node-{MAJOR_VERSION}
-   ```
+```
+alternatives --set node /usr/bin/node-{MAJOR_VERSION}
+```
 
-1. Switch back to auto version selection mode
+Return to automatic version selection
 
-   ```
-   alternatives --auto node
-   ```
+```
+alternatives --auto node
+```

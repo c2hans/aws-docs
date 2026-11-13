@@ -10,6 +10,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::SSM::Association](aws-resource-ssm-association.md)
 + [AWS::SSM::CloudConnector](aws-resource-ssm-cloudconnector.md)
++ [AWS::SSM::DefaultHostManagementConfiguration](aws-resource-ssm-defaulthostmanagementconfiguration.md)
 + [AWS::SSM::Document](aws-resource-ssm-document.md)
 + [AWS::SSM::MaintenanceWindow](aws-resource-ssm-maintenancewindow.md)
 + [AWS::SSM::MaintenanceWindowTarget](aws-resource-ssm-maintenancewindowtarget.md)

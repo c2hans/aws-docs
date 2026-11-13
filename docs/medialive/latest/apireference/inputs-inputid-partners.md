@@ -308,7 +308,10 @@ The different types of inputs that AWS Elemental MediaLive supports.
 + `AWS_CDI`
 + `TS_FILE`
 + `SRT_CALLER`
++ `SMPTE_2110_RECEIVER_GROUP`
 + `SDI`
++ `MEDIACONNECT_ROUTER`
++ `SRT_LISTENER`
 
 ### InternalServiceError
 <a name="inputs-inputid-partners-model-internalserviceerror"></a>

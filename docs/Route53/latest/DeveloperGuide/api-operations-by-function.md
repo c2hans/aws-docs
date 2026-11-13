@@ -89,6 +89,9 @@ Resource record sets
 + [ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html)
 + [GetChange](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetChange.html)
 + [ListResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListResourceRecordSets.html)
++ [CreateResourceRecordSetProtections](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateResourceRecordSetProtections.html)
++ [DeleteResourceRecordSetProtections](https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteResourceRecordSetProtections.html)
++ [ListResourceRecordSetProtections](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListResourceRecordSetProtections.html)
 + [GetGeoLocation](https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetGeoLocation.html)
 + [ListGeoLocations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListGeoLocations.html)
 Public DNS query logs

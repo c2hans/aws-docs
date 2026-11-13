@@ -69,7 +69,7 @@ The video codec settings.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CropRectangle`  <a name="cfn-medialive-channel-videodescription-croprectangle"></a>
-Property description not available.
+Region of the input video to crop before scaling. If not specified, the entire input frame is used. Note: Unlike outputPositionRectangle, the bounds of cropRectangle are validated at ingest time by the encoder/scaler rather than at the API level, because the input resolution is not known until the source is probed. Field-level constraints on (x, y, width, height) defined on VideoPositionRectangle still apply.
 *Required*: No
 *Type*: [VideoPositionRectangle](aws-properties-medialive-channel-videopositionrectangle.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -99,7 +99,10 @@ Indicates how to respond to the AFD values in the input stream. RESPOND causes i
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScalingBehavior`  <a name="cfn-medialive-channel-videodescription-scalingbehavior"></a>
-STRETCHTOOUTPUT configures the output position to stretch the video to the specified output resolution (height and width). This option overrides any position value. DEFAULT might insert black boxes (pillar boxes or letter boxes) around the video to provide the specified output resolution.
+Specifies how AWS Elemental MediaLive scales the video to fit the output resolution (Width and Height). Valid values:
++ `DEFAULT` – Inserts black boxes (pillar boxes or letter boxes) around the video when necessary to provide the specified output resolution.
++ `SMART_CROP` – Uses AWS Elemental Inference to identify the region of interest in the source video and crops and scales the video to the output resolution. Typically used to create an output whose aspect ratio differs from the source, such as vertical video from a landscape source. Requires the channel's InferenceSettings to specify an Elemental Inference feed (InferenceSettings.FeedArn). For more information about smart cropping, see [Smart cropping video using Elemental Inference](https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-smart-crop.html) in the *AWS Elemental MediaLive User Guide*.
++ `STRETCH_TO_OUTPUT` – Stretches the video to the specified output resolution. This option overrides any position value (OutputPositionRectangle).
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -12,6 +12,7 @@ Returns information about a specific Amazon Lightsail instance, which is a virtu
 
 ```
 {
+   "includeHealthStatus": {{boolean}},
    "instanceName": "{{string}}"
 }
 ```
@@ -22,6 +23,12 @@ Returns information about a specific Amazon Lightsail instance, which is a virtu
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [includeHealthStatus](#API_GetInstance_RequestSyntax) **   <a name="Lightsail-GetInstance-request-includeHealthStatus"></a>
+Specifies whether to include the instance health status checks in the response of your request.
+When set to `true`, the response includes the `instanceStatus` and `systemStatus` of the instance. When omitted or set to `false`, the response doesn't include them.
+Type: Boolean
+Required: No
 
  ** [instanceName](#API_GetInstance_RequestSyntax) **   <a name="Lightsail-GetInstance-request-instanceName"></a>
 The name of the instance.
@@ -93,6 +100,16 @@ Required: Yes
          ],
          "ramSizeInGb": number
       },
+      "instanceStatus": {
+         "details": [
+            {
+               "impairedSince": number,
+               "name": "string",
+               "status": "string"
+            }
+         ],
+         "status": "string"
+      },
       "ipAddressType": "string",
       "ipv6Addresses": [ "string" ],
       "isStaticIp": boolean,
@@ -136,6 +153,16 @@ Required: Yes
          "name": "string"
       },
       "supportCode": "string",
+      "systemStatus": {
+         "details": [
+            {
+               "impairedSince": number,
+               "name": "string",
+               "status": "string"
+            }
+         ],
+         "status": "string"
+      },
       "tags": [
          {
             "key": "string",

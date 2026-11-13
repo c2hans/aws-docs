@@ -12,6 +12,7 @@ For the current list of covered models and their requirements, see [Amazon Bedro
 If you are eligible, EFS provides the following:
 + You receive zero data retention (ZDR) for internal use through at least June 30, 2027 on Amazon Bedrock and Claude Platform on AWS. Your prompts and outputs are not retained during this period.
 + After the ZDR period, your traffic will be subject to retention with automated safety monitoring. Automated safety monitoring is a process of pattern detection that will look for signals of serious misuse across many requests, rather than reacting to any single prompt.
++ One approval covers all Claude Fable models. You don't need to reapply for each model, and ZDR applies to all of them.
 
 Later this year, you will be able to store your data within your own AWS infrastructure, where you can manage your encryption keys, access policies, networking, and audit logging. Once launched, you can set up your storage and encryption during the ZDR period, so your storage is ready when retention begins.
 

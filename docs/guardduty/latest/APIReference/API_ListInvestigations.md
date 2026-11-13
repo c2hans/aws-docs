@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListIn
 
 This API is currently available as a preview. This feature is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), and Asia Pacific (Tokyo).
 
-Returns a list of investigations associated with the specified GuardDuty detector.
+Returns a list of investigations associated with the specified GuardDuty detector. You can filter the investigations by status, risk level, confidence, finding ID, and investigation type, and sort them by start time, end time, status, risk level, or confidence.
 
 An administrator account sees all investigations across the organization. Member accounts see only the investigations that belong to them.
 
@@ -19,6 +19,14 @@ POST /detector/{{DetectorId}}/investigation/list HTTP/1.1
 Content-type: application/json
 
 {
+   "filterCriteria": {
+      "criterion": {
+         "{{string}}" : {
+            "equals": [ "{{string}}" ],
+            "notEquals": [ "{{string}}" ]
+         }
+      }
+   },
    "maxResults": {{number}},
    "nextToken": "{{string}}",
    "sortCriteria": {
@@ -43,6 +51,11 @@ Required: Yes
 <a name="API_ListInvestigations_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [filterCriteria](#API_ListInvestigations_RequestSyntax) **   <a name="guardduty-ListInvestigations-request-filterCriteria"></a>
+The criteria used to filter investigations. GuardDuty returns only the investigations that match all of the specified criteria.
+Type: [InvestigationFilterCriteria](API_InvestigationFilterCriteria.md) object
+Required: No
 
  ** [maxResults](#API_ListInvestigations_RequestSyntax) **   <a name="guardduty-ListInvestigations-request-maxResults"></a>
 You can use this parameter to indicate the maximum number of items you want in the response. The default value is 50.
@@ -73,9 +86,12 @@ Content-type: application/json
    "investigations": [
       {
          "accountId": "string",
+         "adminAccountId": "string",
          "confidence": "string",
          "endTime": number,
+         "findingId": "string",
          "investigationId": "string",
+         "investigationType": "string",
          "riskLevel": "string",
          "startTime": number,
          "status": "string",

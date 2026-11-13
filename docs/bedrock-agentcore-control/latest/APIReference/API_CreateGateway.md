@@ -21,6 +21,10 @@ Content-type: application/json
    "authorizerType": "{{string}}",
    "clientToken": "{{string}}",
    "description": "{{string}}",
+   "domainOverride": {
+      "alternateDomains": [ "{{string}}" ],
+      "default": "{{string}}"
+   },
    "exceptionLevel": "{{string}}",
    "interceptorConfigurations": [
       {
@@ -87,6 +91,11 @@ Required: No
 The description of the gateway.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
+Required: No
+
+ ** [domainOverride](#API_CreateGateway_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateGateway-request-domainOverride"></a>
+The public domain names that the gateway advertises in its OAuth discovery URLs instead of the inbound Host header. Specify this when clients reach the gateway through your own proxy or custom domain.
+Type: [DomainOverride](API_DomainOverride.md) object
 Required: No
 
  ** [exceptionLevel](#API_CreateGateway_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateGateway-request-exceptionLevel"></a>
@@ -167,6 +176,10 @@ Content-type: application/json
       }
    },
    "description": "string",
+   "domainOverride": {
+      "alternateDomains": [ "string" ],
+      "default": "string"
+   },
    "exceptionLevel": "string",
    "gatewayArn": "string",
    "gatewayId": "string",
@@ -236,6 +249,10 @@ Type: [CustomTransformConfiguration](API_CustomTransformConfiguration.md) object
 The description of the gateway.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
+
+ ** [domainOverride](#API_CreateGateway_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateGateway-response-domainOverride"></a>
+The public domain names that the gateway advertises in its OAuth discovery URLs instead of the inbound Host header.
+Type: [DomainOverride](API_DomainOverride.md) object
 
  ** [exceptionLevel](#API_CreateGateway_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateGateway-response-exceptionLevel"></a>
 The level of detail in error messages returned when invoking the gateway.

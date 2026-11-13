@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[CustomJWTAuthorizer](#cfn-bedrockagentcore-paymentmanager-authorizerconfiguration-customjwtauthorizer)" : {{CustomJWTAuthorizer}}
+  "[CustomJWTAuthorizer](#cfn-bedrockagentcore-paymentmanager-authorizerconfiguration-customjwtauthorizer)" : {{CustomJWTAuthorizerConfiguration}}
 }
 ```
 
@@ -28,7 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [CustomJWTAuthorizer](#cfn-bedrockagentcore-paymentmanager-authorizerconfiguration-customjwtauthorizer): {{
-    CustomJWTAuthorizer}}
+    CustomJWTAuthorizerConfiguration}}
 ```
 
 ## Properties
@@ -37,5 +37,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 `CustomJWTAuthorizer`  <a name="cfn-bedrockagentcore-paymentmanager-authorizerconfiguration-customjwtauthorizer"></a>
 The inbound JWT-based authorization, specifying how incoming requests should be authenticated.
 *Required*: Yes
-*Type*: [CustomJWTAuthorizer](aws-properties-bedrockagentcore-paymentmanager-customjwtauthorizer.md)
+*Type*: [CustomJWTAuthorizerConfiguration](aws-properties-bedrockagentcore-paymentmanager-customjwtauthorizerconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

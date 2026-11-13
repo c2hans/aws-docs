@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::S3Tables::TableBucket",
   "Properties" : {
       "[EncryptionConfiguration](#cfn-s3tables-tablebucket-encryptionconfiguration)" : {{EncryptionConfiguration}},
+      "[LoggingConfiguration](#cfn-s3tables-tablebucket-loggingconfiguration)" : {{LoggingConfiguration}},
       "[MetricsConfiguration](#cfn-s3tables-tablebucket-metricsconfiguration)" : {{MetricsConfiguration}},
       "[ReplicationConfiguration](#cfn-s3tables-tablebucket-replicationconfiguration)" : {{ReplicationConfiguration}},
       "[StorageClassConfiguration](#cfn-s3tables-tablebucket-storageclassconfiguration)" : {{StorageClassConfiguration}},
@@ -49,6 +50,8 @@ Type: AWS::S3Tables::TableBucket
 Properties:
   [EncryptionConfiguration](#cfn-s3tables-tablebucket-encryptionconfiguration): {{
     EncryptionConfiguration}}
+  [LoggingConfiguration](#cfn-s3tables-tablebucket-loggingconfiguration): {{
+    LoggingConfiguration}}
   [MetricsConfiguration](#cfn-s3tables-tablebucket-metricsconfiguration): {{
     MetricsConfiguration}}
   [ReplicationConfiguration](#cfn-s3tables-tablebucket-replicationconfiguration): {{
@@ -69,6 +72,12 @@ Properties:
 Configuration specifying how data should be encrypted. This structure defines the encryption algorithm and optional KMS key to be used for server-side encryption.
 *Required*: No
 *Type*: [EncryptionConfiguration](aws-properties-s3tables-tablebucket-encryptionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LoggingConfiguration`  <a name="cfn-s3tables-tablebucket-loggingconfiguration"></a>
+Where server access logs for the table bucket are delivered and how the log objects are named. To turn off logging, remove this property. For more information, see [Server access logging for table buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-server-logs.html) in the *Amazon Simple Storage Service User Guide*.
+*Required*: No
+*Type*: [LoggingConfiguration](aws-properties-s3tables-tablebucket-loggingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MetricsConfiguration`  <a name="cfn-s3tables-tablebucket-metricsconfiguration"></a>

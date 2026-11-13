@@ -49,7 +49,9 @@ Type: Boolean
 Required: No
 
  ** [IpAddresses](#API_UpdateAccelerator_RequestSyntax) **   <a name="globalaccelerator-UpdateAccelerator-request-IpAddresses"></a>
-The IP addresses for an accelerator.
+The IP addresses for an accelerator. Specify one or two IPv4 addresses. Do not include the /32 suffix.
+You can update IP addresses only for an accelerator that you created with at least one BYOIP address. You can't update an accelerator that has only IP addresses provided by Global Accelerator to use BYOIP addresses. Instead, create a new accelerator with your BYOIP addresses.
+For more information, see [Update an accelerator to change your IP addresses](https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip.update-accelerator.html) in the * AWS Global Accelerator Developer Guide*.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 2 items.
 Length Constraints: Maximum length of 45.

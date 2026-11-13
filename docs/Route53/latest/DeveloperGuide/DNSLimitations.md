@@ -81,6 +81,7 @@ If you have an existing account and your default limit is 50 now, it will remain
 | Records in a record set | 400 per record set |
 | Geolocation, latency, multivalue answer, weighted, and IP-based records | 100 records that have the same name and type |
 | Geoproximity records | 30 records that have the same name and type |
+| Record set protections | 10,000 per hosted zone<br />To request a higher quota, contact AWS Support.<br />Protections can exist on names that have no records, so this quota is separate from the quota on records. |
 | CIDR collections | 5 per AWS account.<br />[Request a higher quota](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/route53/quotas). |
 | CIDR blocks | 1000 per CIDR collection.<br />[Request a higher quota](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/route53/quotas). |
 
@@ -295,6 +296,7 @@ Amazon Route 53 API requests are subject to the following maximums.
 
 **Topics**
 + [Number of elements and characters in `ChangeResourceRecordSets` requests](#limits-api-requests-changeresourcerecordsets)
++ [Number of elements in record set protection requests](#limits-api-requests-rrset-protections)
 + [Frequency of Amazon Route 53 API requests](#limits-api-requests-route-53)
 + [Frequency of Route 53 VPC Resolver API requests](#limits-api-requests-route-53-resolver)
 
@@ -306,6 +308,17 @@ A request cannot contain more than 1,000 `ResourceRecord` elements (including al
 
 **Maximum number of characters**
 The sum of the number of characters (including spaces) in all `Value` elements in a request cannot exceed 32,000 characters. When the value of the `Action` element is `UPSERT`, each character in a `Value` element is counted twice.
+
+### Number of elements in record set protection requests
+<a name="limits-api-requests-rrset-protections"></a>
+
+The following limits apply to the number of protections in record set protection requests and responses:
+
+**`CreateResourceRecordSetProtections` and `DeleteResourceRecordSetProtections` requests**
+A request must contain at least 1 and at most 100 protections.
+
+**`ListResourceRecordSetProtections` responses**
+A response contains at most 300 protections per page.
 
 ### Frequency of Amazon Route 53 API requests
 <a name="limits-api-requests-route-53"></a>

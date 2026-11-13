@@ -107,7 +107,7 @@ Pattern: `[a-zA-Z0-9-_$#.]+`
 The Amazon Resource Name (ARN) for the schema.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 
  ** [SchemaName](#API_PutSchemaVersionMetadata_ResponseSyntax) **   <a name="Glue-PutSchemaVersionMetadata-response-SchemaName"></a>
 The name for the schema.

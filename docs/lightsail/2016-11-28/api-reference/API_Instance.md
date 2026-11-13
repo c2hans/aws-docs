@@ -49,6 +49,12 @@ The size of the vCPU and the amount of RAM for the instance.
 Type: [InstanceHardware](API_InstanceHardware.md) object
 Required: No
 
+ ** instanceStatus **   <a name="Lightsail-Type-Instance-instanceStatus"></a>
+Reports impaired functionality that stems from issues internal to the instance, such as impaired reachability.
+This value is returned only when you set `includeHealthStatus` to `true` in your request.
+Type: [InstanceHealthStatus](API_InstanceHealthStatus.md) object
+Required: No
+
  ** ipAddressType **   <a name="Lightsail-Type-Instance-ipAddressType"></a>
 The IP address type of the instance.
 The possible values are `ipv4` for IPv4 only, `ipv6` for IPv6 only, and `dualstack` for IPv4 and IPv6.
@@ -103,7 +109,7 @@ Required: No
  ** resourceType **   <a name="Lightsail-Type-Instance-resourceType"></a>
 The type of resource (usually `Instance`).
 Type: String
-Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket`
+Valid Values: `ContainerService | Instance | StaticIp | KeyPair | InstanceSnapshot | Domain | PeeredVpc | LoadBalancer | LoadBalancerTlsCertificate | Disk | DiskSnapshot | RelationalDatabase | RelationalDatabaseSnapshot | ExportSnapshotRecord | CloudFormationStackRecord | Alarm | ContactMethod | Distribution | Certificate | Bucket | Subdomain`
 Required: No
 
  ** sshKeyName **   <a name="Lightsail-Type-Instance-sshKeyName"></a>
@@ -120,6 +126,12 @@ Required: No
  ** supportCode **   <a name="Lightsail-Type-Instance-supportCode"></a>
 The support code. Include this code in your email to support when you have questions about an instance or another resource in Lightsail. This code enables our support team to look up your Lightsail information more easily.
 Type: String
+Required: No
+
+ ** systemStatus **   <a name="Lightsail-Type-Instance-systemStatus"></a>
+Reports impaired functionality that stems from issues related to the systems that support an instance, such as hardware failures and network connectivity problems.
+This value is returned only when you set `includeHealthStatus` to `true` in your request.
+Type: [InstanceHealthStatus](API_InstanceHealthStatus.md) object
 Required: No
 
  ** tags **   <a name="Lightsail-Type-Instance-tags"></a>

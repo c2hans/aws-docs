@@ -15,6 +15,12 @@ Describes whether snapshots are enabled for a Managed Service for Apache Flink a
 Type: Boolean
 Required: Yes
 
+ ** SnapshotMode **   <a name="APIReference-Type-ApplicationSnapshotConfigurationDescription-SnapshotMode"></a>
+Describes the snapshot mode of a Managed Service for Apache Flink application.
+Type: String
+Valid Values: `APPLICATION_SNAPSHOTS_LEGACY | ENHANCED_SNAPSHOTS`
+Required: No
+
 ## See Also
 <a name="API_ApplicationSnapshotConfigurationDescription_SeeAlso"></a>
 

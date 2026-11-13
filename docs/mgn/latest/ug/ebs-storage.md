@@ -187,17 +187,15 @@ Select the **AUTO** option if you want AWS Transform MGN to automatically select
 AWS Transform MGN uses a single replication server per 15 source disks. Selecting the **AUTO** option ensures that the fewest number of replication servers are used, resulting in increased cost savings.
 
 **Note**
-AWS Transform MGN always uses Amazon EBS magnetic volumes for disks that are under 500 GiB in size when the **AUTO** option is selected.
+When you select **AUTO**, AWS Transform MGN uses Amazon EBS magnetic volumes for disks under 500 GiB. If the staging area subnet is in a Local Zone, it uses General Purpose SSD (gp2) volumes for these disks instead.
 
 If you do not want AWS Transform MGN to automatically select a disk, you can select a disk manually. Select the disk type from the **EBS volume type** menu.
 
 **Note**
 When replicating into an AZ, ensure that the AZ supports the staging disk type chosen.
 
-For certain disks, you can configure the amount of IOPS to be allocated per GB of disk space under **IOPS**. You can allocate up to 50 IOPS per GB. 64,000 IOPS are available for Nitro-based instances. Other instances are guaranteed up to 32,000 IOPS. The maximum IOPS per instance is 80,000.
+For certain disks, you can configure the amount of IOPS to be allocated per GB of disk space under **IOPS**. You can allocate up to 50 IOPS per GB. 64,000 IOPS are available for Nitro-based instances. Other instances are guaranteed up to 32,000 IOPS. The maximum IOPS per instance is 80,000. For **General Purpose SSD (gp3)** disks, you can provision up to 500 IOPS per GiB, up to 80,000 IOPS for each disk. The baseline IOPS is 3,000.
 
-Choose **Change** to confirm the change.
-
-For **General Purpose SSD (gp3)** disks, you can also set the **Throughput**. General Purpose SSD (gp3) volumes have a baseline performance of 125 MiB/s. You can provision additional throughput of 0.25 MiB/s per provisioned IOPS up to a maximum of 1,000 MiB/s (at 4,000 IOPS or higher).
+For **General Purpose SSD (gp3)** disks, you can also set the **Throughput**. General Purpose SSD (gp3) volumes have a baseline throughput of 125 MiB/s. You can provision throughput of 0.25 MiB/s per provisioned IOPS up to a maximum of 2,000 MiB/s (at 8,000 IOPS or higher).
 
 Choose **Change** to confirm the change.

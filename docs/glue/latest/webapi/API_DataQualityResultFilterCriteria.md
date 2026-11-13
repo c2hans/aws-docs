@@ -10,9 +10,22 @@ Criteria used to return data quality results.
 ## Contents
 <a name="API_DataQualityResultFilterCriteria_Contents"></a>
 
+ ** DataQualityEvaluationConfig **   <a name="Glue-Type-DataQualityResultFilterCriteria-DataQualityEvaluationConfig"></a>
+Filter results by the evaluation configuration name which started the evaluation run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
  ** DataSource **   <a name="Glue-Type-DataQualityResultFilterCriteria-DataSource"></a>
 Filter results by the specified data source. For example, retrieving all results for an AWS Glue table.
 Type: [DataSource](API_DataSource.md) object
+Required: No
+
+ ** EvaluationRunMode **   <a name="Glue-Type-DataQualityResultFilterCriteria-EvaluationRunMode"></a>
+Filter results by how their evaluation run started: `ON_DEMAND` or `EVALUATION_CONFIG`. Results that no evaluation run produced match neither value.
+Type: String
+Valid Values: `ON_DEMAND | EVALUATION_CONFIG`
 Required: No
 
  ** JobName **   <a name="Glue-Type-DataQualityResultFilterCriteria-JobName"></a>

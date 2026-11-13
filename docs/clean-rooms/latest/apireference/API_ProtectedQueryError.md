@@ -5,20 +5,34 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 # ProtectedQueryError
 <a name="API_ProtectedQueryError"></a>
 
-Details of errors thrown by the protected query.
+Details of the error that caused the protected query to fail.
 
 ## Contents
 <a name="API_ProtectedQueryError_Contents"></a>
 
  ** code **   <a name="API-Type-ProtectedQueryError-code"></a>
-An error code for the error.
+A code that identifies the category of the failure. Valid values are:
++  `MALFORMED_QUERY` – The query is not valid (syntax, semantics, columns, or an unsupported operation).
++  `RESOURCE_NOT_FOUND` – A referenced resource doesn't exist.
++  `INVALID_RESOURCE` – A referenced resource exists, but you can't use it because its configuration, state, or data is not valid.
++  `RESOURCE_ACCESS_DENIED` – A required permission is missing for a data source or resource.
++  `INSUFFICIENT_COMPUTE` – The query exceeded the available compute (memory, disk, or time).
++  `TRANSIENT_ERROR` – A temporary condition caused the failure, such as throttling or a network interruption.
++  `INTERNAL_ERROR` – AWS Clean Rooms encountered an unexpected error. If the error persists, contact AWS Support.
++  `UNKNOWN_ERROR` – The failure couldn't be classified.
+For more information about error codes, see [https://docs.aws.amazon.com/clean-rooms/latest/userguide/error-codes.html](https://docs.aws.amazon.com/clean-rooms/latest/userguide/error-codes.html) in the AWS Clean Rooms User Guide.
 Type: String
 Required: Yes
 
  ** message **   <a name="API-Type-ProtectedQueryError-message"></a>
-A description of why the query failed.
+A description of why the protected query failed.
 Type: String
 Required: Yes
+
+ ** retry **   <a name="API-Type-ProtectedQueryError-retry"></a>
+Contains information about whether running the same protected query again might succeed.
+Type: [RetryInfo](API_RetryInfo.md) object
+Required: No
 
 ## See Also
 <a name="API_ProtectedQueryError_SeeAlso"></a>

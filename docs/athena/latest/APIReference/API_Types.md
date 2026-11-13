@@ -75,6 +75,7 @@ The following data types are supported:
 +  [SessionStatistics](API_SessionStatistics.md)
 +  [SessionStatus](API_SessionStatus.md)
 +  [SessionSummary](API_SessionSummary.md)
++  [SystemTableStatus](API_SystemTableStatus.md)
 +  [TableMetadata](API_TableMetadata.md)
 +  [Tag](API_Tag.md)
 +  [UnprocessedNamedQueryId](API_UnprocessedNamedQueryId.md)

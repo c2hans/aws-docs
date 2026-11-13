@@ -40,12 +40,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 `PredefinedMetricType`  <a name="cfn-autoscaling-scalingpolicy-predefinedmetricspecification-predefinedmetrictype"></a>
 The metric type. The following predefined metrics are available:
 + `ASGAverageCPUUtilization` - Average CPU utilization of the Auto Scaling group.
++ `ASGAverageCPUUtilizationHighResolution` - Average CPU utilization of the Auto Scaling group using a high-resolution metric.
 + `ASGAverageNetworkIn` - Average number of bytes received on all network interfaces by the Auto Scaling group.
 + `ASGAverageNetworkOut` - Average number of bytes sent out on all network interfaces by the Auto Scaling group.
 + `ALBRequestCountPerTarget` - Average Application Load Balancer request count per target for your Auto Scaling group.
+To help ensure that target tracking has metric data to use for the `ASGAverageCPUUtilizationHighResolution` metric type, configure the Auto Scaling group's launch template and existing instances to publish high-resolution CPU utilization metrics.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `ASGAverageCPUUtilization | ASGAverageNetworkIn | ASGAverageNetworkOut | ALBRequestCountPerTarget`
+*Allowed values*: `ASGAverageCPUUtilization | ASGAverageCPUUtilizationHighResolution | ASGAverageNetworkIn | ASGAverageNetworkOut | ALBRequestCountPerTarget`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceLabel`  <a name="cfn-autoscaling-scalingpolicy-predefinedmetricspecification-resourcelabel"></a>

@@ -60,6 +60,7 @@ Required: Yes
          "Name": "string"
       }
    ],
+   "DataQualityEvaluationConfig": "string",
    "DataSource": {
       "DataQualityGlueTable": {
          "AdditionalOptions": {
@@ -88,6 +89,7 @@ Required: Yes
       "string" : "string"
    },
    "EvaluationContext": "string",
+   "EvaluationRunMode": "string",
    "ExecutionCompletedOn": number,
    "ExecutionStartedOn": number,
    "Observations": [
@@ -151,6 +153,12 @@ A list of `DataQualityAnalyzerResult` objects representing the results for each 
 Type: Array of [DataQualityAnalyzerResult](API_DataQualityAnalyzerResult.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 2000 items.
 
+ ** [DataQualityEvaluationConfig](#API_GetDataQualityResultV2_ResponseSyntax) **   <a name="Glue-GetDataQualityResultV2-response-DataQualityEvaluationConfig"></a>
+The name of the data quality evaluation configuration that started the evaluation run, returned when `EvaluationRunMode` is `EVALUATION_CONFIG`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+
  ** [DataSource](#API_GetDataQualityResultV2_ResponseSyntax) **   <a name="Glue-GetDataQualityResultV2-response-DataSource"></a>
 The table associated with the data quality result, if any.
 Type: [DataSource](API_DataSource.md) object
@@ -178,6 +186,11 @@ The evaluation context for the data quality result. This value identifies a spec
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+
+ ** [EvaluationRunMode](#API_GetDataQualityResultV2_ResponseSyntax) **   <a name="Glue-GetDataQualityResultV2-response-EvaluationRunMode"></a>
+How the evaluation run that produced the result started: `ON_DEMAND` for a run started by `StartDataQualityRulesetEvaluationRun`, or `EVALUATION_CONFIG` for a run started by a data quality evaluation configuration. Not returned for results that no evaluation run produced, such as results from any ETL job.
+Type: String
+Valid Values: `ON_DEMAND | EVALUATION_CONFIG`
 
  ** [ExecutionCompletedOn](#API_GetDataQualityResultV2_ResponseSyntax) **   <a name="Glue-GetDataQualityResultV2-response-ExecutionCompletedOn"></a>
 The date and time when this data quality run completed.

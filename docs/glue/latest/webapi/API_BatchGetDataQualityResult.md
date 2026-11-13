@@ -64,6 +64,7 @@ Required: Yes
             }
          ],
          "CompletedOn": number,
+         "DataQualityEvaluationConfig": "string",
          "DataSource": {
             "DataQualityGlueTable": {
                "AdditionalOptions": {
@@ -86,6 +87,7 @@ Required: Yes
             }
          },
          "EvaluationContext": "string",
+         "EvaluationRunMode": "string",
          "JobName": "string",
          "JobRunId": "string",
          "Observations": [

@@ -30,9 +30,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create
      elasticbeanstalk:DescribeEnvironments
      lambda:GetFunctionConfiguration
      lambda:ListFunctions
-     opsworks:DescribeStacks
-     opsworks:DescribeApps
-     opsworks:DescribeLayers
      ```
 
 1. Open the CodePipeline console at [https://console.aws.amazon.com/codesuite/codepipeline/home](https://console.aws.amazon.com/codesuite/codepipeline/home).

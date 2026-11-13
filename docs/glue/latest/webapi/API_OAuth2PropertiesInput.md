@@ -28,7 +28,7 @@ Required: No
  ** OAuth2GrantType **   <a name="Glue-Type-OAuth2PropertiesInput-OAuth2GrantType"></a>
 The OAuth2 grant type in the CreateConnection request. For example, `AUTHORIZATION_CODE`, `JWT_BEARER`, `REFRESH_TOKEN`, or `CLIENT_CREDENTIALS`.
 Type: String
-Valid Values: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER | REFRESH_TOKEN`
+Valid Values: `AUTHORIZATION_CODE | CLIENT_CREDENTIALS | JWT_BEARER | REFRESH_TOKEN | TOKEN_EXCHANGE`
 Required: No
 
  ** TokenUrl **   <a name="Glue-Type-OAuth2PropertiesInput-TokenUrl"></a>

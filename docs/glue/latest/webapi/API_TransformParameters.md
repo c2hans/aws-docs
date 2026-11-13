@@ -14,7 +14,7 @@ The algorithm-specific parameters that are associated with the machine learning 
 The type of machine learning transform.
 For information about the types of machine learning transforms, see [Creating Machine Learning Transforms](https://docs.aws.amazon.com/glue/latest/dg/add-job-machine-learning-transform.html).
 Type: String
-Valid Values: `FIND_MATCHES`
+Valid Values: `FIND_MATCHES | FILL_MISSING_VALUES`
 Required: Yes
 
  ** FindMatchesParameters **   <a name="Glue-Type-TransformParameters-FindMatchesParameters"></a>

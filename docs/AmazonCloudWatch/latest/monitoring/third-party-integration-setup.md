@@ -67,7 +67,7 @@ The following table identified the integrations methods used by the supported th
 | Wazuh Platform | API | No | No | Yes | [API caller permissions](pipeline-iam-reference.md#api-caller-permissions) |
 | Wiz CNAPP | API | No | No | Yes | [API caller permissions](pipeline-iam-reference.md#api-caller-permissions) |
 | Zeek | S3 Delivery | Yes | Yes | No | [Source-specific IAM policies](pipeline-iam-reference.md#source-specific-iam-policies) |
-| Zscaler ZIA/ZPA | S3 Delivery | Yes | Yes | No | [Source-specific IAM policies](pipeline-iam-reference.md#source-specific-iam-policies) |
+| Zscaler Internet Access (ZIA) | S3 Delivery | Yes | Yes | No | [Source-specific IAM policies](pipeline-iam-reference.md#source-specific-iam-policies) |
 
 Third-party integration sent through Security Hub CSPM is also supported. For comprehensive information about Security Hub's third-party integrations, including supported partners and integration configurations with "Sends findings" direction, refer to the [Security Hub Third-Party Integration documentation](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-partner-providers.html).
 

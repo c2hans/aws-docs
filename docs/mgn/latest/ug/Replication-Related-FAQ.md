@@ -81,8 +81,8 @@ Rescans can still happen following a hard reboot, crashes, or when you add or re
  Supported OSs include:
 
 **Windows**
-+ Windows Server 2012r1
-+ Windows Server 2012r2
++ Windows Server 2012
++ Windows Server 2012 R2
 + Windows Server 2016
 + Windows Server 2019
 + Windows Server 2022

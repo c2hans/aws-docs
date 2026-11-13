@@ -75,13 +75,43 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/inputdevic
 {
   "availabilityZone": "string",
   "hdDeviceSettings": {
+    "audioChannelPairs": [
+      {
+        "id": integer,
+        "profile": enum
+      }
+    ],
+    "codec": enum,
     "configuredInput": enum,
-    "maxBitrate": integer
+    "inputResolution": "string",
+    "latencyMs": integer,
+    "maxBitrate": integer,
+    "mediaconnectSettings": {
+      "flowArn": "string",
+      "roleArn": "string",
+      "secretArn": "string",
+      "sourceName": "string"
+    }
   },
   "name": "string",
   "uhdDeviceSettings": {
+    "audioChannelPairs": [
+      {
+        "id": integer,
+        "profile": enum
+      }
+    ],
+    "codec": enum,
     "configuredInput": enum,
-    "maxBitrate": integer
+    "inputResolution": "string",
+    "latencyMs": integer,
+    "maxBitrate": integer,
+    "mediaconnectSettings": {
+      "flowArn": "string",
+      "roleArn": "string",
+      "secretArn": "string",
+      "sourceName": "string"
+    }
   }
 }
 ```
@@ -281,6 +311,36 @@ The source at the input device that is currently active.
 + `HDMI`
 + `SDI`
 
+### InputDeviceCodec
+<a name="inputdevices-inputdeviceid-model-inputdevicecodec"></a>
+
+The codec to use on the video that the device produces.
++ `AVC`
++ `HEVC`
+
+### InputDeviceConfigurableAudioChannelPairConfig
+<a name="inputdevices-inputdeviceid-model-inputdeviceconfigurableaudiochannelpairconfig"></a>
+
+One audio configuration that specifies the format for one audio pair that the device produces as output.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| id | integer | False | The ID for one audio pair configuration, a value from 1 to 8. |
+| profile | [InputDeviceConfigurableAudioChannelPairProfile](#inputdevices-inputdeviceid-model-inputdeviceconfigurableaudiochannelpairprofile) | False | The profile to set for one audio pair configuration. Choose an enumeration value. Each value describes one audio configuration using the format (rate control algorithm)-(codec)\_(quality)-(bitrate in bytes). For example, CBR-AAC\_HQ-192000. Or choose DISABLED, in which case the device won't produce audio for this pair. |
+
+### InputDeviceConfigurableAudioChannelPairProfile
+<a name="inputdevices-inputdeviceid-model-inputdeviceconfigurableaudiochannelpairprofile"></a>
+
+Property of InputDeviceConfigurableAudioChannelPairConfig, which configures one audio channel that the device produces.
++ `CBR-AAC_HQ-192000`
++ `CBR-AAC_HQ-256000`
++ `CBR-AAC_HQ-384000`
++ `CBR-AAC_HQ-512000`
++ `DISABLED`
++ `VBR-AAC_HE-64000`
++ `VBR-AAC_HHE-16000`
++ `VBR-AAC_LC-128000`
+
 ### InputDeviceConfigurableSettings
 <a name="inputdevices-inputdeviceid-model-inputdeviceconfigurablesettings"></a>
 
@@ -288,8 +348,13 @@ Configurable settings for the input device.
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
+| audioChannelPairs | Array of type [InputDeviceConfigurableAudioChannelPairConfig](#inputdevices-inputdeviceid-model-inputdeviceconfigurableaudiochannelpairconfig) | False | An array of eight audio configurations, one for each audio pair in the source. Set up each audio configuration either to exclude the pair, or to format it and include it in the output from the device. This parameter applies only to UHD devices, and only when the device is configured as the source for a MediaConnect flow. For an HD device, you configure the audio by setting up audio selectors in the channel configuration. |
+| codec | [InputDeviceCodec](#inputdevices-inputdeviceid-model-inputdevicecodec) | False | Choose the codec for the video that the device produces. Only UHD devices can specify this parameter. |
 | configuredInput | [InputDeviceConfiguredInput](#inputdevices-inputdeviceid-model-inputdeviceconfiguredinput) | False | The input source that you want to use. If the device has a source connected to only one of its input ports, or if you don't care which source the device sends, specify Auto. If the device has sources connected to both its input ports, and you want to use a specific source, specify the source. |
+| inputResolution | string | False | Choose the resolution of the Link device's source (HD or UHD). Make sure the resolution matches the current source from the device. This value determines MediaLive resource allocation and billing for this input. Only UHD devices can specify this parameter. |
+| latencyMs | integer | False | The Link device's buffer size (latency) in milliseconds (ms). |
 | maxBitrate | integer | False | The maximum bitrate in bits per second. Set a value here to throttle the bitrate of the source video. |
+| mediaconnectSettings | [InputDeviceMediaConnectConfigurableSettings](#inputdevices-inputdeviceid-model-inputdevicemediaconnectconfigurablesettings) | False | To attach this device to a MediaConnect flow, specify these parameters. To detach an existing flow, enter {} for the value of mediaconnectSettings. Only UHD devices can specify this parameter. |
 
 ### InputDeviceConfigurationValidationError
 <a name="inputdevices-inputdeviceid-model-inputdeviceconfigurationvalidationerror"></a>
@@ -336,6 +401,18 @@ Settings that describe the active source from the input device, and the video ch
 Specifies whether the input device has been configured (outside of MediaLive) to use a dynamic IP address assignment (DHCP) or a static IP address.
 + `STATIC`
 + `DHCP`
+
+### InputDeviceMediaConnectConfigurableSettings
+<a name="inputdevices-inputdeviceid-model-inputdevicemediaconnectconfigurablesettings"></a>
+
+Parameters required to attach a MediaConnect flow to the device.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| flowArn | string | False | The ARN of the MediaConnect flow to attach this device to. |
+| roleArn | string | False | The ARN for the role that MediaLive assumes to access the attached flow and secret. For more information about how to create this role, see the MediaLive user guide. |
+| secretArn | string | False | The ARN for the secret that holds the encryption key to encrypt the content output by the device. |
+| sourceName | string | False | The name of the MediaConnect Flow source to stream to. |
 
 ### InputDeviceNetworkSettings
 <a name="inputdevices-inputdeviceid-model-inputdevicenetworksettings"></a>

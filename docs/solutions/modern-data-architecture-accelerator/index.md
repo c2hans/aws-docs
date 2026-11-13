@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/modern-data-architecture-acce
 title: 'Modern Data Architecture Accelerator'
 canonical_url: https://docs.aws.amazon.com/solutions/modern-data-architecture-accelerator/
 source: aws-documentation
-generated_on: 2026-11-11
+generated_on: 2026-11-12
 ---
 
 # Modern Data Architecture Accelerator

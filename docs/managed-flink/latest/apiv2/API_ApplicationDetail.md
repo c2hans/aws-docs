@@ -39,7 +39,7 @@ Required: Yes
  ** RuntimeEnvironment **   <a name="APIReference-Type-ApplicationDetail-RuntimeEnvironment"></a>
 The runtime environment for the application.
 Type: String
-Valid Values: `SQL-1_0 | FLINK-1_6 | FLINK-1_8 | ZEPPELIN-FLINK-1_0 | FLINK-1_11 | FLINK-1_13 | ZEPPELIN-FLINK-2_0 | FLINK-1_15 | ZEPPELIN-FLINK-3_0 | FLINK-1_18 | FLINK-1_19 | FLINK-1_20`
+Valid Values: `SQL-1_0 | FLINK-1_6 | FLINK-1_8 | ZEPPELIN-FLINK-1_0 | FLINK-1_11 | FLINK-1_13 | ZEPPELIN-FLINK-2_0 | FLINK-1_15 | ZEPPELIN-FLINK-3_0 | FLINK-1_18 | FLINK-1_19 | FLINK-1_20 | FLINK-2_2 | FLINK-2_3`
 Required: Yes
 
  ** ApplicationConfigurationDescription **   <a name="APIReference-Type-ApplicationDetail-ApplicationConfigurationDescription"></a>

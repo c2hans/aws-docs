@@ -45,7 +45,7 @@ Type: [EngineConfiguration](API_EngineConfiguration.md) object
 Required: No
 
  ** EngineVersion **   <a name="athena-Type-WorkGroupConfigurationUpdates-EngineVersion"></a>
-The engine version requested when a workgroup is updated. After the update, all queries on the workgroup run on the requested engine version. If no value was previously set, the default is Auto. Queries on the `AmazonAthenaPreviewFunctionality` workgroup run on the preview engine regardless of this setting.
+The engine version requested when a workgroup is updated. After the update, all queries on the workgroup run on the requested engine version. If no value was previously set, the default is Auto.
 Type: [EngineVersion](API_EngineVersion.md) object
 Required: No
 

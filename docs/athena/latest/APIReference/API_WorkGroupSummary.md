@@ -22,7 +22,7 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** EngineVersion **   <a name="athena-Type-WorkGroupSummary-EngineVersion"></a>
-The engine version setting for all queries on the workgroup. Queries on the `AmazonAthenaPreviewFunctionality` workgroup run on the preview engine regardless of this setting.
+The engine version setting for all queries on the workgroup.
 Type: [EngineVersion](API_EngineVersion.md) object
 Required: No
 

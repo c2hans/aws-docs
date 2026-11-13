@@ -15,6 +15,13 @@ Describes whether snapshots are enabled for a Managed Service for Apache Flink a
 Type: Boolean
 Required: Yes
 
+ ** SnapshotMode **   <a name="APIReference-Type-ApplicationSnapshotConfiguration-SnapshotMode"></a>
+Specifies the snapshot mode for a Managed Service for Apache Flink application. To use enhanced snapshots, specify `ENHANCED_SNAPSHOTS`. If you don't specify this parameter, the application uses `APPLICATION_SNAPSHOTS_LEGACY`. For more information, see [Enhanced Snapshots](https://docs.aws.amazon.com/managed-flink/latest/java/how-snapshots.html).
+To use `ENHANCED_SNAPSHOTS`, the application must use Apache Flink version 1.20 or later.
+Type: String
+Valid Values: `APPLICATION_SNAPSHOTS_LEGACY | ENHANCED_SNAPSHOTS`
+Required: No
+
 ## See Also
 <a name="API_ApplicationSnapshotConfiguration_SeeAlso"></a>
 

@@ -21,7 +21,7 @@ Required: Yes
  ** Iops **   <a name="FSx-Type-FileSystemLustreMetadataConfiguration-Iops"></a>
 The number of Metadata IOPS provisioned for the file system.
 + For SSD file systems, valid values are `1500`, `3000`, `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
-+ For Intelligent-Tiering file systems, valid values are `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
++ For Intelligent-Tiering file systems, valid values are `1500`, `3000`, `6000`, `12000`, and multiples of `12000` up to a maximum of `192000`.
 Type: Integer
 Valid Range: Minimum value of 1500. Maximum value of 192000.
 Required: No

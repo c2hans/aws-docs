@@ -21,6 +21,8 @@ Usage records should be submitted in quick succession following a recorded event
 
  `BatchMeterUsage` supports vendor-metered tagging. Optionally, you can split the usage in a `UsageRecord` into buckets by including `UsageAllocations`, where each `UsageAllocation` has a set of `Tags` that you define. Vendor-metered tagging doesn't change the price, dimensions, or the total usage that you report. It gives buyers a more granular view of their usage of your product so they can perform cost allocation in the AWS Billing and Cost Management console. For more information, see [Vendor-metered tagging](https://docs.aws.amazon.com/marketplace/latest/userguide/metering-for-usage.html#saas-vendor-metered-tagging) and [BatchMeterUsage with usage allocation tagging code example](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-code-examples.html#saas-batchmeterusage-tagging) in the * AWS Marketplace Seller Guide*.
 
+To report fractional usage, use `QuantityAsDecimal` instead of `Quantity` in each `UsageRecord`.
+
  `BatchMeterUsage` returns a list of `UsageRecordResult` objects, which have each `UsageRecord`. It also returns a list of `UnprocessedRecords`, which indicate errors on the service side that should be retried.
 
 For AWS Regions that support `BatchMeterUsage`, see [BatchMeterUsage Region support](https://docs.aws.amazon.com/marketplace/latest/APIReference/metering-regions.html#batchmeterusage-region-support).
@@ -41,10 +43,12 @@ For an example of `BatchMeterUsage`, see [ BatchMeterUsage code example](https:/
          "Dimension": "{{string}}",
          "LicenseArn": "{{string}}",
          "Quantity": {{number}},
+         "QuantityAsDecimal": "{{string}}",
          "Timestamp": {{number}},
          "UsageAllocations": [
             {
                "AllocatedUsageQuantity": {{number}},
+               "AllocatedUsageQuantityAsDecimal": "{{string}}",
                "Tags": [
                   {
                      "Key": "{{string}}",
@@ -98,10 +102,12 @@ Required: No
             "Dimension": "string",
             "LicenseArn": "string",
             "Quantity": number,
+            "QuantityAsDecimal": "string",
             "Timestamp": number,
             "UsageAllocations": [
                {
                   "AllocatedUsageQuantity": number,
+                  "AllocatedUsageQuantityAsDecimal": "string",
                   "Tags": [
                      {
                         "Key": "string",
@@ -120,10 +126,12 @@ Required: No
          "Dimension": "string",
          "LicenseArn": "string",
          "Quantity": number,
+         "QuantityAsDecimal": "string",
          "Timestamp": number,
          "UsageAllocations": [
             {
                "AllocatedUsageQuantity": number,
+               "AllocatedUsageQuantityAsDecimal": "string",
                "Tags": [
                   {
                      "Key": "string",
@@ -183,7 +191,7 @@ The tag is invalid, or the number of tags is greater than 5.
 HTTP Status Code: 400
 
  ** InvalidUsageAllocationsException **
-Sum of allocated usage quantities is not equal to the usage quantity.
+Sum of allocated usage quantities is not equal to the usage quantity, or the allocations don't use the same type of quantity (whole number or decimal) as the usage quantity.
 HTTP Status Code: 400
 
  ** InvalidUsageDimensionException **

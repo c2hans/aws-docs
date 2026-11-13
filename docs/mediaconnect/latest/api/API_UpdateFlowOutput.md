@@ -63,6 +63,14 @@ Content-type: application/json
       "encryptionKeyConfiguration": { ... },
       "encryptionKeyType": "{{string}}"
    },
+   "rtmpPushSettings": {
+      "applicationName": "{{string}}",
+      "streamName": "{{string}}",
+      "tlsEncryption": {
+         "encryptionConfiguration": { ... },
+         "encryptionType": "{{string}}"
+      }
+   },
    "senderControlPort": {{number}},
    "senderIpAddress": "{{string}}",
    "smoothingLatency": {{number}},
@@ -167,7 +175,7 @@ Required: No
  The protocol to use for the output.
  AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
 Type: String
-Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq`
+Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq | rtmp-push`
 Required: No
 
  ** [remoteId](#API_UpdateFlowOutput_RequestSyntax) **   <a name="mediaconnect-UpdateFlowOutput-request-remoteId"></a>
@@ -184,6 +192,11 @@ Required: No
  ** [routerIntegrationTransitEncryption](#API_UpdateFlowOutput_RequestSyntax) **   <a name="mediaconnect-UpdateFlowOutput-request-routerIntegrationTransitEncryption"></a>
 The configuration that defines how content is encrypted during transit between the MediaConnect router and a MediaConnect flow.
 Type: [FlowTransitEncryption](API_FlowTransitEncryption.md) object
+Required: No
+
+ ** [rtmpPushSettings](#API_UpdateFlowOutput_RequestSyntax) **   <a name="mediaconnect-UpdateFlowOutput-request-rtmpPushSettings"></a>
+The settings for an output that pushes a stream to a destination using the RTMP (Real-Time Messaging Protocol) protocol, or RTMPS (RTMP over TLS) when TLS encryption is specified.
+Type: [RtmpPushOutputSettings](API_RtmpPushOutputSettings.md) object
 Required: No
 
  ** [senderControlPort](#API_UpdateFlowOutput_RequestSyntax) **   <a name="mediaconnect-UpdateFlowOutput-request-senderControlPort"></a>
@@ -287,6 +300,19 @@ Content-type: application/json
          "ndiSpeedHqQuality": number,
          "protocol": "string",
          "remoteId": "string",
+         "rtmpPushOutputSettings": {
+            "applicationName": "string",
+            "streamName": "string",
+            "tlsEncryption": {
+               "encryptionConfiguration": { ... },
+               "encryptionType": "string"
+            }
+         },
+         "rtmpPushSourceSettings": {
+            "applicationName": "string",
+            "namingType": "string",
+            "streamName": "string"
+         },
          "senderControlPort": number,
          "senderIpAddress": "string",
          "smoothingLatency": number,

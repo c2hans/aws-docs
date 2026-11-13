@@ -25,7 +25,7 @@ ED25519 SSH user keys are not supported in FIPS mode. If you launched your Amazo
 **Note**
 AL2027 no longer provides the `fips-mode-setup` command-line utility. FIPS mode only needs to be enabled in the Linux kernel, and after rebooting the system-wide cryptographic FIPS policy will be automatically enabled via the `fips-crypto-policies` dracut module or the systemd `fips-crypto-policy-overlay` service.
 
-**Enable FIPS Mode**
+**To enable FIPS mode**
 
 1. Connect to your AL2027 instance using SSH or AWS Systems Manager.
 

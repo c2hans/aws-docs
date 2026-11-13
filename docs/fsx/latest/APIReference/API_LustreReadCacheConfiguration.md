@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_LustreReadCa
 
  ** SizeGiB **   <a name="FSx-Type-LustreReadCacheConfiguration-SizeGiB"></a>
  Required if `SizingMode` is set to `USER_PROVISIONED`. Specifies the size of the file system's SSD read cache, in gibibytes (GiB).
-The SSD read cache size is distributed across provisioned file servers in your file system. Intelligent-Tiering file systems support a minimum of 32 GiB and maximum of 131072 GiB for SSD read cache size for every 4,000 MB/s of throughput capacity provisioned.
+The SSD read cache size is distributed across provisioned file servers in your file system. Intelligent-Tiering file systems support a minimum of 8 GiB and maximum of 32768 GiB for SSD read cache size for every 1000 MBps of throughput capacity provisioned.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 2147483647.
 Required: No

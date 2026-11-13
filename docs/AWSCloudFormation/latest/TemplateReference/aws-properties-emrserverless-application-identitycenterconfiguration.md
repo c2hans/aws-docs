@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[IdentityCenterInstanceArn](#cfn-emrserverless-application-identitycenterconfiguration-identitycenterinstancearn)" : {{String}}
+  "[IdentityCenterInstanceArn](#cfn-emrserverless-application-identitycenterconfiguration-identitycenterinstancearn)" : {{String}},
+  "[UserBackgroundSessionsEnabled](#cfn-emrserverless-application-identitycenterconfiguration-userbackgroundsessionsenabled)" : {{Boolean}}
 }
 ```
 
@@ -28,6 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [IdentityCenterInstanceArn](#cfn-emrserverless-application-identitycenterconfiguration-identitycenterinstancearn): {{String}}
+  [UserBackgroundSessionsEnabled](#cfn-emrserverless-application-identitycenterconfiguration-userbackgroundsessionsenabled): {{Boolean}}
 ```
 
 ## Properties
@@ -40,4 +42,10 @@ The ARN of the IAM Identity Center instance.
 *Pattern*: `^arn:(aws[a-zA-Z0-9-]*):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
 *Minimum*: `1`
 *Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`UserBackgroundSessionsEnabled`  <a name="cfn-emrserverless-application-identitycenterconfiguration-userbackgroundsessionsenabled"></a>
+Enables user background sessions for this application so Livy sessions can continue running after users log out of their interactive notebook or their Identity Center sessions expire.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

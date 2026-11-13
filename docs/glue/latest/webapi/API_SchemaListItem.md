@@ -33,7 +33,7 @@ Required: No
 The Amazon Resource Name (ARN) for the schema.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10240.
-Pattern: `arn:aws(-(cn|us-gov|iso(-[bef])?))?:glue:.*`
+Pattern: `arn:aws(-(cn|us-gov|eusc|iso(-[bef])?))?:glue:.*`
 Required: No
 
  ** SchemaName **   <a name="Glue-Type-SchemaListItem-SchemaName"></a>

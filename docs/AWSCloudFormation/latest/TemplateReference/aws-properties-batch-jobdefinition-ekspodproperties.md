@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ImagePullSecrets](#cfn-batch-jobdefinition-ekspodproperties-imagepullsecrets)" : {{[ ImagePullSecret, ... ]}},
   "[InitContainers](#cfn-batch-jobdefinition-ekspodproperties-initcontainers)" : {{[ EksContainer, ... ]}},
   "[Metadata](#cfn-batch-jobdefinition-ekspodproperties-metadata)" : {{EksMetadata}},
+  "[SecurityContext](#cfn-batch-jobdefinition-ekspodproperties-securitycontext)" : {{EksPodSecurityContext}},
   "[ServiceAccountName](#cfn-batch-jobdefinition-ekspodproperties-serviceaccountname)" : {{String}},
   "[ShareProcessNamespace](#cfn-batch-jobdefinition-ekspodproperties-shareprocessnamespace)" : {{Boolean}},
   "[Volumes](#cfn-batch-jobdefinition-ekspodproperties-volumes)" : {{[ EksVolume, ... ]}}
@@ -45,6 +46,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - EksContainer}}
   [Metadata](#cfn-batch-jobdefinition-ekspodproperties-metadata): {{
     EksMetadata}}
+  [SecurityContext](#cfn-batch-jobdefinition-ekspodproperties-securitycontext): {{
+    EksPodSecurityContext}}
   [ServiceAccountName](#cfn-batch-jobdefinition-ekspodproperties-serviceaccountname): {{String}}
   [ShareProcessNamespace](#cfn-batch-jobdefinition-ekspodproperties-shareprocessnamespace): {{Boolean}}
   [Volumes](#cfn-batch-jobdefinition-ekspodproperties-volumes): {{
@@ -92,6 +95,12 @@ This object is limited to 10 elements.
 Metadata about the Kubernetes pod. For more information, see [Understanding Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/) in the *Kubernetes documentation*.
 *Required*: No
 *Type*: [EksMetadata](aws-properties-batch-jobdefinition-eksmetadata.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SecurityContext`  <a name="cfn-batch-jobdefinition-ekspodproperties-securitycontext"></a>
+The security context to apply to the pod. The settings apply to all containers in the pod unless an individual container specifies an overriding value.
+*Required*: No
+*Type*: [EksPodSecurityContext](aws-properties-batch-jobdefinition-ekspodsecuritycontext.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ServiceAccountName`  <a name="cfn-batch-jobdefinition-ekspodproperties-serviceaccountname"></a>

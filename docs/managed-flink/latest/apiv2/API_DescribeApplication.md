@@ -62,6 +62,7 @@ Required: No
             "KeyType": "string"
          },
          "ApplicationSnapshotConfigurationDescription": {
+            "SnapshotMode": "string",
             "SnapshotsEnabled": boolean
          },
          "ApplicationSystemRollbackConfigurationDescription": {
@@ -101,6 +102,7 @@ Required: No
          "RunConfigurationDescription": {
             "ApplicationRestoreConfigurationDescription": {
                "ApplicationRestoreType": "string",
+               "SnapshotArn": "string",
                "SnapshotName": "string"
             },
             "FlinkRunConfigurationDescription": {
@@ -304,7 +306,7 @@ The request JSON is not valid for the operation.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
-Specified application can't be found.
+The specified application, snapshot, or snapshot operation can't be found.
 HTTP Status Code: 400
 
 ## See Also
