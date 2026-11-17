@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-user-userphoneconfig-properties"></a>
 
 `AfterContactWorkTimeLimit`  <a name="cfn-connect-user-userphoneconfig-aftercontactworktimelimit"></a>
-The After Call Work (ACW) timeout setting, in seconds. This parameter has a minimum value of 0 and a maximum value of 2,000,000 seconds (24 days). Enter 0 if you don't want to allocate a specific amount of ACW time. It essentially means an indefinite amount of time. When the conversation ends, ACW starts; the agent must choose Close contact to end ACW.
+The After Call Work (ACW) timeout setting, in seconds. This parameter has a minimum value of 0 and a maximum value of 2,000,000 seconds (24 days). For the CHAT channel, the maximum for a specific duration is 5,400 seconds (90 minutes); higher values end ACW after 90 minutes. For all channels, including chat, you can enter 0 if you don't want to allocate a specific amount of ACW time. It essentially means an indefinite amount of time. When the conversation ends, ACW starts; the agent must choose Close contact to end ACW.
 When returned by a `SearchUsers` call, `AfterContactWorkTimeLimit` is returned in milliseconds.
 *Required*: No
 *Type*: Integer

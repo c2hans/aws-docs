@@ -10,6 +10,11 @@ Describes a snapshot.
 ## Contents
 <a name="API_Snapshot_Contents"></a>
 
+ ** AssociatedKmsKeySet.N **
+The additional AWS KMS keys that are associated with the snapshot.
+Type: Array of [AssociatedKmsKey](API_AssociatedKmsKey.md) objects
+Required: No
+
  ** availabilityZone **
 The Availability Zone or Local Zone of the snapshot. For example, `us-west-1a` (Availability Zone) or `us-west-2-lax-1a` (Local Zone).
 Type: String

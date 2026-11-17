@@ -441,7 +441,7 @@ Details on the resource tags used to filter findings.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceType`  <a name="cfn-inspectorv2-filter-filtercriteria-resourcetype"></a>
-Details on the resource types used to filter findings.
+Details on the resource types used to filter findings. For Google Cloud Platform (GCP) resources, the resource type is `compute.googleapis.com/Instance`, `cloudfunctions.googleapis.com/Function`, or `artifactregistry.googleapis.com/DockerImage`.
 *Required*: No
 *Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
 *Minimum*: `1`

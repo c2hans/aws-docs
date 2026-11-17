@@ -156,7 +156,7 @@ The Amazon Resource Name (ARN) of the KMS key that encrypts data in the cluster.
 <a name="aws-resource-dsql-cluster-return-values-fn--getatt-fn--getatt"></a>
 
 `CreationTime`  <a name="CreationTime-fn::getatt"></a>
-The time of when created the cluster.
+The time when Aurora DSQL created the cluster.
 
 `Endpoint`  <a name="Endpoint-fn::getatt"></a>
 The connection endpoint for the created cluster.

@@ -9,6 +9,8 @@ Accept a VPC peering connection request. To accept a request, the VPC peering co
 
 For an inter-Region VPC peering connection request, you must accept the VPC peering connection in the Region of the accepter VPC.
 
+If the requester allows multipath resilience, accepting the request also allows multipath resilience for the accepter VPC, and the `multipathResilienceStatus` of the VPC peering connection becomes `enabled`. Additional charges apply. For more information, see [Amazon VPC pricing](http://aws.amazon.com/vpc/pricing/). To stop allowing multipath resilience for the accepter VPC, use [ModifyVpcPeeringConnectionOptions](API_ModifyVpcPeeringConnectionOptions.md) and set `AllowMultipathResilience` to `false`.
+
 ## Request Parameters
 <a name="API_AcceptVpcPeeringConnection_RequestParameters"></a>
 

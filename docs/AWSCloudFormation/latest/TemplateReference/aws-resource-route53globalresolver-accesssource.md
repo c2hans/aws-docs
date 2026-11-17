@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Route53GlobalResolver::AccessSource
 <a name="aws-resource-route53globalresolver-accesssource"></a>
 
-Creates an access source for a DNS view. Access sources define IP addresses or CIDR ranges that are allowed to send DNS queries to the Route 53 Global Resolver, along with the permitted DNS protocols.
+Creates an access source for a DNS view. An access source defines which traffic is allowed to send DNS queries to the Route 53 Global Resolver, along with the permitted DNS protocols. You can define the allowed source in one of two ways: specify an IP address or CIDR range with `cidr` to allow queries by source IP, or specify an AWS Cloud WAN segment with `segment` (together with the associated core network endpoint) to allow queries from that segment instead of a CIDR range.
 
 **Important**
 Route 53 Global Resolver is a global service that supports resolvers in multiple AWS Regions but you must specify the US East (Ohio) Region to create, update, or otherwise work with Route 53 Global Resolver resources. That is, for example, specify `--region us-east-2` on AWS CLI commands.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/agentic-complaint-management-
 title: 'Guidance for Agentic Complaint Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/agentic-complaint-management-on-aws/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # Guidance for Agentic Complaint Management on AWS

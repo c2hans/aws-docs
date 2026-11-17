@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::EC2::TransitGatewayPeeringAttachment",
   "Properties" : {
+      "[Options](#cfn-ec2-transitgatewaypeeringattachment-options)" : {{TransitGatewayPeeringAttachmentOptions}},
       "[PeerAccountId](#cfn-ec2-transitgatewaypeeringattachment-peeraccountid)" : {{String}},
       "[PeerRegion](#cfn-ec2-transitgatewaypeeringattachment-peerregion)" : {{String}},
       "[PeerTransitGatewayId](#cfn-ec2-transitgatewaypeeringattachment-peertransitgatewayid)" : {{String}},
@@ -38,6 +39,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::EC2::TransitGatewayPeeringAttachment
 Properties:
+  [Options](#cfn-ec2-transitgatewaypeeringattachment-options): {{
+    TransitGatewayPeeringAttachmentOptions}}
   [PeerAccountId](#cfn-ec2-transitgatewaypeeringattachment-peeraccountid): {{String}}
   [PeerRegion](#cfn-ec2-transitgatewaypeeringattachment-peerregion): {{String}}
   [PeerTransitGatewayId](#cfn-ec2-transitgatewaypeeringattachment-peertransitgatewayid): {{String}}
@@ -48,6 +51,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-ec2-transitgatewaypeeringattachment-properties"></a>
+
+`Options`  <a name="cfn-ec2-transitgatewaypeeringattachment-options"></a>
+Describes whether dynamic routing is enabled or disabled for the transit gateway peering request.
+*Required*: No
+*Type*: [TransitGatewayPeeringAttachmentOptions](aws-properties-ec2-transitgatewaypeeringattachment-transitgatewaypeeringattachmentoptions.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PeerAccountId`  <a name="cfn-ec2-transitgatewaypeeringattachment-peeraccountid"></a>
 The ID of the AWS account that owns the transit gateway.
@@ -99,8 +108,23 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-ec2-transitgatewaypeeringattachment-return-values-fn--getatt-fn--getatt"></a>
 
+`AccepterAllowMultipathResilience`  <a name="AccepterAllowMultipathResilience-fn::getatt"></a>
+Indicates whether the accepter allows multipath resilience for the transit gateway peering attachment.
+
 `CreationTime`  <a name="CreationTime-fn::getatt"></a>
 The time the transit gateway peering attachment was created.
+
+`MultipathResilienceStatus`  <a name="MultipathResilienceStatus-fn::getatt"></a>
+The multipath resilience status of the transit gateway peering attachment. The possible values are:
++ `enabled` – Both the requester and the accepter allow multipath resilience.
++ `pending` – Either the requester or the accepter allows multipath resilience, but not both.
++ `disabled` – Neither the requester nor the accepter allows multipath resilience.
+
+`RequesterAllowMultipathResilience`  <a name="RequesterAllowMultipathResilience-fn::getatt"></a>
+Indicates whether the requester allows multipath resilience for the transit gateway peering attachment.
+
+`RequesterMultipathResilienceMode`  <a name="RequesterMultipathResilienceMode-fn::getatt"></a>
+The multipath resilience mode for the requester. This value is present only when the requester allows multipath resilience.
 
 `State`  <a name="State-fn::getatt"></a>
 The state of the transit gateway peering attachment. Note that the `initiating` state has been deprecated.

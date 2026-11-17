@@ -9,6 +9,8 @@ Modifies the VPC peering connection options on one side of a VPC peering connect
 
 If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different Regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the Region for the requester VPC to modify the requester VPC peering options and the Region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the [DescribeVpcPeeringConnections](API_DescribeVpcPeeringConnections.md) command.
 
+Multipath resilience replicates the traffic of an inter-Region VPC peering connection across multiple network paths. You can allow multipath resilience for your side of the connection if both of its Regions are supported. It takes effect only when both the requester and the accepter allow it. Additional charges apply when multipath resilience is in effect. For more information, see [Amazon VPC pricing](http://aws.amazon.com/vpc/pricing/). To check whether multipath resilience is in effect, use [DescribeVpcPeeringConnections](API_DescribeVpcPeeringConnections.md) and check `multipathResilienceStatus`.
+
 ## Request Parameters
 <a name="API_ModifyVpcPeeringConnectionOptions_RequestParameters"></a>
 

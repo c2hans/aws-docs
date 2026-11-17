@@ -37,5 +37,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:(aws|aws-us-gov):secretsmanager:[A-Za-z0-9-]{1,64}:[0-9]{12}:secret:[a-zA-Z0-9-_/+=.@!]+$`
+*Pattern*: `^arn:aws(-cn|-us-gov)?:secretsmanager:[A-Za-z0-9-]{1,64}:[0-9]{12}:secret:[a-zA-Z0-9-_/+=.@!]+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

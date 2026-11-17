@@ -12,4 +12,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Athena::DataCatalog](aws-resource-athena-datacatalog.md)
 + [AWS::Athena::NamedQuery](aws-resource-athena-namedquery.md)
 + [AWS::Athena::PreparedStatement](aws-resource-athena-preparedstatement.md)
++ [AWS::Athena::SystemTables](aws-resource-athena-systemtables.md)
 + [AWS::Athena::WorkGroup](aws-resource-athena-workgroup.md)

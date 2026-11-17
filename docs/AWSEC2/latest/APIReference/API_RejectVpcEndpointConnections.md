@@ -22,8 +22,16 @@ The ID of the service.
 Type: String
 Required: Yes
 
+ **TransitGatewayAttachmentId.N**
+The IDs of the transit gateway attachments to reject. This parameter is supported only for Gateway Load Balancer endpoint services.
+You must specify either `VpcEndpointIds` or `TransitGatewayAttachmentIds`, but not both.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Required: No
+
  **VpcEndpointId.N**
 The IDs of the VPC endpoints.
+You must specify either `VpcEndpointIds` or `TransitGatewayAttachmentIds`, but not both.
 Type: Array of strings
 Required: Yes
 

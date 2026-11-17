@@ -12,6 +12,8 @@ Limitations and rules apply to a VPC peering connection. For more information, s
 
 The owner of the accepter VPC must accept the peering request to activate the peering connection. The VPC peering connection request expires after 7 days, after which it cannot be accepted or rejected.
 
+Multipath resilience replicates the traffic of an inter-Region VPC peering connection across multiple network paths.
+
 If you create a VPC peering connection request between VPCs with overlapping CIDR blocks, the VPC peering connection has a status of `failed`.
 
 ## Request Parameters
@@ -39,6 +41,11 @@ Required: No
  **PeerVpcId**
 The ID of the VPC with which you are creating the VPC peering connection. You must specify this parameter in the request.
 Type: String
+Required: No
+
+ **RequesterPeeringConnectionOptions**
+The VPC peering connection options to apply to the requester VPC.
+Type: [CreatePeeringConnectionOptionsRequest](API_CreatePeeringConnectionOptionsRequest.md) object
 Required: No
 
  **TagSpecification.N**

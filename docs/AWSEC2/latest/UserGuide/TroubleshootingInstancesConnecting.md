@@ -415,7 +415,7 @@ To resolve this error, start by confirming that there was an expected change to 
 ## Error: Server refused our key *or* No supported authentication methods available
 <a name="TroubleshootingInstancesConnectingPuTTY"></a>
 
-If you use PuTTY to connect to your instance and get either of the following errors, Error: Server refused our key or Error: No supported authentication methods available, verify that you are connecting with the appropriate username for your AMI. Type the username in **User name** in the **PuTTY Configuration** window.
+If you use PuTTY to connect to your instance and get either of the following errors, `Error: Server refused our key` or `Error: No supported authentication methods available`, verify that you are connecting with the appropriate username for your AMI. Type the username in **User name** in the **PuTTY Configuration** window.
 
 The appropriate usernames are as follows:
 

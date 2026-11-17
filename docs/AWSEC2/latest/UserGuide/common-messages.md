@@ -248,7 +248,7 @@ If this does not resolve the activation issue, follow these additional steps.
   C:\Windows\System32\slmgr.vbs /dlv
   ```
 
-  If the output contains Error: product key not found, the AWS KMS client key isn't set. If the AWS KMS client key isn't set, look up the client key as described in this Microsoft article: [AWS KMS client activation and product keys](https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys), and then run the following command to set the AWS KMS client key.
+  If the output contains `Error: product key not found`, the AWS KMS client key isn't set. If the AWS KMS client key isn't set, look up the client key as described in this Microsoft article: [AWS KMS client activation and product keys](https://learn.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys), and then run the following command to set the AWS KMS client key.
 
   ```
   C:\Windows\System32\slmgr.vbs /ipk {{client_key}}

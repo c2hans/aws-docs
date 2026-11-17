@@ -176,6 +176,30 @@ The name of the Redshift database associated with the catalog.
 `CreateTime`  <a name="CreateTime-fn::getatt"></a>
 The time at which the catalog was created.
 
+`FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.CrawlerArn`  <a name="FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.CrawlerArn-fn::getatt"></a>
+Property description not available.
+
+`FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.Error.ErrorCode`  <a name="FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.Error.ErrorCode-fn::getatt"></a>
+Property description not available.
+
+`FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.Error.ErrorMessage`  <a name="FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.Error.ErrorMessage-fn::getatt"></a>
+Property description not available.
+
+`FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.Status`  <a name="FederatedCatalog.SyncConfiguration.AssetsSyncConfiguration.ManagedCrawlerDetails.Status-fn::getatt"></a>
+Property description not available.
+
+`FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.CrawlerArn`  <a name="FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.CrawlerArn-fn::getatt"></a>
+Property description not available.
+
+`FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.Error.ErrorCode`  <a name="FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.Error.ErrorCode-fn::getatt"></a>
+Property description not available.
+
+`FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.Error.ErrorMessage`  <a name="FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.Error.ErrorMessage-fn::getatt"></a>
+Property description not available.
+
+`FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.Status`  <a name="FederatedCatalog.SyncConfiguration.LineageSyncConfiguration.ManagedCrawlerDetails.Status-fn::getatt"></a>
+Property description not available.
+
 `ResourceArn`  <a name="ResourceArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) assigned to the catalog resource.
 

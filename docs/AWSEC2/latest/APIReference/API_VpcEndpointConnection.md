@@ -51,6 +51,16 @@ The tags.
 Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
+ ** transitGatewayAttachmentId **
+The ID of the transit gateway attachment, if the connection is for a transit gateway attachment.
+Type: String
+Required: No
+
+ ** transitGatewayAttachmentOwner **
+The ID of the AWS account that owns the transit gateway attachment, if the connection is for a transit gateway attachment.
+Type: String
+Required: No
+
  ** vpcEndpointConnectionId **
 The ID of the VPC endpoint connection.
 Type: String

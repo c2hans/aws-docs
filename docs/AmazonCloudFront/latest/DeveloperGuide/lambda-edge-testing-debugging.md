@@ -95,7 +95,7 @@ To make it easier to troubleshoot issues, you can look for specific problems by 
 In addition, read the following sections in this chapter for more recommendations about troubleshooting and fixing errors.
 
 **Throttles graph**
-The **Lambda@Edge errors** tab also includes a **Throttles** graph. On occasion, the Lambda service throttles your function invocations on per Region basis, if you reach the regional concurrency quota (formerly known as limit). If you see a limit exceeded error, your function has reached a quota that the Lambda service imposes on executions in a Region. For more information, including how to request an increase in the quota, see [Quotas on Lambda@Edge](cloudfront-limits.md#limits-lambda-at-edge).
+The **Lambda@Edge errors** tab also includes a **Throttles** graph. On occasion, the Lambda service throttles your function invocations on per Region basis, if you reach the regional concurrency quota (formerly known as limit). If you see a `limit exceeded` error, your function has reached a quota that the Lambda service imposes on executions in a Region. For more information, including how to request an increase in the quota, see [Quotas on Lambda@Edge](cloudfront-limits.md#limits-lambda-at-edge).
 
 ![Throttle graph for Lambda@Edge function execution.](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/images/Lambda-throttles-page.png)
 

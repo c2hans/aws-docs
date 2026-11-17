@@ -16,9 +16,10 @@ Accelerator capabilities cannot be used with wait-and-save fleets. If you specif
 Each accelerator type maps to specific EC2 instance families:
 `t4`: Uses G4dn instance family
 `a10g`: Uses G5 instance family
-`l4`: Uses G6 and Gr6 instance families
+`l4`: Uses G6, G6f, Gr6, and Gr6f instance families
 `l40s`: Uses G6e instance family
 `rtx-pro-server-6000`: Uses G7e instance family
+`rtx-pro-4500`: Uses G7 instance family
 
 ## Syntax
 <a name="aws-properties-deadline-fleet-acceleratorcapabilities-syntax"></a>

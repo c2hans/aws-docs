@@ -418,7 +418,7 @@ This field is truncated to 800 bytes.
 
 1. <a name="CMCD-real-time-logging-fields"></a>
 **CMCD fields in real-time access logs**
-For more information about these fields, see the [CTA Specification Web Application Video Ecosystem - Common Media Client Data CTA-5004](https://cdn.cta.tech/cta/media/media/resources/standards/pdfs/cta-5004-final.pdf) document.
+For more information about these fields, see the [CTA Specification Web Application Video Ecosystem - Common Media Client Data CTA-5004](https://www.cta.tech/standards/wave-common-media-client-data/) document.
 
 1. **`cmcd-encoded-bitrate`**
 
@@ -490,7 +490,7 @@ For more information about these fields, see the [CTA Specification Web Applicat
 
 1. **`cmcd-version`**
 
-   The version of this specification used for interpreting the defined key names and values. If this key is omitted, the client and server *must* interpret the values as being defined by version 1.
+   The version of this specification used for interpreting the defined key names and values. If this key is omitted, the version is 1; according to the specification, both the client and server *must* interpret the version as 1 when this field is omitted.
 
 1. **`r-host`**
 

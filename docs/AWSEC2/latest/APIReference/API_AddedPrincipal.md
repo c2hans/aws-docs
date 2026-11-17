@@ -10,6 +10,12 @@ Describes a principal.
 ## Contents
 <a name="API_AddedPrincipal_Contents"></a>
 
+ ** permissionType **
+The type of permission granted to the principal.
+Type: String
+Valid Values: `vpc-endpoint | transit-gateway-attachment`
+Required: No
+
  ** principal **
 The Amazon Resource Name (ARN) of the principal.
 Type: String

@@ -43,6 +43,7 @@ The available GPU accelerators are:
 + `l4` - NVIDIA L4 Tensor Core GPU (24 GiB memory)
 + `l40s` - NVIDIA L40S Tensor Core GPU (48 GiB memory)
 + `rtx-pro-server-6000` - NVIDIA RTX PRO Server 6000 GPU (96 GiB memory)
++ `rtx-pro-4500` - NVIDIA RTX PRO 4500 GPU (32 GiB memory)
 *Required*: Yes
 *Type*: String
 *Allowed values*: `t4 | a10g | l4 | l40s | rtx-pro-server-6000`
@@ -55,7 +56,7 @@ You can choose from the following runtimes:
 + `grid:r595` - [NVIDIA vGPU software 20](https://docs.nvidia.com/vgpu/20.0/index.html)
 + `grid:r580` - [NVIDIA vGPU software 19](https://docs.nvidia.com/vgpu/19.0/index.html)
 If you don't specify a runtime, AWS Deadline Cloud uses `latest` as the default. However, if you have multiple accelerators and specify `latest` for some and leave others blank, AWS Deadline Cloud raises an exception.
-All accelerator types support `grid:r595` and `grid:r580`.
+Most accelerator types support `grid:r595` and `grid:r580`. The `rtx-pro-4500` accelerator requires the `latest` runtime and does not support setting `grid:r595` or `grid:r580` directly.
 All accelerators in a fleet must use the same runtime version. You cannot mix different runtime versions within a single fleet.
 When you specify `latest`, it resolves to `grid:r595` for all currently supported accelerators.
 *Required*: No

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECR::ReplicationConfiguration DeleteReplication
 <a name="aws-properties-ecr-replicationconfiguration-deletereplication"></a>
 
-<a name="aws-properties-ecr-replicationconfiguration-deletereplication-description"></a>The `DeleteReplication` property type specifies Property description not available. for an [AWS::ECR::ReplicationConfiguration](aws-resource-ecr-replicationconfiguration.md).
+The delete replication configuration for a replication rule. When delete replication is enabled, the service replicates image deletions and image tag removals in the source registry to the replication destinations.
 
 ## Syntax
 <a name="aws-properties-ecr-replicationconfiguration-deletereplication-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecr-replicationconfiguration-deletereplication-properties"></a>
 
 `Enabled`  <a name="cfn-ecr-replicationconfiguration-deletereplication-enabled"></a>
-Property description not available.
+Specifies whether delete replication is enabled. If set to `true`, the service replicates image deletions and image tag removals from the source registry to each replication destination. If set to `false`, the service does not replicate image deletions or image tag removals.
 *Required*: Yes
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

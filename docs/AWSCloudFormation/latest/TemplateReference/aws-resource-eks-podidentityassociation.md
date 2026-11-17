@@ -28,7 +28,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[RoleArn](#cfn-eks-podidentityassociation-rolearn)" : {{String}},
       "[ServiceAccount](#cfn-eks-podidentityassociation-serviceaccount)" : {{String}},
       "[Tags](#cfn-eks-podidentityassociation-tags)" : {{[ Tag, ... ]}},
-      "[TargetRoleArn](#cfn-eks-podidentityassociation-targetrolearn)" : {{String}}
+      "[TargetRoleArn](#cfn-eks-podidentityassociation-targetrolearn)" : {{String}},
+      "[WorkloadIdentityConfig](#cfn-eks-podidentityassociation-workloadidentityconfig)" : {{WorkloadIdentityConfig}}
     }
 }
 ```
@@ -48,6 +49,8 @@ Properties:
   [Tags](#cfn-eks-podidentityassociation-tags): {{
     - Tag}}
   [TargetRoleArn](#cfn-eks-podidentityassociation-targetrolearn): {{String}}
+  [WorkloadIdentityConfig](#cfn-eks-podidentityassociation-workloadidentityconfig): {{
+    WorkloadIdentityConfig}}
 ```
 
 ## Properties
@@ -112,6 +115,12 @@ The Amazon Resource Name (ARN) of the target IAM role to associate with the serv
 *Required*: No
 *Type*: String
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WorkloadIdentityConfig`  <a name="cfn-eks-podidentityassociation-workloadidentityconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [WorkloadIdentityConfig](aws-properties-eks-podidentityassociation-workloadidentityconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values

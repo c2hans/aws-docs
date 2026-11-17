@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DefinitionS3Location](#cfn-mwaaserverless-workflow-definitions3location)" : {{S3Location}},
       "[Description](#cfn-mwaaserverless-workflow-description)" : {{String}},
       "[EncryptionConfiguration](#cfn-mwaaserverless-workflow-encryptionconfiguration)" : {{EncryptionConfiguration}},
+      "[Environment](#cfn-mwaaserverless-workflow-environment)" : {{Environment}},
       "[LoggingConfiguration](#cfn-mwaaserverless-workflow-loggingconfiguration)" : {{LoggingConfiguration}},
       "[Name](#cfn-mwaaserverless-workflow-name)" : {{String}},
       "[NetworkConfiguration](#cfn-mwaaserverless-workflow-networkconfiguration)" : {{NetworkConfiguration}},
@@ -48,6 +49,8 @@ Properties:
   [Description](#cfn-mwaaserverless-workflow-description): {{String}}
   [EncryptionConfiguration](#cfn-mwaaserverless-workflow-encryptionconfiguration): {{
     EncryptionConfiguration}}
+  [Environment](#cfn-mwaaserverless-workflow-environment): {{
+    Environment}}
   [LoggingConfiguration](#cfn-mwaaserverless-workflow-loggingconfiguration): {{
     LoggingConfiguration}}
   [Name](#cfn-mwaaserverless-workflow-name): {{String}}
@@ -88,6 +91,12 @@ The configuration for encrypting workflow data at rest and in transit. Specifies
 *Required*: No
 *Type*: [EncryptionConfiguration](aws-properties-mwaaserverless-workflow-encryptionconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Environment`  <a name="cfn-mwaaserverless-workflow-environment"></a>
+Property description not available.
+*Required*: No
+*Type*: [Environment](aws-properties-mwaaserverless-workflow-environment.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LoggingConfiguration`  <a name="cfn-mwaaserverless-workflow-loggingconfiguration"></a>
 The configuration for workflow logging. Specifies the CloudWatch log group where workflow execution logs are stored. Amazon Managed Workflows for Apache Airflow Serverless automatically exports worker logs and task-level information to the specified log group in your account using remote logging functionality. This provides comprehensive observability for debugging and monitoring workflow execution across the distributed, serverless environment.

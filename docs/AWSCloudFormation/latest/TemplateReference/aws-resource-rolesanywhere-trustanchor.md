@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::RolesAnywhere::TrustAnchor",
   "Properties" : {
+      "[CrlDpRevocationEnabled](#cfn-rolesanywhere-trustanchor-crldprevocationenabled)" : {{Boolean}},
       "[Enabled](#cfn-rolesanywhere-trustanchor-enabled)" : {{Boolean}},
       "[Name](#cfn-rolesanywhere-trustanchor-name)" : {{String}},
       "[NotificationSettings](#cfn-rolesanywhere-trustanchor-notificationsettings)" : {{[ NotificationSetting, ... ]}},
@@ -36,6 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::RolesAnywhere::TrustAnchor
 Properties:
+  [CrlDpRevocationEnabled](#cfn-rolesanywhere-trustanchor-crldprevocationenabled): {{Boolean}}
   [Enabled](#cfn-rolesanywhere-trustanchor-enabled): {{Boolean}}
   [Name](#cfn-rolesanywhere-trustanchor-name): {{String}}
   [NotificationSettings](#cfn-rolesanywhere-trustanchor-notificationsettings): {{
@@ -48,6 +50,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-rolesanywhere-trustanchor-properties"></a>
+
+`CrlDpRevocationEnabled`  <a name="cfn-rolesanywhere-trustanchor-crldprevocationenabled"></a>
+Specifies whether the trust anchor checks certificate revocation status against CRL distribution points.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Enabled`  <a name="cfn-rolesanywhere-trustanchor-enabled"></a>
 Indicates whether the trust anchor is enabled.

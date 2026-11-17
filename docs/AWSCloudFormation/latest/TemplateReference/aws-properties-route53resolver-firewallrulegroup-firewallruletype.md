@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 The rule-type configuration for a DNS Firewall rule. `FirewallRuleType` is a tagged union — exactly one member must be set per rule, and the member determines what the rule matches against. This shape is mutually exclusive with the top-level `FirewallDomainListId` and `DnsThreatProtection` fields on CreateFirewallRule and UpdateFirewallRule.
 
-Call ListFirewallRuleTypes to discover which rule-type variants and which values within each variant are available in your account and Region.
+Call ListFirewallRuleTypes to discover which rule-type variants and which values within each variant are available in your account and Region. It doesn't return the `AutoAllowlist` variant.
 
 ## Syntax
 <a name="aws-properties-route53resolver-firewallrulegroup-firewallruletype-syntax"></a>

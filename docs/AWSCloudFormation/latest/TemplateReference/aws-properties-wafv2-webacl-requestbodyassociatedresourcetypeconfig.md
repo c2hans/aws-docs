@@ -47,5 +47,5 @@ Specifies the maximum size of the web request body component that an associated 
 Default: `16 KB (16,384 bytes)`
 *Required*: Yes
 *Type*: String
-*Allowed values*: `KB_16 | KB_32 | KB_48 | KB_64`
+*Allowed values*: `KB_8 | KB_16 | KB_32 | KB_48 | KB_64`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

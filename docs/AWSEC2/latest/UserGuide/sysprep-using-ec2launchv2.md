@@ -79,7 +79,7 @@ The system generates OS-specific requirements, such as a computer name and an SI
    + `<RegisteredOwner>EC2</RegisteredOwner>`
 **Note**
 During the generalize and specialize phases, EC2Launch v2 monitors the status of the OS. If EC2Launch v2 detects that the OS is in a Sysprep phase, then it publishes the following message to the system log:
-Windows is being configured. SysprepState=IMAGE\_STATE\_UNDEPLOYABLE
+`Windows is being configured. SysprepState=IMAGE_STATE_UNDEPLOYABLE`
 
 1. The system runs EC2Launch v2.
 

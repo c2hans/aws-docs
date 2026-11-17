@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EC2::TransitGatewayNetworkFunctionAttachment
 <a name="aws-resource-ec2-transitgatewaynetworkfunctionattachment"></a>
 
-<a name="aws-resource-ec2-transitgatewaynetworkfunctionattachment-description"></a>The `AWS::EC2::TransitGatewayNetworkFunctionAttachment` resource Property description not available. for EC2.
+Contains information about a transit gateway network function attachment, including the attachment ID, the transit gateway, the endpoint service, the Availability Zones, and the state of the attachment.
 
 ## Syntax
 <a name="aws-resource-ec2-transitgatewaynetworkfunctionattachment-syntax"></a>
@@ -50,13 +50,13 @@ Properties:
 <a name="aws-resource-ec2-transitgatewaynetworkfunctionattachment-properties"></a>
 
 `AvailabilityZoneIds`  <a name="cfn-ec2-transitgatewaynetworkfunctionattachment-availabilityzoneids"></a>
-Property description not available.
+The IDs of the Availability Zones for the attachment.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AvailabilityZones`  <a name="cfn-ec2-transitgatewaynetworkfunctionattachment-availabilityzones"></a>
-Property description not available.
+The names of the Availability Zones for the attachment.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -68,13 +68,13 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-ec2-transitgatewaynetworkfunctionattachment-tags"></a>
-Property description not available.
+The tags for the attachment.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-ec2-transitgatewaynetworkfunctionattachment-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TransitGatewayId`  <a name="cfn-ec2-transitgatewaynetworkfunctionattachment-transitgatewayid"></a>
-Property description not available.
+The ID of the transit gateway.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -92,13 +92,13 @@ Property description not available.
 <a name="aws-resource-ec2-transitgatewaynetworkfunctionattachment-return-values-fn--getatt-fn--getatt"></a>
 
 `CreationTime`  <a name="CreationTime-fn::getatt"></a>
-Property description not available.
+The date and time the attachment was created.
 
 `ResourceId`  <a name="ResourceId-fn::getatt"></a>
-Property description not available.
+The name of the Gateway Load Balancer endpoint service.
 
 `State`  <a name="State-fn::getatt"></a>
-Property description not available.
+The state of the attachment.
 
 `TransitGatewayAttachmentId`  <a name="TransitGatewayAttachmentId-fn::getatt"></a>
-Property description not available.
+The ID of the attachment.

@@ -9,6 +9,7 @@ The following table describes the important changes made to CloudFront documenta
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Added access log fields for standard logging (v2)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/standard-logging.html) | You can now select Common Media Client Data (CMCD) fields and additional access log fields (`s-ip`, `primary-distribution-id`, `primary-distribution-dns-name`, `r-host`, `sr-reason`, and `x-edge-mqcs`) for standard logging (v2). | November 5, 2026 |
 | [Updated quotas for multi-tenant distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-limits.html#limits-template) | Increased the default quotas for distribution tenants per AWS account (from 10,000 to 1,000,000) and multi-tenant distributions per AWS account (from 20 to 500). | October 21, 2026 |
 | [New `CloudFront-Viewer-TLS-Details` header](adding-cloudfront-headers.md#tls-related-versions) | You can now use the `CloudFront-Viewer-TLS-Details` header to get the key exchange algorithm, signature scheme, and certificate public key type for the connection between the viewer and CloudFront. This header also provides the SSL/TLS version, cipher, and handshake information. You can use it to determine whether a connection used a post-quantum key exchange. | October 20, 2026 |
 | [Added mutual TLS (viewer)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/mtls-authentication.html) | CloudFront supports mutual TLS (viewer). | November 24, 2025 |

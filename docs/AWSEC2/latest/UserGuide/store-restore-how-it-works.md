@@ -23,6 +23,8 @@ The `CreateStoreImageTask` API stores an AMI as a single object in an S3 bucket.
 
 The API creates a task that reads all of the data from the AMI and its snapshots, and then uses an [S3 multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) to store the data in an S3 object. The API takes all of the components of the AMI, including most of the non-Region-specific AMI metadata, and all the EBS snapshots contained in the AMI, and packs them into a single object in S3. The data is compressed as part of the upload process to reduce the amount of space used in S3, so the object in S3 might be smaller than the sum of the sizes of the snapshots in the AMI.
 
+If the task fails or doesn't complete, the incomplete multipart upload might remain in your S3 bucket and incur storage charges. For more information about storage costs, see [Costs](ami-store-restore.md#store-restore-costs).
+
 If there are AMI and snapshot tags visible to the account calling this API, they are preserved.
 
 The object in S3 has the same ID as the AMI, but with a `.bin` extension. The following data is also stored as S3 metadata tags on the S3 object: AMI name, AMI description, AMI registration date, AMI owner account, and a timestamp for the store operation.

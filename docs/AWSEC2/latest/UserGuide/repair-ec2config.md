@@ -58,7 +58,7 @@ If you do not create the instance in the same Availability Zone as the affected 
 
 1. [Stop and start Amazon EC2 instances](Stop_Start.md) the instance.
 
-1. After the instance starts, check the system log and verify that you see the message Windows is ready to use.
+1. After the instance starts, check the system log and verify that you see the message `Windows is ready to use`.
 
 1. Open Registry Editor and choose `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon`. Delete the String Value keys you created earlier: **AutoAdminLogon**, **DefaultUserName**, and **DefaultPassword**.
 

@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-appstream-stack-agentaccessconfig-properties"></a>
 
 `S3BucketArn`  <a name="cfn-appstream-stack-agentaccessconfig-s3bucketarn"></a>
-The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots are stored. Required when ScreenshotsUploadEnabled is true.
+The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots and Replay Session artifacts are stored. Required when ScreenshotsUploadEnabled or ReplaySessionEnabled is true.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:s3:::[a-z0-9][a-z0-9.\-]{1,61}[a-z0-9]$`
@@ -72,7 +72,7 @@ Indicates whether screenshot uploads to Amazon S3 are enabled for agent sessions
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Settings`  <a name="cfn-appstream-stack-agentaccessconfig-settings"></a>
-The list of agent access settings that define permissions for each agent action. You must specify at least one setting.
+The list of agent access settings that define permissions for each agent action. You must specify at least one setting, and at least one agent action must be enabled.
 *Required*: Yes
 *Type*: Array of [AgentAccessSetting](aws-properties-appstream-stack-agentaccesssetting.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::NetworkManager::ContextStoreAssociation
 <a name="aws-resource-networkmanager-contextstoreassociation"></a>
 
-<a name="aws-resource-networkmanager-contextstoreassociation-description"></a>The `AWS::NetworkManager::ContextStoreAssociation` resource Property description not available. for NetworkManager.
+Describes the association between a context store and a transit gateway.
 
 ## Syntax
 <a name="aws-resource-networkmanager-contextstoreassociation-syntax"></a>
@@ -41,9 +41,12 @@ Properties:
 <a name="aws-resource-networkmanager-contextstoreassociation-properties"></a>
 
 `ContextStoreId`  <a name="cfn-networkmanager-contextstoreassociation-contextstoreid"></a>
-Property description not available.
+The ID of the context store.
 *Required*: Yes
 *Type*: String
+*Pattern*: `^context-store-([0-9a-f]{8,17})$`
+*Minimum*: `0`
+*Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ResourceArn`  <a name="cfn-networkmanager-contextstoreassociation-resourcearn"></a>
@@ -65,7 +68,11 @@ Property description not available.
 <a name="aws-resource-networkmanager-contextstoreassociation-return-values-fn--getatt-fn--getatt"></a>
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+The date and time that the association was created.
 
 `State`  <a name="State-fn::getatt"></a>
-Property description not available.
+The state of the association. The possible values are the following:
++ `ASSOCIATING`: The transit gateway is being associated with the context store.
++ `ASSOCIATED`: The transit gateway is associated with the context store.
++ `DISASSOCIATING`: The transit gateway is being disassociated from the context store.
++ `FAILED`: The association failed. To remove it, disassociate the transit gateway.

@@ -47,6 +47,6 @@ A string that you can use to assign a value. The combination of tag keys and val
 The value for the specified tag key.
 *Required*: Yes
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Config::OrganizationConformancePack ConformancePackInputParameter
 <a name="aws-properties-config-organizationconformancepack-conformancepackinputparameter"></a>
 
-Input parameters in the form of key-value pairs for the conformance pack, both of which you define. Keys can have a maximum character length of 255 characters, and values can have a maximum length of 4096 characters.
+Input parameters in the form of key-value pairs for the conformance pack, both of which you define. For managed conformance packs, keys can have a maximum character length of 255 characters, and values can have a maximum length of 1024 characters. For custom conformance packs, keys can have a maximum character length of 255 characters, and values can have a maximum length of 4096 characters.
 
 ## Syntax
 <a name="aws-properties-config-organizationconformancepack-conformancepackinputparameter-syntax"></a>

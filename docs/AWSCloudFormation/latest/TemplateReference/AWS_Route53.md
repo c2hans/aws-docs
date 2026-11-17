@@ -17,5 +17,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Route53::QueryLoggingConfig](aws-resource-route53-queryloggingconfig.md)
 + [AWS::Route53::RecordSet](aws-resource-route53-recordset.md)
 + [AWS::Route53::RecordSetGroup](aws-resource-route53-recordsetgroup.md)
++ [AWS::Route53::RecordSetProtection](aws-resource-route53-recordsetprotection.md)
 + [AWS::Route53::TrafficPolicy](aws-resource-route53-trafficpolicy.md)
 + [AWS::Route53::TrafficPolicyInstance](aws-resource-route53-trafficpolicyinstance.md)

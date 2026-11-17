@@ -25,6 +25,17 @@ Deprecated.
 Type: Boolean
 Required: No
 
+ ** allowMultipathResilience **
+Indicates whether this side of the VPC peering connection allows multipath resilience.
+Type: Boolean
+Required: No
+
+ ** multipathResilienceMode **
+The multipath resilience mode for this side of the VPC peering connection. This value is present only when this side allows multipath resilience.
+Type: String
+Valid Values: `always-on`
+Required: No
+
 ## See Also
 <a name="API_PeeringConnectionOptions_SeeAlso"></a>
 

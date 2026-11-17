@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EC2::FcaPolicy InstanceFcaPolicyDocument
 <a name="aws-properties-ec2-fcapolicy-instancefcapolicydocument"></a>
 
-<a name="aws-properties-ec2-fcapolicy-instancefcapolicydocument-description"></a>The `InstanceFcaPolicyDocument` property type specifies Property description not available. for an [AWS::EC2::FcaPolicy](aws-resource-ec2-fcapolicy.md).
+Specifies how shared network costs are allocated and reported for an EC2 instance.
 
 ## Syntax
 <a name="aws-properties-ec2-fcapolicy-instancefcapolicydocument-syntax"></a>
@@ -41,13 +41,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ec2-fcapolicy-instancefcapolicydocument-properties"></a>
 
 `CidrRangeSpecifications`  <a name="cfn-ec2-fcapolicy-instancefcapolicydocument-cidrrangespecifications"></a>
-Property description not available.
+The CIDR range specifications. Specify this property when `ReportingGranularity` is `cidr`.
 *Required*: No
 *Type*: [CidrRangeSpecifications](aws-properties-ec2-fcapolicy-cidrrangespecifications.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Dimensions`  <a name="cfn-ec2-fcapolicy-instancefcapolicydocument-dimensions"></a>
-Property description not available.
+The cost dimensions to allocate. You can specify one or both values.
 *Required*: Yes
 *Type*: Array of String
 *Allowed values*: `data-transfer | data-processing`
@@ -56,7 +56,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReportingGranularity`  <a name="cfn-ec2-fcapolicy-instancefcapolicydocument-reportinggranularity"></a>
-Property description not available.
+The granularity at which costs are reported. This list contains exactly one value.
 *Required*: Yes
 *Type*: Array of String
 *Allowed values*: `eni | ec2 | subnet | vpc | account | peering-id | cidr`

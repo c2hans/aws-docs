@@ -136,7 +136,7 @@ The PingSlotFreq value.
 The PingSlotPeriod value.
 *Required*: No
 *Type*: Integer
-*Minimum*: `128`
+*Minimum*: `32`
 *Maximum*: `4096`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 

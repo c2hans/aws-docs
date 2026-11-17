@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EC2::FcaPolicy CidrRangeSpecifications
 <a name="aws-properties-ec2-fcapolicy-cidrrangespecifications"></a>
 
-<a name="aws-properties-ec2-fcapolicy-cidrrangespecifications-description"></a>The `CidrRangeSpecifications` property type specifies Property description not available. for an [AWS::EC2::FcaPolicy](aws-resource-ec2-fcapolicy.md).
+Maps CIDR ranges to labels for cost reporting. Specify this property when the reporting granularity is `cidr`.
 
 ## Syntax
 <a name="aws-properties-ec2-fcapolicy-cidrrangespecifications-syntax"></a>
@@ -37,7 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ec2-fcapolicy-cidrrangespecifications-properties"></a>
 
 `Prefixes`  <a name="cfn-ec2-fcapolicy-cidrrangespecifications-prefixes"></a>
-Property description not available.
+The CIDR range to label mappings.
+You can specify from 1 to 100 mappings.
 *Required*: Yes
 *Type*: Array of [CidrMapping](aws-properties-ec2-fcapolicy-cidrmapping.md)
 *Minimum*: `1`
@@ -45,7 +46,8 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PrefixesType`  <a name="cfn-ec2-fcapolicy-cidrrangespecifications-prefixestype"></a>
-Property description not available.
+The type of prefixes that the mappings apply to.
+Valid values: `source-prefixes` \| `destination-prefixes`
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

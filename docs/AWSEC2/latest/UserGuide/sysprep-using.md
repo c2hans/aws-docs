@@ -90,7 +90,7 @@ The system generates OS specific requirements such as a computer name and a SID.
    + <RegisteredOwner>Amazon</RegisteredOwner>
 **Note**
 During the generalize and specialize phases the EC2Config service monitors the status of the OS. If EC2Config detects that the OS is in a Sysprep phase, then it publishes the following message to the system log:
-EC2ConfigMonitorState: 0 Windows is being configured. SysprepState=IMAGE\_STATE\_UNDEPLOYABLE
+`EC2ConfigMonitorState: 0 Windows is being configured. SysprepState=IMAGE_STATE_UNDEPLOYABLE`
 
 1. After the OOBE phase completes, the system runs `SetupComplete.cmd` from the following location: `C:\Windows\Setup\Scripts\SetupComplete.cmd`. In Amazon public AMIs before April 2015 this file was empty and ran nothing on the image. In public AMIs dated after April 2015, the file includes the following value: **call "C:\\Program Files\\Amazon\\Ec2ConfigService\\Scripts\\PostSysprep.cmd"**.
 

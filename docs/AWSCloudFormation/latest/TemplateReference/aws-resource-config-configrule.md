@@ -83,7 +83,7 @@ Indicates whether an AWS resource or AWS Config rule is compliant and provides t
 A name for the AWS Config rule. If you don't specify a name, CloudFormation generates a unique physical ID and uses that ID for the rule name. For more information, see [Name Type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-name.html).
 *Required*: No
 *Type*: String
-*Pattern*: `[A-Za-z0-9_-]+`
+*Pattern*: `.*\S.*`
 *Minimum*: `1`
 *Maximum*: `128`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

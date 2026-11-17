@@ -21,6 +21,7 @@ Required: No
 The filters.
 +  `ip-address-type` - The IP address type (`ipv4` \| `ipv6`).
 +  `service-id` - The ID of the service.
++  `transit-gateway-attachment-id` - The ID of the transit gateway attachment.
 +  `vpc-endpoint-owner` - The ID of the AWS account ID that owns the endpoint.
 +  `vpc-endpoint-region` - The Region of the endpoint or `cross-region` to find endpoints for other Regions.
 +  `vpc-endpoint-state` - The state of the endpoint (`pendingAcceptance` \| `pending` \| `available` \| `deleting` \| `deleted` \| `rejected` \| `failed`).

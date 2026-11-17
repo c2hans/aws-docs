@@ -10,10 +10,41 @@ Describes dynamic routing for the transit gateway peering attachment.
 ## Contents
 <a name="API_TransitGatewayPeeringAttachmentOptions_Contents"></a>
 
+ ** accepterAllowMultipathResilience **
+Indicates whether the accepter allows multipath resilience for the transit gateway peering attachment.
+Type: Boolean
+Required: No
+
+ ** accepterMultipathResilienceMode **
+The multipath resilience mode for the accepter. This value is present only when the accepter allows multipath resilience.
+Type: String
+Valid Values: `always-on`
+Required: No
+
  ** dynamicRouting **
 Describes whether dynamic routing is enabled or disabled for the transit gateway peering attachment.
 Type: String
 Valid Values: `enable | disable`
+Required: No
+
+ ** multipathResilienceStatus **
+The multipath resilience status of the transit gateway peering attachment. The possible values are:
++  `enabled` – Both the requester and the accepter allow multipath resilience.
++  `pending` – Either the requester or the accepter allows multipath resilience, but not both.
++  `disabled` – Neither the requester nor the accepter allows multipath resilience.
+Type: String
+Valid Values: `pending | enabled | disabled`
+Required: No
+
+ ** requesterAllowMultipathResilience **
+Indicates whether the requester allows multipath resilience for the transit gateway peering attachment.
+Type: Boolean
+Required: No
+
+ ** requesterMultipathResilienceMode **
+The multipath resilience mode for the requester. This value is present only when the requester allows multipath resilience.
+Type: String
+Valid Values: `always-on`
 Required: No
 
 ## See Also

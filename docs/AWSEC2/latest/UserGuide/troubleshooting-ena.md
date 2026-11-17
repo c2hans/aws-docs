@@ -364,13 +364,13 @@ Jun  3 22:37:46 ip-172-31-2-186 kernel: [  481.025842] NET: Registered protocol 
 **Which errors can I ignore?**
 The following warnings that may appear in your system's error logs can be ignored for the Elastic Network Adapter:
 
-Set host attribute isn't supported
+`Set host attribute isn't supported`
 Host attributes are not supported for this device.
 
-failed to alloc buffer for rx queue
+`failed to alloc buffer for rx queue`
 This is a recoverable error, and it indicates that there may have been a memory pressure issue when the error was thrown.
 
-Feature {{X}} isn't supported
+`Feature {{X}} isn't supported`
 The referenced feature is not supported by the Elastic Network Adapter. Possible values for {{X}} include:
 + 10: RSS Hash function configuration is not supported for this device.
 + 12: RSS Indirection table configuration is not supported for this device.
@@ -378,10 +378,10 @@ The referenced feature is not supported by the Elastic Network Adapter. Possible
 + 20: Interrupt moderation is not supported for this device.
 + 27: The Elastic Network Adapter driver does not support polling the Ethernet capabilities from snmpd.
 
-Failed to config AENQ
+`Failed to config AENQ`
 The Elastic Network Adapter does not support AENQ configuration.
 
-Trying to set unsupported AENQ events
+`Trying to set unsupported AENQ events`
 This error indicates an attempt to set an AENQ events group that is not supported by the Elastic Network Adapter.
 
 ## Sub-optimal configuration notifications

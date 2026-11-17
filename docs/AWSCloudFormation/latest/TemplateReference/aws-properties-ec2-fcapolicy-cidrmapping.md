@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EC2::FcaPolicy CidrMapping
 <a name="aws-properties-ec2-fcapolicy-cidrmapping"></a>
 
-<a name="aws-properties-ec2-fcapolicy-cidrmapping-description"></a>The `CidrMapping` property type specifies Property description not available. for an [AWS::EC2::FcaPolicy](aws-resource-ec2-fcapolicy.md).
+Maps a single CIDR range to a label for cost reporting.
 
 ## Syntax
 <a name="aws-properties-ec2-fcapolicy-cidrmapping-syntax"></a>
@@ -36,14 +36,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ec2-fcapolicy-cidrmapping-properties"></a>
 
 `CidrLabel`  <a name="cfn-ec2-fcapolicy-cidrmapping-cidrlabel"></a>
-Property description not available.
+The label for the CIDR range.
+The label can be up to 64 characters long. It can contain letters, numbers, hyphens (`-`), and underscores (`_`), and must start with a letter or a number.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9_\-]{0,63}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CidrRange`  <a name="cfn-ec2-fcapolicy-cidrmapping-cidrrange"></a>
-Property description not available.
+The CIDR range.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

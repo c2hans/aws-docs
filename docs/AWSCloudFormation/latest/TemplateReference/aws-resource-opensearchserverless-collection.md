@@ -117,7 +117,7 @@ For more information, see [Tag](https://docs.aws.amazon.com/AWSCloudFormation/la
 *Type*: Array of [Tag](aws-properties-opensearchserverless-collection-tag.md)
 *Minimum*: `0`
 *Maximum*: `50`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Type`  <a name="cfn-opensearchserverless-collection-type"></a>
 The type of collection. Possible values are `SEARCH`, `TIMESERIES`, and `VECTORSEARCH`. For more information, see [Choosing a collection type](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-overview.html#serverless-usecase).

@@ -9,6 +9,8 @@ Modifies the permissions for your VPC endpoint service. You can add or remove pe
 
 If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.
 
+By default, principals that you grant permissions to can create VPC endpoints that connect to your endpoint service. For Gateway Load Balancer endpoint services, you can instead grant permissions so that principals can create transit gateway attachments that connect to your endpoint service. To do so, specify `transit-gateway-attachment` for `PermissionType`. The two permission types are independent. A principal can have either or both.
+
 ## Request Parameters
 <a name="API_ModifyVpcEndpointServicePermissions_RequestParameters"></a>
 
@@ -22,6 +24,15 @@ Required: No
  **DryRun**
 Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
+Required: No
+
+ **PermissionType**
+The type of permission to add or remove. The permission type applies to all principals in `AddAllowedPrincipals` and `RemoveAllowedPrincipals`.
++  `vpc-endpoint` - Principals can create VPC endpoints that connect to the endpoint service.
++  `transit-gateway-attachment` - Principals can create transit gateway attachments that connect to the endpoint service. This permission type is supported only for Gateway Load Balancer endpoint services. You can grant it only to AWS accounts (`arn:aws:iam::account-id:root`). You can't grant it to users, IAM roles, organizations, organizational units, or all principals (\*).
+Default: `vpc-endpoint`
+Type: String
+Valid Values: `vpc-endpoint | transit-gateway-attachment`
 Required: No
 
  **RemoveAllowedPrincipals.N**

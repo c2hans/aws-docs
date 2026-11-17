@@ -151,7 +151,8 @@ The rule type configuration for the firewall rule. This is a tagged union — ex
 + `FirewallAdvancedThreatCategory` — an AWS-managed advanced threat category (for example, `PHISHING`).
 + `DnsThreatProtection` — a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 + `PartnerThreatProtection` — a third-party threat feed delivered through AWS Marketplace.
-To enumerate the values supported in your account, call ListFirewallRuleTypes.
++ `AutoAllowlist` — an AutoAllowlist rule, which allows the domains on its managed domain list. See AutoAllowlistConfig.
+To enumerate the values supported in your account, call ListFirewallRuleTypes. It doesn't return `AutoAllowlist`.
 *Required*: No
 *Type*: [FirewallRuleType](aws-properties-route53resolver-firewallrulegroup-firewallruletype.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -194,7 +195,7 @@ The priority of the rule in the rule group. This value must be unique within the
 
 `Status`  <a name="cfn-route53resolver-firewallrulegroup-firewallrule-status"></a>
 The lifecycle state of the firewall rule. Possible values:
-+ `CREATING` — DNS Firewall is provisioning the rule. Rules created with the `PartnerThreatProtection` rule type begin in this state while DNS Firewall verifies the calling account's AWS Marketplace entitlement.
++ `CREATING` — DNS Firewall is provisioning the rule. Rules created with the `PartnerThreatProtection` rule type begin in this state while DNS Firewall verifies the calling account's AWS Marketplace entitlement. Rules created with the `AutoAllowlist` rule type begin in this state while DNS Firewall reads the look-back window of each VPC that uses the rule group.
 + `COMPLETE` — The rule is provisioned and enforcing matches.
 + `CREATION_FAILED` — Provisioning failed. `StatusMessage` contains a human-readable reason. A rule in this state is immutable: UpdateFirewallRule rejects the request, and the rule must be removed with DeleteFirewallRule.
 For rules that do not require asynchronous provisioning, this field may be absent.

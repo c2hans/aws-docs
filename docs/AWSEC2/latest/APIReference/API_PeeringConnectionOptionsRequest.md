@@ -25,6 +25,20 @@ Deprecated.
 Type: Boolean
 Required: No
 
+ ** AllowMultipathResilience **
+Specifies whether you allow multipath resilience for this side of the VPC peering connection. Multipath resilience is supported only for inter-Region VPC peering connections between supported Regions. It takes effect only when both the requester and the accepter allow it. If you don't specify this parameter, the current setting doesn't change.
+Type: Boolean
+Required: No
+
+ ** MultipathResilienceMode **
+The multipath resilience mode. You can specify this parameter only if `AllowMultipathResilience` is `true`.
+The following value is valid:
++  `always-on` – Replicates traffic across multiple network paths while multipath resilience is in effect.
+If `AllowMultipathResilience` is `true` and you don't specify a mode, the default is `always-on`.
+Type: String
+Valid Values: `always-on`
+Required: No
+
 ## See Also
 <a name="API_PeeringConnectionOptionsRequest_SeeAlso"></a>
 
