@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_service_architecture_monolith_soa_microservice.html
 ---
 
+This whitepaper is for historical reference only and will be deprecated in the future.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # REL03-BP01 Choose how to segment your workload
 <a name="rel_service_architecture_monolith_soa_microservice"></a>
 

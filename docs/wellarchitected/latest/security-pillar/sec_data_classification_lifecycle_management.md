@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_data_classification_lifecycle_management.html
 ---
 
+This whitepaper is for historical reference only and will be deprecated in the future.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # SEC07-BP04 Define scalable data lifecycle management
 <a name="sec_data_classification_lifecycle_management"></a>
 

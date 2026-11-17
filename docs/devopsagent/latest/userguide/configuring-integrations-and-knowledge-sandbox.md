@@ -18,7 +18,7 @@ During preview, Sandbox is available only in the following AWS Regions:
 + Asia Pacific (Tokyo) `ap-northeast-1`
 + Europe (Ireland) `eu-west-1`
 
-For more information, see [Feature availability by Region](about-aws-devops-agent-supported-regions.md).
+For more information, see [Feature availability by Region](about-aws-devops-agent-supported-regions.md#feature-availability-by-region).
 
 ## How Sandbox works
 <a name="how-sandbox-works"></a>
@@ -44,7 +44,7 @@ AWS DevOps Agent runs each sandbox in an isolated Lambda MicroVM. Each MicroVM i
 ### Skills in the sandbox
 <a name="skills-in-the-sandbox"></a>
 
-With Sandbox enabled, the agent reads your [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills.md) from the sandbox's filesystem rather than from a virtual filesystem. This changes how the agent works with skills in two ways:
+With Sandbox enabled, the agent reads your [Skills](about-aws-devops-agent-devops-agent-skills.md) from the sandbox's filesystem rather than from a virtual filesystem. This changes how the agent works with skills in two ways:
 + **Search and read with command line tools** – The agent can use standard command line tools to search across your skills and read their files, instead of loading them through a virtual filesystem. This helps it find and apply the right skill for the task.
 + **Run bundled code** – The agent can run and adapt code bundled with a skill. Without Sandbox, a skill can include only non-executable files such as Markdown instructions, references, and data files. With Sandbox, a skill can include executable code that the agent can run in the environment.
 

@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation since t
 
 | Change | Description | Date Changed |
 | --- | --- | --- |
+| Test Insights on by default |  Device Farm now generates Test Insights by default for runs in a custom test environment with a supported framework. Test Insights also cover Appium Java (JUnit), Appium Python, and Appium web app tests. See [Test Insights](reports.md#reports-test-insights) to learn more.  | October 28, 2026 |
 | Test Insights for Appium Node.js |  Test Insights reports are now available for Appium Node.js tests. Device Farm builds the report from the WebdriverIO JSON or JUnit reporter output. See [View a test report](test-types-appium-integrate.md#test-types-appium-view-insights) to learn more.  | October 7, 2026 |
 | Xcode 27 support |  Device Farm now offers Xcode 27 on the `macos_tahoe` test host, supporting iOS 18 to 27. See [Supported software within custom test environments](custom-test-environments-hosts-software.md) to learn more.  | September 14, 2026 |
 | Test Insights reports |  Test Insights reports are now available for supported frameworks in custom test environments. Test Insights include passed, failed, skipped, and errored test counts for each job and run; detailed test output with timestamps and stack traces; and test and job execution times. See [Test Insights](reports.md#reports-test-insights) to learn more.  | August 6, 2026 |

@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_D
 
 Retrieves the details of a secret. It does not include the encrypted secret value. Secrets Manager only returns fields that have a value in the response.
 
+**Note**
+The `VersionIdsToStages` field in the response includes every version ID that has a staging label attached, even if that version doesn't contain a secret value. In contrast, `ListSecretVersionIds` only returns versions that contain a secret value. To check whether a secret version contains a value, call [GetSecretValue](API_GetSecretValue.md).
+
 Secrets Manager generates a CloudTrail log entry when you call this action. Do not include sensitive information in request parameters because it might be logged. For more information, see [Logging Secrets Manager events with AWS CloudTrail](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieve-ct-entries.html).
 
  **Required permissions: ** `secretsmanager:DescribeSecret`. For more information, see [ IAM policy actions for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#reference_iam-permissions_actions) and [Authentication and access control in Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html).
@@ -41,6 +44,19 @@ Required: Yes
 {
    "ARN": "string",
    "CreatedDate": number,
+   "CrossAccountPrimary": {
+      "PrimarySecretARN": "string",
+      "ReplicationStatus": "string",
+      "StatusMessage": "string"
+   },
+   "CrossAccountReplicas": [
+      {
+         "ReplicaSecretARN": "string",
+         "ReplicationRoleARN": "string",
+         "ReplicationStatus": "string",
+         "StatusMessage": "string"
+      }
+   ],
    "DeletedDate": number,
    "Description": "string",
    "ExternalSecretRotationMetadata": [
@@ -102,6 +118,15 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
  ** [CreatedDate](#API_DescribeSecret_ResponseSyntax) **   <a name="SecretsManager-DescribeSecret-response-CreatedDate"></a>
 The date the secret was created.
 Type: Timestamp
+
+ ** [CrossAccountPrimary](#API_DescribeSecret_ResponseSyntax) **   <a name="SecretsManager-DescribeSecret-response-CrossAccountPrimary"></a>
+Information about the primary secret in the other AWS account that this cross-account replica secret replicates from, including the primary secret ARN and the replication status. This field is omitted if the secret is not a cross-account replica.
+Type: [CrossAccountPrimaryType](API_CrossAccountPrimaryType.md) object
+
+ ** [CrossAccountReplicas](#API_DescribeSecret_ResponseSyntax) **   <a name="SecretsManager-DescribeSecret-response-CrossAccountReplicas"></a>
+A list of this secret's cross-account replica secrets and their replication status, if this secret is the primary for cross-account replication. This field is omitted if the secret has no cross-account replicas.
+Type: Array of [CrossAccountReplicaEntry](API_CrossAccountReplicaEntry.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 100 items.
 
  ** [DeletedDate](#API_DescribeSecret_ResponseSyntax) **   <a name="SecretsManager-DescribeSecret-response-DeletedDate"></a>
 The date the secret is scheduled for deletion. If it is not scheduled for deletion, this field is omitted. When you delete a secret, Secrets Manager requires a recovery window of at least 7 days before deleting the secret. Some time after the deleted date, Secrets Manager deletes the secret, including all of its versions.

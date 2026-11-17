@@ -18,6 +18,7 @@ Content-type: application/json
 
 {
    "acceptRoleSessionName": {{boolean}},
+   "aliasName": "{{string}}",
    "durationSeconds": {{number}},
    "enabled": {{boolean}},
    "managedPolicyArns": [ "{{string}}" ],
@@ -30,7 +31,12 @@ Content-type: application/json
          "key": "{{string}}",
          "value": "{{string}}"
       }
-   ]
+   ],
+   "tipConfiguration": {
+      "status": "{{string}}",
+      "subjectSource": "{{string}}",
+      "subjectType": "{{string}}"
+   }
 }
 ```
 
@@ -47,6 +53,16 @@ The request accepts the following data in JSON format.
  ** [acceptRoleSessionName](#API_CreateProfile_RequestSyntax) **   <a name="rolesanywhere-CreateProfile-request-acceptRoleSessionName"></a>
 Used to determine if a custom role session name will be accepted in a temporary credential request.
 Type: Boolean
+Required: No
+
+ ** [aliasName](#API_CreateProfile_RequestSyntax) **   <a name="rolesanywhere-CreateProfile-request-aliasName"></a>
+An alias for the profile. When you set an alias, the response includes the alias ARN of the profile in `aliasArn`.
+An alias name contains 1 to 256 characters. It must begin with a letter (A-Z or a-z). It can contain only letters (A-Z and a-z), numbers (0-9), underscores (\_), hyphens (-), and forward slashes (/). A forward slash can appear only between two other characters, so an alias name can't end with a forward slash or contain two in a row. Alias names that begin with `aws/`, in any combination of uppercase and lowercase letters, are reserved. Alias names are case sensitive.
+The alias name must be unique among resources of the same type in your account and Region. If another resource of the same type already has the alias, the request fails with a `ValidationException`. An invalid or reserved alias name also causes a `ValidationException`.
+If you omit this parameter or specify an empty string, the resource is created without an alias.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `(?!.*//)([A-Za-z]([A-Za-z0-9_/-]*[A-Za-z0-9_-])?)?`
 Required: No
 
  ** [durationSeconds](#API_CreateProfile_RequestSyntax) **   <a name="rolesanywhere-CreateProfile-request-durationSeconds"></a>
@@ -98,6 +114,12 @@ Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No
 
+ ** [tipConfiguration](#API_CreateProfile_RequestSyntax) **   <a name="rolesanywhere-CreateProfile-request-tipConfiguration"></a>
+The trusted identity propagation (TIP) settings for the profile. When you enable TIP, sessions from the profile include the identity from the certificate in `aws:OriginIdentity` condition keys.
+If you omit this parameter, the profile doesn't use TIP.
+Type: [TipConfiguration](API_TipConfiguration.md) object
+Required: No
+
 ## Response Syntax
 <a name="API_CreateProfile_ResponseSyntax"></a>
 
@@ -108,6 +130,8 @@ Content-type: application/json
 {
    "profile": {
       "acceptRoleSessionName": boolean,
+      "aliasArn": "string",
+      "aliasName": "string",
       "attributeMappings": [
          {
             "certificateField": "string",
@@ -124,11 +148,17 @@ Content-type: application/json
       "enabled": boolean,
       "managedPolicyArns": [ "string" ],
       "name": "string",
+      "previousAliasName": "string",
       "profileArn": "string",
       "profileId": "string",
       "requireInstanceProperties": boolean,
       "roleArns": [ "string" ],
       "sessionPolicy": "string",
+      "tipConfiguration": {
+         "status": "string",
+         "subjectSource": "string",
+         "subjectType": "string"
+      },
       "updatedAt": "string"
    }
 }

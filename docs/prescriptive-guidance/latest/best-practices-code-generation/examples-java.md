@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 # Java examples
 <a name="examples-java"></a>
 
-The following Java examples demonstrate how users can get started in generating in-line code suggestions. These illustrative examples show you how to trigger the coding assistant for your own projects. A majority of the following examples are applicable to other languages:
+The following Java examples show you how to get started generating inline code suggestions and how to trigger the coding assistant in your own projects. Most of these examples also apply to other languages:
 + [Generate classes and functions](#classes-java)
 + [Document code](#code-java)
 + [Generate algorithms](#algorithms-java)
@@ -14,7 +14,7 @@ The following Java examples demonstrate how users can get started in generating 
 ## Generate classes and functions
 <a name="classes-java"></a>
 
-To generate full or partial class implementation, use code comments. The comment describes the intention of the class. Start simple, and add more details if necessary. After you generate a class, you can continue to generate functions within its skeleton.
+To generate a full or partial class implementation, use code comments. The comment describes the intent of the class. Start simple, and add more details if necessary. After you generate a class, you can continue to generate functions within its skeleton.
 
 When writing comments, it's preferable to use the language's comment structure. In Java, this is `/** */`*.*
 
@@ -102,7 +102,7 @@ public class DocumentReader {
 }
 ```
 
-Now that there is an initial class, an additional function can be generated with additional comments.
+Now that you have an initial class, you can generate an additional function by adding more comments.
 
 Input:
 
@@ -135,7 +135,7 @@ public void readDocument() {
 ## Document code
 <a name="code-java"></a>
 
-Reduce time in code documentation by relying on in-line documentation. Add a Java comment break `/* */`.
+Reduce the time you spend on code documentation by using inline documentation. Add a Java block comment (`/* */`).
 
 Input:
 
@@ -155,7 +155,7 @@ public class S3Utils {
 }
 ```
 
-If in-line generation doesn't occur, execute an Amazon Q Developer in-line suggestion after placing your cursor where you want documentation.
+If inline generation doesn't occur, run an Amazon Q Developer inline suggestion after you place your cursor where you want documentation.
 
 Output:
 
@@ -178,7 +178,7 @@ public class S3Utils {
 }
 ```
 
-For simpler explanations of code (classes, functions, or script elements), use forward characters (`//`)that are strategically placed before code sections where you want to add documentation.
+For simpler explanations of code (classes, functions, or script elements), place double forward slashes (`//`) before the code sections where you want to add documentation.
 
 Input:
 
@@ -225,7 +225,7 @@ public class S3Utils {
 
 Amazon Q Developer can generate popular algorithms, especially related to AWS SDKs. In your script, add a prompt that specifies the function you want.
 
-This example generates a hash map of user id keys to name values and then generates a sorting function using the bubble sort algorithm.
+This example generates a hash map of user ID keys to name values and then generates a sorting function using the bubble sort algorithm.
 
 Input:
 
@@ -273,7 +273,7 @@ public static HashMap<Integer, String> sortUserIdNameMap(HashMap<Integer, String
 }
 ```
 
-In addition, users can create prompts for standard procedures. In this example, the user creates a prompt to store the hash map to an Amazon DynamoDB table. At the beginning of the script, the user adds a prompt to add DynamoDB Java libraries to help provide Amazon Q Developer with additional context.
+In addition, you can create prompts for standard procedures. In this example, you create a prompt to store the hash map in an Amazon DynamoDB table. At the beginning of the script, you add a prompt to add DynamoDB Java libraries to help provide Amazon Q Developer with additional context.
 
 Input:
 
@@ -315,7 +315,7 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 ## Generate unit tests
 <a name="tests-java"></a>
 
-With in-line comments, Amazon Q Developer can generate unit tests to perform assertions and other JUnit tests. In this example, the user first asks Amazon Q to generate applicable libraries for JUnit to set the context of the test script. Next, the user creates a public class followed by a declarator and comment strings.
+With inline comments, Amazon Q Developer can generate unit tests to perform assertions and other JUnit tests. In this example, you first ask Amazon Q to generate applicable libraries for JUnit to set the context of the test script. Next, you create a public class followed by a declarator and comment strings.
 
 Input:
 
@@ -358,4 +358,4 @@ public void testGetUserIdNameMap() {
 }
 ```
 
-In addition, in a chat between the user and Amazon Q Developer, it suggests and generates unit tests based on the user's code input prompts. For more information, see [Chat examples](examples-chat.md).
+In a chat, Amazon Q Developer also suggests and generates unit tests based on your code input prompts. For more information, see [Chat examples](examples-chat.md).

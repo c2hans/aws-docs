@@ -125,6 +125,29 @@ The following shows an example for configuring multiple replication rules for yo
 }
 ```
 
+## Example: Replication rule with replication of deletes enabled
+<a name="registry-settings-examples-delete-replication"></a>
+
+The following example shows a replication rule that replicates image deletions and image tag removals to the destination. If you don't specify `deleteReplication`, the service does not replicate image deletions or image tag removals for the replication rule. For more information, see [Replicating image deletions in Amazon ECR](replication-delete.md).
+
+```
+{
+    "rules": [
+        {
+            "destinations": [
+                {
+                    "region": "{{us-west-2}}",
+                    "registryId": "{{111122223333}}"
+                }
+            ],
+            "deleteReplication": {
+                "enabled": true
+            }
+        }
+    ]
+}
+```
+
 ## Example: Removing all replication settings
 <a name="registry-settings-examples-remove"></a>
 
@@ -137,4 +160,4 @@ The following shows an example for removing all replication settings from your r
 ```
 
 **Important**
-Removing replication settings does not delete any previously replicated repositories or images. You must manually delete replicated content if it is no longer needed.
+Removing replication settings does not delete any previously replicated repositories or images. You must manually delete replicated content if it is no longer needed. Removing replication settings also stops replication of deletes. Images and tags already replicated or removed aren't affected.

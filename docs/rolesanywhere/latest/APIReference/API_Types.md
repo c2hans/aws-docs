@@ -25,4 +25,5 @@ The following data types are supported:
 +  [SubjectDetail](API_SubjectDetail.md)
 +  [SubjectSummary](API_SubjectSummary.md)
 +  [Tag](API_Tag.md)
++  [TipConfiguration](API_TipConfiguration.md)
 +  [TrustAnchorDetail](API_TrustAnchorDetail.md)

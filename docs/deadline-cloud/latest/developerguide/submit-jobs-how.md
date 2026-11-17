@@ -12,6 +12,8 @@ There are many different ways to submit jobs to AWS Deadline Cloud. This section
 
  The following examples use the `deadline` Python library and the `deadline` command line tool. The library is available from [PyPI](https://pypi.org/project/deadline/) on the PyPI website. The source code is available from the [deadline-cloud](https://github.com/aws-deadline/deadline-cloud) repository on the GitHub website.
 
+You can submit from any location that has network access to the Deadline Cloud endpoint in your farm's AWS Region, including locations without a local Deadline Cloud Region. For more information, see [Global rendering across AWS Regions](multi-region.md).
+
 **Topics**
 + [Submit a job to Deadline Cloud from a terminal](from-a-terminal.md)
 + [Submit a job to Deadline Cloud using a script](from-a-script.md)

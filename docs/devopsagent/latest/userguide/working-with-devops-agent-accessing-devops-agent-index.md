@@ -14,7 +14,7 @@ The following diagram illustrates these access methods and how they connect to t
 ## DevOps Agent web app
 <a name="devops-agent-web-app"></a>
 
-The web app is the primary interface for DevOps Agent. Use conversational chat to investigate incidents, query your infrastructure, and manage recommendations. For more information, see [What is a DevOps Agent Web App?](about-aws-devops-agent-what-is-a-devops-agent-web-app.md).
+The web app is the primary interface for DevOps Agent. Use conversational chat to investigate incidents, query your infrastructure, and manage recommendations. For more information, see [DevOps Agent web app overview](about-aws-devops-agent-what-is-a-devops-agent-web-app.md).
 
 ## Model Context Protocol (MCP) integration
 <a name="model-context-protocol-mcp-integration"></a>
@@ -36,11 +36,11 @@ You can invoke AWS DevOps Agent programmatically using the [Agent Client Protoco
 ## Webhooks
 <a name="webhooks"></a>
 
-Webhooks allow external systems to automatically trigger AWS DevOps Agent investigations. External systems such as ticketing platforms and monitoring tools can send HTTP requests when incidents occur. For more information, see [Invoking DevOps Agent through Webhook](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+Webhooks allow external systems to automatically trigger AWS DevOps Agent investigations. External systems such as ticketing platforms and monitoring tools can send HTTP requests when incidents occur. For more information, see [DevOps Agent webhook integration](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
 
 ## AWS DevOps Agent API
 <a name="aws-devops-agent-api"></a>
 
 AWS DevOps Agent provides APIs for programmatic access to agent capabilities. You can create and manage Agent Spaces, trigger investigations, and retrieve findings. For more information, see the [AWS DevOps Agent API Reference](https://docs.aws.amazon.com/devopsagent/latest/APIReference/).
 
-For more information about the regional service endpoints to use for API requests, see [Service endpoints](about-aws-devops-agent-supported-regions.md) in [Supported Regions](about-aws-devops-agent-supported-regions.md).
+For more information about the regional service endpoints to use for API requests, see [Service endpoints](about-aws-devops-agent-supported-regions.md#service-endpoints) in [Supported Regions](about-aws-devops-agent-supported-regions.md).

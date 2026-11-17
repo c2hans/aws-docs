@@ -148,7 +148,7 @@ DevOps Agent reads your application's code and project files to determine the re
 
 Findings from verification testing are included in the final release readiness report alongside standards, dependency, and access-control findings.
 
-You can use [Agent instructions](about-aws-devops-agent-agent-instructions.md) (AGENTS.md) to tune how verification testing is performed — for example, specifying which test commands to run, what constitutes a passing build, or which parts of the application to exercise during verification.
+You can use [agent instructions](about-aws-devops-agent-agent-instructions.md) (AGENTS.md) to tune how verification testing is performed — for example, specifying which test commands to run, what constitutes a passing build, or which parts of the application to exercise during verification.
 
 ### Reviewing verification test results
 <a name="reviewing-verification-test-results"></a>
@@ -205,7 +205,7 @@ Repository content can contain malicious instructions that attempt to influence 
 
 To restrict outbound network access during automatic verification testing, use a Release Management environment connected to your own virtual private cloud (VPC). The verification testing environment's traffic then follows the routing and firewall rules in your VPC. For instructions on configuring Release Management environments for private VPC access, see [Step 2: Configure Release Management environments for private VPC access (optional)](#step-2-configure-release-management-environments-for-private-vpc-access-optional). You can also turn off automatic verification testing for a repository.
 
-For more information about how security responsibilities are shared between AWS and you, see [Shared responsibility model](aws-devops-agent-security.md).
+For more information about how security responsibilities are shared between AWS and you, see [Shared responsibility model](aws-devops-agent-security.md#shared-responsibility-model).
 
 ## Reviewing code review results
 <a name="reviewing-code-review-results"></a>

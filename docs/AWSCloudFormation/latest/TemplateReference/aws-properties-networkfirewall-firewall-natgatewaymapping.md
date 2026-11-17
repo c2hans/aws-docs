@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::NetworkFirewall::Firewall NatGatewayMapping
 <a name="aws-properties-networkfirewall-firewall-natgatewaymapping"></a>
 
-A NAT gateway that a proxy mode firewall uses to proxy traffic. This is used in `CreateFirewall` when `NoSourcePreservation` is `TRUE`.
+<a name="aws-properties-networkfirewall-firewall-natgatewaymapping-description"></a>The `NatGatewayMapping` property type specifies Property description not available. for an [AWS::NetworkFirewall::Firewall](aws-resource-networkfirewall-firewall.md).
 
 ## Syntax
 <a name="aws-properties-networkfirewall-firewall-natgatewaymapping-syntax"></a>
@@ -34,8 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-networkfirewall-firewall-natgatewaymapping-properties"></a>
 
 `NatGatewayId`  <a name="cfn-networkfirewall-firewall-natgatewaymapping-natgatewayid"></a>
-A unique identifier for the NAT gateway to use with proxy resources.
+Property description not available.
 *Required*: Yes
 *Type*: String
-*Minimum*: `1`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

@@ -9,6 +9,9 @@ Lists the versions of a secret. Secrets Manager uses staging labels to indicate 
 
 To list the secrets in the account, use [ListSecrets](API_ListSecrets.md).
 
+**Note**
+ `ListSecretVersionIds` only returns versions that contain a secret value. To see all version IDs that have staging labels attached, including ones without a secret value, call `DescribeSecret` and check `VersionIdsToStages`.
+
 Secrets Manager generates a CloudTrail log entry when you call this action. Do not include sensitive information in request parameters because it might be logged. For more information, see [Logging Secrets Manager events with AWS CloudTrail](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieve-ct-entries.html).
 
  **Required permissions: ** `secretsmanager:ListSecretVersionIds`. For more information, see [ IAM policy actions for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#reference_iam-permissions_actions) and [Authentication and access control in Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html).

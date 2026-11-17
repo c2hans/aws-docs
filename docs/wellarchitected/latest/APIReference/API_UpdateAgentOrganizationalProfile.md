@@ -5,10 +5,11 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # UpdateAgentOrganizationalProfile
 <a name="API_UpdateAgentOrganizationalProfile"></a>
 
-**Important**
-This operation is not available during the preview release.
+Updates an Organizational Profile. Organizational Profiles are specific to Profiles created using AWS Organizations integration. Include only the fields you want to change; any field you omit from the request keeps its current value.
 
-Updates an Organizational Profile. Organizational Profiles are specific to Profiles created using AWS Organizations integration.
+To clear an optional text field, supply an empty string for it; the field is then unset, and a subsequent read omits it rather than returning an empty string. Omitting the field from the request leaves the stored value in place. `description` and `businessOverview` can be cleared this way. `displayName` cannot be cleared because a display name is required, though you can change it. `pillars` cannot be cleared because a profile must target at least one pillar.
+
+ `organizationalAggregationConfiguration` behaves differently because it is a structure rather than a text field. Supplying it with both its `organizationalUnits` and `accounts` lists empty removes every monitored organizational unit and account, but the field itself remains set: a subsequent read returns the structure with two empty lists rather than omitting it. Omitting the field from the request keeps the stored boundary.
 
 ## Request Syntax
 <a name="API_UpdateAgentOrganizationalProfile_RequestSyntax"></a>
@@ -58,7 +59,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [businessOverview](#API_UpdateAgentOrganizationalProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentOrganizationalProfile-request-businessOverview"></a>
-The updated business overview for the organizational profile.
+The updated business overview for the organizational profile. Omit this field to keep the current business overview, or supply an empty string to clear it; a cleared business overview is read back as absent rather than as an empty string.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 512.
 Pattern: `[\P{C}]*`
@@ -77,27 +78,26 @@ Type: Boolean
 Required: No
 
  ** [description](#API_UpdateAgentOrganizationalProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentOrganizationalProfile-request-description"></a>
-The updated description of the organizational profile.
+The updated description of the organizational profile. Omit this field to keep the current description, or supply an empty string to clear it; a cleared description is read back as absent rather than as an empty string.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 512.
 Pattern: `[\P{C}]*`
 Required: No
 
  ** [displayName](#API_UpdateAgentOrganizationalProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentOrganizationalProfile-request-displayName"></a>
-The updated display name of the organizational profile.
+The updated display name of the organizational profile. Omit this field to keep the current display name. A display name is required, so it cannot be cleared.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
 Pattern: `[\P{C}]+`
 Required: No
 
  ** [organizationalAggregationConfiguration](#API_UpdateAgentOrganizationalProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentOrganizationalProfile-request-organizationalAggregationConfiguration"></a>
-This is not available during the preview release.
-The organizational monitoring boundary. Contains organizational unit or root entries and individual account entries that define the scope for the profile.
+The organizational monitoring boundary. Contains organizational unit or root entries and individual account entries that define the scope for the profile. Omit this field to keep the current boundary, or supply this structure with both its `organizationalUnits` and `accounts` lists empty to remove every monitored organizational unit and account. The field remains set either way — an emptied boundary is read back as a structure with two empty lists, not as an absent field.
 Type: [OrganizationalAggregationConfiguration](API_OrganizationalAggregationConfiguration.md) object
 Required: No
 
  ** [pillars](#API_UpdateAgentOrganizationalProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentOrganizationalProfile-request-pillars"></a>
-The updated AWS Well-Architected Framework pillars for the organizational profile.
+The updated AWS Well-Architected Framework pillars for the organizational profile. Omit this field to keep the current pillars. A profile must target at least one pillar, so an empty list is rejected.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `COST_OPTIMIZATION | SECURITY | RESILIENCE | PERFORMANCE | OPERATIONAL_EXCELLENCE`
@@ -141,13 +141,7 @@ Content-type: application/json
       ]
    },
    "organizationId": "string",
-   "pillars": [ "string" ],
-   "tags": [
-      {
-         "key": "string",
-         "value": "string"
-      }
-   ]
+   "pillars": [ "string" ]
 }
 ```
 
@@ -226,7 +220,6 @@ Length Constraints: Minimum length of 3. Maximum length of 128.
 Pattern: `[a-zA-Z0-9_-]+`
 
  ** [organizationalAggregationConfiguration](#API_UpdateAgentOrganizationalProfile_ResponseSyntax) **   <a name="wellarchitected-UpdateAgentOrganizationalProfile-response-organizationalAggregationConfiguration"></a>
-This is not available during the preview release.
 The organizational monitoring boundary for the updated profile.
 Type: [OrganizationalAggregationConfiguration](API_OrganizationalAggregationConfiguration.md) object
 
@@ -239,10 +232,6 @@ The AWS Well-Architected Framework pillars associated with the updated organizat
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `COST_OPTIMIZATION | SECURITY | RESILIENCE | PERFORMANCE | OPERATIONAL_EXCELLENCE`
-
- ** [tags](#API_UpdateAgentOrganizationalProfile_ResponseSyntax) **   <a name="wellarchitected-UpdateAgentOrganizationalProfile-response-tags"></a>
-The tags associated with the updated organizational profile.
-Type: Array of [Tag](API_Tag.md) objects
 
 ## Errors
 <a name="API_UpdateAgentOrganizationalProfile_Errors"></a>

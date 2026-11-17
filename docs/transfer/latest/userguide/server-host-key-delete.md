@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/transfer/latest/userguide/server-host-key-delete.html
 ---
 
-# Delete a server host key
+# Deleting a server host key
 <a name="server-host-key-delete"></a>
 
 On the AWS Transfer Family console, you can delete a server host key.

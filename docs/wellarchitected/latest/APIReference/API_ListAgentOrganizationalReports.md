@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # ListAgentOrganizationalReports
 <a name="API_ListAgentOrganizationalReports"></a>
 
-**Important**
-This operation is not available during the preview release.
-
 Lists Organizational Reports owned by the caller's account within the caller's AWS Organization, ordered by most recently created first. Supports pagination and an optional state filter.
 
 ## Request Syntax
@@ -23,11 +20,11 @@ GET /api/v1/agent-organizational-reports?maxResults={{maxResults}}&nextToken={{n
 The request uses the following URI parameters.
 
  ** [maxResults](#API_ListAgentOrganizationalReports_RequestSyntax) **   <a name="wellarchitected-ListAgentOrganizationalReports-request-uri-maxResults"></a>
-The maximum number of results to return for this request.
+Maximum number of items to return in a single page. Defaults to 100.
 Valid Range: Minimum value of 1. Maximum value of 1000.
 
  ** [nextToken](#API_ListAgentOrganizationalReports_RequestSyntax) **   <a name="wellarchitected-ListAgentOrganizationalReports-request-uri-nextToken"></a>
-The token to use to retrieve the next set of results.
+Pagination token from a previous ListAgentOrganizationalReports response. Absent on the first page.
 Length Constraints: Minimum length of 1.
 Pattern: `[A-Za-z0-9+\/=_-]+`
 
@@ -74,7 +71,7 @@ Page of report summaries, most-recently-created first.
 Type: Array of [OrganizationalReportSummary](API_OrganizationalReportSummary.md) objects
 
  ** [nextToken](#API_ListAgentOrganizationalReports_ResponseSyntax) **   <a name="wellarchitected-ListAgentOrganizationalReports-response-nextToken"></a>
-The token to use to retrieve the next set of results.
+Pagination token to supply on the next request, or absent when there are no more pages.
 Type: String
 Length Constraints: Minimum length of 1.
 Pattern: `[A-Za-z0-9+\/=_-]+`

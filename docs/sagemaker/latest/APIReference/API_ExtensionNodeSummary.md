@@ -11,7 +11,7 @@ A summary of an extension's installation across the nodes of a SageMaker HyperPo
 <a name="API_ExtensionNodeSummary_Contents"></a>
 
  ** ActiveCount **   <a name="sagemaker-Type-ExtensionNodeSummary-ActiveCount"></a>
-The number of nodes that are running the extension's current version and configuration. While SageMaker HyperPod creates or updates the extension, `ActiveCount` is lower than `TotalCount`.
+The number of nodes that are running the extension's current version and configuration. Nodes that report the extension as unhealthy aren't counted. While SageMaker HyperPod creates or updates the extension, `ActiveCount` is lower than `TotalCount`. To see why nodes aren't counted, see `Health` in `DescribeClusterExtension`.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: Yes

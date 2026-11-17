@@ -53,7 +53,7 @@ Required: No
 The CIDR blocks associated with the peering connection. These CIDR blocks define the IP address ranges that can communicate through the peering connection.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 18.
-Pattern: `(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)\/(?:[1-2][0-9]|3[0-2]|[1-9])`
+Pattern: `(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)\/(?:[1-2][0-9]|3[0-2]|[0-9])`
 Required: No
 
  ** percentProgress **   <a name="odb-Type-OdbPeeringConnection-percentProgress"></a>

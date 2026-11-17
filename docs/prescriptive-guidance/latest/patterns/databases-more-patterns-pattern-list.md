@@ -76,6 +76,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Migrate Oracle ROWID functionality to PostgreSQL on AWS](migrate-oracle-rowid-functionality-to-postgresql-on-aws.md)
 + [Migrate SAP ASE on Amazon EC2 to Amazon Aurora PostgreSQL-Compatible using AWS SCT and AWS DMS](migrate-sap-ase-on-amazon-ec2-to-amazon-aurora-postgresql-compatible-using-aws-sct-and-aws-dms.md)
 + [Migrate virtual generated columns from Oracle to PostgreSQL](migrate-virtual-generated-columns-from-oracle-to-postgresql.md)
++ [Monitor Amazon ElastiCache clusters for at-rest encryption](monitor-amazon-elasticache-clusters-for-at-rest-encryption.md)
 + [Set up a highly available PeopleSoft architecture on AWS](set-up-a-highly-available-peoplesoft-architecture-on-aws.md)
 + [Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files](transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files.md)
 + [Transport PostgreSQL databases between two Amazon RDS DB instances using pg\_transport](transport-postgresql-databases-between-two-amazon-rds-db-instances-using-pg-transport.md)

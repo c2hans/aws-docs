@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # GetAgentContext
 <a name="API_GetAgentContext"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Retrieves detailed information about a specific context associated with a profile.
 
 ## Request Syntax

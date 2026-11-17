@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/cost-09.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # COST 9. How do you manage demand, and supply resources?
 <a name="cost-09"></a>
 

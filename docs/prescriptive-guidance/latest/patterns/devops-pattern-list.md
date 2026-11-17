@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 <a name="devops-pattern-list"></a>
 
 **Topics**
++ [Automate Supply Chain data lakes deployment in a multi-repository setup](automate-the-deployment-of-aws-supply-chain-data-lakes.md)
 + [Automate deletion of AWS CloudFormation stacks and associated resources](automate-deletion-cloudformation-stacks-associated-resources.md)
 + [Build and test iOS apps with AWS CodeCommit, AWS CodePipeline, and AWS Device Farm](build-and-test-ios-apps-with-aws-codecommit-aws-codepipeline-and-aws-device-farm.md)
 + [Configure mutual TLS authentication for applications running on Amazon EKS](configure-mutual-tls-authentication-for-applications-running-on-amazon-eks.md)

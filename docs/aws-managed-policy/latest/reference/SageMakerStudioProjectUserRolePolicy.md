@@ -18,13 +18,13 @@ You can attach `SageMakerStudioProjectUserRolePolicy` to your users, groups, and
 <a name="SageMakerStudioProjectUserRolePolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 20, 2024, 21:59 UTC
-+ **Edited time:** October 29, 2026, 22:37 UTC
++ **Edited time:** November 13, 2026, 20:47 UTC
 + **ARN**: `arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy`
 
 ## Policy version
 <a name="SageMakerStudioProjectUserRolePolicy-version"></a>
 
-**Policy version:** v76 (default)
+**Policy version:** v77 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -390,7 +390,8 @@ The policy's default version is the version that defines the permissions for the
         "glue:*DataQuality*"
       ],
       "Resource" : [
-        "arn:aws:glue:*:*:dataQualityRuleset/dq_etl_ruleset_${aws:PrincipalTag/AmazonDataZoneProject}_*"
+        "arn:aws:glue:*:*:dataQualityRuleset/dq_etl_ruleset_${aws:PrincipalTag/AmazonDataZoneProject}_*",
+        "arn:aws:glue:*:*:dataQualityEvaluationConfig/sagemaker_unified_studio_profiling_${aws:PrincipalTag/AmazonDataZoneProject}_*"
       ],
       "Condition" : {
         "StringEquals" : {
@@ -1397,7 +1398,8 @@ The policy's default version is the version that defines the permissions for the
             "access-grants.s3.amazonaws.com",
             "pods.eks.amazonaws.com",
             "bedrock-agentcore.amazonaws.com",
-            "agent-registry.amazonaws.com"
+            "agent-registry.amazonaws.com",
+            "bedrock.amazonaws.com"
           ]
         }
       }
@@ -2046,19 +2048,24 @@ The policy's default version is the version that defines the permissions for the
         "bedrock:CreateBlueprint",
         "bedrock:CreateBlueprintVersion",
         "bedrock:CreateDataAutomationProject",
+        "bedrock:CreateDataSource",
         "bedrock:CreateEvaluationJob",
+        "bedrock:CreateKnowledgeBase",
         "bedrock:CreatePrompt",
         "bedrock:CreatePromptVersion",
         "bedrock:DeleteAgentAlias",
         "bedrock:DeleteAgentVersion",
         "bedrock:DeleteBlueprint",
         "bedrock:DeleteDataAutomationProject",
+        "bedrock:DeleteDataSource",
+        "bedrock:DeleteKnowledgeBase",
         "bedrock:DeletePrompt",
         "bedrock:GetAgentAlias",
         "bedrock:GetAgentVersion",
         "bedrock:GetBlueprint",
         "bedrock:GetDataAutomationProject",
         "bedrock:GetDataAutomationStatus",
+        "bedrock:GetDataSource",
         "bedrock:GetEvaluationJob",
         "bedrock:GetKnowledgeBase",
         "bedrock:GetIngestionJob",
@@ -2068,6 +2075,7 @@ The policy's default version is the version that defines the permissions for the
         "bedrock:InvokeFlow",
         "bedrock:ListAgentAliases",
         "bedrock:ListAgentVersions",
+        "bedrock:ListDataSources",
         "bedrock:ListIngestionJobs",
         "bedrock:ListPrompts",
         "bedrock:ListTagsForResource",
@@ -2077,6 +2085,8 @@ The policy's default version is the version that defines the permissions for the
         "bedrock:UpdateAgentAlias",
         "bedrock:UpdateBlueprint",
         "bedrock:UpdateDataAutomationProject",
+        "bedrock:UpdateDataSource",
+        "bedrock:UpdateKnowledgeBase",
         "bedrock:ListAgentActionGroups",
         "bedrock:ListAgentKnowledgeBases"
       ],

@@ -31,7 +31,7 @@ Required: No
  ** Status **   <a name="SecretsManager-Type-ReplicationStatusType-Status"></a>
 The status can be `InProgress`, `Failed`, or `InSync`.
 Type: String
-Valid Values: `InSync | Failed | InProgress`
+Valid Values: `InSync | Failed | InProgress | Pending | Detached`
 Required: No
 
  ** StatusMessage **   <a name="SecretsManager-Type-ReplicationStatusType-StatusMessage"></a>

@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_backing_up_data_secured_backups_data.html
 ---
 
+This whitepaper is for historical reference only and will be deprecated in the future.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # REL09-BP02 Secure and encrypt backups
 <a name="rel_backing_up_data_secured_backups_data"></a>
 

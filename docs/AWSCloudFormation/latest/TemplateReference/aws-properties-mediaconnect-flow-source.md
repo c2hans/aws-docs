@@ -43,6 +43,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Protocol](#cfn-mediaconnect-flow-source-protocol)" : {{String}},
   "[RouterIntegrationState](#cfn-mediaconnect-flow-source-routerintegrationstate)" : {{String}},
   "[RouterIntegrationTransitDecryption](#cfn-mediaconnect-flow-source-routerintegrationtransitdecryption)" : {{FlowTransitEncryption}},
+  "[RtmpPushDetails](#cfn-mediaconnect-flow-source-rtmppushdetails)" : {{RtmpPushDetails}},
+  "[RtmpPushSettings](#cfn-mediaconnect-flow-source-rtmppushsettings)" : {{RtmpPushSettings}},
   "[SenderControlPort](#cfn-mediaconnect-flow-source-sendercontrolport)" : {{Integer}},
   "[SenderIpAddress](#cfn-mediaconnect-flow-source-senderipaddress)" : {{String}},
   "[SourceArn](#cfn-mediaconnect-flow-source-sourcearn)" : {{String}},
@@ -81,6 +83,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   [RouterIntegrationState](#cfn-mediaconnect-flow-source-routerintegrationstate): {{String}}
   [RouterIntegrationTransitDecryption](#cfn-mediaconnect-flow-source-routerintegrationtransitdecryption): {{
     FlowTransitEncryption}}
+  [RtmpPushDetails](#cfn-mediaconnect-flow-source-rtmppushdetails): {{
+    RtmpPushDetails}}
+  [RtmpPushSettings](#cfn-mediaconnect-flow-source-rtmppushsettings): {{
+    RtmpPushSettings}}
   [SenderControlPort](#cfn-mediaconnect-flow-source-sendercontrolport): {{Integer}}
   [SenderIpAddress](#cfn-mediaconnect-flow-source-senderipaddress): {{String}}
   [SourceArn](#cfn-mediaconnect-flow-source-sourcearn): {{String}}
@@ -182,7 +188,7 @@ The protocol that is used by the source. AWS CloudFormation does not currently s
 AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
 *Required*: No
 *Type*: String
-*Allowed values*: `zixi-push | rtp-fec | rtp | rist | srt-listener | srt-caller | st2110-jpegxs | cdi | ndi-speed-hq`
+*Allowed values*: `zixi-push | rtp-fec | rtp | rist | srt-listener | srt-caller | st2110-jpegxs | cdi | ndi-speed-hq | rtmp-push`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RouterIntegrationState`  <a name="cfn-mediaconnect-flow-source-routerintegrationstate"></a>
@@ -196,6 +202,18 @@ Indicates if router integration is enabled or disabled on the flow source.
 The decryption configuration for the flow source when router integration is enabled.
 *Required*: No
 *Type*: [FlowTransitEncryption](aws-properties-mediaconnect-flow-flowtransitencryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RtmpPushDetails`  <a name="cfn-mediaconnect-flow-source-rtmppushdetails"></a>
+Property description not available.
+*Required*: No
+*Type*: [RtmpPushDetails](aws-properties-mediaconnect-flow-rtmppushdetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RtmpPushSettings`  <a name="cfn-mediaconnect-flow-source-rtmppushsettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [RtmpPushSettings](aws-properties-mediaconnect-flow-rtmppushsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SenderControlPort`  <a name="cfn-mediaconnect-flow-source-sendercontrolport"></a>

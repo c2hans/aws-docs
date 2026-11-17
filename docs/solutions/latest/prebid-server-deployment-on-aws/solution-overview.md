@@ -15,7 +15,7 @@ Use this navigation table to quickly find answers to these questions:
 
 | If you want to . . . | Read . . . |
 | --- | --- |
-| Know the cost for running this solution. The baseline estimated cost for running this solution in the US East (N. Virginia) Region is approximately **$241.50 a month** when no load is running on the solution. See the Cost section for several impression-per-second and RPS scenarios. |  [Cost](cost1.md)  |
+| Know the cost for running this solution. The baseline estimated cost for running this solution in the US East (N. Virginia) Region is approximately **$291.09 a month** (as of November 2026) when no load is running on the solution. See the Cost section for several scenarios based on incoming requests per second, with the corresponding monthly ad request and bid request volumes. |  [Cost](cost1.md)  |
 | Understand the security considerations for this solution. |  [Security](security-1.md)  |
 | Know how to plan for quotas for this solution. |  [Quotas](quotas.md)  |
 | Know which AWS Regions are supported for this solution. |  [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions)  |

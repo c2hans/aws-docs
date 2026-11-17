@@ -13,7 +13,7 @@ A caller's requested change to one preference, supplied to PutAgentPreferences.
  ** key **   <a name="wellarchitected-Type-PreferenceUpdate-key"></a>
 Which preference to update.
 Type: String
-Valid Values: `ORG_INTEGRATION | COST_EXPLORER_ENABLED | COST_EXPLORER_DAILY_RESOURCE_LEVEL_DATA`
+Valid Values: `ORG_INTEGRATION`
 Required: Yes
 
  ** state **   <a name="wellarchitected-Type-PreferenceUpdate-state"></a>

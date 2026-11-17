@@ -44,7 +44,7 @@ SES how-to links are listed alphabetically and will take you to the correspondin
   + [Enable email feedback forwarding](monitor-sending-activity-using-notifications-email.md#monitor-sending-activity-using-notifications-email-enabling)
   + [Export reputation metrics](configuration-sets-export-metrics.md)
   + [Get out of the sandbox](request-production-access.md)
-  + [Get started with SES](setting-up.md#quick-start-verify-email-addresses)
+  + [Get started with SES](getting-started-sending.md#quick-start-verify-email-addresses)
   + [Get started with Virtual Deliverability Manager](vdm-get-started.md)
   + [Give permissions for email receiving](receiving-email-permissions.md)
   + [Increase throughput](troubleshoot-throughput-problems.md)

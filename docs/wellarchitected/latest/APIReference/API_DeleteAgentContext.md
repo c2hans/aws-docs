@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # DeleteAgentContext
 <a name="API_DeleteAgentContext"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Deletes a context associated with a profile.
 
 ## Request Syntax

@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/rel_monitor_aws_resources_notification_monitor.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # REL06-BP03 Send notifications (Real-time processing and alarming)
 <a name="rel_monitor_aws_resources_notification_monitor"></a>
 

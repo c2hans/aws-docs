@@ -128,7 +128,7 @@ This section covers the following topics:
 ### AWS Web Application Firewall (WAF) and WAF Classic
 <a name="aws-waf-and-waf-classic"></a>
 
- If you’re using [AWS WAF](https://aws.amazon.com/WAF) with your CloudFront distribution, you have a dependency on the WAF control plane, which is also hosted in `us-east-1`. During a control plane impairment, the configured web access control lists (ACLs) and their associated rules continue to function. Don’t rely on updating your WAF web ACLs as part of your recovery path.
+ If you’re using [AWS WAF](https://aws.amazon.com/waf) with your CloudFront distribution, you have a dependency on the WAF control plane, which is also hosted in `us-east-1`. During a control plane impairment, the configured web access control lists (ACLs) and their associated rules continue to function. Don’t rely on updating your WAF web ACLs as part of your recovery path.
 
 ## AWS Global Accelerator
 <a name="aws-global-accelerator-bp"></a>

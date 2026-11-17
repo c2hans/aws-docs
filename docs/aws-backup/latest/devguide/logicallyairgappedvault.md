@@ -49,6 +49,8 @@ A logically air-gapped vault is a secondary vault that serves as part of a data 
 + Contains backups which, through AWS RAM or MPA, can be shared with and restored from a different account than the one that created the backup
 
 **Considerations and limitations**
++ Cross-Region copy to or from a logically air-gapped vault is not currently available for backups that contain Amazon RDS DB instances.
++ When you restore an Amazon RDS DB instance from a shared logically air-gapped vault encrypted with a customer managed key, the key policy must allow your restore role and your account's AWS Backup service-linked role to use the key. See [Key policy for CMK encrypted logically air-gapped vault creation](#key-policy-lag-vault-creation).
 + Unencrypted Amazon Aurora, Amazon DocumentDB, and Amazon Neptune clusters are not supported for logically air-gapped vault, as they do not support encryption of unencrypted DB cluster snapshots.
 + Amazon EC2 offers [EC2 Allowed AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html). If this setting is enabled in your account, add the alias `aws-backup-vault` to your allowlist.
 
@@ -643,6 +645,7 @@ To prevent job failures, review your AWS KMS key policy to ensure it includes al
     "Effect": "Allow",
     "Principal": {
         "AWS": ["arn:aws:iam::[recovery-account-id]:role/service-role/AWSBackupDefaultServiceRole", //[Recovery account copy/restore role]
+                "arn:aws:iam::[recovery-account-id]:role/aws-service-role/backup.amazonaws.com/AWSServiceRoleForBackup", //[Recovery account SLR]
                 "arn:aws:iam::[destination-account-id]:role/aws-service-role/backup.amazonaws.com/AWSServiceRoleForBackup"] //[Destination SLR]
     },
     "Action": [
@@ -658,7 +661,8 @@ To prevent job failures, review your AWS KMS key policy to ensure it includes al
     "Sid": "Allow AWS Backup to create grant on the key for copy",
     "Effect": "Allow",
     "Principal": {
-        "AWS": ["arn:aws:iam::[recovery-account-id]:role/service-role/AWSBackupDefaultServiceRole" //[Recovery account copy/restore role]
+        "AWS": ["arn:aws:iam::[recovery-account-id]:role/service-role/AWSBackupDefaultServiceRole", //[Recovery account copy/restore role]
+                "arn:aws:iam::[recovery-account-id]:role/aws-service-role/backup.amazonaws.com/AWSServiceRoleForBackup", //[Recovery account SLR]
                 "arn:aws:iam::[destination-account-id]:role/aws-service-role/backup.amazonaws.com/AWSServiceRoleForBackup"], //[Destination SLR]
 
     },

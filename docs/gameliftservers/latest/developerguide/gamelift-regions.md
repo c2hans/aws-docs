@@ -95,7 +95,7 @@ An Amazon GameLift Servers Anywhere fleet is a collection of hosting hardware t
 
 You add instances of hosting hardware to an Anywhere fleet by registering it. Each registered instance must have a custom location associated with it. Custom locations are not related to AWS Regions or Local Zones. They are used to represent the physical location of the hardware.
 
-For more information about creating an Anywhere fleet and testing your game server integration, see [Create an Amazon GameLift Servers Anywhere fleet](fleets-creating-anywhere.md) and [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md).
+For more information about creating an Anywhere fleet and testing your game server integration, see [Create an Amazon GameLift Servers Anywhere fleet](fleets-creating-anywhere.md) and [Setting up local testing with Amazon GameLift Servers Anywhere](integration-testing.md).
 
 ## Locations for Amazon GameLift Servers FlexMatch
 <a name="gamelift-regions-flex"></a>

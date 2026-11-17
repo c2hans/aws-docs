@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/rel_service_architecture_business_domains.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # REL03-BP02 Build services focused on specific business domains and functionality
 <a name="rel_service_architecture_business_domains"></a>
 

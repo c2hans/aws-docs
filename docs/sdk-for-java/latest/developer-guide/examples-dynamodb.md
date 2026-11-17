@@ -26,7 +26,7 @@ Before working with DynamoDB, configure your client for optimal performance and 
 ### Understand DynamoDB retry behavior
 <a name="ddb-retry-behavior"></a>
 
-DynamoDB clients use a default maximum retry count of 8, which is higher than other AWS service clients. This higher retry count helps handle DynamoDB's distributed nature and temporary capacity limitations. For more information about retry strategies, see [Configure retry behavior in the AWS SDK for Java 2.x](retry-strategy.md).
+DynamoDB clients use a default maximum of 4 attempts (3 retries), which is higher than other AWS service clients. This higher retry count helps handle DynamoDB's distributed nature and temporary capacity limitations. DynamoDB clients also use a shorter base delay of 25 ms between retries. If you use the legacy retry strategy, DynamoDB clients use a maximum of 9 attempts (8 retries). For more information about retry strategies, see [Configure retry behavior in the AWS SDK for Java 2.x](retry-strategy.md).
 
 ### Optimize performance with account-based endpoints
 <a name="ddb-account-based-endpoints-v2"></a>

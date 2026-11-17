@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # PutAgentRecommendationFeedback
 <a name="API_PutAgentRecommendationFeedback"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Submits user feedback on a recommendation to help improve future optimization suggestions and track implementation outcomes.
 
 ## Request Syntax

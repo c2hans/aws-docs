@@ -17,12 +17,12 @@ The AWS SDK for .NET uses the underlying .NET runtime to determine which securit
 
 TLS 1.3 is the prerequisite to enable post-quantum cryptography, which may require additional actions or configurations. To learn more, see [Enabling hybrid post-quantum TLS](https://docs.aws.amazon.com/sdkref/latest/guide/pqtls-details.html) in the *AWS SDKs and Tools Reference Guide*.
 
-## .NET Core
+## .NET 8 and later
 <a name="enforcing-tls-dotnet-core"></a>
 
-By default, .NET Core uses the latest configured protocol that the operating system supports. The AWS SDK for .NET doesn't provide a mechanism to override this.
+By default, .NET uses the latest configured protocol that the operating system supports. The AWS SDK for .NET doesn't provide a mechanism to override this.
 
-If you're using a .NET Core version earlier than 2.1, we *strongly* recommend you upgrade your .NET Core version.
+If you're using a version of .NET that Microsoft no longer supports, upgrade to a supported version. For the versions that the SDK provides builds for, see [Supported platforms](net-dg-supported-platforms.md).
 
 See the following for information specific to each operating system.
 
@@ -32,13 +32,11 @@ Modern distributions of Windows have TLS 1.2 support [enabled by default](https:
 
 **macOS**
 
-If you're running .NET Core 2.1 or later, TLS 1.2 is enabled by default. TLS 1.2 is supported by [OS X Mavericks v10.9 or later](https://support.apple.com/en-us/103373). .NET Core version 2.1 and later require newer versions of macOS, as described at [https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=net80&pivots=os-macos](https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=net80&pivots=os-macos).
-
-If you're using .NET Core 1.0, .NET Core [uses OpenSSL on macOS](https://github.com/dotnet/announcements/issues/21), a dependency that must be installed separately. OpenSSL added support for TLS 1.2 in version 1.0.1, and added support for TLS 1.3 in version 1.1.1.
+.NET enables TLS 1.2 by default on macOS. For the versions of macOS that each version of .NET supports, see [Install .NET on macOS](https://learn.microsoft.com/en-us/dotnet/core/install/macos) on the Microsoft Learn website.
 
 **Linux**
 
-.NET Core on Linux requires OpenSSL, which comes bundled with many Linux distributions. But it can also be installed separately. OpenSSL added support for TLS 1.2 in version 1.0.1, and added support for TLS 1.3 in version 1.1.1. If you're using a modern version of .NET Core (2.1 or later) and have installed a package manager, it's likely that a more modern version of OpenSSL was installed for you.
+.NET on Linux requires OpenSSL, which comes bundled with many Linux distributions. But it can also be installed separately. OpenSSL added support for TLS 1.2 in version 1.0.1, and added support for TLS 1.3 in version 1.1.1. If you installed .NET with a package manager, the package manager likely installed a modern version of OpenSSL for you.
 
 To be sure, you can run **`openssl version`** in a terminal and verify that the version is later than 1.0.1.
 
@@ -79,13 +77,13 @@ On August 15th, 2024, the AWS SDK for .NET ended support for .NET Framework 3.5 
 
 **Windows PowerShell 6.0**
 
-Windows PowerShell 6.0 and newer run on .NET Core. You can verify which version of .NET Core is being used by running the following command.
+PowerShell 6.0 and newer run on .NET. You can verify which version of .NET is being used by running the following command.
 
 ```
 [System.Reflection.Assembly]::GetEntryAssembly().GetCustomAttributes([System.Runtime.Versioning.TargetFrameworkAttribute], $true).FrameworkName
 ```
 
-Follow the instructions provided earlier regarding the AWS SDK for .NET and the relevant version of .NET Core.
+Follow the instructions provided earlier regarding the AWS SDK for .NET and the relevant version of .NET.
 
 ## Xamarin
 <a name="enforcing-tls-xamarin"></a>
@@ -114,6 +112,6 @@ You must use Unity 2018.2 or later, and use the .NET 4.x Equivalent scripting ru
 
 WebAssembly runs in the browser instead of on the server, and uses the browser for handling HTTP traffic. Therefore, TLS support is determined by browser support.
 
-Blazor WebAssembly, in preview for ASP.NET Core 3.1, is supported only in browsers that support WebAssembly, as described at [https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms](https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms). All mainstream browsers supported TLS 1.2 before supporting WebAssembly. If this is the case for your browser, then if your app runs, it can communicate over TLS 1.2.
+Blazor WebAssembly is supported only in browsers that support WebAssembly, as described at [https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms](https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms). All mainstream browsers supported TLS 1.2 before supporting WebAssembly. If this is the case for your browser, then if your app runs, it can communicate over TLS 1.2.
 
 See your browser's documentation for more information and verification.

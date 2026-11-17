@@ -895,7 +895,7 @@ If you see the following message, follow these steps to fix the issue.
 ## Test insights
 <a name="troubleshooting-xctest-ui-insights"></a>
 
-When you opt in to test insights, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for XCTest UI tests.
+When test insights are enabled, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for XCTest UI tests.
 
 ### The job did not run to completion
 <a name="ti-xctest-ui-job-not-complete"></a>

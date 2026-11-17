@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/perf_data_evaluate_configuration_options_data_store.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF03-BP02 Evaluate available configuration options for data store
 <a name="perf_data_evaluate_configuration_options_data_store"></a>

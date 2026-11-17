@@ -45,4 +45,4 @@ If you need to continue using server SDK version 4.x or earlier, see [Server SDK
        --region us-west-2
    ```
 
-1. If you use scripts to remotely connect to managed fleets, update the scripts to use the new process, as described in [Connect to fleet instances](fleets-remote-access.md).
+1. If you use scripts to remotely connect to managed fleets, update the scripts to use the new process, as described in [Connecting to fleet instances](fleets-remote-access.md).

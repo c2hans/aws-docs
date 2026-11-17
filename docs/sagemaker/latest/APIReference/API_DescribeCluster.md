@@ -95,6 +95,11 @@ Required: Yes
             "DesiredPatchSchedule": {
                "NextPatchDate": number
             },
+            "DrainPolicy": {
+               "DrainTimeoutInSeconds": number,
+               "OnDrainTimeout": "string"
+            },
+            "IdleWaitWindowInSeconds": number,
             "PatchingStrategy": "string"
          },
          "CapacityRequirements": {

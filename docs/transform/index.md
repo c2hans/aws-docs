@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/transform/index.html
 title: 'AWS Transform Documentation'
 canonical_url: https://docs.aws.amazon.com/transform/
 source: aws-documentation
-generated_on: 2026-11-11
+generated_on: 2026-11-16
 ---
 
 # AWS Transform Documentation

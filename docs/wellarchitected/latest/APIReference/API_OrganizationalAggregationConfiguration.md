@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # OrganizationalAggregationConfiguration
 <a name="API_OrganizationalAggregationConfiguration"></a>
 
-**Important**
-This is not available during the preview release.
-
 The organizational monitoring boundary configuration. Contains organizational unit entries and individual account entries, each with their own region selections, that define the scope for organizational profile analysis.
 
 ## Contents

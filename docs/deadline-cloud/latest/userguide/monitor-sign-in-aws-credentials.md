@@ -68,6 +68,7 @@ The sign-in page of the desktop monitor lists the profiles from your AWS config 
 
 A profile must meet the following requirements to be used:
 + The profile appears in the AWS config file. A profile that exists only in the shared credentials file (`~/.aws/credentials`) isn't listed.
++ The profile is a named profile, in a `[profile {{name}}]` section. The `[default]` profile isn't listed.
 + The profile sets a `region`. A profile without a Region appears in the list but can't be selected until you add one.
 
 **To sign in with an existing AWS profile**
@@ -79,4 +80,4 @@ A profile must meet the following requirements to be used:
 
 1. Choose **Next**.
 
-The monitor resolves the profile's credentials through the standard AWS credential provider chain, the same way the AWS CLI does. The monitor only reads the profile and doesn't change it, so credential renewal and expiry work the same as they do for your other tools.
+The monitor resolves the profile's credentials through the standard AWS credential provider chain, the same way the AWS CLI does. The monitor only reads the profile and doesn't change it, so credential renewal and expiry work the same as they do for your other tools. A profile that sets only a Region gets its credentials from the rest of the chain, such as the instance profile of an Amazon EC2 instance. To set up a workstation that uses its instance profile, see [Set up an Amazon EC2 workstation with an instance profile](using-without-identity-center.md#without-idc-ec2-workstation).

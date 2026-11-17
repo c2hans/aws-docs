@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 # DeleteCampaignCommunicationTime
 <a name="API_connect-outbound-campaigns-v2_DeleteCampaignCommunicationTime"></a>
 
-Deletes the communication time configuration of an outbound campaign. Only campaigns in the `Initialized` state are valid for this operation.
+Deletes the communication time configuration of an outbound campaign. Only campaigns in the `Initialized` state, or campaigns of type `JOURNEY` in the `Running` or `Paused` state, are valid for this operation.
 
 ## Request Syntax
 <a name="API_connect-outbound-campaigns-v2_DeleteCampaignCommunicationTime_RequestSyntax"></a>

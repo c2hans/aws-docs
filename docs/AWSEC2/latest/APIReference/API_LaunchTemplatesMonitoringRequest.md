@@ -15,6 +15,11 @@ Specify `true` to enable detailed monitoring. Otherwise, basic monitoring is ena
 Type: Boolean
 Required: No
 
+ ** MetricCategoryId.N **
+The IDs of the metric categories to associate with the instance. To specify metric categories, you must also enable detailed monitoring.
+Type: Array of strings
+Required: No
+
 ## See Also
 <a name="API_LaunchTemplatesMonitoringRequest_SeeAlso"></a>
 

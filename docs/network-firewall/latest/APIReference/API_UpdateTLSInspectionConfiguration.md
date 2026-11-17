@@ -27,8 +27,11 @@ To update a TLS inspection configuration, first call [DescribeTLSInspectionConfi
                "RevokedStatusAction": "{{string}}",
                "UnknownStatusAction": "{{string}}"
             },
+            "DefaultDecryptionBehavior": "{{string}}",
             "Scopes": [
                {
+                  "DecryptionAction": "{{string}}",
+                  "DeploymentMode": "{{string}}",
                   "DestinationPorts": [
                      {
                         "FromPort": {{number}},
@@ -40,6 +43,9 @@ To update a TLS inspection configuration, first call [DescribeTLSInspectionConfi
                         "AddressDefinition": "{{string}}"
                      }
                   ],
+                  "DomainMatch": {
+                     "Domains": [ "{{string}}" ]
+                  },
                   "Protocols": [ {{number}} ],
                   "SourcePorts": [
                      {

@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/perf_data_access_patterns_caching.html
 ---
 
+This whitepaper is for historical reference only and will be deprecated in the future.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # PERF03-BP05 Implement data access patterns that utilize caching
 <a name="perf_data_access_patterns_caching"></a>
 

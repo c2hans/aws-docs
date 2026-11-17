@@ -30,6 +30,14 @@ When enabled, Network Firewall checks if the server certificate presented by the
 Type: [CheckCertificateRevocationStatusActions](API_CheckCertificateRevocationStatusActions.md) object
 Required: No
 
+ ** DefaultDecryptionBehavior **   <a name="networkfirewall-Type-ServerCertificateConfiguration-DefaultDecryptionBehavior"></a>
+What the firewall does with SSL/TLS traffic that doesn't match any scope in this server certificate configuration. This setting applies only to proxy mode firewalls. If you don't specify a value, the firewall uses `BYPASS`. You can choose from the following values:
++  `BYPASS` - The firewall doesn't decrypt the traffic.
++  `DECRYPT` - The firewall decrypts the traffic for inspection. You can use `DECRYPT` only if every scope in the configuration sets `DeploymentMode` to `EXPLICIT_PROXY_ONLY`.
+Type: String
+Valid Values: `DECRYPT | BYPASS`
+Required: No
+
  ** Scopes **   <a name="networkfirewall-Type-ServerCertificateConfiguration-Scopes"></a>
 A list of scopes.
 Type: Array of [ServerCertificateScope](API_ServerCertificateScope.md) objects

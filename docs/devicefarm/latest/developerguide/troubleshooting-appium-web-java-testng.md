@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 # Troubleshooting Appium Java TestNG web applications in AWS Device Farm
 <a name="troubleshooting-appium-web-java-testng"></a>
 
-The following topic lists error messages that occur during the upload of Appium Java TestNG Web application tests and recommends workarounds to resolve each error.
+The following topic lists error messages that can occur for Appium Java TestNG Web application tests and recommends workarounds to resolve each error.
 
 ## APPIUM\_WEB\_JAVA\_TESTNG\_TEST\_PACKAGE\_UNZIP\_FAILED
 <a name="APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE_UNZIP_FAILED"></a>
@@ -226,3 +226,8 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
    ```
 
    For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+
+## Test insights
+<a name="troubleshooting-appium-web-java-testng-insights"></a>
+
+Test insights for Appium Java TestNG web app tests use the same `testng-results.xml` file as mobile app tests, so the same messages can occur. For more information, see [Test insights](troubleshooting-appium-java-testng.md#troubleshooting-appium-java-testng-insights).

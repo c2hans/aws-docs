@@ -53,5 +53,5 @@ Specifies whether user assignment is required for the Identity Center applicatio
 The Amazon Resource Name (ARN) of the Identity Center instance.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
+*Pattern*: `^arn:aws[a-z0-9-]*:sso:::instance/(sso)?ins-[a-zA-Z0-9-.]{16}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

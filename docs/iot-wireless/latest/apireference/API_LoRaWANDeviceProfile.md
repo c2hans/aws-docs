@@ -44,7 +44,7 @@ Required: No
  ** MaxEirp **   <a name="iotwireless-Type-LoRaWANDeviceProfile-MaxEirp"></a>
 The MaxEIRP value.
 Type: Integer
-Valid Range: Minimum value of 0. Maximum value of 15.
+Valid Range: Minimum value of 0. Maximum value of 36.
 Required: No
 
  ** PingSlotDr **   <a name="iotwireless-Type-LoRaWANDeviceProfile-PingSlotDr"></a>

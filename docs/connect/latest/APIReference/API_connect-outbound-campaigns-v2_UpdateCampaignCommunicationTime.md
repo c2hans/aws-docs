@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 # UpdateCampaignCommunicationTime
 <a name="API_connect-outbound-campaigns-v2_UpdateCampaignCommunicationTime"></a>
 
-Updates `CommunicationTimeConfig` for an outbound campaign. Only campaigns in the `Initialized` state are valid for this operation.
+Updates `CommunicationTimeConfig` for an outbound campaign. Only campaigns in the `Initialized` state, or campaigns of type `JOURNEY` in the `Running` or `Paused` state, are valid for this operation.
 
 ## Request Syntax
 <a name="API_connect-outbound-campaigns-v2_UpdateCampaignCommunicationTime_RequestSyntax"></a>
@@ -58,7 +58,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [communicationTimeConfig](#API_connect-outbound-campaigns-v2_UpdateCampaignCommunicationTime_RequestSyntax) **   <a name="connect-connect-outbound-campaigns-v2_UpdateCampaignCommunicationTime-request-communicationTimeConfig"></a>
-Communication time configuration for an outbound campaign. Only campaigns in the `Initialized` state are valid for this operation.
+Communication time configuration for an outbound campaign.
 Type: [CommunicationTimeConfig](API_connect-outbound-campaigns-v2_CommunicationTimeConfig.md) object
 Required: Yes
 

@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/cost-bp.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Best practices
 <a name="cost-bp"></a>

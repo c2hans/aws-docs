@@ -15,6 +15,11 @@ Indicates whether detailed monitoring is enabled. Otherwise, basic monitoring is
 Type: Boolean
 Required: No
 
+ ** MetricCategoryIdSet.N **
+The IDs of the metric categories to associate with the instance.
+Type: Array of strings
+Required: No
+
 ## See Also
 <a name="API_LaunchTemplatesMonitoring_SeeAlso"></a>
 

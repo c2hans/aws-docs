@@ -19,6 +19,7 @@ Retrieves a list of event summaries for a specified HyperPod cluster. The operat
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "NodeId": "{{string}}",
+   "OperationId": "{{string}}",
    "ResourceType": "{{string}}",
    "SortBy": "{{string}}",
    "SortOrder": "{{string}}"
@@ -76,6 +77,12 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `i-[a-f0-9]{8}(?:[a-f0-9]{9})?`
 Required: No
 
+ ** [OperationId](#API_ListClusterEvents_RequestSyntax) **   <a name="sagemaker-ListClusterEvents-request-OperationId"></a>
+The unique identifier (UUID) of a cluster operation for which to filter events. If specified, only events associated with this operation are returned. This ID can be obtained from the `ListClusterOperations` operation.
+Type: String
+Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Required: No
+
  ** [ResourceType](#API_ListClusterEvents_RequestSyntax) **   <a name="sagemaker-ListClusterEvents-request-ResourceType"></a>
 The type of resource for which to filter events. Valid values are `Cluster`, `InstanceGroup`, or `Instance`.
 Type: String
@@ -109,6 +116,7 @@ Required: No
          "EventTime": number,
          "InstanceGroupName": "string",
          "InstanceId": "string",
+         "OperationId": "string",
          "ResourceType": "string"
       }
    ],

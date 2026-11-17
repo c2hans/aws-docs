@@ -7,9 +7,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::WellArchitected::AgentGoal
 <a name="aws-resource-wellarchitected-agentgoal"></a>
 
-**Note**
-AWS Well-Architected Agent is in preview release and is subject to change.
-
 Creates an optimization goal associated with a profile. Goals define specific targets and objectives for the optimization process.
 
 ## Syntax

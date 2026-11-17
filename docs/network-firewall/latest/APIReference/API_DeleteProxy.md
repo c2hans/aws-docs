@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # DeleteProxy
 <a name="API_DeleteProxy"></a>
 
-Deletes the specified [Proxy](API_Proxy.md).
+Deletes the specified proxy.
 
 Detaches a Proxy configuration from a NAT Gateway.
 

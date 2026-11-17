@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 # Best practices for code recommendations with Amazon Q Developer
 <a name="code-recommendations"></a>
 
-Amazon Q Developer can take developer questions and evaluate code to offer recommendations which range from code generation and bug fixes to guidance using natural language. Following are best practices for using chat in Amazon Q:
+Amazon Q Developer can take developer questions and evaluate code to offer recommendations that range from code generation and bug fixes to guidance using natural language. Following are best practices for using chat in Amazon Q:
 + **Generate code from scratch**
 
   For new projects or when you need a general function (for example, copying files from Amazon S3), ask Amazon Q Developer to generate code examples using natural language prompts. Amazon Q can provide related links to public resources for further validation and investigation.
@@ -23,6 +23,6 @@ Amazon Q Developer can take developer questions and evaluate code to offer recom
   After sending a code block as a prompt, ask Amazon Q Developer to generate unit tests. This approach can save time and development costs related to code coverage and DevOps.
 + **Find **AWS **answers**
 
-  Amazon Q Developer is a valuable resource for developers working with AWS services because it contains a vast amount of knowledge related to AWS. Whether you're facing challenges with a specific AWS service, encountering error messages that are specific to AWS, or trying to learn a new AWS service, Amazon Q often provides relevant and useful information.
+  Amazon Q Developer is a useful resource for developers working with AWS services because it contains extensive knowledge related to AWS. Whether you're facing challenges with a specific AWS service, encountering error messages that are specific to AWS, or trying to learn a new AWS service, Amazon Q often provides relevant and useful information.
 
-  Always review the recommendations that Amazon Q Developer provides to you. Then, make necessary edits and execute tests to make sure that the code meets your intended functionality.
+  Review the recommendations that Amazon Q Developer provides. Then, edit the code as needed and run tests to verify that it meets your intended functionality.

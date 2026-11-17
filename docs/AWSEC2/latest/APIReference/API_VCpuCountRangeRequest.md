@@ -10,12 +10,12 @@ The minimum and maximum number of vCPUs.
 ## Contents
 <a name="API_VCpuCountRangeRequest_Contents"></a>
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum number of vCPUs. To specify no minimum limit, specify `0`.
 Type: Integer
 Required: Yes
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum number of vCPUs. To specify no maximum limit, omit this parameter.
 Type: Integer
 Required: No

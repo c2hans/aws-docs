@@ -18,7 +18,9 @@ There is no data retention change to Claude models released before Claude Fable 
 ## Data retention modes
 <a name="data-retention-modes"></a>
 
-Data retention is controlled by a **mode** rather than a simple on/off toggle:
+Data retention is controlled by a **mode** rather than a simple on or off toggle.
+
+Amazon Bedrock does not share your content with model providers for any current mode.
 
 | **Mode** | **Behavior** |
 | --- | --- |

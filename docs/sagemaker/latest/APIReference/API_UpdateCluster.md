@@ -39,6 +39,11 @@ Updates a SageMaker HyperPod cluster.
                },
                "WaitIntervalInSeconds": {{number}}
             },
+            "DrainPolicy": {
+               "DrainTimeoutInSeconds": {{number}},
+               "OnDrainTimeout": "{{string}}"
+            },
+            "IdleWaitWindowInSeconds": {{number}},
             "PatchingStrategy": "{{string}}",
             "PatchSchedule": {
                "NextPatchDate": {{number}}

@@ -313,6 +313,8 @@ Connect Customer throttling quotas are by account, and per Region, not by user a
 | \*[GetMetricData ](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricData.html) | 5 | 8 |
 | \*[GetMetricDataV2 ](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetMetricDataV2.html) | 10 | 10 |
 | \*[GetCurrentMetricData](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurrentMetricData.html) | 5 | 8 |
+| [DescribeInstance](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeInstance.html) | 1 | 5 |
+| [ListInstances](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListInstances.html) | 1 | 5 |
 | [SearchContacts](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html) when searching within a 2-week window by contact initiation time | 10 | 30 |
 | [SearchContacts](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchContacts.html) when searching beyond a 2-week window by contact initiation time | 1 | 1 |
 | [StartContactStreaming](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartContactStreaming.html) | 5 | 8 |

@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/cost_pricing_model_third_party.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST07-BP03 Select third-party agreements with cost-efficient terms
 <a name="cost_pricing_model_third_party"></a>

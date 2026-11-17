@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/sus-02.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # SUS 2 How do you align cloud resources to your demand?
 <a name="sus-02"></a>
 

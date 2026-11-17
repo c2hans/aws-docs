@@ -35,7 +35,7 @@ ADDF, as a framework, is designed to deploy ADDF modules as infrastructure as co
 ADDF is designed to orchestrate and deploy modules by using any common IaC framework. This includes, but isn't limited to:
 + [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/v2/guide/home.html)
 + [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
-+ [Hashicorp Terraform](https://www.terraform.io/)
++ [HashiCorp Terraform](https://www.terraform.io/)
 
 You can use different IaC frameworks to write different modules, and then you use ADDF to deploy them.
 
@@ -85,7 +85,7 @@ AWS Secrets Manager secrets are stored only in the target accounts, as needed fo
 ## Permissions boundary support for the AWS CodeBuild role for CodeSeeder
 <a name="permissions-boundary-support-for-the-aws-code-build-role-for-code-seeder"></a>
 
-IAM *permissions boundaries* are a common security mechanism that defines the maximum permissions that an identity-based policy can grant to an IAM entity. SeedFarmer and CodeSeeder support an IAM permissions boundary attachment for each target account. The permissions boundary limits the maximum permissions of any service role used by CodeBuild when CodeSeeder deploys modules. IAM permissions boundaries must be created outside of ADDF by a security team. IAM permissions boundary policy attachments are accepted as an attribute within the ADDF deployment manifest file, **deployment.yaml**. For more information, see [Permissions boundaries](https://seed-farmer.readthedocs.io/en/latest/concepts/multi-account/#permissions-boundaries) (SeedFarmer documentation).
+IAM *permissions boundaries* are a common security mechanism that defines the maximum permissions that an identity-based policy can grant to an IAM entity. SeedFarmer and CodeSeeder support an IAM permissions boundary attachment for each target account. The permissions boundary limits the maximum permissions of any service role used by CodeBuild when CodeSeeder deploys modules. IAM permissions boundaries must be created outside of ADDF by a security team. IAM permissions boundary policy attachments are accepted as an attribute within the ADDF deployment manifest file, **deployment.yaml**.
 
 The workflow is as follows:
 
@@ -93,7 +93,7 @@ The workflow is as follows:
 
 1. The security team shares the policy ARN list with your ADDF developer team.
 
-1. The ADDF developer team integrates the policy ARN list into the manifest file. For an example of this integration, see [sample-permissionboundary.yaml](https://github.com/awslabs/autonomous-driving-data-framework/blob/d98e02f1a89d0029b35a56b93dd56c18c5cb2aa1/resources/sample-permissionboundary.yaml) (GitHub).
+1. The ADDF developer team integrates the policy ARN list into the manifest file.
 
 1. After successful deployment, the permissions boundary is attached to all service roles that CodeBuild uses to deploy modules.
 
@@ -129,7 +129,7 @@ These cross-account actions are achieved by using well-defined assume-role opera
 + The ADDF toolchain IAM role is deployed in the toolchain account. SeedFarmer assumes this role. This role has permissions to perform an `iam:AssumeRole` action and can assume the ADDF deployment IAM role in each target account. In addition, the ADDF toolchain IAM role can run local AWS Systems Manager Parameter Store operations.
 + The ADDF deployment IAM role is deployed in each target account. This role can be assumed only from the toolchain account by using the ADDF toolchain IAM role. This role has permissions to run local AWS Systems Manager Parameter Store operations and has permissions to run AWS CodeBuild actions that initiate and describe CodeBuild jobs through CodeSeeder.
 
-These ADDF-specific IAM roles are created as part of the ADDF-bootstrapping process. For more information, see *Bootstrap AWS Account(s)* in the [ADDF Deployment Guide](https://github.com/awslabs/autonomous-driving-data-framework/blob/main/docs/deployment_guide.md) (GitHub).
+These ADDF-specific IAM roles are created as part of the ADDF-bootstrapping process.
 
 All cross-account permissions are set up according to the principle of least privilege. If one target account is compromised, there is minimal or no impact to the other ADDF AWS accounts.
 

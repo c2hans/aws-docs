@@ -13,12 +13,12 @@ Setting the minimum bandwidth does not guarantee that your instance will achieve
 ## Contents
 <a name="API_NetworkBandwidthGbpsRequest_Contents"></a>
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum amount of network bandwidth, in Gbps. To specify no maximum limit, omit this parameter.
 Type: Double
 Required: No
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum amount of network bandwidth, in Gbps. To specify no minimum limit, omit this parameter.
 Type: Double
 Required: No

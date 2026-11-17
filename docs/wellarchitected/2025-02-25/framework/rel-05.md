@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/rel-05.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # REL 5. How do you design interactions in a distributed system to mitigate or withstand failures?
 <a name="rel-05"></a>
 

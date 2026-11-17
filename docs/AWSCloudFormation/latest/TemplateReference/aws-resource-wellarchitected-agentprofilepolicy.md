@@ -7,9 +7,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::WellArchitected::AgentProfilePolicy
 <a name="aws-resource-wellarchitected-agentprofilepolicy"></a>
 
-**Note**
-AWS Well-Architected Agent is in preview release and is subject to change.
-
 Attaches or replaces a resource-based policy on an Agent Profile. The policy controls cross-account access to the profile and its child resources such as recommendations, goals, and contexts. Only the profile owner can call this operation. The policy must be valid IAM JSON with Allow-only statements and no negation condition operators.
 
 ## Syntax

@@ -95,14 +95,10 @@ A setting indicating whether the firewall is protected against a change to the f
 Type: Boolean
 Required: No
 
- ** NatGatewayMappings **   <a name="networkfirewall-Type-Firewall-NatGatewayMappings"></a>
-The NAT gateways that the firewall uses to proxy traffic. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
-Type: Array of [NatGatewayMapping](API_NatGatewayMapping.md) objects
-Required: No
-
- ** NoSourcePreservation **   <a name="networkfirewall-Type-Firewall-NoSourcePreservation"></a>
-Indicates whether the firewall operates in proxy mode, in which the source IP address of the traffic is not preserved. When this value is `TRUE`, the firewall proxies traffic through a NAT gateway and uses the NAT gateway's IP address as the source for traffic reaching the destination.
-Type: Boolean
+ ** NatGatewayCreateMappings **   <a name="networkfirewall-Type-Firewall-NatGatewayCreateMappings"></a>
+The NAT gateways that you specified for Network Firewall to create for a proxy mode firewall. To get the IDs and status of the NAT gateways that are attached to the firewall, see `NatGatewayAttachments` in the firewall's `SyncStates`.
+Type: Array of [NatGatewayCreateMapping](API_NatGatewayCreateMapping.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 20 items.
 Required: No
 
  ** NumberOfAssociations **   <a name="networkfirewall-Type-Firewall-NumberOfAssociations"></a>
@@ -111,7 +107,7 @@ Type: Integer
 Required: No
 
  ** ProxySettings **   <a name="networkfirewall-Type-Firewall-ProxySettings"></a>
-The listener configuration for the firewall's proxy. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+The proxy settings of a proxy mode firewall: its listeners and, if you specified them, your own `CertificateArn` and `DomainName`.
 Type: [ProxySettings](API_ProxySettings.md) object
 Required: No
 
@@ -140,8 +136,14 @@ Length Constraints: Fixed length of 12.
 Pattern: `^\d{12}$`
 Required: No
 
+ ** TransparentFilteringNatScope **   <a name="networkfirewall-Type-Firewall-TransparentFilteringNatScope"></a>
+How a proxy mode firewall handles traffic that isn't sent to its proxy listener. `NAT_ALL` sends this traffic out through the firewall's NAT gateway after inspection. `NAT_NONE` returns it to the firewall endpoint without address translation.
+Type: String
+Valid Values: `NAT_ALL | NAT_NONE`
+Required: No
+
  ** VpcEndpoint **   <a name="networkfirewall-Type-Firewall-VpcEndpoint"></a>
-The VPC and subnets for the firewall endpoint. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+The VPC and subnets for the endpoints of a proxy mode firewall.
 Type: [VpcEndpoint](API_VpcEndpoint.md) object
 Required: No
 

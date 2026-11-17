@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # CreateAgentOrganizationalProfile
 <a name="API_CreateAgentOrganizationalProfile"></a>
 
-**Important**
-This operation is not available during the preview release.
-
 Creates an Organizational Profile for use with AWS Organizations integration. Organizational Profiles are scoped to an AWS Organization and do not require an execution role or aggregation configuration. The organization is inferred from the caller's identity.
 
 ## Request Syntax
@@ -99,7 +96,6 @@ Pattern: `[a-zA-Z0-9_-]+`
 Required: Yes
 
  ** [organizationalAggregationConfiguration](#API_CreateAgentOrganizationalProfile_RequestSyntax) **   <a name="wellarchitected-CreateAgentOrganizationalProfile-request-organizationalAggregationConfiguration"></a>
-This is not available during the preview release.
 The organizational monitoring boundary. Contains organizational unit or root entries and individual account entries that define the scope for the profile.
 Type: [OrganizationalAggregationConfiguration](API_OrganizationalAggregationConfiguration.md) object
 Required: No
@@ -239,7 +235,6 @@ Length Constraints: Minimum length of 3. Maximum length of 128.
 Pattern: `[a-zA-Z0-9_-]+`
 
  ** [organizationalAggregationConfiguration](#API_CreateAgentOrganizationalProfile_ResponseSyntax) **   <a name="wellarchitected-CreateAgentOrganizationalProfile-response-organizationalAggregationConfiguration"></a>
-This is not available during the preview release.
 The organizational monitoring boundary for the created profile. Present only for organizational profiles.
 Type: [OrganizationalAggregationConfiguration](API_OrganizationalAggregationConfiguration.md) object
 

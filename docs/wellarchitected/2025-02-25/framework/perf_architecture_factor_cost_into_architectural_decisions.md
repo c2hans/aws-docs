@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/perf_architecture_factor_cost_into_architectural_decisions.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # PERF01-BP03 Factor cost into architectural decisions
 <a name="perf_architecture_factor_cost_into_architectural_decisions"></a>
 

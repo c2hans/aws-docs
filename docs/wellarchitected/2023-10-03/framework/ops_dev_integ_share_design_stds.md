@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/ops_dev_integ_share_design_stds.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS05-BP06 Share design standards
 <a name="ops_dev_integ_share_design_stds"></a>

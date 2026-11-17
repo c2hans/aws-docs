@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # ListAgentContexts
 <a name="API_ListAgentContexts"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Lists contexts associated with a profile.
 
 ## Request Syntax
@@ -23,11 +20,11 @@ GET /api/v1/agent-profiles/{{profileArn}}/contexts?maxResults={{maxResults}}&nex
 The request uses the following URI parameters.
 
  ** [maxResults](#API_ListAgentContexts_RequestSyntax) **   <a name="wellarchitected-ListAgentContexts-request-uri-maxResults"></a>
-The maximum number of results to return for this request.
+The maximum number of contexts to return in a single call. Default is 100.
 Valid Range: Minimum value of 1. Maximum value of 1000.
 
  ** [nextToken](#API_ListAgentContexts_RequestSyntax) **   <a name="wellarchitected-ListAgentContexts-request-uri-nextToken"></a>
-The token to use to retrieve the next set of results.
+A pagination token returned from a previous call to continue retrieving results.
 Length Constraints: Minimum length of 1.
 Pattern: `[A-Za-z0-9+\/=_-]+`
 
@@ -99,7 +96,7 @@ A list of context summaries associated with the profile.
 Type: Array of [ContextSummary](API_ContextSummary.md) objects
 
  ** [nextToken](#API_ListAgentContexts_ResponseSyntax) **   <a name="wellarchitected-ListAgentContexts-response-nextToken"></a>
-The token to use to retrieve the next set of results.
+A pagination token to retrieve the next set of results, if available.
 Type: String
 Length Constraints: Minimum length of 1.
 Pattern: `[A-Za-z0-9+\/=_-]+`

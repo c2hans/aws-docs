@@ -43,12 +43,15 @@ Content-type: application/json
 {
    "crls": [
       {
+         "aliasArn": "string",
+         "aliasName": "string",
          "createdAt": "string",
          "crlArn": "string",
          "crlData": blob,
          "crlId": "string",
          "enabled": boolean,
          "name": "string",
+         "previousAliasName": "string",
          "trustAnchorArn": "string",
          "updatedAt": "string"
       }

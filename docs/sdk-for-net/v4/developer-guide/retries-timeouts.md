@@ -108,7 +108,7 @@ The version of the AWS SDK for .NET that targets the portable class library (PCL
 The following are the exceptions to the default timeout values. These values are overridden when you explicitly set the timeout values.
 + `Timeout` and `ReadWriteTimeout` are set to the maximum values if the method being called uploads a stream, such as [AmazonS3Client.PutObjectAsync()](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/MS3PutObjectAsyncPutObjectRequestCancellationToken.html), [AmazonS3Client.UploadPartAsync()](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/MS3UploadPartAsyncUploadPartRequestCancellationToken.html), [AmazonGlacierClient.UploadArchiveAsync()](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Glacier/MGlacierUploadArchiveAsyncUploadArchiveRequestCancellationToken.html), and so on.
 + The versions of the AWS SDK for .NET that target .NET Framework set `Timeout` and `ReadWriteTimeout` to the maximum values for all [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/TS3Client.html) and [AmazonGlacierClient](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Glacier/TGlacierClient.html) objects.
-+ The versions of the AWS SDK for .NET that target the portable class library (PCL) and .NET Core set `Timeout` to the maximum value for all [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/TS3Client.html) and [AmazonGlacierClient](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Glacier/TGlacierClient.html) objects.
++ The versions of the AWS SDK for .NET that target .NET Standard 2.0 and .NET 8 and later set `Timeout` to the maximum value for all [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/TS3Client.html) and [AmazonGlacierClient](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/Glacier/TGlacierClient.html) objects.
 
 The following example shows you how to specify *Standard* retry mode, a maximum of 3 retries, a timeout of 10 seconds, and a read/write timeout of 10 seconds (if applicable). The [AmazonS3Client](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/TS3Client.html) constructor is given an [AmazonS3Config](https://docs.aws.amazon.com/sdkfornet/v4/apidocs/items/S3/TS3Config.html) object.
 
@@ -118,7 +118,7 @@ var s3Client = new AmazonS3Client(
   {
     Timeout = TimeSpan.FromSeconds(10),
     // NOTE: The following property is obsolete for
-    //       versions of the AWS SDK for .NET that target .NET Core.
+    //       versions of the AWS SDK for .NET that don't target .NET Framework.
     ReadWriteTimeout = TimeSpan.FromSeconds(10),
     RetryMode = RequestRetryMode.Standard,
     MaxErrorRetry = 3

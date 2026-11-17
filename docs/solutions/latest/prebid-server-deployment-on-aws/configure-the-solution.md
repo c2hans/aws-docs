@@ -30,9 +30,18 @@ For users who decide not to use CloudFront and AWS WAF with this solution, follo
 
 1. Validate the ACM certificate request by adding the required DNS CNAME record.
 
-1. Before doing cdk deploy set the AWS CDK stack parameter **deploy\_cloudfront\_and\_waf\_param** in the file [stack\_cfn\_parameters.py](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/tree/main/source/infrastructure/prebid_server/stack_cfn_parameters.py) to `No`.
+1. When you deploy the stack, set the CloudFormation parameter `InstallCloudFrontAndWAF` to `No`.
 
-1. Enter the SSL certificate ARN in AWS CDK stack parameter **ssl\_certificate\_param** .
+1. Set the CloudFormation parameter `SSLCertificateARN` to the ARN of your ACM certificate. For example, with the AWS CDK, run the following command. Replace `<your-certificate-arn>`, `<your-aws-cli-profile>`, and `<your-region>` with your own values:
+
+   ```
+   npx cdk deploy prebid-server-deployment-on-aws \
+       --parameters prebid-server-deployment-on-aws:InstallCloudFrontAndWAF=No \
+       --parameters prebid-server-deployment-on-aws:SSLCertificateARN=<your-certificate-arn> \
+       --profile <your-aws-cli-profile> --region <your-region>
+   ```
+
+   The parameters are defined in [stack-cfn-parameters.ts](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/tree/main/source/infrastructure/lib/prebid_server/stack-cfn-parameters.ts).
 
 1. After you deploy the stack, access the ALB DNS name from the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/), on the **Outputs** tab, from the value for **PrebidALBDNSName**.
 
@@ -56,7 +65,7 @@ The following table lists the CloudFormation parameters for the primary Prebid S
 |  `ECSTaskMaxCapacity`  | Number |  `300`  | Maximum number of ECS Fargate tasks the service can scale to under load. |
 |  `RequestsPerTargetThreshold`  | Number |  `5000`  | Number of requests per target that triggers ECS auto-scaling. Valid range: 100–10000. |
 |  `SpotInstanceWeight`  | Number |  `1`  | Relative capacity weight for Fargate Spot instances. Set to `0` to use only on-demand capacity. |
-|  `ContainerImageUri`  | String |  *(empty)*  | ECR image URI for the Prebid Server container. Leave empty to build from source during deployment. See [ContainerImageUri parameter](#container-image-parameter). |
+|  `ContainerImageUri`  | String |  *(empty)*  | Reserved. This parameter is declared in the template but this version of the solution does not use its value. To deploy a pre-built or custom container image, see [Container image configuration](#container-image-parameter). |
 |  `EnableLogAnalytics`  | String |  `false`  | Enable auction-level log analytics pipeline (EFS → DataSync → S3 → Glue ETL → Athena). Allowed values: `true`, `false`. |
 |  `EnableRtbRequesterGateway`  | String |  `false`  | Provision an RTB Fabric Requester Gateway for partner connectivity. The Fabric Link lifecycle is managed by the `simulator-fabric-link.sh` script. Allowed values: `true`, `false`. |
 |  `SimulatorVpcId`  | String |  *(empty)*  | VPC ID of the BidderSimulatorStack. Required for VPC peering connectivity mode. |
@@ -73,6 +82,10 @@ The following table lists the CloudFormation parameters for the optional Bidder 
 | Parameter | Type | Default | Description |
 | --- | --- | --- | --- |
 |  `EnableRtbFabric`  | String |  `true`  | Deploy an RTB Fabric Responder Gateway in the simulator VPC. Set to `false` for VPC peering mode. Allowed values: `true`, `false`. |
+|  `bidResponseDelayPercentage`  | Number |  `0`  | Fraction of bid requests eligible for a delayed response (0–1). The effective delay rate is this value multiplied by `bidResponseDelayProbability`. |
+|  `bidResponseTimeoutPercentage`  | Number |  `0`  | Fraction of bid requests eligible for a timeout response (0–1). The effective timeout rate is this value multiplied by `bidResponseTimeoutProbability`. |
+|  `bidResponseDelayProbability`  | Number |  `0`  | Probability (0–1) that an eligible bid response is delayed. Multiplied by `bidResponseDelayPercentage`. |
+|  `bidResponseTimeoutProbability`  | Number |  `0`  | Probability (0–1) that an eligible bid response times out. Multiplied by `bidResponseTimeoutPercentage`. |
 
 ### Connectivity modes
 <a name="connectivity-modes"></a>
@@ -126,20 +139,25 @@ VPC peering provides direct network connectivity between the Prebid Server VPC a
 **Note**
 The VPC peering parameters (`SimulatorVpcId`, `SimulatorAlbSgId`, `SimulatorRouteTableId1`, `SimulatorRouteTableId2`, `SimulatorEndpoint`) are populated automatically by `deploy.sh` when using `--simulator-connectivity vpc-peering`. You do not need to set them manually.
 
-### ContainerImageUri parameter
+### Container image configuration
 <a name="container-image-parameter"></a>
 
-The `ContainerImageUri` parameter controls how the Prebid Server container image is sourced.
+The `deploy.sh --container-image` flag controls how the Prebid Server container image is sourced.
 
 | Value | Behavior |
 | --- | --- |
-|  *(empty, default)*  | The solution builds the Prebid Server container image from source during deployment. This is the standard CDK deployment path — CodeBuild compiles the Java application, builds the Docker image, and pushes it to ECR. |
-| ECR image URI (e.g., `123456789012.dkr.ecr.us-east-1.amazonaws.com/prebid-server:latest`) | The solution uses the specified pre-built container image directly. No build step is performed. Use this when deploying via synthesized CloudFormation templates or when you have a custom Prebid Server image in ECR. |
+|  *(flag omitted, default)*  | The solution builds the Prebid Server container image locally during deployment. The AWS CDK builds the image as a container image asset with Docker or Finch, from the Dockerfile selected by `--base-image`, and publishes it to the CDK asset repository in Amazon ECR. The Java application and its Maven build run inside the container build, so no local JDK or Maven install is required. |
+| Path to a `tar.gz` container image file (for example, `prebid-server.tar.gz`) |  `deploy.sh` loads the image into the local container runtime, creates the `prebid-server-on-aws` Amazon ECR repository if it doesn’t exist, and pushes the image to it. The stack is then synthesized with a `ContainerImage` parameter whose default value is the pushed image URI, and no local image build is performed. |
+| Amazon ECR image URI (for example, `111122223333.dkr.ecr.us-east-1.amazonaws.com/prebid-server:latest`) |  `deploy.sh` uses the image as is. The stack is synthesized with a `ContainerImage` parameter whose default value is the image URI, and no local image build is performed. |
 
- **Common use cases for ContainerImageUri:**
-+  **Pre-built image from GitHub release** — The repository includes a pre-built container image at `deployment/container/prebid-server.tar.gz` (tracked via Git LFS). The `deploy.sh --container-image` flag loads this tar.gz, pushes it to ECR, and passes the resulting URI as `ContainerImageUri`.
-+  **Custom Prebid Server build** — If you maintain a custom fork of Prebid Server Java with additional adapters or patches, build your image separately, push to ECR, and provide the URI.
-+  **CloudFormation-only deployment** — When deploying the synthesized template directly (without CDK), provide a pre-existing ECR image URI since CodeBuild is not available in this path.
+**Note**
+The template also declares a `ContainerImageUri` parameter. This version of the solution does not use its value, so setting it has no effect. Use `--container-image` instead.
+
+The `prebid-server-deployment-on-aws.zip` asset on the [prebid-server-deployment-on-aws releases page](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/releases) on the GitHub website contains the solution source code only. It doesn’t include a pre-built container image. If you don’t pass `--container-image`, `deploy.sh` builds the image from `deployment/ecr/prebid-server`.
+
+The following are common use cases for `--container-image`:
++  **Reuse an image that you built earlier** — To avoid rebuilding the image on every deployment, build it once from `deployment/ecr/prebid-server` (for example, with `deployment/ecr/build-image.sh`). Then either push it to Amazon ECR and pass the image URI to `--container-image`, or export it with `docker save`, compress it with gzip, and pass the path to the `tar.gz` file.
++  **Custom Prebid Server build** — If you maintain a custom fork of Prebid Server Java with additional adapters or patches, build your image separately, push it to Amazon ECR, and pass the URI to `--container-image`.
 
 ## Managing configuration files for the solution
 <a name="manage-configuration-files-for-the-solution"></a>
@@ -276,7 +294,7 @@ analytics:
 
 To enable the analytics adapter, you have two options:
 
-1.  **During deployment** - Use the `--enable-log-analytics` flag when deploying with the `deploy.sh` script or set the CDK context `enableLogAnalytics=true` when using CDK directly.
+1.  **During deployment** - Use the `--enable-log-analytics` flag when deploying with the `deploy.sh` script or set the CloudFormation parameter `EnableLogAnalytics=true` when using CDK directly (`--parameters prebid-server-deployment-on-aws:EnableLogAnalytics=true`).
 
 1.  **After deployment** - Update the environment variable in the ECS task definition:
 

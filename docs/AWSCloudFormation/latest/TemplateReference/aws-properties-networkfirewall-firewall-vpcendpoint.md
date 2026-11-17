@@ -7,9 +7,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::NetworkFirewall::Firewall VpcEndpoint
 <a name="aws-properties-networkfirewall-firewall-vpcendpoint"></a>
 
-Contains the VPC and subnets for a proxy mode firewall endpoint. You use it in `CreateFirewall` when `NoSourcePreservation` is `TRUE`, to specify where Network Firewall creates the firewall endpoint.
+The VPC and subnets for the endpoints of a proxy mode firewall. You use this in `CreateFirewall`. Network Firewall creates the firewall endpoints and the firewall's NAT gateways in this VPC.
 
-This differs from `VpcEndpointAssociation`, which defines additional secondary endpoints for a firewall in other VPCs.
+This differs from `VpcEndpointAssociation`, which defines additional endpoints for a firewall in other VPCs.
 
 ## Syntax
 <a name="aws-properties-networkfirewall-firewall-vpcendpoint-syntax"></a>
@@ -39,13 +39,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-networkfirewall-firewall-vpcendpoint-properties"></a>
 
 `SubnetMappings`  <a name="cfn-networkfirewall-firewall-vpcendpoint-subnetmappings"></a>
-The subnets in which Network Firewall creates the firewall endpoint for a proxy mode firewall. Each subnet must belong to a different Availability Zone in the VPC.
+The subnets where Network Firewall creates the firewall endpoints of a proxy mode firewall. Specify one subnet for each Availability Zone, and a NAT gateway mapping in each of those Availability Zones.
 *Required*: No
 *Type*: Array of [SubnetMapping](aws-properties-networkfirewall-firewall-subnetmapping.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VpcId`  <a name="cfn-networkfirewall-firewall-vpcendpoint-vpcid"></a>
-The unique identifier of the VPC where Network Firewall creates the proxy mode firewall endpoint.
+The ID of the VPC where Network Firewall creates the endpoints and NAT gateways of a proxy mode firewall.
 *Required*: No
 *Type*: String
 *Pattern*: `^vpc-[0-9a-f]+$`

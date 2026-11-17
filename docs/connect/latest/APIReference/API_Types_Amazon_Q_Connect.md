@@ -135,6 +135,8 @@ The following data types are supported by Amazon Q Connect:
 +  [OrCondition](API_amazon-q-connect_OrCondition.md)
 +  [ParsingConfiguration](API_amazon-q-connect_ParsingConfiguration.md)
 +  [ParsingPrompt](API_amazon-q-connect_ParsingPrompt.md)
++  [ProfileCatalogItem](API_amazon-q-connect_ProfileCatalogItem.md)
++  [ProfileRecommendation](API_amazon-q-connect_ProfileRecommendation.md)
 +  [PushADMMessageTemplateContent](API_amazon-q-connect_PushADMMessageTemplateContent.md)
 +  [PushAPNSMessageTemplateContent](API_amazon-q-connect_PushAPNSMessageTemplateContent.md)
 +  [PushBaiduMessageTemplateContent](API_amazon-q-connect_PushBaiduMessageTemplateContent.md)

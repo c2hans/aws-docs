@@ -7,33 +7,28 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 
 Before deploying this solution, ensure the following prerequisites are met.
 
-## Git LFS
-<a name="git-lfs-requirement"></a>
+## Build toolchain
+<a name="build-toolchain"></a>
 
-This solution includes a pre-built container image at `deployment/container/prebid-server.tar.gz` tracked via [Git Large File Storage (LFS)](https://git-lfs.com/). If you plan to use the pre-built container image instead of building from source, you must install Git LFS before cloning the repository.
+This solution is built with the AWS Cloud Development Kit (AWS CDK) in TypeScript. You can deploy it from macOS, Linux, or Windows. Install the following tools before you deploy:
++  [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/).
++  [Node.js](https://nodejs.org/en/) 20.x LTS or later (18.x minimum).
++  [npm](https://www.npmjs.com/), which is bundled with Node.js. npm installs the CDK dependencies and runs the build and tests. The AWS CDK CLI (version 2.236.0 or later) is installed as a project dependency by `npm ci`, and `deploy.sh` runs it with `npx`, so a global CDK install is not required.
++  [Docker](https://docs.docker.com/engine/) or [Finch](https://github.com/runfinch/finch). Make sure the container runtime is running before you deploy. The Prebid Server container image, including its Java (Amazon Corretto 21) and Maven build, is built inside the container runtime, so a local JDK or Maven install is not required. `deploy.sh` uses Finch when it is installed and running, and falls back to Docker otherwise. To use Finch with CDK commands that you run outside `deploy.sh`, set `export CDK_DOCKER=finch`.
++ AWS credentials configured in your environment with permissions equivalent to `AdministratorAccess`.
 
-**Note**
-Without Git LFS installed, the `prebid-server.tar.gz` file will be a small pointer file (\~130 bytes) rather than the actual container image. If you have already cloned the repository without Git LFS, run `git lfs pull` to download the binary file.
+Python 3 with the `venv` module is required only for the functional and load tests and for the RTB Fabric Link helper that `deploy.sh` and `destroy.sh` run on the RTB Fabric path. The helper wrapper (`deployment/simulator-fabric-link.sh`) creates its own virtual environment and installs its dependencies automatically. Python is not required for the CDK build.
 
- **Install Git LFS:**
+If you are using the AWS CDK for the first time in the target account and Region, bootstrap it from the `source/infrastructure` directory after you run `npm ci`:
 
 ```
-# macOS (Homebrew)
-brew install git-lfs
-
-# Amazon Linux 2023 / RHEL
-sudo dnf install git-lfs
-
-# Ubuntu / Debian
-sudo apt-get install git-lfs
-
-# Initialize Git LFS (one-time setup)
-git lfs install
+npx cdk bootstrap --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess
 ```
 
-After installing Git LFS, clone the repository normally. LFS files download automatically during `git clone`.
+## Container image source (optional)
+<a name="prebuilt-container-image"></a>
 
-If you prefer to build the container image from source (the default behavior when no `--container-image` flag is provided to `deploy.sh`), Git LFS is not required.
+The `prebid-server-deployment-on-aws.zip` asset on the [prebid-server-deployment-on-aws releases page](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/releases) on the GitHub website contains the solution source code only. It doesn’t include a pre-built container image. By default, `deploy.sh` builds the Prebid Server container image from `deployment/ecr/prebid-server` during deployment, which requires a running Docker or Finch container runtime. To skip the image build, pass `--container-image` with an Amazon ECR image URI or the path to a `tar.gz` file of an image that you built earlier. For details, see [Container image configuration](configure-the-solution.md#container-image-parameter).
 
 ## RTB Fabric region availability
 <a name="rtb-fabric-region-availability"></a>

@@ -14,7 +14,7 @@ The details of a schedule.
 The Amazon Resource Name (ARN) of the schedule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1224.
-Pattern: `arn:aws(-[a-z]+)?:scheduler:[a-z0-9\-]+:\d{12}:schedule\/[0-9a-zA-Z-_.]+\/[0-9a-zA-Z-_.]+`
+Pattern: `arn:aws[a-z-]*:scheduler:[a-z0-9\-]+:\d{12}:schedule\/[0-9a-zA-Z-_.]+\/[0-9a-zA-Z-_.]+`
 Required: No
 
  ** CreationDate **   <a name="scheduler-Type-ScheduleSummary-CreationDate"></a>

@@ -22,6 +22,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::CloudWatch::InsightRule](aws-resource-cloudwatch-insightrule.md)
 + [AWS::CloudWatch::Integration](aws-resource-cloudwatch-integration.md)
 + [AWS::CloudWatch::LogAlarm](aws-resource-cloudwatch-logalarm.md)
++ [AWS::CloudWatch::MetricDataQueryDefinition](aws-resource-cloudwatch-metricdataquerydefinition.md)
 + [AWS::CloudWatch::MetricStream](aws-resource-cloudwatch-metricstream.md)
 + [AWS::CloudWatch::OmniDashboard](aws-resource-cloudwatch-omnidashboard.md)
 + [AWS::CloudWatch::OTelEnrichment](aws-resource-cloudwatch-otelenrichment.md)

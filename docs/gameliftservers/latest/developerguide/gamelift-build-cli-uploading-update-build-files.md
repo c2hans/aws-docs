@@ -15,7 +15,7 @@ You can update a build's metadata, including the name and description. For these
 Follow these tips to help automate and streamline the process of updating game server builds for Amazon GameLift Servers managed fleets:
 + **Use game session queues and swap out fleets as needed.** When sending game session requests to Amazon GameLift Servers, specify a game session queue instead of a specific fleet. With queues, you can add fleets with a new build and remove old fleets as needed. For more information, see [Configure game session placement](queues-intro.md).
 + **Use aliases to transfer players to a new game build.** When sending game session requests to Amazon GameLift Servers, specify a fleet alias instead of a fleet ID. For more information, see [Create an Amazon GameLift Servers alias](aliases-creating.md).
-+ **Set up for iterative development.** During game development, explore options for setting up a hosted test environment that supports rapid iterative development. See [Set up for iterative development with Amazon GameLift Servers Anywhere](integration-dev-iteration.md).
++ **Set up for iterative development.** During game development, explore options for setting up a hosted test environment that supports rapid iterative development. See [Setting up for iterative development with Amazon GameLift Servers Anywhere](integration-dev-iteration.md).
 
 Try out these resources from the [Amazon GameLift Servers Toolkit](https://github.com/aws/amazon-gamelift-toolkit) on GitHub:
 

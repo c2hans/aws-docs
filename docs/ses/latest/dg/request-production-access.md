@@ -19,7 +19,7 @@ When your account has moved out of the sandbox and into production, you can send
 Complete the procedures in this section to request that your account be removed from the sandbox and placed into production.
 
 **Tip**
-If you’re a new customer and haven’t created any identities yet, then the SES account set up wizard in the console will be enabled to help you get started. See [Set up your SES account](setting-up.md#quick-start-verify-email-addresses) for instructions on how to access the wizard.
+If you’re a new customer and haven’t created any identities yet, then the SES account set up wizard in the console will be enabled to help you get started. See [Set up your SES account](getting-started-sending.md#quick-start-verify-email-addresses) for instructions on how to access the wizard.
 If you’ve already created one or more identities, you’ll see the **Get set up** page instead of the account set up wizard.
 If one of your identities is a verified domain, you’ll be able to request production access directly from the **Get set up** page as well. This is because verifying your domain with SES before requesting production access is a best practice that helps to get your production access request approved faster so you can start sending email right away.
 

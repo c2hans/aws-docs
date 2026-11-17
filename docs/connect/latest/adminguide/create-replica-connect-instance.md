@@ -83,6 +83,7 @@ The service quotas for these resources are automatically matched across AWS Regi
 + Security profiles
 + Hours of operation
 + Quick connects
++ [Quick responses and the knowledge base that stores them](global-resiliency-quick-responses.md)
 + Predefined attributes
 + Prompts (not including those stored in S3)
 + User hierarchies (groups and levels)

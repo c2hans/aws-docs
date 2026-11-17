@@ -171,6 +171,11 @@ In general, to avoid high JVM memory pressure in the future, follow these best p
 + Optimize search and indexing requests by [choosing the correct number of shards](bp-sharding.md).
 + Set up Index State Management (ISM) policies to regularly [remove unused indexes](bp.md#bp-stability-remove).
 
+### Write block during a configuration change
+<a name="handling-errors-bg-storage"></a>
+
+If neither of the previous causes applies, check whether a configuration change is in progress. During a [blue/green deployment](managedomains-configuration-changes.md), OpenSearch Service also blocks writes when the new configuration doesn't have enough storage for your data plus a free-space buffer. For more information about the buffer, see [Lack of available storage space](#handling-errors-watermark). The block clears automatically when enough storage is available. To resolve it, delete indexes that you no longer need. Before your next configuration change, make sure that the new configuration has enough storage, for example by [choosing a larger volume](limits.md#ebsresource) or more data nodes. If no configuration change is in progress, contact [AWS Support](https://aws.amazon.com/premiumsupport/).
+
 ## Error migrating to Multi-AZ with Standby
 <a name="troubleshooting-multi-az-standby"></a>
 

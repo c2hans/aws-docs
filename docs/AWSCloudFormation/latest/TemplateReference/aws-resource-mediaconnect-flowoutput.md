@@ -40,6 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[RemoteId](#cfn-mediaconnect-flowoutput-remoteid)" : {{String}},
       "[RouterIntegrationState](#cfn-mediaconnect-flowoutput-routerintegrationstate)" : {{String}},
       "[RouterIntegrationTransitEncryption](#cfn-mediaconnect-flowoutput-routerintegrationtransitencryption)" : {{FlowTransitEncryption}},
+      "[RtmpPushSettings](#cfn-mediaconnect-flowoutput-rtmppushsettings)" : {{RtmpPushSettings}},
       "[SmoothingLatency](#cfn-mediaconnect-flowoutput-smoothinglatency)" : {{Integer}},
       "[StreamId](#cfn-mediaconnect-flowoutput-streamid)" : {{String}},
       "[Tags](#cfn-mediaconnect-flowoutput-tags)" : {{[ Tag, ... ]}},
@@ -77,6 +78,8 @@ Properties:
   [RouterIntegrationState](#cfn-mediaconnect-flowoutput-routerintegrationstate): {{String}}
   [RouterIntegrationTransitEncryption](#cfn-mediaconnect-flowoutput-routerintegrationtransitencryption): {{
     FlowTransitEncryption}}
+  [RtmpPushSettings](#cfn-mediaconnect-flowoutput-rtmppushsettings): {{
+    RtmpPushSettings}}
   [SmoothingLatency](#cfn-mediaconnect-flowoutput-smoothinglatency): {{Integer}}
   [StreamId](#cfn-mediaconnect-flowoutput-streamid): {{String}}
   [Tags](#cfn-mediaconnect-flowoutput-tags): {{
@@ -188,7 +191,7 @@ The protocol to use for the output.
 AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
 *Required*: No
 *Type*: String
-*Allowed values*: `zixi-push | rtp-fec | rtp | zixi-pull | rist | srt-listener | srt-caller | st2110-jpegxs | cdi | ndi-speed-hq`
+*Allowed values*: `zixi-push | rtp-fec | rtp | zixi-pull | rist | srt-listener | srt-caller | st2110-jpegxs | cdi | ndi-speed-hq | rtmp-push`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RemoteId`  <a name="cfn-mediaconnect-flowoutput-remoteid"></a>
@@ -208,6 +211,12 @@ Indicates if router integration is enabled or disabled on the flow output.
 The encryption configuration for the output when router integration is enabled.
 *Required*: No
 *Type*: [FlowTransitEncryption](aws-properties-mediaconnect-flowoutput-flowtransitencryption.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RtmpPushSettings`  <a name="cfn-mediaconnect-flowoutput-rtmppushsettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [RtmpPushSettings](aws-properties-mediaconnect-flowoutput-rtmppushsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SmoothingLatency`  <a name="cfn-mediaconnect-flowoutput-smoothinglatency"></a>

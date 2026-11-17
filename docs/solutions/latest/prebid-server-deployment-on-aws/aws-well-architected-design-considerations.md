@@ -14,7 +14,7 @@ This section describes how the design principles and best practices of the Well-
 
 This section describes how we architected this solution using the principles and best practices of the [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html).
 
- **Perform operations as code** - This solution’s infrastructure is entirely specified using AWS Cloud Development Kit(CDK) v2.0 in Python 3.x and deployed as a CloudFormation template. Application logging and metric workflows are automated with [Amazon EventBridge](https://aws.amazon.com/eventbridge/) and Lambda.
+ **Perform operations as code** - This solution’s infrastructure is entirely specified using AWS Cloud Development Kit (AWS CDK) v2 in TypeScript and deployed as a CloudFormation template. Application logging and metric workflows are automated with [Amazon EventBridge](https://aws.amazon.com/eventbridge/) and Lambda.
 
  **Make frequent, small, reversible changes** - This solution is designed to be customized by the end user, if desired. The solution can be forked from the [GitHub repository](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws) into a customer’s account, customized, rebuilt, hosted in a customer’s Amazon S3 buckets, and deployed via CDK. This process can be repeated iteratively to test changes to the default solution.
 

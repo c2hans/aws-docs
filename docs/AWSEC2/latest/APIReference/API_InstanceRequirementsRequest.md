@@ -24,17 +24,17 @@ For more information, see [Specify attributes for instance type selection for EC
 ## Contents
 <a name="API_InstanceRequirementsRequest_Contents"></a>
 
- ** MemoryMiB **
+ ** MemoryMiB ** (request), ** MemoryMiB ** (response)
 The minimum and maximum amount of memory, in MiB.
 Type: [MemoryMiBRequest](API_MemoryMiBRequest.md) object
 Required: Yes
 
- ** VCpuCount **
+ ** VCpuCount ** (request), ** VCpuCount ** (response)
 The minimum and maximum number of vCPUs.
 Type: [VCpuCountRangeRequest](API_VCpuCountRangeRequest.md) object
 Required: Yes
 
- ** AcceleratorCount **
+ ** AcceleratorCount ** (request), ** AcceleratorCount ** (response)
 The minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips) on an instance.
 To exclude accelerator-enabled instance types, set `Max` to `0`.
 Default: No minimum or maximum limits
@@ -79,7 +79,7 @@ Type: Array of strings
 Valid Values: `a100 | inferentia | k520 | k80 | m60 | radeon-pro-v520 | t4 | vu9p | v100 | a10g | h100 | t4g | l40s | l4 | gaudi-hl-205 | inferentia2 | trainium | trainium2 | u30`
 Required: No
 
- ** AcceleratorTotalMemoryMiB **
+ ** AcceleratorTotalMemoryMiB ** (request), ** AcceleratorTotalMemoryMiB ** (response)
 The minimum and maximum amount of total accelerator memory, in MiB.
 Default: No minimum or maximum limits
 Type: [AcceleratorTotalMemoryMiBRequest](API_AcceleratorTotalMemoryMiBRequest.md) object
@@ -108,7 +108,7 @@ Length Constraints: Minimum length of 1. Maximum length of 30.
 Pattern: `[a-zA-Z0-9\.\*\-]+`
 Required: No
 
- ** BareMetal **
+ ** BareMetal ** (request), ** BareMetal ** (response)
 Indicates whether bare metal instance types must be included, excluded, or required.
 + To include bare metal instance types, specify `included`.
 + To require only bare metal instance types, specify `required`.
@@ -118,18 +118,18 @@ Type: String
 Valid Values: `included | required | excluded`
 Required: No
 
- ** BaselineEbsBandwidthMbps **
+ ** BaselineEbsBandwidthMbps ** (request), ** BaselineEbsBandwidthMbps ** (response)
 The minimum and maximum baseline bandwidth to Amazon EBS, in Mbps. For more information, see [Amazon EBS–optimized instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html) in the *Amazon EC2 User Guide*.
 Default: No minimum or maximum limits
 Type: [BaselineEbsBandwidthMbpsRequest](API_BaselineEbsBandwidthMbpsRequest.md) object
 Required: No
 
- ** BaselinePerformanceFactors **
+ ** BaselinePerformanceFactors ** (request), ** BaselinePerformanceFactors ** (response)
 The baseline performance to consider, using an instance family as a baseline reference. The instance family establishes the lowest acceptable level of performance. Amazon EC2 uses this baseline to guide instance type selection, but there is no guarantee that the selected instance types will always exceed the baseline for every application. Currently, this parameter only supports CPU performance as a baseline performance factor. For more information, see [Performance protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html#ec2fleet-abis-performance-protection) in the *Amazon EC2 User Guide*.
 Type: [BaselinePerformanceFactorsRequest](API_BaselinePerformanceFactorsRequest.md) object
 Required: No
 
- ** BurstablePerformance **
+ ** BurstablePerformance ** (request), ** BurstablePerformance ** (response)
 Indicates whether burstable performance T instance types are included, excluded, or required. For more information, see [Burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html).
 + To include burstable performance instance types, specify `included`.
 + To require only burstable performance instance types, specify `required`.
@@ -172,7 +172,7 @@ Type: Array of strings
 Valid Values: `current | previous`
 Required: No
 
- ** LocalStorage **
+ ** LocalStorage ** (request), ** LocalStorage ** (response)
 Indicates whether instance types with instance store volumes are included, excluded, or required. For more information, [Amazon EC2 instance store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) in the *Amazon EC2 User Guide*.
 + To include instance types with instance store volumes, specify `included`.
 + To require only instance types with instance store volumes, specify `required`.
@@ -191,7 +191,7 @@ Type: Array of strings
 Valid Values: `hdd | ssd`
 Required: No
 
- ** MaxSpotPriceAsPercentageOfOptimalOnDemandPrice **
+ ** MaxSpotPriceAsPercentageOfOptimalOnDemandPrice ** (request), ** MaxSpotPriceAsPercentageOfOptimalOnDemandPrice ** (response)
 [Price protection] The price protection threshold for Spot Instances, as a percentage of an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. If no current generation C, M, or R instance type matches your attributes, then the identified price is from the lowest priced current generation instance types, and failing that, from the lowest priced previous generation instance types that match your attributes. When Amazon EC2 selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.
 The parameter accepts an integer, which Amazon EC2 interprets as a percentage.
 If you set `TargetCapacityUnitType` to `vcpu` or `memory-mib`, the price protection threshold is based on the per vCPU or per memory price instead of the per instance price.
@@ -199,25 +199,25 @@ Only one of `SpotMaxPricePercentageOverLowestPrice` or `MaxSpotPriceAsPercentage
 Type: Integer
 Required: No
 
- ** MemoryGiBPerVCpu **
+ ** MemoryGiBPerVCpu ** (request), ** MemoryGiBPerVCpu ** (response)
 The minimum and maximum amount of memory per vCPU, in GiB.
 Default: No minimum or maximum limits
 Type: [MemoryGiBPerVCpuRequest](API_MemoryGiBPerVCpuRequest.md) object
 Required: No
 
- ** NetworkBandwidthGbps **
+ ** NetworkBandwidthGbps ** (request), ** NetworkBandwidthGbps ** (response)
 The minimum and maximum amount of baseline network bandwidth, in gigabits per second (Gbps). For more information, see [Amazon EC2 instance network bandwidth](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html) in the *Amazon EC2 User Guide*.
 Default: No minimum or maximum limits
 Type: [NetworkBandwidthGbpsRequest](API_NetworkBandwidthGbpsRequest.md) object
 Required: No
 
- ** NetworkInterfaceCount **
+ ** NetworkInterfaceCount ** (request), ** NetworkInterfaceCount ** (response)
 The minimum and maximum number of network interfaces.
 Default: No minimum or maximum limits
 Type: [NetworkInterfaceCountRequest](API_NetworkInterfaceCountRequest.md) object
 Required: No
 
- ** OnDemandMaxPricePercentageOverLowestPrice **
+ ** OnDemandMaxPricePercentageOverLowestPrice ** (request), ** OnDemandMaxPricePercentageOverLowestPrice ** (response)
 [Price protection] The price protection threshold for On-Demand Instances, as a percentage higher than an identified On-Demand price. The identified On-Demand price is the price of the lowest priced current generation C, M, or R instance type with your specified attributes. When Amazon EC2 selects instance types with your attributes, it will exclude instance types whose price exceeds your specified threshold.
 The parameter accepts an integer, which Amazon EC2 interprets as a percentage.
 To indicate no price protection threshold, specify a high value, such as `999999`.
@@ -227,20 +227,20 @@ Default: `20`
 Type: Integer
 Required: No
 
- ** RequireEncryptionInTransit **
+ ** RequireEncryptionInTransit ** (request), ** RequireEncryptionInTransit ** (response)
 Specifies whether instance types must support encrypting in-transit traffic between instances. For more information, including the supported instance types, see [Encryption in transit](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/data-protection.html#encryption-transit) in the *Amazon EC2 User Guide*.
 Default: `false`
 Type: Boolean
 Required: No
 
- ** RequireHibernateSupport **
+ ** RequireHibernateSupport ** (request), ** RequireHibernateSupport ** (response)
 Indicates whether instance types must support hibernation for On-Demand Instances.
 This parameter is not supported for [GetSpotPlacementScores](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSpotPlacementScores.html).
 Default: `false`
 Type: Boolean
 Required: No
 
- ** SpotMaxPricePercentageOverLowestPrice **
+ ** SpotMaxPricePercentageOverLowestPrice ** (request), ** SpotMaxPricePercentageOverLowestPrice ** (response)
 [Price protection] The price protection threshold for Spot Instances, as a percentage higher than an identified Spot price. The identified Spot price is the Spot price of the lowest priced current generation C, M, or R instance type with your specified attributes. If no current generation C, M, or R instance type matches your attributes, then the identified Spot price is from the lowest priced current generation instance types, and failing that, from the lowest priced previous generation instance types that match your attributes. When Amazon EC2 selects instance types with your attributes, it will exclude instance types whose Spot price exceeds your specified threshold.
 The parameter accepts an integer, which Amazon EC2 interprets as a percentage.
 If you set `TargetCapacityUnitType` to `vcpu` or `memory-mib`, the price protection threshold is applied based on the per-vCPU or per-memory price instead of the per-instance price.
@@ -250,7 +250,7 @@ Default: `100`
 Type: Integer
 Required: No
 
- ** TotalLocalStorageGB **
+ ** TotalLocalStorageGB ** (request), ** TotalLocalStorageGB ** (response)
 The minimum and maximum amount of total local storage, in GB.
 Default: No minimum or maximum limits
 Type: [TotalLocalStorageGBRequest](API_TotalLocalStorageGBRequest.md) object

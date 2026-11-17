@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/ops_ready_to_support_const_orr.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS07-BP02 Ensure a consistent review of operational readiness
 <a name="ops_ready_to_support_const_orr"></a>

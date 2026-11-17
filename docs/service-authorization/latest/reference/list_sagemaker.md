@@ -470,7 +470,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **SDK client:** sagemaker
   - **IAM action:**  [sagemaker:AddTags](#list_sagemaker-action-AddTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [sagemaker:CreateTrainingSession](#list_sagemaker-action-CreateTrainingSession)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** sagemaker.amazonaws.com, training-session.sagemaker.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** training-session.sagemaker.amazonaws.com / **Access level:** Write
 
 - **   CreateTransformJob  **
   - **SDK client:** sagemaker

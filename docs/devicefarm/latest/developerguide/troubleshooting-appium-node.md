@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ## Test insights
 <a name="troubleshooting-appium-node-insights"></a>
 
-When you opt in to test insights, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Appium Node.js tests.
+When test insights are enabled, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Appium Node.js mobile app and web app tests.
 
 ### The job did not run to completion
 <a name="ti-appium-node-job-not-complete"></a>

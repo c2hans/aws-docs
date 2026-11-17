@@ -8,12 +8,12 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ## Private connections overview
 <a name="private-connections-overview"></a>
 
-AWS DevOps Agent can be extended with custom Model Context Protocol (MCP) tools and other integrations that give the agent access to internal systems such as private package registries, self-hosted observability platforms, internal documentation APIs, and source control instances (see: [Configuring integrations and knowledge](configuring-integrations-and-knowledge.md)). These services often run inside an [Amazon Virtual Private Cloud (Amazon VPC)](https://docs.aws.amazon.com/vpc/latest/userguide) with restricted or no public internet access, which means AWS DevOps Agent can't reach them by default.
-
 Private connections for AWS DevOps Agent let you securely connect your Agent Space to services running in your VPC without exposing them to the public internet. Private connections work with any integration that needs to reach a private endpoint, including MCP servers, self-hosted Grafana or Splunk instances, and source control systems like GitHub Enterprise Server and GitLab Self-Managed.
 
+You can extend AWS DevOps Agent with custom Model Context Protocol (MCP) tools and other integrations that reach internal systems. Examples include private package registries, self-hosted observability platforms, internal documentation APIs, and source control instances. These systems often run in an Amazon Virtual Private Cloud (Amazon VPC) with restricted or no public internet access, so AWS DevOps Agent can't reach them by default. For more information about integrations, see [Configuring integrations and knowledge](configuring-integrations-and-knowledge.md). For more information about Amazon VPC, see [What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) in the *Amazon VPC User Guide*.
+
 **Note**
-** If your privately hosted tools make outbound requests to the AWS DevOps Agent from within your VPC, this traffic can also be secured by using a VPC Endpoint so it stays within the AWS network. For example, this can be used with tools that trigger the DevOps Agent via webhook events (see: [Invoking DevOps Agent through Webhook](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md)). For more information, see [VPC Endpoints (AWS PrivateLink)](aws-devops-agent-security-vpc-endpoints-aws-privatelink.md).
+** If your privately hosted tools make outbound requests to the AWS DevOps Agent from within your VPC, this traffic can also be secured by using a VPC Endpoint so it stays within the AWS network. For example, this can be used with tools that trigger the DevOps Agent via webhook events (see: [Invoking DevOps Agent through Webhooks](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md)). For more information, see [VPC Endpoints (AWS PrivateLink)](aws-devops-agent-security-vpc-endpoints-aws-privatelink.md).
 
 ### How private connections work
 <a name="how-private-connections-work"></a>
@@ -56,10 +56,10 @@ In this architecture:
 ## Configuring firewall rules for private connections
 <a name="configuring-firewall-rules-for-private-connections"></a>
 
-With private connections, traffic from AWS DevOps Agent to your privately-hosted tool originates from the Resource Gateway ENIs in the subnets you specified during private connection creation. This is different from publicly-hosted tool connections, which use the static IP addresses listed on the [Security](aws-devops-agent-security.md) page.
+With private connections, traffic from AWS DevOps Agent to your privately-hosted tool originates from the Resource Gateway ENIs in the subnets you specified during private connection creation. This is different from publicly-hosted tool connections, which use the static IP addresses listed on the [Security](aws-devops-agent-security.md#network-connectivity) page.
 
 **Important**
-** The static IP addresses published on the [Security](aws-devops-agent-security.md) page do ** not ** apply to private connections. Do not use those IPs in your firewall rules for privately-hosted tools.
+** The static IP addresses published on the [Security](aws-devops-agent-security.md#network-connectivity) page do ** not ** apply to private connections. Do not use those IPs in your firewall rules for privately-hosted tools.
 
 To allow AWS DevOps Agent traffic to reach your privately-hosted tool:
 
@@ -241,7 +241,7 @@ The two values don't have to be identical, so a hostname that resolves only insi
 + Set the connection's DNS resolution to **In VPC**, and use the hostname for both the host address and the endpoint URL.
 + Set the host address to the target's private IP address, and keep the hostname in the endpoint URL.
 
-You choose the DNS resolution mode when you create the connection, so decide which option you want first. For information about the symptoms that a mismatch between these two values produces, see [A DNS host address doesn't resolve, or traffic reaches the wrong place](configuring-integrations-and-knowledge-troubleshooting-private-connections.md).
+You choose the DNS resolution mode when you create the connection, so decide which option you want first. For information about the symptoms that a mismatch between these two values produces, see [A DNS host address doesn't resolve, or traffic reaches the wrong place](configuring-integrations-and-knowledge-troubleshooting-private-connections.md#a-dns-host-address-doesnt-resolve-or-traffic-reaches-the-wrong-place).
 
 #### Routing the endpoint and the OAuth token exchange through different private connections
 <a name="routing-the-endpoint-and-the-oauth-token-exchange-through-different-private-connections"></a>

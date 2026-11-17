@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SSM::CloudConnector AzureSubscription
 <a name="aws-properties-ssm-cloudconnector-azuresubscription"></a>
 
-Information about an Azure subscription targeted by the cloud connector.
+An Azure subscription with its ID and optional display name.
 
 ## Syntax
 <a name="aws-properties-ssm-cloudconnector-azuresubscription-syntax"></a>
@@ -45,7 +45,7 @@ The display name of the Azure subscription.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Id`  <a name="cfn-ssm-cloudconnector-azuresubscription-id"></a>
-The ID of the Azure subscription.
+The Azure subscription ID.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$`

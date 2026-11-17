@@ -14,7 +14,7 @@ For information about breaking changes and migrating your applications, see the 
 **Note**
 The information in this topic is specific to projects based on .NET Framework and the AWS SDK for .NET version 3.3 and earlier.
 
-The CognitoAuthentication extension library, found in the [Amazon.Extensions.CognitoAuthentication](https://www.nuget.org/packages/Amazon.Extensions.CognitoAuthentication/) NuGet package, simplifies the authentication process of Amazon Cognito user pools for .NET Core and Xamarin developers. The library is built on top of the Amazon Cognito Identity provider API to create and send user authentication API calls.
+The CognitoAuthentication extension library, found in the [Amazon.Extensions.CognitoAuthentication](https://www.nuget.org/packages/Amazon.Extensions.CognitoAuthentication/) NuGet package, simplifies the authentication process of Amazon Cognito user pools for .NET and Xamarin developers. The library is built on top of the Amazon Cognito Identity provider API to create and send user authentication API calls.
 
 ## Using the CognitoAuthentication extension library
 <a name="using-the-cognitoauthentication-extension-library"></a>

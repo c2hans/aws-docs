@@ -10,12 +10,12 @@ The minimum and maximum amount of total local storage, in GB.
 ## Contents
 <a name="API_TotalLocalStorageGBRequest_Contents"></a>
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum amount of total local storage, in GB. To specify no maximum limit, omit this parameter.
 Type: Double
 Required: No
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum amount of total local storage, in GB. To specify no minimum limit, omit this parameter.
 Type: Double
 Required: No

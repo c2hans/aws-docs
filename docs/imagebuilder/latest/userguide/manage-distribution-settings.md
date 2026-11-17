@@ -17,7 +17,7 @@ To make an AMI public, set the launch permission authorized accounts to `all`. F
 **Important**
 You cannot make AMIs with watermarks public. If your image recipe includes watermarks, or if the source AMI has watermarks attached, you cannot set launch permissions to public. Image Builder rejects the distribution configuration. Watermarks propagate automatically when you copy or distribute an AMI across Regions or accounts. For more information, see [Track AMI lineage with watermarks](ami-watermarks.md).
 + Copy the output AMI into each target account that you specify in the destination Region. Each target account owns its copy of the AMI, and is billed for any associated charges. Organizations and OUs don't receive copies. To give them access, grant launch permission instead.
-+ Copy the AMI to the owner's account in other AWS Regions. In a Region other than the one where the build runs, Image Builder copies the AMI to the owner's account only if you omit `targetAccountIds` or include the owner's account ID in it.
++ Copy the AMI to the owner's account in other AWS Regions. In a Region other than the one where the build runs, Image Builder copies the AMI to the owner's account only if you omit `targetAccountIds` or include the owner's account ID in it. If your image uses an on-demand AMI scan, Amazon Inspector scans only the AMI in the build Region, not the copies. For more information, see [Requirements and limitations for on-demand AMI scans](integ-inspector.md#integ-inspector-ami-scan-limits).
 + Export VM image disks to Amazon Simple Storage Service (Amazon S3). For more information, see [Example: Create distribution settings for output VM disks](cr-upd-ami-distribution-settings.md#cli-create-vm-dist-config).
 
 **Container image distribution**

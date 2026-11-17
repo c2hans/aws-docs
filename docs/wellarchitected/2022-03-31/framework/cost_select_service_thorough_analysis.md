@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/cost_select_service_thorough_analysis.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST05-BP03 Perform a thorough analysis of each component
 <a name="cost_select_service_thorough_analysis"></a>

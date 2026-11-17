@@ -16,10 +16,10 @@ The details page for each KMS key displays the properties of the KMS key. It dif
 
 To display detailed information about a KMS key, on the **AWS managed keys ** or **Customer managed keys** page, choose the alias or key ID of the KMS key.
 
-The details page for a KMS key includes a **General Configuration** section that displays the basic properties of the KMS key. It also includes tabs on which you can view and edit properties of the KMS key, such as **Key policy**, **Cryptographic configuration**, **Tags**, **Key material and rotations** (for KMS keys that support automatic or on-demand rotation), **Regionality** (for multi-Region keys), and **Public key** (for asymmetric KMS keys).
+The details page for a KMS key includes a **General Configuration** section that displays the basic properties of the KMS key. It also includes tabs on which you can view and edit properties of the KMS key, such as **Key policy**, **Resource shares** (for customer managed keys), **Cryptographic configuration**, **Tags**, **Key material and rotations** (for KMS keys that support automatic or on-demand rotation), **Regionality** (for multi-Region keys), and **Public key** (for asymmetric KMS keys).
 
 **Note**
-The AWS KMS console displays the KMS keys that you have [permission to view](customer-managed-policies.md#iam-policy-example-read-only-console) in your account and Region. KMS keys in other AWS accounts do not appear in the console, even if you have permission to view, manage, and use them. To view KMS keys in other accounts, use the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation.
+The AWS KMS console displays the KMS keys that you have [permission to view](customer-managed-policies.md#iam-policy-example-read-only-console) in your account and Region. KMS keys that other AWS accounts shared with you through AWS Resource Access Manager (AWS RAM) appear on a separate **Keys shared with me** page. For more information about identifying KMS keys that are shared with you, see [Identifying a shared KMS key](key-sharing-ram.md#key-sharing-ram-identify). Other KMS keys in other AWS accounts don't appear in the console, even if you have permission to view, manage, and use them. To view KMS keys in other accounts, use the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation.
 
 To navigate to the key details page for a KMS key.
 
@@ -33,7 +33,9 @@ To navigate to the key details page for a KMS key.
 
    If the KMS key has multiple aliases, an alias summary (**\+*n* more**) appears beside the name of the one of the aliases. Choosing the alias summary takes you directly to the **Aliases** tab on the key details page.
 
-![KMS key details page showing general configuration and cryptographic settings.](https://docs.aws.amazon.com/kms/latest/developerguide/images/console-key-detail-view-symmetric-sym.png)
+The following example shows the details page of a customer managed key that is shared through AWS RAM. The **General configuration** section at the top shows the basic properties of the KMS key, such as its alias, ARN, and status. Below it, the **Resource shares** tab is selected. The tab lists the resource share that includes the KMS key, with a **Resource status** of **Associated**.
+
+![KMS key details page showing the general configuration and the Resource shares tab, which lists one resource share with a Resource status of Associated.](https://docs.aws.amazon.com/kms/latest/developerguide/images/console-key-detail-view-symmetric-sym.png)
 
 The following list describes the fields in the detailed display, including field in the tabs. Some of these fields are also available as columns in the table display.
 
@@ -108,7 +110,7 @@ This field tracks only [cryptographic operations](kms-cryptography.md#cryptograp
 
 **Key policy**
 Where: Key policy tab
-Controls access to the KMS key along with [IAM policies](iam-policies.md) and [grants](grants.md). Every KMS key has one key policy. It is the only mandatory authorization element. To change the key policy of a customer managed key, on the **Key policy** tab, choose **Edit**. For details, see [Key policies in AWS KMS](key-policies.md).
+Controls access to the KMS key along with [IAM policies](iam-policies.md) and [grants](grants.md). Every KMS key has a `default` key policy. It is the only mandatory authorization element. To change the key policy of a customer managed key, on the **Key policy** tab, choose **Edit**. For details, see [Key policies in AWS KMS](key-policies.md).
 
 **Key material and rotations**
 Where: Key material and rotations tab
@@ -163,6 +165,10 @@ In the **Related multi-Region keys** section of a primary key, authorized users 
 Where: Regionality tab
 Indicates that this KMS key is a [multi-Region replica key](multi-region-keys-overview.md#mrk-replica-key). This field appears only when the KMS key is a multi-Region replica key.
 
+**Resource shares**
+Where: Resource shares tab
+Lists the AWS RAM resource shares that include this KMS key. A KMS key that you share through AWS RAM also has an `AWS_RAM` key policy, which AWS RAM creates and manages. You can view it on this tab. For more information about the `AWS_RAM` key policy, see [How managed permissions are shown in KMS keys](key-sharing-ram.md#key-sharing-ram-policy).
+
 **Signing algorithms**
 Where: Cryptographic configuration tab
 Lists the signing algorithms that can be used with the KMS key in AWS KMS. This field appears only when the **Key type** is **Asymmetric** and the **Key usage** is **Sign and verify**. For information about the signing algorithms that AWS KMS supports, see [RSA key specs for signing and verification](symm-asymm-choose-key-spec.md#key-spec-rsa-sign) and [Elliptic curve key specs](symm-asymm-choose-key-spec.md#key-spec-ecc).
@@ -181,7 +187,7 @@ When you add tags to your AWS resources, AWS generates a cost allocation report 
 
 The [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation returns details about the specified KMS key. To identify the KMS key, use the [key ID](concepts.md#key-id-key-id), [key ARN](concepts.md#key-id-key-ARN), [alias name](concepts.md#key-id-alias-name), or [alias ARN](concepts.md#key-id-alias-ARN).
 
-Unlike the [ListKeys](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeys.html) operation, which displays only KMS keys in the caller's account and Region, authorized users can use the `DescribeKey` operation to get details about KMS keys in other accounts.
+By default, the `ListKeys` operation lists only the KMS keys in the caller's account and Region. To list the KMS keys in that Region that other AWS accounts shared with you through AWS RAM, use its `ResourceOwners` parameter. For more information about identifying KMS keys that are shared with you, see [Identifying a shared KMS key](key-sharing-ram.md#key-sharing-ram-identify). Authorized users can use the `DescribeKey` operation to get details about KMS keys in other accounts.
 
 **Note**
 The `DescribeKey` response includes both `KeySpec` and `CustomerMasterKeySpec` members with the same values. The `CustomerMasterKeySpec` member is deprecated.

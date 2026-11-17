@@ -82,6 +82,15 @@ Content-type: application/json
          "DetailType": "{{string}}",
          "Source": "{{string}}"
       },
+      "EventBridgePutEventsV2Parameters": {
+         "DetailType": "{{string}}",
+         "Source": "{{string}}"
+      },
+      "EventBridgePutRawEventsParameters": {
+         "Metadata": {
+            "{{string}}" : "{{string}}"
+         }
+      },
       "Input": "{{string}}",
       "KinesisParameters": {
          "PartitionKey": "{{string}}"
@@ -162,7 +171,7 @@ Required: No
 The ARN for the customer managed KMS key that that you want EventBridge Scheduler to use to encrypt and decrypt your data.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(-[a-z]+)?:kms:[a-z0-9\-]+:\d{12}:(key|alias)\/[0-9a-zA-Z-_]*`
+Pattern: `arn:aws[a-z-]*:kms:[a-z0-9\-]+:\d{12}:(key|alias)\/[0-9a-zA-Z-_]*`
 Required: No
 
  ** [ScheduleExpression](#API_UpdateSchedule_RequestSyntax) **   <a name="scheduler-UpdateSchedule-request-ScheduleExpression"></a>
@@ -223,7 +232,7 @@ The following data is returned in JSON format by the service.
 The Amazon Resource Name (ARN) of the schedule that you updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1224.
-Pattern: `arn:aws(-[a-z]+)?:scheduler:[a-z0-9\-]+:\d{12}:schedule\/[0-9a-zA-Z-_.]+\/[0-9a-zA-Z-_.]+`
+Pattern: `arn:aws[a-z-]*:scheduler:[a-z0-9\-]+:\d{12}:schedule\/[0-9a-zA-Z-_.]+\/[0-9a-zA-Z-_.]+`
 
 ## Errors
 <a name="API_UpdateSchedule_Errors"></a>
@@ -241,6 +250,10 @@ HTTP Status Code: 500
  ** ResourceNotFoundException **
 The request references a resource which does not exist.
 HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+The request exceeds a service quota.
+HTTP Status Code: 402
 
  ** ThrottlingException **
 The request was denied due to request throttling.

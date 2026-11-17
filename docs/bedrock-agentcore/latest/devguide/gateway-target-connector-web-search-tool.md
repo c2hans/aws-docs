@@ -30,6 +30,7 @@ The following sections walk through the key capabilities, the architecture of th
 + [Configure the Gateway Service Role](#gateway-target-connector-web-search-tool-service-role)
 + [Input schema](#gateway-target-connector-web-search-tool-input-schema)
 + [Response format](#gateway-target-connector-web-search-tool-response-format)
++ [Free monthly queries](#gateway-target-connector-web-search-tool-free-queries)
 + [Availability](#gateway-target-connector-web-search-tool-availability)
 + [Acceptable use](#gateway-target-connector-web-search-tool-acceptable-use)
 
@@ -298,6 +299,21 @@ The Web Search Tool returns results in the following MCP-compliant format:
 |  `url`  | string | No | URL of the source webpage |
 |  `title`  | string | No | Title of the source webpage |
 |  `publishedDate`  | string | No | Publication date of the result |
+
+## Free monthly queries
+<a name="gateway-target-connector-web-search-tool-free-queries"></a>
+
+With web search, you get free queries every month. For more information about the number of free queries and the price after them, see [Amazon Bedrock AgentCore pricing](https://aws.amazon.com/bedrock/agentcore/pricing/).
++ The free queries apply automatically to every AWS account. You don’t need to turn anything on.
++ The Web Search Tool and the Web Search API share the free queries.
++ The free queries are shared across all AWS Regions where web search is available, except AWS GovCloud (US). For example, queries that your agents make in US East (N. Virginia) and Europe (Ireland) count against the same monthly amount.
++ If your account is in an organization in AWS Organizations, all accounts in the organization share the free queries, as with the AWS Free Tier.
++ The free queries reset at the start of each calendar month (UTC). Unused free queries don’t carry over.
++ After you use the free queries, the rest of the month’s queries are billed at standard pricing. Your agents keep working. AgentCore doesn’t throttle, pause, or stop requests.
+
+To see your usage, open the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/home). Free queries show no charge. To get notified before you’re charged, create a zero-spend budget in AWS Budgets. For instructions on creating a zero-spend budget, see [Using a budget template (simplified)](https://docs.aws.amazon.com/cost-management/latest/userguide/budget-templates.html) in the * AWS Cost Management User Guide*.
+
+ AWS may limit free usage for any account to prevent fraud or abuse.
 
 ## Availability
 <a name="gateway-target-connector-web-search-tool-availability"></a>

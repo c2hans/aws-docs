@@ -1538,6 +1538,12 @@ The following actions are defined by AWS Security Hub but are not directly invoc
   - **Resource types (\*required):** [hubv2](#list_securityhub-resource-hubv2) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetCSPMOrganizationsImportStatus](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetCSPMOrganizationsImportStatus.html)  **
+  - **Description:** Grants permission to retrieve the Security Hub CSPM Organizations Policy import status for an account
+  - **Resource types (\*required):** [hub](#list_securityhub-resource-hub)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetControlFindingSummary](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetControlFindingSummary.html)  **
   - **Description:** Grants permission to retrieve a security score and counts of finding and control statuses for a security standard
   - **Resource types (\*required):** [hub](#list_securityhub-resource-hub)
@@ -1591,6 +1597,12 @@ The following actions are defined by AWS Security Hub but are not directly invoc
   - **Resource types (\*required):** [hub](#list_securityhub-resource-hub)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [PutCSPMOrganizationsImportStatus](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_PutCSPMOrganizationsImportStatus.html)  **
+  - **Description:** Grants permission to put the Security Hub CSPM Organizations Policy import status for an account
+  - **Resource types (\*required):** [hub](#list_securityhub-resource-hub)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [SendFindingEvents](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_SendFindingEvents.html)  **
   - **Description:** Grants permission to use a custom action to send Security Hub findings to Amazon EventBridge

@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # DeleteAgentGoal
 <a name="API_DeleteAgentGoal"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Deletes an optimization goal from a profile.
 
 ## Request Syntax

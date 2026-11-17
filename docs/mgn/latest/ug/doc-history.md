@@ -11,6 +11,7 @@ For additional details regarding new features and major updates, [see the MGN re
 
 | Change | Description | Date |
 | --- | --- | --- |
+| Added support for source disks up to 64 TiB | MGN now supports source disks up to 64 TiB. Added the disk size each staging disk type supports and guidance on replicating large disks. Added troubleshooting for a staging disk type that is too small for the disk and for data replication that takes a long time. For more information, see [Disk size by staging disk type](ebs-storage.md#staging-disk-size). | November 12, 2026 |
 | Terminology glossary added | Added a glossary of core AWS Transform MGN terms, with a short definition and a link to more information for each term. For more information, see [Terminology](what-is-mgn.md#mgn-terminology). | November 10, 2026 |
 | AWS Transform MGN now supports Ubuntu 26.04 LTS | Added Ubuntu 26.04 LTS to the list of supported Linux operating systems. | November 4, 2026 |
 | Update support matrix with new OS | Added Debian 13 to the list of supported Linux operating systems. | October 29, 2026 |

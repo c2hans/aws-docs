@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # FailedOrganizationalUnit
 <a name="API_FailedOrganizationalUnit"></a>
 
-**Important**
-This is not available during the preview release.
-
 An organizational unit that was requested in an Organizational Report's filters but could not be expanded into its member accounts. A failed OU means the report is missing the accounts it contained.
 
 ## Contents

@@ -14,6 +14,12 @@ For more information, see [Enforce VPC encryption in transit](https://docs.aws.a
 
 The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
 
+ **ApiGatewayV2**
+Specifies whether to exclude Amazon API Gateway V2 from account-level encryption enforcement.
+Type: String
+Valid Values: `enable | disable`
+Required: No
+
  **DryRun**
 Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
 Type: Boolean
@@ -27,6 +33,12 @@ Required: No
 
  **ElasticFileSystem**
 Specifies whether to exclude Elastic File System service from account-level encryption enforcement.
+Type: String
+Valid Values: `enable | disable`
+Required: No
+
+ **GlobalAccelerator**
+Specifies whether to exclude AWS Global Accelerator from account-level encryption enforcement.
 Type: String
 Valid Values: `enable | disable`
 Required: No

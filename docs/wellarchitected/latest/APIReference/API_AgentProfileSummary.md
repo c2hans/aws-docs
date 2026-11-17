@@ -38,7 +38,7 @@ Required: Yes
  ** aggregationConfiguration **   <a name="wellarchitected-Type-AgentProfileSummary-aggregationConfiguration"></a>
 The aggregation configuration that defines which AWS accounts and Regions to analyze. Not present for basic profiles.
 Type: Array of [AggregationConfiguration](API_AggregationConfiguration.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 Required: No
 
  ** businessOverview **   <a name="wellarchitected-Type-AgentProfileSummary-businessOverview"></a>
@@ -104,7 +104,6 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: No
 
  ** organizationalAggregationConfiguration **   <a name="wellarchitected-Type-AgentProfileSummary-organizationalAggregationConfiguration"></a>
-This is not available during the preview release.
 The organizational monitoring boundary. Present only for organizational profiles.
 Type: [OrganizationalAggregationConfiguration](API_OrganizationalAggregationConfiguration.md) object
 Required: No
@@ -117,14 +116,9 @@ Valid Values: `COST_OPTIMIZATION | SECURITY | RESILIENCE | PERFORMANCE | OPERATI
 Required: No
 
  ** profileType **   <a name="wellarchitected-Type-AgentProfileSummary-profileType"></a>
-The type of the profile. `ORGANIZATIONAL` is not available during the preview release.
+The type of the profile.
 Type: String
 Valid Values: `STANDARD | BASIC | ORGANIZATIONAL`
-Required: No
-
- ** tags **   <a name="wellarchitected-Type-AgentProfileSummary-tags"></a>
-The tags associated with the profile.
-Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
 ## See Also

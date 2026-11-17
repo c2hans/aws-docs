@@ -9,6 +9,8 @@ Updates the configuration or the version of an extension installed on a SageMake
 +  **Configuration:** You can change settings by sending `ConfigurationValues`. Settings that you include are changed. Settings that you omit keep their current values. A setting with the value `null` is removed and returns to its default value.
 +  **Version:** You can update to a later version. You can't update to an earlier version. To use an earlier version, delete the extension and create it again with that version.
 
+To retry the operation on nodes where it failed, fix the cause that `DescribeClusterExtension` reports in `Health`, and then send an `UpdateClusterExtension` request that doesn't change the version or the configuration.
+
 You can't update an extension while it is being deleted.
 
 ## Request Syntax

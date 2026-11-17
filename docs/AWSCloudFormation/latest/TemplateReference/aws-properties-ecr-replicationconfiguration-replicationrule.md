@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[DeleteReplication](#cfn-ecr-replicationconfiguration-replicationrule-deletereplication)" : {{DeleteReplication}},
   "[Destinations](#cfn-ecr-replicationconfiguration-replicationrule-destinations)" : {{[ ReplicationDestination, ... ]}},
   "[RepositoryFilters](#cfn-ecr-replicationconfiguration-replicationrule-repositoryfilters)" : {{[ RepositoryFilter, ... ]}}
 }
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecr-replicationconfiguration-replicationrule-syntax.yaml"></a>
 
 ```
+  [DeleteReplication](#cfn-ecr-replicationconfiguration-replicationrule-deletereplication): {{
+    DeleteReplication}}
   [Destinations](#cfn-ecr-replicationconfiguration-replicationrule-destinations): {{
     - ReplicationDestination}}
   [RepositoryFilters](#cfn-ecr-replicationconfiguration-replicationrule-repositoryfilters): {{
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-ecr-replicationconfiguration-replicationrule-properties"></a>
+
+`DeleteReplication`  <a name="cfn-ecr-replicationconfiguration-replicationrule-deletereplication"></a>
+Property description not available.
+*Required*: No
+*Type*: [DeleteReplication](aws-properties-ecr-replicationconfiguration-deletereplication.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Destinations`  <a name="cfn-ecr-replicationconfiguration-replicationrule-destinations"></a>
 An array of objects representing the destination for a replication rule.

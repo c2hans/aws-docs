@@ -16,4 +16,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/an
 + [Access, query, and join Amazon DynamoDB tables using Athena](access-query-and-join-amazon-dynamodb-tables-using-athena.md)
 + [Set up language-specific sorting for Amazon Redshift query results using a scalar Python UDF](set-up-language-specific-sorting-for-amazon-redshift-query-results-using-a-scalar-python-udf.md)
 + [Three AWS Glue ETL job types for converting data to Apache Parquet](three-aws-glue-etl-job-types-for-converting-data-to-apache-parquet.md)
++ [Visualize IAM credential reports for all AWS accounts using AWS Quick Sight](visualize-iam-credential-reports-for-all-aws-accounts-using-amazon-quicksight.md)
 + [More patterns](analytics-more-patterns-pattern-list.md)

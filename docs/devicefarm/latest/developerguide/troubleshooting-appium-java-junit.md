@@ -302,3 +302,53 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
 Your tests may not execute correctly if the JUnit version specified in your test package is lower than the minimum version 4.10 we support.
 
    For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+
+## Test insights
+<a name="troubleshooting-appium-java-junit-insights"></a>
+
+When test insights are enabled, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Appium Java JUnit mobile app and web app tests.
+
+### The job did not run to completion
+<a name="ti-appium-java-junit-job-not-complete"></a>
+
+`Unable to generate test insights because the job was {{status}}.`
+
+The job ended in a non-successful state (where {{status}} is `STOPPED`, `ERRORED`, or `SKIPPED`), so there was no result to summarize. A run that ends in a failed state still receives insights.
+
+To resolve this issue, investigate why the job did not run to completion. In many cases, the `message` field of the job itself might explain why the job didn't complete.
+
+### The results contained no test cases
+<a name="ti-appium-java-junit-no-test-cases"></a>
+
+`Test insights could not be generated. The JUnit XML was parsed successfully but contained no test cases. Verify that your test suite includes at least one test case and that the JUnit XML is stored correctly in the output artifacts directory.`
+
+The report parsed successfully but declared zero test cases. This happens most often when the selector you passed to the JUnit Platform matched no tests, for example a package or tag that none of your tests carries.
+
+To resolve this issue, verify that your selector matches at least one test and that the reports are under `$DEVICEFARM_LOG_DIR`.
+
+### The test output exceeds the maximum supported size
+<a name="ti-appium-java-junit-output-too-large"></a>
+
+`Unable to generate test insights: "JUnit XML" exceeds the maximum supported size of 1GB.`
+
+The collected JUnit XML reports are larger than 1 GB in total.
+
+To resolve this issue, reduce the report size to less than 1 GB. To reduce the size, write less output to `system-out` and `system-err`. The JUnit XML format embeds that output in the report.
+
+### No JUnit XML report was found
+<a name="ti-appium-java-junit-report-not-found"></a>
+
+`Unable to generate test insights. The JUnit XML test results file was not found in the output artifacts. Ensure your test framework is configured to produce JUnit XML reports and that the results are written to the artifacts directory.`
+
+`$DEVICEFARM_LOG_DIR` contained no JUnit XML report. JUnit doesn't use a standard report file name, so Device Farm looks for every JUnit XML report under `$DEVICEFARM_LOG_DIR`. A run that prints its results to the console only, without writing a report file, or that writes the report somewhere else, produces nothing to summarize.
+
+To resolve this issue, configure your run to write a report under `$DEVICEFARM_LOG_DIR`. Pass `--reports-dir` on a Console Launcher command, or copy the build tool's own report directory into `$DEVICEFARM_LOG_DIR` in the `post_test` phase of your test spec file. For the options, see [Configure Appium test reports using a custom test environment](test-types-appium-integrate.md#test-types-appium-generate-reports).
+
+### The JUnit XML report could not be processed
+<a name="ti-appium-java-junit-report-error"></a>
+
+`Test insights could not be generated due to an error while processing the JUnit XML report. Ensure the file is well-formed XML in the standard JUnit report format.`
+
+The report was malformed or could not be parsed. If a run stops partway through, the report can be truncated.
+
+To resolve this issue, verify that the file is well-formed XML in the standard JUnit report format. If your run writes several reports and only one is malformed, Device Farm reports the tests from the others, so this message means that no report could be read.

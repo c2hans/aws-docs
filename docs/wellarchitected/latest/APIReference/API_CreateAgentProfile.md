@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # CreateAgentProfile
 <a name="API_CreateAgentProfile"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Creates an optimization profile that defines the scope and configuration for generating recommendations. A profile specifies the execution role, target pillars, and aggregation settings for analyzing your AWS resources.
 
 ## Request Syntax
@@ -55,7 +52,7 @@ The request accepts the following data in JSON format.
  ** [aggregationConfiguration](#API_CreateAgentProfile_RequestSyntax) **   <a name="wellarchitected-CreateAgentProfile-request-aggregationConfiguration"></a>
 The aggregation configuration that defines which AWS accounts and Regions to analyze.
 Type: Array of [AggregationConfiguration](API_AggregationConfiguration.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 Required: Yes
 
  ** [businessOverview](#API_CreateAgentProfile_RequestSyntax) **   <a name="wellarchitected-CreateAgentProfile-request-businessOverview"></a>
@@ -168,7 +165,7 @@ The following data is returned in JSON format by the service.
  ** [aggregationConfiguration](#API_CreateAgentProfile_ResponseSyntax) **   <a name="wellarchitected-CreateAgentProfile-response-aggregationConfiguration"></a>
 The aggregation configuration.
 Type: Array of [AggregationConfiguration](API_AggregationConfiguration.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 
  ** [arn](#API_CreateAgentProfile_ResponseSyntax) **   <a name="wellarchitected-CreateAgentProfile-response-arn"></a>
 The Amazon Resource Name (ARN) of the created profile.

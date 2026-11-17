@@ -92,7 +92,7 @@ Activate Splunk in a specific Agent space and configure appropriate scoping
 
 1. Copy the Webhook URL and API Key
 
-**Note:** AWS DevOps Agent shows the webhook API key one time. If you lose it, rotate the webhook to generate a new key. The webhook URL does not change. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+**Note:** AWS DevOps Agent shows the webhook API key one time. If you lose it, rotate the webhook to generate a new key. The webhook URL does not change. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md#managing-webhook-credentials).
 
 You can associate more than one Splunk registration with a single Agent Space. To add another registration, repeat the steps in this procedure.
 

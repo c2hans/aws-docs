@@ -6,15 +6,18 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_O
 <a name="API_Operations"></a>
 
 The following actions are supported:
++  [AssociateCrossAccountReplica](API_AssociateCrossAccountReplica.md)
 +  [BatchGetSecretValue](API_BatchGetSecretValue.md)
 +  [CancelRotateSecret](API_CancelRotateSecret.md)
 +  [CreateSecret](API_CreateSecret.md)
 +  [DeleteResourcePolicy](API_DeleteResourcePolicy.md)
 +  [DeleteSecret](API_DeleteSecret.md)
 +  [DescribeSecret](API_DescribeSecret.md)
++  [DisassociateCrossAccountReplica](API_DisassociateCrossAccountReplica.md)
 +  [GetRandomPassword](API_GetRandomPassword.md)
 +  [GetResourcePolicy](API_GetResourcePolicy.md)
 +  [GetSecretValue](API_GetSecretValue.md)
++  [ListResourcePolicies](API_ListResourcePolicies.md)
 +  [ListSecrets](API_ListSecrets.md)
 +  [ListSecretVersionIds](API_ListSecretVersionIds.md)
 +  [PutResourcePolicy](API_PutResourcePolicy.md)

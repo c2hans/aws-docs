@@ -206,7 +206,7 @@ Optional metadata that you assign to a resource. Tags enable you to categorize a
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the patch baseline ID, such as `pb-abcde1234567890yz`.
 
 **Note**
-The ID of the default patch baseline provided by AWS is an Amazon Resource Name (ARN), for example `arn:aws:ssm:us-west-2:123456789012:patchbaseline/abcde1234567890yz`.
+The ID of the default patch baseline provided by AWS is an Amazon Resource Name (ARN), for example `arn:aws:ssm:us-west-2:111122223333:patchbaseline/abcde1234567890yz`.
 
 For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 

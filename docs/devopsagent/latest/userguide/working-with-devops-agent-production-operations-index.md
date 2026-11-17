@@ -41,7 +41,7 @@ Once your first investigation completes, you can provide feedback on the root ca
 Production operations includes three core capabilities:
 + **Autonomous incident response** — The agent automatically investigates issues the moment they occur, analyzing metrics, logs, traces, code changes, and deployment history to determine root cause and propose mitigation. See [Autonomous incident response](production-operations-autonomous-incident-response.md).
 + **Proactive incident prevention** — The agent analyzes patterns across your incident history to generate recommendations that prevent future incidents and reduce mean time to detection. See [Proactive incident prevention](production-operations-proactive-incident-prevention.md).
-+ **On-demand DevOps tasks** — A conversational interface for querying your infrastructure, analyzing system health, and guiding investigations using natural language. See [On Demand DevOps Tasks](working-with-devops-agent-on-demand-devops-tasks.md).
++ **On-demand DevOps tasks** — A conversational interface for querying your infrastructure, analyzing system health, and guiding investigations using natural language. See [On-demand DevOps tasks](working-with-devops-agent-on-demand-devops-tasks.md).
 
 ## How production operations feeds back into release readiness
 <a name="how-production-operations-feeds-back-into-release-readiness"></a>

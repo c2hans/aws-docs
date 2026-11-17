@@ -59,6 +59,8 @@ Content-type: application/json
 
 {
    "trustAnchor": {
+      "aliasArn": "string",
+      "aliasName": "string",
       "createdAt": "string",
       "crlDpRevocationEnabled": boolean,
       "enabled": boolean,
@@ -72,6 +74,7 @@ Content-type: application/json
             "threshold": number
          }
       ],
+      "previousAliasName": "string",
       "source": {
          "sourceData": { ... },
          "sourceType": "string"

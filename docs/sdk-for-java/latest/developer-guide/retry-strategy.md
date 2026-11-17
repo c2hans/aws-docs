@@ -28,19 +28,26 @@ The SDK for Java 2.x has three built-in retry strategies: standard, legacy, and 
 ### Standard retry strategy
 <a name="retry-strategy-standard"></a>
 
-The [standard retry strategy](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/StandardRetryStrategy.html) is the recommended `RetryStrategy` implementation for normal use cases. Unlike the `AdaptiveRetryStrategy`, the standard strategy is generally useful across all retry use cases.
+The [standard retry strategy](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/StandardRetryStrategy.html) is the recommended `RetryStrategy` implementation for normal use cases. Unlike the `AdaptiveRetryStrategy`, the standard strategy is generally useful across all retry use cases. This is the default retry strategy used by clients when you don't specify another strategy.
 
 By default, the standard retry strategy does the following.
 + Retries on the conditions that are configured at build time. You can adjust this with `[StandardRetryStrategy.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/StandardRetryStrategy.Builder.html)#retryOnException`.
 + Retries 2 times for a total of 3 attempts. You can adjust this with `StandardRetryStrategy.Builder#maxAttempts(int)`.
-+ For non-throttling exceptions, it uses the `[BackoffStrategy](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/BackoffStrategy.html)#exponentialDelay` backoff strategy, with a base delay of 100 milliseconds and a max delay of 20 seconds. You can adjust this with `StandardRetryStrategy.Builder#backoffStrategy`.
++ For non-throttling exceptions, it uses the `[BackoffStrategy](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/BackoffStrategy.html)#exponentialDelay` backoff strategy, with a base delay of 50 milliseconds and a max delay of 20 seconds. You can adjust this with `StandardRetryStrategy.Builder#backoffStrategy`.
 + For throttling exceptions, it uses the `BackoffStrategy#exponentialDelay` backoff strategy, with a base delay of 1 second and a max delay of 20 seconds. You can adjust this with `StandardRetryStrategy.Builder#throttlingBackoffStrategy`.
 + Performs circuit breaking (disabling retries) in the event of high downstream failures. The first attempt is always executed, only retries are disabled. Adjust with `StandardRetryStrategy.Builder#circuitBreakerEnabled`.
++ Each retry after a non-throttling exception costs 14 tokens from the token bucket, and each retry after a throttling exception costs 5 tokens.
++ When the service response includes an `x-amz-retry-after` header, waits for the delay that the service suggests. The SDK waits at least as long as the computed backoff and at most 5 seconds longer than the computed backoff.
++ For long-polling operations, such as Amazon SQS `ReceiveMessage`, still waits for the backoff delay before it returns the error when the token bucket has no tokens left. This keeps polling loops from calling the service again right away.
+
+**Important**
+Starting with version 2.58.0 of the SDK for Java 2.x, the standard retry strategy is the default. The standard and adaptive strategies also retry sooner and spend more tokens on each retry after a non-throttling exception, so bursts of failures can use up the token bucket faster. With the new default, most service clients make 3 total attempts instead of 4. DynamoDB clients make 4 total attempts instead of 9. With fewer attempts, errors can reach your code sooner.
+To keep the previous default retry behavior, use the legacy retry strategy. For example, set the `AWS_RETRY_MODE` environment variable to `legacy`. See the [Specify a strategy](#retry-strategies-specify) section for other ways to set the mode.
 
 ### Legacy retry strategy
 <a name="retry-strategy-legacy"></a>
 
-The [legacy retry strategy](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/LegacyRetryStrategy.html) is a `RetryStrategy` for normal use cases, however, it is deprecated in favor of the `StandardRetryStrategy`. This is the default retry strategy used by clients when you don't specify another strategy.
+The [legacy retry strategy](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/LegacyRetryStrategy.html) is a `RetryStrategy` for normal use cases, however, it is deprecated in favor of the `StandardRetryStrategy`. Before version 2.58.0 of the SDK for Java 2.x, this was the default retry strategy used by clients when you didn't specify another strategy. Use the legacy retry strategy to keep the previous default retry behavior.
 
 It is characterized by treating throttling and non-throttling exceptions differently, for throttling exceptions the base delay for the backoff is larger (500ms) than the base delay for non-throttling exceptions (100ms), and throttling exceptions do not affect the token bucket state.
 
@@ -64,8 +71,9 @@ The adaptive retry strategy includes all the features of the standard strategy a
 By default, the adaptive retry strategy does the following.
 + Retries on the conditions that are configured at build time. You can adjust this with `[AdaptiveRetryStrategy.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/AdaptiveRetryStrategy.Builder.html)#retryOnException` .
 + Retries 2 times for a total of 3 attempts. You can adjust this with `AdaptiveRetryStrategy.Builder#maxAttempts(int)`.
-+ Uses a dynamic backoff delay that is based on the current load against the downstream resource.
-+ Performs circuit breaking (disabling retries) when there are high number of downstream failures. Circuit breaking may prevent a second attempt in outage scenarios to protect the downstream service.
++ Uses a dynamic backoff delay that is based on the current load against the downstream resource. For non-throttling exceptions, the base delay is 50 milliseconds.
++ Performs circuit breaking (disabling retries) when there are high number of downstream failures. Circuit breaking may prevent a second attempt in outage scenarios to protect the downstream service. Token costs are the same as for the standard retry strategy.
++ Handles the `x-amz-retry-after` header and long-polling operations the same way as the standard retry strategy.
 
 **Warning**
 The adaptive retry strategy assumes that the client works against a single resource (for example, one DynamoDB table or one Amazon S3 bucket).
@@ -84,17 +92,17 @@ The following table shows the default values for the properties of each retry st
 
 | Strategy | Maximum attempts | Base delay for non-throttling errors | Base delay for throttling errors | Token bucket size | Token cost per non-throttling retry | Token cost per throttling retry |
 | --- | --- | --- | --- | --- | --- | --- |
-| Standard | 3 | 100 ms | 1000 ms | 500 | 5 | 5 |
+| Standard | 3 | 50 ms | 1000 ms | 500 | 14 | 5 |
 | Legacy | 4 | 100 ms | 500 ms | 500 | 5 | 0 |
-| Adaptive | 3 | 100 ms | 100 ms | 500 | 5 | 5 |
+| Adaptive | 3 | 50 ms | 100 ms | 500 | 14 | 5 |
 
 **Note**
-DynamoDB clients use a default maximum retry count of 8 for all retry strategies, which is higher than the values shown in the table above for other AWS service clients.
+DynamoDB clients use different defaults than the values shown in the table above for other AWS service clients. With the standard and adaptive retry strategies, DynamoDB clients make a maximum of 4 attempts, unless you set the maximum attempts, and use a base delay of 25 ms for non-throttling errors. With the legacy retry strategy, DynamoDB clients make a maximum of 9 attempts (8 retries) and use a base delay of 25 ms.
 
 ## Specify a strategy
 <a name="retry-strategies-specify"></a>
 
-You have four ways to specify a strategy for your service client.
+You have four ways to specify a strategy for your service client. If you don't specify a strategy, clients use the standard retry strategy. To keep the default retry behavior from before version 2.58.0, specify `legacy` in any of these ways.
 
 ### In code
 <a name="retry-strategies-specify-code"></a>
@@ -187,6 +195,8 @@ We recommended that you configure each client with a unique `RetryStrategy` inst
 
 You can also set the maximum number of attempts for all clients by using [external settings](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) instead of code. You configure this setting as describe in the [Specify a strategy](#retry-strategies-specify) section.
 
+With the standard and adaptive retry strategies, the SDK reads the maximum attempts from the `aws.maxAttempts` system property, the `AWS_MAX_ATTEMPTS` environment variable, or the `max_attempts` profile setting. The SDK reads the profile setting from the profile file and profile name that the client is configured with. With the legacy retry strategy, the SDK reads only the system property and the environment variable.
+
 ### Customize retryable exceptions
 <a name="customize-strategy-retryable-exceptions"></a>
 
@@ -208,6 +218,24 @@ DynamoDbClient client = DynamoDbClient.builder()
 
 **Important**
 Retries are disabled for the Kinesis asynchronous client when you call a [`subscribeToShard`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/kinesis/KinesisAsyncClient.html#subscribeToShard(software.amazon.awssdk.services.kinesis.model.SubscribeToShardRequest,software.amazon.awssdk.services.kinesis.model.SubscribeToShardResponseHandler)) method, regardless of the retry strategy configuration.
+
+### Prevent retries for specific requests
+<a name="customize-strategy-do-not-retry"></a>
+
+You can use the `[RetryStrategy.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/RetryStrategy.Builder.html)#doNotRetryWhen` method to stop the SDK from retrying a request when a condition is true. The condition takes precedence over the retryable exceptions, so the SDK doesn't retry the request even if the exception is retryable. If you call `doNotRetryWhen` more than once, the SDK doesn't retry the request if any of the conditions is true.
+
+The condition receives a `[RefreshRetryTokenRequest](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/retries/api/RefreshRetryTokenRequest.html)` that describes the failed attempt. Its `operationName` method returns the operation name from the service model, such as `SendMessage`. The following code snippet configures an Amazon SQS client that never retries the `SendMessage` operation, so a retry can't send the same message twice.
+
+```
+SqsClient client = SqsClient.builder()
+        .overrideConfiguration(o -> o.retryStrategy(
+                 b -> b.doNotRetryWhen(request -> request.operationName()
+                                                         .filter("SendMessage"::equals)
+                                                         .isPresent())))
+        .build();
+```
+
+If the retry strategy isn't used by an SDK client, the operation name is empty. Check it with `Optional#filter` or `Optional#isPresent` instead of `Optional#get`. If the condition throws an exception, the SDK logs the exception and doesn't retry the request.
 
 ### Customize the backoff strategy
 <a name="customize-strategy-backoff"></a>

@@ -23,6 +23,7 @@ IAM database authentication with Aurora MySQL is available in all Regions for th
 <a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.IAMdbauth.apg"></a>
 
 IAM database authentication with Aurora PostgreSQL is available in all Regions for the following engine versions:
++ Aurora PostgreSQL 18 – All available versions
 + Aurora PostgreSQL 17 – All available versions
 + Aurora PostgreSQL 16 – All available versions
 + Aurora PostgreSQL 15 – All available versions

@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026 Updates
 <a name="nov26-release-notes"></a>
 
+### Amazon Connect Customer agent assist now supports interactive responses
+<a name="nov26-agent-assist-interactive-responses"></a>
+
+Amazon Connect Customer agent assist now responds with interactive components, including cards, carousels, buttons, and input fields. The AI agent analyzes conversation context in real time, recommends actions, retrieves information, and executes tasks on behalf of contact center agents using MCP tools in Connect Customer and from third-party services. Interactive responses let agents review information, provide details, select options, and confirm actions without having to type a manual request to the AI agent for each action. The AI agent can also recommend step-by-step guides, cases, customer profiles, and third-party applications, which agents can open with the click of a button.
+
+To learn more and get started, see [agent assist](agentic-assistance.md).
+
 ### Amazon Connect Customer rules can now end associated email contacts from a case
 <a name="nov26-end-associated-emails"></a>
 
@@ -1222,7 +1229,7 @@ Connect Customer provides agents with generative AI-powered email conversation o
 
 For example, a customer emails about a refund request. Connect Customer Connect automatically provides key details about the customer's purchase history on the agent workspace, recommends a refund resolution step-by-step guide, and generates an email response to help resolve the contact quickly.
 
-For more information, see [Use generative AI-powered email conversation overviews and suggested responses](use-generative-ai-email.md). Also see the [CreateSession](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_CreateSession.html) API for updates to support this feature, updates to data types such as [DataDetails](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_DataDetails.html), and new data types such as [EmailGenerativeAnswerAIAgentConfiguration](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_EmailGenerativeAnswerAIAgentConfiguration.html).
+For more information, see [Use AI-powered email conversation overviews and suggested responses](use-generative-ai-email.md). Also see the [CreateSession](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_CreateSession.html) API for updates to support this feature, updates to data types such as [DataDetails](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_DataDetails.html), and new data types such as [EmailGenerativeAnswerAIAgentConfiguration](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_EmailGenerativeAnswerAIAgentConfiguration.html).
 
 ### Connect Customer makes it easier to get customer input on outbound calls
 <a name="outboundcalls-oct25"></a>

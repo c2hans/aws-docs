@@ -603,6 +603,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ec2:CreateManagedPrefixList](#list_ec2-action-CreateManagedPrefixList)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateMetricCategory  **
+  - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreateNatGateway  **
   - **IAM action:**  [ec2:CreateNatGateway](#list_ec2-action-CreateNatGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -634,6 +640,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
+
+- **   CreateNetworkingFlexCostAllocationPolicy  **
+  - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
 
 - **   CreatePlacementGroup  **
   - **IAM action:**  [ec2:CreatePlacementGroup](#list_ec2-action-CreatePlacementGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

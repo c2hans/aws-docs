@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # OrganizationalUnitEntry
 <a name="API_OrganizationalUnitEntry"></a>
 
-**Important**
-This is not available during the preview release.
-
 An organizational unit or root entry in the organizational monitoring boundary, with its associated regions.
 
 ## Contents

@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-release-notes.html
 
 ## November 2026
 <a name="release-notes-nov-2026"></a>
++ MGN now supports source disks up to 64 TiB, up from 16 TiB. A disk larger than 16 TiB must use a General Purpose SSD (gp3) or Provisioned IOPS SSD (io2) staging disk. For more information, see [Disk size by staging disk type](ebs-storage.md#staging-disk-size) and [Replicating large disks](ebs-storage.md#large-disks).
 + Added support for the following operating systems:
   + Ubuntu 26.04 LTS
 

@@ -31,7 +31,7 @@ Type: String
 Required: No
 
  ** GroupSet.N **
-(Interface endpoint) Information about the security groups that are associated with the network interface.
+(Interface, Resource, ServiceNetwork, and Tunnel endpoints only) Information about the security groups that are associated with the network interface.
 Type: Array of [SecurityGroupIdentifier](API_SecurityGroupIdentifier.md) objects
 Required: No
 
@@ -57,7 +57,7 @@ Type: [LastError](API_LastError.md) object
 Required: No
 
  ** NetworkInterfaceIdSet.N **
-(Interface endpoint) The network interfaces for the endpoint.
+(Interface, Gateway Load Balancer endpoints, Resource, ServiceNetwork, and Tunnel endpoints only) The network interfaces for the endpoint.
 Type: Array of strings
 Required: No
 
@@ -118,7 +118,7 @@ Valid Values: `PendingAcceptance | Pending | Available | Deleting | Deleted | Re
 Required: No
 
  ** SubnetIdSet.N **
-(Interface endpoint) The subnets for the endpoint.
+(Interface, Gateway Load Balancer endpoints, Resource, ServiceNetwork, and Tunnel endpoints only) The subnets for the endpoint.
 Type: Array of strings
 Required: No
 
@@ -134,6 +134,7 @@ Required: No
 
  ** vpcEndpointType **
 The type of endpoint.
+For more information about the types of VPC endpoints, see [VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html#concepts-vpc-endpoints) in the * AWS PrivateLink User Guide*.
 Type: String
 Valid Values: `Interface | Gateway | GatewayLoadBalancer | Resource | ServiceNetwork`
 Required: No

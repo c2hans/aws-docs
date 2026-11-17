@@ -108,10 +108,10 @@ RCPs apply to actions for the following AWS services:
 + [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service) `(prefix:opensearch)`
 + [AWS Pricing Calculator](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html) `(prefix:pricing)`
 + [AWS Private CA Connector for Active Directory](https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad) `(prefix:pca-connector-ad)`
-+ [AWS Private Certificate Authority](https://docs.aws.amazon.com/privateca) `(prefix:acm-pca)`
 + [AWS Resilience Hub](https://docs.aws.amazon.com/resilience-hub) `(prefix:resiliencehub)`
 + [AWS Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide) `(prefix:resource-groups)`
 + [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager) `(prefix:secretsmanager)`
++ [AWS Systems Manager Incident Manager](https://docs.aws.amazon.com/systems-manager) `(prefix:ssm-incidents)`
 + [AWS Security Token Service](https://docs.aws.amazon.com/iam/#sts) `(prefix:sts)`
 + [AWS Sign-In](https://docs.aws.amazon.com/signin) `(prefix:signin)`
 + [AWS Signer](https://docs.aws.amazon.com/signer) `(prefix:signer)`

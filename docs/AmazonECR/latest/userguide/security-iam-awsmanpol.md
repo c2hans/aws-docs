@@ -75,6 +75,7 @@ View details about updates to AWS managed policies for Amazon ECR since the time
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [ECRReplicationServiceRolePolicy](#security-iam-awsmanpol-ECRReplicationServiceRolePolicy) – Update to an existing policy | Amazon ECR added new permissions to the `ECRReplicationServiceRolePolicy` policy. With these permissions, Amazon ECR replicates image deletions and image tag removals in your registry when a replication rule has replication of deletes enabled. | November 16, 2026 |
 | [Amazon ECR service-linked role for pull through cache](slr-pullthroughcache.md) – Update to an existing policy | Amazon ECR added new permissions to the `AWSECRPullThroughCache_ServiceRolePolicy` policy. These permissions allow Amazon ECR to pull images from ECR private registry. This is required when using a pull through cache rule to cache images from another Amazon ECR private registry.  | March 12, 2025 |
 | [AmazonEC2ContainerRegistryPullOnly](#security-iam-awsmanpol-AmazonEC2ContainerRegistryPullOnly) – New policy | Amazon ECR added a new policy which grants pull-only permissions to Amazon ECR. | October 10, 2024 |
 | [ECRTemplateServiceRolePolicy](slr-rct.md) – New policy | Amazon ECR added a new policy. This policy is associated with the `ECRTemplateServiceRolePolicy` service-linked role for the repository creation template feature. | June 20, 2024 |

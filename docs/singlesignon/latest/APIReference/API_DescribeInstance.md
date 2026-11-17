@@ -49,6 +49,12 @@ Required: Yes
    "IdentityStoreId": "string",
    "InstanceArn": "string",
    "Name": "string",
+   "NetworkConfigurationDetails": {
+      "AllowSourceIps": [ "string" ],
+      "ExcludeApplicationArns": [ "string" ],
+      "RestrictSourceVpcs": [ "string" ],
+      "VpceAccessRequired": boolean
+   },
    "OwnerAccountId": "string",
    "PermissionSetsEnabled": boolean,
    "PrimaryRegion": "string",
@@ -103,6 +109,10 @@ Specifies the instance name.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[\w+=,.@-]+`
+
+ ** [NetworkConfigurationDetails](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-NetworkConfigurationDetails"></a>
+The network access controls configured for your Identity Center instance, including whether VPC endpoint access is required, and any VPC, IP address range, or application controls applied to instance traffic. Present only after a network configuration has been set on the instance.
+Type: [NetworkConfigurationInfo](API_NetworkConfigurationInfo.md) object
 
  ** [OwnerAccountId](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-OwnerAccountId"></a>
 The identifier of the AWS account for which the instance was created.

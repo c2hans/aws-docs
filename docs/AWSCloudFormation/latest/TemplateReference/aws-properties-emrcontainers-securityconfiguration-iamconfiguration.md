@@ -37,5 +37,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Amazon Resource Name (ARN) of the system role used by the security configuration.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::\d{12}:role/.+$`
+*Pattern*: `^arn:aws[a-z0-9-]*:iam::\d{12}:role/.+$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

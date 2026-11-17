@@ -9,6 +9,14 @@ This topic covers release notes that track update, fixes, and new features for A
 
 The HyperPod AMI releases are documented separately to include information of the key components including general AMI releases, versions, and dependencies. If you are looking for these information related to HyperPod AMI releases, see [Amazon SageMaker HyperPod AMI](sagemaker-hyperpod-release-ami.md).
 
+## SageMaker HyperPod release notes: November 11, 2026
+<a name="sagemaker-hyperpod-release-notes-20261111"></a>
+
+SageMaker HyperPod releases the following for [Orchestrating SageMaker HyperPod clusters with Amazon EKS](sagemaker-hyperpod-eks.md).
+
+**New features**
++ **Dynamic ENI attachment** – The Amazon VPC CNI can now attach more elastic network interfaces (ENIs) to cluster nodes through the new `AttachClusterNodeNetworkInterface` API. Nodes can now run more pods per node, up to the maximum for the instance type listed in the table in [Getting started with Amazon EKS support in SageMaker HyperPod](sagemaker-hyperpod-eks-prerequisites.md). To use this feature, update your cluster software to the latest AMI and use Amazon VPC CNI `v1.23.3-eksbuild.1` or later. For more information, see [Increasing pods per node with dynamic ENI attachment](sagemaker-hyperpod-eks-dynamic-eni-attachment.md).
+
 ## SageMaker HyperPod release notes: April 16, 2026
 <a name="sagemaker-hyperpod-release-notes-20260416"></a>
 

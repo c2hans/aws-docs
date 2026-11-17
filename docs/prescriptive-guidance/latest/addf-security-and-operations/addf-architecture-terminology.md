@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/addf-securi
 # ADDF architecture and terminology
 <a name="addf-architecture-terminology"></a>
 
-Before you can understand the security and operational topics in this guide, it's important to have a high-level understanding of the terminology, components, and architecture of Autonomous Driving Data Framework (ADDF). This section consists of the following topics:
+To understand the security and operational topics in this guide, you need a high-level understanding of the terminology, components, and architecture of the Autonomous Driving Data Framework (ADDF). This section includes the following topics:
 + [ADDF terminology](#addf-terminology)
 + [ADDF architecture](#addf-architecture)
 
@@ -13,18 +13,18 @@ Before you can understand the security and operational topics in this guide, it'
 <a name="addf-terminology"></a>
 
 The key terminology for ADDF is as follows:
-+ **ADDF module** – A module is infrastructure as code (IaC) that implements a common task in an advanced driver-assistance system (ADAS). Common tasks include configuring centralized data storage, data processing pipelines, visualization mechanisms, search interfaces, simulation workloads, analytics interfaces, and prebuilt dashboards. You can create a module based on your requirements, or you can re-use or customize an existing module.
++ **ADDF module** – A module is infrastructure as code (IaC) that implements a common task in an advanced driver-assistance system (ADAS). Common tasks include configuring centralized data storage, data processing pipelines, visualization mechanisms, search interfaces, simulation workloads, analytics interfaces, and prebuilt dashboards. You can create a module based on your requirements, or you can reuse or customize an existing module.
 
-  You can use the AWS Cloud Development Kit (AWS CDK) to define ADDF modules, or you can use any common IaC framework, such as Hashicorp Terraform or AWS CloudFormation, to implement the ADDF modules. A module has a set of input parameters. Input parameters can depend on output values from other modules. An ADDF module is the smallest unit of deployment for an ADDF target AWS account.
+  You can use the AWS Cloud Development Kit (AWS CDK) to define ADDF modules, or you can use any common IaC framework, such as HashiCorp Terraform or AWS CloudFormation, to implement the ADDF modules. A module has a set of input parameters. Input parameters can depend on output values from other modules. An ADDF module is the smallest unit of deployment for an ADDF target AWS account.
 + **ADDF deployment manifest file** – This file defines an orchestration of standalone ADDF modules. *Orchestration* refers to the deployment order of the modules. In the ADDF deployment manifest file, you can use *ADDF groups* to group related modules together. In this file, you also define the ADDF toolchain AWS account, the ADDF target AWS accounts, and the target AWS Regions.
 + **ADDF deployment framework** – This framework deploys ADDF modules into the ADDF target AWS accounts based on the orchestration defined in the ADDF deployment manifest file. The ADDF deployment framework is implemented by using the following AWS open-source projects:
-  + [SeedFarmer](https://github.com/awslabs/seed-farmer) (GitHub) – SeedFarmer is the CLI tool used for ADDF deployments. It manages each module state, prepares and packages the module code, creates the least-privilege policies for the ADDF deployment roles, and provides semantic instructions that CodeSeeder uses for deployment. You can interact directly with SeedFarmer to run ADDF deployments, or you can integrate it into a continuous integration and continuous deployment (CI/CD) pipeline.
-  + [CodeSeeder](https://github.com/awslabs/aws-codeseeder) (GitHub) – CodeSeeder deploys arbitrary infrastructure as code packages through an AWS CodeBuild job. SeedFarmer automatically orchestrates and runs CodeSeeder. Only SeedFarmer directly interacts with CodeSeeder.
+  + SeedFarmer (GitHub Archived Repository) – SeedFarmer is the CLI tool used for ADDF deployments. It manages each module state, prepares and packages the module code, creates the least-privilege policies for the ADDF deployment roles, and provides semantic instructions that CodeSeeder uses for deployment. You can interact directly with SeedFarmer to run ADDF deployments, or you can integrate it into a continuous integration and continuous deployment (CI/CD) pipeline.
+  + CodeSeeder (GitHub Archived Repository) – CodeSeeder deploys arbitrary infrastructure as code packages through an AWS CodeBuild job. SeedFarmer automatically orchestrates and runs CodeSeeder. Only SeedFarmer directly interacts with CodeSeeder.
 
   The ADDF deployment framework is designed to support deployments in single-account and multi-account architectures. Based on your organization's requirements, you decide whether a single-account or multi-account architecture is required.
 + **ADDF toolchain AWS account** – This account orchestrates and manages the deployment of modules into the ADDF target AWS accounts, based on the definitions in the ADDF deployment manifest file. An ADDF deployment can only have one ADDF toolchain AWS account. In a single-account architecture, the ADDF toolchain AWS account is also the ADDF target AWS account. This account contains an AWS Identity and Access Management (IAM) role, called *ADDF toolchain IAM role*, which is assumed by SeedFarmer during the ADDF deployment process. In this guide, we refer to an ADDF toolchain AWS account as a *toolchain account*.
-+ **ADDF target AWS accounts** – These are the target accounts where you are deploying ADDF modules. You can have one or more target accounts. These accounts contain the resources and application logic described in the ADDF deployment manifest file and its mapped modules. In a single-account architecture, the ADDF target AWS account is also the ADDF toolchain AWS account. Each ADDF target account contains an IAM role, called *ADDF deployment IAM role*, that is assumed by CodeSeeder during the deployment process. In this guide, we refer to an ADDF target AWS account as a *target account*.
-+ **ADDF instance **– When you deploy ADDF and your modules in the cloud, as defined in your ADDF deployment manifest file, this becomes an *ADDF instance*. An ADDF instance can have a single-account or multi-account architecture, and you can deploy multiple ADDF instances. For more information about choosing the number of instances and designing an account architecture for your use case, see [Defining your ADDF architecture](defining-your-addf-architecture.md).
++ **ADDF target AWS accounts** – These are the target accounts where you deploy ADDF modules. You can have one or more target accounts. These accounts contain the resources and application logic described in the ADDF deployment manifest file and its mapped modules. In a single-account architecture, the ADDF target AWS account is also the ADDF toolchain AWS account. Each ADDF target account contains an IAM role, called *ADDF deployment IAM role*, that is assumed by CodeSeeder during the deployment process. In this guide, we refer to an ADDF target AWS account as a *target account*.
++ **ADDF instance **– When you deploy ADDF and your modules in the cloud, as defined in your ADDF deployment manifest file, this becomes an *ADDF instance*. An ADDF instance can have a single-account or multi-account architecture, and you can deploy multiple ADDF instances.
 
 ## ADDF architecture
 <a name="addf-architecture"></a>
@@ -35,13 +35,13 @@ The following diagram shows a high-level architecture for an ADDF instance in th
 
 1. **Create and bootstrap the ADDF AWS accounts.**
 
-   To function properly, each account must be bootstrapped to ADDF and to AWS CDK. If this a new ADDF deployment or you are adding new target accounts, do the following:
+   To function properly, you must bootstrap each account to ADDF and to AWS CDK. If this is a new ADDF deployment or you are adding new target accounts, do the following:
 
    1. Bootstrap AWS CDK in the toolchain account and each target account. For instructions, see [Bootstrapping](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html) (AWS CDK documentation). ADDF uses AWS CDK to deploy its infrastructure.
 
    1. Bootstrap ADDF in the toolchain account and each target account. For instructions, see *Bootstrap AWS Account(s)* in the [ADDF Deployment Guide](https://github.com/awslabs/autonomous-driving-data-framework/blob/main/docs/deployment_guide.md). This sets up all ADDF-specific IAM roles required by SeedFarmer and CodeSeeder.
 **Note**
-You need to perform this step only if you're initially deploying ADDF or adding new target accounts. This step is not part of reoccurring ADDF deployments to already established ADDF instances.
+You need to perform this step only if you're initially deploying ADDF or adding new target accounts. This step is not part of recurring ADDF deployments to already established ADDF instances.
 
 1. **Create or customize the ADDF modules.**
 
@@ -53,9 +53,9 @@ You need to perform this step only if you're initially deploying ADDF or adding 
 
 1. **Evaluate the ADDF deployment manifest file and establish the deployment scope.**
 
-   The ADDF developer or a CI/CD pipeline, such as AWS CodePipeline, starts an evaluation of the ADDF deployment manifest file by calling the CLI tool, SeedFarmer. To start the evaluation:
+   The ADDF developer or a CI/CD pipeline, such as [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/), starts an evaluation of the ADDF deployment manifest file by calling the CLI tool, SeedFarmer. To start the evaluation:
    + SeedFarmer uses the ADDF deployment manifest file as an input parameter for the evaluation.
-   + To assume the ADDF toolchain IAM role, SeedFarmer expects the same, valid IAM role or user credentials that was defined during the ADDF bootstrap process, in step 1.
+   + To assume the ADDF toolchain IAM role, SeedFarmer expects the same, valid IAM role or user credentials that were defined during the ADDF bootstrap process, in step 1.
 
    If SeedFarmer does not have the correct credentials to assume the ADDF toolchain IAM role or can't access the ADDF deployment manifest file, the evaluation does not start.
 

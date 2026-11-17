@@ -10,12 +10,12 @@ The minimum and maximum number of network interfaces.
 ## Contents
 <a name="API_NetworkInterfaceCountRequest_Contents"></a>
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum number of network interfaces. To specify no maximum limit, omit this parameter.
 Type: Integer
 Required: No
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum number of network interfaces. To specify no minimum limit, omit this parameter.
 Type: Integer
 Required: No

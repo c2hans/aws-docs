@@ -12,6 +12,12 @@ For more information, see [Enforce VPC encryption in transit](https://docs.aws.a
 ## Contents
 <a name="API_AccountVpcEncryptionControlExclusions_Contents"></a>
 
+ ** apiGatewayV2 **
+The exclusion configuration for Amazon API Gateway V2.
+Type: String
+Valid Values: `enabling | enabled | disabling | disabled`
+Required: No
+
  ** egressOnlyInternetGateway **
 The exclusion configuration for egress-only internet gateway resource.
 Type: String
@@ -20,6 +26,12 @@ Required: No
 
  ** elasticFileSystem **
 The exclusion configuration for Elastic File System service.
+Type: String
+Valid Values: `enabling | enabled | disabling | disabled`
+Required: No
+
+ ** globalAccelerator **
+The exclusion configuration for AWS Global Accelerator.
 Type: String
 Valid Values: `enabling | enabled | disabling | disabled`
 Required: No

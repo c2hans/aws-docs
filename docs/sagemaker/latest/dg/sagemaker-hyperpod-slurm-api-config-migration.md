@@ -19,7 +19,7 @@ If you have an existing SageMaker HyperPod Slurm cluster that uses the legacy `p
 + [Step 6: Verify the migration](#sagemaker-hyperpod-slurm-api-config-migration-step6)
 + [Recovering from a failed migration](#sagemaker-hyperpod-slurm-api-config-migration-recovery)
 + [Post-migration considerations](#sagemaker-hyperpod-slurm-api-config-migration-post)
-+ [Troubleshooting](#sagemaker-hyperpod-slurm-api-config-migration-troubleshooting)
++ [Troubleshooting API-driven Slurm configuration migration](#sagemaker-hyperpod-slurm-api-config-migration-troubleshooting)
 + [Migration checklist](#sagemaker-hyperpod-slurm-api-config-migration-checklist)
 
 ## Before you begin
@@ -185,7 +185,7 @@ The `slurm_configurations` block used in multi-head node clusters (containing `s
 
 The following example shows a legacy `provisioning_parameters.json` file and the equivalent API-driven `UpdateCluster` request payload.
 
-Legacy `provisioning_parameters.json`:
+The following shows the legacy `provisioning_parameters.json` file:
 
 ```
 {
@@ -208,7 +208,7 @@ Legacy `provisioning_parameters.json`:
 }
 ```
 
-Equivalent API-driven `UpdateCluster` request (`update_cluster_migration.json`):
+The following shows the equivalent API-driven `UpdateCluster` request (`update_cluster_migration.json`):
 
 ```
 {
@@ -488,7 +488,7 @@ You can change the strategy in a later `UpdateCluster` request by including `Orc
 **Tip**
 If you are unsure which strategy to use, start with `Merge`. It matches the behavior of the legacy approach and preserves any manual `slurm.conf` customizations. You can switch to `Managed` or `Overwrite` later as your operational practices evolve, unless you plan to migrate to continuous provisioning, which requires `Merge`.
 
-## Troubleshooting
+## Troubleshooting API-driven Slurm configuration migration
 <a name="sagemaker-hyperpod-slurm-api-config-migration-troubleshooting"></a>
 
 ### "Update required to use SlurmConfig in InstanceGroups"

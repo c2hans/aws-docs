@@ -25,9 +25,13 @@ Use the following instructions to integrate Device Farm with the XCTest UI testi
 ## Configure XCTest UI test reports using a custom test environment
 <a name="test-types-ios-xctest-ui-generate-reports"></a>
 
-Any test report that your tests write to `$DEVICEFARM_LOG_DIR` in your test spec YAML file is available in your test output artifacts after the run completes. Device Farm can also generate a test report of its own, called test insights, which gives you a per-test breakdown of results, durations, and stack traces for failures. You can view test insights in the console, and through the AWS CLI and APIs. Test insights are in addition to the artifacts that your tests produce, not a replacement for them.
+Any test report that your tests write to `$DEVICEFARM_LOG_DIR` in your test spec YAML file is available in your test output artifacts after the run completes. By default, Device Farm also generates its own test report, called test insights. Test insights give you a per-test breakdown of results, durations, and stack traces for failures. You can view test insights in the console, and through the AWS CLI and APIs. Test insights are in addition to the artifacts that your tests produce, not a replacement for them.
 
-Device Farm generates test insights for XCTest UI tests only when you run them in a custom test environment. For more information, see [Test environments in AWS Device Farm](test-environments.md).
+Before you begin, make sure that your run meets the following requirements:
++ Your run uses a custom test environment. Device Farm does not generate test insights in the standard test environment. For more information, see [Test environments in AWS Device Farm](test-environments.md).
++ Your run uses the `macos_sequoia` test host or a newer host, such as `macos_tahoe`. Device Farm does not generate test insights on older test hosts. To choose the test host, set `ios_test_host` in your test spec file. For more information, see [Selecting a test host for custom test environments](custom-test-environments-hosts.md#test-host-selection).
+
+To configure test reports for your XCTest UI tests:
 
 1. Run **xcodebuild** with `-derivedDataPath` set to `$DEVICEFARM_DERIVED_DATA_PATH`, so that Xcode writes the `.xcresult` bundle to that directory. Device Farm collects your test output artifacts from `$DEVICEFARM_DERIVED_DATA_PATH` and reads the bundle from there to build the report. The default XCTest UI test spec already does this:
 
@@ -40,21 +44,7 @@ Device Farm generates test insights for XCTest UI tests only when you run them i
 
    If you point `-derivedDataPath` at a different directory, Device Farm does not collect the bundle, so it cannot build a report. You also do not receive screenshots.
 
-1. Opt in to test insights when you schedule the run. You can do this in the console or with the AWS CLI and APIs:
-   + In the console, in the **Run settings** section, under **Test Insights**, choose **Generate test report**. For more information, see [Run iOS XCTest UI tests (console)](#test-types-ios-xctest-ui-upload).
-   + With the AWS CLI or the API, set the `insightsTypes` field of the `configuration` parameter of **ScheduleRun** to `TEST_REPORT`:
-
-     ```
-     aws devicefarm schedule-run \
-       --project-arn {{projectArn}} \
-       --device-pool-arn {{devicePoolArn}} \
-       --test type=XCTEST_UI,testPackageArn={{testPackageArn}},testSpecArn={{testSpecArn}} \
-       --configuration '{"insightsTypes":["TEST_REPORT"]}'
-     ```
-
-     Device Farm rejects `insightsTypes` if the run does not use a test spec, because test insights require a custom test environment.
-
-     For more information, see [ScheduleRun](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ScheduleRun.html) and [insightsTypes](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ScheduleRunConfiguration.html#devicefarm-Type-ScheduleRunConfiguration-insightsTypes) in the *Device Farm API Reference*.
+1. Schedule the run in a custom test environment. Test insights are on by default. If you don't set the `insightsTypes` field of the `configuration` parameter of your `ScheduleRun` request, Device Farm sets it to `TEST_REPORT`. To turn off test insights for a run, see [Creating a test run in Device Farm](how-to-create-test-run.md).
 
 To view the report after the run completes, see [View a test report (console)](#test-types-ios-xctest-ui-view-insights-console). If Device Farm does not generate a report, see [Test insights](troubleshooting-xctest-ui.md#troubleshooting-xctest-ui-insights).
 
@@ -164,9 +154,7 @@ Make sure that your .ipa file is built for an iOS device and not for a simulator
 
 1. Browse to and choose the .ipa or .zip file that contains your iOS XCTest UI test runner.
 
-1. (Optional) To configure run-level properties, update the **Run settings** section:
-
-   To have Device Farm generate a test report after your run completes, in the **Run settings** section, under **Test Insights**, choose **Generate test report**. This option is available in a custom test environment only. For the prerequisites, see [Configure XCTest UI test reports using a custom test environment](#test-types-ios-xctest-ui-generate-reports).
+1. To configure run-level properties, update the **Run settings** section.
 
 1. Complete the remaining steps in the run creation process. Select the devices that you want to test on and optionally specify additional configuration.
 
@@ -214,7 +202,7 @@ To download the full test report as a JSON file, choose **Download full summary*
 ### Without test insights enabled
 <a name="test-types-ios-xctest-ui-view-insights-console-without"></a>
 
-The job results show the standard test output and artifacts, such as the **Suites**, **Logs**, and **Screenshots** tabs, but no **Test report** tab. To generate a test report, schedule a new run with test insights enabled.
+If the run used the standard test environment, or if you turned off test insights for the run, the job results show the standard test output and artifacts, such as the **Suites**, **Logs**, and **Screenshots** tabs, but no **Test report** tab. To get a test report, schedule a new run in a custom test environment with **Generate test report** selected.
 
 ![The job results for a completed XCTest UI job without test insights enabled, showing the standard tabs and no Test report tab.](https://docs.aws.amazon.com/devicefarm/latest/developerguide/images/aws-device-farm-test-insights/passing.png)
 
@@ -230,7 +218,7 @@ aws devicefarm get-job --arn {{arn:aws:devicefarm:us-west-2:123456789012:job:PRO
 ### Without test insights enabled
 <a name="test-types-ios-xctest-ui-view-insights-cli-without"></a>
 
-If you did not enable test insights, the response contains the standard job fields, such as the job status, result, counters, and device:
+If the run did not generate test insights, for example because it used the standard test environment or you turned off test insights, the response contains the standard job fields, such as the job status, result, counters, and device:
 
 ```
 {
@@ -271,7 +259,7 @@ If you did not enable test insights, the response contains the standard job fiel
 ### With test insights enabled
 <a name="test-types-ios-xctest-ui-view-insights-cli-with"></a>
 
-If you enabled test insights, the response also includes an `insights` object that contains the test report status, high-level metrics, and a presigned URL to the detailed report:
+If the run generated test insights, the response also includes an `insights` object that contains the test report status, high-level metrics, and a presigned URL to the detailed report:
 
 ```
 {

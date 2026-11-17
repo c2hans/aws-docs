@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-12
+generated_on: 2026-11-16
 ---
 
 # Welcome to AWS Documentation
@@ -221,6 +221,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [AWS Fault Injection Service](/fis/?icmpid=docs_homepage_devtools): Improve resiliency and performance with controlled experiments
 - [AWS Infrastructure Composer](/infrastructure-composer/?icmpid=docs_homepage_devtools): Design and build your modern infrastructure through a visual builder
 - [Kiro](https://kiro.dev/docs/?icmpid=docs_homepage_devtools): AI coding with spec-driven development
+- [AWS MCP Server](/agent-toolkit/latest/userguide/mcp-server.html?icmpid=docs_homepage_devtools): Managed, authenticated access to AWS APIs for AI agents
 - [AWS Microservice Extractor for .NET](/microservice-extractor/?icmpid=docs_homepage_devtools): Reduce time and effort to convert large applications to microservices
 - [Porting Assistant for .NET](/portingassistant/?icmpid=docs_homepage_devtools): Port Microsoft .NET Framework applications to .NET Core
 - [SDKs and Tools Reference Guide](/sdkref/latest/guide/overview.html?icmpid=docs_homepage_devtools): Find information applicable to multiple SDKs and tools
@@ -308,6 +309,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 ### Machine Learning
 
 - [Choosing an AWS machine learning service](/decision-guides/latest/machine-learning-on-aws-how-to-choose/guide.html?icmpid=docs_homepage_ml): Choose the right ML services and frameworks to support your work
+- [AWS MCP Server](/agent-toolkit/latest/userguide/mcp-server.html?icmpid=docs_homepage_ml): Managed, authenticated access to AWS APIs for AI agents
 - [Amazon A2I](/augmented-ai/?icmpid=docs_homepage_ml): Easily implement human review of ML predictions
 - [Agent Toolkit for AWS](/agent-toolkit/?icmpid=docs_homepage_ml): Tools, knowledge, and guardrails AI coding agents need to build, deploy, and manage applications on AWS
 - [Apache MXNet on AWS](/mxnet/?icmpid=docs_homepage_ml): Scalable, open-source deep learning framework

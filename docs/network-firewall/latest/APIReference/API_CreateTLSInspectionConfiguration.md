@@ -39,8 +39,11 @@ To retrieve information about TLS inspection configurations, use [ListTLSInspect
                "RevokedStatusAction": "{{string}}",
                "UnknownStatusAction": "{{string}}"
             },
+            "DefaultDecryptionBehavior": "{{string}}",
             "Scopes": [
                {
+                  "DecryptionAction": "{{string}}",
+                  "DeploymentMode": "{{string}}",
                   "DestinationPorts": [
                      {
                         "FromPort": {{number}},
@@ -52,6 +55,9 @@ To retrieve information about TLS inspection configurations, use [ListTLSInspect
                         "AddressDefinition": "{{string}}"
                      }
                   ],
+                  "DomainMatch": {
+                     "Domains": [ "{{string}}" ]
+                  },
                   "Protocols": [ {{number}} ],
                   "SourcePorts": [
                      {

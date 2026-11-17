@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 # Amazon Neptune Engine Version 1.0.5.0.R2 (2021-08-16)
 <a name="engine-releases-1.0.5.0.R2"></a>
 
-As of 2021-08-16, engine version 1.0.5.0.R2 is being generally deployed. Please note that it takes several days for a new release to become available in every region.
+As of 2021-08-16, AWS deploys engine version 1.0.5.0.R2 to all Regions. It takes several days for a new release to become available in every Region.
 
 ## Defects Fixed in This Engine Release
 <a name="engine-releases-1.0.5.0.R2-defects"></a>

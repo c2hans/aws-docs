@@ -22,9 +22,13 @@ POST /trustanchor/{{trustAnchorId}}/enable HTTP/1.1
 The request uses the following URI parameters.
 
  ** [trustAnchorId](#API_EnableTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-EnableTrustAnchor-request-uri-trustAnchorId"></a>
-The unique identifier of the trust anchor.
-Length Constraints: Fixed length of 36.
-Pattern: `.*[a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}.*`
+The trust anchor to act on. You can specify one of the following:
++ The trust anchor ID.
++ The trust anchor ARN.
++ The alias ARN of the trust anchor.
+An ARN must be for a trust anchor in your account and Region.
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `([a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}|arn:aws(-[^:]+)?:rolesanywhere(:.*){2}:(trust-anchor|alias/trust-anchor)/.*)`
 Required: Yes
 
 ## Request Body
@@ -41,6 +45,8 @@ Content-type: application/json
 
 {
    "trustAnchor": {
+      "aliasArn": "string",
+      "aliasName": "string",
       "createdAt": "string",
       "crlDpRevocationEnabled": boolean,
       "enabled": boolean,
@@ -54,6 +60,7 @@ Content-type: application/json
             "threshold": number
          }
       ],
+      "previousAliasName": "string",
       "source": {
          "sourceData": { ... },
          "sourceType": "string"

@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/sec_incident_response_develop_management_plans.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC10-BP02 Develop incident management plans
 <a name="sec_incident_response_develop_management_plans"></a>

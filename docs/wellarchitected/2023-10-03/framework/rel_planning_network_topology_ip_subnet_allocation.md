@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/rel_planning_network_topology_ip_subnet_allocation.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL02-BP03 Ensure IP subnet allocation accounts for expansion and availability
 <a name="rel_planning_network_topology_ip_subnet_allocation"></a>

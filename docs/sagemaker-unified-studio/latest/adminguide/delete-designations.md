@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 # Delete designations
 <a name="delete-designations"></a>
 
-You can delete a designation only when **Allow delete** is selected for the designation. You cannot delete managed designations (Owner and Contributor).
+You can delete a designation only when **Allow delete** is selected for the designation. You can't delete managed designations (Owner and Contributor).
+
+When you delete a designation, Amazon SageMaker Unified Studio also deletes the designation's associated layout customization. Members who had that designation then see the full default left navigation pane.
 
 **Important**
 Before deleting a designation, verify that no project members are currently assigned to it. If you delete a designation that is assigned to project members, those members remain members of the project but have no permissions within that project. You must reassign those members to a valid designation to restore their access.

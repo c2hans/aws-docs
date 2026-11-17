@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/perf_compute_hardware_configure_and_right_size_compute_resources.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # PERF02-BP04 Configure and right-size compute resources
 <a name="perf_compute_hardware_configure_and_right_size_compute_resources"></a>
 

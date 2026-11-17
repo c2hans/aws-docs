@@ -41,7 +41,7 @@ The high-level process flow for the solution, including the components deployed 
 
 1. Bidders receive one or more bid requests (either over the internet, through VPC peering, or via RTB Fabric) from a Prebid Server container. Bidders respond with zero or more bids for the various requests. The response, including the body of the winning creative(s), is sent back to the browser.
 
-1. For cache operations, Prebid Server containers are configured to use the publicly accessible endpoint (CloudFront domain or external ALB DNS) to store and retrieve cached bid responses. Cache requests from containers flow through the same entry point as client requests, reaching the cache Lambda function via ALB routing rules. This unified cache endpoint ensures both server-side and client-side cache access use the same path.
+1. For cache operations, Prebid Server containers store and retrieve cached bid responses through the cache Lambda function. ALB routing rules send requests on paths that start with `/cache` to this function. With CloudFront and AWS WAF deployed, containers use the CloudFront domain as the cache endpoint, which is the same entry point that clients use. In ALB-only mode, containers use the internal ALB DNS name as the cache endpoint. The internet-facing ALB serves only cache retrieval (`GET`) requests from clients.
 
 1. During normal operation, Amazon CloudWatch metrics are collected from various resources involved in handling requests and responses through the solution. As the load changes throughout the cluster, CloudWatch alarms are used to determine when to scale-out or scale-in the container cluster.
 

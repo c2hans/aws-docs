@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # ListAgentRecommendationItems
 <a name="API_ListAgentRecommendationItems"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 **Important**
 Application-level recommendations are a new recommendation format currently in beta. We are actively seeking customer feedback to improve their quality and relevance. As with any AI-generated content, please thoroughly review each recommendation before taking any action based on it.
 

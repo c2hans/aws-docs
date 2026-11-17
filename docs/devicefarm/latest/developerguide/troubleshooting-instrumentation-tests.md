@@ -215,7 +215,7 @@ In the following example, the package's name is **app-debug-androidTest-unaligne
 ## Test insights
 <a name="troubleshooting-instrumentation-tests-insights"></a>
 
-When you opt in to test insights, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Instrumentation tests.
+When test insights are enabled, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Instrumentation tests.
 
 ### The job did not run to completion
 <a name="ti-instrumentation-job-not-complete"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 # Troubleshooting Appium Java JUnit web application tests in AWS Device Farm
 <a name="troubleshooting-appium-web-java-junit-tests"></a>
 
-The following topic lists error messages that occur during the upload of Appium Java JUnit Web application tests and recommends workarounds to resolve each error. For more information on using Appium with Device Farm, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+The following topic lists error messages that can occur for Appium Java JUnit Web application tests and recommends workarounds to resolve each error. For more information on using Appium with Device Farm, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
 
 ## APPIUM\_WEB\_JAVA\_JUNIT\_TEST\_PACKAGE\_UNZIP\_FAILED
 <a name="APPIUM_WEB_JAVA_JUNIT_TEST_PACKAGE_UNZIP_FAILED"></a>
@@ -290,3 +290,8 @@ In the following example, the package's name is **zip-with-dependencies.zip**.
 Your tests may not execute correctly if the JUnit version specified in your test package is lower than the minimum version 4.10 we support.
 
    For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+
+## Test insights
+<a name="troubleshooting-appium-web-java-junit-insights"></a>
+
+Test insights for Appium Java JUnit web app tests use the same JUnit XML reports as mobile app tests, so the same messages can occur. For more information, see [Test insights](troubleshooting-appium-java-junit.md#troubleshooting-appium-java-junit-insights).

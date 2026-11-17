@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SSM::CloudConnector
 <a name="aws-resource-ssm-cloudconnector"></a>
 
-Creates a cloud connector that establishes a connection between Systems Manager and a third-party cloud environment.
+The `AWS::SSM::CloudConnector` resource creates a cloud connector in AWS Systems Manager. With a cloud connector, you can manage resources in external cloud providers such as Microsoft Azure.
 
 ## Syntax
 <a name="aws-resource-ssm-cloudconnector-syntax"></a>
@@ -51,7 +51,7 @@ Properties:
 <a name="aws-resource-ssm-cloudconnector-properties"></a>
 
 `ConfigConnectorArn`  <a name="cfn-ssm-cloudconnector-configconnectorarn"></a>
-Property description not available.
+The ARN of the AWS Config connector associated with the cloud connector.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws(-cn|-us-gov)?:config:[a-z0-9-]+:\d{12}:connector/.+$`
@@ -60,7 +60,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Configuration`  <a name="cfn-ssm-cloudconnector-configuration"></a>
-Property description not available.
+The configuration for the cloud connector.
 *Required*: Yes
 *Type*: [CloudConnectorConfiguration](aws-properties-ssm-cloudconnector-cloudconnectorconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -75,7 +75,7 @@ The description of the cloud connector.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DisplayName`  <a name="cfn-ssm-cloudconnector-displayname"></a>
-The friendly name of the cloud connector.
+The display name of the cloud connector.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[\p{L}\p{Z}\p{N}\p{P}\p{M}]*$`
@@ -84,7 +84,7 @@ The friendly name of the cloud connector.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RoleArn`  <a name="cfn-ssm-cloudconnector-rolearn"></a>
-The ARN of the IAM role used by the cloud connector.
+The ARN of the IAM role used by the cloud connector to access resources in your AWS account.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws[a-z0-9-]*:iam::\d{12}:role/[\w-/.@+=,]{1,1017}$`
@@ -93,7 +93,7 @@ The ARN of the IAM role used by the cloud connector.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-ssm-cloudconnector-tags"></a>
-Property description not available.
+The metadata that you assign to a resource. Use tags to categorize a resource in different ways, such as by purpose, owner, or environment.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-ssm-cloudconnector-tag.md)
 *Maximum*: `50`
@@ -105,20 +105,100 @@ Property description not available.
 ### Ref
 <a name="aws-resource-ssm-cloudconnector-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the ARN of the cloud connector. For example:
+
+ `arn:aws:ssm:us-east-1:111122223333:cloud-connector/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-ssm-cloudconnector-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-ssm-cloudconnector-return-values-fn--getatt-fn--getatt"></a>
 
 `CloudConnectorArn`  <a name="CloudConnectorArn-fn::getatt"></a>
-Property description not available.
+The ARN of the cloud connector. For example: `arn:aws:ssm:us-east-1:111122223333:cloud-connector/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
 `CloudConnectorId`  <a name="CloudConnectorId-fn::getatt"></a>
-The ID of the cloud connector.
+The unique identifier of the cloud connector. For example: `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-The date and time the cloud connector was created.
+The timestamp when the cloud connector was created.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The date and time the cloud connector was last updated.
+The timestamp when the cloud connector was last updated.
+
+## Examples
+<a name="aws-resource-ssm-cloudconnector--examples"></a>
+
+### Create a cloud connector to Microsoft Azure
+<a name="aws-resource-ssm-cloudconnector--examples--Create_a_cloud_connector_to_Microsoft_Azure"></a>
+
+The following example creates a cloud connector that connects AWS Systems Manager to a Microsoft Azure tenant, targeting a specific Azure subscription.
+
+#### JSON
+<a name="aws-resource-ssm-cloudconnector--examples--Create_a_cloud_connector_to_Microsoft_Azure--json"></a>
+
+```
+{
+    "Type": "AWS::SSM::CloudConnector",
+    "Properties": {
+        "DisplayName": "MyAzureCloudConnector",
+        "Description": "Cloud connector for managing Azure resources",
+        "RoleArn": "arn:aws:iam::111122223333:role/CloudConnectorRole",
+        "ConfigConnectorArn": "arn:aws:config:us-east-1:111122223333:connector/my-connector",
+        "Configuration": {
+            "AzureConfiguration": {
+                "TenantId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                "ApplicationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                "TenantDisplayName": "My Azure Tenant",
+                "ApplicationDisplayName": "My Azure App",
+                "Targets": {
+                    "Subscriptions": [
+                        {
+                            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                            "DisplayName": "Production Subscription"
+                        }
+                    ]
+                }
+            }
+        },
+        "Tags": [
+            {
+                "Key": "Environment",
+                "Value": "Production"
+            }
+        ]
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-ssm-cloudconnector--examples--Create_a_cloud_connector_to_Microsoft_Azure--yaml"></a>
+
+```
+Type: AWS::SSM::CloudConnector
+Properties:
+  DisplayName: MyAzureCloudConnector
+  Description: Cloud connector for managing Azure resources
+  RoleArn: arn:aws:iam::111122223333:role/CloudConnectorRole
+  ConfigConnectorArn: arn:aws:config:us-east-1:111122223333:connector/my-connector
+  Configuration:
+    AzureConfiguration:
+      TenantId: a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
+      ApplicationId: a1b2c3d4-5678-90ab-cdef-EXAMPLE22222
+      TenantDisplayName: My Azure Tenant
+      ApplicationDisplayName: My Azure App
+      Targets:
+        Subscriptions:
+          - Id: a1b2c3d4-5678-90ab-cdef-EXAMPLE33333
+            DisplayName: Production Subscription
+  Tags:
+    - Key: Environment
+      Value: Production
+```

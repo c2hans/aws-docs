@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # OrganizationalAccountEntry
 <a name="API_OrganizationalAccountEntry"></a>
 
-**Important**
-This is not available during the preview release.
-
 An individual account entry in the organizational monitoring boundary, with its associated regions.
 
 ## Contents

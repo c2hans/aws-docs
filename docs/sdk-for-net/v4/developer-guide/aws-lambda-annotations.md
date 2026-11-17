@@ -11,7 +11,7 @@ For information about breaking changes and migrating your applications, see the 
 # Using annotations to write AWS Lambda functions
 <a name="aws-lambda-annotations"></a>
 
-When writing Lambda functions, you sometimes need to write a large amount of handler code and update AWS CloudFormation templates, among other tasks. Lambda Annotations is a framework to help ease these burdens for .NET 6 Lambda functions, thereby making the experience of writing Lambda feel more natural in C\#.
+When writing Lambda functions, you sometimes need to write a large amount of handler code and update AWS CloudFormation templates, among other tasks. Lambda Annotations is a framework to help ease these burdens for .NET Lambda functions, making Lambda feel more natural in C\#.
 
 As an example of the benefit of using the Lambda Annotations framework, consider the following snippets of code that add two numbers.
 

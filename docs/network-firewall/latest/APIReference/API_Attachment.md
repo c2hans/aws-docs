@@ -15,7 +15,8 @@ This data type is used for any firewall endpoint type:
 <a name="API_Attachment_Contents"></a>
 
  ** DnsName **   <a name="networkfirewall-Type-Attachment-DnsName"></a>
-The DNS name that resolves to the firewall endpoint in the subnet. This is populated for proxy mode firewalls, where clients direct traffic to the firewall's proxy using this name.
+The proxy DNS name of a proxy mode firewall. Your clients send proxy requests to the firewall at this name. It's your `ProxySettings` `DomainName` if you specified one, or a name that Network Firewall generates in the format `proxy-id.nfw.region.amazonaws.com`.
+The firewall has one proxy DNS name for every Availability Zone and VPC that it serves. In each Availability Zone, the name resolves to the firewall endpoint in that Availability Zone, so traffic stays in your client's Availability Zone. Your clients must use the VPC's Route 53 Resolver.
 Type: String
 Required: No
 

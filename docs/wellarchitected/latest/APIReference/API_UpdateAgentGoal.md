@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # UpdateAgentGoal
 <a name="API_UpdateAgentGoal"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Updates the pillars and title of an existing goal associated with a profile.
 
 ## Request Syntax

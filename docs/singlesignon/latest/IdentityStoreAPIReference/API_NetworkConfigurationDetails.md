@@ -24,11 +24,11 @@ Pattern: `((([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0
 Required: No
 
  ** ApiRestrictSourceVpcs **   <a name="singlesignon-Type-NetworkConfigurationDetails-ApiRestrictSourceVpcs"></a>
-A list of virtual private cloud (VPC) IDs that are allowed to access the identity store API operations. A request is denied unless it originates from a VPC in this list, or from an IP address in `ApiAllowSourceIps` if one is configured. If this field is empty, access isn't restricted to specific VPCs, but the VPC endpoint requirement from `VpceAccessRequired` still applies.
+A list of virtual private cloud (VPC) ARNs that are allowed to access the identity store API operations. A request is denied unless it originates from a VPC in this list, or from an IP address in `ApiAllowSourceIps` if one is configured. If this field is empty, access isn't restricted to specific VPCs, but the VPC endpoint requirement from `VpceAccessRequired` still applies.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
-Length Constraints: Minimum length of 12. Maximum length of 21.
-Pattern: `vpc-([0-9a-f]){8}(([0-9a-f]){9})?`
+Length Constraints: Minimum length of 12. Maximum length of 128.
+Pattern: `(arn:aws(-[a-z]{1,5}){0,3}:ec2:[a-z]{2,4}(-[a-z]{1,10}){1,3}-[0-9]{1,2}:[0-9]{12}:vpc/)?vpc-([0-9a-f]){8}(([0-9a-f]){9})?`
 Required: No
 
  ** ScimAllowSourceIps **   <a name="singlesignon-Type-NetworkConfigurationDetails-ScimAllowSourceIps"></a>

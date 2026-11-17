@@ -14,8 +14,8 @@ We collect metrics directly from the various resources in the solution. These ar
 
 AWS owns the data gathered through this survey. Data collection is subject to the [Privacy Notice](https://aws.amazon.com/privacy/). To opt out of this feature, complete the following steps before deploying using AWS CDK.
 
-1. Locate the [mappings.py](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/blob/main/source/cdk_solution_helper_py/helpers_cdk/aws_solutions/cdk/mappings.py) in your local
+1. In your local copy of the repository, open [source/infrastructure/lib/shared/solution-stack.ts](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/blob/main/source/infrastructure/lib/shared/solution-stack.ts).
 
-1. set the value of the **send\_anonymous\_usage\_data** input parameter in the ** *init* ** method to **False**
+1. In the `Solution` mapping, change the value of `SendAnonymizedData` from `"Yes"` to `"No"`.
 
 1. Follow the deployment steps documented in the readme.

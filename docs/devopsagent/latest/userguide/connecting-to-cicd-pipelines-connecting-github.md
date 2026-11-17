@@ -156,7 +156,7 @@ A personal access token registration connects GitHub without installing the AWS 
 A personal access token registration supports GitHub.com, GitHub Enterprise Server, and GitHub Enterprise Cloud with data residency. For a GitHub Enterprise Server instance that is not publicly accessible, you can use a private connection.
 
 Consider the following limitations before you choose this option:
-+ **No webhooks** – GitHub does not send webhook events to a personal access token registration. AWS DevOps Agent does not receive real-time events such as pull request, push, or deployment notifications. Automated release readiness code reviews and automatic verification testing do not trigger for repositories connected through a personal access token registration. You can still request a release readiness code review through DevOps Agent chat or through coding agent integrations. For more information, see [Release readiness code reviews](release-management-release-readiness-code-review.md). If you need real-time events, use App registration.
++ **No webhooks** – GitHub does not send webhook events to a personal access token registration. AWS DevOps Agent does not receive real-time events such as pull request, push, or deployment notifications. Automated release readiness code reviews and automatic verification testing do not trigger for repositories connected through a personal access token registration. You can still request a release readiness code review through DevOps Agent chat or through coding agent integrations. For more information, see [Release readiness code review](release-management-release-readiness-code-review.md). If you need real-time events, use App registration.
 + **Repository access follows the token** – When you scope the registration to an organization, AWS DevOps Agent lists the repositories in that organization that the token can access. When you connect the token owner's personal account, AWS DevOps Agent lists only the repositories that the token owner owns. The agent can perform only the operations that the token permits.
 + **No token update** – You cannot update the token of an existing GitHub registration. To replace an expired or rotated token, deregister the registration and register GitHub again with the new token. Then reconnect the repositories to your Agent Spaces.
 
@@ -314,15 +314,15 @@ You can connect different sets of repositories to different Agent Spaces based o
 ## Configuring Code Review and Automated Testing
 <a name="configuring-code-review-and-automated-testing"></a>
 
-When you select repositories in the GitHub connection step, they are automatically added to the **Code Review and Automated Testing** section. This section configures which repositories automatically trigger a [Release readiness code reviews](release-management-release-readiness-code-review.md) and automated testing capabilities.
+When you select repositories in the GitHub connection step, they are automatically added to the **Code Review and Automated Testing** section. This section configures which repositories automatically trigger a [release readiness code review](release-management-release-readiness-code-review.md) and automated testing capabilities.
 
 **Note**
 Automated triggers depend on webhook events from the GitHub App. For repositories connected through a [personal access token registration](#registering-github-with-a-personal-access-token), automated reviews and automated testing do not run. Request a release readiness code review through DevOps Agent chat or coding agent integrations instead.
 
 The Code Review and Automated Testing configuration includes:
 + **Capabilities** — Choose code review and automated testing capabilities for each repository. The section provides two per-repository settings:
-  + **Auto trigger change review** — When enabled for a repository, DevOps Agent automatically runs a [Release readiness code reviews](release-management-release-readiness-code-review.md) each time a pull request is opened or updated. Review findings appear as inline comments on the pull request. This is enabled by default for all connected repositories.
-  + **Automatic verification testing** — When enabled for a repository, DevOps Agent builds, runs, and tests your code changes in a managed verification environment during code reviews. This provides functional validation beyond static analysis. For more information, see [Automatic verification testing](release-management-release-readiness-code-review.md). This is enabled by default for all connected repositories.
+  + **Auto trigger change review** — When enabled for a repository, DevOps Agent automatically runs a [release readiness code review](release-management-release-readiness-code-review.md) each time a pull request is opened or updated. Review findings appear as inline comments on the pull request. This is enabled by default for all connected repositories.
+  + **Automatic verification testing** — When enabled for a repository, DevOps Agent builds, runs, and tests your code changes in a managed verification environment during code reviews. This provides functional validation beyond static analysis. For more information, see [Automatic verification testing](release-management-release-readiness-code-review.md#automatic-verification-testing). This is enabled by default for all connected repositories.
 + **Repository list** — Shows all repositories you selected during the connection step. Use the search field to filter repositories by name. Each repository has independent checkboxes for both capabilities.
 + **Verification environment** (optional) — In **Advanced settings**, associate each repository with a Release Management environment when automatic verification testing requires access to private resources in your VPC. The environment contains the private connection and runtime role that the verification testing environment uses.
 
@@ -338,14 +338,14 @@ To configure automated reviews:
 
 1. Choose **Save** to apply your configuration.
 
-Once configured, any new pull request in a repository with **Auto trigger change review** enabled will automatically trigger a release readiness code review. If **Automatic verification testing** is also enabled, the review includes functional validation in a verification environment. For more information about code reviews, see [Release readiness code reviews](release-management-release-readiness-code-review.md).
+Once configured, any new pull request in a repository with **Auto trigger change review** enabled will automatically trigger a release readiness code review. If **Automatic verification testing** is also enabled, the review includes functional validation in a verification environment. For more information about code reviews, see [Release readiness code review](release-management-release-readiness-code-review.md).
 
 ### Associating a Release Management environment
 <a name="associating-a-release-management-environment"></a>
 
 You use a Release Management environment to give automatic verification testing access to private build dependencies and services through your VPC. You can associate one environment with each repository.
 
-Before you begin, create the environment on the **Environments** tab of your Agent Space. For instructions, see [Step 2: Configure Release Management environments for private VPC access (optional)](release-management-release-readiness-code-review.md).
+Before you begin, create the environment on the **Environments** tab of your Agent Space. For instructions, see [Step 2: Configure Release Management environments for private VPC access (optional)](release-management-release-readiness-code-review.md#step-2-configure-release-management-environments-for-private-vpc-access-optional).
 
 To associate an environment:
 

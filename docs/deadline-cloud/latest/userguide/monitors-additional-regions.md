@@ -9,6 +9,8 @@ The Deadline Cloud monitor displays farms from all AWS Regions where AWS Deadlin
 
 To see how the monitor lists farms from two Regions, open the [demo farm list](https://_demo.us-east-1.deadlinecloud.amazonaws.com/?demo=moonrise).
 
+For guidance about placing farms, fleets, and worker hosts across Regions, see [Global rendering across AWS Regions](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/multi-region.html) in the *Deadline Cloud Developer Guide*.
+
 ## Managing users across Regions
 <a name="monitors-add-users-cross-region"></a>
 
@@ -37,7 +39,7 @@ The following diagram and table compare the two approaches for connecting additi
 | --- | --- | --- |
 | Setup requirements | No additional IAM Identity Center setup required | Requires configuring IAM Identity Center replication |
 | Identity data location | Remains in the IAM Identity Center Region only | Replicated to each configured Region |
-| Latency | Depends on distance to the IAM Identity Center Region | Lower latency when an IAM Identity Center replica is in the same Region |
+| Latency | Distance to the IAM Identity Center Region adds time during sign-in. Identity information is cached in the Region for most requests afterward. | Lower latency when an IAM Identity Center replica is in the same Region |
 | Regional availability | Depends on IAM Identity Center Region availability | Continues to work if the IAM Identity Center primary Region is unavailable |
 
 ## Cross-Region IAM Identity Center access

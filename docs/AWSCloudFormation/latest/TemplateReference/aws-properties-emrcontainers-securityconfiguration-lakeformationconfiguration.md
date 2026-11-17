@@ -58,7 +58,7 @@ Property description not available.
 The query engine IAM role ARN that is tied to the secure Spark job. The `QueryEngine` role assumes the `JobExecutionRole` to execute all the Lake Formation calls.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):iam::\d{12}:role/.+$`
+*Pattern*: `^arn:aws[a-z0-9-]*:iam::\d{12}:role/.+$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SecureNamespaceInfo`  <a name="cfn-emrcontainers-securityconfiguration-lakeformationconfiguration-securenamespaceinfo"></a>

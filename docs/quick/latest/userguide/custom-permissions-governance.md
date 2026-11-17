@@ -84,11 +84,11 @@ The following rules describe how capability evaluation works when Deny by Defaul
 
 1. If a capability belongs to a restricted category (for example, `AI`) with `DENY_BY_DEFAULT` and is not listed in Capabilities, the user is denied by default. This is the primary effect of Deny by Default.
 
-1. If a capability is explicitly listed in Capabilities with `ALLOW`, the user is permitted for that specific capability. This overrides the `DENY_BY_DEFAULT` category default for that capability only. Other capabilities in the same category remain denied unless they are also explicitly set to `ALLOW`.
+1. If a capability is explicitly listed in Capabilities with `ALLOW`, that setting overrides `DENY_BY_DEFAULT` for that capability only. Other capabilities in the same category remain denied unless they are also explicitly set to `ALLOW`. An explicit `ALLOW` does not override a denial of a parent capability.
 
 1. If a capability is explicitly listed in Capabilities with `DENY`, the user is denied.
 
-1. If a capability is not listed and does not belong to a restricted category (for example, a data source connector), the user is permitted (allow-by-default behavior is unchanged).
+1. If a capability is not listed and does not belong to a restricted category, the profile allows it unless a parent capability is denied. For example, an individual action connector is allowed when its Actions parent is allowed and the connector is not explicitly denied. The `AI` category does not restrict data source connectors.
 
 Quick evaluates these rules each time a user accesses a capability, based on the capability's category membership at that time. This is why a restricted category also covers capabilities that are added later.
 
@@ -104,7 +104,11 @@ The following table describes the supported categories for Deny by Default.
 
 | Category | Covers |
 | --- | --- |
-| `AI` | All AI and LLM-powered capabilities in Quick, including chat agents, flows, spaces, knowledge bases (including knowledge base connectors), action connectors, external agents, apps AI inference, Q analyses, and Quick desktop AI features. |
+| `AI` | All AI and LLM-powered capabilities in Quick, including chat agents, flows, spaces, knowledge bases (including knowledge base connectors), the Actions parent capability, external agents, apps AI inference, Q analyses, and Quick desktop AI features. |
+
+**Note**
+AI Deny by Default applies to the Actions parent capability, not directly to individual action connector types. If Actions is not explicitly allowed, all action connectors beneath it are denied, including new connector types added later. Explicitly allowing an individual connector does not override a denied Actions parent.
+If you explicitly allow Actions, the custom permissions profile allows individual action connector types unless you explicitly deny them. This includes connector types launched after you configure the profile. AI Deny by Default therefore does not support allowing selected action connectors while automatically denying newly launched connector types.
 
 **Note**
 Data source connectors aren't part of the `AI` category. Restricting AI capabilities doesn't restrict data sources, including data sources that Quick launches later. To restrict a data source, deny it explicitly in the profile.

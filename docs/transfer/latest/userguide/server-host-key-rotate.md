@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/transfer/latest/userguide/server-host-key-rotate.html
 ---
 
-# Rotate the server host keys
+# Rotating the server host keys
 <a name="server-host-key-rotate"></a>
 
 Periodically, you can rotate your server host key. This topic describes how the server chooses which key to apply, and the procedure for rotating these keys.
@@ -20,7 +20,7 @@ The way that Transfer Family chooses which server key to apply depends on condit
 
 Transfer Family prefers that the SFTP client has all of the keys in its `known_hosts` file, since this allows the most flexibility when connecting to a Transfer Family server. Key rotation is based on the fact that multiple entries can exist in the `known_hosts` file for the same Transfer Family server.
 
-## Rotate the server host key procedure
+## Rotating the server host key procedure
 <a name="server-key-rotate-procedure"></a>
 
 As an example, assume that you have added the following set of server host keys to your Transfer Family server.
@@ -38,8 +38,8 @@ As an example, assume that you have added the following set of server host keys 
 
 **To rotate the server host key**
 
-1. Add a new server host key. This procedure is described in [Add an additional server host key](server-host-key-add.md).
+1. Add a new server host key. This procedure is described in [Adding an additional server host key](server-host-key-add.md).
 
-1. Delete one or more of the host keys of the same type that you had added previously. This procedure is described in [Delete a server host key](server-host-key-delete.md).
+1. Delete one or more of the host keys of the same type that you had added previously. This procedure is described in [Deleting a server host key](server-host-key-delete.md).
 
 1. All keys are visible, and can be active, subject to the behavior described previously in [How the client chooses a server host key](#server-key-behavior).

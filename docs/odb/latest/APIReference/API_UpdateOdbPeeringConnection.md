@@ -44,14 +44,14 @@ Required: Yes
 A list of CIDR blocks to add to the peering connection. These CIDR blocks define the IP address ranges that can communicate through the peering connection. The CIDR blocks must not overlap with existing CIDR blocks in the Oracle Database@AWS network.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 18.
-Pattern: `(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)\/(?:[1-2][0-9]|3[0-2]|[1-9])`
+Pattern: `(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)\/(?:[1-2][0-9]|3[0-2]|[0-9])`
 Required: No
 
  ** [peerNetworkCidrsToBeRemoved](#API_UpdateOdbPeeringConnection_RequestSyntax) **   <a name="odb-UpdateOdbPeeringConnection-request-peerNetworkCidrsToBeRemoved"></a>
 A list of CIDR blocks to remove from the peering connection. The CIDR blocks must currently exist in the peering connection.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 18.
-Pattern: `(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)\/(?:[1-2][0-9]|3[0-2]|[1-9])`
+Pattern: `(?:(?:\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d\d|\d)\/(?:[1-2][0-9]|3[0-2]|[0-9])`
 Required: No
 
 ## Response Syntax

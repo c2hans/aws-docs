@@ -5,32 +5,32 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 # Troubleshooting code generation scenarios in Amazon Q Developer
 <a name="troubleshooting"></a>
 
-You might encounter the following common scenarios with inaccurate code generation and resolutions when using Amazon Q Developer:
+You might encounter the following common code generation issues when using Amazon Q Developer. Choose a link to see the resolution:
 + [Empty code generation](#suggestions-troubleshooting)
 + [Continuous comments](#comments-troubleshooting)
-+ [Incorrect in-line code generation](#code-generation-troubleshooting)
++ [Incorrect inline code generation](#code-generation-troubleshooting)
 + [Inadequate results from chats](#chat-results-troubleshooting)
 
 ## Empty code generation
 <a name="suggestions-troubleshooting"></a>
 
 While developing code, you might notice the following issues:
-+ Amazon Q does not provide a suggestion.
++ Amazon Q Developer does not provide a suggestion.
 + The message "No Suggestion from Amazon Q" appears in your IDE.
 
 Your first thought might be that Amazon Q isn't working properly. However, the root cause of these issues is typically associated with the context in the script or open project within the IDE.
 
-If Amazon Q Developer doesn't provide a suggestion automatically, you can use the following shortcuts to manually execute Amazon Q in-line suggestions:
-+ PC** **- **Alt\+C**
-+ MacOS - **Option\+C**
+If Amazon Q Developer doesn't provide a suggestion automatically, you can use the following shortcuts to manually run Amazon Q in-line suggestions:
++ Windows** **- **Alt\+C**
++ macOS - **Option\+C**
 
 For more information, see [Using shortcut keys](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/actions-and-shortcuts.html) in the *Amazon Q Developer User Guide*.
 
 In most scenarios, Amazon Q generates a suggestion. When Amazon Q returns a "No Suggestion from Amazon Q" message, review the following common resolutions for this issue:
 + **Inadequate context** – Make sure that applicable libraries are present. Make sure that classes and functions defined in the script relate to new code.
-+ **Ambiguous prompt** – If the prompt is confusing or unclear, Amazon Q will underperform when it makes in-line code suggestions. In these scenarios, be more specific in your code and comments to elicit proper responses.
++ **Ambiguous prompt** – If the prompt is confusing or unclear, Amazon Q might not perform as expected when it makes in-line code suggestions. In these scenarios, be more specific in your code and comments to elicit more relevant responses.
 
-If you're stuck, continue coding to the best of your ability. Typically, Amazon Q will recognize your intention, which triggers it to offer suggestions. Another option is to send a code snippet with prompt instructions in an Amazon Q chat. For more information, see [Send code to Amazon Q](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/explain-update-code.html#send-code) in the *Amazon Q Developer User Guide*.
+If you're unable to proceed, continue coding. Typically, Amazon Q recognizes your intent and offers suggestions. Another option is to send a code snippet with prompt instructions in an Amazon Q chat. For more information, see [Send code to Amazon Q](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/explain-update-code.html#send-code) in the *Amazon Q Developer User Guide*.
 
 ## Continuous comments
 <a name="comments-troubleshooting"></a>
@@ -52,7 +52,7 @@ Result:
 // Kafka test
 ```
 
-Typically, this issue is due to lack of context in the script or poor prompt instructions. We recommend that you use the standard format for comments given the language. In this example, the user changed the prompt to use `/* */ `for a comment block, and that change resulted in better performance from Amazon Q.
+This issue typically occurs because of a lack of context in the script or unclear prompt instructions. We recommend that you use the standard comment format for your programming language. In this example, you change the prompt to use `/* */` for a comment block, and that change improves the suggestions from Amazon Q.
 
 Input:
 
@@ -64,7 +64,7 @@ Input:
 
 Result:
 
-In this result, the user accepted several suggestions sequentially.
+In this result, you accept several suggestions sequentially.
 
 ```
 /*
@@ -100,14 +100,14 @@ public class KafkaTest {
 ## Incorrect in-line code generation
 <a name="code-generation-troubleshooting"></a>
 
-Occasionally, Amazon Q Developer in-line suggestions aren't useful or don't meet your prompt's objective. At times, in-line code suggestions might provide a generic function that's similar to a simple Hello World method.
+Occasionally, Amazon Q Developer in-line suggestions aren't useful or don't meet your prompt's objective. For example, in-line code suggestions might provide a generic function that's similar to a simple Hello World method.
 
 When in-line code suggestions aren't helpful, try the following best practices:
 + Review the context of the script. Usually, the more context that you provide, the better results you get from Amazon Q.
-+ If the context varies and/or is noisy, modularize your code. Group similar functions within the same script. Separate different classes and functions by their objective.
-+ Write your class and function names tactically to help Amazon Q provide better recommendations.
++ If the context varies or contains unrelated code, modularize your code. Group similar functions within the same script. Separate classes and functions by their objective.
++ Use descriptive class and function names to help Amazon Q provide better recommendations.
 
-In this example, the developer is writing a script from scratch which uploads files to Hadoop.
+In this example, the developer is writing a script from scratch that uploads files to Hadoop.
 
 Input:
 
@@ -130,7 +130,7 @@ class  MyFunction{
 }
 ```
 
-Although Amazon Q provided a recommendation, it didn't meet the developer's expectation. To improve performance, the developer imports libraries and changes the class name to represent Hadoop utilities.
+Although Amazon Q provided a recommendation, it didn't meet the developer's expectation. To improve the suggestions, the developer imports libraries and changes the class name to represent Hadoop utilities.
 
 Fix:
 
@@ -171,7 +171,7 @@ class  HadoopUtilities{
 }
 ```
 
-In the same HadoopUtilities script, the developer adds a comment prompt to read an Amazon Simple Queue Service (Amazon SQS) topic.
+In the same HadoopUtilities script, the developer adds a comment prompt to read an Amazon Simple Queue Service (Amazon SQS) queue.
 
 Input:
 
@@ -187,11 +187,11 @@ Result:
         System.out.println("Received message from SQS: " + message);
 ```
 
-Rather that use Java methods to read an SQS message from Amazon SQS, Amazon Q suggests printing a string method. However, this suggestion doesn't satisfy the developer's original objective.
+Rather than use Java methods to read a message from Amazon SQS, Amazon Q suggests printing a string method. However, this suggestion doesn't satisfy the developer's original objective.
 
-In this case, it's preferable to re-modularize the code. The script's focus is on Hadoop methods. Therefore, it might be a better approach to create a utility script that's specifically for SQS operations.
+In this case, remodularize the code. The script's focus is on Hadoop methods, so create a separate utility script for SQS operations.
 
-Creating a separate class for SQS utilities improves the in-line suggestion, which can be used in the HadoopUtilities script.
+Creating a separate class for SQS utilities improves the in-line suggestion, and the developer can use the class in the HadoopUtilities script.
 
 Input:
 
@@ -229,13 +229,13 @@ Result:
         return messages;
 ```
 
-If the in-line suggestion is still not providing expected results, ask Amazon Q Developer in a chat session to generate code.
+If the in-line suggestion still doesn't provide the expected results, ask Amazon Q Developer in a chat session to generate code.
 
 **Start Amazon Q chat about generating code**
 
 User:
 
-Generate a java function to read a message from an Amazon SQS queue
+Generate a Java function to read a message from an Amazon SQS queue
 
 Amazon Q:
 
@@ -280,16 +280,16 @@ public class SQSMessageReader {
     }
 ```
 
-This code creates a SQSMessageReader class that takes an AmazonSQS client and a queue URL as constructor parameters. The readMessage() method uses the ReceiveMessageRequest to fetch up to 1 message from the queue, with a maximum wait time of 10 seconds.
+This code creates an SQSMessageReader class that takes an AmazonSQS client and a queue URL as constructor parameters. The readMessage() method uses the ReceiveMessageRequest to fetch up to one message from the queue, with a maximum wait time of 10 seconds.
 
-If a message is received, the message body is printed and the message is deleted from the queue using the DeleteMessageRequest. The message body is then returned. If no message is received, null is returned.
+If the function receives a message, it prints the message body, deletes the message from the queue, and returns the message body. If the function receives no message, it returns null.
 
 **End** **Amazon Q chat about generating code**
 
 ## Inadequate results from chats
 <a name="chat-results-troubleshooting"></a>
 
-While developing code, developers can ask Amazon Q to generate common functions, provide recommendations, or explain code. Sometimes, given a prompt (such as a question or code snippet), Amazon Q might provide either general feedback or results that don't meet your expectations. In these scenarios, try the following:
+While developing code, developers can ask Amazon Q Developer to generate common functions, provide recommendations, or explain code. Sometimes, given a prompt (such as a question or code snippet), Amazon Q might provide either general feedback or results that don't meet your expectations. In these scenarios, try the following:
 + Experiment with different prompts to improve the code generation results that you get from Amazon Q.
 + Follow the URLs that Amazon Q frequently provides in its responses to your prompts or questions.
 + Provide feedback to help improve future performance of Amazon Q.
@@ -350,7 +350,7 @@ However, this approach only provides a basic way to chunk documents by using the
 
 User:
 
-The prompt above only relates to splitting regarding token size per chunk. I want to use AI21 Semantic text splitter. Generate a function using A121 semantic text splitting with langchain.
+The prompt above only relates to splitting regarding token size per chunk. I want to use AI21 Semantic text splitter. Generate a function using AI21 semantic text splitting with LangChain.
 
 Amazon Q:
 
@@ -391,10 +391,10 @@ Please note that you may need to adjust the parameters or the choice of embeddin
 
 Sources [1] Learn how to use text splitters in LangChain
 
-[soosweb3.hashnode.dev > the-ultimate-langchain-series-text-splitters](https://blog.davideai.dev/the-ultimate-langchain-series-text-splitters)
+[blog.davideai.dev > the-ultimate-langchain-series-text-splitters](https://blog.davideai.dev/the-ultimate-langchain-series-text-splitters)
 
 **End of Amazon Q** **chat about a RAG solution** **(with improved prompt)**
 
 Based on the chat results, the developer can use the function and navigate to the source of the information.
 
-In general, advanced topics and questions require more specific context within the prompt when you chat with Amazon Q Developer. If you believe that the results from your chat aren't accurate, use the thumbs-down icon to provide feedback about the Amazon Q response. Amazon Q Developer continuously uses feedback to improve future releases. For interactions that produced positive results, it's useful to provide your feedback by using the thumbs-up icon.
+In general, advanced topics and questions require more specific context within the prompt when you chat with Amazon Q Developer. If you believe that the results from your chat aren't accurate, use the thumbs-down icon to provide feedback about the Amazon Q response. Amazon Q Developer uses feedback to help improve future releases. For interactions that produced positive results, you can also provide feedback by using the thumbs-up icon.

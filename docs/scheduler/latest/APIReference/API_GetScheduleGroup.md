@@ -57,7 +57,7 @@ The following data is returned in JSON format by the service.
 The Amazon Resource Name (ARN) of the schedule group.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1224.
-Pattern: `arn:aws(-[a-z]+)?:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
+Pattern: `arn:aws[a-z-]*:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
 
  ** [CreationDate](#API_GetScheduleGroup_ResponseSyntax) **   <a name="scheduler-GetScheduleGroup-response-CreationDate"></a>
 The time at which the schedule group was created.

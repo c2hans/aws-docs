@@ -54,6 +54,7 @@ Required: Yes
       "EventTime": number,
       "InstanceGroupName": "string",
       "InstanceId": "string",
+      "OperationId": "string",
       "ResourceType": "string"
    }
 }

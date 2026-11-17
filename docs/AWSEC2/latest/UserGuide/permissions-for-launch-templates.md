@@ -165,20 +165,20 @@ For example, the following IAM policy statement gives the principal permission t
 }
 ```
 
-### ec2:DeleteLaunchTemplateVersion
+### ec2:DeleteLaunchTemplateVersions
 <a name="permissions-for-launch-template-versions-delete"></a>
 
 **Important**
 As always, you should exercise caution when giving principals permission to delete a resource. Deleting a launch template version might cause a failure in an AWS resource that relies on the launch template version.
 
-To delete a launch template version, the principal must have the `ec2:DeleteLaunchTemplateVersion` permission for the launch template in an IAM policy.
+To delete a launch template version, the principal must have the `ec2:DeleteLaunchTemplateVersions` permission for the launch template in an IAM policy.
 
 For example, the following IAM policy statement gives the principal permission to delete launch template versions only if the version uses the specified tag ({{`environment`}}={{`production`}}). Alternatively, you can specify one or multiple launch template ARNs, or you can specify a `Resource` value of `"*"` without the `Condition` element to allow the principal to delete versions of any launch template in the account.
 
 ```
 {
     "Sid": "IAMPolicyForDeletingLaunchTemplateVersions",
-    "Action": "ec2:DeleteLaunchTemplateVersion",
+    "Action": "ec2:DeleteLaunchTemplateVersions",
     "Effect": "Allow",
     "Resource": "*",
     "Condition": {

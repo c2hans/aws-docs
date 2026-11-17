@@ -17,7 +17,6 @@ Proactive rules do not remediate resources that are flagged as NON\_COMPLIANT or
 
 ### Proactive Evaluation
 <a name="proactive-evaluation"></a>
-+ [eip-attached](./eip-attached.html)
 + [subnet-auto-assign-public-ip-disabled](./subnet-auto-assign-public-ip-disabled.html)
 
 ## Detective Evaluation

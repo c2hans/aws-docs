@@ -17,6 +17,7 @@ PATCH /trustanchor/{{trustAnchorId}} HTTP/1.1
 Content-type: application/json
 
 {
+   "aliasName": "{{string}}",
    "crlDpRevocationEnabled": {{boolean}},
    "name": "{{string}}",
    "source": {
@@ -32,15 +33,32 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [trustAnchorId](#API_UpdateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-UpdateTrustAnchor-request-uri-trustAnchorId"></a>
-The unique identifier of the trust anchor.
-Length Constraints: Fixed length of 36.
-Pattern: `.*[a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}.*`
+The trust anchor to act on. You can specify one of the following:
++ The trust anchor ID.
++ The trust anchor ARN.
++ The alias ARN of the trust anchor.
+An ARN must be for a trust anchor in your account and Region.
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `([a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}|arn:aws(-[^:]+)?:rolesanywhere(:.*){2}:(trust-anchor|alias/trust-anchor)/.*)`
 Required: Yes
 
 ## Request Body
 <a name="API_UpdateTrustAnchor_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [aliasName](#API_UpdateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-UpdateTrustAnchor-request-aliasName"></a>
+The alias for the trust anchor.
+You can use this parameter in the following ways:
++ To set or change the alias, specify the new alias name. After the change, the previous alias ARN no longer identifies the resource. You can then assign the previous alias to another resource of the same type. A change can take a short time to take effect for requests that use an alias ARN.
++ To remove the alias, specify an empty string.
++ To keep the current alias, omit this parameter.
+An alias name contains 1 to 256 characters. It must begin with a letter (A-Z or a-z). It can contain only letters (A-Z and a-z), numbers (0-9), underscores (\_), hyphens (-), and forward slashes (/). A forward slash can appear only between two other characters, so an alias name can't end with a forward slash or contain two in a row. Alias names that begin with `aws/`, in any combination of uppercase and lowercase letters, are reserved. Alias names are case sensitive.
+The alias name must be unique among resources of the same type in your account and Region. If another resource of the same type already has the alias, the request fails with a `ValidationException`. An invalid or reserved alias name also causes a `ValidationException`.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `(?!.*//)([A-Za-z]([A-Za-z0-9_/-]*[A-Za-z0-9_-])?)?`
+Required: No
 
  ** [crlDpRevocationEnabled](#API_UpdateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-UpdateTrustAnchor-request-crlDpRevocationEnabled"></a>
 Specifies whether the trust anchor checks certificate revocation status against CRL distribution points.
@@ -68,6 +86,8 @@ Content-type: application/json
 
 {
    "trustAnchor": {
+      "aliasArn": "string",
+      "aliasName": "string",
       "createdAt": "string",
       "crlDpRevocationEnabled": boolean,
       "enabled": boolean,
@@ -81,6 +101,7 @@ Content-type: application/json
             "threshold": number
          }
       ],
+      "previousAliasName": "string",
       "source": {
          "sourceData": { ... },
          "sourceType": "string"

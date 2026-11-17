@@ -83,6 +83,11 @@ The name of the connector.
 ## Examples
 <a name="aws-resource-config-connector--examples"></a>
 
+**Topics**
++ [Azure Connector](#aws-resource-config-connector--examples--Azure_Connector)
++ [Google Cloud Organization Connector](#aws-resource-config-connector--examples--Google_Cloud_Organization_Connector)
++ [Google Cloud Project Connector](#aws-resource-config-connector--examples--Google_Cloud_Project_Connector)
+
 ### Azure Connector
 <a name="aws-resource-config-connector--examples--Azure_Connector"></a>
 
@@ -124,4 +129,83 @@ Properties:
   Tags:
     - Key: Environment
       Value: Production
+```
+
+### Google Cloud Organization Connector
+<a name="aws-resource-config-connector--examples--Google_Cloud_Organization_Connector"></a>
+
+The following example creates a connector to a Google Cloud organization using a service account and a workload identity pool provider. Because the example specifies `GcpOrganizationId`, the connector covers all projects in the organization, not only the project that the service account belongs to. That project must be in the specified organization.
+
+#### JSON
+<a name="aws-resource-config-connector--examples--Google_Cloud_Organization_Connector--JSON"></a>
+
+```
+{
+    "Type": "AWS::Config::Connector",
+    "Properties": {
+        "ConnectorConfiguration": {
+            "Gcp": {
+                "GcpOrganizationId": "111122223333",
+                "ServiceAccountEmail": "aws-config@your-project-id.iam.gserviceaccount.com",
+                "WorkloadIdentityPoolProvider": "projects/123456789012/locations/global/workloadIdentityPools/aws-config-pool/providers/aws-config-provider"
+            }
+        },
+        "Tags": [
+            {
+                "Key": "Environment",
+                "Value": "Production"
+            }
+        ]
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-config-connector--examples--Google_Cloud_Organization_Connector--YAML"></a>
+
+```
+Type: AWS::Config::Connector
+Properties:
+  ConnectorConfiguration:
+    Gcp:
+      GcpOrganizationId: "111122223333"
+      ServiceAccountEmail: aws-config@your-project-id.iam.gserviceaccount.com
+      WorkloadIdentityPoolProvider: projects/123456789012/locations/global/workloadIdentityPools/aws-config-pool/providers/aws-config-provider
+  Tags:
+    - Key: Environment
+      Value: Production
+```
+
+### Google Cloud Project Connector
+<a name="aws-resource-config-connector--examples--Google_Cloud_Project_Connector"></a>
+
+The following example creates a connector to a single Google Cloud project that isn't in an organization. Because the example omits `GcpOrganizationId`, the connector covers only the project that the service account belongs to.
+
+#### JSON
+<a name="aws-resource-config-connector--examples--Google_Cloud_Project_Connector--JSON"></a>
+
+```
+{
+    "Type": "AWS::Config::Connector",
+    "Properties": {
+        "ConnectorConfiguration": {
+            "Gcp": {
+                "ServiceAccountEmail": "aws-config@your-project-id.iam.gserviceaccount.com",
+                "WorkloadIdentityPoolProvider": "projects/123456789012/locations/global/workloadIdentityPools/aws-config-pool/providers/aws-config-provider"
+            }
+        }
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-config-connector--examples--Google_Cloud_Project_Connector--YAML"></a>
+
+```
+Type: AWS::Config::Connector
+Properties:
+  ConnectorConfiguration:
+    Gcp:
+      ServiceAccountEmail: aws-config@your-project-id.iam.gserviceaccount.com
+      WorkloadIdentityPoolProvider: projects/123456789012/locations/global/workloadIdentityPools/aws-config-pool/providers/aws-config-provider
 ```

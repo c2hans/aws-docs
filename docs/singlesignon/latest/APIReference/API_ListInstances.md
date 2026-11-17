@@ -122,6 +122,173 @@ The request failed because it contains a syntax error.
 The reason for the validation exception.
 HTTP Status Code: 400
 
+## Examples
+<a name="API_ListInstances_Examples"></a>
+
+### List instances in the primary Region
+<a name="API_ListInstances_Example_1"></a>
+
+This example lists the instances in us-east-1, the primary Region of the instance.
+
+#### Sample Request
+<a name="API_ListInstances_Example_1_Request"></a>
+
+```
+{
+    "RegionScope": "CURRENT_REGION"
+}
+```
+
+#### Sample Response
+<a name="API_ListInstances_Example_1_Response"></a>
+
+```
+{
+    "Instances": [
+        {
+            "CreatedDate": 1736373600,
+            "IdentityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",
+            "IdentityStoreId": "d-1234567890",
+            "InstanceArn": "arn:aws:sso:::instance/ssoins-1234567890abcdef",
+            "OwnerAccountId": "111122223333",
+            "PrimaryRegion": "us-east-1",
+            "Regions": [
+                {
+                    "AddedDate": 1736373600,
+                    "IsPrimaryRegion": true,
+                    "RegionName": "us-east-1",
+                    "Status": "ACTIVE"
+                },
+                {
+                    "AddedDate": 1739052000,
+                    "IsPrimaryRegion": false,
+                    "RegionName": "us-west-2",
+                    "Status": "ACTIVE"
+                }
+            ],
+            "Status": "ACTIVE"
+        }
+    ]
+}
+```
+
+### List instances in a replicated Region
+<a name="API_ListInstances_Example_2"></a>
+
+This example lists the instances in us-west-2, a Region that the instance is replicated to. The response is the same as in the primary Region.
+
+#### Sample Request
+<a name="API_ListInstances_Example_2_Request"></a>
+
+```
+{
+    "RegionScope": "CURRENT_REGION"
+}
+```
+
+#### Sample Response
+<a name="API_ListInstances_Example_2_Response"></a>
+
+```
+{
+    "Instances": [
+        {
+            "CreatedDate": 1736373600,
+            "IdentityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",
+            "IdentityStoreId": "d-1234567890",
+            "InstanceArn": "arn:aws:sso:::instance/ssoins-1234567890abcdef",
+            "OwnerAccountId": "111122223333",
+            "PrimaryRegion": "us-east-1",
+            "Regions": [
+                {
+                    "AddedDate": 1736373600,
+                    "IsPrimaryRegion": true,
+                    "RegionName": "us-east-1",
+                    "Status": "ACTIVE"
+                },
+                {
+                    "AddedDate": 1739052000,
+                    "IsPrimaryRegion": false,
+                    "RegionName": "us-west-2",
+                    "Status": "ACTIVE"
+                }
+            ],
+            "Status": "ACTIVE"
+        }
+    ]
+}
+```
+
+### List instances in a Region with no instances
+<a name="API_ListInstances_Example_3"></a>
+
+This example lists the instances in eu-west-1, where the instance isn't present, and returns an empty list.
+
+#### Sample Request
+<a name="API_ListInstances_Example_3_Request"></a>
+
+```
+{
+    "RegionScope": "CURRENT_REGION"
+}
+```
+
+#### Sample Response
+<a name="API_ListInstances_Example_3_Response"></a>
+
+```
+{
+    "Instances": []
+}
+```
+
+### List instances in all Regions
+<a name="API_ListInstances_Example_4"></a>
+
+This example lists the instances in all Regions from eu-west-1, where the instance isn't present. The response is the same in every Region that is enabled for your account.
+
+#### Sample Request
+<a name="API_ListInstances_Example_4_Request"></a>
+
+```
+{
+    "RegionScope": "ALL_REGIONS"
+}
+```
+
+#### Sample Response
+<a name="API_ListInstances_Example_4_Response"></a>
+
+```
+{
+    "Instances": [
+        {
+            "CreatedDate": 1736373600,
+            "IdentityStoreArn": "arn:aws:identitystore::111122223333:identitystore/d-1234567890",
+            "IdentityStoreId": "d-1234567890",
+            "InstanceArn": "arn:aws:sso:::instance/ssoins-1234567890abcdef",
+            "OwnerAccountId": "111122223333",
+            "PrimaryRegion": "us-east-1",
+            "Regions": [
+                {
+                    "AddedDate": 1736373600,
+                    "IsPrimaryRegion": true,
+                    "RegionName": "us-east-1",
+                    "Status": "ACTIVE"
+                },
+                {
+                    "AddedDate": 1739052000,
+                    "IsPrimaryRegion": false,
+                    "RegionName": "us-west-2",
+                    "Status": "ACTIVE"
+                }
+            ],
+            "Status": "ACTIVE"
+        }
+    ]
+}
+```
+
 ## See Also
 <a name="API_ListInstances_SeeAlso"></a>
 

@@ -10,12 +10,12 @@ The minimum and maximum baseline bandwidth to Amazon EBS, in Mbps. For more info
 ## Contents
 <a name="API_BaselineEbsBandwidthMbpsRequest_Contents"></a>
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum baseline bandwidth, in Mbps. To specify no maximum limit, omit this parameter.
 Type: Integer
 Required: No
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum baseline bandwidth, in Mbps. To specify no minimum limit, omit this parameter.
 Type: Integer
 Required: No

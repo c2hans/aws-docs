@@ -207,42 +207,52 @@ You can find the ECS cluster and service names in the PrebidServerStack CloudFor
 
 The solution supports three paths for providing the Prebid Server container image.
 
-### Option 1: Use the pre-built container image (tar.gz)
+### Option 1: Use a saved container image (tar.gz)
 <a name="use-pre-built-image"></a>
 
-The GitHub repository includes a pre-built container image at `deployment/container/prebid-server.tar.gz`, tracked via Git LFS.
+The `prebid-server-deployment-on-aws.zip` asset on the [prebid-server-deployment-on-aws releases page](https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws/releases) on the GitHub website contains the solution source code only. It doesn’t include a pre-built container image. To avoid rebuilding the image on every deployment, build the image once, save it as a `tar.gz` file, and pass the file to `deploy.sh`:
 
 ```
-# Ensure Git LFS is installed (required to download the binary)
-git lfs install
-git lfs pull
+# Build the image once with Docker (the image tag defaults to prebid-server)
+deployment/ecr/build-image.sh --base alpine
 
-# Deploy using the pre-built image
+# Save the image as a gzip-compressed tar file
+docker save prebid-server | gzip > prebid-server.tar.gz
+
+# Deploy using the saved image
 ./deploy.sh \
-    --container-image deployment/container/prebid-server.tar.gz \
+    --container-image prebid-server.tar.gz \
     --profile my-profile \
     --region us-east-1
 ```
 
-The deploy script automatically loads the tar.gz into the local container runtime, pushes it to ECR, and passes the ECR URI to the CloudFormation stack.
+The deploy script loads the tar.gz into the local container runtime (Docker, or the runtime set in `CDK_DOCKER`), creates the `prebid-server-on-aws` Amazon ECR repository if it doesn’t exist, pushes the image, and deploys the stack with the `ContainerImage` parameter set to the pushed image URI.
 
 **Note**
-Without Git LFS installed, the tar.gz file is a small pointer file. Run `git lfs pull` to download the actual binary.
+An image built with `build-image.sh` doesn’t include the AMT bidder adapter that the bidder simulator uses. If you deploy with `--deploy-bidding-simulator`, use Option 2 so that the deployment builds the image with the adapter included.
 
 ### Option 2: Build from source (default)
 <a name="build-from-source"></a>
 
-When no `--container-image` option is provided, the deploy script builds the container image from source using the Dockerfile at `deployment/ecr/prebid-server/Dockerfile`. This is the default behavior.
+When no `--container-image` option is provided, the AWS CDK builds the container image from source during deployment. This is the default behavior. The Dockerfile is selected with the `--base-image` flag:
++  `alpine` (default for `deploy.sh`) — `deployment/ecr/prebid-server/Dockerfile.alpine`, a size-optimized Alpine image with a custom Java runtime built with `jlink`.
++  `al2023` — `deployment/ecr/prebid-server/Dockerfile.al2023`, an Amazon Linux 2023 image.
 
 ```
-# Build from source (default — no --container-image flag)
+# Build from source on the default Alpine base (no --container-image flag)
 ./deploy.sh \
     --deploy-bidding-simulator \
     --profile my-profile \
     --region us-east-1
+
+# Build from source on the Amazon Linux 2023 base
+./deploy.sh \
+    --base-image al2023 \
+    --profile my-profile \
+    --region us-east-1
 ```
 
-This path requires a running container runtime (Docker or Finch) and builds the image during CDK deployment.
+This path requires a running container runtime (Docker or Finch). The Java and Maven build runs inside the container build, so no local JDK or Maven install is required.
 
 ### Option 3: Use an existing ECR image URI
 <a name="use-existing-ecr-uri"></a>
@@ -251,12 +261,12 @@ If you maintain your own container registry or have a custom Prebid Server image
 
 ```
 ./deploy.sh \
-    --container-image 123456789012.dkr.ecr.us-east-1.amazonaws.com/prebid-server:v1.2.0 \
+    --container-image 123456789012.dkr.ecr.us-east-1.amazonaws.com/prebid-server:latest \
     --profile my-profile \
     --region us-east-1
 ```
 
-The deploy script skips the container build step and passes the URI directly to the CloudFormation `ContainerImage` parameter.
+The deploy script skips the container build step and sets the CloudFormation `ContainerImage` parameter to the URI. For details, see [Container image configuration](configure-the-solution.md#container-image-parameter).
 
 ## Testing RTB Fabric connectivity
 <a name="testing-rtb-fabric-connectivity"></a>

@@ -18,6 +18,12 @@ Type: String
 Valid Values: `monitor | enforce`
 Required: Yes
 
+ ** ApiGatewayV2Exclusion **
+Specifies whether to exclude Amazon API Gateway V2 traffic from encryption enforcement.
+Type: String
+Valid Values: `enable | disable`
+Required: No
+
  ** EgressOnlyInternetGatewayExclusion **
 Specifies whether to exclude egress-only internet gateway traffic from encryption enforcement.
 Type: String
@@ -26,6 +32,12 @@ Required: No
 
  ** ElasticFileSystemExclusion **
 Specifies whether to exclude Elastic File System traffic from encryption enforcement.
+Type: String
+Valid Values: `enable | disable`
+Required: No
+
+ ** GlobalAcceleratorExclusion **
+Specifies whether to exclude AWS Global Accelerator traffic from encryption enforcement.
 Type: String
 Valid Values: `enable | disable`
 Required: No

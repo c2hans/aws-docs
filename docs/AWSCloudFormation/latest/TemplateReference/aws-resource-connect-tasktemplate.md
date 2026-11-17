@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ClientToken](#cfn-connect-tasktemplate-clienttoken)" : {{String}},
       "[Constraints](#cfn-connect-tasktemplate-constraints)" : {{Constraints}},
       "[ContactFlowArn](#cfn-connect-tasktemplate-contactflowarn)" : {{String}},
+      "[ContactHooks](#cfn-connect-tasktemplate-contacthooks)" : {{ContactHooks}},
       "[Defaults](#cfn-connect-tasktemplate-defaults)" : {{[ DefaultFieldValue, ... ]}},
       "[Description](#cfn-connect-tasktemplate-description)" : {{String}},
       "[Fields](#cfn-connect-tasktemplate-fields)" : {{[ Field, ... ]}},
@@ -46,6 +47,8 @@ Properties:
   [Constraints](#cfn-connect-tasktemplate-constraints): {{
     Constraints}}
   [ContactFlowArn](#cfn-connect-tasktemplate-contactflowarn): {{String}}
+  [ContactHooks](#cfn-connect-tasktemplate-contacthooks): {{
+    ContactHooks}}
   [Defaults](#cfn-connect-tasktemplate-defaults): {{
     - DefaultFieldValue}}
   [Description](#cfn-connect-tasktemplate-description): {{String}}
@@ -81,6 +84,12 @@ The Amazon Resource Name (ARN) of the flow that runs by default when a task is c
 *Required*: No
 *Type*: String
 *Pattern*: `^$|arn:aws[-a-z0-9]*:connect:[-a-z0-9]*:[0-9]{12}:instance/[-a-zA-Z0-9]*/contact-flow/[-a-zA-Z0-9]*(:[a-zA-Z0-9-]+)?$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ContactHooks`  <a name="cfn-connect-tasktemplate-contacthooks"></a>
+Property description not available.
+*Required*: No
+*Type*: [ContactHooks](aws-properties-connect-tasktemplate-contacthooks.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Defaults`  <a name="cfn-connect-tasktemplate-defaults"></a>

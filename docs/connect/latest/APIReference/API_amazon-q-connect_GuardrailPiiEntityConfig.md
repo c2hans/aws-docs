@@ -111,7 +111,7 @@ The following PIIs are used to block or mask sensitive information:
 
     A Canadian Social Insurance Number (SIN) is a nine-digit unique identifier, required for individuals to access government programs and benefits.
 
-    The SIN is formatted as three groups of three digits, such as * 123-456-789*. A SIN can be validated through a simple check-digit process called the [Luhn algorithm](https://www.wikipedia.org/wiki/Luhn_algorithm) .
+    The SIN is formatted as three groups of three digits, such as * 123-456-789*. A SIN can be validated through a simple check-digit process called the Luhn algorithm. For more information, see [Luhn algorithm](https://www.wikipedia.org/wiki/Luhn_algorithm) on the Wikipedia website.
 +  **UK Specific**
   +  **UK\_NATIONAL\_HEALTH\_SERVICE\_NUMBER**
 

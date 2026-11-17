@@ -16,6 +16,8 @@ The following data types are supported:
 +  [DeadLetterConfig](API_DeadLetterConfig.md)
 +  [EcsParameters](API_EcsParameters.md)
 +  [EventBridgeParameters](API_EventBridgeParameters.md)
++  [EventBridgePutEventsV2Parameters](API_EventBridgePutEventsV2Parameters.md)
++  [EventBridgePutRawEventsParameters](API_EventBridgePutRawEventsParameters.md)
 +  [FlexibleTimeWindow](API_FlexibleTimeWindow.md)
 +  [KinesisParameters](API_KinesisParameters.md)
 +  [NetworkConfiguration](API_NetworkConfiguration.md)

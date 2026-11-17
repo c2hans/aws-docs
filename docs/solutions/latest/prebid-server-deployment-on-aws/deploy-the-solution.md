@@ -16,6 +16,13 @@ To opt out of this feature, modify the CDK code before deploying. For more infor
 
 You need an AWS account with permissions to deploy CDK stack and all the resources defined within the stack for this solution. The `AdministratorAccess` IAM policy, which provides full access to AWS services and resources is sufficient to deploy this solution.
 
+You also need the following tools on the machine you deploy from. For details, see [Build toolchain](prerequisites.md#build-toolchain).
++ AWS CLI
++ Node.js 20.x LTS or later (18.x minimum) and npm. The AWS CDK CLI (version 2.236.0 or later) is installed as a project dependency by `npm ci` and runs with `npx`.
++ Docker or Finch, running. A local JDK or Maven install is not required.
++ Python 3 with the `venv` module, only if you run the load tests or use the RTB Fabric connectivity path.
++ An AWS CDK bootstrap stack in the target account and Region.
+
 ## Deployment process overview
 <a name="deployment-process-overview"></a>
 
@@ -49,8 +56,11 @@ For a streamlined deployment experience on Linux/macOS, use the provided `deploy
 # Deploy with RTB Fabric gateway for future partner onboarding (no simulator)
 ./deploy.sh --enable-rtb-requester-gateway --profile <your-aws-cli-profile> --region <your-region>
 
-# Deploy with a pre-built container image (tar.gz)
-./deploy.sh --container-image deployment/container/prebid-server.tar.gz --profile <your-aws-cli-profile> --region <your-region>
+# Deploy with the Amazon Linux 2023 container base instead of the default Alpine base
+./deploy.sh --base-image al2023 --profile <your-aws-cli-profile> --region <your-region>
+
+# Deploy with a container image that you built and saved earlier (docker save output, gzip-compressed)
+./deploy.sh --container-image <path-to-image>.tar.gz --profile <your-aws-cli-profile> --region <your-region>
 
 # Deploy with an existing ECR image URI
 ./deploy.sh --container-image 123456789012.dkr.ecr.us-east-1.amazonaws.com/prebid-server:latest --profile <your-aws-cli-profile> --region <your-region>
@@ -66,8 +76,9 @@ The `deploy.sh` script automatically:
 + Performs a two-step deployment when `--deploy-bidding-simulator` is used (BidderSimulatorStack first, then PrebidServerStack with outputs as parameters)
 + Copies AMT bidder files to the Docker build context for the simulator
 + Handles container image loading and ECR push when `--container-image` points to a tar.gz file
-+ Creates the RTB Fabric Link via `simulator-fabric-link.sh` after deployment (when using RTB Fabric connectivity)
-+ Sets up the Python virtual environment and installs dependencies
++ Builds the demo website when the simulator is deployed
++ Installs the Node.js dependencies (`npm ci`), compiles the TypeScript CDK (`npx tsc`), and deploys with `npx cdk deploy`
++ Creates the RTB Fabric Link via `simulator-fabric-link.sh` after deployment (when using RTB Fabric connectivity). The helper creates its own Python virtual environment for its dependencies.
 
 #### deploy.sh flags
 <a name="deploy-sh-flags"></a>
@@ -77,11 +88,14 @@ The `deploy.sh` script automatically:
 |  `--deploy-bidding-simulator`  |  `false`  | Deploy the optional BidderSimulatorStack for quick start testing. Triggers the two-step deployment flow. |
 |  `--simulator-connectivity MODE`  |  `rtb-fabric`  | Connectivity model between Prebid Server and the bidder simulator. Values: `rtb-fabric` (default, uses AWS RTB Fabric) or `vpc-peering` (fallback for regions without RTB Fabric). |
 |  `--enable-rtb-requester-gateway`  |  `false`  | Provision an RTB Fabric Requester Gateway in the PrebidServerStack for partner onboarding. Use this when you want the gateway without deploying the simulator. |
-|  `--container-image PATH_OR_URI`  |  *(build from source)*  | Container image source. Accepts a local tar.gz file path (the script loads, tags, and pushes to ECR) or an existing ECR image URI. When omitted, CDK builds the container from source during deployment. |
+|  `--container-image PATH_OR_URI`  |  *(build from source)*  | Container image source. Accepts a local tar.gz file path (the script loads, tags, and pushes to ECR) or an existing ECR image URI. The script sets the `ContainerImage` parameter to the resulting URI. When omitted, CDK builds the container image locally with Docker or Finch during deployment. |
+|  `--base-image IMAGE`  |  `alpine`  | Base image variant for the Prebid Server container when it is built from source. Values: `alpine` or `al2023`. Ignored when `--container-image` is set. |
 |  `--enable-log-analytics`  |  `false`  | Enable the custom analytics adapter for detailed auction-level data collection through the ETL pipeline. |
 |  `--profile PROFILE`  |  *(none)*  | AWS CLI profile to use for all AWS operations. |
 |  `--region REGION`  |  *(none)*  | AWS region to deploy to. |
 |  `--synth`  |  *(deploy)*  | Run `cdk synth` instead of `cdk deploy`. Generates CloudFormation templates without deploying. |
+|  `--skip-copy`  |  `false`  | Skip copying the AMT bidder files into the container build context when the simulator is deployed. Intended for testing. |
+|  `-h`, `--help`  |  *(none)*  | Display the usage message. |
 
 #### Two-step deployment flow
 <a name="two-step-deployment"></a>
@@ -120,26 +134,39 @@ You can also manage the Fabric Link manually:
 
 For customization or manual deployment:
 
+If you deploy with the bidder simulator, first copy the AMT bidder files into the container build context from the repository root:
+
+```
+cp -r source/loadtest/amt-bidder deployment/ecr/prebid-server/
+```
+
+Then install the dependencies, compile the TypeScript CDK, and deploy. The AWS CDK CLI is a project dependency, so run it with `npx`:
+
 ```
 cd source/infrastructure
 
-# Bootstrap CDK (required once)
-cdk bootstrap --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess
+# Install dependencies and compile the TypeScript CDK
+npm ci && npm run build
+
+# Bootstrap CDK (required once per account and Region)
+npx cdk bootstrap --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess
 
 # Deploy Prebid Server only
-cdk deploy prebid-server-deployment-on-aws --profile <your-aws-cli-profile> --region <your-region>
+npx cdk deploy prebid-server-deployment-on-aws --context baseImage=alpine --profile <your-aws-cli-profile> --region <your-region>
 
 # Deploy with bidder simulator (two-step: deploy BSS first, then PSS with parameters)
-cdk deploy BiddingServerSimulator --context deployBiddingSimulator=true --profile <your-aws-cli-profile> --region <your-region>
-cdk deploy prebid-server-deployment-on-aws --context deployBiddingSimulator=true \
+npx cdk deploy BiddingServerSimulator --context deployBiddingSimulator=true --profile <your-aws-cli-profile> --region <your-region>
+npx cdk deploy prebid-server-deployment-on-aws --context deployBiddingSimulator=true \
     --parameters prebid-server-deployment-on-aws:EnableRtbRequesterGateway=true \
     --profile <your-aws-cli-profile> --region <your-region>
 
 # Deploy with analytics enabled
-cdk deploy prebid-server-deployment-on-aws --context deployBiddingSimulator=true \
+npx cdk deploy prebid-server-deployment-on-aws --context deployBiddingSimulator=true \
     --parameters prebid-server-deployment-on-aws:EnableLogAnalytics=true \
     --profile <your-aws-cli-profile> --region <your-region>
 ```
+
+The `baseImage` context value selects the container base (`alpine` or `al2023`). When you run CDK directly without `baseImage`, the container is built on `al2023`. `deploy.sh` passes `alpine` by default.
 
 **Note**
 When deploying manually with CDK, you must run `deployment/simulator-fabric-link.sh create` separately after deployment to establish the RTB Fabric Link.
@@ -172,7 +199,7 @@ Provisions an RTB Fabric Requester Gateway in the PrebidServerStack without depl
  **Container Image (`--container-image`)**
 
 Specifies a custom container image source instead of building from source during deployment:
-+  **tar.gz file path** — The script loads the image into the local container runtime, creates an ECR repository, tags, and pushes the image. Example: `--container-image deployment/container/prebid-server.tar.gz`
++  **tar.gz file path** — The script loads the image into the local container runtime, creates an ECR repository, tags, and pushes the image. Example: `--container-image prebid-server.tar.gz`
 +  **ECR URI** — Uses an existing image directly. Example: `--container-image 123456789012.dkr.ecr.us-east-1.amazonaws.com/prebid-server:latest`
 
  **Analytics Adapter (`--enable-log-analytics`)**

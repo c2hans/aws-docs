@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[CertificateConfigurations](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-certificateconfigurations)" : {{[ CertificateConfiguration, ... ]}},
   "[ClientAuthenticationMethod](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientauthenticationmethod)" : {{String}},
   "[ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientid)" : {{String}},
   "[OauthDiscovery](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-oauthdiscovery)" : {{Oauth2Discovery}},
@@ -33,6 +34,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-syntax.yaml"></a>
 
 ```
+  [CertificateConfigurations](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-certificateconfigurations): {{
+    - CertificateConfiguration}}
   [ClientAuthenticationMethod](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientauthenticationmethod): {{String}}
   [ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientid): {{String}}
   [OauthDiscovery](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-oauthdiscovery): {{
@@ -49,6 +52,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-properties"></a>
+
+`CertificateConfigurations`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-certificateconfigurations"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [CertificateConfiguration](aws-properties-bedrockagentcore-oauth2credentialprovider-certificateconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ClientAuthenticationMethod`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientauthenticationmethod"></a>
 Property description not available.

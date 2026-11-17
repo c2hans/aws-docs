@@ -446,3 +446,74 @@ Make sure that you can unzip the test package without errors. In the following e
    AWS Device Farm doesn't support lines in the {{requirements.txt}} file that don't directly correspond to dependency packages, such as lines that specify global options for the `pip install` command. See [Requirements file format](https://pip.pypa.io/en/stable/reference/requirements-file-format/#global-options) for a list of global options.
 
    For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+
+## Test insights
+<a name="troubleshooting-appium-python-insights"></a>
+
+When test insights are enabled, Device Farm generates a summarized report for your run and each job under it. If the service cannot generate the report, the insights report status is `SKIPPED` or `ERRORED`, and the report message explains why. The following messages can occur when generating insights for Appium Python mobile app and web app tests.
+
+### The job did not run to completion
+<a name="ti-appium-python-job-not-complete"></a>
+
+`Unable to generate test insights because the job was {{status}}.`
+
+The job ended in a non-successful state (where {{status}} is `STOPPED`, `ERRORED`, or `SKIPPED`), so there was no result to summarize. A run that ends in a failed state still receives insights.
+
+To resolve this issue, investigate why the job did not run to completion. In many cases, the `message` field of the job itself might explain why the job didn't complete.
+
+### No JUnit XML test results file was found
+<a name="ti-appium-python-no-report"></a>
+
+`Unable to generate test insights. No JUnit XML test results file was found in the output artifacts. Run pytest with --junit-xml and write the report under $DEVICEFARM_LOG_DIR, for example --junit-xml $DEVICEFARM_LOG_DIR/junitreport.xml. Any filename works.`
+
+Device Farm searched your test output artifacts and found no pytest report.
+
+To resolve this issue, check the following:
++ Your test spec runs pytest with the `--junit-xml` option.
++ The report path is under `$DEVICEFARM_LOG_DIR`, and the file name ends in `.xml`.
++ The test session ran to the end. pytest writes the report when the session finishes, so a session that stops early, for example at the job timeout, writes no report. A `conftest.py` that fails to import stops the session before any test runs.
+
+### The test report could not be processed
+<a name="ti-appium-python-report-error"></a>
+
+`Test insights could not be generated due to an error while processing the pytest JUnit XML report. Ensure the file is well-formed XML in the standard JUnit report format.`
+
+Device Farm found one or more reports but could not read any of them. If some reports can be read, Device Farm uses those and skips the rest, so this message means that none could be read. The usual cause is a report that was truncated or rewritten after pytest wrote it.
+
+To resolve this issue, verify that your test spec does not move, rewrite, or compress the report after pytest writes it.
+
+### The results contained no test cases
+<a name="ti-appium-python-no-test-cases"></a>
+
+`Test insights could not be generated. The pytest JUnit XML was parsed successfully but contained no test cases. Verify that your test suite includes at least one test case and that the pytest JUnit XML is stored correctly in the output artifacts directory.`
+
+The report parsed successfully but contained zero test cases.
+
+To resolve this issue, verify that pytest collects at least one test from the paths in your test spec. A `-k` or `-m` expression that matches no test produces a report with no test cases.
+
+### The test report exceeds the maximum supported size
+<a name="ti-appium-python-report-too-large"></a>
+
+`Unable to generate test insights: "pytest JUnit XML" exceeds the maximum supported size of 250MB.`
+
+The only report that Device Farm found in your test output artifacts is larger than 250 MB, so it could not be read. If the archive holds another readable report, Device Farm uses that report and ignores the oversized one, and this message does not appear.
+
+To resolve this issue, reduce the size of the report. Captured output and long tracebacks are the usual causes. Remove the `junit_logging` setting if you set it, and consider the `--tb=short` option.
+
+### The test output archive is not a valid zip file
+<a name="ti-appium-python-invalid-archive"></a>
+
+`Unable to generate test insights: the test output archive could not be processed because it is not a valid zip file.`
+
+The archive (zip file) that contains your test output artifacts could not be opened.
+
+To resolve this issue, retry the run. If the error persists, contact AWS Support.
+
+### A service error occurred
+<a name="ti-appium-python-service-error"></a>
+
+`Test insights could not be generated due to a service error.`
+
+Device Farm could not collect the artifacts it needs to summarize the job. This message also appears when the archive (zip file) that contains your test output artifacts is larger than 1 GB.
+
+To resolve this issue, reduce what your tests write to `$DEVICEFARM_LOG_DIR`, and retry the run. If the error persists, contact AWS Support.

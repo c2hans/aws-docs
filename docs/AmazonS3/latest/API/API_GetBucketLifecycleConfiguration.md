@@ -29,7 +29,6 @@ HTTP Host header syntax
 + Error code: `NoSuchLifecycleConfiguration`
   + Description: The lifecycle configuration does not exist.
   + HTTP Status Code: 404 Not Found
-  + SOAP Fault Code Prefix: Client
 
 The following operations are related to `GetBucketLifecycleConfiguration`:
 +  [GetBucketLifecycle](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetBucketLifecycle.html)

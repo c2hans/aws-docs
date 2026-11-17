@@ -53,8 +53,11 @@ Required: No
                "RevokedStatusAction": "string",
                "UnknownStatusAction": "string"
             },
+            "DefaultDecryptionBehavior": "string",
             "Scopes": [
                {
+                  "DecryptionAction": "string",
+                  "DeploymentMode": "string",
                   "DestinationPorts": [
                      {
                         "FromPort": number,
@@ -66,6 +69,9 @@ Required: No
                         "AddressDefinition": "string"
                      }
                   ],
+                  "DomainMatch": {
+                     "Domains": [ "string" ]
+                  },
                   "Protocols": [ number ],
                   "SourcePorts": [
                      {

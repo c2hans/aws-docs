@@ -12,9 +12,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 
 This pattern provides an automated approach for deploying and managing AWS Supply Chain data lakes using a multi-repository continuous integration and continuous deployment (CI/CD) pipeline. It demonstrates two deployment methods: automated deployment using GitHub Actions workflows, or manual deployment using Terraform directly. Both approaches use Terraform for infrastructure as code (IaC), with the automated method adding GitHub Actions and JFrog Artifactory for enhanced CI/CD capabilities.
 
-The solution leverages Supply Chain, AWS Lambda, and Amazon Simple Storage Service (Amazon S3) to establish the data lake infrastructure, while using either deployment method to automate configuration and resource creation. This automation eliminates manual configuration steps and ensures consistent deployments across environments. In addition, Supply Chain eliminates the need for deep expertise in extract, transform, and load (ETL) and can provide insights and analytics powered by Amazon Quick Sight.
+The solution uses Supply Chain, AWS Lambda, and Amazon Simple Storage Service (Amazon S3) to establish the data lake infrastructure, while using either deployment method to automate configuration and resource creation. This automation reduces manual configuration steps and helps promote consistent deployments across environments. In addition, Supply Chain reduces the need for deep expertise in extract, transform, and load (ETL) and can provide insights and analytics powered by AWS Quick Sight.
 
-By implementing this pattern, organizations can reduce deployment time, maintain infrastructure as code, and manage supply chain data lakes through a version-controlled, automated process. The multi-repository approach provides fine-grained access control and supports independent deployment of different components. Teams can choose the deployment method that best fits their existing tools and processes.
+By implementing this pattern, organizations can reduce deployment time, maintain infrastructure as code, and manage supply chain data lakes through a version-controlled, automated process. The multi-repository approach provides fine-grained access control and supports independent deployment of different components. Teams can choose the deployment method that fits their existing tools and processes.
 
 ## Prerequisites and limitations
 <a name="automate-the-deployment-of-aws-supply-chain-data-lakes-prereqs"></a>
@@ -30,8 +30,8 @@ Ensure the following are installed on your local machine:
 Ensure the following are in place before deployment:
 + An active AWS account.
 + A [virtual private cloud (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html) with two [private subnets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html) in your AWS account in the AWS Region of your choice.
-+ Sufficient permissions for the AWS Identity and Access Management (IAM) role used for deployment to the following services:
-  + Supply Chain – Full Access preferred for deploying its components like datasets and integration flows, along with accessing it from the AWS Management Console.
++ Permissions for the AWS Identity and Access Management (IAM) role that you use for deployment to access the following services:
+  + Supply Chain – Full access is recommended for deploying its components, such as datasets and integration flows, and for accessing it from the AWS Management Console.
   + Amazon CloudWatch Logs – For creating and managing CloudWatch log groups.
   + Amazon Elastic Compute Cloud (Amazon EC2) – For Amazon EC2 security groups and Amazon Virtual Private Cloud (Amazon VPC) endpoints.
   + Amazon EventBridge – For use by Supply Chain.
@@ -50,13 +50,13 @@ If you prefer to do a manual deployment, do the following:
 + [Assume the role](https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-role.html) in your local terminal.
 
 If you prefer to use GitHub Actions workflows for deployment, set up the following:
-+ A [JFrog Artifactory account](https://jfrog.com/artifactory/?utm_source=google&utm_medium=cpc_search&utm_campaign=SearchDSKBrandAPACIN202506&utm_term=jfrog%20cloud&gads_network=g&utm_content=u-bin&gads_campaign_id=22674833884&gads_adgroup_id=184501797241&gads_extension_id=233003714635&gads_target_id=aud-312135645780:kwd-1598615735032&gads_matchtype=b&gad_source=1&gad_campaignid=22674833884&gbraid=0AAAAADqV85U5B37iapTR9IIFHBvydF5AQ&gclid=CjwKCAjwiY_GBhBEEiwAFaghvqdNV-odNLZXPHjT7NAwf8lA-QuMtg666hgvDW1oCJ4nn7wvf869_xoCW4IQAvD_BwE) to get the host name, login username, and login access token.
++ A [JFrog Artifactory account](https://jfrog.com/artifactory/) to get the host name, login username, and login access token.
 + A [JFrog project key and repository](https://docs.jfrog.com/projects/docs/create-a-project) for storing artifacts.
 
 **Limitations**
 + The Supply Chain instance doesn’t support complex data transformation techniques.
-+ Supply Chain is most suited for supply chain domains because it provides built-in analytics and insights. For any other domain, Supply Chain can be used as a data store as part of the data lake architecture.
-+ Lambda functions used in this solution might need to be enhanced to handle API retries and memory management in a production scale deployment.
++ Supply Chain is designed for supply chain domains because it provides built-in analytics and insights. For any other domain, you can use Supply Chain as a data store as part of the data lake architecture.
++ You might need to enhance the Lambda functions in this solution to handle API retries and memory management in a production-scale deployment.
 + Some AWS services aren’t available in all AWS Regions. For Region availability, see [AWS Services by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). For specific endpoints, see [Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html), and choose the link for the service.
 
 ## Architecture
@@ -66,13 +66,13 @@ You can deploy this solution either by using automated GitHub Actions workflows 
 
 **Automated deployment with GitHub Actions**
 
-The following diagram shows the automated deployment option that uses GitHub Actions workflows. JFrog Artifactory is used for artifacts management. It stores resource information and outputs for use in a multi-repository deployment.
+The following diagram shows the automated deployment option that uses GitHub Actions workflows. This option uses JFrog Artifactory for artifact management. JFrog Artifactory stores resource information and outputs for use in a multi-repository deployment.
 
 ![Automated deployment option that uses GitHub Actions workflows and JFrog.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f0b78b0-a174-4703-b533-d66b3fb005e0/images/d454a5c5-ed51-421c-a87f-ff74cfcb30be.png)
 
 **Manual deployment with Terraform**
 
-The following diagram shows the manual deployment option through Terraform. Instead of JFrog Artifactory, Amazon S3 is used for artifacts management.
+The following diagram shows the manual deployment option through Terraform. Instead of JFrog Artifactory, this option uses Amazon S3 for artifact management.
 
 ![Manual deployment option using Terraform and Amazon S3.](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/2f0b78b0-a174-4703-b533-d66b3fb005e0/images/1130e728-44d5-4ae7-9586-1e497f54352a.png)
 
@@ -81,8 +81,8 @@ The following diagram shows the manual deployment option through Terraform. Inst
 The diagrams show the following workflow:
 
 1. Deploy Supply Chain service datasets infrastructure and databases using one of the following deployment methods:
-   + **Automated deployment** – Uses GitHub Actions workflows to orchestrate all deployment steps and uses JFrog Artifactory for artifacts management.
-   + **Manual deployment** – Executes Terraform commands directly for each deployment step and uses Amazon S3 for artifacts management.
+   + **Automated deployment** – Uses GitHub Actions workflows to orchestrate all deployment steps and uses JFrog Artifactory for artifact management.
+   + **Manual deployment** – Runs Terraform commands directly for each deployment step and uses Amazon S3 for artifact management.
 
 1. Create the supporting AWS resources that are required for Supply Chain service operation:
    + Amazon VPC endpoints and security groups
@@ -97,9 +97,9 @@ The diagrams show the following workflow:
 
 1. Configure source data ingestion to the Supply Chain staging Amazon S3 bucket.
 
-1. After data is added to the Supply Chain staging Amazon S3 bucket, the service automatically triggers the integration flow to the Supply Chain datasets.
+1. After data arrives in the Supply Chain staging Amazon S3 bucket, the service automatically triggers the integration flow to the Supply Chain datasets.
 
-1. Supply Chain integrates with Quick Sight Analytics to produce dashboards based on the ingested data.
+1. Supply Chain integrates with AWS Quick Sight to produce dashboards based on the ingested data.
 
 ## Tools
 <a name="automate-the-deployment-of-aws-supply-chain-data-lakes-tools"></a>
@@ -108,30 +108,28 @@ The diagrams show the following workflow:
 + [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) helps you centralize the logs from all your systems, applications, and AWS services so you can monitor them and archive them securely.
 + [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) is an open source tool that helps you interact with AWS services through commands in your command-line shell.
 + [Amazon Elastic Compute Cloud (Amazon EC2)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html) provides scalable computing capacity in the AWS Cloud. You can launch as many virtual servers as you need and quickly scale them up or down.
-+ [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) is a serverless event bus service that helps you connect your applications with real-time data from a variety of sources. For example, AWS Lambda functions, HTTP invocation endpoints using API destinations, or event buses in other AWS accounts.
++ [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) is a serverless event bus service that helps you connect your applications with real-time data from sources such as AWS Lambda functions, HTTP invocation endpoints that use API destinations, or event buses in other AWS accounts.
 + [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) helps you securely manage access to your AWS resources by controlling who is authenticated and authorized to use them.
 + [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) helps you centrally manage single sign-on (SSO) access to all of your AWS accounts and cloud applications.
 + [AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) helps you create and control cryptographic keys to help protect your data.
 + [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) is a compute service that helps you run code without needing to provision or manage servers. It runs your code only when needed and scales automatically, so you pay only for the compute time that you use.
 + [Amazon Q](https://docs.aws.amazon.com/aws-supply-chain/latest/userguide/qinasc.html) in Supply Chain is an interactive generative AI assistant that helps you operate your supply chain more efficiently by analyzing the data in your Supply Chain data lake.
-+ [Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) is a cloud-scale business intelligence (BI) service that helps you visualize, analyze, and report your data in a single dashboard.
++ [AWS Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) is a cloud-scale business intelligence (BI) service that helps you visualize, analyze, and report your data in a single dashboard.
 + [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud-based object storage service that helps you store, protect, and retrieve any amount of data.
-+ [Supply Chain](https://docs.aws.amazon.com/aws-supply-chain/latest/adminguide/getting-started.html) is a cloud-based managed application that can be used as a data store in organizations for supply chain domains, which can be used to generate insights and perform analysis on the ingested data.
++ [Supply Chain](https://docs.aws.amazon.com/aws-supply-chain/latest/adminguide/getting-started.html) is a cloud-based managed application that helps you store supply chain data, generate insights, and analyze the ingested data.
 + [Amazon Virtual Private Cloud (Amazon VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html) helps you launch AWS resources into a virtual network that you’ve defined. This virtual network resembles a traditional network that you’d operate in your own data center, with the benefits of using the scalable infrastructure of AWS. An [Amazon VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) is a virtual device that helps you privately connect your VPC to supported AWS services without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.
 
 **Other tools**
-+ [GitHub Actions](https://docs.github.com/en/actions) is a continuous integration and continuous delivery (CI/CD) platform that’s tightly integrated with GitHub repositories. You can use GitHub Actions to automate your build, test, and deployment pipeline.
++ [GitHub Actions](https://docs.github.com/en/actions) is a continuous integration and continuous delivery (CI/CD) service that’s tightly integrated with GitHub repositories. You can use GitHub Actions to automate your build, test, and deployment pipeline.
 + [HashiCorp Terraform](https://www.terraform.io/) is an infrastructure as code (IaC) tool that helps you create and manage cloud and on-premises resources.
 + [JFrog Artifactory](https://jfrog.com/help/r/jfrog-artifactory-documentation/jfrog-artifactory) provides end-to-end automation and management of binaries and artifacts through the application delivery process.
-+ [Python](https://www.python.org/) is a general-purpose computer programming language. This pattern uses Python for the AWS function’s code to interact with Supply Chain
-
-  .
++ [Python](https://www.python.org/) is a general-purpose computer programming language. This pattern uses Python for the AWS Lambda function code to interact with Supply Chain.
 
 ## Best practices
 <a name="automate-the-deployment-of-aws-supply-chain-data-lakes-best-practices"></a>
-+ Maintain the highest possible security when implementing this pattern. As stated in [Prerequisites](#automate-the-deployment-of-aws-supply-chain-data-lakes-prereqs), make sure a [virtual private cloud (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html) with two [private subnets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html) is in your AWS account in the AWS Region of your choice.
-+ Use AWS KMS [customer managed keys](https://docs.aws.amazon.com/kms/latest/cryptographic-details/basic-concepts.html) wherever possible, and grant limited access permissions to them.
-+ To set up IAM roles with the least access required for ingesting data for this pattern, see [Secure Data Ingestion from Source Systems to Amazon S3](https://github.com/aws-samples/sample-automate-aws-supply-chain-deployment/tree/main?tab=readme-ov-file#secure-data-ingestion-from-source-systems-to-amazon-s3) in this pattern’s repository.
++ Follow security best practices when you implement this pattern. As stated in [Prerequisites](#automate-the-deployment-of-aws-supply-chain-data-lakes-prereqs), make sure that a [virtual private cloud (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html) with two [private subnets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html) is in your AWS account in the AWS Region of your choice.
++ Use AWS KMS [customer managed keys](https://docs.aws.amazon.com/kms/latest/cryptographic-details/basic-concepts.html) to encrypt your data, and grant access to those keys by applying least-privilege permissions.
++ To set up IAM roles with least-privilege permissions for ingesting data in this pattern, see [Secure Data Ingestion from Source Systems to Amazon S3](https://github.com/aws-samples/sample-automate-aws-supply-chain-deployment/tree/main?tab=readme-ov-file#secure-data-ingestion-from-source-systems-to-amazon-s3) in this pattern’s repository.
 
 ## Epics
 <a name="automate-the-deployment-of-aws-supply-chain-data-lakes-epics"></a>
@@ -249,7 +247,7 @@ The diagrams show the following workflow:
 <a name="automate-the-deployment-of-aws-supply-chain-data-lakes-resources"></a>
 
 **AWS documentation**
-+ [Supply Chain](https://docs.aws.amazon.com/aws-supply-chain/latest/adminguide/getting-started.html)
++ [Supply Chain](https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/what-is-service.html)
 
 **Other resources**
 + [Understanding GitHub Actions workflows](https://docs.github.com/en/actions/get-started/understand-github-actions) (GitHub documentation)
@@ -257,17 +255,17 @@ The diagrams show the following workflow:
 ## Additional information
 <a name="automate-the-deployment-of-aws-supply-chain-data-lakes-additional"></a>
 
-This solution can be replicated for more datasets and can be queried for further analysis, through prebuilt dashboards provided with Supply Chain or custom integration with Amazon Quick Sight. In addition, you can use Amazon Q to ask questions related to your Supply Chain instance.
+You can replicate this solution for more datasets and query the data for further analysis through prebuilt dashboards provided with Supply Chain or custom integration with AWS Quick Sight. In addition, you can use Amazon Q to ask questions related to your Supply Chain instance.
 
 **Analyze data with Supply Chain Analytics**
 
 For instructions to set up Supply Chain Analytics, see [Setting Supply Chain Analytics](https://docs.aws.amazon.com/aws-supply-chain/latest/userguide/setting_analytics.html) in the Supply Chain documentation.
 
-This pattern demonstrated the creation of **Calendar** and **Outbound\_Order\_Line** datasets. To create an analysis that uses these datasets, use the following steps:
+This pattern demonstrates the creation of the **Calendar** and **Outbound\_Order\_Line** datasets. To create an analysis that uses these datasets, follow these steps:
 
 1. To analyze the datasets, use the **Seasonality Analysis** dashboard. To add the dashboard, follow the steps in [Prebuilt dashboards](https://docs.aws.amazon.com/aws-supply-chain/latest/userguide/prebuilt_dashboards.html) in the Supply Chain documentation.
 
-1. Choose the dashboard to see its analysis that is based on sample CSV files for Calendar data and Outbound Order Line data.
+1. Choose the dashboard to see an analysis based on the sample CSV files for Calendar data and Outbound Order Line data.
 
 The dashboard provides insights on demand over the years based on the ingested data for the datasets. You can further specify the ProductID, CustomerID, years, and other parameters for analysis.
 

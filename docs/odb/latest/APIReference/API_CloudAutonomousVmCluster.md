@@ -196,6 +196,11 @@ The URL for accessing the OCI console page for this Autonomous VM cluster.
 Type: String
 Required: No
 
+ ** ocpusLowestScaledValue **   <a name="odb-Type-CloudAutonomousVmCluster-ocpusLowestScaledValue"></a>
+The minimum value to which you can scale down the number of CPU cores.
+Type: Integer
+Required: No
+
  ** odbNetworkArn **   <a name="odb-Type-CloudAutonomousVmCluster-odbNetworkArn"></a>
 The Amazon Resource Name (ARN) of the ODB network associated with this Autonomous VM cluster.
 Type: String

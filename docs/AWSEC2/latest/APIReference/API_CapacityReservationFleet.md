@@ -15,6 +15,16 @@ The strategy used by the Capacity Reservation Fleet to determine which of the sp
 Type: String
 Required: No
 
+ ** availabilityZone **
+Reserved for internal use.
+Type: String
+Required: No
+
+ ** availabilityZoneId **
+Reserved for internal use.
+Type: String
+Required: No
+
  ** capacityReservationFleetArn **
 The ARN of the Capacity Reservation Fleet.
 Type: String
@@ -40,6 +50,11 @@ Indicates the type of instance launches that the Capacity Reservation Fleet acce
 Currently, Capacity Reservation Fleets support `open` instance matching criteria only. This means that instances that have matching attributes (instance type, platform, and Availability Zone) run in the Capacity Reservations automatically. Instances do not need to explicitly target a Capacity Reservation Fleet to use its reserved capacity.
 Type: String
 Valid Values: `open`
+Required: No
+
+ ** instanceRequirements **
+Reserved for internal use.
+Type: [InstanceRequirementsRequest](API_InstanceRequirementsRequest.md) object
 Required: No
 
  ** InstanceTypeSpecificationSet.N **

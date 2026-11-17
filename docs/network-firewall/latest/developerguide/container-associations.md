@@ -30,7 +30,7 @@ As containers start and stop, Network Firewall updates the IP set automatically.
 
 Container associations support two container types:
 + **Amazon ECS** – Monitors Amazon Elastic Container Service clusters. Network Firewall creates an Managed Rule in your account to receive Amazon ECS task state change events.
-+ **Amazon EKS** – Monitors Amazon Elastic Kubernetes Service clusters. Network Firewall subscribes to pod lifecycle events through the Amazon EKS Pulse Event Service.
++ **Amazon EKS** – Monitors the Amazon Elastic Kubernetes Service clusters. Network Firewall subscribes, through Amazon EKS, to pod lifecycle events for those clusters to keep your firewall rules up to date.
 
 You set the container type at creation and cannot change it afterward.
 

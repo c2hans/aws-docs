@@ -20,7 +20,7 @@ Required: Yes
 The Amazon Resource Name (ARN) of the IAM role that EventBridge Scheduler will use for this target when the schedule is invoked.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1600.
-Pattern: `arn:aws(-[a-z]+)?:iam::\d{12}:role\/[\w+=,.@\/-]+`
+Pattern: `arn:aws[a-z-]*:iam::\d{12}:role\/[\w+=,.@\/-]+`
 Required: Yes
 
  ** DeadLetterConfig **   <a name="scheduler-Type-Target-DeadLetterConfig"></a>
@@ -36,6 +36,16 @@ Required: No
  ** EventBridgeParameters **   <a name="scheduler-Type-Target-EventBridgeParameters"></a>
 The templated target type for the EventBridge [`PutEvents`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) API operation.
 Type: [EventBridgeParameters](API_EventBridgeParameters.md) object
+Required: No
+
+ ** EventBridgePutEventsV2Parameters **   <a name="scheduler-Type-Target-EventBridgePutEventsV2Parameters"></a>
+The templated target type for the EventBridge Custom event bus (eventsv2) [PutEvents](https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_PutEvents.html) API operation.
+Type: [EventBridgePutEventsV2Parameters](API_EventBridgePutEventsV2Parameters.md) object
+Required: No
+
+ ** EventBridgePutRawEventsParameters **   <a name="scheduler-Type-Target-EventBridgePutRawEventsParameters"></a>
+The templated target type for the EventBridge Custom event bus (eventsv2) [PutRawEvents](https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_PutRawEvents.html) API operation.
+Type: [EventBridgePutRawEventsParameters](API_EventBridgePutRawEventsParameters.md) object
 Required: No
 
  ** Input **   <a name="scheduler-Type-Target-Input"></a>

@@ -93,9 +93,9 @@ You can apply human approval gates at five points in the lifecycle of AI and age
 
 1. **Runtime review (human-in-the-loop task center)** – For workflows where you want a person to approve an action before it executes, the human-in-the-loop task center pauses execution and collects approval. This gate is optional and per-workflow. For more information, see [Human-in-the-loop task center](hitl-task-center.md).
 
-1. **Per-action user control (desktop)** – In Quick on desktop, you can turn each system tool on or off and set each operation to one of three access levels: **Always Allow**, **Ask Each Time**, or **Always Deny**. **Always Allow** runs operations without prompting for confirmation. **Ask Each Time** confirms every operation. This places an approval decision in your hands at the moment of each action, for the tools you have enabled. For more information, see [Access levels](system-tools-desktop.md#system-tools-access-levels) and [Managing permissions](system-tools-desktop.md#desktop-settings-manage-permissions).
+1. **Per-action user control (desktop)** – In Quick on desktop, you can turn each system tool on or off and set each operation to one of three access levels: **Always allow**, **Ask each time**, or **Always deny**. **Always allow** runs operations without prompting for confirmation. **Ask each time** confirms every operation. This places an approval decision in your hands at the moment of each action, for the tools you have enabled. For more information, see [Access levels](system-tools-desktop.md#system-tools-access-levels) and [Managing permissions](system-tools-desktop.md#desktop-settings-manage-permissions).
 
-Where a per-action prompt applies, it is a user-configurable choice. On Desktop, you set a tool to **Ask Each Time** to confirm every operation, or to **Full Access** to run without prompting. In the web experience, on-demand actions execute when you trigger them, and automated workflows are non-interactive by design – the gates at capability, build, and share time do the work there.
+Where a per-action prompt applies, it is a user-configurable choice. On desktop, you set a tool to **Ask each time** to confirm every operation, or to **Always allow** to run without prompting. In the web experience, on-demand actions execute when you trigger them, and automated workflows are non-interactive by design – the gates at capability, build, and share time do the work there.
 
 Per-action confirmation is therefore available but not universal. It depends on the surface and on how you configure each tool.
 
@@ -161,7 +161,7 @@ The AI assistant can write and run Python code on four surfaces. Each surface ru
 
 The Execute code locally capability in custom permissions restricts code execution in Quick Desktop for the users a profile applies to. Extension capabilities, including code execution within Office applications, can be restricted through extension access controls. For more information, see [Custom permissions](custom-permissions.md) and [Extension access](extension-access.md).
 
-**Limit** – On Desktop, the sandbox always has access to the system temporary directories regardless of the configured folder permissions. On Desktop, the persistent namespace means data loaded by an earlier code run remains available to later code runs in the same conversation. Sandboxing contains what code can reach; it does not evaluate what the code does with content already in the conversation context. Review generated code output like any other assistant output.
+**Limit** – On desktop, the sandbox always has access to the system temporary directories regardless of the configured folder permissions. On desktop, the persistent namespace means data loaded by an earlier code run remains available to later code runs in the same conversation. Sandboxing contains what code can reach; it does not evaluate what the code does with content already in the conversation context. Review generated code output like any other assistant output.
 
 ### Logging and audit coverage
 <a name="sec-agentic-security-logging"></a>
@@ -175,7 +175,7 @@ AWS CloudTrail records API-level activity (who did what). Vended logs record con
 
 The following limitations apply to the AI and agent capabilities in AWS Quick:
 + **Screening reduces risk but does not replace configuration** – Built-in screening and guardrails help reduce risk. They do not replace your responsibility to configure access, permissions, agents, flows, and data sources for your use case.
-+ **No universal human review requirement** – Human review is not a system-wide requirement for actions. Per-action confirmation is available where a tool is configured for it (on Desktop, through the **Ask Each Time** access level), and the human-in-the-loop task center is available for workflows where you choose to add a review step. However, on-demand actions in the web experience execute immediately, and automated workflows execute without user intervention.
++ **No universal human review requirement** – Human review is not a system-wide requirement for actions. Per-action confirmation is available where a tool is configured for it (on desktop, through the **Ask each time** access level), and the human-in-the-loop task center is available for workflows where you choose to add a review step. However, on-demand actions in the web experience execute immediately, and automated workflows execute without user intervention.
 + **Authentication options vary by connector type** – The authentication methods available depend on the connector type. For remote MCP servers, agent-to-agent connectors, and generic HTTP connectors, connecting without authentication is a selectable option.
 
 ## Memory and retained context
@@ -193,7 +193,7 @@ Retained context is part of the read surface described in [Two-condition model f
 ### Controls
 <a name="sec-agentic-security-memory-controls"></a>
 + **Isolation** – Memories are specific to the individual user and are not shared with other users.
-+ **User control** – You can review your chat memory through **Conversation History**. On Desktop, you can additionally manage whether Quick learns from your conversations, searches your conversation history, and extracts entities from connected services. You can also view, edit, and delete individual memories. For more information, see [Privacy controls](desktop-settings.md#desktop-privacy-controls).
++ **User control** – You can review your chat memory through **Conversation History**. On desktop, you can additionally manage whether Quick learns from your conversations, searches your conversation history, and extracts entities from connected services. You can also view, edit, and delete individual memories. For more information, see [Privacy controls](desktop-settings.md#desktop-privacy-controls).
 + **Administrator control** – Custom permissions include capabilities that restrict building and managing engrams (profiles of a user's writing style and patterns) and creating and accessing knowledge memory in Quick Desktop. For more information, see [Custom permissions](custom-permissions.md).
 + **No training** – Quick does not use your conversations, files, or personal context to train or improve AI models.
 

@@ -22,6 +22,8 @@ Under **Clusters** on the SageMaker HyperPod page in the SageMaker AI console, a
 
 Under **Clusters** on the SageMaker HyperPod page in the SageMaker AI console, the cluster names are activated as links. Choose the cluster name link to see details of each cluster.
 
+If HyperPod created an FSx for Lustre file system with the cluster, the cluster details page shows a **Storage** section. This section lists the file system ID, status, storage capacity, throughput per unit of storage, and deployment type. To increase storage capacity or throughput, choose **View in FSx** to open the file system in the [Amazon FSx console](https://console.aws.amazon.com/fsx).
+
 ## To edit a SageMaker HyperPod cluster
 <a name="sagemaker-hyperpod-eks-operate-console-ui-edit-clusters"></a>
 

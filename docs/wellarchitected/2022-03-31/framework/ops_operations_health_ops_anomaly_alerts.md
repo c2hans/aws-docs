@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/ops_operations_health_ops_anomaly_alerts.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS09-BP07 Alert when operations anomalies are detected
 <a name="ops_operations_health_ops_anomaly_alerts"></a>

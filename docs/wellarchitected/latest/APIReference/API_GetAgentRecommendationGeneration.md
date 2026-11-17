@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # GetAgentRecommendationGeneration
 <a name="API_GetAgentRecommendationGeneration"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 **Important**
 Application-level recommendations are a new recommendation format currently in beta. We are actively seeking customer feedback to improve their quality and relevance. As with any AI-generated content, please thoroughly review each recommendation before taking any action based on it.
 
@@ -58,6 +55,8 @@ Content-type: application/json
       "message": "string"
    },
    "estimatedCompletionTime": "string",
+   "generationRecommendationTypes": [ "string" ],
+   "generationType": "string",
    "id": "string",
    "lastModifiedAt": "string",
    "lastModifiedBy": "string",
@@ -114,6 +113,17 @@ Type: [ErrorDetails](API_ErrorDetails.md) object
  ** [estimatedCompletionTime](#API_GetAgentRecommendationGeneration_ResponseSyntax) **   <a name="wellarchitected-GetAgentRecommendationGeneration-response-estimatedCompletionTime"></a>
 The estimated time for the generation to complete.
 Type: Timestamp
+
+ ** [generationRecommendationTypes](#API_GetAgentRecommendationGeneration_ResponseSyntax) **   <a name="wellarchitected-GetAgentRecommendationGeneration-response-generationRecommendationTypes"></a>
+The recommendation types the generation covers.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
+Valid Values: `RESOURCE | ARCHITECTURE | APPLICATION`
+
+ ** [generationType](#API_GetAgentRecommendationGeneration_ResponseSyntax) **   <a name="wellarchitected-GetAgentRecommendationGeneration-response-generationType"></a>
+How the generation was started.
+Type: String
+Valid Values: `ONDEMAND | SCHEDULED | BASIC`
 
  ** [id](#API_GetAgentRecommendationGeneration_ResponseSyntax) **   <a name="wellarchitected-GetAgentRecommendationGeneration-response-id"></a>
 The unique identifier of the recommendation generation.

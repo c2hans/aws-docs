@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/index.html
 title: 'Amazon GameLift Servers Documentation'
 canonical_url: https://docs.aws.amazon.com/gameliftservers/
 source: aws-documentation
-generated_on: 2026-11-12
+generated_on: 2026-11-16
 ---
 
 # Amazon GameLift Servers Documentation

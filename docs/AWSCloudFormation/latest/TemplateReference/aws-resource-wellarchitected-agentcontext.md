@@ -7,9 +7,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::WellArchitected::AgentContext
 <a name="aws-resource-wellarchitected-agentcontext"></a>
 
-**Note**
-AWS Well-Architected Agent is in preview release and is subject to change.
-
 Creates a context associated with an optimization profile. Contexts provide application and environment information used during recommendation generation.
 
 ## Syntax

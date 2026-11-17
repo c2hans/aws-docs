@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/sec_detect_investigate_events_actionable_events.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC04-BP04 Implement actionable security events
 <a name="sec_detect_investigate_events_actionable_events"></a>

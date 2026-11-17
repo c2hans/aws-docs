@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-DatabricksSPSecret"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c13c21b3"></a>
+<a name="w2aac29c13c23b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -36,7 +36,7 @@ oauthSecretId
 The Databricks ID of the current OAuth secret. Secrets Manager uses it to read the scopes of the current secret and to delete the secret that it replaces.
 
 ## Secret Metadata Fields
-<a name="w2aac27c13c21b5"></a>
+<a name="w2aac29c13c23b5"></a>
 
 The following are the metadata fields for Databricks Service Principal OAuth Client Secret:
 
@@ -54,7 +54,7 @@ secretLifetimeDays
 (Optional) The lifetime of each new secret, in days. The value must be greater than your rotation interval. The maximum is 730. Default: 730.
 
 ## Usage Flow
-<a name="w2aac27c13c21b7"></a>
+<a name="w2aac29c13c23b7"></a>
 
 This rotation type supports two modes. In self-rotation, the service principal rotates its own secret. In assisted rotation, a second service principal rotates it. The service principal that performs the rotation needs the `account_admin` role, because the OAuth secret endpoints are account-level.
 

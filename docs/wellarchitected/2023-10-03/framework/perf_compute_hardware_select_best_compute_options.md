@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/perf_compute_hardware_select_best_compute_options.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF02-BP01 Select the best compute options for your workload
 <a name="perf_compute_hardware_select_best_compute_options"></a>

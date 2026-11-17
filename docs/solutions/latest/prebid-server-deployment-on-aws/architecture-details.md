@@ -48,7 +48,7 @@ If you want to opt out of using CloudFront and AWS WAF and directly send request
 ## Application Load Balancer (ALB)
 <a name="application-load-balancer-alb"></a>
 
-ALB distributes incoming request traffic for Prebid Server through the cluster of containers. It provides a single entry point into the cluster and is the primary origin for the CloudFront distribution. ALB also routes cache-related requests (paths starting with `/cache`) to the cache Lambda function, which handles storage and retrieval of cached bid responses in ElastiCache.
+The solution deploys two Application Load Balancers (ALBs). The internet-facing ALB distributes incoming request traffic for Prebid Server through the cluster of containers. It is the external entry point into the cluster and is the primary origin for the CloudFront distribution. An internal ALB in the private subnets accepts traffic only from the Prebid Server tasks. Both ALBs route cache-related requests (paths starting with `/cache`) to the cache Lambda function, which handles storage and retrieval of cached bid responses in ElastiCache.
 
 ## Amazon VPC
 <a name="amazon-vpc"></a>
@@ -232,30 +232,28 @@ The solution uses Amazon ElastiCache Serverless with Valkey (Redis-compatible) e
 
 An AWS Lambda function handles cache storage and retrieval operations. The function is invoked through ALB target group rules that route requests with paths starting with `/cache` to the Lambda function. The Lambda function connects to the ElastiCache Serverless cache using IAM authentication and the Redis protocol.
 
- **Unified Cache Endpoint**
+ **Cache Endpoints**
 
-Both Prebid Server containers and client-side code (prebid.js) use the same publicly accessible cache endpoint:
-+  **CloudFront deployment**: Cache endpoint is the CloudFront distribution domain
-+  **ALB-only deployment**: Cache endpoint is the external ALB DNS name
-
-This unified approach ensures consistent cache access patterns and simplifies the architecture by eliminating the need for separate internal and external cache endpoints.
+The cache endpoint that Prebid Server containers use (the `CACHE_HOST` setting) depends on the deployment mode:
++  **CloudFront deployment**: Containers and client-side code (prebid.js) both use the CloudFront distribution domain.
++  **ALB-only deployment**: Containers use the internal ALB DNS name, which accepts cache storage and retrieval (`POST` and `GET`) requests only from the Prebid Server tasks. Client-side code retrieves cached responses through the internet-facing ALB, which accepts only `GET` requests on the cache paths.
 
  **Cache Request Flow**
 
 When Prebid Server needs to cache a bid response:
 
-1. Container sends cache request to the configured `CACHE_HOST` (CloudFront domain or external ALB DNS)
+1. The container sends the cache request to the configured `CACHE_HOST` (the CloudFront domain or the internal ALB DNS name).
 
-1. Request flows through CloudFront (if deployed) to the external ALB
+1. In a CloudFront deployment, the request flows through CloudFront to the internet-facing ALB. In an ALB-only deployment, the request goes to the internal ALB.
 
-1. ALB routes the request to the cache Lambda function based on path rules
+1. The ALB routes the request to the cache Lambda function based on path rules.
 
-1. Lambda function stores the bid response in ElastiCache Serverless and returns a cache key
+1. The Lambda function stores the bid response in ElastiCache Serverless and returns a cache key.
 
-1. Client-side code later retrieves the cached response using the same endpoint
+1. Client-side code later retrieves the cached response through CloudFront or the internet-facing ALB.
 
 **Note**
-The cache service is designed to handle both server-side caching (from Prebid Server containers) and client-side retrieval (from browsers). Using a single public endpoint for both access patterns ensures optimal performance and simplifies configuration.
+The cache service handles both server-side caching (from Prebid Server containers) and client-side retrieval (from browsers). In ALB-only mode, cache writes stay inside the VPC, and the internet-facing ALB exposes only cache reads.
 
 ## Prebid Server container
 <a name="prebid-server-container"></a>

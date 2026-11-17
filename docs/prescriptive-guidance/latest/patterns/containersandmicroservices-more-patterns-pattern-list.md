@@ -13,5 +13,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 + [Migrate from Oracle WebLogic to Apache Tomcat (TomEE) on Amazon ECS](migrate-from-oracle-weblogic-to-apache-tomcat-tomee-on-amazon-ecs.md)
 + [Monitor application activity by using CloudWatch Logs Insights](monitor-application-activity-by-using-cloudwatch-logs-insights.md)
 + [Structure a Python project in hexagonal architecture using AWS Lambda](structure-a-python-project-in-hexagonal-architecture-using-aws-lambda.md)
++ [Test AWS infrastructure by using LocalStack and Terraform Tests](test-aws-infra-localstack-terraform.md)
 + [Coordinate resource dependency and task execution by using the AWS Fargate WaitCondition hook construct](use-the-aws-fargate-waitcondition-hook-construct.md)
 + [Use Amazon Bedrock agents to automate creation of access entry controls in Amazon EKS through text-based prompts](using-amazon-bedrock-agents-to-automate-creation-of-access-entry-controls-in-amazon-eks.md)

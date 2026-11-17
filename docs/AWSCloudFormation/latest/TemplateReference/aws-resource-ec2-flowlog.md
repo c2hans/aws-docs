@@ -143,7 +143,7 @@ The ID of the resource to monitor. For example, if the resource type is `VPC`, s
 The type of resource to monitor.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `NetworkInterface | Subnet | VPC | TransitGateway | TransitGatewayAttachment | RegionalNatGateway`
+*Allowed values*: `NetworkInterface | Subnet | VPC | TransitGateway | TransitGatewayAttachment | RegionalNatGateway | CoreNetwork | CoreNetworkEdge | CoreNetworkAttachment`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TagFieldSpecifications`  <a name="cfn-ec2-flowlog-tagfieldspecifications"></a>

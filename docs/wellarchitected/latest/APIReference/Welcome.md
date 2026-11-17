@@ -13,7 +13,7 @@ To view API actions organized by service, see [API actions](https://docs.aws.ama
 
 Describes the API operations for managing optimization profiles, goals, application context, and recommendations in the AWS Well-Architected Agent. Through this API, you can create and configure agent profiles that define the scope of your AWS environment to analyze, set optimization goals across cost, security, performance, and resilience pillars, start recommendation generation, retrieve prioritized recommendations with ready-to-deploy remediation scripts, and provide feedback to improve future recommendations.
 
-For more information, see [What is AWS Well-Architected Agent?](https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent.html)
+For more information, see [What is AWS Well-Architected Agent (preview)?](https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent.html)
 
  ** AWS Well-Architected Tool **
 
@@ -21,4 +21,4 @@ Describes the API operations for creating and managing workloads, conducting len
 
 For more information, see [What is AWS Well-Architected Tool?](https://docs.aws.amazon.com/wellarchitected/latest/userguide/tool.html)
 
-This document was last published on November 11, 2026.
+This document was last published on November 16, 2026.

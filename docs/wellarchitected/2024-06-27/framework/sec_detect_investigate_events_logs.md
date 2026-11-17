@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/sec_detect_investigate_events_logs.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC04-BP02 Capture logs, findings, and metrics in standardized locations
 <a name="sec_detect_investigate_events_logs"></a>

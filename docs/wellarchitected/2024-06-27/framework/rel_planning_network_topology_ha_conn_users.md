@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2024-06-27/framework/rel_planning_network_topology_ha_conn_users.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL02-BP01 Use highly available network connectivity for your workload public endpoints
 <a name="rel_planning_network_topology_ha_conn_users"></a>

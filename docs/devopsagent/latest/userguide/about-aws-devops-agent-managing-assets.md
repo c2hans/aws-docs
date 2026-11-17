@@ -208,7 +208,7 @@ Each entry in `skills` and `memory_stores` must resolve to an existing asset of 
 ### memory\_store
 <a name="memory-store"></a>
 
-A `memory_store` asset is a container that groups related memory files. The agent reads the store's name and description to decide whether to open it and list the memories inside. Memories and memory stores support agent memory. For more information about memories, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories.md).
+A `memory_store` asset is a container that groups related memory files. The agent reads the store's name and description to decide whether to open it and list the memories inside. Memories and memory stores support agent memory. For more information about memories, see [DevOps Agent memories](about-aws-devops-agent-devops-agent-memories.md).
 
 Create memories in two steps. First, create the `memory_store`. Then, create each `memory` inside it, as described in [memory](#memory).
 
@@ -513,7 +513,7 @@ response = client.create_asset(
 You can create a skill by importing it directly from a GitHub repository directory. AWS DevOps Agent fetches the skill content, extracts the name and description from the SKILL.md frontmatter, and creates the skill in your Agent Space. This lets you manage skills in version control and import or sync them programmatically.
 
 **Prerequisites:**
-+ Your Agent Space must have a GitHub account associated. See [Connecting GitHub](connecting-to-cicd-pipelines-connecting-github.md).
++ Your Agent Space must have a GitHub account associated. See [Connecting to GitHub](connecting-to-cicd-pipelines-connecting-github.md).
 + The repository directory must contain a valid SKILL.md file with frontmatter.
 
 **AWS CLI:**
@@ -906,7 +906,7 @@ The `AgentSpaceId`, `Type`, `Condition`, and `Action` properties are create-only
 
 The skill walkthrough above applies to every other asset type. The only difference is the `metadata` block and, for attachments, the choice of binary content. The minimal `CreateAsset` calls below illustrate each type.
 
-Memory stores and memories use the same `CreateAsset` operation—create the store first, then a memory in it. For the metadata each accepts, see [memory\_store](#memory_store) and [memory](#memory) ; for a memory-store example with the AWS CLI, see the [AWS DevOps Agent CLI onboarding guide](getting-started-with-aws-devops-agent-cli-onboarding-guide.md). The following creates a memory in an existing store, using the store's `assetId` as `memory_store_id`:
+Memory stores and memories use the same `CreateAsset` operation—create the store first, then a memory in it. For the metadata each accepts, see [memory\_store](#memory_store) and [memory](#memory) ; for a memory-store example with the AWS CLI, see the [CLI onboarding guide](getting-started-with-aws-devops-agent-cli-onboarding-guide.md). The following creates a memory in an existing store, using the store's `assetId` as `memory_store_id`:
 
 ```
 aws devops-agent create-asset \

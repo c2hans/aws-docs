@@ -18,7 +18,7 @@ Pattern: `(arn:aws[a-z-]*:identitystore:::(user|group|membership)/)?([0-9a-f]{10
 Required: No
 
  ** MemberId **   <a name="singlesignon-Type-GroupMembershipExistenceResult-MemberId"></a>
-An object that contains the identifier of a group member. Setting the `UserId` field to the specific identifier for a user indicates that the user is a member of the group.
+An object that contains the identifier of a group member. Setting the `UserID` field to the specific identifier for a user indicates that the user is a member of the group.
 Type: [MemberId](API_MemberId.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No

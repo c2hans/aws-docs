@@ -11,7 +11,7 @@ AWS DevOps Agent uses a dual-console architecture that separates administrative 
 <a name="consoles"></a>
 
 AWS DevOps Agent provides two distinct interfaces:
-+ **AWS Management Console** – Administrators use the AWS Management Console to set up and manage AWS DevOps Agent. In this console, you can [Creating an Agent Space](getting-started-with-aws-devops-agent-creating-an-agent-space.md) connect AWS services and third-party tools, and manage access permissions for your organization.
++ **AWS Management Console** – Administrators use the AWS Management Console to set up and manage AWS DevOps Agent. In this console, you can [create Agent Spaces,](getting-started-with-aws-devops-agent-creating-an-agent-space.md) connect AWS services and third-party tools, and manage access permissions for your organization.
 + **DevOps Agent web app - ** Operations teams use DevOps Agent Space web apps for daily incident response activities. This standalone application provides an interface where on-call engineers can launch investigations, interact with the agent through natural language chat, view application topologies, and review incident prevention recommendations.
 
 ## Web app capabilities

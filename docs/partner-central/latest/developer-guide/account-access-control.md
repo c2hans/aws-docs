@@ -41,13 +41,14 @@ Condition keys in IAM policies provide resource-level permissions for when to en
 
 For more information, see [IAM JSON policy elements: Condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html).
 
-The following table lists the condition keys that you can use in policy statements for Account API actions. The last three rows are the tag condition keys for business plan actions.
+The following table lists the condition keys that you can use in policy statements for Account API actions. The keys are grouped by the operations that they apply to. The first row applies to all operations and the second row to verification. The other rows apply to business plans, and the last three of them are the tag condition keys.
 
 **Condition keys overview**
 
 | Condition key | Description | Applicable actions | Valid values |
 | --- | --- | --- | --- |
 | partnercentral:Catalog | Filters access by the type of the associated catalog entity | All actions | AWS, Sandbox |
+| partnercentral:VerificationType | Filters access by the type of verification. | StartVerification and GetVerification | The valid values are BUSINESS\_VERIFICATION and REGISTRANT\_VERIFICATION. |
 | partnercentral:BusinessPlanItemType | Filters access by the type of the business plan item | CreateBusinessPlanItem, GetBusinessPlanItem, UpdateBusinessPlanItem, and DeleteBusinessPlanItem | GOAL, KPI, INITIATIVE, ACTIVITY, PARTNERSHIP\_GOAL, STRATEGIC\_GOAL |
 | partnercentral:BusinessPlanItemStage | Filters access by the stage of the business plan item | CreateBusinessPlanItem, GetBusinessPlanItem, UpdateBusinessPlanItem, and DeleteBusinessPlanItem | ONBOARD, BUILD, MARKET, SELL |
 | partnercentral:AllowAwsEngagement | Filters access by whether you allow AWS to make changes to your business plans | CreateBusinessPlan, UpdateBusinessPlan, CancelBusinessPlan, CreateBusinessPlanItem, UpdateBusinessPlanItem, DeleteBusinessPlanItem, StartBusinessPlanSubmissionTask, CancelBusinessPlanSubmissionTask, StartBusinessPlanAttachmentImportTask, and DeleteBusinessPlanAttachment | ENABLED, DISABLED |

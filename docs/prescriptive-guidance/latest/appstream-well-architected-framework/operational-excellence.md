@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 # Operational excellence pillar
 <a name="operational-excellence"></a>
 
-Operational excellence (OE) represents a dedication to crafting high-quality software solutions that consistently meet and exceed user expectations. The [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html) of the AWS Well-Architected Framework encompasses proven strategies for effective team organization, robust workload design, efficient large-scale operations, and seamless adaptation to changing requirements over time. By adhering to these principles, organizations can ensure that their systems remain resilient, performant, and aligned with evolving business needs.
+Operational excellence (OE) focuses on building and running workloads that deliver business value and meet user expectations. The [operational excellence pillar](https://docs.aws.amazon.com/wellarchitected/latest/framework/operational-excellence.html) of the AWS Well-Architected Framework includes strategies for organizing teams, designing workloads, operating at scale, and adapting to changing requirements over time. By following these principles, organizations can help their systems remain resilient, performant, and aligned with evolving business needs.
 
 Key focus areas for applying this pillar to your WorkSpaces Applications streaming environment:
 + Monitoring and observability
@@ -18,9 +18,9 @@ Key focus areas for applying this pillar to your WorkSpaces Applications streami
 
 Create a cloud-aligned operating model with strong leadership commitment, where business goals and key performance indicators (KPIs) drive organizational transformation through optimized people, processes, and technology.
 + **Team structure.** Establish dedicated teams that align with application streaming outcomes. For example:
-  + Image management team is responsible for application packaging and image optimization.
-  + Fleet operations team manages capacity, performance, and scaling.
-  + User experience team handles end-user support and satisfaction.
+  + The image management team packages applications and optimizes images.
+  + The fleet operations team manages capacity, performance, and scaling.
+  + The user experience team handles end-user support and satisfaction.
 + **KPIs and metrics.** Define and track business-aligned metrics such as:
   + Application availability rates
   + Time to deploy new applications
@@ -47,12 +47,12 @@ Implement comprehensive monitoring and observability to track KPIs and workload 
 + Monitor WorkSpaces Applications metrics and events through chat notifications. For more information, see the AWS blog post [Monitor and automate AWS end user computing (EUC) with AWS Chatbot](https://aws.amazon.com/blogs/desktop-and-application-streaming/monitor-and-automate-aws-end-user-computingeuc-with-aws-chatbot/).
 + Enable proactive session management through visual cues. For more information, see the AWS blog post [Display session expiration and a countdown timer in Amazon WorkSpaces Applications](https://aws.amazon.com/blogs/desktop-and-application-streaming/display-session-expiration-and-a-countdown-timer-in-amazon-appstream-2-0/).
 + Create visualizations for usage patterns and trends. For more information, see the AWS blog post [Ingest and visualize Amazon WorkSpaces Applications usage reports in Amazon OpenSearch Service](https://aws.amazon.com/blogs/desktop-and-application-streaming/ingest-and-visualize-amazon-appstream-2-0-usage-reports-in-amazon-opensearch-service/).
-+ Utilize the EUC toolkit to monitor active sessions, track fleet inventory, and generate session reports (CSV export). For more information, see the AWS blog post [Use the EUC Toolkit to manage Amazon WorkSpaces Applications and Amazon WorkSpaces](https://aws.amazon.com/blogs/desktop-and-application-streaming/euc-toolkit/).
++ Use the EUC Toolkit to monitor active sessions, track fleet inventory, and generate session reports (CSV export). For more information, see the AWS blog post [Use the EUC Toolkit to manage Amazon WorkSpaces Applications and Amazon WorkSpaces](https://aws.amazon.com/blogs/desktop-and-application-streaming/euc-toolkit/).
 
 ## Safely automate where possible
 <a name="oe-automate"></a>
 
-Apply infrastructure as code (IaC) principles to automate all aspects of your workload operations. Use guardrails to help ensure safe and consistent execution while reducing manual intervention.
+Apply infrastructure as code (IaC) principles to automate key aspects of your workload operations. Use guardrails to help ensure safe and consistent execution while reducing manual intervention.
 + Automate the creation and configuration of WorkSpaces Applications images by using the Image Assistant CLI. For more information, see [Create your Amazon WorkSpaces Applications image programmatically by using the Image Assistant CLI operations](https://docs.aws.amazon.com/appstream2/latest/developerguide/programmatically-create-image.html) in the WorkSpaces Applications documentation.
   + Application installation: Use the Image Assistant CLI to automate the installation of applications during image creation.
   + Image creation: Programmatically create WorkSpaces Applications images by using the Image Assistant CLI commands.
@@ -65,7 +65,7 @@ Apply infrastructure as code (IaC) principles to automate all aspects of your wo
   + Capacity optimization. Set up automated scaling thresholds to optimize resource usage based on demand patterns.
 + Configure guardrails to automate safety controls:
   + Maximum fleet size limits. Set upper bounds on fleet capacity to prevent over-provisioning.
-  + Scaling policy configuration. Implement step scaling or target tracking scaling policies with appropriate thresholds.
+  + Scaling policy configuration. Implement step scaling or target tracking scaling policies with thresholds based on your fleet utilization metrics.
   + Service quotas. Use AWS service quotas as built-in limits to prevent excessive resource allocation.
   + Scale-in protection. Configure scale-in protection to prevent the removal of active instances during scaling events.
 + Perform testing and validation, including image builder, fleet, and integration testing.
@@ -127,7 +127,7 @@ Build loosely coupled, scalable workloads that enable frequent, small-scale auto
 
 Continuously improve operational procedures through regular reviews, updates, and team engagement to keep all stakeholders informed and aligned with best practices.
 + **Documentation management.** Maintain current, version-controlled documentation of WorkSpaces Applications procedures in a central location to ensure operational consistency and knowledge sharing across teams.
-  + Required documentation: Maintain up-to-date documentation for critical WorkSpaces Applications operations for image creation and management, fleet operations, and troubleshooting.
+  + Required documentation: Maintain up-to-date documentation for critical WorkSpaces Applications tasks, such as image creation and management, fleet operations, and troubleshooting.
   + Operational reviews: Monitor and review key operational aspects, including performance metrics and incident management.
 + **Continuous improvement.** Systematically enhance WorkSpaces Applications operations by incorporating AWS service updates, operational metrics, and learned best practices into standard procedures.
   + Service updates: Monitor WorkSpaces Applications release notes for new features, service improvements, security updates, and Regional availability.
@@ -149,7 +149,7 @@ Conduct failure scenario testing regularly to understand risks, validate respons
   + Network connectivity issues:
     + Test streaming session performance across different network conditions.
     + Monitor `StreamingSessionLatency` for connection quality issues.
-    + Ensure proper configuration of VPC settings and security groups.
+    + Verify that your Amazon Virtual Private Cloud (Amazon VPC) settings and security group rules allow the network traffic that your streaming sessions require.
 + **Recovery procedures.** Develop and test procedures for:
   + Fleet failover between AWS Availability Zones. In addition, document procedures for scaling fleet capacity, managing fleet updates, and responding to instance health issues.
   + User data management:
@@ -157,15 +157,15 @@ Conduct failure scenario testing regularly to understand risks, validate respons
     + Validate data synchronization between sessions.
   + Service continuity. Maintain procedures for creating new fleet instances, managing image updates, and handling session disconnections.
 + **Risk management.** Identify and mitigate:
-  + Capacity constraints by setting appropriate fleet minimum capacity, configuring automatic scaling policies based on demand patterns, and monitoring fleet utilization trends by using CloudWatch metrics such as `CapacityUtilization`, `InUseCapacity`, and `AvailableCapacity`.
-  + Performance bottlenecks by tracking key metrics such as `StreamingSessionLatency` and configuring the appropriate CloudWatch alarms.
+  + Capacity constraints by setting a fleet minimum capacity that meets your baseline demand, configuring automatic scaling policies based on demand patterns, and monitoring fleet utilization trends by using CloudWatch metrics such as `CapacityUtilization`, `InUseCapacity`, and `AvailableCapacity`.
+  + Performance bottlenecks by tracking key metrics such as `StreamingSessionLatency` and configuring CloudWatch alarms for those metrics.
 
 ## Learn from all operational events and metrics
 <a name="oe-learn"></a>
 
-Foster a culture of continuous improvement by sharing lessons learned from operational events and failures across the organization. Emphasize their impact on business outcomes.
+Foster a culture of continuous improvement by sharing lessons learned from operational events and failures across the organization. Emphasize the impact of these events on business outcomes.
 + **Event analysis.** Document and analyze service interruptions, performance degradation, user complaints, and capacity issues.
-+ **Metrics review.** Analyze usage patterns, performance trends, cost metrics, and user satisfaction data on a regular basis.
++ **Metrics review.** Regularly analyze usage patterns, performance trends, cost metrics, and user satisfaction data.
 + **Knowledge sharing.** Establish processes for team learning sessions, best practice documentation, cross-team knowledge transfer, and incident retrospectives.
 
 ## Use managed services
@@ -175,6 +175,6 @@ Minimize operational overhead by using AWS managed services and building standar
 + [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html) for automation
 + [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) for monitoring
 + [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) for access control
-+ [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) for user storage for Windows fleets
-+ [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) for user storage for Linux fleets
++ [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) for user storage (home folders) for Windows and Linux fleets
++ [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) for persistent user storage for Linux fleets
 + [AWS Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) for user authentication

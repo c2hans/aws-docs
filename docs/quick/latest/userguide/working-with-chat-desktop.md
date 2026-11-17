@@ -51,7 +51,7 @@ Each attachment can be up to 50 MB. When you attach a file, Quick can read, anal
 ### Local folders
 <a name="desktop-chat-local-folders"></a>
 
-You can give the agent access to local folders for it to read, write, or search their contents. To add a folder or view the folders you have already granted access to, choose the \+ (Add context) icon in the chat input area, choose Local folders, and then choose Manage folders. This opens the Knowledge tab in Customize, where adding a folder works the same as choosing **Customize > Knowledge** and adding a folder there. For more information, see [Knowledge](knowledge-desktop.md).
+You can give the agent access to local folders for it to read, write, or search their contents. To add a folder or view the folders you have already granted access to, choose the \+ (Add context) icon in the chat input area, choose Local folders, and then choose Manage folders. This opens the Knowledge tab in **Customize**, where adding a folder works the same as choosing **Customize** > **Knowledge** and adding a folder there. For more information, see [Knowledge](knowledge-desktop.md).
 
 ### Web search
 <a name="desktop-chat-web-search"></a>
@@ -127,7 +127,7 @@ You can also queue follow-up messages while Quick is working. Queued items show 
 ## Coding agent sessions
 <a name="desktop-coding-agent-sessions"></a>
 
-You can use coding agents such as Kiro, Claude, or other connected agents to accomplish coding tasks directly inside a conversation. The desktop application's local code execution runs in an isolated sandbox that blocks common coding commands, so you delegate those tasks to a coding agent. For information about connecting a coding agent, see [Connectors](connections-desktop.md).
+You can use coding agents such as Kiro, Claude, or other connected agents to accomplish coding tasks directly inside a conversation. The desktop application's local code execution runs in an isolated sandbox that blocks common coding commands, so you delegate those tasks to a coding agent. For information about connecting a coding agent, see [Coding agents](connections-desktop.md#desktop-coding-agents).
 
 ## Plan mode
 <a name="desktop-plan-mode"></a>

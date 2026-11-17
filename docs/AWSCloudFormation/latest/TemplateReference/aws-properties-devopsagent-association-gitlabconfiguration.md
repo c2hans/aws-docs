@@ -22,7 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[EnableWebhookUpdates](#cfn-devopsagent-association-gitlabconfiguration-enablewebhookupdates)" : {{Boolean}},
   "[InstanceIdentifier](#cfn-devopsagent-association-gitlabconfiguration-instanceidentifier)" : {{String}},
   "[ProjectId](#cfn-devopsagent-association-gitlabconfiguration-projectid)" : {{String}},
-  "[ProjectPath](#cfn-devopsagent-association-gitlabconfiguration-projectpath)" : {{String}}
+  "[ProjectPath](#cfn-devopsagent-association-gitlabconfiguration-projectpath)" : {{String}},
+  "[ReleaseManagementAssociationId](#cfn-devopsagent-association-gitlabconfiguration-releasemanagementassociationid)" : {{String}}
 }
 ```
 
@@ -34,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [InstanceIdentifier](#cfn-devopsagent-association-gitlabconfiguration-instanceidentifier): {{String}}
   [ProjectId](#cfn-devopsagent-association-gitlabconfiguration-projectid): {{String}}
   [ProjectPath](#cfn-devopsagent-association-gitlabconfiguration-projectpath): {{String}}
+  [ReleaseManagementAssociationId](#cfn-devopsagent-association-gitlabconfiguration-releasemanagementassociationid): {{String}}
 ```
 
 ## Properties
@@ -61,4 +63,12 @@ GitLab numeric project ID.
 The full GitLab project path (for example, `namespace/project-name`).
 *Required*: Yes
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ReleaseManagementAssociationId`  <a name="cfn-devopsagent-association-gitlabconfiguration-releasemanagementassociationid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

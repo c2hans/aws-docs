@@ -78,7 +78,7 @@ This pattern provides a security control that monitors for API calls and generat
 
 **Code**
 
-The code for this pattern is available in the GitHub [Monitor Amazon ElastiCache clusters for at-rest encryption](https://github.com/aws-samples/sample-Monitor_Amazon_ElastiCache_clusters_for_at-rest_encryption) repository. See the [Epics section](#monitor-amazon-elasticache-clusters-for-at-rest-encryption-epics) for information about how to use the files in the repository.
+The code for this pattern is available in the GitHub [Monitor Amazon ElastiCache clusters for at-rest encryption](https://github.com/aws-samples/sample-Monitor_Amazon_ElastiCache_clusters_for_at-rest_encryption) repository. See the [Epics* *section](#monitor-amazon-elasticache-clusters-for-at-rest-encryption-epics) for information about how to use the files in the repository.
 
 ## Best practices
 <a name="monitor-amazon-elasticache-clusters-for-at-rest-encryption-best-practices"></a>

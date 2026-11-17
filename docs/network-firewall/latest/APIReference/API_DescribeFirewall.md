@@ -64,14 +64,17 @@ Required: No
       "FirewallName": "string",
       "FirewallPolicyArn": "string",
       "FirewallPolicyChangeProtection": boolean,
-      "NatGatewayMappings": [
+      "NatGatewayCreateMappings": [
          {
-            "NatGatewayId": "string"
+            "AllocationIds": [ "string" ],
+            "PrivateIps": [ "string" ],
+            "SubnetId": "string"
          }
       ],
-      "NoSourcePreservation": boolean,
       "NumberOfAssociations": number,
       "ProxySettings": {
+         "CertificateArn": "string",
+         "DomainName": "string",
          "ListenerProperties": [
             {
                "Port": number,
@@ -94,6 +97,7 @@ Required: No
       ],
       "TransitGatewayId": "string",
       "TransitGatewayOwnerAccountId": "string",
+      "TransparentFilteringNatScope": "string",
       "VpcEndpoint": {
          "SubnetMappings": [
             {

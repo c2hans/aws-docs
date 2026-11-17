@@ -22,7 +22,7 @@ The request uses the following URI parameters.
  ** [ResourceArn](#API_UntagResource_RequestSyntax) **   <a name="scheduler-UntagResource-request-uri-ResourceArn"></a>
 The Amazon Resource Name (ARN) of the schedule group from which you are removing tags.
 Length Constraints: Minimum length of 1. Maximum length of 1011.
-Pattern: `arn:aws(-[a-z]+)?:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
+Pattern: `arn:aws[a-z-]*:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
 Required: Yes
 
  ** [TagKeys](#API_UntagResource_RequestSyntax) **   <a name="scheduler-UntagResource-request-uri-TagKeys"></a>

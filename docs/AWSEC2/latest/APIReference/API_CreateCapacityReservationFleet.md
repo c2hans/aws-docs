@@ -18,6 +18,16 @@ Valid values: `prioritized`
 Type: String
 Required: No
 
+ **AvailabilityZone**
+Reserved for internal use.
+Type: String
+Required: No
+
+ **AvailabilityZoneId**
+Reserved for internal use.
+Type: String
+Required: No
+
  **ClientToken**
 Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see [Ensure Idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
 Type: String
@@ -39,6 +49,11 @@ Indicates the type of instance launches that the Capacity Reservation Fleet acce
 Currently, Capacity Reservation Fleets support `open` instance matching criteria only. This means that instances that have matching attributes (instance type, platform, and Availability Zone) run in the Capacity Reservations automatically. Instances do not need to explicitly target a Capacity Reservation Fleet to use its reserved capacity.
 Type: String
 Valid Values: `open`
+Required: No
+
+ **InstanceRequirements**
+Reserved for internal use.
+Type: [InstanceRequirementsRequest](API_InstanceRequirementsRequest.md) object
 Required: No
 
  **InstanceTypeSpecification.N**

@@ -7,8 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 
 ## CPU and memory utilization
 <a name="cpu-and-memory-utilization"></a>
-+ The alarm changes state if the container CPU utilization or memory utilization exceed 70% within 1 minute.
-+ Our scaling policies’ target is 50%. If these alarms change state, it means the solution’s Auto Scaling is not working.
++ The CPU alarm changes state if the average CPU utilization of the Prebid Server service is 72% or more within 1 minute. The memory alarm changes state if the average memory utilization is 55% or more within 1 minute.
++ The scaling policies’ targets are 66% CPU utilization and 50% memory utilization, and each alarm threshold is 10% above its target. If these alarms change state, the solution’s Auto Scaling might not be keeping up with the load.
 + You might need to check if Auto Scaling is turned on or adjust the Auto Scaling settings.
-+ The alarm returns to the `OK` state if the CPU utilization and memory utilization are within the acceptable threshold for 5 minutes.
-+ Metric: `CPUUtilization` > 70%, `MemoryUtilization` > 70%
++ Metric: `CPUUtilization` >= 72%, `MemoryUtilization` >= 55%

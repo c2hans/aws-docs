@@ -9,6 +9,8 @@ Associates the specified subnets in the Amazon VPC to the firewall. You can spec
 
 This request creates an AWS Network Firewall firewall endpoint in each of the subnets. To enable the firewall's protections, you must also modify the VPC's route tables for each subnet's Availability Zone, to redirect the traffic that's coming into and going out of the zone through the firewall endpoint.
 
+For a proxy mode firewall, use this operation to add Availability Zones to the firewall. For each subnet, specify a NAT gateway in `NatGatewayCreateMappings` in the same Availability Zone. You can't add an Availability Zone that the firewall already uses. The firewall keeps working in its other Availability Zones while Network Firewall sets up the new one. If Network Firewall can't set up the new Availability Zone, it removes the Availability Zone from the firewall. It also deletes the NAT gateway that it created there. The Availability Zone's `Attachment` status shows the reason. You can then add the Availability Zone again.
+
 ## Request Syntax
 <a name="API_AssociateSubnets_RequestSyntax"></a>
 
@@ -16,6 +18,13 @@ This request creates an AWS Network Firewall firewall endpoint in each of the su
 {
    "FirewallArn": "{{string}}",
    "FirewallName": "{{string}}",
+   "NatGatewayCreateMappings": [
+      {
+         "AllocationIds": [ "{{string}}" ],
+         "PrivateIps": [ "{{string}}" ],
+         "SubnetId": "{{string}}"
+      }
+   ],
    "SubnetMappings": [
       {
          "IPAddressType": "{{string}}",
@@ -47,6 +56,13 @@ You must specify the ARN or the name, and you can specify both.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^[a-zA-Z0-9-]+$`
+Required: No
+
+ ** [NatGatewayCreateMappings](#API_AssociateSubnets_RequestSyntax) **   <a name="networkfirewall-AssociateSubnets-request-NatGatewayCreateMappings"></a>
+The NAT gateways that Network Firewall creates for the Availability Zones that you add to a proxy mode firewall. For a proxy mode firewall, you must specify one mapping for each Availability Zone in `SubnetMappings`, and no other Availability Zones. Each NAT gateway subnet must be in the firewall's VPC and can't be one of the firewall endpoint subnets.
+You can't specify this for a firewall that isn't a proxy mode firewall.
+Type: Array of [NatGatewayCreateMapping](API_NatGatewayCreateMapping.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 20 items.
 Required: No
 
  ** [SubnetMappings](#API_AssociateSubnets_RequestSyntax) **   <a name="networkfirewall-AssociateSubnets-request-SubnetMappings"></a>

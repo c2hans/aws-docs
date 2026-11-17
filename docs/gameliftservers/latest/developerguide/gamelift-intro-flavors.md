@@ -50,7 +50,7 @@ Amazon GameLift Servers provides a complete cloud hosting solution for container
 With Anywhere hosting, you can take advantage of Amazon GameLift Servers game session management features, including matchmaking and game session metrics, to host game servers wherever you want to. Self-manage your game server deployments, game server health monitoring, and capacity scaling.
 
 **Note**
-Anywhere fleets are particularly useful as test environments for rapid, iterative game development. Set up an Anywhere fleet for your own local workstation or a cloud-based hosting resource. For more information about testing with Anywhere, see [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md).
+Anywhere fleets are particularly useful as test environments for rapid, iterative game development. Set up an Anywhere fleet for your own local workstation or a cloud-based hosting resource. For more information about testing with Anywhere, see [Setting up local testing with Amazon GameLift Servers Anywhere](integration-testing.md).
 
 [Start developing an Amazon GameLift Servers Anywhere hosting solution for your game.](gamelift-roadmap-anywhere.md)
 

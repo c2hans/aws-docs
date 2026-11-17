@@ -137,19 +137,19 @@ A setting indicating whether the firewall is protected against a change to the f
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NatGatewayMappings`  <a name="cfn-networkfirewall-firewall-natgatewaymappings"></a>
-The NAT gateways that the firewall uses to proxy traffic. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+Property description not available.
 *Required*: No
 *Type*: Array of [NatGatewayMapping](aws-properties-networkfirewall-firewall-natgatewaymapping.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `NoSourcePreservation`  <a name="cfn-networkfirewall-firewall-nosourcepreservation"></a>
-Indicates whether the firewall operates in proxy mode, in which the source IP address of the traffic is not preserved. When this value is `TRUE`, the firewall proxies traffic through a NAT gateway and uses the NAT gateway's IP address as the source for traffic reaching the destination.
+Property description not available.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ProxySettings`  <a name="cfn-networkfirewall-firewall-proxysettings"></a>
-The listener configuration for the firewall's proxy. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+The proxy settings of a proxy mode firewall: its listeners and, if you specified them, your own `CertificateArn` and `DomainName`.
 *Required*: No
 *Type*: [ProxySettings](aws-properties-networkfirewall-firewall-proxysettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -184,7 +184,7 @@ The unique identifier of the transit gateway associated with this firewall. This
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VpcEndpoint`  <a name="cfn-networkfirewall-firewall-vpcendpoint"></a>
-The VPC and subnets for the firewall endpoint. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+The VPC and subnets for the endpoints of a proxy mode firewall.
 *Required*: No
 *Type*: [VpcEndpoint](aws-properties-networkfirewall-firewall-vpcendpoint.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

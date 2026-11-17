@@ -11,13 +11,13 @@ For information about breaking changes and migrating your applications, see the 
 # Simple cross-platform application using the AWS SDK for .NET
 <a name="quick-start-s3-1-cross"></a>
 
-This tutorial uses the AWS SDK for .NET and .NET Core for cross-platform development. The tutorial shows you how to use the SDK to list the [Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) that you own and, optionally, create a bucket.
+This tutorial uses the AWS SDK for .NET and .NET for cross-platform development. The tutorial shows you how to use the SDK to list the [Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) that you own and, optionally, create a bucket.
 
 You'll perform this tutorial using cross-platform tools such as the .NET command line interface (CLI). For other ways to configure your development environment, see [Installing and configuring your toolchain for the AWS SDK for .NET](net-dg-dev-env.md).
 
 **Required for cross-platform .NET development on Windows, Linux, or macOS:**
-+ Microsoft [.NET Core SDK](https://learn.microsoft.com/en-us/dotnet/fundamentals/), version 2.1, 3.1, or later, which includes the .NET command line interface (CLI) (**`dotnet`**) and the .NET Core runtime.
-+ A code editor or integrated development environment (IDE) that is appropriate for your operating system and requirements. This is typically one that provides some support for .NET Core.
++ The Microsoft [.NET SDK](https://learn.microsoft.com/en-us/dotnet/fundamentals/) for a version of .NET that the AWS SDK for .NET supports (see [Supported platforms](net-dg-supported-platforms.md)). The .NET SDK includes the .NET command line interface (CLI) (**`dotnet`**) and the .NET runtime.
++ A code editor or integrated development environment (IDE) that is appropriate for your operating system and requirements. This is typically one that provides some support for .NET.
 
   Examples include [Microsoft Visual Studio Code (VS Code)](https://code.visualstudio.com/), [JetBrains Rider](https://www.jetbrains.com/rider/), and [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/).
 

@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 + [Working with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html)
 
 ## Other references
-<a name="other-references.6be99052-b3e1-5890-9835-1102ec3fad91"></a>
+<a name="other-references.c6c3efbf-57c3-51d5-8271-dce54c259067"></a>
 + [Building a Data Perimeter on AWS](https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perimeter-on-aws/building-a-data-perimeter-on-aws.html) (AWS whitepaper)
-+ [SEC03-BP02 Grant least privilege access](https://docs.aws.amazon.com/wellarchitected/latest/framework/sec_permissions_least_privileges.html) (AWS Well Architected Framework, Security pillar)
-+ [SEC03-BP05 Define permission guardrails for your organization](https://docs.aws.amazon.com/wellarchitected/latest/framework/sec_permissions_define_guardrails.html) (AWS Well Architected Framework, Security Pillar)
++ [SEC03-BP02 Grant least privilege access](https://docs.aws.amazon.com/wellarchitected/latest/framework/sec_permissions_least_privileges.html) (AWS Well-Architected Framework, Security pillar)
++ [SEC03-BP05 Define permission guardrails for your organization](https://docs.aws.amazon.com/wellarchitected/latest/framework/sec_permissions_define_guardrails.html) (AWS Well-Architected Framework, Security pillar)

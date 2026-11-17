@@ -619,8 +619,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ConnectEndpoints](https://docs.aws.amazon.com/mediaconnect/latest/api/API_ConnectEndpoints.html)  **
   - **Description:** Grants permission to connect a source endpoint to a destination endpoint in AWS Elemental MediaConnect
-  - **Resource types (\*required):** [DestinationEndpoint\*](#list_mediaconnect-resource-DestinationEndpoint)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [DestinationEndpoint\*](#list_mediaconnect-resource-DestinationEndpoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [SourceEndpoint\*](#list_mediaconnect-resource-SourceEndpoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateBridge](https://docs.aws.amazon.com/mediaconnect/latest/api/API_CreateBridge.html)  **
@@ -769,8 +769,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DisconnectEndpoints](https://docs.aws.amazon.com/mediaconnect/latest/api/API_DisconnectEndpoints.html)  **
   - **Description:** Grants permission to disconnect a source endpoint from a destination endpoint in AWS Elemental MediaConnect
-  - **Resource types (\*required):** [DestinationEndpoint\*](#list_mediaconnect-resource-DestinationEndpoint)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [DestinationEndpoint\*](#list_mediaconnect-resource-DestinationEndpoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [SourceEndpoint\*](#list_mediaconnect-resource-SourceEndpoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DiscoverGatewayPollEndpoint](https://docs.aws.amazon.com/mediaconnect/latest/api/API_DiscoverGatewayPollEndpoint.html)  **
@@ -919,7 +919,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [PurchaseOffering](https://docs.aws.amazon.com/mediaconnect/latest/api/API_PurchaseOffering.html)  **
   - **Description:** Grants permission to purchase an offering
-  - **Resource types (\*required):** [Reservation\*](#list_mediaconnect-resource-Reservation)
+  - **Resource types (\*required):** [Offering\*](#list_mediaconnect-resource-Offering)
   - **Condition keys:**
   - **Access level:** Write
 
@@ -1111,8 +1111,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateFlowEntitlement](https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateFlowEntitlement.html)  **
   - **Description:** Grants permission to update entitlements on any flow
-  - **Resource types (\*required):** [Flow\*](#list_mediaconnect-resource-Flow)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [Entitlement\*](#list_mediaconnect-resource-Entitlement) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [Flow\*](#list_mediaconnect-resource-Flow) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_mediaconnect-aws_ResourceTag___TagKey_)
   - **Access level:** Permissions management, Write
 
 - **   [UpdateFlowMediaStream](https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateFlowMediaStream.html)  **

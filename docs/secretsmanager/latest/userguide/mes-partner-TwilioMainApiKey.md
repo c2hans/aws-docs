@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-TwilioMainApiKey"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c13c53b3"></a>
+<a name="w2aac29c13c61b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -28,12 +28,12 @@ adminKeySecret
 The secret paired with the Main API Key SID.
 
 ## Secret Metadata Fields
-<a name="w2aac27c13c53b5"></a>
+<a name="w2aac29c13c61b5"></a>
 
 This secret type has no metadata fields, because Secrets Manager does not rotate it.
 
 ## Usage Flow
-<a name="w2aac27c13c53b7"></a>
+<a name="w2aac29c13c61b7"></a>
 
 This secret type stores the Twilio Main API Key that Secrets Manager uses to create and delete credentials when it rotates a secret of type TwilioApiKey. Secrets Manager does not rotate a secret of this type.
 

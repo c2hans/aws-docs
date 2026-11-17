@@ -29,6 +29,17 @@ For changes to this guide that don't change the service, see [Document history](
 ## November 2026
 <a name="whats-new-2026-11"></a>
 
+### OAuth 2.0 token exchange (RFC 8693)
+<a name="whats-new-2026-11-12-token-exchange"></a>
+
+New · User pools · Essentials, Plus · November 12, 2026
+
+You can now exchange a user's token for a new token that's scoped to a specific downstream service, so your services and AI agents don't have to forward the user's original token. The new token can have a narrower scope than the original, is bound to one audience, and comes without a refresh token.
+
+When you include an actor token, Amazon Cognito adds an `act` claim that identifies the intermediary, such as a Model Context Protocol (MCP) server that acts on a user's behalf. You can exchange tokens at the token endpoint or with the `GetDerivedToken` API operation.
+
+See [Exchanging tokens for downstream services](cognito-user-pools-token-exchange.md) and the [What's New post](https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/) on the AWS website.
+
 ### Session management for user pools
 <a name="whats-new-2026-11-11-session-management"></a>
 

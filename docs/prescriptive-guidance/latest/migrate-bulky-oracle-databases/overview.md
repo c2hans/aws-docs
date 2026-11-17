@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 # Overview
 <a name="overview"></a>
 
-This is the conceptual process of migrating Oracle databases to AWS using Oracle XTTS and RMAN incremental backups with Snowball, Direct Connect, and FSx for Lustre.
+This is the conceptual process of migrating Oracle databases to AWS using Oracle XTTS and RMAN incremental backups with AWS Snowball, Direct Connect, and FSx for Lustre.
 
 The following diagram shows the high-level migration steps for an Oracle database across different endian formats.
 
@@ -33,53 +33,53 @@ Before cutover, you can minimize downtime by doing the following:
 
 The Oracle document Reduce Transportable Tablespace Downtime using Cross Platform Incremental Backup ([2471245.1](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=114983393292188&id=2471245.1)) explains how to use Oracle XTTS with RMAN incremental backups. The document also includes details on requirements and recommendations. The document doesn't describe how to migrate an Oracle database from an on-premises environment to Oracle on AWS or how to parallelize each migration step to minimize downtime.
 
-This guide provides a way to parallelize the phases, minimizing migration downtime in mission-critical system environments with tremendously large data sizes.
+This guide provides a way to parallelize the phases, minimizing migration downtime in mission-critical system environments with very large data sizes.
 
 Following an initial setup phase, the high-level steps for using Oracle XTTS with RMAN incremental backups include the following phases.
 
 ## Phase 1 - Prepare phase
-<a name="phase-1---prepare-phase.732c5a49-e92a-5127-9b19-651cc42eb328"></a>
+<a name="phase-1---prepare-phase.924102d9-efa6-52b5-a7af-4b18211fb7aa"></a>
 
 The prepare phase consists of the following steps.
 
-1. An initial full backup (level=0) of the tablespaces is taken on the source database to the source stage, which is NAS storage.
+1. Take an initial full backup (level=0) of the tablespaces on the source database to the source stage, which is NAS storage.
 
-1. The backup copies are transferred using Snowball to the target stage, which is FSx for Lustre integrated with Amazon Simple Storage Service (Amazon S3).
+1. Transfer the backup copies using Snowball to the target stage, which is FSx for Lustre integrated with Amazon Simple Storage Service (Amazon S3).
 
-1. Backup tablespaces are restored and converted to the target database with little-endian format.
+1. Restore the backup tablespaces and convert them to the target database with little-endian format.
 
-The steps in this phase are run only once during migration. The data being transported are fully accessible in the source database during this phase.
+You run the steps in this phase only once during migration. The data being transported is fully accessible in the source database during this phase.
 
 ## Phase 2 - Roll-forward phase
-<a name="phase-2---roll-forward-phase.4d84b7d5-878e-5f54-86fd-60fc5a06275f"></a>
+<a name="phase-2---roll-forward-phase.ee1aef6b-3a25-5e1a-b135-425e6cf6f4fd"></a>
 
 The roll-forward phase consists of the following steps.
 
-1. An incremental backup is taken from the source database to the source stage.
+1. Take an incremental backup from the source database to the source stage.
 
-1. Incremental backup copies are transferred to the target stage over Direct Connect.
+1. Transfer the incremental backup copies to the target stage over Direct Connect.
 
-1. Incremental backup copies are converted to the target database with little-endian format. The copies are then applied to the initial target database, which is called the roll-forward step.
+1. Convert the incremental backup copies to the target database with little-endian format. Then apply the copies to the initial target database, which is called the roll-forward step.
 
-You can run this phase multiple times. Each successive incremental backup should take less time and will bring the destination data file copies more current with the source database. As in phase 1, the source data being transported are fully accessible during this phase.
+You can run this phase multiple times. Each successive incremental backup should take less time and brings the destination data file copies closer to the current state of the source database. As in phase 1, the source data being transported is fully accessible during this phase.
 
 ## Phase 3 - Transport phase
-<a name="phase-3---transport-phase.6dee653e-a55c-5974-930f-275f4a8f4001"></a>
+<a name="phase-3---transport-phase.bc0d9fc9-41db-5e95-a9a9-7ad778535be4"></a>
 
 The third phase includes the following steps.
 
-1. The tablespaces being transported are changed to read only.
+1. Change the tablespaces being transported to read-only.
 
-1. A final incremental backup is taken from the source database.
+1. Take a final incremental backup from the source database.
 
-1. The metadata is exported.
+1. Export the metadata.
 
-1. Backups are transferred and applied to the destination.
+1. Transfer the backups and apply them to the destination.
 
-1. Object metadata is imported.
+1. Import the object metadata.
 
-At this point, the system change number (SCN) of the destination database is consistent with that of source database.
+At this point, the system change number (SCN) of the destination database is consistent with that of the source database.
 
-The metadata of transportable tablespaces are exported from the source database and imported into the destination database. The metadata includes information for the user, role, package, procedure, function, table, and index.
+You export the metadata of transportable tablespaces from the source database and import it into the destination database. The metadata includes information for the user, role, package, procedure, function, table, and index.
 
-Finally, the tablespaces are made read/write for full access on the destination database from application.
+Finally, make the tablespaces read/write for full application access on the destination database.

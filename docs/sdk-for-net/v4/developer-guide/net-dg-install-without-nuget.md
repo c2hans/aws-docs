@@ -56,7 +56,7 @@ The recommended method for handling SDK references is to download and install ju
    1. Save you project's `.csproj` file.
 
 ------
-#### [ Windows with Visual Studio and .NET Core ]
+#### [ Windows with Visual Studio and .NET ]
 
    1. In Visual Studio, load your project and open **Project**, **Add Reference**.
 

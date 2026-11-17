@@ -5,10 +5,11 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # UpdateAgentProfile
 <a name="API_UpdateAgentProfile"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
+Updates an existing optimization profile's configuration, including its pillars, execution role, and aggregation settings. Include only the fields you want to change. Any field you omit from the request keeps its current value, so you do not need to retrieve the profile first and resend the fields you are not changing.
 
-Updates an existing optimization profile's configuration, including its pillars, execution role, and aggregation settings. This operation uses full replacement semantics (PUT). You must include all fields in the request body, not only the fields you want to change. Any field omitted from the request is reset to its default value or cleared. To avoid unintentional data loss, retrieve the current profile with `GetAgentProfile`, modify the desired values, and pass the complete object to this operation.
+To clear an optional text field, supply an empty string for it; the field is then unset, and a subsequent read omits it rather than returning an empty string. Omitting the field from the request leaves the stored value in place. `description` and `businessOverview` can be cleared this way. `displayName` cannot be cleared because a display name is required, though you can change it. `pillars` cannot be cleared because a profile must target at least one pillar.
+
+ `aggregationConfiguration` behaves differently because it is a list of per-account configurations rather than a text field. Supplying an empty list removes every account entry, but the field itself remains set: a subsequent read returns an empty list rather than omitting the field. Omitting it from the request keeps the stored entries.
 
 ## Request Syntax
 <a name="API_UpdateAgentProfile_RequestSyntax"></a>
@@ -52,13 +53,13 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [aggregationConfiguration](#API_UpdateAgentProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentProfile-request-aggregationConfiguration"></a>
-The updated aggregation configuration.
+The updated aggregation configuration, as a list of per-account entries. Omit this field to keep the current entries, or supply an empty list to remove them all. The field remains set either way — an emptied configuration is read back as an empty list, not as an absent field.
 Type: Array of [AggregationConfiguration](API_AggregationConfiguration.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 Required: No
 
  ** [businessOverview](#API_UpdateAgentProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentProfile-request-businessOverview"></a>
-The updated business overview for the profile.
+The updated business overview for the profile. Omit this field to keep the current business overview, or supply an empty string to clear it; a cleared business overview is read back as absent rather than as an empty string.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 512.
 Pattern: `(?:(?!\$\{[a-zA-Z]+:)[\P{C}])*`
@@ -77,28 +78,28 @@ Type: Boolean
 Required: No
 
  ** [description](#API_UpdateAgentProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentProfile-request-description"></a>
-The updated description of the profile.
+The updated description of the profile. Omit this field to keep the current description, or supply an empty string to clear it; a cleared description is read back as absent rather than as an empty string.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 512.
 Pattern: `(?:(?!\$\{[a-zA-Z]+:)[\P{C}])*`
 Required: No
 
  ** [displayName](#API_UpdateAgentProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentProfile-request-displayName"></a>
-The updated display name of the profile.
+The updated display name of the profile. Omit this field to keep the current display name. A display name is required, so it cannot be cleared.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
 Pattern: `(?:(?!\$\{[a-zA-Z]+:)[\P{C}])+`
 Required: No
 
  ** [executionRoleArn](#API_UpdateAgentProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentProfile-request-executionRoleArn"></a>
-The updated ARN of the IAM execution role.
+The updated ARN of the IAM execution role. Omit this field to keep the current execution role.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `arn:([a-z\-]+):iam::\d{12}:role/(service-role/)?[a-zA-Z0-9+=,.@\-_]+`
 Required: No
 
  ** [pillars](#API_UpdateAgentProfile_RequestSyntax) **   <a name="wellarchitected-UpdateAgentProfile-request-pillars"></a>
-The updated AWS Well-Architected Framework pillars for the profile.
+The updated AWS Well-Architected Framework pillars for the profile. Omit this field to keep the current pillars. A profile must target at least one pillar, so an empty list is rejected.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `COST_OPTIMIZATION | SECURITY | RESILIENCE | PERFORMANCE | OPERATIONAL_EXCELLENCE`
@@ -135,13 +136,7 @@ Content-type: application/json
    "lastModifiedAt": "string",
    "lastModifiedBy": "string",
    "name": "string",
-   "pillars": [ "string" ],
-   "tags": [
-      {
-         "key": "string",
-         "value": "string"
-      }
-   ]
+   "pillars": [ "string" ]
 }
 ```
 
@@ -155,7 +150,7 @@ The following data is returned in JSON format by the service.
  ** [aggregationConfiguration](#API_UpdateAgentProfile_ResponseSyntax) **   <a name="wellarchitected-UpdateAgentProfile-response-aggregationConfiguration"></a>
 The aggregation configuration.
 Type: Array of [AggregationConfiguration](API_AggregationConfiguration.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 
  ** [arn](#API_UpdateAgentProfile_ResponseSyntax) **   <a name="wellarchitected-UpdateAgentProfile-response-arn"></a>
 The Amazon Resource Name (ARN) of the updated profile.
@@ -236,10 +231,6 @@ Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `COST_OPTIMIZATION | SECURITY | RESILIENCE | PERFORMANCE | OPERATIONAL_EXCELLENCE`
 
- ** [tags](#API_UpdateAgentProfile_ResponseSyntax) **   <a name="wellarchitected-UpdateAgentProfile-response-tags"></a>
-The tags associated with the updated profile.
-Type: Array of [Tag](API_Tag.md) objects
-
 ## Errors
 <a name="API_UpdateAgentProfile_Errors"></a>
 
@@ -266,6 +257,20 @@ Identifier of the resource affected.
  ** ResourceType **
 Type of the resource affected.
 HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+The user has reached their resource quota.
+ ** Message **
+Description of the error.
+ ** QuotaCode **
+Service Quotas requirement to identify originating quota.
+ ** ResourceId **
+Identifier of the resource affected.
+ ** ResourceType **
+Type of the resource affected.
+ ** ServiceCode **
+Service Quotas requirement to identify originating service.
+HTTP Status Code: 402
 
  ** ThrottlingException **
 Request was denied due to request throttling.

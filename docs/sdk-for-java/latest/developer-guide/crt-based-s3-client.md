@@ -139,3 +139,11 @@ For a full listing of the configuration differences, see the API reference.
 | Java-based S3 async client | AWS CRT-based S3 client |
 | --- | --- |
 | Client-level configurations+  [ClientOverrideConfiguration.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/client/config/ClientOverrideConfiguration.Builder.html) Request-level configurations+  [RequestOverrideConfiguration.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.Builder.html) <br />+  [AwsRequestOverrideConfiguration.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/AwsRequestOverrideConfiguration.Builder.html)  | Client-level configurations+  [S3CrtAsyncClientBuilder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3CrtAsyncClientBuilder.html) Request-level configurations+  [RequestOverrideConfiguration.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/core/RequestOverrideConfiguration.Builder.html) <br />+  [AwsRequestOverrideConfiguration.Builder](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/awscore/AwsRequestOverrideConfiguration.Builder.html)  |
+
+**Topics**
++ [Add dependencies](#crt-based-s3-client-depend)
++ [Create an instance](#crt-based-s3-client-create)
++ [Use the AWS CRT-based S3 client](#crt-based-s3-client-use)
++ [Uploading streams of unknown size](#crt-stream-unknown-size)
++ [Configuration limitations](#crt-based-s3-client-limitations)
++ [Download through a direct buffer pool](crt-based-s3-client-direct-buffer-pool.md)

@@ -631,6 +631,43 @@ Add this policy when your harness uses a gateway configured with SigV4 inbound a
 }
 ```
 
+#### Remote MCP servers with IAM authentication
+<a name="harness-remote-mcp-iam-policy"></a>
+
+Add a policy when a `remote_mcp` tool uses `outboundAuth` with `awsIam`. The harness signs requests to the MCP server with SigV4 using the execution role, so the execution role needs permission to call that endpoint. The actions depend on the service that hosts the MCP server, which is the `service` value you set in `awsIam`.
+
+For example, add this policy when the MCP server is an AWS Lambda function URL that uses `AWS_IAM` authentication (`"service": "lambda"`). Callers of these URLs need both `lambda:InvokeFunctionUrl` and `lambda:InvokeFunction`. For more information, see [Control access to Lambda function URLs](https://docs.aws.amazon.com/lambda/latest/dg/urls-auth.html) in the * AWS Lambda Developer Guide*.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "RemoteMcpLambdaFunctionUrl",
+      "Effect": "Allow",
+      "Action": "lambda:InvokeFunctionUrl",
+      "Resource": "arn:aws:lambda:<region>:<accountId>:function:<functionName>",
+      "Condition": {
+        "StringEquals": {
+          "lambda:FunctionUrlAuthType": "AWS_IAM"
+        }
+      }
+    },
+    {
+      "Sid": "RemoteMcpLambdaInvokeViaUrl",
+      "Effect": "Allow",
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:<region>:<accountId>:function:<functionName>",
+      "Condition": {
+        "Bool": {
+          "lambda:InvokedViaFunctionUrl": "true"
+        }
+      }
+    }
+  ]
+}
+```
+
 #### Skill sources in Amazon S3 and Git
 <a name="_skill_sources_in_amazon_s3_and_git"></a>
 

@@ -468,6 +468,10 @@ You can also select the check box next to the **Configuration name**, then choos
 
 The following example shows how to use the [update-distribution-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/update-distribution-configuration.html) command to update distribution settings for your AMI, using the AWS CLI.
 
+**Note**
+The **update-distribution-configuration** command replaces the entire distribution configuration. The `distributions` list that you provide replaces the existing distributions—include every Region that you want to keep.
+To prevent unintended removal of existing settings, use the **get-distribution-configuration** command to retrieve the current configuration. Use the output as the basis for your update request JSON file, and modify only the fields that you want to change.
+
 1.
 
 **Create a CLI input JSON file**
@@ -527,7 +531,11 @@ The path for the JSON file should follow the appropriate convention for the base
 
 The following example uses the same settings as the AWS CLI example. Each top-level JSON key is a cmdlet parameter, such as `DistributionConfigurationArn`, `Description`, and `Distribution`. Build each distribution as an `Amazon.Imagebuilder.Model.Distribution` object, and build the `amiTags` map as a `Dictionary[string,string]`.
 
-The following example shows how to use the [Update-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-EC2IBDistributionConfiguration.html) cmdlet to update distribution settings for your AMI:
+**Note**
+The [Update-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-EC2IBDistributionConfiguration.html) cmdlet replaces the entire distribution configuration. The distributions that you provide with the `Distribution` parameter replace the existing distributions—include every Region that you want to keep.
+To prevent unintended removal of existing settings, run the [Get-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBDistributionConfiguration.html) cmdlet to retrieve the current configuration. Use the returned values as the basis for the parameters that you pass to the `Update-EC2IBDistributionConfiguration` cmdlet.
+
+The following example shows how to use the `Update-EC2IBDistributionConfiguration` cmdlet to update distribution settings for your AMI:
 
 ```
 Import-Module AWS.Tools.Imagebuilder

@@ -41,7 +41,7 @@ The following topics in this document show you how to use the AWS SDK for .NET t
 The following links to the [Amazon S3 Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) provide additional examples of how to use the AWS SDK for .NET to work with Amazon S3.
 
 **Note**
-Although these examples and additional programming considerations were created for Version 3 of the AWS SDK for .NET using .NET Framework, they are also viable for later versions of the AWS SDK for .NET using .NET Core. Small adjustments in the code are sometimes necessary.
+Although these examples and additional programming considerations were created for Version 3 of the AWS SDK for .NET using .NET Framework, they are also viable for later versions of the AWS SDK for .NET using .NET. Small adjustments in the code are sometimes necessary.
 
 **Amazon S3 programming examples**
 +  [Managing ACLs](https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-using-dot-net-sdk.html)

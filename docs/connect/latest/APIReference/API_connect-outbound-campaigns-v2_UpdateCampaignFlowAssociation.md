@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 # UpdateCampaignFlowAssociation
 <a name="API_connect-outbound-campaigns-v2_UpdateCampaignFlowAssociation"></a>
 
-Updates associated Connect Customer campaign flow for an outbound campaign.
+Updates the associated Connect Customer campaign flow for an outbound campaign. Only campaigns in the `Initialized` state, or campaigns of type `JOURNEY` in the `Running` or `Paused` state, are valid for this operation.
 
 ## Request Syntax
 <a name="API_connect-outbound-campaigns-v2_UpdateCampaignFlowAssociation_RequestSyntax"></a>

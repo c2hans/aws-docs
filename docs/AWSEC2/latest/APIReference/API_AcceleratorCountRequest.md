@@ -10,12 +10,12 @@ The minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia c
 ## Contents
 <a name="API_AcceleratorCountRequest_Contents"></a>
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum number of accelerators. To specify no maximum limit, omit this parameter. To exclude accelerator-enabled instance types, set `Max` to `0`.
 Type: Integer
 Required: No
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum number of accelerators. To specify no minimum limit, omit this parameter.
 Type: Integer
 Required: No

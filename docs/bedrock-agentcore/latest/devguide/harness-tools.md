@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 <a name="harness-tools"></a>
 
 Tools are declarative. You list what the agent can call; AgentCore handles invocation, credentials, and results. The harness supports five tool types and managed built-in tools.
-+  ** [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers:** Connect to any remote MCP endpoint by URL. No Gateway required for simple cases.
++  ** [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers:** Connect to any remote MCP endpoint by URL. To authenticate, send request headers, or have the harness sign each request with Signature Version 4 (SigV4) using the harness execution role.
 +  ** [AgentCore Gateway](gateway.md):** Governed connectivity to APIs and MCP servers with inbound/outbound auth, access control, and [policy enforcement](policy.md). Reference a gateway ARN and every tool configured on that gateway becomes available. Use Gateway when you need a managed, policy-backed tool surface.
 +  ** [AgentCore Browser](browser-tool.md):** Managed web browsing and automation.
 +  ** [AgentCore Code Interpreter](code-interpreter-tool.md):** Sandboxed Python/JavaScript/TypeScript code execution for data analysis and computation.
@@ -89,6 +89,18 @@ tools = [
             "headers": {"x-api-key": "${arn:aws:bedrock-agentcore:us-west-2:123456789012:token-vault/default/apikeycredentialprovider/my-exa-key}"}
         }},
     },
+    # MCP server that requires IAM authentication. The harness signs each request
+    # with SigV4 using the harness execution role. Set service to the signing name
+    # of the endpoint, for example lambda for a Lambda function URL. If you omit
+    # region, the harness Region is used.
+    {
+        "type": "remote_mcp",
+        "name": "my-iam-mcp",
+        "config": {"remoteMcp": {
+            "url": "https://<url-id>.lambda-url.us-west-2.on.aws/mcp",
+            "outboundAuth": {"awsIam": {"service": "lambda"}}
+        }},
+    },
     # For managed credential rotation and OAuth-protected tools, put your MCP server
     # behind AgentCore Gateway and use AgentCore Identity instead of raw headers.
     #
@@ -150,6 +162,7 @@ agentcore add harness \
   --tools '[
     {"type":"remote_mcp","name":"exa","config":{"remoteMcp":{"url":"https://mcp.exa.ai/mcp"}}},
     {"type":"remote_mcp","name":"exa-secure","config":{"remoteMcp":{"url":"https://mcp.exa.ai/mcp","headers":{"x-api-key":"${arn:aws:bedrock-agentcore:us-west-2:123456789012:token-vault/default/apikeycredentialprovider/my-exa-key}"}}}},
+    {"type":"remote_mcp","name":"my-iam-mcp","config":{"remoteMcp":{"url":"https://<url-id>.lambda-url.us-west-2.on.aws/mcp","outboundAuth":{"awsIam":{"service":"lambda"}}}}},
     {"type":"agentcore_browser","name":"browser"},
     {"type":"agentcore_code_interpreter","name":"code-interpreter"},
     {"type":"agentcore_gateway","name":"my-gateway","config":{"agentCoreGateway":{"gatewayArn":"arn:aws:bedrock-agentcore:us-west-2:123456789012:gateway/my-gateway","outboundAuth":{"awsIam":{}}}}},

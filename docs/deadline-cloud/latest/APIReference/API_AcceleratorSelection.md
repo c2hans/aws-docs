@@ -19,7 +19,7 @@ The available GPU accelerators are:
 +  `l40s` - NVIDIA L40S Tensor Core GPU (48 GiB memory)
 +  `rtx-pro-server-6000` - NVIDIA RTX PRO Server 6000 GPU (96 GiB memory)
 Type: String
-Valid Values: `t4 | a10g | l4 | l40s | rtx-pro-server-6000`
+Valid Values: `t4 | a10g | l4 | l40s | rtx-pro-server-6000 | rtx-pro-4500`
 Required: Yes
 
  ** runtime **   <a name="deadlinecloud-Type-AcceleratorSelection-runtime"></a>

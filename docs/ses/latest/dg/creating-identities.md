@@ -39,7 +39,7 @@ To send email from the same domain or email address in more than one AWS Region,
 + Email addresses *are* case sensitive. If you verify sender@EXAMPLE.com, you can't send email from sender@example.com unless you verify sender@example.com as well.
 
 **Tip**
-If you're a first time user of SES, you can use the [Get started wizard](setting-up.md#quick-start-verify-email-addresses) to create and verify your first identity (email address or domain).
+If you're a first time user of SES, you can use the [Get started wizard](getting-started-sending.md#quick-start-verify-email-addresses) to create and verify your first identity (email address or domain).
 
 **Topics**
 + [Creating a domain identity](#verify-domain-procedure)

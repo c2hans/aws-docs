@@ -51,7 +51,7 @@ You will not see this information again
 
 ![Webhook Configuration panel showing connected status and webhook URL.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/80d0a319f87e.png)
 
-**Note:** AWS DevOps Agent shows the webhook secret one time. If you lose it, rotate the webhook to generate a new secret. The webhook URL does not change. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+**Note:** AWS DevOps Agent shows the webhook secret one time. If you lose it, rotate the webhook to generate a new secret. The webhook URL does not change. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md#managing-webhook-credentials).
 
 ### Configure your ServiceNow Business Rule
 <a name="configure-your-servicenow-business-rule"></a>

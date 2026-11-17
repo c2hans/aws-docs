@@ -39,7 +39,7 @@ The following `ECRReplicationServiceRolePolicy` role permissions policy allows A
 ------
 
 **Note**
-The `ReplicateImage` is an internal API that Amazon ECR uses for replication and can't be called directly.
+The `ReplicateImage` and `ReplicateImageDelete` APIs are internal APIs that Amazon ECR uses for replication and can't be called directly.
 
 You must configure permissions to allow an IAM entity (for example a user, group, or role) to create, edit, or delete a service-linked role. For more information, see [Service-Linked Role Permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#service-linked-role-permissions) in the *IAM User Guide*.
 

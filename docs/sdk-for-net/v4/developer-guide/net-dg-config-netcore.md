@@ -13,21 +13,21 @@ For information about breaking changes and migrating your applications, see the 
 
 (This topic was formerly titled, "Configuring the AWS SDK for .NET with .NET Core")
 
-One of the biggest changes in .NET Core is the removal of `ConfigurationManager` and the standard `app.config` and `web.config` files that were used with .NET Framework and ASP.NET applications.
+One of the biggest changes in .NET is the removal of `ConfigurationManager` and the standard `app.config` and `web.config` files that were used with .NET Framework and ASP.NET applications.
 
-Configuration in .NET Core is based on key-value pairs established by configuration providers. Configuration providers read configuration data into key-value pairs from a variety of configuration sources, including command-line arguments, directory files, environment variables, and settings files.
+Configuration in .NET is based on key-value pairs established by configuration providers. Configuration providers read configuration data into key-value pairs from a variety of configuration sources, including command-line arguments, directory files, environment variables, and settings files.
 
 **Note**
 For further information, see [Configuration in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration).
 
-To make it easy to use the AWS SDK for .NET with .NET Core, you can use the [AWSSDK.Extensions.NETCore.Setup](https://www.nuget.org/packages/AWSSDK.Extensions.NETCore.Setup/) NuGet package. Like many .NET Core libraries, it adds extension methods to the `IConfiguration` interface to make getting the AWS configuration seamless.
+To make it easy to use the AWS SDK for .NET with .NET, you can use the [AWSSDK.Extensions.NETCore.Setup](https://www.nuget.org/packages/AWSSDK.Extensions.NETCore.Setup/) NuGet package. Like many .NET libraries, it adds extension methods to the `IConfiguration` interface to make getting the AWS configuration seamless.
 
 The source code for this package is on GitHub at [https://github.com/aws/aws-sdk-net/tree/main/extensions/src/AWSSDK.Extensions.NETCore.Setup](https://github.com/aws/aws-sdk-net/tree/main/extensions/src/AWSSDK.Extensions.NETCore.Setup).
 
 ## Using AWSSDK.Extensions.NETCore.Setup
 <a name="net-core-configuration-builder"></a>
 
-Suppose that you create an ASP.NET Core Model-View-Controller (MVC) application, which can be accomplished with the **ASP.NET Core Web Application** template in Visual Studio or by running `dotnet new mvc ...` in the .NET Core CLI. When you create such an application, the constructor for `Startup.cs` handles configuration by reading in various input sources from configuration providers such as `appsettings.json`.
+Suppose that you create an ASP.NET Core Model-View-Controller (MVC) application, which can be accomplished with the **ASP.NET Core Web Application** template in Visual Studio or by running `dotnet new mvc ...` in the .NET CLI. When you create such an application, the constructor for `Startup.cs` handles configuration by reading in various input sources from configuration providers such as `appsettings.json`.
 
 ```
 public Startup(IConfiguration configuration)
@@ -132,7 +132,7 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 **Note**
-Background on dependency injection in .NET Core is available on the [.NET Core documentation site](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection).
+Background on dependency injection in .NET is available on the [ASP.NET Core documentation site](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection).
 
 The `AWSSDK.Extensions.NETCore.Setup` NuGet package adds new extension methods to `IServiceCollection` that you can use to add AWS services to the dependency injection. The following code shows you how to add the AWS options that are read from `IConfiguration` to add Amazon S3 and DynamoDB to the list of services. (Be sure to add the [AWSSDK.S3](https://www.nuget.org/packages/AWSSDK.S3) and [AWSSDK.DynamoDBv2](https://www.nuget.org/packages/AWSSDK.DynamoDBv2) NuGet packages to your project.)
 

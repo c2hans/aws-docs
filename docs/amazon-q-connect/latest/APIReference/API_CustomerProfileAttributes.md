@@ -130,6 +130,14 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32767.
 Required: No
 
+ ** calculatedAttributes **   <a name="connect-Type-amazon-q-connect_CustomerProfileAttributes-calculatedAttributes"></a>
+The calculated attributes from the customer profile that are used with the message template.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 100 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 32767.
+Value Length Constraints: Minimum length of 1. Maximum length of 32767.
+Required: No
+
  ** city **   <a name="connect-Type-amazon-q-connect_CustomerProfileAttributes-city"></a>
 The city in which a customer lives.
 Type: String
@@ -291,6 +299,12 @@ Required: No
 The province in which a customer lives.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32767.
+Required: No
+
+ ** recommendations **   <a name="connect-Type-amazon-q-connect_CustomerProfileAttributes-recommendations"></a>
+The recommendations that are associated with the customer profile.
+Type: Array of [ProfileRecommendation](API_amazon-q-connect_ProfileRecommendation.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
 
  ** shippingAddress1 **   <a name="connect-Type-amazon-q-connect_CustomerProfileAttributes-shippingAddress1"></a>

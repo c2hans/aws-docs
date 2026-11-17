@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # ListAgentGoals
 <a name="API_ListAgentGoals"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Lists optimization goals associated with a specified profile. Goals define specific targets and objectives for the optimization process.
 
 ## Request Syntax

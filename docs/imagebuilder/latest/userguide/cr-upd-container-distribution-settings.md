@@ -124,6 +124,10 @@ New-EC2IBDistributionConfiguration -Name distribution-configuration-name `
 
 You can update distribution settings for your container image from the AWS CLI or AWS Tools for PowerShell. You can also update tags for the container images within each Region. To update tags for your distribution configuration resource, see the [Tag resources](tag-resources.md) section.
 
+**Note**
+The **update-distribution-configuration** command and the [Update-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-EC2IBDistributionConfiguration.html) cmdlet replace the entire distribution configuration. The distributions list that you provide replaces the existing distributions—include every Region that you want to keep.
+To prevent unintended removal of existing settings, retrieve the current configuration with the **get-distribution-configuration** command or the [Get-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBDistributionConfiguration.html) cmdlet, and use the output as the basis for your update request.
+
 ------
 #### [ AWS CLI ]
 
@@ -184,7 +188,7 @@ The path for the JSON file should follow the appropriate convention for the base
 
 The following example uses the same settings as the AWS CLI example. Each top-level JSON key is a cmdlet parameter, such as `DistributionConfigurationArn`, `Description`, and `Distribution`. Build each distribution as an `Amazon.Imagebuilder.Model.Distribution` object.
 
-The following example shows how to use the [Update-EC2IBDistributionConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-EC2IBDistributionConfiguration.html) cmdlet to update distribution settings for your container image:
+The following example shows how to use the `Update-EC2IBDistributionConfiguration` cmdlet to update distribution settings for your container image:
 
 ```
 Import-Module AWS.Tools.Imagebuilder

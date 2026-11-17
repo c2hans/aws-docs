@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/perf_process_culture_use_monitoring_solutions.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # PERF05-BP02 Use monitoring solutions to understand the areas where performance is most critical
 <a name="perf_process_culture_use_monitoring_solutions"></a>
 

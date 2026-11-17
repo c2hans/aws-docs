@@ -180,6 +180,12 @@ The Availability Zone that the flow was created in. These options are limited to
 `Source.IngestIp`  <a name="Source.IngestIp-fn::getatt"></a>
 The IP address that the flow listens on for incoming content.
 
+`Source.RtmpPushDetails.ApplicationName`  <a name="Source.RtmpPushDetails.ApplicationName-fn::getatt"></a>
+Property description not available.
+
+`Source.RtmpPushDetails.StreamName`  <a name="Source.RtmpPushDetails.StreamName-fn::getatt"></a>
+Property description not available.
+
 `Source.SourceArn`  <a name="Source.SourceArn-fn::getatt"></a>
 The ARN of the source.
 

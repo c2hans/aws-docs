@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # UpdateProxySettings
 <a name="API_UpdateProxySettings"></a>
 
-Modifies the proxy listener configuration of a proxy mode firewall. Proxy mode firewalls are created with `NoSourcePreservation` set to `TRUE`. Use this operation to change the ports and protocols on which the firewall's proxy listens for traffic.
+Modifies the proxy settings of a proxy mode firewall. Use this operation to change the ports and protocols on which the firewall's proxy listens for traffic. The new listeners take effect without recreating the firewall.
+
+The `ProxySettings` that you provide replace the firewall's current proxy settings. If you created the firewall with your own `CertificateArn` and `DomainName`, you must specify the same values in every request. You can't change or remove them.
 
 ## Request Syntax
 <a name="API_UpdateProxySettings_RequestSyntax"></a>
@@ -15,6 +17,8 @@ Modifies the proxy listener configuration of a proxy mode firewall. Proxy mode f
    "FirewallArn": "{{string}}",
    "FirewallName": "{{string}}",
    "ProxySettings": {
+      "CertificateArn": "{{string}}",
+      "DomainName": "{{string}}",
       "ListenerProperties": [
          {
             "Port": {{number}},
@@ -50,7 +54,7 @@ Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** [ProxySettings](#API_UpdateProxySettings_RequestSyntax) **   <a name="networkfirewall-UpdateProxySettings-request-ProxySettings"></a>
-The proxy listener configuration to set on the firewall. This specifies the ports and protocols on which the firewall's proxy listens for traffic.
+The proxy settings to set on the firewall. These replace the current proxy settings. Specify at least one listener, and at most one HTTP listener and one HTTPS listener, on different ports. If the firewall uses your own `CertificateArn` and `DomainName`, specify the same values that you used to create the firewall.
 Type: [ProxySettings](API_ProxySettings.md) object
 Required: No
 
@@ -71,6 +75,8 @@ Required: No
    "FirewallArn": "string",
    "FirewallName": "string",
    "ProxySettings": {
+      "CertificateArn": "string",
+      "DomainName": "string",
       "ListenerProperties": [
          {
             "Port": number,
@@ -102,7 +108,7 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^[a-zA-Z0-9-]+$`
 
  ** [ProxySettings](#API_UpdateProxySettings_ResponseSyntax) **   <a name="networkfirewall-UpdateProxySettings-response-ProxySettings"></a>
-The updated proxy listener configuration on the firewall.
+The updated proxy settings for the firewall.
 Type: [ProxySettings](API_ProxySettings.md) object
 
  ** [UpdateToken](#API_UpdateProxySettings_ResponseSyntax) **   <a name="networkfirewall-UpdateProxySettings-response-UpdateToken"></a>

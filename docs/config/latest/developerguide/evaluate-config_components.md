@@ -64,7 +64,6 @@ For a list of managed rules that support proactive evaluation, see [List of AWS 
 <a name="list-proactive-resource-types"></a>
 
 The following is a list of resource types that are supported for proactive evaluation:
-+ `AWS::EC2::EIP`
 + `AWS::EC2::Subnet`
 
 ## AWS Config Rule Metadata

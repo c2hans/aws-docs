@@ -174,7 +174,7 @@ The `aws-actions/devops-agent-release-testing@v1` GitHub Action triggers the rel
 #### Prerequisites
 <a name="prerequisites"></a>
 + A [test profile](#defining-test-profiles) configured in your Agent Space
-+ A [Invoking DevOps Agent through Webhook](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md) configured in your Agent Space
++ A [webhook endpoint](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md) configured in your Agent Space
 
 #### Step 1: Configure GitHub repository secrets
 <a name="step-1-configure-github-repository-secrets"></a>

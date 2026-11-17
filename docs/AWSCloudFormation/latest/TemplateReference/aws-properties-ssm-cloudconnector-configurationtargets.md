@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SSM::CloudConnector ConfigurationTargets
 <a name="aws-properties-ssm-cloudconnector-configurationtargets"></a>
 
-The target resources in the third-party cloud environment.
+The targets for the cloud connector. If you omit this property, the connector targets the entire Azure tenant.
 
 ## Syntax
 <a name="aws-properties-ssm-cloudconnector-configurationtargets-syntax"></a>

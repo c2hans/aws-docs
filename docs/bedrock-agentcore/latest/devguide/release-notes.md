@@ -10,12 +10,43 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026
 <a name="_november_2026"></a>
 
+### Web search: Free monthly queries
+<a name="_web_search_free_monthly_queries_2"></a>
+
+With the Web Search Tool and the Web Search API, your agents can search the web for current information. Amazon Bedrock AgentCore now includes the first 5,000 web search queries each month at no charge for every AWS account. You can build and test agents that search the web without paying for your first queries.
+
+The free queries apply automatically and reset every month. All accounts in an organization share them, across all AWS Regions where web search is available, except AWS GovCloud (US). After you use the free queries, standard pricing applies. For more information about pricing, see [Amazon Bedrock AgentCore pricing](https://aws.amazon.com/bedrock/agentcore/pricing/).
+
+To learn more, see [Free monthly queries](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-search-tool.html#gateway-target-connector-web-search-tool-free-queries) in the *Amazon Bedrock AgentCore Developer Guide*.
+
+### Runtime: Instances now available in six more AWS Regions
+<a name="runtime_instances_now_available_in_six_more_shared_aws_regions"></a>
+
+Amazon Bedrock AgentCore Runtime expands Instances to six more AWS Regions. Instances is the compute type of AgentCore Runtime that runs your agents on Amazon Elastic Compute Cloud (Amazon EC2) instances in your account, for long-running agents and agents that need dedicated compute. You can now use Instances in the following AWS Regions:
++ US West (N. California)
++ Europe (London), Europe (Paris), and Europe (Stockholm)
++ Asia Pacific (Seoul)
++ Canada (Central)
+
+With these Regions, you can run agents on Instances closer to your users, which lowers the latency of each invocation. You can also keep the instances, volumes, and session data of your agents in the Region that your data residency requirements call for. For example, you can run agents in the Europe (Paris) Region to keep their session data in that Region.
+
+To learn more, see [Supported AWS Regions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html) in the *Amazon Bedrock AgentCore Developer Guide*.
+
 ### Runtime: VPC mode now supports use1-az6 on platform version V2
 <a name="_runtime_vpc_mode_now_supports_use1_az6_on_platform_version_v2_2"></a>
 
 Amazon Bedrock AgentCore Runtime in VPC mode now supports Availability Zone use1-az6 in US East (N. Virginia) for agents on platform version V2. If your VPC subnets are in use1-az6, you can now configure them on V2 agent runtimes.
 
 For more information, see [Supported Availability Zones](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-vpc.html#agentcore-supported-azs) in the *Amazon Bedrock AgentCore Developer Guide*.
+
+### Harness: IAM authentication with remote MCP servers
+<a name="_harness_iam_authentication_with_remote_mcp_servers_2"></a>
+
+Amazon Bedrock AgentCore Harness now supports AWS Identity and Access Management (IAM) authentication with remote MCP servers. Your agents can now connect to MCP servers protected by AWS IAM, and you control access with the same AWS IAM policies and roles you already use. You don’t need to create, store or rotate separate credentials for each server.
+
+One of these servers is Amazon WorkSpaces for AI agents. It provides an MCP interface that gives agents computer-use tools for clicking, typing, and viewing the screen. Agents use these tools to work within a secure Windows or Linux desktop with built-in monitoring, auditing, and governance. They can use the applications that run your business to complete work that once required a person at a keyboard, including work in applications that have no API.
+
+To learn more, see [Remote MCP servers with IAM authentication](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-security.html#harness-remote-mcp-iam-policy) in the *Amazon Bedrock AgentCore Developer Guide*.
 
 ### Runtime: Platform version V2 in nine more Regions
 <a name="_runtime_platform_version_v2_in_nine_more_regions_2"></a>

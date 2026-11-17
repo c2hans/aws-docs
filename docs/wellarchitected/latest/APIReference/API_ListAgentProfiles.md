@@ -5,12 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # ListAgentProfiles
 <a name="API_ListAgentProfiles"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
-**Important**
-Organizational profiles are not available during the preview release.
-
 Lists optimization profiles in your account. Profiles define the scope and configuration for generating optimization recommendations.
 
 ## Request Syntax
@@ -87,13 +81,7 @@ Content-type: application/json
             ]
          },
          "pillars": [ "string" ],
-         "profileType": "string",
-         "tags": [
-            {
-               "key": "string",
-               "value": "string"
-            }
-         ]
+         "profileType": "string"
       }
    ],
    "nextToken": "string"

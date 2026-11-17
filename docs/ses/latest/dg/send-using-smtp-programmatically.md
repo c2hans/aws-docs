@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-using-smtp-programmat
 # Sending emails programmatically through the Amazon SES SMTP interface
 <a name="send-using-smtp-programmatically"></a>
 
-To send an email using the Amazon SES SMTP interface, you can use an SMTP-enabled programming language, email server, or application. Before you start, complete the tasks in [Setting up Amazon Simple Email Service](setting-up.md). You also need to get the following information:
+To send an email using the Amazon SES SMTP interface, you can use an SMTP-enabled programming language, email server, or application. Before you start, complete the tasks in [Getting started with sending email](getting-started-sending.md). You also need to get the following information:
 + Your Amazon SES SMTP credentials, which enable you to connect to the Amazon SES SMTP endpoint. To get your Amazon SES SMTP credentials, see [Obtaining Amazon SES SMTP credentials](smtp-credentials.md).
 **Important**
 Your SMTP credentials are different from your AWS credentials. For more information about credentials, see [Types of Amazon SES credentials](send-email-concepts-credentials.md).
@@ -34,7 +34,7 @@ Amazon SES does not recommend using static credentials. Refer to [AWS Secrets Ma
 
 This example uses the [Eclipse IDE](http://www.eclipse.org/) and the [JavaMail API](https://github.com/javaee/javamail/releases) to send email through Amazon SES using the SMTP interface.
 
-Before you perform the following procedure, complete the tasks in [Setting up Amazon Simple Email Service](setting-up.md).
+Before you perform the following procedure, complete the tasks in [Getting started with sending email](getting-started-sending.md).
 
 **To send an email using the Amazon SES SMTP interface with Java**
 
@@ -204,7 +204,7 @@ The email addresses are case-sensitive. Make sure that the addresses are exactly
 
 This example uses the PHPMailer class to send email through Amazon SES using the SMTP interface.
 
-Before you perform the following procedure you must complete the tasks in [Setting up Amazon Simple Email Service](setting-up.md). In addition to setting up Amazon SES you must complete the following prerequisites to sending email with PHP:
+Before you perform the following procedure you must complete the tasks in [Getting started with sending email](getting-started-sending.md). In addition to setting up Amazon SES you must complete the following prerequisites to sending email with PHP:
 
 **Prerequisites:**
 + **Install PHP** – PHP is available at [http://php.net/downloads.php](https://php.net/downloads.php). After you install PHP, add the path to PHP in your environment variables so that you can run PHP from any command prompt.

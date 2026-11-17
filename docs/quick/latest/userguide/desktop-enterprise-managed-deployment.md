@@ -62,7 +62,11 @@ For MDM-specific deployment steps, see your provider's documentation:
 ## Proxy support
 <a name="desktop-enterprise-proxy-support"></a>
 
-AWS Quick respects the operating system's proxy configuration (system proxy on Windows, Proxy Auto-Configuration on macOS). All application network traffic, including child processes, routes through the configured enterprise proxy automatically. You don't need to configure the proxy separately.
+AWS Quick uses the operating system's proxy configuration (system proxy on Windows, Proxy Auto-Configuration (PAC) on macOS) for the connections that the application opens on the device. Some components don't use this routing. Local MCP servers and coding agents use their own network settings, and local browser automation uses the browser or operating system proxy configuration.
+
+If the application can't retrieve or evaluate a PAC file, or proxy routing fails to start, the application connects directly. To require that all device traffic passes through your proxy, enforce it at the network layer, for example with outbound firewall rules that allow traffic only through the proxy.
+
+Requests that run in the AWS Quick agent runtime, such as web search (including fetch URL), file download, remote managed browser automation, and cloud connector calls, don't originate from the device and don't pass through your proxy. For more information, see [Network connections](desktop-security.md#desktop-architecture-network).
 
 ## Application data paths
 <a name="desktop-enterprise-data-paths"></a>

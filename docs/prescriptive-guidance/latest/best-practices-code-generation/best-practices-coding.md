@@ -6,6 +6,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 <a name="best-practices-coding"></a>
 
 This section discusses best practices for coding with Amazon Q Developer. The best practices include the following categories:
-+ [Onboarding](onboarding.md) - Methods and considerations when onboarding
-+ [Code generation](code-generation.md) - Guidance to use code generation successfully
-+ [Code recommendations](code-recommendations.md) - Techniques to improve code
++ [Onboarding](onboarding.md) - Methods and considerations for onboarding your team
++ [Code generation](code-generation.md) - Guidance for using code generation effectively
++ [Code recommendations](code-recommendations.md) - Techniques for improving your code

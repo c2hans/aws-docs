@@ -7,9 +7,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::WellArchitected::AgentProfile
 <a name="aws-resource-wellarchitected-agentprofile"></a>
 
-**Note**
-AWS Well-Architected Agent is in preview release and is subject to change.
-
 Creates an optimization profile that defines the scope and configuration for generating recommendations. A profile specifies the execution role, target pillars, and aggregation settings for analyzing your AWS resources.
 
 ## Syntax

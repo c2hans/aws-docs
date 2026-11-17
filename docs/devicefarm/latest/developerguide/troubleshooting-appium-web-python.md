@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 # Troubleshooting Appium Python web application tests in AWS Device Farm
 <a name="troubleshooting-appium-web-python"></a>
 
-The following topic lists error messages that occur during the upload of Appium Python Web application tests and recommends workarounds to resolve each error.
+The following topic lists error messages that can occur for Appium Python Web application tests and recommends workarounds to resolve each error.
 
 ## APPIUM\_WEB\_PYTHON\_TEST\_PACKAGE\_UNZIP\_FAILED
 <a name="APPIUM_WEB_PYTHON_TEST_PACKAGE_UNZIP_FAILED"></a>
@@ -412,3 +412,8 @@ Make sure that you can unzip the test package without errors. In the following e
    ```
 
    For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+
+## Test insights
+<a name="troubleshooting-appium-web-python-insights"></a>
+
+Test insights for Appium Python web app tests use the same pytest JUnit XML report as mobile app tests, so the same messages can occur. For more information, see [Test insights](troubleshooting-appium-python.md#troubleshooting-appium-python-insights).

@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[CertificateConfigurations](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-certificateconfigurations)" : {{[ CertificateConfiguration, ... ]}},
   "[ClientAuthenticationMethod](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientauthenticationmethod)" : {{String}},
   "[ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientid)" : {{String}},
   "[ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientsecret)" : {{String}},
@@ -36,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-syntax.yaml"></a>
 
 ```
+  [CertificateConfigurations](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-certificateconfigurations): {{
+    - CertificateConfiguration}}
   [ClientAuthenticationMethod](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientauthenticationmethod): {{String}}
   [ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientid): {{String}}
   [ClientSecret](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientsecret): {{String}}
@@ -56,6 +59,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-properties"></a>
+
+`CertificateConfigurations`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-certificateconfigurations"></a>
+The private certificate authority (CA) configurations for the identity provider. Use this to have AgentCore Identity trust a private CA when establishing TLS connections to identity provider endpoints. You can specify only one certificate authority configuration in this list. Provide the certificate by reference to an Amazon S3 object or an AWS Secrets Manager secret. You can use this only together with `privateEndpoint`.
+*Required*: No
+*Type*: Array of [CertificateConfiguration](aws-properties-bedrockagentcore-oauth2credentialprovider-certificateconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ClientAuthenticationMethod`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientauthenticationmethod"></a>
 The client authentication method to use when authenticating with the token endpoint.

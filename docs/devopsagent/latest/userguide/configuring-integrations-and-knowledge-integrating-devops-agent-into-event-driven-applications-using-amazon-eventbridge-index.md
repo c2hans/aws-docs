@@ -64,7 +64,7 @@ The `time` field of each event is the time that the investigation or mitigation 
 | Mitigation Timed Out | A mitigation action exceeded the maximum allowed duration. |
 | Mitigation Cancelled | A mitigation action was canceled before completion. |
 
-For detailed field descriptions and example events, see [AWS DevOps Agent events detail reference](integrating-devops-agent-into-event-driven-applications-using-amazon-eventbridge-devops-agent-events-detail-reference.md).
+For detailed field descriptions and example events, see [DevOps Agent events detail reference](integrating-devops-agent-into-event-driven-applications-using-amazon-eventbridge-devops-agent-events-detail-reference.md).
 
 ## Creating event patterns that match AWS DevOps Agent events
 <a name="creating-event-patterns-that-match-aws-devops-agent-events"></a>

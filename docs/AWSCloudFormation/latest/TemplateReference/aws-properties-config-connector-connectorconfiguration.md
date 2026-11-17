@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Config::Connector ConnectorConfiguration
 <a name="aws-properties-config-connector-connectorconfiguration"></a>
 
-Configuration for connecting to a third-party cloud service provider. You must specify exactly one provider configuration.
+Configuration for connecting to a third-party cloud service provider. You must specify exactly one provider configuration: `Azure` or `Gcp`.
 
 ## Syntax
 <a name="aws-properties-config-connector-connectorconfiguration-syntax"></a>
@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[Azure](#cfn-config-connector-connectorconfiguration-azure)" : {{AzureConnectorConfiguration}}
+  "[Azure](#cfn-config-connector-connectorconfiguration-azure)" : {{AzureConnectorConfiguration}},
+  "[Gcp](#cfn-config-connector-connectorconfiguration-gcp)" : {{GcpConnectorConfiguration}}
 }
 ```
 
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Azure](#cfn-config-connector-connectorconfiguration-azure): {{
     AzureConnectorConfiguration}}
+  [Gcp](#cfn-config-connector-connectorconfiguration-gcp): {{
+    GcpConnectorConfiguration}}
 ```
 
 ## Properties
@@ -38,4 +41,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 The configuration for an Azure connector.
 *Required*: No
 *Type*: [AzureConnectorConfiguration](aws-properties-config-connector-azureconnectorconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Gcp`  <a name="cfn-config-connector-connectorconfiguration-gcp"></a>
+The configuration for a Google Cloud connector.
+*Required*: No
+*Type*: [GcpConnectorConfiguration](aws-properties-config-connector-gcpconnectorconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

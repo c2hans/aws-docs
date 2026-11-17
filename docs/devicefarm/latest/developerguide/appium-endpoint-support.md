@@ -173,7 +173,12 @@ When creating an Appium session on Device Farm, we recommend having a distinct s
 ## Supported commands
 <a name="appium-endpoint-unsupported-commands"></a>
 
-Most Appium commands that run properly on real Android and iOS devices will run as-expected on Device Farm, with the following exclusions:
+Most Appium commands that run properly on real Android and iOS devices will run as-expected on Device Farm. The following exclusions apply to all supported Appium server versions:
+
+### Appium commands (`/appium`)
+<a name="appium-endpoint-unsupported-appium-commands"></a>
++ `start_recording_screen`
++ `stop_recording_screen`
 
 ### Appium device commands (`/appium/device`)
 <a name="appium-endpoint-unsupported-device-commands"></a>
@@ -191,13 +196,14 @@ Most Appium commands that run properly on real Android and iOS devices will run 
 ### Appium execute methods and scripts (`/execute`)
 <a name="appium-endpoint-unsupported-execute-methods"></a>
 + `installApp`
++ `installMultipleApks`
 + `execEmuConsoleCommand`
 + `fingerprint`
 + `gsmCall`
 + `gsmSignal`
 + `sendSms`
 + `gsmVoice`
-+ `powerAC`
++ `powerAc`
 + `powerCapacity`
 + `networkSpeed`
 + `sensorSet`
@@ -218,12 +224,18 @@ Most Appium commands that run properly on real Android and iOS devices will run 
 + `setPermission`
 + `startAudioRecording`
 + `startLogsBroadcast`
-+ `startRecordingScreen`
++ `startMediaProjectionRecording`
++ `startNetworkMonitor`
++ `startScreenRecording`
 + `startScreenStreaming`
++ `startSystemMonitor`
 + `startXCTestScreenRecording`
 + `stopAudioRecording`
 + `stopLogsBroadcast`
-+ `stopRecordingScreen`
++ `stopMediaProjectionRecording`
++ `stopNetworkMonitor`
++ `stopScreenRecording`
 + `stopScreenStreaming`
++ `stopSystemMonitor`
 + `stopXCTestScreenRecording`
 + `updateSafariPreferences`

@@ -46,6 +46,10 @@ You can also select the check box next to the **Configuration name**, then choos
 
 The following example shows how to update the infrastructure configuration for your image with the Image Builder [update-infrastructure-configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/update-infrastructure-configuration.html) command in the AWS CLI.
 
+**Note**
+The **update-infrastructure-configuration** command replaces the entire infrastructure configuration. You must specify all required properties in the update request. Include all properties—both properties you want to change and properties that should stay the same. Properties that you omit are reset to default values or are removed. For example, if you omit `terminateInstanceOnFailure`, it resets to `true`.
+To prevent unintended removal of existing settings, use the **get-infrastructure-configuration** command to retrieve the current configuration. Use the output as the basis for your update request JSON file, and modify only the fields that you want to change.
+
 1.
 
 **Create a CLI input JSON file**
@@ -91,6 +95,10 @@ The following example shows how to update the infrastructure configuration for y
 #### [ PowerShell ]
 
 The following example shows how to use the [Update-EC2IBInfrastructureConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-EC2IBInfrastructureConfiguration.html) cmdlet to update an infrastructure configuration. This example is based on the first example in [Create an infrastructure configuration](create-infra-config.md). It sets the `TerminateInstanceOnFailure` parameter to `$true`, so pipelines that use this infrastructure configuration terminate the build and test instances when a build fails.
+
+**Note**
+The `Update-EC2IBInfrastructureConfiguration` cmdlet replaces the entire infrastructure configuration. You must specify all required parameters in the update request. Include all parameters—both parameters that you want to change and parameters that should stay the same. Settings that you omit are reset to default values or are removed. For example, if you omit `TerminateInstanceOnFailure`, it resets to `$true`.
+To prevent unintended removal of existing settings, run the [Get-EC2IBInfrastructureConfiguration](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2IBInfrastructureConfiguration.html) cmdlet to retrieve the current configuration. Use the returned values as the basis for the parameters that you pass to the `Update-EC2IBInfrastructureConfiguration` cmdlet.
 
 The following example sets common infrastructure fields. To require IMDSv2 tokens on the build and test instances, set the `InstanceMetadataOptions_HttpToken` parameter to `required`.
 

@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Rist](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rist)" : {{RistRouterInputConfiguration}},
+  "[RtmpPush](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rtmppush)" : {{RtmpPushRouterInputConfiguration}},
   "[Rtp](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rtp)" : {{RtpRouterInputConfiguration}},
   "[SrtCaller](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-srtcaller)" : {{SrtCallerRouterInputConfiguration}},
   "[SrtListener](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-srtlistener)" : {{SrtListenerRouterInputConfiguration}}
@@ -32,6 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Rist](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rist): {{
     RistRouterInputConfiguration}}
+  [RtmpPush](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rtmppush): {{
+    RtmpPushRouterInputConfiguration}}
   [Rtp](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rtp): {{
     RtpRouterInputConfiguration}}
   [SrtCaller](#cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-srtcaller): {{
@@ -47,6 +50,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 The configuration settings for a router input using the RIST (Reliable Internet Stream Transport) protocol, including the port and recovery latency.
 *Required*: No
 *Type*: [RistRouterInputConfiguration](aws-properties-mediaconnect-routerinput-ristrouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RtmpPush`  <a name="cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rtmppush"></a>
+Property description not available.
+*Required*: No
+*Type*: [RtmpPushRouterInputConfiguration](aws-properties-mediaconnect-routerinput-rtmppushrouterinputconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Rtp`  <a name="cfn-mediaconnect-routerinput-routerinputprotocolconfiguration-rtp"></a>

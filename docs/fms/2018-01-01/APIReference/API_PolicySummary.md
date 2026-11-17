@@ -13,7 +13,7 @@ Details of the AWS Firewall Manager policy.
  ** DeleteUnusedFMManagedResources **   <a name="fms-Type-PolicySummary-DeleteUnusedFMManagedResources"></a>
 Indicates whether AWS Firewall Manager should automatically remove protections from resources that leave the policy scope and clean up resources that Firewall Manager is managing for accounts when those accounts leave policy scope. For example, Firewall Manager will disassociate a Firewall Manager managed web ACL from a protected customer resource when the customer resource leaves policy scope.
 By default, Firewall Manager doesn't remove protections or delete Firewall Manager managed resources.
-This option is not available for Shield Advanced or AWS WAF Classic policies.
+This option is not available for AWS WAF Classic policies, or for Shield Advanced policies that still use AWS WAF Classic web ACLs.
 Type: Boolean
 Required: No
 

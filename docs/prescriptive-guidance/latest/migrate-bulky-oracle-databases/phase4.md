@@ -6,9 +6,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 <a name="phase4"></a>
 
 ## Step 1: Check tablespaces for corruption
-<a name="step-1--check-tablespaces-for-corruption.45075a61-7f65-5923-816f-186548ec485f"></a>
+<a name="step-1--check-tablespaces-for-corruption.54856f81-03d4-5555-a587-2f048c06f914"></a>
 
-In this step, the transported tablespaces are read only in the destination database. You can validate whether the tablespaces are valid or not by running the RMAN command as follows.
+In this step, the transported tablespaces are read-only in the destination database. You can validate the tablespaces by running the following Oracle Recovery Manager (RMAN) commands.
 
 ```
 sqlplus / as sysdba;
@@ -25,10 +25,10 @@ rman target /
 RMAN> @tbs_val.sql
 ```
 
-In addition, you can check the count of the objects, such as the table, index, synonym, view, and package objects.
+You can also check the number of objects, such as tables, indexes, synonyms, views, and packages.
 
-## Step 2. Make all transported tablespaces in the destination database read/write
-<a name="step-2.-make-all-transported-tablespaces-in-the-destination-database-read-write.07d52143-b0e3-579d-b55a-b94ae01d9e92"></a>
+## Step 2: Make all transported tablespaces in the destination database read/write
+<a name="step-2--make-all-transported-tablespaces-in-the-destination-database-read-write.988b5542-938b-5b99-af03-e2aae320d173"></a>
 
 ```
 sqlplus / as sysdba;

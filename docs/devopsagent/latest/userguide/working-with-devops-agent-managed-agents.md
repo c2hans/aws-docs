@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/working-wit
 # Managed agents
 <a name="working-with-devops-agent-managed-agents"></a>
 
-Managed agents are the agents that AWS DevOps Agent provides and maintains for you. They power the platform's built-in capabilities, such as answering questions in chat, running incident investigations, reviewing releases, and learning your environment. Unlike [Custom Agents](working-with-devops-agent-custom-agents-index.md), which you define and configure yourself, managed agents are owned by the platform: you do not create, delete, or run them directly, and their tools and skills are managed for you.
+Managed agents are the agents that AWS DevOps Agent provides and maintains for you. They power the platform's built-in capabilities, such as answering questions in chat, running incident investigations, reviewing releases, and learning your environment. Unlike [custom agents](working-with-devops-agent-custom-agents-index.md), which you define and configure yourself, managed agents are owned by the platform: you do not create, delete, or run them directly, and their tools and skills are managed for you.
 
 Managed agents appear in the **Managed agents** section of the **Agents** page in your Agent Space Operator Web App, alongside the **Custom agents** section. Each managed agent has its own page, giving you the same visibility into a managed agent that you already have into a custom agent: what the agent does, the instructions it runs with, and a history of what it has done.
 

@@ -10,6 +10,21 @@ The state of the certificate revocation list (CRL) after a read or write operati
 ## Contents
 <a name="API_CrlDetail_Contents"></a>
 
+ ** aliasArn **   <a name="rolesanywhere-Type-CrlDetail-aliasArn"></a>
+The alias ARN of the certificate revocation list (CRL), in the form `arn:partition:rolesanywhere:region:account:alias/crl/alias-name `. Present only if the CRL has an alias.
+You can use the alias ARN in place of the resource ID or ARN in the request parameters whose descriptions say that they accept an alias ARN. Don't use the alias ARN in AWS Identity and Access Management (IAM) policies. A policy statement that names an alias ARN doesn't apply to the resource that holds the alias. Write policies with the ARN that contains the resource ID instead.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `arn:aws(-[^:]+)?:rolesanywhere(:.*){2}(:alias/crl/.*)`
+Required: No
+
+ ** aliasName **   <a name="rolesanywhere-Type-CrlDetail-aliasName"></a>
+The alias of the certificate revocation list (CRL). Present only if the CRL has an alias.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `(?!.*//)([A-Za-z]([A-Za-z0-9_/-]*[A-Za-z0-9_-])?)?`
+Required: No
+
  ** createdAt **   <a name="rolesanywhere-Type-CrlDetail-createdAt"></a>
 The ISO-8601 timestamp when the certificate revocation list (CRL) was created.
 Type: Timestamp
@@ -18,6 +33,8 @@ Required: No
  ** crlArn **   <a name="rolesanywhere-Type-CrlDetail-crlArn"></a>
 The ARN of the certificate revocation list (CRL).
 Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `arn:aws(-[^:]+)?:rolesanywhere(:.*){2}(:crl/.*)`
 Required: No
 
  ** crlData **   <a name="rolesanywhere-Type-CrlDetail-crlData"></a>
@@ -42,9 +59,18 @@ The name of the certificate revocation list (CRL).
 Type: String
 Required: No
 
+ ** previousAliasName **   <a name="rolesanywhere-Type-CrlDetail-previousAliasName"></a>
+The alias that the resource had before the update request. IAM Roles Anywhere returns this value only in the response to an update request that changed or removed an existing alias. It isn't returned when the alias was unchanged, when the resource had no alias before the request, or by other operations.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `(?!.*//)([A-Za-z]([A-Za-z0-9_/-]*[A-Za-z0-9_-])?)?`
+Required: No
+
  ** trustAnchorArn **   <a name="rolesanywhere-Type-CrlDetail-trustAnchorArn"></a>
 The ARN of the TrustAnchor the certificate revocation list (CRL) will provide revocation for.
 Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `arn:aws(-[^:]+)?:rolesanywhere(:.*){2}(:trust-anchor/.*)`
 Required: No
 
  ** updatedAt **   <a name="rolesanywhere-Type-CrlDetail-updatedAt"></a>

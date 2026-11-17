@@ -24,7 +24,7 @@ Get the open-source Amazon GameLift Servers for Unity from [GitHub](https://gith
 
 You can set up your development workstation as an Amazon GameLift Servers Anywhere hosting fleet to iteratively test your Amazon GameLift Servers integration. With this setup, you can start game server processes on your workstation, send player join or matchmaking requests to Amazon GameLift Servers to start game sessions, and connect clients to the new game sessions. With your own workstation set up as a hosting server, you can monitor all aspects of your game integration with Amazon GameLift Servers.
 
-For instructions on setting up your workstation, see [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md) to complete the following steps:
+For instructions on setting up your workstation, see [Setting up local testing with Amazon GameLift Servers Anywhere](integration-testing.md) to complete the following steps:
 
 1. Create a custom location for your workstation.
 
@@ -180,7 +180,7 @@ public class ServerSDKManualTest : MonoBehaviour
 
 Now that you've prepared a game server build with the minimum required functionality for hosting with Amazon GameLift Servers, consider these potential next steps:
 + Deploy your integrated game server for testing and development. With an Anywhere fleet, you can set up your local machine as a hosting resource and use it to test your game server and game client connections. For cloud-based hosting, deploy your game server to a managed EC2 or managed container fleet. See these topics for guidance:
-  + [Set up for iterative development with Amazon GameLift Servers Anywhere](integration-dev-iteration.md)
+  + [Setting up for iterative development with Amazon GameLift Servers Anywhere](integration-dev-iteration.md)
   + [Amazon GameLift Servers Anywhere fleets](fleets-intro-anywhere.md)
   + [Amazon GameLift Servers managed EC2 fleets](fleets-intro-managed.md)
   + [Amazon GameLift Servers managed container fleets](fleets-intro-containers.md)

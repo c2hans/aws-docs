@@ -14,7 +14,7 @@ An object that contains information about an Amazon SQS queue that EventBridge S
 The Amazon Resource Name (ARN) of the SQS queue specified as the destination for the dead-letter queue.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1600.
-Pattern: `arn:aws(-[a-z]+)?:sqs:[a-z0-9\-]+:\d{12}:[a-zA-Z0-9\-_]+`
+Pattern: `arn:aws[a-z-]*:sqs:[a-z0-9\-]+:\d{12}:[a-zA-Z0-9\-_]+`
 Required: No
 
 ## See Also

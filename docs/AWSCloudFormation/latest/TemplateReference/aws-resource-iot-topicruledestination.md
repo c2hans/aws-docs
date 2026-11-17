@@ -70,7 +70,7 @@ ERROR
 Confirmation could not be completed; for example, if the confirmation timed out. You can call `GetTopicRuleDestination` for details about the error. You can set status to `IN_PROGRESS` by calling `UpdateTopicRuleDestination`. Calling `UpdateTopicRuleDestination` causes a new confirmation challenge to be sent to your confirmation endpoint.
 *Required*: No
 *Type*: String
-*Allowed values*: `ENABLED | IN_PROGRESS | DISABLED`
+*Allowed values*: `ENABLED | IN_PROGRESS | DISABLED | ERROR`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VpcProperties`  <a name="cfn-iot-topicruledestination-vpcproperties"></a>

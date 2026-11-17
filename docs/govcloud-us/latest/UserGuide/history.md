@@ -9,6 +9,7 @@ The following table describes important changes to the documentation since the l
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [AWS DevOps Agent](govcloud-devops-agent.md) |  AWS DevOps Agent is now available in AWS GovCloud (US-West). Added the AWS DevOps Agent page for AWS GovCloud (US). | November 13, 2026 |
 | [Amazon EC2 Image Builder](govcloud-ec2ib.md) |  Image Builder doesn’t support the console AI features (Create with AI and Troubleshoot with AI), which are powered by AWS DevOps Agent. | November 11, 2026 |
 | [Amazon Quick](govcloud-aqs.md) | Removed the note stating that Amazon Quick and interface VPC endpoints (AWS PrivateLink) are not available in AWS GovCloud (US), as this capability is now available. | November 10, 2026 |
 | [AWS Organizations](govcloud-organizations.md) |  AWS Organizations now supports declarative policies for Security Hub, Amazon Inspector, and Amazon GuardDuty. | November 3, 2026 |

@@ -22,9 +22,13 @@ POST /profile/{{profileId}}/disable HTTP/1.1
 The request uses the following URI parameters.
 
  ** [profileId](#API_DisableProfile_RequestSyntax) **   <a name="rolesanywhere-DisableProfile-request-uri-profileId"></a>
-The unique identifier of the profile.
-Length Constraints: Fixed length of 36.
-Pattern: `.*[a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}.*`
+The profile to act on. You can specify one of the following:
++ The profile ID.
++ The profile ARN.
++ The alias ARN of the profile.
+An ARN must be for a profile in your account and Region.
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `([a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}|arn:aws(-[^:]+)?:rolesanywhere(:.*){2}:(profile|alias/profile)/.*)`
 Required: Yes
 
 ## Request Body
@@ -42,6 +46,8 @@ Content-type: application/json
 {
    "profile": {
       "acceptRoleSessionName": boolean,
+      "aliasArn": "string",
+      "aliasName": "string",
       "attributeMappings": [
          {
             "certificateField": "string",
@@ -58,11 +64,17 @@ Content-type: application/json
       "enabled": boolean,
       "managedPolicyArns": [ "string" ],
       "name": "string",
+      "previousAliasName": "string",
       "profileArn": "string",
       "profileId": "string",
       "requireInstanceProperties": boolean,
       "roleArns": [ "string" ],
       "sessionPolicy": "string",
+      "tipConfiguration": {
+         "status": "string",
+         "subjectSource": "string",
+         "subjectType": "string"
+      },
       "updatedAt": "string"
    }
 }

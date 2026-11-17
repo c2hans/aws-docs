@@ -83,6 +83,7 @@ The following table lists the supported direct third-party integrations:
 | SentinelOne | S3 Delivery | Endpoint security |
 | ServiceNow CMDB | API | IT service management |
 | Slack Audit Log | API | Collaboration and audit logs |
+| Snowflake Platform | API | Data platform audit logs |
 | Tanium Endpoint Management | S3 Delivery | Endpoint security and management |
 | Tenable Vulnerability Management | API | Vulnerability management |
 | Wazuh Platform | API | Security monitoring and threat detection |

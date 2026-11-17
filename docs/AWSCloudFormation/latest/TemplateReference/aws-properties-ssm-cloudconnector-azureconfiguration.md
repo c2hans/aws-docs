@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SSM::CloudConnector AzureConfiguration
 <a name="aws-properties-ssm-cloudconnector-azureconfiguration"></a>
 
-The access details and targets for connecting to a Microsoft Azure tenant, including the application registration used for authentication and the subscriptions to target.
+The configuration for connecting to Microsoft Azure, including the tenant and application details.
 
 ## Syntax
 <a name="aws-properties-ssm-cloudconnector-azureconfiguration-syntax"></a>
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ssm-cloudconnector-azureconfiguration-properties"></a>
 
 `ApplicationDisplayName`  <a name="cfn-ssm-cloudconnector-azureconfiguration-applicationdisplayname"></a>
-The display name of the Azure application registration.
+The display name of the Azure AD application.
 *Required*: No
 *Type*: String
 *Pattern*: `^([\p{L}\p{Z}\p{N}\p{P}\p{M}]*)$`
@@ -52,20 +52,20 @@ The display name of the Azure application registration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ApplicationId`  <a name="cfn-ssm-cloudconnector-azureconfiguration-applicationid"></a>
-The ID of the Azure application registration used for authentication.
+The Azure AD application (client) ID used for authentication.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Targets`  <a name="cfn-ssm-cloudconnector-azureconfiguration-targets"></a>
-The target Azure subscriptions for the cloud connector.
+The targets for the cloud connector. If you omit this property, the connector targets the entire Azure tenant.
 *Required*: No
 *Type*: [ConfigurationTargets](aws-properties-ssm-cloudconnector-configurationtargets.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TenantDisplayName`  <a name="cfn-ssm-cloudconnector-azureconfiguration-tenantdisplayname"></a>
-The display name of the Azure tenant.
+The display name of the Azure AD tenant.
 *Required*: No
 *Type*: String
 *Pattern*: `^([\p{L}\p{Z}\p{N}\p{P}\p{M}]*)$`
@@ -74,7 +74,7 @@ The display name of the Azure tenant.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TenantId`  <a name="cfn-ssm-cloudconnector-azureconfiguration-tenantid"></a>
-The ID of the Azure tenant.
+The Azure Active Directory (Azure AD) tenant ID. You cannot change this value after you create the connector.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$`

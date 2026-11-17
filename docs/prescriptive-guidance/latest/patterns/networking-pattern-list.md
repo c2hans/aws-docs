@@ -13,6 +13,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ne
 + [Create Infoblox objects using AWS CloudFormation custom resources and Amazon SNS](create-infoblox-objects-using-aws-cloudformation-custom-resources-and-amazon-sns.md)
 + [Create a hierarchical, multi-Region IPAM architecture on AWS by using Terraform](multi-region-ipam-architecture.md)
 + [Customize Amazon CloudWatch alerts for AWS Network Firewall](customize-amazon-cloudwatch-alerts-for-aws-network-firewall.md)
++ [Migrate DNS records in bulk to an Amazon Route 53 private hosted zone](migrate-dns-records-in-bulk-to-a-route-53.md)
 + [Modify HTTP headers when you migrate from F5 to an Application Load Balancer on AWS](modify-http-headers-when-you-migrate-from-f5-to-an-application-load-balancer-on-aws.md)
 + [Set up DNS resolution for hybrid networks in a multi-account AWS environment](set-up-dns-resolution-for-hybrid-networks-in-a-multi-account-aws-environment.md)
 + [View AWS Network Firewall logs and metrics by using Splunk](view-aws-network-firewall-logs-and-metrics-by-using-splunk.md)

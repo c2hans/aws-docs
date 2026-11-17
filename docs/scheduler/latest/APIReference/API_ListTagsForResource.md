@@ -22,7 +22,7 @@ The request uses the following URI parameters.
  ** [ResourceArn](#API_ListTagsForResource_RequestSyntax) **   <a name="scheduler-ListTagsForResource-request-uri-ResourceArn"></a>
 The ARN of the EventBridge Scheduler resource for which you want to view tags.
 Length Constraints: Minimum length of 1. Maximum length of 1011.
-Pattern: `arn:aws(-[a-z]+)?:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
+Pattern: `arn:aws[a-z-]*:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
 Required: Yes
 
 ## Request Body

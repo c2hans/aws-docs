@@ -79,7 +79,7 @@ Required: No
  ** attributeTypes **   <a name="connect-Type-amazon-q-connect_ExtendedMessageTemplateData-attributeTypes"></a>
 The types of attributes contain the message template.
 Type: Array of strings
-Valid Values: `SYSTEM | AGENT | CUSTOMER_PROFILE | CUSTOM`
+Valid Values: `SYSTEM | AGENT | CUSTOMER_PROFILE | CUSTOM | CASE`
 Required: No
 
  ** channel **   <a name="connect-Type-amazon-q-connect_ExtendedMessageTemplateData-channel"></a>

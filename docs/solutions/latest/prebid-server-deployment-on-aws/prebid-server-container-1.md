@@ -5,7 +5,18 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 # Prebid Server container
 <a name="prebid-server-container-1"></a>
 
-This container hosted in Amazon ECR runs the open source Prebid Server. The solution’s default container image is a customized build of the Prebid Server implementation in Java. The Dockerfile for building this container image is located at `deployment/ecr/prebid-server/Dockerfile` and an accompanying configuration file is at `deployment/ecr/prebid-server/config.json`. This configuration file provides the version of the prebid server through the `GIT_TAG_VERSION` parameter.
+This container hosted in Amazon ECR runs the open source Prebid Server. The solution’s default container image is a customized build of the Prebid Server implementation in Java. The Dockerfiles for building this container image are located at `deployment/ecr/prebid-server/Dockerfile.alpine` and `deployment/ecr/prebid-server/Dockerfile.al2023`. An accompanying configuration file is at `deployment/ecr/prebid-server/docker-build-config.json`. This configuration file provides the version of Prebid Server through the `GIT_TAG_VERSION` parameter (`3.43.0` in this version), and defines the supported base images (`SUPPORTED_BASES`) and the default base image (`DEFAULT_BASE`).
+
+ **Container base images**
+
+You can build the container on one of two base images:
+
+| Base | Description | Approximate image size (linux/amd64) |
+| --- | --- | --- |
+| Alpine (`alpine`) |  `alpine:3.23.3` with a custom Java runtime built with `jlink`. The size-optimized image. | 351 MiB (about 36% smaller) |
+| Amazon Linux 2023 (`al2023`) | Build stage `amazoncorretto:21-al2023`, deploy stage `amazonlinux:2023-minimal`. | 547 MiB |
+
+The default base depends on how you build. `deploy.sh` uses `alpine` unless you pass `--base-image al2023`. `deployment/ecr/build-image.sh` and CDK commands that you run directly use `al2023` unless you pass `--base alpine` or `--context baseImage=alpine`.
 
 The container differs from the open source project’s default container in configuration settings for areas including file output and bidding adapter configuration settings. Alternatively, you can use the [Go implementation of Prebid Server](https://docs.prebid.org/prebid-server/versions/pbs-versions-go.html), or any build hosted in a container repository, such as [Docker Hub](https://hub.docker.com/) or [ECR Public Gallery](https://gallery.ecr.aws/). You will have the option of overriding the solution’s default container.
 
@@ -13,7 +24,7 @@ The container differs from the open source project’s default container in conf
 If using a custom image, ensure it is compatible with the logging configuration of the container supplied with the solution to make use of the Prebid Metrics ETL.
 Make changes to the Dockerfile as needed.
 
-The following diagram shows a detailed view of the container contents, and the resources the container interacts with directly. Additionally, the container image supplied with the solution is stored in the [ECR Public Gallery for AWS Solutions](https://gallery.ecr.aws/aws-solutions/).
+The following diagram shows a detailed view of the container contents, and the resources the container interacts with directly.
 
  **Prebid Server container diagram**
 

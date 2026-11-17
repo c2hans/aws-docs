@@ -160,15 +160,38 @@ The second option uses the [`S3Client` API](https://sdk.amazonaws.com/java/api/l
 
 When you use the [getObject](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html#getObject(software.amazon.awssdk.services.s3.model.GetObjectRequest)) method to download an object, the SDK automatically validates the checksum  when the `checksumMode` method of the builder for the `GetObjectRequest` is set to `ChecksumMode.ENABLED`.
 
+The SDK reports a checksum mismatch only on the read that reaches the end of the response stream, the read that returns `-1`. If your code reads exactly the number of bytes in the response and then closes the stream, that read doesn't happen. As a result, no error is thrown, even if the data is corrupted. To make sure that the checksum is checked, keep reading until a read returns `-1`, as the following example does. You can also use a method that reads the whole response for you, such as [getObjectAsBytes](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/s3/S3Client.html#getObjectAsBytes(software.amazon.awssdk.services.s3.model.GetObjectRequest)). Streams returned by `AsyncResponseTransformer.toBlockingInputStream()` work the same way.
+
 The request in the following snippet directs the SDK to validate the checksum in the response by calculating the checksum and comparing the values.
 
+### Imports
+<a name="use-service-S3-checksum-download-imports"></a>
+
 ```
-    public GetObjectResponse getObjectWithChecksum() {
-        return s3Client.getObject(b -> b
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+
+import software.amazon.awssdk.core.ResponseInputStream;
+import software.amazon.awssdk.services.s3.S3Client;
+import software.amazon.awssdk.services.s3.model.ChecksumMode;
+import software.amazon.awssdk.services.s3.model.GetObjectResponse;
+```
+
+```
+    public byte[] getObjectWithChecksum() throws IOException {
+        try (ResponseInputStream<GetObjectResponse> objectStream = s3Client.getObject(b -> b
                         .bucket(bucketName)
                         .key(key)
-                        .checksumMode(ChecksumMode.ENABLED))
-                .response();
+                        .checksumMode(ChecksumMode.ENABLED));
+             ByteArrayOutputStream objectData = new ByteArrayOutputStream()) {
+            byte[] buffer = new byte[8192];
+            int bytesRead;
+            // Keep reading until the stream returns -1. If the checksum doesn't match, the SDK throws an exception on that read.
+            while ((bytesRead = objectStream.read(buffer)) != -1) {
+                objectData.write(buffer, 0, bytesRead);
+            }
+            return objectData.toByteArray();
+        }
     }
 ```
 

@@ -27,7 +27,7 @@ The filters.
 +  `vpc-id` - The ID of the VPC in which the endpoint resides.
 +  `vpc-endpoint-id` - The ID of the endpoint.
 +  `vpc-endpoint-state` - The state of the endpoint (`pendingAcceptance` \| `pending` \| `available` \| `deleting` \| `deleted` \| `rejected` \| `failed`).
-+  `vpc-endpoint-type` - The type of VPC endpoint (`Interface` \| `Gateway` \| `GatewayLoadBalancer` \| `Resource` \| `ServiceNetwork`).
++  `vpc-endpoint-type` - The type of VPC endpoint (`Interface` \| `Gateway` \| `GatewayLoadBalancer` \| `Resource` \| `ServiceNetwork` \| `Tunnel`).
 Type: Array of [Filter](API_Filter.md) objects
 Required: No
 

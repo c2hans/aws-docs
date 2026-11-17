@@ -5,31 +5,30 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # NatGatewayAttachment
 <a name="API_NatGatewayAttachment"></a>
 
-The definition and status of the attachment between a proxy mode firewall and a NAT gateway that proxies its traffic.
+The NAT gateway that's attached to a proxy mode firewall in an Availability Zone, and the status of the attachment. Traffic that the firewall allows in the Availability Zone leaves through this NAT gateway.
 
 ## Contents
 <a name="API_NatGatewayAttachment_Contents"></a>
 
  ** NatGatewayId **   <a name="networkfirewall-Type-NatGatewayAttachment-NatGatewayId"></a>
-A unique identifier for the NAT gateway to use with proxy resources.
+The ID of the NAT gateway.
 Type: String
 Length Constraints: Minimum length of 1.
 Required: Yes
 
  ** Status **   <a name="networkfirewall-Type-NatGatewayAttachment-Status"></a>
-The current status of the NAT gateway attachment.
-When this value is `READY`, the attachment is available to proxy traffic. Otherwise, this value reflects its state, for example `CREATING` or `DELETING`.
+The status of the NAT gateway attachment. `READY` means that the NAT gateway is attached and the firewall can send traffic through it. Other values are `CREATING`, `UPDATING`, `DELETING`, and `FAILED`.
 Type: String
 Valid Values: `CREATING | READY | UPDATING | FAILED | DELETING`
 Required: Yes
 
  ** DnsName **   <a name="networkfirewall-Type-NatGatewayAttachment-DnsName"></a>
-The DNS name that resolves to the firewall's proxy for traffic sent through this NAT gateway attachment.
+The proxy DNS name of the firewall in this Availability Zone. This is the same as the `DnsName` of the firewall's `Attachment`.
 Type: String
 Required: No
 
  ** StatusMessage **   <a name="networkfirewall-Type-NatGatewayAttachment-StatusMessage"></a>
-If Network Firewall encounters an issue with the NAT gateway attachment, it populates this with an explanation of the problem.
+The reason that Network Firewall couldn't create or attach the NAT gateway, if it couldn't.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `^[a-zA-Z0-9- ]+$`

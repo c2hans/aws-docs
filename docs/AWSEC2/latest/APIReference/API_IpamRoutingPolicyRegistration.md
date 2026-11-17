@@ -42,7 +42,7 @@ Type: Boolean
 Required: No
 
  ** state **
-The state of the routing policy registration. Valid values: `pending-activate` \| `activate-failed` \| `create-in-progress` \| `create-complete` \| `update-in-progress` \| `update-complete` \| `delete-in-progress` \| `delete-complete`.
+The state of the routing policy registration. Valid values: `pending-activate` \| `activate-failed` \| `create-in-progress` \| `create-complete` \| `update-in-progress` \| `update-complete` \| `delete-in-progress` \| `delete-complete` \| `disable-complete`.
 Type: String
 Valid Values: `pending-activate | activate-failed | create-in-progress | create-complete | update-in-progress | update-complete | delete-in-progress | delete-complete`
 Required: No

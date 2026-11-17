@@ -850,6 +850,8 @@ In addition to the managed policies, attach the following permission policy to t
 **Note**
 The `"eks-auth:AssumeRoleForPodIdentity"` permission is optional. It's required if you plan to use EKS Pod identity.
 
+The `sagemaker:AttachClusterNodeNetworkInterface` permission lets the Amazon VPC CNI attach more ENIs to cluster nodes. For more information, see [Increasing pods per node with dynamic ENI attachment](sagemaker-hyperpod-eks-dynamic-eni-attachment.md).
+
 **SageMaker HyperPod service-linked role**
 
 For Amazon EKS support in SageMaker HyperPod, HyperPod creates a service-linked role with [AWS managed policy: AmazonSageMakerHyperPodServiceRolePolicy](security-iam-awsmanpol-AmazonSageMakerHyperPodServiceRolePolicy.md) to monitor and support resiliency on your EKS cluster such as replacing nodes and restarting jobs.

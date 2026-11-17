@@ -87,6 +87,8 @@ You can configure alarms to receive notifications when your collection group app
 
 OpenSearch Serverless enforces collection group capacity limits during scaling operations. When your collections need additional resources, OpenSearch Serverless scales up to the maximum OCU limit. When demand decreases, OpenSearch Serverless scales down but maintains at least the minimum OCU limit to ensure consistent performance.
 
-OpenSearch Serverless enforces capacity limits only when the collection group contains at least one collection. Empty collection groups do not consume OCUs or enforce capacity limits.
+For Classic collection groups, OpenSearch Serverless enforces capacity limits only when the collection group contains at least one collection. Empty Classic collection groups do not consume OCUs.
+
+For NextGen collection groups, OpenSearch Serverless maintains the minimum OCU limit as long as the collection group exists, even when it contains no collections. Billing reflects that minimum. To stop OCU charges for an empty NextGen collection group, set both `minIndexingCapacityInOCU` and `minSearchCapacityInOCU` to 0 or delete the collection group.
 
 If a scaling operation would exceed the maximum OCU limit or violate the minimum OCU requirement, OpenSearch Serverless rejects the operation to maintain compliance with your configured limits.

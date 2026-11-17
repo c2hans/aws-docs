@@ -25,6 +25,14 @@ The script automatically:
 + Destroys stacks in the correct order (Prebid Server first, then Bidder Simulator)
 + Provides confirmation prompts before deletion
 
+The script deletes the stacks with the AWS CLI (`aws cloudformation delete-stack`), so it does not require Node.js or the AWS CDK. On the RTB Fabric path, the Fabric Link helper also requires Python 3 with the `venv` module.
+
+To skip the confirmation prompts, add `--force`. With `--force`, the script starts deleting the stacks without asking you to confirm.
+
+```
+./destroy.sh --force --profile <your-aws-cli-profile> --region <your-region>
+```
+
 ### RTB Fabric Link cleanup
 <a name="fabric-link-cleanup"></a>
 
@@ -72,23 +80,35 @@ You can uninstall the Guidance for Deploying a Prebid Server on AWS solution fro
 ## Using AWS Cloud Development Kit (AWS CDK)
 <a name="using-aws-cdk"></a>
 
-Run blow command from the root of the project directory
+If you deployed with RTB Fabric connectivity, delete the Fabric Link first, because it is not a CloudFormation resource:
 
 ```
-$ cdk destroy
+./deployment/simulator-fabric-link.sh delete --stack-name prebid-server-deployment-on-aws \
+    --profile <your-aws-cli-profile> --region <your-region>
+```
+
+Then run the following commands from the `source/infrastructure` directory:
+
+```
+npm ci && npm run build
+npx cdk destroy --all --profile <your-aws-cli-profile> --region <your-region>
 ```
 
 ## Deleting the Amazon S3 buckets
 <a name="deleting-the-amazon-s3-buckets"></a>
 
-To prevent accidental data loss, this solution is configured to retain the solution-created Amazon S3 buckets when you delete its AWS CloudFormation stack. After uninstalling the solution, you can manually delete the S3 buckets if you do not need to retain their data. Each stack contains the following seven S3 buckets:
-+  `ALBAccessLogsBucket`
-+  `ArtifactsBucket`
-+  `CloudFrontAccessLogsBucket`
-+  `DockerConfigsBucket`
-+  `DataSyncMetricsBucket`
-+  `MetricsEtlBucket`
-+  `CloudTrailLoggingBucket`
+To prevent accidental data loss, this solution is configured to retain the solution-created Amazon S3 buckets when you delete its AWS CloudFormation stack. After uninstalling the solution, you can manually delete the S3 buckets if you do not need to retain their data. The Prebid Server stack retains the following S3 buckets:
++ The stored requests bucket (stack output `PrebidStoredRequestsBucket`)
++ The stored requests access logs bucket
++ The Prebid Server configuration files bucket (stack output that starts with `ContainerImagePrebidSolutionConfigBucket`)
++ The DataSync metrics bucket
++ The DataSync analytics bucket
++ The metrics ETL bucket
++ The CloudTrail logging bucket
++ The ALB access logs bucket
++ The CloudFront access logs bucket (only when CloudFront and AWS WAF are deployed)
+
+The artifacts bucket is emptied and deleted with the stack.
 
 Follow these steps to delete each Amazon S3 bucket.
 

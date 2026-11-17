@@ -13,11 +13,11 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/te
 This pattern helps you locally test infrastructure as code (IaC) for AWS in Terraform without the need to provision infrastructure in your AWS environment. It integrates the [Terraform Tests framework](https://developer.hashicorp.com/terraform/language/tests) with [LocalStack](https://github.com/localstack/localstack). The LocalStack Docker container provides a local development environment that emulates various AWS services. This helps you test and iterate on infrastructure deployments without incurring costs in the AWS Cloud.
 
 This solution provides the following benefits:
-+ **Cost optimization** – Running tests against LocalStack eliminates the need to use AWS services. This prevents you from incurring costs that are associated with creating, operating, and modifying those AWS resources.
++ **Cost optimization** – Running tests against LocalStack eliminates the need to use AWS services. This helps you avoid costs associated with creating, operating, and modifying those AWS resources.
 + **Speed and efficiency** – Testing locally is also typically faster than deploying the AWS resources. This rapid feedback loop accelerates development and debugging. Because LocalStack runs locally, you can develop and test your Terraform configuration files without an internet connection. You can debug Terraform configuration files locally and receive immediate feedback, which streamlines the development process.
 + **Consistency and reproducibility** – LocalStack provides a consistent environment for testing. This consistency helps make sure that tests yield the same results, regardless of external AWS changes or network issues.
-+ **Isolation **– Testing with LocalStack prevents you from accidentally affecting live AWS resources or production environments. This isolation makes it safe to experiment and test various configurations.
-+ **Automation** – Integration with a continuous integration and continuous delivery (CI/CD) pipeline helps you automatically test Terraform [configuration files](https://developer.hashicorp.com/terraform/language/files). The pipeline thoroughly tests the IaC before deployment.
++ **Isolation **– Testing with LocalStack helps prevent you from accidentally affecting live AWS resources or production environments. This isolation helps you experiment and test various configurations.
++ **Automation** – Integration with a continuous integration and continuous delivery (CI/CD) pipeline helps you automatically test Terraform [configuration files](https://developer.hashicorp.com/terraform/language/files). The pipeline tests the IaC before deployment.
 + **Flexibility** – You can simulate different AWS Regions, AWS accounts, and service configurations to match your production environments more closely.
 
 ## Prerequisites and limitations
@@ -34,14 +34,14 @@ This solution provides the following benefits:
 
 **Limitations**
 + This pattern provides explicit examples for testing Amazon Simple Storage Service (Amazon S3), AWS Lambda, AWS Step Functions, and Amazon DynamoDB resources. However, you can extend this solution to include additional AWS resources.
-+ This pattern provides instructions to run Terraform Tests locally, but can you can integrate testing into any CI/CD pipeline.
++ This pattern provides instructions to run Terraform Tests locally, but you can integrate testing into any CI/CD pipeline.
 + This pattern provides instructions for using the LocalStack Community image. If you're using the LocalStack Pro image, see the [LocalStack Pro documentation](https://hub.docker.com/r/localstack/localstack-pro).
 + LocalStack provides emulation services for different AWS APIs. For a complete list, see [AWS Service Feature Coverage](https://docs.localstack.cloud/user-guide/aws/feature-coverage/). Some advanced features might require a subscription for LocalStack Pro.
 
 ## Architecture
 <a name="test-aws-infra-localstack-terraform-architecture"></a>
 
-The following diagram shows the architecture for this solution. The primary components are a source code repository, a CI/CD pipeline, and a LocalStack Docker container. The LocalStack Docker Container hosts the following AWS services locally:
+The following diagram shows the architecture for this solution. The primary components are a source code repository, a CI/CD pipeline, and a LocalStack Docker container. The LocalStack Docker container hosts the following AWS services locally:
 + An Amazon S3 bucket for storing files
 + Amazon CloudWatch for monitoring and logging
 + An AWS Lambda function for running serverless code
@@ -56,7 +56,7 @@ The diagram shows the following workflow:
 
 1. The CI/CD pipeline detects the changes and initiates a build process for static Terraform code analysis. The pipeline builds and runs the LocalStack Docker container. Then the pipeline starts the test process.
 
-1. The pipeline uploads an object into an Amazon S3 bucket that is hosted in the LocalStack Docker container.
+1. The pipeline uploads an object into an Amazon S3 bucket in the LocalStack Docker container.
 
 1. Uploading the object invokes an AWS Lambda function.
 
@@ -66,7 +66,7 @@ The diagram shows the following workflow:
 
 1. The state machine writes the name of the Amazon S3 object into a DynamoDB table.
 
-1. The test process in the CI/CD pipeline verifies that the name of the uploaded object matches the entry in the DynamoDB table. It also verifies that the S3 bucket is deployed with the specified name and that the AWS Lambda function has been successfully deployed.
+1. The test process in the CI/CD pipeline verifies that the name of the uploaded object matches the entry in the DynamoDB table. It also verifies that the Amazon S3 bucket has the specified name and that the AWS Lambda function deployed successfully.
 
 ## Tools
 <a name="test-aws-infra-localstack-terraform-tools"></a>
@@ -79,10 +79,10 @@ The diagram shows the following workflow:
 + [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) is a serverless orchestration service that helps you combine AWS Lambda functions and other AWS services to build business-critical applications.
 
 **Other tools**
-+ [Docker](https://www.docker.com/) is a set of platform as a service (PaaS) products that use virtualization at the operating-system level to deliver software in containers.
++ [Docker](https://www.docker.com/) is a set of products that use virtualization at the operating-system level to deliver software in containers.
 + [Docker Compose](https://docs.docker.com/compose/) is a tool for defining and running multi-container applications.
 + [LocalStack](https://localstack.cloud) is a cloud service emulator that runs in a single container. By using LocalStack, you can run workloads on your local machine that use AWS services, without connecting to the AWS Cloud.
-+ [Terraform](https://www.terraform.io/) is an IaC tool from HashiCorp that helps you create and manage cloud and on-premises resources.
++ [Terraform](https://www.terraform.io/) is an infrastructure as code (IaC) tool from HashiCorp that helps you create and manage cloud and on-premises resources.
 + [Terraform Tests](https://developer.hashicorp.com/terraform/language/tests) helps you validate Terraform module configuration updates through tests that are analogous to integration or unit testing.
 
 **Code repository**
@@ -91,8 +91,8 @@ The code for this pattern is available in the GitHub [Test AWS infrastructure us
 
 ## Best practices
 <a name="test-aws-infra-localstack-terraform-best-practices"></a>
-+ This solution tests AWS infrastructure that is specified in Terraform configuration files, and it does not deploy those resources in the AWS Cloud. If you want to deploy the resources, follow the [principle of least-privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) (IAM documentation) and properly [configure the Terraform backend](https://developer.hashicorp.com/terraform/language/backend) (Terraform documentation).
-+ When integrating LocalStack in a CI/CD pipeline, we recommend that you don't run the LocalStack Docker container in privilege mode. For more information, see [Runtime privilege and Linux capabilities](https://docs.docker.com/engine/containers/run/#runtime-privilege-and-linux-capabilities) (Docker documentation) and [Security for self-managed runners](https://docs.gitlab.com/runner/security/) (GitLab documentation).
++ This solution tests AWS infrastructure that you specify in Terraform configuration files, and it doesn't deploy those resources in the AWS Cloud. If you want to deploy the resources, follow the [principle of least privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) (IAM documentation) and [configure the Terraform backend](https://developer.hashicorp.com/terraform/language/backend) (Terraform documentation).
++ When you integrate LocalStack in a CI/CD pipeline, avoid running the LocalStack Docker container in privileged mode. For more information, see [Runtime privilege and Linux capabilities](https://docs.docker.com/engine/containers/run/#runtime-privilege-and-linux-capabilities) (Docker documentation) and [Security for self-managed runners](https://docs.gitlab.com/runner/security/) (GitLab documentation).
 
 ## Epics
 <a name="test-aws-infra-localstack-terraform-epics"></a>
@@ -127,7 +127,7 @@ The code for this pattern is available in the GitHub [Test AWS infrastructure us
 
 **Integration with GitHub Actions**
 
-You can integrate LocalStack and Terraform Tests in a CI/CD pipeline by using GitHub Actions. For more information, see the [GitHub Actions documentation](https://docs.github.com/en/actions). The following is a sample GitHub Actions configuration file:
+You can integrate LocalStack and Terraform tests into a continuous integration and continuous delivery (CI/CD) pipeline by using GitHub Actions. For more information, see the [GitHub Actions documentation](https://docs.github.com/en/actions). The following is a sample GitHub Actions configuration file:
 
 ```
 name: LocalStack Terraform Test

@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/ops_ops_model_def_responsibilities_ownership.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # OPS02-BP04 Mechanisms exist to manage responsibilities and ownership
 <a name="ops_ops_model_def_responsibilities_ownership"></a>
 

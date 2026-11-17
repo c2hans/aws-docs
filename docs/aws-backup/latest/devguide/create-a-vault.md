@@ -109,7 +109,7 @@ Backup vault names are case sensitive. They must contain from 2 to 50 alphanumer
 ## AWS KMS encryption key
 <a name="kms-key"></a>
 
-The AWS KMS encryption key protects your backups in this backup vault. By default, AWS Backup creates a KMS key with the alias `aws/backup` for you. You can choose that key or choose any other key in your account (cross-account KMS keys can be used via CLI).
+The AWS KMS encryption key protects your backups in this backup vault. By default, AWS Backup creates a KMS key with the alias `aws/backup` for you. You can choose that key or a customer managed key in your account (cross-account customer managed keys can be used through the CLI). You can't choose another service's AWS managed key, such as `aws/ebs`, as a backup vault encryption key.
 
 You can create a new encryption key by following the [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) procedure in the *AWS Key Management Service Developer Guide*.
 

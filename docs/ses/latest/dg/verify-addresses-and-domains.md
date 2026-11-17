@@ -12,7 +12,7 @@ If your account is still in the Amazon SES sandbox, you also need to verify any 
 You can create an identity by using the Amazon SES console or the Amazon SES API. The identity verification process depends on which type of identity you choose to create.
 
 **Tip**
-If you're a first time user of SES, you can use the [Get started wizard](setting-up.md#quick-start-verify-email-addresses) to create and verify your first identity (email address or domain).
+If you're a first time user of SES, you can use the [Get started wizard](getting-started-sending.md#quick-start-verify-email-addresses) to create and verify your first identity (email address or domain).
 
 **Topics**
 + [Creating and verifying identities in Amazon SES](creating-identities.md)

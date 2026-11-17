@@ -17,6 +17,7 @@ POST /trustanchors HTTP/1.1
 Content-type: application/json
 
 {
+   "aliasName": "{{string}}",
    "crlDpRevocationEnabled": {{boolean}},
    "enabled": {{boolean}},
    "name": "{{string}}",
@@ -50,6 +51,16 @@ The request does not use any URI parameters.
 <a name="API_CreateTrustAnchor_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [aliasName](#API_CreateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-CreateTrustAnchor-request-aliasName"></a>
+An alias for the trust anchor. When you set an alias, the response includes the alias ARN of the trust anchor in `aliasArn`.
+An alias name contains 1 to 256 characters. It must begin with a letter (A-Z or a-z). It can contain only letters (A-Z and a-z), numbers (0-9), underscores (\_), hyphens (-), and forward slashes (/). A forward slash can appear only between two other characters, so an alias name can't end with a forward slash or contain two in a row. Alias names that begin with `aws/`, in any combination of uppercase and lowercase letters, are reserved. Alias names are case sensitive.
+The alias name must be unique among resources of the same type in your account and Region. If another resource of the same type already has the alias, the request fails with a `ValidationException`. An invalid or reserved alias name also causes a `ValidationException`.
+If you omit this parameter or specify an empty string, the resource is created without an alias.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `(?!.*//)([A-Za-z]([A-Za-z0-9_/-]*[A-Za-z0-9_-])?)?`
+Required: No
 
  ** [crlDpRevocationEnabled](#API_CreateTrustAnchor_RequestSyntax) **   <a name="rolesanywhere-CreateTrustAnchor-request-crlDpRevocationEnabled"></a>
 Specifies whether the trust anchor checks certificate revocation status against CRL distribution points.
@@ -94,6 +105,8 @@ Content-type: application/json
 
 {
    "trustAnchor": {
+      "aliasArn": "string",
+      "aliasName": "string",
       "createdAt": "string",
       "crlDpRevocationEnabled": boolean,
       "enabled": boolean,
@@ -107,6 +120,7 @@ Content-type: application/json
             "threshold": number
          }
       ],
+      "previousAliasName": "string",
       "source": {
          "sourceData": { ... },
          "sourceType": "string"

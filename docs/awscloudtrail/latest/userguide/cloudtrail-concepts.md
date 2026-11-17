@@ -161,6 +161,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon CodeWhisperer | Amazon CodeWhisperer API activity on a customization. | CodeWhisperer customization | `AWS::CodeWhisperer::Customization` |
 | Amazon CodeWhisperer | Amazon CodeWhisperer API activity on a profile. | CodeWhisperer | `AWS::CodeWhisperer::Profile` |
 | Amazon Cognito | Amazon Cognito API activity on Amazon Cognito identity pools. For more information, see [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-info-in-cloudtrail.html#identity-pools-cloudtrail-events). | Cognito Identity Pools | `AWS::Cognito::IdentityPool` |
+| AWS IAM Credential Broker | Credential provider level events for AWS IAM Credential Broker. | AWS IAM Credential Broker Credential Provider | `AWS::CredentialBroker::CredentialProvider` |
 | AWS Data Exchange | AWS Data Exchange API activity on assets. | Data Exchange asset | `AWS::DataExchange::Asset` |
 | AWS Deadline Cloud | Deadline Cloud API activity on fleets. For more information, see [AWS Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/logging-using-cloudtrail.html#cloudtrail-data-events). | Deadline Cloud fleet | `AWS::Deadline::Fleet` |
 | AWS Deadline Cloud | Deadline Cloud API activity on jobs. For more information, see [AWS Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/logging-using-cloudtrail.html#cloudtrail-data-events). | Deadline Cloud job | `AWS::Deadline::Job` |
@@ -211,6 +212,7 @@ For event data stores, you can use only advanced event selectors to include data
 | AWS IoT TwinMaker | IoT TwinMaker API activity on an entity. For more information, see [AWS IoT TwinMaker](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateEntity.html). | IoT TwinMaker entity | `AWS::IoTTwinMaker::Entity` |
 | AWS IoT TwinMaker | IoT TwinMaker API activity on a workspace. For more information, see [AWS IoT TwinMaker](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_CreateWorkspace.html). | IoT TwinMaker workspace | `AWS::IoTTwinMaker::Workspace` |
 | Amazon Kendra Intelligent Ranking | Amazon Kendra Intelligent Ranking API activity on rescore execution plans. For more information, see [Amazon Kendra Intelligent Ranking](https://docs.aws.amazon.com/kendra/latest/dg/cloudtrail-intelligent-ranking.html#cloud-trail-intelligent-ranking-log-entry). | Kendra Ranking | `AWS::KendraRanking::ExecutionPlan` |
+| Kinesis queue | API activity on `AWS::Kinesis::Queue` resources. | Kinesis queue | `AWS::Kinesis::Queue` |
 | Amazon Kinesis Data Streams | Kinesis Data Streams API activity on streams. For more information, see [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/working-with-streams.html). | Kinesis stream | `AWS::Kinesis::Stream` |
 | Amazon Kinesis Data Streams | Kinesis Data Streams API activity on stream consumers. For more information, see [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/building-consumers.html). | Kinesis stream consumer | `AWS::Kinesis::StreamConsumer` |
 | Amazon Data Firehose | Amazon Data Firehose delivery stream API activity. | Amazon Data Firehose | `AWS::KinesisFirehose::DeliveryStream` |
@@ -232,6 +234,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon Managed Workflows for Apache Airflow | Amazon MWAA API activity on environments. | Managed Apache Airflow | `AWS::MWAA::Environment` |
 | Amazon Neptune Graph | Data API activities, for example queries, algorithms, or vector search, on a Neptune Graph. | Neptune Graph | `AWS::NeptuneGraph::Graph` |
 | Amazon CloudWatch Network Flow Monitor | Amazon CloudWatch Network Flow Monitor API activity on monitors. | Network Flow Monitor monitor | `AWS::NetworkFlowMonitor::Monitor` |
+| Amazon CloudWatch Network Flow Monitor | Amazon CloudWatch Network Flow Monitor API activity on performance monitors. | Network Flow Monitor performance monitor | `AWS::NetworkFlowMonitor::PerformanceMonitor` |
 | Amazon CloudWatch Network Flow Monitor | Amazon CloudWatch Network Flow Monitor API activity on scopes. | Network Flow Monitor scope | `AWS::NetworkFlowMonitor::Scope` |
 | Amazon NovaAct | Amazon NovaAct API activity on workflow definitions. | Workflow definition | `AWS::NovaAct::WorkflowDefinition` |
 | Amazon NovaAct | Amanzon NovaAct API activity on workflow runs. | Workflow run | `AWS::NovaAct::WorkflowRun` |
@@ -377,6 +380,7 @@ You can log network activity events for the following services:
 + AWS Cloud Map
 + AWS Diode Alerting
 + AWS Glue
++ AWS IAM Credential Broker
 + AWS IdentityStore Service
 + AWS Invoicing
 + AWS IoT FleetWise

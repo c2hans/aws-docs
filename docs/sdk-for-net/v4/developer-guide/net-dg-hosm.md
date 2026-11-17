@@ -48,11 +48,11 @@ This sample application retrieves an object from Amazon S3. To run the applicati
 
 For information about creating an Amazon S3 bucket and uploading an object, see the [Amazon Simple Storage Service User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/). For information about AWS credentials, see [Authenticating the AWS SDK for .NET with AWS](creds-idc.md).
 
-Create a .NET Core project with the following code. Then test the application on your development machine.
+Create a .NET project with the following code. Then test the application on your development machine.
 
 **Note**
-On your development machine, the .NET Core Runtime is installed, which enables you to run the application without publishing it. When you create an EC2 instance later in this tutorial, you can choose to install the .NET Core Runtime on the instance. This gives you a similar experience and a smaller file transfer.
- However, you can also choose not to install the .NET Core Runtime on the instance. If you choose this course of action, you must publish the application so that all dependencies are included when you transfer it to the instance.
+On your development machine, the .NET Runtime is installed, which enables you to run the application without publishing it. When you create an EC2 instance later in this tutorial, you can choose to install the .NET Runtime on the instance. This gives you a similar experience and a smaller file transfer.
+Optionally, skip installing the .NET Runtime on the instance. If you do, you must publish the application so that all dependencies are included when you transfer it to the instance.
 
 ### SDK references
 <a name="w2aac19c15c23c25c17c13b1"></a>
@@ -264,7 +264,7 @@ If you're using Visual Studio on Windows, you can also connect to the instance b
 
 1. Copy the application files from your local drive to your instance.
 
-   Which files you transfer depends on how you built the application and whether your instance has the .NET Core Runtime installed. For information about how to transfer files to your instance, see [Connect to your Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html) (see the appropriate sub-section) or [Transfer files to Windows instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instanceWindowsFileTransfer.html) in the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/).
+   Which files you transfer depends on how you built the application and whether your instance has the .NET Runtime installed. For information about how to transfer files to your instance, see [Connect to your Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html) (see the appropriate sub-section) or [Transfer files to Windows instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instanceWindowsFileTransfer.html) in the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/).
 
 1. Start the application and verify that it runs with the same results as on your development machine.
 

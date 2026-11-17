@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Headers](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-headers)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[OutboundAuth](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-outboundauth)" : {{HarnessRemoteMcpOutboundAuth}},
   "[Url](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-url)" : {{String}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Headers](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-headers): {{
     {{Key}}: {{Value}}}}
+  [OutboundAuth](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-outboundauth): {{
+    HarnessRemoteMcpOutboundAuth}}
   [Url](#cfn-bedrockagentcore-harness-harnessremotemcpconfig-url): {{String}}
 ```
 
@@ -43,6 +46,12 @@ Custom headers to include when connecting to the remote MCP server.
 *Pattern*: `^[\s\S]*$`
 *Minimum*: `1`
 *Maximum*: `16383`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OutboundAuth`  <a name="cfn-bedrockagentcore-harness-harnessremotemcpconfig-outboundauth"></a>
+Property description not available.
+*Required*: No
+*Type*: [HarnessRemoteMcpOutboundAuth](aws-properties-bedrockagentcore-harness-harnessremotemcpoutboundauth.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Url`  <a name="cfn-bedrockagentcore-harness-harnessremotemcpconfig-url"></a>

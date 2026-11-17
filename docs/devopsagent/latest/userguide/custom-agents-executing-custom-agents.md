@@ -85,7 +85,7 @@ An event trigger runs the custom agent when a webhook event arrives from a conne
 
 **Prerequisites:**
 
-Before creating an event trigger, you must have a connected integration with an active webhook in your agent space. Any integration with an active webhook can serve as an event source. For more information about setting up integrations, see [Invoking DevOps Agent through Webhook](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+Before creating an event trigger, you must have a connected integration with an active webhook in your agent space. Any integration with an active webhook can serve as an event source. For more information about setting up integrations, see [Invoking DevOps Agent through a webhook](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
 
 **To create an event trigger:**
 
@@ -124,7 +124,7 @@ If you leave the filter expression empty, the agent runs on every event from tha
 + `severity == 'critical'` – Predicate: runs the agent only when severity equals critical, passing the raw event payload as context.
 + `{sev: severity}` – Projection: runs the agent on every event, passing an object containing only the severity field as context. Because a multiselect hash always includes its keys, the result is never empty and does not filter.
 
-Because payload shape differs for each source, the available fields depend on the integration. When an event arrives but a trigger does not run, AWS DevOps Agent emits a notice describing why. For example, the notice might state that the filter expression matched nothing. The notice also lists the top-level fields present in that payload. For more information, see [Vended Logs and Metrics](configuring-integrations-and-knowledge-vended-logs-and-metrics.md).
+Because payload shape differs for each source, the available fields depend on the integration. When an event arrives but a trigger does not run, AWS DevOps Agent emits a notice describing why. For example, the notice might state that the filter expression matched nothing. The notice also lists the top-level fields present in that payload. For more information, see [Vended logs and metrics](configuring-integrations-and-knowledge-vended-logs-and-metrics.md).
 
 ### Creating triggers programmatically
 <a name="creating-triggers-programmatically"></a>
@@ -176,4 +176,4 @@ Tool call results provide transparency into what the agent did during invocation
 + **Successful tool calls** – The tool returned data that the agent uses to continue its work. For example, `query_cloudwatch_logs` returns log entries, or `use_aws` returns API responses.
 + **Failed tool calls** – The tool returned an error. The agent may retry, try an alternative approach, or report the failure in its output.
 
-You can inspect individual tool calls and their results in the invocation trajectory to understand the agent's behavior, verify it accessed the correct resources, and troubleshoot unexpected results. For more information about viewing trajectories, see [Viewing an invocation trajectory](custom-agents-managing-custom-agents.md).
+You can inspect individual tool calls and their results in the invocation trajectory to understand the agent's behavior, verify it accessed the correct resources, and troubleshoot unexpected results. For more information about viewing trajectories, see [Viewing an invocation trajectory](custom-agents-managing-custom-agents.md#viewing-an-invocation-trajectory).

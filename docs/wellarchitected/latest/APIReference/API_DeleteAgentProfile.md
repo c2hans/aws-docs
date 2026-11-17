@@ -5,12 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # DeleteAgentProfile
 <a name="API_DeleteAgentProfile"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
-**Important**
-Organizational profiles are not available during the preview release.
-
 Deletes an optimization profile and its associated configuration. This action cannot be undone.
 
 ## Request Syntax

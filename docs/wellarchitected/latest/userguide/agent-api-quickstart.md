@@ -10,7 +10,7 @@ AWS Well-Architected Agent is in preview release and is subject to change.
 You can set up AWS WA Agent entirely through the AWS CLI or SDK instead of the console. This quickstart walks through creating a profile, adding a goal, adding application context, and verifying eligibility.
 
 **Note**
-Before using the API, create the execution role and access roles as described in [Step 3: Configure permissions and integrations](agent-getting-started.md#agent-permissions-integrations) and [Step 6: Create access roles in your workload accounts](agent-getting-started.md#agent-access-roles). The API does not create IAM roles for you.
+Before using the API, create the execution role and access roles as described in [Configure service access](agent-getting-started.md#agent-permissions-integrations) and [(Optional) Create access roles in your workload accounts](agent-getting-started.md#agent-access-roles). The API does not create IAM roles for you.
 
 ## (Optional) API quickstart using the AWS MCP Server
 <a name="agent-api-mcp"></a>

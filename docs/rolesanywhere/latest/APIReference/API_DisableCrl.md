@@ -22,9 +22,13 @@ POST /crl/{{crlId}}/disable HTTP/1.1
 The request uses the following URI parameters.
 
  ** [crlId](#API_DisableCrl_RequestSyntax) **   <a name="rolesanywhere-DisableCrl-request-uri-crlId"></a>
-The unique identifier of the certificate revocation list (CRL).
-Length Constraints: Fixed length of 36.
-Pattern: `.*[a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}.*`
+The certificate revocation list (CRL) to act on. You can specify one of the following:
++ The CRL ID.
++ The CRL ARN.
++ The alias ARN of the CRL.
+An ARN must be for a CRL in your account and Region.
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `([a-f0-9]{8}-([a-z0-9]{4}-){3}[a-z0-9]{12}|arn:aws(-[^:]+)?:rolesanywhere(:.*){2}:(crl|alias/crl)/.*)`
 Required: Yes
 
 ## Request Body
@@ -41,12 +45,15 @@ Content-type: application/json
 
 {
    "crl": {
+      "aliasArn": "string",
+      "aliasName": "string",
       "createdAt": "string",
       "crlArn": "string",
       "crlData": blob,
       "crlId": "string",
       "enabled": boolean,
       "name": "string",
+      "previousAliasName": "string",
       "trustAnchorArn": "string",
       "updatedAt": "string"
    }

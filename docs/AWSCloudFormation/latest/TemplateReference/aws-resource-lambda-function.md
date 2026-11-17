@@ -35,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::Lambda::Function",
   "Properties" : {
+      "[AcceleratorConfig](#cfn-lambda-function-acceleratorconfig)" : {{AcceleratorConfig}},
       "[Architectures](#cfn-lambda-function-architectures)" : {{[ String, ... ]}},
       "[CapacityProviderConfig](#cfn-lambda-function-capacityproviderconfig)" : {{CapacityProviderConfig}},
       "[Code](#cfn-lambda-function-code)" : {{Code}},
@@ -59,6 +60,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ReservedConcurrentExecutions](#cfn-lambda-function-reservedconcurrentexecutions)" : {{Integer}},
       "[Role](#cfn-lambda-function-role)" : {{String}},
       "[Runtime](#cfn-lambda-function-runtime)" : {{String}},
+      "[RuntimeConfig](#cfn-lambda-function-runtimeconfig)" : {{RuntimeConfig}},
       "[RuntimeManagementConfig](#cfn-lambda-function-runtimemanagementconfig)" : {{RuntimeManagementConfig}},
       "[SnapStart](#cfn-lambda-function-snapstart)" : {{SnapStart}},
       "[Tags](#cfn-lambda-function-tags)" : {{[ Tag, ... ]}},
@@ -76,6 +78,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::Lambda::Function
 Properties:
+  [AcceleratorConfig](#cfn-lambda-function-acceleratorconfig): {{
+    AcceleratorConfig}}
   [Architectures](#cfn-lambda-function-architectures): {{
     - String}}
   [CapacityProviderConfig](#cfn-lambda-function-capacityproviderconfig): {{
@@ -112,6 +116,8 @@ Properties:
   [ReservedConcurrentExecutions](#cfn-lambda-function-reservedconcurrentexecutions): {{Integer}}
   [Role](#cfn-lambda-function-role): {{String}}
   [Runtime](#cfn-lambda-function-runtime): {{String}}
+  [RuntimeConfig](#cfn-lambda-function-runtimeconfig): {{
+    RuntimeConfig}}
   [RuntimeManagementConfig](#cfn-lambda-function-runtimemanagementconfig): {{
     RuntimeManagementConfig}}
   [SnapStart](#cfn-lambda-function-snapstart): {{
@@ -129,6 +135,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-lambda-function-properties"></a>
+
+`AcceleratorConfig`  <a name="cfn-lambda-function-acceleratorconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [AcceleratorConfig](aws-properties-lambda-function-acceleratorconfig.md)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `Architectures`  <a name="cfn-lambda-function-architectures"></a>
 The instruction set architecture that the function supports. Enter a string array with one of the valid values (arm64 or x86\_64). The default value is `x86_64`.
@@ -303,6 +315,12 @@ For a list of all currently supported runtimes, see [Supported runtimes](https:/
 *Required*: No
 *Type*: String
 *Allowed values*: `nodejs | nodejs4.3 | nodejs6.10 | nodejs8.10 | nodejs10.x | nodejs12.x | nodejs14.x | nodejs16.x | java8 | java8.al2 | java11 | python2.7 | python3.6 | python3.7 | python3.8 | python3.9 | dotnetcore1.0 | dotnetcore2.0 | dotnetcore2.1 | dotnetcore3.1 | dotnet6 | dotnet8 | nodejs4.3-edge | go1.x | ruby2.5 | ruby2.7 | provided | provided.al2 | nodejs18.x | python3.10 | java17 | ruby3.2 | ruby3.3 | ruby3.4 | python3.11 | nodejs20.x | provided.al2023 | python3.12 | java21 | python3.13 | nodejs22.x | nodejs24.x | python3.14 | java25 | dotnet10 | ruby4.0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RuntimeConfig`  <a name="cfn-lambda-function-runtimeconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [RuntimeConfig](aws-properties-lambda-function-runtimeconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RuntimeManagementConfig`  <a name="cfn-lambda-function-runtimemanagementconfig"></a>

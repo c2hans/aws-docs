@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # DeleteAgentRecommendationPolicy
 <a name="API_DeleteAgentRecommendationPolicy"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Removes the resource-based policy from an individual Agent Recommendation. This revokes all cross-account access previously granted by the policy. The recommendation owner or any principal with profile write access on the parent profile can call this operation.
 
 ## Request Syntax

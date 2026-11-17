@@ -9,6 +9,8 @@ This topic describes important changes to the AWS SDK for Java Developer Guide o
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [Download objects through a direct buffer pool with the AWS CRT-based S3 client](crt-based-s3-client-direct-buffer-pool.html) | Add a guide on downloading Amazon S3 objects through a direct buffer pool with the AWS CRT-based S3 client and the Amazon S3 Transfer Manager. | November 13, 2026 |
+| [Retries](retry-strategy.md) | Document the standard retry strategy as the default starting with version 2.58.0. Update the default values of the standard and adaptive retry strategies. Describe how to keep the previous default retry behavior with the legacy retry strategy. Add the doNotRetryWhen method. | November 10, 2026 |
 | [Publish SDK metrics with the CRT-based S3 client](metrics.html) | Added support for publishing SDK metrics with the AWS CRT-based S3 client at both the client and request levels. | November 6, 2026 |
 | [Limit the total number of results](pagination.html) | Clarify that the maxResults parameter on a request sets the page size, not the total number of items. Add examples that limit the total number of items across all pages. | October 6, 2026 |
 | [Migrating Amazon S3 pre-signed URL downloads from v1 to v2](migration-s3-presign-download.html) | Add migration guide for pre-signed URL downloads from v1 to v2 | July 15, 2026 |

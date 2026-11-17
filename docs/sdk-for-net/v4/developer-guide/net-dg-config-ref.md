@@ -12,7 +12,7 @@ For information about breaking changes and migrating your applications, see the 
 <a name="net-dg-config-ref"></a>
 
 **Note**
-The information in this topic is specific to projects based on .NET Framework. The `App.config` and `Web.config` files are not present by default in projects based on .NET Core.
+The information in this topic is specific to projects based on .NET Framework. The `App.config` and `Web.config` files are not present by default in projects based on .NET 8 and later.
 
 ## Open to view .NET Framework content
 <a name="w2aac11c29c11b5b1"></a>

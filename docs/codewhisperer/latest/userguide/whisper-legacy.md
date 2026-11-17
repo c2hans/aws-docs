@@ -12,9 +12,9 @@ All of the features of CodeWhisperer are moving to Amazon Q Developer. The purpo
 Amazon Q Developer is a generative artificial intelligence (AI) powered conversational assistant that can help you understand, build, extend, and operate AWS applications. To learn more, see the [Amazon Q Developer User Guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html).
 
 Features of Amazon Q Developer not available in CodeWhisperer include:
-+  [Chatting about your resources](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-actions.html)
-+  [Chatting about your costs](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-costs.html)
-+  [Diagnosing console errors](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/diagnose-console-errors.html)
++  [Chatting about your resources](https://docs.aws.amazon.com/assistant/latest/userguide/resources.html)
++  [Chatting about your costs](https://docs.aws.amazon.com/assistant/latest/userguide/costs.html)
++  [Diagnosing console errors](https://docs.aws.amazon.com/assistant/latest/userguide/diagnose-errors.html)
 +  [Transforming your code](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-transformation.html)
 +  [Developing software](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/software-dev.html)
 

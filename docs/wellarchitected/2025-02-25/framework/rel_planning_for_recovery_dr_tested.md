@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/rel_planning_for_recovery_dr_tested.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # REL13-BP03 Test disaster recovery implementation to validate the implementation
 <a name="rel_planning_for_recovery_dr_tested"></a>
 

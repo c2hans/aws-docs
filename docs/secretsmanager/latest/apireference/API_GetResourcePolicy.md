@@ -16,6 +16,7 @@ Secrets Manager generates a CloudTrail log entry when you call this action. Do n
 
 ```
 {
+   "PolicyName": "{{string}}",
    "SecretId": "{{string}}"
 }
 ```
@@ -26,6 +27,13 @@ Secrets Manager generates a CloudTrail log entry when you call this action. Do n
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [PolicyName](#API_GetResourcePolicy_RequestSyntax) **   <a name="SecretsManager-GetResourcePolicy-request-PolicyName"></a>
+The name of the resource policy to retrieve. If you don't specify this field, Secrets Manager uses `default`. If you specify a name other than `default` and no policy with that name exists, the operation returns a `ResourceNotFoundException`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9A-Za-z\-\_]+`
+Required: No
 
  ** [SecretId](#API_GetResourcePolicy_RequestSyntax) **   <a name="SecretsManager-GetResourcePolicy-request-SecretId"></a>
 The ARN or name of the secret to retrieve the attached resource-based policy for.
@@ -41,6 +49,7 @@ Required: Yes
 {
    "ARN": "string",
    "Name": "string",
+   "PolicyName": "string",
    "ResourcePolicy": "string"
 }
 ```
@@ -61,6 +70,12 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
 The name of the secret that the resource-based policy was retrieved for.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
+
+ ** [PolicyName](#API_GetResourcePolicy_ResponseSyntax) **   <a name="SecretsManager-GetResourcePolicy-response-PolicyName"></a>
+The name of the resource policy. If you didn't specify `PolicyName` in the request, this is `default`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9A-Za-z\-\_]+`
 
  ** [ResourcePolicy](#API_GetResourcePolicy_ResponseSyntax) **   <a name="SecretsManager-GetResourcePolicy-response-ResourcePolicy"></a>
 A JSON-formatted string that contains the permissions policy attached to the secret. For more information about permissions policies, see [Authentication and access control for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html).
@@ -133,7 +148,8 @@ x-amzn-RequestId: <request-id-guid>
 {
   "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestDatabaseSecret-a1b2c3",
   "Name": "MyTestDatabaseSecret",
-  "ResourcePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[\"arn:aws:iam::111122223333:root\",\"arn:aws:iam::444455556666:root\"]},\"Action\":[\"secretsmanager:GetSecretValue\"],\"Resource\":\"*\"}}"
+  "ResourcePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[\"arn:aws:iam::111122223333:root\",\"arn:aws:iam::444455556666:root\"]},\"Action\":[\"secretsmanager:GetSecretValue\"],\"Resource\":\"*\"}}",
+  "PolicyName": "default"
 }
 ```
 

@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[DeregistrationDelay](#cfn-ecs-service-gatewayconnector-deregistrationdelay)" : {{GatewayConnectorDeregistrationDelay}},
   "[Filters](#cfn-ecs-service-gatewayconnector-filters)" : {{GatewayConnectorFilters}},
   "[HealthCheck](#cfn-ecs-service-gatewayconnector-healthcheck)" : {{GatewayConnectorHealthCheck}},
   "[PortName](#cfn-ecs-service-gatewayconnector-portname)" : {{String}}
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-gatewayconnector-syntax.yaml"></a>
 
 ```
+  [DeregistrationDelay](#cfn-ecs-service-gatewayconnector-deregistrationdelay): {{
+    GatewayConnectorDeregistrationDelay}}
   [Filters](#cfn-ecs-service-gatewayconnector-filters): {{
     GatewayConnectorFilters}}
   [HealthCheck](#cfn-ecs-service-gatewayconnector-healthcheck): {{
@@ -38,6 +41,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-ecs-service-gatewayconnector-properties"></a>
+
+`DeregistrationDelay`  <a name="cfn-ecs-service-gatewayconnector-deregistrationdelay"></a>
+Property description not available.
+*Required*: No
+*Type*: [GatewayConnectorDeregistrationDelay](aws-properties-ecs-service-gatewayconnectorderegistrationdelay.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Filters`  <a name="cfn-ecs-service-gatewayconnector-filters"></a>
 The filters that control which gateway ingress paths the connector applies to.

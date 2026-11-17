@@ -9,5 +9,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 |
 | **Change** | **Description** | **Date** |
 | --- |--- |--- |
-| Matter standard version updates | Updated to include information about the latest Matter standard, version 1.5 | March 5, 2026 |
+| Matter standard version updates | Added information about Matter standard version 1.5. | March 5, 2026 |
 | Initial publication | — | February 5, 2024 |

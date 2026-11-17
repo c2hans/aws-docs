@@ -40,9 +40,32 @@ Type: String
 Valid Values: `QUEUED | IN_PROGRESS | COMPLETED | ERROR`
 Required: Yes
 
+ ** endedAt **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-endedAt"></a>
+The timestamp when the recommendation generation process completed.
+Type: Timestamp
+Required: No
+
+ ** errorDetails **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-errorDetails"></a>
+Details about the error if the generation status is ERROR.
+Type: [ErrorDetails](API_ErrorDetails.md) object
+Required: No
+
  ** estimatedCompletionTime **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-estimatedCompletionTime"></a>
 The estimated time for the generation to complete.
 Type: Timestamp
+Required: No
+
+ ** generationRecommendationTypes **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-generationRecommendationTypes"></a>
+The recommendation types the generation covers.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
+Valid Values: `RESOURCE | ARCHITECTURE | APPLICATION`
+Required: No
+
+ ** generationType **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-generationType"></a>
+How the generation was started.
+Type: String
+Valid Values: `ONDEMAND | SCHEDULED | BASIC`
 Required: No
 
  ** lastModifiedAt **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-lastModifiedAt"></a>
@@ -59,6 +82,11 @@ Required: No
  ** name **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-name"></a>
 The name of the recommendation generation.
 Type: String
+Required: No
+
+ ** startedAt **   <a name="wellarchitected-Type-AgentRecommendationGenerationSummary-startedAt"></a>
+The timestamp when the recommendation generation process started.
+Type: Timestamp
 Required: No
 
 ## See Also

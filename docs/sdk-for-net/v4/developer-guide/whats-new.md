@@ -15,6 +15,10 @@ For high-level information about new developments related to the AWS SDK for .NE
 
 The following is what's new in the AWS SDK for .NET.
 
+**November 11, 2026: Version 4.1 of the AWS SDK for .NET**
+
+Version 4.1 of the AWS SDK for .NET has been released. It's the first release on the SDK's annual schedule for updating .NET build targets. Version 4.1 adds builds for .NET 10 and .NET 11, removes the .NET Core 3.1 target, and no longer requires the AWS Common Runtime (CRT) for features such as SigV4a signing and CRC64NVME checksums. For details, see [Annual .NET target updates](net-dg-target-updates.md) and the blog post [Announcing AWS SDK for .NET 4.1](https://aws.amazon.com/blogs/developer/announcing-aws-sdk-for-net-4-1/).
+
 **October 17, 2025: Version 2.0 of the AWS Deploy Tool**
 
 Version 2.0 of the AWS Deploy Tool for .NET CLI has been released. For information about the Deploy Tool, see [Deploy applications to AWS](deploying.md). For information about version 2.0 of the Deploy Tool, see the blog post [What’s New in the AWS Deploy Tool for .NET](https://aws.amazon.com/blogs/developer/whats-new-in-the-aws-deploy-tool-for-net/).

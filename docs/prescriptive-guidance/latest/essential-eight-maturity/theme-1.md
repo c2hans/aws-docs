@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 
 **Essential Eight strategies covered**: Patch applications, restrict administrative privileges, patch operating systems
 
-Managed services help you reduce your compliance obligations by allowing AWS to manage some security tasks, such as patching and vulnerability management.
+Managed services can help you reduce your operational burden for compliance by allowing AWS to manage certain security tasks, such as patching and vulnerability management.
 
-As discussed in the [AWS shared responsibility model](australian-sec-compliance.md#shared-model) section, you share responsibility with AWS for cloud security and compliance. This can reduce your operational burden because AWS operates, manages, and controls components, from the host operating system and virtualisation layer to the physical security of the facilities in which the service operates.
+As discussed in the [AWS shared responsibility model](australian-sec-compliance.md#shared-model) section, you share responsibility with AWS for cloud security and compliance. This can reduce your operational burden because AWS operates, manages, and controls components, from the host operating system and virtualization layer to the physical security of the facilities in which the service operates.
 
 Your responsibilities might include managing maintenance windows for managed services, such as Amazon Relational Database Service (Amazon RDS) or Amazon Redshift, and scanning for vulnerabilities in AWS Lambda code or container images. As with all themes in this guide, you also retain responsibility for monitoring and compliance reporting. You can use [Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html) to report vulnerabilities across all of your AWS accounts. You can use rules in AWS Config to make sure that services, such as Amazon RDS and Amazon Redshift, have minor updates and maintenance windows enabled.
 
@@ -21,9 +21,9 @@ For example, if you run an Amazon EC2 instance, your responsibilities include th
 + Enforcing multi-factor authentication (MFA) to access the AWS control plane and the OS
 + Backing up the data and configuration
 
-Whereas if you run a Lambda function, then your responsibilities are reduced and include the following:
+If you run a Lambda function, your responsibilities are reduced and include the following:
 + Application control
-+ Confirming that libraries are up-to-date
++ Confirming that libraries are up to date
 + Restricting administrative privileges to the Lambda control plane
 + Enforcing MFA to access the AWS control plane
 + Backing up the Lambda function code and configuration
@@ -36,10 +36,10 @@ Whereas if you run a Lambda function, then your responsibilities are reduced and
 <a name="theme-1-implementation"></a>
 
 ### Enable patching
-<a name="enable-patching.838ced04-b0de-57a5-8df1-73bc8cab1fc0"></a>
+<a name="enable-patching.63a3333f-212d-5686-a1a3-d97f8dcfeda3"></a>
 + [Apply Amazon RDS updates](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html)
 + [Enable managed updates in AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html)
-+ [Be aware of Amazon Redshift cluster maintenance windows](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#rs-cluster-maintenance)
++ [Review Amazon Redshift cluster maintenance windows](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#rs-cluster-maintenance)
 
 ### Scan for vulnerabilities
 <a name="scan-for-vulnerabilities.2211743c-5bdf-586e-8de0-232d8d1e8a34"></a>

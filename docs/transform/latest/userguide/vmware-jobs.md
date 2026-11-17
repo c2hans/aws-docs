@@ -137,5 +137,4 @@ AWS Transform has the following limitations:
 + If you stop a running migration job, and then ask the agent to restart it, the job will start again from the beginning and you will lose any progress you have made in the job. However, artifacts created in the job before restarting it will still be available.
 + You can specify one target AWS Region per migration job. To migrate applications to different target Regions, create multiple migration jobs.
 + Multi-account migration – Single region only – You can migrate to multiple accounts within a single AWS Region. For multi-Region migrations, you must create separate projects for each target region.
-+ Multi-account migration – One account per wave – Each migration wave can target only one account. Applications requiring different target accounts must be placed in separate waves.
 + Multi-account migration – AWS Organizations required – All target accounts must be part of an AWS Organization.

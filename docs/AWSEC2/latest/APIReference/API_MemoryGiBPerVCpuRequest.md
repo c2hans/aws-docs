@@ -10,12 +10,12 @@ The minimum and maximum amount of memory per vCPU, in GiB.
 ## Contents
 <a name="API_MemoryGiBPerVCpuRequest_Contents"></a>
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum amount of memory per vCPU, in GiB. To specify no maximum limit, omit this parameter.
 Type: Double
 Required: No
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum amount of memory per vCPU, in GiB. To specify no minimum limit, omit this parameter.
 Type: Double
 Required: No

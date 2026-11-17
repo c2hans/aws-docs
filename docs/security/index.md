@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/security/index.html
 title: 'AWS Security Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-11
+generated_on: 2026-11-16
 ---
 
 # AWS Security Documentation
@@ -29,8 +29,8 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 ### Compute
 
 - [Amazon EC2](/AWSEC2/latest/UserGuide/ec2-security.html)
-- [AmazonEC2 Auto Scaling](/autoscaling/ec2/userguide/security.html)
-- [AmazonEC2 Image Builder](/imagebuilder/latest/userguide/image-builder-security.html)
+- [Amazon EC2 Auto Scaling](/autoscaling/ec2/userguide/security.html)
+- [EC2 Image Builder](/imagebuilder/latest/userguide/image-builder-security.html)
 - [AWS App Runner](/apprunner/latest/dg/security.html)
 - [AWS Batch](/batch/latest/userguide/security.html)
 - [AWS Elastic Beanstalk](/elasticbeanstalk/latest/dg/security.html)
@@ -43,61 +43,61 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 
 ### Containers
 
-- [AmazonECR](/AmazonECR/latest/userguide/security.html)
-- [AmazonECS](/AmazonECS/latest/developerguide/security.html)
-- [AmazonEKS](/eks/latest/userguide/security.html)
+- [Amazon ECR](/AmazonECR/latest/userguide/security.html)
+- [Amazon ECS](/AmazonECS/latest/developerguide/security.html)
+- [Amazon EKS](/eks/latest/userguide/security.html)
 - [AWSApp2Container](/app2container/latest/UserGuide/sec-a2c-chapter.html)
 - [AWSApp Runner](/apprunner/latest/dg/security.html)
 
 ### Storage
 
-- [AmazonS3](/AmazonS3/latest/dev/security.html)
+- [Amazon S3](/AmazonS3/latest/dev/security.html)
 - [AWSBackup](/aws-backup/latest/devguide/security-considerations.html)
-- [AmazonEBS direct APIs](/AWSEC2/latest/UserGuide/ebsapi-permissions.html)
-- [AmazonEFS](/efs/latest/ug/security-considerations.html)
+- [EBS direct APIs](/AWSEC2/latest/UserGuide/ebsapi-permissions.html)
+- [Amazon EFS](/efs/latest/ug/security-considerations.html)
 - [AWSElastic Disaster Recovery](/drs/latest/userguide/security.html)
-- [AmazonFSx for Lustre](/fsx/latest/LustreGuide/security.html)
-- [AmazonFSx for NetApp ONTAP](/fsx/latest/ONTAPGuide/security.html)
-- [AmazonFSx for OpenZFS](/fsx/latest/OpenZFSGuide/security.html)
-- [AmazonFSx for Windows File Server](/fsx/latest/WindowsGuide/security.html)
-- [AmazonGlacier](/amazonglacier/latest/dev/security.html)
+- [Amazon FSx for Lustre](/fsx/latest/LustreGuide/security.html)
+- [Amazon FSx for NetApp ONTAP](/fsx/latest/ONTAPGuide/security.html)
+- [Amazon FSx for OpenZFS](/fsx/latest/OpenZFSGuide/security.html)
+- [Amazon FSx for Windows File Server](/fsx/latest/WindowsGuide/security.html)
+- [Amazon Glacier](/amazonglacier/latest/dev/security.html)
 - [AWSStorage Gateway](/storagegateway/latest/userguide/security.html)
 
 ### Databases
 
-- [AmazonAurora](/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.html)
-- [AmazonDocumentDB](/documentdb/latest/developerguide/security.html)
-- [AmazonDynamoDB](/amazondynamodb/latest/developerguide/security.html)
-- [AmazonElastiCache for Memcached](/AmazonElastiCache/latest/mem-ug/memcached-security.html)
-- [AmazonElastiCache for Redis](/AmazonElastiCache/latest/red-ug/redis-security.html)
-- [AmazonKeyspaces (for Apache Cassandra)](/keyspaces/latest/devguide/security.html)
-- [AmazonMemoryDB for Redis](/memorydb/latest/devguide/security.html)
-- [AmazonNeptune](/neptune/latest/userguide/security.html)
-- [AmazonRDS](/AmazonRDS/latest/UserGuide/UsingWithRDS.html)
-- [AmazonRedshift](/redshift/latest/mgmt/iam-redshift-user-mgmt.html)
-- [AmazonTimestream](/timestream/latest/developerguide/security.html)
+- [Amazon Aurora](/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.html)
+- [Amazon DocumentDB](/documentdb/latest/developerguide/security.html)
+- [Amazon DynamoDB](/amazondynamodb/latest/developerguide/security.html)
+- [Amazon ElastiCache (Memcached)](/AmazonElastiCache/latest/dg/security.html)
+- [Amazon ElastiCache (Redis OSS)](/AmazonElastiCache/latest/red-ug/redis-security.html)
+- [Amazon Keyspaces (for Apache Cassandra)](/keyspaces/latest/devguide/security.html)
+- [Amazon MemoryDB](/memorydb/latest/devguide/security.html)
+- [Amazon Neptune](/neptune/latest/userguide/security.html)
+- [Amazon RDS](/AmazonRDS/latest/UserGuide/UsingWithRDS.html)
+- [Amazon Redshift](/redshift/latest/mgmt/iam-redshift-user-mgmt.html)
+- [Amazon Timestream](/timestream/latest/developerguide/security.html)
 
 ### Security, Identity, & Compliance
 
 - [AWSIdentity and Access Management (IAM)](/IAM/latest/UserGuide/security.html)
 - [AWSAudit Manager](/audit-manager/latest/userguide/security.html)
-- [AmazonCognito](/cognito/latest/developerguide/security.html)
-- [AmazonDetective](/detective/latest/adminguide/security.html)
+- [Amazon Cognito](/cognito/latest/developerguide/security.html)
+- [Amazon Detective](/detective/latest/adminguide/security.html)
 - [AWSDirectory Service](/directoryservice/latest/admin-guide/security.html)
 - [AWSFirewall Manager](/waf/latest/developerguide/fms-security.html)
-- [AmazonCloud Directory](/clouddirectory/latest/developerguide/security.html)
-- [AmazonGuardDuty](/guardduty/latest/ug/security.html)
+- [Amazon Cloud Directory](/clouddirectory/latest/developerguide/security.html)
+- [Amazon GuardDuty](/guardduty/latest/ug/security.html)
 - [AWSIAM Identity Center (successor to AWS Single Sign-On)](/singlesignon/latest/userguide/security.html)
-- [AmazonInspector](/inspector/latest/userguide/security.html)
-- [AmazonMacie](/macie/latest/user/security.html)
+- [Amazon Inspector](/inspector/latest/userguide/security.html)
+- [Amazon Macie](/macie/latest/user/security.html)
 - [AWSNetwork Firewall](/network-firewall/latest/developerguide/security.html)
 - [AWSPayment Cryptography](/payment-cryptography/latest/userguide/security.html)
 - [AWSResource Access Manager (AWS RAM)](/ram/latest/userguide/security.html)
 - [AWSSecrets Manager](/secretsmanager/latest/userguide/security.html)
 - [AWSSecurity Hub](/securityhub/latest/userguide/security.html)
-- [AmazonSecurity Lake](/security-lake/latest/userguide/security.html)
+- [Amazon Security Lake](/security-lake/latest/userguide/security.html)
 - [AWSShield](/waf/latest/developerguide/shd-security.html)
-- [AmazonVerified Permissions](/verifiedpermissions/latest/userguide/security.html)
+- [Amazon Verified Permissions](/verifiedpermissions/latest/userguide/security.html)
 - [AWSWAF](/waf/latest/developerguide/security.html)
 
 ### Cryptography & PKI
@@ -110,30 +110,30 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 
 ### Machine Learning
 
-- [AmazonBedrock](/bedrock/latest/userguide/security.html)
-- [AmazonCodeGuru Profiler](/codeguru/latest/profiler-ug/security.html)
-- [AmazonCodeGuru Reviewer](/codeguru/latest/reviewer-ug/security.html)
-- [AmazonComprehend](/comprehend/latest/dg/security-general.html)
-- [AmazonComprehend Medical](/comprehend-medical/latest/dev/comprehendmedical-security.html)
+- [Amazon Bedrock](/bedrock/latest/userguide/security.html)
+- [Amazon CodeGuru Profiler](/codeguru/latest/profiler-ug/security.html)
+- [Amazon CodeGuru Reviewer](/codeguru/latest/reviewer-ug/security.html)
+- [Amazon Comprehend](/comprehend/latest/dg/security-general.html)
+- [Amazon Comprehend Medical](/comprehend-medical/latest/dev/comprehendmedical-security.html)
 - [AWSDeep Learning-AMI](/dlami/latest/devguide/security.html)
 - [AWSDeep Learning Containers](/deep-learning-containers/latest/devguide/security.html)
-- [AmazonDevOps Guru](/devops-guru/latest/userguide/security.html)
-- [AmazonForecast](/forecast/latest/dg/security.html)
-- [AmazonFraud Detector](/frauddetector/latest/ug/security.html)
+- [Amazon DevOps Guru](/devops-guru/latest/userguide/security.html)
+- [Amazon Forecast](/forecast/latest/dg/security.html)
+- [Amazon Fraud Detector](/frauddetector/latest/ug/security.html)
 - [AWSHealthImaging](/healthimaging/latest/devguide/security.html)
 - [AWSHealthLake](/healthlake/latest/devguide/healthlake-security.html)
 - [AWSHealthOmics](/omics/latest/dev/security.html)
-- [AmazonKendra](/kendra/latest/dg/security.html)
-- [AmazonLex](/lex/latest/dg/security.html)
+- [Amazon Kendra](/kendra/latest/dg/security.html)
+- [Amazon Lex](/lex/latest/dg/security.html)
 - [AWSMCP Server](/aws-mcp/latest/userguide/security.html)
-- [AmazonMonitron](/Monitron/latest/admin-guide/security.html)
-- [AmazonPersonalize](/personalize/latest/dg/security.html)
-- [AmazonPolly](/polly/latest/dg/security.html)
-- [AmazonRekognition](/rekognition/latest/dg/security.html)
-- [AmazonSageMaker](/sagemaker/latest/dg/security.html)
-- [AmazonTextract](/textract/latest/dg/security.html)
-- [AmazonTranscribe](/transcribe/latest/dg/security.html)
-- [AmazonTranslate](/translate/latest/dg/security.html)
+- [Amazon Monitron](/Monitron/latest/admin-guide/security.html)
+- [Amazon Personalize](/personalize/latest/dg/security.html)
+- [Amazon Polly](/polly/latest/dg/security.html)
+- [Amazon Rekognition](/rekognition/latest/dg/security.html)
+- [Amazon SageMaker](/sagemaker/latest/dg/security.html)
+- [Amazon Textract](/textract/latest/dg/security.html)
+- [Amazon Transcribe](/transcribe/latest/dg/security.html)
+- [Amazon Translate](/translate/latest/dg/security.html)
 
 ### Management & Governance
 
@@ -142,7 +142,7 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 - [AWSChatbot](/chatbot/latest/adminguide/security.html)
 - [AWSCloudFormation](/AWSCloudFormation/latest/UserGuide/security.html)
 - [AWSCloudTrail](/awscloudtrail/latest/userguide/WhatIsCloudTrail-Security.html)
-- [AmazonCloudWatch](/AmazonCloudWatch/latest/monitoring/security.html)
+- [Amazon CloudWatch](/AmazonCloudWatch/latest/monitoring/security.html)
 - [AWSCommand Line Interface (AWS CLI)](/cli/latest/userguide/security.html)
 - [AWSConfig](/config/latest/developerguide/security.html)
 - [AWSConsole Mobile Application](/consolemobileapp/latest/userguide/security.html)
@@ -150,8 +150,8 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 - [AWSHealth](/health/latest/ug/security.html)
 - [AWSLaunch Wizard](/launchwizard/latest/userguide/launch-wizard-security.html)
 - [AWSLicense Manager](/license-manager/latest/userguide/security.html)
-- [AmazonManaged Grafana](/grafana/latest/userguide/security.html)
-- [AmazonManaged Service for Prometheus](/prometheus/latest/userguide/security.html)
+- [Amazon Managed Grafana](/grafana/latest/userguide/security.html)
+- [Amazon Managed Service for Prometheus](/prometheus/latest/userguide/security.html)
 - [AWSOrganizations](/organizations/latest/userguide/security.html)
 - [AWSProton](/proton/latest/adminguide/ag-security.html)
 - [AWSResilience Hub](/resilience-hub/latest/userguide/security.html)
@@ -170,12 +170,12 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 ### Serverless
 
 - [AWSLambda](/lambda/latest/dg/lambda-security.html)
-- [AmazonAPI Gateway](/apigateway/latest/developerguide/security.html)
-- [AmazonDynamoDB](/amazondynamodb/latest/developerguide/security.html)
-- [AmazonEventBridge](/eventbridge/latest/userguide/eb-security.html)
-- [AmazonSNS](/sns/latest/dg/sns-security.html)
-- [AmazonSQS](/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-security.html)
-- [AmazonS3](/AmazonS3/latest/dev/security.html)
+- [Amazon API Gateway](/apigateway/latest/developerguide/security.html)
+- [Amazon DynamoDB](/amazondynamodb/latest/developerguide/security.html)
+- [Amazon EventBridge](/eventbridge/latest/userguide/eb-security.html)
+- [Amazon SNS](/sns/latest/dg/sns-security.html)
+- [Amazon SQS](/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-security.html)
+- [Amazon S3](/AmazonS3/latest/dev/security.html)
 - [AWSAppSync](/appsync/latest/devguide/security.html)
 - [AWSFargate](/AmazonECS/latest/userguide/security.html)
 - [AWSStep Functions](/step-functions/latest/dg/security.html)
@@ -190,7 +190,7 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 - [AWSCodeCommit](/codecommit/latest/userguide/security.html)
 - [AWSCodeDeploy](/codedeploy/latest/userguide/security.html)
 - [AWSCodePipeline](/codepipeline/latest/userguide/security.html)
-- [AmazonCodeWhisperer](/codewhisperer/latest/userguide/codewhisperer-security.html)
+- [Amazon CodeWhisperer](/codewhisperer/latest/userguide/codewhisperer-security.html)
 - [AWSX-Ray](/xray/latest/devguide/security.html)
 
 ### Migration & Transfer
@@ -205,18 +205,18 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 
 ### Networking & Content Delivery
 
-- [AmazonAPI Gateway](/apigateway/latest/developerguide/security.html)
+- [Amazon API Gateway](/apigateway/latest/developerguide/security.html)
 - [AWSApp Mesh](/app-mesh/latest/userguide/security.html)
 - [AWSCloud Map](/cloud-map/latest/dg/security.html)
-- [AmazonCloudFront](/AmazonCloudFront/latest/DeveloperGuide/security.html)
+- [Amazon CloudFront](/AmazonCloudFront/latest/DeveloperGuide/security.html)
 - [AWSDirect Connect](/directconnect/latest/UserGuide/security.html)
 - [Elastic Load Balancing](/elasticloadbalancing/latest/userguide/security.html)
 - [AWSGlobal Accelerator](/global-accelerator/latest/dg/security.html)
-- [AmazonRoute 53](/Route53/latest/DeveloperGuide/security.html)
+- [Amazon Route 53](/Route53/latest/DeveloperGuide/security.html)
 - [Amazon Route 53 Application Recovery Controller](/r53recovery/latest/dg/security.html)
 - [AWSVerified Access](/verified-access/latest/ug/security.html)
-- [AmazonVPC](/vpc/latest/userguide/security.html)
-- [AmazonVPC Lattice](/vpc-lattice/latest/ug/security.html)
+- [Amazon VPC](/vpc/latest/userguide/security.html)
+- [Amazon VPC Lattice](/vpc-lattice/latest/ug/security.html)
 - [AWSVPN](/vpn/latest/s2svpn/security.html)
 
 ### Media Services
@@ -227,7 +227,7 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 - [AWSElemental MediaLive](/medialive/latest/ug/security.html)
 - [AWSElemental MediaPackage](/mediapackage/latest/ug/security.html)
 - [AWSElemental MediaTailor](/mediatailor/latest/ug/security.html)
-- [AmazonInteractive Video Service](/ivs/latest/userguide/ivs-security.html)
+- [Amazon Interactive Video Service](/ivs/latest/userguide/ivs-security.html)
 
 ### Internet of Things (IoT)
 
@@ -243,59 +243,55 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 - [AWSAmplify](/amplify/latest/userguide/security.html)
 - [AWSAppSync](/appsync/latest/devguide/security.html)
 - [AWSDevice Farm](/devicefarm/latest/developerguide/security.html)
-- [AmazonLocation Service](/location/latest/developerguide/security.html)
-- [AmazonPinpoint](/pinpoint/latest/developerguide/security.html)
-- [AmazonSNS](/sns/latest/dg/sns-security.html)
+- [Amazon Location Service](/location/latest/developerguide/security.html)
+- [Amazon SNS](/sns/latest/dg/sns-security.html)
 
 ### End User Computing
 
-- [AmazonWorkSpaces](/workspaces/latest/adminguide/security.html)
-- [AmazonWorkSpaces Web](/workspaces-web/latest/adminguide/security.html)
-- [AmazonAppStream 2.0](/appstream2/latest/developerguide/security.html)
+- [Amazon WorkSpaces](/workspaces/latest/adminguide/security.html)
+- [Amazon WorkSpaces Secure Browser](/workspaces-web/latest/adminguide/security.html)
+- [Amazon WorkSpaces Applications](/appstream2/latest/developerguide/security.html)
 
 ### Analytics
 
-- [AmazonAppFlow](/appflow/latest/userguide/security.html)
-- [AmazonAthena](/athena/latest/ug/security.html)
+- [Amazon AppFlow](/appflow/latest/userguide/security.html)
+- [Amazon Athena](/athena/latest/ug/security.html)
 - [AWSClean Rooms](/clean-rooms/latest/userguide/security.html)
-- [AmazonCloudSearch](/cloudsearch/latest/developerguide/configuring-access.html)
+- [Amazon CloudSearch](/cloudsearch/latest/developerguide/configuring-access.html)
 - [AWSData Exchange](/data-exchange/latest/userguide/security.html)
 - [AWSData Pipeline](/datapipeline/latest/DeveloperGuide/security.html)
-- [AmazonDataZone](/datazone/latest/userguide/security.html)
+- [Amazon DataZone](/datazone/latest/userguide/security.html)
 - [AWSEntity Resolution](/entityresolution/latest/userguide/security.html)
-- [AmazonEMR](/emr/latest/ManagementGuide/emr-security.html)
-- [AmazonFinSpace](/finspace/latest/userguide/finspace-security.html)
+- [Amazon EMR](/emr/latest/ManagementGuide/emr-security.html)
 - [AWSGlue](/glue/latest/dg/security.html)
-- [AmazonKinesis Data Firehose](/firehose/latest/dev/security.html)
-- [AmazonKinesis Data Streams](/streams/latest/dev/security.html)
-- [AmazonKinesis Video Streams](/kinesisvideostreams/latest/dg/security.html)
+- [Amazon Data Firehose](/firehose/latest/dev/security.html)
+- [Amazon Kinesis Data Streams](/streams/latest/dev/security.html)
+- [Amazon Kinesis Video Streams](/kinesisvideostreams/latest/dg/security.html)
 - [AWSLake Formation](/lake-formation/latest/dg/security.html)
 - [Amazon Managed Service for Apache Flink](/managed-flink/latest/java/security.html)
-- [AmazonMSK](/msk/latest/developerguide/security.html)
-- [AmazonOpenSearch Service](/opensearch-service/latest/developerguide/security.html)
-- [AmazonQuickSight](/quicksight/latest/user/security.html)
-- [AmazonRedshift](/redshift/latest/mgmt/iam-redshift-user-mgmt.html)
+- [Amazon MSK](/msk/latest/developerguide/security.html)
+- [Amazon OpenSearch Service](/opensearch-service/latest/developerguide/security.html)
+- [AWS Quick](/quicksight/latest/user/security.html)
+- [Amazon Redshift](/redshift/latest/mgmt/iam-redshift-user-mgmt.html)
 
 ### Application Integration
 
-- [AmazonEventBridge](/eventbridge/latest/userguide/eb-security.html)
-- [AmazonMWAA](/mwaa/latest/userguide/security.html)
-- [AmazonMQ](/amazon-mq/latest/developer-guide/security.html)
-- [AmazonSNS](/sns/latest/dg/sns-security.html)
-- [AmazonSQS](/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-security.html)
+- [Amazon EventBridge](/eventbridge/latest/userguide/eb-security.html)
+- [Amazon MWAA](/mwaa/latest/userguide/security.html)
+- [Amazon MQ](/amazon-mq/latest/developer-guide/security.html)
+- [Amazon SNS](/sns/latest/dg/sns-security.html)
+- [Amazon SQS](/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-security.html)
 - [AWSStep Functions](/step-functions/latest/dg/security.html)
-- [AmazonSWF](/amazonswf/latest/developerguide/security.html)
+- [Amazon SWF](/amazonswf/latest/developerguide/security.html)
 
 ### Business Applications
 
 - [AWSAppFabric](/appfabric/latest/adminguide/security.html)
-- [AmazonChime](/chime/latest/ag/security.html)
-- [AmazonConnect](/connect/latest/adminguide/security.html)
+- [Amazon Connect](/connect/latest/adminguide/security.html)
 - [AWSEnd User Messaging Push](/push-notifications/latest/userguide/security.html)
-- [AmazonPinpoint](/pinpoint/latest/developerguide/security.html)
-- [AmazonSimple Email Service (Amazon SES)](/ses/latest/dg/security.html)
+- [Amazon Simple Email Service (Amazon SES)](/ses/latest/dg/security.html)
 - [AWS Wickr](/wickr/latest/adminguide/security.html)
-- [AmazonWorkMail](/workmail/latest/adminguide/security.html)
+- [Amazon WorkMail](/workmail/latest/adminguide/security.html)
 
 ### Customer Enablement Services
 
@@ -309,15 +305,15 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 
 ### Quantum Computing
 
-- [AmazonBraket](/braket/latest/developerguide/security.html)
+- [Amazon Braket](/braket/latest/developerguide/security.html)
 
 ### Blockchain
 
-- [AmazonManaged Blockchain](/managed-blockchain/latest/managementguide/managed-blockchain-security.html)
+- [Amazon Managed Blockchain](/managed-blockchain/latest/managementguide/managed-blockchain-security.html)
 
 ### Game Development
 
-- [AmazonGameLift](/gamelift/latest/developerguide/security.html)
+- [Amazon GameLift Servers](/gamelift/latest/developerguide/security.html)
 
 ### Cloud Financial Management
 

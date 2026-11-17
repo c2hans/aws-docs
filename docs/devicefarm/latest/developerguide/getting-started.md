@@ -80,7 +80,7 @@ If you have private devices, configuration specific to private devices is also d
 
 1. (Optional) To configure run-level properties, update the **Run Settings** section. Here you can do the following:
    + Assign your run with a custom **Run name**. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
-   + Choose **Generate test report** under **Test Insights** to get a detailed structured test report for each job and an aggregated summary at the run level. This insight is generated in addition to any test report that you might generate as part of your test execution.
+   + Test Insights is selected by default for runs in a custom test environment. Clear **Generate test report** if you want to turn off Test Insights for the run. For more information, see [Test Insights](reports.md#reports-test-insights).
    + Assign a **Job timeout**, which is the maximum number of minutes a job can run on a device. If your tests are complete before the job timeout, the job completes, and you are not charged for the remainder of the job timeout. The default is 150 minutes.
    + Choose a **Billing method**. By default, if you do not have slots purchased on your account, the Device Farm console selects Metered. If you have slots, the console defaults to Unmetered.
 

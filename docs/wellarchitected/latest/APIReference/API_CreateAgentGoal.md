@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # CreateAgentGoal
 <a name="API_CreateAgentGoal"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Creates an optimization goal associated with a profile. Goals define specific targets and objectives for the optimization process.
 
 ## Request Syntax

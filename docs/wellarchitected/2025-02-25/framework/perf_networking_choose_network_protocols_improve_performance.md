@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/perf_networking_choose_network_protocols_improve_performance.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # PERF04-BP05 Choose network protocols to improve performance
 <a name="perf_networking_choose_network_protocols_improve_performance"></a>
 

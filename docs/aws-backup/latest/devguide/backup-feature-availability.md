@@ -40,7 +40,7 @@ If a resource type does not have a checkmark in the Cross-Region backup or Cross
 | Amazon EC2 | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  | ✓ |  |
 | Amazon S3 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Amazon EBS | ✓ | ✓ | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ 14 | ✓ |  | ✓ |  |
-| Amazon RDS DB instance (single-AZ and Multi-AZ) 12 | ✓ 3 | ✓ 3 | ✓ 4 | ✓ | ✓ |  |  |  | ✓ |  |  |  |  |  |
+| Amazon RDS DB instance (single-AZ and Multi-AZ) 12 | ✓ 3 | ✓ 3 | ✓ 4 | ✓ | ✓ |  |  |  | ✓ | ✓ |  |  |  |  |
 | Amazon RDS cluster 13 | ✓ 3 | ✓ 3 | ✓ 4 | ✓ |  |  |  |  | ✓ |  |  |  |  |  |
 | Amazon Aurora | ✓ 3 | ✓ 3 | ✓ | ✓ 6 | ✓ |  |  |  | ✓ | ✓ |  |  |  |  |
 | Amazon Aurora DSQL | ✓ | ✓ |  |  |  | ✓ | ✓ |  |  | ✓ |  |  |  |  |

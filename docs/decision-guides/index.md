@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/index.html
 title: 'AWS Decision Guides'
 canonical_url: https://docs.aws.amazon.com/decision-guides/
 source: aws-documentation
-generated_on: 2026-11-12
+generated_on: 2026-11-16
 ---
 
 # AWS Decision Guides
@@ -21,7 +21,10 @@ Decision guides provide structured comparisons and guidance to help you evaluate
 
 ## Recently updated
 
+- [Choosing a generative AI service](/decision-guides/latest/decision-guides/genai-guide.html): Evaluate services for building generative AI applications, including foundation models, model customization, and AI agents. **Last updated: November 2026**
 - [Choosing an AWS container service](/decision-guides/latest/decision-guides/choosing-aws-container-service.html): Evaluate container orchestration options and choose between managed services for running containerized applications. **Last updated: November 2026**
+- [Choosing an AWS compute service](/decision-guides/latest/decision-guides/choosing-aws-compute-service.html): Compare Amazon EC2, container, serverless, and edge compute options to choose the right compute service for your workload. **Last updated: November 2026**
+- [Choosing a modern application strategy](/decision-guides/latest/decision-guides/modern-apps-strategy-on-aws-how-to-choose.html): Evaluate modern application development approaches to find the best fit for your organization. **Last updated: November 2026**
 - [Choosing a vector database for your generative AI applications](/decision-guides/latest/decision-guides/vector-database-guide.html): Compare AWS vector database and vector search options for generative AI workloads across managed RAG, search, operational databases, in-memory, and low-cost storage. **Last updated: October 2026**
 - [Choosing an AWS storage service](/decision-guides/latest/decision-guides/choosing-aws-storage-service.html): Compare block, file, and object storage services to choose the right storage solution for your data access patterns. **Last updated: October 2026**
 - [Choosing an AWS serverless service](/decision-guides/latest/decision-guides/choosing-aws-serverless-service.html): Evaluate serverless compute, API, integration, data, and deployment services to choose the right combination for your workload. **Last updated: September 2026**
@@ -45,11 +48,11 @@ Build your modern data architecture on AWS. This guide helps you break down data
 
 Choose the right AWS compute service for your modern app development. Whether you need virtual machines, containers, or serverless functions, this category helps you match your workload requirements to the right service.
 
-- [Choosing an AWS compute service](/decision-guides/latest/decision-guides/choosing-aws-compute-service.html): Compare compute options including virtual machines, containers, and serverless to find the right fit for your workload. **Last updated: May 2025**
-- [Choosing an AWS container service](/decision-guides/latest/decision-guides/choosing-aws-container-service.html): Evaluate container orchestration options and choose between managed services for running containerized applications. **Last updated: May 2025**
+- [Choosing an AWS compute service](/decision-guides/latest/decision-guides/choosing-aws-compute-service.html): Compare compute options including virtual machines, containers, and serverless to find the right fit for your workload. **Last updated: November 2026**
+- [Choosing an AWS container service](/decision-guides/latest/decision-guides/choosing-aws-container-service.html): Evaluate container orchestration options and choose between managed services for running containerized applications. **Last updated: November 2026**
 - [AWS Fargate or AWS Lambda?](/decision-guides/latest/decision-guides/fargate-or-lambda.html): Understand the differences between serverless containers and serverless functions to pick the right compute model. **Last updated: August 2026**
 - [Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2?](/decision-guides/latest/decision-guides/lightsail-elastic-beanstalk-ec2.html): Compare simplified, managed, and full-control compute options for deploying web applications. **Last updated: September 2026**
-- [Choosing a modern application strategy](/decision-guides/latest/decision-guides/modern-apps-strategy-on-aws-how-to-choose.html): Evaluate approaches to modernizing your applications, including microservices, event-driven architectures, and serverless patterns. **Last updated: March 2025**
+- [Choosing a modern application strategy](/decision-guides/latest/decision-guides/modern-apps-strategy-on-aws-how-to-choose.html): Evaluate approaches to modernizing your applications, including microservices, event-driven architectures, and serverless patterns. **Last updated: November 2026**
 - [Choosing a purchasing option for Amazon EC2](/decision-guides/latest/decision-guides/ec2-purchasing-options-aws-how-to-choose.html): Compare On-Demand Instances, Reserved Instances, Savings Plans, and Spot Instances to optimize cost and performance for your Amazon EC2 workloads. **Last updated: June 2026**
 
 ## Front-End Web & Mobile
@@ -62,7 +65,7 @@ Build your web or mobile app on AWS. This guide helps you explore business requi
 
 Choose AWS services for AI and machine learning workloads. ML provides tools to learn from data, identify patterns, and make predictions. Use these guides to choose the right service for generative AI, model training, or ML inference.
 
-- [Choosing a generative AI service](/decision-guides/latest/decision-guides/genai-guide.html): Evaluate services for building generative AI applications, including foundation models, model customization, and AI agents. **Last updated: February 2025**
+- [Choosing a generative AI service](/decision-guides/latest/decision-guides/genai-guide.html): Evaluate services for building generative AI applications, including foundation models, model customization, and AI agents. **Last updated: November 2026**
 - [Choosing a vector database for your generative AI applications](/decision-guides/latest/decision-guides/vector-database-guide.html): Compare AWS vector database and vector search options for generative AI workloads across managed RAG, search, operational databases, in-memory, and low-cost storage. **Last updated: October 2026**
 - [Choosing an AWS machine learning service](/decision-guides/latest/decision-guides/ml-guide.html): Compare services for training, deploying, and managing machine learning models at scale. **Last updated: December 2024**
 - [Amazon Bedrock or Amazon SageMaker AI?](/decision-guides/latest/decision-guides/bedrock-or-sagemaker.html): Understand when to use Amazon Bedrock for building AI-powered applications versus SageMaker AI for custom model development. **Last updated: July 2026**

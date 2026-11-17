@@ -15,6 +15,14 @@ The agent attributes that are used with the message template.
 Type: [AgentAttributes](API_amazon-q-connect_AgentAttributes.md) object
 Required: No
 
+ ** caseAttributes **   <a name="connect-Type-amazon-q-connect_MessageTemplateAttributes-caseAttributes"></a>
+The case attributes that are used with the message template.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 220 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 32767.
+Value Length Constraints: Minimum length of 1. Maximum length of 32767.
+Required: No
+
  ** customAttributes **   <a name="connect-Type-amazon-q-connect_MessageTemplateAttributes-customAttributes"></a>
 The custom attributes that are used with the message template.
 Type: String to string map

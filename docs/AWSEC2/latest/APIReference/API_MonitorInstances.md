@@ -24,6 +24,11 @@ The IDs of the instances.
 Type: Array of strings
 Required: Yes
 
+ **MetricCategoryId.N**
+The IDs of the metric categories to associate with the instances. The specified metric categories are added to any metric categories that are already associated with the instances.
+Type: Array of strings
+Required: No
+
 ## Response Elements
 <a name="API_MonitorInstances_ResponseElements"></a>
 

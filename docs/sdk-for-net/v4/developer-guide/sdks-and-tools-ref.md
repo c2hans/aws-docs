@@ -15,6 +15,6 @@ The [AWS SDKs and Tools Reference Guide](https://docs.aws.amazon.com/sdkref/late
 + Information about the [shared AWS `config` and `credentials` files](https://docs.aws.amazon.com/sdkref/latest/guide/file-format.html) and their [location](https://docs.aws.amazon.com/sdkref/latest/guide/file-location.html).
 + [Setting up AWS accounts, users, and roles](https://docs.aws.amazon.com/sdkref/latest/guide/access-users.html)
 + [Configuration and authentication settings reference](https://docs.aws.amazon.com/sdkref/latest/guide/settings-reference.html)
-+ [AWS Common Runtime (CRT) libraries](https://docs.aws.amazon.com/sdkref/latest/guide/common-runtime.html)
++ [AWS Common Runtime (CRT) libraries](https://docs.aws.amazon.com/sdkref/latest/guide/common-runtime.html). Version 4.1 and later of the AWS SDK for .NET don't require the CRT. For more information, see [Annual .NET target updates](net-dg-target-updates.md).
 + [AWS SDKs and tools maintenance policy](https://docs.aws.amazon.com/sdkref/latest/guide/maint-policy.html)
 + [AWS SDKs and tools version support matrix](https://docs.aws.amazon.com/sdkref/latest/guide/version-support-matrix.html)

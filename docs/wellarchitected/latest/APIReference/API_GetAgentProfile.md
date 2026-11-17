@@ -5,12 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # GetAgentProfile
 <a name="API_GetAgentProfile"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
-**Important**
-Organizational profiles are not available during the preview release.
-
 Retrieves detailed information about an optimization profile, including its configuration and metadata.
 
 ## Request Syntax
@@ -102,7 +96,7 @@ The following data is returned in JSON format by the service.
  ** [aggregationConfiguration](#API_GetAgentProfile_ResponseSyntax) **   <a name="wellarchitected-GetAgentProfile-response-aggregationConfiguration"></a>
 The aggregation configuration. Not present for basic profiles.
 Type: Array of [AggregationConfiguration](API_AggregationConfiguration.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 
  ** [arn](#API_GetAgentProfile_ResponseSyntax) **   <a name="wellarchitected-GetAgentProfile-response-arn"></a>
 The Amazon Resource Name (ARN) of the profile.
@@ -178,7 +172,6 @@ Length Constraints: Minimum length of 3. Maximum length of 128.
 Pattern: `[a-zA-Z0-9_-]+`
 
  ** [organizationalAggregationConfiguration](#API_GetAgentProfile_ResponseSyntax) **   <a name="wellarchitected-GetAgentProfile-response-organizationalAggregationConfiguration"></a>
-This is not available during the preview release.
 The organizational monitoring boundary. Present only for organizational profiles.
 Type: [OrganizationalAggregationConfiguration](API_OrganizationalAggregationConfiguration.md) object
 
@@ -189,7 +182,7 @@ Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `COST_OPTIMIZATION | SECURITY | RESILIENCE | PERFORMANCE | OPERATIONAL_EXCELLENCE`
 
  ** [profileType](#API_GetAgentProfile_ResponseSyntax) **   <a name="wellarchitected-GetAgentProfile-response-profileType"></a>
-The type of the profile. `ORGANIZATIONAL` is not available during the preview release.
+The type of the profile.
 Type: String
 Valid Values: `STANDARD | BASIC | ORGANIZATIONAL`
 

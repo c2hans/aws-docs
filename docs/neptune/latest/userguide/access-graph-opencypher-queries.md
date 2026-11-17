@@ -69,6 +69,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
   --region {{us-east-1}} \
   --service neptune-db \
   -X POST \
+  -H "Content-Type: application/x-www-form-urlencoded" \
   -d "query=MATCH (n1) RETURN n1"
 ```
 
@@ -128,6 +129,7 @@ awscurl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
   --region {{us-east-1}} \
   --service neptune-db \
   -X POST \
+  -H "Content-Type: application/x-www-form-urlencoded" \
   -d "query=CREATE (n:Person { age: 25 })"
 ```
 
@@ -143,6 +145,10 @@ curl https://{{your-neptune-endpoint}}:{{port}}/openCypher \
 ```
 
 ------
+
+**Unsigned requests fail when IAM database authentication is enabled**
+When IAM database authentication is enabled on your DB cluster, Neptune requires you to sign every request with AWS Signature Version 4. The AWS CLI, SDK, and `awscurl` examples sign your requests automatically when you configure your AWS credentials.
+The plain `curl` example sends an unsigned request. It works only when IAM database authentication is disabled. When IAM database authentication is enabled, the request fails with an HTTP `403` (Forbidden) error. For more information, see [Connecting with IAM authentication](iam-auth-connecting.md).
 
 ## The default OpenCypher JSON results format
 <a name="access-graph-opencypher-queries-results-simple-JSON"></a>

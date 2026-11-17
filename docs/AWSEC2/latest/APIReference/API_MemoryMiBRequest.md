@@ -10,12 +10,12 @@ The minimum and maximum amount of memory, in MiB.
 ## Contents
 <a name="API_MemoryMiBRequest_Contents"></a>
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum amount of memory, in MiB. To specify no minimum limit, specify `0`.
 Type: Integer
 Required: Yes
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum amount of memory, in MiB. To specify no maximum limit, omit this parameter.
 Type: Integer
 Required: No

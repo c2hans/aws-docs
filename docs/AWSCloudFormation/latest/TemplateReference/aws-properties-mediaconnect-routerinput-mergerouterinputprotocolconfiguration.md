@@ -20,7 +20,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Rist](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rist)" : {{RistRouterInputConfiguration}},
-  "[Rtp](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rtp)" : {{RtpRouterInputConfiguration}}
+  "[Rtp](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rtp)" : {{RtpRouterInputConfiguration}},
+  "[SrtCaller](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-srtcaller)" : {{SrtCallerRouterInputConfiguration}},
+  "[SrtListener](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-srtlistener)" : {{SrtListenerRouterInputConfiguration}}
 }
 ```
 
@@ -32,6 +34,10 @@ To declare this entity in your CloudFormation template, use the following syntax
     RistRouterInputConfiguration}}
   [Rtp](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-rtp): {{
     RtpRouterInputConfiguration}}
+  [SrtCaller](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-srtcaller): {{
+    SrtCallerRouterInputConfiguration}}
+  [SrtListener](#cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-srtlistener): {{
+    SrtListenerRouterInputConfiguration}}
 ```
 
 ## Properties
@@ -47,4 +53,16 @@ The configuration settings for a router input using the RIST (Reliable Internet 
 The configuration settings for a Router Input using the RTP (Real-Time Transport Protocol) protocol, including the port and forward error correction state.
 *Required*: No
 *Type*: [RtpRouterInputConfiguration](aws-properties-mediaconnect-routerinput-rtprouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SrtCaller`  <a name="cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-srtcaller"></a>
+Property description not available.
+*Required*: No
+*Type*: [SrtCallerRouterInputConfiguration](aws-properties-mediaconnect-routerinput-srtcallerrouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SrtListener`  <a name="cfn-mediaconnect-routerinput-mergerouterinputprotocolconfiguration-srtlistener"></a>
+Property description not available.
+*Required*: No
+*Type*: [SrtListenerRouterInputConfiguration](aws-properties-mediaconnect-routerinput-srtlistenerrouterinputconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

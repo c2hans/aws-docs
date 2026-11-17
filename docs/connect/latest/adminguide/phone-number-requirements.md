@@ -1429,8 +1429,6 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 **Note**
 Ordering and porting numbers in South Korea takes longer than most other countries because of extra steps related to Regulator review, and because the many of the steps must be performed in Korean. For more information about ordering and porting numbers in South Korea, see [Guidelines for porting phone numbers to your Connect Customer project in South Korea](porting-numbers-sk.md).
 
-For UIFN numbers, supports standard [Regions and requirements](#uifn-requirements).
-
 ### For ordering phone numbers
 <a name="kr-ordering"></a>
 

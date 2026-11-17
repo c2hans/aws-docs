@@ -20,6 +20,9 @@ Content-type: application/json
          "firstName": "{{string}}",
          "lastName": "{{string}}"
       },
+      "caseAttributes": {
+         "{{string}}" : "{{string}}"
+      },
       "customAttributes": {
          "{{string}}" : "{{string}}"
       },
@@ -44,6 +47,9 @@ Content-type: application/json
          "businessEmailAddress": "{{string}}",
          "businessName": "{{string}}",
          "businessPhoneNumber": "{{string}}",
+         "calculatedAttributes": {
+            "{{string}}" : "{{string}}"
+         },
          "city": "{{string}}",
          "country": "{{string}}",
          "county": "{{string}}",
@@ -73,6 +79,28 @@ Content-type: application/json
          "profileARN": "{{string}}",
          "profileId": "{{string}}",
          "province": "{{string}}",
+         "recommendations": [
+            {
+               "catalogItem": {
+                  "additionalInformation": "{{string}}",
+                  "attributes": {
+                     "{{string}}" : "{{string}}"
+                  },
+                  "category": "{{string}}",
+                  "code": "{{string}}",
+                  "createdAt": "{{string}}",
+                  "description": "{{string}}",
+                  "id": "{{string}}",
+                  "imageLink": "{{string}}",
+                  "link": "{{string}}",
+                  "name": "{{string}}",
+                  "price": "{{string}}",
+                  "type": "{{string}}",
+                  "updatedAt": "{{string}}"
+               },
+               "score": {{number}}
+            }
+         ],
          "shippingAddress1": "{{string}}",
          "shippingAddress2": "{{string}}",
          "shippingAddress3": "{{string}}",

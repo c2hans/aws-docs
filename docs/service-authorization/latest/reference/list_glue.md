@@ -622,6 +622,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetDataQualityEvaluationConfig  **
+  - **IAM action:**  [glue:GetDataQualityEvaluationConfig](#list_glue-action-GetDataQualityEvaluationConfig)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetDataQualityModel  **
   - **IAM action:**  [glue:GetDataQualityModel](#list_glue-action-GetDataQualityModel)
   - **Condition key:**
@@ -992,6 +998,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListCustomEntityTypes  **
   - **IAM action:**  [glue:ListCustomEntityTypes](#list_glue-action-ListCustomEntityTypes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListDataQualityEvaluationConfigs  **
+  - **IAM action:**  [glue:ListDataQualityEvaluationConfigs](#list_glue-action-ListDataQualityEvaluationConfigs)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -1693,6 +1705,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)
   - **Access level:** Write
 
+- **   [CreateDataQualityEvaluationConfig](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-CreateDataQualityEvaluationConfig)  **
+  - **Description:** Grants permission to create a Data Quality evaluation configuration
+  - **Resource types (\*required):** [dataQualityEvaluationConfig\*](#list_glue-resource-dataQualityEvaluationConfig)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [CreateDataQualityRuleset](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-CreateDataQualityRuleset)  **
   - **Description:** Grants permission to create a Data Quality ruleset
   - **Resource types (\*required):**
@@ -1902,6 +1920,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to delete a Custom Entity Type
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** Write
+
+- **   [DeleteDataQualityEvaluationConfig](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-DeleteDataQualityEvaluationConfig)  **
+  - **Description:** Grants permission to delete a Data Quality evaluation configuration
+  - **Resource types (\*required):** [dataQualityEvaluationConfig\*](#list_glue-resource-dataQualityEvaluationConfig)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteDataQualityRuleset](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-DeleteDataQualityRuleset)  **
@@ -2245,6 +2269,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Permissions management, Write
+
+- **   [GetDataQualityEvaluationConfig](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-GetDataQualityEvaluationConfig)  **
+  - **Description:** Grants permission to retrieve a Data Quality evaluation configuration
+  - **Resource types (\*required):** [dataQualityEvaluationConfig\*](#list_glue-resource-dataQualityEvaluationConfig)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
 
 - **   [GetDataQualityModel](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-GetDataQualityModel)  **
   - **Description:** Grants permission to retrieve the training status of the prediction model for a statistic
@@ -2673,6 +2703,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [connectionType](#list_glue-resource-connectionType) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [crawler](#list_glue-resource-crawler) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [customEntityType](#list_glue-resource-customEntityType) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [dataQualityEvaluationConfig](#list_glue-resource-dataQualityEvaluationConfig) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [database](#list_glue-resource-database) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [devendpoint](#list_glue-resource-devendpoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [job](#list_glue-resource-job) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
@@ -2791,6 +2822,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to retrieve all Custom Entity Types
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListDataQualityEvaluationConfigs](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-ListDataQualityEvaluationConfigs)  **
+  - **Description:** Grants permission to retrieve a list of Data Quality evaluation configurations
+  - **Resource types (\*required):** [dataQualityEvaluationConfig\*](#list_glue-resource-dataQualityEvaluationConfig)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListDataQualityResults](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-ListDataQualityResults)  **
@@ -3218,6 +3255,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [connectionType](#list_glue-resource-connectionType) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [crawler](#list_glue-resource-crawler) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [customEntityType](#list_glue-resource-customEntityType) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
+  - **Resource types (\*required):** [dataQualityEvaluationConfig](#list_glue-resource-dataQualityEvaluationConfig) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [dataQualityRuleset](#list_glue-resource-dataQualityRuleset) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [database](#list_glue-resource-database) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [devendpoint](#list_glue-resource-devendpoint) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_glue-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
@@ -3253,6 +3291,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [connectionType](#list_glue-resource-connectionType) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [crawler](#list_glue-resource-crawler) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [customEntityType](#list_glue-resource-customEntityType) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
+  - **Resource types (\*required):** [dataQualityEvaluationConfig](#list_glue-resource-dataQualityEvaluationConfig) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [dataQualityRuleset](#list_glue-resource-dataQualityRuleset) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [database](#list_glue-resource-database) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
   - **Resource types (\*required):** [devendpoint](#list_glue-resource-devendpoint) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_glue-aws_TagKeys)<br />[glue:LakeFormationPermissions](#list_glue-glue_LakeFormationPermissions)
@@ -3326,6 +3365,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to update the schedule of a crawler
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** Write
+
+- **   [UpdateDataQualityEvaluationConfig](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-UpdateDataQualityEvaluationConfig)  **
+  - **Description:** Grants permission to update a Data Quality evaluation configuration
+  - **Resource types (\*required):** [dataQualityEvaluationConfig\*](#list_glue-resource-dataQualityEvaluationConfig)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdateDataQualityRuleset](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-data-quality-api.html#aws-glue-api-data-quality-api-UpdateDataQualityRuleset)  **
@@ -3520,6 +3565,7 @@ The following resource types are defined by this service and can be used in the 
 |  [connectionType](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html)  | arn:${Partition}:glue:${Region}:${Account}:connectionType:${ConnectionTypeName} | [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_) |
 |  [crawler](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html)  | arn:${Partition}:glue:${Region}:${Account}:crawler/${CrawlerName} | [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_) |
 |  [customEntityType](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html)  | arn:${Partition}:glue:${Region}:${Account}:customEntityType/${CustomEntityTypeId} | [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_) |
+|  [dataQualityEvaluationConfig](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html)  | arn:${Partition}:glue:${Region}:${Account}:dataQualityEvaluationConfig/${EvaluationConfigName} | [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_) |
 |  [dataQualityRuleset](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html)  | arn:${Partition}:glue:${Region}:${Account}:dataQualityRuleset/${RulesetName} | [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_) |
 |  [database](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html)  | arn:${Partition}:glue:${Region}:${Account}:database/${DatabaseName} | [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_) |
 |  [devendpoint](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html)  | arn:${Partition}:glue:${Region}:${Account}:devEndpoint/${DevEndpointName} | [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_) |

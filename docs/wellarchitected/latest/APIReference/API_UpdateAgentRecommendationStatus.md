@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # UpdateAgentRecommendationStatus
 <a name="API_UpdateAgentRecommendationStatus"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Updates the status of a recommendation to track its progress through the implementation lifecycle.
 
 ## Request Syntax

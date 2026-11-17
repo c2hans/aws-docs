@@ -14,7 +14,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Automatically back up SAP HANA databases using Systems Manager and EventBridge](automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge.md)
 + [Automatically generate a PynamoDB model and CRUD functions for Amazon DynamoDB by using a Python application](automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application.md)
 + [Block public access to Amazon RDS by using Cloud Custodian](block-public-access-to-amazon-rds-by-using-cloud-custodian.md)
-+ [Configure Windows authentication for Amazon RDS for Microsoft SQL Server using AWS Managed Microsoft AD](configure-windows-authentication-for-amazon-rds-using-microsoft-ad.md)
 + [Configure cross-account access to Amazon DynamoDB](configure-cross-account-access-to-amazon-dynamodb.md)
 + [Configure read-only routing in Always On availability groups in SQL Server on AWS](configure-read-only-routing-in-an-always-on-availability-group-in-sql-server-on-aws.md)
 + [Connect by using an SSH tunnel in pgAdmin](connect-by-using-an-ssh-tunnel-in-pgadmin.md)

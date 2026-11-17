@@ -41,6 +41,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[RuntimePlatform](#cfn-ecs-taskdefinition-runtimeplatform)" : {{RuntimePlatform}},
       "[Tags](#cfn-ecs-taskdefinition-tags)" : {{[ Tag, ... ]}},
       "[TaskRoleArn](#cfn-ecs-taskdefinition-taskrolearn)" : {{String}},
+      "[TrustedExecutionConfiguration](#cfn-ecs-taskdefinition-trustedexecutionconfiguration)" : {{TrustedExecutionConfiguration}},
       "[Volumes](#cfn-ecs-taskdefinition-volumes)" : {{[ Volume, ... ]}}
     }
 }
@@ -75,6 +76,8 @@ Properties:
   [Tags](#cfn-ecs-taskdefinition-tags): {{
     - Tag}}
   [TaskRoleArn](#cfn-ecs-taskdefinition-taskrolearn): {{String}}
+  [TrustedExecutionConfiguration](#cfn-ecs-taskdefinition-trustedexecutionconfiguration): {{
+    TrustedExecutionConfiguration}}
   [Volumes](#cfn-ecs-taskdefinition-volumes): {{
     - Volume}}
 ```
@@ -227,6 +230,13 @@ String validation is done on the ECS side. If an invalid string value is given f
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`TrustedExecutionConfiguration`  <a name="cfn-ecs-taskdefinition-trustedexecutionconfiguration"></a>
+The trusted execution configuration for tasks that use this task definition, including the isolation mode and, if configured, an attestation policy.
+Trusted execution is supported only for Amazon ECS Managed Instances.
+*Required*: No
+*Type*: [TrustedExecutionConfiguration](aws-properties-ecs-taskdefinition-trustedexecutionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Volumes`  <a name="cfn-ecs-taskdefinition-volumes"></a>
 The list of data volume definitions for the task. For more information, see [Using data volumes in tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_data_volumes.html) in the *Amazon Elastic Container Service Developer Guide*.

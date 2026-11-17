@@ -5,13 +5,15 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_S
 # StopReplicationToReplica
 <a name="API_StopReplicationToReplica"></a>
 
-Removes the link between the replica secret and the primary secret and promotes the replica to a primary secret in the replica Region.
+Removes the link between a replica secret and its primary secret, and stops replication to the replica. You call this operation from the replica account or Region. Depending on the type of replica, the behavior is:
++  **Cross-Region replica**: promotes the replica to a standalone primary secret in the replica Region.
++  **Cross-account replica**: promotes the replica in your account to a standalone secret and stops replication from its primary secret in the other account. Secrets Manager updates the primary secret's replication status to `Detached` for this replica.
 
-You must call this operation from the Region in which you want to promote the replica to a primary secret.
+To stop cross-account replication from the primary account instead, use [DisassociateCrossAccountReplica](API_DisassociateCrossAccountReplica.md).
 
 Secrets Manager generates a CloudTrail log entry when you call this action. Do not include sensitive information in request parameters because it might be logged. For more information, see [Logging Secrets Manager events with AWS CloudTrail](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieve-ct-entries.html).
 
- **Required permissions: ** `secretsmanager:StopReplicationToReplica`. For more information, see [ IAM policy actions for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#reference_iam-permissions_actions) and [Authentication and access control in Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html).
+ **Required permissions: ** `secretsmanager:StopReplicationToReplica`. For cross-account replica secrets, you must also have `secretsmanager:DeleteResourcePolicy` permissions. For more information, see [ IAM policy actions for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#reference_iam-permissions_actions) and [Authentication and access control in Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html).
 
 ## Request Syntax
 <a name="API_StopReplicationToReplica_RequestSyntax"></a>
@@ -30,7 +32,8 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [SecretId](#API_StopReplicationToReplica_RequestSyntax) **   <a name="SecretsManager-StopReplicationToReplica-request-SecretId"></a>
-The name of the secret or the replica ARN. The replica ARN is the same as the original primary secret ARN expect the Region is changed to the replica Region.
+The ARN or name of the replica secret.
+For a cross-region replica, the replica ARN is the same as the original primary secret ARN except that the Region is changed to the replica Region. For a cross-account replica, this is the ARN or name of the replica secret in your account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
@@ -52,7 +55,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [ARN](#API_StopReplicationToReplica_ResponseSyntax) **   <a name="SecretsManager-StopReplicationToReplica-response-ARN"></a>
-The ARN of the promoted secret. The ARN is the same as the original primary secret except the Region is changed.
+The ARN of the promoted secret. For a cross-region replica, this ARN is the same as the original primary secret's ARN except that the Region is changed. For a cross-account replica, this is the ARN of the promoted secret in your account.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 
@@ -87,7 +90,7 @@ HTTP Status Code: 400
 ### Example
 <a name="API_StopReplicationToReplica_Example_1"></a>
 
-The following example is intended for a primary secret in `us-west-2` that has a replica in `ap-south-1`. The example removes the replica from the primary secret and promotes it to a primary secret in `ap-south-1`.
+The following example promotes a replica in `ap-south-1` to a standalone secret. The original primary secret is in `us-west-2`.
 
 #### Sample Request
 <a name="API_StopReplicationToReplica_Example_1_Request"></a>
@@ -103,9 +106,9 @@ X-Amz-Date: <date>
 Authorization: AWS4-HMAC-SHA256 Credential=<credentials>,SignedHeaders=<headers>, Signature=<signature>
 Content-Length: <payload-size-bytes>
 
-        {
-        "SecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyExampleSecret-a1b2c3"
-        }
+{
+  "SecretId": "arn:aws:secretsmanager:ap-south-1:123456789012:secret:MyExampleSecret-a1b2c3"
+}
 ```
 
 #### Sample Response
@@ -119,7 +122,6 @@ Content-Length: <response-size-bytes>
 Connection: keep-alive
 x-amzn-RequestId: <request-id-guid>
 
-       {
 {
   "ARN":"arn:aws:secretsmanager:ap-south-1:123456789012:secret:MyExampleSecret-a1b2c3",
 }

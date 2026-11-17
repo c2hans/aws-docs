@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # CreateAgentBasicProfile
 <a name="API_CreateAgentBasicProfile"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Creates a Basic profile for the calling account. No configuration input is required because the account and region are inferred from the caller. The profile uses the reserved name `basic`. This operation is idempotent. Calling it twice returns the same ARN. Each account can have at most one Basic profile.
 
 ## Request Syntax

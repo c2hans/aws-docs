@@ -13,6 +13,8 @@ Updates the properties of an Exadata infrastructure resource.
 ```
 {
    "cloudExadataInfrastructureId": "{{string}}",
+   "computeCount": {{number}},
+   "displayName": "{{string}}",
    "maintenanceWindow": {
       "customActionTimeoutInMins": {{number}},
       "daysOfWeek": [
@@ -32,7 +34,8 @@ Updates the properties of an Exadata infrastructure resource.
       "preference": "{{string}}",
       "skipRu": {{boolean}},
       "weeksOfMonth": [ {{number}} ]
-   }
+   },
+   "storageCount": {{number}}
 }
 ```
 
@@ -50,9 +53,27 @@ Length Constraints: Minimum length of 6. Maximum length of 2048.
 Pattern: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
 Required: Yes
 
+ ** [computeCount](#API_UpdateCloudExadataInfrastructure_RequestSyntax) **   <a name="odb-UpdateCloudExadataInfrastructure-request-computeCount"></a>
+The number of database servers for the Exadata infrastructure.
+Type: Integer
+Required: No
+
+ ** [displayName](#API_UpdateCloudExadataInfrastructure_RequestSyntax) **   <a name="odb-UpdateCloudExadataInfrastructure-request-displayName"></a>
+A new user-friendly name for the Exadata infrastructure.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z_](?!.*--)[a-zA-Z0-9_-]*`
+Required: No
+
  ** [maintenanceWindow](#API_UpdateCloudExadataInfrastructure_RequestSyntax) **   <a name="odb-UpdateCloudExadataInfrastructure-request-maintenanceWindow"></a>
-The scheduling details for the maintenance window. Patching and system updates take place during the maintenance window.
+The maintenance window configuration for the Exadata Cloud infrastructure.
+This allows you to define when maintenance operations such as patching and updates can be performed on the infrastructure.
 Type: [MaintenanceWindow](API_MaintenanceWindow.md) object
+Required: No
+
+ ** [storageCount](#API_UpdateCloudExadataInfrastructure_RequestSyntax) **   <a name="odb-UpdateCloudExadataInfrastructure-request-storageCount"></a>
+The number of storage servers to activate for the Exadata infrastructure.
+Type: Integer
 Required: No
 
 ## Response Syntax

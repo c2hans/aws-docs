@@ -7,17 +7,17 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 
 **Essential Eight strategies covered**: Restrict administrative privileges, multi-factor authentication
 
-Robust management of identity and permissions is a critical aspect of managing security in the cloud. Strong identity practices balance necessary access and least privilege. This helps development teams move quickly without compromising security.
+Managing identities and permissions is a critical aspect of managing security in the cloud. Strong identity practices balance necessary access and least privilege. This helps development teams move quickly while helping to maintain security.
 
-Use identity federation to centralise management of identities. This makes it easier to manage access across multiple applications and services because you are managing access from a single location. This also helps you implement temporary permissions and multi-factor authentication (MFA).
+Use identity federation to centralize management of identities. This makes it easier to manage access across multiple applications and services because you are managing access from a single location. This also helps you implement temporary permissions and multi-factor authentication (MFA).
 
 Grant users only the permissions that they require to perform their tasks. AWS Identity and Access Management Access Analyzer can validate policies and verify public and cross-account access. Features such as AWS Organizations service control policies (SCPs), IAM policy conditions, IAM permissions boundaries, and AWS IAM Identity Center permission sets can help you configure fine-grained access control.
 
-When doing any type of authentication, it is best to use temporary credentials to reduce or eliminate risks—such as credentials being inadvertently disclosed, shared, or stolen. Use IAM roles instead of IAM users.
+When authenticating, use temporary credentials to help reduce risks such as inadvertent disclosure, sharing, or theft of credentials. Use IAM roles instead of IAM users.
 
-Use strong sign-in mechanisms, such as MFA, to mitigate the risk where sign-in credentials have been inadvertently disclosed or are easily guessed. Require MFA for the root user, and you can also require it at a federation level. If use of IAM users is unavoidable, enforce MFA.
+Use strong sign-in mechanisms, such as MFA, to help mitigate the risk of sign-in credentials that are inadvertently disclosed or easily guessed. Require MFA for the root user. You can also require MFA at the federation level. If you must use IAM users, enforce MFA.
 
-To monitor and report on compliance, you must continually work to reduce permissions, monitor findings from IAM Access Analyzer, and remove unused IAM resources. Use AWS Config rules to make sure that strong sign-in mechanisms are enforced, credentials are short-lived, and IAM resources are in use.
+To monitor and report on compliance, continually reduce permissions, monitor findings from IAM Access Analyzer, and remove unused IAM resources. Use AWS Config rules to verify that strong sign-in mechanisms are enforced, credentials are short-lived, and IAM resources are in use.
 
 ## Related best practices in the AWS Well-Architected Framework
 <a name="theme-4-best-practices"></a>
@@ -33,7 +33,7 @@ To monitor and report on compliance, you must continually work to reduce permiss
 + [SEC03-BP04 Reduce permissions continuously](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_permissions_continuous_reduction.html)
 + [SEC03-BP05 Define permission guardrails for your organization](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_permissions_define_guardrails.html)
 + [SEC03-BP06 Manage access based on lifecycle](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_permissions_lifecycle.html)
-+ [SEC03-BP07 Analyse public and cross-account access](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_permissions_analyze_cross_account.html)
++ [SEC03-BP07 Analyze public and cross-account access](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_permissions_analyze_cross_account.html)
 + [SEC03-BP08 Share resources securely within your organization](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_permissions_share_securely.html)
 
 ## Implementing this theme
@@ -44,8 +44,8 @@ To monitor and report on compliance, you must continually work to reduce permiss
 + [Require human users to federate with an identity provider to access AWS by using temporary credentials](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source.html)
 + [Implement temporary elevated access to your AWS environments](https://aws.amazon.com/blogs/security/managing-temporary-elevated-access-to-your-aws-environment/)
 
-### Apply least privilege permissions
-<a name="apply-least-privilege-permissions.5abcb6d3-ec43-55b4-b70f-f9c12c277715"></a>
+### Apply least-privilege permissions
+<a name="apply-least-privilege-permissions.38ff3480-bf6d-5914-8e0e-fcc4e05e48b1"></a>
 + [Safeguard your root user credentials and don't use them for everyday tasks](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)
 + [Use IAM Access Analyzer to generate least-privilege policies based on access activity](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/dynamically-generate-an-iam-policy-with-iam-access-analyzer-by-using-step-functions.html)
 + [Verify public and cross-account access to resources with IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-getting-started.html)
@@ -64,18 +64,18 @@ To monitor and report on compliance, you must continually work to reduce permiss
 + [Rotate access keys regularly for use cases that require long-term credentials](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-rotate-iam-user-access-keys-at-scale-with-aws-organizations-and-aws-secrets-manager.html)
 
 ### Enforce MFA
-<a name="enforce-mfa.fe6c20cf-be78-52ee-9f92-3c6c9af3297d"></a>
-+ [Require MFA for the root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
+<a name="enforce-mfa.fb77fbdb-5028-5876-8dbe-59bbc361df5c"></a>
++ [Require multi-factor authentication (MFA) for the root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html)
 + [Require MFA through IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-configure-mfa-device-enforcement.html)
-+ [Consider requiring MFA to service-specific API actions](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_general.html#example-scp-mfa)
++ [Consider requiring MFA for service-specific API actions](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_general.html#example-scp-mfa)
 
 ## Monitoring this theme
 <a name="theme-4-monitoring"></a>
 
 ### Monitor least privilege access
-<a name="monitor-least-privilege-access.8faacf0f-fa0d-52b5-8c65-97eb5faf5f38"></a>
+<a name="monitor-least-privilege-access.259b3dc5-40dd-5f16-ba01-0be9b15a1eca"></a>
 + [Send IAM Access Analyzer findings to AWS Security Hub CSPM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-securityhub-integration.html)
-+ [Consider setting up notifications for critical IAM Identity Center findings](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-eventbridge.html)
++ [Consider setting up notifications for critical IAM Access Analyzer findings](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-eventbridge.html)
 + [Regularly review credential reports for your AWS accounts](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html)
 
 ### Implement the following AWS Config rules

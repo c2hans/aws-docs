@@ -39,6 +39,7 @@ The following data types are supported:
 +  [ListAccountAssignmentsFilter](API_ListAccountAssignmentsFilter.md)
 +  [ListApplicationAssignmentsFilter](API_ListApplicationAssignmentsFilter.md)
 +  [ListApplicationsFilter](API_ListApplicationsFilter.md)
++  [NetworkConfigurationInfo](API_NetworkConfigurationInfo.md)
 +  [OidcJwtConfiguration](API_OidcJwtConfiguration.md)
 +  [OidcJwtUpdateConfiguration](API_OidcJwtUpdateConfiguration.md)
 +  [OperationStatusFilter](API_OperationStatusFilter.md)

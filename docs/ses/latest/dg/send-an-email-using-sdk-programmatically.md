@@ -11,7 +11,7 @@ You can use an AWS SDK to send email through Amazon SES. AWS SDKs are available 
 <a name="send-an-email-using-sdk-programmatically-prereqs"></a>
 
 The following prerequisites must be completed in order to complete any of the code samples in the next section:
-+ If you haven't already done so, complete the tasks in [Setting up Amazon Simple Email Service](setting-up.md).
++ If you haven't already done so, complete the tasks in [Getting started with sending email](getting-started-sending.md).
 + **Verify your email address with Amazon SES**—Before you can send an email with Amazon SES, you must verify that you own the sender's email address. If your account is still in the Amazon SES sandbox, you must also verify the recipient email address. We recommend you use the Amazon SES console to verify email addresses. For more information, see [Creating an email address identity](creating-identities.md#verify-email-addresses-procedure).
 + **Get your AWS credentials**—You need an AWS access key ID and AWS secret access key to access Amazon SES using an SDK. You can find your credentials by using the [Security Credentials](https://console.aws.amazon.com/iam/home?#security_credential) page in the AWS Management Console. For more information about credentials, see [Types of Amazon SES credentials](send-email-concepts-credentials.md).
 + **Create a shared credentials file**—For the sample code in this section to function properly, you must create a shared credentials file. For more information, see [Creating a shared credentials file to use when sending email through Amazon SES using an AWS SDK](create-shared-credentials-file.md).

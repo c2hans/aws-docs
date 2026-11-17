@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # GetAgentPreferences
 <a name="API_GetAgentPreferences"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Returns the caller's complete set of Well-Architected Agent preferences with their current states.
 
 ## Request Syntax

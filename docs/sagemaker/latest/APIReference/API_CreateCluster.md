@@ -39,6 +39,11 @@ Creates an Amazon SageMaker HyperPod cluster. SageMaker HyperPod is a capability
                },
                "WaitIntervalInSeconds": {{number}}
             },
+            "DrainPolicy": {
+               "DrainTimeoutInSeconds": {{number}},
+               "OnDrainTimeout": "{{string}}"
+            },
+            "IdleWaitWindowInSeconds": {{number}},
             "PatchingStrategy": "{{string}}",
             "PatchSchedule": {
                "NextPatchDate": {{number}}

@@ -45,6 +45,8 @@ Content-type: application/json
    "profiles": [
       {
          "acceptRoleSessionName": boolean,
+         "aliasArn": "string",
+         "aliasName": "string",
          "attributeMappings": [
             {
                "certificateField": "string",
@@ -61,11 +63,17 @@ Content-type: application/json
          "enabled": boolean,
          "managedPolicyArns": [ "string" ],
          "name": "string",
+         "previousAliasName": "string",
          "profileArn": "string",
          "profileId": "string",
          "requireInstanceProperties": boolean,
          "roleArns": [ "string" ],
          "sessionPolicy": "string",
+         "tipConfiguration": {
+            "status": "string",
+            "subjectSource": "string",
+            "subjectType": "string"
+         },
          "updatedAt": "string"
       }
    ]

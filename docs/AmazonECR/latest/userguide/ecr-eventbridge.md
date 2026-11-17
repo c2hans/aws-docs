@@ -277,6 +277,32 @@ The following event is sent when each image replication is completed. For more i
 }
 ```
 
+**Event for a completed replicated image deletion**
+
+The following event is sent in the destination Region when a replicated image deletion or image tag removal is completed for a replication rule that has replication of deletes enabled. For a deletion by digest, `image-tag` is an empty string. For a tag removal, `image-tag` carries the removed tag and `image-digest` carries the resolved digest. For more information, see [Private image replication in Amazon ECR](replication.md).
+
+```
+{
+  "version": "0",
+  "id": "0123456a-0123-0123-0123-012345678901",
+  "detail-type": "ECR Replication Action",
+  "source": "aws.ecr",
+  "account": "{{123456789012}}",
+  "time": "2026-11-16T21:36:03Z",
+  "region": "{{us-west-2}}",
+  "resources": [],
+  "detail": {
+    "result": "SUCCESS",
+    "repository-name": "{{my-repo}}",
+    "image-digest": "{{sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855}}",
+    "action-type": "REPLICATE_DELETE",
+    "source-account": "{{123456789012}}",
+    "source-region": "{{us-east-1}}",
+    "image-tag": "{{latest}}"
+  }
+}
+```
+
 **Event for a replication backfill**
 
 The following event is sent when a replication backfill enters a terminal status (`COMPLETE`, `FAILED`, or `STOPPED`). For more information, see [Replication backfill](replication-backfill.md).

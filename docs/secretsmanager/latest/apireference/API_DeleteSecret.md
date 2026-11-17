@@ -9,6 +9,8 @@ Deletes a secret and all of its versions. You can specify a recovery window duri
 
 You can't delete a primary secret that is replicated to other Regions. You must first delete the replicas using [RemoveRegionsFromReplication](API_RemoveRegionsFromReplication.md), and then delete the primary secret. When you delete a replica, it is deleted immediately.
 
+You can't delete a cross-account primary secret that is associated with a cross-account replica secret. You must first disassociate each of the replicas using [DisassociateCrossAccountReplica](API_DisassociateCrossAccountReplica.md), before deleting the primary secret. Similarly, you can't delete a cross-account replica secret without first stopping replication. Call [StopReplicationToReplica](API_StopReplicationToReplica.md) to stop replication, and then you can delete the secret.
+
 You can't directly delete a version of a secret. Instead, you remove all staging labels from the version using [UpdateSecretVersionStage](API_UpdateSecretVersionStage.md). This marks the version as deprecated, and then Secrets Manager can automatically delete the version in the background.
 
 To determine whether an application still uses a secret, you can create an Amazon CloudWatch alarm to alert you to any attempts to access a secret during the recovery window. For more information, see [ Monitor secrets scheduled for deletion](https://docs.aws.amazon.com/secretsmanager/latest/userguide/monitoring_cloudwatch_deleted-secrets.html).

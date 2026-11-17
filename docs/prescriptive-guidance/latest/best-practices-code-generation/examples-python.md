@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 # Python examples
 <a name="examples-python"></a>
 
-The following Python examples demonstrate how you can get started in generating in-line code suggestions with Amazon Q Developer. These illustrative examples show you how to trigger the coding assistant for your own projects. A majority of the following examples are applicable to other languages:
+The following Python examples demonstrate how you can get started generating inline code suggestions with Amazon Q Developer. These examples show you how to trigger the coding assistant for your own projects. Most of the examples also apply to other languages:
 + [Generate classes and functions](#classes-python)
 + [Document code](#code-python)
 + [Generate algorithms](#algorithms-python)
@@ -14,9 +14,9 @@ The following Python examples demonstrate how you can get started in generating 
 ## Generate classes and functions
 <a name="classes-python"></a>
 
- To generate full or partial class implementation, use code comments. The comment describes the intention of the class. Start simple, and add more details if necessary. After you generate a class. you can continue to generate functions within its skeleton.
+To generate a full or partial class implementation, use code comments. The comment describes the intention of the class. Start simple, and add more details if necessary. After you generate a class, you can continue to generate functions within its skeleton.
 
-When you write comments, it's preferable to use the language's comment structure. In Python, for single line comments, use `#`***. ***For multiline comments, use `''' '''` or `""" """`.
+When you write comments, use the comment structure of the language. In Python, for single-line comments, use `#`. For multiline comments, use `''' '''` or `""" """`.
 
 Input:
 
@@ -46,7 +46,7 @@ class DocumentReader:
         pass
 ```
 
-Now that there is an initial class, an additional function can be generated with additional comments.
+Now that you have an initial class, you can generate an additional function by adding more comments.
 
 Input:
 
@@ -72,7 +72,7 @@ def read_document(self, path):
 ## Document code
 <a name="code-python"></a>
 
-Reduce time in code documentation by relying on in-line documentation. Add Python comment breaks `''' '''`.
+Reduce the time you spend on code documentation by using inline documentation. Add a Python docstring by enclosing the documentation text in triple quotation marks (`''' '''`).
 
 Input:
 
@@ -90,7 +90,7 @@ class S3Utils:
 # Example usage:
 if __name__ == "__main__":
     s3_util = S3Utils()
-    bucket_name = "my-example-bucket"
+    bucket_name = "DOC-EXAMPLE-BUCKET"
     region = "us-west-1"
     s3_url = s3_util.generate_s3_url(bucket_name, region)
     print(f"S3 URL for bucket '{bucket_name}' in region '{region}': {s3_url}")
@@ -112,7 +112,7 @@ class S3Utils:
 # Example usage:
 if __name__ == "__main__":
     s3_util = S3Utils()
-    bucket_name = "my-example-bucket"
+    bucket_name = "DOC-EXAMPLE-BUCKET"
     region = "us-west-1"
     s3_url = s3_util.generate_s3_url(bucket_name, region)
     print(f"S3 URL for bucket '{bucket_name}' in region '{region}': {s3_url}")
@@ -123,7 +123,7 @@ if __name__ == "__main__":
 
 Amazon Q Developer can generate popular algorithms, especially as related to AWS SDKs. In your script, add a prompt that specifies the function you want.
 
-This example shows how to generate a dictionary of user id keys to name values, and then generate a sorting function by using the bubble sort algorithm.
+This example shows how to generate a dictionary of user ID keys to name values, and then generate a sorting function by using the bubble sort algorithm.
 
 Input:
 
@@ -162,7 +162,7 @@ Output:
         print("After sort: ", list_of_user_ids)
 ```
 
-In addition, you can create prompts for standard procedures. In this example, the user creates a prompt to store the dictionary to an Amazon DynamoDB table. At the beginning of the script, the user adds a prompt to add DynamoDB libraries to help provide Amazon Q Developer with additional context.
+In addition, you can create prompts for standard procedures. In this example, you create a prompt to store the dictionary in an Amazon DynamoDB table. At the beginning of the script, you add a prompt to add DynamoDB libraries to help provide Amazon Q Developer with additional context.
 
 Input:
 
@@ -208,7 +208,7 @@ def load_data_to_dynamodb(table_name, data_file):
 load_data_to_dynamodb('myTable', 'data.json')
 ```
 
-Now, the user can easily ask Amazon Q to help with storing the dictionary in DynamoDB.
+Now you can ask Amazon Q to help with storing the dictionary in DynamoDB.
 
 Input:
 
@@ -243,7 +243,7 @@ Output:
 ## Generate unit tests
 <a name="tests-python"></a>
 
-With in-line comments, Amazon Q Developer can generate unit tests to perform assertions and other tests. In this example, the user asks Amazon Q to generate applicable libraries for unit testing to set the context of the test script. Then, the user asks Amazon Q to write a test function for the `sort_user_id_name_map` function.
+With inline comments, Amazon Q Developer can generate unit tests to perform assertions and other tests. In this example, you ask Amazon Q to generate applicable libraries for unit testing to set the context of the test script. Then, you ask Amazon Q to write a test function for the `sort_user_id_name_map` function.
 
 Input:
 
@@ -271,4 +271,4 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
-In addition, in a chat between the user and Amazon Q Developer, it suggests and generates unit tests based on the user's code input prompts. For more information, see [Chat examples](examples-chat.md).
+In addition, when you chat with Amazon Q Developer, it suggests and generates unit tests based on your code input prompts. For more information, see [Chat examples](examples-chat.md).

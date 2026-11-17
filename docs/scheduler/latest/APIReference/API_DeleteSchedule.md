@@ -69,6 +69,10 @@ HTTP Status Code: 500
 The request references a resource which does not exist.
 HTTP Status Code: 404
 
+ ** ServiceQuotaExceededException **
+The request exceeds a service quota.
+HTTP Status Code: 402
+
  ** ThrottlingException **
 The request was denied due to request throttling.
 HTTP Status Code: 429

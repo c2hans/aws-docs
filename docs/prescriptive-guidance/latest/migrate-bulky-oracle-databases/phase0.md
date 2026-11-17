@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 # Phase 0: Setup phase
 <a name="phase0"></a>
 
-1. Install Oracle database 12.1.0.2 or later on the target Amazon Elastic Compute Cloud (Amazon EC2) instance.
+1. Install Oracle Database 12.1.0.2 or later on the target [Amazon Elastic Compute Cloud (Amazon EC2)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) instance.
 
 1. Verify the target database.
 
-   You must verify whether the target database instance has the same time zone and character set as source database. Otherwise, this migration approach will fail.
+   You must verify that the target database instance has the same time zone and character set as the source database. If they differ, this migration approach fails.
 
-   To check that the time zone version in both the source and target is same, run the following command.
+   To check that the time zone version is the same in the source and target databases, run the following command.
 
    ```
    SQL> select * from v$timezone_file;
@@ -33,4 +33,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 
 1. Set up the Oracle XTTS utility.
 
-   On the source system, download and extract the script file, [rman\_xttconvert\_VER4.zip](https://support.oracle.com/epmos/main/downloadattachmentprocessor?attachid=2471245.1%3ARMAN_XTTS_VER4&docType=REFERENCE&action=download) from Oracle document 2471245.1. Modify the parameters in the xtt.properties file with the specific configuration. Then copy xtt.properties and xttdriver.pl scripts to the destination system.
+   On the source system, download and extract the script file [rman\_xttconvert\_VER4.zip](https://support.oracle.com/epmos/main/downloadattachmentprocessor?attachid=2471245.1%3ARMAN_XTTS_VER4&docType=REFERENCE&action=download) from Oracle document 2471245.1. Update the parameters in the xtt.properties file to match your environment configuration. Then copy the xtt.properties and xttdriver.pl scripts to the target system.

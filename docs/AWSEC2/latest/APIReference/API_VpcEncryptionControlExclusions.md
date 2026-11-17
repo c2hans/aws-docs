@@ -12,6 +12,11 @@ For more information, see [Enforce VPC encryption in transit](https://docs.aws.a
 ## Contents
 <a name="API_VpcEncryptionControlExclusions_Contents"></a>
 
+ ** apiGatewayV2 **
+The exclusion configuration for Amazon API Gateway V2 traffic.
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
+Required: No
+
  ** egressOnlyInternetGateway **
 The exclusion configuration for egress-only internet gateway traffic.
 Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
@@ -19,6 +24,11 @@ Required: No
 
  ** elasticFileSystem **
 The exclusion configuration for Elastic File System traffic.
+Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
+Required: No
+
+ ** globalAccelerator **
+The exclusion configuration for AWS Global Accelerator traffic.
 Type: [VpcEncryptionControlExclusion](API_VpcEncryptionControlExclusion.md) object
 Required: No
 

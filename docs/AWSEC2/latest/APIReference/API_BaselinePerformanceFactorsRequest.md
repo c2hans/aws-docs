@@ -12,7 +12,7 @@ Currently, this parameter only supports CPU performance as a baseline performanc
 ## Contents
 <a name="API_BaselinePerformanceFactorsRequest_Contents"></a>
 
- ** Cpu **
+ ** Cpu ** (request), ** Cpu ** (response)
 The CPU performance to consider, using an instance family as the baseline reference.
 Type: [CpuPerformanceFactorRequest](API_CpuPerformanceFactorRequest.md) object
 Required: No

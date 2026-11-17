@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # StartAgentRecommendationGeneration
 <a name="API_StartAgentRecommendationGeneration"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Starts a recommendation generation process for the specified agent profile. This asynchronous operation returns immediately. Use `GetAgentRecommendationGeneration` to check the status of the generation.
 
 Currently, only the `ARCHITECTURE` recommendation type is supported. `RESOURCE` and `APPLICATION` recommendations are generated only by the scheduled generation cycle and cannot be started with this operation.

@@ -10,8 +10,9 @@ Update the details for the instance of IAM Identity Center that is owned by the 
 In a single `UpdateInstance` request, you can perform only one of the following operations:
 + Update the encryption configuration of the instance by specifying `EncryptionConfiguration`.
 + Enable permission sets for the instance by specifying `PermissionSetsEnabled`.
++ Update the network configuration of the instance by specifying `NetworkConfiguration`.
 
-If you specify both `EncryptionConfiguration` and `PermissionSetsEnabled` in a request, the request returns a `ValidationException`. To perform both operations, call `UpdateInstance` separately for each. You can make the two calls in parallel.
+A request that specifies more than one of `EncryptionConfiguration`, `PermissionSetsEnabled`, and `NetworkConfiguration` returns a `ValidationException`. To perform more than one of these operations, call `UpdateInstance` separately for each. The calls can be made in parallel.
 
 ## Request Syntax
 <a name="API_UpdateInstance_RequestSyntax"></a>
@@ -24,6 +25,12 @@ If you specify both `EncryptionConfiguration` and `PermissionSetsEnabled` in a r
    },
    "InstanceArn": "{{string}}",
    "Name": "{{string}}",
+   "NetworkConfiguration": {
+      "AllowSourceIps": [ "{{string}}" ],
+      "ExcludeApplicationArns": [ "{{string}}" ],
+      "RestrictSourceVpcs": [ "{{string}}" ],
+      "VpceAccessRequired": {{boolean}}
+   },
    "PermissionSetsEnabled": {{boolean}}
 }
 ```
@@ -37,6 +44,7 @@ The request accepts the following data in JSON format.
 
  ** [EncryptionConfiguration](#API_UpdateInstance_RequestSyntax) **   <a name="singlesignon-UpdateInstance-request-EncryptionConfiguration"></a>
 Specifies the encryption configuration for your IAM Identity Center instance. You can use this to configure customer managed KMS keys or AWS owned KMS keys for encrypting your instance data.
+You can't set more than one of `EncryptionConfiguration`, `PermissionSetsEnabled`, and `NetworkConfiguration` in the same request. To configure more than one of them, make a separate `UpdateInstance` call for each. These calls can be made in parallel.
 Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
 Required: No
 
@@ -54,9 +62,14 @@ Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[\w+=,.@-]+`
 Required: No
 
+ ** [NetworkConfiguration](#API_UpdateInstance_RequestSyntax) **   <a name="singlesignon-UpdateInstance-request-NetworkConfiguration"></a>
+Specifies the network access controls for your Identity Center instance. Use this to require that access to your instance and to applications originates from VPC endpoints, and to optionally restrict which VPCs are permitted, allow specific IP address ranges that bypass the VPC endpoint requirement, or exempt specific applications from the controls.
+If you omit `NetworkConfiguration`, the stored network configuration is preserved. If you specify `NetworkConfiguration`, it replaces the stored network configuration in its entirety. Any list that you omit from the object, or include as an empty list, is cleared.
+Type: [NetworkConfigurationInfo](API_NetworkConfigurationInfo.md) object
+Required: No
+
  ** [PermissionSetsEnabled](#API_UpdateInstance_RequestSyntax) **   <a name="singlesignon-UpdateInstance-request-PermissionSetsEnabled"></a>
 Enables permission sets for this Identity Center instance. The only accepted value is `true `. After permission sets are enabled, they cannot be disabled.
-You can't set `EncryptionConfiguration` and `PermissionSetsEnabled` in the same request. To configure both, make two separate `UpdateInstance` calls. You can make these calls in parallel.
 Type: Boolean
 Required: No
 

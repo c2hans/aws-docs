@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # OrganizationalReportFilters
 <a name="API_OrganizationalReportFilters"></a>
 
-**Important**
-This is not available during the preview release.
-
 Filters narrowing the scope of an Organizational Report. Every member is optional. An absent or empty member places no constraint on that dimension. When the entire structure is absent, the report covers every account and every recommendation in the organization.
 
 ## Contents

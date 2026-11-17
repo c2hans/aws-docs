@@ -70,7 +70,7 @@ title and a one- or two-sentence body.
 
 Each notification has a title and a body. You control whether and when the agent sends notifications through your system prompt instructions, together with the findings of the invocation. If you give no notification instructions, you do not receive notifications.
 
-When a custom agent delegates work to a subagent, that subagent can send notifications too, so a finding that surfaces deep in a long invocation still reaches you as it happens. To learn how delegation works, see [Custom Agents](working-with-devops-agent-custom-agents-index.md).
+When a custom agent delegates work to a subagent, that subagent can send notifications too, so a finding that surfaces deep in a long invocation still reaches you as it happens. To learn how delegation works, see [Dynamic subagent delegation](working-with-devops-agent-custom-agents-index.md).
 
 ### Viewing notifications
 <a name="viewing-notifications"></a>

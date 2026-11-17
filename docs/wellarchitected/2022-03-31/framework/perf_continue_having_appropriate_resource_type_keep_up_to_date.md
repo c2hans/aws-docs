@@ -2,7 +2,9 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/perf_continue_having_appropriate_resource_type_keep_up_to_date.html
 ---
 
-This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF06-BP01 Stay up-to-date on new resources and services
 <a name="perf_continue_having_appropriate_resource_type_keep_up_to_date"></a>

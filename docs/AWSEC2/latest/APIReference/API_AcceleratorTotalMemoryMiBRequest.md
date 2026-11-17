@@ -10,12 +10,12 @@ The minimum and maximum amount of total accelerator memory, in MiB.
 ## Contents
 <a name="API_AcceleratorTotalMemoryMiBRequest_Contents"></a>
 
- ** Max **
+ ** Max ** (request), ** Max ** (response)
 The maximum amount of accelerator memory, in MiB. To specify no maximum limit, omit this parameter.
 Type: Integer
 Required: No
 
- ** Min **
+ ** Min ** (request), ** Min ** (response)
 The minimum amount of accelerator memory, in MiB. To specify no minimum limit, omit this parameter.
 Type: Integer
 Required: No

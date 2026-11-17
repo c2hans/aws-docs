@@ -14,4 +14,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/go
 + [Document your AWS landing zone design](document-your-aws-landing-zone-design.md)
 + [Manage AWS Service Catalog products in multiple AWS accounts and AWS Regions](manage-aws-service-catalog-products-in-multiple-aws-accounts-and-aws-regions.md)
 + [Monitor application activity by using CloudWatch Logs Insights](monitor-application-activity-by-using-cloudwatch-logs-insights.md)
++ [View EBS snapshot details for your AWS account or organization](view-ebs-snapshot-details-for-your-aws-account-or-organization.md)
 + [More patterns](governance-more-patterns-pattern-list.md)

@@ -19,6 +19,7 @@ Secrets Manager generates a CloudTrail log entry when you call this action. Do n
 ```
 {
    "BlockPublicPolicy": {{boolean}},
+   "PolicyName": "{{string}}",
    "ResourcePolicy": "{{string}}",
    "SecretId": "{{string}}"
 }
@@ -40,6 +41,13 @@ To review permissions to your secrets, see [Determine who has permissions to you
 Type: Boolean
 Required: No
 
+ ** [PolicyName](#API_PutResourcePolicy_RequestSyntax) **   <a name="SecretsManager-PutResourcePolicy-request-PolicyName"></a>
+The name of the resource policy to attach. If you don't specify this field, Secrets Manager uses `default`. You can only attach the `default` policy; if you specify any other name, the operation returns an `InvalidParameterException`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9A-Za-z\-\_]+`
+Required: No
+
  ** [ResourcePolicy](#API_PutResourcePolicy_RequestSyntax) **   <a name="SecretsManager-PutResourcePolicy-request-ResourcePolicy"></a>
 A JSON-formatted string for an AWS resource-based policy. For example policies, see [Permissions policy examples](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_examples.html).
 Type: String
@@ -59,7 +67,8 @@ Required: Yes
 ```
 {
    "ARN": "string",
-   "Name": "string"
+   "Name": "string",
+   "PolicyName": "string"
 }
 ```
 
@@ -79,6 +88,12 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
 The name of the secret.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
+
+ ** [PolicyName](#API_PutResourcePolicy_ResponseSyntax) **   <a name="SecretsManager-PutResourcePolicy-response-PolicyName"></a>
+The name of the resource policy. If you didn't specify `PolicyName` in the request, this is `default`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[0-9A-Za-z\-\_]+`
 
 ## Errors
 <a name="API_PutResourcePolicy_Errors"></a>
@@ -154,7 +169,8 @@ x-amzn-RequestId: <request-id-guid>
 
 {
   "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestDatabaseSecret-a1b2c3",
-  "Name": "MyTestDatabaseSecret"
+  "Name": "MyTestDatabaseSecret",
+  "PolicyName": "default"
 }
 ```
 

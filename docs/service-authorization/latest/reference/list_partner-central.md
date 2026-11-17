@@ -871,6 +871,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   StartOpportunityFromEngagementTask  **
   - **SDK client:** partnercentral-selling
+  - **IAM action:**  [partnercentral:CreateEngagementContext](#list_partner-central-action-CreateEngagementContext)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [partnercentral:CreateOpportunity](#list_partner-central-action-CreateOpportunity)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [partnercentral:CreateResourceSnapshot](#list_partner-central-action-CreateResourceSnapshot)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [partnercentral:CreateResourceSnapshotJob](#list_partner-central-action-CreateResourceSnapshotJob)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 + [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
 + [Amazon WorkSpaces Applications Administration Guide](https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html)
 + [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
-+ [Amazon EFSS User Guide](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
++ [Amazon EFS User Guide](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
 + [Amazon S3 User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 + [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 
@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 + [How to use Okta claims with application entitlements for Amazon WorkSpaces Applications](https://aws.amazon.com/blogs/desktop-and-application-streaming/how-to-use-okta-claims-with-application-entitlements-for-amazon-appstream-2-0/)
 + [Managing Computer Labs on Amazon WorkSpaces Applications with Open Source Virtual Application Management](https://aws.amazon.com/blogs/opensource/managing-computer-labs-on-amazon-appstream-2-0-with-virtual-application-management/)
 + [Methods of allocating your WorkSpaces Applications costs to your business units](https://aws.amazon.com/blogs/desktop-and-application-streaming/methods-of-allocating-your-appstream-2-0-costs-to-your-business-units/)
-+ [Monitoring Amazon WorkSpaces Applications with Amazon OpenSearch Service and Amazon Kinesis Data Firehose](https://aws.amazon.com/blogs/desktop-and-application-streaming/monitoring-amazon-appstream-2-0-with-amazon-es-and-amazon-kinesis-data-firehose/)
++ [Monitoring Amazon WorkSpaces Applications with Amazon OpenSearch Service and Amazon Data Firehose](https://aws.amazon.com/blogs/desktop-and-application-streaming/monitoring-amazon-appstream-2-0-with-amazon-es-and-amazon-kinesis-data-firehose/)
 + [Network Separation and Data Sanitization using Amazon WorkSpaces, Amazon WorkSpaces Applications, and Amazon Macie](https://aws.amazon.com/blogs/desktop-and-application-streaming/network-separation-and-data-sanitization-using-amazon-workspaces-amazon-appstream-2-0-and-amazon-macie/)
 + [OneLogin SSO with Amazon WorkSpaces Applications](https://aws.amazon.com/blogs/desktop-and-application-streaming/onelogin-sso-with-amazon-appstream-2-0/)
 + [Optimize your Connect Customer call audio path with Amazon WorkSpaces Applications](https://aws.amazon.com/blogs/desktop-and-application-streaming/optimize-your-amazon-connect-call-audio-path-with-amazon-appstream-2-0/)

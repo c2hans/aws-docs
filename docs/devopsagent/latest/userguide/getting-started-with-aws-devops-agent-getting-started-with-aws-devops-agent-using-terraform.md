@@ -12,7 +12,7 @@ This guide shows you how to use Terraform to create and deploy AWS DevOps Agent 
 
 The Terraform approach automates the manual steps described in the [CLI onboarding guide](https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-started-with-aws-devops-agent-cli-onboarding-guide.html) by defining all required resources as infrastructure as code.
 
-AWS DevOps Agent is available in the following 6 AWS Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), and Europe (Ireland). For more information about supported Regions, see [Supported Regions](about-aws-devops-agent-supported-regions.md).
+AWS DevOps Agent is available in the following 6 AWS Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), and Europe (Ireland). For more information about supported Regions, see [Supported Regions for AWS DevOps Agent](about-aws-devops-agent-supported-regions.md).
 
 ## Prerequisites
 <a name="prerequisites"></a>
@@ -259,7 +259,7 @@ Unlike the AWS CDK sample — which requires a separate IntegrationsStack phase 
 | PagerDuty | pagerduty | OAuth client credentials |
 
 **Note**
-** Datadog is not included in the Terraform configuration. Connecting Datadog requires interactive user OAuth authorization (browser login and consent) as described in [Connecting DataDog](connecting-telemetry-sources-connecting-datadog.md), which Terraform cannot automate. Register Datadog manually through the Capability Providers page in the console.
+** Datadog is not included in the Terraform configuration. Connecting Datadog requires interactive user OAuth authorization (browser login and consent) as described in [Connecting Datadog](connecting-telemetry-sources-connecting-datadog.md), which Terraform cannot automate. Register Datadog manually through the Capability Providers page in the console.
 
 ### Step 1: Configure integration credentials
 <a name="step-1-configure-integration-credentials"></a>
@@ -310,7 +310,7 @@ integration_association_ids = {
 }
 ```
 
-**Note:** Terraform does not return the webhook URL and secret as outputs, because the secret is sensitive. After `terraform apply` completes, rotate the webhook in the console to get the URL and secret. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md).
+**Note:** Terraform does not return the webhook URL and secret as outputs, because the secret is sensitive. After `terraform apply` completes, rotate the webhook in the console to get the URL and secret. For instructions on managing webhook credentials, see [Managing webhook credentials](configuring-integrations-and-knowledge-invoking-devops-agent-through-webhook.md#managing-webhook-credentials).
 
 For more information about configuring credentials for each service, see:
 + [Connecting Dynatrace](connecting-telemetry-sources-connecting-dynatrace.md)

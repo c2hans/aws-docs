@@ -59,7 +59,7 @@ If you don't have any tests available, choose **Built-in: Fuzz** to run a standa
 
 1. (Optional) To configure run-level properties, update the **Run Settings** section. Here you can do the following:
    + Assign your run with a custom **Run name**. If no name is provided, the Device Farm console will name your run 'My Device Farm run' by default.
-   + Choose **Generate test report** under **Test Insights** to get a detailed structured test report for each job and an aggregated summary at the run level. This insight is generated in addition to any test report that you might generate as part of your test execution.
+   + Test Insights is selected by default for runs in a custom test environment. Clear **Generate test report** if you want to turn off Test Insights for the run. For more information, see [Test Insights](reports.md#reports-test-insights).
    + Assign a **Job timeout**, which is the maximum number of minutes a job can run on a device. If your tests are complete before the job timeout, the job completes, and you are not charged for the remainder of the job timeout. The default is 150 minutes.
    + Choose a **Billing method**. By default, if you do not have slots purchased on your account, the Device Farm console selects Metered. If you have slots, the console defaults to Unmetered.
 
@@ -468,13 +468,23 @@ To schedule a test run with the AWS CLI, run **schedule-run**, specifying:
   For more information, see [**schedule-run**](https://docs.aws.amazon.com/cli/latest/reference/devicefarm/schedule-run.html).
 
 **To schedule a run in a custom test environment**
-+ The steps are the almost the same as those for the standard test environment, with an additional `testSpecArn` attribute in the `--test` parameter.
++ The steps are almost the same as those for the standard test environment, with an additional `testSpecArn` attribute in the `--test` parameter.
 
-  Example:
+  The following example schedules a run in a custom test environment:
 
   ```
   aws devicefarm schedule-run --project-arn {{arn:MyProjectARN}} --app-arn {{arn:MyAppUploadARN}} --device-pool-arn {{arn:MyDevicePoolARN}} --name {{MyTestRun}} --test testSpecArn={{arn:MyTestSpecUploadARN}},type={{APPIUM_JAVA_TESTNG}},testPackageArn={{arn:MyTestPackageARN}}
   ```
+
+  Test Insights are on by default for runs in a custom test environment. To turn them off for the run, add the `--configuration` option and set `insightsTypes` to `NONE`. You can't combine `NONE` with another value.
+
+  The following example turns off Test Insights for the run:
+
+  ```
+  aws devicefarm schedule-run --project-arn {{arn:MyProjectARN}} --app-arn {{arn:MyAppUploadARN}} --device-pool-arn {{arn:MyDevicePoolARN}} --name {{MyTestRun}} --test testSpecArn={{arn:MyTestSpecUploadARN}},type={{APPIUM_JAVA_TESTNG}},testPackageArn={{arn:MyTestPackageARN}} --configuration '{"insightsTypes":["NONE"]}'
+  ```
+
+  For more information, see [`insightsTypes`](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ScheduleRunConfiguration.html#devicefarm-Type-ScheduleRunConfiguration-insightsTypes) and [Test Insights](reports.md#reports-test-insights).
 
 **To check the status of your test run**
 + Use the **get-run** command and specify the run ARN:

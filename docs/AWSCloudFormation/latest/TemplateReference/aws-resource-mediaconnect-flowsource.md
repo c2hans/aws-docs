@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[MinLatency](#cfn-mediaconnect-flowsource-minlatency)" : {{Integer}},
       "[Name](#cfn-mediaconnect-flowsource-name)" : {{String}},
       "[Protocol](#cfn-mediaconnect-flowsource-protocol)" : {{String}},
+      "[RtmpPushSettings](#cfn-mediaconnect-flowsource-rtmppushsettings)" : {{RtmpPushSettings}},
       "[SourceListenerAddress](#cfn-mediaconnect-flowsource-sourcelisteneraddress)" : {{String}},
       "[SourceListenerPort](#cfn-mediaconnect-flowsource-sourcelistenerport)" : {{Integer}},
       "[StreamId](#cfn-mediaconnect-flowsource-streamid)" : {{String}},
@@ -59,6 +60,8 @@ Properties:
   [MinLatency](#cfn-mediaconnect-flowsource-minlatency): {{Integer}}
   [Name](#cfn-mediaconnect-flowsource-name): {{String}}
   [Protocol](#cfn-mediaconnect-flowsource-protocol): {{String}}
+  [RtmpPushSettings](#cfn-mediaconnect-flowsource-rtmppushsettings): {{
+    RtmpPushSettings}}
   [SourceListenerAddress](#cfn-mediaconnect-flowsource-sourcelisteneraddress): {{String}}
   [SourceListenerPort](#cfn-mediaconnect-flowsource-sourcelistenerport): {{Integer}}
   [StreamId](#cfn-mediaconnect-flowsource-streamid): {{String}}
@@ -131,8 +134,14 @@ The protocol that the source uses to deliver the content to MediaConnect. Adding
  If you use failover with SRT caller or listener, the `FailoverMode` property must be set to `FAILOVER`. The `FailoverMode` property is found in the `FailoverConfig` resource of the same flow ARN you used for the source's `FlowArn` property. SRT caller/listener does not support merge mode failover.
 *Required*: No
 *Type*: String
-*Allowed values*: `zixi-push | rtp-fec | rtp | rist | srt-listener | srt-caller`
+*Allowed values*: `zixi-push | rtp-fec | rtp | rist | srt-listener | srt-caller | rtmp-push`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RtmpPushSettings`  <a name="cfn-mediaconnect-flowsource-rtmppushsettings"></a>
+Property description not available.
+*Required*: No
+*Type*: [RtmpPushSettings](aws-properties-mediaconnect-flowsource-rtmppushsettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceListenerAddress`  <a name="cfn-mediaconnect-flowsource-sourcelisteneraddress"></a>
  Source IP or domain name for SRT-caller protocol.
@@ -195,6 +204,12 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `IngestIp`  <a name="IngestIp-fn::getatt"></a>
 The IP address that the flow listens on for incoming content.
+
+`RtmpPushDetails.ApplicationName`  <a name="RtmpPushDetails.ApplicationName-fn::getatt"></a>
+Property description not available.
+
+`RtmpPushDetails.StreamName`  <a name="RtmpPushDetails.StreamName-fn::getatt"></a>
+Property description not available.
 
 `SourceArn`  <a name="SourceArn-fn::getatt"></a>
 The ARN of the source.

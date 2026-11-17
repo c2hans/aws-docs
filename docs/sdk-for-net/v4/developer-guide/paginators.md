@@ -36,9 +36,9 @@ The Paginator object also contains one key result named `LogGroups`. This proper
 ## Synchronous vs. asynchronous pagination
 <a name="paginators-sync-async"></a>
 
-Paginators provide both synchronous and asynchronous mechanisms for pagination. Synchronous pagination is available in .NET Framework 4.7.2 (or later) projects. Asynchronous pagination is available in .NET Core projects (.NET Core 3.1, .NET 5, and so on).
+Paginators provide both synchronous and asynchronous mechanisms for pagination. Synchronous pagination is available in .NET Framework 4.7.2 (or later) projects. Asynchronous pagination is available in projects that target .NET 8 and later or .NET Standard 2.0.
 
-Because asynchronous operations and .NET Core are recommended, the example that comes next shows you asynchronous pagination. Information about how to perform the same tasks using synchronous pagination and .NET Framework 4.7.2 (or later) is shown after the example in [Additional considerations for paginators](#paginators-additional).
+Because asynchronous operations are recommended, the example that comes next shows you asynchronous pagination. Information about how to perform the same tasks using synchronous pagination and .NET Framework 4.7.2 (or later) is shown after the example in [Additional considerations for paginators](#paginators-additional).
 
 ## Example
 <a name="paginators-example"></a>

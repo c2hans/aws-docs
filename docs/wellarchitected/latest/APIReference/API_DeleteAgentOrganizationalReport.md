@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # DeleteAgentOrganizationalReport
 <a name="API_DeleteAgentOrganizationalReport"></a>
 
-**Important**
-This operation is not available during the preview release.
-
 Deletes an Organizational Report and its associated artifacts. The operation is idempotent, so repeated calls for a report that has already been deleted return success.
 
 ## Request Syntax

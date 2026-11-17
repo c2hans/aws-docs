@@ -78,6 +78,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateFunction  **
   - **SDK client:** lambda
+  - **IAM action:**  [lambda:AssociateRuntimeAlias](#list_lambda-action-AssociateRuntimeAlias)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [lambda:AssociateRuntimeVersion](#list_lambda-action-AssociateRuntimeVersion)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:CreateFunction](#list_lambda-action-CreateFunction)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:GetLayerVersion](#list_lambda-action-GetLayerVersion)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [lambda:PassCapacityProvider](#list_lambda-action-PassCapacityProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -618,6 +620,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateFunctionConfiguration  **
   - **SDK client:** lambda
+  - **IAM action:**  [lambda:AssociateRuntimeAlias](#list_lambda-action-AssociateRuntimeAlias)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [lambda:AssociateRuntimeVersion](#list_lambda-action-AssociateRuntimeVersion)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:GetLayerVersion](#list_lambda-action-GetLayerVersion)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [lambda:PassCapacityProvider](#list_lambda-action-PassCapacityProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:UpdateFunctionConfiguration](#list_lambda-action-UpdateFunctionConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -643,6 +647,25 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [lambda:TagResource](#list_lambda-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** lambda.amazonaws.com / **Access level:** Write
 
+- **   CreateRuntime  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:CreateRuntime](#list_lambda-action-CreateRuntime)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [lambda:TagResource](#list_lambda-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
+- **   CreateRuntimeAlias  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:CreateRuntimeAlias](#list_lambda-action-CreateRuntimeAlias)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateRuntimeVersion  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:CreateRuntimeVersion](#list_lambda-action-CreateRuntimeVersion)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteNetworkConnector  **
   - **SDK client:** lambda-core
   - **IAM action:**  [lambda:DeleteNetworkConnector](#list_lambda-action-DeleteNetworkConnector)
@@ -650,9 +673,51 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteRuntime  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:DeleteRuntime](#list_lambda-action-DeleteRuntime)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteRuntimeAlias  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:DeleteRuntimeAlias](#list_lambda-action-DeleteRuntimeAlias)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteRuntimeVersion  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:DeleteRuntimeVersion](#list_lambda-action-DeleteRuntimeVersion)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   GetNetworkConnector  **
   - **SDK client:** lambda-core
   - **IAM action:**  [lambda:GetNetworkConnector](#list_lambda-action-GetNetworkConnector)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRuntime  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:GetRuntime](#list_lambda-action-GetRuntime)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRuntimeAlias  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:GetRuntimeAlias](#list_lambda-action-GetRuntimeAlias)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRuntimeVersion  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:GetRuntimeVersion](#list_lambda-action-GetRuntimeVersion)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -671,10 +736,59 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListRuntimeAliases  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:ListRuntimeAliases](#list_lambda-action-ListRuntimeAliases)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListRuntimeVersions  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:ListRuntimeVersions](#list_lambda-action-ListRuntimeVersions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListRuntimes  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:ListRuntimes](#list_lambda-action-ListRuntimes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   RestoreRuntime  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:RestoreRuntime](#list_lambda-action-RestoreRuntime)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateNetworkConnector  **
   - **SDK client:** lambda-core
   - **IAM action:**  [lambda:UpdateNetworkConnector](#list_lambda-action-UpdateNetworkConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** lambda.amazonaws.com / **Access level:** Write
+
+- **   UpdateRuntime  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:UpdateRuntime](#list_lambda-action-UpdateRuntime)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateRuntimeAlias  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:UpdateRuntimeAlias](#list_lambda-action-UpdateRuntimeAlias)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateRuntimeVersion  **
+  - **SDK client:** lambda-core
+  - **IAM action:**  [lambda:UpdateRuntimeVersion](#list_lambda-action-UpdateRuntimeVersion)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   CreateMicrovmAuthToken  **
   - **SDK client:** lambda-microvms
@@ -1059,6 +1173,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)<br />[lambda:SecurityGroupIds](#list_lambda-lambda_SecurityGroupIds)<br />[lambda:SubnetIds](#list_lambda-lambda_SubnetIds)
   - **Access level:** Write
 
+- **   [CreateRuntime](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_CreateRuntime.html)  **
+  - **Description:** Grants permission to create an AWS Lambda customer-managed runtime
+  - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [CreateRuntimeAlias](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_CreateRuntimeAlias.html)  **
+  - **Description:** Grants permission to create an AWS Lambda customer-managed runtime alias
+  - **Resource types (\*required):** [runtimeAlias\*](#list_lambda-resource-runtimeAlias)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CreateRuntimeVersion](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_CreateRuntimeVersion.html)  **
+  - **Description:** Grants permission to create an AWS Lambda customer-managed runtime version
+  - **Resource types (\*required):** [runtimeVersion\*](#list_lambda-resource-runtimeVersion)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [CreateWebFunction](https://docs.aws.amazon.com/lambda/latest/lambda-web/API_CreateWebFunction.html)  **
   - **Description:** Grants permission to create a Lambda web function
   - **Resource types (\*required):** [webFunction\*](#list_lambda-resource-webFunction)
@@ -1163,9 +1295,28 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DeleteResourcePolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteResourcePolicy.html)  **
   - **Description:** Grants permission to detach a policy from an AWS Lambda resource, additionally requiring lambda:RemovePermission only for a function resource
-  - **Resource types (\*required):** [function\*](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
-  - **Resource types (\*required):** [webFunction\*](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Resource types (\*required):** [function](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Resource types (\*required):** [runtime](#list_lambda-resource-runtime) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Resource types (\*required):** [webFunction](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
   - **Access level:** Permissions management, Write
+
+- **   [DeleteRuntime](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_DeleteRuntime.html)  **
+  - **Description:** Grants permission to delete an AWS Lambda customer-managed runtime
+  - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteRuntimeAlias](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_DeleteRuntimeAlias.html)  **
+  - **Description:** Grants permission to delete an AWS Lambda customer-managed runtime alias
+  - **Resource types (\*required):** [runtimeAlias\*](#list_lambda-resource-runtimeAlias)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteRuntimeVersion](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_DeleteRuntimeVersion.html)  **
+  - **Description:** Grants permission to delete an AWS Lambda customer-managed runtime version
+  - **Resource types (\*required):** [runtimeVersion\*](#list_lambda-resource-runtimeVersion)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [DeleteWebFunction](https://docs.aws.amazon.com/lambda/latest/lambda-web/API_DeleteWebFunction.html)  **
   - **Description:** Grants permission to delete a Lambda web function
@@ -1337,13 +1488,32 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetResourcePolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_GetResourcePolicy.html)  **
   - **Description:** Grants permission to view a policy for an AWS Lambda resource, additionally requiring lambda:GetPolicy only for a function resource
-  - **Resource types (\*required):** [function\*](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [webFunction\*](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [function](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [runtime](#list_lambda-resource-runtime) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [webFunction](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRuntime](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_GetRuntime.html)  **
+  - **Description:** Grants permission to view details about an AWS Lambda customer-managed runtime
+  - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRuntimeAlias](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_GetRuntimeAlias.html)  **
+  - **Description:** Grants permission to view details about an AWS Lambda customer-managed runtime alias
+  - **Resource types (\*required):** [runtimeAlias\*](#list_lambda-resource-runtimeAlias)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetRuntimeManagementConfig](https://docs.aws.amazon.com/lambda/latest/dg/API_GetRuntimeManagementConfig.html)  **
   - **Description:** Grants permission to view the runtime management configuration of an AWS Lambda function
   - **Resource types (\*required):** [function\*](#list_lambda-resource-function)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetRuntimeVersion](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_GetRuntimeVersion.html)  **
+  - **Description:** Grants permission to view details about an AWS Lambda customer-managed runtime version
+  - **Resource types (\*required):** [runtimeVersion\*](#list_lambda-resource-runtimeVersion)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -1509,14 +1679,33 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListRuntimeAliases](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListRuntimeAliases.html)  **
+  - **Description:** Grants permission to retrieve a list of AWS Lambda customer-managed runtime aliases
+  - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListRuntimeVersions](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListRuntimeVersions.html)  **
+  - **Description:** Grants permission to retrieve a list of AWS Lambda customer-managed runtime versions
+  - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListRuntimes](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListRuntimes.html)  **
+  - **Description:** Grants permission to retrieve a list of AWS Lambda customer-managed runtimes
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListTags](https://docs.aws.amazon.com/lambda/latest/dg/API_ListTags.html)  **
-  - **Description:** Grants permission to retrieve a list of tags for an AWS Lambda function, event source mapping, capacity provider, code signing configuration, network connector, MicroVM image resource, or a web function resource
+  - **Description:** Grants permission to retrieve a list of tags for an AWS Lambda function, event source mapping, capacity provider, code signing configuration, network connector, MicroVM image resource, a web function resource, or a runtime resource
   - **Resource types (\*required):** [capacityProvider](#list_lambda-resource-capacityProvider) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [code signing config](#list_lambda-resource-codesigningconfig) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [eventSourceMapping](#list_lambda-resource-eventSourceMapping) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [function](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [microvmImage](#list_lambda-resource-microvmImage) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [networkConnector](#list_lambda-resource-networkConnector) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [runtime](#list_lambda-resource-runtime) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [webFunction](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -1594,8 +1783,9 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [PutResourcePolicy](https://docs.aws.amazon.com/lambda/latest/dg/API_PutResourcePolicy.html)  **
   - **Description:** Grants permission to attach a policy to an AWS Lambda resource, additionally requiring lambda:AddPermission and lambda:RemovePermission only for a function resource
-  - **Resource types (\*required):** [function\*](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
-  - **Resource types (\*required):** [webFunction\*](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Resource types (\*required):** [function](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Resource types (\*required):** [runtime](#list_lambda-resource-runtime) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
+  - **Resource types (\*required):** [webFunction](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:Principal](#list_lambda-lambda_Principal)
   - **Access level:** Permissions management, Write
 
 - **   [PutRuntimeManagementConfig](https://docs.aws.amazon.com/lambda/latest/dg/API_PutRuntimeManagementConfig.html)  **
@@ -1615,6 +1805,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [function\*](#list_lambda-resource-function)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[lambda:FunctionUrlAuthType](#list_lambda-lambda_FunctionUrlAuthType)<br />[lambda:Principal](#list_lambda-lambda_Principal)
   - **Access level:** Permissions management, Write
+
+- **   [RestoreRuntime](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_RestoreRuntime.html)  **
+  - **Description:** Grants permission to restore an AWS Lambda customer-managed runtime
+  - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [ResumeMicrovm](https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ResumeMicrovm.html)  **
   - **Description:** Grants permission to resume a suspended AWS Lambda MicroVM
@@ -1659,13 +1855,14 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Write
 
 - **   [TagResource](https://docs.aws.amazon.com/lambda/latest/dg/API_TagResources.html)  **
-  - **Description:** Grants permission to add tags to an AWS Lambda function, event source mapping, capacity provider, code signing configuration, network connector, MicroVM image resource, or a web function resource
+  - **Description:** Grants permission to add tags to an AWS Lambda function, event source mapping, capacity provider, code signing configuration, network connector, MicroVM image resource, a web function resource, or a runtime resource
   - **Resource types (\*required):** [capacityProvider](#list_lambda-resource-capacityProvider) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [code signing config](#list_lambda-resource-codesigningconfig) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [eventSourceMapping](#list_lambda-resource-eventSourceMapping) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [function](#list_lambda-resource-function) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [microvmImage](#list_lambda-resource-microvmImage) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [networkConnector](#list_lambda-resource-networkConnector) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
+  - **Resource types (\*required):** [runtime](#list_lambda-resource-runtime) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [webFunction](#list_lambda-resource-webFunction) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Access level:** Tagging, Write
 
@@ -1676,13 +1873,14 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Write
 
 - **   [UntagResource](https://docs.aws.amazon.com/lambda/latest/dg/API_UntagResource.html)  **
-  - **Description:** Grants permission to remove tags from an AWS Lambda function, event source mapping, capacity provider, code signing configuration, network connector, MicroVM image resource, or a web function resource
+  - **Description:** Grants permission to remove tags from an AWS Lambda function, event source mapping, capacity provider, code signing configuration, network connector, MicroVM image resource, a web function resource, or a runtime resource
   - **Resource types (\*required):** [capacityProvider](#list_lambda-resource-capacityProvider) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [code signing config](#list_lambda-resource-codesigningconfig) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [eventSourceMapping](#list_lambda-resource-eventSourceMapping) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [function](#list_lambda-resource-function) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [microvmImage](#list_lambda-resource-microvmImage) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [networkConnector](#list_lambda-resource-networkConnector) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
+  - **Resource types (\*required):** [runtime](#list_lambda-resource-runtime) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Resource types (\*required):** [webFunction](#list_lambda-resource-webFunction) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)
   - **Access level:** Tagging, Write
 
@@ -1758,6 +1956,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateRuntime](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateRuntime.html)  **
+  - **Description:** Grants permission to update an AWS Lambda customer-managed runtime
+  - **Resource types (\*required):** [runtime\*](#list_lambda-resource-runtime)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateRuntimeAlias](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateRuntimeAlias.html)  **
+  - **Description:** Grants permission to update an AWS Lambda customer-managed runtime alias
+  - **Resource types (\*required):** [runtimeAlias\*](#list_lambda-resource-runtimeAlias)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateRuntimeVersion](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateRuntimeVersion.html)  **
+  - **Description:** Grants permission to update an AWS Lambda customer-managed runtime version
+  - **Resource types (\*required):** [runtimeVersion\*](#list_lambda-resource-runtimeVersion)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [UpdateWebFunctionEndpoint](https://docs.aws.amazon.com/lambda/latest/lambda-web/API_UpdateWebFunctionEndpoint.html)  **
   - **Description:** Grants permission to update an endpoint for a Lambda web function
   - **Resource types (\*required):** [webFunctionEndpoint\*](#list_lambda-resource-webFunctionEndpoint)
@@ -1768,6 +1984,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
 <a name="list_lambda-permission-only-actions"></a>
 
 The following actions are defined by AWS Lambda but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
+
+- **   [AssociateRuntimeAlias](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html)  **
+  - **Description:** Grants permission to associate a customer-managed runtime alias with Lambda Event function
+  - **Resource types (\*required):** [runtimeAlias\*](#list_lambda-resource-runtimeAlias)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [AssociateRuntimeVersion](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html)  **
+  - **Description:** Grants permission to associate a customer-managed runtime version with Lambda Event function
+  - **Resource types (\*required):** [runtimeVersion\*](#list_lambda-resource-runtimeVersion)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [ConnectMicrovm](https://docs.aws.amazon.com/lambda/latest/dg/lambda-permissions.html)  **
   - **Description:** Grants permission to connect to a Lambda MicroVM via HTTP (VPC Endpoint only)
@@ -1829,6 +2057,9 @@ The following resource types are defined by this service and can be used in the 
 |  [layerVersion](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}:${LayerVersion} |   |
 |  [microvmImage](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:microvm-image:${MicrovmImageName} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
 |  [networkConnector](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:network-connector:${NetworkConnectorId} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
+|  [runtime](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:runtime/${RuntimeName} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
+|  [runtimeAlias](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:runtime/${RuntimeName}/alias/${Name} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
+|  [runtimeVersion](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:runtime/${RuntimeName}/version/${Name} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
 |  [webFunction](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
 |  [webFunctionEndpoint](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}/endpoint/${EndpointName} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |
 |  [webFunctionRevision](https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html)  | arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}/revision/${RevisionId} | [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_) |

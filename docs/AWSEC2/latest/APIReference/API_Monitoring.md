@@ -10,6 +10,11 @@ Describes the monitoring of an instance.
 ## Contents
 <a name="API_Monitoring_Contents"></a>
 
+ ** MetricCategoryIdSet.N **
+The IDs of the metric categories that are associated with the instance.
+Type: Array of strings
+Required: No
+
  ** state **
 Indicates whether detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
 Type: String

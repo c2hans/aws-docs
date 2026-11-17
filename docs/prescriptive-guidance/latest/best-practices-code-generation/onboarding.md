@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 # Best practices for onboarding Amazon Q Developer
 <a name="onboarding"></a>
 
-Amazon Q Developer is a powerful generative AI coding assistant that is available through popular IDEs like Visual Studio Code and JetBrains. This section focuses on best practices for accessing and onboarding Amazon Q Developer to your coding development environment.
+Amazon Q Developer is a generative AI coding assistant that you can use in integrated development environments (IDEs) such as Visual Studio Code, JetBrains, Visual Studio, and Eclipse. This section describes recommended practices for accessing Amazon Q Developer and onboarding it to your development environment.
 
 ## Prerequisites for Amazon Q Developer
 <a name="prerequisites"></a>
@@ -18,15 +18,15 @@ For detailed instructions on installing the AWS Toolkit for both Visual Studio C
 <a name="best-practices-onboarding"></a>
 
 General best practices when using Amazon Q Developer include the following:
-+ Provide relevant context to get more accurate responses, like programming languages, frameworks, and tools that are in use. Break down complex problems into smaller components.
++ Provide relevant context to get more accurate responses, such as the programming languages, frameworks, and tools that you use. Break down complex problems into smaller components.
 + Experiment and iterate on your prompts and questions. Programming often involves trying different approaches.
-+ Always review code suggestions before you accept them, and edit as needed to make sure that they do exactly what you intended.
++ Review code suggestions before you accept them, and edit them as needed so that they do what you intend.
 + Use the [customization capability](advanced-capabilities.md) to make Amazon Q Developer aware of your internal libraries, APIs, best practices, and architectural patterns for more relevant recommendations.
 
 ## Data privacy and content usage in Amazon Q Developer
 <a name="data-privacy"></a>
 
-When deciding to use Amazon Q Developer, you should understand how your data and content are used. Following are key points:
+When you decide to use Amazon Q Developer, understand how your data and content are used. The following are key points:
 + For Amazon Q Developer Pro users, your code content is not used for service improvement or model training.
 + For Amazon Q Developer Free Tier users, you can opt out of having your content used for service improvement through IDE settings or AWS Organizations policies.
-+ Transmitted content is encrypted, and any stored content is secured with encryption at rest and access controls. For more information, see [Data encryption in Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-encryption.html) in the *Amazon Q Developer User Guide*.
++ Encryption in transit helps protect transmitted content, and encryption at rest and access controls help protect stored content. For more information, see [Data encryption in Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/data-encryption.html) in the *Amazon Q Developer User Guide*.

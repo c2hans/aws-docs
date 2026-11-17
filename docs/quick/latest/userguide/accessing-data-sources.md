@@ -51,5 +51,6 @@ If you see a permissions error, and you're an authorized AWS Quick administrator
 1. Choose **Update** to confirm, or **Cancel** to return to the previous screen.
 
 **Topics**
++ [Managing the account service role with the API](account-service-role-apis.md)
 + [Setting granular access to AWS services through IAM](scoping-policies-iam-interface.md)
 + [Using AWS Secrets Manager secrets instead of database credentials in Quick](secrets-manager-integration.md)

@@ -32,7 +32,7 @@ The request uses the following URI parameters.
  ** [ResourceArn](#API_TagResource_RequestSyntax) **   <a name="scheduler-TagResource-request-uri-ResourceArn"></a>
 The Amazon Resource Name (ARN) of the schedule group that you are adding tags to.
 Length Constraints: Minimum length of 1. Maximum length of 1011.
-Pattern: `arn:aws(-[a-z]+)?:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
+Pattern: `arn:aws[a-z-]*:scheduler:[a-z0-9\-]+:\d{12}:schedule-group\/[0-9a-zA-Z-_.]+`
 Required: Yes
 
 ## Request Body

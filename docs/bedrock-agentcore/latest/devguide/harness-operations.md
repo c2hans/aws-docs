@@ -65,7 +65,7 @@ Don’t estimate CPU cost from wall-clock invocation or session duration alone. 
 + Use [AgentCore Observability](observability.md) traces, CloudWatch Logs, and X-Ray APIs to identify model calls, tool calls, memory operations, and their duration. Observability explains activity but is not a billing report.
 + Use AWS Cost Explorer or the AWS Cost and Usage Report for billed usage. Activate your harness tags as cost allocation tags to filter supported charges.
 
-Harness tags propagate to the managed Runtime, Runtime endpoint, and managed Memory created for the harness. Tag separately created resources, such as Gateway, EFS, S3, or a bring-your-own Memory resource, independently.
+AgentCore copies the tags that you specify in `CreateHarness` to the managed Runtime, Runtime endpoint, and managed Memory when it creates them. Later tag changes on the harness don’t update tags on these resources, so include cost allocation tags in `CreateHarness`. For details, see [Tags](#harness-tags). Tag separately created resources, such as Gateway, EFS, S3, or a bring-your-own Memory resource, independently.
 
 ## Control cost with limits
 <a name="harness-limits"></a>
@@ -125,7 +125,12 @@ agentcore add harness \
 agentcore deploy
 ```
 
-Harness tags propagate to the managed Runtime, Runtime endpoint, and managed Memory created for the harness. Separately created resources retain their own tags.
+AgentCore copies tags to the resources that it creates for a harness only when it creates them:
++ The managed Runtime, its `DEFAULT` Runtime endpoint, and the managed Memory get the tags that you specify in `CreateHarness`.
++ A harness endpoint that you create with `CreateHarnessEndpoint`, and the Runtime endpoint that AgentCore creates for it, get only the tags that you specify in that request, not the harness tags.
++ AgentCore doesn’t copy tag keys that begin with `aws:`, such as the `aws:cloudformation:*` tags that AWS CloudFormation adds, to the managed Runtime, Runtime endpoints, or Memory.
+
+Tags that you later add or remove on the harness with `TagResource` or `UntagResource` apply to the harness only. `UpdateHarness` and `UpdateHarnessEndpoint` don’t change tags on existing managed resources. Separately created resources retain their own tags.
 
 ## Related topics
 <a name="_related_topics"></a>

@@ -24,10 +24,14 @@ If you can't or aren't allowed to download and install NuGet packages on a per-p
 (Remember that this isn't the [recommended method](net-dg-install-assemblies.md) for handling references to the AWS SDK for .NET.)
 
 1. Download one of the following ZIP files:
-   + [aws-sdk-net8.0.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-net8.0.zip) - Assemblies that support .NET 8 and later.
-   + [aws-sdk-netcoreapp3.1.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-netcoreapp3.1.zip) - Assemblies that support .NET Core 3.1 and later.
+   + [aws-sdk-net11.0.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-net11.0.zip) - Assemblies that support .NET 11 and later.
+   + [aws-sdk-net10.0.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-net10.0.zip) - Assemblies that support .NET 10.
+   + [aws-sdk-net8.0.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-net8.0.zip) - Assemblies that support .NET 8 and .NET 9.
    + [aws-sdk-netstandard2.0.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-netstandard2.0.zip) - Assemblies that support .NET Standard 2.0 and 2.1.
-   + [aws-sdk-net472.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-net472.zip) - Assemblies that support .NET Framework 4.5 and later.
+   + [aws-sdk-net472.zip](https://sdk-for-net.amazonwebservices.com/latest/v4/aws-sdk-net472.zip) - Assemblies that support .NET Framework 4.7.2 and later.
+
+   For information about which targets each version of the SDK provides, see [Supported platforms](net-dg-supported-platforms.md).
+   + Starting with version 4.1, the SDK no longer provides a .NET Core 3.1 ZIP file.
 
 1. Extract the assemblies to some "download" folder on your file system; it doesn't matter where. Make note of this folder.
 

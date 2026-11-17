@@ -9,7 +9,7 @@ Use agent instructions to provide always-on guidance that AWS DevOps Agent appli
 
 Unlike [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills.md), which load on demand when the agent matches a skill description to the current task, agent instructions are always present from the start of every session, regardless of what the agent is working on.
 
-You set agent instructions from each [Managed agents](working-with-devops-agent-managed-agents.md) on the **Agents** page in your [What is a DevOps Agent Web App?](about-aws-devops-agent-what-is-a-devops-agent-web-app.md). There you set both the shared global instructions that apply to every agent and the instructions specific to that agent. Instructions are stored as an AGENTS.md file.
+You set agent instructions from each [managed agent's page](working-with-devops-agent-managed-agents.md) on the **Agents** page in your [DevOps Agent Web App](about-aws-devops-agent-what-is-a-devops-agent-web-app.md). There you set both the shared global instructions that apply to every agent and the instructions specific to that agent. Instructions are stored as an AGENTS.md file.
 
 ## What are agent instructions
 <a name="what-are-agent-instructions"></a>

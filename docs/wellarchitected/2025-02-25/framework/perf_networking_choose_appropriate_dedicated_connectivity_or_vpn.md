@@ -2,6 +2,10 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/perf_networking_choose_appropriate_dedicated_connectivity_or_vpn.html
 ---
 
+This whitepaper is for historical reference only.
+
+All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
+
 # PERF04-BP03 Choose appropriate dedicated connectivity or VPN for your workload
 <a name="perf_networking_choose_appropriate_dedicated_connectivity_or_vpn"></a>
 

@@ -68,7 +68,7 @@ Specifies the kind of credentials to use for authorization:
 + `TOKEN_EXCHANGE` - Authorization using on-behalf-of token exchange. An inbound user token is exchanged for a downstream access token scoped to the target audience.
 *Required*: No
 *Type*: String
-*Allowed values*: `CLIENT_CREDENTIALS | AUTHORIZATION_CODE`
+*Allowed values*: `CLIENT_CREDENTIALS | AUTHORIZATION_CODE | TOKEN_EXCHANGE`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ProviderArn`  <a name="cfn-bedrockagentcore-harness-oauthcredentialprovider-providerarn"></a>

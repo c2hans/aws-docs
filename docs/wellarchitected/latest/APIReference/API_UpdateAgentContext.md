@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # UpdateAgentContext
 <a name="API_UpdateAgentContext"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Updates an existing context associated with a profile.
 
 ## Request Syntax

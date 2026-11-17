@@ -26,7 +26,7 @@ To navigate to the **SageMaker HyperPod Clusters** page and choose Amazon EKS or
 
 1. On the EKS cluster creation page, you will see two options, choose the option that best fits your needs.
 
-   1. **Quick setup** - To get started immediately with default settings, choose **Quick setup**. With this option, SageMaker AI will create new resources such as VPC, subnets, security groups, Amazon S3 bucket, IAM role, and FSx for Lustre in the process of creating your cluster.
+   1. **Quick setup** - To get started immediately with default settings, choose **Quick setup**. With this option, SageMaker AI will create new resources such as VPC, subnets, security groups, Amazon S3 bucket, IAM role, and an FSx for Lustre file system with 1,200 GiB of storage in the process of creating your cluster.
 
    1. **Custom setup** - To integrate with existing AWS resources or have specific networking, security, or storage requirements, choose **Custom setup**. With this option, you can choose to use the existing resources or create new ones, and you can customize the configuration that best fits your needs.
 
@@ -175,7 +175,7 @@ Configure the FSx for Lustre file system to be provisioned on the HyperPod clust
 
 1. For **Throughput per unit of storage**, choose the throughput that will be available per TiB of provisioned storage.
 
-1. For **Storage capacity**, enter a capacity value in TB.
+1. For **Storage capacity**, review the capacity of the new file system. HyperPod creates the file system with 1,200 GiB (1.2 TiB) of storage. After you create the cluster, you can increase storage capacity and throughput from the Amazon FSx console. Total throughput grows with storage capacity. For more information, see [Increasing storage capacity](https://docs.aws.amazon.com/fsx/latest/LustreGuide/increase-storage-capacity.html) in the *Amazon FSx for Lustre User Guide*.
 
 1. For **Data compression type**, choose **LZ4** to enable data compression.
 

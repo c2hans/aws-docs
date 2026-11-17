@@ -77,7 +77,7 @@ A list of tags to attach to the certificate revocation list (CRL).
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TrustAnchorArn`  <a name="cfn-rolesanywhere-crl-trustanchorarn"></a>
-The ARN of the TrustAnchor the certificate revocation list (CRL) will provide revocation for.
+The ARN of the trust anchor that the certificate revocation list (CRL) provides revocation for. Specify the trust anchor ARN that contains the trust anchor ID. This parameter doesn't support alias ARNs. If you specify an alias ARN, the request fails with `ResourceNotFoundException`.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws(-[^:]+)?:rolesanywhere(:.*){2}(:trust-anchor.*)$`

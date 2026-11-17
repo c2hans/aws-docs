@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 
 **Topics**
 + [Access, query, and join Amazon DynamoDB tables using Athena](access-query-and-join-amazon-dynamodb-tables-using-athena.md)
++ [Automate Supply Chain data lakes deployment in a multi-repository setup](automate-the-deployment-of-aws-supply-chain-data-lakes.md)
 + [Automate the setup of inter-Region peering with AWS Transit Gateway](automate-the-setup-of-inter-region-peering-with-aws-transit-gateway.md)
 + [Automatically detect changes and initiate different CodePipeline pipelines for a monorepo in CodeCommit](automatically-detect-changes-and-initiate-different-codepipeline-pipelines-for-a-monorepo-in-codecommit.md)
 + [Build an advanced mainframe file viewer in the AWS Cloud](build-an-advanced-mainframe-file-viewer-in-the-aws-cloud.md)

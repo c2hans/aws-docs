@@ -18,7 +18,7 @@ If a single value in an IAM policy (for example, one Resource or Condition value
 
 **Identifier:** IAM\_POLICY\_IN\_USE
 
-**Resource Types:** AWS::IAM::Policy
+**Resource Types:** AWS::::Account
 
 **Trigger type:** Periodic
 

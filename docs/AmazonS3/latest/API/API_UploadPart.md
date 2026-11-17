@@ -55,7 +55,6 @@ Special errors
 + Error Code: `NoSuchUpload`
   + Description: The specified multipart upload does not exist. The upload ID might be invalid, or the multipart upload might have been aborted or completed.
   + HTTP Status Code: 404 Not Found
-  + SOAP Fault Code Prefix: Client
 
 HTTP Host header syntax
  **Directory buckets ** - The HTTP Host header syntax is ` Bucket-name.s3express-zone-id.region-code.amazonaws.com`.

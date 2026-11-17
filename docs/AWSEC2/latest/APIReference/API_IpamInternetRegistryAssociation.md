@@ -52,19 +52,20 @@ Type: String
 Required: No
 
  ** rir **
-The Regional Internet Registry. Possible values:
+The internet registry. Possible values:
 +  `ripe` - RIPE NCC (Europe, the Middle East, and Central Asia).
 +  `apnic` - APNIC (Asia Pacific).
 +  `arin` - ARIN (North America).
 +  `lacnic` - LACNIC (Latin America and the Caribbean).
++  `nicbr` - NIC.br (Brazil).
 Type: String
-Valid Values: `ripe | apnic | arin | lacnic`
+Valid Values: `ripe | apnic | arin | lacnic | nicbr`
 Required: No
 
  ** state **
-The state of the internet registry association. Valid values: `pending-activation` \| `pending-enable` \| `create-in-progress` \| `create-failed` \| `enable-in-progress` \| `enable-complete` \| `enable-failed` \| `delete-in-progress` \| `delete-complete` \| `delete-failed`.
+The state of the internet registry association. Valid values: `pending-enable` \| `create-in-progress` \| `create-failed` \| `enable-in-progress` \| `enable-complete` \| `enable-failed` \| `disable-in-progress` \| `disable-complete` \| `disable-failed` \| `delete-in-progress` \| `delete-complete` \| `delete-failed`.
 Type: String
-Valid Values: `pending-enable | create-in-progress | create-failed | enable-in-progress | enable-complete | enable-failed | delete-in-progress | delete-complete | delete-failed`
+Valid Values: `pending-enable | create-in-progress | create-failed | enable-in-progress | enable-complete | enable-failed | disable-in-progress | disable-complete | disable-failed | delete-in-progress | delete-complete | delete-failed`
 Required: No
 
  ** stateMessage **

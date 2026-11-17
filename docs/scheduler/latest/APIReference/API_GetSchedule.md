@@ -111,6 +111,15 @@ Content-type: application/json
          "DetailType": "string",
          "Source": "string"
       },
+      "EventBridgePutEventsV2Parameters": {
+         "DetailType": "string",
+         "Source": "string"
+      },
+      "EventBridgePutRawEventsParameters": {
+         "Metadata": {
+            "string" : "string"
+         }
+      },
       "Input": "string",
       "KinesisParameters": {
          "PartitionKey": "string"
@@ -151,7 +160,7 @@ Valid Values: `NONE | DELETE`
 The Amazon Resource Name (ARN) of the schedule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1224.
-Pattern: `arn:aws(-[a-z]+)?:scheduler:[a-z0-9\-]+:\d{12}:schedule\/[0-9a-zA-Z-_.]+\/[0-9a-zA-Z-_.]+`
+Pattern: `arn:aws[a-z-]*:scheduler:[a-z0-9\-]+:\d{12}:schedule\/[0-9a-zA-Z-_.]+\/[0-9a-zA-Z-_.]+`
 
  ** [CreationDate](#API_GetSchedule_ResponseSyntax) **   <a name="scheduler-GetSchedule-response-CreationDate"></a>
 The time at which the schedule was created.
@@ -180,7 +189,7 @@ Pattern: `[0-9a-zA-Z-_.]+`
 The ARN for a customer managed KMS Key that is be used to encrypt and decrypt your data.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws(-[a-z]+)?:kms:[a-z0-9\-]+:\d{12}:(key|alias)\/[0-9a-zA-Z-_]*`
+Pattern: `arn:aws[a-z-]*:kms:[a-z0-9\-]+:\d{12}:(key|alias)\/[0-9a-zA-Z-_]*`
 
  ** [LastModificationDate](#API_GetSchedule_ResponseSyntax) **   <a name="scheduler-GetSchedule-response-LastModificationDate"></a>
 The time at which the schedule was last modified.
@@ -234,6 +243,10 @@ HTTP Status Code: 500
  ** ResourceNotFoundException **
 The request references a resource which does not exist.
 HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+The request exceeds a service quota.
+HTTP Status Code: 402
 
  ** ThrottlingException **
 The request was denied due to request throttling.

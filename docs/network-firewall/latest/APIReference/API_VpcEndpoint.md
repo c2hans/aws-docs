@@ -5,20 +5,20 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 # VpcEndpoint
 <a name="API_VpcEndpoint"></a>
 
-Contains the VPC and subnets for a proxy mode firewall endpoint. You use it in `CreateFirewall` when `NoSourcePreservation` is `TRUE`, to specify where Network Firewall creates the firewall endpoint.
+The VPC and subnets for the endpoints of a proxy mode firewall. You use this in `CreateFirewall`. Network Firewall creates the firewall endpoints and the firewall's NAT gateways in this VPC.
 
-This differs from `VpcEndpointAssociation`, which defines additional secondary endpoints for a firewall in other VPCs.
+This differs from `VpcEndpointAssociation`, which defines additional endpoints for a firewall in other VPCs.
 
 ## Contents
 <a name="API_VpcEndpoint_Contents"></a>
 
  ** SubnetMappings **   <a name="networkfirewall-Type-VpcEndpoint-SubnetMappings"></a>
-The subnets in which Network Firewall creates the firewall endpoint for a proxy mode firewall. Each subnet must belong to a different Availability Zone in the VPC.
+The subnets where Network Firewall creates the firewall endpoints of a proxy mode firewall. Specify one subnet for each Availability Zone, and a NAT gateway mapping in each of those Availability Zones.
 Type: Array of [SubnetMapping](API_SubnetMapping.md) objects
 Required: Yes
 
  ** VpcId **   <a name="networkfirewall-Type-VpcEndpoint-VpcId"></a>
-The unique identifier of the VPC where Network Firewall creates the proxy mode firewall endpoint.
+The ID of the VPC where Network Firewall creates the endpoints and NAT gateways of a proxy mode firewall.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^vpc-[0-9a-f]+$`

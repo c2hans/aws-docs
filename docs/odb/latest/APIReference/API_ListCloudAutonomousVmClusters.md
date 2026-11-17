@@ -112,6 +112,7 @@ Required: No
          "ocid": "string",
          "ociResourceAnchorName": "string",
          "ociUrl": "string",
+         "ocpusLowestScaledValue": number,
          "odbNetworkArn": "string",
          "odbNetworkId": "string",
          "percentProgress": number,

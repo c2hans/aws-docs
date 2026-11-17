@@ -24,6 +24,12 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_mwaa-serverless-actions-as-permissions).
 
+- **   CreateAirflowUiUrl  **
+  - **IAM action:**  [airflow-serverless:CreateAirflowUiUrl](#list_mwaa-serverless-action-CreateAirflowUiUrl)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   CreateWorkflow  **
   - **IAM action:**  [airflow-serverless:CreateWorkflow](#list_mwaa-serverless-action-CreateWorkflow)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [airflow-serverless:TagResource](#list_mwaa-serverless-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -115,6 +121,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 <a name="list_mwaa-serverless-actions-as-permissions"></a>
 
 You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
+
+- **   [CreateAirflowUiUrl](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_CreateAirflowUiUrl.html)  **
+  - **Description:** Grants permission to create a URL with access to the Airflow UI
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
 
 - **   [CreateWorkflow](https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_CreateWorkflow.html)  **
   - **Description:** Grants permission to create a new workflow

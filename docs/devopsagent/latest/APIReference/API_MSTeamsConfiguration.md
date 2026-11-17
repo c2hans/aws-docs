@@ -27,6 +27,11 @@ The Microsoft Teams channels that receive agent notifications.
 Type: [MSTeamsTransmissionTarget](API_MSTeamsTransmissionTarget.md) object
 Required: Yes
 
+ ** bidirectional **   <a name="devopsagent-Type-MSTeamsConfiguration-bidirectional"></a>
+The bidirectional communication configuration for the Microsoft Teams integration. Provide this configuration with `enabled` set to `true` to allow users to interact with the agent directly from Microsoft Teams.
+Type: [MSTeamsBidirectionalConfiguration](API_MSTeamsBidirectionalConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_MSTeamsConfiguration_SeeAlso"></a>
 

@@ -20,7 +20,7 @@ Amazon GameLift Servers SDKs and plugins are open source. See [Get Amazon GameLi
 
 | Service release | AWS SDK for C\+\+ | Server SDK for C\# | Server SDK for Unity (C\#) | Server SDK for C\+\+ | Server SDK for Unreal (C\+\+) | Server SDK for Go | Plugin for Unreal | Plugin for Unity | Client SDK for C\+\+ | Client SDK for Unreal (C\+\+) | Client SDK for C\# | Client SDK for Unity (C\#) | Realtime client SDK |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [October 22, 2026 release notes](#release-notes-10222026) | [1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later on GitHub | 5.5.2 | 5.5.2 | 5.6.1 | 5.6.1 | 5.6.0 | 3.4.1 | 3.3.2 | 1.0.1 | 1.0.1 | 1.0.0 | 1.0.0 | 1.2.0 |
+| [November 10, 2026 release notes](#release-notes-11102026) | [1.11.926](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.926) or later on GitHub | 5.5.2 | 5.5.2 | 5.6.1 | 5.6.1 | 5.6.0 | 3.4.1 | 3.3.2 | 1.0.1 | 1.0.1 | 1.0.0 | 1.0.0 | 1.2.0 |
 
 ### Previous versions
 <a name="release-notes-earlier"></a>
@@ -29,6 +29,7 @@ Amazon GameLift Servers SDKs and plugins are open source. See [Get Amazon GameLi
 
 | Service release | AWS SDK for C\+\+ | Server SDK for C\# | Server SDK for Unity (C\#) | Server SDK for C\+\+ | Server SDK for Unreal (C\+\+) | Server SDK for Go | Plugin for Unreal | Plugin for Unity | Client SDK for C\+\+ | Client SDK for Unreal (C\+\+) | Client SDK for C\# | Client SDK for Unity (C\#) | Realtime client SDK |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| [October 22, 2026 release notes](#release-notes-10222026) | [1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later on GitHub | 5.5.2 | 5.5.2 | 5.6.1 | 5.6.1 | 5.6.0 | 3.4.1 | 3.3.2 | 1.0.1 | 1.0.1 | 1.0.0 | 1.0.0 | 1.2.0 |
 | [August 4, 2026 release notes](#release-notes-08042026) | [1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later on GitHub | 5.5.1 | 5.5.1 | 5.6.0 | 5.6.0 | 5.6.0 | 3.4.0 | 3.3.1 | 1.0.1 | 1.0.1 | 1.0.0 | 1.0.0 | 1.2.0 |
 | [June 30, 2026 release notes](#release-notes-06302026) | [1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later on GitHub | 5.5.0 | 5.5.0 | 5.5.0 | 5.5.0 | 5.5.0 | 3.3.0 | 3.3.0 | 1.0.1 | 1.0.0 | 1.0.0 | 1.0.0 | 1.2.0 |
 | [June 18, 2026 release notes](#release-notes-06182026) | [1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later on GitHub | 5.5.0 | 5.5.0 | 5.5.0 | 5.5.0 | 5.5.0 | 3.3.0 | 3.3.0 | 1.0.1 | 1.0.0 |  |  | 1.2.0 |
@@ -273,7 +274,7 @@ Amazon GameLift Servers has launched a new public API for container fleets, `Des
 This new feature addresses the need to discover port mappings for containers beyond the game server port. Previously, customers were required to remotely access their compute to retrieve all other port mappings. The new API is available through the Amazon GameLift Servers console, AWS CLI, and AWS SDK.
 
 ****Learn more:****
-+ [View container port mappings](containers-remote-access.md#containers-remote-access-port-mappings), *Amazon GameLift Servers Developer Guide*
++ [Viewing container port mappings](containers-remote-access.md#containers-remote-access-port-mappings), *Amazon GameLift Servers Developer Guide*
 + [DescribeContainerGroupPortMappings](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeContainerGroupPortMappings.html), *Amazon GameLift Servers API Reference*
 
 ### April 2, 2026: Amazon GameLift Servers adds compute name to game session data, new event fields, and console improvements
@@ -424,7 +425,7 @@ This feature is available for fleets running server SDK version 5.x. For fleets 
 To remotely connect to a fleet instance, open the Amazon GameLift Servers console and find the managed EC2 or container fleet you want to access. In the fleet's details, open the **Instances** tab, select an instance from the list, and choose **Connect**.
 
 ****Learn more:****
-+ [Connect to fleet instances](fleets-remote-access.md), *Amazon GameLift Servers Developer Guide*
++ [Connecting to fleet instances](fleets-remote-access.md), *Amazon GameLift Servers Developer Guide*
 
 ### September 23, 2025: Amazon GameLift Servers adds support for new Local Zone in Dallas, Texas
 <a name="release-notes-09232025"></a>
@@ -693,7 +694,7 @@ Based on customer feedback, we've clarified the Amazon GameLift Servers workflow
   + `FLEET_CREATION_FAILED_INSTALLER`
 
 ****Learn more:****
-+ [Debug Amazon GameLift Servers fleet issues](fleets-creating-debug.md), *Amazon GameLift Servers Developer Guide*
++ [Debugging Amazon GameLift Servers fleet issues](fleets-creating-debug.md), *Amazon GameLift Servers Developer Guide*
 + [Event data type](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_Event.html), *Amazon GameLift Servers API Reference*
 
 ### August 15, 2024: Amazon GameLift Servers improves console experience

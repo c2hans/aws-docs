@@ -22,6 +22,11 @@ The IDs of the instances.
 Type: Array of strings
 Required: Yes
 
+ **MetricCategoryId.N**
+The IDs of the metric categories to remove from the instances. If you specify metric categories, only those metric categories are removed and detailed monitoring remains enabled. If you don't specify metric categories, detailed monitoring and all metric categories are turned off.
+Type: Array of strings
+Required: No
+
 ## Response Elements
 <a name="API_UnmonitorInstances_ResponseElements"></a>
 

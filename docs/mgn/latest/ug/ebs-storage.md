@@ -23,6 +23,7 @@ The best practice is to not change the default Amazon EBS volume type, unless th
 
 **Note**
 This option only affects disks over 500 GiB (by default, smaller disks always use Magnetic HDD volumes).
+Throughput Optimized HDD (st1) and General Purpose SSD (gp2) volumes support disks up to 16 TiB. If a source server has a disk larger than 16 TiB, set the staging disk type of that disk to gp3 or io2, or MGN cannot create its staging disk. You can also choose the **Faster, General Purpose SSD (gp3)** option, which makes every disk of 500 GiB or more on AUTO gp3, at 3,000 IOPS and 125 MiB/s. For the size that each type supports, see [Disk size by staging disk type](#staging-disk-size).
 
 The default **Lower cost, Throughput Optimized HDD (st1)** option uses slower, less expensive disks.
 
@@ -199,3 +200,24 @@ For certain disks, you can configure the amount of IOPS to be allocated per GB o
 For **General Purpose SSD (gp3)** disks, you can also set the **Throughput**. General Purpose SSD (gp3) volumes have a baseline throughput of 125 MiB/s. You can provision throughput of 0.25 MiB/s per provisioned IOPS up to a maximum of 2,000 MiB/s (at 8,000 IOPS or higher).
 
 Choose **Change** to confirm the change.
+
+#### Disk size by staging disk type
+<a name="staging-disk-size"></a>
+
+Each staging disk type supports disks up to a maximum size. MGN checks the size when you save the staging disk type of a disk:
+
+| Staging disk type | Supported disk size |
+| --- | --- |
+| General Purpose SSD (gp3) and Provisioned IOPS SSD (io2) | Up to 64 TiB (65,536 GiB) |
+| General Purpose SSD (gp2), Provisioned IOPS SSD (io1), Throughput Optimized HDD (st1), and Cold HDD (sc1) | Up to 16 TiB (16,384 GiB) |
+| AUTO | Up to 64 TiB (65,536 GiB). MGN chooses the type when it creates the staging disk, so the disk is limited by that type: by default Magnetic HDD under 500 GiB, otherwise the [Amazon EBS volume type](#ebs-volume-type) of the replication settings. |
+| FSx for ONTAP | Up to 64 TiB (65,536 GiB) for each data disk, when the target storage type is FSx for ONTAP. The boot disk always stays on an Amazon EBS staging disk, AUTO by default, so the limit of its Amazon EBS type applies to it. |
+
+If the staging disk type does not support the size of the disk, MGN refuses the setting with a message that names the disk size and the type, for example: `The 61440 GiB disk size is not supported by the GP2 staging disk type.` Choose a type that supports the size, such as gp3.
+
+## Replicating large disks
+<a name="large-disks"></a>
+
+The initial sync of a large disk can take days, because MGN reads and writes every block of the disk, regardless of how much of the disk is in use. Free space that is zeroed compresses well on the network, but it is still read and written. Two settings decide how fast it goes, and both are yours to set:
++ **Replication server instance type** – The network and Amazon EBS bandwidth of the replication server determines how fast the copy can go. The default instance type, t3.small, is the most cost-effective choice and works well for most workloads. For large disks, choose an instance type with more bandwidth, such as c6in.xlarge or larger, in the replication template or in the replication settings of the server. For more information, see [Replication server instance type](replication-server-settings.md#instance-type).
++ **Staging disk throughput** – A disk on AUTO uses the default Amazon EBS volume type for large disks, with that type's baseline throughput; for gp3, that is 125 MiB/s, regardless of the disk size. To copy faster, set the disk to General Purpose SSD (gp3) explicitly and raise its throughput. For more information, see [Change staging disk type](#staging-disk).

@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # DeleteAgentProfilePolicy
 <a name="API_DeleteAgentProfilePolicy"></a>
 
-**Note**
- AWS Well-Architected Agent is in preview release and is subject to change.
-
 Removes the resource-based policy from an Agent Profile. This revokes all cross-account access previously granted by the policy. Only the profile owner can call this operation.
 
 ## Request Syntax

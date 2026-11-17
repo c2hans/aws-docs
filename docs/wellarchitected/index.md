@@ -6,59 +6,58 @@ source_url: https://docs.aws.amazon.com/wellarchitected/index.html
 title: 'AWS Well-Architected Documentation'
 canonical_url: https://docs.aws.amazon.com/wellarchitected/
 source: aws-documentation
-generated_on: 2026-11-11
+generated_on: 2026-11-16
 ---
 
 # AWS Well-Architected Documentation
 
-Welcome to the documentation home for AWS Well-Architected. Learn about cloud architecture best practices in the Framework, or explore industry-specific and technology-specific guidance in the Lenses. Use the AWS Well-Architected Tool to review your workloads against best practices, measure improvements, and get optimization recommendations. Use the AWS Well-Architected Agent for AI-powered recommendations tailored to your environment.
+Welcome to the documentation home for AWS Well-Architected. Learn about cloud architecture best practices in the Framework, or explore industry-specific and technology-specific guidance in the Lenses. Use the AWS Well-Architected Agent for AI-powered recommendations tailored to your environment, and use the AWS Well-Architected Tool to review your workloads against best practices, measure improvements, and get optimization recommendations.
 
 ## What's new
 
 Recent announcements and updates for AWS Well-Architected.
 
-### Framework
+### Framework (new!)
 
-No new updates.
+**[All new Well-Architected Framework](/wellarchitected/latest/framework/release-notes.html)** (Updated 11-16-2026)
+
+- Consolidated six pillar whitepapers into single Framework source
+- Best practices updated across the entire Framework
+- New Cloud Foundations section
+- New guidance focused on AI adoption, AI-driven operations, and architecture reviews
+- Rewritten and updated pillar and non-best practice content
 
 ### Lenses (new!)
 
-**New and updated lenses** (Updated 10-1-2026)
+**New and updated lenses** (Updated 11-10-2026)
 
-- Update to the [Streaming Media Lens](/wellarchitected/latest/streaming-media-lens/streaming-media-lens.html)
-- New [Digital Sovereignty Lens](/wellarchitected/latest/digital-sovereignty-lens/digital-sovereignty-lens.html)
+- Update to the [Video Streaming Advertising Lens](/wellarchitected/latest/video-streaming-advertising-lens/video-streaming-advertising-lens.html)
 
 ### User guide (new!)
 
-**[AWS Well-Architected Agent](/wellarchitected/latest/userguide/agent.html)** (Updated 10-1-2026)
+**New features added** (Updated 11-16-2026)
 
-- Public preview release of the AWS Well-Architected Agent
-- New AWS Well-Architected Agent user guide
+- Added organizational profiles and AWS Organizations integration
+- Added profile and recommendation sharing
+- Added basic profile onboarding
 
-### API reference (new!)
+### API reference
 
-**[AWS Well-Architected API Reference](/wellarchitected/latest/APIReference/Welcome.html)** (Updated 10-1-2026)
+No new updates.
 
-- AWS Well-Architected Agent API details added
+## Well-Architected Framework
 
-## Framework and pillars
+The **[AWS Well-Architected Framework](/wellarchitected/latest/framework/)** describes design principles and best practices for building reliable, secure, efficient, cost-effective, and sustainable workloads. The Well-Architected Framework is split into two sections: **Cloud Foundations** and **Cloud Workloads**.
 
-The Well-Architected Framework and pillar whitepapers describe design principles and best practices for building reliable, secure, efficient, cost-effective, and sustainable workloads.
-
-- [Well-Architected Framework](/wellarchitected/latest/framework/): The AWS Well-Architected Framework whitepaper describes key concepts, design principles, and architectural best practices for designing and running workloads in the cloud.
-- [Operational Excellence Pillar](/wellarchitected/latest/operational-excellence-pillar/): The Operational Excellence pillar focuses on running and monitoring systems to deliver business value, and continually improving processes and procedures.
-- [Security Pillar](/wellarchitected/latest/security-pillar/): The Security pillar focuses on protecting information and systems, including confidentiality and integrity of data, identifying and managing who can do what.
-- [Reliability Pillar](/wellarchitected/latest/reliability-pillar/): The Reliability pillar focuses on workloads performing their intended function correctly and consistently, including the ability to recover from failure.
-- [Performance Efficiency Pillar](/wellarchitected/latest/performance-efficiency-pillar/): The Performance Efficiency pillar focuses on using computing resources efficiently to meet system requirements and maintaining that efficiency as demand changes.
-- [Cost Optimization Pillar](/wellarchitected/latest/cost-optimization-pillar/): The Cost Optimization pillar focuses on avoiding unnecessary costs, understanding where money is being spent, and selecting the right number of resource types.
-- [Sustainability Pillar](/wellarchitected/latest/sustainability-pillar/): The Sustainability pillar focuses on minimizing the environmental impacts of running cloud workloads, including energy consumption and resource efficiency.
+- [Cloud Foundations](/wellarchitected/latest/framework/cloud-foundations.html): AWS Well-Architected Cloud Foundations defines the central capabilities you can employ to govern your overall cloud environment, promote and enforce standards across your workloads, and provide services that your workload teams can consume to accelerate their delivery.
+- [Cloud Workloads](/wellarchitected/latest/framework/workloads.html): Cloud Workloads brings together the six pillars—operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability—focused on how you design, build, and operate each individual workload.
 
 ## User guides
 
-Guides and references for the AWS Well-Architected Tool and AWS Well-Architected Agent.
+Guides and references for the AWS Well-Architected Console.
 
 - [User Guide](/wellarchitected/latest/userguide/): Provides an overview of AWS Well-Architected and includes instructions for measuring your workloads, tracking improvements, and exploring optimization opportunities.
-- [API Reference](/wellarchitected/latest/APIReference/): Describes the API operations for the AWS Well-Architected Tool and AWS Well-Architected Agent. Includes sample requests, responses, and errors for the supported web services protocols.
+- [API Reference](/wellarchitected/latest/APIReference/): Describes the API operations for AWS Well-Architected. Includes sample requests, responses, and errors for the supported web services protocols.
 
 ## Lenses
 

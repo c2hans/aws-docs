@@ -23,4 +23,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 + [Run Amazon ECS tasks on Amazon WorkSpaces with Amazon ECS Anywhere](run-amazon-ecs-tasks-on-amazon-workspaces-with-amazon-ecs-anywhere.md)
 + [Run an ASP.NET Core web API Docker container on an Amazon EC2 Linux instance](run-an-asp-net-core-web-api-docker-container-on-an-amazon-ec2-linux-instance.md)
 + [Run stateful workloads with persistent data storage by using Amazon EFS on Amazon EKS with AWS Fargate](run-stateful-workloads-with-persistent-data-storage-by-using-amazon-efs-on-amazon-eks-with-aws-fargate.md)
++ [Set up event-driven auto scaling in Amazon EKS by using Amazon EKS Pod Identity and KEDA](event-driven-auto-scaling-with-eks-pod-identity-and-keda.md)
 + [More patterns](containersandmicroservices-more-patterns-pattern-list.md)

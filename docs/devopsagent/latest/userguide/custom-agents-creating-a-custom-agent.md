@@ -73,7 +73,7 @@ Make me an agent that audits DynamoDB table configurations daily.
 You can import a custom agent's system prompt directly from a Markdown file in a GitHub repository. The file contents become the agent's system prompt. You can manage agent prompts in version control and import them with a single action.
 
 **Prerequisites:**
-+ A GitHub account associated with your Agent Space. To connect a GitHub account, see [Connecting GitHub](connecting-to-cicd-pipelines-connecting-github.md). Any GitHub account connection enables importing from public repositories. For private repositories, the associated account must have read access to the repository. GitHub Enterprise Server and GitHub Enterprise Cloud with data residency connections are also supported.
++ A GitHub account associated with your Agent Space. To connect a GitHub account, see [Connecting to GitHub](connecting-to-cicd-pipelines-connecting-github.md). Any GitHub account connection enables importing from public repositories. For private repositories, the associated account must have read access to the repository. GitHub Enterprise Server and GitHub Enterprise Cloud with data residency connections are also supported.
 + A Markdown file (`.md`) in a GitHub repository containing the system prompt.
 
 **To import a custom agent from a repository:**

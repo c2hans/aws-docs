@@ -59,11 +59,15 @@ The following steps show how the components work together for one chat request. 
 ## Network connections
 <a name="desktop-architecture-network"></a>
 
-The desktop application opens every network connection itself, so the device needs only outbound firewall rules. It connects over HTTPS and WebSocket Secure on port 443 with Transport Layer Security (TLS) 1.2 or later. The agent runtime sends local tool calls over the WebSocket connection that the application opened.
+The desktop application opens its own connections to AWS Quick, so the device needs only outbound firewall rules for that traffic. It connects over HTTPS and WebSocket Secure on port 443 with Transport Layer Security (TLS) 1.2 or later. The agent runtime sends local tool calls over the WebSocket connection that the application opened.
 
 During sign-in, the application opens a local port to receive the identity provider's response from the browser, and it closes the port when sign-in completes. For more information, see [Sign-in and credentials](#desktop-security-sign-in).
 
 Calls to cloud connectors and data sources start in the AWS Quick service and go over the public internet or a virtual private cloud (VPC) connection. They don't come from the user's device. For information about connecting to data sources in your VPC, see [Configuring VPC connections in AWS Quick Sight](working-with-aws-vpc.md).
+
+Some system tools run in the AWS Quick agent runtime rather than on the device. Web search (including fetch URL), file download, and remote managed browser automation send their requests to the internet from AWS-managed infrastructure, so your proxy, firewall, DNS filtering, and endpoint controls don't see these requests. Fetch URL can return a cached copy of a page instead of retrieving it live. When a user downloads a file, the agent runtime retrieves it and syncs it to the device.
+
+Administrators can turn off web search and remote managed browser automation in a custom permissions profile, in the [AI capabilities group](custom-permissions.md#custom-permissions-ai-capabilities). To turn off web search, including fetch URL, restrict the capability to use internet to enhance results. To turn off remote managed browser automation, which is in Preview, restrict the capability to automate remote managed browser actions. Each user controls file downloads through the [access level](system-tools-desktop.md#desktop-settings-manage-permissions) of the File operations tool.
 
 For information about proxies, see [Proxy support](desktop-enterprise-managed-deployment.md#desktop-enterprise-proxy-support). For information about traffic inspection, see [Trusting a corporate certificate authority](desktop-enterprise-mdm.md#desktop-mdm-tls).
 
@@ -138,7 +142,7 @@ To revoke one user's access, remove or delete the user. For more information, se
 ### Connector owner controls
 <a name="desktop-connector-owner-controls"></a>
 
-The owner of a cloud connector decides who can use it. The owner sets each action to **Let Users Choose** or **Always Ask**, or turns the action off. For more information, see [Tool permissions](connector-tool-permissions.md).
+The owner of a cloud connector decides who can use it. The owner sets each action to **Let users choose**, **Always ask**, or **Disabled**. For more information, see [Tool permissions](connector-tool-permissions.md).
 
 #### Connection security
 <a name="desktop-security-connection-security"></a>
@@ -154,7 +158,7 @@ Users set the following controls for their own work:
 + Which folders the agent can reach, and whether files are uploaded for [indexing](knowledge-desktop.md#knowledge-indexing-options). Granting a folder doesn't upload its files.
 + Which files to upload to [spaces](spaces-desktop.md) or attach to [chat messages](working-with-chat-desktop.md#desktop-attachments).
 + The [access level](system-tools-desktop.md#desktop-settings-manage-permissions) for each system tool.
-+ Whether write actions need approval, when the connector owner sets the action to **Let Users Choose**.
++ Whether write actions need approval, when the connector owner sets the action to **Let users choose**.
 + Which [MCP servers](connections-desktop.md#desktop-mcp-servers) and [coding agents](connections-desktop.md#desktop-coding-agents) to add.
 + Whether Quick learns from conversations, set in [privacy controls](desktop-settings.md#desktop-privacy-controls) and [incognito mode](working-with-chat-desktop.md#desktop-incognito-mode).
 

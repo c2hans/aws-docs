@@ -85,6 +85,8 @@ Chat requires the following IAM permissions to function:
 + **aidevops:ListChats** – Allows users to list and access chat conversation history.
 + **aidevops:CreateChat** – Allows users to create new chat conversations.
 + **aidevops:SendMessage** – Allows users to submit queries and receive streaming responses.
++ **aidevops:GetChat** – Allows users to retrieve a chat conversation and its metadata, including the current title and archive status.
++ **aidevops:UpdateChat** – Allows users to rename or archive a chat conversation. This permission is required for both rename and archive actions in the web app.
 
 ## Topology and discovery actions
 <a name="topology-and-discovery-actions"></a>
@@ -218,6 +220,8 @@ This policy grants access to investigation and prevention features without admin
         "aidevops:ListChats",
         "aidevops:CreateChat",
         "aidevops:SendMessage",
+        "aidevops:GetChat",
+        "aidevops:UpdateChat",
         "aidevops:ListGoals",
         "aidevops:CreateAsset",
         "aidevops:CreateAssetFile",
@@ -481,6 +485,7 @@ Provides access to use the AWS DevOps operator web app for an Agent Space.
         "aidevops:GetAssetFile",
         "aidevops:GetAssociation",
         "aidevops:GetBacklogTask",
+        "aidevops:GetChat",
         "aidevops:GetKnowledgeItem",
         "aidevops:GetRecommendation",
         "aidevops:GetTrigger",
@@ -510,6 +515,7 @@ Provides access to use the AWS DevOps operator web app for an Agent Space.
         "aidevops:UpdateAsset",
         "aidevops:UpdateAssetFile",
         "aidevops:UpdateBacklogTask",
+        "aidevops:UpdateChat",
         "aidevops:UpdateGoal",
         "aidevops:UpdateKnowledgeItem",
         "aidevops:UpdateRecommendation",

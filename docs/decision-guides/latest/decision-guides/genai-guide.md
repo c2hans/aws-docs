@@ -9,403 +9,483 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/g
 
 |  |  |
 | --- |--- |
-|  Purpose  |  Determine which AWS generative AI services are the best fit for your organization.  |
-|  Last updated  |  February 14, 2025  |
-|  Covered services  |  +   [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)  <br />+   [Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html)  <br />+   [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)  <br />+   [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html.html) <br />+   [Amazon Nova foundation models](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html) <br />+  [Amazon Titan foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html)  <br />+   [Public foundation models](https://aws.amazon.com/what-is/foundation-models/) <br />+  [AWS Trainium](https://aws.amazon.com/machine-learning/trainium/) <br />+   [AWS Inferentia](https://aws.amazon.com/machine-learning/inferentia/)   |
+|  Purpose  |  Determine which AWS generative AI services fit the needs of your organization.  |
+|  Last updated  |  November 14, 2026  |
+|  Covered services  |  +  **Assistants:** [Amazon Quick Suite](https://aws.amazon.com/quick/), [Kiro](https://kiro.dev/) <br />+  **Build applications and agents:** [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) (including Knowledge Bases, Guardrails, Flows, model customization, Custom Model Import, and cross-Region inference), [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html), and [Amazon Bedrock in Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock.html) <br />+  **Models:** [Amazon Nova](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html), models from third-party providers in Amazon Bedrock, and open-weight models in [Amazon SageMaker JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html) <br />+  **Host, customize, and train models:** [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html), Amazon SageMaker HyperPod, and self-managed on Amazon EC2, Amazon EKS, and Amazon ECS <br />+  **Infrastructure:** [AWS Trainium](https://aws.amazon.com/machine-learning/trainium/), [AWS Inferentia](https://aws.amazon.com/machine-learning/inferentia/), and Amazon EC2 GPU instances   |
 
 ## Introduction
 <a name="introduction"></a>
 
-Generative AI is a set of artificial intelligence (AI) systems and models designed to generate content such as code, text, images, music, or other forms of data. These systems can produce new content based on patterns and knowledge learned from existing data. Increasingly, organizations and businesses are using generative AI to:
-+  **Automate creative workflows** — Use generative AI services to automate the workflows of time-consuming creative processes such as writing, image or video creation, and graphic design.
-+  **Customize and personalize content** — Generate targeted content, product recommendations, and customized offerings for an audience-specific context.
-+  **Augment data** — Synthesize large training datasets for other ML models to *unlock* scenarios where human-labeled data is scarce.
-+  **Reduce cost** — Potentially lower costs by using synthesized data, content, and digital assets.
-+  **Faster experimentation** — Test and iterate on more content variations and creative concepts than would be possible manually.
+Generative AI is a set of artificial intelligence (AI) systems and models that create new content, such as text, code, images, audio, and video, based on patterns learned from large amounts of data. Increasingly, organizations and businesses use generative AI to:
++  **Automate creative workflows:** Automate time-consuming creative processes such as writing, image or video creation, and graphic design.
++  **Customize and personalize content:** Generate targeted content, product recommendations, and customized offerings for an audience-specific context.
++  **Build AI agents:** Complete multistep tasks that combine reasoning, tool use, and access to your systems and data.
++  **Augment data:** Synthesize large training datasets for other ML models to unlock scenarios where human-labeled data is scarce.
++  **Experiment faster:** Test and iterate on more content variations and creative concepts than would be possible manually.
 
- This guide helps you select the AWS generative AI services and tools that are the best fit for your needs and your organization.
+AWS offers generative AI capabilities at three layers, and many organizations use more than one:
+
+1. **Ready-to-use AI assistants:** Applications such as Amazon Quick Suite and Kiro that you can adopt without choosing or managing a model.
+
+1. **Services to build generative AI applications and agents:** [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) gives you serverless access to a broad selection of foundation models through a single API, plus tools for retrieval augmented generation (RAG), safeguards, and customization. Amazon Bedrock AgentCore lets you build, deploy, and operate AI agents with any framework or model.
+
+1. **Options to host, customize, and train models yourself:** When you need a model that isn't available in Amazon Bedrock, or more control over how a model is served or trained, you can use Amazon SageMaker AI, Amazon SageMaker HyperPod, or self-managed infrastructure on Amazon EC2, Amazon EKS, or Amazon ECS.
+
+For the third layer, the options sit on a spectrum from the least to the most operational ownership. More ownership gives you more control over performance, cost, and model choice, but it also adds operational work. A practical starting point for most inference workloads is to begin with the most managed option that meets your requirements. Move toward more control only when a specific requirement calls for it.
+
+ This guide helps you make that decision for each of your workloads.
 
 [![AWS Videos](https://img.youtube.com/vi/WEKTpzvJiec?si=39jHcyiMGTfiO2zB/0.jpg)](https://www.youtube.com/watch?v=WEKTpzvJiec?si=39jHcyiMGTfiO2zB)
 
 ## Understand
 <a name="understand"></a>
 
-Amazon offers a range of generative AI services, applications, tools, and supporting infrastructure. Which of these you use depends a lot on the following factors:
-+ What you’re trying to do
-+ How much choice you need in the foundation models that you use
-+ The degree of customization you need in your generative AI applications
-+ The expertise within your organization
+AWS offers a range of generative AI services, applications, tools, and supporting infrastructure. Which of these you use depends on several factors:
++ What you're trying to do: use an assistant, build an application or agent, or host and customize models
++ Which foundation models you need, and whether they're available as a managed service
++ How much control you need over model serving, customization, and infrastructure
++ Where your data must be processed, and in which AWS Regions you operate
++ Your traffic patterns and cost model
++ The expertise and operational capacity of your team
 
 ![Diagram showing the AWS generative AI stack. This diagram shows the infrastructure to build and train AI models at the bottom of the stack, models and tools to build generative AI apps in the middle, and applications that use LLMs and other FMs to boost productivity, at the top.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/gen-ai-stack-dec-2024.png)
 
- **Amazon Q Business and Amazon Q Developer— Applications to boost productivity**
+ **Generative AI assistants: Boost productivity without managing models**
 
-At the top of Amazon's generative AI stack, Amazon Q Business and Amazon Q Developer use large language models (LLMs) and foundation models. However, they don’t require that you explicitly choose a model. Each of these applications support different use cases, and all are powered by [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html).
+These applications use foundation models behind the scenes. You don't need to choose or operate a model.
 
- Learn more about the primary generative AI–powered assistants currently available:
-
-------
-#### [ Amazon Q Business ]
-
-[Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html) can answer questions, provide summaries, generate content, and securely complete tasks based on the data in your enterprise systems. It supports the general use case of using generative AI to start making the most of the information in your enterprise. With Amazon Q Business, you can make English-language queries about that information. It provides responses in a manner appropriate to your team’s needs. In addition, you can create lightweight, purpose-built [Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/purpose-built-qapps.html) within your Amazon Q Business Pro subscription.
+**Note**
+Amazon Q Business is no longer open to new customers as of July 31, 2026. For similar capabilities, explore [Amazon Quick Suite](https://aws.amazon.com/quick/), the next evolution of Amazon Q Business. Existing Amazon Q Business customers can continue to use the service.
+The Amazon Q Developer IDE plugins reach end of support on April 30, 2027, and new sign-ups ended on May 15, 2026. For similar capabilities, including agentic coding, chat, and Model Context Protocol (MCP) support, explore [Kiro](https://kiro.dev/).
 
 ------
-#### [ Amazon Q Developer ]
+#### [ Amazon Quick Suite ]
 
-With [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html), you can understand, build, extend, and operate AWS applications. The supported use cases include tasks that range from coding, testing, and upgrading applications, to diagnosing errors, performing security scanning and fixes, and optimizing AWS resources. The advanced, multistep planning and reasoning capabilities in Amazon Q Developer are aimed at reducing the work involved in common tasks (such as performing Java version upgrades). These capabilities can also help implement new features generated from developer requests.
-
-Amazon Q Developer features are available as part of your workflows in [other AWS services](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/features.html), including Amazon Q Developer in chat applications, Amazon CodeCatalyst, Amazon EC2, AWS Glue, and VPC Reachability Analyzer.
-
-[Chat with Amazon Q Developer](https://aws.amazon.com/blogs/devops/chat-about-your-aws-account-resources-with-amazon-q-developer/) to query and explore your AWS infrastructure directly from the AWS Management Console. Using natural language prompts to interact with your AWS account, you can get specific resource details and ask about relationships between resources.
+[Amazon Quick Suite](https://aws.amazon.com/quick/) is an AI-powered workspace that helps people find answers, create content, analyze data, and complete tasks across their enterprise data and applications. It's the next evolution of Amazon Q Business.
 
 ------
-#### [ Amazon Q in Quick ]
+#### [ Kiro ]
 
- [Amazon Q in Quick](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-gen-bi.html) is aimed at meeting the needs of a specific use case: getting actionable insights from your data by connecting Amazon Q to the Amazon Q Quick business intelligence (BI) service. You can use it to build visualizations of your data, summarize insights, answer data questions, and build data stories using natural language.
+[Kiro](https://kiro.dev/) is an agentic development environment that helps developers plan, build, test, and ship software, with agentic coding, chat, and Model Context Protocol (MCP) support.
 
 ------
-#### [ Amazon Q in Connect ]
+#### [ Generative AI in other AWS services ]
 
- [Amazon Q in Connect](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-q-connect.html) can automatically detect customer issues. It provides your customer service agents with contextual customer information along with suggested responses and actions for faster resolution of issues. It combines the capabilities of the [Amazon Connect](https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon-connect.html) cloud contact center service with Amazon Q. Amazon Q in Connect can use your real-time conversations with your customers, along with relevant company content, to recommend what to say or what actions an agent should take to assist customers.
+Many AWS services include built-in generative AI features. For example, [Amazon Connect](https://docs.aws.amazon.com/connect/latest/adminguide/amazon-q-connect.html) provides AI-powered recommendations for contact center agents, and Amazon SageMaker Unified Studio includes AI assistance for writing code and SQL. If an existing AWS service already includes the capability you need, consider starting there.
 
 ------
 
-**Amazon Bedrock — Build and scale your generative AI application with FMs**
+ **Amazon Bedrock: Build and scale generative AI applications with managed foundation models**
 
-If you're developing custom AI applications, need access to multiple foundation models, and want more control over the AI models and outputs, then [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) could be the service that meets your needs. Amazon Bedrock is a fully managed service for building generative AI applications, with support for  [popular foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html), including [Amazon Nova](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html), [Amazon Titan](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html), [Anthropic Claude](https://aws.amazon.com/bedrock/claude/), [DeepSeek-R1](https://huggingface.co/deepseek-ai/DeepSeek-R1), [Cohere Command & Embed](https://aws.amazon.com/bedrock/cohere-command-embed/), [AI21 Labs Jurassic](https://aws.amazon.com/bedrock/jurassic/), [Meta Llama](https://aws.amazon.com/bedrock/llama/), [Mistral AI](https://aws.amazon.com/bedrock/mistral/), and [Stable Diffusion XL](https://aws.amazon.com/bedrock/stable-diffusion/).
+[Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) is a fully managed, serverless service for building generative AI applications. It provides access to a broad selection of [foundation models (FMs)](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) from Amazon and leading providers, including [Amazon Nova](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html), Anthropic Claude, OpenAI, Meta Llama, Mistral AI, DeepSeek, Google Gemma, Qwen, Cohere, AI21 Labs, and Stability AI, through a single API. You don't manage any infrastructure, and with on-demand inference you pay for what you use, with no cost when your application is idle.
 
-Use the [ Amazon Bedrock Marketplace](https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-marketplace.html) to discover, test, and use over 100 popular, emerging, and specialized FMs. [Supported FMs](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) are updated on a regular basis.
+Because Amazon Bedrock offers model-independent API access, you can evaluate, switch, and upgrade models with minimal code changes. Supported models are updated regularly. Amazon Bedrock also provides what you need to build applications with security, privacy, and responsible AI, regardless of the model you choose.
 
-![Diagram showing Amazon Bedrock's broad choice of models, from Amazon and leading model providers.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/amazon-bedrock-models-feb-2025.jpg)
-
-In addition, Amazon Bedrock provides what you need to build generative AI applications with security, privacy, and responsible AI—regardless of the foundation model you choose. It also offers model-independent, single API access and the flexibility to use different foundation models and upgrade to the latest model versions, with minimal code changes.
+![Diagram showing Amazon Bedrock's broad choice of models, from Amazon and other model providers.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/amazon-bedrock-models-feb-2025.jpg)
 
  Learn more about the key features of Amazon Bedrock:
 
 ------
+#### [ Model choice and Marketplace ]
+
+Choose from serverless models in the Amazon Bedrock catalog, or use the [Amazon Bedrock Marketplace](https://docs.aws.amazon.com/bedrock/latest/userguide/amazon-bedrock-marketplace.html) to discover, test, and use more than 100 additional popular, emerging, and specialized FMs. Marketplace models are deployed to endpoints managed by Amazon SageMaker AI. Unlike the serverless catalog models, they run on instances you choose.
+
+------
 #### [ Model customization ]
 
- [Model customization](https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html) can deliver differentiated and personalized user experiences. To customize models for specific tasks, you can privately fine-tune FMs using your own labeled datasets. Custom models include capabilities such as fine-tuning and continued pre-training using unlabeled datasets. The list of FMs for which Amazon Bedrock supports fine-tuning includes Amazon Nova Micro, Lite, and Pro, Anthropic Claude 3 Haiku, Cohere Command, Meta Llama 2, Amazon Titan Text Lite and Express, Amazon Titan Multimodal Embeddings, and Amazon Titan Image Generator. The list of supported FMs is updated on an ongoing basis.
+[Model customization](https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html) can deliver differentiated experiences for your use case. Amazon Bedrock supports:
++ **Supervised fine-tuning:** Train a model on your own labeled examples to improve performance on specific tasks.
++ **Reinforcement fine-tuning:** Improve model alignment with your use case by defining reward functions (for example, with AWS Lambda or a model acting as a judge) instead of labeled input-output pairs.
++ **Distillation:** Transfer knowledge from a larger, more capable teacher model to a smaller, faster, and more cost-efficient student model.
++ **Continued pre-training:** Train a model on your own unlabeled data to make it more domain-specific.
 
-In addition, you can use [Amazon Bedrock Custom Model Import](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html) to bring your own custom models and use them within Amazon Bedrock.
+Support varies by customization method, model, and AWS Region, and the list of supported models is updated regularly. For the current list, see [Customize your model to improve its performance for your use case](https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html).
+
+With [Amazon Bedrock Custom Model Import](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html), you can bring custom models that you fine-tuned, adapted, or pre-trained elsewhere, such as in Amazon SageMaker AI, and run them in Amazon Bedrock with on-demand throughput. Custom Model Import supports a set of open-weight model architectures, and model weights must be in Hugging Face format. It's available in a limited set of AWS Regions and has size and context-length limits. For the supported architectures and current details, see [Custom Model Import](https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-import-model.html).
+
+------
+#### [ Cross-Region inference ]
+
+[Cross-Region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) profiles route your requests across AWS Regions to give you higher throughput and better resilience during traffic peaks. There are two types:
++ **Geographic cross-Region inference** keeps processing within a geographic boundary, such as the US, EU, or Asia Pacific. Use it when you have data residency requirements.
++ **Global cross-Region inference** can route requests to any supported commercial AWS Region worldwide. Per the [global cross-Region inference documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/global-cross-region-inference.html), it saves approximately 10% on input and output token pricing compared to geographic cross-Region inference.
+
+There's no additional routing cost. You pay based on the Region you call the inference profile from. Data stays on the AWS network and is encrypted in transit between Regions, and AWS CloudTrail logs each request in your source Region, including the Region where the request was processed. Provisioned Throughput isn't currently supported through inference profiles.
 
 ------
 #### [ Knowledge Bases ]
 
-[Amazon Bedrock Knowledge Bases ](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) is a fully managed capability that you can use to implement the entire Retrieval Augmented Generation (RAG) workflow—from ingestion to retrieval and prompt augmentation—without having to build custom integrations to data sources, and manage data flows. Session context management is built in, so your application can support multi-turn conversations. You can use the Retrieve API to fetch relevant results for a user query from knowledge bases.
+[Amazon Bedrock Knowledge Bases ](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) is a fully managed capability for implementing the full retrieval augmented generation (RAG) workflow, from ingestion to retrieval and prompt augmentation, without building custom integrations to your data sources. With RAG, a model can use up-to-date information from document repositories, databases, and APIs. Amazon Bedrock Knowledge Bases stores embeddings in vector stores such as Amazon OpenSearch Service Serverless, Amazon Aurora PostgreSQL, Amazon Neptune Analytics, Amazon S3 Vectors, Pinecone, and Redis Enterprise Cloud. It also connects to business data sources such as Salesforce, Confluence, and SharePoint.
 
-With RAG, you can provide a model with new knowledge or up-to-date info from multiple sources, including document repositories, databases, and APIs. For example, the model might use RAG to retrieve search results from Amazon OpenSearch Service or documents from Amazon Simple Storage Service. Amazon Bedrock Knowledge Bases fully manages this experience by connecting to your private data sources, including [Amazon Aurora](https://aws.amazon.com/rds/aurora/), [Amazon OpenSearch Serverless](https://aws.amazon.com/opensearch-service/features/serverless/), MongoDB, Pinecone, and Redis Enterprise Cloud. This list includes connectors for Salesforce, Confluence, and SharePoint (in preview), so you can access more business data to customize models for your specific needs.
-
-------
-#### [ Agents ]
-
- [Amazon Bedrock Agents ](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html) helps you plan and create multistep tasks using company systems and data sources—from answering customer questions about your product availability to taking their orders. You can create an agent by first selecting an FM and then providing it access to your enterprise systems, knowledge bases, and AWS Lambda functions to run your APIs securely. An agent analyzes the user request, and a Lambda function or your application can automatically call the necessary APIs and data sources to fulfill the request.
-
-Agents [can retain memory](https://aws.amazon.com/blogs/aws/agents-for-amazon-bedrock-now-support-memory-retention-and-code-interpretation-preview/) across multiple interactions to remember where you last left off and provide better recommendations based on prior interactions. Agents can also interpret code to tackle complex data-driven use cases, such as data analysis, data visualization, text processing, solving equations, and optimization problems.
+**Note**
+Starting September 30, 2026, you can't create new Confluence, SharePoint, Salesforce, or Web Crawler connectors on customer-managed knowledge bases. Existing connectors keep working. For new applications that need these connectors, we recommend Amazon Bedrock Managed Knowledge Base. For more information, see [Connect to Confluence for your knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/confluence-data-source-connector.html).
 
 ------
 #### [ Guardrails ]
 
-[Amazon Bedrock Guardrails ](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) evaluates user inputs and FM responses based on use case specific policies, and provides an additional layer of safeguards, regardless of the underlying FM. Using a short natural language description, you can use Amazon Bedrock Guardrails to define a set of topics to avoid within the context of your application. Guardrails detects and blocks user inputs and FM responses that fall into the restricted topics.
-
-Guardrails supports [contextual grounding checks](https://aws.amazon.com/blogs/aws/guardrails-for-amazon-bedrock-can-now-detect-hallucinations-and-safeguard-apps-built-using-custom-or-third-party-fms/), to detect hallucinations in model responses for applications using Retrieval Augmented Generation (RAG) and summarization applications. Contextual grounding checks add to the safety protection in Guardrails to make sure the LLM response is based on the right enterprise source data, and evaluates the LLM response to confirm that it’s relevant to the user’s query or instruction. Contextual grounding checks can detect and filter over 75% hallucinated responses for RAG and summarization workloads.
+[Amazon Bedrock Guardrails ](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html) evaluates user inputs and model responses against policies specific to your use case, regardless of the underlying model. You can block denied topics, filter harmful content, redact sensitive information, and use contextual grounding checks to detect hallucinated responses in RAG and summarization applications.
 
 ------
-#### [ Converse API ]
+#### [ Converse API and tool use ]
 
-Use the [Amazon Bedrock Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html) to create conversational applications that send and receive messages to and from an Amazon Bedrock model. For example, you can create a chatbot that maintains a conversation over many turns and uses a persona or tone customization that is unique to your needs, such as a helpful technical support assistant.
-
-------
-#### [ Tool use (function calling) ]
-
-[Tool use (function calling)](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html) gives a model access to tools that can help it generate responses for messages that you send to the model. For example, you might have a chat application that lets users find out the most popular song played on a radio station. To answer a request for the most popular song, a model needs a tool that can query and return the song information.
+Use the [Converse API](https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html) to build conversational applications with a consistent interface across models. With [tool use (function calling)](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html), a model can call tools that you define, such as APIs or databases, to generate its responses.
 
 ------
-#### [ Amazon Bedrock IDE ]
+#### [ Prompt management and Flows ]
 
-Use [Amazon Bedrock IDE](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock.html), a development experience in Amazon SageMaker Unified Studio (in preview), that lets you discover Amazon Bedrock models and build generative AI apps that use Amazon Bedrock models and features. For example, you can use a chat playground to try a [prompt](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/explore-prompts.html) with an Anthropic Claude model without having to write any code. Later, you can use Amazon Bedrock IDE to create a generative AI app that uses an Amazon Bedrock model and features, such as a knowledge base or a guardrail, again without having to write any code.
-
-------
-#### [ Prompt management ]
-
-Use Amazon Bedrock to create and save your own prompts using [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html), so that you can save time by applying the same prompt to different workflows. When you create a prompt, you can select a model to run inference on it and modify the inference parameters to use. You can include variables in the prompt so that you can adjust the prompt for different use case.
+Use [prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html) to create, version, and reuse prompts across workflows. Use [Amazon Bedrock Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html) (previously called Prompt Flows) to build generative AI workflows visually by linking prompts, models, knowledge bases, guardrails, and other AWS services such as AWS Lambda.
 
 ------
-#### [ Prompt flows ]
+#### [ Model evaluation ]
 
-[Prompt flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html) for Amazon Bedrock offers the ability for you to use supported FMs to build workflows by linking prompts, foundational models, and other AWS services to create comprehensive solutions.
+Use [Amazon Bedrock model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html) to compare models on your own data, with automatic metrics, human reviewers, or a model acting as a judge.
 
-With prompt flows, you can quickly build complex generative AI workflows using a visual builder. You can integrate with Amazon Bedrock offerings such as FMs, knowledge bases, and other AWS services such as AWS Lambda by transferring data between them. You can also deploy immutable workflows to move from testing to production in few clicks.
+------
+#### [ Amazon Bedrock in Amazon SageMaker Unified Studio ]
+
+[Amazon Bedrock in Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock.html) (previously called Amazon Bedrock IDE) lets you discover Amazon Bedrock models, try prompts in a playground, and build generative AI apps that use features such as knowledge bases and guardrails, with little or no code.
 
 ------
 
-**Amazon SageMaker AI (formerly Amazon SageMaker) — Build custom models and control the full ML lifecycle, from data preparation to model deployment and monitoring**
+**Note**
+Amazon Bedrock Agents is now Amazon Bedrock Agents Classic and is no longer open to new customers as of July 30, 2026. Existing customers can continue to use it. For new agent development, use Amazon Bedrock AgentCore. Your existing Amazon Bedrock models, Knowledge Bases, and Guardrails aren't affected.
 
-With [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html), you can build, train, and deploy machine learning models, including FMs, at scale. Consider this option when you have use cases that can benefit from extensive training, fine-tuning, and customization of foundation models. It also streamlines the sometimes-challenging task of evaluating which FM is the best fit for your use case.
+ **Amazon Bedrock AgentCore: Build and operate AI agents**
 
-Amazon SageMaker AI also provides infrastructure and purpose-built tools for use throughout the ML lifecycle, including integrated development environments (IDEs), distributed training infrastructure, governance tools, machine learning operations (MLOps) tools, inference options and recommendations, and model evaluation.
+Use [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html) to build, deploy, and operate AI agents securely at scale, using any framework or foundation model, including models hosted outside Amazon Bedrock. AgentCore became generally available on October 13, 2025. It provides modular services that you can use together or independently. These include Harness (a managed agent loop you can call with a single API), Runtime, Memory, Gateway (for turning APIs and Lambda functions into MCP tools), Identity, Code Interpreter, Browser, and Observability.
 
-![Diagram that provides an overview of SageMaker AI's key features, including access to foundatio models (FMs), building and customizing FMs, running inference, and implementing FMOps and governance](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-ai-overview.jpg)
+AgentCore works with open source agent frameworks such as the Strands Agents SDK (an open source framework from AWS), LangGraph, CrewAI, and LlamaIndex, and it supports protocols such as MCP and Agent2Agent (A2A).
 
-Use [Amazon SageMaker Partner AI Apps](https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps.html) to access generative AI and machine learning (ML) development applications built, published, and distributed by industry-leading application providers. Partner AI Apps are certified to run on SageMaker AI. With Partner AI Apps, you can improve how you build solutions based on foundation models (FM) and classic ML models without compromising the security of your sensitive data. The data stays completely within your trusted security configuration and is never shared with a third party.
+Consider how much agentic behavior your use case needs:
++ **Single model call:** For tasks that a model can complete in one request and response, such as content generation, summarization, or classification, call a foundation model directly through Amazon Bedrock.
++ **Single agent:** For tasks that require reasoning, tool use, or multiple steps, build an agent that can plan, call tools, and keep context. Use AgentCore to run the agent, and a framework such as Strands to define its logic.
++ **Multiple agents:** For complex workflows that benefit from specialized agents working together, use AgentCore Runtime with AgentCore Memory to share context across agents.
 
-SageMaker AI is part of the next generation of Amazon SageMaker, which includes:
-+ [Amazon SageMaker Unified Studio ](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/what-is-sagemaker-unified-studio.html) (in preview), a unified development experience that brings together AWS data, analytics, artificial intelligence (AI), and machine learning (ML) services.
-+ AWS tools for complete development workflows, including model development, generative AI app development, data processing, and SQL analytics, in a single governed environment. Create or join projects to collaborate with your teams, securely share AI and analytics artifacts, and access your data stored in Amazon Simple Storage Service (Amazon S3), Amazon Redshift, and more data sources through the [Amazon SageMaker Lakehouse](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/lakehouse.html).
+ **Options to host, customize, and train models**
 
-Explore key features of SageMaker AI that may help you determine when to use it:
+When you need to run inference on a model that isn't available in Amazon Bedrock, or you need more control over how a model is served, customized, or trained, AWS offers options with increasing levels of control and operational ownership. Start with the most basic question about your workload: do you only need *inference on available models*, or do you need to *customize or train models* (and then run inference on them)?
++ For inference on available models, from frontier model providers or open-weight model providers, Amazon Bedrock is the default starting point. It gives you a serverless, managed experience with no infrastructure to operate.
++ Amazon SageMaker AI, Amazon SageMaker HyperPod, self-managed infrastructure, and AWS Partner solutions in AWS Marketplace are deliberate choices. You choose one because a workload needs something beyond inference on an available model, such as a model that isn't offered as a managed service, deeper control, or training and customization.
 
-------
-#### [ Amazon SageMaker JumpStart ]
+Many organizations run several models (commercial and open-weight; text, multimodal, and other modalities), each chosen for a specific workload. Make this choice for each workload individually rather than once for your whole organization.
 
-[Amazon SageMaker JumpStart ](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html) is an ML hub that provides access to publicly available foundation models. Those models include Mistral, Llama 3, CodeLlama, and Falcon 2. They can be customized with advanced fine-tuning and deployment techniques such as Parameter Efficient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRA).
+For a detailed comparison of the managed-versus-control tradeoff, see [Amazon Bedrock or Amazon SageMaker AI?](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/bedrock-or-sagemaker.html)
 
-This following screenshot shows some of the available models in Amazon SageMaker JumpStart within the AWS Management Console.
+The following table summarizes when each hosting option fits, from the most managed experience to full control.
 
-![Diagram showing Amazon SageMaker JumpStart in the AWS Management Console, including a broad choice of models from Amazon and leading model providers.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-jumpstart-console.jpg)
+**Hosting options, from most managed to full control**
 
-------
-#### [ Amazon SageMaker Clarify ]
+| **Option** | **When it fits** |
+| --- | --- |
+| Amazon SageMaker AI inference endpoints | Hosting open-weight or custom models in standard formats with control over the serving stack, while AWS manages instances, deployment, autoscaling, and monitoring. |
+| Amazon SageMaker HyperPod | Large-scale training, one accelerator pool shared across training and inference, and advanced inference optimizations, while AWS manages cluster resiliency and node health. |
+| Self-managed on Amazon EC2, Amazon EKS, or Amazon ECS | Any model format or framework with maximum control, where you manage everything above the instance. |
 
- [Amazon SageMaker Clarify](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-foundation-model-evaluate.html) addresses the all-important decision of which foundation model to use. Use Amazon SageMaker Clarify to create model evaluation jobs. A model evaluation job evaluates and compares model quality and responsibility metrics for text-based foundation models from JumpStart. Model evaluation jobs also support the use of JumpStart models that have already been deployed to an endpoint.
-
-------
-#### [ Amazon SageMaker Canvas ]
-
-With [Amazon SageMaker Canvas](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas.html), you can use machine learning to generate predictions without writing any code. You can also use Amazon SageMaker Canvas in collaboration with Amazon Bedrock to fine-tune and deploy language models.
-
-[This blog post](https://aws.amazon.com/blogs/machine-learning/fine-tune-and-deploy-language-models-with-amazon-sagemaker-canvas-and-amazon-bedrock/) describes how you can use them to optimize customer interaction by working with your own datasets (such as your product FAQs) in Amazon Bedrock and Amazon SageMaker JumpStart The following diagram, from this blog post, demonstrates how Amazon SageMaker Canvas and Amazon Bedrock can be used together to fine-tune and deploy language models.
-
-![Diagram showing Amazon SageMaker Canvas and Amazon Bedrock used together to fine-tune and deploy language models.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/sagemaker-bedrock-scenario.jpg)
+Use the most managed option that supports the capabilities your workload needs.
 
 ------
-#### [ Amazon SageMaker Studio ]
+#### [ Amazon SageMaker AI ]
 
-Amazon SageMaker Studio is a web-based experience for running ML workflows. Studio offers a suite of integrated development environments (IDEs). These include Code Editor, based on Code-OSS, Visual Studio Code - Open Source, a new JupyterLab application, RStudio, and Amazon SageMaker Studio Classic. For more information, see [Applications supported in Amazon SageMaker Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-apps.html).
+With [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) (previously called Amazon SageMaker), you can build, train, customize, and deploy machine learning models, including foundation models, at scale. Consider it when you need to host models that aren't available in Amazon Bedrock, customize models beyond what Amazon Bedrock supports, or control how models are served.
 
-The web-based UI in Studio provides access to all SageMaker AI resources, including jobs and endpoints, in one interface. ML practitioners can also choose their preferred IDE to accelerate ML development. A data scientist can use JupyterLab to explore data and tune models. In addition, a machine learning operations (MLOps) engineer can use Code Editor with the pipelines tool in Studio to deploy and monitor models in production.
+Amazon SageMaker AI provides purpose-built tools for the full ML lifecycle, including IDEs, distributed training, model evaluation, MLOps, governance, and a range of inference options with recommendations. Key features for generative AI include:
++ [Amazon SageMaker JumpStart](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html): An ML hub with hundreds of open-weight and proprietary foundation models. You can deploy these models in a few steps and customize them with techniques such as Parameter-Efficient Fine-Tuning (PEFT) and Low-Rank Adaptation (LoRA).
++ [Amazon SageMaker AI inference](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html): Deploy models to managed real-time endpoints with autoscaling, or use [Serverless Inference](https://docs.aws.amazon.com/sagemaker/latest/dg/serverless-endpoints.html) for intermittent traffic without managing instances. Serverless Inference doesn't support GPUs, so it suits smaller models that run on CPU. Large foundation models typically need GPU-based real-time endpoints.
++ Model evaluation, the [Amazon SageMaker AI Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-apps.html) IDEs, and [Amazon SageMaker AI Partner AI Apps](https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps.html) that run within your Amazon SageMaker AI environment.
 
-Amazon SageMaker Studio includes generative AI assistance, powered by Amazon Q Developer right within your JupyterLab Integrated Development Environment (IDE). With Q Developer, you can access expert guidance on SageMaker AI features, code generation, and troubleshooting.
+Amazon SageMaker AI is part of the next generation of Amazon SageMaker, which also includes Amazon SageMaker Unified Studio, a single data and AI development environment.
+
+------
+#### [ Amazon SageMaker HyperPod ]
+
+Amazon SageMaker HyperPod provides resilient clusters for large-scale training and inference. It automatically detects and replaces unhealthy nodes, so long-running jobs can continue. HyperPod can move accelerator capacity between training and inference on the same cluster to improve utilization, and it supports advanced inference optimizations. For more information, see [Deploying models on Amazon SageMaker HyperPod](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment.html).
+
+------
+#### [ Self-managed on Amazon EC2, Amazon EKS, or Amazon ECS ]
+
+Run models on infrastructure you manage when you need full control over the model format, serving framework, and operating environment, or when you've standardized on a specific platform such as Kubernetes. You're responsible for deployment, scaling, patching, monitoring, and resiliency.
 
 ------
 
- **Infrastructure to build and train AI models**
+After you've decided that you need more than Amazon Bedrock offers, use these rules to choose:
++ **Amazon SageMaker AI:** Choose it for training, customization, and inference of models in standard formats when you want the most managed experience. Use Amazon SageMaker AI inference endpoints to serve the models.
++ **Amazon SageMaker HyperPod:** Choose it for models in nonstandard formats, or when you want more control over your training and inference frameworks, while AWS still manages the underlying compute and cluster resiliency.
++ **Self-managed on Amazon EC2, Amazon EKS, or Amazon ECS:** Choose it when you need full control over the training, customization, and inference process, with nothing between your team and the instances.
 
- AWS offers specialized, accelerated hardware for high performance ML training and inference.
-+ AWS Trainium2-powered [Amazon EC2 Trn2 instances](https://aws.amazon.com/ec2/instance-types/trn2/) and Trn2 UltraServers deliver the highest performance for AI training and inference on AWS.
-+  [AWS Trainium](https://aws.amazon.com/machine-learning/trainium/) is the second-generation ML accelerator that AWS has purpose-built for deep learning (DL) training of 100B\+ parameter models.
-+  [AWS Inferentia2-based Amazon EC2 Inf2 instances](https://aws.amazon.com/machine-learning/inferentia/) are designed to deliver high performance at the lowest cost in Amazon EC2 for your DL and generative AI inference applications.
-+  [Amazon EC2 P5 and P5e](https://aws.amazon.com/ec2/instance-types/p5/) instances, powered by NVIDIA H100 and NVIDIA H200 Tensor Core GPUs, which are well-suited for both training and inference tasks in machine learning.
-+  [Amazon EC2 G6e](https://aws.amazon.com/ec2/instance-types/g6e/) instances feature up to 8 NVIDIA L40S Tensor Core GPUs, and third generation AMD EPYC processors, for a wide range of graphics-intensive and machine learning use cases.
+You can also use generative AI solutions from AWS Partners through [AWS Marketplace](https://aws.amazon.com/marketplace/). These solutions range across the same spectrum of control. Buying through AWS Marketplace keeps the spend on your AWS bill. Before you route production traffic to a partner solution, review the partner's service level agreement (SLA), data handling, and security practices.
+
+ **Infrastructure for training and inference**
+
+ AWS offers accelerated compute for generative AI training and inference. You can use it through Amazon SageMaker AI, Amazon SageMaker HyperPod, or directly with Amazon EC2, Amazon EKS, Amazon ECS, and AWS Batch.
++ [AWS Trainium](https://aws.amazon.com/machine-learning/trainium/) provides AWS-designed AI chips for training and serving models. The latest generation, [Amazon EC2 Trn3 UltraServers](https://aws.amazon.com/ec2/instance-types/trn3/) powered by Trainium3, scales up to 144 Trainium3 chips in a single system and delivers higher performance and energy efficiency than Trn2 UltraServers for frontier-scale training and inference. Trn2 instances and UltraServers are also available.
++ [AWS Inferentia](https://aws.amazon.com/machine-learning/inferentia/) provides AWS-designed AI chips for inference. [Amazon EC2 Inf2 instances](https://aws.amazon.com/ec2/instance-types/inf2/), powered by up to 12 Inferentia2 chips, are designed for high-performance, cost-efficient deep learning and generative AI inference.
++ NVIDIA GPU instances: [Amazon EC2 P6 instances and P6e UltraServers](https://aws.amazon.com/ec2/instance-types/p6/) (NVIDIA Blackwell and Blackwell Ultra) for the most demanding training and inference workloads; [P5 instances](https://aws.amazon.com/ec2/instance-types/p5/) (NVIDIA H100 and H200) for training and inference; and [G6e instances](https://aws.amazon.com/ec2/instance-types/g6e/) (NVIDIA L40S) for cost-efficient inference and graphics workloads.
+
+AWS Trainium and AWS Inferentia use the AWS Neuron SDK, which supports PyTorch, JAX, and vLLM.
 
 ## Consider
 <a name="consider"></a>
 
-After you've decided on a generative AI service, choose the foundation model (FM) that gives you the best results for your use case.
+Before you consider specific services, answer these questions for each workload:
 
-Amazon Bedrock has a [ model evaluation capability](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html) that can assist in evaluating, comparing, and selecting the best FMs for your use case.
+1. **What do you need to do?** Use an assistant, build an application or agent, run inference on an existing model, or customize or train a model?
 
- Here are some critical factors to consider when choosing an appropriate FM for your use case:
+1. **Which models do you need?** Are they available in Amazon Bedrock, in Amazon SageMaker JumpStart, or only as weights you own?
 
-------
-#### [ Modality ]
+1. **Where must data be processed?** Which AWS Regions do you need, and do you have data residency requirements?
 
-**Identify use cases/modality**
+1. **What does your traffic look like?** Variable or spiky, or steady and predictable? What are your latency and throughput targets?
 
-**What it is:** Modality refers to the type of data the model processes: text, images (vision), or embeddings.
+1. **What do you already have?** Existing compute commitments, a standard platform (such as Kubernetes), or MLOps tooling?
 
-**Why it matters:** The choice of modality should align with the data that you're working with. For example, if your project involves processing natural language, a text-based model like Claude, Llama 3.1, or Titan Text G1 is suitable. If you want to create embeddings, then you might use a model like [Titan Embeddings G1](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html). Similarly, for image-related tasks, models such as Stable Diffusion XL, and Titan Image Generator v2, are more appropriate. Your use case might also involve considering your data source and the support for data source connectors, such as [those provided in Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-connectors.html).
+1. **Who operates it?** How much infrastructure and model-serving expertise does your team have?
 
-------
-#### [ Model size ]
-
-**Model Size**
-
-**What it is:** This criterion refers to the number of parameters in a model. A *parameter* is a configuration variable that is internal to the model. Its values can be estimated (trained) during the training phase from the given training data. Parameters are crucial as they directly define the model's capability to learn from data. Large models often have more than 50 billion parameters.
-
-**Why it matters:** The number of parameters is a key indicator of the model's complexity. More parameters mean that the model can capture more intricate patterns and nuances in the data, which generally leads to better performance. However, these models are not only expensive to train, but also require more computational resources to operate.
+The following criteria help you weigh those requirements against the generative AI options.
 
 ------
-#### [ Inference latency ]
+#### [ What you're building ]
 
-**Inference latency**
+**What it is:** The kind of work the service needs to support: employee productivity, a custom application or agent, or hosting and customizing models.
 
-**What it is:** *Inference speed*, or *latency*, is the time it takes for a model to process input (often measured in tokens) and return an output. This processing time is crucial when the model's responses are part of an interactive system, like an Amazon Q Developer in chat applications.
-
-**Why it matters:** Quick response times are essential for real-time applications such as interactive chatbots or *instant translation* services. These applications depend on the model's ability to process and respond to prompts rapidly to maintain a smooth user experience. Although larger FMs typically offer more detailed and accurate responses, their complex architectures can lead to slower inference speeds. This slower processing might frustrate users expecting immediate interaction.
-
-To address this challenge, you can choose models optimized for quicker responses, even if it means compromising somewhat on the responses' depth or accuracy.
+**Why it matters:** Employee productivity and software development assistance are served by an AI assistant such as Amazon Quick Suite or Kiro. Building your own application or agent points to Amazon Bedrock and Amazon Bedrock AgentCore. Hosting, customizing, or training models yourself points to Amazon SageMaker AI, Amazon SageMaker HyperPod, or self-managed infrastructure.
 
 ------
-#### [ Context window ]
+#### [ Model availability ]
 
-**Maximizing context window**
+**What it is:** Whether the foundation model you need is available as a managed, serverless model in Amazon Bedrock.
 
-**What it is:** A large language model's *context window* is the amount of text (in tokens) that the model can consider at any one time when generating responses.
-
-**Why it matters:** Larger context windows enable the model to remember and process more information in a single run. This ability is particularly valuable in complex tasks such as understanding long documents, engaging in detailed conversations, or generating contextually accurate text over larger spans.
-
-For example, in a conversation, a model with a larger context window can remember more of the earlier dialogue, and provide responses that are more relevant to the entire conversation. This leads to a more natural and satisfying user experience, as the model can maintain the thread of discussion without losing context.
+**Why it matters:** If your model is available in Amazon Bedrock, or you can bring it in with Amazon Bedrock Custom Model Import, you can use it without managing infrastructure. If the model isn't available, for example a specific open-weight model, a newer version, or a model in a nonstandard format, you'll need to host it. Use Amazon SageMaker AI or Amazon SageMaker HyperPod for models in standard formats, including those in Amazon SageMaker JumpStart. Use self-managed infrastructure for nonstandard or proprietary formats.
 
 ------
-#### [ Pricing ]
+#### [ Level of control ]
 
-**Pricing considerations**
+**What it is:** How much control you need over the serving engine, model configuration, customization pipeline, and underlying infrastructure.
 
-**What it is:** The cost of using an FM is influenced by the model's complexity and the model provider’s pricing structure.
-
-**Why it matters:** Deploying high-performance models often comes with high costs due to increased computational needs. While these models provide advanced capabilities, their operational expenses can be high, particularly for startups or smaller projects on tight budgets.
-
-Smaller, less resource-intensive models offer a more budget-friendly option without significantly compromising performance. Weigh the model’s cost against its benefits to ensure it fits within your project's financial constraints and gets you the best value for your investment.
+**Why it matters:** Amazon Bedrock manages model serving for you, which removes operational work but limits your control over the serving stack. If you need to tune the tradeoff between cost, latency, and throughput yourself, for example by choosing the inference engine, applying optimizations such as speculative decoding or custom quantization, or using specific accelerator types, use Amazon SageMaker AI inference, Amazon SageMaker HyperPod, or self-managed infrastructure. More control means more operational responsibility.
 
 ------
-#### [ Fine-tuning ]
+#### [ AWS Regions and data residency ]
 
-**Fine-tuning and continuous pre-training capability**
+**What it is:** Where your inference requests and data are processed, and whether the models and features you need are available there.
 
-**What it is:** Fine-tuning is a specialized training process in which a pre-trained model that has been trained on a large, generic dataset is further trained (or fine-tuned) on a smaller, specific dataset. This process adapts the model to particularities of the new data, improving its performance on related tasks. Continuous pre-training, on the other hand, involves extending the initial pre-training phase with additional training on new, emerging data that wasn't part of the original training set, helping the model stay relevant as data evolves. You can also use [Retrieval Augmented Generation (RAG)](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html) to retrieve data from outside an FM and augment your prompts by adding the relevant retrieved data in context.
+**Why it matters:** Model and feature availability varies by AWS Region. In Amazon Bedrock, cross-Region inference can increase available throughput:
++ If you can process data anywhere, global cross-Region inference provides the highest throughput at lower cost.
++ If you must keep processing within a geography such as the US or EU, use geographic cross-Region inference.
++ If you must keep processing within a single Region where your model isn't available in Amazon Bedrock, host the model in that Region with Amazon SageMaker AI, Amazon SageMaker HyperPod, or self-managed infrastructure.
 
-**Why it matters:** With fine-tuning, you can increase model accuracy by providing your own task-specific labeled training dataset and further specialize your FMs. With continued pre-training, you can train models using your own unlabeled data in a secure and managed environment. Continuous pre-training helps models become more domain-specific by accumulating more robust knowledge and adaptability beyond their original training.
-
-------
-#### [ Data quality ]
-
-**Data quality**
-
-Data quality is a critical factor in the success of a generative AI application. Consider the following quality factors:
-+ **Relevance:** Ensure that the data you use for training your generative AI model is relevant to your application. Irrelevant or noisy data can lead to poor model performance.
-+ **Accuracy:** The data should be accurate and free from errors. Inaccurate data can mislead your model and result in incorrect outputs.
-+ **Consistency:** Maintain consistency in your data. Inconsistencies in the data can confuse the model and hinder its ability to learn patterns.
-+ **Bias and fairness:** Be aware of biases in your data, as they can lead to biased model outputs. Take steps to mitigate bias and help ensure fairness in your generative AI system.
-+ **Annotation and labeling:** If your application requires labeled data, verify that the annotations or labels are of high quality and created by experts.
-+ **Data preprocessing:** Prepare your data by cleaning and preprocessing it. This might involve text tokenization, image resizing, or other data-specific transformations to make it suitable for training.
+Provisioned Throughput isn't supported through cross-Region inference profiles. A custom or imported model that runs on Provisioned Throughput can't use cross-Region inference to get more capacity. Check each model's regional availability in [Supported foundation models in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) and Amazon SageMaker AI instance availability in your target Regions before you finalize your architecture.
 
 ------
-#### [ Data quantity ]
+#### [ Capacity and throughput ]
 
-**Data quantity**
+**What it is:** Whether you can get enough inference throughput or accelerator capacity where you need it. Capacity can override every other criterion in this guide: the right option on paper isn't the right option if it can't get enough capacity in the Region you need.
 
- Quantity along with quality goes hand in hand. Consider the following quantity factors:
-+ **Sufficient data:** In most cases, more data is better. Larger datasets allow your model to learn a wider range of patterns and generalize better. However, the required amount of data can vary depending on the complexity of your application.
-+ **Data augmentation:** If you have limitations on the quantity of available data, consider data augmentation techniques. These techniques involve generating additional training examples by applying transformations to existing data. For example, you can rotate, crop, or flip images or paraphrase text to create more training samples.
-+ **Balancing data:** Ensure that your dataset is balanced, especially if your generative AI application is expected to produce outputs with equal representation across different categories or classes. Imbalanced datasets can lead to biased model outputs.
-+ **Transfer learning:** For certain applications, you can use pre-trained models. With transfer learning, you can use models that were trained on massive datasets and fine-tune them with your specific data, often requiring less data for fine-tuning.
-
-It's also important to continuously monitor and update your dataset as your generative AI applications evolve and as new data becomes available.
+**Why it matters:** For Amazon Bedrock, check the service quotas for your models and Region, consider cross-Region inference for higher throughput, and use Provisioned Throughput for workloads that need consistent performance. For instance-based options (Amazon SageMaker AI, Amazon SageMaker HyperPod, and self-managed), accelerator availability varies by instance type and Region. For predictable capacity, plan ahead with options such as reserved capacity. For example, [Amazon SageMaker AI training plans](https://docs.aws.amazon.com/sagemaker/latest/dg/reserve-capacity-with-training-plans.html) let you reserve accelerator capacity for training jobs, HyperPod clusters, and inference endpoints. If a specific accelerator instance type is in short supply in a Region, it can affect Amazon SageMaker AI endpoints, HyperPod, and self-managed instances alike, so confirm capacity across all the options you're considering, not just one.
 
 ------
-#### [ Quality of response ]
+#### [ Cost and usage patterns ]
 
-**Quality of response**
+**What it is:** How pricing models line up with your traffic.
 
-**What it is:** The most essential criterion is the quality of response. This is where you evaluate the output of a model based on several quality metrics, including accuracy, relevance, toxicity, fairness, and robustness against adversarial attacks.
-+ *Accuracy* measures how often the model's responses are correct (and you would typically measure this against a pre-configured standard or baseline).
-+ *Relevance* assesses how appropriate the responses are to the context or question posed.
-+ *Toxicity* checks for harmful biases or inappropriate content in the model's outputs.
-+ *Fairness* evaluates whether the model's responses are unbiased across different groups.
-+ *Robustness* indicates how well the model can handle intentionally misleading or malicious inputs designed to confuse it.
-
-**Why it matters:** The reliability and safety of model outputs are paramount, especially in applications that interact directly with users or make automated decisions that can affect people's lives. High-quality responses ensure user trust and satisfaction, reducing the risk of miscommunication and enhancing the overall user experience, thus earning the trust of your customers.
+**Why it matters:** With Amazon Bedrock on-demand inference, you pay per token with no idle cost, which suits variable, spiky, or unpredictable traffic. Instance-based options charge for provisioned compute whether or not it's in use, so they become more cost-efficient only at sustained, high utilization, or when you can apply existing compute commitments. Compare per-token cost against the fully loaded cost of the instances you'd need, including the cost of operating them, by using your own request volumes and utilization data. Before you count on savings from an existing compute commitment, check which services and resources it covers.
 
 ------
+#### [ Operational responsibility ]
+
+**What it is:** How much infrastructure and model-serving work your team can take on.
+
+**Why it matters:** Amazon Bedrock has the lowest operational burden. Amazon SageMaker AI manages the instances and deployment while you manage the model stack. Amazon SageMaker HyperPod handles cluster resiliency while you manage orchestration. Self-managed infrastructure gives you full control and full responsibility. Choose the most managed option that gives you the control you need.
+
+------
+#### [ Customization needs ]
+
+**What it is:** Whether, and how deeply, you need to adapt a model to your data and tasks.
+
+**Why it matters:** Many use cases need no customization: good prompts and RAG with Amazon Bedrock Knowledge Bases are often enough. If you need more, Amazon Bedrock supports supervised fine-tuning, reinforcement fine-tuning, distillation, and continued pre-training for supported models. For models or techniques that Amazon Bedrock doesn't support, or for full fine-tuning and training from scratch, use Amazon SageMaker AI, Amazon SageMaker HyperPod, or self-managed infrastructure.
+
+------
+#### [ Using more than one service ]
+
+**What it is:** Combining services within one architecture.
+
+**Why it matters:** The best answer isn't always a single service, and architectures that combine services are common and healthy. Plan for more than one service if you need to balance speed of delivery, regulatory requirements, capacity, cost per token, or a mix of open-weight and proprietary models. A common pattern is to use Amazon Bedrock for frontier and proprietary models, and Amazon SageMaker AI or Amazon SageMaker HyperPod for fine-tuned or open-weight models, with both behind a common gateway layer and consistent safeguards such as Amazon Bedrock Guardrails. Because models and service capabilities change quickly, review your choices regularly.
+
+------
+#### [ Validate before you commit ]
++ **Use your own data.** Validate routing logic, performance, and the economics of reserved capacity on your own workload and utilization data, not on published behavior or list prices.
++ **Plan constrained, multi-Region workloads early.** The hardest cases combine several constraints: residency that is required per Region, a core model that can't be imported into Amazon Bedrock, and several Regions with limited capacity. Global cross-Region inference can't help where residency must stay within a Region. Treat this as one coordinated capacity-planning exercise across all Regions from the start, rather than a series of separate platform changes made Region by Region.
+
+------
+
+ **Choosing a foundation model**
+
+After you've chosen a service, choose the foundation model (FM) that gives you the best results for your use case. [Amazon Bedrock model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html) and Amazon SageMaker AI model evaluation can help you compare models on your own data. Consider the following factors:
++ **Modality:** The types of input and output you need, such as text, images, video, audio, or embeddings. For example, use a text model such as Amazon Nova 2 Lite or Anthropic Claude for language tasks; an embeddings model such as Amazon Nova Multimodal Embeddings or [Amazon Titan Text Embeddings V2](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html) for search and RAG; an image model such as Amazon Nova Canvas or Stability AI Stable Image for image generation; and Amazon Nova Reel or Luma AI Ray2 for video generation.
++ **Quality of response:** Accuracy, relevance, robustness, toxicity, and fairness of outputs for your tasks. This is usually the most important criterion.
++ **Inference latency:** How quickly the model responds. Smaller models are usually faster and cheaper; larger models might give more detailed responses.
++ **Context window:** How much information the model can consider in a single request, which matters for long documents and long conversations.
++ **Reasoning and tool use:** Whether the model supports multistep reasoning and calling tools, which matters for agents.
++ **Price:** The cost per token or per request compared to the value the model delivers. Smaller models can offer strong results at lower cost.
++ **Customization support:** Whether the model supports the customization method you need.
++ **Lifecycle:** How long the model version remains available. Amazon Bedrock models move through Active, Legacy, and End-of-Life states, so plan for upgrades. See [Model lifecycle](https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle.html).
+
+If you plan to customize a model, also consider the quality and quantity of your training data. Relevance, accuracy, consistency, balance, bias, and labeling quality all directly affect results:
++ **Quality:** Use data that is relevant, accurate, and consistent. Be aware of bias and fairness, verify that any labels are high quality, and clean and preprocess the data before training.
++ **Quantity:** Larger, balanced datasets help a model learn a wider range of patterns and generalize better. If data is limited, consider data augmentation or transfer learning, and continue to monitor and update your dataset as your application evolves.
 
 ## Choose
 <a name="choose"></a>
 
-|  Generative AI category  |  What is it optimized for?  |  Generative AI services  |
+ **Quick decision path for inference**
+
+For inference workloads, start with Amazon Bedrock. Then check the following, in order. Each one is a common reason to choose a different option:
+
+1. **Is the model unavailable in Amazon Bedrock?** If you have access to the model (for example, an open-weight model) and it can't be brought in with Amazon Bedrock Custom Model Import, host it on Amazon SageMaker AI or Amazon SageMaker HyperPod (standard formats) or self-managed infrastructure (nonstandard or proprietary formats). If no AWS option meets your timeline, consider an AWS Partner inference provider.
+
+1. **Do you need deeper control?** If you need to tune the inference engine, the serving stack, or the training and customization pipeline to manage cost, latency, and throughput yourself, choose Amazon SageMaker AI, Amazon SageMaker HyperPod, or self-managed infrastructure.
+
+1. **Is the model unavailable in the Region you need?** If residency rules require a Region where the model isn't offered, and cross-Region inference doesn't meet those rules, host it in that Region on Amazon SageMaker AI, Amazon SageMaker HyperPod, or self-managed infrastructure. If no AWS option meets your timeline, consider an AWS Partner inference provider.
+
+1. **Do you have existing compute commitments or steady, high volume?** Provisioned instances on Amazon SageMaker AI or Amazon SageMaker HyperPod can cost less than per-token pricing. Check which services your commitments cover before you rely on them.
+
+**Capacity can override all of these.** Whatever the checks point to, confirm that the option can get enough capacity in your Regions.
+
+ **Match needs to services**
+
+The following table maps common needs to AWS services. For inference workloads, start at the top of the hosting options and move down only when a requirement calls for more control.
+
+**Matching needs to AWS services**
+
+| **Need** | **Recommended service** | **Consider instead** |
 | --- | --- | --- |
-| Amazon Q | Generating code and providing responses to questions across business data by connecting to enterprise data repositories to summarize the data logically, analyze trends, and engage in dialogue about the data. |  [Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html) <br /> [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)  |
-| Amazon Bedrock | Offering a choice of foundation models, customizing them with your own data, and building generative AI applications with the builder tools that Amazon Bedrock offers. | [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)<br />[Amazon Bedrock IDE](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock.html)<br />[Amazon Nova](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html)<br />[Amazon Titan](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html) |
-| Amazon SageMaker AI | Building, training, and deploying machine learning models, including foundation models, at scale. | [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/gs.html) |
-| Infrastructure for FM training and inference | Offering services that maximize the price performance benefits in FM training and inference. |  [AWS Trainium](https://docs.aws.amazon.com/dlami/latest/devguide/trainium.html) <br /> [AWS Inferentia](https://docs.aws.amazon.com/eks/latest/userguide/inferentia-support.html)  |
+| Boost employee productivity with AI across enterprise data | Amazon Quick Suite | Generative AI features built into the AWS services you already use |
+| AI assistance for software development | Kiro | None |
+| Build a generative AI application using leading foundation models, with no infrastructure to manage | Amazon Bedrock | Amazon SageMaker AI, if your model isn't available in Amazon Bedrock |
+| Ground model responses in your own data (RAG) | Amazon Bedrock Knowledge Bases | A custom RAG pipeline on Amazon SageMaker AI or self-managed infrastructure |
+| Build, deploy, and operate AI agents | Amazon Bedrock AgentCore | None |
+| Apply consistent safeguards across models | Amazon Bedrock Guardrails | None |
+| Customize a supported model with fine-tuning, reinforcement fine-tuning, or distillation | Amazon Bedrock model customization | Amazon SageMaker AI, for other models or techniques |
+| Run inference on an open-weight or custom model that isn't in Amazon Bedrock | Amazon SageMaker AI inference endpoints (standard formats) | Amazon Bedrock Custom Model Import (supported architectures); self-managed (nonstandard formats) |
+| Control the serving engine and optimize cost, latency, and throughput | Amazon SageMaker AI inference endpoints or Amazon SageMaker HyperPod | Self-managed on Amazon EC2, Amazon EKS, or Amazon ECS |
+| Share accelerators between large-scale training and inference | Amazon SageMaker HyperPod | Self-managed on Amazon EKS |
+| Keep processing within a geography | Amazon Bedrock with geographic cross-Region inference | In-Region hosting on Amazon SageMaker AI, if the model isn't available |
+| Keep processing within a single Region where your model isn't available in Amazon Bedrock | Amazon SageMaker AI or Amazon SageMaker HyperPod in that Region | Self-managed in that Region |
+| Get the highest throughput and lowest per-token cost without residency limits | Amazon Bedrock with global cross-Region inference | None |
+| Run steady, high-volume inference, or use existing compute commitments | Amazon SageMaker AI or Amazon SageMaker HyperPod | Amazon Bedrock Provisioned Throughput; self-managed |
+| Use any model format or framework with full control | Self-managed on Amazon EC2, Amazon EKS, or Amazon ECS | Amazon SageMaker HyperPod |
+| Train or pre-train large models | Amazon SageMaker HyperPod | Amazon SageMaker AI training jobs; self-managed |
+| Get the best price-performance for training and inference infrastructure | AWS Trainium and AWS Inferentia | Amazon EC2 GPU instances |
+| Combine frontier and open-weight models in one architecture | Amazon Bedrock and Amazon SageMaker AI behind a common gateway | None |
+| Fill a temporary model or capacity gap that no AWS option meets today | AWS Partner inference provider in AWS Marketplace, behind a large language model (LLM) gateway with Amazon Bedrock as the primary target | Hosting in the needed Region on Amazon SageMaker AI or self-managed |
+
+ **Common scenarios**
+
+The following scenarios are common starting points. Validate them against your own requirements.
++ **Always use the latest frontier models.** If you mainly use leading proprietary models and want to adopt new versions quickly, Amazon Bedrock is a good fit. Check model availability and throughput in your Regions.
++ **Optimize cost with a mix of models.** If you use frontier models for some tasks and a few open-weight models for others to reduce cost, use Amazon Bedrock for the frontier models and Amazon SageMaker AI for the open-weight models. Together they give you the most managed experience across both.
++ **Meet strict regulatory or long-term contractual requirements.** If you must keep a specific model version in production for a long time, even after newer models replace it, host open-weight or custom models on Amazon SageMaker AI or Amazon SageMaker HyperPod. This gives you control over the model lifecycle, and you can reserve capacity in the Regions you need.
 
 ## Use
 <a name="use"></a>
 
-Now that we've covered the criteria you need to apply in choosing an AWS generative AI service, you can select which services are optimized for your needs and explore how you might get started using each of them.
+Now that you've reviewed the criteria for choosing an AWS generative AI service, you can select the services that fit your needs and explore how to get started with each one.
 
 ------
-#### [ Amazon Q Business ]
-+ **What is Amazon Q Business?**
+#### [ Amazon Quick Suite ]
 
-  Get an overview of Amazon Q Business, with explanations of what it is, how it works, and how to get started using it.
+**Note**
+Amazon Q Business is no longer open to new customers as of July 31, 2026. For similar capabilities, explore [Amazon Quick Suite](https://aws.amazon.com/quick/), the next evolution of Amazon Q Business. Existing customers can continue to use the service.
++ **Get started with Amazon Quick Suite**
 
-   [Explore the guide](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html)
+  Learn about the AI-powered workspace that combines business intelligence, AI-assisted chat, workflow automation, and research.
 
-+ **Create an Amazon Q Business application**
+  [Explore the Amazon Quick Suite getting started guide](https://docs.aws.amazon.com/quick/latest/userguide/getting-started.html)
 
-  Learn how to create your first Amazon Q Business application in either the AWS Management Console or using the command line interface (CLI).
++ **Amazon Q Business availability change**
 
-  [Explore the guide](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-app.html)
+  Learn how to migrate from Amazon Q Business to Amazon Quick Suite.
 
-+ **Combine Amazon Q Business and AWS IAM Identity Center to build generative AI apps**
-
-  Build private and secure enterprise generative AI apps with Amazon Q Business and AWS IAM Identity Center.
-
-   [Read the blog post](https://aws.amazon.com/blogs/machine-learning/build-private-and-secure-enterprise-generative-ai-apps-with-amazon-q-business-and-aws-iam-identity-center/)
+  [Explore the Amazon Q Business availability change guide](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html)
 
 ------
-#### [ Amazon Q Developer ]
-+ **What is Amazon Q Developer?**
+#### [ Kiro ]
 
-  Get an overview of Amazon Q Developer, with explanations of what it is, how it works, and how to get started using it.
+**Note**
+The Amazon Q Developer IDE plugins reach end of support on April 30, 2027, and new sign-ups ended on May 15, 2026. For similar capabilities, including agentic coding, chat, and Model Context Protocol (MCP) support, explore [Kiro on the Kiro website](https://kiro.dev/).
++ **Get started with Kiro**
 
-   [Explore the guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)
+  Use Kiro in the IDE, CLI, web, or mobile to plan features with specs, fix bugs, and connect tools with MCP.
 
-+ **Understanding tiers of service for Amazon Q Developer**
+  [Explore the documentation on the Kiro website](https://kiro.dev/docs/getting-started/)
 
-  Review the following information to understand the tiers of service for Amazon Q Developer, including Amazon Q Developer Pro and Amazon Q Developer at the free tier.
++ **Migrate from Amazon Q Developer**
 
-   [Explore the guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-tiers.html)
+  Learn how to move from the Amazon Q Developer IDE plugins to Kiro.
 
-+ **Working with agentic AI**
-
-  Use the Builder Center for fast access to key articles, blog posts, videos, and tips on building, deploying, and scaling AI agents with AWS.
-
-   [Explore agentic AI in the Builder Center](https://aws.amazon.com/developer/generative-ai/amazon-q/)
+  [Explore the Amazon Q Developer end of support guide](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-developer-ide-end-of-support.html)
 
 ------
 #### [ Amazon Bedrock ]
 + **What is Amazon Bedrock?**
 
-  Learn how to use this fully managed service to make foundation models (FMs) from Amazon and third parties available for your use through a unified API.
+  Learn how to use this fully managed service to access foundation models through a single API.
 
-   [Explore the guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)
+  [Explore the introduction to Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)
+
++ **Supported foundation models**
+
+  See which models are available, with their capabilities and Regions.
+
+  [Explore the supported foundation models guide](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html)
+
++ **Cross-Region inference**
+
+  Learn how to increase throughput with geographic and global cross-Region inference profiles.
+
+  [Explore the cross-Region inference guide](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html)
+
++ **Customize models**
+
+  Learn about fine-tuning, reinforcement fine-tuning, distillation, and continued pre-training.
+
+  [Explore the model customization guide](https://docs.aws.amazon.com/bedrock/latest/userguide/custom-models.html)
 
 + **Frequently asked questions about Amazon Bedrock**
 
-  Get answers to the most commonly-asked questions about Amazon Bedrock, including how to use agents, security considerations, details on Amazon Bedrock software development kits (SDKs), Retrieval Augmented Generation (RAG), how to use model evaluation, and how billing works.
+  Get answers to the most commonly asked questions about Amazon Bedrock.
 
-   [Read the FAQs](https://aws.amazon.com/bedrock/faqs/)
-
-+ **Guidance for generating product descriptions with Amazon Bedrock**
-
-  Learn how to use Amazon Bedrock as part of a solution to automate your product review and approval process for an ecommerce marketplace or retail website.
-
-   [Explore the solution](https://aws.amazon.com/solutions/guidance/generating-product-descriptions-with-amazon-bedrock/)
+  [Read the FAQs](https://aws.amazon.com/bedrock/faqs/)
 
 ------
-#### [ Amazon Bedrock in SageMaker Unified Studio ]
+#### [ Amazon Bedrock in Amazon SageMaker Unified Studio ]
 
 **Note**
-Amazon Bedrock IDE is renamed to Amazon Bedrock in SageMaker Unified Studio.
-+  **What is Amazon Bedrock in SageMaker Unified Studio?**
+Amazon Bedrock IDE is renamed to Amazon Bedrock in Amazon SageMaker Unified Studio.
++ **What is Amazon Bedrock in Amazon SageMaker Unified Studio?**
 
-   Use this IDE to discover Amazon Bedrock models, and build generative AI apps that use Amazon Bedrock models and features.
+  Discover Amazon Bedrock models and build generative AI apps with little or no code.
 
-   [Explore the guide](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock.html)
+  [Explore the Amazon Bedrock in Amazon SageMaker Unified Studio guide](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/bedrock.html)
 
-+  **Build generative AI applications with Amazon Bedrock in SageMaker Unified Studio**
++ **Build a chat agent app with Amazon Bedrock**
 
-  This blog post describes how you can build applications using a wide array of top performing models. It then explains how to evaluate and share your generative AI apps with Amazon Bedrock IDE.
+  Build a chat agent app that lets users chat with an Amazon Bedrock model through a conversational interface.
 
-   [Read the blog](https://aws.amazon.com/blogs/machine-learning/build-generative-ai-applications-quickly-with-amazon-bedrock-ide-in-amazon-sagemaker-unified-studio/)
+  [Explore the chat agent app tutorial](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/create-chat-app.html)
 
-+  **Building a chat app with Amazon Bedrock in SageMaker Unified Studio**
+------
+#### [ Amazon Bedrock AgentCore ]
++ **What is Amazon Bedrock AgentCore?**
 
-  Build a chat agent app that allows users to chat with an Amazon Bedrock model through a conversational interface.
+  Learn how to build, deploy, and operate AI agents securely at scale.
 
-   [Explore the guide](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/create-chat-app.html)
+  [Explore the Amazon Bedrock AgentCore guide](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html)
+
++ **Get started with Amazon Bedrock AgentCore**
+
+  Follow the steps to set up AgentCore and deploy your first agent from the command line.
+
+  [Explore the AgentCore getting started guide](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli.html)
 
 ------
 #### [ Amazon SageMaker AI ]
@@ -413,124 +493,92 @@ Amazon Bedrock IDE is renamed to Amazon Bedrock in SageMaker Unified Studio.
 
   Learn how you can use this fully managed machine learning (ML) service to build, train, and deploy ML models into a production-ready hosted environment.
 
-   [Explore the guide](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
+  [Explore the Amazon SageMaker AI guide](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
 
-+ **Get started with Amazon SageMaker AI**
++ **Get started with Amazon SageMaker JumpStart foundation models**
 
-  Learn how to join an Amazon SageMaker AI domain, giving you access to Amazon SageMaker AI Studio and RStudio on SageMaker AI.
+  Deploy and customize open-weight models.
 
-   [Explore the guide](https://docs.aws.amazon.com/sagemaker/latest/dg/gs.html)
+  [Explore the Amazon SageMaker JumpStart foundation models guide](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models.html)
 
-+ **Get started with Amazon SageMaker JumpStart**
++ **Deploy models for inference**
 
-  Explore Amazon SageMaker JumpStart solution templates that set up infrastructure for common use cases, and executable example notebooks for machine learning with SageMaker AI.
+  Learn about Amazon SageMaker AI inference options.
 
-   [Explore the guide](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html)
+  [Explore the model deployment guide](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html)
+
++ **Deploy inference endpoints with reserved GPU capacity**
+
+  Use training plans to secure capacity for inference.
+
+  [Read the blog post on the AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/deploy-sagemaker-ai-inference-endpoints-with-set-gpu-capacity-using-training-plans/)
 
 ------
-#### [ Amazon SageMaker Unified Studio ]
-+ **What is Amazon SageMaker Unified Studio?**
+#### [ Amazon SageMaker HyperPod ]
++ **Deploy models on Amazon SageMaker HyperPod**
 
-  Learn how you can use Amazon SageMaker Unified Studio (in preview) to build, deploy, execute, and monitor workflows from a single interface.
+  Use HyperPod for inference with autoscaling and intelligent routing.
 
-   [Explore the guide](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/what-is-sagemaker-unified-studio.html)
+  [Explore the HyperPod model deployment guide](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment.html)
 
-+ **An integrated experience for all your data and AI with Amazon SageMaker Unified Studio**
++ **Best practices to run inference on Amazon SageMaker HyperPod**
 
-  Learn about the new Amazon SageMaker Unified Studio and explore how it unifies your analytic workloads.
+  Learn recommended practices for serving models on resilient HyperPod clusters.
 
-   [Read the blog post](https://aws.amazon.com/blogs/big-data/an-integrated-experience-for-all-your-data-and-ai-with-amazon-sagemaker-unified-studio-preview/)
-
-+ **Get started with Amazon SageMaker Unified Studio**
-
-  Learn how to gain access to Amazon SageMaker Unified Studio, create a project, and then add members to the project and use the sample JupyterLab notebook to begin building with a variety of tools and resources.
-
-   [Explore the guide](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started.html)
+  [Read the inference best practices post on the AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/best-practices-to-run-inference-on-amazon-sagemaker-hyperpod/)
 
 ------
 #### [ Amazon Nova ]
-+ **What is Amazon Nova?**
++ **What is Amazon Nova 2?**
 
-  Explore Amazon Nova, a new generation of foundation models available on Amazon Bedrock.
+  Explore the Amazon Nova 2 family of foundation models available in Amazon Bedrock.
 
-   [Explore the guide](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html)
-
-+ **Introducing Amazon Nova foundation models: Frontier intelligence and industry leading price performance**
-
-  Learn about the new Amazon Nova models, including examples of using Amazon Nova models to analyze complex documents and videos, understand charts and diagrams, generate engaging video content, and build sophisticated AI agents.
-
-   [Read the blog post](https://aws.amazon.com/blogs/aws/introducing-amazon-nova-frontier-intelligence-and-industry-leading-price-performance/)
+  [Explore the Amazon Nova 2 guide](https://docs.aws.amazon.com/nova/latest/nova2-userguide/what-is-nova-2.html)
 
 + **Get started with Amazon Nova in the Amazon Bedrock console**
 
-  Learn how to use the playgrounds in the AWS Management Console to submit a text prompt to Amazon Nova models and generate a text or image response
+  Learn how to use the playgrounds in the AWS Management Console to submit a prompt to Amazon Nova models and generate a text or image response.
 
-   [Explore the guide](https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html)
-
-------
-#### [ Amazon Titan ]
-+ **Amazon Titan in Amazon Bedrock overview**
-
-  Get an overview of Amazon Titan foundation models (FMs) to support your use cases.
-
-   [Explore the guide](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html)
-
-+ **Cost-effective document classification using the Amazon Titan Multimodal Embeddings Model**
-
-  Learn how you can use this model to categorize and extract insights from high volumes of documents of different formats. This blog explores how you can use it to help determine the next set of actions to take, depending on the type of document.
-
-   [Read the blog post](https://aws.amazon.com/blogs/machine-learning/cost-effective-document-classification-using-the-amazon-titan-multimodal-embeddings-model/)
-
-+ **Build generative AI applications with Amazon Titan Text Premier, Amazon Bedrock, and AWS CDK**
-
-  Explore building and deploying two sample applications powered by Amazon Titan Text Premier in this blog post.
-
-   [Read the blog post](https://aws.amazon.com/blogs/machine-learning/build-generative-ai-applications-with-amazon-titan-text-premier-amazon-bedrock-and-aws-cdk/)
+  [Explore the Amazon Nova getting started guide](https://docs.aws.amazon.com/nova/latest/userguide/getting-started-console.html)
 
 ------
-#### [ AWS Trainium ]
-+ **Overview of AWS Trainium**
+#### [ AWS Trainium and AWS Inferentia ]
++ **Amazon EC2 Trn3 UltraServers**
 
-  Learn about AWS Trainium, the second-generation machine learning (ML) accelerator that AWS purpose built for deep learning training of 100B\+ parameter models. Each Amazon EC2 Trn1 instance deploys up to 16 AWS Trainium accelerators to deliver a high-performance, low-cost solution for deep learning (DL) training in the cloud.
+  Learn about Trn3 UltraServers, powered by AWS Trainium3, for frontier-scale training and inference.
 
-   [Explore the guide](https://aws.amazon.com/machine-learning/trainium/)
+  [Explore Amazon EC2 Trn3 UltraServers](https://aws.amazon.com/ec2/instance-types/trn3/)
 
-+ **Recommended Trainium Instances**
++ **Amazon EC2 Inf2 instances**
 
-  Explore how AWS Trainium instances are designed to provide high performance and cost efficiency for deep learning model inference workloads.
+  Learn how Amazon EC2 Inf2 instances, powered by AWS Inferentia2, deliver cost-efficient generative AI inference.
 
-   [Explore the guide](https://docs.aws.amazon.com/dlami/latest/devguide/trainium.html)
+  [Explore Amazon EC2 Inf2 instances](https://aws.amazon.com/ec2/instance-types/inf2/)
 
-+ **Scaling distributed training with AWS Trainium and Amazon EKS**
++ **Use AWS Inferentia with Amazon EKS**
 
-  If you're deploying your deep learning (DL) workloads using Amazon Elastic Kubernetes Service (Amazon EKS), learn how you can benefit from the general availability of Amazon EC2 Trn1 instances powered by AWS Trainium—a purpose-built ML accelerator optimized to provide a high-performance, cost-effective, and massively scalable platform for training DL models in the cloud.
+  Create an Amazon EKS cluster with nodes running Amazon EC2 Inf2 instances for machine learning inference.
 
-   [Read the blog post](https://aws.amazon.com/blogs/machine-learning/scaling-distributed-training-with-aws-trainium-and-amazon-eks/)
+  [Explore the AWS Inferentia with Amazon EKS guide](https://docs.aws.amazon.com/eks/latest/userguide/inferentia-support.html)
 
 ------
-#### [ AWS Inferentia ]
-+ **Overview of AWS Inferentia**
+#### [ Amazon EC2 GPU instances ]
++ **Amazon EC2 P6 instances**
 
-  Understand how AWS designs accelerators to deliver high performance at the lowest cost for your deep learning (DL) inference applications.
+  Learn about P6 instances and P6e UltraServers, accelerated by NVIDIA Blackwell and Blackwell Ultra GPUs, for demanding training and inference workloads.
 
-   [Explore the guide ](https://aws.amazon.com/machine-learning/inferentia/)
-
-+ **AWS Inferentia2 builds on AWS Inferentia1 by delivering 4x higher throughput and 10x lower latency**
-
-  Understand what AWS Inferentia2 is optimized for and how it was designed to deliver higher performance, while lowering the cost of LLMs and generative AI inference.
-
-   [Read the blog post](https://aws.amazon.com/blogs/machine-learning/aws-inferentia2-builds-on-aws-inferentia1-by-delivering-4x-higher-throughput-and-10x-lower-latency/)
-
-+ **Machine learning inference using AWS Inferentia**
-
-  Learn how to create an Amazon EKS cluster with nodes running Amazon EC2 Inf1 instances and optionally deploy a sample application. Amazon EC2 Inf1 instances are powered by AWS Inferentia chips, which are custom built by AWS to provide high-performance and low-cost inference in the cloud.
-
-   [Explore the guide](https://docs.aws.amazon.com/eks/latest/userguide/inferentia-support.html)
+  [Explore Amazon EC2 P6 instances](https://aws.amazon.com/ec2/instance-types/p6/)
 
 ------
 
 ## Explore
 <a name="explore"></a>
++  **Generative AI inference architecture and best practices on AWS**
+
+   Prescriptive guidance for choosing and designing generative AI inference architectures.
+
+   [Read the guidance](https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-inference-architecture-and-best-practices-on-aws/amazon-bedrock.html)
+
 +  **Architecture diagrams**
 
    These reference architecture diagrams show examples of AWS AI and ML services in use.
@@ -547,30 +595,42 @@ Amazon Bedrock IDE is renamed to Amazon Bedrock in SageMaker Unified Studio.
 
    Explore vetted solutions and architectural guidance for common use cases for AI and ML services.
 
-   [ Explore solutions](https://aws.amazon.com/architecture/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=content-type%23solution&awsf.methodology=*all&awsf.tech-category=tech-category%23ai-ml&awsf.industries=*all&awsf.business-category=*all)
+   [ Explore solutions](https://aws.amazon.com/solutions/ai/)
+
++  **AWS Builder Center**
+
+   Articles, videos, and tips from AWS and the builder community on building, deploying, and scaling AI agents and generative AI applications.
+
+   [Explore the Builder Center](https://builder.aws.com/)
+
++  **Related decision guides**
+
+   Explore related decision guides for machine learning and for choosing between Amazon Bedrock and SageMaker AI.
+
+   [Choosing an AWS machine learning service](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/ml-guide.html)
+
+   [Amazon Bedrock or Amazon SageMaker AI?](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/bedrock-or-sagemaker.html)
 
 ## Resources
 <a name="resources"></a>
 
- **Public foundation models**
+ **Foundation models**
 
-Supported foundation models are updated on a regular basis, and currently include:
-+ [Anthropic Claude](https://aws.amazon.com/bedrock/claude/)
-+ [Cohere Command & Embed](https://aws.amazon.com/bedrock/cohere-command-embed/)
-+ [AI21 Labs Jurassic](https://aws.amazon.com/bedrock/jurassic/)
-+ [Meta Llama](https://aws.amazon.com/bedrock/llama/)
-+ [ Mistral AI](https://aws.amazon.com/bedrock/mistral/)
-+ [Stable Diffusion XL ](https://aws.amazon.com/bedrock/stable-diffusion/)
+Amazon Bedrock provides access to foundation models from Amazon and leading providers through a single API. The list is updated regularly. For the current list, with capabilities and Regions, see [Supported foundation models in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html). Providers currently include:
 + [Amazon Nova](https://aws.amazon.com/ai/generative-ai/nova/)
-+ [Amazon Titan](https://aws.amazon.com/bedrock/titan/)
++ [Anthropic Claude](https://aws.amazon.com/bedrock/claude/)
++ OpenAI
++ [Meta Llama](https://aws.amazon.com/bedrock/llama/)
++ [Mistral AI](https://aws.amazon.com/bedrock/mistral/)
++ DeepSeek
++ Google Gemma
++ Qwen
++ [Cohere Command & Embed](https://aws.amazon.com/bedrock/cohere-command-embed/)
++ [AI21 Labs](https://aws.amazon.com/bedrock/jurassic/)
++ [Stability AI](https://aws.amazon.com/bedrock/stable-diffusion/)
 
-Use Amazon Bedrock and Amazon SageMaker AI to experiment with a variety of foundation models, and privately customize them with your data. To explore generative AI quickly, you also have the option of using [PartyRock, an Amazon Bedrock Playground](https://partyrock.aws/). PartyRock is a generative AI app building playground with which you can experiment hands-on with prompt engineering.
+Use Amazon Bedrock and Amazon SageMaker AI to experiment with a variety of foundation models, and privately customize them with your data. To explore generative AI quickly, you can also use [PartyRock, an Amazon Bedrock Playground](https://partyrock.aws/). PartyRock is a generative AI app building playground where you can experiment hands-on with prompt engineering.
 
  **Associated blog posts**
-+  [ Build private and secure enterprise generative AI apps with Amazon Q Business and IAM Identity Center](https://aws.amazon.com/blogs/machine-learning/build-private-and-secure-enterprise-generative-ai-apps-with-amazon-q-business-and-aws-iam-identity-center/)
-+  [ Amazon Q Developer, now generally available, includes previews of new capabilities to reimagine developer experience](https://aws.amazon.com/blogs/aws/amazon-q-developer-now-generally-available-includes-new-capabilities-to-reimagine-developer-experience/)
-+  [ Chat about your AWS account resources with Amazon Q Developer](https://aws.amazon.com/blogs/devops/chat-about-your-aws-account-resources-with-amazon-q-developer/)
-+  [ Build enterprise-grade applications with natural language using AWS App Studio (preview)](https://aws.amazon.com/blogs/aws/build-custom-business-applications-without-cloud-expertise-using-aws-app-studio-preview/)
 +  [ Amazon Bedrock model evaluation is now generally available](https://aws.amazon.com/blogs/aws/amazon-bedrock-model-evaluation-is-now-generally-available/)
-+  [ Build generative AI applications with Amazon Bedrock Studio (preview)](https://aws.amazon.com/blogs/aws/build-generative-ai-applications-with-amazon-bedrock-studio-preview/)
 +  [ Fine-tune and deploy language models with Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/fine-tune-and-deploy-language-models-with-amazon-sagemaker-canvas-and-amazon-bedrock/)

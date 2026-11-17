@@ -97,7 +97,7 @@ Required: Yes
  **ResourceType**
 The type of resource to monitor.
 Type: String
-Valid Values: `VPC | Subnet | NetworkInterface | TransitGateway | TransitGatewayAttachment | RegionalNatGateway`
+Valid Values: `VPC | Subnet | NetworkInterface | TransitGateway | TransitGatewayAttachment | RegionalNatGateway | CoreNetwork | CoreNetworkEdge | CoreNetworkAttachment`
 Required: Yes
 
  **TagFieldSpecification.N**

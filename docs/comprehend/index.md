@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/comprehend/index.html
 title: 'Amazon Comprehend Documentation'
 canonical_url: https://docs.aws.amazon.com/comprehend/
 source: aws-documentation
-generated_on: 2026-11-12
+generated_on: 2026-11-16
 ---
 
 # Amazon Comprehend Documentation

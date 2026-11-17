@@ -219,6 +219,7 @@ If you build your own automation on failure context, treat every member as optio
 Note the following when you use failure context:
 + Image Builder returns failure context only for images that failed. A successful image and an image that you cancelled don't have it.
 + A failed image carries both `reason` and `failureContext`. Use `reason` for a readable summary of the failure, and `failureContext` to locate it.
++ An AWS CLI, SDK, or Tools for PowerShell version that predates `failureContext` omits the field from the response without an error. For the AWS CLI, use version 2.36.45 or later. The `reason` text appears in every version.
 + If a component uses the `ExecuteDocument` action to run a nested document, failure context identifies the component that Image Builder ran from your recipe, not the nested document.
 + Error messages in failure context are bounded in length and can be truncated. The component logs hold the complete output.
 + Failure context reports the first step that failed. If more than one step failed, review the workflow step executions and the component logs for the rest.

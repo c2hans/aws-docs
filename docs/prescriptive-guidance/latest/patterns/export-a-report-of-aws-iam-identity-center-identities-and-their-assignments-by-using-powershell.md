@@ -10,9 +10,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ex
 ## Summary
 <a name="export-a-report-of-aws-iam-identity-center-identities-and-their-assignments-by-using-powershell-summary"></a>
 
-When you use AWS IAM Identity Center (successor to AWS Single Sign-On) to centrally manage single sign-on (SSO) access to all of your Amazon Web Services (AWS) accounts and cloud applications, reporting and auditing those assignments through the AWS Management Console can be tedious and time consuming. This is especially true if you’re reporting on permissions for a user or group across dozens or hundreds of AWS accounts.
+When you use [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/) (successor to AWS Single Sign-On) to centrally manage single sign-on (SSO) access to all of your AWS accounts and cloud applications, reporting and auditing those assignments through the AWS Management Console can be tedious and time-consuming. This is especially true when you report on permissions for a user or group across dozens or hundreds of AWS accounts.
 
-For many, the ideal tool to view this information would be in a spreadsheet application, such as Microsoft Excel. This can help you filter, search, and visualize the data for your entire organization, managed by AWS Organizations.
+Many users prefer to view this information in a spreadsheet application, such as Microsoft Excel. A spreadsheet helps you filter, search, and visualize the data for your entire organization, which you manage with [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html).
 
 This pattern describes how to use AWS Tools for PowerShell to generate a report of SSO identity configurations in IAM Identity Center. The report is formatted as a CSV file, and it includes the identity name (principal), identity type (user or group), accounts the identity can access, and permission sets. After generating this report, you can open it in your preferred application to search, filter, and audit the data as needed. The following image shows sample data in a spreadsheet application.
 
@@ -20,16 +20,17 @@ This pattern describes how to use AWS Tools for PowerShell to generate a report 
 
 |
 |
-| Important: Because this report contains sensitive information, we highly recommend you store it securely and share it only on a need-to-know basis. |
+| Important: This report contains sensitive information. Store it securely and share it only on a need-to-know basis. |
 | --- |
 
 ## Prerequisites and limitations
 <a name="export-a-report-of-aws-iam-identity-center-identities-and-their-assignments-by-using-powershell-prereqs"></a>
 
 **Prerequisites**
++ An active AWS account
 + IAM Identity Center and AWS Organizations, configured and enabled.
 + PowerShell, installed and configured. For more information, see [Installing PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2) (Microsoft documentation).
-+ AWS Tools for PowerShell, installed and configured. For performance reasons, we highly recommend that you install the modularized version of AWS Tools for PowerShell, called `AWS.Tools`. Each AWS service is supported by its own individual, small module. In the PowerShell shell, enter the following commands to install the modules needed for this pattern: `AWS.Tools.Installer`, `Organizations`, `SSOAdmin`, and `IdentityStore`.
++ AWS Tools for PowerShell, installed and configured. For performance reasons, we recommend that you install the modularized version of AWS Tools for PowerShell, called `AWS.Tools`. Each AWS service is supported by its own individual, small module. In the PowerShell shell, enter the following commands to install the modules needed for this pattern: `AWS.Tools.Installer`, `Organizations`, `SSOAdmin`, and `IdentityStore`.
 
   ```
   Install-Module AWS.Tools.Installer
@@ -37,9 +38,9 @@ This pattern describes how to use AWS Tools for PowerShell to generate a report 
   ```
 
   For more information, see [Install AWS.Tools on Windows](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up-windows.html#ps-installing-awstools) or [Install AWS.Tools on Linux or macOS](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up-linux-mac.html#install-aws.tools-on-linux-macos) (AWS Tools for PowerShell documentation). If you receive an error when installing the modules, see the [Troubleshooting](#export-a-report-of-aws-iam-identity-center-identities-and-their-assignments-by-using-powershell-troubleshooting) section of this pattern.
-+ AWS Command Line Interface (AWS CLI) or the AWS SDK must be previously configured with working credentials by doing one of the following:
-  + Use the AWS CLI `aws configure` For more information, see [Quick configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config) (AWS CLI documentation).
-  + Configure AWS CLI or AWS Cloud Development Kit (AWS CDK) to get temporary access through an AWS Identity and Access Management (IAM) role. For more information, see [Getting IAM role credentials for CLI access](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtogetcredentials.html) (IAM Identity Center documentation).
++ Configure the AWS Command Line Interface (AWS CLI) or the AWS SDK with working credentials by doing one of the following:
+  + Run the AWS CLI `aws configure` command. For more information, see [Quick configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config) (AWS CLI documentation).
+  + Configure the AWS CLI or AWS Cloud Development Kit (AWS CDK) to get temporary access through an AWS Identity and Access Management (IAM) role. For more information, see [Getting IAM role credentials for CLI access](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtogetcredentials.html) (IAM Identity Center documentation).
 + A named profile for the AWS CLI that has saved credentials for an IAM principal that:
   + Has access to the AWS Organizations management account or the delegated administrator account for IAM Identity Center
   + Has the `AWSSSOReadOnly` and `AWSSSODirectoryReadOnly` AWS managed policies applied to it
@@ -47,10 +48,10 @@ This pattern describes how to use AWS Tools for PowerShell to generate a report 
   For more information, see [Using named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles) (AWS CLI documentation) and [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) (IAM documentation).
 
 **Limitations**
-+ The target AWS accounts must be managed as an organization in AWS Organizations.
++ You must manage the target AWS accounts as an organization in AWS Organizations.
 
 **Product versions**
-+ For all operating systems, it is recommended that you use [PowerShell version 7.0](https://github.com/powershell/powershell) or later.
++ For all operating systems, we recommend that you use [PowerShell version 7.0](https://github.com/powershell/powershell) or later.
 
 ## Architecture
 <a name="export-a-report-of-aws-iam-identity-center-identities-and-their-assignments-by-using-powershell-architecture"></a>
@@ -63,7 +64,7 @@ This pattern describes how to use AWS Tools for PowerShell to generate a report 
 
 1. The script assumes the named profile for AWS CLI. This grants access to IAM Identity Center.
 
-1. The script retrieves the SSO identity configurations from IAM Identity Center.
+1. The script retrieves the single sign-on (SSO) identity configurations from IAM Identity Center.
 
 1. The script generates a CSV file in the same directory on the local workstation where the script is saved.
 
@@ -97,7 +98,7 @@ This pattern describes how to use AWS Tools for PowerShell to generate a report 
 | --- | --- |
 | `The term ‘Get-<parameter>’ is not recognized as the name of a cmdlet, function, script file, or operable program.` error | AWS Tools for PowerShell or its modules are not installed. In the PowerShell shell, enter the following commands to install AWS Tools for PowerShell and the modules needed for this pattern: `AWS.Tools.Installer`, `Organizations`, `SSOAdmin`, and `IdentityStore`.<pre>Install-Module AWS.Tools.Installer<br />Install-AWSToolsModule -Name Organizations, SSOAdmin, IdentityStore</pre> |
 | `No credentials specified or obtained from persisted/shell defaults` error | In *Prepare the script* in the [Epics](#export-a-report-of-aws-iam-identity-center-identities-and-their-assignments-by-using-powershell-epics) section, confirm that you have correctly entered the `ProfileName` and `Region` variables. Make sure that the settings and credentials in the named profile have sufficient permissions to administer IAM Identity Center. |
-| `Authenticode Issuer …` error when installing the AWS.Tools modules | Add the `-SkipPublisherCheck` parameter to the end of the `Install-AWSToolsModule` command. |
+| `Authenticode Issuer …` error when installing the AWS.Tools modules | This error means that PowerShell could not match the publisher (code-signing) certificate of the module that you are installing with the certificate of a version that is already installed. Resolve the cause instead of skipping the check:1. Confirm that you are installing from the trusted PowerShell Gallery source. Run `Get-PSRepository -Name PSGallery` and verify that `SourceLocation` is the PowerShell Gallery URL (https://www.powershellgallery.com/api/v2).<br />2. Check for older or conflicting versions of the AWS Tools for PowerShell modules, which can be signed with a different certificate. Run `Get-InstalledModule -Name AWS.Tools.*, AWSPowerShell*` to list the installed versions.<br />3. Remove the conflicting versions, and then install the modules again. Run `Uninstall-AWSToolsModule -All`. If the AWSPowerShell or AWSPowerShell.NetCore module is present, uninstall it by running `Uninstall-Module -AllVersions`. Then run `Install-AWSToolsModule -Name Organizations, SSOAdmin, IdentityStore`.The `-SkipPublisherCheck` parameter skips publisher signature validation, and installing unsigned or untrusted modules is a supply-chain risk. Use this parameter only if the previous steps don't resolve the error, only after you confirm that the module comes from the trusted PowerShell Gallery source, and only for that single installation: `Install-AWSToolsModule -Name Organizations, SSOAdmin, IdentityStore -SkipPublisherCheck` |
 | `Get-ORGAccountList : Assembly AWSSDK.SSO could not be found or loaded.` error | This error can occur when named AWS CLI profiles are specified, AWS CLI is configured to authenticate users with IAM Identity Center, and AWS CLI is configured to automatically retrieve refreshed authentication tokens. To resolve this error, do the following:1. Enter the following command to confirm that the `SSO` and `SSOOIDC` modules are installed.<pre>Install-AWSToolsModule SSO, SSOOIDC</pre><br />2. Insert the following lines into the script below the `param()` block.<pre>Import-Module AWS.Tools.SSO </pre><pre>Import-Module AWS.Tools.SSOOIDC</pre> |
 
 ## Related resources
@@ -110,9 +111,9 @@ This pattern describes how to use AWS Tools for PowerShell to generate a report 
 <a name="export-a-report-of-aws-iam-identity-center-identities-and-their-assignments-by-using-powershell-additional"></a>
 
 In the following script, determine whether you need to update the values for the following parameters:
-+ If you’re using a named profile in AWS CLI to access the account in which IAM Identity Center is configured, update the `$ProfileName` value.
++ If you’re using a named profile in the AWS CLI to access the account in which IAM Identity Center is configured, update the `$ProfileName` value.
 + If IAM Identity Center is deployed in a different AWS Region than the default Region for your AWS CLI or AWS SDK configuration, update the `$Region` value to use the Region where IAM Identity Center is deployed.
-+ If neither of these situations apply, then no script update is required.
++ If neither situation applies, you don’t need to update the script.
 
 ```
 param (

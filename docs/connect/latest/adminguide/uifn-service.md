@@ -69,11 +69,11 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Iceland | 00-800-XXXX-XXXX<br />National reachability: all fixed; Iceland Telecom, IMC, Vodafone mobile networks. | 10-20 |
 | Israel | Dialing format:+  LANLI: 012800XXXXXXX <br />+  BEZEQ: 013800XXXXXXX <br />+  BARAK: 014800XXXXXXX <br />National reachability: full | 20-50 |
 | Italy | 00-800-XXXX-XXXX<br />National reachability: all fixed networks, including Vatican and San Marino | 10-15 |
-| Japan | Dialing format:+  **KDDI**: 001-010-800-XXXX-XXXX <br />**SoftBank**: 0061-010-800-XXXX-XXXX <br />National reachability: full  | 20-40 |
+| Japan | 0061-010-800-XXXX-XXXX<br />National reachability: full  | 20-40 |
 | Latvia | 00-800-XXXX-XXXX<br />National reachability: full | 10-15 |
 | Lithuania | 00-800-XXXX-XXXX<br />National reachability: all fixed networks; Telia LT mobile | 15-30 |
 | Luxembourg | 00-800-XXXX-XXXX<br />National reachability: full | 10-15 |
-| Macao | 00-800-XXXX-XXXX<br />National reachability: full | 15-25 |
+| Macao | 00-800-XXXX-XXXX<br />National reachability: full | N/A |
 | North Macedonia | 00-800-XXXX-XXXX<br />National reachability: MakTel fixed, T-Mobile network | 40-60 |
 | Malta | 00-800-XXXX-XXXX<br />National reachability: GO and VANILLA fixed networks. GO mobile networks. | 10-15 |
 | Martinique | 00-800-XXXX-XXXX<br />National reachability: full | 30-60 |
@@ -91,7 +91,7 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Slovakia | 00-800-XXXX-XXXX<br />National reachability: full | 15-30 |
 | Slovenia | 00-800-XXXX-XXXX<br />National reachability: full | 15-30 |
 | South Africa | 00-800-XXXX-XXXX<br />National reachability: partial<br />Not reachable from MTN and prepaid subscribers. | 10-15 |
-| South Korea | 002-800-XXXX-XXXX<br />National reachability: full | 10-20 |
+| South Korea | 002-800-XXXX-XXXX<br />National reachability: full | N/A |
 | Spain | 00-800-XXXX-XXXX<br />National reachability: full<br />Concurrent calls: 100 concurrent calls | 10-15 |
 | Switzerland | 00-800-XXXX-XXXX<br />National reachability: full | 10-15 |
 | Taiwan | 00-800-XXXX-XXXX<br />National reachability: full | 10-15 |

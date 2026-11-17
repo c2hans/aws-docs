@@ -12,10 +12,13 @@ The order of each element in a data type structure is not guaranteed. Applicatio
 
 The following data types are supported:
 +  [APIErrorType](API_APIErrorType.md)
++  [CrossAccountPrimaryType](API_CrossAccountPrimaryType.md)
++  [CrossAccountReplicaEntry](API_CrossAccountReplicaEntry.md)
 +  [ExternalSecretRotationMetadataItem](API_ExternalSecretRotationMetadataItem.md)
 +  [Filter](API_Filter.md)
 +  [ReplicaRegionType](API_ReplicaRegionType.md)
 +  [ReplicationStatusType](API_ReplicationStatusType.md)
++  [ResourcePolicySummary](API_ResourcePolicySummary.md)
 +  [RotationRulesType](API_RotationRulesType.md)
 +  [SecretListEntry](API_SecretListEntry.md)
 +  [SecretValueEntry](API_SecretValueEntry.md)

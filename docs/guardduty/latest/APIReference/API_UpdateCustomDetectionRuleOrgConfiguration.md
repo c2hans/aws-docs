@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 # UpdateCustomDetectionRuleOrgConfiguration
 <a name="API_UpdateCustomDetectionRuleOrgConfiguration"></a>
 
-Updates the organization-level configuration for a custom detection rule, including the mode and include/exclude account lists.
+Replaces the include and exclude account lists of an existing organization-level configuration for a custom detection rule. Updating a dry run configuration restarts its 14-day expiry.
+
+This operation doesn't change the mode of the configuration. To change the mode, delete the configuration with `DeleteCustomDetectionRuleOrgConfiguration`, and then create a configuration in the new mode with `CreateCustomDetectionRuleOrgConfiguration`.
 
 ## Request Syntax
 <a name="API_UpdateCustomDetectionRuleOrgConfiguration_RequestSyntax"></a>
@@ -52,7 +54,7 @@ Length Constraints: Fixed length of 12.
 Required: No
 
  ** [mode](#API_UpdateCustomDetectionRuleOrgConfiguration_RequestSyntax) **   <a name="guardduty-UpdateCustomDetectionRuleOrgConfiguration-request-mode"></a>
-The execution mode of the organization configuration. Valid values: `LIVE` \| `DRY_RUN`.
+The execution mode of the organization configuration to update. This value selects the configuration and doesn't change its mode. Valid values: `LIVE` \| `DRY_RUN`.
 Type: String
 Valid Values: `LIVE | DRY_RUN`
 Required: Yes

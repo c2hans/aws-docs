@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/engine-releases
 # Amazon Neptune Engine Version 1.2.0.1 (2022-10-26)
 <a name="engine-releases-1.2.0.1"></a>
 
-As of 2022-10-26, engine version 1.2.0.1 is being generally deployed. Please note that it takes several days for a new release to become available in every region.
+As of 2022-10-26, AWS deploys engine version 1.2.0.1 to all Regions. It takes several days for a new release to become available in every Region.
 
 **Note**
 **If upgrading from an engine version earlier than 1.2.0.0:**

@@ -41,7 +41,7 @@ In some cases when you use the `TempTable` storage engine, the temporary data mi
 You can set the [temptable\_max\_mmap](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_temptable_max_mmap) parameter to choose whether the data overflows to memory-mapped temporary files or to InnoDB internal temporary tables on disk. The different data formats and overflow criteria of these overflow mechanisms can affect query performance. They do so by influencing the amount of data written to disk and the demand on disk storage throughput.
 
 Aurora MySQL version 3 stores the overflow data in the following way:
-+ On the writer DB instance, data that overflows to InnoDB internal temporary tables or memory-mapped temporary files resides in local storage on the instance.
++ On the writer DB instance, data that overflows to memory-mapped temporary files resides in local storage on the instance. Data that overflows to InnoDB on-disk internal temporary tables resides in the shared Aurora cluster volume.
 + On reader DB instances, overflow data always resides in memory-mapped temporary files in local storage.
 
   Read-only instances can't store any data on the Aurora cluster volume.

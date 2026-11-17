@@ -10,7 +10,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Assess query performance for migrating SQL Server databases to MongoDB Atlas on AWS](assess-query-performance-for-migrating-sql-server-databases-to-mongodb-atlas-on-aws.md)
 + [Automate database tasks in SQL Server Express on Amazon EC2 by using AWS Lambda and Task Scheduler](automate-database-tasks-in-sql-server-express-edition-running-on-amazon-ec2.md)
 + [Configure read-only routing in Always On availability groups in SQL Server on AWS](configure-read-only-routing-in-an-always-on-availability-group-in-sql-server-on-aws.md)
-+ [Configure Windows authentication for Amazon RDS for Microsoft SQL Server using AWS Managed Microsoft AD](configure-windows-authentication-for-amazon-rds-using-microsoft-ad.md)
 + [Create AWS CloudFormation templates for AWS DMS tasks using Microsoft Excel and Python](create-aws-cloudformation-templates-for-aws-dms-tasks-using-microsoft-excel-and-python.md)
 + [Export a Microsoft SQL Server database to Amazon S3 by using AWS DMS](export-a-microsoft-sql-server-database-to-amazon-s3-by-using-aws-dms.md)
 + [Export Amazon RDS for SQL Server tables to an S3 bucket by using AWS DMS](export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.md)

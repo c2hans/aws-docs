@@ -5,23 +5,25 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_C
 # CreateSecret
 <a name="API_CreateSecret"></a>
 
-Creates a new secret. A *secret* can be a password, a set of credentials such as a user name and password, an OAuth token, or other secret information that you store in an encrypted form in Secrets Manager. The secret also includes the connection information to access a database or other service, which Secrets Manager doesn't encrypt. A secret in Secrets Manager consists of both the protected secret data and the important information needed to manage the secret.
+Creates a new secret. A *secret* can be a password, a set of credentials such as a user name and password, an OAuth token, or other secret information that you store in an encrypted form in Secrets Manager. The secret also includes the connection information to access a database or other service. Secrets Manager does not encrypt this connection information. A secret in Secrets Manager consists of both the encrypted secret versions and the metadata that Secrets Manager uses to manage the secret.
 
 For secrets that use *managed rotation*, you need to create the secret through the managing service. For more information, see [Secrets Manager secrets managed by other AWS services](https://docs.aws.amazon.com/secretsmanager/latest/userguide/service-linked-secrets.html).
 
 For information about creating a secret in the console, see [Create a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_create-basic-secret.html).
 
-To create a secret, you can provide the secret value to be encrypted in either the `SecretString` parameter or the `SecretBinary` parameter, but not both. If you include `SecretString` or `SecretBinary` then Secrets Manager creates an initial secret version and automatically attaches the staging label `AWSCURRENT` to it.
+To create a secret, you can provide the secret value to be encrypted in either the `SecretString` parameter or the `SecretBinary` parameter, but not both. If you include `SecretString` or `SecretBinary`, then Secrets Manager creates an initial secret version and automatically attaches the staging label `AWSCURRENT` to it.
 
 For database credentials you want to rotate, for Secrets Manager to be able to rotate the secret, you must make sure the JSON you store in the `SecretString` matches the [JSON structure of a database secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_secret_json_structure.html).
 
-If you don't specify an AWS KMS encryption key, Secrets Manager uses the AWS managed key `aws/secretsmanager`. If this key doesn't already exist in your account, then Secrets Manager creates it for you automatically. All users and roles in the AWS account automatically have access to use `aws/secretsmanager`. Creating `aws/secretsmanager` can result in a one-time significant delay in returning the result.
+If you don't specify an AWS KMS encryption key, Secrets Manager uses the AWS managed key `aws/secretsmanager`. If this key doesn't already exist in your account, then Secrets Manager creates it for you automatically. All users and roles in the AWS account automatically have access to use `aws/secretsmanager`. Creating `aws/secretsmanager` can result in a one-time delay to complete the secret creation.
 
 If the secret is in a different AWS account from the credentials calling the API, then you can't use `aws/secretsmanager` to encrypt the secret, and you must create and use a customer managed AWS KMS key.
 
+To create a cross-account replica secret, include `CrossAccountPrimaryARN`. The replica must use a customer managed AWS KMS key, and can't include `AddReplicaRegions`, `Description`, `SecretBinary`, `SecretString`, or `Type`.
+
 Secrets Manager generates a CloudTrail log entry when you call this action. Do not include sensitive information in request parameters except `SecretBinary` or `SecretString` because it might be logged. For more information, see [Logging Secrets Manager events with AWS CloudTrail](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieve-ct-entries.html).
 
- **Required permissions: ** `secretsmanager:CreateSecret`. If you include tags in the secret, you also need `secretsmanager:TagResource`. To add replica Regions, you must also have `secretsmanager:ReplicateSecretToRegions`. For more information, see [ IAM policy actions for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#reference_iam-permissions_actions) and [Authentication and access control in Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html).
+ **Required permissions: ** `secretsmanager:CreateSecret`. If you include tags in the secret, you also need `secretsmanager:TagResource`. To add replica Regions, you must also have `secretsmanager:ReplicateSecretToRegions`. To create a cross-account replica secret, you must also have `secretsmanager:PutResourcePolicy` permissions. For more information, see [ IAM policy actions for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html#reference_iam-permissions_actions) and [Authentication and access control in Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html).
 
 To encrypt the secret with a KMS key other than `aws/secretsmanager`, you need `kms:GenerateDataKey` and `kms:Decrypt` permission to the key.
 
@@ -40,6 +42,7 @@ When you enter commands in a command shell, there is a risk of the command histo
       }
    ],
    "ClientRequestToken": "{{string}}",
+   "CrossAccountPrimaryARN": "{{string}}",
    "Description": "{{string}}",
    "ForceOverwriteReplicaSecret": {{boolean}},
    "KmsKeyId": "{{string}}",
@@ -80,6 +83,12 @@ This value helps ensure idempotency. Secrets Manager uses this value to prevent 
 This value becomes the `VersionId` of the new version.
 Type: String
 Length Constraints: Minimum length of 32. Maximum length of 64.
+Required: No
+
+ ** [CrossAccountPrimaryARN](#API_CreateSecret_RequestSyntax) **   <a name="SecretsManager-CreateSecret-request-CrossAccountPrimaryARN"></a>
+The ARN of a primary secret in another AWS account. Include this field to create a cross-account replica secret that receives replicated data from that primary secret. The primary secret must be in the same AWS Region and partition as the replica, and you must specify a customer managed AWS KMS key in `KmsKeyId`. You can't include `SecretString`, `SecretBinary`, `Description`, `AddReplicaRegions`, or `Type`.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
 Required: No
 
  ** [Description](#API_CreateSecret_RequestSyntax) **   <a name="SecretsManager-CreateSecret-request-Description"></a>

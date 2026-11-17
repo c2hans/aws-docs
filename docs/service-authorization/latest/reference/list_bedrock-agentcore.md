@@ -3197,7 +3197,7 @@ The following actions are defined by Amazon Bedrock Agentcore but are not direct
 - **   [InvokeGateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/welcome.html)  **
   - **Description:** Grants permission to invoke a gateway
   - **Resource types (\*required):** [gateway\*](#list_bedrock-agentcore-resource-gateway)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-agentcore-aws_ResourceTag___TagKey_)<br />[bedrock-agentcore:InboundJwtClaim/aud](#list_bedrock-agentcore-bedrock-agentcore_InboundJwtClaim_aud)<br />[bedrock-agentcore:InboundJwtClaim/client\_id](#list_bedrock-agentcore-bedrock-agentcore_InboundJwtClaim_client_id)<br />[bedrock-agentcore:InboundJwtClaim/iss](#list_bedrock-agentcore-bedrock-agentcore_InboundJwtClaim_iss)<br />[bedrock-agentcore:InboundJwtClaim/scope](#list_bedrock-agentcore-bedrock-agentcore_InboundJwtClaim_scope)<br />[bedrock-agentcore:InboundJwtClaim/sub](#list_bedrock-agentcore-bedrock-agentcore_InboundJwtClaim_sub)
   - **Access level:** Permissions management, Write
 
 - **   [InvokeWebAnswer](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/welcome.html)  **

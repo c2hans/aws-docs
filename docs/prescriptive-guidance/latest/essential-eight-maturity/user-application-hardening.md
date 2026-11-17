@@ -22,4 +22,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 | .NET Framework 3.5 (includes .NET 2.0 and 3.0) is disabled or removed. |
 | Windows PowerShell 2.0 is disabled or removed. |
 | PowerShell is configured to use Constrained Language Mode. |
-| Blocked PowerShell script executions are centrally logged and protected from unauthorised modification and deletion, monitored for signs of compromise, and actioned when cyber security events are detected. |
+| Blocked PowerShell script runs are centrally logged and protected from unauthorized modification and deletion, monitored for signs of compromise, and addressed when cybersecurity events are detected. |

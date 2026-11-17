@@ -100,5 +100,6 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 + AWS Security Token Service
 + AWS Step Functions
 + Amazon Elastic Compute Cloud
++ Amazon Elastic Container Registry
 + Amazon Kinesis Data Streams
 + Amazon Simple Queue Service

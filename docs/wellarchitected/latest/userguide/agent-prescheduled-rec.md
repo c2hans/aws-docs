@@ -9,4 +9,4 @@ AWS Well-Architected Agent is in preview release and is subject to change.
 
 Prescheduled remediations automate the implementation of recommendations at predetermined times using AWS Systems Manager Runbooks. This feature applies recommendations consistently without manual intervention.
 
-On the recommendation details page, choose **View Details** to go to AWS Systems Manager and change the remediation schedule for a recommendation.
+In the recommendation details page, choose **View Details** to go to AWS Systems Manager and change the remediation schedule for a recommendation.

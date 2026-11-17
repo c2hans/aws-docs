@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 # UpdateCampaignSource
 <a name="API_connect-outbound-campaigns-v2_UpdateCampaignSource"></a>
 
-Updates source of an outbound campaign. Only campaigns in the `Initialized` state are valid for this operation.
+Updates the source of an outbound campaign. Only campaigns in the `Initialized` state, or campaigns of type `JOURNEY` in the `Running` or `Paused` state, are valid for this operation. If the campaign is in the `Running` or `Paused` state, only `customerProfilesSegmentArn` can be updated. The new segment must use the same sorting type (sorted or unsorted) as the current segment.
 
 ## Request Syntax
 <a name="API_connect-outbound-campaigns-v2_UpdateCampaignSource_RequestSyntax"></a>

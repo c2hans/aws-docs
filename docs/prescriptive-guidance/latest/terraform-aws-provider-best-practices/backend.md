@@ -23,7 +23,7 @@ Storing Terraform state remotely in Amazon S3, with [S3 native state locking](ht
 The S3 Standard storage class (the default) is designed for 99.999999999% durability and 99.99% availability, which helps protect state from accidental loss compared to local storage or self-managed solutions. For details, see [Comparing the Amazon S3 storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html#sc-compare) in the Amazon S3 User Guide.
 
 ### Enable remote state locking
-<a name="enable-remote-state-locking.d089408a-63a4-52c6-b892-30583f961387"></a>
+<a name="enable-remote-state-locking.07670474-e08a-5a7f-97e2-5baff022e8de"></a>
 
 State locking prevents concurrent write operations and reduces errors from simultaneous changes by multiple users. Use S3 native state locking by setting `use_lockfile = true`. It's generally available in Terraform 1.11 and later, so set `required_version = ">= 1.11"`. Locking through Amazon DynamoDB (the `dynamodb_table` argument) is deprecated, and HashiCorp plans to remove it in a future version.
 
@@ -34,7 +34,7 @@ Example backend configuration with S3 native locking and SSE-KMS encryption:
 ```
 terraform {
   backend "s3" {
-    bucket       = "example-terraform-state-111122223333"
+    bucket       = "DOC-EXAMPLE-BUCKET"
     key          = "network/prod/terraform.tfstate"
     region       = "us-west-2"
     encrypt      = true

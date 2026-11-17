@@ -84,7 +84,7 @@ Indicates how DNS is resolved for resource configurations associated with this r
 *Required*: No
 *Type*: String
 *Allowed values*: `IN_VPC | PUBLIC`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecurityGroupIds`  <a name="cfn-vpclattice-resourcegateway-securitygroupids"></a>
 The IDs of the security groups applied to the resource gateway.

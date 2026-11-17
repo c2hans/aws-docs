@@ -15,6 +15,10 @@ The following table describes the important changes since the last release of th
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Version 4.1 of the AWS SDK for .NET](#document-history) | Updated the guide for version 4.1 of the AWS SDK for .NET: new supported platforms, a new topic about annual .NET target updates, updated assembly downloads, and removal of outdated .NET Core references. | November 12, 2026 |
+| [Platforms supported by the AWS SDK for .NET](net-dg-supported-platforms.md) | Updated the list of supported platforms for version 4.1 of the AWS SDK for .NET. Version 4.1 removed the .NET Core 3.1 target. | November 12, 2026 |
+| [Annual .NET target updates for the AWS SDK for .NET](net-dg-target-updates.md) | Added information about the annual .NET target update schedule and the changes in version 4.1 of the AWS SDK for .NET. | November 12, 2026 |
+| [What's new](whats-new.md) | Version 4.1 of the AWS SDK for .NET has been released, with updated .NET build targets and no dependency on the AWS Common Runtime (CRT). | November 11, 2026 |
 | [Performance best practices for the AWS SDK for .NET](net-dg-performance.md) | Added guidance about reusing service clients, disposing responses, programming asynchronously, configuring garbage collection, and managing HTTP connections. | July 30, 2026 |
 | [What's new](whats-new.md) | Added a note about version 2.0 of the AWS Deploy Tool for .NET CLI. | October 17, 2025 |
 | [AWS OpsWorks](#document-history) | AWS OpsWorks has reached End of Life. It has been removed from the documentation. | September 16, 2025 |

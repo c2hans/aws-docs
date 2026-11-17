@@ -150,7 +150,7 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:aws(?:-(?:cn|us-gov|iso|iso-b|iso-e|iso-f))?:iam::[0-9]{12}:role(/[a-zA-Z0-9+=,.@_\-]{1,512})*?/[a-zA-Z0-9+=,.@_\-]{1,64}`
 
  ** [ScheduleConfiguration](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-ScheduleConfiguration"></a>
-The schedule configuration for the workflow, including cron expressions for automated execution. Amazon Managed Workflows for Apache Airflow Serverless uses EventBridge Scheduler for cost-effective, timezone-aware scheduling. When a workflow includes schedule information in its YAML definition, the service automatically configures the appropriate triggers for automated execution. Only one version of a workflow can have an active schedule at any given time.
+The schedule configuration for the workflow. Only one version of a workflow can have an active schedule at any given time.
 Type: [ScheduleConfiguration](API_ScheduleConfiguration.md) object
 
  ** [TriggerMode](#API_GetWorkflow_ResponseSyntax) **   <a name="mwaaserverless-GetWorkflow-response-TriggerMode"></a>

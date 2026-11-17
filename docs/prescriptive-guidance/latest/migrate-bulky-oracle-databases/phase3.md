@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 # Phase 3: Transport phase
 <a name="phase3"></a>
 
-During this phase, the source system becomes read only. The data files on the destination system are made consistent with the source system by applying a final incremental backup. Then, export the object metadata from the source system and import it into the destination system.
+During this phase, the source system becomes read-only. You make the data files on the destination system consistent with the source system by applying a final incremental backup. Then, export the object metadata from the source system and import it into the destination system.
 
 ## Step 1: Make the tablespaces in the source database read only
 <a name="step-1--make-the-tablespaces-in-the-source-database-read-only.6dcc34d4-2b33-5385-9df1-b89eea077b98"></a>
@@ -15,7 +15,7 @@ As SYSDBA, make all tablespaces being transferred READ ONLY on the source system
 To reduce downtime, you can run the following two steps simultaneously.
 
 ## Step 2: Create the final incremental backup
-<a name="step-2--create-the-final-incremental-backup.6c029847-bd77-5a5d-9032-a566fe2ff232"></a>
+<a name="step-2--create-the-final-incremental-backup.4073a9a5-9822-5bf2-bfbe-42a8e1ade448"></a>
 
 On the source system, create the final incremental backup of the tablespaces being transferred.
 
@@ -25,10 +25,10 @@ export TMPDIR=/u01/oracle/expimp/out/out<nn>
 $ORACLE_HOME/perl/bin/perl xttdriver.pl --backup --debug 3
 ```
 
-This step returns an error, such as "ORA-20001: TABLESPACE(S) IS READONLY"; the error is expected, and you can safely ignore it.
+This step returns an expected error, such as "ORA-20001: TABLESPACE(S) IS READONLY". You can ignore this error.
 
 ## Step 3: Export the metadata
-<a name="step-3--export-the-metadata.684f26de-a86f-5d35-9b05-90930416f667"></a>
+<a name="step-3--export-the-metadata.4c0fd916-542b-5e79-9bbb-2d89a2921f4d"></a>
 
 Export the metadata of the transportable tablespaces from the source database.
 
@@ -58,14 +58,14 @@ SQL> create directory dmpdir as <location>;
 expdp system/<system password> parfile=<parameter file>
 ```
 
-The following two steps are the final steps for cross-platform transportable tablespace with RMAN incremental backups. These steps must be performed sequentially.
+The following two steps are the final steps for cross-platform transportable tablespace with RMAN incremental backups. Perform these steps sequentially.
 
 ## Step 4: Transfer the files and apply the final incremental backup
-<a name="step-4--transfer-the-files-and-apply-the-final-incremental-backup.37fad4fd-34fb-5946-8e22-8c3f9fa414e3"></a>
+<a name="step-4--transfer-the-files-and-apply-the-final-incremental-backup.847c0540-03fb-5a3b-bbe3-141a963720bc"></a>
 
 Transfer the final incremental backup and export dump files to the destination system, convert, and apply the final incremental backup.
 
-Use Direct Connect to transfer the final incremental backup copies and res.txt file to the destination. You can use VPN connectivity, but using Direct Connect will reduce the downtime significantly if it has enough bandwidth.
+Use Direct Connect to transfer the final incremental backup copies and res.txt file to the destination. You can use a VPN connection instead, but Direct Connect can help reduce downtime if it has enough bandwidth.
 
 To restore the final incremental backup, on the destination system, run the following command, using the --restore option, for each tablespace group.
 
@@ -76,7 +76,7 @@ $ORACLE_HOME/perl/bin/perl xttdriver.pl --restore --debug 3
 ```
 
 ## Step 5: Import the object metadata
-<a name="step-5--import-the-object-metadata.1fe16dbc-d70c-539f-bdcb-b2ab003e51ac"></a>
+<a name="step-5--import-the-object-metadata.3d711943-ba3c-56ae-aa7f-7a1bd0064022"></a>
 
 Import the object metadata into the destination system by using Oracle Data Pump. Run the following command to get the list of data files for the transport\_datafiles= parameter on the destination system.
 

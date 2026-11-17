@@ -16,7 +16,7 @@ Key focus areas for applying this pillar to your WorkSpaces Applications streami
 ## Automatically recover from failure
 <a name="reliability-recovery"></a>
 
-Monitor KPIs for business value to trigger automated responses that can predict, prevent, or recover from failures before they impact operations.
+Monitor key performance indicators (KPIs) for business value to trigger automated responses that can predict, prevent, or recover from failures before they affect operations.
 + Make sure that your IP subnet allocation accounts for expansion and availability.
 + Monitor critical CloudWatch metrics to ensure service availability and performance, including fleet capacity metrics such as `AvailableCapacity` and `InUseCapacity`, and streaming quality metrics such as `StreamingSessionLatency`.
 + Configure alerts for capacity thresholds, session health metrics, performance degradation, and fleet health status changes.
@@ -30,11 +30,11 @@ Monitor KPIs for business value to trigger automated responses that can predict,
 <a name="reliability-test"></a>
 
 Cloud environments enable automated testing of failure scenarios and recovery procedures. These capabilities help you identify and fix vulnerabilities before real failures occur.
-+ **Fleet recovery testing.** Implement comprehensive fleet recovery testing across multiple scenarios:
++ **Fleet recovery testing.** Implement fleet recovery testing across multiple scenarios:
   + Simulate instance termination to verify automatic scaling response.
-  + Validate fleet minimum capacity maintenance.
+  + Validate that the fleet maintains its minimum capacity.
   + Test instance replacement timing and user redirection.
-  + Validate scaling policies effectiveness.
+  + Validate the effectiveness of scaling policies.
   + Test fleet capacity limits and overflow handling.
 + **Session recovery testing.** Implement session recovery validation procedures:
   + Test disconnect and reconnect scenarios.
@@ -47,27 +47,27 @@ Cloud environments enable automated testing of failure scenarios and recovery pr
 ## Scale horizontally to increase aggregate workload availability
 <a name="reliability-scale"></a>
 
-Distribute your workload across multiple, smaller resources to minimize the impact of individual failures and to eliminate single points of failure.
+Distribute your workload across multiple, smaller resources to reduce the impact of individual failures and to help avoid single points of failure.
 + Deploy fleet instances across multiple Availability Zones.
-+ Configure appropriate minimum fleet capacity.
-+ Configure automatic scaling for fleets and set appropriate scaling thresholds.
++ Configure a minimum fleet capacity that meets your baseline user demand.
++ Configure automatic scaling for fleets and set scaling thresholds based on your capacity utilization metrics.
 + Monitor capacity utilization across the fleet.
 + Deploy WorkSpaces Applications stacks across multiple Regions. For more information, see the AWS blog post [Optimize user experience with latency-based routing for Amazon WorkSpaces Applications](https://aws.amazon.com/blogs/desktop-and-application-streaming/optimize-user-experience-with-latency-based-routing-for-amazon-appstream-2-0/).
 
 ## Stop guessing capacity
 <a name="reliability-capacity"></a>
 
-Use the automatic scaling capabilities of the cloud to dynamically adjust resources based on demand. This helps prevent resource saturation while maintaining optimal efficiency.
+Use the automatic scaling capabilities of the cloud to dynamically adjust resources based on demand. This helps prevent resource saturation while maintaining efficiency.
 + Monitor key metrics such as `CapacityUtilization`, `AvailableCapacity`, and `InUseCapacity` to understand capacity needs.
 + Track fleet utilization trends across different time periods. Monitor daily patterns, weekly variations, monthly trends, and seasonal peaks.
 + Set up scaling policies and configure scaling thresholds.
-+ Make sure that a sufficient gap exists between the current quotas and the maximum usage to accommodate failover.
++ Maintain a sufficient gap between your current quotas and your maximum usage to accommodate failover.
 + Accommodate fixed service quotas and constraints through your architecture.
 
 ## Manage change through automation
 <a name="reliability-change"></a>
 
 Implement infrastructure changes through automation, including version-controlled changes to the automation code itself.
-+ Use IaC for fleet configuration.
++ Use infrastructure as code (IaC) for fleet configuration.
 + Implement consistent scaling policies.
 + Use the [Image Assistant CLI](https://docs.aws.amazon.com/appstream2/latest/developerguide/cli-operations-managing-creating-image-image-assistant.html) for consistent image creation.

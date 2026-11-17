@@ -18,7 +18,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Configure cross-account access to Amazon DynamoDB](configure-cross-account-access-to-amazon-dynamodb.md)
 + [Configure HTTPS encryption for Oracle JD Edwards EnterpriseOne on Oracle WebLogic by using an Application Load Balancer](configure-https-encryption-for-oracle-jd-edwards-enterpriseone-on-oracle-weblogic-by-using-an-application-load-balancer.md)
 + [Configure mutual TLS authentication for applications running on Amazon EKS](configure-mutual-tls-authentication-for-applications-running-on-amazon-eks.md)
-+ [Configure Windows authentication for Amazon RDS for Microsoft SQL Server using AWS Managed Microsoft AD](configure-windows-authentication-for-amazon-rds-using-microsoft-ad.md)
 + [Connect by using an SSH tunnel in pgAdmin](connect-by-using-an-ssh-tunnel-in-pgadmin.md)
 + [Create a React app by using AWS Amplify and add authentication with Amazon Cognito](create-a-react-app-by-using-aws-amplify-and-add-authentication-with-amazon-cognito.md)
 + [Customize Amazon CloudWatch alerts for AWS Network Firewall](customize-amazon-cloudwatch-alerts-for-aws-network-firewall.md)
@@ -34,3 +33,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Serve static content in an Amazon S3 bucket through a VPC by using Amazon CloudFront](serve-static-content-in-an-amazon-s3-bucket-through-a-vpc-by-using-amazon-cloudfront.md)
 + [Use user IDs in IAM policies for access control and automation](use-user-ids-iam-policies-access-control-automation.md)
 + [View AWS Network Firewall logs and metrics by using Splunk](view-aws-network-firewall-logs-and-metrics-by-using-splunk.md)
++ [Visualize IAM credential reports for all AWS accounts using AWS Quick Sight](visualize-iam-credential-reports-for-all-aws-accounts-using-amazon-quicksight.md)

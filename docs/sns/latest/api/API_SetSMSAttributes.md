@@ -71,11 +71,11 @@ HTTP Status Code: 429
 ### Example policy
 <a name="API_SetSMSAttributes_Example_1"></a>
 
-You can use the following example policy to provide permission for the Amazon SNS service principal to run the `s3:ListBucket` action. Replace `amzn-s3-demo-bucket` with the S3 bucket you specified in the `UsageReportS3Bucket` parameter.
+You can use the following example policy to provide permission for the Amazon SNS service principal to run the `s3:ListBucket` action. Replace `amzn-s3-demo-bucket` with the S3 bucket you specified in the `UsageReportS3Bucket` parameter. Replace `111122223333` with the ID of the AWS account that sends SMS messages.
 
 ```
 {
-  "Version": "2008-10-17",
+  "Version": "2012-10-17",
   "Statement": [{
             "Sid": "AllowListBucket",
             "Effect": "Allow",
@@ -83,7 +83,12 @@ You can use the following example policy to provide permission for the Amazon SN
                 "Service": "sns.amazonaws.com"
             },
             "Action": "s3:ListBucket",
-            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket"
+            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "111122223333"
+                }
+            }
         }]
 }
 ```

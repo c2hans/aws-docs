@@ -46,5 +46,5 @@ The authorization server metadata for the OAuth2 provider.
 The discovery URL for the OAuth2 provider.
 *Required*: No
 *Type*: String
-*Pattern*: `^.+/\.well-known/openid-configuration$`
+*Pattern*: `^[^\s?#]+/\.well-known/(openid-configuration|oauth-authorization-server)(/[^\s?#]+)?$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

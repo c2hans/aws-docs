@@ -169,6 +169,7 @@ The tags to associate with the endpoint.
 
 `VpcEndpointType`  <a name="cfn-ec2-vpcendpoint-vpcendpointtype"></a>
 The type of endpoint.
+For more information about the types of VPC endpoints, see [VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/concepts.html#concepts-vpc-endpoints) in the *AWS PrivateLink User Guide*.
 Default: Gateway
 *Required*: No
 *Type*: String

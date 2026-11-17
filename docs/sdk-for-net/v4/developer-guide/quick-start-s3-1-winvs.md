@@ -11,13 +11,13 @@ For information about breaking changes and migrating your applications, see the 
 # Simple Windows-based application using the AWS SDK for .NET
 <a name="quick-start-s3-1-winvs"></a>
 
-This tutorial uses the AWS SDK for .NET on Windows with Visual Studio and .NET Core. The tutorial shows you how to use the SDK to list the [Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) that you own and optionally create a bucket.
+This tutorial uses the AWS SDK for .NET on Windows with Visual Studio and .NET. The tutorial shows you how to use the SDK to list the [Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) that you own and optionally create a bucket.
 
-You'll perform this tutorial on Windows using Visual Studio and .NET Core. For other ways to configure your development environment, see [Installing and configuring your toolchain for the AWS SDK for .NET](net-dg-dev-env.md).
+You'll perform this tutorial on Windows using Visual Studio and .NET. For other ways to configure your development environment, see [Installing and configuring your toolchain for the AWS SDK for .NET](net-dg-dev-env.md).
 
-**Required for development on Windows with Visual Studio and .NET Core:**
+**Required for development on Windows with Visual Studio and .NET:**
 + [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/)
-+ Microsoft .NET Core 2.1, 3.1 or later
++ The Microsoft .NET SDK for a version of .NET that the AWS SDK for .NET supports (see [Supported platforms](net-dg-supported-platforms.md))
 
   This is typically included by default when installing a recent version of Visual Studio.
 
@@ -44,7 +44,7 @@ Don't choose the .NET Framework version of the console app template, or, if you 
 
    This process installs the NuGet packages from the [NuGet package manager](https://www.nuget.org/profiles/awsdotnet). Because we know exactly what NuGet packages we need for this tutorial, we can perform this step now. It's also common that the required packages become known during development. When this happens, follow a similar process to install them at that time.
 
-1. If you intend to run the application from the command prompt, open a command prompt now and navigate to the folder that will contain the build output. This is typically something like `S3CreateAndList\S3CreateAndList\bin\Debug\net6.0`, but will depend on your environment.
+1. If you intend to run the application from the command prompt, open a command prompt now and navigate to the folder that will contain the build output. This is typically something like `S3CreateAndList\S3CreateAndList\bin\Debug\net10.0`, but will depend on your environment.
 
 ## Create the code
 <a name="s3-1-winvs-code"></a>

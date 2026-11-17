@@ -20,7 +20,7 @@ On December 31, 2020, support for .NET Standard 1.3 on the AWS SDK for .NET came
 **What you need to do**
 + If you're running applications using .NET Framework, you're not affected.
 + If you're running applications using .NET Core 2.0 or higher, you're not affected.
-+ If you're running applications using .NET Core 1.0 or .NET Core 1.1, migrate your applications to a newer version of .NET Core by following [Microsoft migration instructions](https://docs.microsoft.com/en-us/dotnet/core/migration/). We recommend a minimum of .NET Core 3.1.
++ If you're running applications using .NET Core 1.0 or .NET Core 1.1, migrate your applications to a newer version of .NET Core by following [Microsoft migration instructions](https://docs.microsoft.com/en-us/dotnet/core/migration/). Use a version of .NET that Microsoft currently supports. For the versions that the SDK provides builds for, see [Supported platforms](net-dg-supported-platforms.md).
 + If you're running business critical applications that cannot be upgraded at this time, you can continue using your current version of AWS SDK for .NET.
 
 If you have questions or concerns, [contact AWS Support](https://console.aws.amazon.com/support).

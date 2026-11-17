@@ -92,7 +92,7 @@ Contains information about the queue and channel for manual assignment behaviour
 *Required*: No
 *Type*: Array of [RoutingProfileManualAssignmentQueueConfig](aws-properties-connect-routingprofile-routingprofilemanualassignmentqueueconfig.md)
 *Minimum*: `1`
-*Maximum*: `10`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MediaConcurrencies`  <a name="cfn-connect-routingprofile-mediaconcurrencies"></a>

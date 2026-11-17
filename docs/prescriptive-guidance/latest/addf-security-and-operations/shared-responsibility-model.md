@@ -9,9 +9,9 @@ The [shared responsibility model](https://aws.amazon.com/compliance/shared-respo
 + **AWS** – The cloud infrastructure provider offering AWS services.
 + **ADDF core team** – The ADDF core team is the entity that publishes ADDF releases in the [ADDF repository](https://github.com/awslabs/autonomous-driving-data-framework) (GitHub).
 + **ADDF user** – ADDF users include, but aren't limited to:
-  + **ADDF developer** – Anyone that changes, customizes, or creates new ADDF module code.
-  + **ADDF operator** – Anyone that sets up and operates an ADDF instance.
-  + **ADAS developer** – The end-user or consumer of the resources deployed by ADDF. For example, an ADAS developer can query a visualization frontend that was created as part of the ADDF deployment.
+  + **ADDF developer** – Anyone who changes, customizes, or creates new ADDF module code.
+  + **ADDF operator** – Anyone who sets up and operates an ADDF instance.
+  + **Advanced driver assistance systems (ADAS) developer** – The end user or consumer of the resources that ADDF deploys. For example, an ADAS developer can query a visualization frontend that the ADDF deployment creates.
 
 The following diagram summarizes the shared responsibility between AWS, the ADDF core team, and the ADDF user.
 
@@ -20,7 +20,7 @@ The following diagram summarizes the shared responsibility between AWS, the ADDF
 ## AWS responsibility
 <a name="aws-responsibility"></a>
 
-AWS is responsible for protecting the infrastructure that runs all of the services offered in the AWS Cloud; as defined in the [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/). This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services.
+AWS is responsible for protecting the infrastructure that runs all of the services offered in the AWS Cloud, as defined in the [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/). This infrastructure is composed of the hardware, software, networking, and facilities that run AWS Cloud services.
 
 ## ADDF core team responsibility
 <a name="addf-core-team-responsibility"></a>
@@ -58,12 +58,12 @@ ADDF and its modules are secure only if ADDF is set up, customized, and operated
 Before you deploy any ADDF-related resources into AWS accounts, your AWS accounts should be configured according to the best practices in the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/). This includes directive, detective, preventive, and responsive security controls. You should have detailed mitigation processes in place, in case of any security violations or incidents. Your organization's policy should include requirements for centrally managing identity and access and networking. Commonly, these requirements and services are handled by a dedicated landing zone team.
 
 ### ADDF-specific responsibilities
-<a name="addf-specific-responsibilities.5e422882-0c59-536b-b874-d2346f7d177d"></a>
+<a name="addf-specific-responsibilities.00fcba87-f1bb-5990-8cec-59a6109b4e79"></a>
 
 #### Secure ADDF setup
-<a name="secure-addf-setup.6d530390-a1f7-5ae4-a64a-ec95ca20f19f"></a>
+<a name="secure-addf-setup.e302bd55-83f1-5d0f-bc34-9b4f31c13663"></a>
 
-An ADDF user's responsibility starts with the secure setup of ADDF according to the ADDF documentation. We highly recommend that you follow the instructions in the [ADDF Deployment Guide](https://github.com/awslabs/autonomous-driving-data-framework/blob/main/docs/deployment_guide.md) (GitHub). For more information about securely setting up ADDF, see [Defining your ADDF architecture](defining-your-addf-architecture.md) and [Initial setup](initial-setup.md).
+An ADDF user's responsibility starts with the secure setup of ADDF according to the ADDF documentation. For more information about securely setting up ADDF, see [Defining your ADDF architecture](defining-your-addf-architecture.md) and [Initial setup](initial-setup.md).
 
 #### Secure ADDF customization
 <a name="secure-addf-customization.8120b4ab-1608-537b-91b5-ecbf3dd84054"></a>

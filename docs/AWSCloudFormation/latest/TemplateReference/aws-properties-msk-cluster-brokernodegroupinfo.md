@@ -24,7 +24,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ConnectivityInfo](#cfn-msk-cluster-brokernodegroupinfo-connectivityinfo)" : {{ConnectivityInfo}},
   "[InstanceType](#cfn-msk-cluster-brokernodegroupinfo-instancetype)" : {{String}},
   "[SecurityGroups](#cfn-msk-cluster-brokernodegroupinfo-securitygroups)" : {{[ String, ... ]}},
-  "[StorageInfo](#cfn-msk-cluster-brokernodegroupinfo-storageinfo)" : {{StorageInfo}}
+  "[StorageInfo](#cfn-msk-cluster-brokernodegroupinfo-storageinfo)" : {{StorageInfo}},
+  "[TopicReassignment](#cfn-msk-cluster-brokernodegroupinfo-topicreassignment)" : {{String}}
 }
 ```
 
@@ -42,6 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [StorageInfo](#cfn-msk-cluster-brokernodegroupinfo-storageinfo): {{
     StorageInfo}}
+  [TopicReassignment](#cfn-msk-cluster-brokernodegroupinfo-topicreassignment): {{String}}
 ```
 
 ## Properties
@@ -83,7 +85,7 @@ Some broker sizes might not be available in certian AWS Regions. See the updated
 *Required*: Yes
 *Type*: String
 *Minimum*: `5`
-*Maximum*: `32`
+*Maximum*: `64`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecurityGroups`  <a name="cfn-msk-cluster-brokernodegroupinfo-securitygroups"></a>
@@ -96,4 +98,11 @@ The security groups to associate with the ENIs in order to specify who can conne
 Contains information about storage volumes attached to Amazon MSK broker nodes.
 *Required*: No
 *Type*: [StorageInfo](aws-properties-msk-cluster-storageinfo.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TopicReassignment`  <a name="cfn-msk-cluster-brokernodegroupinfo-topicreassignment"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `AUTO | MANUAL`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

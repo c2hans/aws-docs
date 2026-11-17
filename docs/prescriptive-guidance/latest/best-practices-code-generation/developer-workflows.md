@@ -27,9 +27,9 @@ The previous diagram shows how Amazon Q Developer can accelerate and streamline 
   + Send code as prompt with questions to Amazon Q
 
 ## Design and planning
-<a name="design-and-planning.f8ff66d4-d784-5d58-aa39-8b0df57c32cf"></a>
+<a name="design-and-planning.7f7bcbd7-e037-53c5-96ae-206d8ac854aa"></a>
 
-After gathering business and technical requirements, developers design new, or extend existing, codebases. During this phase, Amazon Q Developer can assist developers to do the following tasks:
+After gathering business and technical requirements, developers design new codebases or extend existing ones. During this phase, Amazon Q Developer can help developers perform the following tasks:
 + Generate relevant libraries and class and function outlines for well-architected advice.
 + Provide guidance for engineering, compatibility, and architectural design queries.
 
@@ -50,8 +50,8 @@ The coding process uses Amazon Q Developer to accelerate development in the foll
 Reviewers need to comprehend development code before promoting it to production. To accelerate this process, use the Amazon Q **Explain **and **Optimize **options, or send code selections with custom prompt instructions to Amazon Q in a chat session. For more information, see [Chat examples](examples-chat.md).
 
 ## Integration and deployment
-<a name="integration-and-deployment.a83a2ed4-934a-5ea8-bf9e-470c9dfbbcc3"></a>
+<a name="integration-and-deployment.5ae8a89d-f248-5d34-8cb9-7ef0b82e56aa"></a>
 
 Ask Amazon Q for guidance about continuous integration, delivery pipelines, and deployment best practices that are specific to your project's architecture.
 
-Using these recommendations, you can learn to effectively harness Amazon Q Developer features, optimizing your workflows and increasing productivity across the entire development lifecycle.
+These recommendations help you use Amazon Q Developer features to optimize your workflows and increase productivity across the development lifecycle.

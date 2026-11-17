@@ -10,12 +10,12 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/en
 ## Summary
 <a name="enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates-summary"></a>
 
-[AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html), an infrastructure as code (IaC) tool, helps you to manage AWS resources through template-based deployments. CloudFormation is typically used to manage AWS resources. Using it to enable AWS services, such as [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html), can present unique challenges. GuardDuty is a threat detection service that continuously monitors your AWS accounts for malicious activity and unauthorized behavior. Unlike typical resources that can be created multiple times, GuardDuty is a service that needs to be enabled once per account and AWS Region. Traditional CloudFormation conditions support only static value comparisons, which makes it difficult to check the current state of services such as GuardDuty. If you attempt to enable GuardDuty through CloudFormation in an account where it's already active, the stack deployment fails. This can create operational challenges for DevOps teams that are managing multi-account environments.
+[Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) is a threat detection service that continuously monitors your AWS accounts for unauthorized activity and anomalous behavior. GuardDuty supports only one detector for each AWS account and AWS Region. If an AWS CloudFormation template declares a GuardDuty detector in an account and Region where GuardDuty is already enabled, creating the detector fails, and by default the stack rolls back. In multi-account environments, GuardDuty is often already enabled in some accounts, for example manually, by another team, or through AWS Organizations. As a result, you can't reliably deploy a single template across all accounts. CloudFormation conditions can't prevent this failure, because they compare only static values, such as parameters, and can't check whether a detector already exists.
 
-This pattern introduces a solution to this challenge. It uses CloudFormation custom resources that are backed by [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) functions to perform dynamic state checks. The conditional logic enables GuardDuty only if it isn’t already enabled. It uses the stack outputs to record the GuardDuty status for future reference.
+This pattern prevents that failure. A CloudFormation custom resource backed by an [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/) function checks for an existing detector when you deploy the stack, and it creates a detector only if none exists. The same template deploys successfully whether or not GuardDuty is already enabled, and a stack output records whether GuardDuty was already enabled or the stack enabled it. You generate the function code and the template by using prompts with an AI coding assistant, such as Kiro, and you validate the generated code before you deploy it.
 
-By following this pattern, you can automate GuardDuty deployments across your AWS infrastructure while maintaining clean, predictable CloudFormation stack operations. This approach is particularly valuable for organizations that are:
-+ Managing multiple AWS accounts through IaC
+This approach is particularly valuable for organizations that are:
++ Managing multiple AWS accounts through infrastructure as code (IaC)
 + Implementing security services at scale
 + Requiring idempotent infrastructure deployments
 + Automating security service deployments
@@ -24,13 +24,20 @@ By following this pattern, you can automate GuardDuty deployments across your AW
 <a name="enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates-prereqs"></a>
 
 **Prerequisites**
-+ An active AWS account
-+ An AWS Identity and Access Management (IAM) role that has permissions to create, update, and delete CloudFormation stacks
++ An active AWS account.
++ Permissions to create, update, and delete AWS CloudFormation stacks and [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/) roles.
 + AWS Command Line Interface (AWS CLI), [installed](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions) and [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
++ An AI coding assistant, such as Kiro.
++ The following validation tools, installed: cfn-lint, Checkov, and Bandit.
 
 **Limitations**
++ If GuardDuty is suspended in an AWS account or Region, its detector still exists. This pattern reports the status as AlreadyEnabled and doesn't resume monitoring. To resume monitoring, enable GuardDuty in the GuardDuty console or by using the aws guardduty update-detector command.
++ If you disabled GuardDuty in an AWS account or Region, GuardDuty deleted its detector and findings. This pattern creates a new detector. This pattern doesn't restore findings from before you disabled GuardDuty.
++ If the stack output shows Created, deleting the stack also deletes the GuardDuty detector and turns off threat detection in that Region. If the output shows AlreadyEnabled, deleting the stack doesn't change GuardDuty.
++ Generated code varies by AI model and version. Review and validate the generated code before you deploy it.
++ CloudFormation limits inline Lambda code in a template (using the `ZipFile` property) to a 4 MB zip file.
 
-If GuardDuty has been manually disabled for an AWS account or AWS Region, this pattern does not enable GuardDuty for that target account or Region.
+<a name="limitations-replace"></a>
 
 ## Architecture
 <a name="enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates-architecture"></a>
@@ -47,11 +54,13 @@ The following high-level architecture diagram shows the process of enabling Guar
 
 1. You deploy a CloudFormation template to create a CloudFormation stack.
 
-1. The stack creates an IAM role and a Lambda function.
+1. The stack creates an IAM role, a Lambda function, and a custom resource that invokes the function.
 
-1. The Lambda function assumes the IAM role.
+1. The Lambda function checks whether a GuardDuty detector exists in the account and Region.
 
-1. If GuardDuty is not already enabled on the target AWS account, the Lambda function enables it.
+1. If no detector exists, the function creates a separate stack, guardduty-cfn-stack, that contains the GuardDuty detector.
+
+1. The function returns the GuardDuty status, which the stack shows as an output.
 
 **Automation and scale**
 
@@ -64,6 +73,18 @@ You can use the AWS CloudFormation StackSet feature to extend this solution to m
 + [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html) is a continuous security monitoring service that analyzes and processes logs to identify unexpected and potentially unauthorized activity in your AWS environment.
 + [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) helps you securely manage access to your AWS resources by controlling who is authenticated and authorized to use them.
 + [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) is a compute service that helps you run code without needing to provision or manage servers. It runs your code only when needed and scales automatically, so you pay only for the compute time that you use.
++ Kiro is an agentic AI engineering system available through an [**IDE**](https://kiro.dev/ide/), [**CLI**](https://kiro.dev/cli/), [**web interface**](https://kiro.dev/web/), [**mobile app**](https://kiro.dev/mobile/), and [**Kiro Crew**](https://kiro.dev/crew/) that helps developers and teams build software more efficiently. (Recommended)
++ cfn-lint checks CloudFormation templates for syntax errors and property values that aren't valid. (Recommended)
++ Checkov is a static analysis tool that scans infrastructure as code for security and compliance misconfigurations. (Recommended)
++ Bandit is a static analysis tool that finds common security issues in Python code. (Recommended)
+
+## Best practices
+<a name="enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates-best-practices"></a>
++ Review the generated code and confirm that it meets every requirement in the prompt before you deploy it.
++ Grant the Lambda function's role only the permissions that the function needs, scoped to the specific stack, log group, account, and Region.
++ Don't log the full custom resource event. It contains a presigned URL that anyone can use to send a response to AWS CloudFormation.
++ Deploy the stack in a test account first, and confirm that both stack creation and stack deletion complete successfully.
++ Use the GuardDutyStatus stack output to identify the accounts and Regions where this stack enabled GuardDuty.
 
 ## Epics
 <a name="enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates-epics"></a>
@@ -73,10 +94,11 @@ You can use the AWS CloudFormation StackSet feature to extend this solution to m
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Store the code in Amazon S3. | 1. Copy the Python code in the [Additional information](#enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates-additional) section of this pattern.<br />2. Paste the code in a text editor.<br />3. Save the file as `index.py`.<br />4. Upload the file to an Amazon Simple Storage Service (Amazon S3) bucket. For instructions, see [Uploading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/upload-objects.html) in the Amazon S3 documentation. | AWS DevOps |
-| Create the CloudFormation template. | 1. Open the [CloudFormation console](https://console.aws.amazon.com/cloudformation/home). <br />2. In the left navigation pane, choose **Infrastructure Composer**.<br />3. If you don’t see a blank canvas, create a new project.<br />4. Drag and drop an AWS Lambda function onto the canvas.<br />5. In the template view, validate that a Lambda function and a log group are present.<br />6. Modify the `Runtime` of the Lambda function to the latest version of Python.<br />7. Validate that the `Handler` property has value of `index.lambda_handler.`<br />8. Configure the `CodeUri` property to be the Amazon S3 location where you uploaded the Python code. An example value is `s3://amzn-s3-demo-bucket/key-name`.<br />9. Add a `Policies` property for the resource. Follow security best practices to provide least privilege access permissions that allow CloudFormation and GuardDuty actions. For example, you could use the `AWSLambdaExecute` managed policy for logs and a custom `iam:CreateServiceLinkedRole` for GuardDuty.<br />10. Add custom resource definition to the snippet by navigating to the template view.<pre>CheckResourceExist:<br />    Type: 'Custom::LambdaCustomResource'<br />    Properties:<br />      ServiceToken: !GetAtt Function.Arn</pre><br />11. Save the template as `sample.yaml`. | AWS DevOps |
+| Generate Python code using Kiro or another AI coding assistant | Use the following prompt, or a similar one, to generate the code. Save the file as index.py.<br />`Write a minimal Python AWS Lambda function for a CloudFormation custom resource. The code is embedded inline in the template (Code.ZipFile), so use the cfnresponse module. Handler: index.lambda_handler. It enables Amazon GuardDuty in the current Region only if no detector exists.`+ `Create: if guardduty.list_detectors() returns a detector, respond Status=AlreadyEnabled. Otherwise create a stack named guardduty-cfn-stack with one AWS::GuardDuty::Detector (Enable: true) and respond Status=Created.`<br />+ `Update: change nothing. Respond Status=AlreadyEnabled if a detector exists, otherwise Status=NotEnabled.`<br />+ `Delete: delete only guardduty-cfn-stack, and succeed if it doesn't exist.`<br />+ `The function timeout is 15 minutes. Wait for each stack operation to complete, but stop waiting in time to send a response before the function times out.`<br />+ `Always respond with PhysicalResourceId "guardduty-enablement".`<br />+ `Send exactly one response per invocation. On any error, send FAILED with the error message.`<br />+ `Don't log the event; it contains a presigned URL.` | AWS DevOps |
+| Generate an AWS CloudFormation template | In the same AI coding assistant session, enter the following prompt. If you use a new session, provide index.py with the prompt. Save the template as sample.yaml.<br />`Write a CloudFormation template in YAML that deploys the Lambda function in index.py and invokes it as a custom resource.`+ `AWS::Lambda::Function with the code from index.py inline in Code.ZipFile, handler index.lambda_handler, the latest supported Python runtime, and Timeout 900.`<br />+ `An IAM role for the function, without RoleName. Attach a customer managed policy (AWS::IAM::ManagedPolicy) that grants only: guardduty:ListDetectors and guardduty:CreateDetector; guardduty:DeleteDetector on detectors in this account and Region; cloudformation:CreateStack, DeleteStack, and DescribeStacks on the guardduty-cfn-stack stack; iam:CreateServiceLinkedRole only for guardduty.amazonaws.com; and write access to the function's own log group.`<br />+ `A custom resource named CheckResourceExist whose ServiceToken is the function ARN.`<br />+ `An output named GuardDutyStatus that returns the custom resource's Status attribute.`<br />+ `Use AWS::Partition, AWS::Region, and AWS::AccountId instead of hard-coded values.` | AWS DevOps |
+| Validate code and template | `cfn-lint sample.yaml`<br />`checkov -f sample.yaml --framework cloudformation`<br />`bandit index.py`<br />Resolve all errors and findings, and then save the updated files. |  |
 | Create the CloudFormation stack. | 1. In the AWS CLI, enter the following command. This creates a new CloudFormation stack using the `sample.yaml` file. For more information, see [Creating a stack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-cli-creating-stack.html) in the CloudFormation documentation.<pre>aws cloudformation create-stack \<br />--stack-name guardduty-cf-stack \<br />--template-body file://sample.yaml</pre><br />2. Confirm the following value appears in the AWS CLI, indicating that the stack has been successfully created. The amount of time required to create the stack can vary.<pre>"StackStatus": "CREATE_COMPLETE",</pre> | AWS DevOps |
-| Validate that GuardDuty is enabled for the AWS account. | 1. Sign in to the AWS Management Console and open the [GuardDuty console](https://console.aws.amazon.com/guardduty/).<br />2. Verify that the GuardDuty service is enabled. | Cloud administrator, AWS administrator |
+| Validate that GuardDuty is enabled for the AWS account. | 1. Sign in to the AWS Management Console and open the [GuardDuty console](https://console.aws.amazon.com/guardduty/). Verify that the GuardDuty service is enabled.<br />2. You can also use the AWS CLI to verify that Amazon GuardDuty is enabled:<br />`DETECTOR_ID=$(aws guardduty list-detectors \`<br />` --query "DetectorIds[0]" --output text)`<br />`aws guardduty get-detector \`<br />` --detector-id "$DETECTOR_ID" \`<br />` --query Status --output text` | Cloud administrator, AWS administrator |
 | Configure additional accounts or Regions. | As needed for your use case, use the CloudFormation StackSet feature to extend this solution to multiple AWS accounts and AWS Regions. For more information, see [Working with AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) in the CloudFormation documentation. | Cloud administrator, AWS administrator |
 
 ## Related resources
@@ -94,42 +116,3 @@ You can use the AWS CloudFormation StackSet feature to extend this solution to m
 + [Use Amazon GuardDuty and AWS Security Hub CSPM to secure multiple accounts](https://www.youtube.com/watch?v=Rg2ZzAAi1nY) (AWS re:Invent 2020)
 + [Best practices for authoring AWS CloudFormation](https://www.youtube.com/watch?v=bJHHQM7GGro) (AWS re:Invent 2019)
 + [Threat Detection on AWS: An Introduction to Amazon GuardDuty](https://www.youtube.com/watch?v=czsuZXQvD8E) (AWS re:Inforce 2019)
-
-## Additional information
-<a name="enable-amazon-guardduty-conditionally-by-using-aws-cloudformation-templates-additional"></a>
-
-**Python code**
-
-```
-import boto3
-import os
-import json
-from botocore.exceptions import ClientError
-import cfnresponse
-guardduty=boto3.client('guardduty')
-cfn=boto3.client('cloudformation')
-def lambda_handler(event, context):
-    print('Event: ', event)
-    if 'RequestType' in event:
-      if event['RequestType'] in ["Create","Update"]:
-          enabled=False
-          try:
-            response=guardduty.list_detectors()
-            if "DetectorIds" in response and len(response["DetectorIds"])>0:
-              enabled="AlreadyEnabled"
-            elif "DetectorIds" in response and len(response["DetectorIds"])==0:
-              cfn_response=cfn.create_stack(
-                StackName='guardduty-cfn-stack',
-                TemplateBody='{ "AWSTemplateFormatVersion": "2010-09-09",    "Description": "Guard duty creation template",    "Resources": { "IRWorkshopGuardDutyDetector": {  "Type": "AWS::GuardDuty::Detector",    "Properties": {   "Enable": true  }   } } }'
-                )
-              enabled="True"
-          except Exception as e:
-              print("Exception: ",e)
-          responseData = {}
-          responseData['status'] = enabled
-          cfnresponse.send(event, context, cfnresponse.SUCCESS, responseData, "CustomResourcePhysicalID" )
-      elif event['RequestType'] == "Delete":
-          cfn_response=cfn.delete_stack(
-                  StackName='guardduty-cfn-stack')
-          cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
-```

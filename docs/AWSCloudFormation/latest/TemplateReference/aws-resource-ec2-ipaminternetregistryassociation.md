@@ -66,11 +66,12 @@ The organization handle at the internet registry.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Rir`  <a name="cfn-ec2-ipaminternetregistryassociation-rir"></a>
-The Regional Internet Registry. Possible values:
+The internet registry. Possible values:
 + `ripe` - RIPE NCC (Europe, the Middle East, and Central Asia).
 + `apnic` - APNIC (Asia Pacific).
 + `arin` - ARIN (North America).
 + `lacnic` - LACNIC (Latin America and the Caribbean).
++ `nicbr` - NIC.br (Brazil).
 *Required*: Yes
 *Type*: String
 *Allowed values*: `RIPE | APNIC | ARIN | LACNIC`
@@ -110,4 +111,4 @@ The AWS Region of the IPAM.
 The ID of the AWS account that owns the internet registry association.
 
 `State`  <a name="State-fn::getatt"></a>
-The state of the internet registry association. Valid values: `pending-activation` \| `pending-enable` \| `create-in-progress` \| `create-failed` \| `enable-in-progress` \| `enable-complete` \| `enable-failed` \| `delete-in-progress` \| `delete-complete` \| `delete-failed`.
+The state of the internet registry association. Valid values: `pending-enable` \| `create-in-progress` \| `create-failed` \| `enable-in-progress` \| `enable-complete` \| `enable-failed` \| `disable-in-progress` \| `disable-complete` \| `disable-failed` \| `delete-in-progress` \| `delete-complete` \| `delete-failed`.

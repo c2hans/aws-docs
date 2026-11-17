@@ -48,7 +48,7 @@ With this policy, you can access all AWS Partner Central features and related se
 + Search for and request connections with other AWS Partners
 + Create and manage Partner Business plans
 + Access Partner Scorecard and Partner Analytics
-+ Access Badge Manager, Guides, and Amazon Q (Partner Assistant)
++ Access Badge Manager, Guides, and the AWS assistant (Partner Assistant)
 + Create and manage program applications
 + Access Partner Central and Marketplace support
 
@@ -76,7 +76,7 @@ With this policy, you can manage opportunities and leads in AWS Partner Central.
 + Create, edit, and submit opportunities
 + Accept and manage leads
 + Accept and manage multi-partner opportunities
-+ Access Partner Scorecard, Guides, and Amazon Q (Partner Assistant)
++ Access Partner Scorecard, Guides, and the AWS assistant (Partner Assistant)
 + Access Partner Central support
 
  To view the permissions for this policy, see [AWSPartnerCentralOpportunityManagement](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralOpportunityManagement.html) in the *AWS Managed Policy Reference*.
@@ -108,7 +108,7 @@ With this policy, you can manage channel programs and partner relationships in A
 + View and manage channel relationships
 + Manage channel handshakes
 + View and manage distribution engagement requests
-+ Access Guides and Amazon Q (Partner Assistant)
++ Access Guides and the AWS assistant (Partner Assistant)
 + Access Partner Central support
 
  To view the permissions for this policy, see [AWSPartnerCentralChannelManagement](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralChannelManagement.html) in the *AWS Managed Policy Reference*.
@@ -130,7 +130,7 @@ You can attach the `AWSPartnerCentralMarketingManagement` policy to your IAM ide
 With this policy, you can manage marketing activities and promotional content in AWS Partner Central. This policy allows the following operations:
 + Access and manage Marketing Central campaigns and content
 + Create and manage case studies
-+ Access Badge Manager, Guides, and Amazon Q (Partner Assistant)
++ Access Badge Manager, Guides, and the AWS assistant (Partner Assistant)
 + Access Partner Central support
 
  To view the permissions for this policy, see [AWSPartnerCentralMarketingManagement](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSPartnerCentralMarketingManagement.html) in the *AWS Managed Policy Reference*.
@@ -144,7 +144,7 @@ With this policy, you can manage incentive benefits, funding, and claims in AWS 
 + Create and manage fund requests and claims
 + View historical fund requests
 + View funding wallets
-+ Access Guides and Amazon Q (Partner Assistant)
++ Access Guides and the AWS assistant (Partner Assistant)
 + Access Partner Central support
 + Create and manage program applications
 

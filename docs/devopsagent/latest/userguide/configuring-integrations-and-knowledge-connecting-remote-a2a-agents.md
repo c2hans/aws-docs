@@ -27,7 +27,7 @@ Before connecting a remote agent, ensure your agent meets these requirements:
 
 When connecting remote agents to AWS DevOps Agent, consider these security aspects:
 + **Read-only agents** – Remote agents should be designed for investigation and data gathering only. Ensure that remote agents do not perform write operations or modifications to production systems.
-+ **Prompt injection risks** – Remote agents can introduce additional risk of prompt injection attacks. See [Prompt injection protection: AWS DevOps Agent Security](aws-devops-agent-security.md) for more information.
++ **Prompt injection risks** – Remote agents can introduce additional risk of prompt injection attacks. See [Prompt injection protection: AWS DevOps Agent Security](aws-devops-agent-security.md#prompt-injection-protection) for more information.
 
 See [AWS DevOps Agent Security](aws-devops-agent-security.md) for more information on prompt injection and the shared responsibility model.
 

@@ -76,6 +76,7 @@ The following data types are supported:
 +  [MCPToolDetail](API_MCPToolDetail.md)
 +  [Message](API_Message.md)
 +  [MonthlyRecurrence](API_MonthlyRecurrence.md)
++  [MSTeamsBidirectionalConfiguration](API_MSTeamsBidirectionalConfiguration.md)
 +  [MSTeamsChannel](API_MSTeamsChannel.md)
 +  [MSTeamsConfiguration](API_MSTeamsConfiguration.md)
 +  [MSTeamsTransmissionTarget](API_MSTeamsTransmissionTarget.md)

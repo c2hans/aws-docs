@@ -64,6 +64,12 @@ The Amazon Elastic Compute Cloud (EC2) instance ID associated with the event, if
 Type: String
 Required: No
 
+ ** OperationId **   <a name="sagemaker-Type-ClusterEventSummary-OperationId"></a>
+The unique identifier (UUID) of the cluster operation that the event is associated with, such as a scaling operation. This field is not returned when the event is not associated with an operation.
+Type: String
+Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Required: No
+
 ## See Also
 <a name="API_ClusterEventSummary_SeeAlso"></a>
 

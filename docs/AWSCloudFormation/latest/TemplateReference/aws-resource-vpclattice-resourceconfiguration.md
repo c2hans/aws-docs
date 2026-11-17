@@ -115,7 +115,7 @@ The name of the resource configuration.
 (SINGLE, GROUP, CIDR) The protocol accepted by the resource configuration. The default is `TCP`. `TCP_UDP` is supported only for CIDR resource configurations; specify it for a CIDR resource configuration to allow DNS resolution, which uses UDP.
 *Required*: No
 *Type*: String
-*Allowed values*: `TCP`
+*Allowed values*: `TCP | TCP_UDP`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ResourceConfigurationAuthType`  <a name="cfn-vpclattice-resourceconfiguration-resourceconfigurationauthtype"></a>

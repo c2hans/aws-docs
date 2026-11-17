@@ -1179,6 +1179,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [ses:ApiVersion](#list_sesv2-ses_ApiVersion)
   - **Access level:** Write
 
+- **   [PutAccountDeliveryAttributes](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountDeliveryAttributes.html)  **
+  - **Description:** Grants permission to change the delivery attributes for your account
+  - **Resource types (\*required):**
+  - **Condition keys:** [ses:ApiVersion](#list_sesv2-ses_ApiVersion)
+  - **Access level:** Write
+
 - **   [PutAccountDetails](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountDetails.html)  **
   - **Description:** Grants permission to update your account details
   - **Resource types (\*required):**

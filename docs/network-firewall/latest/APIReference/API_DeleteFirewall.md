@@ -11,11 +11,14 @@ You can check whether a firewall is in use by reviewing the route tables for the
 
 To delete a firewall, remove the delete protection if you need to using [UpdateFirewallDeleteProtection](API_UpdateFirewallDeleteProtection.md), then delete the firewall by calling [DeleteFirewall](#API_DeleteFirewall).
 
+Deleting a proxy mode firewall detaches its NAT gateways. To also delete the NAT gateways that Network Firewall created for the firewall, specify `DeleteAssociatedNatGateways`.
+
 ## Request Syntax
 <a name="API_DeleteFirewall_RequestSyntax"></a>
 
 ```
 {
+   "DeleteAssociatedNatGateways": {{boolean}},
    "FirewallArn": "{{string}}",
    "FirewallName": "{{string}}"
 }
@@ -27,6 +30,14 @@ To delete a firewall, remove the delete protection if you need to using [UpdateF
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [DeleteAssociatedNatGateways](#API_DeleteFirewall_RequestSyntax) **   <a name="networkfirewall-DeleteFirewall-request-DeleteAssociatedNatGateways"></a>
+Specifies whether to delete the NAT gateways that Network Firewall created for a proxy mode firewall when you delete the firewall. You can choose from the following values:
++  `FALSE` - Network Firewall detaches the NAT gateways from the firewall and keeps them. This is the default.
++  `TRUE` - Network Firewall also deletes the NAT gateways. The firewall status stays `DELETING` until they're deleted. You need permission to call the Amazon EC2 `DeleteNatGateway` action.
+You can't specify `TRUE` for a firewall that isn't a proxy mode firewall.
+Type: Boolean
+Required: No
 
  ** [FirewallArn](#API_DeleteFirewall_RequestSyntax) **   <a name="networkfirewall-DeleteFirewall-request-FirewallArn"></a>
 The Amazon Resource Name (ARN) of the firewall.
@@ -68,14 +79,17 @@ Required: No
       "FirewallName": "string",
       "FirewallPolicyArn": "string",
       "FirewallPolicyChangeProtection": boolean,
-      "NatGatewayMappings": [
+      "NatGatewayCreateMappings": [
          {
-            "NatGatewayId": "string"
+            "AllocationIds": [ "string" ],
+            "PrivateIps": [ "string" ],
+            "SubnetId": "string"
          }
       ],
-      "NoSourcePreservation": boolean,
       "NumberOfAssociations": number,
       "ProxySettings": {
+         "CertificateArn": "string",
+         "DomainName": "string",
          "ListenerProperties": [
             {
                "Port": number,
@@ -98,6 +112,7 @@ Required: No
       ],
       "TransitGatewayId": "string",
       "TransitGatewayOwnerAccountId": "string",
+      "TransparentFilteringNatScope": "string",
       "VpcEndpoint": {
          "SubnetMappings": [
             {

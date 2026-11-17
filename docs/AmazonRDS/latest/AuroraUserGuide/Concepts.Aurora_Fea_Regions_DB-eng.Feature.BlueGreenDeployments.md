@@ -17,6 +17,6 @@ The Blue/Green Deployments feature is available for all versions of Aurora MySQL
 
 The following Regions and engine versions are available for Blue/Green Deployments with Aurora PostgreSQL, including Aurora PostgreSQL clusters configured as Aurora Global Database.
 
-| Region | Aurora PostgreSQL 17 | Aurora PostgreSQL 16 | Aurora PostgreSQL 15 | Aurora PostgreSQL 14 | Aurora PostgreSQL 13 | Aurora PostgreSQL 12 | Aurora PostgreSQL 11 |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| All AWS Regions | Version 17.4 and higher | Version 16.1 and higher | Version 15.4 and higher | Version 14.9 and higher | Version 13.12 and higher | Version 12.16 and higher | Version 11.21 and higher |
+| Region | Aurora PostgreSQL 18 | Aurora PostgreSQL 17 | Aurora PostgreSQL 16 | Aurora PostgreSQL 15 | Aurora PostgreSQL 14 | Aurora PostgreSQL 13 | Aurora PostgreSQL 12 | Aurora PostgreSQL 11 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| All AWS Regions | Version 18.3 and higher | Version 17.4 and higher | Version 16.1 and higher | Version 15.4 and higher | Version 14.9 and higher | Version 13.12 and higher | Version 12.16 and higher | Version 11.21 and higher |

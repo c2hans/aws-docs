@@ -17,6 +17,7 @@ POST /crls HTTP/1.1
 Content-type: application/json
 
 {
+   "aliasName": "{{string}}",
    "crlData": {{blob}},
    "enabled": {{boolean}},
    "name": "{{string}}",
@@ -39,6 +40,16 @@ The request does not use any URI parameters.
 <a name="API_ImportCrl_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [aliasName](#API_ImportCrl_RequestSyntax) **   <a name="rolesanywhere-ImportCrl-request-aliasName"></a>
+An alias for the certificate revocation list (CRL). When you set an alias, the response includes the alias ARN of the CRL in `aliasArn`.
+An alias name contains 1 to 256 characters. It must begin with a letter (A-Z or a-z). It can contain only letters (A-Z and a-z), numbers (0-9), underscores (\_), hyphens (-), and forward slashes (/). A forward slash can appear only between two other characters, so an alias name can't end with a forward slash or contain two in a row. Alias names that begin with `aws/`, in any combination of uppercase and lowercase letters, are reserved. Alias names are case sensitive.
+The alias name must be unique among resources of the same type in your account and Region. If another resource of the same type already has the alias, the request fails with a `ValidationException`. An invalid or reserved alias name also causes a `ValidationException`.
+If you omit this parameter or specify an empty string, the resource is created without an alias.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `(?!.*//)([A-Za-z]([A-Za-z0-9_/-]*[A-Za-z0-9_-])?)?`
+Required: No
 
  ** [crlData](#API_ImportCrl_RequestSyntax) **   <a name="rolesanywhere-ImportCrl-request-crlData"></a>
 The x509 v3 specified certificate revocation list (CRL).
@@ -65,10 +76,10 @@ Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No
 
  ** [trustAnchorArn](#API_ImportCrl_RequestSyntax) **   <a name="rolesanywhere-ImportCrl-request-trustAnchorArn"></a>
-The ARN of the TrustAnchor the certificate revocation list (CRL) will provide revocation for.
+The ARN of the trust anchor that the certificate revocation list (CRL) provides revocation for. Specify the trust anchor ARN that contains the trust anchor ID. This parameter doesn't support alias ARNs. If you specify an alias ARN, the request fails with `ResourceNotFoundException`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1011.
-Pattern: `arn:aws(-[^:]+)?:rolesanywhere(:.*){2}(:trust-anchor.*)`
+Pattern: `arn:aws(-[^:]+)?:rolesanywhere(:.*){2}(:trust-anchor.*|:alias/trust-anchor/.*)`
 Required: Yes
 
 ## Response Syntax
@@ -80,12 +91,15 @@ Content-type: application/json
 
 {
    "crl": {
+      "aliasArn": "string",
+      "aliasName": "string",
       "createdAt": "string",
       "crlArn": "string",
       "crlData": blob,
       "crlId": "string",
       "enabled": boolean,
       "name": "string",
+      "previousAliasName": "string",
       "trustAnchorArn": "string",
       "updatedAt": "string"
    }

@@ -24,7 +24,7 @@ The current version of the Amazon S3 API is `2006-03-01`.
 Amazon S3 supports the REST API.
 
 **Note**
-Support for SOAP over HTTP is deprecated, but it is still available over HTTPS. However, new Amazon S3 features will not be supported for SOAP. We recommend that you use either this REST API or the AWS SDKs.
+As announced on May 5, 2025, SOAP API support is discontinued. Requests that use the SOAP API return an HTTP `400 Bad Request` error. Use this REST API or the AWS SDKs instead.
 
 ## Amazon S3 Control
 <a name="Welcome_AWS_S3_Control"></a>

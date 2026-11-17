@@ -44,12 +44,10 @@ A successful action returns either the `200 OK` or `202 Accepted` status code.
   +  *Code: RestoreAlreadyInProgress*
   +  *Cause: Object restore is already in progress.*
   +  *HTTP Status Code: 409 Conflict*
-  +  *SOAP Fault Code Prefix: Client*
 +
   +  *Code: GlacierExpeditedRetrievalNotAvailable*
   +  *Cause: expedited retrievals are currently not available. Try again later. (Returned if there is insufficient capacity to process the Expedited request. This error applies only to Expedited retrievals and not to S3 Standard or Bulk retrievals.)*
   +  *HTTP Status Code: 503*
-  +  *SOAP Fault Code Prefix: N/A*
 
 The following operations are related to `RestoreObject`:
 +  [PutBucketLifecycleConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketLifecycleConfiguration.html)

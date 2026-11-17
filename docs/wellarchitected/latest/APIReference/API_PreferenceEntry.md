@@ -13,7 +13,7 @@ A single Well-Architected Agent preference and its current state.
  ** key **   <a name="wellarchitected-Type-PreferenceEntry-key"></a>
 Which preference this entry describes.
 Type: String
-Valid Values: `ORG_INTEGRATION | COST_EXPLORER_ENABLED | COST_EXPLORER_DAILY_RESOURCE_LEVEL_DATA`
+Valid Values: `ORG_INTEGRATION`
 Required: Yes
 
  ** status **   <a name="wellarchitected-Type-PreferenceEntry-status"></a>

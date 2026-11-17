@@ -29,7 +29,8 @@ Key Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** NatGatewayAttachments **   <a name="networkfirewall-Type-SyncState-NatGatewayAttachments"></a>
-The status of the NAT gateway attachments for a proxy mode firewall in the Availability Zone. This reflects the attachment of the firewall to each NAT gateway that proxies its traffic.
+The NAT gateway that's attached to a proxy mode firewall in the Availability Zone, and the status of the attachment. To get NAT gateway details, such as IP addresses, use the Amazon EC2 `DescribeNatGateways` action.
+A proxy mode firewall is `READY` when at least one Availability Zone's firewall endpoint and NAT gateway attachment are `READY`.
 Type: Array of [NatGatewayAttachment](API_NatGatewayAttachment.md) objects
 Required: No
 

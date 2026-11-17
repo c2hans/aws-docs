@@ -62,6 +62,7 @@ The following table identified the integrations methods used by the supported th
 | SentinelOne | S3 Delivery | Yes | Yes | No | [Source-specific IAM policies](pipeline-iam-reference.md#source-specific-iam-policies) |
 | ServiceNow CMDB | API | No | No | Yes | [API caller permissions](pipeline-iam-reference.md#api-caller-permissions) |
 | Slack Audit Log | API | No | No | Yes | [API caller permissions](pipeline-iam-reference.md#api-caller-permissions) |
+| Snowflake Platform | API | No, an Amazon S3 bucket is not required | No, an Amazon SQS queue is not required | Yes, uses the AWS Secrets Manager extension | [API caller permissions](pipeline-iam-reference.md#api-caller-permissions) |
 | Tanium Endpoint Management | S3 Delivery | Yes | Yes | No | [Source-specific IAM policies](pipeline-iam-reference.md#source-specific-iam-policies) |
 | Tenable Vulnerability Management | API | No | No | Yes | [API caller permissions](pipeline-iam-reference.md#api-caller-permissions) |
 | Wazuh Platform | API | No | No | Yes | [API caller permissions](pipeline-iam-reference.md#api-caller-permissions) |

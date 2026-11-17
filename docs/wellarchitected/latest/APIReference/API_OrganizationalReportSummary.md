@@ -5,9 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 # OrganizationalReportSummary
 <a name="API_OrganizationalReportSummary"></a>
 
-**Important**
-This is not available during the preview release.
-
 Summary of an Organizational Report returned in a list response. Includes the core fields of the full report and the optional label, but omits the filters and coverage summary. The filters and coverage summary are available through GetAgentOrganizationalReport. The coverage summary is populated once the report reaches COMPLETED.
 
 ## Contents

@@ -10,6 +10,23 @@ Settings that define the Secure Sockets Layer/Transport Layer Security (SSL/TLS)
 ## Contents
 <a name="API_ServerCertificateScope_Contents"></a>
 
+ ** DecryptionAction **   <a name="networkfirewall-Type-ServerCertificateScope-DecryptionAction"></a>
+Whether the firewall decrypts traffic that matches this scope. You can choose from the following values:
++  `DECRYPT` - The firewall decrypts the traffic for inspection.
++  `BYPASS` - The firewall doesn't decrypt the traffic.
+Type: String
+Valid Values: `DECRYPT | BYPASS`
+Required: No
+
+ ** DeploymentMode **   <a name="networkfirewall-Type-ServerCertificateScope-DeploymentMode"></a>
+The type of firewall that this scope applies to. If you don't specify a value, the scope applies to both types, the same as `ALL`. You can choose from the following values:
++  `ALL` - The scope applies to both transparent firewalls and proxy mode firewalls.
++  `TRANSPARENT_FIREWALL_ONLY` - The scope applies only to transparent firewalls.
++  `EXPLICIT_PROXY_ONLY` - The scope applies only to proxy mode firewalls. A scope that specifies `DomainMatch` must use this value.
+Type: String
+Valid Values: `TRANSPARENT_FIREWALL_ONLY | EXPLICIT_PROXY_ONLY | ALL`
+Required: No
+
  ** DestinationPorts **   <a name="networkfirewall-Type-ServerCertificateScope-DestinationPorts"></a>
 The destination ports to decrypt for inspection, in Transmission Control Protocol (TCP) format. If not specified, this matches with any destination port.
 You can specify individual ports, for example `1994`, and you can specify port ranges, such as `1990:1994`.
@@ -19,6 +36,11 @@ Required: No
  ** Destinations **   <a name="networkfirewall-Type-ServerCertificateScope-Destinations"></a>
 The destination IP addresses and address ranges to decrypt for inspection, in CIDR notation. If not specified, this matches with any destination address.
 Type: Array of [Address](API_Address.md) objects
+Required: No
+
+ ** DomainMatch **   <a name="networkfirewall-Type-ServerCertificateScope-DomainMatch"></a>
+The domains that this scope matches, based on the host name in the client's HTTP CONNECT request. Domain matching applies only to proxy mode firewalls. If you specify `DomainMatch`, you must set `DeploymentMode` to `EXPLICIT_PROXY_ONLY`. If you don't specify `DomainMatch`, the scope matches traffic by its source, destination, ports, and protocols only.
+Type: [DomainMatch](API_DomainMatch.md) object
 Required: No
 
  ** Protocols **   <a name="networkfirewall-Type-ServerCertificateScope-Protocols"></a>
