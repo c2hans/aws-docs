@@ -42,7 +42,7 @@ Currently, you can use either of the following supported versions of KCL to buil
   For more information, see [Develop KCL 1.x consumers](developing-consumers-with-kcl.md)
 + **KCL 2.x**
 
-  For more information, see [Develop KCL 2.x Consumers](developing-consumers-with-kcl-v2.md)
+  For more information, see [Develop KCL 2.x consumers](developing-consumers-with-kcl-v2.md)
 
 You can use either KCL 1.x or KCL 2.x to build consumer applications that use shared throughput. For more information, see [Develop custom consumers with shared throughput using KCL](custom-kcl-consumers.md).
 

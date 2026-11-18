@@ -2,13 +2,13 @@
 source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-agents-service-improvements.html
 ---
 
-# Data handling for Troubleshooting Agent
+# Data handling for the Apache Spark agents
 <a name="spark-agents-service-improvements"></a>
 
 ## How AWS uses your content
 <a name="spark-troubleshooting-agent-content-usage"></a>
 
-AWS does not use any customer content for service improvement or model training. Customer content, including prompts, Spark logs, and generated responses, is used solely to provide the Apache Spark Troubleshooting Agent service.
+AWS does not use any customer content for service improvement or model training. Customer content, including prompts, Spark logs, and generated responses, is used solely to provide the Apache Spark agents service.
 
 ## Service metadata stored for usage tracking and debugging
 <a name="spark-troubleshooting-agent-service-metadata"></a>

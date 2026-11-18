@@ -49,7 +49,7 @@ Required: Yes
  ** capabilities **   <a name="devopsagent-Type-Association-capabilities"></a>
 Enabled capabilities for this association.
 Type: String to [CapabilityConfiguration](API_CapabilityConfiguration.md) object map
-Valid Keys: `RELEASE_READINESS_REVIEW | RELEASE_READINESS_REVIEW_AUTOMATED_TESTING`
+Valid Keys: `RELEASE_READINESS_REVIEW | RELEASE_READINESS_REVIEW_AUTOMATED_TESTING | CODE_CHANGE_RISK_ANALYSIS | CODE_CHANGE_RISK_ANALYSIS_AUTOMATED_TESTING`
 Required: No
 
  ** status **   <a name="devopsagent-Type-Association-status"></a>

@@ -21,7 +21,7 @@ Required: Yes
  ** instanceType **   <a name="evs-Type-InstanceTypeEsxVersionsInfo-instanceType"></a>
 The EC2 instance type.
 Type: String
-Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl`
+Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl | r7i.metal-24xl | r7i.metal-48xl`
 Required: Yes
 
 ## See Also

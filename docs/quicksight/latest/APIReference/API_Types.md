@@ -1106,6 +1106,7 @@ The following data types are supported:
 +  [UnaggregatedField](API_UnaggregatedField.md)
 +  [UniqueKey](API_UniqueKey.md)
 +  [UniqueValuesComputation](API_UniqueValuesComputation.md)
++  [UnmaterializedCalculatedColumn](API_UnmaterializedCalculatedColumn.md)
 +  [UnpivotOperation](API_UnpivotOperation.md)
 +  [UntagColumnOperation](API_UntagColumnOperation.md)
 +  [UploadedDocumentMetadata](API_UploadedDocumentMetadata.md)

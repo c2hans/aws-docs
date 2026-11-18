@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/dynamodb-query-operations.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Query DynamoDB items
 <a name="dynamodb-query-operations"></a>
 
-DynamoDB provides two operations for reading multiple items. A *query* finds items by their primary-key values and is the efficient access path: it reads only the items that match the key condition. A *scan* reads every item in the table and applies any filter afterward. Prefer key-based queries, and reserve scans for access patterns that a key cannot express. For more information, see [Querying tables in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the Amazon DynamoDB Developer Guide.
+DynamoDB provides two operations for reading multiple items. A *query* finds items by their primary-key values and reads only the items that match the key condition. A *scan* reads every item in the table and applies any filter afterward. Prefer key-based queries. Reserve scans for access patterns that a key can't express. For more information, see [Querying tables in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the Amazon DynamoDB Developer Guide.
 
-The examples on this page use the composite-key table created in [Create a table with a composite primary key](dynamodb-tables.md#dynamodb-create-composite-table). The `client` that is used in the following examples can be created from the snippet in [Set up the examples](services-dynamodb.md#dynamodb-shared-setup). Attributes in the returned items are typed `AttributeValue` unions; narrow each one to its concrete model before reading its value, as shown in [Get an item](dynamodb-item-operations.md#dynamodb-get-item).
+The examples on this page use the composite-key table created in [Create a table with a composite primary key](dynamodb-tables.md#dynamodb-create-composite-table). To create the `client` that the following examples use, see [Set up the examples](services-dynamodb.md#dynamodb-shared-setup). The identity that runs the examples needs the `dynamodb:Query` and `dynamodb:Scan` permissions on the table.
 
 ## Query by partition key
 <a name="dynamodb-query"></a>
@@ -21,27 +21,23 @@ Use `query` when you know the partition-key value. The key condition must includ
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import AttributeValue, AttributeValueS, QueryInput
+from aws_sdk_dynamodb import DynamoDBClient
+from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
 ```
-async def query_items(
-    client: AsyncDynamoDBClient, table_name: str, author: str
+def query_items(
+    client: DynamoDBClient, table_name: str, author: str
 ) -> list[dict[str, AttributeValue]]:
     """Query one response page by partition-key value."""
-    response = await client.query(
-        input=QueryInput(
-            table_name=table_name,
-            key_condition_expression="#author = :author",
-            expression_attribute_names={"#author": "author"},
-            expression_attribute_values={
-                ":author": AttributeValueS(value=author)
-            },
-            consistent_read=True,
-        )
+    response = client.query(
+        table_name=table_name,
+        key_condition_expression="#author = :author",
+        expression_attribute_names={"#author": "author"},
+        expression_attribute_values={":author": {"s": author}},
+        consistent_read=True,
     )
     return response.items or []
 ```
@@ -51,20 +47,20 @@ async def query_items(
 
 For request and response details, see the [query()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/dynamodb/operations/query/) API reference.
 
-A query can return a partial result. Continue while `last_evaluated_key` is present, and pass that key as `exclusive_start_key` on the next request.
+A query can return a partial result. Continue while `last_evaluated_key` is present. Pass that key unchanged as `exclusive_start_key` on the next request.
 
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import AttributeValue, AttributeValueS, QueryInput
+from aws_sdk_dynamodb import DynamoDBClient
+from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
 ```
-async def query_items_paginated(
-    client: AsyncDynamoDBClient,
+def query_items_paginated(
+    client: DynamoDBClient,
     table_name: str,
     author: str,
     max_pages: int = 100,
@@ -73,16 +69,12 @@ async def query_items_paginated(
     items: list[dict[str, AttributeValue]] = []
     start_key = None
     for _ in range(max_pages):
-        page = await client.query(
-            input=QueryInput(
-                table_name=table_name,
-                key_condition_expression="#author = :author",
-                expression_attribute_names={"#author": "author"},
-                expression_attribute_values={
-                    ":author": AttributeValueS(value=author)
-                },
-                exclusive_start_key=start_key,
-            )
+        page = client.query(
+            table_name=table_name,
+            key_condition_expression="#author = :author",
+            expression_attribute_names={"#author": "author"},
+            expression_attribute_values={":author": {"s": author}},
+            exclusive_start_key=start_key,
         )
         items.extend(page.items or [])
         start_key = page.last_evaluated_key
@@ -96,20 +88,20 @@ async def query_items_paginated(
 
 For request and response details, see the [scan()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/dynamodb/operations/scan/) API reference.
 
-Use `scan` only when a key-based query cannot express the access pattern. A filter is applied after DynamoDB reads each page, so it does not reduce the read capacity consumed. Continue with `last_evaluated_key` even when a filtered page returns no items.
+Use `scan` only when a key-based query can't express the access pattern. DynamoDB applies the filter after it reads each page, so the filter doesn't reduce the read capacity that the scan consumes. Continue with `last_evaluated_key` even when a filtered page returns no items.
 
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import AttributeValue, AttributeValueN, ScanInput
+from aws_sdk_dynamodb import DynamoDBClient
+from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
 ```
-async def scan_items(
-    client: AsyncDynamoDBClient,
+def scan_items(
+    client: DynamoDBClient,
     table_name: str,
     minimum_year: int,
     max_pages: int = 100,
@@ -118,16 +110,14 @@ async def scan_items(
     items: list[dict[str, AttributeValue]] = []
     start_key = None
     for _ in range(max_pages):
-        page = await client.scan(
-            input=ScanInput(
-                table_name=table_name,
-                filter_expression="#year >= :minimum",
-                expression_attribute_names={"#year": "year"},
-                expression_attribute_values={
-                    ":minimum": AttributeValueN(value=str(minimum_year))
-                },
-                exclusive_start_key=start_key,
-            )
+        page = client.scan(
+            table_name=table_name,
+            filter_expression="#year >= :minimum",
+            expression_attribute_names={"#year": "year"},
+            expression_attribute_values={
+                ":minimum": {"n": str(minimum_year)}
+            },
+            exclusive_start_key=start_key,
         )
         items.extend(page.items or [])
         start_key = page.last_evaluated_key

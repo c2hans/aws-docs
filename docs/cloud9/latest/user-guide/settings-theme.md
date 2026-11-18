@@ -43,5 +43,5 @@ Applies the selected theme to code files across the AWS Cloud9 IDE.
 **Important**
 AWS Cloud9 no longer supports the feature that allowed users to override IDE themes by updating the `styles.css` file. Users can continue to view, edit, and save the `styles.css` file using the editor. But, no theme overrides are applied when the AWS Cloud9 IDE loads.
 If AWS Cloud9 detects that the `styles.css` file has been modified, the following message is displayed in the IDE:
-Support for theme overrides has been discontinued. The contents of this styles.css file will no longer be applied on loading the AWS Cloud9 IDE.
+`Support for theme overrides has been discontinued. The contents of this styles.css file will no longer be applied on loading the AWS Cloud9 IDE.`
 If you need to use style sheets to define themes for the IDE, please [contact us](https://aws.amazon.com/contact-us/) directly.

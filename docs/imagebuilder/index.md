@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/imagebuilder/index.html
 title: 'EC2 Image Builder Documentation'
 canonical_url: https://docs.aws.amazon.com/imagebuilder/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # EC2 Image Builder Documentation

@@ -13,7 +13,6 @@ Organization AWS Config rule creation or deletion status in each member account.
  ** AccountId **   <a name="config-Type-MemberAccountStatus-AccountId"></a>
 The 12-digit account ID of a member account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: Yes
 

@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 # `AWSSupport-TroubleshootLambdaVpcConnectivity`
 <a name="automation-awssupport-troubleshootlambdavpcconnectivity"></a>
 
+**Description**
+
 The `AWSSupport-TroubleshootLambdaVpcConnectivity` runbook helps diagnose and troubleshoot network connectivity issues between AWS Lambda (Lambda) functions connected to an Amazon Virtual Private Cloud (Amazon VPC) and their target destinations. The runbook uses Amazon VPC Reachability Analyzer to perform network path analysis, identifying potential issues such as missing NAT gateways, incorrect routing configurations, security group misconfigurations, and network ACL restrictions. The runbook provides actionable recommendations to resolve connectivity problems and ensure proper network communication for VPC-enabled Lambda functions.
 
 **Important**
@@ -70,7 +72,11 @@ Example IAM policy:
 }
 ```
 
+**Outputs**
+
 `SynthOutput.Findings` - Prioritized, actionable recommendations for resolving the identified Lambda VPC network connectivity issues.
+
+**Instructions**
 
 Follow these steps to configure the automation:
 
@@ -114,6 +120,8 @@ Follow these steps to configure the automation:
      Analyzes the Reachability Analyzer results and generates prioritized, actionable recommendations for resolving Lambda VPC network connectivity issues.
 
 1. After completion, review the Outputs section for the detailed results of the execution.
+
+**References**
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootLambdaVpcConnectivity/description)

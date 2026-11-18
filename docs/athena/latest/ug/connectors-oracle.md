@@ -105,7 +105,7 @@ oracle://${{{jdbc_connection_string}}}
 ```
 
 **Note**
-If your password contains special characters (for example, `some.password`), enclose your password in double quotes when you pass it to the connection string (for example, `"some.password"`). Failure to do so can result in an Invalid Oracle URL specified error.
+If your password contains special characters (for example, `some.password`), enclose your password in double quotes when you pass it to the connection string (for example, `"some.password"`). Failure to do so can result in an `Invalid Oracle URL specified` error.
 
 #### Using a single connection handler
 <a name="connectors-oracle-using-a-single-connection-handler"></a>
@@ -155,7 +155,7 @@ As a security best practice, don't use hardcoded credentials in your environment
   ```
 
 **Note**
-If your password contains special characters (for example, `some.password`), enclose your password in double quotes when you store it in Secrets Manager (for example, `"some.password"`). Failure to do so can result in an Invalid Oracle URL specified error.
+If your password contains special characters (for example, `some.password`), enclose your password in double quotes when you store it in Secrets Manager (for example, `"some.password"`). Failure to do so can result in an `Invalid Oracle URL specified` error.
 
 **Example connection string with secret name**
 The following string has the secret name `${Test/RDS/Oracle}`.

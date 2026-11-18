@@ -80,7 +80,7 @@ After you have your policy, you must create an IAM role, and then attach the pol
 
 **Important**
 To create or update a Slack channel configuration, you must have the `iam:PassRole` permission for the role that you choose. This permission allows you to pass the role to the AWS Support App. If you don't have this permission, you receive an error similar to the following when you create or update a channel configuration:
-An error occurred when we tried to process your request. User: {{user}} is not authorized to perform: supportapp:CreateSlackChannelConfiguration.
+`An error occurred when we tried to process your request. User: {{user}} is not authorized to perform: supportapp:CreateSlackChannelConfiguration.`
 For more information, see [Granting a user permissions to pass a role to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html) in the *IAM User Guide*.
 
 **To create a role for the AWS Support App**

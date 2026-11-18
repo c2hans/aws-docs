@@ -5,7 +5,11 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 # `AWSSupport-TroubleshootMWAAEnvironmentCreation`
 <a name="automation-troubleshoot-mwaa-environment-creation"></a>
 
+**Description**
+
  The `AWSSupport-TroubleshootMWAAEnvironmentCreation` runbook provides information to debug Amazon Managed Workflows for Apache Airflow (Amazon MWAA) environment creation issues, and perform checks along with the documented reasons on a best effort basis to help identify the failure.
+
+**How does it work?**
 
 The runbook performs the following steps:
 + Retrieves the details of the Amazon MWAA environment.
@@ -68,6 +72,8 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 + `ssm:StartAutomationExecution`
 + `sts:GetCallerIdentity`
 
+**Example policy**
+
 ```
         {
             "Version": "2012-10-17"		 	 	 ,
@@ -126,6 +132,8 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
             ]
         }
 ```
+
+**Instructions**
 
 Follow these steps to configure the automation:
 
@@ -227,6 +235,8 @@ Follow these steps to configure the automation:
 
      Parses the existing CloudWatch log groups of the Amazon MWAA environment to locate errors.
 ![MMAA environment troubleshooting report showing successful configuration checks and connectivity tests.](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/images/awssupport-troubleshoot-mwaa-environment-creation_outputs.png)
+
+**References**
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootMWAAEnvironmentCreation/description)

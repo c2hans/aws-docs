@@ -36,7 +36,7 @@ Required: No
  ** JobCategory **   <a name="sagemaker-Type-Job-JobCategory"></a>
 The category of the job.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: No
 
  ** JobConfigDocument **   <a name="sagemaker-Type-Job-JobConfigDocument"></a>
@@ -80,7 +80,7 @@ Required: No
  ** SecondaryStatus **   <a name="sagemaker-Type-Job-SecondaryStatus"></a>
 The detailed secondary status of the job, providing more granular information about the job's progress.
 Type: String
-Valid Values: `Starting | Downloading | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Interrupted | Failed | Completed | Restarting | Pending | Evaluating | Deleting | DeleteFailed`
+Valid Values: `Starting | Downloading | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Interrupted | Failed | Completed | Restarting | Pending | Generating | PartialGeneration | Evaluating | Validating | Preparing | Executing | Publishing | Finalizing | Transforming | Deleting | DeleteFailed`
 Required: No
 
  ** SecondaryStatusTransitions **   <a name="sagemaker-Type-Job-SecondaryStatusTransitions"></a>

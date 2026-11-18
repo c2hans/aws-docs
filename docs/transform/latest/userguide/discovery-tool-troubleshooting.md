@@ -294,6 +294,8 @@ net localgroup Administrators
 
 WMI requires local administrator privileges to access operating system information. SQL Server collection also requires that the service account has local administrator access on the target server.
 
+**FQDN unavailable for servers discovered through Hyper-V**
+
 For servers discovered through Hyper-V, the discovery tool resolves the server FQDN from guest metadata provided by Integration Services, which is required for Kerberos SPN matching. If Integration Services is not running in the guest, the FQDN is unavailable and Kerberos authentication fails. Confirm that Integration Services is running in the guest (see [Guest agent requirements for OS-level collection](discovery-tool-setup.md#discovery-tool-guest-agent)).
 
 ### Kerberos configuration checklist
@@ -434,9 +436,15 @@ If the discovery tool is unable to collect the server UUID (showing as empty or 
 ### Server appears in inventory but is never collected
 <a name="discovery-tool-inventory-not-collected"></a>
 
+**Symptom**
+
 A server appears in **Discovered inventory** with no IP address, and its collection status never leaves pending. This typically means the guest agent is not supplying a guest address, so the discovery tool has nothing to connect to for OS-level collection.
+
+**Checks**
 + On Hyper-V, run `Get-VMIntegrationService -VMName {{vm-name}}` on the Hyper-V host and confirm that the Key-Value Pair Exchange service is running.
 + On VMware, check the VMware Tools status for the virtual machine in the vSphere Client.
+
+**Resolution**
 + Install and start the guest agent (VMware Tools or Hyper-V Integration Services) in the guest, and then wait for the next discovery cycle.
 + Alternatively, import the server from a CSV file with its IP address, which supplies the address directly. For more information, see [Import servers](discovery-tool-configure.md#discovery-tool-bare-metal-import).
 

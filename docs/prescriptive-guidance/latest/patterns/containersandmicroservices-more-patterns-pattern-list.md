@@ -12,6 +12,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 + [Implement AI-powered Kubernetes diagnostics and troubleshooting with K8sGPT and Amazon Bedrock integration](implement-ai-powered-kubernetes-diagnostics-and-troubleshooting-with-k8sgpt-and-amazon-bedrock-integration.md)
 + [Migrate from Oracle WebLogic to Apache Tomcat (TomEE) on Amazon ECS](migrate-from-oracle-weblogic-to-apache-tomcat-tomee-on-amazon-ecs.md)
 + [Monitor application activity by using CloudWatch Logs Insights](monitor-application-activity-by-using-cloudwatch-logs-insights.md)
++ [Simplify Amazon EKS multi-tenant application deployment by using Flux](simplify-amazon-eks-multi-tenant-application-deployment-by-using-flux.md)
 + [Structure a Python project in hexagonal architecture using AWS Lambda](structure-a-python-project-in-hexagonal-architecture-using-aws-lambda.md)
 + [Test AWS infrastructure by using LocalStack and Terraform Tests](test-aws-infra-localstack-terraform.md)
 + [Coordinate resource dependency and task execution by using the AWS Fargate WaitCondition hook construct](use-the-aws-fargate-waitcondition-hook-construct.md)

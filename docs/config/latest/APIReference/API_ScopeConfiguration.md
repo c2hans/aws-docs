@@ -16,7 +16,11 @@ Type: Boolean
 Required: Yes
 
  ** scopeType **   <a name="config-Type-ScopeConfiguration-scopeType"></a>
-The type of scope for the third-party cloud resources. Valid values include `tenant` and `subscription`.
+The type of scope for the third-party cloud resources. Valid values include:
++  `tenant` – Applies to all resources in an Azure tenant
++  `subscription` – Applies to resources in the Azure subscriptions you specify
++  `organization` – Applies to all resources in a Google Cloud organization
++  `project` – Applies to resources in the Google Cloud projects you specify
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
@@ -29,7 +33,7 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: No
 
  ** scopeValues **   <a name="config-Type-ScopeConfiguration-scopeValues"></a>
-The list of specific scope values for the third-party cloud resources. For example, a list of Azure subscriptions or management groups.
+The list of specific scope values for the third-party cloud resources. For example, a list of Azure subscription IDs, or a list of Google Cloud project IDs. Don't specify `scopeValues` when `scopeType` is `tenant` or `organization`.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No

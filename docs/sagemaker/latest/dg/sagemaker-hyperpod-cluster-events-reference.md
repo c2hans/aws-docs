@@ -67,6 +67,7 @@ The `detail.EventDetails` object contains the following fields:
 | InstanceGroupName | String | No | Instance group name (present when ResourceType is InstanceGroup or Instance). |
 | InstanceId | String | No | EC2 instance ID (present when ResourceType is Instance). |
 | EventDetails | Object | No | Additional metadata specific to the resource type and operation. |
+| OperationId | String (UUID) | No | ID of the cluster operation whose request caused the event. Present on instance and instance group events that HyperPod records while working on a scaling or deep health check request. Not present on cluster-level events, or on events from activity that isn't an operation, such as node replacement, reboots, software updates, and on-start deep health checks. ListClusterEvents and DescribeClusterEvent return this field; events delivered through Amazon EventBridge don't include it. For more information, see [Tracking requests with SageMaker HyperPod cluster operations](sagemaker-hyperpod-cluster-operations.md). |
 
 ### Event levels
 <a name="sagemaker-hyperpod-cluster-events-levels"></a>
@@ -373,6 +374,8 @@ HyperPod sends cluster events to Amazon EventBridge using three detail types:
 <a name="sagemaker-hyperpod-cluster-events-api-reference"></a>
 + [ListClusterEvents](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusterEvents.html) — List events with filtering, sorting, and pagination
 + [DescribeClusterEvent](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterEvent.html) — Get full details for a specific event
++ [ListClusterOperations](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusterOperations.html) — List cluster operations with filtering, sorting, and pagination
++ [DescribeClusterOperation](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterOperation.html) — Get the details of a cluster operation
 + [ClusterEventSummary](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterEventSummary.html) — Event summary data type
 + [ClusterEventDetail](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterEventDetail.html) — Event detail data type
 
@@ -380,3 +383,4 @@ HyperPod sends cluster events to Amazon EventBridge using three detail types:
 <a name="sagemaker-hyperpod-cluster-events-see-also"></a>
 + [SageMaker HyperPod Slurm cluster events](sagemaker-hyperpod-cluster-events-slurm-page.md) — Slurm cluster events with CLI usage and common scenarios
 + [SageMaker HyperPod EKS cluster events](sagemaker-hyperpod-cluster-events-eks-page.md) — EKS cluster events with CLI usage and common scenarios
++ [Tracking requests with SageMaker HyperPod cluster operations](sagemaker-hyperpod-cluster-operations.md)

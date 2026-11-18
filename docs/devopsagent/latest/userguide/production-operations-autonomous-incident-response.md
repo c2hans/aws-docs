@@ -131,7 +131,7 @@ The primary function of the triage stage is incident correlation — identifying
 
 AWS DevOps Agent makes one of three decisions:
 + **Linked** – Correlates the incident to an existing investigation and sends a steering message to that investigation with context about the new incident.
-+ **Skipped** – The incident matches skip criteria defined in a skill and is automatically dismissed without investigation. For more information, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills.md).
++ **Skipped** – The incident matches skip criteria defined in a skill and is automatically dismissed without investigation. For more information, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills-index.md).
 + **Proceed** – Schedules a new independent investigation for the incident.
 
 ### Viewing triage decisions

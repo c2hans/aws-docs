@@ -9,7 +9,7 @@ In [WKLD.03 Use ephemeral secrets or a secrets-management service](wkld-03.md) a
 
 An exposed secret can be exploited and risks unauthorized access to your AWS resources and data. Rotate or revoke it immediately after detection.
 
-Scan code repositories regularly for accidentally committed secrets. [Kiro CLI](https://aws.amazon.com/kiro/) includes built-in secret detection that scans your codebase for patterns matching API keys, access tokens, passwords, and other credential formats. It identifies secrets across files in your repository and reports their location so you can remediate them before they are exploited. Use Kiro CLI or the open-source tools listed in [WKLD.04](wkld-04.md) and integrate the tool into your local development or CI/CD pipeline. If you identify an exposed secret, remediate it immediately. Rotate or revoke the exposed credential to prevent further use, and remove it from source control history.
+Scan code repositories regularly for accidentally committed secrets. [Kiro CLI](https://aws.amazon.com/kiro/) includes built-in secret detection that scans your codebase for patterns matching API keys, access tokens, passwords, and other credential formats. It identifies secrets across files in your repository and reports their location so you can remediate them before unauthorized users can use them. Use Kiro CLI or the open-source tools listed in [WKLD.04](wkld-04.md), and integrate the tool into your local development or CI/CD pipeline. If you identify an exposed secret, remediate it immediately by rotating or revoking the credential to prevent further use, and remove it from source control history.
 
 **To detect exposed secrets using Kiro CLI**
 
@@ -25,7 +25,7 @@ Scan code repositories regularly for accidentally committed secrets. [Kiro CLI](
 
 1. Rotate or revoke the exposed secret immediately in the originating service (for example, regenerate an API key or reset a password).
 
-1. Create a new secret in AWS Secrets Manager or AWS Systems Manager Parameter Store.
+1. Create a new secret in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/) or [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/) Parameter Store.
 
 1. Update your applications to retrieve the new secret from the secure storage service.
 
@@ -34,4 +34,4 @@ Scan code repositories regularly for accidentally committed secrets. [Kiro CLI](
 The open-source tools listed in [WKLD.04](wkld-04.md) can also detect secrets that are already present in your repository.
 
 **Note**
-Kiro CLI is available at no charge under the Free tier. For more information, see [Kiro pricing](https://kiro.dev/pricing/).
+Kiro CLI is available at no charge under the free tier. For more information, see [Kiro pricing](https://kiro.dev/pricing/).

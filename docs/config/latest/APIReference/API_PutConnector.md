@@ -28,6 +28,11 @@ Use [TagResource](https://docs.aws.amazon.com/config/latest/APIReference/API_Tag
       "azure": {
          "clientIdentifier": "{{string}}",
          "tenantIdentifier": "{{string}}"
+      },
+      "gcp": {
+         "gcpOrganizationId": "{{string}}",
+         "serviceAccountEmail": "{{string}}",
+         "workloadIdentityPoolProvider": "{{string}}"
       }
    },
    "Tags": [

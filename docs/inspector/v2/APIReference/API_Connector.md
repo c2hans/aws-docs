@@ -25,7 +25,7 @@ Required: Yes
  ** provider **   <a name="inspector2-Type-Connector-provider"></a>
 The cloud provider for the connector.
 Type: String
-Valid Values: `AZURE`
+Valid Values: `AZURE | GCP`
 Required: Yes
 
  ** updatedAt **   <a name="inspector2-Type-Connector-updatedAt"></a>
@@ -71,6 +71,19 @@ Additional information about the current enablement status of the connector.
 Type: String
 Required: No
 
+ ** gcpRegions **   <a name="inspector2-Type-Connector-gcpRegions"></a>
+The Google Cloud Platform (GCP) locations configured for the connector.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 256 items.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `(ALL|[a-z][a-z0-9-]*)`
+Required: No
+
+ ** gcpScopeConfiguration **   <a name="inspector2-Type-Connector-gcpScopeConfiguration"></a>
+The Google Cloud Platform (GCP) scope configuration for the connector.
+Type: [GcpScopeConfiguration](API_GcpScopeConfiguration.md) object
+Required: No
+
  ** health **   <a name="inspector2-Type-Connector-health"></a>
 The health of the connector, which indicates whether Amazon Inspector can reach and scan the connected resources.
 Type: [ConnectorHealth](API_ConnectorHealth.md) object
@@ -93,7 +106,7 @@ The tags associated with the connector.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `(?!aws:)[\p{L}\p{Z}\p{N}_.:/=+\-@]*`
+Key Pattern: `[\p{L}\p{Z}\p{N}_.:/=+\-@]*`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 

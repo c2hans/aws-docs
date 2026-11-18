@@ -19,6 +19,8 @@ Updates the specified fields for the specified stack.
       }
    ],
    "AgentAccessConfig": {
+      "KmsKeyArn": "{{string}}",
+      "ReplaySessionEnabled": {{boolean}},
       "S3BucketArn": "{{string}}",
       "ScreenImageFormat": "{{string}}",
       "ScreenResolution": "{{string}}",
@@ -91,7 +93,7 @@ Required: No
  ** [AttributesToDelete](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-AttributesToDelete"></a>
 The stack attributes to delete.
 Type: Array of strings
-Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | AGENT_ACCESS_CONFIG | STORAGE_CONNECTOR_AUTHENTICATION`
+Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | AGENT_ACCESS_CONFIG | STORAGE_CONNECTOR_AUTHENTICATION | AGENT_ACCESS_CONFIG_KMS_KEY_ARN`
 Required: No
 
  ** [DeleteStorageConnectors](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-DeleteStorageConnectors"></a>
@@ -173,6 +175,8 @@ Required: No
          }
       ],
       "AgentAccessConfig": {
+         "KmsKeyArn": "string",
+         "ReplaySessionEnabled": boolean,
          "S3BucketArn": "string",
          "ScreenImageFormat": "string",
          "ScreenResolution": "string",

@@ -232,6 +232,7 @@ The following data types are supported by Amazon SageMaker Service:
 +  [ContinuousParameterRangeSpecification](API_ContinuousParameterRangeSpecification.md)
 +  [ConvergenceDetected](API_ConvergenceDetected.md)
 +  [CreateTemplateProvider](API_CreateTemplateProvider.md)
++  [CrossRegionTrafficConfig](API_CrossRegionTrafficConfig.md)
 +  [CustomFileSystem](API_CustomFileSystem.md)
 +  [CustomFileSystemConfig](API_CustomFileSystemConfig.md)
 +  [CustomImage](API_CustomImage.md)
@@ -262,6 +263,7 @@ The following data types are supported by Amazon SageMaker Service:
 +  [DeploymentStageStatusSummary](API_DeploymentStageStatusSummary.md)
 +  [DerivedInformation](API_DerivedInformation.md)
 +  [DesiredWeightAndCapacity](API_DesiredWeightAndCapacity.md)
++  [Destination](API_Destination.md)
 +  [Device](API_Device.md)
 +  [DeviceDeploymentSummary](API_DeviceDeploymentSummary.md)
 +  [DeviceFleetSummary](API_DeviceFleetSummary.md)
@@ -418,6 +420,7 @@ The following data types are supported by Amazon SageMaker Service:
 +  [InferenceRecommendation](API_InferenceRecommendation.md)
 +  [InferenceRecommendationsJob](API_InferenceRecommendationsJob.md)
 +  [InferenceRecommendationsJobStep](API_InferenceRecommendationsJobStep.md)
++  [InferenceRouterSummary](API_InferenceRouterSummary.md)
 +  [InferenceSpecification](API_InferenceSpecification.md)
 +  [InfraCheckConfig](API_InfraCheckConfig.md)
 +  [InputConfig](API_InputConfig.md)
@@ -696,6 +699,11 @@ The following data types are supported by Amazon SageMaker Service:
 +  [RoleGroupAssignment](API_RoleGroupAssignment.md)
 +  [RollingDeploymentPolicy](API_RollingDeploymentPolicy.md)
 +  [RollingUpdatePolicy](API_RollingUpdatePolicy.md)
++  [RoutingTarget](API_RoutingTarget.md)
++  [RoutingTargetAsyncInferenceClientConfig](API_RoutingTargetAsyncInferenceClientConfig.md)
++  [RoutingTargetAsyncInferenceConfig](API_RoutingTargetAsyncInferenceConfig.md)
++  [RoutingTargetAsyncInferenceNotificationConfig](API_RoutingTargetAsyncInferenceNotificationConfig.md)
++  [RoutingTargetAsyncInferenceOutputConfig](API_RoutingTargetAsyncInferenceOutputConfig.md)
 +  [RSessionAppSettings](API_RSessionAppSettings.md)
 +  [RStudioServerProAppSettings](API_RStudioServerProAppSettings.md)
 +  [RStudioServerProDomainSettings](API_RStudioServerProDomainSettings.md)
@@ -921,6 +929,8 @@ The following data types are supported by Amazon SageMaker geospatial capabiliti
 +  [ViewSunAzimuthInput](API_geospatial_ViewSunAzimuthInput.md)
 +  [ViewSunElevationInput](API_geospatial_ViewSunElevationInput.md)
 +  [ZonalStatisticsConfigInput](API_geospatial_ZonalStatisticsConfigInput.md)
+
+The following data types are supported by Amazon SageMaker Inference Router Runtime:
 
 The following data types are supported by Amazon SageMaker Metrics Service:
 +  [BatchPutMetricsError](API_metrics_BatchPutMetricsError.md)

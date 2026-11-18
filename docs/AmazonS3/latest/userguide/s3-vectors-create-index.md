@@ -53,7 +53,7 @@ Choose based on your embedding model's output dimensions.
 
    1. Repeat to add additional keys (maximum 10 keys).
 **Note**
-You can attach filterable metadata as key-value pairs to each vector when you insert vector data after you create a vector index. By default, all metadata keys that are attached to vectors are filterable and can be used as filters in a similarity query. Only metadata keys that are specified as non-filterable during vector index creation are excluded from filtering. For more information about metadata size limits per vector, including both total and filterable metadata constraints, see [Limitations and restrictions](s3-vectors-limitations.md).
+You can attach filterable metadata as key-value pairs to each vector when you insert vector data after you create a vector index. By default, all metadata keys that are attached to vectors are filterable and can be used as filters in a similarity query. Only metadata keys that are specified as non-filterable during vector index creation are excluded from filtering. For more information about metadata size limits per vector, including both total and filterable metadata constraints, see [Limitations and restrictions](s3-vectors-limitations.md). To learn how to configure full-text search on an index, see [Configuring full-text search](s3-vectors-configuring-full-text-search.md).
 
 1. Review your configuration carefully.
 **Note**

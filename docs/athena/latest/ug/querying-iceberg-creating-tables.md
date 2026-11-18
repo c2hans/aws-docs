@@ -15,7 +15,7 @@ Athena creates Iceberg v2 tables. For the difference between v1 and v2 tables, s
 Athena `CREATE TABLE` creates an Iceberg table with no data. You can query a table from external systems such as Apache Spark directly if the table uses the [Iceberg open source glue catalog](https://iceberg.apache.org/docs/latest/aws/#glue-catalog). You do not have to create an external table.
 
 **Warning**
-Running `CREATE EXTERNAL TABLE` results in the error message External keyword not supported for table type ICEBERG.
+Running `CREATE EXTERNAL TABLE` results in the error message `External keyword not supported for table type ICEBERG`.
 
 To create an Iceberg table from Athena, set the `'table_type'` table property to `'ICEBERG'` in the `TBLPROPERTIES` clause, as in the following syntax summary.
 

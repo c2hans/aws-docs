@@ -745,7 +745,16 @@ Content-type: application/json
             }
          }
       }
-   }
+   },
+   "UnmaterializedCalculatedColumns": [
+      {
+         "ColumnId": "{{string}}",
+         "ColumnName": "{{string}}",
+         "Expression": "{{string}}",
+         "SubType": "{{string}}",
+         "Type": "{{string}}"
+      }
+   ]
 }
 ```
 
@@ -852,6 +861,12 @@ Required: No
  ** [SemanticModelConfiguration](#API_UpdateDataSet_RequestSyntax) **   <a name="QS-UpdateDataSet-request-SemanticModelConfiguration"></a>
 The semantic model configuration for the dataset. This configuration defines how the prepared data is structured for an analysis, including table mappings and row-level security configurations. Required when using the new data preparation experience.
 Type: [SemanticModelConfiguration](API_SemanticModelConfiguration.md) object
+Required: No
+
+ ** [UnmaterializedCalculatedColumns](#API_UpdateDataSet_RequestSyntax) **   <a name="QS-UpdateDataSet-request-UnmaterializedCalculatedColumns"></a>
+A list of unmaterialized calculated columns for the dataset. These columns are computed at analysis time and are not stored in the prepared data. You can only use this with the new data preparation experience.
+Type: Array of [UnmaterializedCalculatedColumn](API_UnmaterializedCalculatedColumn.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 512 items.
 Required: No
 
 ## Response Syntax

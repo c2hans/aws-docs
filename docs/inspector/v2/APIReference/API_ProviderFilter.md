@@ -19,7 +19,7 @@ Required: Yes
  ** value **   <a name="inspector2-Type-ProviderFilter-value"></a>
 The cloud provider value to filter by.
 Type: String
-Valid Values: `AZURE`
+Valid Values: `AZURE | GCP`
 Required: Yes
 
 ## See Also

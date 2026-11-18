@@ -27,7 +27,7 @@ This topic covers errors that you might encounter during or after installing the
 ## DRS-INST-002: Kernel headers link is broken
 <a name="error-kernel-headers-mismatch"></a>
 
-**Error message:** Error code: DRS-INST-002 - Kernel headers link is broken
+**Error message:** `Error code: DRS-INST-002 - Kernel headers link is broken`
 
 **Cause:** The kernel headers link for the running kernel points to a directory that does not exist. This can occur after a kernel update removes the old headers.
 
@@ -93,7 +93,7 @@ Multiple kernel-headers versions can coexist safely. Installing new headers does
 ## DRS-INST-003: Kernel headers not found
 <a name="error-kernel-headers-not-found"></a>
 
-**Error message:** Error code: DRS-INST-003 - Kernel headers not found
+**Error message:** `Error code: DRS-INST-003 - Kernel headers not found`
 
 **Cause:** The installer could not find kernel headers for the running kernel, and no headers package that matches `uname -r` was available.
 
@@ -102,7 +102,7 @@ Multiple kernel-headers versions can coexist safely. Installing new headers does
 ## DRS-INST-004: gcc not found
 <a name="error-gcc-not-found"></a>
 
-**Error message:** Error code: DRS-INST-004 - gcc not found
+**Error message:** `Error code: DRS-INST-004 - gcc not found`
 
 **Cause:** The `gcc` compiler is required to compile the replication driver, and the installer could not install it.
 
@@ -180,7 +180,7 @@ If none of the preceding conditions applies, install `gcc` and `make` manually a
 ## DRS-INST-008: Unsupported Linux kernel version
 <a name="error-unsupported-kernel"></a>
 
-**Error message:** Error code: DRS-INST-008 - Unsupported Linux kernel version
+**Error message:** `Error code: DRS-INST-008 - Unsupported Linux kernel version`
 
 **Cause:** The running kernel is not compatible with the AWS Elastic Disaster Recovery replication driver.
 
@@ -189,7 +189,7 @@ If none of the preceding conditions applies, install `gcc` and `make` manually a
 ## DRS-INST-012: Oracle ASM Filter Driver requires a restart
 <a name="error-oracle-asmfd"></a>
 
-**Error message:** Error code: DRS-INST-012 - Oracle ASM Filter Driver requires a restart
+**Error message:** `Error code: DRS-INST-012 - Oracle ASM Filter Driver requires a restart`
 
 **Cause:** The Oracle ASM Filter Driver (ASMFD) is loaded, but the AWS Elastic Disaster Recovery replication driver has not loaded yet. Installation completes successfully, but replication cannot start until the replication driver loads.
 
@@ -198,7 +198,7 @@ If none of the preceding conditions applies, install `gcc` and `make` manually a
 ## DRS-INST-013: Agent driver build configuration failed
 <a name="error-driver-build-config-failed"></a>
 
-**Error message:** Error code: DRS-INST-013 - Agent driver build configuration failed
+**Error message:** `Error code: DRS-INST-013 - Agent driver build configuration failed`
 
 **Cause:** The agent builds a kernel driver at install time. The kernel headers are present, but the `configure` step failed before compilation. This usually means the kernel development package (`kernel-devel` or `linux-headers`) for the running kernel is incomplete. It can also mean the kernel build tree at `/lib/modules/$(uname -r)/build` is missing or invalid.
 
@@ -234,7 +234,7 @@ If none of the preceding conditions applies, install `gcc` and `make` manually a
 ## DRS-INST-014: Agent driver compilation failed
 <a name="error-driver-compile-failed"></a>
 
-**Error message:** Error code: DRS-INST-014 - Agent driver compilation failed
+**Error message:** `Error code: DRS-INST-014 - Agent driver compilation failed`
 
 **Cause:** The kernel headers are present, but the driver module failed to compile. This error usually occurs when the compiler or toolset is incompatible with the compiler that built the running kernel. For example, a mismatched `gcc` version can cause this error. Insufficient free disk space is another common cause.
 
@@ -260,7 +260,7 @@ If none of the preceding conditions applies, install `gcc` and `make` manually a
 ## DRS-INST-015: SUSE kernel headers package not found
 <a name="error-suse-kernel-headers"></a>
 
-**Error message:** Error code: DRS-INST-015 - SUSE kernel headers package not found
+**Error message:** `Error code: DRS-INST-015 - SUSE kernel headers package not found`
 
 **Cause:** On SUSE Linux Enterprise Server, the installer searches for the `kernel-source` package that matches the running kernel. It then installs the matching `kernel-default-devel` headers. The `zypper` search returned no matching package, which usually means the configured repositories do not include the required package.
 
@@ -286,7 +286,7 @@ If none of the preceding conditions applies, install `gcc` and `make` manually a
 ## DRS-INST-022: Failed to create system user
 <a name="error-user-creation-failed"></a>
 
-**Error message:** Error code: DRS-INST-022 - Failed to create system user
+**Error message:** `Error code: DRS-INST-022 - Failed to create system user`
 
 **Cause:** The installer cannot create or configure the `aws-replication` system user because of a file-level restriction.
 
@@ -336,7 +336,7 @@ Correct any reported syntax errors, then run the installer again. Your existing 
 ## DRS-INST-025: Permission denied when loading kernel driver
 <a name="error-selinux-secure-boot"></a>
 
-**Error message:** Error code: DRS-INST-025 - Permission denied when loading kernel driver
+**Error message:** `Error code: DRS-INST-025 - Permission denied when loading kernel driver`
 
 **Cause:** SELinux, Secure Boot, or endpoint protection software is blocking kernel module insertion.
 
@@ -369,7 +369,7 @@ Check your endpoint protection software and add AWS Elastic Disaster Recovery co
 ## DRS-INST-914: Invalid driver state location
 <a name="error-driver-state-location"></a>
 
-**Error message:** Error code: DRS-INST-914 - Invalid driver state location
+**Error message:** `Error code: DRS-INST-914 - Invalid driver state location`
 
 **Cause:** The path that you provided for the `--driver-state-location` parameter does not exist. Alternatively, the agent cannot write to that file system early in the boot process. For example, the agent cannot write to a Btrfs subvolume at that stage.
 
@@ -381,7 +381,7 @@ Check your endpoint protection software and add AWS Elastic Disaster Recovery co
 ## DRS-INST-915: Invalid disk path format
 <a name="error-disk-path-format"></a>
 
-**Error message:** Error code: DRS-INST-915 - Invalid disk path format
+**Error message:** `Error code: DRS-INST-915 - Invalid disk path format`
 
 **Cause:** The installer could not find a disk in the list that you provided with the `--devices` option, such as when the path contains apostrophes, brackets, or spaces, or when the device does not exist. The installer skips that disk and continues the installation without it.
 
@@ -396,7 +396,7 @@ Run the installer again with the corrected disk list so that the installer repli
 ## DRS-INST-916: Multipath disk detection failure
 <a name="error-multipath"></a>
 
-**Error message:** Error code: DRS-INST-916 - Multipath disk detection failure
+**Error message:** `Error code: DRS-INST-916 - Multipath disk detection failure`
 
 **Cause:** Automatic disk detection cannot resolve multipath device mappings. The installation continues without interruption.
 
@@ -419,7 +419,7 @@ The `--force-volumes` option disables automatic disk detection. Manually verify 
 ## DRS-INST-917: PowerPath multipath detected
 <a name="error-powerpath"></a>
 
-**Error message:** Error code: DRS-INST-917 - PowerPath multipath detected
+**Error message:** `Error code: DRS-INST-917 - PowerPath multipath detected`
 
 **Cause:** PowerPath block-level I/O management conflicts with the AWS Elastic Disaster Recovery replication driver. The installation continues without interruption.
 
@@ -431,7 +431,7 @@ The `--force-volumes` option disables automatic disk detection. Manually verify 
 ### GLIBC version not found
 <a name="error-glibc-version"></a>
 
-**Error message:** version 'GLIBC\_2.7' not found (required by ./aws-replication-installer-64bit)
+**Error message:** `version 'GLIBC_2.7' not found (required by ./aws-replication-installer-64bit)`
 
 **Cause:** The operating system is unsupported or too old for the agent binary.
 
@@ -440,7 +440,7 @@ The `--force-volumes` option disables automatic disk detection. Manually verify 
 ### Failed to map segment from shared object
 <a name="error-noexec-tmp"></a>
 
-**Error message:** error while loading shared libraries: libz.so.1: failed to map segment from shared object
+**Error message:** `error while loading shared libraries: libz.so.1: failed to map segment from shared object`
 
 **Cause:** The `/tmp` directory is mounted with the `noexec` option.
 

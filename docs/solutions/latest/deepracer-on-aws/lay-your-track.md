@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/lay-yo
 
 When you build your track, it’s a good practice to start with a simple design, such as a straight or single-turn track. Next you can move on to looped tracks. Here, we use a single-turn track as an example to walk you through the steps to construct your own track. First let’s review dimensional requirements of a track.
 
+<a name="dimensional-requirements"></a>**Dimensional Requirements**
+
 You can build a track of any shape as long as it meets the following requirements:
 +  **Minimum turning radius:**
 
@@ -34,6 +36,8 @@ You can build a track of any shape as long as it meets the following requirement
 
   Though not required, we recommend that you encircle the track with uniform-colored barriers that are at least 2.5 feet tall and 2 feet away from the track at all points.
 
+<a name="model-performance-considerations"></a>**Considerations for model performance**
+
 How you build a track can affect the reliability and performance of a trained model. The following are factors you should consider when building your own tracks.
 
 1. Do not place any white objects on or near your track. If necessary, remove any white object from the track or its vicinity. This is because training in the simulated environment assumes that only the track borders are white.
@@ -45,6 +49,8 @@ How you build a track can affect the reliability and performance of a trained mo
 1. Do not use a track floor with line markings other than the track lines. The model might interpret the non-track lines as part of the track.
 
 1. Place barriers around the track to help reduce distractions from background objects.
+
+<a name="steps-to-build-track"></a>**Steps to build the track**
 
 As an illustration, we use the most basic single-turn track. You can modify the instructions to create a more complex track such as an S-curve, a loop, or the AWS re:invent 2018 track.
 

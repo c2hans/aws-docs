@@ -528,7 +528,7 @@ Use the following procedure to migrate all of your flow files:
 
 1. When Canvas is ready, choose **Open in Canvas.**
 
-1. Canvas opens to the **Data Wrangler** page, and a banner at the top of the page appears that says Import your data flows from Data Wrangler in Studio Classic to Canvas. This is a one time import. Learn more. In the banner, choose **Import All**.
+1. Canvas opens to the **Data Wrangler** page, and a banner at the top of the page appears that says `Import your data flows from Data Wrangler in Studio Classic to Canvas. This is a one time import. Learn more.` In the banner, choose **Import All**.
 **Warning**
 If you close the banner notification, you won't be able to re-open it or use the one-click migration method anymore.
 

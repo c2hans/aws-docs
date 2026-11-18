@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 # DevOps Agent Memories
 <a name="about-aws-devops-agent-devops-agent-memories"></a>
 
-Memories are informational knowledge items that AWS DevOps Agent builds and maintains to supplement its capabilities with synthesized, high-signal context specific to your Agent Space. Unlike [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills.md), which encode procedural knowledge and extend agent capabilities, memories encode informational knowledge that helps agents make faster and more accurate decisions during investigations.
+Memories are informational knowledge items that AWS DevOps Agent builds and maintains to supplement its capabilities with synthesized, high-signal context specific to your Agent Space. Unlike [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills-index.md), which encode procedural knowledge and extend agent capabilities, memories encode informational knowledge that helps agents make faster and more accurate decisions during investigations.
 
 ## What are memories
 <a name="what-are-memories"></a>

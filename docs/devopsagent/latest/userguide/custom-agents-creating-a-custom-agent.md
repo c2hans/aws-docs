@@ -201,7 +201,7 @@ For more information about release management capabilities, see [Release managem
 
 Skills provide your custom agent with additional domain knowledge, investigation procedures, or specialized capabilities. When a custom agent runs, it loads its assigned skills and can reference their instructions during invocation.
 
-You can assign skills during creation (using either the form or Chat) or add them later by editing the agent. Skills assigned to a custom agent must already exist in your Agent Space. For more information about creating skills, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills.md).
+You can assign skills during creation (using either the form or Chat) or add them later by editing the agent. Skills assigned to a custom agent must already exist in your Agent Space. For more information about creating skills, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills-index.md).
 
 Custom agents also have built-in capabilities for creating artifacts and recommendations that do not require skill assignment. For more information, see [Custom agent outputs](custom-agents-custom-agent-outputs.md).
 

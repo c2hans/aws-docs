@@ -18,6 +18,11 @@ The Azure-specific details for updating a connector.
 Type: [AzureProviderDetailUpdate](API_AzureProviderDetailUpdate.md) object
 Required: No
 
+ ** gcp **   <a name="inspector2-Type-ProviderDetailUpdate-gcp"></a>
+The details specific to Google Cloud Platform (GCP) for updating a connector.
+Type: [GcpProviderDetailUpdate](API_GcpProviderDetailUpdate.md) object
+Required: No
+
 ## See Also
 <a name="API_ProviderDetailUpdate_SeeAlso"></a>
 

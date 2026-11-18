@@ -29,6 +29,7 @@ Security Hub CSPM offers automation features that help you triage and remediate 
 + [Understanding security controls in Security Hub CSPM](controls-view-manage.md)
 + [Understanding integrations in Security Hub CSPM](securityhub-findings-providers.md)
 + [Integrating Security Hub CSPM with Microsoft Azure](securityhub-azure.md)
++ [Integrating Security Hub CSPM with Google Cloud Platform](securityhub-gcp.md)
 + [Creating and updating findings in Security Hub CSPM](securityhub-findings.md)
 + [Viewing insights in Security Hub CSPM](securityhub-insights.md)
 + [Automatically modifying and acting on findings in Security Hub CSPM](automations.md)

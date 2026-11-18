@@ -49,5 +49,5 @@ pp.pprint(pc.create_cluster(cluster_name="mycluster", cluster_configuration=CONF
              'clusterStatus': 'CREATE_IN_PROGRESS',
              'region': 'us-east-2',
              'scheduler': {'type': 'slurm'},
-             'version': '3.16.2'}}
+             'version': '3.16.3'}}
 ```

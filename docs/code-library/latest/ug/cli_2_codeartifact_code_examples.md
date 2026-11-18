@@ -792,7 +792,7 @@ The following code example shows how to use `list-packages`.
 
 **AWS CLI**
 **To list packages in a repository**
-The following `list-packages` example list packages in a repository named `test-repo` in a domain named `test-domain`.
+The following `list-packages` example lists packages in a repository named `test-repo` in a domain named `test-domain`.
 
 ```
 aws codeartifact list-packages \

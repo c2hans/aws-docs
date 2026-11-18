@@ -67,7 +67,7 @@ Example response. The association transitions to the `disassociating` state:
 
 1. On the **Create association** modal, the **Transit gateway policy table** and **Transit gateway ID** fields are pre-filled.
 
-1. For **Transit gateway attachment**, select the attachment from the dropdown. The dropdown lists all eligible attachments on the same transit gateway (VPC, Direct Connect, VPN, transit gateway Connect, Peering).
+1. For **Transit gateway attachment**, select the attachment from the dropdown. The dropdown lists all eligible attachments on the same transit gateway (VPC, Direct Connect, VPN, Network function, transit gateway Connect, Peering).
 
 1. Choose **Create**.
 

@@ -32,7 +32,7 @@ The following procedure shows you how to get started with Mail Manager using the
 
 1. On the *Get set up* page, select **Create rule set** on the *Create a rule set* card.
 
-   1. Complete the workflow on the *Create a rule set* page. If you need additional information, see [Creating rule sets and rules in the SES console](eb-rules.md#eb-rules-create-console).
+   1. Complete the workflow on the *Create a rule set* page. If you need additional information, see [Create and manage rule sets in the SES console](eb-rules-setup.md#eb-rules-create-console).
 
    1. After creating your first rule set and rules, use your browser's back button to return to the *Get set up* page or select **Get set up** under *Mail Manager* in the left navigation panel.
 

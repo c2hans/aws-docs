@@ -35,7 +35,7 @@ When you come across any of the following indexed errors, you can use the follow
 ### Denied access
 <a name="unable-to-launch-cloudshell"></a>
 
-**Issue:** When you try to launch CloudShell from the AWS Management Console, you get the message "Unable to start the environment. To retry, refresh the browser or restart by selecting Actions, Restart AWS CloudShell ". You're denied access even after you have required permissions from your IAM administrator and you have refreshed your browser or restarted CloudShell.
+**Issue:** When you try to launch CloudShell from the AWS Management Console, you get the message "`Unable to start the environment. To retry, refresh the browser or restart by selecting Actions, Restart AWS CloudShell` ". You're denied access even after you have required permissions from your IAM administrator and you have refreshed your browser or restarted CloudShell.
 
 **Solution:** Contact [AWS Support](https://aws.amazon.com/contact-us/).
 
@@ -44,7 +44,7 @@ When you come across any of the following indexed errors, you can use the follow
 ### Insufficient permissions
 <a name="no-access-cloudshell"></a>
 
-**Issue:** When you try to launch CloudShell from the AWS Management Console, you get the message "Unable to start the environment. You don't have required permissions. Ask your IAM administrator to grant access to AWS CloudShell". You're denied access and notified that you don't have required permissions.
+**Issue:** When you try to launch CloudShell from the AWS Management Console, you get the message `"Unable to start the environment. You don't have required permissions. Ask your IAM administrator to grant access to AWS CloudShell"`. You're denied access and notified that you don't have required permissions.
 
 **Cause:** The IAM identity that you're using to access AWS CloudShell lacks the necessary IAM permissions.
 
@@ -189,7 +189,7 @@ Because the **session-id** is created *after* a particular Systems Manager sessi
 
 **Issue:** When you import the AWSPowerShell.NetCore module in PowerShell by `Import-Module -Name AWSPowerShell.NetCore`, you receive the following error message:
 
-Import-Module: The specified module 'AWSPowerShell.NetCore' was not loaded because no valid module file was found in any module directory.
+`Import-Module: The specified module 'AWSPowerShell.NetCore' was not loaded because no valid module file was found in any module directory.`
 
 **Cause:** The `AWSPowerShell.NetCore` module is replaced by the per-service AWS.Tools modules in AWS CloudShell.
 

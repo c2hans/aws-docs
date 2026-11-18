@@ -33,7 +33,7 @@ The request accepts the following data in JSON format.
  ** [resourceType](#API_ResetEncryptionKey_RequestSyntax) **   <a name="inspector2-ResetEncryptionKey-request-resourceType"></a>
 The resource type the key encrypts.
 Type: String
-Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_ECR_REPOSITORY | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.Web/sites`
+Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_ECR_REPOSITORY | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.Web/sites | MACHINE_IMAGE | cloudfunctions.googleapis.com/Function | compute.googleapis.com/Instance | artifactregistry.googleapis.com/DockerImage`
 Required: Yes
 
  ** [scanType](#API_ResetEncryptionKey_RequestSyntax) **   <a name="inspector2-ResetEncryptionKey-request-scanType"></a>

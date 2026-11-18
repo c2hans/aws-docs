@@ -63,7 +63,7 @@ The Amazon Comprehend console lets you select roles where the role name contains
    --assume-role-policy-document file://{{path/}}comprehend-trust-policy.json
    ```
 **Tip**
-If you get an Error parsing parameter message, the path to your JSON trust policy file is probably incorrect. Provide the relative path to the file based on your home directory.
+If you get an `Error parsing parameter` message, the path to your JSON trust policy file is probably incorrect. Provide the relative path to the file based on your home directory.
 
 1. Copy the Amazon Resource Name (ARN) and save it in a text editor. The ARN has a format similar to `{{arn:aws:iam::123456789012:role/AmazonComprehendServiceRole-access-role}}`. You need this ARN to run Amazon Comprehend analysis jobs.
 

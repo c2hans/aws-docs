@@ -7,9 +7,15 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeys.htm
 
 Gets a list of all KMS keys in the caller's AWS account and Region.
 
- **Cross-account use**: No. You cannot perform this operation on a KMS key in a different AWS account.
+You can also use `ListKeys` to list KMS keys in the Region that other AWS accounts shared with the caller's AWS account through AWS Resource Access Manager (AWS RAM). To list them, use the `ResourceOwners` parameter. If you omit `ResourceOwners`, `ListKeys` lists only the KMS keys in the caller's AWS account.
+
+When `ResourceOwners` includes `OTHER_ACCOUNTS_VIA_RAM`, `ListKeys` returns the KMS keys that other AWS accounts currently share with the caller's AWS account through AWS RAM. For information about how and when a resource that another account shares becomes available to your AWS account, see [Access AWS resources shared with you](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared.html) in the * AWS RAM User Guide*.
+
+ **Cross-account use**: No. This operation doesn't take a KMS key parameter, so you can't use it to list the KMS keys of a specific AWS account. The only KMS keys in other AWS accounts that `ListKeys` returns are the ones that other accounts shared with the caller's AWS account through AWS RAM. To list them, set the `ResourceOwners` parameter to include `OTHER_ACCOUNTS_VIA_RAM`.
 
  **Required permissions**: [kms:ListKeys](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) (IAM policy)
+
+The same `kms:ListKeys` permission lets you list the KMS keys that other accounts shared with you through AWS RAM. AWS KMS doesn't evaluate the key policies of shared KMS keys when it lists them. To use a shared KMS key, you need permission for each operation on that KMS key.
 
  **Related operations:**
 +  [CreateKey](API_CreateKey.md)
@@ -19,13 +25,16 @@ Gets a list of all KMS keys in the caller's AWS account and Region.
 
  **Eventual consistency**: The AWS KMS API follows an eventual consistency model. For more information, see [AWS KMS eventual consistency](https://docs.aws.amazon.com/kms/latest/developerguide/accessing-kms.html#programming-eventual-consistency).
 
+KMS keys that other AWS accounts share with you can take some time to appear in or disappear from `ListKeys` results after changes to resource shares, such as accepting an invitation or deleting a resource share.
+
 ## Request Syntax
 <a name="API_ListKeys_RequestSyntax"></a>
 
 ```
 {
    "Limit": {{number}},
-   "Marker": "{{string}}"
+   "Marker": "{{string}}",
+   "ResourceOwners": [ "{{string}}" ]
 }
 ```
 
@@ -53,6 +62,21 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `[\u0020-\u00FF]*`
 Required: No
 
+ ** [ResourceOwners](#API_ListKeys_RequestSyntax) **   <a name="KMS-ListKeys-request-ResourceOwners"></a>
+Specifies whose KMS keys to list. Use this parameter to list KMS keys that other AWS accounts shared with your AWS account through AWS Resource Access Manager (AWS RAM).
+Specify one or two values. Valid values are:
+SELF
+Lists the KMS keys in your AWS account and Region.
+OTHER\_ACCOUNTS\_VIA\_RAM
+Lists the KMS keys in the Region that other AWS accounts currently share with your AWS account through AWS RAM. This list doesn't include KMS keys that your AWS account owns. For each of these KMS keys, the key ARN in the response contains the account ID of the AWS account that owns the KMS key.
+If you omit this parameter, `ListKeys` lists only the KMS keys in your AWS account. If you specify both values, in either order, `ListKeys` returns the KMS keys in your AWS account first, and then the KMS keys that other AWS accounts shared with you. A single response doesn't contain both kinds of KMS keys.
+When `ResourceOwners` includes `OTHER_ACCOUNTS_VIA_RAM`, a response can contain fewer KMS keys than the `Limit` value, or none, even when `Truncated` is true. To get all of the KMS keys, continue calling `ListKeys` with the `NextMarker` value from each response until `Truncated` is false. Use a `NextMarker` value only in a request that has the same `ResourceOwners` value as the request that returned it. Otherwise, the request can fail with an `InvalidMarkerException`.
+KMS keys that other AWS accounts share with you can take some time to appear in or disappear from the results after changes to resource shares.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 2 items.
+Valid Values: `SELF | OTHER_ACCOUNTS_VIA_RAM`
+Required: No
+
 ## Response Syntax
 <a name="API_ListKeys_ResponseSyntax"></a>
 
@@ -77,7 +101,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [Keys](#API_ListKeys_ResponseSyntax) **   <a name="KMS-ListKeys-response-Keys"></a>
-A list of KMS keys.
+A list of KMS keys. For a KMS key that another AWS account shared with you through AWS RAM, the key ARN contains the account ID of the AWS account that owns the KMS key.
 Type: Array of [KeyListEntry](API_KeyListEntry.md) objects
 
  ** [NextMarker](#API_ListKeys_ResponseSyntax) **   <a name="KMS-ListKeys-response-NextMarker"></a>
@@ -175,6 +199,57 @@ x-amzn-RequestId: 1a5f0a53-bc15-11e6-82b3-e9e4af764a06
     {
       "KeyArn": "arn:aws:kms:us-east-2:111122223333:key/deaf6c9e-cf2c-46a6-bf6d-0b6d487cffbb",
       "KeyId": "deaf6c9e-cf2c-46a6-bf6d-0b6d487cffbb"
+    }
+  ],
+  "Truncated": false
+}
+```
+
+### Example – Request for KMS keys shared with you
+<a name="API_ListKeys_Example_3"></a>
+
+This example illustrates one usage of ListKeys.
+
+```
+POST / HTTP/1.1
+Host: kms.us-east-2.amazonaws.com
+Content-Length: 50
+X-Amz-Target: TrentService.ListKeys
+X-Amz-Date: 20261117T184227Z
+Content-Type: application/x-amz-json-1.1
+Authorization: AWS4-HMAC-SHA256\
+ Credential=AKIAI44QH8DHBEXAMPLE/20261117/us-east-2/kms/aws4_request,\
+ SignedHeaders=content-type;host;x-amz-date;x-amz-target,\
+ Signature=EXAMPLE
+
+{
+  "ResourceOwners": ["OTHER_ACCOUNTS_VIA_RAM"]
+}
+```
+
+### Example – Response for KMS keys shared with you
+<a name="API_ListKeys_Example_4"></a>
+
+This example illustrates one usage of ListKeys.
+
+```
+HTTP/1.1 200 OK
+Server: Server
+Date: Tue, 17 Nov 2026 18:42:27 GMT
+Content-Type: application/x-amz-json-1.1
+Content-Length: 364
+Connection: keep-alive
+x-amzn-RequestId: 3e8c6f2a-7d41-4b9e-a5c0-9f1b2d3e4a5c
+
+{
+  "Keys": [
+    {
+      "KeyArn": "arn:aws:kms:us-east-2:444455556666:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+      "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab"
+    },
+    {
+      "KeyArn": "arn:aws:kms:us-east-2:444455556666:key/0987dcba-09fe-87dc-65ba-ab0987654321",
+      "KeyId": "0987dcba-09fe-87dc-65ba-ab0987654321"
     }
   ],
   "Truncated": false

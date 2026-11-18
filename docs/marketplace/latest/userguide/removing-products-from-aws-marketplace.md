@@ -32,8 +32,8 @@ We process requests for product removal from AWS Marketplace with the following 
 
 1. Review the information for accuracy, and then choose **Submit**.
 
-A **What’s next** informational page displays after you submit the product removal request. The AWS Marketplace Seller Operations reviews and processes your request. Check the status of your submission by viewing **Requests**.
+A **What’s next** informational page displays after you submit the product removal request. The product's visibility changes to **Restricted** as soon as your request succeeds. There's no waiting period and no review. Check the status of your submission by viewing **Requests**.
 
-After your product is removed, the product appears in the **Current Products** list in the AWS Marketplace Management Portal. In **Current Products**, the only action that you can perform is downloading the spreadsheet for the product. You can't edit or submit another sunset request.
+To make a **Restricted** product available again, locate the product, choose **Update product visibility** from the **Request changes** dropdown list, and then choose **Public**. The AWS Marketplace Seller Operations team might review your request to make the product Public.
 
 If you have questions about product removals, contact the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.

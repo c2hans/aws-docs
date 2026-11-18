@@ -51,6 +51,10 @@ Required: Yes
       }
    },
    "CreationTime": number,
+   "CrossRegionTrafficConfig": {
+      "MaxCrossRegionPercentPerEndpoint": number,
+      "MaxInvocationsPerSecondPerInstance": number
+   },
    "DataCaptureConfig": {
       "CaptureStatus": "string",
       "CurrentSamplingPercentage": number,
@@ -437,6 +441,10 @@ Type: [AsyncInferenceConfig](API_AsyncInferenceConfig.md) object
  ** [CreationTime](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-CreationTime"></a>
 A timestamp that shows when the endpoint was created.
 Type: Timestamp
+
+ ** [CrossRegionTrafficConfig](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-CrossRegionTrafficConfig"></a>
+The cross-Region traffic cap, if the endpoint configuration sets one.
+Type: [CrossRegionTrafficConfig](API_CrossRegionTrafficConfig.md) object
 
  ** [DataCaptureConfig](#API_DescribeEndpoint_ResponseSyntax) **   <a name="sagemaker-DescribeEndpoint-response-DataCaptureConfig"></a>
 The currently active data capture configuration used by your Endpoint.

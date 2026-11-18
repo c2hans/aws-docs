@@ -439,7 +439,7 @@ To query data in Apache Hudi Copy On Write (CoW) format, you can use Amazon Reds
 
 When you create an external table that references data in Hudi CoW format, you map each column in the external table to a column in the Hudi data. Mapping is done by column.
 
-The data definition language (DDL) statements for partitioned and unpartitioned Hudi tables are similar to those for other Apache Parquet file formats. For Hudi tables, you define `INPUTFORMAT` as `org.apache.hudi.hadoop.HoodieParquetInputFormat`. The `LOCATION` parameter must point to the Hudi table base folder that contains the `.hoodie` folder, which is required to establish the Hudi commit timeline. In some cases, a SELECT operation on a Hudi table might fail with the message No valid Hudi commit timeline found. If so, check if the `.hoodie` folder is in the correct location and contains a valid Hudi commit timeline.
+The data definition language (DDL) statements for partitioned and unpartitioned Hudi tables are similar to those for other Apache Parquet file formats. For Hudi tables, you define `INPUTFORMAT` as `org.apache.hudi.hadoop.HoodieParquetInputFormat`. The `LOCATION` parameter must point to the Hudi table base folder that contains the `.hoodie` folder, which is required to establish the Hudi commit timeline. In some cases, a SELECT operation on a Hudi table might fail with the message `No valid Hudi commit timeline found`. If so, check if the `.hoodie` folder is in the correct location and contains a valid Hudi commit timeline.
 
 **Note**
 Apache Hudi format is only supported when you use an AWS Glue Data Catalog. It's not supported when you use an Apache Hive metastore as the external catalog.
@@ -542,8 +542,8 @@ The following table explains some potential reasons for certain errors when you 
 
 | Error message | Possible reason |
 | --- | --- |
-| Delta Lake manifest in bucket *s3-bucket-1* cannot contain entries in bucket *s3-bucket-2*. | The manifest entries point to files in a different Amazon S3 bucket than the specified one.  |
-| Delta Lake files are expected to be in the same folder. | The manifest entries point to files that have a different Amazon S3 prefix than the specified one. |
-| File *filename* listed in Delta Lake manifest *manifest-path* was not found. | A file listed in the manifest wasn't found in Amazon S3.  |
-| Error fetching Delta Lake manifest. | The manifest wasn't found in Amazon S3.  |
-| Invalid S3 Path. | An entry in the manifest file isn't a valid Amazon S3 path, or the manifest file has been corrupted.  |
+| `Delta Lake manifest in bucket s3-bucket-1 cannot contain entries in bucket s3-bucket-2.` | The manifest entries point to files in a different Amazon S3 bucket than the specified one.  |
+| `Delta Lake files are expected to be in the same folder.` | The manifest entries point to files that have a different Amazon S3 prefix than the specified one. |
+| `File filename listed in Delta Lake manifest manifest-path was not found.` | A file listed in the manifest wasn't found in Amazon S3.  |
+| `Error fetching Delta Lake manifest.` | The manifest wasn't found in Amazon S3.  |
+| `Invalid S3 Path.` | An entry in the manifest file isn't a valid Amazon S3 path, or the manifest file has been corrupted.  |

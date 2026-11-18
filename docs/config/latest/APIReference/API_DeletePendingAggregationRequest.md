@@ -27,7 +27,6 @@ The request accepts the following data in JSON format.
  ** [RequesterAccountId](#API_DeletePendingAggregationRequest_RequestSyntax) **   <a name="config-DeletePendingAggregationRequest-request-RequesterAccountId"></a>
 The 12-digit account ID of the account requesting to aggregate data.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: Yes
 

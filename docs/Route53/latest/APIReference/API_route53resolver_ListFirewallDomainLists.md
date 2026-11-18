@@ -49,10 +49,13 @@ Required: No
          "Arn": "string",
          "Category": "string",
          "CreatorRequestId": "string",
+         "FirewallRuleGroupId": "string",
+         "FirewallThreatProtectionId": "string",
          "Id": "string",
          "ManagedListType": "string",
          "ManagedOwnerName": "string",
-         "Name": "string"
+         "Name": "string",
+         "Status": "string"
       }
    ],
    "NextToken": "string"

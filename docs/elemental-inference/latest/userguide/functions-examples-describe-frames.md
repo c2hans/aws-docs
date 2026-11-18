@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/functions-examples-describe-frames.html
 ---
 
-# Describe the action every 10 seconds
+# Example – Describe the action every 10 seconds
 <a name="functions-examples-describe-frames"></a>
 
 Sends four frames from each 10-second window to a model that accepts images, and keeps one sentence of description. The function reads no context from another output, but the feed still needs a video input and at least one enabled smart crop, event clipping, smart subtitles, or contextual metadata output.
@@ -44,7 +44,7 @@ Newer Claude models can think before they answer, and the thinking counts toward
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "fixedInterval": { "intervalSeconds": 10 } },
       "frameSettings": { "frameSampling": { "mode": "UNIFORM", "count": 4 } }
     }

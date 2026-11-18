@@ -86,6 +86,11 @@ Required: No
          "FirewallDomainRedirectionAction": "string",
          "FirewallRuleGroupId": "string",
          "FirewallRuleType": {
+            "AutoAllowlist": {
+               "AutoAllowlistFirewallDomainListId": "string",
+               "ImportFromFirewallDomainListId": "string",
+               "InitialDataTimeframeHours": number
+            },
             "DnsThreatProtection": {
                "ConfidenceThreshold": "string",
                "Value": "string"

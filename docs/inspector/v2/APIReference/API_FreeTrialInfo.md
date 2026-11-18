@@ -29,13 +29,16 @@ Required: Yes
  ** type **   <a name="inspector2-Type-FreeTrialInfo-type"></a>
 The type of scan covered by the Amazon Inspector free trail.
 Type: String
-Valid Values: `EC2 | ECR | LAMBDA | LAMBDA_CODE | CODE_REPOSITORY | VM | CONTAINER_IMAGE | SERVERLESS_FUNCTION`
+Valid Values: `EC2 | ECR | LAMBDA | LAMBDA_CODE | CODE_REPOSITORY | VM | CONTAINER_IMAGE | SERVERLESS_FUNCTION | MACHINE_IMAGE`
 Required: Yes
 
  ** cloudProvider **   <a name="inspector2-Type-FreeTrialInfo-cloudProvider"></a>
-The cloud provider associated with the free trial information.
+The cloud provider associated with the free trial information. Valid values:
++  `AWS` – AWS resources.
++  `AZURE` – Microsoft Azure resources.
++  `GCP` – Google Cloud Platform (GCP) resources.
 Type: String
-Valid Values: `AWS | AZURE | NOT_APPLICABLE`
+Valid Values: `AWS | AZURE | GCP | NOT_APPLICABLE`
 Required: No
 
 ## See Also

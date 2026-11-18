@@ -12,15 +12,15 @@ Use dot notation to walk into the input. Each dot descends one level.
 
 ```
 media.transcript                    the transcript for this window
-media.contextual.garm.risk          the brand-safety risk of this scene
+media.contextual.scene.summary      the summary of the scene
 usage.output_tokens                 a field of a model response
 ```
 
 A path that doesn't exist evaluates to nothing, without raising an error. This applies at any depth, so a missing intermediate object doesn't break the expression.
 
 ```
-media.contextual.nonExistent                 nothing
-media.contextual.nonExistent.deeply.nested   nothing
+media.contextual.nonExistent                       nothing
+media.contextual.scene.nonExistent.deeply.nested   nothing
 ```
 
 Use `[n]` to index an array, starting at zero, and `[-1]` to take the last element.
@@ -52,8 +52,8 @@ media.frames.{ "type": "image", "source": { "type": "base64", "media_type": "ima
 The `&` operator joins two values into a string. Non-string values are converted automatically.
 
 ```
-"Summary: " & media.contextual.summary
-"risk=" & media.contextual.garm.risk & " categories=" & $count(media.contextual.categories)
+"Summary: " & media.contextual.scene.summary
+"objects=" & $join(media.contextual.shot.objects, ", ") & " flagged=" & $count(media.contextual.shot.garm.suitability.categories[flagged])
 ```
 
 ## Conditional expressions
@@ -68,10 +68,10 @@ condition ? value_if_true : value_if_false
 You can nest ternary expressions for multi-way branching.
 
 ```
-$exists(media.contextual.summary) ? media.contextual.summary : "No summary available."
+$exists(media.contextual.scene.summary) ? media.contextual.scene.summary : "No summary available."
 
-media.contextual.garm.risk = "FLOOR" ? "block"
-  : media.contextual.garm.risk = "HIGH" ? "review"
+"FLOOR" in media.contextual.shot.garm.suitability.categories.risk ? "block"
+  : "HIGH" in media.contextual.shot.garm.suitability.categories.risk ? "review"
   : "allow"
 ```
 
@@ -82,10 +82,9 @@ Inside parentheses, use `:=` to name an intermediate value, and semicolons to se
 
 ```
 (
-  $risk := media.contextual.garm.risk;
-  $flagged := $join(media.contextual.garm.flagged, ", ");
+  $flagged := media.contextual.shot.garm.suitability.categories[flagged];
   {
-    "text": "Risk " & $risk & " (" & $flagged & "). Write a one-line advertiser note."
+    "text": "Flagged: " & $join($flagged.category, ", ") & ". Write a one-line advertiser note."
   }
 )
 ```

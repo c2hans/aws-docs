@@ -13,6 +13,7 @@ The source of the container image for an application version: an image that you 
  ** Build **
 Settings that Elastic Beanstalk uses to build a container image from the source bundle of the application version.
 If you specify `Build`, also specify the request's `SourceBundle` parameter, and don't specify `Source`.
+To build the image when you create the application version instead of on first deployment, also set `Process` to `true`.
 Type: [ImageBuildConfiguration](API_ImageBuildConfiguration.md) object
 Required: No
 

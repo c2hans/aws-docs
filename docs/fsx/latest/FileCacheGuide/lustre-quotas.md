@@ -45,7 +45,7 @@ Quotas that are set for the root user aren't enforced. Similarly, writing data a
 
 Amazon File Cache enforces user and group quotas as a hard limit or as a soft limit with a configurable grace period.
 
-The hard limit is the absolute limit. If users exceed their hard limit, a block or inode allocation fails with a Disk quota exceeded message. Users who reach their quota hard limit must delete enough files or directories to get under the quota limit before they can write to the cache again. When a grace period is set, users can exceed the soft limit within the grace period if they're under the hard limit.
+The hard limit is the absolute limit. If users exceed their hard limit, a block or inode allocation fails with a `Disk quota exceeded` message. Users who reach their quota hard limit must delete enough files or directories to get under the quota limit before they can write to the cache again. When a grace period is set, users can exceed the soft limit within the grace period if they're under the hard limit.
 
 For soft limits, you configure a grace period in seconds. The soft limit must be smaller than the hard limit.
 

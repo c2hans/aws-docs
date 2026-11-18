@@ -40,7 +40,7 @@ You can run an `INSERT` query on tables created from data with the following for
 ### Federated queries not supported
 <a name="insert-into-federated-queries-not-supported"></a>
 
-`INSERT INTO` is not supported for federated queries. Attempting to do so may result in the error message This operation is currently not supported for external catalogs. For information about federated queries, see [Use Amazon Athena Federated Query](federated-queries.md).
+`INSERT INTO` is not supported for federated queries. Attempting to do so may result in the error message `This operation is currently not supported for external catalogs`. For information about federated queries, see [Use Amazon Athena Federated Query](federated-queries.md).
 
 ### Partitioning
 <a name="insert-into-limitations-partitioning"></a>

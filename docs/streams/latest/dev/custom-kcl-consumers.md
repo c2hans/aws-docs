@@ -14,4 +14,4 @@ Choose from the following topics for the KCL version you are using.
 
 **Topics**
 + [Develop KCL 1.x consumers](developing-consumers-with-kcl.md)
-+ [Develop KCL 2.x Consumers](developing-consumers-with-kcl-v2.md)
++ [Develop KCL 2.x consumers](developing-consumers-with-kcl-v2.md)

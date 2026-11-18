@@ -22,14 +22,17 @@ Lambda emits the following metrics for durable executions:
 
 | Metric | Description |
 | --- | --- |
-| ApproximateRunningDurableExecutions | Number of durable executions in the RUNNING state |
+| ApproximateRunningDurableExecutions | Number of durable executions in the RUNNING, PAUSING, or PAUSED state |
 | ApproximateRunningDurableExecutionsUtilization | Percentage of your account's maximum running durable executions quota currently in use |
-| DurableExecutionDuration | Elapsed wall-clock time in milliseconds that a durable execution remained in the RUNNING state |
+| DurableExecutionDuration | Elapsed wall-clock time in milliseconds that a durable execution remained in the RUNNING, PAUSING, or PAUSED state |
 | DurableExecutionStarted | Number of durable executions that started |
 | DurableExecutionStopped | Number of durable executions stopped using the StopDurableExecution API |
 | DurableExecutionSucceeded | Number of durable executions that completed successfully |
 | DurableExecutionFailed | Number of durable executions that completed with a failure |
 | DurableExecutionTimedOut | Number of durable executions that exceeded their configured execution timeout |
+| DurableExecutionPausing | Number of durable executions that changed to the PAUSING status because an invocation was in progress |
+| DurableExecutionPaused | Number of durable executions that changed to the PAUSED status after a PauseDurableExecution request |
+| DurableExecutionResumed | Number of durable executions that returned to the RUNNING status after a ResumeDurableExecution request |
 | DurableExecutionOperations | Cumulative number of operations performed within a durable execution |
 | DurableExecutionStorageWrittenBytes | Cumulative amount of data in bytes persisted by a durable execution |
 
@@ -72,6 +75,11 @@ Status change events are published for the following execution states:
 + `STOPPED` - Execution stopped using the StopDurableExecution API
 + `FAILED` - Execution failed with an error
 + `TIMED_OUT` - Execution exceeded the configured timeout
++ `PAUSING` - Execution is waiting for an in-progress invocation to reach its next checkpoint before pausing
++ `PAUSED` - Execution paused after a PauseDurableExecution request
++ `RESUMED` - Execution resumed after a ResumeDurableExecution request. The execution status is `RUNNING`.
+
+If you pause an execution with no invocation in progress, it changes directly to `PAUSED`, so Lambda doesn't send a `PAUSING` event. For more information about pausing executions, see [Pausing and resuming durable executions](durable-pause-resume.md).
 
 The following example shows a durable execution status change event:
 

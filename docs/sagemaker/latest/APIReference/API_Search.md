@@ -540,6 +540,16 @@ Required: No
             ]
          },
          "HubContent": {
+            "CreatedBy": {
+               "DomainId": "string",
+               "IamIdentity": {
+                  "Arn": "string",
+                  "PrincipalId": "string",
+                  "SourceIdentity": "string"
+               },
+               "UserProfileArn": "string",
+               "UserProfileName": "string"
+            },
             "CreationTime": number,
             "DocumentSchemaVersion": "string",
             "FailureReason": "string",
@@ -561,6 +571,16 @@ Required: No
             "HubContentType": "string",
             "HubContentVersion": "string",
             "HubName": "string",
+            "LastModifiedBy": {
+               "DomainId": "string",
+               "IamIdentity": {
+                  "Arn": "string",
+                  "PrincipalId": "string",
+                  "SourceIdentity": "string"
+               },
+               "UserProfileArn": "string",
+               "UserProfileName": "string"
+            },
             "LastModifiedTime": number,
             "ReferenceMinVersion": "string",
             "SageMakerPublicHubContentArn": "string",

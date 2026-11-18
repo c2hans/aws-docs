@@ -16,3 +16,5 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSConfigRemediation-EnableCloudTrailLogFileValidation`](automation-aws-enable-ctrail-log-validation.md)
 + [`AWS-EnableCloudTrailLogFileValidation`](enable-cloudtrail-log-validation.md)
 + [`AWS-QueryCloudTrailLogs`](aws-querycloudtraillogs.md)
++ [`AWSSupportRemediator-IntegrateCloudTrailWithCloudWatch`](automation-awssupportremediator-integratecloudtrailwithcloudwatch.md)
++ [`AWSSupportRemediator-EnableCloudTrailLogValidation`](automation-awssupportremediator-enablecloudtraillogvalidation.md)

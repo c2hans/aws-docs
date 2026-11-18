@@ -112,6 +112,9 @@ When the service scheduler stops running tasks, it attempts to maintain balance 
    "forceNewDeployment": {{boolean}},
    "gatewayConnectors": [
       {
+         "deregistrationDelay": {
+            "timeoutSeconds": {{number}}
+         },
          "filters": {
             "accessTypes": [ "{{string}}" ]
          },

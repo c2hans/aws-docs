@@ -40,6 +40,15 @@ Use the following operations to configure your `OnlineStore` and `OfflineStore` 
 
 Provides APIs for creating and managing SageMaker geospatial resources.
 
+## Amazon SageMaker Inference Router Runtime
+<a name="Welcome_Amazon_SageMaker_Inference_Router_Runtime"></a>
+
+Amazon SageMaker Inference Router Runtime is the runtime API for Amazon SageMaker AI inference routers. An inference router sends each request that you make to one of the destinations of a routing target. A destination is a SageMaker AI endpoint or inference component, in your account or in another account, in the router's AWS Region or in another Region in the same AWS partition. The router chooses a healthy destination with capacity, and prefers destinations in its own Region.
+
+Use `InvokeInferenceRouter` to get an inference in real time. Use `InvokeInferenceRouterAsync` to submit a request whose input and response are stored in Amazon S3.
+
+The inference router runtime endpoint supports HTTP/1.1 only. HTTP/2 isn't supported. If you use the AWS SDKs or the AWS CLI, you don't need to change anything.
+
 ## Amazon SageMaker Metrics Service
 <a name="Welcome_Amazon_SageMaker_Metrics_Service"></a>
 

@@ -16,7 +16,7 @@ A feed with an enabled function output must also have an enabled smart crop, eve
 
 At runtime, each time the trigger fires, Elemental Inference does the following:
 
-1. Gathers the media and metadata for that window – for example, decodes video frames, remuxes a short video clip, or collects the transcript.
+1. Gathers the media and metadata for that window – for example, decodes video frames or collects the transcript.
 
 1. Evaluates your request expression to build the request body.
 

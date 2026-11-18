@@ -123,7 +123,7 @@ This table lists your archives where you have options to create a new archive, s
 
    Choose **Create archive**.
 
-1. Now that you've created an archive, you can use it in a [rule set](eb-rules.md#eb-rules-create-console) to archive received (inbound) email, or designate it in a [configuration set](creating-configuration-sets.md#config-sets-create-console) to archive sent (outbound) email.
+1. Now that you've created an archive, you can use it in a [rule set](eb-rules-setup.md#eb-rules-create-console) to archive received (inbound) email, or designate it in a [configuration set](creating-configuration-sets.md#config-sets-create-console) to archive sent (outbound) email.
 
 1. To edit an archive, select its radio button followed by **Edit**.
 

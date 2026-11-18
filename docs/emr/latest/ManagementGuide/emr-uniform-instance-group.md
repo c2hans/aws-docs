@@ -77,7 +77,7 @@ The following example shows a uniform instance group cluster created with two in
 
 ```
 aws emr create-cluster
-  --release-label emr-5.30.0 \
+  --release-label emr-7.14.0 \
   --service-role EMR_DefaultRole \
   --ec2-attributes SubnetId=subnet-22XXXX01,InstanceProfile=EMR_EC2_DefaultRole \
   --instance-groups \

@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/bedrock-invoke-model-stream.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Use InvokeModelWithResponseStream
 <a name="bedrock-invoke-model-stream"></a>
 
-InvokeModelWithResponseStream accepts the same model-native request format as InvokeModel but returns the response as a stream of model-native events, so your application can process output as the model generates it instead of waiting for the complete response. Use it for interactive applications that work in a model's native format. The request and event schemas depend on the selected model.
+InvokeModelWithResponseStream accepts the same model-native request format as InvokeModel but returns the response as a stream of model-native events. Your application can process output as the model generates it instead of waiting for the complete response. Use it for interactive applications that work in a model's native format. The request and event schemas depend on the selected model.
 
-The following example sends one Amazon Nova 2 Messages API request, prints the reply as the model generates it, and then verifies that the stream completed. For request and response details, see the [invoke\_model\_with\_response\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
+The following example uses the asynchronous client to send one Amazon Nova 2 Messages API request, print the reply as the model generates it, and then verify that the stream completed. For request and response details, see the [invoke\_model\_with\_response\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
 
  **Imports**
 
@@ -18,22 +18,14 @@ import asyncio
 import json
 from typing import Any
 
-from aws_sdk_bedrock_runtime.client import AsyncBedrockRuntimeClient
-from aws_sdk_bedrock_runtime.config import AsyncBedrockRuntimeConfig
+from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient
 from aws_sdk_bedrock_runtime.models import (
-    InvokeModelWithResponseStreamInput,
     ResponseStreamChunk,
-    ResponseStreamInternalServerException,
-    ResponseStreamModelStreamErrorException,
-    ResponseStreamModelTimeoutException,
-    ResponseStreamServiceUnavailableException,
-    ResponseStreamThrottlingException,
     ResponseStreamUnknown,
-    ResponseStreamValidationException,
 )
 ```
 
-The constants name the expected Amazon Nova 2 event types and the modeled stream-error events.
+The following constant names the expected Amazon Nova 2 event types.
 
 ```
 NOVA_EVENT_NAMES = {
@@ -44,14 +36,6 @@ NOVA_EVENT_NAMES = {
     "messageStop",
     "metadata",
 }
-NATIVE_STREAM_ERRORS = (
-    ResponseStreamInternalServerException,
-    ResponseStreamModelStreamErrorException,
-    ResponseStreamModelTimeoutException,
-    ResponseStreamServiceUnavailableException,
-    ResponseStreamThrottlingException,
-    ResponseStreamValidationException,
-)
 ```
 
 The following helper builds the model-native request.
@@ -65,7 +49,7 @@ def build_native_request(prompt: str) -> dict[str, Any]:
     }
 ```
 
-`invoke_model_with_response_stream` returns model-native JSON events over an open network connection. The following function reads the events inside an `async with` block, which closes the connection when the stream ends or an error interrupts it. It narrows every generated event union, validates every model-native JSON payload, collects the text deltas, and accepts output only if the model signaled a complete message and the stream finished without a modeled error.
+`invoke_model_with_response_stream` returns model-native JSON events over an open network connection. The following function reads the events inside an `async with` block, which closes the connection when the stream ends or an error interrupts it. It narrows every generated event union, validates every model-native JSON payload, collects the text deltas, and accepts output only if the model signaled a complete message. A modeled error event, such as a model timeout, makes the `async for` loop raise the generated exception, such as `ModelTimeoutException`.
 
 ```
 async def consume_stream(response: Any) -> str:
@@ -103,8 +87,6 @@ async def consume_stream(response: Any) -> str:
                     if text:
                         text_parts.append(text)
                         print(text, end="", flush=True)
-            elif isinstance(event, NATIVE_STREAM_ERRORS):
-                raise RuntimeError(event.value.message or type(event).__name__)
             elif isinstance(event, ResponseStreamUnknown):
                 raise RuntimeError(f"Unknown native stream event: {event.tag}")
             else:
@@ -117,7 +99,7 @@ async def consume_stream(response: Any) -> str:
     return "".join(text_parts)
 ```
 
-Serialize the native request to UTF-8 JSON bytes, set both media types, and consume the validated stream.
+The following function calls `invoke_model_with_response_stream` with the same keyword arguments that `invoke_model` takes, then reads the returned stream with `consume_stream`.
 
  **Code**
 
@@ -129,25 +111,23 @@ async def invoke_model_with_response_stream(client: AsyncBedrockRuntimeClient) -
     prompt = "Name one moon of Saturn."
 
     response = await client.invoke_model_with_response_stream(
-        InvokeModelWithResponseStreamInput(
-            model_id=model_id,
-            content_type="application/json",
-            accept="application/json",
-            body=json.dumps(build_native_request(prompt)).encode("utf-8"),
-        )
+        model_id=model_id,
+        content_type="application/json",
+        accept="application/json",
+        body=json.dumps(build_native_request(prompt)).encode("utf-8"),
     )
     text = await consume_stream(response)
     print()
     return text
 ```
 
-The entry point creates the client and runs the streaming request. Run the program with `python invoke_model_with_response_stream.py`.
+The entry point creates an asynchronous client with `create_async_client` and runs the streaming request. Run the program with `python invoke_model_with_response_stream.py`.
 
 ```
 async def main() -> None:
-    """Create a client in a Region that offers the model and run the example."""
-    config = await AsyncBedrockRuntimeConfig.resolve(region="us-east-1")
-    async with AsyncBedrockRuntimeClient(config=config) as client:
+    """Create an asynchronous client and run the example."""
+    client = await create_async_client()
+    async with client:
         await invoke_model_with_response_stream(client)
 
 if __name__ == "__main__":

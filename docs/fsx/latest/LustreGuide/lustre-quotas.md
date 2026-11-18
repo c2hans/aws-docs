@@ -47,7 +47,7 @@ Quotas set for the root user are not enforced. Similarly, writing data as the ro
 
 Amazon FSx enforces user, group, and project quotas as a hard limit or as a soft limit with a configurable grace period.
 
-The hard limit is the absolute limit. If users exceed their hard limit, a block or inode allocation fails with a Disk quota exceeded message. Users who have reached their quota hard limit must delete enough files or directories to get under the quota limit before they can write to the file system again. When a grace period is set, users can exceed the soft limit within the grace period if under the hard limit.
+The hard limit is the absolute limit. If users exceed their hard limit, a block or inode allocation fails with a `Disk quota exceeded` message. Users who have reached their quota hard limit must delete enough files or directories to get under the quota limit before they can write to the file system again. When a grace period is set, users can exceed the soft limit within the grace period if under the hard limit.
 
 For soft limits, you configure a grace period in seconds. The soft limit must be smaller than the hard limit.
 

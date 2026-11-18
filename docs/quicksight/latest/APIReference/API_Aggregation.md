@@ -21,7 +21,7 @@ Required: Yes
  ** NewColumnId **   <a name="QS-Type-Aggregation-NewColumnId"></a>
 A unique identifier for the new column that will contain the aggregated values.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
  ** NewColumnName **   <a name="QS-Type-Aggregation-NewColumnName"></a>

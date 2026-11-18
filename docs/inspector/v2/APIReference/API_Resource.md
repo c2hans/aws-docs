@@ -19,7 +19,7 @@ Required: Yes
  ** type **   <a name="inspector2-Type-Resource-type"></a>
 The type of resource.
 Type: String
-Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_ECR_REPOSITORY | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.Web/sites`
+Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_ECR_REPOSITORY | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.Web/sites | MACHINE_IMAGE | cloudfunctions.googleapis.com/Function | compute.googleapis.com/Instance | artifactregistry.googleapis.com/DockerImage`
 Required: Yes
 
  ** details **   <a name="inspector2-Type-Resource-details"></a>
@@ -34,23 +34,32 @@ Length Constraints: Minimum length of 1.
 Required: No
 
  ** provider **   <a name="inspector2-Type-Resource-provider"></a>
-The cloud provider of the resource.
+The cloud provider of the resource. Valid values:
++  `AWS` – AWS resources.
++  `AZURE` – Microsoft Azure resources.
++  `GCP` – Google Cloud Platform (GCP) resources.
 Type: String
-Valid Values: `AWS | AZURE`
+Valid Values: `AWS | AZURE | GCP`
 Required: No
 
  ** providerAccountId **   <a name="inspector2-Type-Resource-providerAccountId"></a>
-The cloud provider account ID of the resource.
+The cloud provider account ID of the resource. The value format depends on the cloud provider:
++ An AWS account ID.
++ An Azure subscription ID.
++ A Google Cloud Platform (GCP) project ID, such as `my-project`.
 Type: String
-Length Constraints: Minimum length of 12. Maximum length of 36.
-Pattern: `(\d{12}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})`
+Length Constraints: Minimum length of 6. Maximum length of 36.
+Pattern: `(\d{12}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[a-z][a-z0-9-]{4,28}[a-z0-9])`
 Required: No
 
  ** providerOrgId **   <a name="inspector2-Type-Resource-providerOrgId"></a>
-The cloud provider organization ID of the resource.
+The cloud provider organization ID of the resource. The value format depends on the cloud provider:
++ An AWS Organizations organization ID.
++ An Azure tenant ID.
++ A numeric Google Cloud Platform (GCP) organization ID.
 Type: String
-Length Constraints: Minimum length of 12. Maximum length of 36.
-Pattern: `(o-[a-z0-9]{10,32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})`
+Length Constraints: Minimum length of 6. Maximum length of 36.
+Pattern: `(o-[a-z0-9]{10,32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9]{6,30})`
 Required: No
 
  ** region **   <a name="inspector2-Type-Resource-region"></a>

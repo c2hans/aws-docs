@@ -2728,6 +2728,103 @@ if __name__ == "__main__":
 ## Offers
 <a name="offers"></a>
 
+### Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product
+<a name="marketplace-catalog_AddFreeTrialWithAutoConversionToPublicOfferForSaasProduct_python_3_topic"></a>
+
+The following code example shows how to add a free trial to the public offer of a SaaS subscription product. When the free trial ends, it converts to a paid subscription at the rates in the offer. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "offer-1111111111111"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Usage",
+                "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Type": "FreeTrialPricingTerm",
+                        "Duration": "P20D",
+                        "Grants": [
+                            {
+                                "DimensionKey": "WorkloadSmall"
+                            },
+                            {
+                                "DimensionKey": "WorkloadMedium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to add a free trial that converts to a paid subscription
+to the public offer of my SaaS subscription product.
+UpdatePricingTerms replaces all pricing terms, so copy your offer's current UsageBasedPricingTerm from
+DescribeEntity instead of using the example rates, and grant every dimension in the free trial.
+CAPI-113
+"""
+
+import os
+
+import utils.start_changeset as sc
+import utils.stringify_details as sd
+
+def main(change_set=None):
+    if change_set is None:
+        fname = "changeset.json"
+        change_set_file = os.path.join(os.path.dirname(__file__), fname)
+        stringified_change_set = sd.stringify_changeset(change_set_file)
+
+    else:
+        stringified_change_set = change_set
+
+    response = sc.usage_demo(
+        stringified_change_set,
+        "Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product",
+    )
+
+    return response
+
+if __name__ == "__main__":
+    main()
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Create a custom dimension for a SaaS product and create a private offer
 <a name="marketplace-catalog_CreateSaasProductCustomDimensionAndPrivateOffer_python_3_topic"></a>
 
@@ -4523,126 +4620,6 @@ if __name__ == "__main__":
 ```
 +  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
 
-### Create a public free trial offer with subscription pricing for a SaaS product
-<a name="marketplace-catalog_CreatePublicFreeTrialOfferWithSubscriptionPricingForSaasProduct_python_3_topic"></a>
-
-The following code example shows how to create a public free trial offer with subscription pricing for a SaaS product.
-
-**SDK for Python (Boto3)**
- There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
-
-```
-{
-    "Catalog": "AWSMarketplace",
-    "ChangeSet": [
-        {
-            "ChangeType": "CreateOffer",
-            "Entity": {
-                "Type": "Offer@1.0"
-            },
-            "ChangeName": "CreateOfferChange",
-            "DetailsDocument": {
-                "ProductId": "prod-1111111111111"
-            }
-        },
-        {
-            "ChangeType": "UpdateInformation",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {
-                "Name": "Test public free trial offer for SaaSProduct using AWS Marketplace API Reference Code",
-                "Description": "Test public free trial offer with subscription pricing for SaaSProduct using AWS Marketplace API Reference Code"
-            }
-        },
-        {
-            "ChangeType": "UpdatePricingTerms",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {
-                "PricingModel": "Free",
-                "Terms": [
-                    {
-                        "Type": "FreeTrialPricingTerm",
-                        "Duration": "P20D",
-                        "Grants": [
-                            {
-                                "DimensionKey": "WorkloadSmall"
-                            },
-                            {
-                                "DimensionKey": "WorkloadMedium"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "ChangeType": "UpdateLegalTerms",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {
-                "Terms": [
-                    {
-                        "Type": "LegalTerm",
-                        "Documents": [
-                            {
-                                "Type": "StandardEula",
-                                "Version": "2022-07-14"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "ChangeType": "ReleaseOffer",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {}
-        }
-    ]
-}
-```
-Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
-
-```
-# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-# SPDX-License-Identifier: Apache-2.0
-"""
-Purpose
-Shows how to use the AWS SDK for Python (Boto3) to create a public free trial offer with subscription pricing for SaaS product
-CAPI-13
-"""
-
-import os
-
-import utils.start_changeset as sc
-import utils.stringify_details as sd
-
-fname = "changeset.json"
-change_set_file = os.path.join(os.path.dirname(__file__), fname)
-
-change_set = sd.stringify_changeset(change_set_file)
-
-def main():
-    sc.usage_demo(
-        change_set,
-        "Create public free trial offer with subscription pricing for SaaS product",
-    )
-
-if __name__ == "__main__":
-    main()
-```
-+  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
-
 ### Create a replacement private offer with contract pricing
 <a name="marketplace-catalog_CreateReplacementPrivateOfferWithContractPricing_python_3_topic"></a>
 
@@ -4814,6 +4791,128 @@ if __name__ == "__main__":
 ```
 +  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
 
+### Deprecated - Create a public free trial offer with subscription pricing for a SaaS product
+<a name="marketplace-catalog_CreatePublicFreeTrialOfferWithSubscriptionPricingForSaasProduct_python_3_topic"></a>
+
+The following code example shows how to create a public free trial offer with subscription pricing for a SaaS product. This example is deprecated, because standalone free trial offers for SaaS subscription products can no longer be created. Use *Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product* instead.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "CreateOffer",
+            "Entity": {
+                "Type": "Offer@1.0"
+            },
+            "ChangeName": "CreateOfferChange",
+            "DetailsDocument": {
+                "ProductId": "prod-1111111111111"
+            }
+        },
+        {
+            "ChangeType": "UpdateInformation",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Name": "Test public free trial offer for SaaSProduct using AWS Marketplace API Reference Code",
+                "Description": "Test public free trial offer with subscription pricing for SaaSProduct using AWS Marketplace API Reference Code"
+            }
+        },
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Free",
+                "Terms": [
+                    {
+                        "Type": "FreeTrialPricingTerm",
+                        "Duration": "P20D",
+                        "Grants": [
+                            {
+                                "DimensionKey": "WorkloadSmall"
+                            },
+                            {
+                                "DimensionKey": "WorkloadMedium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "UpdateLegalTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Terms": [
+                    {
+                        "Type": "LegalTerm",
+                        "Documents": [
+                            {
+                                "Type": "StandardEula",
+                                "Version": "2022-07-14"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "ReleaseOffer",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {}
+        }
+    ]
+}
+```
+Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to create a public free trial offer with subscription pricing for SaaS product
+Deprecated: standalone free trial offers for SaaS subscription products can no longer be created.
+Use add_free_trial_with_auto_conversion_to_public_offer_for_saas_product instead.
+CAPI-13
+"""
+
+import os
+
+import utils.start_changeset as sc
+import utils.stringify_details as sd
+
+fname = "changeset.json"
+change_set_file = os.path.join(os.path.dirname(__file__), fname)
+
+change_set = sd.stringify_changeset(change_set_file)
+
+def main():
+    sc.usage_demo(
+        change_set,
+        "Create public free trial offer with subscription pricing for SaaS product",
+    )
+
+if __name__ == "__main__":
+    main()
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
+
 ### Describe a public offer
 <a name="marketplace-catalog_DescribeOffer_python_3_topic"></a>
 
@@ -4881,6 +4980,117 @@ if __name__ == "__main__":
     usage_demo()
 ```
 +  For API details, see [DescribeEntity](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/DescribeEntity) in *AWS SDK for Python (Boto3) API Reference*.
+
+### Enable free trial auto-conversion for a SaaS subscription product
+<a name="marketplace-catalog_EnableFreeTrialAutoConversionForSaasProduct_python_3_topic"></a>
+
+The following code example shows how to replace the standalone free trial offer of a SaaS subscription product with a free trial on its public offer. The change set sets the expiration date of the standalone free trial offer (`offer-2222222222222`) to a date in the past so that buyers no longer see that offer, and adds the free trial to the public offer (`offer-1111111111111`). Existing free trial agreements aren't changed. `UpdateAvailability` is supported on free trial offers, and the standalone free trial offer can't be made available again after it expires. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "UpdateAvailability",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "offer-2222222222222"
+            },
+            "DetailsDocument": {
+                "AvailabilityEndDate": "2023-01-01"
+            }
+        },
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "offer-1111111111111"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Usage",
+                "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Type": "FreeTrialPricingTerm",
+                        "Duration": "P20D",
+                        "Grants": [
+                            {
+                                "DimensionKey": "WorkloadSmall"
+                            },
+                            {
+                                "DimensionKey": "WorkloadMedium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to replace the standalone free trial offer of my SaaS subscription
+product with a free trial that converts to a paid subscription on the public offer. The change set sets the expiry
+date of the standalone free trial offer (offer-2222222222222) to a date in the past so that my buyers no longer see
+that offer, and adds the free trial to the public offer (offer-1111111111111).
+UpdateAvailability is supported on free trial offers. The standalone free trial offer can't be made available
+again after it expires.
+UpdatePricingTerms replaces all pricing terms, so copy your offer's current UsageBasedPricingTerm from
+DescribeEntity instead of using the example rates, and grant every dimension in the free trial.
+CAPI-114
+"""
+
+import os
+
+import utils.start_changeset as sc
+import utils.stringify_details as sd
+
+def main(change_set=None):
+    if change_set is None:
+        fname = "changeset.json"
+        change_set_file = os.path.join(os.path.dirname(__file__), fname)
+        stringified_change_set = sd.stringify_changeset(change_set_file)
+
+    else:
+        stringified_change_set = change_set
+
+    response = sc.usage_demo(
+        stringified_change_set,
+        "Enable free trial auto-conversion for a SaaS subscription product",
+    )
+
+    return response
+
+if __name__ == "__main__":
+    main()
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
 
 ### Expire a draft private offer
 <a name="marketplace-catalog_ExpirePrivateOffer_python_3_topic"></a>
@@ -5490,10 +5700,10 @@ if __name__ == "__main__":
 ```
 +  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
 
-### Update the free trial duration of a public free trial offer for a SaaS product
+### Update the free trial duration of a public free trial offer for a SaaS subscription product
 <a name="marketplace-catalog_UpdateFreeTrialDurationOfPublicFreeTrialOfferForSaasProduct_python_3_topic"></a>
 
-The following code example shows how to update the free trial duration of a public free trial offer for a SaaS product.
+The following code example shows how to update the free trial duration of a public free trial offer for a SaaS subscription product. Use this change set on the public offer that has the free trial. A standalone free trial offer takes only the `FreeTrialPricingTerm`. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
 
 **SDK for Python (Boto3)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
@@ -5511,6 +5721,24 @@ The following code example shows how to update the free trial duration of a publ
             "DetailsDocument": {
                 "PricingModel": "Usage",
                 "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
                     {
                         "Type": "FreeTrialPricingTerm",
                         "Duration": "P21D",
@@ -5537,6 +5765,9 @@ Run this script to start the changeset. Helper functions are defined in *Utiliti
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to change free trial duration for my SaaS product by modifying my free trial public offer
+Use it on the public offer that has the free trial. A standalone free trial offer takes only the FreeTrialPricingTerm.
+UpdatePricingTerms replaces all pricing terms, so copy your offer's current UsageBasedPricingTerm from
+DescribeEntity instead of using the example rates, and grant every dimension in the free trial.
 CAPI-14
 """
 

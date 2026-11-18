@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association PatternFilter
 <a name="aws-properties-devopsagent-association-patternfilter"></a>
 
-<a name="aws-properties-devopsagent-association-patternfilter-description"></a>The `PatternFilter` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+A match condition based on regular expressions. The condition passes when the value matches any of the patterns.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-patternfilter-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-patternfilter-properties"></a>
 
 `Patterns`  <a name="cfn-devopsagent-association-patternfilter-patterns"></a>
-Property description not available.
+The regular expression patterns. Each pattern must match the entire value, for example `main` or `release/.*`.
 *Required*: Yes
 *Type*: Array of String
 *Minimum*: `1 | 1`

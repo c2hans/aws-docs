@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/bedrock-output-streaming.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Use ConverseStream
 <a name="bedrock-output-streaming"></a>
 
-ConverseStream accepts the same request format as Converse but returns the response as a stream of events, so your application can process output as the model generates it instead of waiting for the complete response. Use it for interactive applications, such as chat, where users should start seeing text as soon as the model begins its reply.
+ConverseStream accepts the same request format as Converse but returns the response as a stream of events. Your application can process output as the model generates it instead of waiting for the complete response. Use it for interactive applications, such as chat, where users should start seeing text as soon as the model begins its reply.
 
-The following example sends one request, prints the reply as the model generates it, and then verifies that the stream completed. For request and response details, see the [converse\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/converse_stream/) API reference.
+The following example uses the asynchronous client to send one request, print the reply as the model generates it, and then verify that the stream completed. For request and response details, see the [converse\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/converse_stream/) API reference.
 
  **Imports**
 
@@ -17,49 +17,27 @@ The following example sends one request, prints the reply as the model generates
 import asyncio
 from typing import Any
 
-from aws_sdk_bedrock_runtime.client import AsyncBedrockRuntimeClient
-from aws_sdk_bedrock_runtime.config import AsyncBedrockRuntimeConfig
+from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient
 from aws_sdk_bedrock_runtime.models import (
     ContentBlockDeltaText,
-    ContentBlockText,
-    ConverseStreamInput,
     ConverseStreamOutputContentBlockDelta,
     ConverseStreamOutputContentBlockStart,
     ConverseStreamOutputContentBlockStop,
-    ConverseStreamOutputInternalServerException,
     ConverseStreamOutputMessageStart,
     ConverseStreamOutputMessageStop,
     ConverseStreamOutputMetadata,
-    ConverseStreamOutputModelStreamErrorException,
-    ConverseStreamOutputServiceUnavailableException,
-    ConverseStreamOutputThrottlingException,
     ConverseStreamOutputUnknown,
-    ConverseStreamOutputValidationException,
-    Message,
-    StopReason,
     TokenUsage,
 )
 ```
 
-Group the modeled stream-error events so that the event loop can treat every failure variant the same way.
+`converse_stream` returns the response as a stream of events over an open network connection. The following function reads the events inside an `async with` block, which closes the connection when the stream ends or an error interrupts it. It narrows every generated event union, collects the text deltas, and raises an error for an unknown variant instead of accepting partial output. If the service sends a modeled error event, the `async for` loop raises the generated exception, such as `ThrottlingException` from `aws_sdk_bedrock_runtime.models`. The message-stop event carries the stop reason. The metadata event carries the token usage. The function requires both events before it accepts the accumulated text as complete.
 
 ```
-STREAM_ERRORS = (
-    ConverseStreamOutputInternalServerException,
-    ConverseStreamOutputModelStreamErrorException,
-    ConverseStreamOutputServiceUnavailableException,
-    ConverseStreamOutputThrottlingException,
-    ConverseStreamOutputValidationException,
-)
-```
-
-`converse_stream` returns the response as a stream of events over an open network connection. The following function reads the events inside an `async with` block, which closes the connection when the stream ends or an error interrupts it. It narrows every generated event union, collects the text deltas, and raises on `STREAM_ERRORS` events and unknown variants instead of accepting partial output. The message-stop event carries the stop reason, and the metadata event carries the token usage. The function requires both events before it accepts the accumulated text as complete.
-
-```
-async def consume_stream(response: Any) -> tuple[str, StopReason, TokenUsage]:
+async def consume_stream(response: Any) -> tuple[str, str, TokenUsage]:
     """Consume a Converse stream and reject errors or incomplete output."""
     text_parts: list[str] = []
-    stop_reason: StopReason | None = None
+    stop_reason: str | None = None
     usage: TokenUsage | None = None
 
     async with response as stream:
@@ -79,8 +57,6 @@ async def consume_stream(response: Any) -> tuple[str, StopReason, TokenUsage]:
                 stop_reason = event.value.stop_reason
             elif isinstance(event, ConverseStreamOutputMetadata):
                 usage = event.value.usage
-            elif isinstance(event, STREAM_ERRORS):
-                raise RuntimeError(event.value.message or type(event).__name__)
             elif isinstance(event, ConverseStreamOutputUnknown):
                 raise RuntimeError(f"Unknown stream event: {event.tag}")
             else:
@@ -91,28 +67,21 @@ async def consume_stream(response: Any) -> tuple[str, StopReason, TokenUsage]:
     return "".join(text_parts), stop_reason, usage
 ```
 
-The following function sends one complete Converse request and hands the response to `consume_stream`.
+The following function calls `converse_stream` with the same keyword arguments that `converse` takes, then reads the returned stream with `consume_stream`.
 
  **Code**
 
 ```
 async def converse_stream(
     client: AsyncBedrockRuntimeClient,
-) -> tuple[str, StopReason, TokenUsage]:
+) -> tuple[str, str, TokenUsage]:
     """Send a ConverseStream request and consume its complete response."""
     model_id = "global.amazon.nova-2-lite-v1:0"
     prompt = "Name one moon of Saturn."
 
     response = await client.converse_stream(
-        ConverseStreamInput(
-            model_id=model_id,
-            messages=[
-                Message(
-                    role="user",
-                    content=[ContentBlockText(value=prompt)],
-                )
-            ],
-        )
+        model_id=model_id,
+        messages=[{"role": "user", "content": [{"text": prompt}]}],
     )
     text, stop_reason, usage = await consume_stream(response)
     print(f"\nstop reason: {stop_reason}")
@@ -120,13 +89,13 @@ async def converse_stream(
     return text, stop_reason, usage
 ```
 
-The entry point creates the client and runs the streaming request. Run the program with `python converse_stream.py`.
+The entry point creates an asynchronous client with `create_async_client` and runs the streaming request. Run the program with `python converse_stream.py`.
 
 ```
 async def main() -> None:
-    """Create a client in a Region that offers the model and run the example."""
-    config = await AsyncBedrockRuntimeConfig.resolve(region="us-east-1")
-    async with AsyncBedrockRuntimeClient(config=config) as client:
+    """Create an asynchronous client and run the example."""
+    client = await create_async_client()
+    async with client:
         await converse_stream(client)
 
 if __name__ == "__main__":

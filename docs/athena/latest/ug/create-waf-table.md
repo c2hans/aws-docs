@@ -16,7 +16,7 @@ For performance and cost reasons, we do not recommend using non-partitioned sche
 
    This query uses the [OpenX JSON SerDe](openx-json-serde.md).
 **Note**
-The SerDe expects each JSON document to be on a single line of text with no line termination characters separating the fields in the record. If the JSON text is in pretty print format, you may receive an error message like HIVE\_CURSOR\_ERROR: Row is not a valid JSON Object or HIVE\_CURSOR\_ERROR: JsonParseException: Unexpected end-of-input: expected close marker for OBJECT when you attempt to query the table after you create it. For more information, see [JSON Data Files](https://github.com/rcongiu/Hive-JSON-Serde#json-data-files) in the OpenX SerDe documentation on GitHub.
+The SerDe expects each JSON document to be on a single line of text with no line termination characters separating the fields in the record. If the JSON text is in pretty print format, you may receive an error message like `HIVE_CURSOR_ERROR: Row is not a valid JSON Object` or `HIVE_CURSOR_ERROR: JsonParseException: Unexpected end-of-input: expected close marker for OBJECT` when you attempt to query the table after you create it. For more information, see [JSON Data Files](https://github.com/rcongiu/Hive-JSON-Serde#json-data-files) in the OpenX SerDe documentation on GitHub.
 
    ```
    CREATE EXTERNAL TABLE `waf_logs`(

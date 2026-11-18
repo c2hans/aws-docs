@@ -9,6 +9,7 @@ The following table describes the releases for Gateway Load Balancers.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Connect a Gateway Load Balancer to a transit gateway](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/connect-gwlb-tgw.html) | This release adds support for connecting a Gateway Load Balancer to a transit gateway. | November 17, 2026 |
 | [Capacity Unit reservation](#doc-history) | This release adds support to set a minimum capacity for your load balancer. | April 10, 2025 |
 | [IPv6 support](#doc-history) | You can configure your Gateway Load Balancer to support both IPv4 and IPv6 addresses. | December 12, 2022 |
 | [Flow rebalancing](#doc-history) | This release adds support to define the flow handling behaviour for Gateway Load Balancers when targets fail or deregister. | October 13, 2022 |

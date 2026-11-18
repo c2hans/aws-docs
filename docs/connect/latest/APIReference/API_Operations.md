@@ -81,6 +81,7 @@ The following actions are supported by Amazon Connect Service:
 +  [CreateWorkspace](API_CreateWorkspace.md)
 +  [CreateWorkspacePage](API_CreateWorkspacePage.md)
 +  [DeactivateEvaluationForm](API_DeactivateEvaluationForm.md)
++  [DeleteAllEntitySessions](API_DeleteAllEntitySessions.md)
 +  [DeleteAttachedFile](API_DeleteAttachedFile.md)
 +  [DeleteContactData](API_DeleteContactData.md)
 +  [DeleteContactEvaluation](API_DeleteContactEvaluation.md)
@@ -561,6 +562,14 @@ The following actions are supported by Amazon Connect Participant Service:
 +  [SendEvent](API_connect-participant_SendEvent.md)
 +  [SendMessage](API_connect-participant_SendMessage.md)
 +  [StartAttachmentUpload](API_connect-participant_StartAttachmentUpload.md)
+
+The following actions are supported by Amazon Connect Scheduling:
++  [ApproveTimeOff](API_connect-scheduling_ApproveTimeOff.md)
++  [CancelTimeOff](API_connect-scheduling_CancelTimeOff.md)
++  [CreateTimeOff](API_connect-scheduling_CreateTimeOff.md)
++  [GetTimeOff](API_connect-scheduling_GetTimeOff.md)
++  [PutTimeOffBalance](API_connect-scheduling_PutTimeOffBalance.md)
++  [RejectTimeOff](API_connect-scheduling_RejectTimeOff.md)
 
 The following actions are supported by Amazon Connect Customer Profiles:
 +  [AddProfileKey](API_connect-customer-profiles_AddProfileKey.md)

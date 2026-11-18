@@ -11,7 +11,7 @@ Detailed information about a platform version.
 <a name="API_PlatformDescription_Contents"></a>
 
  ** CustomAmiList.member.N **
-The custom AMIs supported by the platform version.
+The AMIs of the platform version, by virtualization type. For Elastic Beanstalk managed platforms, these are the default `x86_64` AMIs; for custom platforms, the `hvm` entry is the AMI built for the platform version. To find a managed platform's default AMIs for every supported processor architecture, including `arm64`, use `DefaultAmiList`.
 Type: Array of [CustomAmi](API_CustomAmi.md) objects
 Required: No
 
@@ -23,6 +23,12 @@ Required: No
  ** DateUpdated **
 The date when the platform version was last updated.
 Type: Timestamp
+Required: No
+
+ ** DefaultAmiList.member.N **
+The AMIs that Elastic Beanstalk uses by default for the platform version, one for each supported processor architecture. When an environment doesn't specify a custom AMI, Elastic Beanstalk chooses the default AMI that matches the environment's architecture.
+This list isn't returned for custom platforms.
+Type: Array of [DefaultAmi](API_DefaultAmi.md) objects
 Required: No
 
  ** Description **

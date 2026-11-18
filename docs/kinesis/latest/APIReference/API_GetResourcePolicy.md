@@ -5,9 +5,10 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetResou
 # GetResourcePolicy
 <a name="API_GetResourcePolicy"></a>
 
-Returns a policy attached to the specified data stream or consumer. Request patterns can be one of the following:
+Returns a policy attached to the specified data stream, consumer, or queue. Request patterns can be one of the following:
 + Data stream pattern: `arn:aws.*:kinesis:.*:\d{12}:.*stream/\S+`
 +  Consumer pattern: `^(arn):aws.*:kinesis:.*:\d{12}:.*stream\/[a-zA-Z0-9_.-]+\/consumer\/[a-zA-Z0-9_.-]+:[0-9]+`
++ Queue pattern: `arn:aws.*:kinesis:.*:\d{12}:queue/\S+`
 
 ## Request Syntax
 <a name="API_GetResourcePolicy_RequestSyntax"></a>
@@ -25,10 +26,10 @@ Returns a policy attached to the specified data stream or consumer. Request patt
 The request accepts the following data in JSON format.
 
  ** [ResourceARN](#API_GetResourcePolicy_RequestSyntax) **   <a name="Streams-GetResourcePolicy-request-ResourceARN"></a>
-The Amazon Resource Name (ARN) of the data stream or consumer.
+The Amazon Resource Name (ARN) of a data stream, a queue, or an enhanced fan-out consumer.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel)/\S+`
+Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel|queue)/\S+`
 Required: Yes
 
  ** [StreamId](#API_GetResourcePolicy_RequestSyntax) **   <a name="Streams-GetResourcePolicy-request-StreamId"></a>
@@ -67,6 +68,10 @@ For information about the errors that are common to all actions, see [Common Err
 Specifies that you do not have the permissions required to perform this operation.
 HTTP Status Code: 400
 
+ ** InternalFailureException **
+The processing of the request failed because of an unknown error, exception, or failure.
+HTTP Status Code: 500
+
  ** InvalidArgumentException **
 A specified parameter exceeds its restrictions, is not supported, or can't be used. For more information, see the returned message.
  ** message **
@@ -89,6 +94,10 @@ HTTP Status Code: 400
 The requested resource could not be found. The stream might not be specified correctly.
  ** message **
 A message that provides information about the error.
+HTTP Status Code: 400
+
+ ** ValidationException **
+The request failed validation. For example, a parameter value is not valid, a combination of parameters is not supported, or the operation is not supported for the stream's capacity mode. The error message describes the specific reason.
 HTTP Status Code: 400
 
 ## See Also

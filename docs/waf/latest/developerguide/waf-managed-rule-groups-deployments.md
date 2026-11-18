@@ -23,5 +23,6 @@ This section applies only to AWS Managed Rules rule groups that are versioned. T
 + [Release candidate deployments for AWS Managed Rules](waf-managed-rule-groups-deployments-release-candidate.md)
 + [Static version deployments for AWS Managed Rules](waf-managed-rule-groups-deployments-static-version.md)
 + [Default version deployments for AWS Managed Rules](waf-managed-rule-groups-deployments-default-version.md)
++ [LATEST version updates for AWS Managed Rules](waf-managed-rule-groups-deployments-latest-version.md)
 + [Exception deployments for AWS Managed Rules](waf-managed-rule-groups-deployments-exceptions.md)
 + [Default deployment rollbacks for AWS Managed Rules](waf-managed-rule-groups-deployments-default-rollbacks.md)

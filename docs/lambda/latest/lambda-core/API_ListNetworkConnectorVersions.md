@@ -90,24 +90,32 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidParameterValueException **
 One of the parameters in the request is not valid. Check the error message for details about which parameter failed validation.
+ ** message **
+The error message that describes the exception.
  ** Type **
 The exception type.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
-The specified network connector does not exist. Verify the identifier (ID, name, or ARN) and Region.
+The specified resource does not exist. Verify the identifier and Region.
+ ** Message **
+The error message that describes the exception.
  ** Type **
 The exception type.
 HTTP Status Code: 404
 
  ** ServiceException **
 An internal service error occurred. Retry the request with exponential backoff.
+ ** Message **
+The error message that describes the exception.
  ** Type **
 The exception type.
 HTTP Status Code: 500
 
  ** TooManyRequestsException **
 The request was throttled due to exceeding the allowed request rate. Retry the request after a brief wait using exponential backoff.
+ ** message **
+The error message that describes the exception.
  ** Reason **
 The reason for the throttling.
  ** retryAfterSeconds **

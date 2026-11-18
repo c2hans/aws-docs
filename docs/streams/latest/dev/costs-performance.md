@@ -27,7 +27,7 @@ For every encrypted stream, when reading from TIP and using a single IAM account
 
 Currently, server-side encryption of Kinesis streams is available in all the Regions supported for Kinesis Data Streams, including AWS GovCloud (US-West), and the China Regions. For more information about supported Regions for Kinesis Data Streams see [https://docs.aws.amazon.com/general/latest/gr/ak.html](https://docs.aws.amazon.com/general/latest/gr/ak.html).
 
-## Performance Considerations
+## Performance considerations
 <a name="performance-considerations"></a>
 
 Due to the service overhead of applying encryption, applying server-side encryption increases the typical latency of `PutRecord`, `PutRecords`, and `GetRecords` by less than 100μs.

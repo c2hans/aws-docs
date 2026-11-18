@@ -64,6 +64,16 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** AccessDeniedException **
+You don't have permission to perform this operation. Check your IAM permissions and try again.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+An internal server error occurred. Try again later.
+ ** retryAfterSeconds **
+Number of seconds in which the caller can retry the request.
+HTTP Status Code: 500
+
  ** ResourceNotFoundException **
 The specified resource was not found. Verify the resource ID and try again.
  ** resourceId **
@@ -71,6 +81,16 @@ The unique ID of the resource referenced in the failed request.
  ** resourceType **
 The resource type of the resource referenced in the failed request.
 HTTP Status Code: 404
+
+ ** ThrottlingException **
+The request was throttled due to too many requests. Wait a moment and try again.
+ ** quotaCode **
+The quota code recognized by the AWS Service Quotas service.
+ ** retryAfterSeconds **
+Number of seconds in which the caller can retry the request.
+ ** serviceCode **
+The code for the AWS service that owns the quota.
+HTTP Status Code: 429
 
  ** ValidationException **
 The input parameters are invalid. Check the parameter values and try again.

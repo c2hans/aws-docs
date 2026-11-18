@@ -9,6 +9,8 @@ Amazon SageMaker HyperPod emits structured cluster events that provide visibilit
 
 Cluster events are available for HyperPod Slurm clusters with `NodeProvisioningMode` set to `Continuous`. Events are accessible through the `ListClusterEvents` and `DescribeClusterEvent` APIs, the SageMaker AI console, and Amazon EventBridge.
 
+Events that HyperPod records while working on a scaling or deep health check request carry the ID of that request's cluster operation, so you can list the events for a single request. For more information, see [Tracking requests with SageMaker HyperPod cluster operations](sagemaker-hyperpod-cluster-operations.md).
+
 For the complete event schema, severity levels, full event catalog, and EventBridge integration details, see [SageMaker HyperPod cluster events reference](sagemaker-hyperpod-cluster-events-reference.md).
 
 ## Prerequisites
@@ -38,6 +40,8 @@ HyperPod emits two categories of events for Slurm clusters on continuous provisi
 
 The **Events** tab displays a paginated list of events with columns for event level, event ID, resource name, resource type, description, and event time. You can filter events by attribute using the search box, sort by event time, and choose an event ID to see full event details including the event metadata and the complete event record.
 
+The **Events** tab also shows the cluster's operations. To see only the events for one request, filter the **Events** tab by operation ID. You can find an instance group's current operation ID in the **Operation ID** column of the **Instance groups** table. When an in-progress operation has `Error` events, the console shows an alert that links to them.
+
 ## Listing events using the AWS CLI
 <a name="sagemaker-hyperpod-cluster-events-slurm-cli"></a>
 
@@ -56,6 +60,7 @@ You can narrow results using the following filters:
 + `--instance-group-name` — filter to events for a specific instance group.
 + `--node-id` — filter to events for a specific EC2 instance.
 + `--event-time-after` and `--event-time-before` — filter to a specific time window.
++ `--operation-id` — filter to events for a specific cluster operation.
 
 For example, to see only instance-group-level events for a specific instance group:
 
@@ -65,6 +70,16 @@ aws sagemaker list-cluster-events \
     --resource-type InstanceGroup \
     --instance-group-name gpu-workers
 ```
+
+To see only the events caused by one request:
+
+```
+aws sagemaker list-cluster-events \
+    --cluster-name my-slurm-cluster \
+    --operation-id 7a1b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d
+```
++ `--cluster-name` – the name of your cluster.
++ `--operation-id` – the ID of the cluster operation whose events you want to see.
 
 ## Describing a specific event
 <a name="sagemaker-hyperpod-cluster-events-slurm-describe"></a>

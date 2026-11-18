@@ -5,13 +5,17 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy
 # PutKeyPolicy
 <a name="API_PutKeyPolicy"></a>
 
-Attaches a key policy to the specified KMS key.
+Attaches a key policy to the specified KMS key. You can use this operation to set only the `default` key policy.
 
 For more information about key policies, see [Key Policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) in the * AWS Key Management Service Developer Guide*. For help writing and formatting a JSON policy document, see the [IAM JSON Policy Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html) in the * * AWS Identity and Access Management User Guide* *. For examples of adding a key policy in multiple programming languages, see [Use PutKeyPolicy with an AWS SDK or CLI](https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_PutKeyPolicy_section.html) in the * AWS Key Management Service Developer Guide*.
+
+A KMS key can also have an `AWS_RAM` key policy, which AWS Resource Access Manager (AWS RAM) manages for KMS keys that you share through AWS RAM. You can't use `PutKeyPolicy` to create, change, or delete the `AWS_RAM` key policy. If you set `PolicyName` to `AWS_RAM`, the request fails with a `ValidationException` and the message `The AWS_RAM policy can only be managed by the RAM service.` To view the `AWS_RAM` key policy, use [GetKeyPolicy](API_GetKeyPolicy.md). For information about sharing KMS keys, see [Sharing KMS keys with AWS RAM](https://docs.aws.amazon.com/kms/latest/developerguide/key-sharing-ram.html) in the * AWS Key Management Service Developer Guide*.
 
  **Cross-account use**: No. You cannot perform this operation on a KMS key in a different AWS account.
 
  **Required permissions**: [kms:PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) (key policy)
+
+You can use the [kms:PolicyName](https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html#conditions-kms-policy-name) condition key to control access to this operation based on the value of the `PolicyName` parameter in the request. If the request doesn't include `PolicyName`, the value of `kms:PolicyName` is `default`.
 
  **Related operations**: [GetKeyPolicy](API_GetKeyPolicy.md)
 
@@ -73,11 +77,12 @@ Skips ("bypasses") the key policy lockout safety check. The default value is fal
 Setting this value to true increases the risk that the KMS key becomes unmanageable. Do not set this value to true indiscriminately.
 For more information, see [Default key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-default.html#prevent-unmanageable-key) in the * AWS Key Management Service Developer Guide*.
 Use this parameter only when you intend to prevent the principal that is making the request from making a subsequent [PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) request on the KMS key.
+The key policy lockout safety check and the `BypassPolicyLockoutSafetyCheck` parameter apply only to the `default` key policy. The check evaluates only the new `default` key policy, with `kms:PolicyName` set to `default`. It doesn't consider permissions in the `AWS_RAM` key policy.
 Type: Boolean
 Required: No
 
  ** [PolicyName](#API_PutKeyPolicy_RequestSyntax) **   <a name="KMS-PutKeyPolicy-request-PolicyName"></a>
-The name of the key policy. If no policy name is specified, the default value is `default`. The only valid value is `default`.
+The name of the key policy. If no policy name is specified, the default value is `default`. Valid values are `default` and `AWS_RAM`, but you can set only the `default` key policy. AWS RAM manages the `AWS_RAM` key policy for KMS keys that you share through AWS RAM. If you specify `AWS_RAM`, the request fails with a `ValidationException`, or with an `AccessDeniedException` if you don't have permission to call `PutKeyPolicy` with that policy name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[\w]+`

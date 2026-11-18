@@ -39,7 +39,7 @@ For information about valid table names, see [Naming rules for tables and namesp
 
 **Important**
 When creating tables, make sure that you use all lowercase letters in your table names and table definitions. For example, make sure that your column names are all lowercase. If your table name or table definition contains capital letters, the table isn't supported by AWS Lake Formation or the AWS Glue Data Catalog. In this case, your table won't be visible to AWS analytics services such as Amazon Athena, even if your table buckets are integrated with AWS analytics services.
-If your table definition contains capital letters, you receive the following error message when running a `SELECT` query in Athena: "GENERIC\_INTERNAL\_ERROR: Get table request failed: com.amazonaws.services.glue.model.ValidationException: Unsupported Federation Resource - Invalid table or column names."
+If your table definition contains capital letters, you receive the following error message when running a `SELECT` query in Athena: `"GENERIC_INTERNAL_ERROR: Get table request failed: com.amazonaws.services.glue.model.ValidationException: Unsupported Federation Resource - Invalid table or column names."`
 
 ## Using the S3 console and Amazon Athena
 <a name="create-table-console"></a>
@@ -74,9 +74,9 @@ If you don't see these values in the **Catalog** and **Database** fields, make s
 
 1. When you're finished modifying the query, choose **Run** to create your table.
 **Note**
-If you receive the error "Insufficient permissions to execute the query. Principal does not have any privilege on specified resource" when you try to run a query in Athena, you must be granted the necessary Lake Formation permissions on the table. For more information, see [Granting Lake Formation permission on a table or database](grant-permissions-tables.md#grant-lf-table).
-If you receive the error "Iceberg cannot access the requested resource" when you try to run a query in Athena, go to the AWS Lake Formation console and make sure that you've granted yourself permissions on the table bucket catalog and database (namespace) that you created. Don't specify a table when granting these permissions. For more information, see [Granting Lake Formation permission on a table or database](grant-permissions-tables.md#grant-lf-table).
-If you receive the following error message when running a `SELECT` query in Athena, this message is caused by having capital letters in your table name or your column names in your table definition: "GENERIC\_INTERNAL\_ERROR: Get table request failed: com.amazonaws.services.glue.model.ValidationException: Unsupported Federation Resource - Invalid table or column names." Make sure that your table and column names are all lowercase.
+If you receive the error `"Insufficient permissions to execute the query. Principal does not have any privilege on specified resource"` when you try to run a query in Athena, you must be granted the necessary Lake Formation permissions on the table. For more information, see [Granting Lake Formation permission on a table or database](grant-permissions-tables.md#grant-lf-table).
+If you receive the error `"Iceberg cannot access the requested resource"` when you try to run a query in Athena, go to the AWS Lake Formation console and make sure that you've granted yourself permissions on the table bucket catalog and database (namespace) that you created. Don't specify a table when granting these permissions. For more information, see [Granting Lake Formation permission on a table or database](grant-permissions-tables.md#grant-lf-table).
+If you receive the following error message when running a `SELECT` query in Athena, this message is caused by having capital letters in your table name or your column names in your table definition: `"GENERIC_INTERNAL_ERROR: Get table request failed: com.amazonaws.services.glue.model.ValidationException: Unsupported Federation Resource - Invalid table or column names."` Make sure that your table and column names are all lowercase.
 
 If your table creation was successful, the name of your new table appears in the list of tables in Athena. When you navigate back to the Amazon S3 console, your new table appears in the **Tables** list on the bucket details page for your table bucket after you refresh the list.
 

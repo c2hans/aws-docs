@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeyPolic
 # ListKeyPolicies
 <a name="API_ListKeyPolicies"></a>
 
-Gets the names of the key policies that are attached to a KMS key. This operation is designed to get policy names that you can use in a [GetKeyPolicy](API_GetKeyPolicy.md) operation. However, the only valid policy name is `default`.
+Gets the names of the key policies that are attached to a KMS key. This operation is designed to get policy names that you can use in a [GetKeyPolicy](API_GetKeyPolicy.md) operation. The valid policy names are `default` and `AWS_RAM`.
+
+For information about the `AWS_RAM` key policy, see [Sharing KMS keys with AWS RAM](https://docs.aws.amazon.com/kms/latest/developerguide/key-sharing-ram.html) in the * AWS Key Management Service Developer Guide*.
 
  **Cross-account use**: No. You cannot perform this operation on a KMS key in a different AWS account.
 
@@ -52,7 +54,7 @@ Required: Yes
  ** [Limit](#API_ListKeyPolicies_RequestSyntax) **   <a name="KMS-ListKeyPolicies-request-Limit"></a>
 Use this parameter to specify the maximum number of items to return. When this value is present, AWS KMS does not return more than the specified number of items, but it might return fewer.
 This value is optional. If you include a value, it must be between 1 and 1000, inclusive. If you do not include a value, it defaults to 100.
-Only one policy can be attached to a key.
+A KMS key can have at most two key policies, `default` and `AWS_RAM`.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 1000.
 Required: No
@@ -89,7 +91,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `[\u0020-\u00FF]*`
 
  ** [PolicyNames](#API_ListKeyPolicies_ResponseSyntax) **   <a name="KMS-ListKeyPolicies-response-PolicyNames"></a>
-A list of key policy names. The only valid value is `default`.
+A list of key policy names. Valid values are:
+default
+The key policy that you manage.
+AWS\_RAM
+The key policy that AWS RAM manages for KMS keys that you share through AWS RAM.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[\w]+`
@@ -169,6 +175,46 @@ x-amzn-RequestId: 036f8e4b-bc10-11e6-b60b-ffb5eb2d1d15
 
 {
   "PolicyNames": ["default"],
+  "Truncated": false
+}
+```
+
+### Example – Request for a KMS key with an AWS\_RAM key policy
+<a name="API_ListKeyPolicies_Example_3"></a>
+
+This example illustrates one usage of ListKeyPolicies.
+
+```
+POST / HTTP/1.1
+Host: kms.us-east-2.amazonaws.com
+Content-Length: 49
+X-Amz-Target: TrentService.ListKeyPolicies
+X-Amz-Date: 20261117T193524Z
+Content-Type: application/x-amz-json-1.1
+Authorization: AWS4-HMAC-SHA256\
+ Credential=AKIAI44QH8DHBEXAMPLE/20261117/us-east-2/kms/aws4_request,\
+ SignedHeaders=content-type;host;x-amz-date;x-amz-target,\
+ Signature=EXAMPLE
+
+{"KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab"}
+```
+
+### Example – Response for a KMS key with an AWS\_RAM key policy
+<a name="API_ListKeyPolicies_Example_4"></a>
+
+This example illustrates one usage of ListKeyPolicies.
+
+```
+HTTP/1.1 200 OK
+Server: Server
+Date: Tue, 17 Nov 2026 19:35:25 GMT
+Content-Type: application/x-amz-json-1.1
+Content-Length: 65
+Connection: keep-alive
+x-amzn-RequestId: 56351da0-b3ac-43d7-b453-f827a64ab8d3
+
+{
+  "PolicyNames": ["AWS_RAM", "default"],
   "Truncated": false
 }
 ```

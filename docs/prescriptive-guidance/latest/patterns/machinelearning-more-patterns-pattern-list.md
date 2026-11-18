@@ -11,3 +11,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 + [Generate Db2 z/OS data insights by using AWS Mainframe Modernization and Amazon Q in Quick Sight](generate-db2-zos-data-insights-aws-mainframe-modernization-amazon-q-in-quicksight.md)
 + [Give SageMaker notebook instances temporary access to a CodeCommit repository in another AWS account](give-sagemaker-notebook-instances-temporary-access-to-a-codecommit-repository-in-another-aws-account.md)
 + [Modernize the CardDemo mainframe application by using AWS Transform](modernize-carddemo-mainframe-app.md)
++ [Transform Easytrieve to modern languages by using AWS Transform custom](transform-easytrieve-modern-languages.md)

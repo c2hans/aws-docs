@@ -22,6 +22,11 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `s3://[a-z0-9][\.\-a-z0-9]{1,61}[a-z0-9](/.*)?`
 Required: Yes
 
+ ** medicalCodeGenerationSettings **   <a name="connecthealth-Type-MedicalScribePostStreamActionSettings-medicalCodeGenerationSettings"></a>
+Settings for medical code generation. Medical code generation is in preview release and is subject to change.
+Type: [MedicalCodeGenerationSettings](API_MedicalCodeGenerationSettings.md) object
+Required: No
+
 ## See Also
 <a name="API_MedicalScribePostStreamActionSettings_SeeAlso"></a>
 

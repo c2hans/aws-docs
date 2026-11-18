@@ -9,7 +9,7 @@ After you complete the [prerequisite tasks](securityhub-v2-azure-prereqs.md), yo
 
 **To generate the setup script**
 
-1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.](https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.).
+1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1](https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1).
 
 1. In the navigation pane, choose **Integrations**.
 

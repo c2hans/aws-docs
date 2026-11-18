@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_WaitOptions.html
 # WaitOptions
 <a name="API_WaitOptions"></a>
 
-Specifies how long to pause the durable execution.
+Specifies how long the durable execution waits.
 
 ## Contents
 <a name="API_WaitOptions_Contents"></a>

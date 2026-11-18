@@ -5,22 +5,21 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # What a function can read
 <a name="functions-context"></a>
 
-Your request expression is evaluated against a single object named `media`. Each field of `media` is one kind of context that Elemental Inference can supply.
+Your request expression is evaluated against a single object named `media`. Each field of `media` is one kind of context that Elemental Inference can supply, as the following table shows.
 
 | Context variable | Type | What it contains | Requires |
 | --- | --- | --- | --- |
 | media.frames | Array of strings | Video frames sampled from the trigger window, decoded by Elemental Inference, resized if the function output sets a frame size, and encoded as Base64 JPEG. | A model target whose model accepts images. |
-| media.video | String | One short video clip for the trigger window, remuxed from the sampled fragments and encoded as Base64 MP4. | A model target whose model accepts video. |
 | media.transcript | String | The plain-text transcript of the speech in the trigger window. | An enabled smart subtitles output on the same feed, named in the function output's subtitlingSettings. Only with the fixedInterval trigger. |
-| media.contextual | Object | The contextual classification of the shot or scene – summary, categories, objects, actions, and brand-safety risk. | An enabled contextual metadata output on the same feed, named in the function output's contextualMetadataSettings. Only with the perScene or perShot trigger. |
+| media.contextual | Object | The contextual metadata of the current shot and the current scene: Interactive Advertising Bureau (IAB) categories, Global Alliance for Responsible Media (GARM) brand safety ratings, a summary, descriptive labels, and mood. | An enabled contextual metadata output on the same feed, named in the function output's contextualMetadataSettings. Only with the perScene or perShot trigger. |
 | media.clip | Object | The clips that event clipping detected in the window, and the tracked game state. | An enabled event clipping output on the same feed, named in the function output's clippingSettings. Only with the perClip or fixedInterval trigger. |
 
-`media.frames` and `media.video` come from the feed's own video for the trigger window, so they need no other output. The other three come from another output on the feed, which is why they each require one. A passthrough function can't read `media.frames` or `media.video`.
+`media.frames` comes from the feed's own video for the trigger window, so it needs no other output. The other three come from another output on the feed, which is why they each require one. A passthrough function can't read `media.frames`.
 
 **Important**
-Reading data from more than one existing feature is not supported. A function can read `media.frames` and `media.video` together with at most *one* of `media.transcript`, `media.contextual`, and `media.clip`. A function that references two of those three is rejected when you create or update it.
+Reading data from more than one existing feature is not supported. A function can read `media.frames` together with at most *one* of `media.transcript`, `media.contextual`, and `media.clip`. A function that references two of those three is rejected when you create or update it.
 
-You don't declare which context you want. Elemental Inference parses your request expression, derives the context from the `media.` paths that it references, and returns the result in the read-only `contextTypes` field of the function. The values are `FRAMES` (`media.frames`), `VIDEO` (`media.video`), `SUBTITLES` (`media.transcript`), `CONTEXTUAL_METADATA` (`media.contextual`), and `CLIP_METADATA` (`media.clip`). Reading `media.frames` is what causes frames to be decoded; if `contextTypes` comes back empty, your expression does not reference any media, and none will be supplied at runtime.
+You don't declare which context you want. Elemental Inference parses your request expression, derives the context from the `media.` paths that it references, and returns the result in the read-only `contextTypes` field of the function. The values are `FRAMES` (`media.frames`), `SUBTITLES` (`media.transcript`), `CONTEXTUAL_METADATA` (`media.contextual`), and `CLIP_METADATA` (`media.clip`). Reading `media.frames` is what causes frames to be decoded; if `contextTypes` comes back empty, your expression does not reference any media, and none is supplied at runtime.
 
 **Note**
 The derivation reads the structure of the expression, not its text. A string literal or a field name that merely contains `media.frames` is not a reference.
@@ -28,21 +27,91 @@ The derivation reads the structure of the expression, not its text. A string lit
 ## Fields in `media.contextual`
 <a name="functions-context-contextual"></a>
 
-`media.contextual` is a flattened view of one shot or scene classification. It is easier to write an expression against than the full `GetMetadata` shape of contextual metadata that is described in [Querying contextual metadata](query-metadata-query.md#query-metadata-contextual).
+`media.contextual` has two levels, `shot` and `scene`. Each level holds the contextual metadata of the current shot or the current scene, with the same field names and shapes as a contextual metadata item that `GetMetadata` returns. For more information about each field, see [Querying contextual metadata](query-metadata-query.md#query-metadata-contextual).
+
+A function runs when its shot (`perShot`) or its scene (`perScene`) ends, and sees the latest contextual metadata at that moment. Both levels are present on both triggers. The level that the trigger is based on is final, and describes the whole shot or scene. The other level is its value so far. For example, when a `perShot` function runs, `scene` describes the scene up to the end of that shot.
+
+A field that has no value is left out of the level. It is never `null`. A label list, such as `objects`, is left out when it has no entries, and `iabTaxonomy` is left out when no category matched. Which fields are present depends on the `summaryGeneration` and `extendedAnalysis` settings of the contextual metadata output, as it does for `GetMetadata`. Test for a field with `$exists()` before you build on it. `$exists(media.contextual.scene.summary)` is `false` when the scene has no summary.
+
+The following table describes the fields of each level.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| summary | String | The descriptive summary of the shot or scene, or null when the contextual metadata output doesn't have summary generation enabled. |
-| categories | Array of strings | The IAB Content Taxonomy categories, as their leaf labels – for example, ["Basketball", "Television"]. |
-| objects | Array of strings | The objects detected in the shot or scene. |
-| actions | Array of strings | The actions detected in the shot or scene. |
-| garm.risk | String | The overall GARM brand-safety risk level: LOW, MEDIUM, HIGH, or FLOOR. FLOOR is the most severe. |
-| garm.flagged | Array of strings | The names of the GARM categories that were flagged – for example, ["ILLEGAL\_DRUGS\_TOBACCO\_ALCOHOL"]. Categories that were not flagged are omitted. |
+| startPts | Number | The start of the shot or scene, as a presentation timestamp in timescale units. |
+| timescale | Number | The timescale of startPts. Always 90000, the timescale that media.clip events also use. |
+| iabTaxonomy | Object | The IAB Content Taxonomy categories. version is V3\_1, and each entry in categories has a uniqueId and a path, for example ["Sports", "Soccer"]. |
+| garm | Object | The GARM brand safety ratings. Each entry in garm.suitability.categories has a category and a flagged value. A flagged category also has a risk: LOW, MEDIUM, HIGH, or FLOOR. FLOOR is the most severe. |
+| summary | String | A short description of what happens in the shot or scene. |
+| objects, actions, people, environments, domains, brands, onScreenTexts | Array of strings | The descriptive labels for the shot or scene. |
+| mood | Object | The intensity of eight emotions: anger, anticipation, joy, trust, fear, surprise, sadness, and disgust. Each is a number from 1 to 10. |
+
+The following example shows `media.contextual` when a `perShot` function runs. Fields that have no value, such as the `people` of the scene, are left out. The GARM category lists are shortened.
+
+```
+{
+  "shot": {
+    "startPts": 161388406721700,
+    "timescale": 90000,
+    "iabTaxonomy": {
+      "version": "V3_1",
+      "categories": [{ "uniqueId": "483", "path": ["Sports", "Soccer"] }]
+    },
+    "garm": {
+      "suitability": {
+        "categories": [
+          { "category": "ILLEGAL_DRUGS_TOBACCO_ALCOHOL", "flagged": false },
+          { "category": "OBSCENITY_PROFANITY", "flagged": true, "risk": "MEDIUM" }
+        ]
+      }
+    },
+    "summary": "A striker scores from the edge of the box.",
+    "objects": ["ball", "goal net"],
+    "actions": ["kicking", "celebrating"],
+    "people": ["player", "goalkeeper"],
+    "environments": ["stadium"],
+    "mood": {
+      "anger": 1.4, "anticipation": 6.8, "joy": 8.1, "trust": 4.9,
+      "fear": 1.6, "surprise": 5.2, "sadness": 1.1, "disgust": 1.0
+    },
+    "brands": ["Example Corp"],
+    "onScreenTexts": ["GOAL"]
+  },
+  "scene": {
+    "startPts": 161388400000000,
+    "timescale": 90000,
+    "iabTaxonomy": {
+      "version": "V3_1",
+      "categories": [{ "uniqueId": "483", "path": ["Sports", "Soccer"] }]
+    },
+    "garm": {
+      "suitability": {
+        "categories": [
+          { "category": "ILLEGAL_DRUGS_TOBACCO_ALCOHOL", "flagged": false },
+          { "category": "OBSCENITY_PROFANITY", "flagged": true, "risk": "MEDIUM" }
+        ]
+      }
+    },
+    "summary": "The second half of a soccer match.",
+    "objects": ["ball", "goal net", "scoreboard"]
+  }
+}
+```
+
+The following expressions read that example.
+
+```
+media.contextual.scene.summary                                        "The second half of a soccer match."
+media.contextual.shot.iabTaxonomy.categories.path[-1]                 "Soccer", the IAB leaf labels
+media.contextual.shot.garm.suitability.categories[flagged].category   "OBSCENITY_PROFANITY"
+"Example Corp" in media.contextual.shot.brands                        true
+```
+
+A path that matches one value returns that value, not an array that contains it. Wrap the path in `[ ]` when your result needs an array. `[media.contextual.shot.iabTaxonomy.categories.path[-1]]` returns `["Soccer"]`.
 
 ## Fields in `media.clip`
 <a name="functions-context-clip"></a>
 
-`media.clip` describes the clips that the event clipping output detected in the window. A window can contain more than one clip – in American football, an interception returned for a touchdown is both events.
+`media.clip` describes the clips that the event clipping output detected in the window. A window can contain more than one clip – in American football, an interception returned for a touchdown is both events. The following table describes the fields of `media.clip`.
 
 | Field | Type | Description |
 | --- | --- | --- |

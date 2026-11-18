@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/getting-started-admin.html
 ---
 
-# Getting started with AWS Quick
+# Key concepts for AWS Quick administrators
 <a name="getting-started-admin"></a>
 
 This chapter provides you an overview of the key AWS Quick concepts you need to understand before you dive in and start using Quick.

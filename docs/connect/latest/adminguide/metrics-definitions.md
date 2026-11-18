@@ -3202,6 +3202,8 @@ This metric counts the outbound campaign calls that were connected to a live cus
 
 **How to access using the Connect Customer admin website**:
 + Dashboard: [Outbound campaigns performance dashboard](outbound-campaigns-performance-dashboard.md), Campaign contacts abandoned after x from greeting end seconds rate
+
+**Notes**
 + For AMD-enabled campaigns, only contacts with an answering machine detection status of `HUMAN_ANSWERED` are counted. For AMD-disabled campaigns, all connected contacts are counted.
 + This metric is available only for outbound campaigns using the agent assisted voice delivery mode.
 + Data for this metric is available starting from June 29, 2026, 04:43:45 UTC.
@@ -3227,6 +3229,8 @@ This metric measures the percentage of outbound campaign calls that were connect
 
 **Calculation logic**:
 + (Campaign contacts abandoned after X from greeting end / Campaign contacts connected) \* 100.0
+
+**Notes**
 + For AMD-enabled campaigns, only contacts with an answering machine detection status of `HUMAN_ANSWERED` are counted in both the numerator and denominator. For AMD-disabled campaigns, all connected contacts are counted.
 + This metric is available only for outbound campaigns using the agent assisted voice delivery mode.
 + Data for this metric is available starting from June 29, 2026, 04:43:45 UTC.
@@ -3247,6 +3251,8 @@ This metric counts the outbound campaign calls that were connected to a live cus
 
 **How to access using the Connect Customer admin website**:
 + Dashboard: [Outbound campaigns performance dashboard](outbound-campaigns-performance-dashboard.md), Campaign contacts abandoned after x from greeting start seconds rate
+
+**Notes**
 + For AMD-enabled campaigns, only contacts with an answering machine detection status of `HUMAN_ANSWERED` are counted. For AMD-disabled campaigns, all connected contacts are counted.
 + This metric is available only for outbound campaigns using the agent assisted voice delivery mode.
 + Data for this metric is available starting from June 29, 2026, 04:43:45 UTC.
@@ -3272,6 +3278,8 @@ This metric measures the percentage of outbound campaign calls that were connect
 
 **Calculation logic**:
 + (Campaign contacts abandoned after X from greeting start / Campaign contacts connected) \* 100.0
+
+**Notes**
 + For AMD-enabled campaigns, only contacts with an answering machine detection status of `HUMAN_ANSWERED` are counted in both the numerator and denominator. For AMD-disabled campaigns, all connected contacts are counted.
 + This metric is available only for outbound campaigns using the agent assisted voice delivery mode.
 + Data for this metric is available starting from June 29, 2026, 04:43:45 UTC.
@@ -3292,6 +3300,8 @@ This metric counts the outbound campaign calls that were connected to a live cus
 
 **How to access using the Connect Customer admin website**:
 + Dashboard: [Outbound campaigns performance dashboard](outbound-campaigns-performance-dashboard.md), Campaign contacts abandoned after x from system connection seconds rate
+
+**Notes**
 + For AMD-enabled campaigns, only contacts with an answering machine detection status of `HUMAN_ANSWERED` are counted. For AMD-disabled campaigns, all connected contacts are counted.
 + This metric is available only for outbound campaigns using the agent assisted voice delivery mode.
 + Data for this metric is available starting from June 29, 2026, 04:43:45 UTC.
@@ -3317,6 +3327,8 @@ This metric measures the percentage of outbound campaign calls that were connect
 
 **Calculation logic**:
 + (Campaign contacts abandoned after X from system connection / Campaign contacts connected) \* 100.0
+
+**Notes**
 + For AMD-enabled campaigns, only contacts with an answering machine detection status of `HUMAN_ANSWERED` are counted in both the numerator and denominator. For AMD-disabled campaigns, all connected contacts are counted.
 + This metric is available only for outbound campaigns using the agent assisted voice delivery mode.
 + Data for this metric is available starting from June 29, 2026, 04:43:45 UTC.
@@ -3337,6 +3349,8 @@ This metric counts the outbound campaign contacts that were connected to the Con
 
 **How to access using the Connect Customer admin website**:
 + Dashboard: [Outbound campaigns performance dashboard](outbound-campaigns-performance-dashboard.md), Campaign contacts connected
+
+**Notes**
 + For AMD-enabled campaigns, only contacts with an answering machine detection status of `HUMAN_ANSWERED` are counted. For AMD-disabled campaigns (where the answering machine detection status field is absent), all connected contacts are counted.
 + This metric is available only for outbound campaigns using the agent assisted voice delivery mode.
 + Data for this metric is available starting from June 29, 2026, 04:43:45 UTC.

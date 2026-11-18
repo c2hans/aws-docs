@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateSt
 
 If you'd still like to proactively scale your on-demand data stream’s capacity, you can unlock the warm throughput feature for on-demand data streams by enabling `MinimumThroughputBillingCommitment` for your account. Once your account has `MinimumThroughputBillingCommitment` enabled, you can specify the warm throughput in MiB per second that your stream can support in writes.
 
+You can't switch a data stream from on-demand to provisioned capacity mode while the stream has one or more queues. Delete the queues with [DeleteQueue](API_DeleteQueue.md) before you change the capacity mode.
+
 ## Request Syntax
 <a name="API_UpdateStreamMode_RequestSyntax"></a>
 
@@ -88,7 +90,7 @@ A message that provides information about the error.
 HTTP Status Code: 400
 
  ** ValidationException **
-The request failed data validation for this data stream, such as a parameter value that is outside its valid range or a `StreamARN` that is not in a valid format. Check the error message for details about which parameter or value caused the validation failure, and correct it before retrying.
+The request failed validation. For example, a parameter value is not valid, a combination of parameters is not supported, or the operation is not supported for the stream's capacity mode. The error message describes the specific reason.
 HTTP Status Code: 400
 
 ## See Also

@@ -28,7 +28,8 @@ The following `ECRReplicationServiceRolePolicy` role permissions policy allows A
             "Effect": "Allow",
             "Action": [
                 "ecr:CreateRepository",
-                "ecr:ReplicateImage"
+                "ecr:ReplicateImage",
+                "ecr:ReplicateImageDelete"
             ],
             "Resource": "*"
         }

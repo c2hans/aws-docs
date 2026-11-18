@@ -33,7 +33,7 @@ The table below describes the EMR Serverless dimensions available within the `AW
 | JobId | Filters for all metrics of an EMR Serverless the job run ID. |
 | JobName | Filters for all metrics of an EMR Serverless job run using the name. If the name isn't provided, or contains non-ASCII characters, it is published as **[Unspecified]**. |
 | WorkerType | Filters for all metrics of a given worker type. For example, you can filter for `SPARK_DRIVER` and `SPARK_EXECUTORS` for Spark jobs. |
-| CapacityAllocationType | Filters for all metrics of a given capacity allocation type. For example, you can filter for `PreInitCapacity` for pre-initialized capacity and `OnDemandCapacity` for everything else. |
+| CapacityAllocationType | Filters for all metrics of a given capacity allocation type. For example, you can filter for `PreInitCapacity` for pre-initialized capacity, `FlexCapacity` for executors of job runs that use [Flex](jobs-flex-execution.md), and `OnDemandCapacity` for everything else. |
 
 ## Application-level monitoring
 <a name="app-level-metrics"></a>
@@ -55,6 +55,11 @@ You can monitor capacity usage at the EMR Serverless application level with Amaz
 | StorageAllocated | The total disk storage in GB allocated. | Gigabytes (GB) | ApplicationId, ApplicationName, WorkerType, CapacityAllocationType |
 | TotalWorkerCount | The number of total workers available. | Count | ApplicationId, ApplicationName, WorkerType, CapacityAllocationType |
 
+For job runs that use [Flex](jobs-flex-execution.md), executors report `CPUAllocated`, `MemoryAllocated`, `StorageAllocated`, `RunningWorkerCount`, and `PendingCreationWorkerCount` with the `CapacityAllocationType` dimension set to `FlexCapacity`. The driver runs on a Standard worker and reports with `OnDemandCapacity`.
+
+**Note**
+Application-level metrics without the `WorkerType` and `CapacityAllocationType` dimensions don't include executors that run with Flex. To view Flex capacity, use the `WorkerType` and `CapacityAllocationType` dimensions.
+
 ## Job-level monitoring
 <a name="job-level-metrics"></a>
 
@@ -72,6 +77,17 @@ Amazon EMR Serverless sends the following job-level metrics to Amazon CloudWatch
 | FailedJobs | The number of jobs in a Failed state. | ApplicationId, ApplicationName |
 | CancellingJobs | The number of jobs in a Cancelling state. | ApplicationId, ApplicationName |
 | CancelledJobs | The number of jobs in a Cancelled state. | ApplicationId, ApplicationName |
+| SubmittedFlexJobs | The number of Flex job runs in a Submitted state. | ApplicationId, ApplicationName |
+| PendingFlexJobs | The number of Flex job runs in a Pending state. | ApplicationId, ApplicationName |
+| ScheduledFlexJobs | The number of Flex job runs in a Scheduled state. | ApplicationId, ApplicationName |
+| RunningFlexJobs | The number of Flex job runs in a Running state. | ApplicationId, ApplicationName |
+| SuccessFlexJobs | The number of Flex job runs in a Success state. | ApplicationId, ApplicationName |
+| FailedFlexJobs | The number of Flex job runs in a Failed state. | ApplicationId, ApplicationName |
+| CancellingFlexJobs | The number of Flex job runs in a Cancelling state. | ApplicationId, ApplicationName |
+| CancelledFlexJobs | The number of Flex job runs in a Cancelled state. | ApplicationId, ApplicationName |
+
+**Note**
+A job run that uses [Flex](jobs-flex-execution.md) is counted only in the `*FlexJobs` metrics. It isn't counted in `SubmittedJobs`, `RunningJobs`, `FailedJobs`, or the other `*Jobs` metrics. If you have alarms on these metrics, add the corresponding `*FlexJobs` metric to include Flex job runs.
 
 You can monitor engine-specific metrics for running and completed EMR Serverless jobs with engine-specific application UIs. When you access the UI for a running job, the live application UI displays with real-time updates. When you access the UI for a completed job, the persistent app UI displays.
 
@@ -103,6 +119,8 @@ To view the total CPU and Memory used by an EMR Serverless job when viewing the 
 | WorkerEphemeralStorageUsed | The number of bytes of ephemeral storage used by workers in a job run. | Gigabytes (GB) | JobId, JobName, ApplicationId, ApplicationName, WorkerType, and CapacityAllocationType |
 | WorkerStorageReadBytes | The number of bytes read from storage by workers in a job run. | Bytes | JobId, JobName, ApplicationId, ApplicationName, WorkerType, and CapacityAllocationType |
 | WorkerStorageWriteBytes | The number of bytes written to storage from workers in a job run. | Bytes | JobId, JobName, ApplicationId, ApplicationName, WorkerType, and CapacityAllocationType |
+
+For job runs that use [Flex](jobs-flex-execution.md), executor metrics are reported with `CapacityAllocationType` set to `FlexCapacity`. Driver metrics are reported with `OnDemandCapacity`.
 
 The steps below describe how to access the various types of metrics.
 

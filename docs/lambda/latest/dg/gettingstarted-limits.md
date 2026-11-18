@@ -89,7 +89,7 @@ The following quotas apply to [durable functions](durable-functions.md). Quotas 
 
 | Resource | Default quota |
 | --- | --- |
-| Maximum running durable executions | 5,000,000 per Region.<br />10,000,000 in US East (N. Virginia), US West (Oregon), and Europe (Ireland).<br />This is a soft limit that can be increased. |
+| Maximum running durable executions | 5,000,000 per Region.<br />10,000,000 in US East (N. Virginia), US West (Oregon), and Europe (Ireland).<br />Executions in the `RUNNING`, `PAUSING`, and `PAUSED` states count toward this quota.<br />This is a soft limit that can be increased. |
 | Maximum number of durable operations per durable execution | 30,000<br />Cannot be increased. For more information, see [Available durable operations](durable-execution-sdk.md#durable-sdk-operations). |
 | Durable execution storage written in megabytes | 100 MB<br />Cannot be increased. Cumulative payload size persisted by durable functions per execution. For more information, see [persisted data per durable operation](durable-execution-sdk.md#durable-operations-checkpoint-consumption). |
 | Maximum payload size per durable operation | 1 MB<br />Cannot be increased. Applies to checkpoint and callback payloads. |
@@ -117,7 +117,7 @@ Lambda MicroVMs supports the `x86_64` and `ARM64` architectures.
 
 | Resource | Default quota | Adjustable |
 | --- | --- | --- |
-| Memory allocated across all MicroVMs (per account, per Region) | 400 GB (that is, 200 MicroVMs at 2 GB configured memory each or 400 MicroVMs at 1 GB configured memory each).<br />1,024 GB in US East (N. Virginia), US West (Oregon), US East (Ohio), and Asia Pacific (Tokyo) (that is, 512 MicroVMs at 2 GB configured memory each or 1,024 MicroVMs at 1 GB configured memory each).<br />Burstable up to four times this quota. | Yes |
+| Memory allocated across all MicroVMs (per account, per Region) | 800 GB (that is, 400 MicroVMs at 2 GB configured memory each or 800 MicroVMs at 1 GB configured memory each).<br />2,048 GB in US East (N. Virginia), US West (Oregon), US East (Ohio), Asia Pacific (Tokyo), Europe (Ireland), Europe (Frankfurt), and Asia Pacific (Sydney) (that is, 1,024 MicroVMs at 2 GB configured memory each or 2,048 MicroVMs at 1 GB configured memory each).<br />Burstable up to four times this quota. | Yes |
 | Maximum execution duration per MicroVM | 8 hours (28,800 seconds) | No |
 
 ### Images and versions

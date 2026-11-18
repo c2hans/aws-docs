@@ -10,6 +10,8 @@ With the ACM console or AWS CLI, you can search for certificates in your account
 **Note**
 The [ListCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html) operation still exists for basic listing with limited filtering options such as key type, key usage, certificate status, and certificate key pair origin.
 
+**Filter categories**
+
 You can filter certificates using the following categories:
 + **Certificate ARN** – Filter by the Amazon Resource Name of the certificate.
 + **X.509 attributes** – Filter by subject common name, subject alternative name, extended key usage, key usage, key algorithm, serial number, expiration date range (NotAfter), or validity start date range (NotBefore). Date range filters are inclusive of both the start and end dates. For example, to find all certificates for a specific domain, use the common name and DNS filters together with an OR operator.
@@ -18,6 +20,8 @@ You can filter certificates using the following categories:
 The certificate key pair origin filter accepts the values `AWS_MANAGED`, `CUSTOMER_PROVIDED`, and `ACME`. Certificates issued through ACME are returned only when you set the certificate key pair origin filter to `ACME`.
 
 String filters support the CONTAINS and EQUALS comparison operators. You can combine multiple filters using AND, OR, and NOT logical operators.
+
+**Sorting**
 
 You can sort results by the following fields:
 + `CREATED_AT`
@@ -40,6 +44,8 @@ You can sort results by the following fields:
 + `IMPORTED_AT`
 
 Sort order can be `ASCENDING` or `DESCENDING`.
+
+**Pagination**
 
 Results are paginated. The `MaxResults` parameter defaults to 100 and accepts a maximum value of 500. Use the `NextToken` parameter to retrieve additional pages of results.
 

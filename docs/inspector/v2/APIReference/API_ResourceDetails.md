@@ -35,6 +35,11 @@ An object that contains details about a container image involved in the finding.
 Type: [Image](API_Image.md) object
 Required: No
 
+ ** machineImage **   <a name="inspector2-Type-ResourceDetails-machineImage"></a>
+An object that contains details about the Amazon Machine Image (AMI) involved in the finding.
+Type: [MachineImageDetails](API_MachineImageDetails.md) object
+Required: No
+
  ** serverlessFunction **   <a name="inspector2-Type-ResourceDetails-serverlessFunction"></a>
 An object that contains details about a serverless function involved in the finding.
 Type: [ServerlessFunction](API_ServerlessFunction.md) object

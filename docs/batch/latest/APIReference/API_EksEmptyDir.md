@@ -11,8 +11,8 @@ Specifies the configuration of a Kubernetes `emptyDir` volume. An `emptyDir` vol
 <a name="API_EksEmptyDir_Contents"></a>
 
  ** medium **   <a name="Batch-Type-EksEmptyDir-medium"></a>
-The medium to store the volume. The default value is an empty string, which uses the storage of the node.
-""
+The medium to store the volume. The default value is null, which uses the storage of the node.
+null
  **(Default)** Use the disk storage of the node.
 "Memory"
 Use the `tmpfs` volume that's backed by the RAM of the node. Contents of the volume are lost when the node reboots, and any storage on the volume counts against the container's memory limit.

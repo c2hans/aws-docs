@@ -91,6 +91,7 @@ The following data types are supported by Amazon Connect Service:
 +  [Contact](API_Contact.md)
 +  [ContactAnalysis](API_ContactAnalysis.md)
 +  [ContactAnalysisReference](API_ContactAnalysisReference.md)
++  [ContactAnalysisReferenceState](API_ContactAnalysisReferenceState.md)
 +  [ContactConfiguration](API_ContactConfiguration.md)
 +  [ContactDataRequest](API_ContactDataRequest.md)
 +  [ContactDetails](API_ContactDetails.md)
@@ -117,6 +118,11 @@ The following data types are supported by Amazon Connect Service:
 +  [ContactFlowSummary](API_ContactFlowSummary.md)
 +  [ContactFlowTypeCondition](API_ContactFlowTypeCondition.md)
 +  [ContactFlowVersionSummary](API_ContactFlowVersionSummary.md)
++  [ContactLens](API_ContactLens.md)
++  [ContactLensChannelConfiguration](API_ContactLensChannelConfiguration.md)
++  [ContactLensRedactionConfiguration](API_ContactLensRedactionConfiguration.md)
++  [ContactLensSentimentConfiguration](API_ContactLensSentimentConfiguration.md)
++  [ContactLensSummaryConfiguration](API_ContactLensSummaryConfiguration.md)
 +  [ContactMetricInfo](API_ContactMetricInfo.md)
 +  [ContactMetricResult](API_ContactMetricResult.md)
 +  [ContactMetricValue](API_ContactMetricValue.md)
@@ -129,6 +135,8 @@ The following data types are supported by Amazon Connect Service:
 +  [ControlPlaneAttributeFilter](API_ControlPlaneAttributeFilter.md)
 +  [ControlPlaneTagFilter](API_ControlPlaneTagFilter.md)
 +  [ControlPlaneUserAttributeFilter](API_ControlPlaneUserAttributeFilter.md)
++  [ConversationalAnalytics](API_ConversationalAnalytics.md)
++  [ConversationalAnalyticsConfiguration](API_ConversationalAnalyticsConfiguration.md)
 +  [CreateCaseActionDefinition](API_CreateCaseActionDefinition.md)
 +  [CreatedByInfo](API_CreatedByInfo.md)
 +  [Credentials](API_Credentials.md)
@@ -860,6 +868,12 @@ The following data types are supported by Amazon Connect Participant Service:
 +  [WebRTCMediaPlacement](API_connect-participant_WebRTCMediaPlacement.md)
 +  [WebRTCMeeting](API_connect-participant_WebRTCMeeting.md)
 +  [Websocket](API_connect-participant_Websocket.md)
+
+The following data types are supported by Amazon Connect Scheduling:
++  [ActorInfo](API_connect-scheduling_ActorInfo.md)
++  [Duration](API_connect-scheduling_Duration.md)
++  [TimeOffValidationResult](API_connect-scheduling_TimeOffValidationResult.md)
++  [ValidationExceptionField](API_connect-scheduling_ValidationExceptionField.md)
 
 The following data types are supported by Amazon Connect Customer Profiles:
 +  [AdditionalSearchKey](API_connect-customer-profiles_AdditionalSearchKey.md)

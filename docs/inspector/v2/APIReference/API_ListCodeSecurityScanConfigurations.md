@@ -51,9 +51,6 @@ Content-type: application/json
          "scanConfigurationArn": "string",
          "scopeSettings": {
             "projectSelectionScope": "string"
-         },
-         "tags": {
-            "string" : "string"
          }
       }
    ],

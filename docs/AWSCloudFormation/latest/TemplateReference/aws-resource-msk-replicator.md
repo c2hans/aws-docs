@@ -98,7 +98,7 @@ The name of the replicator. Alpha-numeric characters with '-' are allowed.
 The ARN of the IAM role used by the replicator to access resources in the customer's account (e.g source and target clusters)
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn):iam:.*`
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-eusc):iam:.*`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-msk-replicator-tags"></a>

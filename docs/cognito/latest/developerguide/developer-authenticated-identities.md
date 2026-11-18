@@ -421,6 +421,8 @@ The token issuer value depends on the Region of your identity pool.
 
 Rather than hardcoding the logins key, you can extract it from the token:
 
+**Java**
+
 ```
 import java.util.Base64;
 import org.json.JSONObject;
@@ -430,6 +432,8 @@ String payload = new String(Base64.getUrlDecoder().decode(parts[1]));
 String issuer = new JSONObject(payload).getString("iss");
 // Use 'issuer' as the logins map key in GetCredentialsForIdentity
 ```
+
+**Python**
 
 ```
 import base64, json
@@ -441,6 +445,8 @@ claims = json.loads(base64.urlsafe_b64decode(payload))
 issuer = claims['iss']
 # Use 'issuer' as the logins map key
 ```
+
+**JavaScript**
 
 ```
 const payload = token.split('.')[1];

@@ -15,6 +15,9 @@ The DNS Firewall console includes a wizard that guides you through the following
 
 In this tutorial, you'll create a rule group that blocks all but a select group of domains that you trust. This is called a closed platform, or walled garden approach.
 
+**Tip**
+If you don't know in advance every domain that your workloads need, you can use an Automated Allowlist rule. DNS Firewall observes the DNS query traffic of your VPCs, and you review and add the domains to allow. For more information, see [Automated Allowlists](firewall-advanced-automated-allowlists.md).
+
 **To configure a DNS Firewall rule group using the console wizard**
 
 1. Sign in to the AWS Management Console and open the Route 53 console at [https://console.aws.amazon.com/route53/](https://console.aws.amazon.com/route53/).

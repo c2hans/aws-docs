@@ -253,7 +253,7 @@ The following parameters are required:
   + For a single-file backup, provide the entire file name.
   + For a multifile backup, provide the prefix that the files have in common, then suffix that with an asterisk (`*`).
     + If using a directory bucket, the ARN must end with `/*` due to [differences for directory buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-differences.html).
-  + If `@s3_arn_to_restore_from` is empty, the following error message is returned: S3 ARN prefix cannot be empty.
+  + If `@s3_arn_to_restore_from` is empty, the following error message is returned: `S3 ARN prefix cannot be empty`.
 
 The following parameter is required for differential restores, but optional for full restores:
 + `@with_norecovery` – The recovery clause to use for the restore operation.
@@ -427,7 +427,7 @@ The following parameters are required:
 + `@restore_db_name` – The name of the database whose log to restore.
 + `@s3_arn_to_restore_from` – The ARN indicating the Amazon S3 prefix and name of the log file used to restore the log. The file can have any extension, but `.trn` is usually used.
 
-  If `@s3_arn_to_restore_from` is empty, the following error message is returned: S3 ARN prefix cannot be empty.
+  If `@s3_arn_to_restore_from` is empty, the following error message is returned: `S3 ARN prefix cannot be empty`.
 
 The following parameters are optional:
 + `@keep_cdc` – Indicates whether to retain Change Data Capture (CDC) configuration on the restored database. Set to 1 to enable KEEP\_CDC, 0 to disable. The default value is 0.

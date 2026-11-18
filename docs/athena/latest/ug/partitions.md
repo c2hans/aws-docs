@@ -205,7 +205,7 @@ Because the data is not in Hive format, you cannot use the `MSCK REPAIR TABLE` c
 ALTER TABLE elb_logs_raw_native_part ADD PARTITION (dt='2015-01-01') location 's3://athena-examples-{{us-west-1}}/elb/plaintext/2015/01/01/'
 ```
 
-If a partition already exists, you receive the error Partition already exists. To avoid this error, you can use the `IF NOT EXISTS` clause. For more information, see [ALTER TABLE ADD PARTITION](alter-table-add-partition.md). To remove a partition, you can use [ALTER TABLE DROP PARTITION](alter-table-drop-partition.md).
+If a partition already exists, you receive the error `Partition already exists`. To avoid this error, you can use the `IF NOT EXISTS` clause. For more information, see [ALTER TABLE ADD PARTITION](alter-table-add-partition.md). To remove a partition, you can use [ALTER TABLE DROP PARTITION](alter-table-drop-partition.md).
 
 ## Consider partition projection
 <a name="partitions-partition-projection"></a>

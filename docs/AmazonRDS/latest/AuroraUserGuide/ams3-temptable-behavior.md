@@ -310,7 +310,7 @@ This query retrieves the following information:
 + `high_count` – The highest number of allocated temporary table memory or disk blocks.
 + `high_alloc` – The highest amount of memory or disk allocated for temporary tables.
 + `high_avg_alloc` – The highest average size of temporary table memory or disk blocks.
-If your queries fail with a Table is full error using this setting, it indicates that your workload requires more disk space for temporary table operations. In this case, consider increasing your DB instance size to one with more local storage space.
+If your queries fail with a `Table is full` error using this setting, it indicates that your workload requires more disk space for temporary table operations. In this case, consider increasing your DB instance size to one with more local storage space.
 
 **Setting the optimal `temptable_max_mmap` value**
 Use the following procedure to monitor and set the right size for the `temptable_max_mmap` parameter.

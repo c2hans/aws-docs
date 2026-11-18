@@ -27,7 +27,6 @@ Required: Yes
 A list of accounts that you can enable debug logging for your organization AWS Config Custom Policy rule. List is null when debug logging is enabled for all accounts.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 1000 items.
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

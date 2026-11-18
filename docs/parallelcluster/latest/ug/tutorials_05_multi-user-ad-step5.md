@@ -19,7 +19,7 @@ This documentation references AWS ParallelCluster. For running HPC and AI worklo
        "cloudformationStackStatus": "DELETE_IN_PROGRESS",
        "cloudformationStackArn": "arn:aws:cloudformation:region-id:123456789012:stack/ad-cluster/1234567-abcd-0123-def0-abcdef0123456",
        "region": "region-id",
-       "version": "3.16.2",
+       "version": "3.16.3",
        "clusterStatus": "DELETE_IN_PROGRESS"
      }
    }

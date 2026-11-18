@@ -26,7 +26,7 @@ Make sure you perform the configuration on the correct nodes.
 | Worker node | You physically connect the router to each Elemental Live node that will use it.  |
 
 **Warning**
-If you forget to configure the router, everything looks acceptable on the event or profile, but when you run the event, you receive a no input detected error.
+If you forget to configure the router, everything looks acceptable on the event or profile, but when you run the event, you receive a `no input detected` error.
 
 **Topics**
 + [Step A: Gather information](sdi-router-gather-info.md)

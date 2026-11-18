@@ -26,6 +26,7 @@ You can add or remove targets from your load balancer as your needs change, with
 + [Tag a load balancer](tag-load-balancer.md)
 + [Delete a load balancer](delete-load-balancer.md)
 + [LCU reservations](capacity-unit-reservation.md)
++ [Connect to a transit gateway](connect-gwlb-tgw.md)
 
 ## Load balancer state
 <a name="load-balancer-state"></a>

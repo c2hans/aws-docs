@@ -17,7 +17,7 @@ The following errors can occur during reverse replication (failback data sync) i
 
 **Error message**
 
-AWS Replication agent is not connected to DRS. Verify the agent is installed and running, and that it has connectivity to the service
+`AWS Replication agent is not connected to DRS. Verify the agent is installed and running, and that it has connectivity to the service`
 
 **Cause**
 
@@ -48,7 +48,7 @@ To resolve this error, complete the following steps:
 
 **Error message**
 
-botocore.exceptions.CredentialRetrievalError: Error when retrieving credentials from cert
+`botocore.exceptions.CredentialRetrievalError: Error when retrieving credentials from cert`
 
 **Cause**
 
@@ -72,7 +72,7 @@ This error commonly occurs when failing back to physical servers or hypervisors 
 
 **Error message**
 
-Some Recovery instances could not be processed: {{recovery-instance-id}}
+`Some Recovery instances could not be processed: {{recovery-instance-id}}`
 
 **Cause**
 

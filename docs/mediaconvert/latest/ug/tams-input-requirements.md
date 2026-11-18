@@ -12,7 +12,7 @@ A TAMS server that implements the BBC TAMS API specification and is accessible f
 For more information about the BBC TAMS specification, see: [https://bbc.github.io/tams/main/index.html](https://bbc.github.io/tams/main/index.html)
 
 **EventBridge connection**
-An Amazon EventBridge connection configured with OAuth credentials for your TAMS server. The connection must include the required OAuth scopes: `tams-api/read`, `tams-api/write`, and `tams-api/delete`.
+An Amazon EventBridge connection configured with OAuth credentials for your TAMS server. The connection must include the required OAuth scopes: `tams-api/read`.
 For information about EventBridge connections, see the [EventBridge user guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-connections.html).
 
 **Valid source ID**

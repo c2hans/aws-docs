@@ -14,4 +14,5 @@ The following table describes the documentation releases for the AL2027 User Gui
 
 | Date | Change | Description |
 | --- | --- | --- |
+| 2026-11-16 | Supplementary Packages for Amazon Linux | Added information about SPAL on AL2027, including how to configure the SPAL repository and request new packages. For more information, see [Supplementary Packages for Amazon Linux](spal.md). |
 | 2026-09-03 | Initial release | Initial release of the AL2027 User Guide, covering the AL2027 preview. |

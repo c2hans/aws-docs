@@ -13,7 +13,7 @@ For Athena to be able to run a query on a table that has a partition key configu
 
 If any of these criteria are not met, your query fails with the following error:
 
-CONSTRAINT\_VIOLATION: For the injected projected partition column {{column\_name}}, the WHERE clause must contain only static equality conditions, and at least one such condition must be present.
+`CONSTRAINT_VIOLATION: For the injected projected partition column {{column_name}}, the WHERE clause must contain only static equality conditions, and at least one such condition must be present.`
 
 ## When to use the `injected` projection type
 <a name="partition-projection-injection"></a>

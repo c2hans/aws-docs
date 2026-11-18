@@ -46,7 +46,7 @@ A column is included in the set of predicate columns if any of the following is 
 + The column has been used in a query as a part of a filter, join condition, or group by clause.
 + The column is a distribution key.
 + The column is part of a sort key.
-If no columns are marked as predicate columns, for example because the table has not yet been queried, all of the columns are analyzed even when PREDICATE COLUMNS is specified. When this happens, Amazon Redshift might respond with a message like No predicate columns found for "{{table-name}}". Analyzing all columns. For more information about predicate columns, see [Analyzing tables](t_Analyzing_tables.md).
+If no columns are marked as predicate columns, for example because the table has not yet been queried, all of the columns are analyzed even when PREDICATE COLUMNS is specified. When this happens, Amazon Redshift might respond with a message like `No predicate columns found for "{{table-name}}". Analyzing all columns`. For more information about predicate columns, see [Analyzing tables](t_Analyzing_tables.md).
 
 ## Usage notes
 <a name="r_ANALYZE-usage-notes"></a>

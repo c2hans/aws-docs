@@ -11,13 +11,13 @@ Defines the structure for multi-Region cluster configurations, containing the wi
 <a name="API_MultiRegionProperties_Contents"></a>
 
  ** clusters **   <a name="auroradsql-Type-MultiRegionProperties-clusters"></a>
-The set of peered clusters that form the multi-Region cluster configuration. Each peered cluster represents a database instance in a different Region.
+The set of peered clusters that form the multi-Region cluster configuration. Each peered cluster represents a database instance in a different AWS Region.
 Type: Array of strings
 Pattern: `arn:aws(-[^:]+)?:dsql:[a-z0-9-]{1,20}:[0-9]{12}:cluster/[a-z0-9]{26}`
 Required: No
 
  ** witnessRegion **   <a name="auroradsql-Type-MultiRegionProperties-witnessRegion"></a>
-The Region that serves as the witness region for a multi-Region cluster. The witness Region helps maintain cluster consistency and quorum.
+The AWS Region that serves as the witness region for a multi-Region cluster. The witness Region helps maintain cluster consistency and quorum.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 50.
 Required: No

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association CapabilityConfiguration
 <a name="aws-properties-devopsagent-association-capabilityconfiguration"></a>
 
-<a name="aws-properties-devopsagent-association-capabilityconfiguration-description"></a>The `CapabilityConfiguration` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+The configuration of a single capability.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-capabilityconfiguration-syntax"></a>
@@ -37,13 +37,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-capabilityconfiguration-properties"></a>
 
 `Enabled`  <a name="cfn-devopsagent-association-capabilityconfiguration-enabled"></a>
-Property description not available.
+Specifies whether the capability is enabled for this association.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TriggerFilterGroups`  <a name="cfn-devopsagent-association-capabilityconfiguration-triggerfiltergroups"></a>
-Property description not available.
+The filter groups that control when the capability starts automatically. The capability starts when any group matches. If you omit this property, every applicable event starts the capability. The agent keeps the filter groups while the capability is turned off, so the same trigger behavior applies when you turn it on again.
 *Required*: No
 *Type*: Array of [TriggerFilterGroup](aws-properties-devopsagent-association-triggerfiltergroup.md)
 *Minimum*: `1`

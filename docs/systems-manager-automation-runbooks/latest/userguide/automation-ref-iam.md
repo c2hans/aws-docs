@@ -24,3 +24,4 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSConfigRemediation-SetIAMPasswordPolicy`](automation-aws-set-iam-policy.md)
 + [`AWSSupport-ContainIAMPrincipal`](awssupport-contain-iam-principal.md)
 + [`AWSSupport-TroubleshootSAMLIssues`](awssupport-troubleshootsamlissues.md)
++ [`AWSSupportRemediator-DeactivateIamAccessKey`](automation-awssupportremediator-deactivateiamaccesskey.md)

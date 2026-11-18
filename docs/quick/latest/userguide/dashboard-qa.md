@@ -11,6 +11,8 @@ Dashboard Q&A queries all rows and columns in the included datasets - beyond wha
 
 The following table compares feature availability between dashboard Q&A and topic Q&A.
 
+**Feature availability for dashboard Q&A and topic Q&A**
+
 | Q&A feature | Dashboard Q&A | Topic Q&A |
 | --- | --- | --- |
 | Allows users in all roles to ask and answer questions of data | ![](https://docs.aws.amazon.com/quick/latest/userguide/images/success_icon.png) Yes | ![](https://docs.aws.amazon.com/quick/latest/userguide/images/success_icon.png) Yes |

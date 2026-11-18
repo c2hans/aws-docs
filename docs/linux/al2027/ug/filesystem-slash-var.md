@@ -32,4 +32,6 @@ Persistent queued data, such as mail or printer queues.
 
 Although [`/tmp`](filesystem-slash-tmp.md) is a `tmpfs` file system, `/var/tmp` is a path on the root file system, and is the place for larger and longer-lived temporary files. A cleanup job removes files not recently accessed; to configure it, see the `tmpfiles.d(5)` and `systemd-tmpfiles(8)` man pages.
 
+AL2027 mounts `/var/tmp` with the `noexec` option, so files in `/var/tmp` cannot be executed. To allow execution, see [`/var/tmp` mounted noexec by default](security-features.md#var-tmp-noexec).
+
 As with `/tmp`, prefer the `$TMPDIR` environment variable over the hardcoded path, use safe temporary file creation (see [Using `/tmp` and `/var/tmp` safely](https://systemd.io/TEMPORARY_DIRECTORIES/) on the systemd.io website), and set `PrivateTmp=` for `systemd` services.

@@ -130,7 +130,7 @@ You can repeat this process as needed to further reduce the size.
 #### Description
 <a name="ts-linux-insufficient-space-descr"></a>
 
-When you run the **containerize** command, it fails with the following error message: Error: Insufficient disk space.
+When you run the **containerize** command, it fails with the following error message: `Error: Insufficient disk space`.
 
 #### Cause
 <a name="ts-linux-insufficient-space-cause"></a>

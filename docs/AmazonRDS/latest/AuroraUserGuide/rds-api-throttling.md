@@ -15,7 +15,7 @@ Amazon Aurora uses the Amazon RDS API, so the same limits apply to Aurora API re
 
 If you use any Amazon RDS API operations and exceed the default limit for the number of calls per second, the Amazon RDS API issues an error like the following one.
 
-ClientError: An error occurred (ThrottlingException) when calling the {{API\_name}} operation: Rate exceeded.
+`ClientError: An error occurred (ThrottlingException) when calling the {{API_name}} operation: Rate exceeded.`
 
 This error means that your account exceeded its API request limit. By default, you can make up to 300 requests in a burst and a sustained 12 requests per second. To avoid this error, retry the request with exponential backoff, reduce your request rate, or request a limit increase. For more information, see [Retries and exponential backoff](#rds-api-throttling-backoff), [Reduce the number of API requests](#rds-api-throttling-reduce), and [Request a limit increase](#rds-api-throttling-increase).
 

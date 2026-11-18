@@ -73,7 +73,7 @@ aws glue search-assets \
     --filter-clause '{
         "AndAllFilters": [
             {"AttributeFilter": {"Attribute": "type", "Operator": "equals", "Value": {"StringValue": "Table"}}},
-            {"AttributeFilter": {"Attribute": "updatedAt", "Operator": "greaterThan", "Value": {"LongValue": 1718400000}}}
+            {"AttributeFilter": {"Attribute": "updatedAt", "Operator": "greaterThan", "Value": {"LongValue": 1718400000000}}}
         ]
     }'
 ```
@@ -128,12 +128,6 @@ aws glue search-assets \
 <a name="catalog-semantic-search-sort"></a>
 
 By default, results are sorted by semantic relevance. To sort by attribute:
-
-```
-aws glue search-assets \
-    --search-text "customer purchases" \
-    --sort '{"Attribute": "assetName", "Order": "ASCENDING"}'
-```
 
 ```
 aws glue search-assets \

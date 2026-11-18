@@ -13,7 +13,6 @@ Filters the results based on the account IDs and regions.
  ** AccountId **   <a name="config-Type-ConfigRuleComplianceSummaryFilters-AccountId"></a>
 The 12-digit account ID of the source account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

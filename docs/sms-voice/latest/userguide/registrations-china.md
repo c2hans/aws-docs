@@ -11,6 +11,8 @@ If your company is not registered in mainland China, you can establish a mainlan
 
 Registering a sender ID lets your company send SMS messages to recipients in China that meet local carrier requirements. Follow these directions to register your sender ID in China. Sender ID registration takes about 10 business days.
 
+**Before you begin**
+
 Before you create the registration, have the following ready. You cannot submit the registration without them.
 + Your mainland China business license.
 + A copy of the contact person's Chinese ID, and the contact person's name and mobile number.

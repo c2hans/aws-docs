@@ -448,6 +448,7 @@ The **condition keys** table lists all of the condition keys that you can use in
 + [Amazon One Enterprise (one)](list_one.md)
 + [Amazon OpenSearch (opensearch)](list_opensearch.md)
 + [Amazon OpenSearch Ingestion (osis)](list_osis.md)
++ [Amazon OpenSearch Memory (osm)](list_opensearchmemory.md)
 + [Amazon OpenSearch Serverless (aoss)](list_opensearchserverless.md)
 + [Amazon OpenSearch Service (es)](list_es.md)
 + [Amazon Personalize (personalize)](list_personalize.md)

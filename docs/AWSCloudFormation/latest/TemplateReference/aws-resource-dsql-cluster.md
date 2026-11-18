@@ -64,6 +64,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[DeletionProtectionEnabled](#cfn-dsql-cluster-deletionprotectionenabled)" : {{Boolean}},
       "[KmsEncryptionKey](#cfn-dsql-cluster-kmsencryptionkey)" : {{String}},
+      "[MetricGroups](#cfn-dsql-cluster-metricgroups)" : {{[ MetricGroup, ... ]}},
       "[MultiRegionProperties](#cfn-dsql-cluster-multiregionproperties)" : {{MultiRegionProperties}},
       "[PolicyDocument](#cfn-dsql-cluster-policydocument)" : {{String}},
       "[Tags](#cfn-dsql-cluster-tags)" : {{[ Tag, ... ]}}
@@ -79,6 +80,8 @@ Type: AWS::DSQL::Cluster
 Properties:
   [DeletionProtectionEnabled](#cfn-dsql-cluster-deletionprotectionenabled): {{Boolean}}
   [KmsEncryptionKey](#cfn-dsql-cluster-kmsencryptionkey): {{String}}
+  [MetricGroups](#cfn-dsql-cluster-metricgroups): {{
+    - MetricGroup}}
   [MultiRegionProperties](#cfn-dsql-cluster-multiregionproperties): {{
     MultiRegionProperties}}
   [PolicyDocument](#cfn-dsql-cluster-policydocument): {{String}}
@@ -104,6 +107,13 @@ The KMS key identifier to use for encrypting the cluster. You can specify the KM
 If you don't specify a value, the service uses `AWS_OWNED_KEY` by default.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MetricGroups`  <a name="cfn-dsql-cluster-metricgroups"></a>
+The metric groups that you enabled for advanced monitoring on the created cluster.
+*Required*: No
+*Type*: Array of [MetricGroup](aws-properties-dsql-cluster-metricgroup.md)
+*Maximum*: `20`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MultiRegionProperties`  <a name="cfn-dsql-cluster-multiregionproperties"></a>

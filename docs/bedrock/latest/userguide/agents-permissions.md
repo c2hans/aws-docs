@@ -76,7 +76,7 @@ If you encrypt your agent with a customer-managed KMS key, refer to [Encryption 
 + Permissions to use Amazon Bedrock foundation models to run model inference on prompts used in your agent's orchestration.
 + Permissions to access your agent's action group API schemas in Amazon S3. Omit this statement if your agent has no action groups.
 + Permissions to access knowledge bases associated with your agent. Omit this statement if your agent has no associated knowledge bases.
-+ Permissions to access a third-party (Pinecone or Redis Enterprise Cloud) knowledge base associated with your agent. Omit this statement if your knowledge base is first-party (Amazon OpenSearch Serverless or Amazon Aurora) or if your agent has no associated knowledge bases.
++ Permissions to access a third-party (Pinecone or Redis Enterprise Cloud) knowledge base associated with your agent. Omit this statement if your knowledge base is first-party (OpenSearch Serverless or Amazon Aurora) or if your agent has no associated knowledge bases.
 + Permissions to access a prompt from Prompt management. Omit this statement if you don't plan to test a prompt from prompt management with your agent in the Amazon Bedrock console.
 
 ------

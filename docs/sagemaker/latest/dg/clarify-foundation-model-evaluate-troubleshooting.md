@@ -24,7 +24,7 @@ If you run into an error while creating a model evaluation job, use the followin
 
 When you create a foundation model evaluation, you must set the correct permissions for the S3 bucket that you want to store your model input and output in. If the Cross-origin resource sharing (CORS) permissions are not set correctly, SageMaker AI generates the following error:
 
-Error: Failed to put object in s3: Error while uploading object to s3Error: Failed to put object in S3: NetworkError when attempting to fetch resource.
+`Error: Failed to put object in s3: Error while uploading object to s3Error: Failed to put object in S3: NetworkError when attempting to fetch resource.`
 
 To set the correct bucket permissions, follow the instructions under **Set up your environment** in [Create an automatic model evaluation job in Studio](clarify-foundation-model-evaluate-auto-ui.md).
 

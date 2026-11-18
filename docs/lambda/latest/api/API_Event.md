@@ -84,12 +84,22 @@ Required: No
  ** EventType **   <a name="lambda-Type-Event-EventType"></a>
 The type of event that occurred.
 Type: String
-Valid Values: `ExecutionStarted | ExecutionSucceeded | ExecutionFailed | ExecutionTimedOut | ExecutionStopped | ContextStarted | ContextSucceeded | ContextFailed | WaitStarted | WaitSucceeded | WaitCancelled | StepStarted | StepSucceeded | StepFailed | ChainedInvokeStarted | ChainedInvokeSucceeded | ChainedInvokeFailed | ChainedInvokeTimedOut | ChainedInvokeStopped | CallbackStarted | CallbackSucceeded | CallbackFailed | CallbackTimedOut | InvocationCompleted`
+Valid Values: `ExecutionStarted | ExecutionSucceeded | ExecutionFailed | ExecutionTimedOut | ExecutionStopped | ContextStarted | ContextSucceeded | ContextFailed | WaitStarted | WaitSucceeded | WaitCancelled | StepStarted | StepSucceeded | StepFailed | ChainedInvokeStarted | ChainedInvokeSucceeded | ChainedInvokeFailed | ChainedInvokeTimedOut | ChainedInvokeStopped | CallbackStarted | CallbackSucceeded | CallbackFailed | CallbackTimedOut | InvocationCompleted | ExecutionPaused | ExecutionResumed`
 Required: No
 
  ** ExecutionFailedDetails **   <a name="lambda-Type-Event-ExecutionFailedDetails"></a>
 Details about an execution that failed.
 Type: [ExecutionFailedDetails](API_ExecutionFailedDetails.md) object
+Required: No
+
+ ** ExecutionPausedDetails **   <a name="lambda-Type-Event-ExecutionPausedDetails"></a>
+The details of an `ExecutionPaused` event.
+Type: [ExecutionPausedDetails](API_ExecutionPausedDetails.md) object
+Required: No
+
+ ** ExecutionResumedDetails **   <a name="lambda-Type-Event-ExecutionResumedDetails"></a>
+The details of an `ExecutionResumed` event.
+Type: [ExecutionResumedDetails](API_ExecutionResumedDetails.md) object
 Required: No
 
  ** ExecutionStartedDetails **   <a name="lambda-Type-Event-ExecutionStartedDetails"></a>

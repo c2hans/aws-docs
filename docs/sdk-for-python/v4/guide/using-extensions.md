@@ -2,48 +2,51 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/using-extensions.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Customizing SDK behavior with plugins and interceptors
 <a name="using-extensions"></a>
 
-When you invoke an operation, the SDK processes it through its request pipeline. The pipeline automatically handles stages such as serialization, signing, sending an HTTP request, and deserialization. However, some applications need to observe or adjust that behavior. Plugins and interceptors customize different parts of this process.
-+ A *plugin* is a setup function that receives the configuration object before the pipeline is created. Use a plugin to change configuration, such as the Region, or to register other custom configurations.
-+ An *interceptor* is an object whose hook methods are called by the pipeline while an operation runs. Use an interceptor to observe or modify requests and responses at defined stages, such as before serialization, before transmission, or after execution.
+When you invoke an operation, the SDK processes it through its request pipeline. The pipeline handles stages such as serialization, signing, sending an HTTP request, and deserialization. Some applications need to observe or adjust that behavior. Plugins and interceptors customize different parts of this process.
++ A *plugin* is a setup function that receives the configuration object before the SDK creates the pipeline. Use a plugin to change configuration, such as the Region, or to register other custom configurations.
++ An *interceptor* is an object with hook methods that the pipeline calls while an operation runs. Use an interceptor to observe or modify requests and responses at defined stages, such as before serialization, before transmission, or after execution.
 
-This page shows how to write both, when to scope them to a client versus a single operation, and which lifecycle hooks to choose.
+Synchronous and asynchronous clients support the same kinds of plugins and interceptors. Interceptor hooks are synchronous methods, so one interceptor class works with both client types. The examples on this page use a synchronous client.
+
+This page shows how to write both, when to scope them to a client or to a single operation, and which lifecycle hooks to choose.
 
 ## Customizing configuration with plugins
 <a name="using-extensions-plugins"></a>
 
-To define a plugin, write a callable that accepts the generated service configuration and returns `None`. The SDK applies a client plugin directly to the client's configuration. It applies an operation plugin to a copy of that configuration, so the changes affect only that invocation.
+To define a plugin, write a callable that accepts the generated service configuration and returns `None`. The SDK applies a client plugin once, when it sets up the client's configuration. It applies an operation plugin to a copy of the client's configuration, so the changes affect only that invocation.
 
-The following example defines `use_region`, which returns a plugin that sets the Region in a DynamoDB `AsyncDynamoDBConfig`. Passing the plugin to the client establishes the Region used by that client.
+The following example defines `use_region`, which returns a plugin that sets the Region in a `DynamoDBConfig`. Passing the plugin to the client sets the Region that the client uses.
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.config import AsyncDynamoDBConfig, Plugin
-from aws_sdk_dynamodb.models import ListTablesInput
+from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
+from aws_sdk_dynamodb.config import Plugin
 
 def use_region(region: str) -> Plugin:
-    def configure(config: AsyncDynamoDBConfig) -> None:
+    def configure(config: DynamoDBConfig) -> None:
         config.region = region
 
     return configure
 
-config = await AsyncDynamoDBConfig.resolve()
-client = AsyncDynamoDBClient(
+config = DynamoDBConfig.resolve(region="eu-west-1")
+client = DynamoDBClient(
     config=config,
     plugins=[use_region("us-east-1")],
 )
 ```
 
-The following call passes another `use_region` plugin to `list_tables`. The SDK applies it to the operation's copy of the configuration, changing the Region only for this call. Later calls continue to use the client's configured Region.
+For an asynchronous client, write the plugin for `AsyncDynamoDBConfig` and import `Plugin` from `aws_sdk_dynamodb.aio.config`.
+
+Every operation accepts a `plugins` keyword argument. The following call passes another `use_region` plugin to `list_tables`. The SDK applies it to the operation's copy of the configuration, which changes the Region only for this call. Later calls continue to use the client's configured Region.
 
 ```
-async with client:
-    response = await client.list_tables(
-        input=ListTablesInput(limit=25),
+with client:
+    response = client.list_tables(
+        limit=25,
         plugins=[use_region("us-west-2")],
     )
 ```
@@ -57,7 +60,7 @@ An interceptor implements hook methods that the request pipeline calls at define
 import logging
 from typing import Any
 
-from aws_sdk_dynamodb.config import AsyncDynamoDBConfig
+from aws_sdk_dynamodb import DynamoDBConfig
 from smithy_core.interceptors import (
     InputContext,
     Interceptor,
@@ -81,53 +84,58 @@ class ExecutionLogger(Interceptor[Any, Any, Any, Any]):
             logger.info("SDK operation completed")
 ```
 
+An asynchronous client calls the same hook methods on its event loop. A hook that blocks, for example by making a network call, also blocks the event loop.
+
 ### Registering an interceptor on a client
 <a name="using-extensions-interceptors-client"></a>
 
-To run an interceptor for every operation invoked by a client, include the interceptor when you resolve the configuration. The following example doesn't define or pass a plugin.
+To run an interceptor for every operation invoked by a client, include the interceptor when you resolve the configuration.
 
 ```
-config = await AsyncDynamoDBConfig.resolve(
+config = DynamoDBConfig.resolve(
     region="us-east-1",
     interceptors=[ExecutionLogger()],
 )
-async with AsyncDynamoDBClient(config=config) as logged_client:
-    response = await logged_client.list_tables(
-        input=ListTablesInput(limit=25)
-    )
+with DynamoDBClient(config=config) as logged_client:
+    response = logged_client.list_tables(limit=25)
 ```
 
-The client copies this configuration for each operation, so each operation pipeline includes the registered interceptor. An interceptor registered at this scope must support every operation that the client can invoke.
+Every operation that the client invokes runs the registered interceptor, so an interceptor registered at this scope must support every operation that the client can invoke.
 
 ### Registering an interceptor for one operation
 <a name="using-extensions-interceptors-operation"></a>
 
-An operation doesn't accept an `interceptors` argument. To register an interceptor for one invocation, define an operation plugin that adds it to the copied configuration used by that invocation.
+An operation doesn't accept an `interceptors` argument. To register an interceptor for one invocation, define an operation plugin that adds the interceptor to the copied configuration that the invocation uses.
 
 ```
-def add_execution_logger(config: AsyncDynamoDBConfig) -> None:
+def add_execution_logger(config: DynamoDBConfig) -> None:
     config.interceptors.append(ExecutionLogger())
 
-response = await client.list_tables(
-    input=ListTablesInput(limit=25),
-    plugins=[add_execution_logger],
-)
+config = DynamoDBConfig.resolve(region="us-east-1")
+with DynamoDBClient(config=config) as client:
+    response = client.list_tables(
+        limit=25,
+        plugins=[add_execution_logger],
+    )
 ```
 
-In this example, `add_execution_logger` is the plugin and `ExecutionLogger` is the interceptor. The plugin runs before the pipeline is created and registers the interceptor in the operation's configuration copy. The interceptor then runs while that pipeline processes this call. Later calls that don't receive the plugin don't use this interceptor.
+In this example, `add_execution_logger` is the plugin and `ExecutionLogger` is the interceptor. The plugin runs before the SDK creates the pipeline and registers the interceptor in the operation's configuration copy. The interceptor then runs while that pipeline processes this call. Later calls that don't receive the plugin don't use this interceptor.
 
 ## Choosing lifecycle hooks carefully
 <a name="using-extensions-hooks"></a>
 
-The `Interceptor` base class in the `smithy_core.interceptors` module defines the full set of hook methods; see the [interceptors module](https://github.com/smithy-lang/smithy-python/blob/develop/packages/smithy-core/src/smithy_core/interceptors.py) on GitHub. Each hook runs at one stage of the operation:
-+ **Execution:** `read_before_execution`, `modify_before_completion`, and `read_after_execution`
-+ **Serialization:** `modify_before_serialization`, `read_before_serialization`, and `read_after_serialization`
-+ **Retries and attempts:** `modify_before_retry_loop`, `read_before_attempt`, `modify_before_attempt_completion`, and `read_after_attempt`
-+ **Signing:** `modify_before_signing`, `read_before_signing`, and `read_after_signing`
-+ **Transmission:** `modify_before_transmit`, `read_before_transmit`, and `read_after_transmit`
-+ **Deserialization:** `modify_before_deserialization`, `read_before_deserialization`, and `read_after_deserialization`
+The `Interceptor` base class in the `smithy_core.interceptors` module defines every hook method. For the documentation of each hook, see the [interceptors module](https://github.com/smithy-lang/smithy-python/blob/develop/packages/smithy-core/src/smithy_core/interceptors.py) on GitHub. The following table groups the hooks by the stage of the operation in which they run.
 
-Follow these rules when choosing a hook:
+| Stage | Hooks |
+| --- | --- |
+| Execution | read\_before\_execution, modify\_before\_completion, and read\_after\_execution |
+| Serialization | modify\_before\_serialization, read\_before\_serialization, and read\_after\_serialization |
+| Retries and attempts | modify\_before\_retry\_loop, read\_before\_attempt, modify\_before\_attempt\_completion, and read\_after\_attempt |
+| Signing | modify\_before\_signing, read\_before\_signing, and read\_after\_signing |
+| Transmission | modify\_before\_transmit, read\_before\_transmit, and read\_after\_transmit |
+| Deserialization | modify\_before\_deserialization, read\_before\_deserialization, and read\_after\_deserialization |
+
+Follow these rules when you choose a hook:
 + `read_*` hooks observe their context and must not modify request or response objects.
 + `modify_*` hooks return a replacement request, response, transport request, or transport response of the same type.
 + Execution hooks run once for an operation invocation. Attempt hooks can run more than once when the retry strategy makes another attempt.

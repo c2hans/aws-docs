@@ -436,7 +436,7 @@ Older versions of **AWSCloud9ServiceRolePolicy** for the AWSServiceRoleForAWSClo
 ### Error message reporting "Instance profile AWSCloud9SSMInstanceProfile does not exist in account" when creating EC2 environment using CloudFormation
 <a name="cfn-no-instanceprofile"></a>
 
-**Issue:** When using the [ AWS::Cloud9::EnvironmentEC2](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html) CloudFormation resource to create an EC2 environment, users receive an error message that Instance profile AWSCloud9SSMInstanceProfile does not exist in account.
+**Issue:** When using the [ AWS::Cloud9::EnvironmentEC2](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html) CloudFormation resource to create an EC2 environment, users receive an error message that `Instance profile AWSCloud9SSMInstanceProfile does not exist in account.`
 
 **Cause:** When creating a no-ingress EC2 environment, you must create the service role `AWSCloud9SSMAccessRole` and the instance profile `AWSCloud9SSMInstanceProfile`. These IAM resources enable Systems Manager to manage the EC2 instance that backs your development environment.
 
@@ -480,11 +480,11 @@ If you create a no-ingress environment with the console, `AWSCloud9SSMAccessRole
 
 If you accept the default VPC settings, the Amazon EC2 instance is launched into the EC2-Classic network. The instance is not launched into a subnet of the default VPC. The following message is displayed when the environment fails to create:
 
- Environment Error
+ `Environment Error`
 
-Unable to access your environment
+`Unable to access your environment`
 
-The environment creation failed with the error: The following resource(s) failed to create: [Instance]. . Rollback requested by user..
+`The environment creation failed with the error: The following resource(s) failed to create: [Instance]. . Rollback requested by user..`
 
 You can confirm that the error is caused by the EC2 instance not being in the default VPC. Use CloudFormation to view the stack event history for the development environment.
 
@@ -496,9 +496,9 @@ You can confirm that the error is caused by the EC2 instance not being in the de
 
 1. On the **Stack details** page, choose the **Events** tab and check for the following entry:
 
-   Status: CREATE\_FAILED
+   `Status: CREATE_FAILED`
 
-   Status reason: The AssociatePublicIpAddress parameter is only supported by VPC launches. [...]
+   `Status reason: The AssociatePublicIpAddress parameter is only supported by VPC launches. [...]`
 
 **Cause:** An AWS Cloud9 development environment must be associated with an Amazon VPC that meets specific VPC requirements. For accounts with EC2-Classic enabled, accepting the default network settings when [creating an EC2 environment](create-environment.md) means that the required EC2 instance isn't launched into the VPC. Instead, the instance is launched into the EC2-Classic network.
 

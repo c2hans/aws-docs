@@ -50,7 +50,7 @@ Required: No
  ** [JobCategory](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-JobCategory"></a>
 The category of jobs to list.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: Yes
 
  ** [LastModifiedTimeAfter](#API_ListJobs_RequestSyntax) **   <a name="sagemaker-ListJobs-request-LastModifiedTimeAfter"></a>

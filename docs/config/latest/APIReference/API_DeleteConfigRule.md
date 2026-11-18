@@ -37,7 +37,7 @@ The request accepts the following data in JSON format.
 The name of the AWS Config rule that you want to delete.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
 ## Response Elements

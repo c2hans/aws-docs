@@ -57,3 +57,8 @@ Information extraction operates on the raw contact content, before redaction is 
 <a name="information-extraction-pricing"></a>
 
 Information extraction is available in Amazon Connect Customer at no additional cost for voice and chat contacts.
+
+## Email extraction using a flow block
+<a name="information-extraction-email-block"></a>
+
+For email contacts, you can also extract information within a flow by using the [Information Extraction](information-extraction-block.md) block. With this block, you can extract structured data from the email body and supported attachments (PDF, JPEG, PNG, and TXT) using generative AI. Use this block when you need the result within the flow to make a routing decision.

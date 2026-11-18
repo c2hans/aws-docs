@@ -40,6 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `Build`  <a name="cfn-elasticbeanstalk-applicationversion-imageconfiguration-build"></a>
 Settings that Elastic Beanstalk uses to build a container image from the source bundle of the application version.
 If you specify `Build`, also specify the request's `SourceBundle` parameter, and don't specify `Source`.
+To build the image when you create the application version instead of on first deployment, also set `Process` to `true`.
 *Required*: No
 *Type*: [ImageBuildConfiguration](aws-properties-elasticbeanstalk-applicationversion-imagebuildconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

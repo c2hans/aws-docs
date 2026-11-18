@@ -25,6 +25,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Enable encrypted connections for PostgreSQL DB instances in Amazon RDS](enable-encrypted-connections-for-postgresql-db-instances-in-amazon-rds.md)
 + [Encrypt an existing Amazon RDS for PostgreSQL DB instance](encrypt-an-existing-amazon-rds-for-postgresql-db-instance.md)
 + [Generate an AWS CloudFormation template containing AWS Config managed rules using Troposphere](generate-an-aws-cloudformation-template-containing-aws-config-managed-rules-using-troposphere.md)
++ [Get Amazon SNS notifications when the key state of an AWS KMS key changes](get-amazon-sns-notifications-when-kms-key-state-changes.md)
 + [Implement SAML 2.0 authentication for Amazon WorkSpaces by using Auth0 and AWS Managed Microsoft AD](implement-saml-authentication-for-amazon-workspaces-by-using-auth0-and-aws-managed-microsoft-ad.md)
 + [Ingest and migrate EC2 Windows instances into an AWS Managed Services account](ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.md)
 + [Deploy real-time coding security validation by using an MCP server with Kiro](mcp-security-scanner-kiro.md)

@@ -5,18 +5,18 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Common patterns
 <a name="functions-jsonata-patterns"></a>
 
-## Fallback for a value that might be absent
+## Example – Fallback for a value that might be absent
 <a name="functions-jsonata-patterns-fallback"></a>
 
-The summary is `null` unless the contextual metadata output has summary generation enabled, so don't build a prompt that assumes it. Test for `null` with `!= null`: `$exists()` returns true for a field whose value is `null`.
+A `media.contextual` field that has no value is left out. The summary, for example, is left out when the contextual metadata output has summary generation disabled, so don't build a prompt that assumes it. Test for the field with `$exists()`, and fall back to a field that is still there, such as the Interactive Advertising Bureau (IAB) categories.
 
 ```
-media.contextual.summary != null
-  ? media.contextual.summary
-  : $join(media.contextual.objects, ", ")
+$exists(media.contextual.scene.summary)
+  ? media.contextual.scene.summary
+  : $join(media.contextual.scene.iabTaxonomy.categories.path[-1], ", ")
 ```
 
-## Skipping an empty window
+## Example – Skipping an empty window
 <a name="functions-jsonata-patterns-guard"></a>
 
 A window with no speech produces an empty transcript. Send the model something meaningful instead of an empty prompt.
@@ -27,14 +27,14 @@ $exists(media.transcript) and $length($trim(media.transcript)) > 0
   : "No speech in this window."
 ```
 
-## Flattening clips into one line of prompt
+## Example – Flattening clips into one line of prompt
 <a name="functions-jsonata-patterns-flatten"></a>
 
 ```
 $join(media.clip.events.(keyword & ": " & description), "\n")
 ```
 
-## Extracting a structured answer
+## Example – Extracting a structured answer
 <a name="functions-jsonata-patterns-extract"></a>
 
 Ask the model for JSON in the request expression, then parse it in the response expression so that the stored value is data.
@@ -49,7 +49,7 @@ Ask the model for JSON in the request expression, then parse it in the response 
 $parse(content[type = "text"][0].text)
 ```
 
-## Guarding a response expression
+## Example – Guarding a response expression
 <a name="functions-jsonata-patterns-defensive"></a>
 
 A model can return a truncated or unexpected response. A response expression that finds nothing stores nothing useful, so provide a fallback.

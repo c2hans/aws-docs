@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 # Next steps
 <a name="next-steps"></a>
 
-This guide covered architectural and organizational patterns, trade-offs for key decisions, and governance concerns related to micro-frontends. The tables summarize the trade-offs of practices discussed in this document in terms of the following dimensions:
+This guide covered architectural and organizational patterns, trade-offs for key decisions, and governance concerns related to micro-frontends. The following tables summarize the trade-offs of practices discussed in this guide across these dimensions:
 + **Autonomy** ‒ Each micro-frontend team's ability to independently evolve their implementation and release to end users.
-+ **Consistency** ‒ The overall experience of the application where each micro-frontend behaves as expected. High consistency means micro-frontends are consistent with the rest of the application and are not detrimental to the user experience of the overall application.
++ **Consistency** ‒ The degree to which each micro-frontend behaves as users expect across the application. High consistency means micro-frontends align with the rest of the application and don't degrade the overall user experience.
 + **Complexity** ‒ The amount of infrastructure, code, and effort required to implement and test micro-frontends, the overall application, and governance controls.
 
 |
@@ -42,4 +42,4 @@ This guide covered architectural and organizational patterns, trade-offs for key
 | Edge-side composition | Medium | Medium | High |
 | Client-side composition | High | Medium | Medium |
 
-To learn more about the concepts introduced in this guidance, see the [Resources](resources.md) section.
+To learn more about the concepts introduced in this guide, see the [Resources](resources.md) section.

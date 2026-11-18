@@ -12,6 +12,8 @@ The S3 Intelligent-Tiering storage class delivers automatic storage cost savings
 
 To get a list of your objects and their corresponding metadata, including their S3 Intelligent-Tiering access tier, you can use [Amazon S3 Inventory](storage-inventory.md). S3 Inventory provides CSV, ORC, or Parquet output files that list your objects and their corresponding metadata. You can receive these inventory reports on either a daily or weekly basis for an Amazon S3 bucket or a shared prefix. (*Shared prefix* refers to objects that have names that begin with a common string.)
 
+With S3 Storage Lens, you can also view core storage metrics broken down by S3 Intelligent-Tiering access tier. For more information, see [Monitoring your storage activity and usage with Amazon S3 Storage Lens](storage_lens.md) and [Amazon S3 Storage Lens metrics glossary](storage_lens_metrics_glossary.md).
+
 ## Viewing the archive status of an object within S3 Intelligent-Tiering
 <a name="identify-archive-status"></a>
 

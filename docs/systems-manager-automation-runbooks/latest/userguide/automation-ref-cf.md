@@ -13,3 +13,4 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSConfigRemediation-EnableCloudFrontOriginAccessIdentity`](automation-aws-enable-cloudfront-origin-access.md)
 + [`AWSConfigRemediation-EnableCloudFrontOriginFailover`](automation-aws-enable-cloudfront-failover.md)
 + [`AWSConfigRemediation-EnableCloudFrontViewerPolicyHTTPS`](automation-aws-enable-cloudfront-viewer-policy.md)
++ [`AWSSupportRemediator-EnableCloudFrontDistributionLogging`](automation-awssupportremediator-enablecloudfrontdistributionlogging.md)

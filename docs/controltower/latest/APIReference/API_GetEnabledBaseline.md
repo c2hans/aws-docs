@@ -52,6 +52,9 @@ Content-type: application/json
          "types": {
             "inheritance": {
                "status": "string"
+            },
+            "source": {
+               "status": "string"
             }
          }
       },

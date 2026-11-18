@@ -33,7 +33,7 @@ Required: Yes
  ** UnpivotedLabelColumnId **   <a name="QS-Type-UnpivotOperation-UnpivotedLabelColumnId"></a>
 A unique identifier for the new column that will contain the unpivoted column names.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
  ** UnpivotedLabelColumnName **   <a name="QS-Type-UnpivotOperation-UnpivotedLabelColumnName"></a>
@@ -45,7 +45,7 @@ Required: Yes
  ** UnpivotedValueColumnId **   <a name="QS-Type-UnpivotOperation-UnpivotedValueColumnId"></a>
 A unique identifier for the new column that will contain the unpivoted values.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
  ** UnpivotedValueColumnName **   <a name="QS-Type-UnpivotOperation-UnpivotedValueColumnName"></a>

@@ -176,6 +176,13 @@ Content-type: application/json
             "value": "{{string}}"
          }
       ],
+      "machineImageTags": [
+         {
+            "comparison": "{{string}}",
+            "key": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
       "resourceId": [
          {
             "comparison": "{{string}}",
@@ -330,6 +337,12 @@ Content-type: application/json
                },
                "layers": [ "string" ],
                "runtime": "string"
+            },
+            "machineImage": {
+               "platform": "string",
+               "tags": {
+                  "string" : "string"
+               }
             },
             "serverlessFunction": {
                "functionTags": {

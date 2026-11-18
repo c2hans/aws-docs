@@ -13,7 +13,6 @@ An object that represents the account ID and region of an aggregator account tha
  ** RequesterAccountId **   <a name="config-Type-PendingAggregationRequest-RequesterAccountId"></a>
 The 12-digit account ID of the account requesting to aggregate data.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

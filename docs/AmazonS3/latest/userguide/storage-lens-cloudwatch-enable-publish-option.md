@@ -151,6 +151,9 @@ config.json
       }
     }
   },
+  "IntAccessTiers": {
+    "IsEnabled": {{true}}
+  },
   "Exclude": {
     "Regions": [
       "{{eu-west-1}}"
@@ -195,6 +198,7 @@ import com.amazonaws.services.s3control.model.BucketLevel;
 import com.amazonaws.services.s3control.model.CloudWatchMetrics;
 import com.amazonaws.services.s3control.model.Format;
 import com.amazonaws.services.s3control.model.Include;
+import com.amazonaws.services.s3control.model.IntAccessTiers;
 import com.amazonaws.services.s3control.model.OutputSchemaVersion;
 import com.amazonaws.services.s3control.model.PrefixLevel;
 import com.amazonaws.services.s3control.model.PrefixLevelStorageMetrics;
@@ -266,12 +270,16 @@ public class CreateAndUpdateDashboard {
             StorageLensAwsOrg awsOrg = new StorageLensAwsOrg()
                     .withArn({{awsOrgARN}});
 
+            IntAccessTiers intAccessTiers = new IntAccessTiers()
+                    .withIsEnabled({{true}});
+
             StorageLensConfiguration configuration = new StorageLensConfiguration()
                     .withId(configurationId)
                     .withAccountLevel(accountLevel)
                     .withInclude(include)
                     .withDataExport(dataExport)
                     .withAwsOrg(awsOrg)
+                    .withIntAccessTiers(intAccessTiers)
                     .withIsEnabled({{true}});
 
             List<StorageLensTag> tags = Arrays.asList(

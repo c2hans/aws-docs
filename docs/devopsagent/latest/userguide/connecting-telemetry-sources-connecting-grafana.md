@@ -31,7 +31,7 @@ Grafana is registered at the AWS account level and shared among all Agent Spaces
 
 1. Go to the **Capability Providers** page (accessible from the side navigation)
 
-1. Find **Grafana** in the **Available** providers section under **Telemetry** and choose **Register**
+1. In the **Available** section, find the **Grafana** card and choose **Register**. To narrow the list, enter Grafana in **Find capability**, or choose **Telemetry** in the category filter.
 
 1. On the **Configure Grafana** page, enter the following information:
    + **Service Name** (required) – Enter a descriptive name for your Grafana server using alphanumeric characters, hyphens, and underscores only. For example, `my-grafana-server`.
@@ -151,6 +151,6 @@ If you are using [Amazon Managed Grafana](https://aws.amazon.com/grafana/) (AMG)
 
 ## Managing Grafana connections
 <a name="managing-grafana-connections"></a>
-+ **Updating credentials** – If your service account token expires or needs to be updated, you can rotate it without deregistering. On the **Capability Providers** page, select your Grafana registration, choose **Update** from the **Actions** menu, and enter the new token. Your Agent Space associations are preserved.
++ **Updating credentials** – If your service account token expires or needs to be updated, you can rotate it without deregistering. On the **Capability Providers** page, under **Currently registered**, choose **View all** on the **Grafana** card. In **Registrations**, select your Grafana registration, choose **Update** from the **Actions** menu, and enter the new token. Your Agent Space associations are preserved.
 + **Viewing connected instances** – In the AWS DevOps Agent console, select your Agent Space and go to the Capabilities tab to view connected telemetry sources.
 + **Removing Grafana** – To disconnect Grafana from an Agent Space, select it in the Telemetry section and choose **Remove**. To completely remove the registration, remove it from all Agent Spaces first, then deregister from the Capability Providers page.

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association AutomatedTestingCapabilityConfiguration
 <a name="aws-properties-devopsagent-association-automatedtestingcapabilityconfiguration"></a>
 
-<a name="aws-properties-devopsagent-association-automatedtestingcapabilityconfiguration-description"></a>The `AutomatedTestingCapabilityConfiguration` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+The configuration for automated testing during code change risk analysis. This capability doesn't support trigger filter groups.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-automatedtestingcapabilityconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-automatedtestingcapabilityconfiguration-properties"></a>
 
 `Enabled`  <a name="cfn-devopsagent-association-automatedtestingcapabilityconfiguration-enabled"></a>
-Property description not available.
+Specifies whether automated testing is enabled for this association.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

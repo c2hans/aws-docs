@@ -33,6 +33,7 @@ Content-type: application/json
 
 {
    "autoEnable": {
+      "ami": boolean,
       "codeRepository": boolean,
       "ec2": boolean,
       "ecr": boolean,

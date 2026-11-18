@@ -43,7 +43,7 @@ Before you register Datadog, make sure that the following are true:
 
 To register Datadog with AWS DevOps Agent:
 
-1. Open the [Capability Providers page](https://console.aws.amazon.com/devops-agent/home#/services) in the AWS DevOps Agent console.
+1. Open the [Capability Providers page](https://console.aws.amazon.com/aidevops/home#/services) in the AWS DevOps Agent console.
 
 1. On the **Capability Providers** page, choose **Register** for **Datadog**.
 
@@ -253,9 +253,11 @@ What the update does depends on the authentication method of the registration:
 
 To update the credentials of a Datadog registration:
 
-1. Open the [Capability Providers page](https://console.aws.amazon.com/devops-agent/home#/services) in the AWS DevOps Agent console.
+1. Open the [Capability Providers page](https://console.aws.amazon.com/aidevops/home#/services) in the AWS DevOps Agent console.
 
-1. On the **Capability Providers** page, select the Datadog registration that you want to update.
+1. Under **Currently registered**, find the **Datadog** card, and then choose **View all**.
+
+1. In **Registrations**, select the Datadog registration that you want to update.
 
 1. Choose **Actions**.
 
@@ -295,10 +297,10 @@ The telemetry source is connected at two levels at the agent space level and at 
 ### Step 2: Deregister from account
 <a name="step-2-deregister-from-account"></a>
 
-1. Go to the **Capability Providers** page (accessible from the side navigation)
+1. In the navigation pane, choose **Capability Providers**.
 
-1. Scroll to the **Currently registered** section.
+1. In the **Currently registered** section, on the **Datadog** card, choose **View all**.
 
-1. Check the agent space count is zero (if not repeat Step 1 above in your other agent spaces)
+1. In **Registrations**, check the agent space count is zero (if not, repeat Step 1 in your other agent spaces).
 
-1. Select Datadog, then choose **Deregister** from the **Actions** menu.
+1. Select the Datadog registration, then choose **Deregister** from the **Actions** menu.

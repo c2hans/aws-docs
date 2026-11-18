@@ -117,7 +117,7 @@ Compare the quota value against the number of running instances in the staging a
 ## Error: arm64 replication server instance type is not supported
 <a name="common-replication-server-arm64-instance-type"></a>
 
-**Error message:** Instance type '{{instance-type}}' is not supported. Only instance types with 'x86\_64' architecture are supported.
+**Error message:** `Instance type '{{instance-type}}' is not supported. Only instance types with 'x86_64' architecture are supported.`
 
 **Cause:** You selected an `arm64` instance type for a replication server.
 

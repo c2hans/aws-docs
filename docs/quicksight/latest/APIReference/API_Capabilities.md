@@ -511,6 +511,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateLocalMCPAction **   <a name="QS-Type-Capabilities-CreateAndUpdateLocalMCPAction"></a>
+The ability to create and update local Model Context Protocol (MCP) server configurations in AWS Quick Desktop. Denying this capability does not by itself deny use of previously configured local MCP servers.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateMCPAction **   <a name="QS-Type-Capabilities-CreateAndUpdateMCPAction"></a>
 The ability to create and update Model Context Protocol actions.
 Type: String
@@ -1379,6 +1385,12 @@ Required: No
 
  ** LinearAction **   <a name="QS-Type-Capabilities-LinearAction"></a>
 The ability to perform actions using Linear connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** LocalMCPAction **   <a name="QS-Type-Capabilities-LocalMCPAction"></a>
+The ability to create, update, and use local Model Context Protocol (MCP) actions in AWS Quick Desktop. This capability includes `CreateAndUpdateLocalMCPAction` and `UseLocalMCPAction`.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -3232,6 +3244,12 @@ Required: No
 
  ** UseLinearAction **   <a name="QS-Type-Capabilities-UseLinearAction"></a>
 The ability to use Linear actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseLocalMCPAction **   <a name="QS-Type-Capabilities-UseLocalMCPAction"></a>
+The ability to start local Model Context Protocol (MCP) servers and use their actions in AWS Quick Desktop, including actions from previously configured local MCP servers.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No

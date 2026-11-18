@@ -2119,6 +2119,66 @@ public class ListProductPrivateOffers {
 ## Offers
 <a name="offers"></a>
 
+### Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product
+<a name="marketplace-catalog_AddFreeTrialWithAutoConversionToPublicOfferForSaasProduct_java_2_topic"></a>
+
+The following code example shows how to add a free trial to the public offer of a SaaS subscription product. When the free trial ends, it converts to a paid subscription at the rates in the offer. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
+To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "offer-1111111111111"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Usage",
+                "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Type": "FreeTrialPricingTerm",
+                        "Duration": "P20D",
+                        "Grants": [
+                            {
+                                "DimensionKey": "WorkloadSmall"
+                            },
+                            {
+                                "DimensionKey": "WorkloadMedium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
+
 ### Create a custom dimension for a SaaS product and create a private offer
 <a name="marketplace-catalog_CreateSaasProductCustomDimensionAndPrivateOffer_java_2_topic"></a>
 
@@ -3574,97 +3634,6 @@ To run this example, pass the following JSON changeset to `RunChangesets` in *Ut
 ```
 +  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
 
-### Create a public free trial offer with subscription pricing for a SaaS product
-<a name="marketplace-catalog_CreatePublicFreeTrialOfferWithSubscriptionPricingForSaasProduct_java_2_topic"></a>
-
-The following code example shows how to create a public free trial offer with subscription pricing for a SaaS product.
-
-**SDK for Java 2.x**
- There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
-To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
-
-```
-{
-    "Catalog": "AWSMarketplace",
-    "ChangeSet": [
-        {
-            "ChangeType": "CreateOffer",
-            "Entity": {
-                "Type": "Offer@1.0"
-            },
-            "ChangeName": "CreateOfferChange",
-            "DetailsDocument": {
-                "ProductId": "prod-1111111111111"
-            }
-        },
-        {
-            "ChangeType": "UpdateInformation",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {
-                "Name": "Test public free trial offer for SaaSProduct using AWS Marketplace API Reference Code",
-                "Description": "Test public free trial offer with subscription pricing for SaaSProduct using AWS Marketplace API Reference Code"
-            }
-        },
-        {
-            "ChangeType": "UpdatePricingTerms",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {
-                "PricingModel": "Free",
-                "Terms": [
-                    {
-                        "Type": "FreeTrialPricingTerm",
-                        "Duration": "P20D",
-                        "Grants": [
-                            {
-                                "DimensionKey": "WorkloadSmall"
-                            },
-                            {
-                                "DimensionKey": "WorkloadMedium"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "ChangeType": "UpdateLegalTerms",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {
-                "Terms": [
-                    {
-                        "Type": "LegalTerm",
-                        "Documents": [
-                            {
-                                "Type": "StandardEula",
-                                "Version": "2022-07-14"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "ChangeType": "ReleaseOffer",
-            "Entity": {
-                "Type": "Offer@1.0",
-                "Identifier": "$CreateOfferChange.Entity.Identifier"
-            },
-            "DetailsDocument": {}
-        }
-    ]
-}
-```
-+  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
-
 ### Create a replacement private offer with contract pricing
 <a name="marketplace-catalog_CreateReplacementPrivateOfferWithContractPricing_java_2_topic"></a>
 
@@ -3801,6 +3770,97 @@ To run this example, pass the following JSON changeset to `RunChangesets` in *Ut
 ```
 +  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
 
+### Deprecated - Create a public free trial offer with subscription pricing for a SaaS product
+<a name="marketplace-catalog_CreatePublicFreeTrialOfferWithSubscriptionPricingForSaasProduct_java_2_topic"></a>
+
+The following code example shows how to create a public free trial offer with subscription pricing for a SaaS product. This example is deprecated, because standalone free trial offers for SaaS subscription products can no longer be created. Use *Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product* instead.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
+To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "CreateOffer",
+            "Entity": {
+                "Type": "Offer@1.0"
+            },
+            "ChangeName": "CreateOfferChange",
+            "DetailsDocument": {
+                "ProductId": "prod-1111111111111"
+            }
+        },
+        {
+            "ChangeType": "UpdateInformation",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Name": "Test public free trial offer for SaaSProduct using AWS Marketplace API Reference Code",
+                "Description": "Test public free trial offer with subscription pricing for SaaSProduct using AWS Marketplace API Reference Code"
+            }
+        },
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Free",
+                "Terms": [
+                    {
+                        "Type": "FreeTrialPricingTerm",
+                        "Duration": "P20D",
+                        "Grants": [
+                            {
+                                "DimensionKey": "WorkloadSmall"
+                            },
+                            {
+                                "DimensionKey": "WorkloadMedium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "UpdateLegalTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Terms": [
+                    {
+                        "Type": "LegalTerm",
+                        "Documents": [
+                            {
+                                "Type": "StandardEula",
+                                "Version": "2022-07-14"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "ReleaseOffer",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {}
+        }
+    ]
+}
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
+
 ### Describe a public offer
 <a name="marketplace-catalog_DescribeOffer_java_2_topic"></a>
 
@@ -3854,6 +3914,76 @@ public class DescribeEntity {
 }
 ```
 +  For API details, see [DescribeEntity](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/DescribeEntity) in *AWS SDK for Java 2.x API Reference*.
+
+### Enable free trial auto-conversion for a SaaS subscription product
+<a name="marketplace-catalog_EnableFreeTrialAutoConversionForSaasProduct_java_2_topic"></a>
+
+The following code example shows how to replace the standalone free trial offer of a SaaS subscription product with a free trial on its public offer. The change set sets the expiration date of the standalone free trial offer (`offer-2222222222222`) to a date in the past so that buyers no longer see that offer, and adds the free trial to the public offer (`offer-1111111111111`). Existing free trial agreements aren't changed. `UpdateAvailability` is supported on free trial offers, and the standalone free trial offer can't be made available again after it expires. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
+To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "UpdateAvailability",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "offer-2222222222222"
+            },
+            "DetailsDocument": {
+                "AvailabilityEndDate": "2023-01-01"
+            }
+        },
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "offer-1111111111111"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Usage",
+                "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Type": "FreeTrialPricingTerm",
+                        "Duration": "P20D",
+                        "Grants": [
+                            {
+                                "DimensionKey": "WorkloadSmall"
+                            },
+                            {
+                                "DimensionKey": "WorkloadMedium"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
 
 ### Expire a draft private offer
 <a name="marketplace-catalog_ExpirePrivateOffer_java_2_topic"></a>
@@ -4382,10 +4512,10 @@ To run this example, pass the following JSON changeset to `RunChangesets` in *Ut
 ```
 +  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
 
-### Update the free trial duration of a public free trial offer for a SaaS product
+### Update the free trial duration of a public free trial offer for a SaaS subscription product
 <a name="marketplace-catalog_UpdateFreeTrialDurationOfPublicFreeTrialOfferForSaasProduct_java_2_topic"></a>
 
-The following code example shows how to update the free trial duration of a public free trial offer for a SaaS product.
+The following code example shows how to update the free trial duration of a public free trial offer for a SaaS subscription product. Use this change set on the public offer that has the free trial. A standalone free trial offer takes only the `FreeTrialPricingTerm`. `UpdatePricingTerms` replaces all pricing terms, so copy your offer's current `UsageBasedPricingTerm` from `DescribeEntity` instead of using the example rates, and grant every dimension in the free trial.
 
 **SDK for Java 2.x**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
@@ -4404,6 +4534,24 @@ To run this example, pass the following JSON changeset to `RunChangesets` in *Ut
             "DetailsDocument": {
                 "PricingModel": "Usage",
                 "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
                     {
                         "Type": "FreeTrialPricingTerm",
                         "Duration": "P21D",

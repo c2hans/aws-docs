@@ -129,6 +129,15 @@ These actions control the ability to add and manage assets in an Agent Space, in
 + **aidevops:ListAssetFiles** – Allows users to list the files within an asset.
 + **aidevops:ListAssetTypes** – Allows users to list the asset types supported by AWS DevOps Agent. This action is not scoped to a specific Agent Space and requires `Resource: "*"`.
 
+## Catalog actions
+<a name="catalog-actions"></a>
+
+These actions control access to the AWS DevOps Agent Skills Catalog. In these action names, a capability is an item in the catalog, such as a skill. The Skills Catalog uses `aidevops:ListCatalogCapabilities`, `aidevops:GetCatalogCapability`, and `aidevops:ListCatalogCapabilityFiles`, but not `aidevops:ListCatalogCapabilityTypes`. The actions aren't scoped to a specific Agent Space and require `Resource: "*"`. To add skills from the Skills Catalog to an Agent Space, you also need `aidevops:CreateAsset`, and to sync them, `aidevops:UpdateAsset`. For more information, see [Skills Catalog](devops-agent-skills-skills-catalog.md).
++ **aidevops:GetCatalogCapability** – Allows users to retrieve a capability and its files from the catalog.
++ **aidevops:ListCatalogCapabilities** – Allows users to list the capabilities in the catalog.
++ **aidevops:ListCatalogCapabilityFiles** – Allows users to list the files in a capability from the catalog.
++ **aidevops:ListCatalogCapabilityTypes** – Allows users to list the capability types in the catalog.
+
 ## Trigger management actions
 <a name="trigger-management-actions"></a>
 
@@ -227,6 +236,10 @@ This policy grants access to investigation and prevention features without admin
         "aidevops:CreateAssetFile",
         "aidevops:UpdateAsset",
         "aidevops:UpdateAssetFile",
+        "aidevops:ListCatalogCapabilities",
+        "aidevops:GetCatalogCapability",
+        "aidevops:ListCatalogCapabilityFiles",
+        "aidevops:ListCatalogCapabilityTypes",
         "aidevops:CreateTrigger",
         "aidevops:GetTrigger",
         "aidevops:UpdateTrigger",
@@ -269,6 +282,10 @@ This policy grants view-only access to investigations and recommendations:
         "aidevops:GetAsset",
         "aidevops:GetAssetContent",
         "aidevops:GetAssetFile",
+        "aidevops:ListCatalogCapabilities",
+        "aidevops:GetCatalogCapability",
+        "aidevops:ListCatalogCapabilityFiles",
+        "aidevops:ListCatalogCapabilityTypes",
         "aidevops:GetTrigger",
         "aidevops:ListTriggers",
         "aidevops:GetAccountUsage"
@@ -486,11 +503,15 @@ Provides access to use the AWS DevOps operator web app for an Agent Space.
         "aidevops:GetAssociation",
         "aidevops:GetBacklogTask",
         "aidevops:GetChat",
+        "aidevops:GetKnowledgeGraph",
         "aidevops:GetKnowledgeItem",
+        "aidevops:GetPlan",
         "aidevops:GetRecommendation",
         "aidevops:GetTrigger",
         "aidevops:InitiateChatForCase",
         "aidevops:ListAccessTokens",
+        "aidevops:ListAgentSpaceMetrics",
+        "aidevops:ListAssetChanges",
         "aidevops:ListAssetFiles",
         "aidevops:ListAssets",
         "aidevops:ListAssetTypes",
@@ -511,6 +532,7 @@ Provides access to use the AWS DevOps operator web app for an Agent Space.
         "aidevops:RotateAccessToken",
         "aidevops:SearchAssets",
         "aidevops:SendMessage",
+        "aidevops:StopPlan",
         "aidevops:UpdateApprovalAction",
         "aidevops:UpdateAsset",
         "aidevops:UpdateAssetFile",
@@ -534,7 +556,13 @@ Provides access to use the AWS DevOps operator web app for an Agent Space.
     {
       "Sid": "AllowOperatorAccountActions",
       "Effect": "Allow",
-      "Action": ["aidevops:GetAccountUsage"],
+      "Action": [
+        "aidevops:GetAccountUsage",
+        "aidevops:GetCatalogCapability",
+        "aidevops:ListCatalogCapabilities",
+        "aidevops:ListCatalogCapabilityFiles",
+        "aidevops:ListCatalogCapabilityTypes"
+      ],
       "Resource": "*",
       "Condition": {
         "StringEquals": {

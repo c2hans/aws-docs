@@ -64,6 +64,8 @@ This parameter controls the maximum memory that the analytics execution engine a
 
 When a query's memory usage approaches this limit, the engine spills intermediate results to temporary local storage. Spilling allows the query to complete but with reduced performance.
 
+**Default calculation**
+
 Aurora derives the default from instance memory, using the smallest of three terms:
 
 ```
@@ -98,6 +100,8 @@ When to increase this value:
 When to decrease this value:
 + Many concurrent users run analytical queries.
 + You observe memory pressure across the DB instance.
+
+**Usage examples**
 
 Set different limits for different user roles:
 

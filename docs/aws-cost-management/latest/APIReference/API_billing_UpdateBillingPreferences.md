@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 
 Updates billing preferences for the specified feature. Each feature targets a distinct billing capability and has its own set of supported keys. The action sets the value for each provided key; keys not present in the request are unchanged.
 
-Sharing keys (`RI_SHARING`, `CREDIT_SHARING`, `CREDIT_LEVEL_SHARING`, and sharing keys under `CREDIT_PREFERENCE_OPTIONS`) may only be set by the management account of a consolidated billing family. The `credit/{creditId}/status` key may be set by member accounts for credits they own, or by the management account for any credit in the family.
+To set sharing keys (`RI_SHARING`, `CREDIT_SHARING`, `CREDIT_LEVEL_SHARING`, `BENEFIT_LEVEL_SHARING`, and sharing keys under `CREDIT_PREFERENCE_OPTIONS`), you must use the management account of a consolidated billing family. To set the `credit/{creditId}/status` key, you must own the credit or use the management account of its family.
 
 ## Request Syntax
 <a name="API_billing_UpdateBillingPreferences_RequestSyntax"></a>
@@ -33,14 +33,24 @@ The request accepts the following data in JSON format.
 
  ** [billingPreferencesPerKey](#API_billing_UpdateBillingPreferences_RequestSyntax) **   <a name="awscostmanagement-billing_UpdateBillingPreferences-request-billingPreferencesPerKey"></a>
 Key/value pairs to apply. All keys in a single request must be valid for the specified `feature` and must not be duplicated. For `CREDIT_PREFERENCE_OPTIONS`, all keys must reference the same `creditId`.
+For `BENEFIT_LEVEL_SHARING`, all keys must reference the same Reserved Instance or Savings Plan. To share it with the accounts in one Cost Category rule, send these three keys with the value `ENABLED`:
++  `benefit/{ri|sp}/{benefitId}/sharing/costCategoryArn/{costCategoryArn}`
++  `benefit/{ri|sp}/{benefitId}/sharing/ruleName/{ruleName}`
++  `benefit/{ri|sp}/{benefitId}/sharing/mode/{prioritized|restricted}`
+With `prioritized`, any benefit that the rule's accounts don't use goes to the rest of your consolidated billing family, following your family sharing settings. With `restricted`, only the owner and the rule's accounts receive it. The Cost Category must belong to your account. To stop sharing, send the same three keys with the value `DISABLED`.
+For `RI_SHARING` and `CREDIT_SHARING`, you can share benefits by account group. Each rule in a Cost Category is one group. Send exactly one of these group keys with the value `ENABLED`:
++  `open-sharing` - Share across the whole consolidated billing family, with no groups.
++  `costcategory-prioritized/{costCategoryArn}` - Share within each group first, then with the rest of the family.
++  `costcategory-restricted/{costCategoryArn}` - An account in a group shares only with accounts in the same group.
+For `RI_SHARING`, the `costcategory-` keys use a Cost Category that supports the `billing:rispgroupsharing` resource type. To use a Cost Category that supports the `billing:benefitgroupsharing` resource type, use the `benefitgroup-prioritized/` or `benefitgroup-restricted/` prefix instead. For `CREDIT_SHARING`, the Cost Category must support the `billing:benefitgroupsharing` resource type. The Cost Category must belong to your account. `GetBillingPreferences` returns the group key that is in effect.
 Type: Array of [BillingPreferenceForKey](API_billing_BillingPreferenceForKey.md) objects
 Array Members: Minimum number of 1 item.
 Required: Yes
 
  ** [feature](#API_billing_UpdateBillingPreferences_RequestSyntax) **   <a name="awscostmanagement-billing_UpdateBillingPreferences-request-feature"></a>
-The feature to update. Valid values: `BILLING_ALERTS`, `RI_SHARING`, `CREDIT_SHARING`, `CREDIT_LEVEL_SHARING`, `CREDIT_PREFERENCE_OPTIONS`. The history features (`RI_SHARING_HISTORY` and `CREDIT_SHARING_HISTORY`) are read-only and cannot be updated.
+The feature to update. Valid values: `BILLING_ALERTS`, `RI_SHARING`, `CREDIT_SHARING`, `CREDIT_LEVEL_SHARING`, `CREDIT_PREFERENCE_OPTIONS`, `BENEFIT_LEVEL_SHARING`. The history features (`RI_SHARING_HISTORY` and `CREDIT_SHARING_HISTORY`) are read-only and cannot be updated.
 Type: String
-Valid Values: `RI_SHARING | RI_SHARING_HISTORY | CREDIT_SHARING | CREDIT_SHARING_HISTORY | CREDIT_LEVEL_SHARING | BILLING_ALERTS | CREDIT_PREFERENCE_OPTIONS`
+Valid Values: `RI_SHARING | RI_SHARING_HISTORY | CREDIT_SHARING | CREDIT_SHARING_HISTORY | CREDIT_LEVEL_SHARING | BILLING_ALERTS | CREDIT_PREFERENCE_OPTIONS | BENEFIT_LEVEL_SHARING`
 Required: Yes
 
 ## Response Elements

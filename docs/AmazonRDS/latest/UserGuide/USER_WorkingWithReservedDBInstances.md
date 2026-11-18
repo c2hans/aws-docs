@@ -74,7 +74,7 @@ Size-flexible reserved DB instances are available for the following Amazon RDS d
 + RDS for Oracle, Bring Your Own License
 + RDS for PostgreSQL
 
-Size flexibility does not apply to RDS for SQL Server and RDS for Oracle License Included.
+**Size flexibility does not apply to RDS for SQL Server and RDS for Oracle License Included.**
 
 For details about using size-flexible reserved instances with Aurora, see [Reserved DB instances for Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithReservedDBInstances.html).
 

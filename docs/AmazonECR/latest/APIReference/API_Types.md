@@ -17,6 +17,7 @@ The following data types are supported:
 +  [CvssScore](API_CvssScore.md)
 +  [CvssScoreAdjustment](API_CvssScoreAdjustment.md)
 +  [CvssScoreDetails](API_CvssScoreDetails.md)
++  [DeleteReplication](API_DeleteReplication.md)
 +  [DescribeImagesFilter](API_DescribeImagesFilter.md)
 +  [EncryptionConfiguration](API_EncryptionConfiguration.md)
 +  [EncryptionConfigurationForRepositoryCreationTemplate](API_EncryptionConfigurationForRepositoryCreationTemplate.md)

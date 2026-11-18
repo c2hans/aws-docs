@@ -2,23 +2,25 @@
 source_url: https://docs.aws.amazon.com/linux/al2027/ug/virtualization-getting-started.html
 ---
 
-# Get started with virtualization on Amazon Linux 2027
+# Getting started with virtualization on Amazon Linux 2027
 <a name="virtualization-getting-started"></a>
 
-This page covers what an instance needs before it can run virtual machines, how to install and enable the virtualization packages, and an example that runs a virtual machine with QEMU. To manage guests with libvirt instead of running QEMU by hand, see [Manage virtual machines with virsh on Amazon Linux 2027](virtualization-virsh.md). For what the stack does and does not support, see [Virtualization on Amazon Linux 2027](virtualization.md).
+This page covers what an instance needs before it can run virtual machines, how to install and enable the virtualization packages, and an example that runs a virtual machine with QEMU. To manage guests with libvirt instead of running QEMU by hand, see [Managing virtual machines with virsh on Amazon Linux 2027](virtualization-virsh.md). For what the stack does and does not support, see [Virtualization on Amazon Linux 2027](virtualization.md).
 
 **Topics**
-+ [Enable hardware virtualization](#virtualization-requirements)
-+ [Install and enable the virtualization packages](#virtualization-install)
-+ [Example: run a virtual machine with QEMU](#virtualization-example-vm)
++ [Enabling hardware virtualization](#virtualization-requirements)
++ [Installing and enabling the virtualization packages](#virtualization-install)
++ [Example: Running a virtual machine with QEMU](#virtualization-example-vm)
 + [Things to remember](#virtualization-gotchas)
 
-## Enable hardware virtualization
+## Enabling hardware virtualization
 <a name="virtualization-requirements"></a>
 
-Enabling hardware virtualization is optional: without it QEMU emulates the guest processor in software, which works on any instance type. Kernel-based Virtual Machine (KVM) is the kernel component that lets QEMU use the processor's own virtualization extensions, which is what makes a guest run at close to native speed. The kernel exposes it as the device node `/dev/kvm`. Without that node, QEMU can still run a guest by translating every instruction in software, but it will be several times slower.
+Enabling hardware virtualization is optional: without it QEMU emulates the guest processor in software, which works on any instance type. Kernel-based Virtual Machine (KVM) is the kernel component that lets QEMU use the processor's own virtualization extensions, which is what makes a guest run at close to native speed. The kernel exposes it as the device node `/dev/kvm`. Without that node, QEMU can still run a guest by translating every instruction in software, but it is several times slower.
 
 An Amazon EC2 instance only sees those processor extensions if the instance is bare metal, or if it is a virtual instance with *nested virtualization* turned on. Nested virtualization is not on by default. You opt into it, either when you launch the instance or by changing a stopped instance.
+
+**To enable hardware virtualization**
 
 1. Check that your intended instance type supports nested virtualization.
 
@@ -80,8 +82,12 @@ An Amazon EC2 instance only sees those processor extensions if the instance is b
 **Note**
 If `/dev/kvm` is missing, the most likely cause is that nested virtualization was never enabled on the instance, rather than anything wrong with the packages. Everything on this page except KVM acceleration still works without it, using software emulation instead.
 
-## Install and enable the virtualization packages
+## Installing and enabling the virtualization packages
 <a name="virtualization-install"></a>
+
+Install the AL2027 virtualization packages, then enable the libvirt daemon so that `virsh` can manage guests. The following steps install the packages, start the QEMU daemon socket, and verify that the client can reach the daemon.
+
+**To install and enable the virtualization packages**
 
 1. Install QEMU, libvirt, and the `virsh` client. Add `edk2-ovmf` (or `edk2-aarch64` on `aarch64`) if you intend to boot guests with UEFI firmware rather than the default SeaBIOS legacy BIOS.
 
@@ -109,10 +115,12 @@ AL2027 ships the modular libvirt daemons, so the daemon that serves the QEMU dri
    Running hypervisor: QEMU 11.0.4
    ```
 
-## Example: run a virtual machine with QEMU
+## Example: Running a virtual machine with QEMU
 <a name="virtualization-example-vm"></a>
 
 This example boots a guest directly with QEMU, using the `q35` machine type, KVM acceleration, virtio storage, user-mode networking, and the serial console. It is the quickest way to confirm the stack works end to end.
+
+**To run a virtual machine with QEMU**
 
 1. Create a disk image, or download a ready-made one. For the AL2027 KVM images, see [Download Amazon Linux 2027 images for use with KVM, VMware, and Hyper-V](outside-ec2-download.md). The KVM images require additional configuration to log in, as described in [NoCloud (`seed.iso`) `cloud-init` configuration for Amazon Linux 2027 on KVM and VMware](seed-iso.md).
 
@@ -134,7 +142,9 @@ This example boots a guest directly with QEMU, using the `q35` machine type, KVM
      -nographic
    ```
 
-   `-nographic` redirects the guest serial console to your terminal, so you can watch the firmware, bootloader, and kernel and then log in. To leave the guest, press `Ctrl+a` then `x`.
+   `-nographic` redirects the guest serial console to your terminal, so you can watch the firmware, bootloader, and kernel and then log in.
+
+1. If you want to leave the guest, press `Ctrl+a` then `x`.
 
 **Note**
 If `/dev/kvm` is not available, drop `accel=kvm` and replace `-cpu host` with `-cpu max`. `-cpu host` requires KVM and fails with `CPU model 'host' requires KVM or HVF` without it. `-cpu max` is also necessary because the CPU model QEMU emulates by default is older than AL2027 userspace requires: a guest booted under emulation without it panics early in start-up with `Attempted to kill init`.
@@ -144,14 +154,14 @@ On `aarch64`, use `qemu-system-aarch64` with `-machine virt`. The `virt` machine
 ## Things to remember
 <a name="virtualization-gotchas"></a>
 
-The AL2027 virtualization stack is deliberately narrower than an upstream QEMU build, and most surprises come from that. The following list collects the differences you are most likely to trip over.
-+ **Enable nested virtualization, or you get no KVM.** On a virtual instance this is opt-in. A missing `/dev/kvm` almost always means this step was skipped.
-+ **Always specify `-machine q35`.** The legacy `pc` (i440FX) machine is not built. A command line that relied on the default fails outright with `unsupported machine type: "pc"`.
-+ **Use `-netdev passt`, not `-netdev user`.** The SLIRP backend is not built. In libvirt domain XML the equivalent is `<interface type='user'><backend type='passt'/>`.
-+ **The daemon is `virtqemud`, not `libvirtd`.** No `libvirtd.service` unit exists, and nothing is enabled until you enable it.
-+ **Run `virsh` with `sudo`.** Without a polkit agent an unprivileged `virsh` cannot reach `qemu:///system`.
-+ **The `default` NAT network needs `virtnetworkd.socket` enabled.** Until then every network command fails on a missing `virtnetworkd-sock`.
-+ **There is no graphical console.** The GTK, SDL and SPICE frontends are not built. Use the serial console, or VNC.
-+ **Display is standard VGA.** `virtio-gpu` and `virtio-vga` are not built.
-+ **Treat guests as disposable.** Saving a guest and restoring it under a different QEMU version is not supported, and a new AL2027 release version can bring a new upstream QEMU. Do not build a workflow that depends on the emulated machine staying identical across updates.
-+ **No Secure Boot, no vTPM, no device passthrough.** See [Limitations and unsupported functionality](virtualization.md#virtualization-limitations).
+The AL2027 virtualization stack is deliberately narrower than an upstream QEMU build, and most surprises come from that. The following list covers the differences you are most likely to encounter:
++ **Enable nested virtualization, or you get no KVM** – On a virtual instance this is opt-in. A missing `/dev/kvm` almost always means this step was skipped.
++ **Always specify `-machine q35`** – The legacy `pc` (i440FX) machine is not built. A command line that relied on the default fails outright with `unsupported machine type: "pc"`.
++ **Use `-netdev passt`, not `-netdev user`** – The SLIRP backend is not built. In libvirt domain XML the equivalent is `<interface type='user'><backend type='passt'/>`.
++ **The daemon is `virtqemud`, not `libvirtd`** – No `libvirtd.service` unit exists, and nothing is enabled until you enable it.
++ **Run `virsh` with `sudo`** – Without a polkit agent an unprivileged `virsh` cannot reach `qemu:///system`.
++ **The `default` NAT network needs `virtnetworkd.socket` enabled** – Until then every network command fails on a missing `virtnetworkd-sock`.
++ **There is no graphical console** – The GTK, SDL and SPICE frontends are not built. Use the serial console, or VNC.
++ **Display is standard VGA** – `virtio-gpu` and `virtio-vga` are not built.
++ **Treat guests as disposable** – Saving a guest and restoring it under a different QEMU version is not supported, and a new AL2027 release version can bring a new upstream QEMU. Do not build a workflow that depends on the emulated machine staying identical across updates.
++ **No Secure Boot, no vTPM, no device passthrough** – See [Limitations and unsupported functionality](virtualization.md#virtualization-limitations).

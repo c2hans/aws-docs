@@ -18,7 +18,7 @@ Required: Yes
  ** Status **   <a name="sagemaker-Type-JobSecondaryStatusTransition-Status"></a>
 The secondary status of the job at this transition point.
 Type: String
-Valid Values: `Starting | Downloading | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Interrupted | Failed | Completed | Restarting | Pending | Evaluating | Deleting | DeleteFailed`
+Valid Values: `Starting | Downloading | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Interrupted | Failed | Completed | Restarting | Pending | Generating | PartialGeneration | Evaluating | Validating | Preparing | Executing | Publishing | Finalizing | Transforming | Deleting | DeleteFailed`
 Required: Yes
 
  ** EndTime **   <a name="sagemaker-Type-JobSecondaryStatusTransition-EndTime"></a>

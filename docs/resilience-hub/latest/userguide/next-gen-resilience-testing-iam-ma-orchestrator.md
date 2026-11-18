@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 
 Create the orchestrator role in the account that runs the experiment. Its trust policy allows AWS FIS to assume it, with the same confused-deputy protection as the single-account trust policy.
 
+**Trust policy**
+
 ```
 {
   "Version": "2012-10-17"		 	 	 ,
@@ -38,6 +40,8 @@ Create the orchestrator role in the account that runs the experiment. Its trust 
   ]
 }
 ```
+
+**Permissions policy**
 
 The orchestrator permissions policy is the same for every test template. It allows the role to assume the target-account roles, resolve targets, and manage experiment logging and lifecycle. List the ARN of each target-account role in the `AssumeTargetAccountRole` statement.
 

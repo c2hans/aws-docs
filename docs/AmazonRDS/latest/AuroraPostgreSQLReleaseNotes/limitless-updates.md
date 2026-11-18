@@ -229,11 +229,11 @@ Amazon Amazon Aurora PostgreSQL Limitless Database follows the same engine versi
 + Fixed an issue where the background worker pool could be completely exhausted by database internal processes.
 + Fixed an issue where non-immutable functions in extensions unexpectedly failed with *permission denied* errors.
 + Fixed *commit time is invalid* errors.
-+ Fixed an issue where `INSERT INTO` failed after the `ROLLBACK` of a `READ ONLY` transaction with the error ERROR: failed to execute remote query with message: transaction read-write mode must be set before any query.
-+ Fixed an issue where `SELECT` queries failed with ERROR: failed to execute remote query with message: collations are not supported by type integer.
-+ Fixed an issue where `DELETE FROM` failed with ERROR: failed to execute remote query.
++ Fixed an issue where `INSERT INTO` failed after the `ROLLBACK` of a `READ ONLY` transaction with the error `ERROR: failed to execute remote query with message: transaction read-write mode must be set before any query`.
++ Fixed an issue where `SELECT` queries failed with `ERROR: failed to execute remote query with message: collations are not supported by type integer`.
++ Fixed an issue where `DELETE FROM` failed with `ERROR: failed to execute remote query`.
 + Fixed an issue where expressions in `DEFAULT/CHECK` constraints might generate incorrect backfill data for existing rows. This issue is seen specifically when the expression in the constraint relies on parenthesis.
-+ Fixed an issue with `PREPARE` and `EXECUTE` statements which failed with bind message supplies 2 parameters, but prepared statement requires 1 when the `PREPARE` statement used fewer parameters than it declared.
++ Fixed an issue with `PREPARE` and `EXECUTE` statements which failed with `bind message supplies 2 parameters, but prepared statement requires 1` when the `PREPARE` statement used fewer parameters than it declared.
 + Fixed an issue where `RESET` of `rds_aurora.limitless_explain_options` setting was not correctly reflected in `EXPLAIN` output.
 
 ## Amazon Aurora PostgreSQL Limitless Database version 16.8-limitless
@@ -282,7 +282,7 @@ Amazon Amazon Aurora PostgreSQL Limitless Database follows the same engine versi
 **Bug fixes**
 + Fixed the `ANALYZE` SQL query result to also include foreign tables.
 + Fixed multiple issues which might lead to a database restart.
-+ Fixed an issue with `PREPARE` and `EXECUTE` statements which failed incorrectly with bind message supplies 2 parameters, but prepared statement requires 1 when the `PREPARE` statement used less parameters than declared.
++ Fixed an issue with `PREPARE` and `EXECUTE` statements which failed incorrectly with `bind message supplies 2 parameters, but prepared statement requires 1` when the `PREPARE` statement used less parameters than declared.
 + Fixed multiple issues in vacuum operations leading to increased space consumption.
 + Fixed an issue with `INSERT` statements after rolling back a `READ_ONLY` transaction.
 + Fixed an issue where `DELETE` statements with `RETURNING` clause fails.
@@ -345,7 +345,7 @@ Amazon Amazon Aurora PostgreSQL Limitless Database follows the same engine versi
 **Bug fixes**
 + Fixed the `ANALYZE` SQL query result to include foreign tables.
 + Fixed multiple issues which might lead to a database restart.
-+ Fixed an issue with `PREPARE` and `EXECUTE` statements which failed incorrectly with bind message supplies 2 parameters, but prepared statement requires 1 when the `PREPARE` statement uses less parameters than declared.
++ Fixed an issue with `PREPARE` and `EXECUTE` statements which failed incorrectly with `bind message supplies 2 parameters, but prepared statement requires 1` when the `PREPARE` statement uses less parameters than declared.
 + Fixed multiple issues in vacuum operations leading to increased space consumption.
 + Fixed an issue with `INSERT` statements after rolling back a `READ_ONLY` transaction.
 + Fixed an issue where `DELETE` statements with `RETURNING` clause failed.
@@ -381,7 +381,7 @@ This release includes Aurora PostgreSQL patches till [ 16.6.3](https://docs.aws.
 + Enhanced the error handling for `pg_advisory_lock`. Previously, attempts to use this unsupported feature didn't generate an explicit error message, potentially leading to unexpected behavior. Now, users will receive a clear error notification when attempting to use `pg_advisory_lock`, ensuring better clarity and preventing unintended consequences.
 
 **Bug fixes**
-+ Fixed an issue where certain `ALTER TABLE` and `CREATE TABLE` commands fail with the error: Unable to deparse the given statement.
++ Fixed an issue where certain `ALTER TABLE` and `CREATE TABLE` commands fail with the error: `Unable to deparse the given statement`.
 + Fixed an issue where an `ALTER TABLE` command with a `NOT NULL` or `DEFAULT` constraint fails when it contains functions unsafe to push down to shards (such as volatile functions), requiring backfilling data in existing rows.
 
 **Known issues**

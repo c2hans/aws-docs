@@ -98,6 +98,8 @@ For preview dialing mode, please adjust contact flow to use profile id as the de
 
 ![Agent-assisted voice campaign creation interface with configuration options and settings.](https://docs.aws.amazon.com/connect/latest/adminguide/images/create_campaign_agent-assisted-voice-1.png)
 
+**Pacing controls**
+
 When you select predictive dialing mode, the **Pacing controls** section helps you configure maximum ring time, dialing capacity allocation, agent allocation, and abandonment rate thresholds:
 
 The following image shows the pacing controls section.
@@ -107,6 +109,8 @@ The following image shows the pacing controls section.
 + **Maximum ring time for unanswered calls** – The maximum number of seconds a call will ring before ending. Valid values: 15 to 60 seconds.
 + **Dialing capacity allocation** – Allocates telecom dialing capacity for this campaign relative to other active campaigns. When multiple campaigns run concurrently, the dialer distributes capacity proportionally based on each campaign's allocation value. Valid values: 1% to 100%.
 + **Agent allocation** – A weight assigned to this campaign that determines the proportion of available agents belonging to the provided queue for which outbound calls are placed. Valid values: 1% to 200%.
+
+**Abandonment controls**
 
 For predictive dialing mode, you can enable abandonment controls to automatically reduce pacing when your configured abandonment rate threshold is reached. Select the **Enable abandonment controls** checkbox to configure these settings:
 

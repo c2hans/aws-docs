@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-gett
 <a name="data-delivery-s3-gs-prerequisites"></a>
 
 Before you begin, ensure the following prerequisites are met:
-+ A Kinesis Data Streams stream configured with On-Demand Standard or On-Demand Advantage capacity mode.
++ A Kinesis Data Streams stream configured with On-demand Standard or On-demand Advantage capacity mode.
 + An IAM service execution role that grants Kinesis Data Streams permission to deliver records to your destination. See [IAM permissions for data delivery](data-delivery-iam.md).
 + A general purpose Amazon S3 bucket for the destination.
 + The AWS CLI installed and configured, if you use the AWS CLI.

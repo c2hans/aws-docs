@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Request expression examples by model family
 <a name="functions-expressions-request"></a>
 
-Each model family has its own request body, so the reference for the body shape is always the Amazon Bedrock documentation for the model that you chose. The examples in this section use the Anthropic Claude Messages API to show the technique; the placement of `media.frames` and `media.video` is the same whichever family you use, and only the field names around them change.
+Each model family has its own request body, so the reference for the body shape is always the Amazon Bedrock documentation for the model that you chose. The examples in this section use the Anthropic Claude Messages API to show the technique; the placement of `media.frames` is the same whichever family you use, and only the field names around it change.
 
 **Frames**
 
@@ -27,8 +27,6 @@ Each model family has its own request body, so the reference for the body shape 
   ]
 }
 ```
-
-`media.video` is placed the same way, in whichever field the model uses for inline video bytes. Only a model that accepts video can take that input, so check the documentation for the model you chose.
 
 **Text-only context**. The transcript and the contextual classification are plain data, so build the prompt with string concatenation (`&`).
 
@@ -64,9 +62,9 @@ You can read specific fields of the contextual classification rather than sendin
       "role": "user",
       "content": [
         { "type": "text",
-          "text": "Scene summary: " & (media.contextual.summary != null ? media.contextual.summary : "none")
-                & "\nObjects: " & $join(media.contextual.objects, ", ")
-                & "\nBrand-safety risk: " & media.contextual.garm.risk
+          "text": "Scene summary: " & ($exists(media.contextual.scene.summary) ? media.contextual.scene.summary : "none")
+                & "\nObjects: " & $join(media.contextual.scene.objects, ", ")
+                & "\nFlagged brand safety categories: " & $join(media.contextual.scene.garm.suitability.categories[flagged].category, ", ")
                 & "\n\nIs this scene suitable for a family audience? Answer yes or no, with one reason." }
       ]
     }
@@ -74,8 +72,8 @@ You can read specific fields of the contextual classification rather than sendin
 }
 ```
 
-Use `$string()` when you do want to hand the model the whole object.
+Use `$string()` when you do want to hand the model a whole level.
 
 ```
-{ "type": "text", "text": "Classify this scene against my taxonomy:\n\n" & $string(media.contextual) }
+{ "type": "text", "text": "Classify this scene against my taxonomy:\n\n" & $string(media.contextual.scene) }
 ```

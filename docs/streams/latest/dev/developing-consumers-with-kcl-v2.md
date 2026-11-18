@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/streams/latest/dev/developing-consumers-with-kcl-v2.html
 ---
 
-# Develop KCL 2.x Consumers
+# Develop KCL 2.x consumers
 <a name="developing-consumers-with-kcl-v2"></a>
 
 **Important**

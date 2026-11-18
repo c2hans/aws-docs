@@ -184,6 +184,34 @@ Content-type: application/json
             "Status": "string"
          }
       },
+      "ContactLens": {
+         "ConversationalAnalytics": {
+            "Configuration": {
+               "ChannelConfiguration": {
+                  "AnalyticsModes": [ "string" ]
+               },
+               "Enabled": boolean,
+               "LanguageLocale": "string",
+               "LanguageLocales": [ "string" ],
+               "RedactionConfiguration": {
+                  "Behavior": "string",
+                  "Entities": [ "string" ],
+                  "MaskMode": "string",
+                  "Policy": "string"
+               },
+               "SentimentConfiguration": {
+                  "Behavior": "string"
+               },
+               "SummaryConfiguration": {
+                  "SummaryModes": [ "string" ]
+               }
+            },
+            "ContactAnalysisReferenceState": {
+               "Status": "string",
+               "StatusReason": "string"
+            }
+         }
+      },
       "Customer": {
          "Capabilities": {
             "ScreenShare": "string",

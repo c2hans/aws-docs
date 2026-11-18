@@ -17,4 +17,3 @@ This chapter provides guidance on optimizing Amazon DocumentDB performance and t
 + [Best practices](best_practices.md)
 + [Managing indexes](managing-indexes.md)
 + [Managing document compression](doc-compression.md)
-+ [Managing dictionary-based compression](dict-compression.md)

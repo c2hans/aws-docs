@@ -17,7 +17,9 @@ Valid Values: `provider`
 Required: No
 
  ** filterValues **   <a name="config-Type-ConnectorFilter-filterValues"></a>
-The value of the filter. For `provider`, valid values include: `AZURE`.
+The value of the filter. For `provider`, valid values include:
++  `AZURE` – The connector is for Microsoft Azure
++  `GCP` – The connector is for Google Cloud
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No

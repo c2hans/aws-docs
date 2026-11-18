@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To list all the node groups in an Amazon EKS cluster**
-The following `list-nodegroups` example list all the node groups in an Amazon EKS cluster.
+The following `list-nodegroups` example lists all the node groups in an Amazon EKS cluster.
 
 ```
 aws eks list-nodegroups \

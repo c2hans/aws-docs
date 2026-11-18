@@ -57,6 +57,16 @@ Required: Yes
 
 ```
 {
+   "CreatedBy": {
+      "DomainId": "string",
+      "IamIdentity": {
+         "Arn": "string",
+         "PrincipalId": "string",
+         "SourceIdentity": "string"
+      },
+      "UserProfileArn": "string",
+      "UserProfileName": "string"
+   },
    "CreationTime": number,
    "DocumentSchemaVersion": "string",
    "FailureReason": "string",
@@ -78,6 +88,16 @@ Required: Yes
    "HubContentType": "string",
    "HubContentVersion": "string",
    "HubName": "string",
+   "LastModifiedBy": {
+      "DomainId": "string",
+      "IamIdentity": {
+         "Arn": "string",
+         "PrincipalId": "string",
+         "SourceIdentity": "string"
+      },
+      "UserProfileArn": "string",
+      "UserProfileName": "string"
+   },
    "LastModifiedTime": number,
    "ReferenceMinVersion": "string",
    "SageMakerPublicHubContentArn": "string",
@@ -91,6 +111,10 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [CreatedBy](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-CreatedBy"></a>
+Information about the user who created the hub content.
+Type: [UserContext](API_UserContext.md) object
 
  ** [CreationTime](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-CreationTime"></a>
 The date and time that hub content was created.
@@ -181,6 +205,10 @@ The name of the hub that contains the content.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
+
+ ** [LastModifiedBy](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-LastModifiedBy"></a>
+Information about the user who last modified the hub content.
+Type: [UserContext](API_UserContext.md) object
 
  ** [LastModifiedTime](#API_DescribeHubContent_ResponseSyntax) **   <a name="sagemaker-DescribeHubContent-response-LastModifiedTime"></a>
 The last modified time of the hub content.

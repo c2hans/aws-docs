@@ -77,6 +77,8 @@ The following example shows a `userIdentity` element for a request made on behal
 
 To learn more about how you can use `userId`, `identityStoreArn`, and `credentialId`, see [Identifying the user and session in IAM Identity Center user-initiated CloudTrail events](https://docs.aws.amazon.com/singlesignon/latest/userguide/sso-cloudtrail-use-cases.html#user-session-iam-identity-center) in the *IAM Identity Center User Guide*.
 
+**`userIdentity` for a request made by an AWS Builder ID user**
+
 The following example shows a `userIdentity` element for a request made by an [AWS Builder ID](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-aws_builder_id.html) user. AWS Builder ID is a personal profile that provides access to select tools and services including AWS Builder Center, Amazon Q Developer, and AWS Training and Certification. The `BuilderIdUser` type appears in CloudTrail events when an API request is authorized using an IAM Identity Center OAuth-issued access token (bearer authentication). This token is associated with an AWS Builder ID.
 
 ```

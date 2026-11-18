@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/track-
 # Materials and tools
 <a name="track-materials-build-tools"></a>
 
+<a name="materials-you-may-need"></a>**Materials you may need**
+
 To build a track, you will need the following materials:
 +  **For track borders:**
 
@@ -12,6 +14,8 @@ To build a track, you will need the following materials:
 +  **For track surface:**
 
   You can create a track on a dark-colored hard floor such as hardwood, carpet, concrete, or [asphalt felt](https://www.amazon.com/30-ASTM-D-226-DADE-CNTY/dp/B000FCIONS/ref=sr_1_12?ie=UTF8&qid=1549398905&sr=8-12&keywords=roofing+paper). The latter mimics the real-world road surface with minimal reflection. [Interlocked foam or rubber pads](https://www.amazon.com/dp/B013A4ATCQ?ref_=ams_ad_dp_ttl&th=1) are also good options.
+
+<a name="tools-you-may-need"></a>**Tools you may need**
 
 The following tools are either required or helpful to design and build your track:
 +  **Tape measure and scissors**

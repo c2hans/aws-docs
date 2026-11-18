@@ -26,3 +26,13 @@ Use a **user:Owner** tag to track which user owns a resource.
 <a name="resource-details-purpose"></a>
 
 Use a **user:Purpose** tag to track why a resource was created.
+
+## resourceTags/aws:s3:PrefixLevel1 through resourceTags/aws:s3:PrefixLevel15
+<a name="resource-details-s3-prefixlevel"></a>
+
+AWS-generated cost allocation tags that split cost allocation data adds to Amazon S3 prefix line items. resourceTags/aws:s3:PrefixLevel1 holds the first segment of the prefix path, resourceTags/aws:s3:PrefixLevel2 the second, and so on through resourceTags/aws:s3:PrefixLevel15 for the deepest matched level. Levels deeper than the matched prefix are empty. On the unattributed line item, resourceTags/aws:s3:PrefixLevel1 is `(unattributed)`.
+
+## resourceTags/aws:s3:BucketName
+<a name="resource-details-s3-bucketname"></a>
+
+An AWS-generated cost allocation tag that holds the name of the bucket on Amazon S3 prefix line items.

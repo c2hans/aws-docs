@@ -17,3 +17,5 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSConfigRemediation-EnablePITRForDynamoDbTable`](automation-aws-enable-pitr-ddb.md)
 + [`AWS-EnableDynamoDbAutoscaling`](AWS-EnableDynamoDbAutoscaling.md)
 + [`AWS-RestoreDynamoDBTable`](aws-restore-dynamodb-table.md)
++ [`AWSSupportRemediator-EnableDynamoDbDeletionProtection`](automation-awssupportremediator-enabledynamodbdeletionprotection.md)
++ [`AWSSupportRemediator-EnableDynamoDbPitr`](automation-awssupportremediator-enabledynamodbpitr.md)

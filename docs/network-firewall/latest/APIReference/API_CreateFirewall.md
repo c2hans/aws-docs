@@ -223,6 +223,8 @@ Required: No
             "AvailabilityZone": "string"
          }
       ],
+      "ContextStoreId": "string",
+      "ContextStoreOwnerAccountId": "string",
       "DeleteProtection": boolean,
       "Description": "string",
       "EnabledAnalysisTypes": [ "string" ],
@@ -293,6 +295,10 @@ Required: No
          }
       },
       "ConfigurationSyncStateSummary": "string",
+      "ContextStoreSyncState": {
+         "StatusMessage": "string",
+         "SyncStatus": "string"
+      },
       "Status": "string",
       "SyncStates": {
          "string" : {

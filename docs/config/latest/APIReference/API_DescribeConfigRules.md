@@ -33,7 +33,7 @@ The names of the AWS Config rules for which you want details. If you do not spec
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 25 items.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: No
 
  ** [Filters](#API_DescribeConfigRules_RequestSyntax) **   <a name="config-DescribeConfigRules-request-Filters"></a>

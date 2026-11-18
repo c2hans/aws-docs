@@ -22,6 +22,12 @@ Type: String
 Valid Values: `ENABLING | ENABLED | DISABLING | DISABLED | SUSPENDING | SUSPENDED`
 Required: Yes
 
+ ** ami **   <a name="inspector2-Type-ResourceStatus-ami"></a>
+The status of Amazon Machine Image (AMI) scanning for the account.
+Type: String
+Valid Values: `ENABLING | ENABLED | DISABLING | DISABLED | SUSPENDING | SUSPENDED`
+Required: No
+
  ** codeRepository **   <a name="inspector2-Type-ResourceStatus-codeRepository"></a>
 The status of Amazon Inspector scanning for code repositories.
 Type: String

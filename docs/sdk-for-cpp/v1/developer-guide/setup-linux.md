@@ -97,7 +97,7 @@ When building on a Mac with a case-insensitive filesystem, check the output of t
      cmake {{../aws-sdk-cpp}} -DCMAKE_BUILD_TYPE={{Debug}} -DCMAKE_PREFIX_PATH={{/usr/local/}} -DCMAKE_INSTALL_PREFIX={{/usr/local/}} -DBUILD_ONLY="{{s3}}"
      ```
 **Note**
-If you get an error Failed to build third-party libraries, check your version of CMake by running **cmake --version**. You must use CMake minimum version 3.13.
+If you get an error `Failed to build third-party libraries`, check your version of CMake by running **cmake --version**. You must use CMake minimum version 3.13.
 
 1. Build the SDK binaries. If you’re building the entire SDK, the operation can take one hour or longer.
 

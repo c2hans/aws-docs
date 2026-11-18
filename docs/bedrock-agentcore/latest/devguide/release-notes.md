@@ -80,6 +80,13 @@ Amazon Bedrock AgentCore Runtime agents on platform version V2 can now use resou
 
 For more information, see [Resource configurations](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html#runtime-v2-resource-configurations) in the *Amazon Bedrock AgentCore Developer Guide*.
 
+### Gateway: Advertise a custom domain for gateways behind a proxy
+<a name="_gateway_advertise_a_custom_domain_for_gateways_behind_a_proxy_2"></a>
+
+Amazon Bedrock AgentCore Gateway now supports a `domainOverride` setting for gateways that use JSON Web Token (JWT) inbound authorization. When clients reach your gateway through your own proxy or custom domain, the gateway can advertise that domain in its OAuth discovery responses. This domain replaces the default gateway endpoint. You configure a default domain and, optionally, alternate domains. Your proxy chooses which configured domain applies to each request by setting the `x-amzn-bedrock-agentcore-gateway-domain` header.
+
+For more information, see [Advertise a custom domain for gateways behind a proxy](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-inbound-auth.html#gateway-inbound-auth-jwt-domain-override) in the *Amazon Bedrock AgentCore Developer Guide*.
+
 ### Web Search: Search the web from your code with the InvokeWebSearch API
 <a name="_web_search_search_the_web_from_your_code_with_the_invokewebsearch_api_2"></a>
 

@@ -260,7 +260,7 @@ sbomgenPath: '{{SBOMGEN_PATH}}',
  The following are common errors you can encounter when using the Amazon Inspector Jenkins plugin. If the plugin fails, the build fails, and the console output shows `Plugin execution failed.` followed by the error.
 
 ### Unable to load credentials error
-<a name="w2aac41c19c21b5"></a>
+<a name="w2aac43c19c21b5"></a>
 
 **Error:**
  `software.amazon.awssdk.core.exception.SdkClientException: Unable to load credentials from any of the providers in the chain`, followed by the list of credential providers that the plugin tried. If you didn't set an **IAM Role**, the last error can instead be `Profile file contained no credentials for profile 'default'`.
@@ -271,7 +271,7 @@ sbomgenPath: '{{SBOMGEN_PATH}}',
  The plugin couldn't get AWS credentials on the Jenkins controller. Configure one of the authentication options in the build step, as described in [Step 4](#cicd-jenkins-add-aws-credentials) and [Step 6](#cicd-jenkins-add-inspector-scan). Alternatively, make credentials available to the controller, for example with an Amazon EC2 instance profile. If the scan request fails, the plugin tries once more without the access key, OIDC token, or profile name. If you set an **IAM Role**, it assumes the role with the controller's own credentials. Otherwise, it uses the `default` profile on the controller. Because of this retry, the first error in the console output usually shows the cause.
 
 ### Failed to load image from tarball, local, or remote sources
-<a name="w2aac41c19c21b7"></a>
+<a name="w2aac43c19c21b7"></a>
 
 **Error:**
  `[ImageDownloadFailed]: failed to load image from tarball, local, or remote sources.`
@@ -286,7 +286,7 @@ sbomgenPath: '{{SBOMGEN_PATH}}',
 +  For an image in a private repository, the build step uses the Docker credentials from [Step 3](#cicd-jenkins-add-jenkins).
 
 ### Inspector-sbomgen path error
-<a name="w2aac41c19c21b9"></a>
+<a name="w2aac43c19c21b9"></a>
 
 **Error:**
  `Exception:java.lang.IllegalArgumentException: Provided SBOMgen path is invalid or not executable: /opt/inspector/inspector-sbomgen`
@@ -307,7 +307,7 @@ sbomgenPath: '{{SBOMGEN_PATH}}',
  If the error is `Invalid sbomgen path: {{path}}`, the path contains a character that isn't allowed. The path can contain only letters, numbers, spaces, periods (.), underscores (\_), hyphens (-), colons (:), and forward slashes (/).
 
 ### Unsupported OS or unsupported architecture error
-<a name="w2aac41c19c21c11"></a>
+<a name="w2aac43c19c21c11"></a>
 
 **Error:**
  `Exception:java.lang.UnsupportedOperationException: Unsupported OS: mac os x`
@@ -318,7 +318,7 @@ sbomgenPath: '{{SBOMGEN_PATH}}',
  The Amazon Inspector SBOM Generator is available only for Linux with an x86\_64 (amd64) or arm64 CPU. With the **Automatic** installation method, the plugin checks the operating system of the Jenkins controller and the CPU of the machine that runs the build. Run the controller on Linux, and run your build on Linux with a supported CPU.
 
 ### HTML report has no styling or shows zero findings
-<a name="w2aac41c19c21c13"></a>
+<a name="w2aac43c19c21c13"></a>
 
 **Error:**
  The HTML report has no styling and shows zero findings. The top of the report shows `Jenkins may be blocking CSS/JS, visit https://www.jenkins.io/doc/book/security/configuring-content-security-policy/ for a possible fix.`

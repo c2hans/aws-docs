@@ -26,8 +26,8 @@ The following table describes how Lambda handles invocation requests based on wh
 | --- | --- | --- | --- | --- |
 | 1 | No | N/A | N/A | New execution started: Lambda generates a unique execution ID and starts a new execution |
 | 2 | Yes | Never existed or retention expired | N/A | New execution started: Lambda starts a new execution with the provided name |
-| 3 | Yes | Running | Yes | Idempotent start: Lambda returns the existing execution information without starting a duplicate. For synchronous invocations, this acts as a reattach to the running execution |
-| 4 | Yes | Running | No | Error: Lambda returns DurableExecutionAlreadyStartedException error because an execution with this name is already running with different payload |
+| 3 | Yes | Running, pausing, or paused | Yes | Idempotent start: Lambda returns the existing execution information without starting a duplicate. For synchronous invocations, this acts as a reattach to the running execution |
+| 4 | Yes | Running, pausing, or paused | No | Error: Lambda returns DurableExecutionAlreadyStartedException error because an execution with this name is already running with different payload |
 | 5 | Yes | Closed (succeeded, failed, stopped, or timed out) | Yes | Idempotent start: Lambda returns the existing execution information without starting a new execution. The closed execution result is returned |
 | 6 | Yes | Closed (succeeded, failed, stopped, or timed out) | No | Error: Lambda returns DurableExecutionAlreadyStartedException error because an execution with this name already completed with different payload |
 

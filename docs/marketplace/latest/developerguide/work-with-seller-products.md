@@ -795,7 +795,7 @@ The product is visible in AWS Marketplace. Buyers can view and subscribe to the 
 The product is no longer visible to the public and doesn't accept new subscribers. Existing subscribers can continue using this product until their subscription expires.
 
 **Note**
-The `UpdateVisibility` change type requires a manual review from the AWS Marketplace Seller Operations team, which results in a longer execution time. Use `UpdateVisibility` separately in its own change set.
+When `TargetVisibility` is `Public`, use `UpdateVisibility` in its own change set. The AWS Marketplace Seller Operations team might manually review the change, which results in a longer execution time. Restrictions take effect without a review, and you can restrict multiple products in one change set.
 
 To update your product's visibility, call the `StartChangeSet` API operation with the `UpdateVisibility` change type, as shown in the following example.
 
@@ -874,10 +874,12 @@ The following schema validations are specific to `UpdateVisibility` actions in t
 | Type of targeting  | Valid current states | ReplacementProductId (input)  | Validation checks |
 | --- | --- | --- | --- |
 | Public | Limited and Restricted | Not allowed | Valid current state |
-| Limited | Public and Restricted | Not allowed | Valid current state |
+| Limited | Limited. You can target Limited only when the product is already Limited. | Not allowed | Valid current state |
 | Restricted | Public and Limited | String (Optional) | ReplacementProductId must belong to an existing Limited or Public product. |
 
-After triggering this change type, it can take up to 37 days to complete. This includes the time the AWS Marketplace Seller Operations Team needs to review, audit, and approve. When restricting a product, you have 24 hours to change your mind, by calling `CancelChangeSet`, before the AWS Marketplace Seller Operations Team begins auditing. For more information, see [`CancelChangeSet`](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_CancelChangeSet.html).
+When `TargetVisibility` is `Restricted`, the change takes effect as soon as the change set succeeds. There's no waiting period. To make a restricted product available again, submit a new `UpdateVisibility` change with `TargetVisibility` set to `Public`.
+
+When `TargetVisibility` is `Public`, the AWS Marketplace Seller Operations team might manually review the request, which can take 7–10 business days.
 
 **Response Syntax**
 

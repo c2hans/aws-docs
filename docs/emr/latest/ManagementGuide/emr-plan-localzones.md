@@ -52,7 +52,7 @@ Local Zones don't currently support Amazon EMR Notebooks or connections directly
   ```
   aws emr create-cluster \
   --name "Local Zones cluster" \
-  --release-label {{emr-5.29.0}} \
+  --release-label {{emr-7.14.0}} \
   --applications Name=Spark \
   --ec2-attributes KeyName=myKey,SubnetId={{subnet-22XXXX1234567}} \
   --instance-type m5.xlarge --instance-count 3 --use-default-roles

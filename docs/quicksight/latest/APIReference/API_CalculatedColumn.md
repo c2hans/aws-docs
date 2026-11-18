@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
  ** ColumnId **   <a name="QS-Type-CalculatedColumn-ColumnId"></a>
 A unique ID to identify a calculated column. During a dataset update, if the column ID of a calculated column matches that of an existing calculated column, Quick Sight preserves the existing calculated column.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
  ** ColumnName **   <a name="QS-Type-CalculatedColumn-ColumnName"></a>

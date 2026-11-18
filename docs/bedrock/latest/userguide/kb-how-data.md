@@ -26,7 +26,7 @@ Unstructured data refers to data that isn't forced into a predefined structure. 
 A data source contains the raw form of your documents. To optimize the query process, a knowledge base converts your raw data into *vector embeddings*, a numerical representation of the data, to quantify similarity to queries that are also converted into vector embeddings. Amazon Bedrock Knowledge Bases uses the following resources in the process of converting your data source:
 + Embedding model – A foundation model that converts your data into vector embeddings. For multimodal data containing both text and images, you can use multimodal embedding models like Amazon Titan Multimodal Embeddings G1 or Cohere Embed v3.
 + Vector store – A service that stores the vector representation of your data. The following vector stores are supported:
-  + Amazon OpenSearch Serverless
+  + OpenSearch Serverless
   + Amazon OpenSearch Service Managed Clusters
   + Amazon Neptune
   + Amazon Aurora (RDS)

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association TriggerFilterGroup
 <a name="aws-properties-devopsagent-association-triggerfiltergroup"></a>
 
-<a name="aws-properties-devopsagent-association-triggerfiltergroup-description"></a>The `TriggerFilterGroup` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+A group of trigger conditions. The group matches when all of its conditions pass. Specify at least one condition.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-triggerfiltergroup-syntax"></a>
@@ -38,7 +38,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-triggerfiltergroup-properties"></a>
 
 `Events`  <a name="cfn-devopsagent-association-triggerfiltergroup-events"></a>
-Property description not available.
+The webhook events that start the capability. The condition passes when the event is one of the listed events.
+`PULL_REQUEST_READY_FOR_REVIEW`: a pull request or merge request is created, updated, or marked ready for review while it isn't a draft. `PULL_REQUEST_DRAFT`: a pull request or merge request is created or updated while it is a draft.
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `PULL_REQUEST_READY_FOR_REVIEW | PULL_REQUEST_DRAFT`
@@ -47,7 +48,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetBranches`  <a name="cfn-devopsagent-association-triggerfiltergroup-targetbranches"></a>
-Property description not available.
+The condition on the target branch of the pull request or merge request. The condition passes when the target branch matches one of the patterns.
 *Required*: No
 *Type*: [PatternFilter](aws-properties-devopsagent-association-patternfilter.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eks/index.html
 title: 'Amazon Elastic Kubernetes Service Documentation'
 canonical_url: https://docs.aws.amazon.com/eks/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # Amazon Elastic Kubernetes Service Documentation

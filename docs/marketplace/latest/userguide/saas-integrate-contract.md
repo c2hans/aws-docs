@@ -75,4 +75,6 @@ After your product is launched, the service must continue to respond to these sc
 
 1. After you have completed all the integration requirements and tested the solution, notify the AWS Marketplace Operations team. They will then test the solution by verifying that you have successfully called the `GetEntitlements` API operation and sufficiently onboarded new customers.
 
-After your integration and testing is complete, you can perform a final review and list your product on the public AWS Marketplace. For more information, see [Creating a SaaS product in AWS Marketplace](saas-create-product.md). You can also cancel your test subscription by completing a Refund Request Form. For more information on cancelling a subscription, see the [Requesting a billing adjustment (refund)](refunds.md#refund-process).
+After your integration and testing is complete, you can perform a final review and list your product on the public AWS Marketplace. For more information, see [Creating a SaaS product in AWS Marketplace](saas-create-product.md).
+
+To cancel your contract test subscription, request an agreement cancellation from the **Agreements** page in AWS Partner Central. For instructions on canceling an agreement, see [Requesting an agreement cancellation](refunds.md#requesting-cancellation). Canceling stops future charges only. To refund charges that were already billed, apply a billing adjustment. For more information, see [Requesting a billing adjustment (refund)](refunds.md#refund-process).

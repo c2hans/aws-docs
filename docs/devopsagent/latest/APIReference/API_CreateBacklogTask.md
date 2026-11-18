@@ -72,7 +72,7 @@ Required: No
  ** [taskType](#API_CreateBacklogTask_RequestSyntax) **   <a name="devopsagent-CreateBacklogTask-request-taskType"></a>
 The type of task being created
 Type: String
-Valid Values: `INVESTIGATION | EVALUATION | RELEASE_READINESS_REVIEW | RELEASE_TESTING`
+Valid Values: `INVESTIGATION | EVALUATION | RELEASE_READINESS_REVIEW | RELEASE_TESTING | CODE_CHANGE_RISK_ANALYSIS`
 Required: Yes
 
  ** [title](#API_CreateBacklogTask_RequestSyntax) **   <a name="devopsagent-CreateBacklogTask-request-title"></a>
@@ -143,6 +143,8 @@ HTTP Status Code: 403
 The request conflicts with the current state of the resource.
  ** message **
 Detailed error message describing the conflict.
+ ** reason **
+A machine-readable reason code that explains why the request conflicted with the current state of the resource. For example, `CHAT_ARCHIVED` indicates that the request acted on a chat that is archived. This field is absent when no specific reason applies.
 HTTP Status Code: 409
 
  ** ContentSizeExceededException **

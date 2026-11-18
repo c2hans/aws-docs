@@ -40,7 +40,7 @@ Required: Yes
  ** taskType **   <a name="devopsagent-Type-Task-taskType"></a>
 The type of this task
 Type: String
-Valid Values: `INVESTIGATION | EVALUATION | RELEASE_READINESS_REVIEW | RELEASE_TESTING`
+Valid Values: `INVESTIGATION | EVALUATION | RELEASE_READINESS_REVIEW | RELEASE_TESTING | CODE_CHANGE_RISK_ANALYSIS`
 Required: Yes
 
  ** title **   <a name="devopsagent-Type-Task-title"></a>

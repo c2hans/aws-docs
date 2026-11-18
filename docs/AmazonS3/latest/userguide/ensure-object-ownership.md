@@ -95,7 +95,7 @@ aws s3 cp {{file.txt}} s3://{{amzn-s3-demo-bucket}} --acl bucket-owner-full-cont
 
 After the bucket policy is put into effect, if the client does not include the `bucket-owner-full-control` canned ACL, the operation fails, and the uploader receives the following error:
 
-An error occurred (AccessDenied) when calling the PutObject operation: Access Denied.
+`An error occurred (AccessDenied) when calling the PutObject operation: Access Denied`.
 
 **Note**
 If clients need access to objects after uploading, you must grant additional permissions to the uploading account. For information about granting accounts access to your resources, see [Walkthroughs that use policies to manage access to your Amazon S3 resources](example-walkthroughs-managing-access.md).

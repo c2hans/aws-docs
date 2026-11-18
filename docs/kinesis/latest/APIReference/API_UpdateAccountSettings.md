@@ -77,7 +77,7 @@ A message that provides information about the error.
 HTTP Status Code: 400
 
  ** ValidationException **
-The request failed data validation for this data stream, such as a parameter value that is outside its valid range or a `StreamARN` that is not in a valid format. Check the error message for details about which parameter or value caused the validation failure, and correct it before retrying.
+The request failed validation. For example, a parameter value is not valid, a combination of parameters is not supported, or the operation is not supported for the stream's capacity mode. The error message describes the specific reason.
 HTTP Status Code: 400
 
 ## See Also

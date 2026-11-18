@@ -19,6 +19,8 @@ Creates a stack to start streaming applications to users. A stack consists of an
       }
    ],
    "AgentAccessConfig": {
+      "KmsKeyArn": "{{string}}",
+      "ReplaySessionEnabled": {{boolean}},
       "S3BucketArn": "{{string}}",
       "ScreenImageFormat": "{{string}}",
       "ScreenResolution": "{{string}}",
@@ -176,6 +178,8 @@ Required: No
          }
       ],
       "AgentAccessConfig": {
+         "KmsKeyArn": "string",
+         "ReplaySessionEnabled": boolean,
          "S3BucketArn": "string",
          "ScreenImageFormat": "string",
          "ScreenResolution": "string",

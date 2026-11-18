@@ -13,3 +13,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSConfigRemediation-UpdateOpenSearchDomainSecurityGroups`](automation-aws-update-opensearch-security-group.md)
 + [`AWSSupport-TroubleshootOpenSearchRedYellowCluster`](automation-troubleshoot-opensearch-red-yellow-cluster.md)
 + [`AWSSupport-TroubleshootOpenSearchHighCPU`](automation-troubleshoot-opensearch-high-cpu.md)
++ [`AWSSupportRemediator-EnforceOpenSearchEncryptionWithLatestPolicy`](automation-awssupportremediator-enforceopensearchencryptionwithlatestpolicy.md)
++ [`AWSSupportRemediator-EnableOpenSearchNodeToNodeEncryption`](automation-awssupportremediator-enableopensearchnodetonodeencryption.md)
++ [`AWSSupportRemediator-EnableOpenSearchLogging`](automation-awssupportremediator-enableopensearchlogging.md)

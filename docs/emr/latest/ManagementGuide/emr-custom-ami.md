@@ -129,7 +129,7 @@ Linux line continuation characters (\\) are included for readability. They can b
   ```
   aws emr create-cluster --name "{{Cluster with My Custom AMI}}" \
   --custom-ami-id {{MyAmiID}} --ebs-root-volume-size {{20}} \
-  --release-label emr-5.7.0 --use-default-roles \
+  --release-label emr-7.14.0 --use-default-roles \
   --instance-count {{2}} --instance-type {{m5.xlarge}}
   ```
 

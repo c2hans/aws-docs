@@ -16,6 +16,9 @@ Describes the settings for a registry. The replication configuration for a repos
    "replicationConfiguration": {
       "rules": [
          {
+            "deleteReplication": {
+               "enabled": boolean
+            },
             "destinations": [
                {
                   "region": "string",

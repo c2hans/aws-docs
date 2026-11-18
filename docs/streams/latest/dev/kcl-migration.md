@@ -12,7 +12,7 @@ This topic explains the differences between versions 1.x and 2.x of the Kinesis 
 
 Version 2.0 of the KCL introduces the following interface changes:
 
-**KCL Interface Changes**
+**KCL interface changes**
 
 | KCL 1.x Interface | KCL 2.0 Interface |
 | --- | --- |
@@ -351,7 +351,7 @@ The Amazon Kinesis Client might see significantly increased latency, unless you 
 
 With the 2.0 release of the Kinesis Client Library, the configuration of the client moved from a single configuration class (`KinesisClientLibConfiguration`) to six configuration classes. The following table describes the migration.
 
-**Configuration Fields and Their New Classes**
+**Configuration fields and their new classes**
 
 | Original Field | New Configuration Class | Description |
 | --- | --- | --- |

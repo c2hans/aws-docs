@@ -5,6 +5,10 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-d
 # Logging data events
 <a name="logging-data-events-with-cloudtrail"></a>
 
+**Upcoming: new Amazon S3 data event types**
+Starting December 21, 2026, AWS CloudTrail will deliver two new types of Amazon S3 data events to trails that already log S3 data events: S3 Lifecycle events and S3 authentication failure events. These event types are not available yet, and CloudTrail will not deliver them before December 21, 2026.
+When these events become available, they are billed at standard CloudTrail data event rates (see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/)), which can increase your CloudTrail charges. To avoid the charges, [exclude the new events](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-events) before December 21, 2026. These events provide near real-time delivery of S3 activity that was previously available only through S3 Server Access Logs.
+
 This section describes how to log data events using the [CloudTrail console](#logging-data-events-console) and [AWS CLI](#creating-data-event-selectors-with-the-AWS-CLI).
 
 By default, trails and event data stores do not log data events. Additional charges apply for data events. For more information, see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/).
@@ -24,7 +28,7 @@ The events that are logged by your trails are available in Amazon EventBridge. F
 
 **Contents**
 + [Data events](#logging-data-events)
-  + [Data events supported by AWS CloudTrail](#w2aac21c31c19c11)
+  + [Data events supported by AWS CloudTrail](#w2aac21c33c21c11)
   + [Examples: Logging data events for Amazon S3 objects](#logging-data-events-examples)
   + [Logging data events for S3 objects in other AWS accounts](#logging-data-events-for-s3-resources-in-other-accounts)
 + [Read-only and write-only events](#read-write-events-data)
@@ -63,7 +67,7 @@ The events that are logged by your trails are available in Amazon EventBridge. F
     + [Determine whether a person or a lifecycle rule deleted an object](logging-s3-data-events-governance.md#logging-s3-data-events-who-deleted-object)
   + [Compliance: prove your controls work](logging-s3-data-events-governance.md#logging-s3-data-events-compliance)
     + [Verify that CloudTrail S3 data event logging is turned on](logging-s3-data-events-governance.md#logging-s3-data-events-verify-logging)
-  + [Logging and excluding Amazon S3 lifecycle and authentication failure events](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-events)
+  + [Logging and excluding Amazon S3 lifecycle and authentication failure events (upcoming)](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-events)
     + [Amazon S3 lifecycle events](logging-s3-data-events-governance.md#logging-s3-lifecycle-events)
     + [Considerations](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-considerations)
     + [Examples: Log Amazon S3 lifecycle and authentication failure events](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-examples-log)
@@ -95,7 +99,7 @@ For trails, you can use basic or advanced event selectors to log data events for
 For event data stores, you can use only advanced event selectors to include data events.
 
 ### Data events supported by AWS CloudTrail
-<a name="w2aac21c31c19c11"></a>
+<a name="w2aac21c33c21c11"></a>
 
 | AWS service | Description | Resource type (console) | resources.type value |
 | --- | --- | --- | --- |
@@ -186,6 +190,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon CodeWhisperer | Amazon CodeWhisperer API activity on a customization. | CodeWhisperer customization | `AWS::CodeWhisperer::Customization` |
 | Amazon CodeWhisperer | Amazon CodeWhisperer API activity on a profile. | CodeWhisperer | `AWS::CodeWhisperer::Profile` |
 | Amazon Cognito | Amazon Cognito API activity on Amazon Cognito identity pools. For more information, see [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-info-in-cloudtrail.html#identity-pools-cloudtrail-events). | Cognito Identity Pools | `AWS::Cognito::IdentityPool` |
+| AWS Context | Agent-context-level Data events for AWS Context. | AWS agent context | `AWS::Context::AgentContext` |
 | AWS IAM Credential Broker | Credential provider level events for AWS IAM Credential Broker. | AWS IAM Credential Broker Credential Provider | `AWS::CredentialBroker::CredentialProvider` |
 | AWS Data Exchange | AWS Data Exchange API activity on assets. | Data Exchange asset | `AWS::DataExchange::Asset` |
 | AWS Deadline Cloud | Deadline Cloud API activity on fleets. For more information, see [AWS Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/logging-using-cloudtrail.html#cloudtrail-data-events). | Deadline Cloud fleet | `AWS::Deadline::Fleet` |

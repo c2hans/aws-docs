@@ -215,7 +215,7 @@ When using the RunJobFlow action to create a cluster with multiple primary nodes
          "PlacementStrategy":"NONE"
       }
    ],
-   "ReleaseLabel":"emr-5.30.1",
+   "ReleaseLabel":"emr-7.14.0",
    "Instances":{
       "ec2SubnetId":"subnet-22XXXX01",
       "ec2KeyName":"ec2_key_pair_name",
@@ -250,7 +250,7 @@ When using the RunJobFlow action to create a cluster with multiple primary nodes
 aws emr create-cluster \
 --name "ha-cluster" \
 --placement-group-configs InstanceRole=MASTER,PlacementStrategy=NONE \
---release-label emr-5.30.1 \
+--release-label emr-7.14.0 \
 --instance-groups InstanceGroupType=MASTER,InstanceCount=3,InstanceType=m5.xlarge InstanceGroupType=CORE,InstanceCount=4,InstanceType=m5.xlarge \
 --ec2-attributes KeyName=ec2_key_pair_name,InstanceProfile=EMR_EC2_DefaultRole,SubnetId=subnet-22XXXX01 \
 --service-role EMR_DefaultRole \

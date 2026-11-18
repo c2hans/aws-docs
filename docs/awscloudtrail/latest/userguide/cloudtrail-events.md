@@ -5,6 +5,10 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 # Understanding CloudTrail events
 <a name="cloudtrail-events"></a>
 
+**Upcoming: new Amazon S3 data event types**
+Starting December 21, 2026, AWS CloudTrail will deliver two new types of Amazon S3 data events to trails that already log S3 data events: S3 Lifecycle events and S3 authentication failure events. These event types are not available yet, and CloudTrail will not deliver them before December 21, 2026.
+When these events become available, they are billed at standard CloudTrail data event rates (see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/)), which can increase your CloudTrail charges. To avoid the charges, [exclude the new events](logging-s3-data-events-governance.md#logging-s3-lifecycle-authn-events) before December 21, 2026. These events provide near real-time delivery of S3 activity that was previously available only through S3 Server Access Logs.
+
 An event in CloudTrail is the record of an activity in an AWS account. This activity can be an action taken by an IAM identity, or service that is monitorable by CloudTrail. CloudTrail events provide a history of both API and non-API account activity made through the AWS Management Console, AWS SDKs, command line tools, and other AWS services.
 
 CloudTrail log files aren't an ordered stack trace of the public API calls, so events don't appear in any specific order.
@@ -148,7 +152,7 @@ For trails, you can use basic or advanced event selectors to log data events for
 For event data stores, you can use only advanced event selectors to include data events.
 
 ### Data events supported by AWS CloudTrail
-<a name="w2aac21c23c17"></a>
+<a name="w2aac21c25c17"></a>
 
 | AWS service | Description | Resource type (console) | resources.type value |
 | --- | --- | --- | --- |
@@ -239,6 +243,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon CodeWhisperer | Amazon CodeWhisperer API activity on a customization. | CodeWhisperer customization | `AWS::CodeWhisperer::Customization` |
 | Amazon CodeWhisperer | Amazon CodeWhisperer API activity on a profile. | CodeWhisperer | `AWS::CodeWhisperer::Profile` |
 | Amazon Cognito | Amazon Cognito API activity on Amazon Cognito identity pools. For more information, see [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-info-in-cloudtrail.html#identity-pools-cloudtrail-events). | Cognito Identity Pools | `AWS::Cognito::IdentityPool` |
+| AWS Context | Agent-context-level Data events for AWS Context. | AWS agent context | `AWS::Context::AgentContext` |
 | AWS IAM Credential Broker | Credential provider level events for AWS IAM Credential Broker. | AWS IAM Credential Broker Credential Provider | `AWS::CredentialBroker::CredentialProvider` |
 | AWS Data Exchange | AWS Data Exchange API activity on assets. | Data Exchange asset | `AWS::DataExchange::Asset` |
 | AWS Deadline Cloud | Deadline Cloud API activity on fleets. For more information, see [AWS Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/logging-using-cloudtrail.html#cloudtrail-data-events). | Deadline Cloud fleet | `AWS::Deadline::Fleet` |
@@ -569,6 +574,7 @@ You can log network activity events for the following services:
 + AWS IoT Secured Tunneling
 + AWS IoT SiteWise
 + AWS License Manager
++ AWS Partner Central Demand Generator
 + AWS Partner Central Revenue Measurement
 + AWS Secrets Manager
 + AWS SSO

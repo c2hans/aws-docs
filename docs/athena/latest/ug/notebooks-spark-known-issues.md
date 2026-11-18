@@ -12,7 +12,7 @@ This page documents some of the known issues in Athena for Apache Spark.
 
 Although Spark does not allow databases to be created with an empty location property, databases in AWS Glue can have an empty `LOCATION` property if they are created outside of Spark.
 
-If you create a table and specify a AWS Glue database that has an empty `LOCATION` field, an exception like the following can occur: IllegalArgumentException: Cannot create a path from an empty string.
+If you create a table and specify a AWS Glue database that has an empty `LOCATION` field, an exception like the following can occur: `IllegalArgumentException: Cannot create a path from an empty string.`
 
 For example, the following command throws an exception if the default database in AWS Glue contains an empty `LOCATION` field:
 

@@ -612,16 +612,19 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   SendBulkEmail  **
-  - **IAM action:**  [ses:SendBulkEmail](#list_sesv2-action-SendBulkEmail)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [ses:SendBulkEmail](#list_sesv2-action-SendBulkEmail)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ses:SendBulkTemplatedEmail](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendBulkTemplatedEmail.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   SendCustomVerificationEmail  **
   - **IAM action:**  [ses:SendCustomVerificationEmail](#list_sesv2-action-SendCustomVerificationEmail)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   SendEmail  **
+  - **IAM action:**  [ses:SendEmail](#list_sesv2-action-SendEmail)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ses:SendRawEmail](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendRawEmail.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ses:SendTemplatedEmail](https://docs.aws.amazon.com/ses/latest/APIReference/API_SendTemplatedEmail.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   TagResource  **
   - **IAM action:**  [ses:TagResource](#list_sesv2-action-TagResource)

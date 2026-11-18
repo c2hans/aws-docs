@@ -26,6 +26,7 @@ You can create a core network policy version through either the AWS Cloud WAN co
 + [Routing policies](cloudwan-routing-policies.md)
 + [Create a policy version using the console](cloudwan-create-policy-console.md)
 + [Create a policy version using JSON](cloudwan-create-policy-json.md)
++ [Enable multipath resilience](enable-multipath-resilience-cloudwan.md)
 + [View a core network policy change set](cloudwan-policy-version-view.md)
 + [Compare policy change set versions](cloudwan-policy-version-compare.md)
 + [Deploy a core network policy version](cloudwan-policy-version-deploy.md)

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troubleshooting-agent-vpc-endpoints.html
 ---
 
-# Configuring Interface VPC Endpoints for Amazon SageMaker Unified Studio MCP
+# Configuring interface VPC endpoints for Amazon SageMaker Unified Studio MCP
 <a name="spark-troubleshooting-agent-vpc-endpoints"></a>
 
 You can establish a private connection between your VPC and Amazon SageMaker Unified Studio MCP service by creating an *interface VPC endpoint*. Interface endpoints are powered by [Amazon VPC](https://aws.amazon.com/vpc/), which enables you to privately access the MCP server in your VPC without an internet gateway, NAT device, VPN connection, or connection. Instances in your VPC don't need public IP addresses to communicate with the MCP service and traffic between your VPC and MCP service does not leave the Amazon network.
@@ -21,7 +21,7 @@ If you enable private DNS for the endpoint, you can make API requests to Amazon 
 
 For more information, see [Accessing a service through an interface endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#access-service-though-endpoint) in the *Amazon VPC User Guide*.
 
-## Step 2: Creating a VPC endpoint Policy for Amazon SageMaker Unified Studio MCP
+## Step 2: Creating a VPC endpoint policy for Amazon SageMaker Unified Studio MCP
 <a name="create-vpc-endpoint-policy"></a>
 
 You can attach an endpoint policy to your VPC endpoint that controls access to Amazon SageMaker Unified Studio MCP. The policy specifies the following information:
@@ -61,14 +61,14 @@ The following is an example of an endpoint policy for Amazon SageMaker Unified S
 
 The `curl` command validates end-to-end network connectivity from your VPC network (EC2) to the VPC endpoint by making an HTTP/HTTPS request. A curl response receiving a Message back from the MCP server confirms that the complete network path is functional.
 
-### Method 1: With Private DNS Enabled (Recommended)
+### Method 1: With private DNS enabled (recommended)
 <a name="test-private-dns-enabled"></a>
 
 ```
 curl https://sagemaker-unified-studio-mcp.us-east-1.api.aws/spark-troubleshooting/mcp
 ```
 
-### Method 2: Without Private DNS Enabled
+### Method 2: Without private DNS enabled
 <a name="test-private-dns-disabled"></a>
 
 ```
@@ -83,4 +83,4 @@ In both cases, the curl command returns a response: `{"Message":"...."}`. Return
 ## Step 4: Start using the MCP VPC endpoint
 <a name="use-vpc-endpoint"></a>
 
-Once you have verified the connection, you can follow the steps to configure the MCP in [Setup for Troubleshooting Agent](spark-troubleshooting-agent-setup.md). Simply use the private VPC endpoint in your MCP configuration.
+Once you have verified the connection, you can follow the steps to configure the MCP in [Set up the Apache Spark agents](spark-troubleshooting-agent-setup.md). Simply use the private VPC endpoint in your MCP configuration.

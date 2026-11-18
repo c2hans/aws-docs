@@ -24,8 +24,9 @@ Required: Yes
 
  ** instanceType **   <a name="evs-Type-HostInfoForCreate-instanceType"></a>
 The EC2 instance type that represents the host.
+With VCF 5.2.x, you can use only the `i4i.metal`, `i7i.metal-24xl`, and `i7i.metal-48xl` instance types. All of these instance types are supported with `vcfVersion` set to `SELF_DEPLOYED`.
 Type: String
-Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl`
+Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl | r7i.metal-24xl | r7i.metal-48xl`
 Required: Yes
 
  ** keyName **   <a name="evs-Type-HostInfoForCreate-keyName"></a>

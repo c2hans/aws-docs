@@ -322,6 +322,30 @@ Type: Array of [DateFilter](API_DateFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
+ ** machineImageId **   <a name="inspector2-Type-FilterCriteria-machineImageId"></a>
+The ID of the Amazon Machine Image (AMI) used to filter findings.
+Type: Array of [StringFilter](API_StringFilter.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
+ ** machineImageName **   <a name="inspector2-Type-FilterCriteria-machineImageName"></a>
+The name of the Amazon Machine Image (AMI) used to filter findings.
+Type: Array of [StringFilter](API_StringFilter.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
+ ** machineImageOwnerAccountId **   <a name="inspector2-Type-FilterCriteria-machineImageOwnerAccountId"></a>
+The ID of the Amazon Web Services account that owns the Amazon Machine Image (AMI) used to filter findings.
+Type: Array of [StringFilter](API_StringFilter.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
+ ** machineImagePlatform **   <a name="inspector2-Type-FilterCriteria-machineImagePlatform"></a>
+The platform of the Amazon Machine Image (AMI) used to filter findings.
+Type: Array of [StringFilter](API_StringFilter.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
  ** networkProtocol **   <a name="inspector2-Type-FilterCriteria-networkProtocol"></a>
 Details on network protocol used to filter findings.
 Type: Array of [StringFilter](API_StringFilter.md) objects
@@ -353,7 +377,7 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** resourceType **   <a name="inspector2-Type-FilterCriteria-resourceType"></a>
-Details on the resource types used to filter findings.
+Details on the resource types used to filter findings. For Google Cloud Platform (GCP) resources, the resource type is `compute.googleapis.com/Instance`, `cloudfunctions.googleapis.com/Function`, or `artifactregistry.googleapis.com/DockerImage`.
 Type: Array of [StringFilter](API_StringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No

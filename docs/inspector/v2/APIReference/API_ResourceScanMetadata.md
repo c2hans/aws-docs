@@ -50,6 +50,11 @@ An object that contains metadata details for an AWS Lambda function.
 Type: [LambdaFunctionMetadata](API_LambdaFunctionMetadata.md) object
 Required: No
 
+ ** machineImage **   <a name="inspector2-Type-ResourceScanMetadata-machineImage"></a>
+The machine image metadata associated with a covered resource.
+Type: [MachineImageMetadata](API_MachineImageMetadata.md) object
+Required: No
+
  ** serverlessFunction **   <a name="inspector2-Type-ResourceScanMetadata-serverlessFunction"></a>
 The serverless function metadata associated with a covered resource.
 Type: [ServerlessFunctionMetadata](API_ServerlessFunctionMetadata.md) object

@@ -46,6 +46,7 @@ The following actions are supported:
 +  [InvokeBrowser](API_InvokeBrowser.md)
 +  [InvokeCodeInterpreter](API_InvokeCodeInterpreter.md)
 +  [InvokeHarness](API_InvokeHarness.md)
++  [InvokeWebSearch](API_InvokeWebSearch.md)
 +  [ListABTests](API_ListABTests.md)
 +  [ListActors](API_ListActors.md)
 +  [ListBatchEvaluations](API_ListBatchEvaluations.md)

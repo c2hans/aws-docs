@@ -20,6 +20,13 @@ The ARN of the KMS key used to encrypt data when exporting findings.
 Type: String
 Required: Yes
 
+ ** expectedBucketOwner **   <a name="inspector2-Type-Destination-expectedBucketOwner"></a>
+The AWS account ID of the expected owner of the Amazon S3 bucket. If the actual bucket owner does not match, the export request fails.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `\d{12}`
+Required: No
+
  ** keyPrefix **   <a name="inspector2-Type-Destination-keyPrefix"></a>
 The prefix that the findings will be written under.
 Type: String

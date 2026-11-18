@@ -13,7 +13,6 @@ Filters the conformance packs based on an account ID, region, compliance type, a
  ** AccountId **   <a name="config-Type-AggregateConformancePackComplianceFilters-AccountId"></a>
 The 12-digit AWS account ID of the source account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

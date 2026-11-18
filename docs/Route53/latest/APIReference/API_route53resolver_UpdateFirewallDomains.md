@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 Updates the firewall domain list from an array of domain specifications.
 
+For an AutoAllowlist rule's managed domain list, use `ADD` to approve observed domains, `REMOVE` to stop allowing domains, unless a wildcard entry that's still on the list matches them, and `DENY` to dismiss observed domains. `REPLACE` and [ImportFirewallDomains](API_route53resolver_ImportFirewallDomains.md) aren't supported for these lists.
+
 DNS Firewall throttles `UpdateFirewallDomains` requests based on both the request rate and the total number of domains across your requests.
 
  **Best Practice for Updating Domain Lists**
@@ -50,11 +52,12 @@ Required: Yes
 
  ** [Operation](#API_route53resolver_UpdateFirewallDomains_RequestSyntax) **   <a name="Route53Resolver-route53resolver_UpdateFirewallDomains-request-Operation"></a>
 What you want DNS Firewall to do with the domains that you are providing:
-+  `ADD` - Add the domains to the ones that are already in the domain list.
-+  `REMOVE` - Search the domain list for the domains and remove them from the list.
-+  `REPLACE` - Update the domain list to exactly match the list that you are providing.
++  `ADD` - Add the domains to the ones that are already in the domain list. For an AutoAllowlist rule's managed domain list, this also marks the observed domains as allowed.
++  `REMOVE` - Search the domain list for the domains and remove them from the list. For an AutoAllowlist rule's managed domain list, the rule no longer allows the removed domains, unless a wildcard entry that's still on the list matches them.
++  `REPLACE` - Update the domain list to exactly match the list that you are providing. Not supported for an AutoAllowlist rule's managed domain list.
++  `DENY` - For an AutoAllowlist rule's managed domain list only, mark the specified observed domains as denied so that they're no longer listed for review. If a domain is on the managed domain list, `DENY` also removes it from the list. Specify fully qualified domain names. Wildcards aren't accepted.
 Type: String
-Valid Values: `ADD | REMOVE | REPLACE`
+Valid Values: `ADD | REMOVE | REPLACE | DENY`
 Required: Yes
 
 ## Response Syntax

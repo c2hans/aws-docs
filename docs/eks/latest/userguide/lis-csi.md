@@ -124,10 +124,14 @@ Newly launched EC2 instances with local instance storage have updated NVMe Ident
 <a name="_updated_field_values"></a>
 
 The following fields have changed on newly launched instances compared to older instances of the same type:
+
+<a name="_identify_controller_nvme_id_ctrl"></a>**Identify Controller (`nvme id-ctrl`)**
 + Bit 3 of OACS: changed from 0 to 1
 + Bit 8 of OAES: changed from 0 to 1
 + NN: changed from 1 to a value <= 256
 + TNVMCAP: changed from 0 to the actual size of the local storage
+
+<a name="_identify_namespace_nvme_id_ns"></a>**Identify Namespace (`nvme id-ns`)**
 + NVMCAP: changed from 0 to the actual size of the local storage
 + NGUID: changed from all zeros to a valid NGUID
 

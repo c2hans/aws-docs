@@ -66,6 +66,11 @@ A Next Generation policy defines the behavior of a firewall in a collection of f
                   "RulesString": "{{string}}"
                },
                "RuleVariables": {
+                  "ContextSets": {
+                     "{{string}}" : {
+                        "Definition": [ "{{string}}" ]
+                     }
+                  },
                   "IPSets": {
                      "{{string}}" : {
                         "Definition": [ "{{string}}" ]
@@ -96,6 +101,11 @@ A Next Generation policy defines the behavior of a firewall in a collection of f
                   "RulesString": "{{string}}"
                },
                "RuleVariables": {
+                  "ContextSets": {
+                     "{{string}}" : {
+                        "Definition": [ "{{string}}" ]
+                     }
+                  },
                   "IPSets": {
                      "{{string}}" : {
                         "Definition": [ "{{string}}" ]

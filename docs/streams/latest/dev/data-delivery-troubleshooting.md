@@ -83,7 +83,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-trouble
 ## Delivery not available for my stream
 <a name="troubleshooting-not-available"></a>
 
- Streaming tables and Amazon S3 delivery require the Kinesis Data Streams stream to be in On-Demand Standard or On-Demand Advantage capacity mode. If your stream uses Provisioned mode, you must switch it to On-Demand mode before you can create a delivery.
+ Streaming tables and Amazon S3 delivery require the Kinesis Data Streams stream to be in On-demand Standard or On-demand Advantage capacity mode. If your stream uses Provisioned mode, you must switch it to On-demand mode before you can create a delivery.
 
 ## Delivery stops after a schema change
 <a name="troubleshooting-schema-change"></a>

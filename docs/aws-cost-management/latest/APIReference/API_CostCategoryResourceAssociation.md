@@ -25,7 +25,7 @@ Pattern: `^(?! )[\p{L}\p{N}\p{Z}-_]*(?<! )$`
 Required: No
 
  ** ResourceArn **   <a name="awscostmanagement-Type-CostCategoryResourceAssociation-ResourceArn"></a>
- The unique identifier for an associated resource.
+ The unique identifier for an associated resource. For benefit level sharing, the ARN is `arn:aws:billing::<accountId>:benefitlevelsharing/<ri|sp>/<benefitId>/<prioritized|restricted>` or `arn:aws:billing::<payerAccountId>:benefitlevelsharing/credit/<creditId>`. For a Reserved Instance, `<accountId>` is the management account. For a Savings Plan, it's the account that owns the Savings Plan. For benefit group sharing, the ARN is `arn:aws:billing::<payerAccountId>:benefitgroupsharing/<risp|credit>/<payerAccountId>`.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[-a-z0-9]*:[a-z0-9]+:[-a-z0-9]*:[0-9]{12}:[-a-zA-Z0-9/:_]+`

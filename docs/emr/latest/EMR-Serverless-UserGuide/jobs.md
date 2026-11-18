@@ -13,6 +13,7 @@ After you provision your application, submit jobs to the application. This secti
 + [Running jobs from the EMR Studio console](jobs-studio.md)
 + [Running jobs from the AWS CLI](jobs-cli.md)
 + [Execution IAM policy](jobs-cli-execution.md)
++ [Running EMR Serverless jobs on spare capacity with Flex](jobs-flex-execution.md)
 + [Using shuffle-optimized disks](jobs-shuffle-optimized-disks.md)
 + [Using serverless storage for Amazon EMR Serverless](jobs-serverless-storage.md)
 + [Streaming jobs for processing continuously streamed data](jobs-streaming.md)
@@ -23,3 +24,4 @@ After you provision your application, submit jobs to the application. This secti
 + [Accessing S3 data in another AWS account from EMR Serverless](jobs-s3-access.md)
 + [Troubleshooting errors in EMR Serverless](jobs-troubleshoot.md)
 + [Enabling Job Level Cost Allocation](jobs-job-level-cost-allocation.md)
++ [Using Scaling Profiles](scaling-profiles.md)

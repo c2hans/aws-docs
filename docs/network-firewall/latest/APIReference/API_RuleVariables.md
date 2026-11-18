@@ -10,6 +10,14 @@ Settings that are available for use in the rules in the [RuleGroup](API_RuleGrou
 ## Contents
 <a name="API_RuleVariables_Contents"></a>
 
+ ** ContextSets **   <a name="networkfirewall-Type-RuleVariables-ContextSets"></a>
+A list of context sets. Each context set lists resources from the context store that is associated with the firewall.
+Type: String to [ContextSet](API_ContextSet.md) object map
+Map Entries: Minimum number of 0 items. Maximum number of 100 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 32.
+Key Pattern: `^[A-Za-z][A-Za-z0-9_]*$`
+Required: No
+
  ** IPSets **   <a name="networkfirewall-Type-RuleVariables-IPSets"></a>
 A list of IP addresses and address ranges, in CIDR notation.
 Type: String to [IPSet](API_IPSet.md) object map

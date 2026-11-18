@@ -57,6 +57,11 @@ Content-type: application/json
    "clientToken": "{{string}}",
    "deletionProtectionEnabled": {{boolean}},
    "kmsEncryptionKey": "{{string}}",
+   "metricGroups": [
+      {
+         "metricGroup": "{{string}}"
+      }
+   ],
    "multiRegionProperties": {
       "clusters": [ "{{string}}" ],
       "witnessRegion": "{{string}}"
@@ -98,6 +103,13 @@ To switch to the key owned by AWS, specify the reserved value `AWS_OWNED_KMS_KEY
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `[a-zA-Z0-9:/_-]+`
+Required: No
+
+ ** [metricGroups](#API_UpdateCluster_RequestSyntax) **   <a name="auroradsql-UpdateCluster-request-metricGroups"></a>
+The complete set of metric groups to enable for advanced monitoring on the cluster. This list replaces the current set, so any metric group that you don't include is disabled. To disable all metric groups, specify an empty list (`[]`). If you omit this parameter, the current setting doesn't change.
+To view the metric groups enabled on a cluster, use *GetCluster*.
+Type: Array of [MetricGroupRequest](API_MetricGroupRequest.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: No
 
  ** [multiRegionProperties](#API_UpdateCluster_RequestSyntax) **   <a name="auroradsql-UpdateCluster-request-multiRegionProperties"></a>

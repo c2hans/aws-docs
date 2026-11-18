@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 
 Create a target role in each account that contains targeted resources. Its trust policy allows the orchestrator role to assume it. The `sts:ExternalId` condition restricts the assume operation to AWS FIS experiments owned by the orchestrator account. The `aws:PrincipalArn` condition pins the trust to the orchestrator role.
 
+**Trust policy**
+
 ```
 {
   "Version": "2012-10-17"		 	 	 ,
@@ -30,6 +32,8 @@ Create a target role in each account that contains targeted resources. Its trust
   ]
 }
 ```
+
+**Permissions policy**
 
 Attach the permissions policy for the test template that your test uses. These policies grant the fault-injection permissions for the targeted resources. Experiment logging and lifecycle permissions are granted by the orchestrator role, not the target role.
 

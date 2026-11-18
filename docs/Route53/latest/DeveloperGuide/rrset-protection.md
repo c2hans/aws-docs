@@ -70,7 +70,7 @@ The hosted zone details page has a **Protections** tab. On the **Records** tab, 
 
 1. Choose **Add protection**.
 
-If a protection already exists for a selected type, the console reports A protection already exists for {{name}} ({{type}}) and adds none of the protections.
+If a protection already exists for a selected type, the console reports `A protection already exists for {{name}} ({{type}})` and adds none of the protections.
 
 **To protect records when you create them** – On the create record page, in the **Protection** section, select **Enable protection**. The console creates the records and then adds the protections. If you see a message that the records were created but aren't protected, add the protection on the **Protections** tab. You can add protection to at most 100 records in one submission.<a name="rrset-protection-remove-procedure"></a>
 

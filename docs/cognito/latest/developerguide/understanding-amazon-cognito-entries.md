@@ -13,6 +13,7 @@ Amazon Cognito logs information to AWS CloudTrail about user authentication acti
 + [Example CloudTrail events for a hosted UI sign-up](#cognito-cloudtrail-events-federated-sign-up)
 + [Example CloudTrail event for a SAML request](#cognito-cloudtrail-event-saml-post)
 + [Example CloudTrail events for requests to the token endpoint](#cognito-cloudtrail-events-token-endpoint-requests)
++ [Example CloudTrail event for point-in-time recovery](#cognito-cloudtrail-events-point-in-time-recovery)
 + [Example CloudTrail event for CreateIdentityPool](#cognito-cloudtrail-events-createidentitypool)
 + [Example CloudTrail event for GetCredentialsForIdentity](#cognito-cloudtrail-events-getcredentialsforidentity)
 + [Example CloudTrail event for GetId](#cognito-cloudtrail-events-getid)
@@ -564,6 +565,53 @@ Amazon Cognito logs the following event when your app exchanges a refresh token 
     "serviceEventDetails":
     {
         "serviceAccountId": "111122223333"
+    },
+    "eventCategory": "Management"
+}
+```
+
+## Example CloudTrail event for point-in-time recovery
+<a name="cognito-cloudtrail-events-point-in-time-recovery"></a>
+
+When Amazon Cognito applies a [point-in-time recovery](user-pool-point-in-time-recovery.md), it logs a `CognitoPointInTimeRecovery` event for each user, group, and group membership that the recovery creates, updates, or deletes. The `serviceEventDetails` field identifies the recovery, the type of entity, and the operation that the recovery performed. Amazon Cognito doesn't log separate events for changes to user MFA settings and passkeys.
+
+Amazon Cognito delivers these events asynchronously, and might deliver an event more than once. To identify unique changes, use the combination of the `restoreOrderId` and `userSub` values.
+
+The following example event shows that a recovery deleted a user that was created after the recovery point.
+
+```
+{
+    "eventVersion": "1.11",
+    "userIdentity": {
+        "accountId": "123456789012",
+        "invokedBy": "cognito-idp.aws.internal"
+    },
+    "eventTime": "2026-10-08T16:12:30Z",
+    "eventSource": "cognito-idp.amazonaws.com",
+    "eventName": "CognitoPointInTimeRecovery",
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "cognito-idp.aws.internal",
+    "userAgent": "cognito-idp.aws.internal",
+    "requestParameters": null,
+    "responseElements": null,
+    "eventID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+    "readOnly": false,
+    "resources": [
+        {
+            "accountId": "123456789012",
+            "type": "AWS::Cognito::UserPool",
+            "ARN": "arn:aws:cognito-idp:us-west-2:123456789012:userpool/us-west-2_EXAMPLE"
+        }
+    ],
+    "eventType": "AwsServiceEvent",
+    "managementEvent": true,
+    "recipientAccountId": "123456789012",
+    "serviceEventDetails": {
+        "userPoolId": "us-west-2_EXAMPLE",
+        "restoreOrderId": "a1b2c3d4-5678-90ab-cdef-111111111111",
+        "userSub": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "entityType": "USER",
+        "operationType": "DELETE"
     },
     "eventCategory": "Management"
 }

@@ -27,6 +27,8 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 
  After Amazon Inspector generates a new SBOM, it can take a few hours for the change to appear in the SBOM inventory.
 
+ Security Hub also uses the SBOM to infer the criticality of a compute resource. Software such as a database engine or an identity and access service raises the resource's criticality. For more information, see [How Security Hub infers criticality](resources-adv.md#resource-criticality-inference).
+
 ## Prerequisites
 <a name="securityhub-v2-sbom-prerequisites"></a>
 

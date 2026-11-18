@@ -27,7 +27,7 @@ Please use a Full Platform User (not Basic/Core) in New relic to enable New Reli
 
 1. Go to the **Capability Providers** page (accessible from the side navigation)
 
-1. Find **New Relic** in the **Available** providers section under **Telemetry** and choose **Register**
+1. In the **Available** section, find the **New Relic** card and choose **Register**. To narrow the list, enter New Relic in **Find capability**, or choose **Telemetry** in the category filter.
 
 1. Follow the instructions to obtain your New Relic API Key
 
@@ -84,11 +84,11 @@ Learn more: [https://docs.newrelic.com/docs/agentic-ai/mcp/overview/](https://do
 
 If your New Relic credentials expire or need to be rotated, you can update them without deregistering. Your Agent Space associations are preserved. To update your credentials, follow these steps:
 
-1. Go to the **Capability Providers** page (accessible from the side navigation).
+1. In the navigation pane, choose **Capability Providers**.
 
-1. Scroll to the **Currently registered** section.
+1. In the **Currently registered** section, on the **New Relic** card, choose **View all**.
 
-1. Select New Relic, then choose **Update** from the **Actions** menu.
+1. In **Registrations**, select the New Relic registration, then choose **Update** from the **Actions** menu.
 
 1. Enter the new credentials, review, and choose **Update**.
 
@@ -113,10 +113,10 @@ The telemetry source is connected at two levels at the agent space level and at 
 ### Step 2: Deregister from account
 <a name="step-2-deregister-from-account"></a>
 
-1. Go to the **Capability Providers** page (accessible from the side navigation)
+1. In the navigation pane, choose **Capability Providers**.
 
-1. Scroll to the **Currently registered** section.
+1. In the **Currently registered** section, on the **New Relic** card, choose **View all**.
 
-1. Check the agent space count is zero (if not repeat Step 1 above in your other agent spaces)
+1. In **Registrations**, check the agent space count is zero (if not, repeat Step 1 in your other agent spaces).
 
-1. Select New Relic, then choose **Deregister** from the **Actions** menu.
+1. Select the New Relic registration, then choose **Deregister** from the **Actions** menu.

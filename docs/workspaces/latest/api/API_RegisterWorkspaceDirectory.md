@@ -34,6 +34,7 @@ Registers the specified directory. This operation is asynchronous and returns be
    "UserIdentityType": "{{string}}",
    "WorkspaceDirectoryDescription": "{{string}}",
    "WorkspaceDirectoryName": "{{string}}",
+   "WorkspaceOsUserMode": "{{string}}",
    "WorkspaceType": "{{string}}"
 }
 ```
@@ -106,6 +107,12 @@ Required: No
 The name of the directory to register.
 Type: String
 Pattern: `^[a-zA-Z0-9][a-zA-Z0-9_.\s-]{1,64}$`
+Required: No
+
+ ** [WorkspaceOsUserMode](#API_RegisterWorkspaceDirectory_RequestSyntax) **   <a name="WorkSpaces-RegisterWorkspaceDirectory-request-WorkspaceOsUserMode"></a>
+Indicates how users are set up on the WorkSpace operating system. To use local users with an AWS IAM Identity Center directory, specify `LOCAL_USER`.
+Type: String
+Valid Values: `LOCAL_USER | DOMAIN_JOIN | ENTRA_JOIN | SELF_MANAGED`
 Required: No
 
  ** [WorkspaceType](#API_RegisterWorkspaceDirectory_RequestSyntax) **   <a name="WorkSpaces-RegisterWorkspaceDirectory-request-WorkspaceType"></a>

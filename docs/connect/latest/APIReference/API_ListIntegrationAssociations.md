@@ -58,6 +58,8 @@ Content-type: application/json
          "IntegrationAssociationArn": "string",
          "IntegrationAssociationId": "string",
          "IntegrationType": "string",
+         "LastModifiedRegion": "string",
+         "LastModifiedTime": number,
          "SourceApplicationName": "string",
          "SourceApplicationUrl": "string",
          "SourceType": "string"

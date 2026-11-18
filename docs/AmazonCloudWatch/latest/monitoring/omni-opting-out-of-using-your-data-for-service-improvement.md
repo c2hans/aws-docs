@@ -19,7 +19,7 @@ For where those requests are processed, and the Regions they can reach, see [Cro
 ## Other AWS services that process your content
 <a name="omni-opting-out-of-using-your-data-for-service-improvement-other-services-that-process-your-content"></a>
 
-Several features send your content to another AWS service. CloudWatch Omni makes those calls using your own AWS credentials, in your own AWS account.
+Several features send your content to another AWS service. The Omni agent, AI-assisted dashboard creation, and AI-assisted summaries call Amazon Bedrock from an AWS account that CloudWatch Omni owns. The prompt playground and evaluations call it with your own AWS credentials, in your own AWS account.
 
 | Feature | Content sent | AWS service |
 | --- | --- | --- |

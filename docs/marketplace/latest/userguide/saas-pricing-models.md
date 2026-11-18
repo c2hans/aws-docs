@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricin
 After a buyer purchases your software as a service (SaaS) product on AWS Marketplace, AWS Marketplace provides you with their billing identiﬁer. You use the billing identifier to call the AWS Marketplace Entitlement Service and the AWS Marketplace Metering Service. Then, customers access the product in your AWS environment or through a virtual private cloud (VPC) endpoint connection that you create. This topic provides a list of SaaS pricing models for AWS Marketplace.
 
 **Note**
-All SaaS pricing models support free trials. For more information, see [SaaS free trials](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html).
+All SaaS pricing models support free trials. Free trials on SaaS subscription products can convert to paid automatically. SaaS contract free trials expire when they end. For more information, see [SaaS free trials](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html).
 
 **SaaS pricing models**
 

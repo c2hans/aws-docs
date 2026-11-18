@@ -2513,7 +2513,7 @@ The following code example shows how to use `list-nodegroups`.
 
 **AWS CLI**
 **To list all the node groups in an Amazon EKS cluster**
-The following `list-nodegroups` example list all the node groups in an Amazon EKS cluster.
+The following `list-nodegroups` example lists all the node groups in an Amazon EKS cluster.
 
 ```
 aws eks list-nodegroups \

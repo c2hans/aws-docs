@@ -328,6 +328,30 @@ Content-type: application/json
             "startInclusive": {{number}}
          }
       ],
+      "machineImageId": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "machineImageName": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "machineImageOwnerAccountId": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "machineImagePlatform": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
       "networkProtocol": [
          {
             "comparison": "{{string}}",
@@ -441,6 +465,7 @@ Content-type: application/json
    "reportFormat": "{{string}}",
    "s3Destination": {
       "bucketName": "{{string}}",
+      "expectedBucketOwner": "{{string}}",
       "keyPrefix": "{{string}}",
       "kmsKeyArn": "{{string}}"
    }

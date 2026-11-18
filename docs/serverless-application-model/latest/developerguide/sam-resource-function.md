@@ -27,6 +27,7 @@ To declare this entity in your AWS Serverless Application Model (AWS SAM) templa
 ```
 Type: AWS::Serverless::Function
 Properties:
+  [AcceleratorConfig](#sam-function-acceleratorconfig): {{AcceleratorConfig}}
   [Architectures](#sam-function-architectures): {{List}}
   [AssumeRolePolicyDocument](#sam-function-assumerolepolicydocument): {{JSON}}
   [AutoPublishAlias](#sam-function-autopublishalias): {{String}}
@@ -80,6 +81,13 @@ Properties:
 
 ## Properties
 <a name="sam-resource-function-properties"></a>
+
+ `AcceleratorConfig`   <a name="sam-function-acceleratorconfig"></a>
+Configures accelerator resources, such as GPUs, for a function that runs on Lambda Managed Instances.
+This property requires `CapacityProviderConfig`. If you specify `AcceleratorConfig` without `CapacityProviderConfig`, AWS SAM returns a validation error. Lambda supports accelerator configuration only for functions that use the `Image` package type and the `x86_64` architecture.
+*Type*: [AcceleratorConfig](sam-property-function-acceleratorconfig.md)
+*Required*: No
+*CloudFormation compatibility*: This property is passed directly to the [AcceleratorConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html#cfn-lambda-function-acceleratorconfig) property of an `AWS::Lambda::Function` resource.
 
  `Architectures`   <a name="sam-function-architectures"></a>
 The instruction set architecture for the function.

@@ -779,6 +779,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [ec2:CreateTransitGatewayMulticastDomain](#list_ec2-action-CreateTransitGatewayMulticastDomain)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
+- **   CreateTransitGatewayNetworkFunctionAttachment  **
+  - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreateTransitGatewayPeeringAttachment  **
   - **IAM action:**  [ec2:CreateTags](#list_ec2-action-CreateTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [ec2:CreateTransitGatewayPeeringAttachment](#list_ec2-action-CreateTransitGatewayPeeringAttachment)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

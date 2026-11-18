@@ -56,14 +56,14 @@ The Amazon Inspector deep inspection custom paths for your organization.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `(?:/(?:\.[-\w]+|[-\w]+(?:\.[-\w]+)?))+/?`
+Pattern: `(?:(?:/(?:\.[-\w]+|[-\w]+(?:[. ][-\w]+)*))+/?|[A-Za-z]:\\(?:[-\w]+(?:[. ][-\w]+)*\\)*[-\w]+(?:[. ][-\w]+)*)`
 
  ** [packagePaths](#API_GetEc2DeepInspectionConfiguration_ResponseSyntax) **   <a name="inspector2-GetEc2DeepInspectionConfiguration-response-packagePaths"></a>
 The Amazon Inspector deep inspection custom paths for your account.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `(?:/(?:\.[-\w]+|[-\w]+(?:\.[-\w]+)?))+/?`
+Pattern: `(?:(?:/(?:\.[-\w]+|[-\w]+(?:[. ][-\w]+)*))+/?|[A-Za-z]:\\(?:[-\w]+(?:[. ][-\w]+)*\\)*[-\w]+(?:[. ][-\w]+)*)`
 
  ** [status](#API_GetEc2DeepInspectionConfiguration_ResponseSyntax) **   <a name="inspector2-GetEc2DeepInspectionConfiguration-response-status"></a>
 The activation status of Amazon Inspector deep inspection in your account.

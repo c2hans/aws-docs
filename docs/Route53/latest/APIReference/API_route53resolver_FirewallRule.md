@@ -101,7 +101,8 @@ The rule type configuration for the firewall rule. This is a tagged union — ex
 +  `FirewallAdvancedThreatCategory` — an AWS-managed advanced threat category (for example, `PHISHING`).
 +  `DnsThreatProtection` — a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 +  `PartnerThreatProtection` — a third-party threat feed delivered through AWS Marketplace.
-To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md).
++  `AutoAllowlist` — an AutoAllowlist rule, which allows the domains on its managed domain list. See [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md).
+To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md). It doesn't return `AutoAllowlist`.
 Type: [FirewallRuleType](API_route53resolver_FirewallRuleType.md) object
 Required: No
 
@@ -151,7 +152,7 @@ Required: No
 
  ** Status **   <a name="Route53Resolver-Type-route53resolver_FirewallRule-Status"></a>
 The lifecycle state of the firewall rule. Possible values:
-+  `CREATING` — DNS Firewall is provisioning the rule. Rules created with the `PartnerThreatProtection` rule type begin in this state while DNS Firewall verifies the calling account's AWS Marketplace entitlement.
++  `CREATING` — DNS Firewall is provisioning the rule. Rules created with the `PartnerThreatProtection` rule type begin in this state while DNS Firewall verifies the calling account's AWS Marketplace entitlement. Rules created with the `AutoAllowlist` rule type begin in this state while DNS Firewall reads the look-back window of each VPC that uses the rule group.
 +  `COMPLETE` — The rule is provisioned and enforcing matches.
 +  `CREATION_FAILED` — Provisioning failed. `StatusMessage` contains a human-readable reason. A rule in this state is immutable: [UpdateFirewallRule](API_route53resolver_UpdateFirewallRule.md) rejects the request, and the rule must be removed with [DeleteFirewallRule](API_route53resolver_DeleteFirewallRule.md).
 For rules that do not require asynchronous provisioning, this field may be absent.

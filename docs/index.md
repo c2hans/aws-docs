@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # Welcome to AWS Documentation
@@ -458,7 +458,6 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Choosing AWS security, identity, and governance services](/decision-guides/latest/security-on-aws-how-to-choose/choosing-aws-security-services.html?icmpid=docs_homepage_security): Find the AWS security, identity, and governance services and tools that fit your needs
 - [Amazon Cognito](/cognito/?icmpid=docs_homepage_security): Identity management for your apps
 - [AWS Directory Service](/directory-service/?icmpid=docs_homepage_security): Set up and run Microsoft Active Directory with AWS services
-- [Amazon GuardDuty](/guardduty/?icmpid=docs_homepage_security): Managed threat detection service
 - [AWS Identity and Access Management](/iam/?icmpid=docs_homepage_security): Securely manage access to services and resources with IAM
 - [AWS Audit Manager](/audit-manager/?icmpid=docs_homepage_security): Audit your AWS usage to simplify how you assess risk and compliance
 - [AWS Certificate Manager](/acm/?icmpid=docs_homepage_security): Provision, manage, and deploy SSL/TLS certificates
@@ -466,6 +465,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon Detective](/detective/?icmpid=docs_homepage_security): Investigate potential security issues
 - [AWS Firewall Manager](/firewall-manager/?icmpid=docs_homepage_security): Deploy network security across your VPCs with just a few clicks
 - [AWS GovCloud (US)](/govcloud-us/?icmpid=docs_homepage_addtlrcs): Move sensitive workloads into the cloud
+- [Amazon GuardDuty](/guardduty/?icmpid=docs_homepage_security): Managed threat detection service
 - [AWS IAM Identity Center](/singlesignon/?icmpid=docs_homepage_security): Manage single sign-on access to AWS accounts and apps
 - [Amazon Inspector](/inspector/?icmpid=docs_homepage_security): Automated and continual vulnerability management at scale
 - [Amazon Macie](/macie/?icmpid=docs_homepage_security): Discover and protect your sensitive data at scale

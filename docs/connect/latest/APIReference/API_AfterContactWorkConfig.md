@@ -11,7 +11,7 @@ Configuration settings for after contact work (ACW) timeout.
 <a name="API_AfterContactWorkConfig_Contents"></a>
 
  ** AfterContactWorkTimeLimit **   <a name="connect-Type-AfterContactWorkConfig-AfterContactWorkTimeLimit"></a>
-The ACW timeout duration in seconds. Minimum: 1 second. Maximum: 2,000,000 seconds (24 days). Enter 0 for indefinite ACW time.
+The after contact work (ACW) timeout duration in seconds. Minimum: 1 second. Maximum: 2,000,000 seconds (24 days). For the CHAT channel, the maximum for a specific duration is 5,400 seconds (90 minutes); higher values end ACW after 90 minutes. For all channels, including chat, you can enter 0 for an indefinite amount of time, meaning agents must manually choose to end ACW.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No

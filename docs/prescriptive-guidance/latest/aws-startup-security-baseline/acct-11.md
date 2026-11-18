@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 # ACCT.11 Enable IAM Access Analyzer
 <a name="acct-11"></a>
 
-Enable IAM Access Analyzer in each AWS Region you use. Because IAM Access Analyzer operates on a per-Region basis, you must enable it separately in each Region to gain visibility into resource sharing across your AWS footprint. This helps prevent accidental public or cross-account access to resources, such as Amazon S3 buckets, IAM roles, and AWS KMS keys.
+Enable AWS Identity and Access Management Access Analyzer in each AWS Region you use. Because IAM Access Analyzer operates on a per-Region basis, you must enable it separately in each Region to gain visibility into resource sharing across your AWS footprint. This helps you identify unintended public or cross-account access to resources, such as Amazon S3 buckets, IAM roles, and AWS KMS keys.
 
 **To enable IAM Access Analyzer**
 

@@ -45,7 +45,7 @@ Required: No
 Filter by task type (single value only)
 Type: Array of strings
 Array Members: Fixed number of 1 item.
-Valid Values: `INVESTIGATION | EVALUATION | RELEASE_READINESS_REVIEW | RELEASE_TESTING`
+Valid Values: `INVESTIGATION | EVALUATION | RELEASE_READINESS_REVIEW | RELEASE_TESTING | CODE_CHANGE_RISK_ANALYSIS`
 Required: No
 
 ## See Also

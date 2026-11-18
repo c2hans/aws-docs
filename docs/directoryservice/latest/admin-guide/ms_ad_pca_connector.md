@@ -111,7 +111,7 @@ To change your issuing AWS Private CA for domain controller certificates, first 
 
 1. Under **Forest and Domains**, find your subdomain organizational unit (OU) (for example, `corp` is your subdomain organizational unit if you followed the procedures outlined in [Creating your AWS Managed Microsoft AD](ms_ad_getting_started.md#ms_ad_getting_started_create_directory)) and right-click on your subdomain OU. Choose **Create a GPO in this domain, and link it here** and enter PCA GPO for the name. Choose **OK**.
 
-1. The newly created GPO appears following your subdomain name. Right-click on `PCA GPO` and choose **Edit**. If a dialog box opens with an alert message stating This is a link and that changes are globally propagated, acknowledge the message by choosing **OK** to continue. The **Group Policy Management Editor** window opens.
+1. The newly created GPO appears following your subdomain name. Right-click on `PCA GPO` and choose **Edit**. If a dialog box opens with an alert message stating `This is a link and that changes are globally propagated`, acknowledge the message by choosing **OK** to continue. The **Group Policy Management Editor** window opens.
 
 1. In the **Group Policy Management Editor** window, go to **Computer Configuration > Policies > Windows Settings > Security Settings > Public Key Policies** (choose the folder).
 

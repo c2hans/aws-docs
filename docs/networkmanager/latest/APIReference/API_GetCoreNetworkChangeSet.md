@@ -64,6 +64,12 @@ Content-type: application/json
             "DnsSupport": boolean,
             "EdgeLocations": [ "string" ],
             "InsideCidrBlocks": [ "string" ],
+            "MultipathResilience": {
+               "EdgeSets": [
+                  [ "string" ]
+               ],
+               "Mode": "string"
+            },
             "NetworkFunctionGroupName": "string",
             "PeerEdgeLocations": [ "string" ],
             "RoutingPolicy": "string",
@@ -111,6 +117,12 @@ Content-type: application/json
             "DnsSupport": boolean,
             "EdgeLocations": [ "string" ],
             "InsideCidrBlocks": [ "string" ],
+            "MultipathResilience": {
+               "EdgeSets": [
+                  [ "string" ]
+               ],
+               "Mode": "string"
+            },
             "NetworkFunctionGroupName": "string",
             "PeerEdgeLocations": [ "string" ],
             "RoutingPolicy": "string",

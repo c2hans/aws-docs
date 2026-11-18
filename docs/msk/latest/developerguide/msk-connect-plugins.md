@@ -24,6 +24,7 @@ The following table shows the Java runtime version used for each supported Apach
 | --- | --- |
 | 2.7.1 | Java 11 |
 | 3.7.x | Java 17 |
+| 3.9.x | Java 17 |
 
 For information on how to develop the code for a connector, see the [Connector Development Guide](https://kafka.apache.org/documentation/#connect_development)in the Apache Kafka documentation.
 

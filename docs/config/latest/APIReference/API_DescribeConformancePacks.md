@@ -13,6 +13,9 @@ Returns a list of one or more conformance packs.
 ```
 {
    "ConformancePackNames": [ "{{string}}" ],
+   "Filters": {
+      "Types": [ "{{string}}" ]
+   },
    "Limit": {{number}},
    "NextToken": "{{string}}"
 }
@@ -31,6 +34,11 @@ Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 25 items.
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z][-a-zA-Z0-9]*`
+Required: No
+
+ ** [Filters](#API_DescribeConformancePacks_RequestSyntax) **   <a name="config-DescribeConformancePacks-request-Filters"></a>
+Returns a filtered list of custom or managed conformance packs. By default, if the filter is not defined, AWS Config returns details for all your conformance packs.
+Type: [DescribeConformancePacksFilters](API_DescribeConformancePacksFilters.md) object
 Required: No
 
  ** [Limit](#API_DescribeConformancePacks_RequestSyntax) **   <a name="config-DescribeConformancePacks-request-Limit"></a>
@@ -64,10 +72,18 @@ Required: No
          "DeliveryS3Bucket": "string",
          "DeliveryS3KeyPrefix": "string",
          "LastUpdateRequestedTime": number,
+         "Scope": {
+            "TagKey": "string",
+            "TagValue": "string"
+         },
+         "Source": {
+            "SourceIdentifier": "string"
+         },
          "TemplateSSMDocumentDetails": {
             "DocumentName": "string",
             "DocumentVersion": "string"
-         }
+         },
+         "Type": "string"
       }
    ],
    "NextToken": "string"

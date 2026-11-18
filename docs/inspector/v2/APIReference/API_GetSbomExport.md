@@ -52,6 +52,74 @@ Content-type: application/json
             "value": "string"
          }
       ],
+      "cloudContainerImageTags": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudContainerRegistryName": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudContainerRepositoryName": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudProvider": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudProviderAccountId": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudProviderOrgId": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudProviderRegion": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudServerlessFunctionName": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudServerlessFunctionRuntime": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "cloudServerlessFunctionTags": [
+         {
+            "comparison": "string",
+            "key": "string",
+            "value": "string"
+         }
+      ],
+      "cloudVmInstanceTags": [
+         {
+            "comparison": "string",
+            "key": "string",
+            "value": "string"
+         }
+      ],
       "ec2InstanceTags": [
          {
             "comparison": "string",
@@ -101,6 +169,7 @@ Content-type: application/json
    "reportId": "string",
    "s3Destination": {
       "bucketName": "string",
+      "expectedBucketOwner": "string",
       "keyPrefix": "string",
       "kmsKeyArn": "string"
    },

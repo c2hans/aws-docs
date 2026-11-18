@@ -9,7 +9,7 @@ When you enable key rotation on live content from TS and CMAF origin endpoints, 
 
 If MediaPackage is unable to retrieve the content key, it takes the following actions:
 + If MediaPackage successfully retrieved a content key for this endpoint before, it uses the last key that it fetched. This ensures that endpoints that worked previously continue to work.
-+ If MediaPackage has *not* successfully retrieved a content key for this endpoint before, MediaPackage responds to the playback request with error 404.
++ If MediaPackage has *not* successfully retrieved a content key for this endpoint before, MediaPackage responds to the playback request with `error 404`.
 
 ## Signaling time-based key rotation with SPEKE v2.1
 <a name="drm-time-based-key-rotation-signaling"></a>

@@ -114,7 +114,7 @@ When you have an AWS WAF web ACL associated with a user pool, and a rule in your
 
 Amazon Cognito displays the following error when your CAPTCHA rule doesn't let a user complete TOTP MFA setup.
 
-Request not allowed due to WAF captcha.
+`Request not allowed due to WAF captcha.`
 
 This error results when AWS WAF prompts for a CAPTCHA in response to [AssociateSoftwareToken](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AssociateSoftwareToken.html) and [VerifySoftwareToken](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_VerifySoftwareToken.html) API requests that your user pool makes in the background. To create a rule that has a CAPTCHA action and doesn't affect TOTP in managed login pages, exclude the `x-amzn-cognito-operation-name` header values of `AssociateSoftwareToken` and `VerifySoftwareToken` from the CAPTCHA action in your rule.
 

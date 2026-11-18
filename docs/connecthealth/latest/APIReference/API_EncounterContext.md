@@ -10,10 +10,15 @@ Context information about the clinical encounter
 ## Contents
 <a name="API_EncounterContext_Contents"></a>
 
+ ** medicalCodingContext **   <a name="connecthealth-Type-EncounterContext-medicalCodingContext"></a>
+Structured patient and encounter context for medical code generation.
+Type: [MedicalCodingContext](API_MedicalCodingContext.md) object
+Required: No
+
  ** unstructuredContext **   <a name="connecthealth-Type-EncounterContext-unstructuredContext"></a>
 Unstructured context information in markdown format
 Type: String
-Pattern: `[a-zA-Z0-9\s\*_\-#\[\]\(\)\.,:;!?'"`<>~/]+`
+Pattern: `[\p{L}\p{N}\s\*_\-#\[\]\(\)\.,:;!?'"`<>~/|+=&%@\\{}^]+`
 Required: No
 
 ## See Also

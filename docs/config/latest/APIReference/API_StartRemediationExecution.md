@@ -35,7 +35,7 @@ The request accepts the following data in JSON format.
 The list of names of AWS Config rules that you want to run remediation execution for.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** [ResourceKeys](#API_StartRemediationExecution_RequestSyntax) **   <a name="config-StartRemediationExecution-request-ResourceKeys"></a>

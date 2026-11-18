@@ -19,3 +19,6 @@ To switch to a plan without log export, deactivate it from the **Log streaming**
 
 **Email MFA**
 To switch to a plan without email MFA, go to the **Sign-in** menu of your user pool. Edit **Multi-factor authentication** and deselect **Email message** as one of the available **MFA methods**.
+
+**Point-in-time recovery**
+You don't have to deactivate [point-in-time recovery](user-pool-point-in-time-recovery.md) to change your feature plan. When you switch from the Plus to the Essentials plan, your recovery window changes immediately to 1 day. If you switch back to the Plus plan, your Plus recovery window starts again at the time of the switch, as if you had never used the Plus plan. The same applies when you switch to the Lite plan and back.

@@ -13,7 +13,7 @@ Each micro-frontend is a system capable of encapsulating opinions, logic, and co
 
 To accelerate consumption and troubleshooting, it's common to invest in standardizing the way these interfaces are declared and documented, including micro-frontend dependencies. Wikis curated by humans are a good start. A more scalable approach is to store this information as structured metadata in code. You can then centralize it for consumption by using automation to track historic changes and provide full-text search.
 
-When micro-frontends involve a large number of teams, you need a strategy to coordinate between teams. Sharing API contracts in a unified way becomes a must because it reduces communication overhead and improves developer experience.
+When micro-frontends involve a large number of teams, you need a strategy to coordinate between teams. Share API contracts in a unified way to reduce communication overhead and improve developer experience.
 
 [OpenAPI](https://www.openapis.org/) is a specification language for HTTP APIs that supports defining API interfaces and contracts in a unified way. You can implement REST APIs by [using OpenAPI in Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-import-api.html). You can also use a wide variety of open source frameworks that you can host in containers or virtual machines. A significant advantage is that OpenAPI can automatically generate documentation in a consistent format, so multiple teams can share knowledge with a minimal initial investment.
 

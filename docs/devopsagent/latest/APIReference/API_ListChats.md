@@ -11,7 +11,7 @@ Retrieves a paginated list of the user's recent chat executions
 <a name="API_ListChats_RequestSyntax"></a>
 
 ```
-GET /agents/agent-space/{{agentSpaceId}}/chat/list?maxResults={{maxResults}}&nextToken={{nextToken}}&userId={{userId}} HTTP/1.1
+GET /agents/agent-space/{{agentSpaceId}}/chat/list?archiveStatus={{archiveStatus}}&maxResults={{maxResults}}&nextToken={{nextToken}}&userId={{userId}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -23,6 +23,10 @@ The request uses the following URI parameters.
 The unique identifier for the agent space to list chats from.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
+
+ ** [archiveStatus](#API_ListChats_RequestSyntax) **   <a name="devopsagent-ListChats-request-uri-archiveStatus"></a>
+The archive status to filter by. Use this parameter to list only archived chat executions or only active ones.
+Valid Values: `ACTIVE | ARCHIVED`
 
  ** [maxResults](#API_ListChats_RequestSyntax) **   <a name="devopsagent-ListChats-request-uri-maxResults"></a>
 Maximum number of results to return
@@ -51,6 +55,7 @@ Content-type: application/json
 {
    "executions": [
       {
+         "archiveStatus": "string",
          "createdAt": number,
          "executionId": "string",
          "summary": "string",
@@ -91,6 +96,8 @@ HTTP Status Code: 403
 The request conflicts with the current state of the resource.
  ** message **
 Detailed error message describing the conflict.
+ ** reason **
+A machine-readable reason code that explains why the request conflicted with the current state of the resource. For example, `CHAT_ARCHIVED` indicates that the request acted on a chat that is archived. This field is absent when no specific reason applies.
 HTTP Status Code: 409
 
  ** ContentSizeExceededException **

@@ -13,7 +13,6 @@ Status filter object to filter results based on specific member account ID or st
  ** AccountId **   <a name="config-Type-OrganizationResourceDetailedStatusFilters-AccountId"></a>
 The 12-digit account ID of the member account within an organization.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

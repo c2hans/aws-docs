@@ -295,6 +295,9 @@ Jane,,Jane,Roe,,,,,,,janeroe@example.com,TRUE,,01/01/1985,,,+12345550199,TRUE,10
 
 This section describes how to create and run the user pool import job by using the Amazon Cognito console and the AWS Command Line Interface (AWS CLI).
 
+**Note**
+You can't import users while a [point-in-time recovery](user-pool-point-in-time-recovery.md) of your user pool is in progress. You also can't initiate a point-in-time recovery while an import job is in progress in your user pool. Wait for the import job to complete, or stop it, before you initiate a recovery.
+
 **Topics**
 + [Importing users from a CSV file (console)](#cognito-user-pools-using-import-tool-console)
 + [Importing users (AWS CLI)](#cognito-user-pools-using-import-tool-cli)

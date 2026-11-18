@@ -150,7 +150,7 @@ The code for this pattern is available in [Easytrieve to Modern Languages Transf
 | Prepare input materials for transformation. | 1. Enter this command to create the folder structure:<pre>mkdir -p /root/transform-workspace/mainframe-source/{source-code,bre-doc,input-data,output-data}</pre><br />This creates these folders:`source-code` – Storage for the EZT source code`bre-doc` – Storage for the BRE document`input-data` – Storage for the input data for the mainframe batch execution (Sequential/Text/DB2 files in EBCDIC format)`output-data` –  Storage for the output data in the mainframe after the batch execution (Sequential/Text/DB2 files in EBCDIC format)<br />2. Enter these commands to initialize Git repository:<pre>cd /root/transform-workspace/mainframe-source/source-code<br />git init<br />git add .<br />git commit -m "Initial commit"</pre> | App developer |
 
 ###  Create a custom transformation definition
-<a name="create-a-custom-transformation-definition"></a>
+<a name="nbsp-create-a-custom-transformation-definition"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |

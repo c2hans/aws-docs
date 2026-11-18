@@ -12,7 +12,7 @@ See the following topics for more details about each offering. The following tab
 | Feature | Standard broker | Express broker |
 | --- | --- | --- |
 | [Storage Management](msk-storage-management.md) | Customer managed (Features include EBS storage, Tiered storage, Provisioned storage throughput, Auto-scaling, Storage capacity alerts) | Fully MSK managed |
-| [Supported instances](broker-instance-sizes.md) | T3, M5, M7g | M7g |
+| [Supported instances](broker-instance-sizes.md) | T3, M5, M7g, M8g | M7g, M8g |
 | [Sizing and scaling considerations](bestpractices-intro.md) | Throughput, connections, partitions, storage | Throughput, connections, partitions |
 | [Broker scaling](msk-update-broker-count.md) | Vertical and horizontal scaling | Vertical and horizontal scaling |
 | [Kafka versions](kafka-versions.md) | See [Apache Kafka versions](kafka-versions.md) | Starts at version 3.6 |

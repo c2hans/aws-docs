@@ -43,7 +43,7 @@ Athena engine version 2 supports datasets bucketed using the Hive bucket algorit
 
 **Note**
 Athena has a limit of 100 partitions in a `CREATE TABLE AS SELECT` ([CTAS](ctas.md)) query. Similarly, you can add only a maximum of 100 partitions to a destination table with an [INSERT INTO](insert-into.md) statement.
-If you exceed this limitation, you may receive the error message HIVE\_TOO\_MANY\_OPEN\_PARTITIONS: Exceeded limit of 100 open writers for partitions/buckets. To work around this limitation, you can use a CTAS statement and a series of `INSERT INTO` statements that create or insert up to 100 partitions each. For more information, see [Use CTAS and INSERT INTO to work around the 100 partition limit](ctas-insert-into.md).
+If you exceed this limitation, you may receive the error message `HIVE_TOO_MANY_OPEN_PARTITIONS: Exceeded limit of 100 open writers for partitions/buckets`. To work around this limitation, you can use a CTAS statement and a series of `INSERT INTO` statements that create or insert up to 100 partitions each. For more information, see [Use CTAS and INSERT INTO to work around the 100 partition limit](ctas-insert-into.md).
 
 ## Bucketing CREATE TABLE example
 <a name="ctas-partitioning-and-bucketing-bucketing-create-table-example"></a>

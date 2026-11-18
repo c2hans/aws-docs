@@ -20,11 +20,10 @@ Install the SDK. The `tokenizer` extra provides the `get_tokenizer()` method the
 pip install 'sagemaker-train[tokenizer]>=1.25.0'
 ```
 
-Then run:
+Then run the following example:
 
 ```
-from sagemaker.train.training_session import ServiceClient, AdamParams
-from sagemaker.train.training_session._utils import _serialize_loss_fn_inputs
+from sagemaker.train.training_session import ServiceClient, AdamParams, Datum, ModelInput
 
 PAIRS = [
     ("Question: 2+2?\nAnswer:", " 4"),
@@ -42,18 +41,15 @@ tok = tc.get_tokenizer()
 
 batch = []
 for prompt, response in PAIRS:
-    prompt_ids = tok.encode(prompt, add_special_tokens=False)
-    ids = tok.encode(prompt + response, add_special_tokens=False)
-    prompt_len = len(prompt_ids)
-    eos = tok.eos_token_id if tok.eos_token_id is not None else ids[-1]
-    target_tokens = ids[1:] + [eos]
-    weights = [0.0] * prompt_len + [1.0] * (len(ids) - prompt_len)
-    batch.append({
-        "modelInput": {"chunks": [{"tokens": ids, "type": "encoded_text"}]},
-        "lossFnInputs": _serialize_loss_fn_inputs(
-            {"target_tokens": target_tokens, "weights": weights}
-        ),
-    })
+    prompt_len = len(tok.encode(prompt, add_special_tokens=False))
+    ids = tok.encode(prompt + response, add_special_tokens=False) + [tok.eos_token_id]
+    batch.append(Datum(
+        model_input=ModelInput.from_ints(ids[:-1]),
+        loss_fn_inputs={
+            "target_tokens": ids[1:],
+            "weights": [0.0] * (prompt_len - 1) + [1.0] * (len(ids) - prompt_len),
+        },
+    ))
 
 fwd_bwd = tc.forward_backward(batch, loss_fn="cross_entropy")
 step = tc.optim_step(AdamParams(learning_rate=5e-5))

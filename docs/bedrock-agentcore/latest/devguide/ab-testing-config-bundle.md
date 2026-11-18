@@ -411,6 +411,8 @@ while True:
 
 **Note**
 The time it takes for results to appear depends primarily on the session timeout configured in your online evaluation config. A session is considered complete once no new requests arrive within the timeout window. After a session ends, results typically appear within 15 minutes. Results accumulate as more sessions complete — statistical significance improves with sample size.
+
+<a name="config-bundle-interpreting"></a>**Interpreting results**
 +  **p-value < 0.05 and positive `percentChange`:** The treatment is significantly better than control. Consider deploying the treatment.
 +  **p-value < 0.05 and negative `percentChange`:** The treatment is significantly worse. Keep the control.
 +  **p-value >= 0.05:** Not enough evidence to conclude a difference. Continue collecting samples or increase traffic to the treatment.
@@ -443,6 +445,8 @@ aws bedrock-agentcore-control create-gateway-rule \
 ```
 
 The rule updates the live Gateway immediately. Save the returned rule ID so that you can update or delete the rule later. The rule is not part of the project, and `agentcore deploy` does not manage it. To change an existing production rule instead, use `aws bedrock-agentcore-control update-gateway-rule --gateway-identifier <gateway-id> --rule-id <rule-id>`. For more rule examples, see [Gateway rules API examples](gateway-rules-examples.md).
+
+<a name="config-bundle-next-steps"></a>**Next steps**
 
 After routing traffic to the winner:
 +  **Delete the A/B test** to clean up resources. See [Delete an A/B test](ab-testing-manage.md#manage-ab-test-remove).

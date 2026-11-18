@@ -16,10 +16,11 @@ The set of properties depends on the content type. The `HubContentType` of a pie
 + `DataSet`
 + `JsonDoc`
 
-This reference currently documents the schema for the `Model` HubContentType.
+This reference currently documents the schemas for the `Model` and `DataSet` HubContentTypes.
 
 **Note**
 This reference describes the latest version of the `HubContentDocument` schema. Earlier schema versions might define a different set of properties. The schema version is returned in the `DocumentSchemaVersion` field of the `DescribeHubContent` response.
 
 **Topics**
 + [Model properties](hub-content-document-model-properties.md)
++ [DataSet properties](hub-content-document-dataset-properties.md)

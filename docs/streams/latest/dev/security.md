@@ -19,5 +19,5 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Test your permissions and request inputs with dry run](kds-dryrun-validation.md)
 + [Compliance validation for Amazon Kinesis Data Streams](compliance-validation.md)
 + [Resilience in Amazon Kinesis Data Streams](disaster-recovery-resiliency.md)
-+ [Infrastructure Security in Amazon Kinesis Data Streams](infrastructure-security.md)
++ [Infrastructure security in Amazon Kinesis Data Streams](infrastructure-security.md)
 + [Security best practices for Kinesis Data Streams](security-best-practices.md)

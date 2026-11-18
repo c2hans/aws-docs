@@ -158,7 +158,7 @@ For more information about Amazon RDS, see [What is Amazon Relational Database S
 
 For detailed information about Aurora, see [What is Amazon Aurora?](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html) in the *Amazon Aurora User Guide*.
 
-If you initiate a backup job from the Amazon RDS console, this can conflict with an Aurora clusters backup job, causing the error Backup job expired before completion. If this occurs, configure a longer backup window in AWS Backup.
+If you initiate a backup job from the Amazon RDS console, this can conflict with an Aurora clusters backup job, causing the error `Backup job expired before completion`. If this occurs, configure a longer backup window in AWS Backup.
 
 AWS does not charge for Aurora snapshots stored inside a backup vault as long as Aurora has automated backups enabled and the retention period for Aurora automated backups is more than the retention period of Aurora snapshots. Any snapshots within the backup vault will be charged if the snapshots’ database is deleted (deletions may occur accidentally or during blue/green deployment).
 

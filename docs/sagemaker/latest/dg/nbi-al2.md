@@ -75,7 +75,7 @@ Migration is an in-place platform update. Your EBS volume data (notebooks, datas
 
 1. Stop your notebook instance.
 
-1. Call [UpdateNotebookInstance](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateNotebookInstance.html) with `PlatformIdentifier` set to `notebook-al2023-v1`. Or, in the SageMaker AI console, edit the notebook instance and change the **Platform identifier** to `notebook-al2023-v1`.
+1. Call [UpdateNotebookInstance](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateNotebookInstance.html) with `PlatformIdentifier` set to `notebook-al2023-v1`. Or, in the SageMaker AI console, edit the notebook instance and change the **Platform identifier** to `notebook-al2023-v1`. To migrate to Python 3.12, use `notebook-al2023-v2` instead.
 
 1. Start your notebook instance.
 

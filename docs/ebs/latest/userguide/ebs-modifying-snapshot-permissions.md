@@ -15,6 +15,7 @@ To prevent the public sharing of snapshots, you can enable [Block public access 
 **Topics**
 + [Before you share a snapshot](#share-snapshot-considerations)
 + [Share a snapshot](#share-unencrypted-snapshot)
++ [Share an encrypted snapshot using an associated KMS key](#share-snapshot-associated-kms-key)
 + [Share a KMS key](share-kms-key.md)
 + [Use shared snapshots](view-shared-snapshot.md)
 + [Determine the use of snapshots that you share](#shared-snapshot-cloudtrail-logging)
@@ -25,7 +26,7 @@ To prevent the public sharing of snapshots, you can enable [Block public access 
 The following considerations apply to sharing snapshots:
 + If block public access for snapshots is enabled for the Region, attempts to publicly share snapshots will be blocked. Snapshots can still be privately shared.
 + Snapshots are constrained to the Region in which they were created. To share a snapshot with another Region, copy the snapshot to that Region and then share the copy. For more information, see [Copy an Amazon EBS snapshot](ebs-copy-snapshot.md).
-+ You can't share snapshots that are encrypted with the default AWS managed key. You can only share snapshots that are encrypted with a customer managed key. For more information, see [Creating Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
++ You can only share snapshots that are encrypted with a customer managed key. You can't share a snapshot that is encrypted under an AWS managed key by granting create-volume permission alone. To share such a snapshot across accounts, first associate a customer managed KMS key with the snapshot. For more information, see [Associated KMS keys](associated-kms-keys.md).
 + You can share only unencrypted snapshots publicly.
 + When you share an encrypted snapshot, you must also share the customer managed key used to encrypt the snapshot. For more information, see [Share the KMS key used to encrypt a shared Amazon EBS snapshot](share-kms-key.md).
 
@@ -114,6 +115,17 @@ Edit-EC2SnapshotAttribute `
 ```
 
 ------
+
+## Share an encrypted snapshot using an associated KMS key
+<a name="share-snapshot-associated-kms-key"></a>
+
+To share an encrypted snapshot with another account without sharing the existing KMS key that encrypts the snapshot — or to share a snapshot encrypted under an AWS managed key — associate a customer managed key with the snapshot and share that key with the other account. Then share the snapshot as usual. The other account can copy the snapshot using the associated KMS key.
+
+1. Associate a customer managed key with the snapshot. For more information, see [Associated KMS keys](associated-kms-keys.md).
+
+1. Make sure the key's policy allows the other account's principal to use the key, and that the principal's IAM policy allows the same. For more information, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html) in the *AWS Key Management Service Developer Guide*.
+
+1. Share the snapshot with the other account as you would any snapshot.
 
 ## Determine the use of snapshots that you share
 <a name="shared-snapshot-cloudtrail-logging"></a>

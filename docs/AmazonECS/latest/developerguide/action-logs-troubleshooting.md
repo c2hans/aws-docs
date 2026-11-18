@@ -27,7 +27,11 @@ Start by filtering for `ERROR` or `WARN` log levels to identify issues quickly. 
 ## Debugging a failed service deployment
 <a name="action-logs-troubleshooting-failed-deployment"></a>
 
+**Symptoms**
+
 Deployment stuck in progress or automatically rolled back.
+
+**What to look for**
 
 Filter for `ERROR` logs where `eventName` contains `DEPLOYMENT`. Check the `detail` payload for the deployment ARN, status reason, and failed task count.
 
@@ -48,6 +52,8 @@ The following example shows a deployment failure where no rollback candidate was
 }
 ```
 
+**Resolution**
+
 Check the `detail.statusReason` field to identify why tasks failed. Use the following CloudWatch Logs Insights query to find all deployment errors:
 
 ```
@@ -60,7 +66,11 @@ fields @timestamp, detail.statusReason
 ## Diagnosing managed daemon issues
 <a name="action-logs-troubleshooting-daemon"></a>
 
+**Symptoms**
+
 Daemon not starting on instances or daemon deployment stuck.
+
+**What to look for**
 
 Filter logs by the daemon ARN to find events related to your daemon. You can also filter by `logLevel` to narrow results to warnings or errors.
 
@@ -82,6 +92,8 @@ The following example shows a daemon task that failed to start due to insufficie
 }
 ```
 
+**Resolution**
+
 Verify that target instances have sufficient resources to run the daemon task. If instances are draining, the daemon might not start until new instances become available. Use the following query to filter events for a specific daemon:
 
 ```
@@ -95,7 +107,11 @@ fields @timestamp, logLevel, detail.statusReason
 ## Understanding daemon task stop reasons
 <a name="action-logs-troubleshooting-daemon-task-stops"></a>
 
+**Symptoms**
+
 Daemon tasks stopping unexpectedly.
+
+**What to look for**
 
 Filter for `WARN` and `ERROR` logs that contain daemon task failure details. The following fields in the `detail` payload provide information about why a daemon task stopped:
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 # WKLD.13 Require HTTPS for public web endpoints
 <a name="wkld-13"></a>
 
-Require HTTPS so that your endpoints can use certificates to prove their identity and so that traffic between your endpoint and clients is encrypted. For public websites, HTTPS also improves search engine ranking.
+Require HTTPS so that your endpoints can use certificates to prove their identity and so that traffic between your endpoint and clients is encrypted. For public websites, HTTPS can also help improve search engine ranking.
 
 Many AWS services provide public web endpoints for your resources, such as AWS Elastic Beanstalk, Amazon CloudFront, Amazon API Gateway, Elastic Load Balancing, and AWS Amplify. For instructions about how to require HTTPS for each of these services, see the following:
 + [Configuring HTTPS for your Elastic Beanstalk environment](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/configuring-https.html) in the AWS Elastic Beanstalk documentation
@@ -26,7 +26,7 @@ For instructions on setting up CloudFront to serve a static website hosted on Am
 
 1. If you are configuring access to a private Amazon S3 bucket, restrict access to Amazon S3 content by using an origin access control (OAC). For more information, see [Restricting access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the Amazon CloudFront documentation.
 
-Configure HTTPS endpoints to require modern Transport Layer Security (TLS) protocols and ciphers, unless compatibility with older protocols is needed. For example, use the** **`ELBSecurityPolicy-TLS13-1-2-Res-PQ-2025-09` policy or the most recent policy available for Application Load Balancer HTTPS listeners. The most current policies support **TLS 1.2 and TLS 1.3**, forward secrecy, and strong ciphers that are compatible with modern web browsers.
+Configure HTTPS endpoints to require modern Transport Layer Security (TLS) protocols and ciphers, unless you need compatibility with older protocols. For example, use the** **`ELBSecurityPolicy-TLS13-1-2-Res-PQ-2025-09` policy or the most recent policy available for Application Load Balancer HTTPS listeners. The most current policies support **TLS 1.2 and TLS 1.3**, forward secrecy, and modern ciphers that are compatible with current web browsers.
 
 For more information about the available security policies for HTTPS public endpoints, see the following:
 + [Predefined SSL security policies for Classic Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-policy-table.html) in the Elastic Load Balancing documentation

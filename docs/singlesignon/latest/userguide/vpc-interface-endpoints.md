@@ -400,30 +400,6 @@ The following example restricts portal backend access to identities from a speci
 }
 ```
 
-To restrict portal backend access to any instance in your organization instead of a single instance, use `aws:IdentityCenterInstanceOrgId`.
-
-**Example Restrict portal backend access to instances in the same organization**
-
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "AllowPortalSameOrg",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "*",
-            "Resource": "*",
-            "Condition": {
-                "StringEquals": {
-                    "aws:IdentityCenterInstanceOrgId": "o-{{xxxxxxxxxxx}}"
-                }
-            }
-        }
-    ]
-}
-```
-
 #### VPC endpoint policies on the AWS access portal and AWS managed applications
 <a name="vpc-endpoint-policy-1p-apps"></a>
 
@@ -434,8 +410,6 @@ These context keys use the `aws:IdentityCenter` prefix. IAM Identity Center's ow
 | Context key | Type | Description |
 | --- | --- | --- |
 | aws:IdentityCenterInstanceArn | String | The ARN of the IAM Identity Center instance connected to the bearer token. |
-| aws:IdentityCenterInstanceAccount | String | The AWS account ID that owns the IAM Identity Center instance. |
-| aws:IdentityCenterInstanceOrgId | String | The AWS Organizations ID of the IAM Identity Center instance. |
 | aws:IdentityStoreArn | String | The ARN of the identity store associated with the IAM Identity Center instance. |
 | aws:IdentityCenterSessionId | String | The session identifier for the current IAM Identity Center session. |
 
@@ -456,28 +430,6 @@ These keys are returned to AWS managed applications when they validate IAM Ident
             "Condition": {
                 "StringEquals": {
                     "aws:IdentityCenterInstanceArn": "arn:aws:sso:::instance/ssoins-{{1234567890abcdef}}"
-                }
-            }
-        }
-    ]
-}
-```
-
-**Example Allow access for identities from any IAM Identity Center instance in the same organization**
-
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "IdCOrgRestriction",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "service:DataAPI",
-            "Resource": "*",
-            "Condition": {
-                "StringEquals": {
-                    "aws:IdentityCenterInstanceOrgId": "o-{{xxxxxxxxxxx}}"
                 }
             }
         }

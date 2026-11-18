@@ -57,6 +57,8 @@ $res = $client->blpop("list", 1); // will timeout after 1 second
 print "$res\n";                   // less than the 2 second socket timeout
 ```
 
+**Timeout config sample 2b: PHPRedis with TLS**
+
 When connecting to ElastiCache with in-transit encryption enabled (required for serverless), configure the TLS connection. In the following PHP code example, replace `{{HOST}}` with your cluster endpoint and `{{PORT}}` with your cluster's port number:
 
 ```

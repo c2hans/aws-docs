@@ -81,6 +81,7 @@ The following table lists the service quotas for EMR Serverless. For more inform
 | Name | Default limit | Adjustable? | Description |
 | --- | --- | --- | --- |
 | Max concurrent vCPUs per account | 16 | Yes | The maximum number of vCPUs that can concurrently run for the account in the current AWS Region.<br />Valid Period: 1 minute<br />Valid Statistics: Sum |
+| Max concurrent Flex vCPUs per account | 16 | Yes | The maximum number of Flex vCPUs that can concurrently run for the account in the current AWS Region. Applies to job runs that use [Flex](jobs-flex-execution.md).<br />Valid Period: 1 minute<br />Valid Statistics: Sum |
 
 ## API limits
 <a name="api-limits"></a>

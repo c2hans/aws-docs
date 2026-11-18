@@ -37,6 +37,10 @@ When you call [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIR
          "S3OutputPath": "{{string}}"
       }
    },
+   "CrossRegionTrafficConfig": {
+      "MaxCrossRegionPercentPerEndpoint": {{number}},
+      "MaxInvocationsPerSecondPerInstance": {{number}}
+   },
    "DataCaptureConfig": {
       "CaptureContentTypeHeader": {
          "CsvContentTypes": [ "{{string}}" ],
@@ -232,6 +236,11 @@ The request accepts the following data in JSON format.
  ** [AsyncInferenceConfig](#API_CreateEndpointConfig_RequestSyntax) **   <a name="sagemaker-CreateEndpointConfig-request-AsyncInferenceConfig"></a>
 Specifies configuration for how an endpoint performs asynchronous inference. This is a required field in order for your Endpoint to be invoked using [InvokeEndpointAsync](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointAsync.html).
 Type: [AsyncInferenceConfig](API_AsyncInferenceConfig.md) object
+Required: No
+
+ ** [CrossRegionTrafficConfig](#API_CreateEndpointConfig_RequestSyntax) **   <a name="sagemaker-CreateEndpointConfig-request-CrossRegionTrafficConfig"></a>
+The cross-Region traffic cap for the endpoint. The cap limits the requests per second that the endpoint accepts from inference routers in other AWS Regions. If you don't specify it, these requests aren't limited. You can't specify it with serverless variants or with `AsyncInferenceConfig`. For information about the cross-Region traffic cap, see [Limit requests from other Regions](https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router.html#inference-router-cross-region-limit).
+Type: [CrossRegionTrafficConfig](API_CrossRegionTrafficConfig.md) object
 Required: No
 
  ** [DataCaptureConfig](#API_CreateEndpointConfig_RequestSyntax) **   <a name="sagemaker-CreateEndpointConfig-request-DataCaptureConfig"></a>

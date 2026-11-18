@@ -100,7 +100,7 @@ The response headers of the following REST API operations return the `x-amz-serv
 
 **Important**
 All `GET` and `PUT` requests for an object that's protected by AWS KMS fail if you don't make them by using Secure Sockets Layer (SSL), Transport Layer Security (TLS), or Signature Version 4.
-If your object uses DSSE-KMS, don't send encryption request headers for `GET` requests and `HEAD` requests, or you'll get an HTTP 400 (Bad Request) error.
+If your object uses DSSE-KMS, don't send encryption request headers for `GET` requests and `HEAD` requests, or you'll get an `HTTP 400 (Bad Request)` error.
 
 ### Encryption context (`x-amz-server-side-encryption-context`)
 <a name="s3-dsse-encryption-context"></a>

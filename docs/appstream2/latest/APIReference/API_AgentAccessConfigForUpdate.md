@@ -10,8 +10,19 @@ The configuration for updating agent access on a stack. This type supports parti
 ## Contents
 <a name="API_AgentAccessConfigForUpdate_Contents"></a>
 
+ ** KmsKeyArn **   <a name="WorkSpacesApplications-Type-AgentAccessConfigForUpdate-KmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the customer managed symmetric encryption KMS key that encrypts Replay Session artifacts while WorkSpaces Applications processes them. To remove the key, use AttributesToDelete with the AGENT\_ACCESS\_CONFIG\_KMS\_KEY\_ARN value.
+Type: String
+Pattern: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:kms:[a-z0-9\-]+:\d{12}:key/[A-Za-z0-9\-]+$`
+Required: No
+
+ ** ReplaySessionEnabled **   <a name="WorkSpacesApplications-Type-AgentAccessConfigForUpdate-ReplaySessionEnabled"></a>
+Indicates whether Replay Session is enabled for agent sessions. Setting this attribute to false also removes the KmsKeyArn value from the stack.
+Type: Boolean
+Required: No
+
  ** S3BucketArn **   <a name="WorkSpacesApplications-Type-AgentAccessConfigForUpdate-S3BucketArn"></a>
-The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots are stored.
+The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots and Replay Session artifacts are stored.
 Type: String
 Pattern: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:s3:::[a-z0-9][a-z0-9.\-]{1,61}[a-z0-9]$`
 Required: No
@@ -34,7 +45,7 @@ Type: Boolean
 Required: No
 
  ** Settings **   <a name="WorkSpacesApplications-Type-AgentAccessConfigForUpdate-Settings"></a>
-The list of agent access settings that define permissions for each agent action.
+The list of agent access settings that define permissions for each agent action. The merged settings must have at least one agent action enabled.
 Type: Array of [AgentAccessSetting](API_AgentAccessSetting.md) objects
 Required: No
 

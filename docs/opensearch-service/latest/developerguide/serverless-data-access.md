@@ -133,8 +133,8 @@ A data access policy includes a set of rules, each with the following elements:
 
 | Element | Description |
 | --- | --- |
-| ResourceType | The type of resource (collection or index) that the permissions apply to. Alias and template permissions are at the collection level, while permissions for creating, modifying, and searching data are at the index level. For more information, see [Supported policy permissions](#serverless-data-supported-permissions). |
-| Resource | A list of resource names and/or patterns. Patterns are prefixes followed by a wildcard (\*), which allow the associated permissions to apply to multiple resources.+  Collections take the format `collection/{{<name\|pattern>}}`. <br />+  Indexes take the format `index/{{<collection-name\|pattern>}}/{{<index-name\|pattern/>}}`.  |
+| ResourceType | The type of resource (collection, index, or model) that the permissions apply to. Alias and template permissions are at the collection level, while permissions for creating, modifying, and searching data are at the index level. Permissions for machine learning connectors, models, and model groups use the model resource type. Each policy statement can contain at most one rule for each resource type. For more information, see [Supported policy permissions](#serverless-data-supported-permissions). |
+| Resource | A list of resource names and/or patterns. Patterns are prefixes followed by a wildcard (\*), which allow the associated permissions to apply to multiple resources.+  Collections take the format `collection/{{<name\|pattern>}}`. <br />+  Indexes take the format `index/{{<collection-name\|pattern>}}/{{<index-name\|pattern/>}}`. <br />+  Models take the format `model/{{<collection-name\|pattern>}}/{{<model-name\|pattern>}}`. To scope a rule to specific models, use model names that start with a lowercase letter and contain only lowercase letters, numbers, hyphens, and underscores (3-64 characters). Permissions for connectors, model groups, and tasks, and for searching models, don't apply to a specific model name. Grant them, and the permissions for workflow steps, on `model/{{<collection-name>}}/*`. For information about scoping access to specific models, see [Configure permissions for Machine Learning](serverless-configure-machine-learning.md#serverless-configure-machine-learning-permissions).  |
 | Permission | A list of permissions to grant for the specified resources. For a complete list of permissions and the API operations they allow, see [Supported OpenSearch API operations and permissions](serverless-genref.md#serverless-operations). |
 | Principal | A list of one or more principals to grant access to. Principals can be IAM role ARNs or SAML identities. These principals must be within the current AWS account. Data access policies don't directly support cross-account access, but you can include a role in your policy that a user from a different AWS account can assume in the collection-owning account. For more information, see [Cross-account data access](#serverless-data-access-cross). |
 
@@ -199,6 +199,14 @@ The following permissions are supported in data access policies. For the OpenSea
 + `aoss:DeleteIndex`
 + `aoss:UpdateIndex`
 + `aoss:DescribeIndex`
++ `aoss:*`
+
+**Model permissions**
++ `aoss:CreateMLResource`
++ `aoss:DescribeMLResource`
++ `aoss:UpdateMLResource` (includes deploying and undeploying models)
++ `aoss:DeleteMLResource`
++ `aoss:ExecuteMLResource`
 + `aoss:*`
 
 **Note**

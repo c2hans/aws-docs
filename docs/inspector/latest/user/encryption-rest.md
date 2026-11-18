@@ -142,7 +142,7 @@ To configure encryption for your account using a customer managed key you must b
  Effective June 13th, 2025, the service principal in AWS KMS requests logged in CloudTrail during code snippet encryption/decryption is changing from "codeguru-reviewer" to "q".
 
 ### Using the Amazon Inspector API to configure encryption
-<a name="w2aac62c14c13c17b7"></a>
+<a name="w2aac64c14c13c17b7"></a>
 
 To set a key for encryption the [UpdateEncryptionKey](https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateEncryptionKey.html) operation of the Amazon Inspector API while signed in as an Amazon Inspector administrator. In the API request, use the `kmsKeyId` field to specify the ARN of the AWS KMS key you want to use. For `scanType` enter `CODE` and for `resourceType` enter `AWS_LAMBDA_FUNCTION`.
 

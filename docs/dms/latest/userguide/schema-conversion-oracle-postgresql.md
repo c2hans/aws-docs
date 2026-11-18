@@ -59,6 +59,8 @@ Your source Oracle database can use the `ROWID` pseudocolumn. PostgreSQL doesn't
 **Type:** String (enum)
 **Default:** `false`
 
+**Code**
+
 Select the conversion settings that are specific to your source Oracle code.
 
 **Use the optimized data type mapping for columns of the NUMBER data type** (`UseOptimizedMappingForNumberConversion`)
@@ -153,6 +155,8 @@ The time zone that DMS Schema Conversion uses when `SYSDATE` emulation is turned
 **Note**
 The AWS Management Console lists an additional option, **Add extension pack functions that raise user-defined exceptions**, between **Convert procedures to functions** and **Keep the names of system generated constraints**. This option is configured only in the AWS Management Console and isn't available through the API or AWS CLI. The related severity-level behavior is controlled by the `ShowSeverityLevelInSql` common setting. For more information, see [Common conversion settings](schema-conversion-settings.md#schema-conversion-settings-common).
 
+**Orafce built-in routines**
+
 Choose the Orafce built-in routines to use in the converted code. Orafce is a PostgreSQL extension that provides routines compatible with Oracle built-in functions. Each routine has a dedicated Boolean setting. When you set a routine to `true`, DMS Schema Conversion converts the matching Oracle built-in function to its Orafce routine. When you set it to `false`, DMS Schema Conversion leaves the function as an action item for manual review. To use these routines, the orafce extension must be available on your target database. All of these routines default to `false`. Set a routine to `true` only after you verify that the function's behavior in your usage is compatible with the Orafce routine.
 
 | Setting name | Oracle built-in function |
@@ -212,6 +216,8 @@ Each routine is a separate Boolean key. The following example turns on the Orafc
   }
 }
 ```
+
+**SQL code settings**
 
 Configure how DMS Schema Conversion handles Oracle built-in objects that PostgreSQL doesn't support.
 

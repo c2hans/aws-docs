@@ -51,6 +51,8 @@ Multi-turn RL jobs support symmetric AWS KMS keys only. Multi-region keys are no
 
 To use a customer managed KMS key with multi-turn RL jobs, you must configure permissions on both the IAM execution role and the KMS key policy.
 
+**Execution role permissions**
+
 The IAM execution role that you pass to the `CreateJob` API must have the following AWS KMS permissions. These permissions allow the training job to encrypt output data and decrypt input data through Amazon S3.
 
 ```
@@ -79,6 +81,8 @@ The IAM execution role that you pass to the `CreateJob` API must have the follow
 
 The `kms:ViaService` condition restricts use of the key to requests that come through Amazon S3, preventing the key from being used for other purposes.
 
+**Agent runtime role permissions**
+
 The agent runtime role that your Amazon Bedrock AgentCore agent or AWS Lambda forwarder assumes must have the following AWS KMS permissions. SageMaker AI checks that the caller has these permissions before using the KMS key during a multi-turn reinforcement learning (RL) job.
 
 ```
@@ -104,6 +108,8 @@ The agent runtime role that your Amazon Bedrock AgentCore agent or AWS Lambda fo
 ```
 
 The `kms:ViaService` condition for the agent runtime role specifies `sagemaker.*.amazonaws.com` because the SageMaker AI runtime service performs the AWS KMS operations on behalf of the caller. In contrast, the execution role uses `s3.*.amazonaws.com` because it accesses the key through Amazon S3.
+
+**KMS key policy**
 
 The default KMS key policy already allows IAM roles in the same account to use the key. Optionally, you can add the following statement to further restrict access to only the execution role and agent runtime role:
 
@@ -232,6 +238,8 @@ For multi-turn RL evaluation jobs, the encryption context uses:
 
 The encryption context is bound to the specific job that creates the encrypted data. Each job encrypts its own output with its own ARN in the encryption context. This provides cryptographic binding between the encrypted data and the job that produced it.
 
+**Using encryption context in key policies**
+
 The encryption context is enforced automatically through the grant constraints that Amazon SageMaker AI creates at job creation time. You do not need to add encryption context conditions to your KMS key policy for encryption to work correctly.
 
 If you add encryption context conditions to the `kms:CreateGrant` statement in your KMS key policy, you must allow grants for both the current job and the previous job in iterative training chains. The following example allows Amazon SageMaker AI to create grants with any training job ARN in the encryption context:
@@ -263,11 +271,15 @@ If you add encryption context conditions to the `kms:CreateGrant` statement in y
 **Note**
 If you restrict `kms:CreateGrant` to a single specific job ARN in the encryption context, iterative training will fail because Amazon SageMaker AI also creates a read grant with the previous job's ARN as the encryption context. Use a wildcard pattern to allow grants for any job in your account.
 
+**Encryption context in iterative training**
+
 When you run iterative training jobs (where a subsequent job resumes from a previous job's checkpoint), the encryption context for each job contains that job's own ARN. Amazon SageMaker AI automatically manages two AWS KMS grants to support iterative training:
 + **Write grant** – Allows the current job to encrypt its own checkpoint data using the current job's ARN as the encryption context.
 + **Read grant** – Allows the current job to decrypt checkpoint data from the previous job using the previous job's ARN as the encryption context.
 
 Both grants are automatically retired when the job completes. You do not need to add any additional key policy statements for iterative training to work with customer managed keys.
+
+**Encryption context in AWS CloudTrail**
 
 When you review CloudTrail logs for AWS KMS API calls made by multi-turn RL jobs, the encryption context appears in the `requestParameters` field of the log entry. You can use this information to determine which job performed a specific encryption or decryption operation on your data.
 

@@ -32,3 +32,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Analyze object dependencies for partial database migrations from Oracle to PostgreSQL](multilevel-object-analysis-for-database-migration-from-oracle-to-postgresql.md)
 + [Set up disaster recovery for Oracle JD Edwards EnterpriseOne with AWS Elastic Disaster Recovery](set-up-disaster-recovery-for-oracle-jd-edwards-enterpriseone-with-aws-elastic-disaster-recovery.md)
 + [Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files](transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files.md)
++ [Transform Easytrieve to modern languages by using AWS Transform custom](transform-easytrieve-modern-languages.md)

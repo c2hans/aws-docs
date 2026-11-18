@@ -30,6 +30,8 @@ Your source Oracle database can use the `ROWID` pseudocolumn. MySQL doesn't supp
 **Default:** `false`
 For the Oracle to MySQL conversion path, `GenerateRowId` is a Boolean (`true` \| `false`) and emulates the `ROWID` pseudocolumn by using the `bigint` data type only. For the Oracle to PostgreSQL conversion path, the same setting is a string enumeration that also offers a `character varying` emulation option (`GENERATE_AS_CHARACTER_DOMAIN_TYPE`). For more information, see [Oracle to PostgreSQL conversion settings](schema-conversion-oracle-postgresql.md).
 
+**Function conversion settings**
+
 By default, DMS Schema Conversion emulates Oracle conversion functions in the converted code so that the result matches the Oracle behavior. If your source code doesn't rely on Oracle-specific formatting, you can convert these functions to the native MySQL equivalents instead. Native functions run faster, so set these options to `true` only after you verify that your usage is compatible with MySQL.
 
 **Use a native MySQL TO\_CHAR function** (`ToCharFunctionOracle`)

@@ -50,7 +50,7 @@ You can use the AWS Management Console to sign up for Amazon SNS notifications.
    When a price changes, you will receive a notification from your preferred format that you specified in step 8.
 
 **Important**
-If you get an error message Couldn't create subscription. Error code: InvalidParameter - Error message: Invalid parameter: TopicArn, it's likely that you're not using the US East (N. Virginia) Region. The billing metric data is stored in this Region, even for resources in other Regions. Return to step 3 and complete the rest of this procedure.
+If you get an error message `Couldn't create subscription. Error code: InvalidParameter - Error message: Invalid parameter: TopicArn`, it's likely that you're not using the US East (N. Virginia) Region. The billing metric data is stored in this Region, even for resources in other Regions. Return to step 3 and complete the rest of this procedure.
 
 ## Notification structure for AWS services
 <a name="notification-structure-for-aws-services"></a>

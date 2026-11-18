@@ -1144,7 +1144,7 @@ The minimum encryption feature is not available for Apache Spark enabled workgro
 Published on 2023-03-17
 
 Athena announces the following fixes and improvements.
-+ Fixed an issue with the Amazon Athena DynamoDB connector that caused queries to fail with the error message KeyConditionExpressions must only contain one condition per key.
++ Fixed an issue with the Amazon Athena DynamoDB connector that caused queries to fail with the error message `KeyConditionExpressions must only contain one condition per key`.
 
   This issue occurs because Athena engine version 3 recognizes the opportunity to push down more kinds of predicates than Athena engine version 2. In Athena engine version 3, clauses like `some_column LIKE 'someprefix%` are pushed down as filter predicates that apply a lower and upper bound on a given column. Athena engine version 2 did not push these predicates down. In Athena engine version 3, when `some_column` is a sort key column, the engine pushes the filter predicate down to the DynamoDB connector. The filter predicate then gets further pushed down to the DynamoDB service. Because DynamoDB does not support more than one filter condition on a sort key, DynamoDB returns the error.
 
@@ -1439,7 +1439,7 @@ Athena announces the following fixes and improvements.
 Published on 2022-06-06
 
 Athena releases JDBC driver version 2.0.31. The JDBC 2.0.31 driver includes the following changes:
-+ **log4j dependency issue** – Resolved a Cannot find driver class error message caused by a log4j dependency.
++ **log4j dependency issue** – Resolved a `Cannot find driver class` error message caused by a log4j dependency.
 
 For more information, and to download the new drivers, release notes, and documentation, see [Connect to Amazon Athena with JDBC](connect-with-jdbc.md).
 
@@ -1691,7 +1691,7 @@ Athena announces new features and improvements.
   FROM orders
   GROUP BY orderpriority, custkey
   ```
-+ Addressed memory handling issues for queries that use `DISTINCT`. To avoid error messages like Query exhausted resources at this scale factor when you use `DISTINCT` queries, choose columns that have a low cardinality for `DISTINCT`, or reduce the data size of the query.
++ Addressed memory handling issues for queries that use `DISTINCT`. To avoid error messages like `Query exhausted resources at this scale factor` when you use `DISTINCT` queries, choose columns that have a low cardinality for `DISTINCT`, or reduce the data size of the query.
 + In `SELECT COUNT(*)` queries that do not specify a specific column, improved performance and memory usage by keeping only the count without row buffering.
 + Introduced the following string functions.
   + `translate(source, from, to)` – Returns the `source` string with the characters found in the `from` string replaced by the corresponding characters in the `to` string. If the `from` string contains duplicates, only the first is used. If the `source` character does not exist in the `from` string, the `source` character is copied without translation. If the index of the matching character in the `from` string is greater than the length of the `to` string, the character is omitted from the resulting string.
@@ -2626,7 +2626,7 @@ Added support for views. You can now use [CREATE VIEW and CREATE PROTECTED MULTI
 + Enhanced partition schema validation in Athena for Parquet, and, in some cases, for ORC, by allowing reordering of columns. This enables Athena to better deal with changes in schema evolution over time, and with tables added by the AWS Glue Crawler. For more information, see [Handle schema updates](handling-schema-updates-chapter.md).
 + Added parsing support for `SHOW VIEWS`.
 + Made the following improvements to most common error messages:
-  + Replaced an Internal Error message with a descriptive error message when a SerDe fails to parse the column in an Athena query. Previously, Athena issued an internal error in cases of parsing errors. The new error message reads: "HIVE\_BAD\_DATA: Error parsing field value for field 0: java.lang.String cannot be cast to org.openx.data.jsonserde.json.JSONObject".
+  + Replaced an `Internal Error` message with a descriptive error message when a SerDe fails to parse the column in an Athena query. Previously, Athena issued an internal error in cases of parsing errors. The new error message reads: `"HIVE_BAD_DATA: Error parsing field value for field 0: java.lang.String cannot be cast to org.openx.data.jsonserde.json.JSONObject"`.
   + Improved error messages about insufficient permissions by adding more detail.
 
 #### Bug Fixes
@@ -2682,7 +2682,7 @@ Published on *2018-03-15*
 
 Published on *2018-02-12*
 
-Added an ability to securely offload intermediate data to disk for memory-intensive queries that use the `GROUP BY` clause. This improves the reliability of such queries, preventing "Query resource exhausted" errors.
+Added an ability to securely offload intermediate data to disk for memory-intensive queries that use the `GROUP BY` clause. This improves the reliability of such queries, preventing `"Query resource exhausted"` errors.
 
 ### January 19, 2018
 <a name="release-note-2018-01-19"></a>

@@ -26,7 +26,7 @@ For a shared database or table to appear in the Athena Query Editor, you [create
 For shared views, keep in mind the following points:
 + Queries are run on target resource links, not on the source table or view, and then the output is shared to the target account.
 + It is not sufficient to share only the view. All the tables that are involved in creating the view must be part of the cross-account share.
-+ The name of the resource link created on the shared resources must match the name of the resource in the owner account. If the name does not match, an error message like Failed analyzing stored view 'awsdatacatalog.{{my-lf-resource-link}}.{{my-lf-view}}': line 3:3: Schema {{schema\_name}} does not exist occurs.
++ The name of the resource link created on the shared resources must match the name of the resource in the owner account. If the name does not match, an error message like `Failed analyzing stored view 'awsdatacatalog.{{my-lf-resource-link}}.{{my-lf-view}}': line 3:3: Schema {{schema_name}} does not exist` occurs.
 
 For more information about cross-account access in Lake Formation, see the following resources in the *AWS Lake Formation Developer Guide*:
 

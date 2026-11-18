@@ -60,6 +60,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateWebACL  **
   - **IAM action:**  [wafv2:CreateWebACL](#list_wafv2-action-CreateWebACL)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [wafv2:TagResource](#list_wafv2-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** wafv2.amazonaws.com / **Access level:** Write
 
 - **   DeleteAPIKey  **
   - **IAM action:**  [wafv2:DeleteAPIKey](#list_wafv2-action-DeleteAPIKey)
@@ -368,10 +369,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   UpdateWebACL  **
-  - **IAM action:**  [wafv2:UpdateWebACL](#list_wafv2-action-UpdateWebACL)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [wafv2:UpdateWebACL](#list_wafv2-action-UpdateWebACL)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** wafv2.amazonaws.com / **Access level:** Write
 
 ## Actions defined by AWS WAF V2
 <a name="list_wafv2-actions-as-permissions"></a>

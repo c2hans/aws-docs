@@ -47,9 +47,13 @@ The **AwsGroundStationAgentEndpoint** resource defines an endpoint for receiving
 
 The following AMIs are supported. Choose an AMI that matches the operating system you intend to run; the AWS Ground Station Agent AMIs come with the agent pre-installed (recommended).
 
+**Amazon Linux 2023 (recommended)**
+
 1. AWS Ground Station AMI - `groundstation-al2023-gs-agent-ami-*` where \* is the date the AMI was built - comes with agent installed (recommended).
 
 1. A stock Amazon Linux 2023 AMI - `al2023-ami-*-x86_64`.
+
+**Amazon Linux 2**
 
 1. AWS Ground Station AMI - `groundstation-al2-gs-agent-ami-*` where \* is the date the AMI was built - comes with agent installed (recommended).
 

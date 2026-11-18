@@ -17,12 +17,6 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:[-.a-z0-9]{1,63}:[-.a-z0-9]{1,63}:[-.a-z0-9]{0,63}:[-.a-z0-9]{0,63}:[^/].{0,1023}`
 Required: Yes
 
- ** cidr **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-cidr"></a>
-The CIDR block that defines the IP address range for the access source.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 43.
-Required: Yes
-
  ** createdAt **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-createdAt"></a>
 The date and time when the access source was created.
 Type: Timestamp
@@ -42,12 +36,6 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[-.a-zA-Z0-9]+`
 Required: Yes
 
- ** ipAddressType **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-ipAddressType"></a>
-The IP address type of the access source.
-Type: String
-Valid Values: `IPV4 | IPV6`
-Required: Yes
-
  ** protocol **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-protocol"></a>
 The protocol used by the access source.
 Type: String
@@ -65,11 +53,36 @@ The date and time when the access source was last updated.
 Type: Timestamp
 Required: Yes
 
+ ** cidr **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-cidr"></a>
+The CIDR block that defines the IP address range for the access source.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 43.
+Required: No
+
+ ** coreNetworkEndpointId **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-coreNetworkEndpointId"></a>
+The ID of the core network endpoint associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
+Required: No
+
+ ** ipAddressType **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-ipAddressType"></a>
+The IP address type of the access source.
+Type: String
+Valid Values: `IPV4 | IPV6 | NONE`
+Required: No
+
  ** name **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-name"></a>
 The name of the access source.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 32.
 Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
+Required: No
+
+ ** segment **   <a name="Route53GlobalResolver-Type-route53globalresolver_AccessSourcesItem-segment"></a>
+The name of the segment associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
 ## See Also

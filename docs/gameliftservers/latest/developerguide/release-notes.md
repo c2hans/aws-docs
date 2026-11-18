@@ -120,6 +120,8 @@ To turn on game session placement insight logging, set the log configuration of 
 
 ### October 22, 2026: C\# server SDK for Amazon GameLift Servers now supports .NET 10
 <a name="release-notes-10222026"></a>
+
+**Updated SDK and plugin versions**
 + [C\# server SDK](https://github.com/amazon-gamelift/amazon-gamelift-servers-csharp-server-sdk) on the GitHub website, version 5.5.2
 + [C\+\+ server SDK](https://github.com/amazon-gamelift/amazon-gamelift-servers-cpp-server-sdk) on the GitHub website, version 5.6.1
 + [Plugin for Unreal](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unreal) on the GitHub website, version 3.4.1 (includes the server SDK for Unreal, version 5.6.1)
@@ -209,6 +211,8 @@ For more information, see the following resources:
 
 ### August 4, 2026: Amazon GameLift Servers plugin for Unreal supports Unreal Engine 5.8
 <a name="release-notes-08042026"></a>
+
+**Updated plugin and SDK versions**
 + [Plugin for Unreal](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unreal) on the GitHub website, version 3.4.0 (includes the server SDK for Unreal, version 5.6.0)
 + [Client SDK for Unreal](https://github.com/amazon-gamelift-for-unreal/amazon-gamelift-servers-client-sdk-for-unreal) on the GitHub website, version 1.0.1. To access this SDK, you must be a member of the Epic Games organization on GitHub. For details, see [Unreal Engine on GitHub](https://www.unrealengine.com/en-US/ue-on-github) on the Unreal Engine website.
 
@@ -216,6 +220,8 @@ These versions include the following updates:
 + The plugin, server SDK, and client SDK now support Unreal Engine 5.8.
 + The server SDK logs stream through the Unreal Engine logging system by default, so they appear in your game server logs automatically.
 + The server SDK for Unreal Engine can now compile in non-unity mode with precompiled headers (PCH) files disabled.
+
+**Updated C\+\+ server SDK**
 
 C\+\+ server SDK, version 5.6.0
 + New custom logging capability. You can now route the server SDK's log output to a custom logging callback by calling the new `InitCustomLogger()` action—for example, to integrate the server SDK logs with your game server's own logging system.

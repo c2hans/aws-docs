@@ -44,6 +44,23 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "amiConfiguration": {
+      "createdWithin": "string",
+      "lastLaunchedWithin": "string",
+      "scanModeConfiguration": {
+         "excludeBackupDlmAmis": boolean,
+         "excludeCopiedAmis": boolean,
+         "scanMode": "string",
+         "tags": [
+            {
+               "key": "string",
+               "value": "string"
+            }
+         ]
+      },
+      "status": "string",
+      "updatedAt": number
+   },
    "ec2Configuration": {
       "scanModeState": {
          "scanMode": "string",
@@ -73,6 +90,10 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [amiConfiguration](#API_GetConfiguration_ResponseSyntax) **   <a name="inspector2-GetConfiguration-response-amiConfiguration"></a>
+The current state of the Amazon Machine Image (AMI) scan configuration for the account.
+Type: [AmiConfigurationState](API_AmiConfigurationState.md) object
 
  ** [ec2Configuration](#API_GetConfiguration_ResponseSyntax) **   <a name="inspector2-GetConfiguration-response-ec2Configuration"></a>
 Specifies how the Amazon EC2 automated scan mode is currently configured for your environment.

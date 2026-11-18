@@ -11,7 +11,7 @@ When you delete a connector, Security Hub automatically deletes the associated s
 
 **To delete an Azure connector**
 
-1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.](https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1.).
+1. Open the AWS Security Hub console at [https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1](https://console.aws.amazon.com/securityhub/advanced/home?region=us-east-1).
 
 1. In the navigation pane, choose **Integrations**.
 

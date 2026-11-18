@@ -193,6 +193,8 @@ Network latency and packet drops can occur for multiple reasons such as a sudden
 
 AWS Network Firewall is a fully managed service that scales automatically to meet traffic demand. It continuously monitors traffic flowing through your firewall endpoints and adjusts capacity, with each endpoint scaling independently up to 100 Gbps. Automatic scaling is always enabled and requires no configuration.
 
+**Scaling considerations**
+
 1. **Per-AZ scaling** – Each firewall endpoint is zonal and scales independently based on the traffic it processes.
 
 1. **Scale-up behavior** – When Network Firewall detects increased traffic, it provisions additional capacity automatically. Scaling typically completes within minutes, though very rapid or large traffic increases might take longer.

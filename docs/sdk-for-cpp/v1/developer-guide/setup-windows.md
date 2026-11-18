@@ -104,7 +104,7 @@ You can build the SDK from source using command-line tools. Using this method, y
            -DCURL_LIBRARY='{{C:/curl/lib/libcurl.dll.a}}' -DCMAKE_PREFIX_PATH={{"C:\Program Files (x86)\aws-cpp-sdk-all"}}
      ```
 **Note**
-If you get an error Failed to build third-party libraries, check your version of CMake by running **cmake --version**. You must use CMake minimum version 3.13.
+If you get an error `Failed to build third-party libraries`, check your version of CMake by running **cmake --version**. You must use CMake minimum version 3.13.
 
 1. Build the SDK binaries. If you’re building the entire SDK, this step can take one hour or longer. Command syntax:
 
@@ -114,7 +114,7 @@ If you get an error Failed to build third-party libraries, check your version of
    cmake --build . --config={{Debug}}
    ```
 **Note**
-If you encounter the error The code execution cannot proceed ... dll not found. Reinstalling the program may fix this problem.", retry the `cmake` command again.
+If you encounter the error `The code execution cannot proceed ... dll not found. Reinstalling the program may fix this problem."`, retry the `cmake` command again.
 
 1. Open a command prompt with **administrator** privileges to install the SDK in the location specified earlier using the `CMAKE_PREFIX_PATH` parameter. Command syntax:
 

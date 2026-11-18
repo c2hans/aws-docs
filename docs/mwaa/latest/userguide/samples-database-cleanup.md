@@ -43,10 +43,14 @@ The following examples show how to clean the metadata database on your Amazon MW
 
 ------
 #### [ Apache Airflow v3.0.6 to 3.3.1 ]
+
+**Important considerations**
 + You must specify `--clean-before-timestamp` to control how far back the cleanup reaches. Use an ISO 8601 formatted timestamp (for example, `2025-01-01T00:00:00+00:00`).
 + We recommend that you specify `--tables` to limit the cleanup to specific tables. If omitted, the command cleans all supported tables.
 + Start with a small scope — use an older `--clean-before-timestamp` value (closer to your environment creation date) and a single table first. This limits the cleanup to only the oldest records. Because the command deletes everything before the specified timestamp, using a more recent timestamp results in a larger deletion scope. Gradually move the timestamp forward as you gain confidence in the process.
 + Large-scale cleanup can impact database performance. Deleting a high volume of records puts pressure on the Aurora PostgreSQL database and might affect the responsiveness of your environment. Use the `--batch-size` parameter to control transaction size, and consider running cleanup during low-traffic periods. Exercise caution when running on production environments.
+
+**Dependent table behavior**
 
 When you specify a table with `--tables`, the command automatically includes any dependent (child) tables that have foreign key relationships with the specified table. Child table records are deleted first, then the parent table records, to satisfy foreign key constraints. For example, specifying `--tables dag_run` also cleans `task_instance`, `task_instance_history`, `xcom`, `task_state_store`, and `deadline` because these tables reference `dag_run` through foreign keys.
 
@@ -64,6 +68,8 @@ Tables without dependents (such as `log`, `job`, `import_error`, `sla_miss`) are
 
 Use `--dry-run` to see exactly which tables and how many rows would be affected before committing to a cleanup.
 
+**Available parameters for `airflow db clean`**
+
 The following table describes the available parameters for `airflow db clean`.
 
 | Parameter | Description | Default |
@@ -79,6 +85,8 @@ The following table describes the available parameters for `airflow db clean`.
 | -v, --verbose | Make logging output more verbose. | False |
 
 For more information about the available parameters, see [CLI and env variables reference](https://airflow.apache.org/docs/apache-airflow/stable/cli-and-env-variables-ref.html#clean) on the Apache Airflow website.
+
+**Code samples**
 
 The following examples show how to invoke `airflow db clean` through the Amazon MWAA CLI endpoint. For more information about creating CLI tokens, see [Creating an Apache Airflow CLI token](call-mwaa-apis-cli.md).
 
@@ -127,6 +135,8 @@ print(f"Status code: {response.status_code}")
 print(f"stdout:\n{stdout_message}")
 print(f"stderr:\n{stderr_message}")
 ```
+
+**Dry run example (recommended first step)**
 
 Before performing an actual cleanup, run with `--dry-run` to see what would be deleted:
 

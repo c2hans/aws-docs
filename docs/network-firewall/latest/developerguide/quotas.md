@@ -29,6 +29,8 @@ Network Firewall has the following quotas that can't be changed.
 | Maximum size of a Suricata-compatible rules string for a rule group, in bytes. | 2,000,000 |
 | Maximum stateful rule group capacity. For more information, see [Setting rule group capacity in AWS Network Firewall](nwfw-rule-group-capacity.md). | 30,000 |
 | Maximum number of IP set references per Suricata compatible stateful rule group. For information about IP set references, see [IP set references in Suricata compatible AWS Network Firewall rule groups](rule-groups-ip-set-references.md). | 5 |
+| Maximum number of context sets per rule group. For information about context sets, see [Context-aware rules in AWS Network Firewall](context-aware-rules.md). | 100 |
+| Maximum number of resource IDs per context set. A rule that references a context set must also stay within the maximum character length of a rule after Network Firewall expands the variable references in it. | 1,000 |
 | Maximum number of monitoring configurations per container association. | 5 |
 | Maximum number of container association references per rule group. | 30 |
 | Maximum number of stateful rule groups per firewall policy. | 20 |

@@ -7,10 +7,15 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 The rule-type configuration for a DNS Firewall rule. `FirewallRuleType` is a tagged union — exactly one member must be set per rule, and the member determines what the rule matches against. This shape is mutually exclusive with the top-level `FirewallDomainListId` and `DnsThreatProtection` fields on [CreateFirewallRule](API_route53resolver_CreateFirewallRule.md) and [UpdateFirewallRule](API_route53resolver_UpdateFirewallRule.md).
 
-Call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md) to discover which rule-type variants and which values within each variant are available in your account and Region.
+Call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md) to discover which rule-type variants and which values within each variant are available in your account and Region. It doesn't return the `AutoAllowlist` variant.
 
 ## Contents
 <a name="API_route53resolver_FirewallRuleType_Contents"></a>
+
+ ** AutoAllowlist **   <a name="Route53Resolver-Type-route53resolver_FirewallRuleType-AutoAllowlist"></a>
+Configures the rule as an AutoAllowlist rule, which observes the DNS traffic of the VPCs that use the rule group, through a rule group association or a Route 53 Profile, so that you can review the domains and allow them. See [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md).
+Type: [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md) object
+Required: No
 
  ** DnsThreatProtection **   <a name="Route53Resolver-Type-route53resolver_FirewallRuleType-DnsThreatProtection"></a>
 Configures the rule to match a built-in DNS Firewall Advanced threat detector — `DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`. See [DnsThreatProtectionRuleTypeConfig](API_route53resolver_DnsThreatProtectionRuleTypeConfig.md).

@@ -14,6 +14,8 @@ Registering a short code lets your company send two-way SMS messages to recipien
 **Note**
 A China short code is a non-standard number that can vary by mobile network. Your recipients might see a different number depending on their mobile carrier.
 
+**Before you begin**
+
 Before you create the registration, have the following ready. You cannot submit the registration without them.
 + Your mainland China business license.
 + A copy of the contact person's Chinese ID, and the contact person's name and mobile number.

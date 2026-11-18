@@ -15,7 +15,7 @@ Amazon Textract groups language support into the following three categories.
 | Category | Languages |
 | --- | --- |
 | Category 1 | English |
-| Category 2 | English, Spanish, Italian, Portuguese, French, and German |
+| Category 2 | English, French, German, Italian, Portuguese, and Spanish |
 | Category 3 | Albanian, Arabic, Basque, Belarusian, Bosnian, Bulgarian, Chinese (Simplified and Traditional), Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, German, Hebrew, Hindi, Hungarian, Icelandic, Italian, Japanese, Korean, Latvian, Lithuanian, Luxembourgish, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian Cyrillic, Serbian Latin, Slovak, Slovenian, Spanish, Swedish, Turkish, Turkmen, and Ukrainian |
 
 ## Language support by API operation
@@ -25,6 +25,6 @@ The following table shows the language support category for each API operation a
 
 | Category | APIs |
 | --- | --- |
-| Category 1 | `AnalyzeDocument` – Queries<br />`AnalyzeExpense`<br />`AnalyzeID`<br />`CreateAdapter`<br />`CreateAdapterVersion`<br />`DeleteAdapter`<br />`DeleteAdapterVersion`<br />`DetectDocumentText`<br />`GetAdapter`<br />`GetAdapterVersion`<br />`GetExpenseAnalysis`<br />`GetLendingAnalysis`<br />`GetLendingAnalysisSummary`<br />`ListAdapters`<br />`ListAdapterVersions`<br />`ListTagsForResource`<br />`StartDocumentAnalysis` – Queries<br />`StartExpenseAnalysis`<br />`StartLendingAnalysis`<br />`TagResource`<br />`UntagResource`<br />`UpdateAdapter` |
+| Category 1 | `AnalyzeDocument` – Queries<br />`AnalyzeExpense`<br />`AnalyzeID`<br />`CreateAdapter`<br />`CreateAdapterVersion`<br />`DeleteAdapter`<br />`DeleteAdapterVersion`<br />`GetAdapter`<br />`GetAdapterVersion`<br />`GetExpenseAnalysis`<br />`GetLendingAnalysis`<br />`GetLendingAnalysisSummary`<br />`ListAdapters`<br />`ListAdapterVersions`<br />`ListTagsForResource`<br />`StartDocumentAnalysis` – Queries<br />`StartExpenseAnalysis`<br />`StartLendingAnalysis`<br />`TagResource`<br />`UntagResource`<br />`UpdateAdapter` |
 | Category 2 | `AnalyzeDocument` – Forms<br />`GetDocumentAnalysis`<br />`StartDocumentAnalysis` – Forms |
-| Category 3 | `AnalyzeDocument` – Tables<br />`AnalyzeDocument` – Signatures<br />`AnalyzeDocument` – Layout<br />`GetDocumentTextDetection`<br />`StartDocumentAnalysis` – Tables<br />`StartDocumentAnalysis` – Signatures<br />`StartDocumentAnalysis` – Layout<br />`StartDocumentTextDetection` |
+| Category 3 | `AnalyzeDocument` – Tables<br />`AnalyzeDocument` – Signatures<br />`AnalyzeDocument` – Layout<br />`DetectDocumentText`<br />`GetDocumentTextDetection`<br />`StartDocumentAnalysis` – Tables<br />`StartDocumentAnalysis` – Signatures<br />`StartDocumentAnalysis` – Layout<br />`StartDocumentTextDetection` |

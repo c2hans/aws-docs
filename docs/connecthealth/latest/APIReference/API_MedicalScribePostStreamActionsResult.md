@@ -15,6 +15,11 @@ Results of clinical note generation
 Type: [ClinicalNoteGenerationResult](API_ClinicalNoteGenerationResult.md) object
 Required: No
 
+ ** medicalCodeGenerationResult **   <a name="connecthealth-Type-MedicalScribePostStreamActionsResult-medicalCodeGenerationResult"></a>
+Results of medical code generation. Returned if medical code generation runs for the session. Not returned if you set enabled to false in medicalCodeGenerationSettings.
+Type: [MedicalCodeGenerationResult](API_MedicalCodeGenerationResult.md) object
+Required: No
+
 ## See Also
 <a name="API_MedicalScribePostStreamActionsResult_SeeAlso"></a>
 

@@ -20,6 +20,9 @@ Specifies and starts a remote access session.
          "host": "{{string}}",
          "port": {{number}}
       },
+      "parameters": {
+         "{{string}}" : "{{string}}"
+      },
       "vpceConfigurationArns": [ "{{string}}" ]
    },
    "deviceArn": "{{string}}",

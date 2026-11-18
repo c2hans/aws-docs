@@ -94,7 +94,7 @@ Alternatively, you can use the AWS managed policy `AWSLambdaBasicDurableExecutio
 ### Permissions for managing durable executions
 <a name="durable-manage-permissions"></a>
 
-Lambda authorizes the `lambda:GetDurableExecution`, `lambda:GetDurableExecutionHistory`, `lambda:StopDurableExecution`, and `lambda:DeleteDurableExecution` actions against the durable execution ARN. Grant `lambda:DeleteDurableExecution` only to principals that are allowed to permanently remove execution data.
+Lambda authorizes the `lambda:GetDurableExecution`, `lambda:GetDurableExecutionHistory`, `lambda:StopDurableExecution`, `lambda:PauseDurableExecution`, `lambda:ResumeDurableExecution`, and `lambda:DeleteDurableExecution` actions against the durable execution ARN. Grant `lambda:DeleteDurableExecution` only to principals that are allowed to permanently remove execution data.
 
 To list the durable executions of a function, use `lambda:ListDurableExecutionsByFunction`. Lambda authorizes this action against the function ARN from the request. The following rules apply to ARN matching:
 + A policy that grants the unqualified function ARN matches only requests that use the unqualified function name.
@@ -115,6 +115,8 @@ To match requests made with either form of the function name, include both the u
                 "lambda:GetDurableExecution",
                 "lambda:GetDurableExecutionHistory",
                 "lambda:StopDurableExecution",
+                "lambda:PauseDurableExecution",
+                "lambda:ResumeDurableExecution",
                 "lambda:DeleteDurableExecution"
             ],
             "Resource": "arn:aws:lambda:us-east-1:123456789012:function:myDurableFunction:*"

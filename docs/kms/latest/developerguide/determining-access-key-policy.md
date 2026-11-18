@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/determining-ac
 # Examining the key policy
 <a name="determining-access-key-policy"></a>
 
-[Key policies](key-policies.md) are the primary way to control access to KMS keys. Every KMS key has a `default` key policy. A KMS key that you share through AWS Resource Access Manager (AWS RAM) also has an `AWS_RAM` key policy, and AWS KMS evaluates both key policies together. To determine access to a shared KMS key, examine both key policies. For more information about how AWS KMS evaluates the two key policies, see [How permissions are evaluated](key-sharing-ram.md#key-sharing-ram-evaluation).
+[Key policies](key-policies.md) are the primary way to control access to KMS keys. Every KMS key has exactly one key policy.
 
 When a key policy consists of or includes the [default key policy](key-policy-default.md#key-policy-default-allow-root-enable-iam), the key policy allows IAM administrators in the account to use IAM policies to control access to the KMS key. Also, if the key policy gives [another AWS account](key-policy-modifying-external-accounts.md) permission to use the KMS key, the IAM administrators in the external account can use IAM policies to delegate those permissions. To determine the complete list of principals that can access the KMS key, [examine the IAM policies](determining-access-iam-policies.md).
 

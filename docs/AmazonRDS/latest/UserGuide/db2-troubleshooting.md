@@ -182,6 +182,7 @@ This section describes various errors returned when calling stored procedures an
 | Databases | [rdsadmin.deactivate\_database errors](#db2-troubleshooting-deactivate-database-sp-errors) |
 | Databases | [rdsadmin.drop\_database errors](#db2-troubleshooting-drop-database-sp-errors) |
 | Databases | [rdsadmin.reactivate\_database errors](#db2-troubleshooting-reactivate-database-sp-errors) |
+| Databases | [Resolving rdsadmin.rename\_database errors](#db2-troubleshooting-rename-database-sp-errors) |
 | Databases | [rdsadmin.restore\_database errors](#db2-troubleshooting-restore-database-sp-errors) |
 | Databases | [rdsadmin.update\_db\_param errors](#db2-troubleshooting-update-db-param-sp-errors) |
 | Tablespaces | [rdsadmin.alter\_tablespace errors](#db2-troubleshooting-alter-tablespace-sp-errors) |
@@ -430,6 +431,84 @@ The database can’t be reactivated because it's in the process of being created
 ```
 
 Wait a few minutes, and then call the `rdsadmin.reactivate_database` stored procedure again.
+
+### Resolving rdsadmin.rename\_database errors
+<a name="db2-troubleshooting-rename-database-sp-errors"></a>
+
+You might see the following errors when you call the `rdsadmin.rename_database` stored procedure. Most of them come back in the output parameter, so no rename starts. A name that has an invalid character or is longer than 8 characters returns a SQL error instead.
++ [Current database name doesn't exist](#rename-database-sp-current-name-not-exist)
++ [New database name already exists](#rename-database-sp-new-name-exists)
++ [DB instance has a read replica](#rename-database-sp-active-replicas)
++ [Another rename is in progress](#rename-database-sp-already-in-progress)
++ [Database name contains an invalid character](#rename-database-sp-invalid-name)
++ [Database name is empty or too long](#rename-database-sp-name-length)
+
+#### Current database name doesn't exist
+<a name="rename-database-sp-current-name-not-exist"></a>
+
+This message means that no database with the current name exists on the DB instance:
+
+```
+Database 'TESTDB' does not exist
+```
+
+Call the stored procedure again with the correct current name. To avoid this error, check the name first with [rdsadmin.list\_databases](db2-user-defined-functions.md#db2-udf-list-databases).
+
+#### New database name already exists
+<a name="rename-database-sp-new-name-exists"></a>
+
+This message means that a database with the new name already exists on the DB instance:
+
+```
+Database 'PRODDB' already exists
+```
+
+Call the stored procedure again with a name that isn't in use. To avoid this error, check your database names first.
+
+#### DB instance has a read replica
+<a name="rename-database-sp-active-replicas"></a>
+
+Read replicas use high availability disaster recovery (HADR). This message means that the DB instance has a read replica:
+
+```
+Cannot rename database with active HADR replicas. Delete replicas before renaming.
+```
+
+Delete the read replica, and then call the stored procedure again. To avoid this error, rename your databases before you create a read replica. For more information about read replicas, see [Working with replicas for Amazon RDS for Db2](db2-replication.md).
+
+#### Another rename is in progress
+<a name="rename-database-sp-already-in-progress"></a>
+
+Only one rename can run at a time on a DB instance. This message means that another rename is running or queued:
+
+```
+A rename is already in progress or requested on this instance
+```
+
+Wait for the other rename to finish, and then call the stored procedure again. To check its status, use [rdsadmin.get\_task\_status](db2-user-defined-functions.md#db2-udf-get-task-status).
+
+#### Database name contains an invalid character
+<a name="rename-database-sp-invalid-name"></a>
+
+This error means that one of the names doesn't start with a letter or has a character that isn't valid:
+
+```
+SQL0438N Application raised error or warning with diagnostic text: "Invalid
+database name, can only have a-z,A-Z,@,_,$ characters". SQLSTATE=99985
+```
+
+Call the stored procedure again with names that start with a letter. Use only letters, digits, and underscores. Don't use the at sign (@) or the dollar sign ($). A rename to a name with either one fails.
+
+#### Database name is empty or too long
+<a name="rename-database-sp-name-length"></a>
+
+This message means that the new name is empty:
+
+```
+NEW_DBNAME must be between 1 and 8 characters in length
+```
+
+If the current name is empty, then the message starts with `CURRENT_DBNAME` instead. A name that's longer than 8 characters doesn't return this message. Instead, the call fails with a SQL error that has SQLSTATE `22001`. Call the stored procedure again with names that are 1 to 8 characters long.
 
 ### rdsadmin.restore\_database errors
 <a name="db2-troubleshooting-restore-database-sp-errors"></a>

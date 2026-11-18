@@ -78,7 +78,7 @@ Time travel queries have limitations on the inputs that you can use, the tables 
 ### Tables
 <a name="iceberg-time-travel-limitations-tables"></a>
 + **Table types** – You can use time travel queries only on [Apache Iceberg tables](querying-iceberg.md) in the AWS Glue Data Catalog. These include [Iceberg materialized views](materialized-view-iceberg.md) (materialized views stored as Apache Iceberg tables). For example, you can't use time travel queries on Amazon Redshift tables or views.
-+ **Nested data** – You can use a time travel query only when the schema of the snapshot that it reads has no columns of [complex data types](querying-iceberg-supported-data-types.md), such as `struct`, `array`, or `map`. This applies even if the query doesn't select those columns.
++ **Nested data** – You can use a time travel query only when the schema of the snapshot that it reads has no columns of [complex data types](tutorial-query-nested-data.md), such as `struct`, `array`, or `map`. This applies even if the query doesn't select those columns.
 + **AWS Lake Formation** – You can't use time travel queries on Iceberg tables [governed by AWS Lake Formation](spectrum-lake-formation.md), including tables with data filters or column-level permissions. This includes tables in the Amazon S3 Tables catalog ([`s3tablescatalog`](referencing-iceberg-tables.md#referencing-iceberg-three-part-notation)).
 + **Data sharing** – You can't use time travel queries on tables that you access through [data sharing](datashare-overview.md).
 

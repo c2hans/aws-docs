@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 
 A function that invokes a model calls Amazon Bedrock in your account, with your credentials. That means:
 + The model charges appear on your own Amazon Bedrock bill. AWS CloudTrail in your account records each call under the feed's access role, in a role session named `ei-function-{{feed-id}}`.
-+ Elemental Inference invokes the model in the feed's Region. The invocations count against your account's Amazon Bedrock quotas for that model in that Region. To use a model in other Regions, specify a cross-Region inference profile ID as the function's model.
++ Elemental Inference invokes the model in the feed's AWS Region. The invocations count against your account's Amazon Bedrock quotas for that model in that Region. To use a model in other Regions, specify a cross-Region inference profile ID as the function's model.
 + Your account must be able to invoke the model in that Region before the function can run. Elemental Inference doesn't enable model access on your behalf.
 
 **Important**
@@ -15,4 +15,4 @@ On-demand Amazon Bedrock throughput is shared across everything in your account 
 
 A passthrough function invokes no model, so it incurs no model charges and consumes no Amazon Bedrock quota.
 
-For Elemental Inference pricing, see [Pricing for AWS Elemental Inference](pricing-for-inference.md).
+For more information about Elemental Inference pricing, see [Pricing for AWS Elemental Inference](pricing-for-inference.md).

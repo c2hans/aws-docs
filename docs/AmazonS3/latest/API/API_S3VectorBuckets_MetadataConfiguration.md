@@ -11,11 +11,17 @@ The metadata configuration for a vector index.
 <a name="API_S3VectorBuckets_MetadataConfiguration_Contents"></a>
 
  ** nonFilterableMetadataKeys **   <a name="AmazonS3-Type-S3VectorBuckets_MetadataConfiguration-nonFilterableMetadataKeys"></a>
-Non-filterable metadata keys allow you to enrich vectors with additional context during storage and retrieval. Unlike default metadata keys, these keys can’t be used as query filters. Non-filterable metadata keys can be retrieved but can’t be searched, queried, or filtered. You can access non-filterable metadata keys of your vectors after finding the vectors. For more information about non-filterable metadata keys, see [Vectors](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-vectors.html) and [Limitations and restrictions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-limitations.html) in the *Amazon S3 User Guide*.
+Non-filterable metadata keys allow you to enrich vectors with additional context during storage and retrieval. You can't use these keys in metadata filters. You can still make a non-filterable key full-text searchable by configuring it separately in `textSearchConfigurations`. You can retrieve non-filterable metadata keys after finding the vectors. For more information about non-filterable metadata keys, see [Vectors](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-vectors.html) and [Limitations and restrictions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-limitations.html) in the *Amazon S3 User Guide*.
 Type: Array of strings
-Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 63.
-Required: Yes
+Required: No
+
+ ** textSearchConfigurations **   <a name="AmazonS3-Type-S3VectorBuckets_MetadataConfiguration-textSearchConfigurations"></a>
+Full-text search configurations for searchable metadata keys.
+Type: Array of [TextSearchConfiguration](API_S3VectorBuckets_TextSearchConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Required: No
 
 ## See Also
 <a name="API_S3VectorBuckets_MetadataConfiguration_SeeAlso"></a>

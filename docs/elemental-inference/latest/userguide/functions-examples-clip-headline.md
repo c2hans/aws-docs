@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/functions-examples-clip-headline.html
 ---
 
-# Write a headline for each detected clip
+# Example – Write a headline for each detected clip
 <a name="functions-examples-clip-headline"></a>
 
-Runs once for each window in which event clipping detects a clip, and combines the event descriptions with the first frame of the window. Requires an enabled event clipping output on the feed. The score line is included only when the clipping output is mapped to a sports data source, which reports the score. With a sports data source, a change of game phase is also an event, so a window whose only event is a phase change runs the function too.
+Runs once for each window in which event clipping detects a clip, and combines the event descriptions with the first frame of the window. Requires an enabled event clipping output on the feed. The score line is included only when the clipping output is mapped to a sports data source, which reports the score. With a sports data source, a change of game phase is also an event. A window whose only event is a phase change therefore runs the function too.
 
 **Request expression** (Anthropic Claude models)
 
@@ -55,7 +55,7 @@ A response expression can see only the model response, not `media`. To store the
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "perClip": {} },
       "clippingSettings": { "outputName": "game-clips" },
       "frameSettings": { "frameSampling": { "mode": "FIRST", "count": 1 } }

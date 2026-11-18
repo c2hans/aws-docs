@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 Imports domain names from a file into a domain list, for use in a DNS firewall rule group.
 
+You can't import into an AutoAllowlist rule's managed domain list. To seed such a list, specify `ImportFromFirewallDomainListId` when you create the rule.
+
 Each domain specification in your domain list must satisfy the following requirements:
 + It can optionally start with `*` (asterisk).
 + With the exception of the optional starting asterisk, it must only contain the following characters: `A-Z`, `a-z`, `0-9`, `-` (hyphen).

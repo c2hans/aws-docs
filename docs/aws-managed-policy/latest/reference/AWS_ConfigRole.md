@@ -18,13 +18,13 @@ You can attach `AWS_ConfigRole` to your users, groups, and roles.
 <a name="AWS_ConfigRole-details"></a>
 + **Type**: Service role policy
 + **Creation time**: September 15, 2020, 20:30 UTC
-+ **Edited time:** October 28, 2026, 21:57 UTC
++ **Edited time:** November 16, 2026, 23:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/service-role/AWS_ConfigRole`
 
 ## Policy version
 <a name="AWS_ConfigRole-version"></a>
 
-**Policy version:** v74 (default)
+**Policy version:** v75 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -2544,6 +2544,7 @@ The policy's default version is the version that defines the permissions for the
         "timestream-influxdb:GetDbInstance",
         "timestream-influxdb:ListDbClusters",
         "timestream-influxdb:ListDbInstances",
+        "timestream-influxdb:ListDbInstancesForCluster",
         "timestream-influxdb:ListTagsForResource",
         "timestream:DescribeDatabase",
         "timestream:DescribeEndpoints",

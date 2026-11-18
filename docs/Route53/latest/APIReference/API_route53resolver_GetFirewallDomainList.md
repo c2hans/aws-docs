@@ -47,7 +47,9 @@ Required: Yes
       "Name": "string",
       "Status": "string",
       "StatusMessage": "string"
-   }
+   },
+   "FirewallRuleGroupId": "string",
+   "FirewallThreatProtectionId": "string"
 }
 ```
 
@@ -61,6 +63,16 @@ The following data is returned in JSON format by the service.
  ** [FirewallDomainList](#API_route53resolver_GetFirewallDomainList_ResponseSyntax) **   <a name="Route53Resolver-route53resolver_GetFirewallDomainList-response-FirewallDomainList"></a>
 The domain list that you requested.
 Type: [FirewallDomainList](API_route53resolver_FirewallDomainList.md) object
+
+ ** [FirewallRuleGroupId](#API_route53resolver_GetFirewallDomainList_ResponseSyntax) **   <a name="Route53Resolver-route53resolver_GetFirewallDomainList-response-FirewallRuleGroupId"></a>
+For an AutoAllowlist domain list, the ID of the firewall rule group that contains the AutoAllowlist rule that owns this domain list. Present only when `ManagedListType` is `AUTOALLOWLIST`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+
+ ** [FirewallThreatProtectionId](#API_route53resolver_GetFirewallDomainList_ResponseSyntax) **   <a name="Route53Resolver-route53resolver_GetFirewallDomainList-response-FirewallThreatProtectionId"></a>
+For an AutoAllowlist domain list, the threat protection ID of the auto-allowlist rule that owns this domain list. Provide it to [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md) to review the observed, allowed, and denied domains. Present only when `ManagedListType` is `AUTOALLOWLIST`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
 
 ## Errors
 <a name="API_route53resolver_GetFirewallDomainList_Errors"></a>

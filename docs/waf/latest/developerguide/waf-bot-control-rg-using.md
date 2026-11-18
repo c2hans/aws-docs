@@ -13,6 +13,8 @@ This section explains how to add and configure the `AWSManagedRulesBotControlRul
 
 The Bot Control managed rule group `AWSManagedRulesBotControlRuleSet` requires additional configuration to identify the protection level that you want to implement.
 
+For a protection pack (web ACL) with the CloudFront scope, the quickest way to set up the targeted protection level in the console, with the recommended settings, is the **Targeted bot control** setting. For more information about the setting, see [Turning on Targeted bot control in the console](waf-bot-control-targeted-console.md). The rest of this section describes how to add and configure the rule group yourself.
+
 For the rule group description and rules listing, see [AWS WAF Bot Control rule group](aws-managed-rule-groups-bot.md).
 
 This guidance is intended for users who know generally how to create and manage AWS WAF protection packs (web ACLs), rules, and rule groups. Those topics are covered in prior sections of this guide. For basic information about how to add a managed rule group to your protection pack (web ACL), see [Adding a managed rule group to a protection pack (web ACL) through the console](waf-using-managed-rule-group.md).

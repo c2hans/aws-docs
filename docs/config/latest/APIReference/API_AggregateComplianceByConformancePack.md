@@ -15,7 +15,6 @@ A conformance pack is compliant if all of the rules in a conformance packs are c
  ** AccountId **   <a name="config-Type-AggregateComplianceByConformancePack-AccountId"></a>
 The 12-digit AWS account ID of the source account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

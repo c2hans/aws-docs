@@ -86,7 +86,7 @@ The system is designed to sign out immediately, but full sign out may take up to
 
 **Issue:** After creating a project from the web application or serverless blueprint, the workflow fails with the following error:
 
-CLIENT\_ERROR: Role does not exist
+`CLIENT_ERROR: Role does not exist`
 
 **Possible solution:** After you configure an IAM role with the permissions to run your workflow, and you have added the IAM role to your workflow YAML, the workflow still fails because the IAM role might need to be added to your account connection. Add the IAM role to the account connection for your space as detailed in [Adding IAM roles to account connections](ipa-connect-account-addroles.md).
 
@@ -95,7 +95,7 @@ CLIENT\_ERROR: Role does not exist
 
 **Issue:** After creating a project from the web application or serverless blueprint, the workflow fails with the following error:
 
-CLIENT\_ERROR: Role not set up properly or does not exist
+`CLIENT_ERROR: Role not set up properly or does not exist`
 
 **Possible solution:** The space where the project was created might need to set up an AWS account connection or might need to complete an account connection request. If your space already has an active AWS account connection, create and add an IAM role with permissions to run workflow actions. Add the IAM role to your account connection as detailed in [Adding IAM roles to account connections](ipa-connect-account-addroles.md).
 

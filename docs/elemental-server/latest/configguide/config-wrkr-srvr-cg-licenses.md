@@ -15,4 +15,4 @@ Make sure that you have the appropriate licenses installed.
 
 1. Verify that information for a standalone license (`eme.lic`) is displayed.
 
-1. If you see a No license file detected message, follow the steps on the screen to upload a license. For additional assistance, see the [AWS Elemental Server version 2.18 Installation Guide](https://docs.aws.amazon.com/elemental-server/latest/installguide/).
+1. If you see a `No license file detected` message, follow the steps on the screen to upload a license. For additional assistance, see the [AWS Elemental Server version 2.18 Installation Guide](https://docs.aws.amazon.com/elemental-server/latest/installguide/).

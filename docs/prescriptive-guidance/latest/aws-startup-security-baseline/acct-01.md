@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 # ACCT.01 Set account-level contacts to valid email distribution lists
 <a name="acct-01"></a>
 
-When setting up primary and alternate contacts for your AWS account, use an email distribution list instead of an individual's email address. Using an email distribution list makes sure that ownership and reachability are preserved as individuals in your organization come and go. Set alternate contacts for billing, operations, and security notifications, and use appropriate email distribution lists accordingly. AWS uses these email addresses to contact you. Make sure that you retain access to them.
+When setting up primary and alternate contacts for your AWS account, use an email distribution list instead of an individual's email address. Using an email distribution list makes sure that ownership and reachability are preserved as individuals in your organization come and go. Set alternate contacts for billing, operations, and security notifications, and use a separate email distribution list for each contact type. AWS uses these email addresses to contact you. Make sure that you retain access to them.
 
 **To update your account name, root user password, or root user email address**
 
-1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/)
+1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/).
 
 1. Choose your account name or number, and then choose **Account**.
 
@@ -17,7 +17,7 @@ When setting up primary and alternate contacts for your AWS account, use an emai
 
 1. Next to the field you want to update, choose **Edit**.
 
-1. After you have entered your changes, choose **Save changes**.
+1. After you enter your changes, choose **Save changes**.
 
 1. If you are updating the root user password or email address, follow the verification steps that AWS displays.
 

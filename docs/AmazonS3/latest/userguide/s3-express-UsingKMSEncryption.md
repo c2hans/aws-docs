@@ -122,7 +122,7 @@ Also, for object encryption with SSE-KMS in a directory bucket, your AWS KMS Clo
 
 Directory buckets can only be accessed through HTTPS (TLS). Also, directory buckets sign requests by using AWS Signature Version 4 (SigV4). For more information about sending requests for AWS KMS encrypted objects, see [Sending requests for AWS KMS encrypted objects](UsingKMSEncryption.md#aws-signature-version-4-sse-kms).
 
-If your object uses SSE-KMS, don't send encryption request headers for `GET` requests and `HEAD` requests. Otherwise, you’ll get an HTTP 400 Bad Request error.
+If your object uses SSE-KMS, don't send encryption request headers for `GET` requests and `HEAD` requests. Otherwise, you’ll get an `HTTP 400 Bad Request` error.
 
 ## Auditing SSE-KMS encryption in directory buckets
 <a name="s3-express-bucket-encryption-sse-auditing"></a>

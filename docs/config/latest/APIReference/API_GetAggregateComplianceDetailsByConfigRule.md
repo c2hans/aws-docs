@@ -35,7 +35,6 @@ The request accepts the following data in JSON format.
  ** [AccountId](#API_GetAggregateComplianceDetailsByConfigRule_RequestSyntax) **   <a name="config-GetAggregateComplianceDetailsByConfigRule-request-AccountId"></a>
 The 12-digit account ID of the source account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: Yes
 
@@ -56,7 +55,7 @@ Required: No
 The name of the AWS Config rule for which you want compliance information.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** [ConfigurationAggregatorName](#API_GetAggregateComplianceDetailsByConfigRule_RequestSyntax) **   <a name="config-GetAggregateComplianceDetailsByConfigRule-request-ConfigurationAggregatorName"></a>

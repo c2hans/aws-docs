@@ -22,7 +22,7 @@ Most of your product's settings can’t be changed after you've configured them.
 There are three pricing models for SaaS products on AWS Marketplace. Choosing the right pricing model for your product is the most important decision you'll make as you plan your product. Choosing the wrong pricing model can set you back by weeks. The pricing model determines the payment options for your customers and the billing integration code that you need to write, test, and deploy. For information about the different types of pricing models, see [SaaS product pricing](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-pricing-models.html).
 
 **Note**
-All SaaS pricing models support free trials. For more information, see [SaaS free trials](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html).
+All SaaS pricing models support free trials. Free trials on SaaS subscription products can convert to paid automatically. SaaS contract free trials expire when they end. For more information, see [SaaS free trials](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-trials.html).
 
 ## Plan your billing integration
 <a name="saas-plan-integration"></a>

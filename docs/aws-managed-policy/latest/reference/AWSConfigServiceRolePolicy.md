@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSConfigServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: May 30, 2018, 23:31 UTC
-+ **Edited time:** October 28, 2026, 21:57 UTC
++ **Edited time:** November 16, 2026, 23:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy`
 
 ## Policy version
 <a name="AWSConfigServiceRolePolicy-version"></a>
 
-**Policy version:** v97 (default)
+**Policy version:** v98 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -2544,6 +2544,7 @@ The policy's default version is the version that defines the permissions for the
         "timestream-influxdb:GetDbInstance",
         "timestream-influxdb:ListDbClusters",
         "timestream-influxdb:ListDbInstances",
+        "timestream-influxdb:ListDbInstancesForCluster",
         "timestream-influxdb:ListTagsForResource",
         "timestream:DescribeDatabase",
         "timestream:DescribeEndpoints",

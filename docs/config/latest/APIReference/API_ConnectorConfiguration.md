@@ -15,6 +15,11 @@ The configuration for an Azure connector.
 Type: [AzureConnectorConfiguration](API_AzureConnectorConfiguration.md) object
 Required: No
 
+ ** gcp **   <a name="config-Type-ConnectorConfiguration-gcp"></a>
+The configuration for a Google Cloud connector.
+Type: [GcpConnectorConfiguration](API_GcpConnectorConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_ConnectorConfiguration_SeeAlso"></a>
 

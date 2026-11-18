@@ -14,7 +14,8 @@ This API uses the `AWSServiceRoleForConfigConforms` service-linked role in your 
 This API creates a service-linked role `AWSServiceRoleForConfigConforms` in your account. The service-linked role is created only when the role does not exist in your account.
 
 **Note**
-You must specify only one of the follow parameters: `TemplateS3Uri`, `TemplateBody` or `TemplateSSMDocumentDetails`.
+For custom conformance packs, you must specify only one of `TemplateS3Uri`, `TemplateBody`, `TemplateSSMDocumentDetails`.
+For managed conformance packs, you must specify `Source`. Do not specify `TemplateS3Uri`, `TemplateBody`, `TemplateSSMDocumentDetails`, `DeliveryS3Bucket`, or `DeliveryS3KeyPrefix`.
 
 **Note**
  **Tags are added at creation and cannot be updated with this operation**
@@ -35,6 +36,13 @@ Use [TagResource](https://docs.aws.amazon.com/config/latest/APIReference/API_Tag
    "ConformancePackName": "{{string}}",
    "DeliveryS3Bucket": "{{string}}",
    "DeliveryS3KeyPrefix": "{{string}}",
+   "Scope": {
+      "TagKey": "{{string}}",
+      "TagValue": "{{string}}"
+   },
+   "Source": {
+      "SourceIdentifier": "{{string}}"
+   },
    "Tags": [
       {
          "Key": "{{string}}",
@@ -58,9 +66,9 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [ConformancePackInputParameters](#API_PutConformancePack_RequestSyntax) **   <a name="config-PutConformancePack-request-ConformancePackInputParameters"></a>
-A list of `ConformancePackInputParameter` objects.
+A list of `ConformancePackInputParameter` objects. Custom conformance packs can have at most 60 input parameters. Managed conformance packs can have at most 330 input parameters.
 Type: Array of [ConformancePackInputParameter](API_ConformancePackInputParameter.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 60 items.
+Array Members: Minimum number of 0 items. Maximum number of 330 items.
 Required: No
 
  ** [ConformancePackName](#API_PutConformancePack_RequestSyntax) **   <a name="config-PutConformancePack-request-ConformancePackName"></a>
@@ -82,6 +90,18 @@ The prefix for the Amazon S3 bucket.
 This field is optional.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
+Required: No
+
+ ** [Scope](#API_PutConformancePack_RequestSyntax) **   <a name="config-PutConformancePack-request-Scope"></a>
+An object of type `ConformancePackScope` that defines which resources can trigger an evaluation for AWS Config rules in the conformance pack. The scope can include a tag key and optional tag value. Specify a scope to constrain the resources that can trigger an evaluation for rules in the conformance pack. If you do not specify a scope, all rules in the conformance pack are unscoped.
+This field is optional and is supported only for managed conformance packs. If you specify a scope, you must also specify `Source`.
+Type: [ConformancePackScope](API_ConformancePackScope.md) object
+Required: No
+
+ ** [Source](#API_PutConformancePack_RequestSyntax) **   <a name="config-PutConformancePack-request-Source"></a>
+An object of type `ConformancePackSource`, which contains the identifier of the managed conformance pack that you want to deploy. If you specify a source, AWS Config creates a managed conformance pack. Managed conformance packs are predefined collections of AWS Config rules that are created and maintained by AWS.
+If you specify a source, you cannot specify `TemplateS3Uri`, `TemplateBody`, `TemplateSSMDocumentDetails`, `DeliveryS3Bucket`, or `DeliveryS3KeyPrefix`. You cannot convert an existing conformance pack between a managed conformance pack and a custom conformance pack. You also cannot change the source of an existing managed conformance pack.
+Type: [ConformancePackSource](API_ConformancePackSource.md) object
 Required: No
 
  ** [Tags](#API_PutConformancePack_RequestSyntax) **   <a name="config-PutConformancePack-request-Tags"></a>

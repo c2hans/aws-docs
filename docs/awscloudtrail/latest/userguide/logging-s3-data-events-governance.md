@@ -5,6 +5,10 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-s
 # Logging CloudTrail S3 data events for data governance, security, and compliance
 <a name="logging-s3-data-events-governance"></a>
 
+**Upcoming: new Amazon S3 data event types**
+Starting December 21, 2026, AWS CloudTrail will deliver two new types of Amazon S3 data events to trails that already log S3 data events: S3 Lifecycle events and S3 authentication failure events. These event types are not available yet, and CloudTrail will not deliver them before December 21, 2026.
+When these events become available, they are billed at standard CloudTrail data event rates (see [AWS CloudTrail Pricing](https://aws.amazon.com/cloudtrail/pricing/)), which can increase your CloudTrail charges. To avoid the charges, [exclude the new events](#logging-s3-lifecycle-authn-events) before December 21, 2026. These events provide near real-time delivery of S3 activity that was previously available only through S3 Server Access Logs.
+
 Amazon S3 often stores an organization's most sensitive data, such as customer records, financial reports, and intellectual property. CloudTrail data events record object-level activity on that data: who read it, who changed it, who deleted it, and when. Data events also record operations that Amazon S3 performs on your behalf, such as lifecycle expirations and storage class transitions. This gives you a complete record of how each object changed over time.
 
 This section describes how you can use CloudTrail S3 data events to:
@@ -19,7 +23,7 @@ By default, trails don't log data events. Additional charges apply for data even
 + [Data governance: know who uses your data and how it changes](#logging-s3-data-events-data-governance)
 + [Security: detect and investigate threats](#logging-s3-data-events-security)
 + [Compliance: prove your controls work](#logging-s3-data-events-compliance)
-+ [Logging and excluding Amazon S3 lifecycle and authentication failure events](#logging-s3-lifecycle-authn-events)
++ [Logging and excluding Amazon S3 lifecycle and authentication failure events (upcoming)](#logging-s3-lifecycle-authn-events)
 
 ## Amazon S3 resource types for data events
 <a name="logging-s3-data-events-resource-types"></a>
@@ -113,7 +117,7 @@ Use the following controls to check continuously that your accounts log CloudTra
 
 To protect the integrity of your logs, turn on log file integrity validation for your trails. For more information about log file integrity validation, see [Validating CloudTrail log file integrity](cloudtrail-log-file-validation-intro.md).
 
-## Logging and excluding Amazon S3 lifecycle and authentication failure events
+## Logging and excluding Amazon S3 lifecycle and authentication failure events (upcoming)
 <a name="logging-s3-lifecycle-authn-events"></a>
 
 CloudTrail logs two categories of CloudTrail S3 data events that aren't direct requests from your principals:

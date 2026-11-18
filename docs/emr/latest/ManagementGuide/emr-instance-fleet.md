@@ -291,7 +291,7 @@ If you have not previously created the default Amazon EMR service role and EC2 i
 **Example: On-Demand primary, On-Demand core with single instance type, Default VPC**
 
 ```
-aws emr create-cluster --release-label {{emr-5.3.1}} --service-role EMR_DefaultRole \
+aws emr create-cluster --release-label {{emr-7.14.0}} --service-role EMR_DefaultRole \
   --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole \
   --instance-fleets \
     InstanceFleetType=MASTER,TargetOnDemandCapacity=1,InstanceTypeConfigs=['{InstanceType=m5.xlarge}'] \
@@ -301,7 +301,7 @@ aws emr create-cluster --release-label {{emr-5.3.1}} --service-role EMR_DefaultR
 **Example: Spot primary, Spot core with single instance type, default VPC**
 
 ```
-aws emr create-cluster --release-label emr-5.3.1 --service-role EMR_DefaultRole \
+aws emr create-cluster --release-label emr-7.14.0 --service-role EMR_DefaultRole \
   --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole \
   --instance-fleets \
     InstanceFleetType=MASTER,TargetSpotCapacity=1,\
@@ -313,7 +313,7 @@ InstanceTypeConfigs=['{InstanceType=m5.xlarge,BidPrice=0.5}']
 **Example: On-Demand primary, mixed core with single instance type, single EC2 subnet**
 
 ```
-aws emr create-cluster --release-label emr-5.3.1 --service-role EMR_DefaultRole \
+aws emr create-cluster --release-label emr-7.14.0 --service-role EMR_DefaultRole \
   --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole,SubnetIds=['subnet-ab12345c'] \
   --instance-fleets \
     InstanceFleetType=MASTER,TargetOnDemandCapacity=1,\
@@ -325,7 +325,7 @@ InstanceTypeConfigs=['{InstanceType=m5.xlarge,BidPrice=0.5,WeightedCapacity=2}']
 **Example: On-Demand primary, spot core with multiple weighted instance Types, Timeout for Spot, Range of EC2 Subnets**
 
 ```
-aws emr create-cluster --release-label emr-5.3.1 --service-role EMR_DefaultRole \
+aws emr create-cluster --release-label emr-7.14.0 --service-role EMR_DefaultRole \
   --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole,SubnetIds=['subnet-ab12345c','subnet-de67890f'] \
   --instance-fleets \
     InstanceFleetType=MASTER,TargetOnDemandCapacity=1,\
@@ -339,7 +339,7 @@ LaunchSpecifications={SpotSpecification='{TimeoutDurationMinutes=120,TimeoutActi
 **Example: On-Demand primary, mixed core and task with multiple weighted instance types, timeout for core Spot Instances, range of EC2 subnets**
 
 ```
-aws emr create-cluster --release-label emr-5.3.1 --service-role EMR_DefaultRole \
+aws emr create-cluster --release-label emr-7.14.0 --service-role EMR_DefaultRole \
   --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole,SubnetIds=['subnet-ab12345c','subnet-de67890f'] \
   --instance-fleets \
     InstanceFleetType=MASTER,TargetOnDemandCapacity=1,InstanceTypeConfigs=['{InstanceType=m5.xlarge}'] \
@@ -392,7 +392,7 @@ InstanceTypeConfigs=['{InstanceType=m5.xlarge,CustomAmiId=ami-123456}',\
 You can configure instance fleet parameters in a JSON file, and then reference the JSON file as the sole parameter for instance fleets. For example, the following command references a JSON configuration file, `{{my-fleet-config.json}}`:
 
 ```
-aws emr create-cluster --release-label emr-5.30.0 --service-role EMR_DefaultRole \
+aws emr create-cluster --release-label emr-7.14.0 --service-role EMR_DefaultRole \
 --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole \
 --instance-fleets file://{{my-fleet-config.json}}
 ```

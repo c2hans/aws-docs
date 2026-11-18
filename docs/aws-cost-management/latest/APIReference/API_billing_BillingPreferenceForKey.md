@@ -14,7 +14,7 @@ A single key/value entry used to update a billing preference.
 The preference key. Format depends on the feature being updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2148.
-Pattern: `[a-zA-Z0-9-\/\*: ]+`
+Pattern: `[-a-zA-Z0-9_\/\*: ]+`
 Required: Yes
 
  ** value **   <a name="awscostmanagement-Type-billing_BillingPreferenceForKey-value"></a>

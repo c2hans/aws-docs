@@ -133,9 +133,11 @@ Your conditions, time bounds, and `LIMIT` all apply, so you can ask which fields
 ## Supported and unsupported syntax
 <a name="omni-sql-query-reference-supported-and-unsupported-syntax"></a>
 
-CloudWatch Omni SQL supports the constructs this page demonstrates — `SELECT` with `WHERE`, `GROUP BY`, `ORDER BY`, and `LIMIT`, joins, and aggregate functions with `FILTER` — as well as window functions, `UNION` and `UNION ALL`, and `CAST`. `EXPLAIN (ANALYZE_FIELDS)` is the only supported form of `EXPLAIN`.
+CloudWatch Omni SQL supports the constructs this page demonstrates — `SELECT` with `WHERE`, `GROUP BY`, `ORDER BY`, and `LIMIT`, joins, and aggregate functions with `FILTER` — as well as window functions, `UNION` and `UNION ALL`, and `CAST`. `EXPLAIN (ANALYZE_FIELDS)` and `EXPLAIN (ESTIMATE)` are the supported forms of `EXPLAIN`.
 
 The engine rejects unsupported statements before they run, returning an unsupported-statement error rather than an empty result, so you can distinguish a rejected query from one that matched nothing.
+
+For information about every supported clause, command, and function, with examples, see [CloudWatch Omni SQL query syntax](omni-sql-query-syntax.md).
 
 ## Examples
 <a name="omni-sql-query-reference-examples"></a>

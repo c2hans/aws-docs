@@ -5,8 +5,9 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Attaching a function using the CLI
 <a name="functions-attach-cli"></a>
 
-**Important**
-`update-feed` replaces the whole feed configuration. The `outputs` array that you send replaces the existing array, and omitting `accessRoleArn` clears the stored role. Always call `get-feed` first and resend the complete list, including the access role. If the feed has a function output with a model target, clearing the role this way is rejected, but an output that you forget to resend is silently dropped.
+The `outputs` array that you send to `update-feed` replaces the feed's existing outputs. Call `get-feed` first, and resend every output that you want to keep.
+
+In the following commands, replace `{{us-west-2}}` with your AWS Region, `{{feed-id}}` with the ID of your feed, `{{my-feed}}` with the name of your feed, `{{111122223333}}` with your AWS account ID, `{{ElementalInferenceFeedAccessRole}}` with the name of your access role, and `{{function-id}}` with the ID of your function.
 
 1. Get the current configuration of the feed.
 
@@ -37,7 +38,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
          "status": "ENABLED",
          "outputConfig": {
            "function": {
-             "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+             "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
              "trigger": { "fixedInterval": { "intervalSeconds": 10 } },
              "frameSettings": { "frameSampling": { "mode": "UNIFORM", "count": 4 } }
            }
@@ -53,7 +54,9 @@ You can also include a function output in the `outputs` array of `create-feed`, 
 ## Attachment examples
 <a name="functions-attach-cli-examples"></a>
 
-**Transcript summary every 30 seconds**, sourced from a smart subtitles output named `subs-eng`.
+In each example, replace `{{us-west-2}}`, `{{111122223333}}`, and `{{function-id}}` in the function ARN with the AWS Region, the account ID, and the ID of your function.
+
+**Example – Transcript summary every 30 seconds**. This function output reads from a smart subtitles output named `subs-eng`.
 
 ```
 {
@@ -61,7 +64,7 @@ You can also include a function output in the `outputs` array of `create-feed`, 
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "fixedInterval": { "intervalSeconds": 30 } },
       "subtitlingSettings": { "outputName": "subs-eng" }
     }
@@ -69,7 +72,7 @@ You can also include a function output in the `outputs` array of `create-feed`, 
 }
 ```
 
-**Brand-safety check once per scene**, sourced from a contextual metadata output named `ctx-md`.
+**Example – Brand-safety check once per scene**. This function output reads from a contextual metadata output named `ctx-md`.
 
 ```
 {
@@ -77,7 +80,7 @@ You can also include a function output in the `outputs` array of `create-feed`, 
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "perScene": {} },
       "contextualMetadataSettings": { "outputName": "ctx-md" }
     }
@@ -85,7 +88,7 @@ You can also include a function output in the `outputs` array of `create-feed`, 
 }
 ```
 
-**Shot described once per shot boundary**, with three frames sampled evenly across the shot and resized to 640 x 360.
+**Example – Shot described once per shot boundary**. This function output samples three frames evenly across the shot and resizes them to 640 x 360.
 
 ```
 {
@@ -93,7 +96,7 @@ You can also include a function output in the `outputs` array of `create-feed`, 
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "perShot": {} },
       "frameSettings": {
         "frameSampling": { "mode": "UNIFORM", "count": 3 },
@@ -104,7 +107,7 @@ You can also include a function output in the `outputs` array of `create-feed`, 
 }
 ```
 
-**Headline written for each detected clip**, sourced from an event clipping output named `game-clips`, with the first frame of the clip as visual context.
+**Example – Headline written for each detected clip**. This function output reads from an event clipping output named `game-clips`, and uses the first frame of the clip as visual context.
 
 ```
 {
@@ -112,7 +115,7 @@ You can also include a function output in the `outputs` array of `create-feed`, 
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "perClip": {} },
       "clippingSettings": { "outputName": "game-clips" },
       "frameSettings": { "frameSampling": { "mode": "FIRST", "count": 1 } }

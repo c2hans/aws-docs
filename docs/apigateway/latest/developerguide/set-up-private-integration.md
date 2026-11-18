@@ -101,7 +101,7 @@ The following JSON-formatted OpenAPI file shows an example of an API with a VPC 
           "passthroughBehavior": "when_no_match",
           "connectionType": "VPC_LINK",
           "connectionId": "${stageVariables.vpcLinkV2Id}",
-          "integration-target": "arn:aws:elasticloadbalancing:us-east-2:111122223333:loadbalancer/app/myLoadBalancerName/1234567891011",
+          "integrationTarget": "arn:aws:elasticloadbalancing:us-east-2:111122223333:loadbalancer/app/myLoadBalancerName/1234567891011",
           "httpMethod": "GET",
           "type": "http_proxy"
         }

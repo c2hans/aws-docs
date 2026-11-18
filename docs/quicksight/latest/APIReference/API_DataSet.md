@@ -125,6 +125,12 @@ The semantic model configuration associated with this dataset.
 Type: [SemanticModelConfiguration](API_SemanticModelConfiguration.md) object
 Required: No
 
+ ** UnmaterializedCalculatedColumns **   <a name="QS-Type-DataSet-UnmaterializedCalculatedColumns"></a>
+The unmaterialized calculated columns associated with this dataset. You can only use this with the new data preparation experience.
+Type: Array of [UnmaterializedCalculatedColumn](API_UnmaterializedCalculatedColumn.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 512 items.
+Required: No
+
  ** UseAs **   <a name="QS-Type-DataSet-UseAs"></a>
 The usage of the dataset.
 Type: String

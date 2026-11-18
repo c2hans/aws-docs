@@ -79,11 +79,11 @@ Each entry in `medicalCodes` has the following fields.
 |  `version`  | String | The version of the code set. |
 |  `name`  | String | The code itself. |
 |  `description`  | String | A human-readable description of the code. |
-|  `unit`  | Integer | The number of units, 0 or greater. Defaults to 1. |
+|  `unit`  | Integer | The number of units. Medical coding currently returns `1` for every code. It doesn’t calculate units for quantity-based or time-based codes, such as injections or units of therapy. Set the billed units in your application. |
 |  `evidence`  | Array of evidence objects | The passages of the input clinical documentation that support the code. See [Evidence](#mc-output-evidence). |
 |  `linkedCodes`  | Array of linked code objects | For CPT codes, the ICD-10-CM codes that establish medical necessity for the service. See [Linked code](#mc-output-linked-code). |
 |  `modifiers`  | Array of modifier objects | CPT modifiers that apply to the code. Present only when modifiers apply. See [Modifier](#mc-output-modifier). |
-|  `confidence`  | Number | A score from 0 to 1 that reflects medical necessity, diagnosis-to-treatment alignment, and code specificity. |
+|  `confidence`  | Number | A score from 0 to 1 based on textual evidence, guideline adherence, code validity, and medical necessity. |
 
 ### Evidence
 <a name="mc-output-evidence"></a>
@@ -114,7 +114,7 @@ Each entry in `medicalCodes` has the following fields.
 ### Example results file
 <a name="mc-output-example"></a>
 
-The following example is for an office visit where an established patient presents with fever and sore throat, a rapid strep test is positive, and an intramuscular antibiotic injection is given. CPT codes and descriptions are shown as placeholders.
+The following example is for an office visit where an established patient presents with fever and sore throat, a rapid strep test is positive, and an intramuscular antibiotic injection is given. Descriptions in the example are written for this guide and aren’t official CPT descriptors.
 
 ```
 {
@@ -143,8 +143,8 @@ The following example is for an office visit where an established patient presen
     {
       "sequence": 2,
       "system": "CPT",
-      "name": "<E/M visit code>",
-      "description": "<CPT description>",
+      "name": "99213",
+      "description": "Office visit, established patient, low level of medical decision making",
       "unit": 1,
       "evidence": [
         {
@@ -157,15 +157,15 @@ The following example is for an office visit where an established patient presen
         { "name": "J02.0", "system": "ICD10", "sequence": 1 }
       ],
       "modifiers": [
-        { "code": "<modifier>", "description": "<modifier description>" }
+        { "code": "25", "description": "Separate E/M service on the same day as a procedure" }
       ],
       "confidence": 0.62
     },
     {
       "sequence": 3,
       "system": "CPT",
-      "name": "<laboratory test code>",
-      "description": "<CPT description>",
+      "name": "87880",
+      "description": "Rapid group A strep test",
       "unit": 1,
       "evidence": [
         {
@@ -182,8 +182,8 @@ The following example is for an office visit where an established patient presen
     {
       "sequence": 4,
       "system": "CPT",
-      "name": "<injection code>",
-      "description": "<CPT description>",
+      "name": "96372",
+      "description": "Intramuscular injection of a therapeutic drug",
       "unit": 1,
       "evidence": [
         {
@@ -203,7 +203,7 @@ The following example is for an office visit where an established patient presen
 
 In this example, each CPT code links to the diagnosis that supports it. Only the E/M visit code has a modifier, so the other codes omit `modifiers`. The diagnosis code has an empty `linkedCodes` array. The E/M visit code has the lowest confidence, so a review interface would flag it first.
 
-The following example shows how the codes for one encounter relate to each other and to the documentation:
+The following diagram shows the same relationships for a different encounter, one with two diagnoses. It doesn’t correspond to the preceding JSON.
 + Diagnosis code 1 cites passage 1, and diagnosis code 2 cites passage 2.
 + The E/M visit code cites passages 1 to 3 and links to both diagnoses.
 + The procedure code, with its modifier, cites passage 3 and links to diagnosis code 2.
@@ -228,7 +228,7 @@ Medical coding returns structured data, not a finished user interface, so you co
 
 1. Make each suggestion actionable. Render it as an element the coder can accept, reject, or modify, and record the decision.
 
-For routing patterns that use confidence scores, see [Integrating medical coding into your workflows](mc-integration.md).
+For routing patterns that use confidence scores, see [Integrating medical coding into your workflows](mc-integration.md). To send the final codes for a job back to Amazon Connect Health, see [Submitting feedback on medical codes](mc-feedback.md).
 
 **Important**
-During the gated preview, a qualified coder should review every suggested code before claim submission. Suggested codes are not a substitute for professional coding judgment. In production, base your review policy on accuracy you measure on your own encounters, and keep audit sampling in place for any encounters that move forward with reduced review.
+During the preview, a qualified coder must review every suggested code before claim submission. Suggested codes are not a substitute for professional coding judgment. In production, base your review policy on accuracy you measure on your own encounters, and keep audit sampling in place for any encounters that move forward with reduced review.

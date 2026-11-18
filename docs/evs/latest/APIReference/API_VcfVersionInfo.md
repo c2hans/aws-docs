@@ -21,7 +21,7 @@ Required: Yes
  ** instanceTypes **   <a name="evs-Type-VcfVersionInfo-instanceTypes"></a>
 EC2 instance types provided by Amazon EVS for this VCF version for creating environments.
 Type: Array of strings
-Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl`
+Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl | r7i.metal-24xl | r7i.metal-48xl`
 Required: Yes
 
  ** status **   <a name="evs-Type-VcfVersionInfo-status"></a>

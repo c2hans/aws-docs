@@ -127,7 +127,7 @@ Using REMOVE DUPLICATES gives better performance than using WHEN MATCHED and WHE
   WHEN MATCHED THEN UPDATE SET id = my_source.id, name = my_source.name
   WHEN NOT MATCHED THEN INSERT VALUES (my_source.id, my_source.name);
   ```
-+ The target cannot be a data source of any subquery of the same MERGE statement. For example, the following SQL command returns an error like ERROR: Source view/subquery in Merge statement cannot reference target table. because the subquery references `target` instead of `source`.
++ The target cannot be a data source of any subquery of the same MERGE statement. For example, the following SQL command returns an error like `ERROR: Source view/subquery in Merge statement cannot reference target table.` because the subquery references `target` instead of `source`.
 
   ```
   MERGE INTO target

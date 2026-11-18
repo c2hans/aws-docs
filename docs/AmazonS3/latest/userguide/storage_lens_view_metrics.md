@@ -16,6 +16,7 @@ Advanced metrics and recommendations include the following additional features t
 + Storage Lens group aggregation
 + Storage Lens group aggregation
 + Amazon CloudWatch publishing
++ AWS Billing and Cost Management publishing
 
 Advanced metrics data is available for queries for 15 months. There are additional charges for using S3 Storage Lens with advanced metrics. For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing). For more information about free and advanced metrics, see [Metrics selection](storage_lens_basics_metrics_recommendations.md#storage_lens_basics_metrics_selection).
 
@@ -23,4 +24,5 @@ Advanced metrics data is available for queries for 15 months. There are addition
 + [Viewing S3 Storage Lens metrics on the dashboards](storage_lens_view_metrics_dashboard.md)
 + [Viewing Amazon S3 Storage Lens metrics using a data export](storage_lens_view_metrics_export.md)
 + [Monitor S3 Storage Lens metrics in CloudWatch](storage_lens_view_metrics_cloudwatch.md)
++ [Estimating Amazon S3 costs by prefix with S3 Storage Lens and AWS Cost and Usage Reports](storage-lens-cost-and-usage-reports.md)
 + [Amazon S3 Storage Lens metrics use cases](storage-lens-use-cases.md)

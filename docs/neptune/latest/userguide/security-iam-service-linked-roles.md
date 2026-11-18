@@ -51,7 +51,7 @@ The role permissions policy allows Neptune to complete the following actions on 
 
 **Note**
 You must configure permissions to allow an IAM entity (such as a user, group, or role) to create, edit, or delete a service-linked role. You might encounter the following error message:
-Unable to create the resource. Verify that you have permission to create service linked role. Otherwise wait and try again later.
+`Unable to create the resource. Verify that you have permission to create service linked role. Otherwise wait and try again later.`
 If you see this message, make sure that you have the following permissions enabled:
 
 ```

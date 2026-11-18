@@ -20,6 +20,11 @@ An object detailing the state of Amazon Inspector scanning for Amazon ECR resour
 Type: [State](API_State.md) object
 Required: Yes
 
+ ** ami **   <a name="inspector2-Type-ResourceState-ami"></a>
+An object that described the state of Amazon Inspector scans for an account.
+Type: [State](API_State.md) object
+Required: No
+
  ** codeRepository **   <a name="inspector2-Type-ResourceState-codeRepository"></a>
 An object that described the state of Amazon Inspector scans for an account.
 Type: [State](API_State.md) object

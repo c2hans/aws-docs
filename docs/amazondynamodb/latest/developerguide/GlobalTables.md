@@ -29,6 +29,8 @@ Global tables configured for MRSC only support same-account configurations.
 
 You can configure a global table using the AWS Management Console. Global tables use existing DynamoDB APIs to read and write data to your tables, so no application changes are required. You pay only for the resources you provision or use, with no upfront costs or commitments.
 
+**Comparison of same-account and multi-account global tables**
+
 | **Properties** | **Same-Account global tables** | **Multi-account global tables** |
 | --- | --- | --- |
 | Primary use case | Multi-Region resiliency for applications within a single AWS account | Multi-Region, multi-account replication for applications owned by different teams, distinct business units, or strong security boundaries across accounts |

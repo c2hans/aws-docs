@@ -59,9 +59,13 @@ Perform the following steps for each source DB instance.
 
 1. Determine the current binary log file and position on the source DB instance.
 
+   **For MySQL 8.4**
+
    ```
    SHOW BINARY LOG STATUS;
    ```
+
+   **For MySQL 8.0 and earlier**
 
    ```
    SHOW MASTER STATUS;
@@ -104,6 +108,8 @@ For large databases, consider using AWS DMS or creating a snapshot and restoring
 
 For each source DB instance, connect to the **writer instance** of the Aurora MySQL DB cluster and run the stored procedures to configure and start replication on a channel.
 
+**Option A: Using binary log file position**
+
 ```
 CALL mysql.rds_set_external_source_for_channel(
   '{{source-endpoint.region.rds.amazonaws.com}}',
@@ -118,6 +124,8 @@ CALL mysql.rds_set_external_source_for_channel(
 
 CALL mysql.rds_start_replication_for_channel('{{channel_1}}');
 ```
+
+**Option B: Using GTID auto-positioning**
 
 If your source DB instances use GTID-based replication, you can use auto-positioning instead of specifying binary log coordinates:
 
@@ -148,6 +156,8 @@ You can use replication filters to specify which databases and tables are replic
 With multi-source replication, you can configure replication filters at two levels:
 + **Global filters** – Apply to all channels. Set using the Aurora MySQL DB cluster parameter group (for example, `replicate-do-db`, `replicate-ignore-db`).
 + **Channel-level filters** – Apply only to specific channels, overriding global filters for that channel.
+
+**Key behavior**
 + You must restart replication after changing channel-level filters.
 + If no channel-specific filter is configured, Aurora MySQL applies the global filters for that channel.
 + If a filter is applied both globally and at the channel level, only the channel-level filter is applied for that channel.

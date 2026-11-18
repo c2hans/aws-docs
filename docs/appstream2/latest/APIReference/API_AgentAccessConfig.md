@@ -23,12 +23,23 @@ Valid Values: `W_1280xH_720`
 Required: Yes
 
  ** Settings **   <a name="WorkSpacesApplications-Type-AgentAccessConfig-Settings"></a>
-The list of agent access settings that define permissions for each agent action. You must specify at least one setting.
+The list of agent access settings that define permissions for each agent action. You must specify at least one setting, and at least one agent action must be enabled.
 Type: Array of [AgentAccessSetting](API_AgentAccessSetting.md) objects
 Required: Yes
 
+ ** KmsKeyArn **   <a name="WorkSpacesApplications-Type-AgentAccessConfig-KmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the customer managed symmetric encryption KMS key that encrypts Replay Session artifacts while WorkSpaces Applications processes them. The key must be in the same Region as the stack, and ReplaySessionEnabled must be true.
+Type: String
+Pattern: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:kms:[a-z0-9\-]+:\d{12}:key/[A-Za-z0-9\-]+$`
+Required: No
+
+ ** ReplaySessionEnabled **   <a name="WorkSpacesApplications-Type-AgentAccessConfig-ReplaySessionEnabled"></a>
+Indicates whether Replay Session is enabled for agent sessions. WorkSpaces Applications delivers a video combining session screenshots, a transcript, and a report for each session. Requires the COMPUTER\_VISION agent action.
+Type: Boolean
+Required: No
+
  ** S3BucketArn **   <a name="WorkSpacesApplications-Type-AgentAccessConfig-S3BucketArn"></a>
-The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots are stored. Required when ScreenshotsUploadEnabled is true.
+The Amazon Resource Name (ARN) of the Amazon S3 bucket where agent screenshots and Replay Session artifacts are stored. Required when ScreenshotsUploadEnabled or ReplaySessionEnabled is true.
 Type: String
 Pattern: `^arn:aws(?:\-cn|\-iso\-b|\-iso|\-us\-gov)?:s3:::[a-z0-9][a-z0-9.\-]{1,61}[a-z0-9]$`
 Required: No

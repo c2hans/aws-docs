@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 # `AWS-MigrateSSMDocumentSharingToRAM`
 <a name="automation-aws-migratessmdocumentsharingtoram"></a>
 
+**Description**
+
 The `AWS-MigrateSSMDocumentSharingToRAM` runbook migrates a Systems Manager document to an AWS Resource Access Manager (AWS RAM) resource share. The document moves from account-permission sharing, which you manage with the `ModifyDocumentPermission` API operation. The migration preserves the document's existing consumers. You can migrate a single document. You can also migrate every document in your account that uses account-permission sharing. To migrate all documents, specify `*` for the `DocumentName` parameter.
 
 The runbook automatically rolls back the migration if it fails or is canceled, so your existing sharing configuration is restored.
@@ -20,9 +22,15 @@ Before you run this runbook, verify that the target document currently uses acco
 **Note**
 You can't migrate a document that is shared publicly, because AWS RAM supports private sharing only. If you specify a publicly shared document for `DocumentName`, the runbook fails. If you migrate all documents by specifying `*`, the runbook skips publicly shared documents. To migrate a publicly shared document, first stop sharing it publicly, and then share it with the accounts, organizational units (OUs), or organization that you want.
 
+**Document type**
+
 Automation
 
+**Owner**
+
 Amazon
+
+**Parameters**
 + **DocumentName (Required):**
   + Description: (Required) The name of the Systems Manager document to migrate. Specify `*` to migrate all documents in the account that use account-permission sharing.
   + Type: `String`
@@ -37,6 +45,8 @@ Amazon
   + Type: `StringMap`
 
  [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWS-MigrateSSMDocumentSharingToRAM)
+
+**Required IAM permissions**
 
 The `AutomationAssumeRole` parameter requires a trust policy and a permissions policy. Attach the following trust policy so that Systems Manager Automation can assume the role.
 
@@ -115,6 +125,10 @@ Attach the following permissions policy. The statements are organized into three
 **Group 2** is required only for bulk migration (when you specify `*` for `DocumentName`). For bulk migration, the runbook lists your documents and starts one automation execution for each document, passing your role to each execution. Scope `iam:PassRole` to the `AutomationAssumeRole` role's own ARN as shown. Do not use `"Resource": "*"` for `iam:PassRole`. Replace `ACCOUNT_ID` and `ROLE_NAME` with your account ID and role name.
 **Group 3** is required only when you use the `OrganizationalUnits` parameter to share with organizational units or organizations.
 
+**How to run this runbook**
+
+<a name="automation-aws-migratessmdocumentsharingtoram-wizard"></a>**To migrate a document from its Permissions view (console) (recommended)**
+
 The **Migrate to RAM** page sets the runbook parameters for you.
 
 1. Open the AWS Systems Manager console and, in the navigation pane, choose **Documents**.
@@ -155,4 +169,6 @@ aws ssm start-automation-execution \
 
 **Note**
 Running this runbook uses Systems Manager Automation and incurs charges. For more information, see [AWS Systems Manager pricing](https://aws.amazon.com/systems-manager/pricing/).
+
+**For more information**
 + [Sharing SSM documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-ssm-sharing.html)

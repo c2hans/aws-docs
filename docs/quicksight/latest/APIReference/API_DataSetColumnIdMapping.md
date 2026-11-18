@@ -16,13 +16,13 @@ In the following list, the required parameters are described first.
  ** SourceColumnId **   <a name="QS-Type-DataSetColumnIdMapping-SourceColumnId"></a>
 Source column ID.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
  ** TargetColumnId **   <a name="QS-Type-DataSetColumnIdMapping-TargetColumnId"></a>
 Target column ID.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
 ## See Also

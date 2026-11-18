@@ -333,3 +333,4 @@ The following actions are supported by Amazon S3 Vectors:
 +  [TagResource](API_S3VectorBuckets_TagResource.md)
 +  [UntagResource](API_S3VectorBuckets_UntagResource.md)
 +  [UpdateIndexMode](API_S3VectorBuckets_UpdateIndexMode.md)
++  [UpdateMetadataConfiguration](API_S3VectorBuckets_UpdateMetadataConfiguration.md)

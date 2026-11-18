@@ -17,7 +17,7 @@ The following topics cover errors that you might encounter when you set up or co
 ## Error: Could not associate failback client to recovery instances
 <a name="Troubleshooting-Failback-Errors-credentials"></a>
 
-**Error message:** Could not associate failback client to recovery instances
+**Error message:** `Could not associate failback client to recovery instances`
 
 **Cause:** The IAM credentials used for the Failback Client do not have the required failback policy attached.
 
@@ -34,7 +34,7 @@ For more information, see [Learn more about Failback Client credentials](failbac
 ## Error: Could not discover account ID
 <a name="Troubleshooting-Failback-discover-account"></a>
 
-**Error message:** Could not discover account id from describe
+**Error message:** `Could not discover account id from describe`
 
 **Cause:** The AWS credentials or Region entered into the Failback Client are incorrect.
 
@@ -55,7 +55,7 @@ For more information, see [Learn more about Failback Client credentials](failbac
 ## Error: Failed to get recovery instance volumes
 <a name="Troubleshooting-Failback-get-volumes"></a>
 
-**Error message:** Failed to get recovery instance volumes, please check the network configuration of your recovery instance
+**Error message:** `Failed to get recovery instance volumes, please check the network configuration of your recovery instance`
 
 **Cause:** The Failback Client cannot communicate with the recovery instance on TCP port 1500.
 
@@ -82,7 +82,7 @@ For more information, see [Learn more about Failback Client credentials](failbac
 ## Error: Failback client not seen
 <a name="Troubleshooting-Failback-client-not-seen"></a>
 
-**Error message:** Failback client not seen status in the Elastic Disaster Recovery console.
+**Error message:** `Failback client not seen` status in the Elastic Disaster Recovery console.
 
 **Cause:** Communication between the Failback Client and the Elastic Disaster Recovery endpoint has been interrupted. Common causes include:
 + Network issues between the Failback Client and the Elastic Disaster Recovery endpoint (TCP 443)
@@ -105,7 +105,7 @@ Replication might continue in the background because the AWS Replication Agent r
 ## Error: Could not verify recovery instance connectivity to DRS
 <a name="Troubleshooting-Failback-Errors-connectivity-instance"></a>
 
-**Error message:** Could not verify recovery instance connectivity to Elastic Disaster Recovery
+**Error message:** `Could not verify recovery instance connectivity to Elastic Disaster Recovery`
 
 **Cause:** The recovery instance cannot communicate with the AWS Elastic Disaster Recovery endpoint on TCP port 443.
 

@@ -22,6 +22,12 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9_.-]+`
 Required: Yes
 
+ ** archiveStatus **   <a name="devopsagent-Type-ChatExecution-archiveStatus"></a>
+Indicates whether the chat execution is archived or active.
+Type: String
+Valid Values: `ACTIVE | ARCHIVED`
+Required: No
+
  ** summary **   <a name="devopsagent-Type-ChatExecution-summary"></a>
 Summary or title of the chat
 Type: String

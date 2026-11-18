@@ -37,7 +37,7 @@ The following console procedure contains the high-level steps for setting up per
 
    After the inventory configuration is saved, the console displays a message similar to the following:
 
-   Amazon S3 could not create a bucket policy on the destination bucket. Ask the destination bucket owner to add the following bucket policy to allow Amazon S3 to place data in that bucket.
+   `Amazon S3 could not create a bucket policy on the destination bucket. Ask the destination bucket owner to add the following bucket policy to allow Amazon S3 to place data in that bucket.`
 
    The console then displays a bucket policy that you can use for the destination bucket.
 

@@ -96,6 +96,27 @@ Content-type: application/json
          "description": "string",
          "enablementStatus": "string",
          "enablementStatusReason": "string",
+         "gcpRegions": [ "string" ],
+         "gcpScopeConfiguration": {
+            "containerImageScanning": {
+               "scopeType": "string",
+               "scopeValues": [ "string" ],
+               "state": "string",
+               "stateReason": "string"
+            },
+            "serverlessScanning": {
+               "scopeType": "string",
+               "scopeValues": [ "string" ],
+               "state": "string",
+               "stateReason": "string"
+            },
+            "vmScanning": {
+               "scopeType": "string",
+               "scopeValues": [ "string" ],
+               "state": "string",
+               "stateReason": "string"
+            }
+         },
          "health": {
             "connectorStatus": "string",
             "lastCheckedAt": "string",

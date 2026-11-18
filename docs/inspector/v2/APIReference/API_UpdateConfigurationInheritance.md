@@ -10,6 +10,12 @@ The per-scan-type inheritance reset settings for the `UpdateConfiguration` opera
 ## Contents
 <a name="API_UpdateConfigurationInheritance_Contents"></a>
 
+ ** amiConfiguration **   <a name="inspector2-Type-UpdateConfigurationInheritance-amiConfiguration"></a>
+The inheritance behavior for a scan-type configuration. Used with `UpdateConfigurationInheritance` to reset a member account's configuration to inherit from the delegated administrator. The only valid value is `INHERIT_FROM_ADMIN`, which resets the member account's configuration so that it inherits scan settings from the delegated administrator.
+Type: String
+Valid Values: `INHERIT_FROM_ADMIN`
+Required: No
+
  ** ec2Configuration **   <a name="inspector2-Type-UpdateConfigurationInheritance-ec2Configuration"></a>
 The inheritance mode for Amazon EC2 scan configuration. Set to `INHERIT_FROM_ADMIN` to reset the member account's Amazon EC2 scan configuration to inherit from the delegated administrator. If omitted, the member account's existing Amazon EC2 scan configuration is not changed.
 Type: String

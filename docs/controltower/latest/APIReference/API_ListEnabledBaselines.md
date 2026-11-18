@@ -19,6 +19,7 @@ Content-type: application/json
       "baselineIdentifiers": [ "{{string}}" ],
       "inheritanceDriftStatuses": [ "{{string}}" ],
       "parentIdentifiers": [ "{{string}}" ],
+      "sourceDriftStatuses": [ "{{string}}" ],
       "statuses": [ "{{string}}" ],
       "targetIdentifiers": [ "{{string}}" ]
    },
@@ -76,6 +77,9 @@ Content-type: application/json
          "driftStatusSummary": {
             "types": {
                "inheritance": {
+                  "status": "string"
+               },
+               "source": {
                   "status": "string"
                }
             }

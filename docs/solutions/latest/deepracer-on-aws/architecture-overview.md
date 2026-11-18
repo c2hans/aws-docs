@@ -186,13 +186,21 @@ The diagram groups components by feature and shows only the connections between 
 
 This solution implements a serverless, microservices-based architecture that enables users to train and evaluate reinforcement learning models for autonomous racing. The architecture is organized around several key functional areas that work together to provide a complete reinforcement learning education platform.
 
+<a name="user-interface-and-authentication"></a>**User Interface and Authentication**
+
 Users access DeepRacer on AWS through a web-based console delivered via Amazon CloudFront, which provides fast, global distribution of the user interface assets. These static web assets are hosted in Amazon S3, ensuring reliable and scalable content delivery to users worldwide. Amazon Cognito manages user authentication and authorization, handling user registration, login, and session management.
 
 When new users register, the system automatically creates user profiles and establishes proper permissions, ensuring a seamless onboarding experience. This authentication layer secures access to the platform while enabling users to maintain their own private workspace for models, training data, and race submissions.
 
+<a name="api-layer-and-request-processing"></a>**API Layer and Request Processing**
+
 All user interactions with the system flow through Amazon API Gateway, which serves as the central entry point for backend operations. The API Gateway routes requests to appropriate AWS Lambda functions based on the endpoint accessed, providing a clean separation between the user interface and backend processing logic. AWS WAF protects the API layer from common security threats such as bot attacks, DDoS attempts, and malicious traffic patterns.
 
+<a name="data-management"></a>**Data Management**
+
 The solution uses a combination of Amazon DynamoDB and Amazon S3 to handle different types of data storage needs. DynamoDB serves as the primary database for structured data including user profiles, model metadata, training job status, leaderboards, race submissions, and the records that describe physical racing events and their results. Amazon S3 handles file storage for larger assets such as trained model files, training logs, evaluation videos, and other user-generated content.
+
+<a name="race-management-and-timekeeping"></a>**Race Management and Timekeeping**
 
 Alongside virtual racing, the solution supports running physical racing events, the kind held at a summit, a classroom, or a community meetup, where real vehicles run on a real track. An event is the container for everything about one such occasion: its format and scoring rules, the tracks it runs on, and the results it produces. An event moves through a defined sequence of states as it is configured, opened, run, and closed, and each state limits what can still be changed.
 
@@ -202,13 +210,21 @@ During the event, a race facilitator uses the timekeeping interface to run each 
 
 Three independent real-time paths keep displays current. Leaderboard changes travel from DynamoDB through the broadcast handler to AWS IoT Core. Countdown timer state travels from the facilitator’s browser to IoT Core directly, which is what keeps a paused timer on a venue display in step with the facilitator’s own screen. When a Raspberry Pi timer is used, the timer publishes each finish line crossing to IoT Core over HTTPS, and the timekeeping page subscribes to it. The timer doesn’t open any listening port.
 
+<a name="model-training-and-evaluation-engine"></a>**Model Training and Evaluation Engine**
+
 The core reinforcement learning functionality is centered around Amazon SageMaker AI training jobs, which provides the compute resources for running reinforcement learning training and evaluation jobs. When users initiate training jobs, the requests are queued in Amazon SQS to manage demand and ensure fair resource allocation. AWS Step Functions orchestrates the workflow of preparing training environments, monitoring job progress, and handling completion tasks. The system pulls a containerized simulation environment from Amazon ECR, which comprises the DeepRacer virtual simulator built on robotics simulation technology.
+
+<a name="real-time-simulation-streaming"></a>**Real-time Simulation Streaming**
 
 During model training and evaluation, Amazon Kinesis Video Streams captures video from the simulation environment and streams it in real-time to the console. This allows users to watch their models learn and perform, providing immediate visual feedback on training progress and model behavior. The streaming capability delivers an engaging, visual experience that helps users understand how their models are developing and performing on the virtual race track.
 
 During live race events, AWS IoT Core supplements the video stream by delivering real-time race state updates to spectator and participant browsers via a managed WebSocket connection. As each model evaluation completes, a Lambda function publishes leaderboard changes, queue status updates, and participant notifications to an IoT Core topic, which fans the events out to all connected clients instantly. This two-channel architecture keeps the high-bandwidth video traffic on Kinesis Video Streams while routing lightweight event data through IoT Core, ensuring both streams remain responsive under concurrent viewer load.
 
+<a name="security-and-validation"></a>**Security and Validation**
+
 Before any user-provided code executes in the system, it passes through validation functions. These examine reward functions and imported models for security issues, ensuring that malicious or harmful code cannot compromise the system. The functions operate within isolated network environments that prevent external communication, providing an additional security boundary.
+
+<a name="monitoring-and-operations"></a>**Monitoring and Operations**
 
 Amazon CloudWatch provides comprehensive monitoring and logging across all system components, collecting metrics, logs, and performance data from Lambda functions, SageMaker instances, API Gateway, and other services. This enables cloud administrators to understand system performance, troubleshoot issues, and optimize resource usage.
 

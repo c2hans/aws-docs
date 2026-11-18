@@ -51,6 +51,10 @@ Required: Yes
       }
    },
    "CreationTime": number,
+   "CrossRegionTrafficConfig": {
+      "MaxCrossRegionPercentPerEndpoint": number,
+      "MaxInvocationsPerSecondPerInstance": number
+   },
    "DataCaptureConfig": {
       "CaptureContentTypeHeader": {
          "CsvContentTypes": [ "string" ],
@@ -245,6 +249,10 @@ Type: [AsyncInferenceConfig](API_AsyncInferenceConfig.md) object
  ** [CreationTime](#API_DescribeEndpointConfig_ResponseSyntax) **   <a name="sagemaker-DescribeEndpointConfig-response-CreationTime"></a>
 A timestamp that shows when the endpoint configuration was created.
 Type: Timestamp
+
+ ** [CrossRegionTrafficConfig](#API_DescribeEndpointConfig_ResponseSyntax) **   <a name="sagemaker-DescribeEndpointConfig-response-CrossRegionTrafficConfig"></a>
+The cross-Region traffic cap, if the endpoint configuration sets one.
+Type: [CrossRegionTrafficConfig](API_CrossRegionTrafficConfig.md) object
 
  ** [DataCaptureConfig](#API_DescribeEndpointConfig_ResponseSyntax) **   <a name="sagemaker-DescribeEndpointConfig-response-DataCaptureConfig"></a>
 Configuration to control how SageMaker AI captures inference data.

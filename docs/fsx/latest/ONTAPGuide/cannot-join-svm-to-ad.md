@@ -26,7 +26,7 @@ If you're unable to join an SVM to an Active Directory (AD), first review [How j
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to establish a connection with your Active Directory. This is because the server name you specified is the NetBIOS name of the home domain. To fix this problem, choose a NetBIOS name for your SVM that is different from the NetBIOS name of the home domain. Then reattempt to join your SVM to your Active Directory.
+ `Amazon FSx is unable to establish a connection with your Active Directory. This is because the server name you specified is the NetBIOS name of the home domain. To fix this problem, choose a NetBIOS name for your SVM that is different from the NetBIOS name of the home domain. Then reattempt to join your SVM to your Active Directory.`
 
 To resolve this issue, follow the procedure described in [Joining SVMs to Active Directory using the AWS Management Console, AWS CLI and API](join-svm-to-ad.md) to reattempt joining your SVM to your Active Directory. Ensure that you use a NetBIOS name for your SVM that's different than the NetBIOS name of the Active Directory's home domain.
 
@@ -35,7 +35,7 @@ To resolve this issue, follow the procedure described in [Joining SVMs to Active
 
 Joining an SVM to an Active Directory fails with the following error message:
 
- Amazon FSx is unable to establish a connection to your Active Directory. This is because the SVM is already joined to a domain. To join this SVM to a different domain, you can use the ONTAP CLI or REST API to unjoin this SVM from Active Directory. Then reattempt to join your SVM to a different Active Directory.
+ `Amazon FSx is unable to establish a connection to your Active Directory. This is because the SVM is already joined to a domain. To join this SVM to a different domain, you can use the ONTAP CLI or REST API to unjoin this SVM from Active Directory. Then reattempt to join your SVM to a different Active Directory.`
 
 To resolve the issue, do the following:
 
@@ -48,7 +48,7 @@ To resolve the issue, do the following:
 
 Creating an SVM joined to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to establish a connection with your Active Directory. This is because the NetBIOS (computer) name you specified is already in-use in your Active Directory. To fix this problem, pick a NetBIOS name for your SVM that is not in use in your Active Directory., specifying a NetBIOS (computer) Then reattempt to join your SVM to your Active Directory.
+ `Amazon FSx is unable to establish a connection with your Active Directory. This is because the NetBIOS (computer) name you specified is already in-use in your Active Directory. To fix this problem, pick a NetBIOS name for your SVM that is not in use in your Active Directory., specifying a NetBIOS (computer) Then reattempt to join your SVM to your Active Directory.`
 
 To resolve this issue, follow the procedure described in [Joining SVMs to Active Directory using the AWS Management Console, AWS CLI and API](join-svm-to-ad.md) to reattempt joining your SVM to your AD. Ensure that you use a NetBIOS name for your SVM that's unique and not already in use in your Active Directory.
 
@@ -109,7 +109,7 @@ The following sections describe common issues and how to resolve them.
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to communicate with your Active Directory. To fix this problem, ensure that network traffic is allowed between Amazon FSx and your domain controllers. Then reattempt to join your SVM to your Active Directory.
+ `Amazon FSx is unable to communicate with your Active Directory. To fix this problem, ensure that network traffic is allowed between Amazon FSx and your domain controllers. Then reattempt to join your SVM to your Active Directory.`
 
 To resolve this issue, do the following:
 
@@ -122,7 +122,7 @@ To resolve this issue, do the following:
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to establish a connection with your Active Directory. This is due to either the port requirements for your Active Directory not being met, or the service account provided not having permissions to join the storage virtual machine to the domain with the specified organization unit. To fix this problem, update your storage virtual machine's Active Directory configuration after resolving any permissions issues with ports and service accounts, as recommended in the Amazon FSx user guide.
+ `Amazon FSx is unable to establish a connection with your Active Directory. This is due to either the port requirements for your Active Directory not being met, or the service account provided not having permissions to join the storage virtual machine to the domain with the specified organization unit. To fix this problem, update your storage virtual machine's Active Directory configuration after resolving any permissions issues with ports and service accounts, as recommended in the Amazon FSx user guide.`
 
 To resolve this issue, do the following:
 
@@ -137,7 +137,7 @@ To resolve this issue, do the following:
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to establish a connection with your Active Directory domain controller(s) because the service account credentials provided are invalid. To fix this problem, update your storage virtual machine's Active Directory configuration with a valid service account.
+ `Amazon FSx is unable to establish a connection with your Active Directory domain controller(s) because the service account credentials provided are invalid. To fix this problem, update your storage virtual machine's Active Directory configuration with a valid service account.`
 
 To resolve this issue, use the procedure described in [Updating existing SVM Active Directory configurations using the AWS Management Console, AWS CLI, and API](update-svm-ad-config.md) to update the SVM's service account credentials. When entering the service account user name, be sure to include only the user name (for example, `ServiceAcct`), and don't include any domain prefix (for example, `corp.com\ServiceAcct`) or domain suffix (for example, `ServiceAcct@corp.com`). Don't use the distinguished name (DN) when entering the service account user name (for example, `CN=ServiceAcct,OU=example,DC=corp,DC=com`).
 
@@ -146,7 +146,7 @@ To resolve this issue, use the procedure described in [Updating existing SVM Act
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to establish a connection with your Active Directory domain controller(s). This is due to either unmet port requirements for the Active Directory, or the service account provided does not have permission to join the storage virtual machine to the domain with the specified organizational unit.
+ `Amazon FSx is unable to establish a connection with your Active Directory domain controller(s). This is due to either unmet port requirements for the Active Directory, or the service account provided does not have permission to join the storage virtual machine to the domain with the specified organizational unit.`
 
 To resolve this issue, make sure that you have delegated the required permissions to the service account that you provided. The service account must be able to create and delete computer objects in the OU in the domain to which you're joining the file system. The service account also needs, at a minimum, to have permissions to do the following:
 + Reset passwords
@@ -163,7 +163,7 @@ For more information about creating a service account with correct permissions, 
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to communicate with your Active Directory. This is because Amazon FSx can't reach the DNS servers provided or domain controllers for your domain. To fix this problem, update your storage virtual machine's Active Directory configuration with valid DNS servers and a networking configuration that allows traffic to flow from the storage virtual machine to the domain controller.
+ `Amazon FSx is unable to communicate with your Active Directory. This is because Amazon FSx can't reach the DNS servers provided or domain controllers for your domain. To fix this problem, update your storage virtual machine's Active Directory configuration with valid DNS servers and a networking configuration that allows traffic to flow from the storage virtual machine to the domain controller.`
 
 To resolve this issue, use the following procedure:
 
@@ -232,7 +232,7 @@ To resolve this issue, use the following procedure:
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx has detected the provided FQDN is invalid. To fix this problem, update your storage virtual machine's Active Directory configuration with an FQDN that adheres to configuration requirements.
+ `Amazon FSx has detected the provided FQDN is invalid. To fix this problem, update your storage virtual machine's Active Directory configuration with an FQDN that adheres to configuration requirements.`
 
 To resolve this issue, use the following procedure:
 
@@ -245,7 +245,7 @@ To resolve this issue, use the following procedure:
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to apply your Active Directory configuration. This is because the administrators group you provided either doesn't exist or isn't accessible to the service account you provided. To fix this problem, ensure that your networking configuration allows traffic from the SVM to your Active Directory’s domain controller(s) and DNS servers. Then update your SVM’s Active Directory configuration, providing your Active Directory’s DNS servers and, specifying an administrators group in the domain that is accessible to the service account provided.
+ `Amazon FSx is unable to apply your Active Directory configuration. This is because the administrators group you provided either doesn't exist or isn't accessible to the service account you provided. To fix this problem, ensure that your networking configuration allows traffic from the SVM to your Active Directory’s domain controller(s) and DNS servers. Then update your SVM’s Active Directory configuration, providing your Active Directory’s DNS servers and, specifying an administrators group in the domain that is accessible to the service account provided.`
 
 To resolve this issue, do the following:
 
@@ -258,7 +258,7 @@ To resolve this issue, do the following:
 
 Joining an SVM to your self-managed Active Directory fails with the following error message:
 
- Amazon FSx is unable to establish a connection with your Active Directory. This is because the organizational unit you specified either doesn't exist or isn't accessible to the service account provided. To fix this problem, update your storage virtual machine's Active Directory configuration, specifying an organizational unit to which the service account has permissions to join.
+ `Amazon FSx is unable to establish a connection with your Active Directory. This is because the organizational unit you specified either doesn't exist or isn't accessible to the service account provided. To fix this problem, update your storage virtual machine's Active Directory configuration, specifying an organizational unit to which the service account has permissions to join.`
 
 To resolve this issue, do the following:
 

@@ -48,7 +48,7 @@ Required: No
  ** [resourceTypes](#API_Enable_RequestSyntax) **   <a name="inspector2-Enable-request-resourceTypes"></a>
 The resource scan types you want to enable.
 Type: Array of strings
-Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Array Members: Minimum number of 1 item. Maximum number of 6 items.
 Valid Values: `EC2 | ECR | LAMBDA | LAMBDA_CODE | CODE_REPOSITORY`
 Required: Yes
 
@@ -64,6 +64,7 @@ Content-type: application/json
       {
          "accountId": "string",
          "resourceStatus": {
+            "ami": "string",
             "codeRepository": "string",
             "ec2": "string",
             "ecr": "string",
@@ -79,6 +80,7 @@ Content-type: application/json
          "errorCode": "string",
          "errorMessage": "string",
          "resourceStatus": {
+            "ami": "string",
             "codeRepository": "string",
             "ec2": "string",
             "ecr": "string",

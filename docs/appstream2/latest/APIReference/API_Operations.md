@@ -92,6 +92,7 @@ The following actions are supported:
 +  [UpdateDirectoryConfig](API_UpdateDirectoryConfig.md)
 +  [UpdateEntitlement](API_UpdateEntitlement.md)
 +  [UpdateFleet](API_UpdateFleet.md)
++  [UpdateImageBuilder](API_UpdateImageBuilder.md)
 +  [UpdateImagePermissions](API_UpdateImagePermissions.md)
 +  [UpdateStack](API_UpdateStack.md)
 +  [UpdateThemeForStack](API_UpdateThemeForStack.md)

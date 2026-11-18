@@ -23,6 +23,11 @@ Updates the specified firewall rule. The rule's `FirewallRuleType`, `FirewallDom
    "FirewallDomainRedirectionAction": "{{string}}",
    "FirewallRuleGroupId": "{{string}}",
    "FirewallRuleType": {
+      "AutoAllowlist": {
+         "AutoAllowlistFirewallDomainListId": "{{string}}",
+         "ImportFromFirewallDomainListId": "{{string}}",
+         "InitialDataTimeframeHours": {{number}}
+      },
       "DnsThreatProtection": {
          "ConfidenceThreshold": "{{string}}",
          "Value": "{{string}}"
@@ -115,6 +120,7 @@ Required: No
  How you want the the rule to evaluate DNS redirection in the DNS redirection chain, such as CNAME or DNAME.
  `INSPECT_REDIRECTION_DOMAIN`: (Default) inspects all domains in the redirection chain. The individual domains in the redirection chain must be added to the domain list.
  `TRUST_REDIRECTION_DOMAIN`: Inspects only the first domain in the redirection chain. You don't need to add the subsequent domains in the domain in the redirection list to the domain list.
+You can't set this value on an AutoAllowlist rule, which always inspects the redirection chain.
 Type: String
 Valid Values: `INSPECT_REDIRECTION_DOMAIN | TRUST_REDIRECTION_DOMAIN`
 Required: No
@@ -131,7 +137,8 @@ The rule type configuration for the firewall rule. This is a tagged union — se
 +  `FirewallAdvancedThreatCategory` — match an AWS-managed advanced threat category (for example, `PHISHING`).
 +  `DnsThreatProtection` — match a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 +  `PartnerThreatProtection` — match a third-party threat feed delivered through AWS Marketplace. The selected partner must be an active subscription on the calling account.
-To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md).
+To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md). It doesn't return `AutoAllowlist`.
+You can't specify `FirewallRuleType` when you update an AutoAllowlist rule, even with its current values. `InitialDataTimeframeHours` and `ImportFromFirewallDomainListId` can't be changed. To change them, delete the rule and create a new one. Deleting an AutoAllowlist rule also deletes its managed domain list and the domains that you allowed.
 Type: [FirewallRuleType](API_route53resolver_FirewallRuleType.md) object
 Required: No
 
@@ -172,6 +179,7 @@ Required: No
 + A query type you define by using the DNS type ID, for example 28 for AAAA. The values must be defined as TYPENUMBER, where the NUMBER can be 1-65534, for example, TYPE28. For more information, see [List of DNS record types](https://en.wikipedia.org/wiki/List_of_DNS_record_types).
 **Note**
 If you set up a firewall BLOCK rule with action NXDOMAIN on query type equals AAAA, this action will not be applied to synthetic IPv6 addresses generated when DNS64 is enabled.
+You can't set `Qtype` on an AutoAllowlist rule, because the rule applies to all query types.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 16.
 Required: No
@@ -195,6 +203,11 @@ Required: No
       "FirewallDomainRedirectionAction": "string",
       "FirewallRuleGroupId": "string",
       "FirewallRuleType": {
+         "AutoAllowlist": {
+            "AutoAllowlistFirewallDomainListId": "string",
+            "ImportFromFirewallDomainListId": "string",
+            "InitialDataTimeframeHours": number
+         },
          "DnsThreatProtection": {
             "ConfidenceThreshold": "string",
             "Value": "string"

@@ -332,7 +332,7 @@ When HealthLake receives a FHIR REST API request on a SMART on FHIR enabled data
 
 **Important**
 HealthLake requires that the maximum run time for your Lambda function be less than one second (1000 milliseconds).
-If you Lambda function exceeds the run time limit you get a TimeOut exception.
+If you Lambda function exceeds the run time limit you get a `TimeOut` exception.
 
 To avoid getting this exception, we recommend configuring provisioned concurrency. By allocating provisioned concurrency before an increase in invocations, you can ensure that all requests are served by initialized instances with low latency. To learn more about configuring provisioned concurrency, see [Configuring provisioned concurrency](https://docs.aws.amazon.com/ambda/latest/dg/provisioned-concurrency.html) in the *Lambda Developer Guide*
 

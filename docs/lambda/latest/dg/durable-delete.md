@@ -34,7 +34,7 @@ If you log Lambda data events in AWS CloudTrail, CloudTrail records each [Delete
 ## Delete an execution
 <a name="durable-delete-execution"></a>
 
-To delete a running or paused execution, stop it first with [StopDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_StopDurableExecution.html). For more information, see [Stopping an execution](durable-managing-executions.md#durable-managing-executions-stop).
+To delete a running or paused execution, stop it first with [StopDurableExecution](https://docs.aws.amazon.com/lambda/latest/api/API_StopDurableExecution.html). For more information, see [Stopping an execution](durable-managing-executions.md#durable-managing-executions-stop) and [Pausing and resuming durable executions](durable-pause-resume.md).
 
 **To delete an execution**
 

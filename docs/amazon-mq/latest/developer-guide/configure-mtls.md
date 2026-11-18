@@ -34,6 +34,8 @@ Configure mTLS for connections to the RabbitMQ management interface.
 **Note**
 Strict mTLS is not supported for the management API.
 
+**Supported configurations**
+
 `aws.arns.management.ssl.cacertfile`
 Certificate authority file for validating client certificates connecting to the management interface.
 
@@ -42,6 +44,8 @@ Peer verification mode. Supported values: `verify_none`, `verify_peer`
 
 `management.ssl.depth`
 Maximum certificate chain depth for verification.
+
+**Unsupported SSL options**
 
 The following SSL configuration values are not supported:
 

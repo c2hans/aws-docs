@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-no-slr.html
 ## Scenario
 <a name="tshoot-no-slr-scenario"></a>
 
-You get the error "Your account ID does not exist in an AWS organization" when trying to share a resource with accounts or organizational units (OUs) in your organization.
+You get the error "`Your account ID does not exist in an AWS organization`" when trying to share a resource with accounts or organizational units (OUs) in your organization.
 
 ## Cause
 <a name="tshoot-no-slr-cause"></a>

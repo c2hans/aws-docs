@@ -9,6 +9,7 @@ The following table describes important additions to the AWS Elemental MediaConv
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [External references in MP4 and MOV inputs](mp4-mov-external-references.md) | This update describes how MediaConvert handles MP4 and MOV inputs that reference media stored outside of the input file, and adds recommendations for transcoding files that you receive from sources that you don't control. | November 17, 2026 |
 | [Configuring Smart subtitling with AWS Elemental Inference](smart-subtitling-with-elemental-inference.md) | MediaConvert added support for Smart subtitling with AWS Elemental Inference. | November 6, 2026 |
 | [Configuring Smart cropping with AWS Elemental Inference](smart-cropping-with-elemental-inference.md) | MediaConvert added support for Smart cropping with AWS Elemental Inference. | April 1, 2026 |
 | [TAMS inputs](tams-input.md) | MediaConvert added support for processing content directly from TAMS servers. | July 21, 2025 |

@@ -50,7 +50,7 @@ Required: No
  ** ManagedListType **   <a name="Route53Resolver-Type-route53resolver_FirewallDomainList-ManagedListType"></a>
 The type of the managed domain list, for example `THREAT`.
 Type: String
-Valid Values: `THREAT | CONTENT`
+Valid Values: `THREAT | CONTENT | AUTOALLOWLIST`
 Required: No
 
  ** ManagedOwnerName **   <a name="Route53Resolver-Type-route53resolver_FirewallDomainList-ManagedOwnerName"></a>

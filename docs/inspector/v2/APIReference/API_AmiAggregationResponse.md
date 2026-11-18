@@ -31,15 +31,15 @@ Required: No
  ** cloudAccountId **   <a name="inspector2-Type-AmiAggregationResponse-cloudAccountId"></a>
 The cloud account ID for the AMI aggregation.
 Type: String
-Length Constraints: Minimum length of 12. Maximum length of 36.
-Pattern: `(\d{12}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})`
+Length Constraints: Minimum length of 6. Maximum length of 36.
+Pattern: `(\d{12}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[a-z][a-z0-9-]{4,28}[a-z0-9])`
 Required: No
 
  ** cloudOrgId **   <a name="inspector2-Type-AmiAggregationResponse-cloudOrgId"></a>
 The cloud organization ID for the AMI aggregation.
 Type: String
-Length Constraints: Minimum length of 12. Maximum length of 36.
-Pattern: `(o-[a-z0-9]{10,32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})`
+Length Constraints: Minimum length of 6. Maximum length of 36.
+Pattern: `(o-[a-z0-9]{10,32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9]{6,30})`
 Required: No
 
  ** cloudPartition **   <a name="inspector2-Type-AmiAggregationResponse-cloudPartition"></a>
@@ -57,17 +57,25 @@ Required: No
 The cloud service provider associated with this Amazon Machine Image (AMI) aggregation. Valid values:
 +  `AWS` – Findings from AWS resources.
 +  `AZURE` – Findings from Microsoft Azure resources.
++  `GCP` – Findings from Google Cloud Platform (GCP) resources.
 Type: String
-Valid Values: `AWS | AZURE`
+Valid Values: `AWS | AZURE | GCP`
 Required: No
 
  ** cloudRegion **   <a name="inspector2-Type-AmiAggregationResponse-cloudRegion"></a>
 The cloud Region associated with this AMI aggregation. The value format depends on the cloud provider:
 + An AWS Region, such as `us-east-1`.
 + An Azure region, such as `eastus`.
++ A Google Cloud Platform (GCP) location, such as the region `us-central1` or the zone `us-central1-a`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `([a-z]{2}(-[a-z]+)+-\d+|[a-z][a-z0-9]+)`
+Pattern: `([a-z]{2}(-[a-z]+)+-\d+|[a-z][a-z0-9]+|[a-z]+-[a-z]+[0-9]+(-[a-z])?)`
+Required: No
+
+ ** scanSource **   <a name="inspector2-Type-AmiAggregationResponse-scanSource"></a>
+The source of the scan that generated the findings for the Amazon Machine Image (AMI).
+Type: String
+Valid Values: `INSTANCE_SCAN | MACHINE_IMAGE_SCAN`
 Required: No
 
  ** severityCounts **   <a name="inspector2-Type-AmiAggregationResponse-severityCounts"></a>

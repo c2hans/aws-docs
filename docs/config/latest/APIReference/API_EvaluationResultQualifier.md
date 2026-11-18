@@ -14,7 +14,7 @@ Identifies an AWS Config rule that evaluated an AWS resource, and provides the t
 The name of the AWS Config rule that was used in the evaluation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: No
 
  ** EvaluationMode **   <a name="config-Type-EvaluationResultQualifier-EvaluationMode"></a>

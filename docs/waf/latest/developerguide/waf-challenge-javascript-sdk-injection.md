@@ -56,6 +56,8 @@ No metric or log field records whether CloudFront inserted the tag into a respon
 
 In the console, you turn this on from any qualifying managed rule group. Add or edit the rule group in a CloudFront web ACL. Then, under **Automatic SDK integration**, select **Enable automatic SDK integration**. For Bot Control, the setting is in the same panel where you set the inspection level and machine learning.
 
+You can also turn on automatic SDK integration when you use the **Targeted bot control** setting to configure Bot Control at the targeted protection level for a CloudFront web ACL. For more information about the setting, see [Turning on Targeted bot control in the console](waf-bot-control-targeted-console.md).
+
 Through the API, add the `ChallengeJavascriptSdkInjection` setting to the `AssociationConfig` of the web ACL, using the `CLOUDFRONT` map key. The configuration object is empty. The following example shows the setting in a `CreateWebACL` or `UpdateWebACL` request.
 
 ```

@@ -13,6 +13,8 @@ Here are a few steps you should take to get started after your WordPress Multisi
 ------
 #### [ Lightsail ]
 
+<a name="amazon-lightsail-get-the-default-user-password-wordpress-multisite-lightsail"></a>**Step 1: Get the default application password to access the WordPress administration dashboard**
+
 Complete the following procedure to get the default application password required to access the administration dashboard for your WordPress Multisite website.
 
 1. On your instance management page, under the **Connect** tab, choose **Connect using SSH**.
@@ -26,6 +28,8 @@ Complete the following procedure to get the default application password require
 
    You should see a response similar to the following example, which contains the default application password. Use this password to sign in to the administration dashboard of your WordPress Multisite website.
 ![Default application password.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-password-retrieval.png)
+
+<a name="amazon-lightsail-attach-static-ip-wordpress-multisite-lightsail"></a>**Step 2: Attach a static IP address to your instance**
 
 The default dynamic public IP address attached to your instance changes every time you stop and start the instance. You can create a static IP address and attach it to your instance to keep the public IP address from changing. Later, when you use your domain name with your instance, you don’t have to update your domain’s DNS records each time you stop and start the instance. You can attach only one static IP address to each instance.
 
@@ -56,6 +60,8 @@ After the new static IP address is attached to your instance, you must complete 
    The WordPress website on your instance should now be aware of the new static IP address.
 ![Result of the domain configuration tool](https://docs.aws.amazon.com/lightsail/latest/userguide/images/wp-multisite-lightsail-new-domain.png)
 
+<a name="amazon-lightsail-sign-in-wordpress-multisite-lightsail"></a>**Step 3: Sign in to the administration dashboard of your WordPress Multisite website**
+
 Now that you have the default application password, complete the following procedure to navigate to your WordPress Multisite website's home page, and sign in to the administration dashboard. After you're signed in, you can start customizing your website and making administrative changes. For more information about what you can do in WordPress, see the [Step 6: Read the WordPress Multisite documentation and continue configuring your website](#amazon-lightsail-read-documentation-wordpress-multisite-lightsail) section later in this guide.
 
 1. On your instance management page, under the **Connect** tab, make note of the public IP address of your instance. The public IP address is also displayed in the header section of your instance management page.
@@ -73,6 +79,8 @@ Now that you have the default application password, complete the following proce
 
    The WordPress administration dashboard appears.
 ![The WordPress administration dashboard.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-wordpress-dashboard.png)
+
+<a name="amazon-lightsail-map-your-domain-to-your-instance-wordpress-multisite-lightsail"></a>**Step 4: Route traffic for your registered domain name to your WordPress Multisite website**
 
 To route traffic for your registered domain name, such as `example.com`, to your WordPress Multisite website, you add a record to the DNS of your domain. DNS records are typically managed and hosted at the registrar where you registered your domain. However, we recommend that you transfer management of your domain's DNS records to Lightsail so that you can administer it using the Lightsail console.
 
@@ -100,11 +108,17 @@ After your domain name is routing traffic to your instance, you must complete th
 
 If you browse to the domain name that you configured for your instance, you should be redirected to the main blog of your WordPress Multisite website. Next you must decide whether you want to add blogs as domains or as subdomains to your WordPress Multisite website.
 
+<a name="amazon-lightsail-add-blogs-as-domains-or-subdomains-wordpress-multisite-lightsail"></a>**Step 5: Add blogs as domains or subdomains to your WordPress Multisite website**
+
 WordPress Multisite is designed to host multiple blog websites on one instance of WordPress. When you add new blog websites to your WordPress Multisite, you can configure them to use their own domains or a subdomain of your WordPress Multisite's primary domain.
 + To add blog sites as domains, such as `example1.com` and `example2.com`, see [Add blogs as domains to your WordPress Multisite instance in Lightsail](amazon-lightsail-add-blogs-as-domains-to-your-wordpress-multisite.md).
 + To add blog sites as subdomains of your WordPress Multisite's primary domain, such as `one.example.com` and `two.example.com`, see [Add blogs as subdomains to your WordPress Multisite instance in Lightsail](amazon-lightsail-add-blogs-as-subdomains-to-your-wordpress-multisite.md).
 
+<a name="amazon-lightsail-read-documentation-wordpress-multisite-lightsail"></a>**Step 6: Read the WordPress Multisite documentation and continue configuring your website**
+
 Read the WordPress Multisite documentation to learn how to administer and customize your website. For more information, see the [WordPress Multisite Network Administration Documentation](https://developer.wordpress.org/advanced-administration/multisite/).
+
+<a name="amazon-lightsail-create-a-snapshot-wordpress-multisite-lightsail"></a>**Step 7: Create a snapshot of your instance**
 
 After you configure your website the way you want it, create periodic snapshots of your instance to back it up. A snapshot is a copy of the system disk and original configuration of an instance. A snapshot contains all of the data that is needed to restore your instance (from the moment when the snapshot was taken).
 
@@ -117,7 +131,11 @@ You can work with snapshots on your instance's management page on the **Snapshot
 ------
 #### [ Bitnami ]
 
+<a name="amazon-lightsail-read-the-bitnami-documentation-wordpress-multisite"></a>**Step 1: Read the Bitnami documentation**
+
 Read the Bitnami documentation to learn how to configure your WordPress Multisite instance. For more information, see the [WordPress Multisite Packaged By Bitnami For AWS Cloud](https://docs.bitnami.com/general/apps/wordpress-multisite/).
+
+<a name="amazon-lightsail-get-the-default-user-password-wordpress-multisite"></a>**Step 2: Get the default application password to access the WordPress administration dashboard**
 
 Complete the following procedure to get the default application password required to access the administration dashboard for your WordPress Multisite website. For more information, see [Getting the application user name and password for your Bitnami instance in Amazon Lightsail](log-in-to-your-bitnami-application-running-on-amazon-lightsail.md).
 
@@ -132,6 +150,8 @@ Complete the following procedure to get the default application password require
 
    You should see a response similar to the following example, which contains the default application password. Use this password to sign in to the administration dashboard of your WordPress Multisite website.
 ![Bitnami default application password.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-bitnami-application-password.png)
+
+<a name="amazon-lightsail-attach-static-ip-wordpress-multisite"></a>**Step 3: Attach a static IP address to your instance**
 
 The default dynamic public IP address attached to your instance changes every time you stop and start the instance. You can create a static IP address and attach it to your instance to keep the public IP address from changing. Later, when you use your domain name with your instance, you don’t have to update your domain’s DNS records each time you stop and start the instance. You can attach only one static IP address to each instance.
 
@@ -174,6 +194,8 @@ After running those commands, enter the following command to keep the bnconfig t
    sudo mv bnconfig bnconfig.disabled
    ```
 
+<a name="amazon-lightsail-sign-in-wordpress-multisite"></a>**Step 4: Sign in to the administration dashboard of your WordPress Multisite website**
+
 Now that you have the default application password, complete the following procedure to navigate to your WordPress Multisite website's home page, and sign in to the administration dashboard. After you're signed in, you can start customizing your website and making administrative changes. For more information about what you can do in WordPress, see the [Step 7: Read the WordPress Multisite documentation and continue configuring your website](#amazon-lightsail-read-documentation-wordpress-multisite) section later in this guide.
 
 1. On your instance management page, under the **Connect** tab, make note of the public IP address of your instance. The public IP address is also displayed in the header section of your instance management page.
@@ -191,6 +213,8 @@ Now that you have the default application password, complete the following proce
 
    The WordPress administration dashboard appears.
 ![The WordPress administration dashboard.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-wordpress-dashboard.png)
+
+<a name="amazon-lightsail-map-your-domain-to-your-instance-wordpress-multisite"></a>**Step 5: Route traffic for your registered domain name to your WordPress Multisite website**
 
 To route traffic for your registered domain name, such as `example.com`, to your WordPress Multisite website, you add a record to the DNS of your domain. DNS records are typically managed and hosted at the registrar where you registered your domain. However, we recommend that you transfer management of your domain's DNS records to Lightsail so that you can administer it using the Lightsail console.
 
@@ -230,11 +254,17 @@ After running those commands, enter the following command to keep the bnconfig t
 
 If you browse to the domain name that you configured for your instance, you should be redirected to the main blog of your WordPress Multisite website. Next you must decide whether you want to add blogs as domains or as subdomains to your WordPress Multisite website. For more information, continue to the next [Step 6: Add blogs as domains or subdomains to your WordPress Multisite website](#amazon-lightsail-add-blogs-as-domains-or-subdomains-wordpress-multisite) section of this guide.
 
+<a name="amazon-lightsail-add-blogs-as-domains-or-subdomains-wordpress-multisite"></a>**Step 6: Add blogs as domains or subdomains to your WordPress Multisite website**
+
 WordPress Multisite is designed to host multiple blog websites on one instance of WordPress. When you add new blog websites to your WordPress Multisite, you can configure them to use their own domains or a subdomain of your WordPress Multisite's primary domain.
 + To add blog sites as domains, such as `example1.com` and `example2.com`, see [Add blogs as domains to your WordPress Multisite instance in Lightsail](amazon-lightsail-add-blogs-as-domains-to-your-wordpress-multisite.md).
 + To add blog sites as subdomains of your WordPress Multisite's primary domain, such as `one.example.com` and `two.example.com`, see [Add blogs as subdomains to your WordPress Multisite instance in Lightsail](amazon-lightsail-add-blogs-as-subdomains-to-your-wordpress-multisite.md).
 
+<a name="amazon-lightsail-read-documentation-wordpress-multisite"></a>**Step 7: Read the WordPress Multisite documentation and continue configuring your website**
+
 Read the WordPress Multisite documentation to learn how to administer and customize your website. For more information, see the [WordPress Multisite Network Administration Documentation](https://developer.wordpress.org/advanced-administration/multisite/).
+
+<a name="amazon-lightsail-create-a-snapshot-wordpress-multisite"></a>**Step 8: Create a snapshot of your instance**
 
 After you configure your website the way you want it, create periodic snapshots of your instance to back it up. A snapshot is a copy of the system disk and original configuration of an instance. A snapshot contains all of the data that is needed to restore your instance (from the moment when the snapshot was taken).
 

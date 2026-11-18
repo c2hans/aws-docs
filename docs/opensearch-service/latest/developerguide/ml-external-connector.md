@@ -96,6 +96,8 @@ Set up an IAM role to delegate Secrets Manager permissions to OpenSearch Service
    }
    ```
 
+   This condition block applies only to OpenSearch Service domains. For information about configuring connectors for OpenSearch Serverless, see [Configure Machine Learning on Amazon OpenSearch Serverless](serverless-configure-machine-learning.md).
+
 ### Configure permissions
 <a name="connector-external-permissions"></a>
 
@@ -126,7 +128,9 @@ In order to create the connector, you need permission to pass the IAM role to Op
 
 ------
 
-If your user or role doesn't have `iam:PassRole` permissions to pass your role, you might encounter an authorization error when you try to register a repository in the next step.
+If your user or role doesn't have `iam:PassRole` permissions to pass your role, you might encounter an authorization error when you try to create the connector.
+
+The `es:ESHttpPost` permission applies only to OpenSearch Service domains. For information about configuring connectors for OpenSearch Serverless, see [Configure Machine Learning on Amazon OpenSearch Serverless](serverless-configure-machine-learning.md).
 
 ### Set up AWS Secrets Manager
 <a name="connector-external-sm"></a>

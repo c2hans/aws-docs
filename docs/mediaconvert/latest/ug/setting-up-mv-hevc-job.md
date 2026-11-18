@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/setting-up-mv-hev
 
 To set up a job with an MV-HEVC output, you create the output in the File group output group. Then you specify MP4 or MOV as the output container, choose H.265 as the video codec, and configure `multiViewSettings` on your inputs to provide the right eye enhancement layer.
 
+**To set up your transcoding job with an MV-HEVC output (console)**
+
 1. Use the **File group** output group to add your MV-HEVC outputs. For general job setup information, see [Tutorial: Configuring job settings](setting-up-a-job.md).
 
 1. On the **Create job** page, in the **Job** pane on the left, choose your input.
@@ -28,6 +30,8 @@ Both input files must have the same resolution, frame rate, and number of frames
 1. In the **Encoding settings** section, for **Video codec**, choose **H.265 (HEVC)**.
 
 1. Configure your H.265 encoding settings as needed. For information about supported encoding configurations, see [Supported encoding settings](mv-hevc-supported-encoding.md).
+
+**To set up your transcoding job with an MV-HEVC output (API, CLI, or SDK)**
 
 If you use the API, CLI, or an SDK, specify the relevant settings in your JSON job specification and then submit it programmatically. We recommend using the MediaConvert console to generate your JSON job specification, because the console functions as an interactive validator against the MediaConvert job schema.
 

@@ -47,7 +47,7 @@ The list of names of AWS Config rules that you want to run evaluations for.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 25 items.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: No
 
 ## Response Elements

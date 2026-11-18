@@ -20,6 +20,7 @@ The following diagram shows how a client accesses a resource through the resourc
 + [IPv4 addresses per ENI](#ipv4-address-type-per-eni)
 + [Resource Config DNS Resolution](#resource-config-dns-resolution)
 + [Create a resource gateway](create-resource-gateway.md)
++ [Update a resource gateway](update-resource-gateway.md)
 + [Delete a resource gateway](delete-resource-gateway.md)
 
 ## Considerations
@@ -77,9 +78,9 @@ If your resource gateway uses the IPv6 address type, the resource gateway automa
 ## Resource Config DNS Resolution
 <a name="resource-config-dns-resolution"></a>
 
-You can specify how a resource gateway does DNS resolution for resource configurations that are domain-name targets. This property is immutable. You can choose:
+You can specify how a resource gateway performs DNS resolution for resource configurations that are domain-name targets. You can change this setting after you create the resource gateway. For more information, see [Update a resource gateway in VPC Lattice](update-resource-gateway.md). You can choose:
 + ** PUBLIC (default)** - Domain names are resolved using public DNS resolvers.
-+ ** IN\_VPC ** - Domain names are resolved using the DNS server configured in the DHCP option set of the VPC which the resource gateway is in. You should use this if you are using a private DNS server or your domain-name targets are in a Route53 private hosted zone.
++ ** IN\_VPC ** - Domain names are resolved using the DNS server configured in the DHCP option set of the VPC which the resource gateway is in. You should use this if you are using a private DNS server or your domain-name targets are in a Route 53 private hosted zone.
 
 The following table lists the constraints that apply when Domain Name System (DNS) resolution is set to `IN_VPC`.
 
@@ -90,6 +91,8 @@ The following table lists the constraints that apply when Domain Name System (DN
 | DNS transport protocol | DNS queries use UDP only. TCP fallback isn't supported. |
 | Maximum DNS payload size | VPC Lattice advertises a maximum DNS payload size of 8,400 bytes. Because TCP fallback isn't supported, DNS resolution fails for responses larger than this size. |
 | Recursive DNS resolver | The DNS resolver must be recursive. If a response contains a CNAME record, the response must also contain the records that the CNAME resolves to. |
+
+The constraints in the table also apply when you change an existing resource gateway to `IN_VPC`. You can't change a resource gateway to `IN_VPC` if it has ARN resource configurations or uses the IPv6 address type. You can't change a resource gateway to `PUBLIC` if it has CIDR resource configurations. Before you change the setting, check that your domain-name targets resolve with the new setting. The change applies to all resource configurations on the resource gateway. Associations stay attached, existing connections aren't affected, and consumers don't need to do anything. VPC Lattice applies the new setting asynchronously. After it's applied, new connections use the new DNS resolution setting.
 
 To attach a CIDR resource configuration to a resource gateway, it must have `IN_VPC` enabled.
 

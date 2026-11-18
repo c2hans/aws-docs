@@ -63,6 +63,11 @@ To update a rule group, first call [DescribeRuleGroup](API_DescribeRuleGroup.md)
          "RulesString": "{{string}}"
       },
       "RuleVariables": {
+         "ContextSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
          "IPSets": {
             "{{string}}" : {
                "Definition": [ "{{string}}" ]
@@ -87,6 +92,11 @@ To update a rule group, first call [DescribeRuleGroup](API_DescribeRuleGroup.md)
          "RulesString": "{{string}}"
       },
       "RuleVariables": {
+         "ContextSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
          "IPSets": {
             "{{string}}" : {
                "Definition": [ "{{string}}" ]
@@ -190,6 +200,11 @@ To update a rule group, first call [DescribeRuleGroup](API_DescribeRuleGroup.md)
          }
       },
       "RuleVariables": {
+         "ContextSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
          "IPSets": {
             "{{string}}" : {
                "Definition": [ "{{string}}" ]

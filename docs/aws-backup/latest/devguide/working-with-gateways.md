@@ -115,6 +115,8 @@ Replace the highlighted variables with actual values for your gateway. Acceptabl
 {{gateway\_ip\_address}} - The IPv4 address of your gateway, for example `172.31.29.201`
 {{region\_code}} - The Region where you want to activate your gateway. See [Regional endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints) in the *AWS General Reference Guide*. If this parameter is not specified, or if the value provided is misspelled or doesn't match a valid region, the command will default to the `us-east-1` region.
 
+**Dual-stack endpoints (IPv6 support)**
+
 IPv4:
 
 ```

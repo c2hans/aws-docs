@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/CustomErrorDoc
 After you configure your bucket as a static website, when an error occurs, Amazon S3 returns an HTML error document. You can optionally configure your bucket with a custom error document so that Amazon S3 returns that document when an error occurs.
 
 **Note**
-Some browsers display their own error message when an error occurs, ignoring the error document that Amazon S3 returns. For example, when an HTTP 404 Not Found error occurs, Google Chrome might ignore the error document that Amazon S3 returns and display its own error.
+Some browsers display their own error message when an error occurs, ignoring the error document that Amazon S3 returns. For example, when an `HTTP 404 Not Found` error occurs, Google Chrome might ignore the error document that Amazon S3 returns and display its own error.
 
 **Topics**
 + [Amazon S3 HTTP response codes](#s3-http-error-codes)

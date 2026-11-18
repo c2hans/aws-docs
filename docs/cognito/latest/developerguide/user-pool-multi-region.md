@@ -24,6 +24,7 @@ When you configure MRR, Amazon Cognito creates separate user pools with a shared
   + Log export configuration
   + AWS WAF web ACLs
 + Data replication between Regions might introduce brief delays. The primary user pool syncs settings and user-directory updates to the secondary, and this process is eventually consistent.
++ You can initiate a [point-in-time recovery](user-pool-point-in-time-recovery.md) only in the primary user pool, and only when no replication changes are in progress. Amazon Cognito replicates the restored user data to the secondary user pool.
 
 ## Limitations of multi-Region replication
 <a name="user-pool-multi-region-limitations"></a>

@@ -23,9 +23,9 @@ You can create a data export of your legacy Cost and Usage Report (CUR). This wo
    + For **Additional export content**, select **Include resource IDs** to include the IDs of each individual resource in the export.
 **Note**
 Including resource IDs creates individual line items for each of your resources. This might increase the size of your export significantly, based on your AWS usage.
-   + Select **Split cost allocation data** to include detailed cost and usage for shared resources (Amazon ECS and Amazon EKS).
+   + Select **Split cost allocation data** to include detailed cost and usage for shared resources. For more information, see [Understanding split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html).
 **Note**
-Including split cost allocation data creates individual line items for each of your resources (that is, ECS tasks and Kubernetes pods). This might increase the size of your Cost and Usage Report significantly, based on your AWS usage.
+Including split cost allocation data creates individual line items for the resources that share a cost, such as ECS tasks, Kubernetes pods, and instances using a NAT gateway. This can significantly increase report size. To estimate additional line items, see [Understanding split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html).
    + Select **Enable manual discount format** to convert your discounts so that they appear in the Cost and Usage Report in the manual discount format instead of the standard automated format.
 **Note**
 This is only available for customers on Discount Automation.

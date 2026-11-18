@@ -16,6 +16,13 @@ Type: Array of [StringFilter](API_StringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
+ ** scanSources **   <a name="inspector2-Type-AmiAggregation-scanSources"></a>
+The scan sources to filter the aggregation results by.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 2 items.
+Valid Values: `INSTANCE_SCAN | MACHINE_IMAGE_SCAN`
+Required: No
+
  ** sortBy **   <a name="inspector2-Type-AmiAggregation-sortBy"></a>
 The value to sort results by.
 Type: String

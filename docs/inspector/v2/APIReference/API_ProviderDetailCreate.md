@@ -18,6 +18,11 @@ The Azure-specific details for creating a connector.
 Type: [AzureProviderDetailCreate](API_AzureProviderDetailCreate.md) object
 Required: No
 
+ ** gcp **   <a name="inspector2-Type-ProviderDetailCreate-gcp"></a>
+The details specific to Google Cloud Platform (GCP) for creating a connector.
+Type: [GcpProviderDetailCreate](API_GcpProviderDetailCreate.md) object
+Required: No
+
 ## See Also
 <a name="API_ProviderDetailCreate_SeeAlso"></a>
 

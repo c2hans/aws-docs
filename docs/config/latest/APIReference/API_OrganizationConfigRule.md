@@ -27,7 +27,6 @@ Required: Yes
 A comma-separated list of accounts excluded from organization AWS Config rule.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 1000 items.
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

@@ -9,6 +9,11 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 
 **Topics**
 + [`AWSSupport-TroubleshootEC2ConnectivityToRedshift`](automation-awssupport-troubleshootec2connectivitytoredshift.md)
++ [`AWSSupportRemediator-PauseRedshiftCluster`](automation-awssupportremediator-pauseredshiftcluster.md)
++ [`AWSSupportRemediator-DisablePublicAccessOnRedshiftCluster`](automation-awssupportremediator-disablepublicaccessonredshiftcluster.md)
++ [`AWSSupportRemediator-EnableRedshiftClusterAuditLogging`](automation-awssupportremediator-enableredshiftclusterauditlogging.md)
++ [`AWSSupportRemediator-EnableRedshiftClusterEnhancedVpcRouting`](automation-awssupportremediator-enableredshiftclusterenhancedvpcrouting.md)
++ [`AWSSupportRemediator-EnableRedshiftClusterVersionAutoUpgrade`](automation-awssupportremediator-enableredshiftclusterversionautoupgrade.md)
 + [`AWSConfigRemediation-DeleteRedshiftCluster`](automation-aws-delete-redshift.md)
 + [`AWSConfigRemediation-DisablePublicAccessToRedshiftCluster`](automation-aws-disable-redshift-public-access.md)
 + [`AWSConfigRemediation-EnableRedshiftClusterAuditLogging`](automation-aws-enable-redshift-audit.md)

@@ -2,30 +2,32 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/getting-started-transcribe-streaming.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Example 2: Stream audio bidirectionally with Amazon Transcribe
 <a name="getting-started-transcribe-streaming"></a>
 
 This example uses `AsyncTranscribeStreamingClient` to send prerecorded audio to Amazon Transcribe while receiving transcription results over the same HTTP/2 bidirectional event stream. It uses `asyncio.gather()` to publish audio and receive completed transcript segments concurrently.
 
+The example uses an asynchronous client because event-stream operations, such as `start_stream_transcription`, are available only on asynchronous clients. For more information, see [Synchronous and asynchronous clients](using-sync-async.md).
+
 ## Before you begin
 <a name="getting-started-transcribe-streaming-before"></a>
 
-Complete [Prerequisites and installation](getting-started-prerequisites-installation.md) and [Authenticating with AWS using the AWS SDK for Python v4](getting-started-authentication.md). This example also requires the following:
+Complete [Prerequisites and installation](getting-started-prerequisites-installation.md) and [Authenticating with AWS](getting-started-authentication.md). This example also requires the following:
 + The identity selected by your authentication method must allow `transcribe:StartStreamTranscription`. To learn how IAM policies grant permissions like these, see [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the *IAM User Guide*.
 + Use the SDK repository's [sample `test.wav` file](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-transcribe-streaming/examples/test.wav). The sample contains 16 kHz, 16-bit, mono PCM audio. The example validates the WAV format and sends only its audio frames, without the WAV container header.
+
+Download the linked file in your browser and save it as `test.wav` in the directory where you'll create the example. Alternatively, download it with Python:
+
+```
+python -c "from urllib.request import urlretrieve; urlretrieve('https://github.com/aws/aws-sdk-python/raw/refs/heads/develop/clients/aws-sdk-transcribe-streaming/examples/test.wav', 'test.wav')"
+```
 
 Bidirectional streaming requires the AWS Common Runtime (CRT) HTTP client, which the example selects as the client's transport. Opt in by installing the client's `awscrt` extra. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
 
 ```
 python -m pip install "aws-sdk-transcribe-streaming[awscrt]"
-```
-
-Download the linked file in your browser and save it as `test.wav` in the directory where you will create the example. Alternatively, download it with Python:
-
-```
-python -c "from urllib.request import urlretrieve; urlretrieve('https://github.com/aws/aws-sdk-python/raw/refs/heads/develop/clients/aws-sdk-transcribe-streaming/examples/test.wav', 'test.wav')"
 ```
 
 **Warning**
@@ -45,14 +47,15 @@ from pathlib import Path
 
 from smithy_http.aio.crt import AWSCRTHTTPClient
 
-from aws_sdk_transcribe_streaming.client import AsyncTranscribeStreamingClient
-from aws_sdk_transcribe_streaming.config import AsyncTranscribeStreamingConfig
+from aws_sdk_transcribe_streaming import (
+    AsyncTranscribeStreamingClient,
+    AsyncTranscribeStreamingConfig,
+)
 from aws_sdk_transcribe_streaming.models import (
     AudioEvent,
     AudioStreamAudioEvent,
     LanguageCode,
     MediaEncoding,
-    StartStreamTranscriptionInput,
     TranscriptResultStreamTranscriptEvent,
 )
 
@@ -140,11 +143,9 @@ async def main() -> None:
     )
     async with AsyncTranscribeStreamingClient(config=config) as client:
         stream = await client.start_stream_transcription(
-            input=StartStreamTranscriptionInput(
-                language_code=LanguageCode.EN_US,
-                media_sample_rate_hertz=SAMPLE_RATE,
-                media_encoding=MediaEncoding.PCM,
-            )
+            language_code=LanguageCode.EN_US,
+            media_sample_rate_hertz=SAMPLE_RATE,
+            media_encoding=MediaEncoding.PCM,
         )
 
         async with stream:
@@ -157,7 +158,7 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-Amazon Transcribe returns partial and final results while audio is streamed. The example validates and paces PCM audio in `send_audio()`, wraps each chunk in the generated input event type, receives final results concurrently in `print_transcripts()`, and closes the input stream in a `finally` block. The client resolves credentials from the default credential chain and sets only the AWS Region explicitly.
+Amazon Transcribe returns partial and final results while you stream audio. The keyword arguments to `start_stream_transcription()` form the initial request. The `send_audio()` function validates and paces the PCM audio, wraps each chunk in the generated input event type, and closes the input stream in a `finally` block. The `print_transcripts()` function receives results concurrently and prints only final results. The client resolves credentials from the default credential resolver chain and sets only the AWS Region explicitly.
 
 ## Run the application
 <a name="getting-started-transcribe-streaming-run"></a>
@@ -176,7 +177,7 @@ A successful run prints one or more completed transcript segments and then exits
 ## Cleanup
 <a name="getting-started-transcribe-streaming-cleanup"></a>
 
-This example creates no persistent AWS resources. It closes the input stream after sending the file, and the `async with` block closes the bidirectional stream when the application finishes.
+This example creates no persistent AWS resources. It closes the input stream after sending the file. The `async with` block closes the bidirectional stream when the application finishes.
 
 ## Next steps
 <a name="getting-started-transcribe-streaming-next-steps"></a>

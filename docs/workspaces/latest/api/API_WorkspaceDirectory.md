@@ -162,6 +162,12 @@ Type: String
 Pattern: `^[a-zA-Z0-9][a-zA-Z0-9_.\s-]{1,64}$`
 Required: No
 
+ ** WorkspaceOsUserMode **   <a name="WorkSpaces-Type-WorkspaceDirectory-WorkspaceOsUserMode"></a>
+Indicates how users are set up on the WorkSpace operating system.
+Type: String
+Valid Values: `LOCAL_USER | DOMAIN_JOIN | ENTRA_JOIN | SELF_MANAGED`
+Required: No
+
  ** WorkspaceSecurityGroupId **   <a name="WorkSpaces-Type-WorkspaceDirectory-WorkspaceSecurityGroupId"></a>
 The identifier of the security group that is assigned to new WorkSpaces.
 Type: String

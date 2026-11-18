@@ -213,11 +213,11 @@ In the AWS DevOps Agent console, private connections can be linked to a capabili
 
 ![Connect to endpoint using a private connection checkbox selected.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/a2a7ffb70ffe.png)
 
-1. Open the AWS DevOps Agent console and navigate to your Agent Space.
+1. Open the [AWS DevOps Agent console](https://console.aws.amazon.com/aidevops/home).
 
-1. In the **Capability Providers** section, choose **Registration**.
+1. In the navigation pane, choose **Capability Providers**.
 
-1. Select **Register** for the capability type you want to use with the private connection.
+1. In the **Available** section, choose **Register** on the card for the capability type you want to use with the private connection.
 
 1. On the registration details view, enter the Endpoint URL you want to connect to using the private connection (for example, `https://mcp.internal.example.com`).
 
@@ -403,7 +403,7 @@ If your organization turned on resource sharing in AWS Organizations, AWS RAM ac
 
 To create the private connection (console):
 
-1. In the workload account, open the AWS DevOps Agent console at https://console.aws.amazon.com/devops-agent/.
+1. In the workload account, open the AWS DevOps Agent console at https://console.aws.amazon.com/aidevops/home.
 
 1. In the navigation pane, choose **Capability Providers**.
 

@@ -15,6 +15,8 @@ Many factors affect the vehicle’s performance in autonomous driving. They incl
 +  [Drive your AWS DeepRacer vehicle manually](#drive-your-vehicle-manually)
 +  [Drive your AWS DeepRacer vehicle autonomously](#drive-your-vehicle-autonomously)
 
+<a name="drive-your-vehicle-manually"></a>**Drive your AWS DeepRacer vehicle manually**
+
 If you have not trained any model or have not deployed any trained model to your AWS DeepRacer vehicle, you can’t let it drive itself. But you can drive it manually.
 
 To drive a AWS DeepRacer vehicle manually, follow the steps below.
@@ -31,6 +33,8 @@ To drive a AWS DeepRacer vehicle manually, follow the steps below.
 1. To turn video stream on or off on the device console while you drive the vehicle, toggle the **Video stream** option under the **Camera stream** display.
 
 1. Repeat from Step 3 to drive the vehicle to different locations.
+
+<a name="drive-your-vehicle-autonomously"></a>**Drive your AWS DeepRacer vehicle autonomously**
 
 To start autonomous driving, place the vehicle on a physical track and do the following:
 

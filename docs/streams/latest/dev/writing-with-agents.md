@@ -184,7 +184,7 @@ For more detailed information about using the agent with Firehose, see [Writing 
 
 The agent can pre-process the records parsed from monitored files before sending them to your stream. You can enable this feature by adding the `dataProcessingOptions` configuration setting to your file flow. One or more processing options can be added and they will be performed in the specified order.
 
-The agent supports the following processing options listed. Because the agent is open-source, you can further develop and extend its processing options. You can download the agent from [Kinesis Agent](https://github.com/awslabs/amazon-kinesis-agent).Processing Options
+The agent supports the following processing options listed. Because the agent is open-source, you can further develop and extend its processing options. You can download the agent from [Kinesis Agent](https://github.com/awslabs/amazon-kinesis-agent).Processing options
 
 `SINGLELINE`
 Converts a multi-line record to a single line record by removing newline characters, leading spaces, and trailing spaces.
@@ -232,7 +232,7 @@ The regular expression pattern used to extract values from log entries. This set
 `customFieldNames`
 The custom field names used as keys in each JSON key value pair. You can use this setting to define field names for values extracted from `matchPattern`, or override the default field names of predefined log formats.
 
-**Example : LOGTOJSON Configuration**  <a name="example-logtojson"></a>
+**Example : LOGTOJSON configuration**  <a name="example-logtojson"></a>
 Here is one example of a `LOGTOJSON` configuration for an Apache Common Log entry converted to JSON format:
 
 ```
@@ -252,7 +252,7 @@ After conversion:
 {"host":"64.242.88.10","ident":null,"authuser":null,"datetime":"07/Mar/2004:16:10:02 -0800","request":"GET /mailman/listinfo/hsdivision HTTP/1.1","response":"200","bytes":"6291"}
 ```
 
-**Example : LOGTOJSON Configuration With Custom Fields**  <a name="example-logtojson-custom-fields"></a>
+**Example : LOGTOJSON configuration with custom fields**  <a name="example-logtojson-custom-fields"></a>
 Here is another example `LOGTOJSON` configuration:
 
 ```
@@ -268,7 +268,7 @@ With this configuration setting, the same Apache Common Log entry from the previ
 {"f1":"64.242.88.10","f2":null,"f3":null,"f4":"07/Mar/2004:16:10:02 -0800","f5":"GET /mailman/listinfo/hsdivision HTTP/1.1","f6":"200","f7":"6291"}
 ```
 
-**Example : Convert Apache Common Log Entry**  <a name="example-apache-common-log-entry"></a>
+**Example : Convert Apache common log entry**  <a name="example-apache-common-log-entry"></a>
 The following flow configuration converts an Apache Common Log entry to a single line record in JSON format:
 
 ```
@@ -288,7 +288,7 @@ The following flow configuration converts an Apache Common Log entry to a single
 }
 ```
 
-**Example : Convert Multi-Line Records**  <a name="example-convert-multiline"></a>
+**Example : Convert multi-line records**  <a name="example-convert-multiline"></a>
 The following flow configuration parses multi-line records whose first line starts with "`[SEQUENCE=`". Each record is first converted to a single line record. Then, values are extracted from the record based on a tab delimiter. Extracted values are mapped to specified `customFieldNames` values to form a single-line record in JSON format.
 
 ```
@@ -313,7 +313,7 @@ The following flow configuration parses multi-line records whose first line star
 }
 ```
 
-**Example : LOGTOJSON Configuration with Match Pattern**  <a name="example-logtojson-match-pattern"></a>
+**Example : LOGTOJSON configuration with match pattern**  <a name="example-logtojson-match-pattern"></a>
 Here is one example of a `LOGTOJSON` configuration for an Apache Common Log entry converted to JSON format, with the last field (bytes) omitted:
 
 ```

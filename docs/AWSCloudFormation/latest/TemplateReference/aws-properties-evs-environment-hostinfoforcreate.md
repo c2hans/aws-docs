@@ -62,6 +62,7 @@ The DNS hostname of the host. DNS hostnames for hosts must be unique across Amaz
 
 `InstanceType`  <a name="cfn-evs-environment-hostinfoforcreate-instancetype"></a>
 The EC2 instance type that represents the host.
+With VCF 5.2.x, you can use only the `i4i.metal`, `i7i.metal-24xl`, and `i7i.metal-48xl` instance types. All of these instance types are supported with `vcfVersion` set to `SELF_DEPLOYED`.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl | r7i.metal-24xl | r7i.metal-48xl`

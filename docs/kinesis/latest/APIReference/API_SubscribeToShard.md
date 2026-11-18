@@ -13,7 +13,7 @@ You can make one call to `SubscribeToShard` per second per registered consumer p
 
 If you call `SubscribeToShard` again with the same `ConsumerARN` and `ShardId` within 5 seconds of a successful call, you'll get a `ResourceInUseException`. If you call `SubscribeToShard` 5 seconds or more after a successful call, the second call takes over the subscription and the previous connection expires or fails with a `ResourceInUseException`.
 
-For an example of how to use this operation, see [Enhanced Fan-Out Using the Kinesis Data Streams API](https://docs.aws.amazon.com/streams/latest/dev/building-enhanced-consumers-api.html).
+For an example of how to use this operation, see [Develop enhanced fan-out consumers with the AWS SDK for Java](https://docs.aws.amazon.com/streams/latest/dev/building-enhanced-consumers-api.html).
 
 ## Request Syntax
 <a name="API_SubscribeToShard_RequestSyntax"></a>

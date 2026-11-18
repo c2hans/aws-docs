@@ -204,7 +204,7 @@ SELECT * FROM TABLE(
 ### Multiple filters on a sort key column
 <a name="connectors-dynamodb-troubleshooting-sort-key-filters"></a>
 
-**Error message**: KeyConditionExpressions must only contain one condition per key
+**Error message**: `KeyConditionExpressions must only contain one condition per key`
 
 **Cause**: This issue can occur in Athena engine version 3 in queries that have both a lower and upper bounded filter on a DynamoDB sort key column. Because DynamoDB does not support more than one filter condition on a sort key, an error is thrown when the connector attempts to push down a query that has both conditions applied.
 

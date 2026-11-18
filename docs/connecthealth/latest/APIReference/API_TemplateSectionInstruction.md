@@ -19,7 +19,7 @@ Required: Yes
  ** sectionInstruction **   <a name="connecthealth-Type-TemplateSectionInstruction-sectionInstruction"></a>
 The instruction for generating this section
 Type: String
-Pattern: `[a-zA-Z0-9\s\*_\-#\[\]\(\)\.,:;!?'"`<>~/]+`
+Pattern: `[\p{L}\p{N}\s\*_\-#\[\]\(\)\.,:;!?'"`<>~/|+=&%@\\{}^]+`
 Required: Yes
 
 ## See Also

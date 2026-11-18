@@ -140,7 +140,7 @@ version
 <a name="hive-views-operators-special-handling"></a>
 
 The following operators for Hive views require special handling.
-+ **Mod operator (%)** – Because the `DOUBLE` type implicitly casts to `DECIMAL(x,y)`, the following syntax can cause a View is stale error message:
++ **Mod operator (%)** – Because the `DOUBLE` type implicitly casts to `DECIMAL(x,y)`, the following syntax can cause a `View is stale` error message:
 
   ```
   a_double % 1.0 AS column

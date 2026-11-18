@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 <a name="machinelearning-pattern-list"></a>
 
 **Topics**
++ [Automate Lambda test event generation using Amazon Bedrock AgentCore](automate-lambda-test-event-generation-using-bedrock-agentcore.md)
 + [Automatically extract content from PDF files using Amazon Textract](automatically-extract-content-from-pdf-files-using-amazon-textract.md)
 + [Build a cold start forecasting model by using DeepAR for time series in Amazon SageMaker AI Studio Lab](build-a-cold-start-forecasting-model-by-using-deepar.md)
 + [Build an MLOps workflow by using Amazon SageMaker AI and Azure DevOps](build-an-mlops-workflow-by-using-amazon-sagemaker-and-azure-devops.md)

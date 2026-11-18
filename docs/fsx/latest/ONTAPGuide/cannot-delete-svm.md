@@ -53,7 +53,7 @@ If this tag isn't present, recreate it, and then try to delete the SVM again.
 
 If you're attempting to delete an SVM or volume that's part of a peer relationship, you must first delete the peer relationship before you delete the SVM or volume. This requirement prevents the peered SVMs from becoming unhealthy. If your SVM can't be deleted because of a peer relationship, you see the following `LifecycleTransitionReason`:
 
-Amazon FSx is unable to delete the storage virtual machine because it is part of a SVM peer or transition peer relationship. Please delete the relationship and retry.
+`Amazon FSx is unable to delete the storage virtual machine because it is part of a SVM peer or transition peer relationship. Please delete the relationship and retry.`
 
 You can delete SVM peer relationships through the ONTAP CLI. To access the ONTAP CLI, follow the steps in [Managing file systems with the ONTAP CLI](managing-resources-ontap-apps.md#fsxadmin-ontap-cli). Using the ONTAP CLI, take the following steps.
 

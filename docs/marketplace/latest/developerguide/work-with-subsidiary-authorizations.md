@@ -604,7 +604,7 @@ The following table lists the errors specific to `CreateSubsidiaryAuthorization`
 | --- | --- |
 | INCOMPATIBLE\_PRODUCT | Provide a product in your account. |
 | INCOMPATIBLE\_SUBSIDIARY\_ACCOUNT | This subsidiary account hasn't completed their prerequisites for using subsidiary authorization. |
-| INCOMPATIBLE\_PRODUCT\_DIMENSIONS | Returned with one of the following messages, depending on the problem with the `Dimensions` list:+  Use existing, available dimensions in the product. – A requested dimension key doesn't exist in the product. <br />+  Every product dimension tagged Metered or ExternallyMetered must be included in the request. – A metered dimension is left out. <br />+  The Dimensions list must include at least one product dimension tagged Entitled when the product has one or more Entitled dimensions available. – The product has `Entitled` dimensions and the request includes none.  |
+| INCOMPATIBLE\_PRODUCT\_DIMENSIONS | Returned with one of the following messages, depending on the problem with the `Dimensions` list:+  `Use existing, available dimensions in the product.` – A requested dimension key doesn't exist in the product. <br />+  `Every product dimension tagged Metered or ExternallyMetered must be included in the request.` – A metered dimension is left out. <br />+  `The Dimensions list must include at least one product dimension tagged Entitled when the product has one or more Entitled dimensions available.` – The product has `Entitled` dimensions and the request includes none.  |
 
 **`UpdateInformation` errors**
 

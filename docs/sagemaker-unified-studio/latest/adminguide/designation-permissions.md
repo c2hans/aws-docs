@@ -56,6 +56,8 @@ The Notebooks and Querybooks category governs both notebooks and querybooks. The
 
 AWS provides two managed designations, Owner and Contributor, that you cannot edit or delete. A Cedar policy defines each managed designation. The following sections show the Cedar policy for each designation.
 
+**Owner**
+
 ```
 @name("ProjectOwner-1")
 permit (
@@ -421,6 +423,8 @@ permit (
     resource
 );
 ```
+
+**Contributor**
 
 ```
 @name("ProjectContributor-1")

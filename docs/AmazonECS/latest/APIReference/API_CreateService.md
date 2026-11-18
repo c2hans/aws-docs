@@ -141,6 +141,9 @@ When the service scheduler launches new tasks, it determines task placement. For
    "enableExecuteCommand": {{boolean}},
    "gatewayConnectors": [
       {
+         "deregistrationDelay": {
+            "timeoutSeconds": {{number}}
+         },
          "filters": {
             "accessTypes": [ "{{string}}" ]
          },

@@ -19,6 +19,8 @@ To get started, you do not need to change the settings for your streams, produce
 
 The Amazon Kinesis Producer Library (KPL) and Kinesis Consumer Library (KCL) call AWS services like Amazon CloudWatch and Amazon DynamoDB using either public endpoints or private interface VPC endpoints, whichever are in use. For example, if your KCL application is running in a VPC with DynamoDB interface with VPC endpoints enabled, calls between DynamoDB and your KCL application flow through the interface VPC endpoint.
 
+Queue operations are reachable through interface VPC endpoints (AWS PrivateLink), so you can call them without traffic between your Amazon VPC and Kinesis Data Streams leaving the Amazon network. Queue operations use their own endpoint service, `com.amazonaws.{{region}}.kinesis-queues`, or `com.amazonaws.{{region}}.kinesis-queues-fips` for FIPS. To call queue operations from your Amazon VPC, create an interface VPC endpoint for that endpoint service.
+
 ## Control access to VPC endpoints for Kinesis Data Streams
 <a name="interface-vpc-endpoints-policies"></a>
 

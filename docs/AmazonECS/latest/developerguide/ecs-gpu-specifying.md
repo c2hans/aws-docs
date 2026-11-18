@@ -159,6 +159,8 @@ The following example task definition runs a lightweight inference container on 
   "memory": "4096"
 }
 ```
+
+**Fractional GPU considerations**
 + Only one container per task can request a fractional GPU value. If a container specifies a fractional GPU, no other container in that task definition can have a GPU resource requirement.
 + Integer values (`1`, `2`, etc.) are treated as full GPU requests and only place on instances with full GPU capacity. Decimal values (`0.125`, `0.25`, `0.5`) are treated as fractional GPU requests and place on instances with the corresponding fractional GPU partition.
 + You can include both fractional GPU instances (G6f) and full GPU instances (such as g5 or g6) in the same capacity provider. Amazon ECS routes tasks to the correct instance type based on the declared GPU value. You do not need separate capacity providers per GPU family.

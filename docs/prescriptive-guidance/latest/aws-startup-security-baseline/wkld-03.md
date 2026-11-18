@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 # WKLD.03 Use ephemeral secrets or a secrets-management service
 <a name="wkld-03"></a>
 
-Application secrets include credentials, such as key pairs, access tokens, digital certificates, and sign-in credentials. The application uses these secrets to gain access to other services it depends upon, such as a database. To help protect these secrets, we recommend they are either *ephemeral* (generated at the time of request and short-lived, such as with IAM roles) or retrieved from a secrets management service. This reduces the risk of secrets being accidentally stored in static configuration files, environment variables, or source code. Centralizing secrets management also makes it straightforward to move application code between development and production environments without reconfiguring credentials.
+Application secrets include credentials, such as key pairs, access tokens, digital certificates, and sign-in credentials. The application uses these secrets to gain access to other services it depends upon, such as a database. To help protect these secrets, make them either *ephemeral* (generated at the time of request and short-lived, such as with IAM roles) or retrieve them from a secrets management service. This reduces the risk of secrets being accidentally stored in static configuration files, environment variables, or source code. Centralizing secrets management also makes it straightforward to move application code between development and production environments without reconfiguring credentials.
 
-For a secrets management, use a combination of Parameter Store (a capability of AWS Systems Manager) and AWS Secrets Manager:
+For secrets management, use a combination of Parameter Store (a capability of AWS Systems Manager) and AWS Secrets Manager:
 + Use Parameter Store to manage secrets and other parameters that are individual key-value pairs, string-based, short in overall length, and accessed frequently. You use an AWS Key Management Service (AWS KMS) key to encrypt the secret. There is no charge to store parameters in the standard tier of Parameter Store. For more information about parameter tiers, see [Managing parameter tiers](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-advanced-parameters.html) in the Systems Manager documentation.
 + Use Secrets Manager to store secrets that are in document form (such as multiple, related key-value pairs), that are larger than 4 KB (such as digital certificates), or that would benefit from automated rotation.
 
@@ -33,10 +33,10 @@ For information about improving the availability and latency of secret retrieval
 <a name="wkld-03-costs"></a>
 
 The cost of secrets management depends on which service you use and how your application accesses secrets:
-+ For Parameter Store, standard tier parameters are available at no additional charge for values up to 4 KB. The advanced tier applies additional charges for larger parameters or higher throughput.
++ For [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/), standard tier parameters are available at no additional charge for values up to 4 KB. The advanced tier applies additional charges for larger parameters or higher throughput.
 + AWS Secrets Manager charges for each secret stored on a monthly basis and charges for each API call made to retrieve secrets. Using the Secrets Manager client-side caching SDK reduces the number of API calls your application makes to Secrets Manager, which can reduce costs.
 + Encrypting secrets with an AWS managed KMS key is available at no additional charge. Customer-managed keys incur a monthly charge for each key and a charge for each API call.
 
-For most early-stage startups, a cost effective starting point is to use Parameter Store with an AWS managed KMS key for frequently accessed secrets and use Secrets Manager for secrets that benefit from automated rotation.
+For most early-stage startups, a cost-effective starting point is to use Parameter Store with an AWS managed KMS key for frequently accessed secrets and use Secrets Manager for secrets that benefit from automated rotation.
 
 For current pricing, see [AWS Systems Manager pricing](https://aws.amazon.com/systems-manager/pricing/) and [AWS Key Management Service pricing](https://aws.amazon.com/kms/pricing/).

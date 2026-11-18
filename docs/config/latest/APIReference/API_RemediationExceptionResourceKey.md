@@ -14,13 +14,13 @@ The details that identify a resource within AWS Config, including the resource t
 The ID of the resource (for example., sg-xxxxxx).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Required: Yes
+Required: No
 
  ** ResourceType **   <a name="config-Type-RemediationExceptionResourceKey-ResourceType"></a>
 The type of a resource.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Required: Yes
+Required: No
 
 ## See Also
 <a name="API_RemediationExceptionResourceKey_SeeAlso"></a>

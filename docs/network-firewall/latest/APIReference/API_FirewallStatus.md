@@ -31,6 +31,11 @@ Describes the capacity usage of the resources contained in a firewall's referenc
 Type: [CapacityUsageSummary](API_CapacityUsageSummary.md) object
 Required: No
 
+ ** ContextStoreSyncState **   <a name="networkfirewall-Type-FirewallStatus-ContextStoreSyncState"></a>
+The synchronization state of the context sets in the firewall's rule groups with the firewall's context store. This field is only present when the firewall has a context store and its rule groups reference context sets.
+Type: [ContextStoreSyncState](API_ContextStoreSyncState.md) object
+Required: No
+
  ** SyncStates **   <a name="networkfirewall-Type-FirewallStatus-SyncStates"></a>
 Status for the subnets that you've configured in the firewall. This contains one array element per Availability Zone where you've configured a subnet in the firewall.
 These objects provide detailed information for the settings `ConfigurationSyncStateSummary` and `Status`.

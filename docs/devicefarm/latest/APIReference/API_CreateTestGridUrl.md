@@ -55,11 +55,11 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [expires](#API_CreateTestGridUrl_ResponseSyntax) **   <a name="devicefarm-CreateTestGridUrl-response-expires"></a>
-The number of seconds the URL from [CreateTestGridUrl:url](#devicefarm-CreateTestGridUrl-response-url) stays active.
+The number of seconds the URL stays active from creation.
 Type: Timestamp
 
  ** [url](#API_CreateTestGridUrl_ResponseSyntax) **   <a name="devicefarm-CreateTestGridUrl-response-url"></a>
-A signed URL, expiring in [CreateTestGridUrl:expiresInSeconds](#devicefarm-CreateTestGridUrl-request-expiresInSeconds) seconds, to be passed to a `RemoteWebDriver`.
+A signed URL, expiring in the time specified by the `CreateTestGridUrlRequest`, to be passed to a `RemoteWebDriver`.
 Type: String
 
 ## Errors

@@ -13,7 +13,6 @@ Filters the results based on account ID and region.
  ** AccountId **   <a name="config-Type-AggregateConformancePackComplianceSummaryFilters-AccountId"></a>
 The 12-digit AWS account ID of the source account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

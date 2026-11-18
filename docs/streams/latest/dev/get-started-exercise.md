@@ -9,7 +9,7 @@ In this exercise, you create a Managed Service for Apache Flink application with
 
 **Topics**
 + [Create two Amazon Kinesis data streams](#get-started-exercise-1)
-+ [Write Sample Records to the Input Stream](#get-started-exercise-2)
++ [Write sample records to the input stream](#get-started-exercise-2)
 + [Download and examine the Apache Flink streaming Java code](#get-started-exercise-5)
 + [Compile the application code](#get-started-exercise-5.5)
 + [Upload the Apache Flink streaming Java code](#get-started-exercise-6)
@@ -44,7 +44,7 @@ You can create these streams using either the Amazon Kinesis console or the foll
    --profile adminuser
    ```
 
-## Write Sample Records to the Input Stream
+## Write sample records to the input stream
 <a name="get-started-exercise-2"></a>
 
 In this section, you use a Python script to write sample records to the stream for the application to process.
@@ -442,7 +442,7 @@ On the **MyApplication** page, choose **Configure**. Update the application sett
 
 In this section, you use the AWS CLI to create and run the Managed Service for Apache Flink application. Managed Service for Apache Flink uses the `kinesisanalyticsv2` AWS CLI command to create and interact with Managed Service for Apache Flink applications.
 
-#### Create a Permissions Policy
+#### Create a permissions policy
 <a name="get-started-exercise-7-cli-policy"></a>
 
 First, you create a permissions policy with two statements: one that grants permissions for the `read` action on the source stream, and another that grants permissions for `write` actions on the sink stream. You then attach the policy to an IAM role (which you create in the next section). Thus, when Managed Service for Apache Flink assumes the role, the service has the necessary permissions to read from the source stream and write to the sink stream.
@@ -492,7 +492,7 @@ For step-by-step instructions to create a permissions policy, see [Tutorial: Cre
 **Note**
 To access other AWS services, you can use the AWS SDK for Java. Managed Service for Apache Flink automatically sets the credentials required by the SDK to those of the service execution IAM role that is associated with your application. No additional steps are needed.
 
-#### Create an IAM Role
+#### Create an IAM role
 <a name="get-started-exercise-7-cli-role"></a>
 
 In this section, you create an IAM role that Managed Service for Apache Flink can assume to read a source stream and write to the sink stream.
@@ -519,7 +519,7 @@ You attach the permissions policy that you created in the preceding section to t
 
 1. Attach the permissions policy to the role.
 **Note**
-For this exercise, Managed Service for Apache Flink assumes this role for both reading data from a Kinesis data stream (source) and writing output to another Kinesis data stream. So you attach the policy that you created in the previous step, [Create a Permissions Policy](#get-started-exercise-7-cli-policy).
+For this exercise, Managed Service for Apache Flink assumes this role for both reading data from a Kinesis data stream (source) and writing output to another Kinesis data stream. So you attach the policy that you created in the previous step, [Create a permissions policy](#get-started-exercise-7-cli-policy).
 
    1. On the **Summary** page, choose the **Permissions** tab.
 
@@ -533,7 +533,7 @@ You now have created the service execution role that your application uses to ac
 
 For step-by-step instructions for creating a role, see [Creating an IAM Role (Console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html#roles-creatingrole-user-console) in the *IAM User Guide*.
 
-#### Create the Managed Service for Apache Flink Application
+#### Create the Managed Service for Apache Flink application
 <a name="get-started-exercise-7-cli-create"></a>
 
 1. Save the following JSON code to a file named `create_request.json`. Replace the sample role ARN with the ARN for the role that you created previously. Replace the bucket ARN suffix (`{{username}}`) with the suffix that you chose in the previous section. Replace the sample account ID (`{{012345678901}}`) in the service execution role with your account ID.
@@ -584,7 +584,7 @@ For step-by-step instructions for creating a role, see [Creating an IAM Role (Co
 
 The application is now created. You start the application in the next step.
 
-#### Start the Application
+#### Start the application
 <a name="get-started-exercise-7-cli-start"></a>
 
 In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartApplication.html) action to start the application.
@@ -612,7 +612,7 @@ In this section, you use the [`StartApplication`](https://docs.aws.amazon.com/ki
 
 The application is now running. You can check the Managed Service for Apache Flink metrics on the Amazon CloudWatch console to verify that the application is working.
 
-#### Stop the Application
+#### Stop the application
 <a name="get-started-exercise-7-cli-stop"></a>
 
 In this section, you use the [`StopApplication`](https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html) action to stop the application.

@@ -9,6 +9,8 @@ You can turn off public sharing settings for dashboards at anytime. You can turn
 
 The following table describes the different scenarios for when a dashboard is publicly available.
 
+**Scenarios for when a dashboard is publicly available**
+
 | Account-level public setting | Dashboard-level public setting | Public access | Visual indicators |
 | --- | --- | --- | --- |
 | Off | Off | Off | None |

@@ -8,8 +8,8 @@ AWS Well-Architected Agent is in preview release and is subject to change.
 <a name="agent-refresh-cadence"></a>
 
 AWS WA Agent keeps recommendations current through scheduled refresh cycles:
-+ **Scheduled refresh:** Resource and application recommendations are refreshed automatically on a weekly cadence after the initial set of recommendations is generated. You do not need to trigger this manually.
-+ **Cooldown periods:** Scheduled recommendation generation runs on a weekly cycle for the same profile. You cannot trigger resource or application recommendations on demand.
++ **Scheduled refresh:** Resource and application recommendations are refreshed automatically every two weeks after the initial set of recommendations is generated. You do not need to trigger this manually.
++ **Cooldown periods:** Scheduled recommendation generation runs on a bi-weekly cycle for the same profile. You can trigger an on-demand refresh of AWS WA Agent recommendations once per week.
 
 **Note**
 Architecture recommendations are not part of the scheduled refresh cycle. They are generated on demand through architecture reviews. For more information, see [Conducting architecture reviews](agent-architecture-reviews.md).

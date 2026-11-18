@@ -133,6 +133,7 @@ Content-type: application/json
                "RedshiftParameters": {
                   "ClusterId": "{{string}}",
                   "Database": "{{string}}",
+                  "FederatedCatalog": "{{string}}",
                   "Host": "{{string}}",
                   "IAMParameters": {
                      "AutoCreateDatabaseUser": {{boolean}},
@@ -383,6 +384,7 @@ Content-type: application/json
       "RedshiftParameters": {
          "ClusterId": "{{string}}",
          "Database": "{{string}}",
+         "FederatedCatalog": "{{string}}",
          "Host": "{{string}}",
          "IAMParameters": {
             "AutoCreateDatabaseUser": {{boolean}},

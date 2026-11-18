@@ -92,6 +92,7 @@ Globals:
     VpcConfig:
 
   Function:
+    AcceleratorConfig:
     Architectures:
     AssumeRolePolicyDocument:
     AutoPublishAlias:

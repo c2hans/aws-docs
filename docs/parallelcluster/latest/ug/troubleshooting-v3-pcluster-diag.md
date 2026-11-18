@@ -157,5 +157,13 @@ curl -fL https://github.com/aws/aws-parallelcluster-cookbook/archive/refs/heads/
 Verify the tool is functional:
 
 ```
-$ PYTHONPATH=/opt/parallelcluster/sources/pcluster-diag /opt/parallelcluster/pyenv/versions/{{3.12.8}}/envs/cookbook_virtualenv/bin/python3 -m pcluster_diag.cli describe-checks
+$ PYTHONPATH=/opt/parallelcluster/sources/pcluster-diag \
+  /opt/parallelcluster/pyenv/versions/*/envs/cookbook_virtualenv/bin/python3 -m pcluster_diag.cli describe-checks
+```
+
+To execute the checks, run the following as root. This command is equivalent to `sudo pcluster-diag run` and accepts the same options.
+
+```
+$ sudo PYTHONPATH=/opt/parallelcluster/sources/pcluster-diag \
+  /opt/parallelcluster/pyenv/versions/*/envs/cookbook_virtualenv/bin/python3 -m pcluster_diag.cli run
 ```

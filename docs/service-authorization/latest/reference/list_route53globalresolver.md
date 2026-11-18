@@ -57,6 +57,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [route53globalresolver:CreateAccessToken](#list_route53globalresolver-action-CreateAccessToken)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [route53globalresolver:TagResource](#list_route53globalresolver-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateCoreNetworkEndpoint  **
+  - **IAM action:**  [route53globalresolver:TagResource](#list_route53globalresolver-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreateDNSView  **
   - **IAM action:**  [route53globalresolver:CreateDNSView](#list_route53globalresolver-action-CreateDNSView)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [route53globalresolver:TagResource](#list_route53globalresolver-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write

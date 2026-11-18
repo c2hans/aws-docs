@@ -159,7 +159,7 @@ If you previously created `AWSCloud9SSMAccessRole` and `AWSCloud9SSMInstanceProf
 
 **Note**
 Suppose that you attempt to create an CloudFormation stack for a no-ingress EC2 environment but you didn't first create the required service role and instance profile. Then, the stack isn't created and the following error message is displayed:
-Instance profile AWSCloud9SSMInstanceProfile does not exist in account.
+`Instance profile AWSCloud9SSMInstanceProfile does not exist in account.`
 
 When creating a no-ingress EC2 environment for the first time using CloudFormation, you can define the `AWSCloud9SSMAccessRole` and `AWSCloud9SSMInstanceProfile` as IAM resources in the template.
 

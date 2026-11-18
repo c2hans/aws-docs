@@ -39,6 +39,8 @@ Amazon Managed Service for Apache Flink 2.2 introduces behavioral changes that m
 
 Below is a summary of breaking changes and deprecations introduced in Managed Service for Apache Flink 2.2. See [Apache Flink 2.0 Release Notes](https://nightlies.apache.org/flink/flink-docs-stable/release-notes/flink-2.0/) for full release notes of Apache Flink 2.0 that introduces these breaking changes.
 
+**Flink API and Language Removals**
+
 **DataSet API Removed**
 + The legacy DataSet API for batch processing has been completely removed in Flink 2.0\+. All batch processing must now use the unified DataStream API.
 + Applications using the DataSet API must be migrated to DataStream API before upgrading. See [Apache Flink migration guide for DataSet to DataStream](https://nightlies.apache.org/flink/flink-docs-release-1.20/docs/dev/datastream/dataset_migration/) conversion

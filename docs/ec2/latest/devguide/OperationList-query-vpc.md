@@ -76,6 +76,16 @@ The following API actions are available for Amazon VPC. To learn more about Amaz
 + [ReplaceNetworkAclAssociation](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceNetworkAclAssociation.html)
 + [ReplaceNetworkAclEntry](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReplaceNetworkAclEntry.html)
 
+**Networking Flexible Cost Allocation**
++ [AssociateNetworkingFlexCostAllocationPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateNetworkingFlexCostAllocationPolicy.html)
++ [CreateNetworkingFlexCostAllocationPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNetworkingFlexCostAllocationPolicy.html)
++ [DeleteNetworkingFlexCostAllocationPolicies](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNetworkingFlexCostAllocationPolicies.html)
++ [DescribeNetworkingFlexCostAllocationPolicies](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkingFlexCostAllocationPolicies.html)
++ [DescribeNetworkingFlexCostAllocationPolicyAssociations](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeNetworkingFlexCostAllocationPolicyAssociations.html)
++ [DisassociateNetworkingFlexCostAllocationPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisassociateNetworkingFlexCostAllocationPolicy.html)
++ [GetNetworkingFlexCostAllocationPolicyVersions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetNetworkingFlexCostAllocationPolicyVersions.html)
++ [ModifyNetworkingFlexCostAllocationPolicy](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyNetworkingFlexCostAllocationPolicy.html)
+
 **Route servers**
 + [AssociateRouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateRouteServer.html)
 + [CreateRouteServer](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateRouteServer.html)

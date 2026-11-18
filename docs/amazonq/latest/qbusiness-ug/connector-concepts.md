@@ -172,7 +172,7 @@ Specify the sync mode using the `configuration` parameter of the [CreateDataSour
 Available sync mode features vary across data source connectors.
 
 **Important**
-If you get a Resource not found exception when you try to view your CloudWatch logs for a data source sync job in progress, it's because the CloudWatch logs aren't available yet. Wait for some time and check again.
+If you get a `Resource not found exception` when you try to view your CloudWatch logs for a data source sync job in progress, it's because the CloudWatch logs aren't available yet. Wait for some time and check again.
 
 ## Sync run schedule
 <a name="connector-sync-run"></a>

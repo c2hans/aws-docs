@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/communicati
 
  Configure your communication preferences to control how you receive notifications and interact with the incident response system during security incidents.
 
+**Manage Team Communication Preferences**
+
  You can configure communication preferences for individuals in your incident response team from the dashboard page.
 
  Follow these steps to manage team member communication settings:
@@ -28,7 +30,11 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/communicati
 
 ![Incident Response Team page showing two teammates and communications preferences table.](https://docs.aws.amazon.com/security-ir/latest/userguide/images/CommPreferencesDashboard.png)
 
+**Default Communication Settings**
+
  By default, incident response team members will have all communications enabled. You can modify these settings at any time using the steps above.
+
+**Communication Options**
 
  Your communication preferences control how you interact with the incident response system and how notifications are delivered to you during security incidents.
 

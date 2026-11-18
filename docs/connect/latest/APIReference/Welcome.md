@@ -72,6 +72,15 @@ With Connect Customer Cases, your agents can track and manage customer issues th
 
 Use the Connect Customer Participant Service to manage participants (for example, agents, customers, and managers listening in), and to send messages and events within a chat contact. The APIs in the service enable the following: sending chat messages, attachment sharing, managing a participant's connection state and message events, and retrieving chat transcripts.
 
+## Amazon Connect Scheduling
+<a name="Welcome_Amazon_Connect_Scheduling"></a>
++  [Scheduling actions](https://docs.aws.amazon.com/connect/latest/APIReference/API_Operations_Amazon_Connect_Scheduling.html)
++  [Scheduling data types](https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Amazon_Connect_Scheduling.html)
+
+Use the Amazon Connect Scheduling API to work programmatically with Connect Customer forecasting, capacity planning, and scheduling, and to integrate these capabilities with your own systems. In the Connect Customer admin website, you use them to forecast contact volume, plan capacity, and create and manage agent schedules.
+
+For more information, see [Forecasting & agent scheduling](https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html) in the *Connect Customer Administrator Guide*.
+
 ## Amazon Connect Customer Profiles
 <a name="Welcome_Amazon_Connect_Customer_Profiles"></a>
 +  [Customer Profiles actions](https://docs.aws.amazon.com/connect/latest/APIReference/API_Operations_Amazon_Connect_Customer_Profiles.html)

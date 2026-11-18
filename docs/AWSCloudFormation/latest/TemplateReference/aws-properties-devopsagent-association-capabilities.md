@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association Capabilities
 <a name="aws-properties-devopsagent-association-capabilities"></a>
 
-<a name="aws-properties-devopsagent-association-capabilities-description"></a>The `Capabilities` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+The automated AWS DevOps Agent capabilities for the repository in this association.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-capabilities-syntax"></a>
@@ -38,13 +38,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-capabilities-properties"></a>
 
 `CodeChangeRiskAnalysis`  <a name="cfn-devopsagent-association-capabilities-codechangeriskanalysis"></a>
-Property description not available.
+The configuration for code change risk analysis. With this capability, AWS DevOps Agent analyzes pull requests and merge requests for deployment risk.
 *Required*: No
 *Type*: [CapabilityConfiguration](aws-properties-devopsagent-association-capabilityconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CodeChangeRiskAnalysisAutomatedTesting`  <a name="cfn-devopsagent-association-capabilities-codechangeriskanalysisautomatedtesting"></a>
-Property description not available.
+The configuration for automated testing during code change risk analysis. With this capability, AWS DevOps Agent also runs tests against the change as part of the analysis.
 *Required*: No
 *Type*: [AutomatedTestingCapabilityConfiguration](aws-properties-devopsagent-association-automatedtestingcapabilityconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

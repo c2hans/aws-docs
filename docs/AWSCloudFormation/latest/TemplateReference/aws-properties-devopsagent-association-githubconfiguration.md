@@ -56,7 +56,7 @@ The type of repository owner.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReleaseManagementAssociationId`  <a name="cfn-devopsagent-association-githubconfiguration-releasemanagementassociationid"></a>
-Property description not available.
+The ID of a `ReleaseManagement` association in the same Agent Space. AWS DevOps Agent uses that release management environment to reach your application when it runs automated verification testing for this repository.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

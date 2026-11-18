@@ -14,6 +14,8 @@ The following data types are supported:
 +  [ClusterSummary](API_ClusterSummary.md)
 +  [EncryptionDetails](API_EncryptionDetails.md)
 +  [KinesisTargetDefinition](API_KinesisTargetDefinition.md)
++  [MetricGroupRequest](API_MetricGroupRequest.md)
++  [MetricGroupResponse](API_MetricGroupResponse.md)
 +  [MultiRegionProperties](API_MultiRegionProperties.md)
 +  [StatusReason](API_StatusReason.md)
 +  [StreamSummary](API_StreamSummary.md)

@@ -145,6 +145,16 @@ To configure KV caching and intelligent routing for improved performance, see [C
    kubectl describe InferenceEndpointConfig nvme-k8s-volume -n default
    ```
 
+### Restrict host path volumes
+<a name="sagemaker-hyperpod-model-deployment-deploy-nvme-hostpath-security"></a>
+
+With `modelSourceType: kubernetesVolume`, the worker mounts the `kubernetes.volumes` entry named by `modelVolumeMount.name`. The inference operator mounts it read-only, but it doesn't yet restrict which host paths a `hostPath` volume can use. Any user who can create an `InferenceEndpointConfig` can mount a node directory into a GPU pod. To limit this risk:
++ Grant permission to create and update `InferenceEndpointConfig` resources only to trusted users.
++ Use a `persistentVolumeClaim` for model storage where possible.
++ If you use `hostPath`, use a dedicated model directory such as `/opt/dlami/nvme/hyperpod-inference/models/` with `type: Directory`. Don't mount system paths such as `/`, `/var/lib/kubelet` or the container runtime socket.
+
+To enforce these rules, use a Kubernetes admission policy, such as a `ValidatingAdmissionPolicy`, that rejects other `hostPath` values on `InferenceEndpointConfig` resources.
+
 ## Deploy using a Kubernetes volume with fallback
 <a name="sagemaker-hyperpod-model-deployment-deploy-nvme-fallback"></a>
 

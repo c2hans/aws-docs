@@ -43,12 +43,14 @@ Content-type: application/json
 {
    "arn": "string",
    "cidr": "string",
+   "coreNetworkEndpointId": "string",
    "createdAt": "string",
    "dnsViewId": "string",
    "id": "string",
    "ipAddressType": "string",
    "name": "string",
    "protocol": "string",
+   "segment": "string",
    "status": "string",
    "updatedAt": "string"
 }
@@ -70,7 +72,13 @@ Pattern: `arn:[-.a-z0-9]{1,63}:[-.a-z0-9]{1,63}:[-.a-z0-9]{0,63}:[-.a-z0-9]{0,63
  ** [cidr](#API_route53globalresolver_GetAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetAccessSource-response-cidr"></a>
 The IP range for the rule's parameters in CIDR notation.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 43.
+Length Constraints: Minimum length of 0. Maximum length of 43.
+
+ ** [coreNetworkEndpointId](#API_route53globalresolver_GetAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetAccessSource-response-coreNetworkEndpointId"></a>
+The ID of the core network endpoint associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
 
  ** [createdAt](#API_route53globalresolver_GetAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetAccessSource-response-createdAt"></a>
 The time and date the rule was created.
@@ -91,7 +99,7 @@ Pattern: `[-.a-zA-Z0-9]+`
  ** [ipAddressType](#API_route53globalresolver_GetAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetAccessSource-response-ipAddressType"></a>
 The IP address type.
 Type: String
-Valid Values: `IPV4 | IPV6`
+Valid Values: `IPV4 | IPV6 | NONE`
 
  ** [name](#API_route53globalresolver_GetAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetAccessSource-response-name"></a>
 Name for the access source.
@@ -103,6 +111,11 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
 The protocol determines how data is transmitted to a Global Resolver instance.
 Type: String
 Valid Values: `DO53 | DOH | DOT`
+
+ ** [segment](#API_route53globalresolver_GetAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetAccessSource-response-segment"></a>
+The name of the segment associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
 
  ** [status](#API_route53globalresolver_GetAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetAccessSource-response-status"></a>
 Information about the status of the rule.

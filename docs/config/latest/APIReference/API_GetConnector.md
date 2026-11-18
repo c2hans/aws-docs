@@ -40,6 +40,11 @@ Required: Yes
          "azure": {
             "clientIdentifier": "string",
             "tenantIdentifier": "string"
+         },
+         "gcp": {
+            "gcpOrganizationId": "string",
+            "serviceAccountEmail": "string",
+            "workloadIdentityPoolProvider": "string"
          }
       },
       "createdTime": number,

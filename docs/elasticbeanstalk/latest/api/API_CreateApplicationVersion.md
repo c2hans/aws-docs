@@ -55,6 +55,7 @@ Required: No
  ** Process **
 Pre-processes and validates the environment manifest (`env.yaml`) and configuration files (`*.config` files in the `.ebextensions` folder) in the source bundle. Validating configuration files can identify issues prior to deploying the application version to an environment.
 You must turn processing on for application versions that you create using AWS CodeBuild or AWS CodeCommit. For application versions built from a source bundle in Amazon S3, processing is optional.
+For application versions with `ImageConfiguration.Build`, `Process` determines when Elastic Beanstalk builds the container image. Set it to `true` to build the image when you create the application version. If you don't, Elastic Beanstalk builds the image when you first deploy the application version to an environment.
 The `Process` option validates Elastic Beanstalk configuration files. It doesn't validate your application's configuration files, like proxy server or Docker configuration.
 Type: Boolean
 Required: No

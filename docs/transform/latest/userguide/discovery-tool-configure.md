@@ -321,6 +321,8 @@ Because collection uses standard operating system commands rather than an agent,
 + **Linux** – Amazon Linux 2, Amazon Linux 2023, RHEL 7.9, Rocky Linux 9.7, AlmaLinux 9.7, SLES 12 SP5, Debian 11, Ubuntu 16.04, and Ubuntu 22.04
 + **Windows** – Windows Server 2012 R2, 2016, 2019, and 2022
 
+**Reduced data coverage on older operating systems**
+
 On older operating systems, the discovery tool substitutes alternative commands and some fields can be empty:
 + Linux distributions released before `/etc/os-release` became standard — such as RHEL 6, CentOS 6, SLES 11, Ubuntu 14.04 and earlier, and Amazon Linux 1 — are identified from `/etc/*-release` or `uname` instead, which can report less detail.
 + Windows Server 2003 does not include PowerShell. Because the discovery tool runs all Windows commands through PowerShell remoting, it collects no OS-level data from these servers unless you install PowerShell and WinRM on them.

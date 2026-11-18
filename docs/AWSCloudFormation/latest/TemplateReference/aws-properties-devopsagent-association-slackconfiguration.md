@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association SlackConfiguration
 <a name="aws-properties-devopsagent-association-slackconfiguration"></a>
 
-Configuration for Slack workspace integration. Defines the workspace ID, workspace name, and transmission targets that specify which Slack channels receive notifications.
+Configuration for Slack workspace integration. Defines the workspace ID, the workspace name, and the transmission targets that specify which Slack channels receive notifications. With optional bidirectional communication settings, you can have the agent respond to mentions in those channels.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-slackconfiguration-syntax"></a>
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-slackconfiguration-properties"></a>
 
 `Bidirectional`  <a name="cfn-devopsagent-association-slackconfiguration-bidirectional"></a>
-Property description not available.
+Optional configuration for bidirectional communication. Supply this property and set `Enabled` to `true` so that you can mention the agent in the associated Slack channel and receive responses.
 *Required*: No
 *Type*: [SlackBidirectionalConfiguration](aws-properties-devopsagent-association-slackbidirectionalconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

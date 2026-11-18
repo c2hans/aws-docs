@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/bedrock-bidirectional-streaming.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Use bidirectional streaming
 <a name="bedrock-bidirectional-streaming"></a>
@@ -11,11 +11,11 @@ A bidirectional event stream lets the application publish input events to the se
 
 This example uses Amazon Nova 2 Sonic. The program loads its input audio from a `test.pcm` file in the working directory. To provide it, do one of the following:
 + Use the SDK repository's [sample `test.pcm` file](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-bedrock-runtime/tests/integration/assets/test.pcm) on GitHub. The sample contains headerless, 16 kHz, signed 16-bit, mono PCM audio.
-+ Use your own recording saved in the same format, and set `audio_file` in `main` to its path.
++ Use your own recording saved in the same format. Set `audio_file` in `main` to its path.
 
 For request and response details, see the [invoke\_model\_with\_bidirectional\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/invoke_model_with_bidirectional_stream/) API reference.
 
-Bidirectional streaming requires the AWS Common Runtime (CRT) HTTP client, which supports HTTP/2 bidirectional event streams. The SDK's default HTTP transport does not, so opt in by installing the client's `awscrt` extra and passing `transport=AWSCRTHTTPClient()` when you resolve the configuration. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
+Bidirectional streaming requires the AWS Common Runtime (CRT) HTTP client. Install the client's `awscrt` extra. Then pass `transport=AWSCRTHTTPClient()` when you resolve the configuration. For this reason, the example creates its own client instead of calling `create_async_client`. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
 
 ```
 python -m pip install "aws-sdk-bedrock-runtime[awscrt]"
@@ -33,24 +33,16 @@ from typing import Any
 
 from smithy_http.aio.crt import AWSCRTHTTPClient
 
-from aws_sdk_bedrock_runtime.client import AsyncBedrockRuntimeClient
-from aws_sdk_bedrock_runtime.config import AsyncBedrockRuntimeConfig
+from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient, AsyncBedrockRuntimeConfig
 from aws_sdk_bedrock_runtime.models import (
     BidirectionalInputPayloadPart,
     InvokeModelWithBidirectionalStreamInputChunk,
-    InvokeModelWithBidirectionalStreamOperationInput,
     InvokeModelWithBidirectionalStreamOutputChunk,
-    InvokeModelWithBidirectionalStreamOutputInternalServerException,
-    InvokeModelWithBidirectionalStreamOutputModelStreamErrorException,
-    InvokeModelWithBidirectionalStreamOutputModelTimeoutException,
-    InvokeModelWithBidirectionalStreamOutputServiceUnavailableException,
-    InvokeModelWithBidirectionalStreamOutputThrottlingException,
     InvokeModelWithBidirectionalStreamOutputUnknown,
-    InvokeModelWithBidirectionalStreamOutputValidationException,
 )
 ```
 
-The program sends the audio in 512-byte chunks and sleeps 0.016 seconds after each chunk, simulating the real-time delay of live audio. The first four constants control that timing. `DEFAULT_SYSTEM_PROMPT` is the system instruction that the session sends before the audio, and `BIDIRECTIONAL_STREAM_ERRORS` groups the modeled stream-error events. The validation helper rejects a missing or empty audio file before any network call.
+The program sends the audio in 512-byte chunks and sleeps 0.016 seconds after each chunk to match the pace of live audio. The first four constants control the chunk size, the trailing silence, and the timing. `DEFAULT_SYSTEM_PROMPT` is the system instruction that the session sends before the audio. The validation helper rejects a missing or empty audio file before any network call.
 
 ```
 CHUNK_SIZE = 512
@@ -61,15 +53,6 @@ RESPONSE_WAIT_SECONDS = 3
 DEFAULT_SYSTEM_PROMPT = (
     "You are a friendly assistant. Keep your responses short, "
     "generally one or two sentences."
-)
-
-BIDIRECTIONAL_STREAM_ERRORS = (
-    InvokeModelWithBidirectionalStreamOutputInternalServerException,
-    InvokeModelWithBidirectionalStreamOutputModelStreamErrorException,
-    InvokeModelWithBidirectionalStreamOutputModelTimeoutException,
-    InvokeModelWithBidirectionalStreamOutputServiceUnavailableException,
-    InvokeModelWithBidirectionalStreamOutputThrottlingException,
-    InvokeModelWithBidirectionalStreamOutputValidationException,
 )
 ```
 
@@ -83,7 +66,7 @@ def validate_audio_input(audio_file: Path) -> None:
 ## Define and send model-native events
 <a name="bedrock-bidirectional-events"></a>
 
-Nova 2 Sonic input events are JSON documents. The session nests three scopes, and an event pair opens and closes each scope: `sessionStart` and `sessionEnd` wrap the connection, `promptStart` and `promptEnd` wrap one prompt, and `contentStart` and `contentEnd` wrap each content block inside the prompt. A content block carries either text or audio. More than one content block opens and closes on the same stream, so each event carries the `promptName` and `contentName` of the scope it belongs to. The templates leave those values as `%s` placeholders. The following templates define every event that this example sends.
+Nova 2 Sonic input events are JSON documents. The session nests three scopes. An event pair opens and closes each scope: `sessionStart` and `sessionEnd` for the connection, `promptStart` and `promptEnd` for one prompt, and `contentStart` and `contentEnd` for each content block inside the prompt. A content block carries either text or audio. More than one content block opens and closes on the same stream, so each event carries the `promptName` and `contentName` of the scope it belongs to. The templates leave those values as `%s` placeholders. The following templates define every event that this example sends.
 
 ```
 START_SESSION_EVENT = """{
@@ -197,7 +180,7 @@ SESSION_END_EVENT = """{
 }"""
 ```
 
-The following function encodes one filled-in template and wraps it in the generated input union before sending it to the stream.
+The following function encodes one filled-in template and wraps it in the generated input union before sending it to the stream. Unlike operation arguments, input stream events must be generated model objects. The stream doesn't accept dictionaries.
 
 ```
 async def send_event(stream: Any, event_json: str) -> None:
@@ -253,7 +236,7 @@ async def publish_audio(
 ## Receive text and audio output
 <a name="bedrock-bidirectional-receive"></a>
 
-Await the service output before iterating it. Narrow every generated output event, decode its JSON payload, collect text, and record audio output. Stop when the model sends `completionEnd`.
+Call `await_output` to get the output stream before you iterate it. Narrow every generated output event, decode its JSON payload, collect text, and record audio output. Stop when the model sends `completionEnd`. A modeled error event makes the `async for` loop raise the generated exception.
 
 ```
 async def receive_events(stream: Any) -> tuple[list[str], bool, bool]:
@@ -278,8 +261,6 @@ async def receive_events(stream: Any) -> tuple[list[str], bool, bool]:
             if "completionEnd" in event_data:
                 completed = True
                 break
-        elif isinstance(event, BIDIRECTIONAL_STREAM_ERRORS):
-            raise RuntimeError(event.value.message or type(event).__name__)
         elif isinstance(event, InvokeModelWithBidirectionalStreamOutputUnknown):
             raise RuntimeError(f"Unknown bidirectional stream event: {event.tag}")
         else:
@@ -292,7 +273,7 @@ async def receive_events(stream: Any) -> tuple[list[str], bool, bool]:
 ## Open the stream and exchange audio
 <a name="bedrock-bidirectional-run"></a>
 
-Open the stream, then send the `init_events` list in protocol order: start the session and the prompt, send the system instruction as a complete text content block, and open the user audio content block. Then run the publisher and receiver concurrently, so the program keeps sending audio while it receives output. Verify that the stream completed and produced both text and audio before accepting the result.
+Pass the model ID as the `model_id` keyword argument to open the stream. Then send the `init_events` list in protocol order: start the session and the prompt, send the system instruction as a complete text content block, and open the user audio content block. After that, run the publisher and receiver concurrently, so the program keeps sending audio while it receives output. Verify that the stream completed and produced both text and audio before accepting the result.
 
 ```
 async def invoke_model_with_bidirectional_stream(
@@ -303,9 +284,7 @@ async def invoke_model_with_bidirectional_stream(
     validate_audio_input(audio_file)
 
     stream = await client.invoke_model_with_bidirectional_stream(
-        InvokeModelWithBidirectionalStreamOperationInput(
-            model_id="amazon.nova-2-sonic-v1:0"
-        )
+        model_id="amazon.nova-2-sonic-v1:0"
     )
     prompt_name = str(uuid.uuid4())
     system_content_name = str(uuid.uuid4())
@@ -333,18 +312,18 @@ async def invoke_model_with_bidirectional_stream(
         raise RuntimeError(
             "The stream ended without completion, text, and audio output"
         )
-    # The first text event is the transcript of the input audio, and the
+    # The first text event is the transcript of the input audio. The
     # following events are the model's reply, one segment per event.
     text = "\n".join(part.strip() for part in text_output)
     print(text)
     return text
 ```
 
-The entry point creates the client with the CRT transport and runs the streaming session. Run the program with `python invoke_model_with_bidirectional_stream.py`.
+The entry point creates an asynchronous client with the CRT HTTP client and runs the streaming session. Run the program with `python invoke_model_with_bidirectional_stream.py`.
 
 ```
 async def main() -> None:
-    """Create a client with the CRT transport and run the example."""
+    """Create a client that uses the CRT HTTP client and run the example."""
     # Load the input audio (headerless, 16 kHz, signed 16-bit, mono PCM).
     audio_file = Path("test.pcm")
     # Bidirectional streaming requires the AWS CRT HTTP client.
@@ -358,8 +337,6 @@ async def main() -> None:
 if __name__ == "__main__":
     asyncio.run(main())
 ```
-
-The example follows the same event sequence as [`test_bidirectional_streaming.py`](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-bedrock-runtime/tests/integration/test_bidirectional_streaming.py) in the AWS SDK for Python v4 repository on GitHub.
 
 ## More information
 <a name="bedrock-bidirectional-more-info"></a>

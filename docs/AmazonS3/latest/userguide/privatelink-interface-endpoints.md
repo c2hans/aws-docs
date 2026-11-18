@@ -164,7 +164,7 @@ When you enable private DNS names on an existing or new VPC interface endpoint f
 
 If you don't specify a value for `PrivateDnsOnlyForInboundResolverEndpoint`, it will default to `true`. However, before your VPC applies your settings, it performs a check to make sure that you have a gateway endpoint present in the VPC. If a gateway endpoint is present in the VPC, the call succeeds. If not, you will see the following error message:
 
-To set PrivateDnsOnlyForInboundResolverEndpoint to true, the VPC {{vpce\_id}} must have a gateway endpoint for the service.
+`To set PrivateDnsOnlyForInboundResolverEndpoint to true, the VPC {{vpce_id}} must have a gateway endpoint for the service.`
 
 **For a new VPC Interface endpoint**
 

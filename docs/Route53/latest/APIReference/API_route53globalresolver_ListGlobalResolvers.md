@@ -54,6 +54,7 @@ Content-type: application/json
          "ipv6Addresses": [ "string" ],
          "name": "string",
          "observabilityRegion": "string",
+         "publicIpStatus": "string",
          "regions": [ "string" ],
          "status": "string",
          "updatedAt": "string"

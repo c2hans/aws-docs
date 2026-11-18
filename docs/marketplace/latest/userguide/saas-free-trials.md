@@ -97,6 +97,9 @@ You can't undo this update.
 
 The request takes a few minutes. After the update, AWS Marketplace moves your free trial to your public offer and expires the separate free trial offer. New subscribers convert automatically. Buyers already in a free trial finish on their current terms. Their free trials then expire.
 
+**Note**
+After you update the offer, the standalone free trial offer expires. Update any links that use its offer ID, such as links on your website and Buy with AWS buttons. A link that uses the ID of the expired offer shows buyers an Offer not found page.
+
 ## Metering during a free trial
 <a name="saas-free-trial-metering"></a>
 
@@ -109,7 +112,7 @@ If a buyer cancels, you have 1 hour after the `License Deprovisioned - Manufactu
 
 You can cancel free trial offers at any time from AWS Partner Central. This procedure applies to SaaS contract free trial offers and to free trial offers that you haven't updated to convert automatically.
 
-To cancel a SaaS free trial offer
+**To cancel a SaaS free trial offer**
 
 1. Sign in to [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home).
 

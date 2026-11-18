@@ -11,3 +11,4 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWS-EnableNeptuneDbAuditLogsToCloudWatch`](AWS-EnableNeptuneDbAuditLogsToCloudWatch.md)
 + [`AWS-EnableNeptuneDbBackupRetentionPeriod`](AWS-EnableNeptuneDbBackupRetentionPeriod.md)
 + [`AWS-EnableNeptuneClusterDeletionProtection`](AWS-EnableNeptuneClusterDeletionProtection.md)
++ [`AWSSupportRemediator-EnableNeptuneDbClusterDeletionProtection`](automation-awssupportremediator-enableneptunedbclusterdeletionprotection.md)

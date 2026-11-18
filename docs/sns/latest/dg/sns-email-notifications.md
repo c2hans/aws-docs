@@ -50,7 +50,9 @@ You must confirm the subscription before the email address can start to receive 
 
 1. Check your email inbox and choose **Confirm subscription** in the email from Amazon SNS.
 
-1. Amazon SNS opens your web browser and displays a subscription confirmation with your subscription ID.
+1. On the confirmation page that opens in your web browser, choose **Confirm Subscription**. Amazon SNS confirms the subscription, and the page displays your subscription ID.
+
+To unsubscribe, choose the unsubscribe link in the email from Amazon SNS, and then choose **Unsubscribe** on the page that opens in your web browser.
 
 ## Subscribing an email address to an Amazon SNS topic using an AWS SDK
 <a name="subscribe-email-to-topic-aws-sdks"></a>

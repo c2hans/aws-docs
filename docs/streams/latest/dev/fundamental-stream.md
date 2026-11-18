@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/fundamental-stream.ht
 # Tutorial: Perform basic Kinesis Data Streams operations using the AWS CLI
 <a name="fundamental-stream"></a>
 
-This section describes basic use of a Kinesis data stream from the command line using the AWS CLI. Be sure you are familiar with the concepts discussed in [Amazon Kinesis Data Streams Terminology and concepts](key-concepts.md).
+This section describes basic use of a Kinesis data stream from the command line using the AWS CLI. Be sure you are familiar with the concepts discussed in [Amazon Kinesis Data Streams terminology and concepts](key-concepts.md).
 
 **Note**
 After you create a stream, your account incurs nominal charges for Kinesis Data Streams usage because Kinesis Data Streams is not eligible for the AWS Free Tier. When you are finished with this tutorial, delete your AWS resources to stop incurring charges. For more information, see [Step 4: Clean up](#clean-up).
@@ -48,7 +48,8 @@ You should get output that is similar to the following example:
         ],
         "EncryptionType": "NONE",
         "OpenShardCount": 3,
-        "ConsumerCount": 0
+        "ConsumerCount": 0,
+        "QueueCount": 0
     }
 }
 ```
@@ -70,7 +71,8 @@ You should get output that is similar to the following example:
         ],
         "EncryptionType": "NONE",
         "OpenShardCount": 3,
-        "ConsumerCount": 0
+        "ConsumerCount": 0,
+        "QueueCount": 0
     }
 }
 ```

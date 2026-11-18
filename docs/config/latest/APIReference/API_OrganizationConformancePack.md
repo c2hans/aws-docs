@@ -31,7 +31,7 @@ Required: Yes
  ** ConformancePackInputParameters **   <a name="config-Type-OrganizationConformancePack-ConformancePackInputParameters"></a>
 A list of `ConformancePackInputParameter` objects.
 Type: Array of [ConformancePackInputParameter](API_ConformancePackInputParameter.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 60 items.
+Array Members: Minimum number of 0 items. Maximum number of 330 items.
 Required: No
 
  ** DeliveryS3Bucket **   <a name="config-Type-OrganizationConformancePack-DeliveryS3Bucket"></a>
@@ -52,7 +52,6 @@ Required: No
 A comma-separated list of accounts excluded from organization conformance pack.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 1000 items.
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

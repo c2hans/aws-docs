@@ -86,6 +86,37 @@ The following example event shows a job run that moves from the `SCHEDULED` stat
 }
 ```
 
+**Flex job run state change event**
+
+For job runs that use [Flex](jobs-flex-execution.md), job run state change events include `"flexEnabled": true` in the `detail` field. The field isn't present for job runs that don't use Flex.
+
+The following example event shows a Flex job run that moves from the `SCHEDULED` state to the `RUNNING` state.
+
+```
+{
+    "version": "0",
+    "id": "00df3ec6-5da1-36e6-ab71-20f0de68f8a0",
+    "detail-type": "EMR Serverless Job Run State Change",
+    "source": "aws.emr-serverless",
+    "account": "123456789012",
+    "time": "2026-11-01T21:07:42Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+        "jobRunId": "00f1cbn5g4bb0c01",
+        "applicationId": "00f1982r1uukb925",
+        "arn": "arn:aws:emr-serverless:us-east-1:123456789012:/applications/00f1982r1uukb925/jobruns/00f1cbn5g4bb0c01",
+        "releaseLabel": "emr-7.12.0",
+        "state": "RUNNING",
+        "previousState": "SCHEDULED",
+        "createdBy": "arn:aws:sts::123456789012:assumed-role/ExampleRole/ExampleSession",
+        "updatedAt": "2026-11-01T21:07:42.299487Z",
+        "createdAt": "2026-11-01T21:07:25.325900Z",
+        "flexEnabled": true
+    }
+}
+```
+
 **Job run retry event**
 
 The following is an example of a job run retry event.
@@ -118,6 +149,8 @@ The following is an example of a job run retry event.
     }
 }
 ```
+
+For job runs that use Flex, job run retry events also include `"flexEnabled": true` in the `detail` field.
 
 **Job Resource Utilization Update**
 
@@ -170,3 +203,21 @@ The following example event shows the final resource utilization update for a jo
 ```
 
 The **startedAt** field will only be present in the event if the job had moved to a running state.
+
+## Filtering events for Flex job runs
+<a name="using-eventbridge-flex-filtering"></a>
+
+To match events only for job runs that use [Flex](jobs-flex-execution.md), add `flexEnabled` to your event pattern. The following example pattern matches Flex job runs that move to the `FAILED` state.
+
+```
+{
+  "source": ["aws.emr-serverless"],
+  "detail-type": ["EMR Serverless Job Run State Change"],
+  "detail": {
+    "state": ["FAILED"],
+    "flexEnabled": [true]
+  }
+}
+```
+
+Job resource utilization update events and application state change events don't include the `flexEnabled` field.

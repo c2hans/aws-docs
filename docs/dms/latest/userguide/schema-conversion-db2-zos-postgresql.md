@@ -14,6 +14,8 @@ This topic covers settings specific to the IBM Db2 for z/OS to PostgreSQL conver
 
 When you use the API or AWS CLI, specify conversion path settings under the section names `DB2ZOS_TO_POSTGRESQL`, `DB2ZOS_TO_POSTGRESQL_14`, or `DB2ZOS_TO_POSTGRESQL_15`. All three versioned sections accept the same keys. To find which section names your project uses, call [DescribeConversionConfiguration](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeConversionConfiguration.html) first and update only the sections present in the response.
 
+**Data type and schema settings**
+
 `ConvertNumberToBigint`
 Controls how IBM Db2 for z/OS numeric columns without explicit precision are mapped on the target.
 + `false` — Numeric columns are mapped to PostgreSQL `NUMERIC`.
@@ -38,6 +40,8 @@ Controls how the target PostgreSQL schema name is generated from the IBM Db2 for
 **Type:** String (enum)
 **Default:** `DB_SCHEMA`
 
+**Code and constraint settings**
+
 `GenerateUniqueNamesForConstraints`
 Controls whether constraint names are made unique across all schemas on the target.
 + `true` — DMS Schema Conversion appends a hash suffix to each constraint name to guarantee uniqueness across schemas.
@@ -58,6 +62,8 @@ Controls how IBM Db2 for z/OS stored procedures that return dynamic result sets 
 + `true` — Dynamic result sets are converted using a PostgreSQL `refcursor` array, which lets the caller iterate over multiple result sets.
 **Type:** Boolean (`true` \| `false`)
 **Default:** `false`
+
+**Partition settings**
 
 `ExcludeTablePartitions`
 Controls whether table partition definitions are included in the converted DDL.
@@ -103,6 +109,8 @@ Controls whether DMS Schema Conversion scales the number of generated partitions
 **Type:** Boolean (`true` \| `false`)
 **Default:** `false`
 
+**Date and time format settings**
+
 `StringRepresentationOfDate`
 Controls the string format used when representing IBM Db2 `DATE` values in converted code.
 
@@ -138,6 +146,8 @@ Controls the string format used when representing IBM Db2 `TIME` values in conve
 
 **Type:** String (enum)
 **Default:** `ISO`
+
+**Schema tree view settings**
 
 The following settings control which schemas and databases appear in the schema tree view. They affect what you can select for conversion; they don't change the converted SQL output.
 

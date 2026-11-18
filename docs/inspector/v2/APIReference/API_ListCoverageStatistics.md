@@ -176,6 +176,13 @@ Content-type: application/json
             "value": "{{string}}"
          }
       ],
+      "machineImageTags": [
+         {
+            "comparison": "{{string}}",
+            "key": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
       "resourceId": [
          {
             "comparison": "{{string}}",
@@ -234,7 +241,7 @@ Type: [CoverageFilterCriteria](API_CoverageFilterCriteria.md) object
 Required: No
 
  ** [groupBy](#API_ListCoverageStatistics_RequestSyntax) **   <a name="inspector2-ListCoverageStatistics-request-groupBy"></a>
-The value to group the results by.
+The value to group the results by. For multi-cloud resources, use `PROVIDER`, `PROVIDER_ACCOUNT_ID` (Azure subscription ID or Google Cloud Platform (GCP) project ID), `PROVIDER_ORG_ID` (Azure tenant ID or Google Cloud Platform (GCP) organization ID), or `PROVIDER_REGION`.
 Type: String
 Valid Values: `SCAN_STATUS_CODE | SCAN_STATUS_REASON | ACCOUNT_ID | RESOURCE_TYPE | ECR_REPOSITORY_NAME | PROVIDER | PROVIDER_ACCOUNT_ID | PROVIDER_REGION | PROVIDER_ORG_ID`
 Required: No

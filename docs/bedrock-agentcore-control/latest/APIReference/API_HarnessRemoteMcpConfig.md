@@ -23,6 +23,12 @@ Key Length Constraints: Minimum length of 1. Maximum length of 16383.
 Value Length Constraints: Minimum length of 1. Maximum length of 16383.
 Required: No
 
+ ** outboundAuth **   <a name="bedrockagentcorecontrol-Type-HarnessRemoteMcpConfig-outboundAuth"></a>
+How the harness authenticates to this MCP server. Defaults to no authentication.
+Type: [HarnessRemoteMcpOutboundAuth](API_HarnessRemoteMcpOutboundAuth.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
 ## See Also
 <a name="API_HarnessRemoteMcpConfig_SeeAlso"></a>
 

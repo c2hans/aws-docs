@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ctas-insert-into.html
 
 Athena has a limit of 100 partitions per `CREATE TABLE AS SELECT` ([CTAS](ctas.md)) query. Similarly, you can add a maximum of 100 partitions to a destination table with an [INSERT INTO](https://docs.aws.amazon.com/athena/latest/ug/insert-into.html) statement.
 
-If you exceed this limitation, you may receive the error message HIVE\_TOO\_MANY\_OPEN\_PARTITIONS: Exceeded limit of 100 open writers for partitions/buckets. To work around this limitation, you can use a CTAS statement and a series of `INSERT INTO` statements that create or insert up to 100 partitions each.
+If you exceed this limitation, you may receive the error message `HIVE_TOO_MANY_OPEN_PARTITIONS: Exceeded limit of 100 open writers for partitions/buckets`. To work around this limitation, you can use a CTAS statement and a series of `INSERT INTO` statements that create or insert up to 100 partitions each.
 
 The example in this topic uses a database called `tpch100` whose data resides in the Amazon S3 bucket location s3://amzn-s3-demo-bucket/.
 

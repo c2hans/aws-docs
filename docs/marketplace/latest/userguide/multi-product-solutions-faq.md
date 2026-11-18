@@ -189,4 +189,6 @@ When you release an offer set, AWS Marketplace sends multiple notifications to h
 ## How does listing fee work for multi-product offer set?
 <a name="listing-fee-multi-product-offer-set"></a>
 
-Listing fees are calculated at the individual product level when the customer is billed for each product. Each private offer incurs listing fees based on the product, the vendor, and any selling authorization involved. For more information about listing fees for AWS Marketplace sellers, see the [Understanding listing fees for AWS Marketplace seller documentation](https://docs.aws.amazon.com/marketplace/latest/userguide/listing-fees.html).
+Listing fees are calculated at the individual product level when the customer is billed for each product. Each private offer incurs listing fees based on the product, the vendor, and any selling authorization involved.
+
+If you sell professional services in a qualifying offer set, the professional services listing fee is 0%. To qualify, every offer in your offer set must have an agreement, and at least one offer that isn't professional services must be a paid offer. For the full rules, see [Understanding fees for standard offer listings in AWS Marketplace](listing-fees.md#standard-offer-listing-fees).

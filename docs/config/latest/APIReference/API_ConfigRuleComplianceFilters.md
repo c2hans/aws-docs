@@ -13,7 +13,6 @@ Filters the compliance results based on account ID, region, compliance type, and
  ** AccountId **   <a name="config-Type-ConfigRuleComplianceFilters-AccountId"></a>
 The 12-digit account ID of the source account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 
@@ -34,7 +33,7 @@ Required: No
 The name of the AWS Config rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: No
 
 ## See Also

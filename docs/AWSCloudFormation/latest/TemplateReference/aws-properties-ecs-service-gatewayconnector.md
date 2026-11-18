@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-gatewayconnector-properties"></a>
 
 `DeregistrationDelay`  <a name="cfn-ecs-service-gatewayconnector-deregistrationdelay"></a>
-Property description not available.
+The deregistration delay settings for the targets of this connector.
 *Required*: No
 *Type*: [GatewayConnectorDeregistrationDelay](aws-properties-ecs-service-gatewayconnectorderegistrationdelay.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

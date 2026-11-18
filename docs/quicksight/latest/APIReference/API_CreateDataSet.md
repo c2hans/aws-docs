@@ -760,6 +760,15 @@ Content-type: application/json
          "Value": "{{string}}"
       }
    ],
+   "UnmaterializedCalculatedColumns": [
+      {
+         "ColumnId": "{{string}}",
+         "ColumnName": "{{string}}",
+         "Expression": "{{string}}",
+         "SubType": "{{string}}",
+         "Type": "{{string}}"
+      }
+   ],
    "UseAs": "{{string}}"
 }
 ```
@@ -886,6 +895,12 @@ Required: No
 Contains a map of the key-value pairs for the resource tag or tags assigned to the dataset.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 200 items.
+Required: No
+
+ ** [UnmaterializedCalculatedColumns](#API_CreateDataSet_RequestSyntax) **   <a name="QS-CreateDataSet-request-UnmaterializedCalculatedColumns"></a>
+A list of unmaterialized calculated columns for the dataset. These columns are computed at analysis time and are not stored in the prepared data. You can only use this with the new data preparation experience.
+Type: Array of [UnmaterializedCalculatedColumn](API_UnmaterializedCalculatedColumn.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 512 items.
 Required: No
 
  ** [UseAs](#API_CreateDataSet_RequestSyntax) **   <a name="QS-CreateDataSet-request-UseAs"></a>

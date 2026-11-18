@@ -25,6 +25,11 @@ Updates multiple DNS Firewall rules in the specified rule group.
          "FirewallDomainRedirectionAction": "{{string}}",
          "FirewallRuleGroupId": "{{string}}",
          "FirewallRuleType": {
+            "AutoAllowlist": {
+               "AutoAllowlistFirewallDomainListId": "{{string}}",
+               "ImportFromFirewallDomainListId": "{{string}}",
+               "InitialDataTimeframeHours": {{number}}
+            },
             "DnsThreatProtection": {
                "ConfidenceThreshold": "{{string}}",
                "Value": "{{string}}"
@@ -80,6 +85,11 @@ Required: Yes
          "FirewallDomainRedirectionAction": "string",
          "FirewallRuleGroupId": "string",
          "FirewallRuleType": {
+            "AutoAllowlist": {
+               "AutoAllowlistFirewallDomainListId": "string",
+               "ImportFromFirewallDomainListId": "string",
+               "InitialDataTimeframeHours": number
+            },
             "DnsThreatProtection": {
                "ConfidenceThreshold": "string",
                "Value": "string"
@@ -118,6 +128,11 @@ Required: Yes
             "FirewallDomainRedirectionAction": "string",
             "FirewallRuleGroupId": "string",
             "FirewallRuleType": {
+               "AutoAllowlist": {
+                  "AutoAllowlistFirewallDomainListId": "string",
+                  "ImportFromFirewallDomainListId": "string",
+                  "InitialDataTimeframeHours": number
+               },
                "DnsThreatProtection": {
                   "ConfidenceThreshold": "string",
                   "Value": "string"

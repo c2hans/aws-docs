@@ -75,6 +75,8 @@ You can attach the `AWSPartnerCentralOpportunityManagement` policy to your IAM i
 With this policy, you can manage opportunities and leads in AWS Partner Central. This policy allows the following operations:
 + Create, edit, and submit opportunities
 + Accept and manage leads
++ Search leads and list lead groups
++ Map customer accounts to AWS customers, import them in bulk, and read their enrichment data
 + Accept and manage multi-partner opportunities
 + Access Partner Scorecard, Guides, and the AWS assistant (Partner Assistant)
 + Access Partner Central support
@@ -261,6 +263,8 @@ View details about updates to AWS managed policies for AWS Partner Central since
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSPartnerCentralOpportunityManagement](#security-iam-awsmanpol-AWSPartnerCentralOpportunityManagement) — Update to an existing policy | AWS Partner Central updated a policy to add customer account and customer account bulk job access, and tagging access for customer accounts. | November 18, 2026 |
+| [AWSPartnerCentralOpportunityManagement](#security-iam-awsmanpol-AWSPartnerCentralOpportunityManagement) — Update to an existing policy | AWS Partner Central updated a policy to add search engagements and list engagement groups access. | November 18, 2026 |
 | [AWSPartnerCentralBusinessPlanManagement](#security-iam-awsmanpol-AWSPartnerCentralBusinessPlanManagement)—New policy | AWS Partner Central added a new policy that provides full access to business plans, including the reporting data behind business plan metrics. | November 10, 2026 |
 | [AWSPartnerCentralAccountManagementServiceRolePolicy](#security-iam-awsmanpol-AWSPartnerCentralAccountManagementServiceRolePolicy) — New policy | AWS Partner Central now includes a new policy for the AWSServiceRoleForPartnerCentralAccount service-linked role. After you turn on AWS collaboration, your AWS partner development team can create and update your business plans. | October 30, 2026 |
 | [AWSPartnerCentralRevenueAttributionManagement](#security-iam-awsmanpol-AWSPartnerCentralRevenueAttributionManagement) — New policy | AWS Partner Central added a new policy to provide necessary access for revenue attribution management activities for partners. | June 30, 2026 |

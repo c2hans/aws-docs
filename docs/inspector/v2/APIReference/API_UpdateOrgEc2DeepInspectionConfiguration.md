@@ -34,7 +34,7 @@ The Amazon Inspector deep inspection custom paths you are adding for your organi
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `(?:/(?:\.[-\w]+|[-\w]+(?:\.[-\w]+)?))+/?`
+Pattern: `(?:(?:/(?:\.[-\w]+|[-\w]+(?:[. ][-\w]+)*))+/?|[A-Za-z]:\\(?:[-\w]+(?:[. ][-\w]+)*\\)*[-\w]+(?:[. ][-\w]+)*)`
 Required: Yes
 
 ## Response Syntax

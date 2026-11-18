@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-access-denie
 ## Scenario
 <a name="tshoot-access-denied-scenario"></a>
 
-You get an Access Denied exception when trying to share a resource or view a resource share.
+You get an `Access Denied` exception when trying to share a resource or view a resource share.
 
 ## Cause
 <a name="tshoot-access-denied-cause"></a>

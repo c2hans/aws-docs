@@ -16,7 +16,7 @@ Use the information here to help you diagnose and fix common issues when you wor
 + [How do I securely create IAM users?](#troubleshoot_general_securely-create-iam-users)
 + [Additional resources](#troubleshoot_general_resources)
 + [Troubleshoot access denied error messages](troubleshoot_access-denied.md)
-+ [Troubleshoot access denied error messages with authorization ID (Preview)](troubleshoot_access-denied-authorization-id.md)
++ [Troubleshoot access denied error messages with authorization ID](troubleshoot_access-denied-authorization-id.md)
 + [Troubleshoot issues with the root user](troubleshooting_root-user.md)
 + [Troubleshoot IAM policies](troubleshoot_policies.md)
 + [Troubleshoot Passkeys and FIDO Security Keys](troubleshoot_mfa-fido.md)

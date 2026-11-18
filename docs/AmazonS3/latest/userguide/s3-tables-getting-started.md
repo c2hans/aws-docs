@@ -55,7 +55,7 @@ For this step, you create a namespace in your table bucket, and then create a ne
 
 **Important**
 When creating tables, make sure that you use all lowercase letters in your table names and table definitions. For example, make sure that your column names are all lowercase. If your table name or table definition contains capital letters, the table isn't supported by AWS Lake Formation or the AWS Glue Data Catalog. In this case, your table won't be visible to AWS analytics services such as Amazon Athena, even if your table buckets are integrated with AWS analytics services.
-If your table definition contains capital letters, you receive the following error message when running a `SELECT` query in Athena: "GENERIC\_INTERNAL\_ERROR: Get table request failed: com.amazonaws.services.glue.model.ValidationException: Unsupported Federation Resource - Invalid table or column names."
+If your table definition contains capital letters, you receive the following error message when running a `SELECT` query in Athena: `"GENERIC_INTERNAL_ERROR: Get table request failed: com.amazonaws.services.glue.model.ValidationException: Unsupported Federation Resource - Invalid table or column names."`
 
 ### Using the S3 console and Amazon Athena
 <a name="s3-tables-tutorial-create-table-console"></a>

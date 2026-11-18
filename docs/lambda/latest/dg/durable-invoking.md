@@ -72,7 +72,7 @@ arn:aws:lambda:us-east-1:123456789012:function:my-durable-function
 my-durable-function
 ```
 
-This requirement ensures that durable executions remain consistent throughout their lifecycle. When a durable execution starts, it's pinned to the function version that started it. If your function pauses and resumes hours or days later, Lambda invokes that same version, so publishing a new version affects only new executions. Similarly, when you update an alias, new executions use the new version, and in-progress executions continue on the version they started on.
+This requirement ensures that durable executions remain consistent throughout their lifecycle. When a durable execution starts, it's pinned to the function version that started it. If the execution resumes hours or days later, after a wait or a pause, Lambda invokes that same version, so publishing a new version affects only new executions. Similarly, when you update an alias, new executions use the new version, and in-progress executions continue on the version they started on.
 
 **`$LATEST` executions can resume on updated code**
 Executions started with the `$LATEST` qualifier are not pinned to a fixed copy of your code. If you update your function code while an execution is paused, the execution resumes on the new code rather than the version that it started on.

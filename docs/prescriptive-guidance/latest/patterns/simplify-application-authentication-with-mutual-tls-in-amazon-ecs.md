@@ -10,9 +10,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/si
 ## Summary
 <a name="simplify-application-authentication-with-mutual-tls-in-amazon-ecs-summary"></a>
 
-This pattern helps you to simplify your application authentication and offload security burdens with mutual TLS in Amazon Elastic Container Service (Amazon ECS) by using [Application Load Balancer (ALB)](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/mutual-authentication.html). With ALB, you can authenticate X.509 client certificates from AWS Private Certificate Authority. This powerful combination helps to achieve secure communication between your services, reducing the need for complex authentication mechanisms within your applications. In addition, the pattern uses Amazon Elastic Container Registry (Amazon ECR) to store container images.
+This pattern helps you simplify your application authentication and offload security tasks with mutual TLS in Amazon Elastic Container Service (Amazon ECS) by using [Application Load Balancer (ALB)](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/mutual-authentication.html). With ALB, you can authenticate X.509 client certificates from AWS Private Certificate Authority. This combination helps secure communication between your services and reduces the need for complex authentication mechanisms within your applications. In addition, the pattern uses Amazon Elastic Container Registry (Amazon ECR) to store container images.
 
-The example in this pattern uses Docker images from a public gallery to create the sample workloads initially. Subsequently, new Docker images are built to be stored in Amazon ECR. For the source, consider a Git-based system such as GitHub, GitLab, or Bitbucket, or use Amazon Simple Storage Service Amazon S3 (Amazon S3). For building the Docker images, consider using AWS CodeBuild for the subsequent images.
+The example in this pattern initially uses Docker images from a public gallery to create the sample workloads. Subsequently, you build new Docker images and store them in Amazon ECR. For the source, consider a Git-based system such as GitHub, GitLab, or Bitbucket, or use Amazon Simple Storage Service (Amazon S3). To build the subsequent Docker images, consider using AWS CodeBuild.
 
 ## Prerequisites and limitations
 <a name="simplify-application-authentication-with-mutual-tls-in-amazon-ecs-prereqs"></a>
@@ -26,8 +26,8 @@ The example in this pattern uses Docker images from a public gallery to create t
 + Knowledge of Docker and NGINX.
 
 **Limitations**
-+ Mutual TLS for Application Load Balancer only supports X.509v3 client certificates. X.509v1 client certificates are not supported.
-+ The CloudFormation template that is provided in this pattern’s code repository doesn’t include provisioning a CodeBuild project as part of the stack.
++ Mutual TLS for Application Load Balancer supports only X.509v3 client certificates. It doesn’t support X.509v1 client certificates.
++ The CloudFormation template in this pattern’s code repository doesn’t provision a CodeBuild project as part of the stack.
 + Some AWS services aren’t available in all AWS Regions. For Region availability, see [AWS Services by Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). For specific endpoints, see [Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html), and choose the link for the service.
 
 **Product versions**
@@ -47,7 +47,7 @@ The following diagram shows the architecture components for this pattern.
 
 1. Create a private certificate authority (CA) in AWS Private CA.
 
-1. Create a CodeBuild project. The CodeBuildproject is triggered by commit changes and creates the Docker image and publishes the built image to Amazon ECR.
+1. Create a CodeBuild project. The CodeBuild project runs when you commit changes, creates the Docker image, and publishes the built image to Amazon ECR.
 
 1. Copy the certificate chain and certificate body from the CA, and upload the certificate bundle to Amazon S3.
 
@@ -63,9 +63,9 @@ The following diagram shows the architecture components for this pattern.
 
 **Automation and scale**
 
-This pattern can be fully automated by using CloudFormation, AWS Cloud Development Kit (AWS CDK) , or API operations from an SDK to provision the AWS resources.
+You can automate this pattern by using CloudFormation, AWS Cloud Development Kit (AWS CDK), or API operations from an SDK to provision the AWS resources.
 
-You can use AWS CodePipeline to implement a continuous integration and continuous deployment (CI/CD) pipeline using CodeBuild to automate container image build process and deploying new releases to the Amazon ECS cluster services.
+You can use AWS CodePipeline to implement a continuous integration and continuous deployment (CI/CD) pipeline that uses CodeBuild to automate the container image build process and deploy new releases to the Amazon ECS cluster services.
 
 ## Tools
 <a name="simplify-application-authentication-with-mutual-tls-in-amazon-ecs-tools"></a>
@@ -82,10 +82,10 @@ You can use AWS CodePipeline to implement a continuous integration and continuou
 + [AWS Private Certificate Authority](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html) enables creation of private certificate authority (CA) hierarchies, including root and subordinate CAs, without the investment and maintenance costs of operating an on-premises CA.
 
 **Other tools**** **
-+ [Docker](https://www.docker.com/) is a set of platform as a service (PaaS) products that use virtualization at the operating-system level to deliver software in containers.
-+ [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories), [GitLab](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html), and [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/tutorial-learn-bitbucket-with-git/) are some of the commonly used Git-based source control system to keep track of source code changes.
-+ [NGINX Open Source](https://nginx.org/en/docs/?_ga=2.187509224.1322712425.1699399865-405102969.1699399865) is an open source load balancer, content cache, and web server. This pattern uses it as a web server.
-+ [OpenSSL](https://www.openssl.org/) is an open source library that provides services that are used by the OpenSSL implementations of TLS and CMS.
++ [Docker](https://www.docker.com/) is a set of products that use virtualization at the operating-system level to deliver software in containers.
++ [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories), [GitLab](https://docs.gitlab.com/ee/user/get_started/get_started_projects.html), and [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/tutorial-learn-bitbucket-with-git/) are commonly used Git-based source control systems that track source code changes.
++ [NGINX Open Source](https://nginx.org/en/docs/) is an open source load balancer, content cache, and web server. This pattern uses it as a web server.
++ [OpenSSL](https://www.openssl.org/) is an open source library that provides services for the OpenSSL implementations of Transport Layer Security (TLS) and Cryptographic Message Syntax (CMS).
 
 **Code repository**
 
@@ -93,8 +93,8 @@ The code for this pattern is available in the GitHub [mTLS-with-Application-Load
 
 ## Best practices
 <a name="simplify-application-authentication-with-mutual-tls-in-amazon-ecs-best-practices"></a>
-+ Use Amazon ECS Exec to run commands or get a shell to a container running on Fargate. You can also use ECS Exec to help collect diagnostic information for debugging.
-+ Use security groups and network access control lists (ACLs) to control inbound and outbound traffic between the services. Fargate tasks receive an IP address from the configured subnet in your virtual private cloud (VPC).
++ Use Amazon ECS Exec to run commands or get a shell to a container running on Fargate. You can also use Amazon ECS Exec to help collect diagnostic information for debugging.
++ Use security groups and network access control lists (ACLs) to control inbound and outbound traffic between the services. Fargate tasks receive an IP address from the configured subnet in your [virtual private cloud (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/) in Amazon VPC.
 
 ## Epics
 <a name="simplify-application-authentication-with-mutual-tls-in-amazon-ecs-epics"></a>
@@ -165,7 +165,7 @@ The code for this pattern is available in the GitHub [mTLS-with-Application-Load
 + [Amazon ECS service definition parameters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_definition_parameters.html)
 
 **Other AWS resources**
-+ [How do I use AWS private CA to configure mTLS on the Application Load Balancer?](https://repost.aws/knowledge-center/elb-alb-configure-private-ca-mtls) (AWS re:Post)
++ [How do I use AWS Private CA to configure mTLS on the Application Load Balancer?](https://repost.aws/knowledge-center/elb-alb-configure-private-ca-mtls) (AWS re:Post)
 
 ## Additional information
 <a name="simplify-application-authentication-with-mutual-tls-in-amazon-ecs-additional"></a>

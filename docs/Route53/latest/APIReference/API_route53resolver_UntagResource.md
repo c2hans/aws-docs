@@ -53,6 +53,11 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** AccessDeniedException **
+The current account doesn't have the IAM permissions required to perform the specified Resolver operation.
+This error can also be thrown when a customer has reached the 5120 character limit for a resource policy for CloudWatch Logs.
+HTTP Status Code: 400
+
  ** InternalServiceErrorException **
 We encountered an unknown error. Try again in a few minutes.
 HTTP Status Code: 400

@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-crea
 
 1. In the navigation pane, choose **S3 general purpose delivery**, and then choose **Create delivery**.
 
-1. **Step 1: Source configuration.** Under **Delivery details**, enter a **Delivery name**. For **Source**, choose the On-Demand stream to deliver from. Only On-Demand streams are displayed. Choose **Next**.
+1. **Step 1: Source configuration.** Under **Delivery details**, enter a **Delivery name**. For **Source**, choose the On-demand stream to deliver from. Only On-demand streams are displayed. Choose **Next**.
 
 1. **Step 2: Destination configuration.** Choose a **Record format** (**JSON**, **STRING**, or **BYTE\_ARRAY**), and then specify the destination:
    + **S3 bucket ARN** – the ARN of the destination general purpose Amazon S3 bucket.

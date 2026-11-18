@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 # `AWSSupport-TroubleshootALB5XXErrors`
 <a name="automation-awssupport-troubleshootalb5xxerrors"></a>
 
+**Description**
+
 The `AWSSupport-TroubleshootALB5XXErrors` runbook diagnoses and troubleshoots HTTP 5XX errors on an Application Load Balancer. It analyzes Amazon CloudWatch (CloudWatch) metrics and Application Load Balancer access logs to identify root causes and provide actionable recommendations. The runbook covers the following capabilities:
 + **Traffic pattern analysis:** Identifies hotspotting and single Availability Zone anomalies by using CloudWatch metrics to detect uneven traffic distribution across Availability Zones.
 + **Access log diagnosis:** Processes Application Load Balancer access logs by retrieving log files from the configured Amazon S3 bucket to extract specific error patterns, error reasons, and detailed diagnostic information for granular troubleshooting.
@@ -27,6 +29,8 @@ This runbook has the following limitations:
 
 **Additional costs**
 Running this runbook queries metrics from Amazon CloudWatch and, when access logs are enabled, retrieves objects from Amazon S3. Standard CloudWatch and Amazon S3 charges might apply to your AWS account for the data queried during the analysis. For more information about pricing, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) and [Amazon Simple Storage Service Pricing](https://aws.amazon.com/s3/pricing/).
+
+**How it works**
 
 The runbook performs the following validation and analysis steps:
 + Verifies that the specified Application Load Balancer exists, and collects Application Load Balancer attributes such as idle timeout and access log configuration.
@@ -152,6 +156,8 @@ Example IAM policy:
 }
 ```
 
+**Instructions**
+
 Follow these steps to configure the automation:
 
 1. Open [AWSSupport-TroubleshootALB5XXErrors](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootALB5XXErrors/description) in Systems Manager under Documents.
@@ -203,6 +209,8 @@ Follow these steps to configure the automation:
      Generates a consolidated report from the findings of the previous steps, including hotspotting status, single Availability Zone anomalies, error diagnoses, and recommendations.
 
 1. After completion, review the **Outputs** section for the detailed results of the execution.
+
+**References**
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-TroubleshootALB5XXErrors/description)

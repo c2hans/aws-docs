@@ -35,4 +35,5 @@ You can peer transit gateways across opt-in Region boundaries. For information a
 + [Create a peering attachment](tgw-peering-create.md)
 + [Accept or reject a peering request](tgw-peering-accept-reject.md)
 + [Add a route to a transit gateway route table](tgw-peering-add-route.md)
++ [Enable multipath resilience](enable-multipath-resilience-tgw.md)
 + [Delete a peering attachment](tgw-peering-delete.md)

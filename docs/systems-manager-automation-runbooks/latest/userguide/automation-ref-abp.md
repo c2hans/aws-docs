@@ -15,3 +15,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSSupport-TroubleshootAPIGatewayHttpErrors`](automation-aws-troubleshootapigatewayhttp-errors.md)
 + [`AWSSupport-TroubleshootAPIGatewayLambdaInvocation`](automation-awssupport-troubleshootapigatewaylambdainvocation.md)
 + [`AWSSupport-TroubleshootAPIGatewayVpcLinkIntegration`](automation-awssupport-troubleshootapigatewayvpclinkintegration.md)
++ [`AWSSupportRemediator-EnableApiGatewayXRayTracing`](automation-awssupportremediator-enableapigatewayxraytracing.md)
++ [`AWSSupportRemediator-EnableApiGatewayCacheEncryption`](automation-awssupportremediator-enableapigatewaycacheencryption.md)
++ [`AWSSupportRemediator-EnableApiGateWayExecutionLogging`](automation-awssupportremediator-enableapigatewayexecutionlogging.md)

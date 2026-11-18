@@ -39,6 +39,8 @@ The agent editor organizes configuration into two tabs.
 
 The Capabilities tab has these fields.
 
+**Agent capabilities**
+
 | Capability | Description |
 | --- | --- |
 | Web search | Toggle to allow the agent to search the web. |
@@ -68,6 +70,8 @@ You can monitor agent activity in two places.
 <a name="desktop-agent-landing-page"></a>
 
 Each agent has a landing page with four tabs.
+
+**Agent landing page tabs**
 
 | Tab | Description |
 | --- | --- |

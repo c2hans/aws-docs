@@ -83,7 +83,7 @@ mysql://${{{jdbc_connection_string}}}
 ```
 
 **Note**
-If you receive the error java.sql.SQLException: Zero date value prohibited when doing a `SELECT` query on a MySQL table, add the following parameter to your connection string:
+If you receive the error `java.sql.SQLException: Zero date value prohibited` when doing a `SELECT` query on a MySQL table, add the following parameter to your connection string:
 
 ```
 zeroDateTimeBehavior=convertToNull

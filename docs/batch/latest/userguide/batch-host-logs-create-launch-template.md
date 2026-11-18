@@ -10,6 +10,8 @@ When the instance starts, the user-data script automatically installs Fluent Bit
 For a sample user-data script, see the [companion GitHub repository](https://github.com/aws-samples/sample-batch-host-level-logs). Use the `launch-template-userdata-minimal.txt` file for your launch template. This file excludes comments to reduce user-data size. The `launch-template-userdata.txt` file is a commented version for reference. Replace the following placeholders in the template before use:
 + `<BUCKET_NAME>` – The name of your Amazon S3 bucket.
 + `<FLUENT_BIT_VERSION>` – The Fluent Bit version to install. Leave blank to install the latest available version.
+
+**Prerequisites**
 + [Step 1: Set up the Amazon S3 bucket and Fluent Bit configuration](batch-host-logs-s3-setup.md)
 + [Step 2: Configure IAM permissions on your instance role](batch-host-logs-configure-iam.md)
 

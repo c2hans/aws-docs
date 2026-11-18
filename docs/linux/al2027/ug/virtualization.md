@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/virtualization.html
 # Virtualization on Amazon Linux 2027
 <a name="virtualization"></a>
 
-Amazon Linux 2027 includes a scoped virtualization stack for development, testing, and continuous integration workloads. You can run virtual machines on any Amazon EC2 instance. Hardware acceleration through KVM is faster but optional, and requires either a bare metal instance or a virtual instance with nested virtualization enabled. The stack comprises QEMU (system and userspace emulation for `x86-64` and `aarch64`), libvirt for virtual machine lifecycle management, and boot firmware (SeaBIOS and EDK2 UEFI).
+Amazon Linux 2027 includes a scoped virtualization stack for development, testing, and continuous integration workloads. You can run virtual machines on any Amazon EC2 instance. Hardware acceleration through Kernel-based Virtual Machine (KVM) is faster but optional, and requires either a bare metal instance or a virtual instance with nested virtualization enabled. The stack comprises QEMU (system and userspace emulation for `x86-64` and `aarch64`), libvirt for virtual machine lifecycle management, and boot firmware (SeaBIOS and EDK2 UEFI).
 
 These packages are available from the AL2027 core repository as of release version `2027.0.20261012` or later.
 
 **Important**
 This is not a production hypervisor, and it is not intended for running trusted workloads. The stack is intended for short-lived, disposable workloads such as kernel debugging and integration testing. Features that a production hypervisor requires, including live migration, saving and restoring a virtual machine across QEMU versions, and UEFI Secure Boot in guests, are not supported. For production virtualization workloads, use Amazon EC2.
-AL2027 tracks upstream QEMU releases, so the emulated machine is not guaranteed to be identical across updates. Treat guests as disposable. We do not guarantee version stability with updates.
+AL2027 tracks upstream QEMU releases, so the emulated machine is not guaranteed to be identical across updates. Treat guests as disposable. AWS does not guarantee version stability with updates.
 
 **Note**
 None of the virtualization packages are installed in any AL2027 AMI or container image, and none of their services are enabled by default. Virtualization is opt-in. Installing the packages does not change the behavior of an existing workload.
@@ -24,30 +24,25 @@ If instead you want to run AL2027 itself as a guest on another hypervisor, see [
 + [Limitations and unsupported functionality](#virtualization-limitations)
 + [Support and updates](#virtualization-support)
 + [Related topics](#virtualization-more-info)
-+ [Get started with virtualization on Amazon Linux 2027](virtualization-getting-started.md)
-+ [Manage virtual machines with virsh on Amazon Linux 2027](virtualization-virsh.md)
++ [Getting started with virtualization on Amazon Linux 2027](virtualization-getting-started.md)
++ [Managing virtual machines with virsh on Amazon Linux 2027](virtualization-virsh.md)
 
 ## Virtualization packages
 <a name="virtualization-packages"></a>
 
-The following packages make up the virtualization stack. All of them are part of the AL2027 core repository.
-
-**AL2027 virtualization packages**
-
-| Package | Description |
-| --- | --- |
-| qemu-kvm | The QEMU machine emulator, using the Kernel-based Virtual Machine (KVM) hypervisor for hardware-accelerated virtualization. The per-architecture packages are qemu-system-x86 and qemu-system-aarch64. |
-| qemu-img | Tooling to create, convert, and inspect virtual machine disk images. |
-| qemu-user, qemu-user-static | Userspace (linux-user) emulation, which runs a single binary built for the other architecture without booting a guest. The -static variants have no shared library dependencies. |
-| qemu-user-binfmt | Registers the userspace emulators as binfmt\_misc handlers, so the kernel runs different architecture binaries transparently. |
-| qemu-guest-agent | The guest agent, for installation inside a guest so that the host can query and coordinate with it. |
-| libvirt, libvirt-client | The libvirt management daemons and API, and the virsh command line client. |
-| python3-libvirt | Python bindings for the libvirt API. |
-| edk2-ovmf, edk2-aarch64 | EDK2 UEFI guest firmware for x86-64 and aarch64 respectively. |
-| seabios | SeaBIOS legacy BIOS guest firmware, the default for x86-64 guests. |
-| passt | User-mode networking for guests. |
-| nbdkit | A Network Block Device server and plugins, for serving disk images to guests. |
-| virt-what | A utility to detect whether the system it runs on is itself a virtual machine. |
+The following packages make up the virtualization stack. All of them are part of the AL2027 core repository:
++ `qemu-kvm` – The QEMU machine emulator, using the KVM hypervisor for hardware-accelerated virtualization. The per-architecture packages are `qemu-system-x86` and `qemu-system-aarch64`.
++ `qemu-img` – Tooling to create, convert, and inspect virtual machine disk images.
++ `qemu-user`, `qemu-user-static` – Userspace (`linux-user`) emulation, which runs a single binary built for the other architecture without booting a guest. The `-static` variants have no shared library dependencies.
++ `qemu-user-binfmt` – Registers the userspace emulators as `binfmt_misc` handlers, so the kernel runs different architecture binaries transparently.
++ `qemu-guest-agent` – The guest agent, for installation inside a guest so that the host can query and coordinate with it.
++ `libvirt`, `libvirt-client` – The libvirt management daemons and API, and the `virsh` command-line client.
++ `python3-libvirt` – Python bindings for the libvirt API.
++ `edk2-ovmf`, `edk2-aarch64` – EDK2 UEFI guest firmware for `x86-64` and `aarch64` respectively.
++ `seabios` – SeaBIOS legacy BIOS guest firmware, the default for `x86-64` guests.
++ `passt` – User-mode networking for guests.
++ `nbdkit` – A Network Block Device server and plugins, for serving disk images to guests.
++ `virt-what` – A utility to detect whether the system it runs on is itself a virtual machine.
 
 ## Supported architectures, machines, and devices
 <a name="virtualization-scope"></a>
@@ -86,7 +81,7 @@ Most legacy device emulation is removed. The following are not available:
 + Legacy and vendor display adapters, including `cirrus-vga`, `qxl`, and `vmware-svga`. Note that `virtio-gpu` and `virtio-vga` are also not built; standard VGA is the only emulated display adapter.
 + Audio devices. No emulated sound hardware is available, and the build has no host audio backend.
 + Trusted Platform Module (TPM) devices, in any form.
-+ VFIO, and therefore PCI device passthrough.
++ Virtual Function I/O (VFIO), and therefore PCI device passthrough.
 
 ### Display and networking backends
 <a name="virtualization-scope-display-net"></a>
@@ -98,15 +93,15 @@ For guest networking, `passt` provides user-mode networking, and bridged or tap 
 ## Limitations and unsupported functionality
 <a name="virtualization-limitations"></a>
 
-**Unsupported functionality**
-+ **Live migration**: migrating a running guest between hosts is not supported.
-+ **Saving and restoring a guest across QEMU versions**: suspending a guest and resuming it under a different QEMU version is not supported.
-+ **UEFI Secure Boot in guests**: the EDK2 firmware shipped in `edk2-ovmf` and `edk2-aarch64` is built without Secure Boot support, and no Secure Boot enabled firmware variant is shipped. Secure Boot must be left disabled in the guest configuration.
-+ **Virtual TPM and measured boot**: QEMU is built without TPM support, and no software TPM emulator is shipped. Guest functionality that requires a TPM, including measured boot and TPM-backed disk encryption, is not available.
-+ **Device passthrough**: VFIO is not built, so PCI and USB device passthrough into a guest are not available.
-+ **Graphical management tools**: `virt-manager`, `virt-install`, and `virt-viewer` are not shipped. Manage guests with `virsh` and libvirt domain XML, or with the libvirt API through `python3-libvirt`.
-+ **Guest filesystem tooling**: `libguestfs` and its utilities, such as `guestfish` and `virt-customize`, are not shipped. Use `qemu-img` and `nbdkit` for disk image work.
-+ **Guest operating systems**: the software you run inside a guest is outside the scope of the virtualization packages.
+The AL2027 virtualization stack does not support the following functionality:
++ **Live migration** – migrating a running guest between hosts is not supported.
++ **Saving and restoring a guest across QEMU versions** – suspending a guest and resuming it under a different QEMU version is not supported.
++ **UEFI Secure Boot in guests** – the EDK2 firmware shipped in `edk2-ovmf` and `edk2-aarch64` is built without Secure Boot support, and no Secure Boot enabled firmware variant is shipped. Secure Boot must be left disabled in the guest configuration.
++ **Virtual TPM and measured boot** – QEMU is built without TPM support, and no software TPM emulator is shipped. Guest functionality that requires a TPM, including measured boot and TPM-backed disk encryption, is not available.
++ **Device passthrough** – VFIO is not built, so PCI and USB device passthrough into a guest are not available.
++ **Graphical management tools** – `virt-manager`, `virt-install`, and `virt-viewer` are not shipped. Manage guests with `virsh` and libvirt domain XML, or with the libvirt API through `python3-libvirt`.
++ **Guest filesystem tooling** – `libguestfs` and its utilities, such as `guestfish` and `virt-customize`, are not shipped. Use `qemu-img` and `nbdkit` for disk image work.
++ **Guest operating systems** – the software you run inside a guest is outside the scope of the virtualization packages.
 
 ## Support and updates
 <a name="virtualization-support"></a>
@@ -117,7 +112,7 @@ Updates follow the normal AL2027 deterministic upgrade model, so a new package v
 
 ## Related topics
 <a name="virtualization-more-info"></a>
-+ [Get started with virtualization on Amazon Linux 2027](virtualization-getting-started.md)
-+ [Manage virtual machines with virsh on Amazon Linux 2027](virtualization-virsh.md)
++ [Getting started with virtualization on Amazon Linux 2027](virtualization-getting-started.md)
++ [Managing virtual machines with virsh on Amazon Linux 2027](virtualization-virsh.md)
 + [Using Amazon Linux 2027 outside of Amazon EC2](outside-ec2.md) — running AL2027 itself as a guest on KVM, VMware, or Hyper-V.
 + [AL2027 system requirements](system-requirements.md)

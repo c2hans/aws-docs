@@ -12,4 +12,4 @@ KPL aggregation is not supported on streams configured with service-managed reco
 To avoid both conditions, disable aggregation, or upgrade to the latest KPL version and grant it the `kinesis:DescribeStreamSummary` permission so that it detects service-managed streams and disables aggregation automatically. You can also set `setRecordDistributionStrategyDefault` to `AUTO` so the KPL does not aggregate before it discovers the stream's strategy.
 
 **Note**
-For on-demand streams, KPL aggregation provides no cost benefit because pricing is based on throughput rather than the number of PUT requests. Consider disabling aggregation if you want to use service-managed record distribution.
+For On-demand streams, KPL aggregation provides no cost benefit because pricing is based on throughput rather than the number of PUT requests. Consider disabling aggregation if you want to use service-managed record distribution.

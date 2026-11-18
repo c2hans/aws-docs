@@ -18,6 +18,8 @@ The AWS DeepRacer vehicle is powered by a brushed motor. The driving speed is co
 +  [Turn off your AWS DeepRacer vehicle](#turn-off-vehicle)
 +  [AWS DeepRacer vehicle LED indicators](#led-indicators)
 
+<a name="inspect-your-vehicle"></a>**Inspect your AWS DeepRacer vehicle**
+
 When you open your AWS DeepRacer vehicle box, you should find the following components and accessories:
 
 ![AWS DeepRacer vehicle components and accessories](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-vehicle-components.png)
@@ -43,6 +45,8 @@ To set up your AWS DeepRacer vehicle, you must also have the following items rea
 + An AWS account.
 
 Now follow the instructions in the next section to make sure your vehicle battery and the power bank are charged.
+
+<a name="charge-install-batteries"></a>**Charge and install your AWS DeepRacer batteries**
 
 Your AWS DeepRacer vehicle has two power sources: the vehicle battery and the compute module power bank.
 
@@ -97,6 +101,8 @@ To install and charge the vehicle battery and the power bank, follow the steps b
 **Note**
 Do not connect the power bank to the compute module in this step.
 
+<a name="test-compute-module"></a>**Test your AWS DeepRacer compute module**
+
 Test the compute module to verify that it can be started successfully. To test the module by using an external power source, follow the steps below:
 
  **To test your vehicle’s compute module**
@@ -123,13 +129,19 @@ Test the compute module to verify that it can be started successfully. To test t
 
 1. When you’re done with the test, press the power button on the compute module to turn it off and then unplug it from the external power source.
 
+<a name="turn-off-vehicle"></a>**Turn off your AWS DeepRacer vehicle**
+
 To turn off your AWS DeepRacer vehicle, unplug the vehicle from the external power source. You can also press the power button on the device until power indicator is off.
+
+<a name="led-indicators"></a>**LED indicators**
 
 Your AWS DeepRacer vehicle has two sets of LED indicators for the vehicle status and for customizable visual identification of your vehicle, respectively.
 
 ![AWS DeepRacer vehicle system LED indicators](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/operatingthevehicle-system-leds.png)
 
 The details are discussed as follows.
+
+<a name="system-led-indicators"></a>**AWS DeepRacer vehicle system LED indicators**
 
 The AWS DeepRacer vehicle system LED indicators are located on the left side of the vehicle chassis when the vehicle is in the forward position in front of you.
 
@@ -148,5 +160,7 @@ The three system LEDs are positioned after the RESET button. The first LED (on t
   - **Color:** Blinking blue / **Status:** The vehicle is connecting to the Wi-Fi network.
   - **Color:** Steady red for 2 seconds and then off / **Status:** The Wi-Fi connection failed.
   - **Color:** Steady blue / **Status:** The Wi-Fi connection is established.
+
+<a name="identification-leds"></a>**AWS DeepRacer vehicle identification LEDs**
 
 The AWS DeepRacer vehicle custom LEDs are located at the tail of the vehicle. They’re used to help identifying your vehicle in races when multiple vehicles are present. You can use the AWS DeepRacer device console to set them as a supported color of your choosing.

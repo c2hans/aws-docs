@@ -11,6 +11,9 @@ When your application meters usage for a customer, your application is providing
 
 To report fractional usage, set `QuantityAsDecimal` instead of `Quantity` in each usage record. `QuantityAsDecimal` is a string with up to 10 digits before the decimal point and up to 6 digits after it, for example `17.42`. For more information, see [UsageRecord](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_UsageRecord.html) in the *AWS Marketplace Metering Service API Reference*.
 
+**Note**
+AWS calculates charges from the exact usage quantity that you send, including all decimal places. Some interfaces display fewer decimal places: the [Usage dashboard](usage-dashboard.md) and the [Daily Usage data feed](data-feed-daily-usage.md) show 2 (for example, `17.123456` shows as `17.12`), and the **Bills** page in the AWS Billing and Cost Management console shows up to 3. AWS Cost and Usage Reports store usage amounts as floating-point numbers, which are exact up to 15 significant digits. A quantity with more digits might be rounded in its last decimal place. For example, `9999999999.999999` can show as `9999999999.999998`.
+
 For products that support Concurrent Agreements, metering operates at the license level rather than the product level. Each usage record must include a `LicenseArn` to identify which specific agreement the usage applies to. The `LicenseArn` is obtained from the `ResolveCustomer` API response during SaaS registration. This enables buyers to maintain multiple active agreements for the same product, with usage tracked and billed separately per agreement.
 
 **Note**

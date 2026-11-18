@@ -18,7 +18,7 @@ Service-linked roles are available in all supported Aurora DSQL Regions.
 
 Aurora DSQL uses the service-linked role named `AWSServiceRoleForAuroraDsql` – Allows Amazon Aurora DSQL to create and manage AWS resources on your behalf. This service-linked role is attached to the following managed policy: [AuroraDsqlServiceLinkedRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AuroraDsqlServiceLinkedRolePolicy.html).
 
-With this service-linked role, Aurora DSQL publishes metrics to CloudWatch. It can also write to the `/aws/dsql/normalized-sql-text` log group in Amazon CloudWatch Logs in your account, which an upcoming Aurora DSQL feature uses to deliver normalized SQL text.
+With this service-linked role, Aurora DSQL publishes metrics to CloudWatch. It can also write to the `/aws/dsql/normalized-sql-text` log group in Amazon CloudWatch Logs in your account. Aurora DSQL statement statistics use this log group to deliver normalized SQL text. For more information, see [Monitoring SQL statements with Aurora DSQL statement statistics](dsql-statement-statistics.md).
 
 **Note**
 You must configure permissions to allow an IAM entity (such as a user, group, or role) to create, edit, or delete a service-linked role. You might encounter the following error message: `You don't have the permissions to create an Amazon Aurora DSQL service-linked role`. If you see this message, make sure that you have the following permissions enabled:

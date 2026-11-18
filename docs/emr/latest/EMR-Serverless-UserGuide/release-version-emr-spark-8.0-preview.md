@@ -36,6 +36,8 @@ The following table lists the application versions available with `AWS runtime f
   + **Table Format Support**: Apache Iceberg v3 with VARIANT data type support, AWS S3 Tables integration, and Full Table Access (FTA) with AWS Lake Formation for Iceberg, Delta Lake, and Hive tables.
 + **Additional Documentation** - For additional Apache Spark documentation, see [Apache Spark 4.0.1 Release Documentation](https://spark.apache.org/releases/spark-release-4-0-1.html).
 
+**Getting Started**
+
 To get started with Apache Spark 4.0.1 preview, create an EMR Serverless application using the AWS CLI:
 
 ```

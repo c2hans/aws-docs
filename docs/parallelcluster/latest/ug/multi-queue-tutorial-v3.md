@@ -97,7 +97,7 @@ $ pcluster create-cluster --cluster-name multi-queue-cluster --cluster-configura
    "cloudformationStackStatus": "CREATE_IN_PROGRESS",
    "cloudformationStackArn": "arn:aws:cloudformation:eu-west-1:123456789012:stack/multi-queue-cluster/1234567-abcd-0123-def0-abcdef0123456",
    "region": "eu-west-1",
-   "version": "3.16.2",
+   "version": "3.16.3",
    "clusterStatus": "CREATE_IN_PROGRESS"
  }
 }
@@ -115,7 +115,7 @@ $ pcluster list-clusters
    "cloudformationStackStatus": "CREATE_IN_PROGRESS",
    "cloudformationStackArn": "arn:aws:cloudformation:eu-west-1:123456789012:stack/multi-queue-cluster/1234567-abcd-0123-def0-abcdef0123456",
    "region": "eu-west-1",
-   "version": "3.16.2",
+   "version": "3.16.3",
    "clusterStatus": "CREATE_IN_PROGRESS"
  }
 }

@@ -10,6 +10,8 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 
 Smart cropping can use an Amazon Rekognition Custom Labels model to detect objects specific to your use case. You reference the model by its ARN in the `smartCrop.customModelArn` parameter (see [Smart crop parameters](ecs-smart-crop-parameters.md)). Because there is no template parameter to collect your model ARN at deployment time, review the access and lifecycle requirements below.
 
+<a name="grant-access-to-your-custom-labels-model"></a>**Grant access to your Custom Labels model**
+
 The ECS task role created by the stack is pre-provisioned with `rekognition:DetectCustomLabels` permission scoped to all Custom Labels projects and versions in the **same AWS account and same AWS Region** as your DIT deployment. The action you must take depends on where your model lives:
 +  **Same account, same Region as the deployment**: No IAM action is required. Reference the model ARN in your smart crop policy or request parameter and it works as-is. This is the common case.
 +  **Same account, different Region**: The pre-provisioned permission is Region-scoped and does not cover a model in another Region. Either redeploy the solution in your model’s Region, or add a policy statement to the ECS task role granting `rekognition:DetectCustomLabels` on the model in that Region.
@@ -36,6 +38,8 @@ To add permission to the ECS task role:
 
 **Note**
 Scope the statement to the specific model ARN rather than a `project/*/version/*/*` wildcard, so the task role can call only the model you intend to use.
+
+<a name="start-and-stop-your-custom-labels-model"></a>**Start and stop your Custom Labels model**
 
 A Custom Labels model is a provisioned inference endpoint, not a serverless resource. You manage its lifecycle:
 + Start the model with `StartProjectVersion` before referencing it in a smart crop policy. Smart cropping can call the model only while it is running.

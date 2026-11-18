@@ -28,16 +28,31 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
  ** provider **   <a name="config-Type-ConnectorSummary-provider"></a>
-The third-party cloud service provider. Currently, `AZURE` is supported.
+The third-party cloud service provider. Valid values:
++  `AZURE` – The connector is for Microsoft Azure
++  `GCP` – The connector is for Google Cloud
 Type: String
-Valid Values: `AZURE`
+Valid Values: `AZURE | GCP`
 Required: Yes
 
+ ** gcpOrganizationId **   <a name="config-Type-ConnectorSummary-gcpOrganizationId"></a>
+The Google Cloud organization ID for the connector. Returned only for Google Cloud connectors.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 20.
+Required: No
+
+ ** serviceAccountEmail **   <a name="config-Type-ConnectorSummary-serviceAccountEmail"></a>
+The email address of the Google Cloud service account for the connector. Returned only for Google Cloud connectors.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `^[a-z][a-z0-9\-]*@[a-z][a-z0-9\-]*[a-z0-9]\.iam\.gserviceaccount\.com$`
+Required: No
+
  ** tenantIdentifier **   <a name="config-Type-ConnectorSummary-tenantIdentifier"></a>
-The Azure tenant identifier for the connector.
+The Azure tenant identifier for the connector. Returned only for Azure connectors.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Required: Yes
+Required: No
 
 ## See Also
 <a name="API_ConnectorSummary_SeeAlso"></a>

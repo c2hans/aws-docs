@@ -34,6 +34,16 @@ Required: Yes
 
 ```
 {
+   "CreatedBy": {
+      "DomainId": "string",
+      "IamIdentity": {
+         "Arn": "string",
+         "PrincipalId": "string",
+         "SourceIdentity": "string"
+      },
+      "UserProfileArn": "string",
+      "UserProfileName": "string"
+   },
    "CreationTime": number,
    "FailureReason": "string",
    "HubArn": "string",
@@ -42,6 +52,16 @@ Required: Yes
    "HubName": "string",
    "HubSearchKeywords": [ "string" ],
    "HubStatus": "string",
+   "LastModifiedBy": {
+      "DomainId": "string",
+      "IamIdentity": {
+         "Arn": "string",
+         "PrincipalId": "string",
+         "SourceIdentity": "string"
+      },
+      "UserProfileArn": "string",
+      "UserProfileName": "string"
+   },
    "LastModifiedTime": number,
    "S3StorageConfig": {
       "S3OutputPath": "string"
@@ -55,6 +75,10 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [CreatedBy](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-CreatedBy"></a>
+Information about the user who created the hub.
+Type: [UserContext](API_UserContext.md) object
 
  ** [CreationTime](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-CreationTime"></a>
 The date and time that the hub was created.
@@ -100,6 +124,10 @@ Pattern: `[^A-Z]*`
 The status of the hub.
 Type: String
 Valid Values: `InService | Creating | Updating | Deleting | CreateFailed | UpdateFailed | DeleteFailed`
+
+ ** [LastModifiedBy](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-LastModifiedBy"></a>
+Information about the user who last modified the hub.
+Type: [UserContext](API_UserContext.md) object
 
  ** [LastModifiedTime](#API_DescribeHub_ResponseSyntax) **   <a name="sagemaker-DescribeHub-response-LastModifiedTime"></a>
 The date and time that the hub was last modified.

@@ -10,9 +10,6 @@ AWS Marketplace offers standard and regional listing fees for AWS Marketplace se
 **Sellers in India**
 Sellers in India have specific listing fee structures with GST applied and automatic deductions from disbursements. For detailed information, see [Sellers in India FAQ](india-seller-faq.md).
 
-**Note**
-These listing fees are effective as of January 5, 2024 at midnight UTC.
-
 ## Understanding fees for standard offer listings in AWS Marketplace
 <a name="standard-offer-listing-fees"></a>
 
@@ -46,7 +43,7 @@ Professional services offerings have a 0.5% listing fee for private offers. This
 
 Eligibility is evaluated when each listing fee invoice is generated.
 
-The 0% rate applies only to qualifying professional services agreements created on or after feature launch. It is not applied retroactively to agreements created before that time.
+The 0% rate applies only to qualifying professional services agreements accepted on or after 12:00 AM UTC on September 1, 2026. It isn't applied retroactively to agreements accepted before then.
 
 **Note**
 Regional and channel partner private offer (CPPO) uplifts still apply on top of the professional services listing fee. For example, a qualifying professional services offer sold through a CPPO has a 0% base listing fee plus the 0.5% CPPO uplift.

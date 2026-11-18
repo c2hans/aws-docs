@@ -29,4 +29,4 @@ You can create a directory assessment as part of creating a hybrid directory, or
 
 1. On the **Review and create directory assessment** page, review the directory assessment information and make any necessary changes. When the information is correct, choose **Create assessment**. Creating the directory assessment takes around 30 minutes. You're returned to the Directories details page. A green banner appears when the directory assessment succeeds.
 **Warning**
-To create a hybrid directory, the directory assessment must enter a SUCCESS state. You can't create a hybrid directory without first successfully passing a directory assessment.
+To create a hybrid directory, the directory assessment must enter a `SUCCESS` state. You can't create a hybrid directory without first successfully passing a directory assessment.

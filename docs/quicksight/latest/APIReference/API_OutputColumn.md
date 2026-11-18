@@ -22,7 +22,7 @@ Required: No
  ** Id **   <a name="QS-Type-OutputColumn-Id"></a>
 A unique identifier for the output column.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
  ** Name **   <a name="QS-Type-OutputColumn-Name"></a>

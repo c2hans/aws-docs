@@ -13,7 +13,7 @@ The scope of resources that Amazon Inspector scans for a single scanning type, i
  ** scopeType **   <a name="inspector2-Type-ScopeConfiguration-scopeType"></a>
 The type of scope. Valid values are `TENANT`, which scans all resources in the Azure tenant, and `SUBSCRIPTION`, which scans only the resources in the specified Azure subscriptions.
 Type: String
-Valid Values: `TENANT | SUBSCRIPTION`
+Valid Values: `TENANT | SUBSCRIPTION | ORGANIZATION | PROJECT`
 Required: Yes
 
  ** scopeValues **   <a name="inspector2-Type-ScopeConfiguration-scopeValues"></a>

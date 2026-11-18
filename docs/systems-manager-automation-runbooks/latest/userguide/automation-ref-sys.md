@@ -23,4 +23,5 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWS-SetupManagedRoleOnEC2Instance`](automation-aws-setupmanagedroleonec2instance.md)
 + [`AWSSupport-TroubleshootManagedInstance`](automation-awssupport-troubleshoot-managed-instance.md)
 + [`AWSSupport-TroubleshootPatchManagerLinux`](automation-troubleshoot-patch-manager-linux.md)
++ [`AWSSupportRemediator-DisablePublicAccessOnSsmDocument`](automation-awssupportremediator-disablepublicaccessonssmdocument.md)
 + [`AWSSupport-TroubleshootSessionManager`](automation-awssupport-troubleshoot-session-manager.md)

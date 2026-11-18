@@ -256,6 +256,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListContextStores  **
+  - **IAM action:**  [network-firewall:ListContextStores](#list_network-firewall-action-ListContextStores)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListFirewallPolicies  **
   - **IAM action:**  [network-firewall:ListFirewallPolicies](#list_network-firewall-action-ListFirewallPolicies)
   - **Condition key:**
@@ -282,6 +288,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListFlowOperations  **
   - **IAM action:**  [network-firewall:ListFlowOperations](#list_network-firewall-action-ListFlowOperations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListResourcesInContextStore  **
+  - **IAM action:**  [network-firewall:ListResourcesInContextStore](#list_network-firewall-action-ListResourcesInContextStore)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List

@@ -2,32 +2,28 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/bedrock-converse.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Use Converse
 <a name="bedrock-converse"></a>
 
 Converse is the portable conversation API for Amazon Bedrock Runtime. A conversation is a list of *messages*, each with a role and a list of typed *content blocks*. Use it when you want one request format that works across supported models, so you can switch models without rewriting request code.
 
-The following example runs a complete two-turn conversation. For request and response details, see the [converse()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/converse/) API reference.
+The following example uses the synchronous client to run a complete two-turn conversation. For request and response details, see the [converse()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/converse/) API reference.
 
  **Imports**
 
 ```
-import asyncio
-
-from aws_sdk_bedrock_runtime.client import AsyncBedrockRuntimeClient
-from aws_sdk_bedrock_runtime.config import AsyncBedrockRuntimeConfig
+from aws_sdk_bedrock_runtime import BedrockRuntimeClient
 from aws_sdk_bedrock_runtime.models import (
     ContentBlockText,
-    ConverseInput,
     ConverseOutputMessage,
-    InferenceConfiguration,
     Message,
+    MessageDict,
 )
 ```
 
-The generated `output` member is a union. Narrow it to `ConverseOutputMessage` before using `.value`. Each message content block is also a union, so narrow text blocks before reading their values. The following helper functions fail when the response carries no message and when it contains no text content.
+The generated `output` member is a union. Narrow it to `ConverseOutputMessage` before using `.value`. Each message content block is also a union, so narrow text blocks before reading their values. The following helper functions raise an error when the response has no message or the message has no text content.
 
 ```
 def narrow_message(response: object) -> Message:
@@ -47,29 +43,29 @@ def message_text(message: Message) -> str:
     return text
 ```
 
-Create a user `Message` with a text content-block union and pass it to `converse`. Common generation settings belong in `InferenceConfiguration`. Bedrock Runtime does not retain conversation history between calls, so for the second turn the code appends the narrowed assistant message and the next user message, then sends the complete history.
+Pass the model ID and the conversation to `converse` as the `model_id` and `messages` keyword arguments. Each message is a dictionary with a role and a list of content blocks. A text content block is a dictionary with a single `"text"` key. To set common generation settings, such as the token limit and temperature, pass a dictionary as `inference_config`. Bedrock Runtime doesn't keep conversation history between calls. For the second turn, the code appends the narrowed assistant message and the next user message, then sends the complete history. The assistant message is the generated `Message` object from the response, so the `messages` list is annotated as `list[Message | MessageDict]`.
 
-The code also prints the response's `stop_reason` and `usage` fields. The `stop_reason` field reports why the model stopped generating. For example, `end_turn` means the model finished its reply normally, and `max_tokens` means the reply was cut off at the `max_tokens` limit. The `usage` field reports the input and output token counts that inference is billed on.
+The code also prints the response's `stop_reason` and `usage` fields. The `stop_reason` field reports why the model stopped generating. For example, `end_turn` means the model finished its reply normally. A value of `max_tokens` means the reply was cut off at the `max_tokens` limit. The `usage` field reports the input and output token counts that inference is billed on.
 
  **Code**
 
 ```
-async def converse(client: AsyncBedrockRuntimeClient) -> tuple[str, str]:
+def converse(client: BedrockRuntimeClient) -> tuple[str, str]:
     """Run a complete two-turn conversation and return both assistant replies."""
     model_id = "global.amazon.nova-2-lite-v1:0"
     prompt = "Name one moon of Saturn."
 
-    messages = [Message(role="user", content=[ContentBlockText(value=prompt)])]
-    response = await client.converse(
-        ConverseInput(
-            model_id=model_id,
-            messages=messages,
-            inference_config=InferenceConfiguration(
-                max_tokens=100,
-                temperature=0.2,
-                top_p=0.9,
-            ),
-        )
+    messages: list[Message | MessageDict] = [
+        {"role": "user", "content": [{"text": prompt}]}
+    ]
+    response = client.converse(
+        model_id=model_id,
+        messages=messages,
+        inference_config={
+            "max_tokens": 100,
+            "temperature": 0.2,
+            "top_p": 0.9,
+        },
     )
 
     assistant_message = narrow_message(response)
@@ -81,37 +77,31 @@ async def converse(client: AsyncBedrockRuntimeClient) -> tuple[str, str]:
         f"{response.usage.output_tokens} output"
     )
 
-    # Bedrock does not retain history, so include every preceding message.
+    # Bedrock doesn't keep history, so include every preceding message.
     follow_up_prompt = "Name another one."
 
     messages.extend(
         [
             assistant_message,
-            Message(
-                role="user",
-                content=[ContentBlockText(value=follow_up_prompt)],
-            ),
+            {"role": "user", "content": [{"text": follow_up_prompt}]},
         ]
     )
-    second_response = await client.converse(
-        ConverseInput(model_id=model_id, messages=messages)
-    )
+    second_response = client.converse(model_id=model_id, messages=messages)
     second_text = message_text(narrow_message(second_response))
     print(second_text)
     return first_text, second_text
 ```
 
-The entry point creates the client and runs the conversation. Run the program with `python converse.py`.
+The entry point creates a synchronous client with `create_client` and runs the conversation. Run the program with `python converse.py`.
 
 ```
-async def main() -> None:
-    """Create a client in a Region that offers the model and run the example."""
-    config = await AsyncBedrockRuntimeConfig.resolve(region="us-east-1")
-    async with AsyncBedrockRuntimeClient(config=config) as client:
-        await converse(client)
+def main() -> None:
+    """Create a synchronous client and run the example."""
+    with create_client() as client:
+        converse(client)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
 ```
 
 ## More information

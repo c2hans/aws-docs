@@ -185,6 +185,7 @@ The following data types are supported:
 +  [HarnessModelConfiguration](API_HarnessModelConfiguration.md)
 +  [HarnessOpenAiModelConfig](API_HarnessOpenAiModelConfig.md)
 +  [HarnessRemoteMcpConfig](API_HarnessRemoteMcpConfig.md)
++  [HarnessRemoteMcpOutboundAuth](API_HarnessRemoteMcpOutboundAuth.md)
 +  [HarnessSkill](API_HarnessSkill.md)
 +  [HarnessSkillAwsSkillsSource](API_HarnessSkillAwsSkillsSource.md)
 +  [HarnessSkillGitAuth](API_HarnessSkillGitAuth.md)

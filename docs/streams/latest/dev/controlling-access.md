@@ -29,6 +29,7 @@ For more information about IAM and Amazon CloudWatch, see [Controlling User Acce
 **Topics**
 + [Policy syntax](#policy-syntax)
 + [Actions for Kinesis Data Streams](#kinesis-using-iam-actions)
++ [Permissions by consumption path](#kinesis-using-iam-consumption-paths)
 + [Amazon Resource Names (ARNs) for Kinesis Data Streams](#kinesis-using-iam-arn-format)
 + [Example policies for Kinesis Data Streams](#kinesis-using-iam-examples)
 + [Share your data stream with another account](#sharing-data-streams)
@@ -90,6 +91,18 @@ To specify all Kinesis Data Streams operations, use the \* wildcard as follows:
 
 For the complete list of Kinesis Data Streams API actions, see the [Amazon Kinesis API Reference](https://docs.aws.amazon.com/kinesis/latest/APIReference/).
 
+## Permissions by consumption path
+<a name="kinesis-using-iam-consumption-paths"></a>
+
+The following table shows the actions to grant and the resource to scope them to for each way of consuming a stream, and where each set of permissions is documented.
+
+| Consumption path | Actions to grant | Resource | Where documented |
+| --- | --- | --- | --- |
+| Shared-throughput stream consumers | `kinesis:GetShardIterator`, `kinesis:GetRecords`, `kinesis:ListShards`, `kinesis:DescribeStreamSummary` | The stream | [Example policies for Kinesis Data Streams](#kinesis-using-iam-examples) |
+| Enhanced fan-out stream consumers | `kinesis:RegisterStreamConsumer`, `kinesis:DescribeStreamConsumer`, `kinesis:SubscribeToShard` | The stream and the registered consumer | [Example resource-based policies for Kinesis data streams](#kinesis-stream-sharing-iam-examples) |
+| Queues | `kinesis:CreateQueue`, `kinesis:ReceiveQueueRecords`, `kinesis:AcknowledgeQueueRecords`, and the other queue actions | The queue, and the stream for `kinesis:AssociateStreamsWithQueue` | [IAM permissions for queues](queues-iam.md) |
+| Streaming tables and Amazon S3 delivery | `kinesis:CreateChannel`, `kinesis:UpdateChannel`, `kinesis:DeleteChannel`, `kinesis:DescribeChannel`, `kinesis:ListChannels` (plus a service execution role to write to the destination) | The stream and the channel | [IAM permissions for data delivery](data-delivery-iam.md) |
+
 ## Amazon Resource Names (ARNs) for Kinesis Data Streams
 <a name="kinesis-using-iam-arn-format"></a>
 
@@ -105,6 +118,24 @@ For example:
 
 ```
 "Resource": arn:aws:kinesis:*:111122223333:stream/my-stream
+```
+
+Use the following ARN resource format for a queue. Kinesis Data Streams generates the resource ID when you create the queue; it is not derived from the queue name.
+
+```
+arn:aws:kinesis:{{region}}:{{account-id}}:queue/{{resource-id}}
+```
+
+Use the following ARN resource format for a registered consumer:
+
+```
+arn:aws:kinesis:{{region}}:{{account-id}}:stream/{{stream-name}}/consumer/{{consumer-name}}:{{consumer-creation-timestamp}}
+```
+
+Use the following ARN resource format for a data delivery channel:
+
+```
+arn:aws:kinesis:{{region}}:{{account-id}}:channel/{{channel-id}}
 ```
 
 ## Example policies for Kinesis Data Streams
@@ -248,9 +279,9 @@ Kinesis Data Streams actions that can be shared:
 | [PutRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html) | Data stream |
 | [SubscribeToShard](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SubscribeToShard.html) | Consumer |
 
-Following are examples of using a resource-based policy to grant cross-account access to your data stream or registered consumer.
+Following are examples of using a resource-based policy to grant cross-account access to your data stream or registered consumer. For queue examples, see [Share access with cross-account queue consumers](queues-iam.md#resource-based-policy-examples-queues).
 
-To perform a cross-account action, you must specify the stream ARN for data stream access and the consumer ARN for registered consumer access.
+To perform a cross-account action, you must specify the stream ARN for data stream access, the queue ARN for queue access, and the consumer ARN for registered consumer access.
 
 ### Example resource-based policies for Kinesis data streams
 <a name="kinesis-stream-sharing-iam-examples"></a>
@@ -384,13 +415,13 @@ Outside of the AWS Management Console, Kinesis Data Streams has three APIS for m
 + [GetResourcePolicy](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetResourcePolicy.html)
 + [DeleteResourcePolicy](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteResourcePolicy.html)
 
-Use `PutResourePolicy` to attach or overwrite a policy for a data stream or consumer. Use `GetResourcePolicy` to check and view a policy for the specified data stream or consumer. Use `DeleteResourcePolicy` to delete a policy for the specified data stream or consumer.
+Use `PutResourePolicy` to attach or overwrite a policy for a data stream, a queue, or a registered consumer. Use `GetResourcePolicy` to check and view a policy for the specified resource. Use `DeleteResourcePolicy` to delete a policy for the specified resource. For the queue actions a queue policy can grant, and for a queue policy example, see [IAM permissions for queues](queues-iam.md).
 
 ### Policy limits
 <a name="sharing-data-streams-validating"></a>
 
 Kinesis Data Streams resource policies have the following restrictions:
-+ Wildcards (\*) are not supported to help prevent broad access from being granted through the resource policies that are directly attached to a data stream or registered consumer. In addition, carefully inspect the following policies to confirm that they do not grant broad access:
++ Wildcards (\*) are not supported to help prevent broad access from being granted through the resource policies that are directly attached to a data stream, a queue, or a registered consumer. In addition, carefully inspect the following policies to confirm that they do not grant broad access:
   + Identity-based policies attached to associated AWS principals (for example, IAM roles)
   + Resource-based policies attached to associated AWS resources (for example, AWS Key Management Service KMS keys)
 + AWS Service Principals are not supported for principals to prevent potential [confused deputies](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html).

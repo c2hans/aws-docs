@@ -24,7 +24,7 @@ aws ssm add-tags-to-resource \
 ```
 This command produces no output.
 **Example 2: To add tags to a parameter**
-The following `add-tags-to-resource` example adds two tags to to the specified parameter.
+The following `add-tags-to-resource` example adds two tags to the specified parameter.
 
 ```
 aws ssm add-tags-to-resource \
@@ -34,7 +34,7 @@ aws ssm add-tags-to-resource \
 ```
 This command produces no output.
 **Example 3: To add tags to an SSM document**
-The following `add-tags-to-resource` example adds a tag to to the specified document.
+The following `add-tags-to-resource` example adds a tag to the specified document.
 
 ```
 aws ssm add-tags-to-resource \

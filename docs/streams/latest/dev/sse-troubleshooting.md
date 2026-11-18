@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/streams/latest/dev/sse-troubleshooting.html
 ---
 
-# Verify and Troubleshoot KMS key permissions
+# Verify and troubleshoot KMS key permissions
 <a name="sse-troubleshooting"></a>
 
 After enabling encryption on a Kinesis stream, we recommend that you monitor the success of your `putRecord`, `putRecords`, and `getRecords` calls using the following Amazon CloudWatch metrics:

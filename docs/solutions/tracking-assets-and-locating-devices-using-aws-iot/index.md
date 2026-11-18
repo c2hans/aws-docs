@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/tracking-assets-and-locating-d
 title: 'Guidance for Tracking Assets & Locating Devices Using AWS IoT'
 canonical_url: https://docs.aws.amazon.com/solutions/tracking-assets-and-locating-devices-using-aws-iot/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # Guidance for Tracking Assets & Locating Devices Using AWS IoT

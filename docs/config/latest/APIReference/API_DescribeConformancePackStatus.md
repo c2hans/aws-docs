@@ -16,6 +16,9 @@ If there are no conformance packs then you will see an empty result.
 ```
 {
    "ConformancePackNames": [ "{{string}}" ],
+   "Filters": {
+      "Types": [ "{{string}}" ]
+   },
    "Limit": {{number}},
    "NextToken": "{{string}}"
 }
@@ -34,6 +37,11 @@ Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 25 items.
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z][-a-zA-Z0-9]*`
+Required: No
+
+ ** [Filters](#API_DescribeConformancePackStatus_RequestSyntax) **   <a name="config-DescribeConformancePackStatus-request-Filters"></a>
+Returns a filtered list of custom or managed conformance pack statuses. By default, if the filter is not defined, AWS Config returns details for all your conformance packs.
+Type: [DescribeConformancePacksFilters](API_DescribeConformancePacksFilters.md) object
 Required: No
 
  ** [Limit](#API_DescribeConformancePackStatus_RequestSyntax) **   <a name="config-DescribeConformancePackStatus-request-Limit"></a>
@@ -61,7 +69,8 @@ Required: No
          "ConformancePackStatusReason": "string",
          "LastUpdateCompletedTime": number,
          "LastUpdateRequestedTime": number,
-         "StackArn": "string"
+         "StackArn": "string",
+         "Type": "string"
       }
    ],
    "NextToken": "string"

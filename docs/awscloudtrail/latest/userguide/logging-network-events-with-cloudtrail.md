@@ -42,6 +42,7 @@ You can log network activity events for the following services:
 + AWS IoT Secured Tunneling
 + AWS IoT SiteWise
 + AWS License Manager
++ AWS Partner Central Demand Generator
 + AWS Partner Central Revenue Measurement
 + AWS Secrets Manager
 + AWS SSO
@@ -176,6 +177,7 @@ The following advanced event selector fields are required to log network activit
   + `lookoutequipment.amazonaws.com`
   + `lookoutvision.amazonaws.com`
   + `monitoring.amazonaws.com`
+  + `partnercentral-marketing.amazonaws.com`
   + `partnercentral-prm.amazonaws.com`
   + `personalize.amazonaws.com`
   + `pricelist.amazonaws.com`

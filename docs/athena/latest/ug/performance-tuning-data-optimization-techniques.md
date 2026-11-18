@@ -147,7 +147,7 @@ Amazon S3 looks at request patterns and splits based on key prefixes. If your da
 
 When the request rate `limit` is exceeded, Amazon S3 returns the following error. This error is included in the status information for the query in Athena.
 
- SlowDown: Please reduce your request rate
+ `SlowDown: Please reduce your request rate`
 
 To troubleshoot, start by determining if the error is caused by a single query or by multiple queries that read the same files. If the latter, coordinate the running of queries so that they don't run at the same time. To achieve this, add a queuing mechanism or even retries in your application.
 

@@ -17,7 +17,7 @@ AWS Fault Injection Service is a fully managed service that helps you perform fa
 For more information, see [ Amazon Kinesis Data Streams actions](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#aws-kinesis-actions).
 
 **Considerations**
-+ You can use actions above with both provisioned, and on-demand offerings for Amazon Kinesis Data Streams.
++ You can use actions above with both provisioned, and On-demand offerings for Amazon Kinesis Data Streams.
 + Your streaming resumes once the experiment completes based on the duration selected. You can also stop a running experiment before it completes. Alternatively, you can define a stop condition to stop the experiment based on alarms that define the application health in a Amazon CloudWatch Application Insights.
 + You can test up to 280 streams.
 

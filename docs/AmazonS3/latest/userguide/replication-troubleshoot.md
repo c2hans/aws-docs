@@ -185,7 +185,7 @@ For additional troubleshooting tips for working with Batch Operations, see [Trou
 If you've set up replication and objects aren't replicating, see [Why aren't my Amazon S3 objects replicating when I set up replication between my buckets?](https://repost.aws/knowledge-center/s3-troubleshoot-replication) in the AWS re:Post Knowledge Center.
 
 While using Batch Replication, you might encounter one of these errors:
-+ Manifest generation found no keys matching the filter criteria.
++ `Manifest generation found no keys matching the filter criteria.`
 
   This error occurs for one of the following reasons:
   + When objects in the source bucket are stored in the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage classes.
@@ -194,13 +194,13 @@ While using Batch Replication, you might encounter one of these errors:
   + When the provided filter criteria doesn’t match any valid objects in the source bucket.
 
     Verify and correct the filter criteria. For example, in the Batch Replication rule, the filter criteria is looking for all objects in the source bucket with the prefix `Tax/`. If the prefix name was entered inaccurately, with a slash in the beginning and the end `/Tax/` instead of only at the end, then no S3 objects were found. To resolve the error, correct the prefix, in this case, from `/Tax/` to `Tax/` in the replication rule.
-+ Batch operation status is failed with reason: The job report could not be written to your report bucket.
++ `Batch operation status is failed with reason: The job report could not be written to your report bucket.`
 
   This error occurs if the IAM role that's used for the Batch Operations job is unable to put the completion report into the location that was specified when you created the job. To resolve this error, check that the IAM role has the `s3:PutObject` permission for the bucket where you want to save the Batch Operations completion report. We recommend delivering the report to a bucket different from the source bucket.
-+ Batch operation is completed with failures and Total failed is not 0.
++ `Batch operation is completed with failures and Total failed is not 0.`
 
   This error occurs if there are insufficient object permissions issues with the Batch Replication job that is running. If you're using a replication rule for your Batch Replication job, make sure that the IAM role that's used for replication has the proper permissions to access objects from either the source or destination bucket. You can also check the [Batch Replication completion report](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-batch-replication-batch.html#batch-replication-completion-report) to review the specific [Amazon S3 replication failure reason](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-failure-codes.html).
-+ Batch job ran successfully but the number of objects expected in destination bucket is not the same.
++ `Batch job ran successfully but the number of objects expected in destination bucket is not the same.`
 
   This error occurs when there's a mismatch between the objects listed in the manifest that's supplied in the Batch Replication job and the filters that you selected when you created the job. You might also receive this message when the objects in your source bucket don't match any replication rules and aren't included in the generated manifest.
 

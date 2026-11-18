@@ -137,7 +137,7 @@ Now that the Active Directory domain controller is configured, you must configur
 
    ```
    aws emr create-cluster --name "{{MyKerberosCluster}}" \
-   --release-label emr-5.10.0 \
+   --release-label emr-7.14.0 \
    --instance-type {{m5.xlarge}} \
    --instance-count {{3}} \
    --ec2-attributes InstanceProfile={{EMR_EC2_DefaultRole}},KeyName={{MyEC2KeyPair}},\

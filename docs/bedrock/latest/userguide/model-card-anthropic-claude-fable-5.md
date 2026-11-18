@@ -246,6 +246,8 @@ Your AWS account has default quotas to maintain the performance of the service a
 
 **Step 3 - Get the SDK:** To use this getting started guide, you must have Python already installed. Then install the relevant software depending on the APIs you are using.
 
+**Invoke & Converse**
+
 ```
 pip install boto3
 ```
@@ -272,6 +274,8 @@ response = client.invoke_model(
 )
 print(json.loads(response['body'].read()))
 ```
+
+**Messages**
 
 ```
 pip install -U anthropic aws-bedrock-token-generator

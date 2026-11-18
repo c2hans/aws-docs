@@ -21,6 +21,11 @@ At least one account within the target OU does not match the baseline configurat
 Type: [EnabledBaselineInheritanceDrift](API_EnabledBaselineInheritanceDrift.md) object
 Required: No
 
+ ** source **   <a name="controltower-Type-EnabledBaselineDriftTypes-source"></a>
+Source drift occurs when an enabled baseline no longer matches the landing zone's configuration.
+Type: [EnabledBaselineSourceDrift](API_EnabledBaselineSourceDrift.md) object
+Required: No
+
 ## See Also
 <a name="API_EnabledBaselineDriftTypes_SeeAlso"></a>
 

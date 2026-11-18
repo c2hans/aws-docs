@@ -18,7 +18,6 @@ Required: No
  ** AuthorizedAccountId **   <a name="config-Type-AggregationAuthorization-AuthorizedAccountId"></a>
 The 12-digit account ID of the account authorized to aggregate data.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

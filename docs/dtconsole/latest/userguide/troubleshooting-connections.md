@@ -38,7 +38,7 @@ You might not have permissions to create a connection. For more information, see
 
 The following error message might be returned when you try to create or view a connection in the CodePipeline console.
 
-User: {{username}} is not authorized to perform: {{permission}} on resource: {{connection-ARN}}
+`User: {{username}} is not authorized to perform: {{permission}} on resource: {{connection-ARN}}`
 
 If this message appears, make sure that you have sufficient permissions.
 
@@ -49,9 +49,9 @@ The permissions to create and view connections in the AWS Command Line Interface
 
 One or both of the following error messages might be returned if you try to use a connection in the CodePipeline console, even though you have the permissions to list, get, and create permissions.
 
-You have failed to authenticate your account.
+`You have failed to authenticate your account.`
 
-User: {{username}} is not authorized to perform: codestar-connections:UseConnection on resource: {{connection-ARN}}
+`User: {{username}} is not authorized to perform: codestar-connections:UseConnection on resource: {{connection-ARN}}`
 
 If this occurs, make sure that you have sufficient permissions.
 
@@ -264,7 +264,7 @@ When you create a connection to GitHub Enterprise Server that reaches AWS over t
 + Your host reaches the `Available` state and the GitHub App installs successfully on GitHub Enterprise Server, but the connection remains in the `Pending` state.
 + When you use the connection, AWS returns the following error:
 
-  ProviderResourceNotFoundException: Installation {{id}} does not exist
+  `ProviderResourceNotFoundException: Installation {{id}} does not exist`
 
 This error means that AWS did not receive the installation webhook, so the installation was never registered. It does not mean the installation ID is invalid.
 

@@ -51,6 +51,8 @@ Required: No
             }
          ],
          "AgentAccessConfig": {
+            "KmsKeyArn": "string",
+            "ReplaySessionEnabled": boolean,
             "S3BucketArn": "string",
             "ScreenImageFormat": "string",
             "ScreenResolution": "string",

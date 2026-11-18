@@ -5,14 +5,16 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 # QueryVectors
 <a name="API_S3VectorBuckets_QueryVectors"></a>
 
-Performs an approximate nearest neighbor search query in a vector index using a query vector. By default, it returns the keys of approximate nearest neighbors. You can optionally include the computed distance (between the query vector and each vector in the response) and metadata of each vector in the response.
+Returns matching vector keys from a vector index ranked by vector similarity, full-text relevance, or both. Specify `queryVector` to perform a vector search, specify `queryTexts` to perform a full-text search, or specify both to perform a hybrid search. Full-text search ranks results using BM25. Hybrid search combines the vector and full-text rankings using Reciprocal Rank Fusion (RRF).
+
+Amazon S3 Vectors ranks results by distance for a vector-only search, by BM25 score for a full-text-only search, and by RRF score for a hybrid search. You can optionally include computed distances, relevance scores, and vector metadata in the response. Full-text and hybrid searches require a vector index in `ENHANCED` mode.
 
 To specify the vector index, you can either use both the vector bucket name and the vector index name, or use the vector index Amazon Resource Name (ARN).
 
 Permissions
 You must have the `s3vectors:QueryVectors` permission to use this operation. Additional permissions are required based on the request parameters you specify:
-+ With only `s3vectors:QueryVectors` permission, you can retrieve vector keys of approximate nearest neighbors and computed distances between these vectors. This permission is sufficient only when you don't set any metadata filters and don't request metadata (by keeping the `returnMetadata` parameter set to `false` or not specified).
-+ If you specify a metadata filter or set `returnMetadata` to true, you must have both `s3vectors:QueryVectors` and `s3vectors:GetVectors` permissions. The request fails with a `403 Forbidden error` if you request metadata filtering or metadata without the `s3vectors:GetVectors` permission.
++ With only `s3vectors:QueryVectors` permission, you can retrieve vector keys of approximate nearest neighbors and computed distances between these vectors. This permission is sufficient only when you don't set `queryTexts`, don't set any metadata filters, and don't request metadata (by keeping the `returnMetadata` parameter set to `false` or not specified).
++ To use `queryTexts`, a metadata filter, or `returnMetadata` set to `true` with this operation, you must have both the `s3vectors:QueryVectors` and `s3vectors:GetVectors` permissions. If you use any of these options without the `s3vectors:GetVectors` permission, Amazon S3 Vectors returns an `AccessDeniedException`.
 
 ## Request Syntax
 <a name="API_S3VectorBuckets_QueryVectors_RequestSyntax"></a>
@@ -27,9 +29,16 @@ Content-type: application/json
    "indexName": "{{string}}",
    "nextToken": "{{string}}",
    "queryMode": "{{string}}",
+   "queryTexts": [
+      {
+         "metadataKey": "{{string}}",
+         "text": "{{string}}"
+      }
+   ],
    "queryVector": { ... },
    "returnDistance": {{boolean}},
    "returnMetadata": {{boolean}},
+   "returnScores": {{boolean}},
    "topK": {{number}},
    "vectorBucketName": "{{string}}"
 }
@@ -77,11 +86,17 @@ Type: String
 Valid Values: `CLASSIC | ENHANCED`
 Required: No
 
+ ** [queryTexts](#API_S3VectorBuckets_QueryVectors_RequestSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-request-queryTexts"></a>
+Full-text queries for searchable metadata keys. Omit `queryVector` to run a full-text-only search, or provide both fields to run a hybrid search. Each entry must target a distinct searchable metadata key.
+Type: Array of [QueryText](API_S3VectorBuckets_QueryText.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
  ** [queryVector](#API_S3VectorBuckets_QueryVectors_RequestSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-request-queryVector"></a>
-The query vector. Ensure that the query vector has the same dimension as the dimension of the vector index that's being queried. For example, if your vector index contains vectors with 384 dimensions, your query vector must also have 384 dimensions.
+The query vector for vector similarity search. The query vector must have the same dimension as the vector index. For example, if the vector index has 384 dimensions, the query vector must also have 384 dimensions. You can omit this parameter when you supply `queryTexts` to perform a full-text-only search. A request must include `queryVector`, `queryTexts`, or both.
 Type: [VectorData](API_S3VectorBuckets_VectorData.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
-Required: Yes
+Required: No
 
  ** [returnDistance](#API_S3VectorBuckets_QueryVectors_RequestSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-request-returnDistance"></a>
 Indicates whether to include the computed distance in the response. The default value is `false`.
@@ -90,6 +105,11 @@ Required: No
 
  ** [returnMetadata](#API_S3VectorBuckets_QueryVectors_RequestSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-request-returnMetadata"></a>
 Indicates whether to include metadata in the response. The default value is `false`.
+Type: Boolean
+Required: No
+
+ ** [returnScores](#API_S3VectorBuckets_QueryVectors_RequestSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-request-returnScores"></a>
+Indicates whether to include relevance scores in the response. Full-text-only results can include BM25 scores. Hybrid results can also include a Reciprocal Rank Fusion (RRF) score and vector distance. This setting doesn't add scores to vector-only requests. The default value is `false`.
 Type: Boolean
 Required: No
 
@@ -119,7 +139,17 @@ Content-type: application/json
       {
          "distance": number,
          "key": "string",
-         "metadata": JSON value
+         "metadata": JSON value,
+         "scores": {
+            "bm25Scores": [
+               {
+                  "metadataKey": "string",
+                  "score": number
+               }
+            ],
+            "fused": number,
+            "vectorDistance": number
+         }
       }
    ]
 }
@@ -143,7 +173,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 
  ** [vectors](#API_S3VectorBuckets_QueryVectors_ResponseSyntax) **   <a name="AmazonS3-S3VectorBuckets_QueryVectors-response-vectors"></a>
-The vectors in the approximate nearest neighbor search.
+The matching vector results in ranked order. Results are ranked by vector distance for a vector-only search, by BM25 relevance for a full-text-only search, and by RRF score for a hybrid search.
 Type: Array of [QueryOutputVector](API_S3VectorBuckets_QueryOutputVector.md) objects
 
 ## Errors

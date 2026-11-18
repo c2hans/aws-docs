@@ -83,6 +83,8 @@ For more information, see [Exposure findings severity classification](https://do
 
 ## Benefits of exposure findings
 <a name="benefits-of-exposure-findings"></a>
+
+Exposure findings provide the following benefits:
 + **Reduced manual analysis through automated correlation**: Exposure findings significantly reduce the time and effort required for security analysis through automated correlation and intelligent risk prioritization. Security Hub continuously monitors your AWS environment, automatically identifying and correlating security risks that might be missed through manual review.
 + **Prioritized view of security risks**: Security Hub employs sophisticated risk assessment algorithms to prioritize exposures based on severity, impact, resource criticality, and exploit likelihood. This helps security teams focus their efforts on the most significant risks first, improving the efficiency of security operations.
 
@@ -97,6 +99,8 @@ Exposure findings incorporate data from:
 
 ## Best practices
 <a name="best-practices"></a>
+
+Follow these best practices to get the most value from exposure findings:
 + **Regularly review exposure findings**: Effective exposure management requires structured review processes. Organizations should implement daily reviews of critical exposures, weekly assessments of overall exposure status, monthly trend analysis, and quarterly security posture evaluations. This layered approach ensures appropriate attention to both immediate risks and long-term security trends.
 + **Prioritize critical and high-severity exposures**: Successful exposure management depends on effective risk prioritization. Organizations should focus first on critical exposures while considering resource criticality and business impact. This risk-based approach helps ensure security efforts align with business priorities and maximize risk reduction.
 + **Implement recommended remediation steps**: Exposure remediation should follow a systematic approach. Organizations should carefully implement recommended remediation steps, maintain detailed documentation of changes, conduct thorough testing of modifications, and validate the effectiveness of implemented fixes. This methodical approach helps ensure successful risk mitigation while avoiding unintended consequences.

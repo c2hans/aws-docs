@@ -175,6 +175,18 @@ The new nodes are isolated in the maintenance reservation while deep health chec
 
 On-demand deep health checks let you trigger hardware validation on existing cluster nodes at any time using the [StartClusterHealthCheck](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartClusterHealthCheck.html) API. This is useful for periodic health validation or after suspected hardware issues.
 
+Each on-demand deep health check creates a cluster operation of type `DeepHealthCheck`. The operation shows whether the check is still running and which instance groups, instances, and checks it covers. To see whether the check passed, list the operation's events:
+
+In the following command, replace {{operation-id}} with the ID of the operation whose events you want to see.
+
+```
+aws sagemaker list-cluster-events \
+    --cluster-name my-cluster \
+    --operation-id {{operation-id}}
+```
+
+Deep health checks that run when nodes start (`OnStartDeepHealthChecks`) don't create an operation. For more information, see [Tracking requests with SageMaker HyperPod cluster operations](sagemaker-hyperpod-cluster-operations.md).
+
 ### Running on-demand deep health checks from the console
 <a name="sagemaker-hyperpod-resiliency-slurm-deep-health-checks-on-demand-console"></a>
 

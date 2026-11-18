@@ -16,10 +16,3 @@ A cloud journey requires building frameworks, managing and maturing operations, 
 ![The six phases in the crawl, walk, run methodology for accelerating security in the AWS Cloud.](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/b340d279-fa13-4709-ba89-6b90b4cfbc32.png)
 
 The [crawl](crawl.md) stage consists of planning, building the foundation, and assessing your current security posture. In the [walk](walk.md) stage, you operationalize your people, processes, and technology, and then you mature your operations through tuning and measurement. The [run](run.md) stage consists of optimizing through assessment and automation.
-
-## Attachments
-<a name="attachments-2162f372-44e6-4f4b-80cc-427f9fca7a33"></a>
-
-To access additional content that is associated with this document, download and unzip the following file:
-
-[attachment.zip](samples/attachment.zip)

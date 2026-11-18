@@ -166,6 +166,7 @@ Depending on your activities and resource usage over time, your Amazon SageMaker
 | Maximum number of dataset objects per labeling job | Each supported Region: 10,000 | No | Maximum number of dataset objects per labeling job |
 | Maximum number of hub contents per private hub | Each supported Region: 10,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-CCE416BB)  | Maximum number of hub contents per private hub |
 | Maximum number of hyper parameter tuning jobs that can run at once in parallel | Each supported Region: 100 | No | Maximum number of hyper parameter tuning jobs that can run at once in parallel |
+| Maximum number of inference routers | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-EDAFAD0E)  | Maximum number of inference routers |
 | Maximum number of instances per endpoint | Each supported Region: 4 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-ED8DEE9B)  | Maximum number of instances per endpoint |
 | Maximum number of instances per processing job | Each supported Region: 20 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-A5D63399)  | Maximum number of instances per processing job |
 | Maximum number of instances per spot training job | Each supported Region: 20 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-DB62C864)  | Maximum number of instances per spot training job |

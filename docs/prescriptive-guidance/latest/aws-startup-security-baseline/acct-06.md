@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 # ACCT.06 Enforce a password policy
 <a name="acct-06"></a>
 
-Users sign in to the AWS Management Console by providing sign-in credentials. AWS recommends requiring MFA for all users. Require that passwords adhere to a strong password policy to help prevent discovery through brute force or social engineering. For more information about password policy recommendations, see the [Password policy guide](https://www.cisecurity.org/insights/white-papers/cis-password-policy-guide) on the Center for Internet Security (CIS) website.
+Users sign in to the AWS Management Console by providing sign-in credentials. AWS recommends requiring multi-factor authentication (MFA) for all users. Require that passwords adhere to a strong password policy to help prevent discovery through brute force or social engineering. For more information about password policy recommendations, see the [Password policy guide](https://www.cisecurity.org/insights/white-papers/cis-password-policy-guide) on the Center for Internet Security (CIS) website.
 
 **Note**
 For a benchmark-aligned minimum password length, see [AWS Security Hub control IAM.15](https://docs.aws.amazon.com/securityhub/latest/userguide/iam-controls.html#iam-15), which references the CIS AWS Foundations Benchmark recommendation.

@@ -108,7 +108,7 @@ When using the AWS CLI to include a bootstrap action, specify the `Path` and `Ar
   + Linux, UNIX, and Mac OS X users:
 
     ```
-    1. aws emr create-cluster --name {{"Test cluster"}} --release-label {{emr-4.0.0}} \
+    1. aws emr create-cluster --name {{"Test cluster"}} --release-label {{emr-7.14.0}} \
     2. --use-default-roles --ec2-attributes KeyName={{myKey}} \
     3. --applications Name={{Hive}} Name={{Pig}} \
     4. --instance-count {{3}} --instance-type {{m5.xlarge}} \
@@ -117,7 +117,7 @@ When using the AWS CLI to include a bootstrap action, specify the `Path` and `Ar
   + Windows users:
 
     ```
-    1. aws emr create-cluster --name {{"Test cluster"}} --release-label {{emr-4.2.0}} --use-default-roles --ec2-attributes KeyName={{myKey}} --applications Name={{Hive}} Name={{Pig}} --instance-count {{3}} --instance-type {{m5.xlarge}} --bootstrap-actions Path={{"s3://elasticmapreduce/bootstrap-actions/download.sh"}}
+    1. aws emr create-cluster --name {{"Test cluster"}} --release-label {{emr-7.14.0}} --use-default-roles --ec2-attributes KeyName={{myKey}} --applications Name={{Hive}} Name={{Pig}} --instance-count {{3}} --instance-type {{m5.xlarge}} --bootstrap-actions Path={{"s3://elasticmapreduce/bootstrap-actions/download.sh"}}
     ```
 
   When you specify the instance count without using the `--instance-groups` parameter, a single primary node is launched, and the remaining instances are launched as core nodes. All nodes will use the instance type specified in the command.

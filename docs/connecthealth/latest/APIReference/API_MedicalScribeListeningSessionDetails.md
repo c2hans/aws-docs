@@ -46,6 +46,11 @@ Type: Integer
 Valid Range: Minimum value of 8000. Maximum value of 48000.
 Required: No
 
+ ** medicalCodingContextProvided **   <a name="connecthealth-Type-MedicalScribeListeningSessionDetails-medicalCodingContextProvided"></a>
+Indicates whether medical coding context was provided.
+Type: Boolean
+Required: No
+
  ** postStreamActionResult **   <a name="connecthealth-Type-MedicalScribeListeningSessionDetails-postStreamActionResult"></a>
 Results of post-stream actions
 Type: [MedicalScribePostStreamActionsResult](API_MedicalScribePostStreamActionsResult.md) object

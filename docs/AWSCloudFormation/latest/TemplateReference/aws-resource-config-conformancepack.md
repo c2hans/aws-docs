@@ -25,6 +25,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ConformancePackName](#cfn-config-conformancepack-conformancepackname)" : {{String}},
       "[DeliveryS3Bucket](#cfn-config-conformancepack-deliverys3bucket)" : {{String}},
       "[DeliveryS3KeyPrefix](#cfn-config-conformancepack-deliverys3keyprefix)" : {{String}},
+      "[Scope](#cfn-config-conformancepack-scope)" : {{Scope}},
+      "[Source](#cfn-config-conformancepack-source)" : {{Source}},
       "[Tags](#cfn-config-conformancepack-tags)" : {{[ Tag, ... ]}},
       "[TemplateBody](#cfn-config-conformancepack-templatebody)" : {{String}},
       "[TemplateS3Uri](#cfn-config-conformancepack-templates3uri)" : {{String}},
@@ -44,6 +46,10 @@ Properties:
   [ConformancePackName](#cfn-config-conformancepack-conformancepackname): {{String}}
   [DeliveryS3Bucket](#cfn-config-conformancepack-deliverys3bucket): {{String}}
   [DeliveryS3KeyPrefix](#cfn-config-conformancepack-deliverys3keyprefix): {{String}}
+  [Scope](#cfn-config-conformancepack-scope): {{
+    Scope}}
+  [Source](#cfn-config-conformancepack-source): {{
+    Source}}
   [Tags](#cfn-config-conformancepack-tags): {{
     - Tag}}
   [TemplateBody](#cfn-config-conformancepack-templatebody): {{String}}
@@ -87,6 +93,20 @@ The prefix for the Amazon S3 bucket.
 *Minimum*: `0`
 *Maximum*: `1024`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Scope`  <a name="cfn-config-conformancepack-scope"></a>
+An object of type `ConformancePackScope`, which contains the tag key and optional tag value that defines which resources trigger an evaluation for the AWS Config rules in the managed conformance pack.
+Managed conformance packs with a scope populate this field. Custom conformance packs leave it empty.
+*Required*: No
+*Type*: [Scope](aws-properties-config-conformancepack-scope.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Source`  <a name="cfn-config-conformancepack-source"></a>
+Contains the identifier of the managed conformance pack that AWS Config deploys in your account.
+This field applies only to managed conformance packs. Custom conformance packs leave it empty.
+*Required*: No
+*Type*: [Source](aws-properties-config-conformancepack-source.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-config-conformancepack-tags"></a>
 Property description not available.
@@ -138,6 +158,11 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 `ConformancePackArn`  <a name="ConformancePackArn-fn::getatt"></a>
 Amazon Resource Name (ARN) of the conformance pack.
+
+`Type`  <a name="Type-fn::getatt"></a>
+The type of the conformance pack. Valid values:
++ `CUSTOM` – A custom conformance pack.
++ `MANAGED` – A managed conformance pack.
 
 ## Examples
 <a name="aws-resource-config-conformancepack--examples"></a>

@@ -2,46 +2,58 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/config-retries.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Retries
 <a name="config-retries"></a>
 
+Calls to AWS services sometimes fail for reasons that have nothing to do with your request. A connection drops, a host is briefly unhealthy, or the service throttles you because too many requests arrived at the same time. A call that fails this way often succeeds if the client sends it again after a short delay, so every client in the AWS SDK for Python v4 retries these errors automatically. Synchronous and asynchronous clients use the same retry rules. Between attempts, a synchronous client sleeps the calling thread. An asynchronous client waits without blocking the event loop.
+
 This page explains how the SDK retries failed requests and how to configure retry behavior. It includes the following topics:
++ [Retry modes](#retry-modes) describes the retry modes that the SDK supports.
 + [Retryable errors](#retryable-errors) describes which errors are retried and which are not.
 + [Standard retry strategy](#standard-retry-strategy) explains the backoff, jitter, and token bucket mechanics.
-+ [Configuring retries](#configuring-retries) shows how to set retry mode, max attempts, and custom strategies.
++ [Configuring retries](#configuring-retries) shows how to set the retry mode, the maximum number of attempts, and custom strategies.
 
-Calls to AWS services occasionally fail for reasons that have nothing to do with your request being wrong. A connection drops, a host is briefly unhealthy, or the service throttles you because too many requests arrived at the same time. Errors of this kind are often successful if the call is simply made again after a short delay, so every client in this SDK retries them automatically. This page explains how that retry behavior works and how to configure it.
+## Retry modes
+<a name="retry-modes"></a>
+
+The SDK supports two retry modes:
++ **`standard`** (default): This mode retries transient and throttling errors with exponential backoff and jitter. A retry quota stops retries when they keep failing.
++ **`adaptive`**: This mode retries errors the same way as `standard`. After a service returns a throttling error, the client also limits how fast it sends requests. It adjusts that rate as later requests succeed or are throttled.
+
+To set the mode, see [Configuring retries](#configuring-retries). For more information, see [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) in the *AWS SDKs and Tools Reference Guide*.
 
 ## Retryable errors
 <a name="retryable-errors"></a>
 
-Only errors that are plausibly transient are retried. These include socket-level failures where no HTTP response was received (connect timeouts, read timeouts, or server-closed connections), HTTP 500, 502, 503, and 504 responses, and a set of service error codes the SDK recognizes as transient or throttling. Errors that signal a problem with the request itself like validation errors, missing or malformed parameters, authentication and authorization failures, and resource-not-found responses are never retried, because sending the same request again cannot change the outcome. Services can also mark their own exceptions as retryable in their service model, and the SDK honors that in addition to the built-in list.
+The SDK retries only errors that are likely to be transient. These errors include socket-level failures, where the client receives no HTTP response, such as connect timeouts, read timeouts, and connections that the server closes. They also include HTTP 500, 502, 503, and 504 responses and a set of service error codes that the SDK recognizes as transient or throttling errors.
+
+The SDK never retries errors that signal a problem with the request itself, such as validation errors, missing or malformed parameters, authentication and authorization failures, and resource-not-found responses. Sending the same request again can't change the outcome. A service can also mark its own errors as retryable in its service model. The SDK retries those errors in addition to the built-in list.
 
 ## Standard retry strategy
 <a name="standard-retry-strategy"></a>
 
-The standard retry strategy is the default. It makes a maximum of 3 attempts for a single request, including the initial attempt. This means a request is retried up to 2 times. Each retry is delayed using exponential backoff with jitter. The strategy also maintains a retry quota that prevents additional attempts when retries keep failing.
+The standard retry strategy is the default. It makes a maximum of 3 attempts for a single request, including the initial attempt, so the SDK retries a request up to 2 times. The following sections describe how the strategy calculates the delay before each retry and limits retries with a retry quota.
 
-### Backoff header: x-amz-retry-after
+### The x-amz-retry-after header
 <a name="backoff-header"></a>
 
-If a response carries an `x-amz-retry-after` header, the SDK incorporates it into the backoff calculation. The value is an integer number of milliseconds. If it is shorter than the computed delay, the SDK waits the computed delay; if it is longer than the computed delay plus 5 seconds, the SDK waits the computed delay plus 5 seconds. It is not jittered, and the 20-second maximum delay does not apply to it. Invalid values (such as invalid format or exceeding integer limits) specified in `x-amz-retry-after` are ignored and the SDK falls back to exponential backoff. The standard HTTP `Retry-After` header is ignored.
+If a response has an `x-amz-retry-after` header, the SDK includes it in the backoff calculation. The value is an integer number of milliseconds. If the value is shorter than the computed delay, the SDK waits the computed delay. If the value is longer than the computed delay plus 5 seconds, the SDK waits the computed delay plus 5 seconds. The SDK doesn't apply jitter or the 20-second maximum delay to this value. The SDK ignores invalid `x-amz-retry-after` values, such as values with an invalid format or values that exceed integer limits, and uses exponential backoff instead. The SDK ignores the standard HTTP `Retry-After` header.
 
 ### Calculating exponential backoff and retry quotas
 <a name="calculating-backoff-and-quotas"></a>
 
-The base delay doubles with every retry and is capped at 20 seconds. That delay is then multiplied by a random value between 0 and 1. The base delay is 1 second for throttling errors and 50 milliseconds for all other retryable errors. A transient error is therefore retried after up to 50ms, then up to 100ms, while a throttling error is retried after up to 1 second, then up to 2 seconds. DynamoDB and DynamoDB Streams clients make 4 attempts and use a base delay of 25 milliseconds for non-throttling errors.
+The base delay doubles with every retry, up to 20 seconds. The SDK then multiplies that delay by a random value between 0 and 1. The base delay is 1 second for throttling errors and 50 milliseconds for all other retryable errors. The SDK retries a transient error after up to 50 ms, then up to 100 ms. It retries a throttling error after up to 1 second, then up to 2 seconds.
 
-The retry quota is a token bucket held per client. Each retry must take tokens from the bucket, and if the bucket does not have enough, the SDK returns the error without retrying. The bucket holds 500 tokens. A retry costs 14 tokens after a non-throttling error and 5 after a throttling error; a successful operation returns what its retry consumed, and an operation that succeeds without retrying adds 1 token, up to the 500-token maximum. When the bucket cannot cover the next retry, the SDK raises the error immediately without retrying. The first attempt is always made, only retries are affected.
+The retry quota is a token bucket that each client keeps. Each retry takes tokens from the bucket. If the bucket doesn't have enough tokens for the next retry, the SDK raises the error without retrying. The bucket holds 500 tokens. A retry costs 14 tokens after a non-throttling error and 5 tokens after a throttling error. A successful operation returns the tokens that its retries took. An operation that succeeds without retrying adds 1 token, up to the 500-token maximum. The quota never blocks the first attempt, only retries.
 
-### Summary: retry strategy default values
+### Retry strategy default values
 <a name="retry-strategy-defaults"></a>
 
-The following table shows the default values for the properties of the standard retry strategy.
+The following table shows the default values of the standard retry strategy.
 
-| Property | Default value |
+| Setting | Default value |
 | --- | --- |
 | Maximum attempts | 3 |
 | Base delay for non-throttling errors | 50 ms |
@@ -58,26 +70,28 @@ DynamoDB and DynamoDB Streams clients use a maximum of 4 attempts and a base del
 ## Configuring retries
 <a name="configuring-retries"></a>
 
-The standard retry mode is the only retry mode that this SDK currently supports. Setting `retry_mode` explicitly to anything other than `standard` raises a validation error during resolution. Because environment variables and shared config files are frequently shared across tools and SDKs, a `legacy` or `adaptive` value picked up from those sources is not treated as an error. It is mapped to `standard` and a warning is emitted, so a config file written for another SDK does not break your client.
+Set `retry_mode` to `standard` or `adaptive`. For the difference between the modes, see [Retry modes](#retry-modes).
 
-The two settings that control retry behavior are the retry mode and the maximum number of attempts. If you set neither, resolving a configuration fills both in for you:
+The SDK doesn't support the `legacy` retry mode. If you pass `retry_mode="legacy"` to `resolve()`, resolution raises a validation error. Environment variables and shared config files are often shared with other tools and SDKs, so a `legacy` value from those sources doesn't raise an error. The SDK maps it to `standard` and emits a warning.
+
+The two settings that control retry behavior are the retry mode and the maximum number of attempts. If you set neither, `resolve()` sets `retry_mode` to `standard` and leaves `max_attempts` unset:
 
 ```
-config = await AsyncBedrockRuntimeConfig.resolve()
+config = BedrockRuntimeConfig.resolve()
 
 print(config.retry_mode)     # "standard"
 print(config.max_attempts)   # None
 ```
 
 **Note**
-`max_attempts` resolves to `None` when not explicitly set. This means the retry strategy uses its own built-in default (typically 3 for the standard strategy). It does not mean retries are disabled.
+`max_attempts` resolves to `None` when you don't set it. The retry strategy then uses its own default (3 for the standard strategy). It doesn't mean that retries are turned off.
 
-Values are resolved in order of precedence. An explicit argument to `resolve()` wins, then the environment variable, then the shared config file, and finally the built-in default. Precedence is evaluated per setting rather than per source, so `max_attempts` can come from your config file while `retry_mode` comes from the environment.
+The SDK resolves each setting separately, in the order that [Resolution order](config-resolution.md#resolution-order) describes. For example, `max_attempts` can come from your config file while `retry_mode` comes from the environment.
 
-Both can be set in the environment:
+You can set both in the environment:
 
 ```
-export AWS_RETRY_MODE=standard
+export AWS_RETRY_MODE=adaptive
 export AWS_MAX_ATTEMPTS=5
 ```
 
@@ -86,37 +100,43 @@ Or in the shared config file:
 ```
 # ~/.aws/config
 [default]
-retry_mode = standard
+retry_mode = adaptive
 max_attempts = 5
 ```
 
-Or in code, when resolving a client configuration:
+Or in code, when you resolve a client configuration:
 
 ```
-config = await AsyncBedrockRuntimeConfig.resolve(
-    retry_mode="standard",
+from aws_sdk_bedrock_runtime import BedrockRuntimeClient, BedrockRuntimeConfig
+
+config = BedrockRuntimeConfig.resolve(
+    region="us-east-1",
+    retry_mode="adaptive",
     max_attempts=5,
 )
-async with AsyncBedrockRuntimeClient(config=config) as client:
-    response = await client.some_operation(input)
+with BedrockRuntimeClient(config=config) as client:
+    response = client.converse(
+        model_id="global.amazon.nova-2-lite-v1:0",
+        messages=[{"role": "user", "content": [{"text": "Hello"}]}],
+    )
 ```
 
-`max_attempts` counts total attempts, not retries, so setting it to `1` disables retries entirely while still making the original request:
+`max_attempts` counts total attempts, not retries. Setting it to `1` turns off retries and still makes the original request:
 
 ```
-config = await AsyncBedrockRuntimeConfig.resolve(max_attempts=1)
+config = BedrockRuntimeConfig.resolve(max_attempts=1)
 ```
 
-If you need behavior the built-in strategy does not provide, you can supply a retry strategy of your own. A strategy passed this way takes precedence, and any `retry_mode` or `max_attempts` set outside of it is not consulted.
+If you need behavior that the built-in modes don't provide, you can supply your own retry strategy object. A strategy passed this way takes precedence. The SDK ignores any `retry_mode` or `max_attempts` setting.
 
 ```
-from smithy_core.aio.retries import SimpleRetryStrategy
+from smithy_core.retries import SimpleRetryStrategy
 
-config = await AsyncBedrockRuntimeConfig.resolve(
+config = BedrockRuntimeConfig.resolve(
     retry_strategy=SimpleRetryStrategy(max_attempts=10),
 )
 
 print(config.retry_strategy.max_attempts)  # 10
 ```
 
-You can also implement your own retry strategy if the built-in options do not meet your needs. A custom strategy must satisfy the `RetryStrategy` protocol (`smithy_core.aio.interfaces.retries.RetryStrategy`), which requires a `backoff_strategy` attribute, a `max_attempts` attribute, and three async methods: `acquire_initial_retry_token`, `refresh_retry_token_for_retry`, and `record_success`. Any class that implements these is accepted by the SDK.
+You can also implement your own retry strategy. A custom strategy must satisfy the `RetryStrategy` protocol (`smithy_core.interfaces.retries.RetryStrategy`), which requires a `backoff_strategy` attribute, a `max_attempts` attribute, and three methods: `acquire_initial_retry_token`, `refresh_retry_token_for_retry`, and `record_success`. The methods are synchronous, so the same strategy works with synchronous and asynchronous clients. The SDK accepts any class that implements them.

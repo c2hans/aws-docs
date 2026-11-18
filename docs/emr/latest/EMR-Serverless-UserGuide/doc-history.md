@@ -9,6 +9,9 @@ The following table describes the important changes to the documentation since t
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [New feature](#doc-history) | [Using Scaling Profiles](scaling-profiles.md) | November 18, 2026 |
+| [Update to an existing policy.](#doc-history) | Added `ec2:CreateNetworkInterfacePermission` and `ec2:DeleteNetworkInterfacePermission` to the [AmazonEMRServerlessServiceRolePolicy policy](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions) to support Flex execution. | November 17, 2026 |
+| [New feature](#doc-history) | [Running EMR Serverless jobs on spare capacity with Flex](jobs-flex-execution.md) | November 17, 2026 |
 | [New feature](#doc-history) | [Fine-grained access control with AWS Lake Formation for Spark Connect sessions](spark-connect.md#spark-connect-fgac) | September 22, 2026 |
 | [New GA release](#doc-history) | [`AWS runtime for Apache Spark` (emr-spark-8.0.0)](release-version-emr-spark-8.0.0.md) | May 21, 2026 |
 | [New feature](#doc-history) | [Run interactive sessions with Spark Connect](spark-connect.md) | April 23, 2026 |

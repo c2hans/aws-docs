@@ -14,7 +14,7 @@ The following sections describe registry mappings and image mappings.
 
 You define registry mappings to map between prefixes in your private Amazon ECR registry and the upstream registry names. One registry map can contain both pull through cache mappings and mappings for registries that HealthOmics copies from.
 
-The following example maps Docker Hub, Quay, and Amazon ECR Public through pull through cache, and maps Seqera Containers (`community.wave.seqera.io`) with a credential so that HealthOmics copies its images.
+The following example maps Docker Hub, Quay, and Amazon ECR Public through pull through cache, and maps Seqera Containers (`community.wave.seqera.io`) with a credential so that HealthOmics copies its images:
 
 ```
 {
@@ -63,7 +63,7 @@ You can use image mappings with registries that Amazon ECR pull through cache su
 **Note**
 An image mapping takes precedence over registry mappings.
 
-The following example shows mappings from private Amazon ECR images to a public genomics image and the latest Ubuntu image.
+The following example shows mappings from private Amazon ECR images to a public genomics image and the latest Ubuntu image:
 
 ```
 {

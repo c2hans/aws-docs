@@ -95,7 +95,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.htm
 ```
 
 ### Generate an SBOM for a container image and output the result
-<a name="w2aac39c13b7"></a>
+<a name="w2aac41c13b7"></a>
 
  You can use Sbomgen to generate SBOMs for container images and output the result to a file. This capability can be enabled using the `container` subcommand.
 
@@ -123,7 +123,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.htm
  Amazon Inspector does not support the `application/vnd.docker.distribution.manifest.list.v2+json` media type. However, Amazon Inspector does support manifest lists. When scanning images that use manifest lists, you can explicitly specify which platform to use with the `--platform` argument. If the `--platform` argument is not specified, the Amazon Inspector SBOM Generator automatically selects the manifest based on the platform where its running.
 
 ### Generate an SBOM from directories and archives
-<a name="w2aac39c13b9"></a>
+<a name="w2aac41c13b9"></a>
 
  You can use Sbomgen to generate SBOMs from directories and archives. This capability can be enabled using the `directory` or `archive` subcommands. Amazon Inspector recommends using this feature when you want to generate an SBOM from a project folder, such as a downloaded git repository.
 
@@ -144,7 +144,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.htm
 ```
 
 ### Generate an SBOM from Go or Rust compiled binaries
-<a name="w2aac39c13c11"></a>
+<a name="w2aac41c13c11"></a>
 
  You can use Sbomgen to generate SBOMs from compiled Go and Rust binaries. You can enable this cabapility through the `binary` subcommand:
 
@@ -153,7 +153,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.htm
 ```
 
 ### Generate an SBOM from mounted volumes
-<a name="w2aac39c13c13"></a>
+<a name="w2aac41c13c13"></a>
 
  You can use Amazon Inspector SBOM Generator to generate SBOMs from mounted volumes. This capability can be enabled using the `volume` subcommand. We recommend using this feature when you want to analyze storage volumes, such as Amazon EBS volumes that have been mounted to your system. Unlike the directory subcommand, mounted volume scanning detects OS packages and OS information.
 
@@ -180,7 +180,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.htm
  All file paths in the target volume are normalized to their original paths. For example, when scanning a volume mounted at `/mnt/volume` that contains a file at `/mnt/volume/var/lib/rpm/rpmdb.sqlite`, the path will be normalized to `/var/lib/rpm/rpmdb.sqlite` in the generated SBOM.
 
 ### Send an SBOM to Amazon Inspector for vulnerability identification
-<a name="w2aac39c13c15"></a>
+<a name="w2aac41c13c15"></a>
 
  In addition to generating an SBOM, you can send an SBOM for scanning with a single command from the Amazon Inspector Scan API. Amazon Inspector evaluates the contents of the SBOM for vulnerabilites before returning findings to Sbomgen. Depending on your input, the findings can be displayed or written to a file.
 
@@ -249,7 +249,7 @@ AWS_DEFAULT_REGION=$your_region \
 ```
 
 ### Use additional scanners to enhance detection capabilities
-<a name="w2aac39c13c17"></a>
+<a name="w2aac41c13c17"></a>
 
  The Amazon Inspector SBOM Generator applies predefined scanners based on the command being used.
 
@@ -274,7 +274,7 @@ AWS_DEFAULT_REGION=$your_region \
 ```
 
 ### Optimize container scans by adjusting maximum file size to scan
-<a name="w2aac39c13c19"></a>
+<a name="w2aac41c13c19"></a>
 
  When you analyze and process a container image, Sbomgen scans files that are 200 MB or less by default. Files larger than 200 MB rarely contain package metadata. You can encounter misses when you inventory a Go or Rust binary that exceeds 200MB. To adjust the size limit, use the `--max-file-size` argument. This allows you to increase the limit to include large files and decrease the limit to reduce resource usage by excluding large files.
 
@@ -291,7 +291,7 @@ AWS_DEFAULT_REGION=$your_region \
  Adjusting this setting helps control disk usage, memory consumption, and overall scan duration.
 
 ### Limit container image pull size
-<a name="w2aac39c13c21"></a>
+<a name="w2aac41c13c21"></a>
 
  When you scan a container image, you can reject an oversized image before Sbomgen downloads any layer. Sbomgen reads the compressed size of each layer from the image manifest and compares it against the limits that you set, so an image that exceeds a limit is rejected without downloading its layers. Use the `--image-max-pull-size` and `--layer-max-pull-size` arguments to set these limits in bytes.
 +  `--image-max-pull-size` – Rejects the image when the compressed sizes of all of its layers add up to more than the specified number of bytes.
@@ -333,7 +333,7 @@ AWS_DEFAULT_REGION=$your_region \
 ```
 
 ### Detect scratch images with filesystem heuristics
-<a name="w2aac39c13c23"></a>
+<a name="w2aac41c13c23"></a>
 
  When Sbomgen can't identify a container image's operating system, you can use the `--enable-scratch-heuristics` argument to inspect the filesystem for signals that indicate a scratch image. If at least two signals are present, Sbomgen labels the operating-system component `scratch` instead of `unknown`. An identified operating system is never relabeled.
 
@@ -360,7 +360,7 @@ AWS_DEFAULT_REGION=$your_region \
  This behavior is heuristic and may produce false positives. It only changes the operating-system component.
 
 ### Collect running process metadata
-<a name="w2aac39c13c25"></a>
+<a name="w2aac41c13c25"></a>
 
  When you scan a localhost, you can use the `--collect-processes` argument to tag components with metadata about the running processes that Sbomgen gathers from the host. This helps you correlate an inventoried component with the processes that are running from it.
 
@@ -438,7 +438,7 @@ AWS_DEFAULT_REGION=$your_region \
 ```
 
 ### Disable progress indicator
-<a name="w2aac39c13c31"></a>
+<a name="w2aac41c13c31"></a>
 
  Sbomgen displays a spinning progress indicator that can result in excessive slash characters in CI/CD environments.
 
@@ -467,7 +467,7 @@ INFO[2024-02-01 14:58:46]coreV1.go:62: executing post-processors
  By providing your private registry authentication credentials, you can generate SBOMs from containers that are hosted in private registries. You can provide these credentials through the following methods:
 
 ### Authenticate using cached credentials (recommended)
-<a name="w2aac39c15b5"></a>
+<a name="w2aac41c15b5"></a>
 
  For this method, you authenticate to your container registry. For example, if using Docker, you can authenticate to your container registry using the Docker loging command: `docker login`.
 
@@ -480,7 +480,7 @@ INFO[2024-02-01 14:58:46]coreV1.go:62: executing post-processors
 ```
 
 ### Authenticate using the interactive method
-<a name="w2aac39c15b7"></a>
+<a name="w2aac41c15b7"></a>
 
  For this method, provide your username as a parameter, and Sbomgen will prompt you for secure password entry when needed.
 
@@ -491,7 +491,7 @@ INFO[2024-02-01 14:58:46]coreV1.go:62: executing post-processors
 ```
 
 ### Authenticate using the non-interactive method
-<a name="w2aac39c15b9"></a>
+<a name="w2aac41c15b9"></a>
 
  For this method, store your password or registry token in a `.txt` file.
 

@@ -107,6 +107,7 @@ Some AWS Glue resources allow resource-level permissions to control access using
 | Trigger | `arn:aws:glue:{{region}}:{{account-id}}:trigger/{{trigger-name}}`<br />For example: `arn:aws:glue:us-east-1:123456789012:trigger/sampletrigger` |
 | Development endpoint | `arn:aws:glue:{{region}}:{{account-id}}:devEndpoint/{{development-endpoint-name}}`<br />For example: `arn:aws:glue:us-east-1:123456789012:devEndpoint/temporarydevendpoint` |
 | Machine learning transform | `arn:aws:glue:{{region}}:{{account-id}}:mlTransform/{{transform-id}}`<br />For example: `arn:aws:glue:us-east-1:123456789012:mlTransform/tfm-1234567890` |
+| Data quality evaluation configuration | `arn:aws:glue:{{region}}:{{account-id}}:dataQualityEvaluationConfig/{{configuration-name}}`<br />For example: `arn:aws:glue:us-east-1:123456789012:dataQualityEvaluationConfig/sales-baseline` |
 
 ## Access control for AWS Glue non-catalog singular API operations
 <a name="non-catalog-singular-apis"></a>

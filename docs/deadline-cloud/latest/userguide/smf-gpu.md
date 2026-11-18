@@ -28,6 +28,7 @@ The available GPU accelerators are:
 + `L4` – NVIDIA L4 Tensor Core GPU
 + `L40S` – NVIDIA L40S Tensor Core GPU
 + `RTX PRO Server 6000` – NVIDIA RTX PRO 6000 Blackwell Server Edition GPU
++ `RTX PRO 4500` - NVIDIA RTX PRO 4500 Blackwell Server Edition GPU
 
 You can choose from the following runtime drivers:
 + `Latest` – Use the latest runtime available for the chip. If you specify `latest` and a new version of the runtime is released, the new version of the runtime is used.

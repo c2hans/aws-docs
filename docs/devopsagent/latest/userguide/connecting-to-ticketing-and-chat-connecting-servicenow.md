@@ -36,9 +36,13 @@ The first step is to create in ServiceNow an OAuth application client that AWS D
 ### Connect your ServiceNow OAuth client to AWS DevOps Agent
 <a name="connect-your-servicenow-oauth-client-to-aws-devops-agent"></a>
 
-1. You can start this process in two places. First, by navigating to the **Capability Providers** page and finding **ServiceNow** under **Communication**, then choosing **Register**. Alternatively you can select any DevOps Agent Space you may have created and navigate to Capabilities → Communications → Add → ServiceNow and choose Register.
+You can start this process from the **Capability Providers** page or from an Agent Space.
 
-1. Next, authorize DevOps Agent to access your ServiceNow instance using the OAuth application client you just created.
+1. Open the [AWS DevOps Agent console](https://console.aws.amazon.com/aidevops/home).
+
+1. To start from the **Capability Providers** page, choose **Capability Providers**, find the **ServiceNow** card in the **Available** section, and choose **Register**. To start from an Agent Space, choose any Agent Space that you created, and then choose **Capabilities**, **Communications**, **Add**, **ServiceNow**, **Register**.
+
+1. Authorize DevOps Agent to access your ServiceNow instance using the OAuth application client you just created.
 
 Each registration connects to one ServiceNow instance. To connect additional instances, repeat this process for each one.
 

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/data-quality-encryption.h
  AWS Glue Data Quality provides encryption by default to protect sensitive customer data at rest using AWS owned encryption keys.
 
 ## AWS owned keys
-<a name="w2aac49c79b9"></a>
+<a name="w2aac49c82b9"></a>
 
  AWS Glue Data Quality uses these keys to automatically encrypt customers' Data Quality assets. You cannot view, manage, or use AWS owned keys, or audit their use. However, you don't need to take any action or change any programs to protect the keys that encrypt your data. For more information, see [AWS owned keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) in the AWS KMS Developer Guide.
 

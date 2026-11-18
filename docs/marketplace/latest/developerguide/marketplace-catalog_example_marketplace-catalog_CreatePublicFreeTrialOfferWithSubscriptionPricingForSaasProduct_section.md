@@ -4,10 +4,10 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
-# Create a public free trial offer with subscription pricing for a SaaS product using an AWS SDK
+# Deprecated - Create a public free trial offer with subscription pricing for a SaaS product using an AWS SDK
 <a name="marketplace-catalog_example_marketplace-catalog_CreatePublicFreeTrialOfferWithSubscriptionPricingForSaasProduct_section"></a>
 
-The following code examples show how to create a public free trial offer with subscription pricing for a SaaS product.
+The following code examples show how to create a public free trial offer with subscription pricing for a SaaS product. This example is deprecated, because standalone free trial offers for SaaS subscription products can no longer be created. Use *Add a free trial that converts to a paid subscription to the public offer of a SaaS subscription product* instead.
 
 ------
 #### [ Java ]
@@ -192,6 +192,8 @@ Run this script to start the changeset. Helper functions are defined in *Utiliti
 """
 Purpose
 Shows how to use the AWS SDK for Python (Boto3) to create a public free trial offer with subscription pricing for SaaS product
+Deprecated: standalone free trial offers for SaaS subscription products can no longer be created.
+Use add_free_trial_with_auto_conversion_to_public_offer_for_saas_product instead.
 CAPI-13
 """
 

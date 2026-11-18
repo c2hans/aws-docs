@@ -105,7 +105,9 @@ Required: No
          },
          "SelfservicePermissions": {
             "ChangeComputeType": "string",
+            "EnableEndUserAdvisor": "string",
             "IncreaseVolumeSize": "string",
+            "NestedVirtualization": "string",
             "RebuildWorkspace": "string",
             "RestartWorkspace": "string",
             "SwitchRunningMode": "string"
@@ -164,6 +166,7 @@ Required: No
          },
          "WorkspaceDirectoryDescription": "string",
          "WorkspaceDirectoryName": "string",
+         "WorkspaceOsUserMode": "string",
          "WorkspaceSecurityGroupId": "string",
          "WorkspaceType": "string"
       }

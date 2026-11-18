@@ -14,7 +14,7 @@ At the time of creating your ingress endpoint, you must assign it a traffic poli
 
 1. Start by creating a traffic policy to determine the email you want to block or allow. For details, see [Creating traffic policies and policy statements in the SES console](eb-filters.md#eb-filters-create-console).
 
-1. Next, create a rule set to perform actions on the email you allow in. For details, see [Creating rule sets and rules in the SES console](eb-rules.md#eb-rules-create-console).
+1. Next, create a rule set to perform actions on the email you allow in. For details, see [Create and manage rule sets in the SES console](eb-rules-setup.md#eb-rules-create-console).
 
 1. Finally, create your ingress endpoint and assign to it the traffic policy and rule set you just created or any others you previously created.
 

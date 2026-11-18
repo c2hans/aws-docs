@@ -5,11 +5,13 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Writing function expressions
 <a name="functions-expressions"></a>
 
-A function has two expressions, both written in [JSONata](https://jsonata.org/), an open-source query and transformation language for JSON. Elemental Inference uses the same JSONata implementation as AWS Elemental MediaTailor functions, so expressions look familiar if you have written one for MediaTailor. The set of allowed built-in functions differs; see [Allowed built-in functions](functions-jsonata-allowed.md).
+A function has two expressions, both written in JSONata, an open-source query and transformation language for JSON. For more information about the language, see the [JSONata website](https://jsonata.org/). Elemental Inference uses the same JSONata implementation as AWS Elemental MediaTailor functions, so expressions look familiar if you have written one for MediaTailor. The set of allowed built-in functions differs. For more information, see [Allowed built-in functions](functions-jsonata-allowed.md).
+
+The following table describes the two expressions and what each must produce.
 
 | Expression | Evaluated against | Must produce |
 | --- | --- | --- |
-| Request expression | The media object. See [What a function can read](functions-context.md). | For a model target, a JSON object that is a valid request body for the model's InvokeModel API. For a passthrough target, any JSON value. |
+| Request expression | The media object. For more information, see [What a function can read](functions-context.md). | For a model target, a JSON object that is a valid request body for the model's InvokeModel API. For a passthrough target, any JSON value. |
 | Response expression | The result, as its root ($) – the raw model response body for a model target, or the output of the request expression for a passthrough target. | Any JSON. This is what Elemental Inference stores on the metadata timeline. |
 
 **Important**

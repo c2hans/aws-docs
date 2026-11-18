@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/config-files.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Config files and named profiles
 <a name="config-files"></a>
@@ -14,14 +14,14 @@ This page covers how the SDK reads shared AWS configuration files and how to use
 ## Shared config files
 <a name="shared-config-files"></a>
 
-The SDK searches the shared AWS configuration files when looking for configuration values. These are the same files used by the AWS CLI and other AWS SDKs, so the SDK automatically reads any settings you configured there. The SDK reads from two files:
+The SDK reads configuration values from the shared AWS configuration files. The AWS CLI and other AWS SDKs use the same files, so the SDK reads settings that you already configured for those tools. The SDK reads the following two files:
 
 | File | Default location | Env override |
 | --- | --- | --- |
 | Config | \~/.aws/config | AWS\_CONFIG\_FILE |
 | Credentials | \~/.aws/credentials | AWS\_SHARED\_CREDENTIALS\_FILE |
 
-Both files use INI-style format. The config file requires the `[profile ...]` prefix (except for `[default]`); the credentials file uses bare section names. You can create multiple profiles (logical groups of configuration) by creating sections named `[profile profile-name]`.
+Both files use INI format, with one section for each profile. A profile is a named group of settings. In the config file, the section name for a profile other than `[default]` starts with `profile`, for example `[profile production]`. In the credentials file, the section name is the profile name alone, for example `[production]`.
 
 ```
 # ~/.aws/config
@@ -46,12 +46,14 @@ aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ## Using named profiles
 <a name="using-named-profiles"></a>
 
-A named profile is a collection of settings stored in the shared AWS config file under a specific name. With profiles, you can maintain separate configurations for different environments (such as development, staging, and production) and switch between them without changing your code.
+With named profiles, you can keep separate configurations for different environments, such as development, staging, and production. You can switch between them without changing your code.
 
-By default, the SDK uses the `[default]` profile. To use a different profile, pass the `profile` parameter to `resolve()`:
+By default, the SDK uses the `[default]` profile. To use a different profile, pass the `profile` argument to `resolve()`:
 
 ```
-config = await AsyncBedrockRuntimeConfig.resolve(profile="production")
+from aws_sdk_bedrock_runtime import BedrockRuntimeConfig
+
+config = BedrockRuntimeConfig.resolve(profile="production")
 ```
 
 Or set the `AWS_PROFILE` environment variable:
@@ -60,28 +62,10 @@ Or set the `AWS_PROFILE` environment variable:
 export AWS_PROFILE=production
 ```
 
-Example config file with multiple profiles:
+If the requested profile doesn't exist in the config file, `resolve()` raises a `ProfileNotFoundError`. The error message says where the profile name came from:
 
 ```
-# ~/.aws/config
-[default]
-region = us-east-1
-retry_mode = standard
-
-[profile production]
-region = us-west-2
-retry_mode = standard
-max_attempts = 10
-
-[profile staging]
-region = eu-west-1
-endpoint_url = https://staging.internal.example.com
-```
-
-If the requested profile doesn't exist in the config file, a `ProfileNotFoundError` is raised with a message indicating where the profile name came from:
-
-```
-config = await AsyncBedrockRuntimeConfig.resolve(profile="typo")
+config = BedrockRuntimeConfig.resolve(profile="typo")
 # raises ProfileNotFoundError: Profile 'typo' from profile argument was not found in config file.
 ```
 
@@ -90,8 +74,8 @@ export AWS_PROFILE=typo
 ```
 
 ```
-config = await AsyncBedrockRuntimeConfig.resolve()
+config = BedrockRuntimeConfig.resolve()
 # raises ProfileNotFoundError: Profile 'typo' from AWS_PROFILE environment variable was not found in config file.
 ```
 
-The implicit `"default"` profile is exempt from this check. If no config file exists, the SDK simply uses defaults and environment variables without error.
+The SDK doesn't apply this check to the implicit `default` profile. If no config file exists, the SDK uses environment variables and defaults without an error.

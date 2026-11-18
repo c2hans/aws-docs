@@ -12,13 +12,13 @@ During an engagement, the AWS CIRT assists with triage, analysis, and containmen
 For investigations that extend into host-level or application-level analysis, such as operating system forensics, memory analysis, or application code review, complement AWS CIRT support with a specialized [AWS Partner](https://aws.amazon.com/security/partner-solutions/) for digital forensics and incident response (DFIR) capabilities.
 
 ## Request assistance during an active security event
-<a name="request-assistance-during-an-active-security-event.baad5cdf-0b4b-5471-a391-be0160461a92"></a>
+<a name="request-assistance-during-an-active-security-event.dd93d5fd-1672-5ed4-ae21-264676a045c1"></a>
 
 **To request assistance from the AWS CIRT**
 
 1. Open a support case from the impacted AWS account through the [AWS Support Center Console](https://console.aws.amazon.com/support/home#/).
 
-1. Select the service most closely related to the security event (for example, [Amazon EC2](https://aws.amazon.com/ec2/), [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/), or [Amazon S3](https://aws.amazon.com/s3/)).
+1. Select the service most closely related to the security event (for example, [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/), [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/), or [Amazon S3](https://aws.amazon.com/s3/)).
 
 1. In the case description, state that you have an urgent security incident.
 
@@ -27,15 +27,15 @@ Opening a support case from the affected account allows AWS to confirm account o
 If you have lost access to the affected account, [submit a request for assistance](https://aws.amazon.com/#/contacts/aws-account-support) through the account recovery process.
 
 ## Incident response resources
-<a name="incident-response-resources.de6cea8c-7b30-5ae8-90b6-2768c3e7cd89"></a>
+<a name="incident-response-resources.18ae0c7f-040b-52a7-83f5-2460952214cc"></a>
 
 The AWS CIRT publishes open-source tools and resources based on patterns observed across engagements. Use these to build your incident response readiness.
-+ [Threat Technique Catalog for AWS (TTC)](https://aws-samples.github.io/threat-technique-catalog-for-aws/) - Documents threat actor tactics, techniques, and procedures specific to AWS environments, based on MITRE ATT&CK Cloud Matrix. You can filter by the AWS services in your account to focus on what is most relevant.
-+ [AWS Customer Playbook Framework](https://github.com/aws-samples/aws-customer-playbook-framework) - Response procedures covering common security events such as unauthorized IAM credential use, ransomware on Amazon S3, and cryptocurrency mining.
-+ [AWS Incident Response Playbook Samples](https://github.com/aws-samples/aws-incident-response-playbooks) - Customizable incident response playbooks aligned to NIST SP 800-61r3, covering scenarios such as credential compromise, ransomware, data exfiltration, cryptomining, and container compromise. Includes a triage guide, regulatory notification context, and GuardDuty finding quick-response guides.
-+ [Assisted Log Enabler for AWS](https://github.com/awslabs/assisted-log-enabler-for-aws) - Assists with enabling VPC Flow Logs, [CloudTrail](https://aws.amazon.com/cloudtrail/), [Amazon EKS audit logs](https://aws.amazon.com/eks/), [Route 53](https://aws.amazon.com/route53/) Resolver query logs, Amazon S3 server access logs, and [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/) logs.
-+ [Athena Security Analytics Bootstrap](https://github.com/awslabs/aws-security-analytics-bootstrap) - Provides a quick method to set up [Amazon Athena](https://aws.amazon.com/athena/) for investigating AWS service logs archived in Amazon S3.
-+ [AWS CloudSaga](https://github.com/awslabs/aws-cloudsaga) - Tests security controls and alerts using simulated events based on common security events observed by the AWS CIRT.
++ Threat Technique Catalog for AWS (TTC) - Documents threat actor tactics, techniques, and procedures specific to AWS environments, based on MITRE ATT&CK Cloud Matrix. You can filter by the AWS services in your account to focus on what is most relevant.
++ AWS Customer Playbook Framework - Response procedures covering common security events such as unauthorized IAM credential use, ransomware on Amazon S3, and cryptocurrency mining.
++ AWS Incident Response Playbook Samples - Customizable incident response playbooks aligned to NIST SP 800-61r3, covering scenarios such as credential compromise, ransomware, data exfiltration, cryptomining, and container compromise. Includes a triage guide, regulatory notification context, and GuardDuty finding quick-response guides.
++ Assisted Log Enabler for AWS - Enables Amazon VPC Flow Logs, [CloudTrail](https://aws.amazon.com/cloudtrail/), [Amazon Elastic Kubernetes Service (Amazon EKS) audit logs](https://aws.amazon.com/eks/), [Amazon Route 53](https://aws.amazon.com/route53/) Resolver query logs, Amazon S3 server access logs, and [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/) logs.
++ Athena Security Analytics Bootstrap - Helps you set up [Amazon Athena](https://aws.amazon.com/athena/) to investigate AWS service logs archived in Amazon S3.
++ AWS CloudSaga - Tests security controls and alerts using simulated events based on common security events observed by the AWS CIRT.
 
 **Note**
- Startups with Enterprise Support or AWS Unified Operations can also onboard to [AWS Security Incident Response](https://aws.amazon.com/security-incident-response/), a managed service that provides automated triage and 24/7 response for security events. For a comprehensive framework for building your incident response program, see the [AWS Security Incident Response Guide](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/welcome.html).
+ Startups with AWS Enterprise Support or AWS Unified Operations can also onboard to [AWS Security Incident Response](https://aws.amazon.com/security-incident-response/), a managed service that provides automated triage and 24/7 response for security events. For a framework for building your incident response program, see the [AWS Security Incident Response Guide](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/welcome.html).

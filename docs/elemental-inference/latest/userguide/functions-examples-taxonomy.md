@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/functions-examples-taxonomy.html
 ---
 
-# Classify each scene against your own taxonomy
+# Example – Classify each scene against your own taxonomy
 <a name="functions-examples-taxonomy"></a>
 
-Reuses the classification that Elemental Inference has already produced, and asks the model only to map it onto categories of your own – a much cheaper prompt than sending video. Requires an enabled contextual metadata output on the feed, and a per-scene trigger.
+Reuses the classification that Elemental Inference has already produced, and asks the model only to map it onto categories of your own – a much cheaper prompt than sending frames. Requires an enabled contextual metadata output on the feed, and a per-scene trigger.
 
 **Request expression** (Anthropic Claude models)
 
@@ -19,10 +19,10 @@ Reuses the classification that Elemental Inference has already produced, and ask
       "content": [
         {
           "type": "text",
-          "text": "Scene summary: " & (media.contextual.summary != null ? media.contextual.summary : "none")
-                & "\nIAB categories: " & $join(media.contextual.categories, ", ")
-                & "\nObjects: " & $join(media.contextual.objects, ", ")
-                & "\nBrand-safety risk: " & media.contextual.garm.risk
+          "text": "Scene summary: " & ($exists(media.contextual.scene.summary) ? media.contextual.scene.summary : "none")
+                & "\nInteractive Advertising Bureau (IAB) categories: " & $join(media.contextual.scene.iabTaxonomy.categories.path[-1], ", ")
+                & "\nObjects: " & $join(media.contextual.scene.objects, ", ")
+                & "\nFlagged brand safety categories: " & $join(media.contextual.scene.garm.suitability.categories[flagged].category, ", ")
                 & "\n\nChoose the single best match from this list: sport-live, sport-studio, advertising, news, other."
                 & " Reply with only a JSON object with keys segment and confidence, where confidence is a number from 0 to 1."
                 & " Don't wrap it in a code block."
@@ -33,7 +33,7 @@ Reuses the classification that Elemental Inference has already produced, and ask
 }
 ```
 
-`summary` is `null` when the contextual metadata output doesn't generate summaries, so the test is `!= null`. `$exists()` returns `true` for a `null` value, which would put the word `null` in the prompt.
+`summary` is left out when the contextual metadata output doesn't generate summaries, so the expression tests it with `$exists()`. A list that is left out, such as `objects` with no labels, adds nothing after its label in the prompt.
 
 **Response expression**. Parsing the model's text stores structured data rather than a string that your application has to parse again.
 
@@ -55,7 +55,7 @@ Reuses the classification that Elemental Inference has already produced, and ask
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "perScene": {} },
       "contextualMetadataSettings": { "outputName": "ctx-md" }
     }

@@ -18,7 +18,7 @@ Custom agents appear in the **Custom agents** section of the **Agents** page, al
 
 **Tools** – MCP tools available in your Agent Space that the custom agent can invoke during invocation. You select which tools the agent has access to from the full set of tools provided by your connected integrations and custom MCP servers.
 
-**Skills** – Modular instruction sets that provide additional domain knowledge, investigation procedures, or specialized capabilities to the agent at runtime. Skills can also enable output capabilities such as creating artifacts or recommendations. For more information about skills, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills.md).
+**Skills** – Modular instruction sets that provide additional domain knowledge, investigation procedures, or specialized capabilities to the agent at runtime. Skills can also enable output capabilities such as creating artifacts or recommendations. For more information about skills, see [DevOps Agent Skills](about-aws-devops-agent-devops-agent-skills-index.md).
 
 **Memory stores** – Collections of memory that you attach to give the agent focused, informational context, such as your topology, past root causes, standing directives, or a store you created. A custom agent reads the memory stores you attach to it, and can write to the custom stores among them (managed stores such as `monitors` and `directives` stay read-only), so you give it the knowledge its job needs and leave the rest out. A new custom agent starts with no memory stores attached, so it has no memory access until you attach one. For more information, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories.md).
 

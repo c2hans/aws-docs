@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/forecast/index.html
 title: 'Amazon Forecast Documentation'
 canonical_url: https://docs.aws.amazon.com/forecast/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # Amazon Forecast Documentation

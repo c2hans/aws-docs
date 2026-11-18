@@ -11,7 +11,7 @@ This is a tagged union for all of the types of events an enhanced fan-out consum
 <a name="API_SubscribeToShardEventStream_Contents"></a>
 
  ** SubscribeToShardEvent **   <a name="Streams-Type-SubscribeToShardEventStream-SubscribeToShardEvent"></a>
-After you call [SubscribeToShard](API_SubscribeToShard.md), Kinesis Data Streams sends events of this type to your consumer. For an example of how to handle these events, see [Enhanced Fan-Out Using the Kinesis Data Streams API](/streams/latest/dev/building-enhanced-consumers-api.html).
+After you call [SubscribeToShard](API_SubscribeToShard.md), Kinesis Data Streams sends events of this type to your consumer. For an example of how to handle these events, see [Develop enhanced fan-out consumers with the AWS SDK for Java](/streams/latest/dev/building-enhanced-consumers-api.html).
 Type: [SubscribeToShardEvent](API_SubscribeToShardEvent.md) object
 Required: Yes
 
@@ -28,7 +28,7 @@ HTTP Status Code:
 Required: No
 
  ** KMSDisabledException **   <a name="Streams-Type-SubscribeToShardEventStream-KMSDisabledException"></a>
-The request was rejected because the specified customer master key (CMK) isn't enabled.
+The request was rejected because the specified KMS key isn't enabled.
 Type: Exception
 HTTP Status Code:
 Required: No

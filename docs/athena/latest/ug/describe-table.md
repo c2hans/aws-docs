@@ -15,7 +15,7 @@ DESCRIBE [EXTENDED | FORMATTED] [db_name.]table_name [PARTITION partition_spec] 
 ```
 
 **Important**
-The syntax for this statement is `DESCRIBE {{table_name}}`, not `DESCRIBE TABLE {{table_name}}`. Using the latter syntax results in the error message FAILED: SemanticException [Error 10001]: Table not found table.
+The syntax for this statement is `DESCRIBE {{table_name}}`, not `DESCRIBE TABLE {{table_name}}`. Using the latter syntax results in the error message `FAILED: SemanticException [Error 10001]: Table not found table`.
 
 ## Parameters
 <a name="parameters"></a>

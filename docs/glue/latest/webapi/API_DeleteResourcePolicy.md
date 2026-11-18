@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DeleteResourcePol
 
 Deletes a specified policy.
 
+To restrict who can delete the Data Catalog resource policy, use a `Deny` statement for `glue:DeleteResourcePolicy` in an identity-based policy or a service control policy (SCP), not in the Data Catalog resource policy. This prevents a resource policy from blocking its own removal.
+
 ## Request Syntax
 <a name="API_DeleteResourcePolicy_RequestSyntax"></a>
 

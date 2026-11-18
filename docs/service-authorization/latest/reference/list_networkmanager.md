@@ -68,6 +68,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [networkmanager:CreateConnection](#list_networkmanager-action-CreateConnection)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [networkmanager:TagResource](#list_networkmanager-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateContextStore  **
+  - **IAM action:**  [networkmanager:TagResource](#list_networkmanager-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreateCoreNetwork  **
   - **IAM action:**  [networkmanager:CreateCoreNetwork](#list_networkmanager-action-CreateCoreNetwork)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [networkmanager:TagResource](#list_networkmanager-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write

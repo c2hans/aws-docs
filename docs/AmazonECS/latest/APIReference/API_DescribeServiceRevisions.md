@@ -181,6 +181,9 @@ Required: Yes
          },
          "gatewayConnectors": [
             {
+               "deregistrationDelay": {
+                  "timeoutSeconds": number
+               },
                "filters": {
                   "accessTypes": [ "string" ]
                },

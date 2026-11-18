@@ -13,6 +13,8 @@ Parse the `HubContentDocument` string as JSON to read the properties described h
 
 The following properties are always present: `Url`, `TrainingSupported`, `IncrementalTrainingSupported`, `ModelTypes`, and `Capabilities`. All other properties are optional and appear only when they apply to the model.
 
+<a name="hub-content-document-model-schema-top-level"></a>**Top-level properties**
+
 The following table lists the top-level properties of the model `HubContentDocument`.
 
 | Property | Type | Description |
@@ -102,6 +104,8 @@ The following table lists the top-level properties of the model `HubContentDocum
 | `DisableOutputCompression` | `boolean` | Specifies whether to skip compressing the training output artifact.<br />**Optional** |
 | `ModelDir` | `string` | The directory inside the training container where the script writes the final model.<br />**Optional** |
 | `TrainingInstanceTypeVariants` | `object` | The per-instance-family overrides for the training configuration (image URIs and gated-model environment variables).<br />**Optional** |
+
+<a name="hub-content-document-model-schema-nested"></a>**Nested properties**
 
 The following table lists the properties nested inside the object and array properties in the preceding table. A nested property marked as required is required only when its parent property is present.
 

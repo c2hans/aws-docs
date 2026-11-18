@@ -5,15 +5,27 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 # MedicalScribeOutputStream
 <a name="API_MedicalScribeOutputStream"></a>
 
-Output stream from Medical Scribe containing transcript events and errors
+The output stream of a listening session. It carries transcript events, periodontal chart events, checklist events, and errors.
 
 ## Contents
 <a name="API_MedicalScribeOutputStream_Contents"></a>
+
+ ** checklistEvent **   <a name="connecthealth-Type-MedicalScribeOutputStream-checklistEvent"></a>
+Real-time extraction is in preview release for Amazon Connect Health and is subject to change. To request access to this feature, contact your AWS account team.
+A snapshot of the session's checklist. Amazon Connect Health sends this event only when real-time extraction is enabled for the account and the session uses a supported note template.
+Type: [MedicalScribeChecklistEvent](API_MedicalScribeChecklistEvent.md) object
+Required: No
 
  ** internalFailureException **   <a name="connecthealth-Type-MedicalScribeOutputStream-internalFailureException"></a>
 
 Type: Exception
 HTTP Status Code: 500
+Required: No
+
+ ** periodontalChartEvent **   <a name="connecthealth-Type-MedicalScribeOutputStream-periodontalChartEvent"></a>
+Real-time extraction is in preview release for Amazon Connect Health and is subject to change. To request access to this feature, contact your AWS account team.
+A snapshot of the periodontal chart. Amazon Connect Health sends this event only when real-time extraction is enabled for the account and periodontal charting is dictated during the session.
+Type: [MedicalScribePeriodontalChartEvent](API_MedicalScribePeriodontalChartEvent.md) object
 Required: No
 
  ** transcriptEvent **   <a name="connecthealth-Type-MedicalScribeOutputStream-transcriptEvent"></a>

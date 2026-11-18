@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/url-redirection-prerequisites.html
 ---
 
-# Prerequisites
+# URL redirection prerequisites
 <a name="url-redirection-prerequisites"></a>
 
 Before you enable URL redirection, make sure that your environment meets the following requirements.

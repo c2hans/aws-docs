@@ -96,7 +96,7 @@ You can't add the tag permission when generating a SAS token in the Azure portal
 
 Make sure that your SAS doesn't expire before you expect to finish your transfer. For information about configuring a SAS expiration policy, see the [Azure Blob Storage documentation](https://learn.microsoft.com/en-us/azure/storage/common/sas-expiration-policy).
 
-If the SAS expires during the transfer, DataSync can no longer access your Azure Blob Storage location. (You might see a Failed to open directory error.) If this happens, [update your location](#azure-blob-update-location) with a new SAS token and restart your DataSync task.
+If the SAS expires during the transfer, DataSync can no longer access your Azure Blob Storage location. (You might see a `Failed to open directory` error.) If this happens, [update your location](#azure-blob-update-location) with a new SAS token and restart your DataSync task.
 
 ### Federated identity (OIDC)
 <a name="azure-blob-federated-identity"></a>

@@ -29,9 +29,11 @@ Valid Values: `INTERNAL | PAID`
 Required: Yes
 
  ** provider **   <a name="config-Type-ConfigurationRecorderSummary-provider"></a>
-For service-linked configuration recorders that record resources from a third-party cloud service provider, indicates the cloud service provider. Currently, `AZURE` is supported.
+For service-linked configuration recorders that record resources from a third-party cloud service provider, indicates the cloud service provider. Valid values:
++  `AZURE` – The recorder records resources from Microsoft Azure
++  `GCP` – The recorder records resources from Google Cloud
 Type: String
-Valid Values: `AZURE`
+Valid Values: `AZURE | GCP`
 Required: No
 
  ** servicePrincipal **   <a name="config-Type-ConfigurationRecorderSummary-servicePrincipal"></a>

@@ -56,8 +56,14 @@ Content-type: application/json
       "StackTrace": [ "string" ]
    },
    "ExecutionDataIncluded": boolean,
+   "ExpectedExecutionTimeoutTimestamp": number,
    "FunctionArn": "string",
    "InputPayload": "string",
+   "PauseDetails": {
+      "ExecutionTimeoutPaused": boolean,
+      "PauseRequestTimestamp": number,
+      "Reason": "string"
+   },
    "Result": "string",
    "StartTimestamp": number,
    "Status": "string",
@@ -103,6 +109,10 @@ Type: [ErrorObject](API_ErrorObject.md) object
 Indicates whether execution data is included in this response. Returns `false` when `IncludeExecutionData` is set to `false` in the request.
 Type: Boolean
 
+ ** [ExpectedExecutionTimeoutTimestamp](#API_GetDurableExecution_ResponseSyntax) **   <a name="lambda-GetDurableExecution-response-ExpectedExecutionTimeoutTimestamp"></a>
+The date and time when the durable execution will time out, in Unix timestamp format. This value includes any extension from time the execution spent paused. While the execution is paused with its execution timeout paused, this value is 366 days after the start time. This field isn't present for completed executions.
+Type: Timestamp
+
  ** [FunctionArn](#API_GetDurableExecution_ResponseSyntax) **   <a name="lambda-GetDurableExecution-response-FunctionArn"></a>
 The Amazon Resource Name (ARN) of the Lambda function that was invoked to start this durable execution.
 Type: String
@@ -114,6 +124,10 @@ The JSON input payload that you provided when you started the durable execution.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 6291456.
 
+ ** [PauseDetails](#API_GetDurableExecution_ResponseSyntax) **   <a name="lambda-GetDurableExecution-response-PauseDetails"></a>
+The details of the pause, including when you requested it and whether it pauses the execution timeout. This field is only present when the execution status is `PAUSING` or `PAUSED`.
+Type: [PauseDetails](API_PauseDetails.md) object
+
  ** [Result](#API_GetDurableExecution_ResponseSyntax) **   <a name="lambda-GetDurableExecution-response-Result"></a>
 The JSON result returned by the durable execution if it completed successfully. This field is only present when the execution status is `SUCCEEDED`. Asynchronous invocations support up to 1 MB, and synchronous invocations support up to 6 MB.
 Type: String
@@ -124,9 +138,17 @@ The date and time when the durable execution started, in Unix timestamp format.
 Type: Timestamp
 
  ** [Status](#API_GetDurableExecution_ResponseSyntax) **   <a name="lambda-GetDurableExecution-response-Status"></a>
-The current status of the durable execution. Valid values are `RUNNING`, `SUCCEEDED`, `FAILED`, `TIMED_OUT`, and `STOPPED`.
+The durable execution has one of the following statuses:
++  `RUNNING` – The execution is running or waiting for pending operations to complete.
++  `PAUSING` – The execution is waiting for an in-progress invocation to reach its next checkpoint before it pauses.
++  `PAUSED` – The execution is paused, and Lambda doesn't invoke your function.
++  `SUCCEEDED` – The execution completed successfully.
++  `FAILED` – The execution completed with an error.
++  `TIMED_OUT` – The execution exceeded its execution timeout.
++  `STOPPED` – A `StopDurableExecution` request stopped the execution.
++  `DELETING` – A `DeleteDurableExecution` request is deleting the execution and its data.
 Type: String
-Valid Values: `RUNNING | SUCCEEDED | FAILED | TIMED_OUT | STOPPED`
+Valid Values: `RUNNING | SUCCEEDED | FAILED | TIMED_OUT | STOPPED | DELETING | PAUSING | PAUSED`
 
  ** [TraceHeader](#API_GetDurableExecution_ResponseSyntax) **   <a name="lambda-GetDurableExecution-response-TraceHeader"></a>
 The trace headers associated with the durable execution.

@@ -26,7 +26,9 @@ The role permissions policy named `AmazonEMRServerlessServiceRolePolicy` allows 
 **Note**
 Managed policy contents change, so the policy shown here might be out of date. View the most up-to-date policy [AmazonEMRServerlessServiceRolePolicy](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonEMRServerlessServiceRolePolicy) in the AWS Management Console.
 + Action: `ec2:CreateNetworkInterface`
++ Action: `ec2:CreateNetworkInterfacePermission`
 + Action: `ec2:DeleteNetworkInterface`
++ Action: `ec2:DeleteNetworkInterfacePermission`
 + Action: `ec2:DescribeNetworkInterfaces`
 + Action: `ec2:DescribeSecurityGroups`
 + Action: `ec2:DescribeSubnets`

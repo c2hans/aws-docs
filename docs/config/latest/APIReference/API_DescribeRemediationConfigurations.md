@@ -28,7 +28,7 @@ A list of AWS Config rule names of remediation configurations for which you want
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 25 items.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
 ## Response Syntax

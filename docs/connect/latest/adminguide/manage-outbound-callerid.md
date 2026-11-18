@@ -61,7 +61,7 @@ An outbound whisper flow overrides the queue setting for direct outbound calls a
 The whisper flow caller ID takes priority over the queue setting.
 
 **Note**
-If you haven't configured a caller ID on the queue and haven't attached a whisper flow, direct outbound calls fail with an Invalid outbound configuration error. Either the queue or the whisper flow must supply a caller ID.
+If you haven't configured a caller ID on the queue and haven't attached a whisper flow, direct outbound calls fail with an `Invalid outbound configuration` error. Either the queue or the whisper flow must supply a caller ID.
 
 ## Set caller ID for transfers
 <a name="callerid-transfers-active"></a>

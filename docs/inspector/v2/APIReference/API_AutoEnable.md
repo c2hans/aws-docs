@@ -20,6 +20,11 @@ Represents whether Amazon ECR scans are automatically enabled for new members of
 Type: Boolean
 Required: Yes
 
+ ** ami **   <a name="inspector2-Type-AutoEnable-ami"></a>
+Represents whether Amazon Machine Image (AMI) scans are automatically enabled for new members of your Amazon Inspector organization.
+Type: Boolean
+Required: No
+
  ** codeRepository **   <a name="inspector2-Type-AutoEnable-codeRepository"></a>
 Represents whether code repository scans are automatically enabled for new members of your Amazon Inspector organization.
 Type: Boolean

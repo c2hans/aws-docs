@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/doc-history
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Context sharing with security services](https://docs.aws.amazon.com/network-manager/latest/tgwnm/context-stores.html) | Network Manager now supports context sharing with security services. You can create a context store in a global network and associate transit gateways to share the context of your resources with security services. | November 17, 2026 |
 | [Support for dual-stack IPv6 endpoints.](#doc-history) | Network Manager now supports dual-stack IPv6 endpoints. | March 25, 2025 |
 | [Support PrivateLink.](#doc-history) | Network Manager now supports PrivateLink in the us-west-2 and us-gov-west-1 Regions. | March 25, 2025 |
 | [Support PrivateLink.](#doc-history) | Network Manager now supports PrivateLink in the us-west-2 and us-gov-west-1 Regions. | March 25, 2025 |

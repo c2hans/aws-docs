@@ -18,6 +18,9 @@ When configuring cross-account replication, the destination account must grant t
    "replicationConfiguration": {
       "rules": [
          {
+            "deleteReplication": {
+               "enabled": {{boolean}}
+            },
             "destinations": [
                {
                   "region": "{{string}}",
@@ -56,6 +59,9 @@ Required: Yes
    "replicationConfiguration": {
       "rules": [
          {
+            "deleteReplication": {
+               "enabled": boolean
+            },
             "destinations": [
                {
                   "region": "string",

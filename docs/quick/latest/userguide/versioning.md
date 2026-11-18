@@ -29,6 +29,8 @@ You work with two version types:
 + **Draft** — Your working copy. You can edit and test your flow without affecting the published version. As you edit, your flow is saved automatically. You can have one draft at a time.
 + **Published** — The version that other users can access and run. You can publish directly when your flow is ready.
 
+**Flow version types**
+
 | Version Type | Can Edit? | Visible to Users? | Next Step |
 | --- | --- | --- | --- |
 | Draft | Yes | No | Publish (or submit for approval) |

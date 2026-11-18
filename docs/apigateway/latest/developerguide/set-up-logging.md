@@ -13,6 +13,8 @@ There are two types of API logging in CloudWatch:
 
 You can enable execution logging and access logging independently of each other.
 
+For requests to a method that uses a JWT authorizer, execution logs include the authorizer result, including the reason when a token is rejected. When you turn on logging of full request and response data, the logs also include a summary of the validated claims. You can test a JWT authorizer with `TestInvokeAuthorizer`.
+
 ## Permissions for CloudWatch logging
 <a name="set-up-access-logging-permissions"></a>
 

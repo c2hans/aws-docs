@@ -5,11 +5,12 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutResou
 # PutResourcePolicy
 <a name="API_PutResourcePolicy"></a>
 
-Attaches a resource-based policy to a data stream or registered consumer. If you are using an identity other than the root user of the AWS account that owns the resource, the calling identity must have the `PutResourcePolicy` permissions on the specified Kinesis Data Streams resource and belong to the owner's account in order to use this operation. If you don't have `PutResourcePolicy` permissions, Amazon Kinesis Data Streams returns a `403 Access Denied error`. If you receive a `ResourceNotFoundException`, check to see if you passed a valid stream or consumer resource.
+Attaches a resource-based policy to a data stream, a queue, or an enhanced fan-out consumer. If you are using an identity other than the root user of the AWS account that owns the resource, the calling identity must have the `PutResourcePolicy` permissions on the specified Kinesis Data Streams resource and belong to the owner's account in order to use this operation. If you don't have `PutResourcePolicy` permissions, Amazon Kinesis Data Streams returns a `403 Access Denied error`. If you receive a `ResourceNotFoundException`, check to see if you passed a valid stream or consumer resource.
 
  Request patterns can be one of the following:
 + Data stream pattern: `arn:aws.*:kinesis:.*:\d{12}:.*stream/\S+`
 + Consumer pattern: `^(arn):aws.*:kinesis:.*:\d{12}:.*stream\/[a-zA-Z0-9_.-]+\/consumer\/[a-zA-Z0-9_.-]+:[0-9]+`
++ Queue pattern: `arn:aws.*:kinesis:.*:\d{12}:queue/\S+`
 
 For more information, see [Controlling Access to Amazon Kinesis Data Streams Resources Using IAM](https://docs.aws.amazon.com/streams/latest/dev/controlling-access.html).
 
@@ -35,10 +36,10 @@ Type: String
 Required: Yes
 
  ** [ResourceARN](#API_PutResourcePolicy_RequestSyntax) **   <a name="Streams-PutResourcePolicy-request-ResourceARN"></a>
-The Amazon Resource Name (ARN) of the data stream or consumer.
+The Amazon Resource Name (ARN) of a data stream, a queue, or an enhanced fan-out consumer.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel)/\S+`
+Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel|queue)/\S+`
 Required: Yes
 
  ** [StreamId](#API_PutResourcePolicy_RequestSyntax) **   <a name="Streams-PutResourcePolicy-request-StreamId"></a>
@@ -62,6 +63,10 @@ For information about the errors that are common to all actions, see [Common Err
 Specifies that you do not have the permissions required to perform this operation.
 HTTP Status Code: 400
 
+ ** InternalFailureException **
+The processing of the request failed because of an unknown error, exception, or failure.
+HTTP Status Code: 500
+
  ** InvalidArgumentException **
 A specified parameter exceeds its restrictions, is not supported, or can't be used. For more information, see the returned message.
  ** message **
@@ -84,6 +89,10 @@ HTTP Status Code: 400
 The requested resource could not be found. The stream might not be specified correctly.
  ** message **
 A message that provides information about the error.
+HTTP Status Code: 400
+
+ ** ValidationException **
+The request failed validation. For example, a parameter value is not valid, a combination of parameters is not supported, or the operation is not supported for the stream's capacity mode. The error message describes the specific reason.
 HTTP Status Code: 400
 
 ## See Also

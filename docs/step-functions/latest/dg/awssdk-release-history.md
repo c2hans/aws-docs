@@ -9,6 +9,7 @@ The following table lists the AWS SDK service integrations added to Step Functio
 
 | Date | Services added |
 | --- | --- |
+| November 4, 2026 | AWS Lambda Web |
 | October 14, 2026 | AWS Network Security Manager, Amazon CloudWatch Omni, Amazon EventBridge V2 |
 | September 25, 2026 | AWS Agent Registry, AWS Agent Registry Control, AWS IAM Account Access Manager, AWS IAM Toolbox, AWS Pricing Plan Manager |
 | August 18, 2026 | AWS Lambda Core, AWS Lambda MicroVMs, AWS Partner Central Revenue Measurement, AWS Resilience Hub V2, AWS Support Authorization, Amazon SageMaker Job Runtime |

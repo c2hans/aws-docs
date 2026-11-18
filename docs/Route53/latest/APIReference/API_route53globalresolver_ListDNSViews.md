@@ -75,7 +75,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [dnsViews](#API_route53globalresolver_ListDNSViews_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_ListDNSViews-response-dnsViews"></a>
-An array of information about the DNS views, such as whether DNSSEC is enabled, creation time, etc.
+An array of information about the DNS views, such as whether DNSSEC is enabled and the creation time.
 Type: Array of [DNSViewSummary](API_route53globalresolver_DNSViewSummary.md) objects
 
  ** [nextToken](#API_route53globalresolver_ListDNSViews_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_ListDNSViews-response-nextToken"></a>

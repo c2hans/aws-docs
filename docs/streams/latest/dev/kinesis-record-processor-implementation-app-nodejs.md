@@ -14,7 +14,7 @@ The KCL is a Java library; support for languages other than Java is provided usi
 
 To download the Node.js KCL from GitHub, go to [Kinesis Client Library (Node.js)](https://github.com/awslabs/amazon-kinesis-client-nodejs).
 
-**Sample Code Downloads**
+**Sample code downloads**
 
 There are two code samples available for KCL in Node.js:
 + [basic-sample](https://github.com/awslabs/amazon-kinesis-client-nodejs/tree/master/samples/basic_sample)

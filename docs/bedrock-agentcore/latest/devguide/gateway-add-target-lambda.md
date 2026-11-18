@@ -30,6 +30,9 @@ When working with Lambda targets, be aware of the following limitations and cons
 + Lambda function timeouts should be configured appropriately to handle the expected processing time of your tools
 + Consider implementing error handling in your Lambda function to provide meaningful error messages to the client
 
+**Important**
+If your target propagates headers or query parameters and your Lambda function uses a strongly typed runtime (such as Java), set `propagatedHeadersEncoding` to `JSON_STRING`. Otherwise, your function fails before your handler runs. For more information, see [Propagated headers and query parameters encoding](#gateway-lambda-propagated-headers-encoding).
+
 ## Lambda function tool schema
 <a name="gateway-lambda-tool-schema"></a>
 
@@ -246,6 +249,10 @@ Contains the following metadata:
 + bedrockAgentCoreGatewayId – The ID of the gateway that was invoked.
 + bedrockAgentCoreTargetId – The ID of the gateway target that was invoked.
 + bedrockAgentCoreToolName– The name of the tool that was called. The tool name is in the format `${target_name}` *\_* `${tool_name}`.
++ bedrockAgentCorePropagatedHeaders – The request headers propagated to the target. Present only when the target’s `metadataConfiguration` allowlists request headers and at least one allowlisted header is present on the request. For more information, see [Header propagation with Gateway](gateway-headers.md).
++ bedrockAgentCorePropagatedQueryParameters – The query parameters propagated to the target. Present only when the target’s `metadataConfiguration` allowlists query parameters and at least one allowlisted query parameter is present on the request.
+
+The `propagatedHeadersEncoding` setting of the target determines the format of the propagated fields. For more information, see [Propagated headers and query parameters encoding](#gateway-lambda-propagated-headers-encoding).
 
 The format of the context object is as follows:
 
@@ -289,4 +296,120 @@ def lambda_handler(event, context):
     else:
         # Handle unknown tool
         pass
+```
+
+### Propagated headers and query parameters encoding
+<a name="gateway-lambda-propagated-headers-encoding"></a>
+
+When a Lambda target propagates request headers or query parameters, the gateway adds them to the context object as `bedrockAgentCorePropagatedHeaders` and `bedrockAgentCorePropagatedQueryParameters`. Use the optional `propagatedHeadersEncoding` field in the Lambda target configuration to control how the gateway encodes these fields:
++  `JSON_NESTED` (default) – Each propagated field is a nested JSON object. This is the behavior when you omit `propagatedHeadersEncoding`.
++  `JSON_STRING` – Each propagated field is a string that contains the serialized JSON object. Every value in the context object is then a string.
+
+For example, with a propagated `x-tenant-id` header, the `bedrockAgentCorePropagatedHeaders` field has the following format with `JSON_NESTED` (default):
+
+```
+{
+  "bedrockAgentCorePropagatedHeaders": {"x-tenant-id": "tenant-123"}
+}
+```
+
+With `JSON_STRING`, the same field has the following format:
+
+```
+{
+  "bedrockAgentCorePropagatedHeaders": "{\"x-tenant-id\":\"tenant-123\"}"
+}
+```
+
+**Important**
+Strongly typed Lambda runtimes, such as the AWS Lambda Java managed runtime, deserialize the client context custom map as `Map<String, String>`. If a propagated field is a nested JSON object, the runtime fails before your handler runs. For example, the Java managed runtime fails with `IllegalStateException: Expected a string but was BEGIN_OBJECT`. If your Lambda function uses a strongly typed runtime and your target propagates headers or query parameters, set `propagatedHeadersEncoding` to `JSON_STRING`. Dynamically typed runtimes, such as Python, can use either encoding.
+
+Set `propagatedHeadersEncoding` in the `lambda` object of the target configuration when you create or update the target. The following example shows a Lambda target configuration that uses `JSON_STRING` encoding:
+
+```
+{
+    "name": "my-java-lambda-target",
+    "targetConfiguration": {
+        "mcp": {
+            "lambda": {
+                "lambdaArn": "arn:aws:lambda:us-west-2:123456789012:function:my-java-function",
+                "toolSchema": {
+                    "s3": {
+                        "uri": "s3://amzn-s3-demo-bucket/tool-schema.json"
+                    }
+                },
+                "propagatedHeadersEncoding": "JSON_STRING"
+            }
+        }
+    },
+    "credentialProviderConfigurations": [{
+        "credentialProviderType": "GATEWAY_IAM_ROLE"
+    }],
+    "metadataConfiguration": {
+        "allowedRequestHeaders": ["x-tenant-id"],
+        "allowedQueryParameters": ["version"]
+    }
+}
+```
+
+**Note**
+When you update a Lambda target and include the `lambda` configuration, the gateway applies the `propagatedHeadersEncoding` value from the request. If you omit the field, the encoding resets to the default (`JSON_NESTED`). To keep `JSON_STRING`, include it in every update that contains the `lambda` configuration.
+
+With `JSON_STRING`, parse the propagated fields in your function. The following Java example reads the propagated headers:
+
+```
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.Collections;
+import java.util.Map;
+
+public class Handler implements RequestHandler<Map<String, Object>, Map<String, Object>> {
+    private static final ObjectMapper MAPPER = new ObjectMapper();
+
+    @Override
+    public Map<String, Object> handleRequest(Map<String, Object> event, Context context) {
+        Map<String, String> custom = context.getClientContext().getCustom();
+
+        // Propagated fields are JSON strings when propagatedHeadersEncoding is JSON_STRING
+        Map<String, String> headers = parseJsonMap(custom.get("bedrockAgentCorePropagatedHeaders"));
+        Map<String, String> queryParameters = parseJsonMap(custom.get("bedrockAgentCorePropagatedQueryParameters"));
+
+        String tenantId = headers.get("x-tenant-id");
+        // Process the request
+        return Map.of("tenantId", tenantId == null ? "" : tenantId);
+    }
+
+    private static Map<String, String> parseJsonMap(String json) {
+        if (json == null) {
+            return Collections.emptyMap();
+        }
+        try {
+            return MAPPER.readValue(json, new TypeReference<Map<String, String>>() {});
+        } catch (JsonProcessingException e) {
+            // The value is not a JSON object string. Confirm that the target sets propagatedHeadersEncoding to JSON_STRING.
+            throw new IllegalArgumentException(
+                "Propagated field is not a valid JSON object string. Set propagatedHeadersEncoding to JSON_STRING on the target.", e);
+        }
+    }
+}
+```
+
+In Python, the propagated fields are dictionaries with `JSON_NESTED` and strings with `JSON_STRING`. The following Python example uses `json.loads()` to parse the propagated fields when the target uses `JSON_STRING` encoding:
+
+```
+import json
+
+def lambda_handler(event, context):
+    custom = context.client_context.custom
+
+    # Propagated fields are JSON strings when propagatedHeadersEncoding is JSON_STRING
+    headers = json.loads(custom.get('bedrockAgentCorePropagatedHeaders', '{}'))
+    query_parameters = json.loads(custom.get('bedrockAgentCorePropagatedQueryParameters', '{}'))
+
+    tenant_id = headers.get('x-tenant-id', '')
+    # Process the request
+    return {'tenantId': tenant_id}
 ```

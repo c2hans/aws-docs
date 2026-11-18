@@ -52,6 +52,7 @@ Content-type: application/json
    "ipv6Addresses": [ "string" ],
    "name": "string",
    "observabilityRegion": "string",
+   "publicIpStatus": "string",
    "regions": [ "string" ],
    "status": "string",
    "updatedAt": "string"
@@ -123,6 +124,14 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
 The AWS Regions in which the users' Global Resolver query resolution logs will be propagated.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 32.
+
+ ** [publicIpStatus](#API_route53globalresolver_GetGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetGlobalResolver-response-publicIpStatus"></a>
+The public IP connectivity configured for the Route 53 Global Resolver. Public IP addresses let DNS clients send queries to the resolver over the internet. Valid values are the following:
++  `ENABLED_RESERVED` - Public IP connectivity is enabled, and the global anycast public IP addresses are reserved for the Route 53 Global Resolver.
++  `DISABLED_RESERVED` - Public IP connectivity is disabled, and the global anycast public IP addresses remain reserved for the Route 53 Global Resolver.
++  `DISABLED_RELEASED` - Public IP connectivity is disabled, and the global anycast public IP addresses are released.
+Type: String
+Valid Values: `ENABLED_RESERVED | DISABLED_RESERVED | DISABLED_RELEASED`
 
  ** [regions](#API_route53globalresolver_GetGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_GetGlobalResolver-response-regions"></a>
 The AWS Regions in which the Global Resolver operate.

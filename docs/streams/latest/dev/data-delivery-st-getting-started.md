@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-gett
 <a name="data-delivery-st-gs-prerequisites"></a>
 
 Before you begin, ensure the following prerequisites are met:
-+ A Kinesis Data Streams stream configured with On-Demand Standard or On-Demand Advantage capacity mode.
++ A Kinesis Data Streams stream configured with On-demand Standard or On-demand Advantage capacity mode.
 + An IAM service execution role that grants Kinesis Data Streams permission to deliver records to your destination. See [IAM permissions for data delivery](data-delivery-iam.md).
 + A schema registered in AWS Glue Schema Registry.
 + An S3 table bucket for the destination Iceberg table.

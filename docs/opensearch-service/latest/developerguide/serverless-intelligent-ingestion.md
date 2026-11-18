@@ -11,6 +11,8 @@ Intelligent ingestion supports both structured data and documents. For structure
 
 You create and manage ingestion directly from your OpenSearch Serverless NextGen collection. You don't have to create and manage a separate ingestion pipeline or provision document-processing infrastructure to get started. Intelligent ingestion automatically scales capacity with your workload, up to the collection's maximum OpenSearch Compute Unit (OCU) limit. If you want to manage the ingestion infrastructure yourself, you can get started with [Overview of Amazon OpenSearch Ingestion](ingestion.md).
 
+**Supported data sources**
+
 Before you configure ingestion, confirm that your source is supported. Intelligent ingestion supports the following data sources:
 + [Ingesting from Amazon S3](serverless-intelligent-ingestion-s3.md)
 

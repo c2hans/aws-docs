@@ -12,7 +12,7 @@ This section describes the quotas for live content in AWS Elemental MediaPackage
 
 The following table describes quotas in AWS Elemental MediaPackage for live content that can be increased. For information about changing quotas, see [AWS Service Quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
 
-For some customers, your account quota might be below these published quotas. If you believe that you encountered a Resource limit exceeded error wrongfully, use the Service Quotas console to [request quota increases](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediapackage/quotas).
+For some customers, your account quota might be below these published quotas. If you believe that you encountered a `Resource limit exceeded` error wrongfully, use the Service Quotas console to [request quota increases](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediapackage/quotas).
 
 | Resource | Default quota |
 | --- | --- |

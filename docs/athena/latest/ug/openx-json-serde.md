@@ -10,7 +10,7 @@ Like the Hive JSON SerDe, you can use the OpenX JSON to process JSON data. The d
 ## Considerations and limitations
 <a name="openx-json-serde-considerations-limitations"></a>
 + When using the OpenX JSON SerDe, the number of results and their values can be non-deterministic. The results can contain more rows than expected, fewer rows than expected, or unexpected null values when none are present in the underlying data. To work around this issue, use the [Hive JSON SerDe](hive-json-serde.md), or rewrite the data to another file format type.
-+ The SerDe expects each JSON document to be on a single line of text with no line termination characters separating the fields in the record. If the JSON text is in pretty print format, you may receive an error message like HIVE\_CURSOR\_ERROR: Row is not a valid JSON Object or HIVE\_CURSOR\_ERROR: JsonParseException: Unexpected end-of-input: expected close marker for OBJECT when you attempt to query the table after you create it.
++ The SerDe expects each JSON document to be on a single line of text with no line termination characters separating the fields in the record. If the JSON text is in pretty print format, you may receive an error message like `HIVE_CURSOR_ERROR: Row is not a valid JSON Object` or `HIVE_CURSOR_ERROR: JsonParseException: Unexpected end-of-input: expected close marker for OBJECT` when you attempt to query the table after you create it.
 
   For more information, see [JSON Data Files](https://github.com/rcongiu/Hive-JSON-Serde#json-data-files) in the OpenX SerDe documentation on GitHub.
 
@@ -38,7 +38,7 @@ ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 WITH SERDEPROPERTIES ("case.insensitive" = "FALSE", "mapping.userid" = "userId")
 ```
 If you have two keys like `URL` and `Url` that are the same when they are in lowercase, an error like the following can occur:
-HIVE\_CURSOR\_ERROR: Row is not a valid JSON Object - JSONException: Duplicate key "url"
+`HIVE_CURSOR_ERROR: Row is not a valid JSON Object - JSONException: Duplicate key "url"`
 To resolve this, set the `case.insensitive` property to `FALSE` and map the keys to different names, as in the following example:
 
 ```

@@ -74,6 +74,7 @@ Defines the type of log that the source is sending.
 + For Amazon ECS, the valid value is `ACTION_LOGS`.
 + For AWS Entity Resolution, the valid value is `WORKFLOW_LOGS`.
 + For Amazon EventBridge Event Bus (Custom), the valid values are `INFO_LOGS` and `ERROR_LOGS`.
++ For Amazon GameLift Servers, the valid value is `QUEUE_PLACEMENT_LOGS`.
 + For IAM Identity Center, the valid value is `ERROR_LOGS`.
 + For Network Firewall Proxy, the valid values are `ALERT_LOGS`, `ALLOW_LOGS`, and `DENY_LOGS`.
 + For Network Load Balancer, the valid value is `NLB_ACCESS_LOGS`.

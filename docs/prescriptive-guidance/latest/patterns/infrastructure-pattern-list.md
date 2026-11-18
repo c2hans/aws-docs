@@ -12,6 +12,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 + [Create a pipeline in AWS Regions that don’t support AWS CodePipeline](create-a-pipeline-in-aws-regions-that-don-t-support-aws-codepipeline.md)
 + [Customize default role names by using AWS CDK aspects and escape hatches](customize-default-role-names-by-using-aws-cdk-aspects-and-escape-hatches.md)
 + [Deploy a Cassandra cluster on Amazon EC2 with private static IPs to avoid rebalancing](deploy-a-cassandra-cluster-on-amazon-ec2-with-private-static-ips-to-avoid-rebalancing.md)
++ [Get Amazon SNS notifications when the key state of an AWS KMS key changes](get-amazon-sns-notifications-when-kms-key-state-changes.md)
 + [Preserve routable IP space in multi-account VPC designs for non-workload subnets](preserve-routable-ip-space-in-multi-account-vpc-designs-for-non-workload-subnets.md)
 + [Set up DNS resolution for hybrid networks in a single-account AWS environment](set-up-dns-resolution-for-hybrid-networks-in-a-single-account-aws-environment.md)
 + [Set up a highly available PeopleSoft architecture on AWS](set-up-a-highly-available-peoplesoft-architecture-on-aws.md)

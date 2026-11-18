@@ -24,6 +24,7 @@ The following data types are supported:
 +  [EnabledBaselineInheritanceDrift](API_EnabledBaselineInheritanceDrift.md)
 +  [EnabledBaselineParameter](API_EnabledBaselineParameter.md)
 +  [EnabledBaselineParameterSummary](API_EnabledBaselineParameterSummary.md)
++  [EnabledBaselineSourceDrift](API_EnabledBaselineSourceDrift.md)
 +  [EnabledBaselineSummary](API_EnabledBaselineSummary.md)
 +  [EnabledControlDetails](API_EnabledControlDetails.md)
 +  [EnabledControlDriftTypes](API_EnabledControlDriftTypes.md)

@@ -16,6 +16,21 @@ Content-type: application/json
 
 {
    "accountId": "{{string}}",
+   "amiConfiguration": {
+      "createdWithin": "{{string}}",
+      "lastLaunchedWithin": "{{string}}",
+      "scanModeConfiguration": {
+         "excludeBackupDlmAmis": {{boolean}},
+         "excludeCopiedAmis": {{boolean}},
+         "scanMode": "{{string}}",
+         "tags": [
+            {
+               "key": "{{string}}",
+               "value": "{{string}}"
+            }
+         ]
+      }
+   },
    "ec2Configuration": {
       "activateVMScanner": {{boolean}},
       "scanMode": "{{string}}"
@@ -26,6 +41,7 @@ Content-type: application/json
       "rescanDuration": "{{string}}"
    },
    "updateConfigurationInheritance": {
+      "amiConfiguration": "{{string}}",
       "ec2Configuration": "{{string}}",
       "ecrConfiguration": "{{string}}"
    }
@@ -47,6 +63,11 @@ The 12-digit AWS account ID of the member account whose scan configuration you w
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
+Required: No
+
+ ** [amiConfiguration](#API_UpdateConfiguration_RequestSyntax) **   <a name="inspector2-UpdateConfiguration-request-amiConfiguration"></a>
+The Amazon Machine Image (AMI) scan configuration to apply to the account.
+Type: [AmiConfiguration](API_AmiConfiguration.md) object
 Required: No
 
  ** [ec2Configuration](#API_UpdateConfiguration_RequestSyntax) **   <a name="inspector2-UpdateConfiguration-request-ec2Configuration"></a>
@@ -85,6 +106,10 @@ For information about the errors that are common to all actions, see [Common Err
 You do not have sufficient access to perform this action.
  For `Enable`, you receive this error if you attempt to use a feature in an unsupported AWS Region.
 HTTP Status Code: 403
+
+ ** ConflictException **
+A conflict occurred. This exception occurs when the same resource is being modified by concurrent requests.
+HTTP Status Code: 409
 
  ** InternalServerException **
 The request has failed due to an internal failure of the Amazon Inspector service.

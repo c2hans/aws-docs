@@ -128,8 +128,8 @@ Released 2024-10-30
 
 ### Fixes
 <a name="jdbc-v3-driver-release-notes-2024-10-30-fixes"></a>
-+ **S3 empty object handling** – The driver now handles empty objects in the S3 fetcher instead of throwing an Amazon S3 Range Not Satisfiable exception.
-+ **Logging** – The driver no longer logs the message Items requested for query execution [...], but subscription is cancelled after consuming query results.
++ **S3 empty object handling** – The driver now handles empty objects in the S3 fetcher instead of throwing an Amazon S3 `Range Not Satisfiable` exception.
++ **Logging** – The driver no longer logs the message `Items requested for query execution [...], but subscription is cancelled` after consuming query results.
 + **Empty parameter strings** – The driver now handles empty strings present in a connection parameter as if the parameter were not present. This resolves issues that occurred when some BI tools inadvertently passed empty strings that caused unintended authentication attempts.
 
 ## 3.2.2

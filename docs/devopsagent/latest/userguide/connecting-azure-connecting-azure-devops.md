@@ -31,11 +31,11 @@ The Admin Consent method uses a consent-based flow with the AWS DevOps Agent man
 ### Step 1: Start the registration
 <a name="step-1-start-the-registration"></a>
 
-1. Sign in to the AWS Management Console and navigate to the AWS DevOps Agent console
+1. Open the AWS DevOps Agent console at [https://console.aws.amazon.com/aidevops/home](https://console.aws.amazon.com/aidevops/home).
 
-1. Go to the **Capability Providers** page
+1. In the navigation pane, choose **Capability Providers**.
 
-1. Locate the **Azure DevOps** section and choose **Register**
+1. In the **Available** section, find the **Azure DevOps** card and choose **Register**.
 
 1. Enter your **Azure DevOps organization name** when prompted
 
@@ -72,7 +72,7 @@ App Registration is shared between Azure Resources and Azure DevOps. If you have
 
 1. In the AWS DevOps Agent console, go to the **Capability Providers** page
 
-1. Locate the **Azure Cloud** section and choose **Register**
+1. In the **Available** section, find the **Azure Cloud** card and choose **Register**
 
 1. Select the **App Registration** method
 
@@ -155,4 +155,4 @@ A single Agent Space can use projects from multiple registrations. To associate 
 <a name="managing-azure-devops-connections"></a>
 + **Viewing connected projects** – In the **Capabilities** tab, the **Pipelines** section lists all connected Azure DevOps projects.
 + **Removing a project** – To disconnect a project from an Agent Space, select it in the **Pipelines** section and choose **Remove**.
-+ **Removing the registration** – To remove the Azure DevOps registration entirely, go to the **Capability Providers** page and delete the registration. All Agent Space associations must be removed first.
++ **Removing the registration** – Azure Cloud and Azure DevOps share an app registration, so removing it removes access for both. To remove the Azure DevOps registration, first remove all of its Agent Space associations. Then, on the **Capability Providers** page, under **Currently registered**, choose **View all** on the **Azure DevOps** card. In **Registrations**, select the **Admin consent** or **App registration (OIDC)** registration. Choose **Deregister** from the **Actions** menu.

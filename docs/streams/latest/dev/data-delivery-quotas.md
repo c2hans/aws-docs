@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-quotas.
 | Tables per delivery | 1 | No | Each delivery writes to exactly one destination table. |
 
 **Note**
- The number of deliveries in an account is bounded by the On-Demand streams per account per Region quota, because each stream can have a maximum of two deliveries. For the streams-per-account quota, see [Quotas and limits](service-sizes-and-limits.md).
+ The number of deliveries in an account is bounded by the On-demand streams per account per Region quota, because each stream can have a maximum of two deliveries. For the streams-per-account quota, see [Quotas and limits](service-sizes-and-limits.md).
 
 ## API limits
 <a name="quotas-api-limits"></a>
@@ -39,7 +39,7 @@ The following constraints apply to all delivery configurations:
 + Data delivery does not support schema evolution. Changing the schema requires deleting and recreating the delivery.
 + Deliveries do not backfill existing data. Only records written to the stream after the delivery reaches ACTIVE state are delivered.
 + Each delivery creates a new table at the destination. You cannot deliver to an existing table.
-+ The source Kinesis Data Streams stream must be in On-Demand Standard or On-Demand Advantage capacity mode. Provisioned mode is not supported.
++ The source Kinesis Data Streams stream must be in On-demand Standard or On-demand Advantage capacity mode. Provisioned mode is not supported.
 
 ## Update constraints
 <a name="quotas-update"></a>

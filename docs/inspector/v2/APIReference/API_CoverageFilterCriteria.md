@@ -35,25 +35,37 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** cloudProvider **   <a name="inspector2-Type-CoverageFilterCriteria-cloudProvider"></a>
-The cloud provider to filter coverage results by.
+The cloud provider to filter coverage results by. Valid values:
++  `AWS` – AWS resources.
++  `AZURE` – Microsoft Azure resources.
++  `GCP` – Google Cloud Platform (GCP) resources.
 Type: Array of [CoverageStringFilter](API_CoverageStringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** cloudProviderAccountId **   <a name="inspector2-Type-CoverageFilterCriteria-cloudProviderAccountId"></a>
-The cloud provider account ID to filter coverage results by.
+The cloud provider account ID to filter coverage results by. The value format depends on the cloud provider:
++ An AWS account ID.
++ An Azure subscription ID.
++ A Google Cloud Platform (GCP) project ID, such as `my-project`.
 Type: Array of [CoverageStringFilter](API_CoverageStringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** cloudProviderOrgId **   <a name="inspector2-Type-CoverageFilterCriteria-cloudProviderOrgId"></a>
-The cloud provider organization ID to filter coverage results by.
+The cloud provider organization ID to filter coverage results by. The value format depends on the cloud provider:
++ An AWS Organizations organization ID.
++ An Azure tenant ID.
++ A numeric Google Cloud Platform (GCP) organization ID.
 Type: Array of [CoverageStringFilter](API_CoverageStringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** cloudProviderRegion **   <a name="inspector2-Type-CoverageFilterCriteria-cloudProviderRegion"></a>
-The cloud provider region to filter coverage results by.
+The cloud provider region to filter coverage results by. The value format depends on the cloud provider:
++ An AWS Region, such as `us-east-1`.
++ An Azure region, such as `eastus`.
++ A Google Cloud Platform (GCP) location, such as the region `us-central1` or the zone `us-central1-a`.
 Type: Array of [CoverageStringFilter](API_CoverageStringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
@@ -166,6 +178,12 @@ Type: Array of [CoverageStringFilter](API_CoverageStringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
+ ** machineImageTags **   <a name="inspector2-Type-CoverageFilterCriteria-machineImageTags"></a>
+The machine image tags to filter coverage results by.
+Type: Array of [CoverageMapFilter](API_CoverageMapFilter.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
  ** resourceId **   <a name="inspector2-Type-CoverageFilterCriteria-resourceId"></a>
 An array of AWS resource IDs to return coverage statistics for.
 Type: Array of [CoverageStringFilter](API_CoverageStringFilter.md) objects
@@ -173,7 +191,10 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** resourceType **   <a name="inspector2-Type-CoverageFilterCriteria-resourceType"></a>
-An array of AWS resource types to return coverage statistics for. The values can be `AWS_EC2_INSTANCE`, `AWS_LAMBDA_FUNCTION`, `AWS_ECR_CONTAINER_IMAGE`, `AWS_ECR_REPOSITORY` or `AWS_ACCOUNT`.
+An array of resource types to return coverage statistics for. Valid values:
++  AWS – `AWS_EC2_INSTANCE`, `AWS_LAMBDA_FUNCTION`, `AWS_ECR_CONTAINER_IMAGE`, `AWS_ECR_REPOSITORY`, `MACHINE_IMAGE`, `CODE_REPOSITORY`, or `AWS_ACCOUNT`.
++ Microsoft Azure – `Microsoft.Compute/virtualMachines`, `Microsoft.ContainerRegistry/registries`, `Microsoft.ContainerRegistry/registry/containerRepository`, `Microsoft.ContainerRegistry/registry/containerImage`, or `Microsoft.Web/sites`.
++ Google Cloud Platform (GCP) – `compute.googleapis.com/Instance`, `cloudfunctions.googleapis.com/Function`, `artifactregistry.googleapis.com/Repository`, or `artifactregistry.googleapis.com/DockerImage`.
 Type: Array of [CoverageStringFilter](API_CoverageStringFilter.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No

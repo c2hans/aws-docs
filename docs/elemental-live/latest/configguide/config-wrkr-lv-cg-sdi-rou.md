@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 If your deployment includes SDI video inputs that pass through a router, provide information about your router configuration on the AWS Elemental Live node.
 
 **Warning**
-If you forget to configure the router, everything looks acceptable on the event or profile, but when you run the event, you receive a no input detected error.
+If you forget to configure the router, everything looks acceptable on the event or profile, but when you run the event, you receive a `no input detected` error.
 
 **Topics**
 + [Step A: Get ready](sdi-rou-ready.md)

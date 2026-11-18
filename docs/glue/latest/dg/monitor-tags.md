@@ -19,6 +19,7 @@ In AWS Glue, you can tag the following resources:
 + Blueprint
 + Machine learning transform
 + Data quality ruleset
++ Data quality evaluation configuration
 + Stream schemas
 + Stream schema registries
 

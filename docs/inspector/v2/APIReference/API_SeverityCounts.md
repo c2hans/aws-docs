@@ -25,8 +25,23 @@ The total count of high severity findings.
 Type: Long
 Required: No
 
+ ** informational **   <a name="inspector2-Type-SeverityCounts-informational"></a>
+The total count of informational severity findings.
+Type: Long
+Required: No
+
+ ** low **   <a name="inspector2-Type-SeverityCounts-low"></a>
+The total count of low severity findings.
+Type: Long
+Required: No
+
  ** medium **   <a name="inspector2-Type-SeverityCounts-medium"></a>
 The total count of medium severity findings.
+Type: Long
+Required: No
+
+ ** untriaged **   <a name="inspector2-Type-SeverityCounts-untriaged"></a>
+The total count of untriaged findings.
 Type: Long
 Required: No
 

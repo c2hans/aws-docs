@@ -11,6 +11,8 @@ Service features are sometimes rolled out incrementally to the AWS Regions where
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [New chapter on context-aware rules](context-aware-rules.md) | Added information about writing stateful rules that match traffic by AWS resource identity using context IDs. | November 12, 2026 |
+| [Added context set maximums](quotas.md) | You can use as many as 100 context sets per rule group and 1,000 resource IDs per context set. | November 12, 2026 |
 | [New rule group types for Next Generation policies](rule-groups-v2.md) | AWS Network Firewall now supports firewall rule groups and IPS rule groups, for use in Next Generation policies. | November 9, 2026 |
 | [New Next Generation policies](firewall-policies-v2.md) | AWS Network Firewall now supports *Next Generation* policies. A Next Generation policy filters traffic using two inspection engines—a firewall engine for access control and an IPS engine for threat detection and prevention. | November 9, 2026 |
 | [New CloudWatch metrics for Next Generation policies](monitoring-cloudwatch.md#metrics) | Added per-engine metrics with the `Engine` dimension, the `FirewallDefaultActionApplied` metric, and the Route 53 resolved domain validation metrics for firewalls that use a Next Generation policy. | November 9, 2026 |

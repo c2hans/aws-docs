@@ -174,7 +174,7 @@ The following code example shows how to use `add-tags-to-resource`.
 
 **AWS CLI**
 **To add tags to a resource**
-The following `add-tags-to-resource` example add tags to an RDS database.
+The following `add-tags-to-resource` example adds tags to an RDS database.
 
 ```
 aws rds add-tags-to-resource \

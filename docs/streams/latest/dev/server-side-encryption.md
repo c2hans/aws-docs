@@ -16,5 +16,5 @@ If you require FIPS 140-2 validated cryptographic modules when accessing AWS thr
 + [How do I get started with server-side encryption?](getting-started-with-sse.md)
 + [Create and use user-generated KMS keys](creating-using-sse-master-keys.md)
 + [Permissions to use user-generated KMS keys](permissions-user-key-KMS.md)
-+ [Verify and Troubleshoot KMS key permissions](sse-troubleshooting.md)
++ [Verify and troubleshoot KMS key permissions](sse-troubleshooting.md)
 + [Use Amazon Kinesis Data Streams with interface VPC endpoints](vpc.md)

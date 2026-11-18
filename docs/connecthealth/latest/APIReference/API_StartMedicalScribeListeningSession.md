@@ -35,11 +35,23 @@ Content-type: application/json
          }
       ],
       "encounterContext": {
+         "medicalCodingContext": {
+            "afterHours": {{boolean}},
+            "dateOfBirth": "{{string}}",
+            "encounterDate": "{{string}}",
+            "encounterReason": "{{string}}",
+            "encounterType": "{{string}}",
+            "sex": "{{string}}",
+            "status": "{{string}}"
+         },
          "unstructuredContext": "{{string}}"
       },
       "postStreamActionSettings": {
          "clinicalNoteGenerationSettings": {
             "noteTemplateSettings": { ... }
+         },
+         "medicalCodeGenerationSettings": {
+            "enabled": {{boolean}}
          },
          "outputS3Uri": "{{string}}"
       }
@@ -128,7 +140,48 @@ x-amzn-medscribe-media-encoding: {{mediaEncoding}}
 Content-type: application/json
 
 {
+   "checklistEvent": {
+      "checklists": [
+         {
+            "checklistId": "string",
+            "items": [
+               {
+                  "itemKey": "string",
+                  "status": "string"
+               }
+            ]
+         }
+      ],
+      "snapshotVersion": number
+   },
    "internalFailureException": {
+   },
+   "periodontalChartEvent": {
+      "reviewItems": [
+         {
+            "reason": "string",
+            "sites": [ "string" ],
+            "toothNumber": number
+         }
+      ],
+      "snapshotVersion": number,
+      "teeth": [
+         {
+            "furcation": number,
+            "missing": boolean,
+            "mobility": number,
+            "sites": [
+               {
+                  "bleeding": boolean,
+                  "probingDepth": number,
+                  "recession": number,
+                  "site": "string",
+                  "suppuration": boolean
+               }
+            ],
+            "toothNumber": number
+         }
+      ]
    },
    "transcriptEvent": {
       "transcriptSegment": {
@@ -185,10 +238,20 @@ Pattern: `sub-[a-zA-Z0-9]{21}`
 
 The following data is returned in JSON format by the service.
 
+ ** [checklistEvent](#API_StartMedicalScribeListeningSession_ResponseSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-response-checklistEvent"></a>
+Real-time extraction is in preview release for Amazon Connect Health and is subject to change. To request access to this feature, contact your AWS account team.
+A snapshot of the session's checklist. Amazon Connect Health sends this event only when real-time extraction is enabled for the account and the session uses a supported note template.
+Type: [MedicalScribeChecklistEvent](API_MedicalScribeChecklistEvent.md) object
+
  ** [internalFailureException](#API_StartMedicalScribeListeningSession_ResponseSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-response-internalFailureException"></a>
 
 Type: Exception
 HTTP Status Code: 500
+
+ ** [periodontalChartEvent](#API_StartMedicalScribeListeningSession_ResponseSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-response-periodontalChartEvent"></a>
+Real-time extraction is in preview release for Amazon Connect Health and is subject to change. To request access to this feature, contact your AWS account team.
+A snapshot of the periodontal chart. Amazon Connect Health sends this event only when real-time extraction is enabled for the account and periodontal charting is dictated during the session.
+Type: [MedicalScribePeriodontalChartEvent](API_MedicalScribePeriodontalChartEvent.md) object
 
  ** [transcriptEvent](#API_StartMedicalScribeListeningSession_ResponseSyntax) **   <a name="connecthealth-StartMedicalScribeListeningSession-response-transcriptEvent"></a>
 

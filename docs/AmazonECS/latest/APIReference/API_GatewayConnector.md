@@ -15,6 +15,11 @@ The name of the service port that the gateway routes ingress traffic to.
 Type: String
 Required: Yes
 
+ ** deregistrationDelay **   <a name="ECS-Type-GatewayConnector-deregistrationDelay"></a>
+The deregistration delay settings for the targets of this connector.
+Type: [GatewayConnectorDeregistrationDelay](API_GatewayConnectorDeregistrationDelay.md) object
+Required: No
+
  ** filters **   <a name="ECS-Type-GatewayConnector-filters"></a>
 The filters that control which gateway ingress paths the connector applies to.
 Type: [GatewayConnectorFilters](API_GatewayConnectorFilters.md) object

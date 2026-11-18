@@ -29,7 +29,7 @@ The error occurs when the resources in your AWS account associated with the AWS 
 For specific guidance, use the error code provided in the email from **AWS Health**, or through your **AWS Mainframe Modernization console**.
 
 Error code:
-+ Storage unreachable
++ `Storage unreachable`
 
 This error indicates that the attached storage (Amazon Elastic File System or Amazon FSx file systems) for the environment has failed to mount correctly. To check details about unhealthy environment, complete the following steps:
 

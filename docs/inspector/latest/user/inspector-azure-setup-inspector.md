@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-azure-se
 
 After you configure your Azure environment, create a connector in Amazon Inspector to begin scanning your Azure resources for vulnerabilities.
 
+**To create an Azure connector**
+
 1. Open the Amazon Inspector console at [https://console.aws.amazon.com/inspector/v2/home](https://console.aws.amazon.com/inspector/v2/home).
 
 1. In the navigation pane, choose **Integrations**.
@@ -37,6 +39,8 @@ Names and descriptions are used to identify your content, and we recommend you d
 
 1. Copy the generated Azure setup script, run it in your Azure environment (see [Configuring Microsoft Azure to integrate with Amazon Inspector](inspector-azure-setup-azure.md)), and then choose **Create connector**.
 
+**Managed Amazon Inspector VM Scanner deployment**
+
 If you enabled VM scanning, Amazon Inspector uses Amazon EC2 Systems Manager Automation to deploy and manage the Amazon Inspector VM Scanner agent on your Azure VMs. With managed deployment:
 + No manual installation is required.
 + The agent stays up to date automatically.
@@ -46,10 +50,14 @@ Amazon Inspector uses Amazon EC2 Systems Manager Automation to deploy and manage
 
 To enable VM scanning, you must create the following IAM resources in your account.
 
+**IAM OIDC identity provider**
+
 Create an IAM OIDC identity provider for Microsoft Entra ID with the following configuration:
 + **Issuer URL:** `https://sts.windows.net/{{tenant-id}}/`
 + **Client ID list:** `api://{{app-id}}`, `api://AzureADTokenExchange`
-+ **Thumbprint:** A 40-character string of all zeros (`0` repeated 40 times). AWS STS validates tokens via the JWKS endpoint rather than the thumbprint value.{{}}
++ **Thumbprint:** A 40-character string of all zeros (`0` repeated 40 times). AWS STS validates tokens via the JWKS endpoint rather than the thumbprint value.
+
+**Inspector2VmScannerRole-{{tenant-id}}**
 
 Used by the Amazon Inspector VM Scanner agent running on Azure VMs to send scan telemetry to Amazon Inspector. This role uses OIDC web identity federation through the Microsoft Entra ID identity provider.
 
@@ -86,7 +94,9 @@ Used by the Amazon Inspector VM Scanner agent running on Azure VMs to send scan 
 ```
 
 **Tags:**
-+ `inspector-managed` = `true`{{}}
++ `inspector-managed` = `true`
+
+**Inspector2SSMFederationRole-{{tenant-id}}**
 
 Enables OIDC federation to Azure for secure cross-cloud authentication. This role is assumed by the AssumeRole and DispatchRole, and by Amazon EC2 Systems Manager, to obtain web identity tokens for Azure operations.
 
@@ -152,7 +162,9 @@ Enables OIDC federation to Azure for secure cross-cloud authentication. This rol
 
 **Tags:**
 + `caller` = `SSM`
-+ `inspector-managed` = `true`{{}}
++ `inspector-managed` = `true`
+
+**Inspector2SSMAssumeRole-{{tenant-id}}**
 
 Executes Amazon EC2 Systems Manager Automation to onboard Azure VMs as managed instances. This role creates and manages hybrid activations, passes roles to Amazon EC2 Systems Manager, and retrieves automation documents.
 
@@ -241,7 +253,9 @@ Executes Amazon EC2 Systems Manager Automation to onboard Azure VMs as managed i
 + `caller` = `SSM`
 + `AzureTenantId` = `{{tenant-id}}`
 + `AzureApplicationId` = `{{app-id}}`
-+ `inspector-managed` = `true`{{}}
++ `inspector-managed` = `true`
+
+**Inspector2SSMDispatchRole-{{tenant-id}}**
 
 Resolves Azure VM targets and dispatches Amazon Inspector VM Scanner agent installation via Amazon EC2 Systems Manager Automation. This role starts automation executions and passes the AssumeRole to Amazon EC2 Systems Manager.
 
@@ -326,12 +340,16 @@ To exclude specific Azure VMs from scanning, apply the following tag to the VM:
 + **Key:** `InspectorExclusion`
 + **Value:** `true`
 
+**Adjusting the scope of a connector**
+
 After you create a connector, you can adjust its scope by changing the Azure Subscriptions or Azure Regions that it monitors. If you adjust the scope, most changes take effect within approximately 15 minutes.
 
 Before you adjust the scope, note the following:
 + If you add a region to the scope, the console generates an updated setup script that creates the necessary Event Hub infrastructure in the new region.
 + If a service-linked connector exists (created via AWS Security Hub CSPM), you cannot reduce its scope in Amazon Inspector directly. Modify the scope in AWS Security Hub CSPM instead.
 + The scope of a AWS Security Hub CSPM connector can never be less than any existing customer-managed connector in Amazon Inspector for the same Azure tenant.
+
+**Verifying the connector**
 
 After you create the connector, Amazon Inspector begins discovering and scanning your Azure resources. It can take up to 24 hours for the initial set of findings to appear. To verify that the connector is working:
 
@@ -349,6 +367,8 @@ After you create the connector, Amazon Inspector begins discovering and scanning
 Connector health status is eventually consistent. When a permission or configuration issue occurs, the connector status changes to **Degraded** quickly with an actionable message. However, after you fix the issue, the status can take up to 24 hours to return to **Connected**.
 A **Degraded** status after a recent fix does not necessarily indicate an ongoing problem.
 For real-time visibility into recording failures, check the CloudWatch metrics in the namespace.
+
+**Troubleshooting**
 
 If the connector status shows Error or resources are not appearing after 24 hours, review the following:
 
@@ -380,6 +400,8 @@ Verify that diagnostic settings are enabled on your container registries.
 
 Scope change not taking effect
 When you change the connector scope to add a new Azure region, the console regenerates the setup script. You must re-run the updated script to provision Event Hub infrastructure in the new region.
+
+**How Amazon Inspector handles resource identifiers**
 
 By enabling your Azure integration for Amazon Inspector, resource identifiers from other cloud providers will be stored in AWS Config, Amazon Inspector, and other AWS services (as needed) as metadata related to the management of the corresponding resource configuration data collected from the other cloud providers. Such resource identifiers do not constitute Your Content, and we recommend you do not include sensitive, confidential, or personally identifiable information in them.
 

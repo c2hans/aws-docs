@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 
 The discovery tool stores its data in an internal database on the root volume. The database grows with the number of servers in scope. Network collection increases disk usage further, especially when private IP address collection is enabled. The discovery tool prunes data older than 30 days, so disk usage plateaus after the first month. This page also covers virtual machine (VM) memory and the discovery tool service memory limit.
 
+**Recommended volume sizes**
+
 The following table shows the recommended disk size for each environment size, based on how many servers you monitor and whether network collection is enabled.
 
 | Environment | Servers | Network collection | Recommended volume |
@@ -18,6 +20,8 @@ The following table shows the recommended disk size for each environment size, b
 | Large | 2,000 or more | Enabled | 200 GB |
 
 When in doubt, provision more disk than you expect to need. Resizing a running discovery tool requires downtime.
+
+**Increase the disk size**
 
 Choose the procedure that matches how you deployed the discovery tool. On the OVA and VHD appliances, cloud-init automatically expands the root partition on the first boot after you increase the disk. You do not need to partition the disk manually. On a Linux installer deployment, you manage the host yourself. You might also need to extend the partition and file system.
 
@@ -43,9 +47,13 @@ Choose the procedure that matches how you deployed the discovery tool. On the OV
 
 1. If you increase the disk after you install, extend the partition and file system on the host by using the tools for your distribution. The discovery tool uses whatever space is available on the file system that holds its data directory.
 
+**Check disk usage**
+
 To check current disk usage on the discovery tool virtual machine, run `df -h /`.
 
 If the discovery tool is already out of disk space, see [Internal database disk space management in the AWS Transform discovery tool](https://repost.aws/articles/ARERZHOS-URGeds3VImdjzsg/internal-database-disk-space-management-in-the-aws-transform-discovery-tool) on the AWS re:Post website.
+
+**Memory**
 
 The discovery tool service is limited to 14 GB of memory by default, regardless of how much memory the VM has. The recommended 16 GB VM leaves 2 GB for the operating system. If you monitor a large environment, increase the VM's memory and then raise the service memory limit. The discovery tool doesn't start an export that needs more memory than the service can use. For more information, see [Incomplete or failed export](discovery-tool-troubleshooting.md#discovery-tool-export-troubleshooting).
 

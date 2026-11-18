@@ -235,10 +235,14 @@ No headers required.
 + 404 – SnapStart is not enabled for this function.
 + 500 – Container error. The execution environment is in a non-recoverable state. Exit the runtime process.
 
+**Request syntax**
+
 ```
 GET /2018-06-01/runtime/restore/next HTTP/1.1
 Host: ${AWS_LAMBDA_RUNTIME_API}
 ```
+
+**Response syntax**
 
 ```
 HTTP/1.1 200 OK
@@ -267,11 +271,15 @@ If an after-restore hook fails or the runtime encounters an error during restore
 + 404 – SnapStart is not enabled for this function.
 + 500 – Container error. The execution environment is in a non-recoverable state. Exit the runtime process.
 
+**Request syntax**
+
 ```
 POST /2018-06-01/runtime/restore/error HTTP/1.1
 Host: ${AWS_LAMBDA_RUNTIME_API}
 Lambda-Runtime-Function-Error-Type: Runtime.AfterRestoreError
 ```
+
+**Response syntax**
 
 ```
 HTTP/1.1 202 Accepted

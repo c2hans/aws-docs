@@ -14,7 +14,7 @@ An object that represents the details about the remediation configuration that i
 The name of the AWS Config rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** TargetId **   <a name="config-Type-RemediationConfiguration-TargetId"></a>
@@ -68,7 +68,6 @@ Required: No
  ** ResourceType **   <a name="config-Type-RemediationConfiguration-ResourceType"></a>
 The type of a resource.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
  ** RetryAttemptSeconds **   <a name="config-Type-RemediationConfiguration-RetryAttemptSeconds"></a>
@@ -82,7 +81,6 @@ Required: No
 Version of the target. For example, version of the SSM document.
 If you make backward incompatible changes to the SSM document, you must call PutRemediationConfiguration API again to ensure the remediations can run.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
 ## See Also

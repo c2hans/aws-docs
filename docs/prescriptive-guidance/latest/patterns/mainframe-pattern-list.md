@@ -21,4 +21,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 + [Move mainframe files directly to Amazon S3 using Transfer Family](move-mainframe-files-directly-to-amazon-s3-using-transfer-family.md)
 + [Optimize the performance of your AWS Blu Age modernized application](optimize-performance-aws-blu-age-modernized-application.md)
 + [Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files](transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files.md)
++ [Transform Easytrieve to modern languages by using AWS Transform custom](transform-easytrieve-modern-languages.md)
 + [More patterns](mainframe-more-patterns-pattern-list.md)

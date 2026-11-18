@@ -35,21 +35,18 @@ Indicates deployment status of conformance pack.
 + CREATE\_IN\_PROGRESS when a conformance pack creation is in progress for an account.
 + CREATE\_COMPLETE when a conformance pack has been successfully created in your account.
 + CREATE\_FAILED when a conformance pack creation failed in your account.
++ UPDATE\_IN\_PROGRESS when a conformance pack update is in progress for an account.
++ UPDATE\_COMPLETE when a conformance pack has been successfully updated in your account.
++ UPDATE\_FAILED when a conformance pack update failed in your account.
 + DELETE\_IN\_PROGRESS when a conformance pack deletion is in progress.
 + DELETE\_FAILED when a conformance pack deletion failed in your account.
 Type: String
-Valid Values: `CREATE_IN_PROGRESS | CREATE_COMPLETE | CREATE_FAILED | DELETE_IN_PROGRESS | DELETE_FAILED`
+Valid Values: `CREATE_IN_PROGRESS | CREATE_COMPLETE | CREATE_FAILED | UPDATE_IN_PROGRESS | UPDATE_COMPLETE | UPDATE_FAILED | DELETE_IN_PROGRESS | DELETE_FAILED`
 Required: Yes
 
  ** LastUpdateRequestedTime **   <a name="config-Type-ConformancePackStatusDetail-LastUpdateRequestedTime"></a>
 Last time when conformation pack creation and update was requested.
 Type: Timestamp
-Required: Yes
-
- ** StackArn **   <a name="config-Type-ConformancePackStatusDetail-StackArn"></a>
-Amazon Resource Name (ARN) of AWS CloudFormation stack.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
  ** ConformancePackStatusReason **   <a name="config-Type-ConformancePackStatusDetail-ConformancePackStatusReason"></a>
@@ -61,6 +58,21 @@ Required: No
  ** LastUpdateCompletedTime **   <a name="config-Type-ConformancePackStatusDetail-LastUpdateCompletedTime"></a>
 Last time when conformation pack creation and update was successful.
 Type: Timestamp
+Required: No
+
+ ** StackArn **   <a name="config-Type-ConformancePackStatusDetail-StackArn"></a>
+Amazon Resource Name (ARN) of AWS CloudFormation stack.
+Custom conformance packs populate this field. Managed conformance packs leave it empty.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Required: No
+
+ ** Type **   <a name="config-Type-ConformancePackStatusDetail-Type"></a>
+The type of the conformance pack. Valid values:
++  `CUSTOM` – A custom conformance pack.
++  `MANAGED` – A managed conformance pack.
+Type: String
+Valid Values: `CUSTOM | MANAGED`
 Required: No
 
 ## See Also

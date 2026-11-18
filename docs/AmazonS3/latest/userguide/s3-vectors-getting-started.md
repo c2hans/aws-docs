@@ -83,6 +83,8 @@ In this step, you create a vector index in your vector bucket. The vector index 
 
    You can't update non-filterable metadata keys after index creation. Plan your metadata structure carefully.
 
+1. Under **Additional settings (optional)**, you can specify full-text search metadata keys. S3 Vectors builds a full-text search index over each key's values for BM25 (Best Matching 25) scoring, so you can run full-text and hybrid queries on the index. For more information, see [Configuring full-text search](s3-vectors-configuring-full-text-search.md) and [Hybrid search with Amazon S3 Vectors](s3-vectors-hybrid-search.md).
+
 1. Under **Encryption**, choose **Specify encryption type**. You have the option to use the bucket level encryption settings or override the encryption settings for the vector index. If you override the bucket-level settings, you have the option to specify encryption type for the vector index as **Server-side encryption with AWS Key Management Service keys (SSE-KMS)** or the **Server-side encryption with Amazon S3 managed keys (SSE-S3)**. In this tutorial, we choose to **Use bucket settings for encryption**. For more information about setting encryption configuration for vector buckets and indexes, see [Data protection and encryption in S3 Vectors](s3-vectors-data-encryption.md).
 
 1. Under **Tags (Optional)**, you can add tags as key-value pairs to help track and organize vector index costs using AWS Billing and Cost Management. Enter a **Key** and a **Value**. To add another tag, choose **Add Tag**. You can enter up to 50 tags for a vector index. For more information, see [Using tags with S3 vector buckets](s3-vectors-tags.md).

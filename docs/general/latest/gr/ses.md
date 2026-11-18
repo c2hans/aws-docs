@@ -47,7 +47,6 @@ The following are the service endpoints and service quotas for this service.
 | Israel (Tel Aviv) | il-central-1 |  email.il-central-1.amazonaws.com <br /> email.il-central-1.api.aws  | HTTPS<br />HTTPS |
 | Mexico (Central) | mx-central-1 |  email.mx-central-1.amazonaws.com <br /> email.mx-central-1.api.aws  | HTTPS<br />HTTPS |
 | Middle East (Bahrain) | me-south-1 |  email.me-south-1.amazonaws.com <br /> email.me-south-1.api.aws  | HTTPS<br />HTTPS |
-| Middle East (UAE) | me-central-1 |  email.me-central-1.amazonaws.com <br /> email.me-central-1.api.aws  | HTTPS<br />HTTPS |
 | South America (São Paulo) | sa-east-1 |  email.sa-east-1.amazonaws.com <br /> email.sa-east-1.api.aws  | HTTPS<br />HTTPS |
 |  AWS GovCloud (US-East) | us-gov-east-1 |  email.us-gov-east-1.amazonaws.com <br /> email-fips.us-gov-east-1.api.aws <br /> email-fips.us-gov-east-1.amazonaws.com <br /> email.us-gov-east-1.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |
 |  AWS GovCloud (US-West) | us-gov-west-1 |  email.us-gov-west-1.amazonaws.com <br /> email-fips.us-gov-west-1.api.aws <br /> email-fips.us-gov-west-1.amazonaws.com <br /> email.us-gov-west-1.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |

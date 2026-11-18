@@ -31,7 +31,7 @@ The following general limitations apply to blue/green deployments:
 + If you attempt to force a backtrack on the blue DB cluster, the blue/green deployment breaks and switchover is blocked.
 + During switchover, the blue and green environments can't have zero-ETL integrations with Amazon Redshift. You must delete the integration first and switch over, then recreate the integration.
 + The Event Scheduler (`event_scheduler` parameter) must be disabled on the green environment when you create a blue/green deployment. This prevents events from being generated in the green environment and causing inconsistencies.
-+ Auto Scaling policies configured on the blue DB cluster are not copied to the green environment. You must reconfigured them after switchover, regardless of whether they were initially set up on the blue or green environment.
++ Auto Scaling policies configured on the blue DB cluster are not copied to the green environment. You must reconfigure them after switchover, regardless of whether they were initially set up on the blue or green environment.
 + You can't change an encrypted DB cluster into an unencrypted DB cluster.
 + You can't change a blue DB cluster to a higher engine version than its corresponding green DB cluster.
 + The resources in the blue environment and green environment must be in the same AWS account.

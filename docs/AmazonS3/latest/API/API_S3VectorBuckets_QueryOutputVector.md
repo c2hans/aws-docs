@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 # QueryOutputVector
 <a name="API_S3VectorBuckets_QueryOutputVector"></a>
 
-The attributes of a vector in the approximate nearest neighbor search.
+Contains the key and optional distance, relevance scores, and metadata for a vector returned by the `QueryVectors` operation.
 
 ## Contents
 <a name="API_S3VectorBuckets_QueryOutputVector_Contents"></a>
 
  ** key **   <a name="AmazonS3-Type-S3VectorBuckets_QueryOutputVector-key"></a>
-The key of the vector in the approximate nearest neighbor search.
+The key of the matching vector.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: Yes
@@ -24,6 +24,11 @@ Required: No
  ** metadata **   <a name="AmazonS3-Type-S3VectorBuckets_QueryOutputVector-metadata"></a>
 The metadata associated with the vector, if requested.
 Type: JSON value
+Required: No
+
+ ** scores **   <a name="AmazonS3-Type-S3VectorBuckets_QueryOutputVector-scores"></a>
+The relevance scores for a full-text-only or hybrid result, when requested through `returnScores`.
+Type: [QueryScores](API_S3VectorBuckets_QueryScores.md) object
 Required: No
 
 ## See Also

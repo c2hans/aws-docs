@@ -45,7 +45,10 @@ The trust policy allows the HealthOmics service to assume the role.
 
 In these examples, resource names and account IDs are placeholders for you to replace with actual values.
 
-The following example shows the policy for a service role that you can use for starting a run. The policy grants permissions to access the Amazon S3 output location, the workflow log group, and the Amazon ECR container for the run.
+The following example shows the policy for a service role that you can use for starting a run. The policy grants permissions to authorize run and task processing, and to access the Amazon S3 output location, the workflow log group, and the Amazon ECR container for the run.
+
+**Important**
+Service roles that you pass to `StartRun` require the `omics:AuthorizeRunProcessing` permission on `run/*`, as shown in the following example. HealthOmics uses this permission to authorize the internal operations that it performs on your behalf while a run processes, such as managing the run's tasks. It is a permission-only action, so it doesn't correspond to an HealthOmics API operation that you call directly.
 
 **Note**
 If you're using call caching for the run, add the run cache Amazon S3 location as a resource in the s3 permissions.
@@ -57,6 +60,15 @@ If you're using call caching for the run, add the run cache Amazon S3 location a
 {
 "Version":"2012-10-17",
 "Statement": [
+      {
+          "Effect": "Allow",
+          "Action": [
+              "omics:AuthorizeRunProcessing"
+          ],
+          "Resource": [
+              "arn:aws:omics:{{us-east-1}}:{{123456789012}}:run/*"
+          ]
+      },
       {
           "Effect": "Allow",
           "Action": [
@@ -172,17 +184,22 @@ Session policies are useful when you want to:
 + Apply additional security controls without modifying the service role
 
 **Important**
-Session policies can only restrict permissions; they cannot grant permissions beyond what the service role already allows. The session policy must include permissions for Amazon CloudWatch Logs (`logs:CreateLogStream` and `logs:PutLogEvents`) because HealthOmics uses the run's credentials to create and write to log groups.
+Session policies can only restrict permissions; they cannot grant permissions beyond what the service role already allows. The session policy must include the `omics:AuthorizeRunProcessing` permission, and permissions for Amazon CloudWatch Logs (`logs:CreateLogStream` and `logs:PutLogEvents`) because HealthOmics uses the run's credentials to create and write to log groups. If the session policy omits these permissions, the run's effective permissions don't include them, even when the service role allows them.
 
 Session policies have a maximum length of 2,048 characters and must be valid JSON documents. For more information about session policies, see [Session policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session) in the *IAM User Guide*.
 
 **Example Session policy for a workflow run**
-The following example shows a session policy that restricts a run to access only a specific Amazon S3 prefix for output and requires CloudWatch Logs permissions:
+The following example shows a session policy that restricts a run to access only a specific Amazon S3 prefix for output and requires the HealthOmics run processing and CloudWatch Logs permissions:
 
 ```
 {
   "Version": "2012-10-17",
   "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "omics:AuthorizeRunProcessing",
+      "Resource": "arn:aws:omics:*:*:run/*"
+    },
     {
       "Effect": "Allow",
       "Action": [

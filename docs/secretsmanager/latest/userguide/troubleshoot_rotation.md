@@ -361,7 +361,7 @@ To verify the Python upgrade, open the Lambda console ([https://console.aws.amaz
 ## AWS Lambda secret rotation with `PutSecretValue` failed
 <a name="troubleshoot_rotation_putsecretvalue"></a>
 
-If you use an assumed role or a cross-account rotation with Secrets Manager and you find a **RotationFailed** event in CloudTrail with the message: Pending secret version {{VERSION\_ID }}for Secret {{SECRET\_ARN }} was not created by Lambda {{LAMBDA\_ARN.}} Remove the `AWSPENDING` staging label and restart rotation, then you need to update your Lambda function to use the `RotationToken` parameter.<a name="troubleshoot_rotation_procedure"></a>
+If you use an assumed role or a cross-account rotation with Secrets Manager and you find a **RotationFailed** event in CloudTrail with the message: `Pending secret version {{VERSION_ID }}for Secret {{SECRET_ARN }} was not created by Lambda {{LAMBDA_ARN.}} Remove the AWSPENDING staging label and restart rotation`, then you need to update your Lambda function to use the `RotationToken` parameter.<a name="troubleshoot_rotation_procedure"></a>
 
 ## Update Lambda rotation function to include `RotationToken`
 <a name="troubleshoot_rotation_procedure"></a>

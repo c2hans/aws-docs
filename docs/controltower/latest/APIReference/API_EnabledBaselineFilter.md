@@ -33,6 +33,13 @@ Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[0-9a-zA-Z_\-:\/]+`
 Required: No
 
+ ** sourceDriftStatuses **   <a name="controltower-Type-EnabledBaselineFilter-sourceDriftStatuses"></a>
+A list of `EnabledBaselineDriftStatus` items for enabled baselines.
+Type: Array of strings
+Array Members: Fixed number of 1 item.
+Valid Values: `IN_SYNC | DRIFTED`
+Required: No
+
  ** statuses **   <a name="controltower-Type-EnabledBaselineFilter-statuses"></a>
 A list of `EnablementStatus` items.
 Type: Array of strings

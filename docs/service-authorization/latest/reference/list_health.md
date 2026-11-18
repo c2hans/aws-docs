@@ -84,10 +84,34 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [health:DescribeHealthServiceStatusForOrganization](#list_health-action-DescribeHealthServiceStatusForOrganization)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [organizations:ListAccounts](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
 
+- **   DescribeTagKeysForOrganization  **
+  - **IAM action:**  [organizations:ListAccounts](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   DescribeTagsForOrganization  **
+  - **IAM action:**  [organizations:ListAccounts](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   DescribeTagsOnboardingStatusForOrganization  **
+  - **IAM action:**  [organizations:ListAccounts](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   DisableHealthServiceAccessForOrganization  **
   - **IAM action:**  [health:DisableHealthServiceAccessForOrganization](#list_health-action-DisableHealthServiceAccessForOrganization)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [organizations:DisableAWSServiceAccess](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DisableAWSServiceAccess.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [organizations:ListAccounts](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+
+- **   DisableTagsForOrganization  **
+  - **IAM action:**  [organizations:ListAccounts](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   EnableHealthServiceAccessForOrganization  **
   - **IAM action:**  [health:EnableHealthServiceAccessForOrganization](#list_health-action-EnableHealthServiceAccessForOrganization)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write

@@ -1745,7 +1745,7 @@ Here is the minimal set of policies to be used as part of this role:
           },
           {
               "Action": "logs:DeleteLogGroup",
-              "Resource": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:/aws/lambda/ParallelClusterImage-*:*",
+              "Resource": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:/aws/lambda/ParallelClusterImage-*",
               "Effect": "Allow"
           },
           {

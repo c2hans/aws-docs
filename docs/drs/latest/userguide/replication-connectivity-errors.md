@@ -19,7 +19,7 @@ The following errors occur when network connectivity issues prevent communicatio
 ## Error: Agent not seen
 <a name="common-agent-not-seen"></a>
 
-**Error code:** AGENT\_NOT\_SEEN
+**Error code:** `AGENT_NOT_SEEN`
 
 The source server shows a **Disconnected** status in the AWS Elastic Disaster Recovery console.
 
@@ -85,7 +85,7 @@ If this error appears on the recovery dashboard, verify that the `AWSElasticDisa
 ## Error: Failed to authenticate with service
 <a name="common-failed-authenticate-service"></a>
 
-**Error code:** FAILED\_TO\_AUTHENTICATE\_WITH\_SERVICE
+**Error code:** `FAILED_TO_AUTHENTICATE_WITH_SERVICE`
 
 **Cause:** The replication server cannot reach the AWS Elastic Disaster Recovery endpoint on TCP port 443. This is a staging area network issue.
 
@@ -122,7 +122,7 @@ If this error appears on the recovery dashboard, verify that the `AWSElasticDisa
 ## Error: Failed to connect agent to replication software
 <a name="common-connection-agent-replication-software"></a>
 
-**Error code:** FAILED\_TO\_PAIR\_AGENT\_WITH\_REPLICATION\_SOFTWARE
+**Error code:** `FAILED_TO_PAIR_AGENT_WITH_REPLICATION_SOFTWARE`
 
 **Cause:** AWS Elastic Disaster Recovery cannot provide the replication server and agent with the information they need to communicate. This indicates a network connectivity issue between the agent, replication server, and the AWS Elastic Disaster Recovery endpoint.
 
@@ -139,7 +139,7 @@ If this error appears on the recovery dashboard, verify that the `AWSElasticDisa
 ## Error: Failed to establish communication with replication software
 <a name="common-establish-communication-replication-software"></a>
 
-**Error code:** FAILED\_TO\_ESTABLISH\_AGENT\_REPLICATOR\_SOFTWARE\_COMMUNICATION
+**Error code:** `FAILED_TO_ESTABLISH_AGENT_REPLICATOR_SOFTWARE_COMMUNICATION`
 
 **Cause:** Network connectivity issues exist between the agent and the replication server.
 
@@ -157,7 +157,7 @@ During failback, verify that TCP port 1500 is open for inbound traffic on the re
 ## Error: Failed to connect agent to replication server
 <a name="common-failed-connect-agent-replication-server"></a>
 
-**Error code:** FAILED\_TO\_CONNECT\_AGENT\_TO\_REPLICATION\_SERVER
+**Error code:** `FAILED_TO_CONNECT_AGENT_TO_REPLICATION_SERVER`
 
 **Cause:** The agent cannot establish a data replication connection with the replication server over TCP port 1500.
 
@@ -212,7 +212,7 @@ During failback, verify that TCP port 1500 is open for inbound traffic on the re
 ## Error: Unstable network
 <a name="common-unstable-network"></a>
 
-**Error code:** UNSTABLE\_NETWORK
+**Error code:** `UNSTABLE_NETWORK`
 
 **Cause:** Network connectivity between the source server and the replication server is intermittent.
 
@@ -227,7 +227,7 @@ During failback, verify that TCP port 1500 is open for inbound traffic on the re
 ## Error: Failback client not seen (replication)
 <a name="common-failback-not-seen"></a>
 
-**Error code:** FAILBACK\_CLIENT\_NOT\_SEEN
+**Error code:** `FAILBACK_CLIENT_NOT_SEEN`
 
 **Cause:** A network connectivity issue is preventing the Failback Client from communicating with the AWS Elastic Disaster Recovery endpoint.
 

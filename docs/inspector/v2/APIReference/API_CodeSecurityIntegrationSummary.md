@@ -50,13 +50,6 @@ Type: String
 Valid Values: `GITLAB_SELF_MANAGED | GITHUB`
 Required: Yes
 
- ** tags **   <a name="inspector2-Type-CodeSecurityIntegrationSummary-tags"></a>
-The tags associated with the code security integration.
-Type: String to string map
-Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Minimum length of 0. Maximum length of 256.
-Required: No
-
 ## See Also
 <a name="API_CodeSecurityIntegrationSummary_SeeAlso"></a>
 

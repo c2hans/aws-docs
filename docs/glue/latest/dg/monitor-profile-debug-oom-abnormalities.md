@@ -28,7 +28,7 @@ The following graph shows the memory usage as a percentage for the driver and ex
 
 ![The memory usage in percentage for the driver and executors.](https://docs.aws.amazon.com/glue/latest/dg/images/monitor-debug-oom-memoryprofile.png)
 
-The job run soon fails, and the following error appears in the **History** tab on the AWS Glue console: Command Failed with Exit Code 1. This error string means that the job failed due to a systemic error—which in this case is the driver running out of memory.
+The job run soon fails, and the following error appears in the **History** tab on the AWS Glue console: `Command Failed with Exit Code 1`. This error string means that the job failed due to a systemic error—which in this case is the driver running out of memory.
 
 ![The error message shown on the AWS Glue console.](https://docs.aws.amazon.com/glue/latest/dg/images/monitor-debug-oom-errorstring.png)
 

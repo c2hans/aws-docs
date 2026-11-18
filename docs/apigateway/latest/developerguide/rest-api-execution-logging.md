@@ -20,7 +20,7 @@ With standard execution logging:
 
 To enable standard execution logging, set the `loggingLevel` on your stage to `ERROR` or `INFO`. No other configuration is required.
 
-### Permissions
+### Permissions for execution logging
 <a name="rest-api-execution-logging-permissions"></a>
 
 To enable CloudWatch Logs, you must grant API Gateway permission to read and write logs to CloudWatch for your account. The [AmazonAPIGatewayPushToCloudWatchLogs](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonAPIGatewayPushToCloudWatchLogs.html) managed policy has all the required permissions.

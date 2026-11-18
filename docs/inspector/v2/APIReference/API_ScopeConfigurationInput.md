@@ -11,9 +11,9 @@ The scope of resources to scan for a single scanning type. Provide this as part 
 <a name="API_ScopeConfigurationInput_Contents"></a>
 
  ** scopeType **   <a name="inspector2-Type-ScopeConfigurationInput-scopeType"></a>
-The type of scope. Valid values are `TENANT`, which scans all resources in the Azure tenant, and `SUBSCRIPTION`, which scans only the resources in the specified Azure subscriptions.
+The type of scope: `TENANT`, which scans all resources in the Azure tenant, or `SUBSCRIPTION`, which scans only the resources in the specified Azure subscriptions.
 Type: String
-Valid Values: `TENANT | SUBSCRIPTION`
+Valid Values: `TENANT | SUBSCRIPTION | ORGANIZATION | PROJECT`
 Required: Yes
 
  ** scopeValues **   <a name="inspector2-Type-ScopeConfigurationInput-scopeValues"></a>

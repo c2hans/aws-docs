@@ -120,6 +120,8 @@ Each key in the `parameters` object must match a `{paramName}` placeholder in yo
 
 **Note**
 Deliver authentication credentials (API keys or OAuth tokens) in a separate `PutDeploymentParameter` call with an expiration date that reflects your credential rotation policy. Do not combine endpoint parameters and credentials in the same call.
+
+**Best practices for dynamic endpoint parameters**
 + Set `expirationDate` to `9999-12-31T23:59:59Z` for stable endpoint parameters such as tenant IDs and Regions that do not rotate. Do not use this value for authentication credentials. Set credential expiration to match your rotation policy (for example, 90 days or 1 year).
 + For public listings, if you add new parameters to an existing endpoint after launch, provide a default value for each new parameter. This ensures existing buyers receive a working URL without requiring re-registration.
 + To update a parameter value for an existing buyer (for example, during a tenant migration), call `PutDeploymentParameter` again with the updated JSON payload. The fulfillment page picks up the new value on the next page load.

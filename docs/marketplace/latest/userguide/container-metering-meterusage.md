@@ -21,6 +21,11 @@ To set up custom metering, you'll need to choose the usage category, the unit ty
 
   If your product pricing doesn't fit with any of the predefined categories or unit types, you can choose the generic **Units** category. Then, use the dimension description to describe what the unit is.
 
+To report fractional usage, set `UsageQuantityAsDecimal` instead of `UsageQuantity`. `UsageQuantityAsDecimal` is a string with up to 10 digits before the decimal point and up to 6 digits after it, for example `17.42`. For more information, see [MeterUsage](https://docs.aws.amazon.com/marketplacemetering/latest/APIReference/API_MeterUsage.html) in the *AWS Marketplace Metering Service API Reference*.
+
+**Note**
+AWS calculates charges from the exact usage quantity that you send, including all decimal places. Some interfaces display fewer decimal places: the [Usage dashboard](usage-dashboard.md) and the [Daily Usage data feed](data-feed-daily-usage.md) show 2 (for example, `17.123456` shows as `17.12`), and the **Bills** page in the AWS Billing and Cost Management console shows up to 3. AWS Cost and Usage Reports store usage amounts as floating-point numbers, which are exact up to 15 significant digits. A quantity with more digits might be rounded in its last decimal place. For example, `9999999999.999999` can show as `9999999999.999998`.
+
 Optionally, you may distribute the usage into allocations by properties that you track. The allocations are represented as tags to the buyer. These tags allow the buyer to view their costs split into usage by tag values. For example, if you charge by the user, and users have a "Department" property, you could create usage allocations with tags that have a key of "Department", and one allocation per value. This does not change the price, dimensions, or the total usage that you report, but allows your customer to view their costs by categories appropriate to your product.
 
 We recommend that you send a metering record every hour. However, you can aggregate usage over daily or monthly periods as well. If you experience an outage, you can aggregate buyer software use and send it in the following hours metering. You can't send more than one record per hour.

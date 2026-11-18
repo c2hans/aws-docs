@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 # CreateAccessSource
 <a name="API_route53globalresolver_CreateAccessSource"></a>
 
-Creates an access source for a DNS view. Access sources define IP addresses or CIDR ranges that are allowed to send DNS queries to the Route 53 Global Resolver, along with the permitted DNS protocols.
+Creates an access source for a DNS view. An access source defines which traffic is allowed to send DNS queries to the Route 53 Global Resolver, along with the permitted DNS protocols. You can define the allowed source in one of two ways: specify an IP address or CIDR range with `cidr` to allow queries by source IP, or specify an AWS Cloud WAN segment with `segment` (together with the associated core network endpoint) to allow queries from that segment instead of a CIDR range.
 
 **Important**
 Route 53 Global Resolver is a global service that supports resolvers in multiple AWS Regions but you must specify the US East (Ohio) Region to create, update, or otherwise work with Route 53 Global Resolver resources. That is, for example, specify `--region us-east-2` on AWS CLI commands.
@@ -20,10 +20,12 @@ Content-type: application/json
 {
    "cidr": "{{string}}",
    "clientToken": "{{string}}",
+   "coreNetworkEndpointId": "{{string}}",
    "dnsViewId": "{{string}}",
    "ipAddressType": "{{string}}",
    "name": "{{string}}",
    "protocol": "{{string}}",
+   "segment": "{{string}}",
    "tags": {
       "{{string}}" : "{{string}}"
    }
@@ -41,15 +43,22 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [cidr](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-cidr"></a>
-The IP address or CIDR range that is allowed to send DNS queries to the Route 53 Global Resolver.
+The IP address or CIDR range that is allowed to send DNS queries to the Route 53 Global Resolver. Specify `cidr` to allow queries by source IP. To instead allow queries from an AWS Cloud WAN segment, omit `cidr` and specify `segment`.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 43.
-Required: Yes
+Length Constraints: Minimum length of 0. Maximum length of 43.
+Required: No
 
  ** [clientToken](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-clientToken"></a>
 A unique string that identifies the request and ensures idempotency.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
+ ** [coreNetworkEndpointId](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-coreNetworkEndpointId"></a>
+The ID of the core network endpoint to associate with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
 Required: No
 
  ** [dnsViewId](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-dnsViewId"></a>
@@ -60,9 +69,9 @@ Pattern: `[-.a-zA-Z0-9]+`
 Required: Yes
 
  ** [ipAddressType](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-ipAddressType"></a>
-The IP address type for this access source. Valid values are IPv4 and IPv6 (if the Route 53 Global Resolver supports dual-stack).
+The IP address type for this access source. Valid values are IPV4, IPV6, and NONE. If you provide a CIDR range, this defaults to IPV4; otherwise it defaults to NONE.
 Type: String
-Valid Values: `IPV4 | IPV6`
+Valid Values: `IPV4 | IPV6 | NONE`
 Required: No
 
  ** [name](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-name"></a>
@@ -77,6 +86,12 @@ The DNS protocol that is permitted for this access source. Valid values are Do53
 Type: String
 Valid Values: `DO53 | DOH | DOT`
 Required: Yes
+
+ ** [segment](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-segment"></a>
+The name of the AWS Cloud WAN segment that is allowed to send DNS queries to the Route 53 Global Resolver. Specify `segment` instead of a `cidr` range to allow queries from traffic in that Cloud WAN segment through the associated core network endpoint (`coreNetworkEndpointId`). When you specify a segment, you don't provide a CIDR range.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
 
  ** [tags](#API_route53globalresolver_CreateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-request-tags"></a>
 Tags to associate with the access source.
@@ -98,12 +113,14 @@ Content-type: application/json
 {
    "arn": "string",
    "cidr": "string",
+   "coreNetworkEndpointId": "string",
    "createdAt": "string",
    "dnsViewId": "string",
    "id": "string",
    "ipAddressType": "string",
    "name": "string",
    "protocol": "string",
+   "segment": "string",
    "status": "string",
    "updatedAt": "string"
 }
@@ -125,7 +142,13 @@ Pattern: `arn:[-.a-z0-9]{1,63}:[-.a-z0-9]{1,63}:[-.a-z0-9]{0,63}:[-.a-z0-9]{0,63
  ** [cidr](#API_route53globalresolver_CreateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-response-cidr"></a>
 The IP address or CIDR range that is allowed to send DNS queries to the Route 53 Global Resolver.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 43.
+Length Constraints: Minimum length of 0. Maximum length of 43.
+
+ ** [coreNetworkEndpointId](#API_route53globalresolver_CreateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-response-coreNetworkEndpointId"></a>
+The ID of the core network endpoint associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
 
  ** [createdAt](#API_route53globalresolver_CreateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-response-createdAt"></a>
 The date and time when the access source was created.
@@ -144,9 +167,9 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[-.a-zA-Z0-9]+`
 
  ** [ipAddressType](#API_route53globalresolver_CreateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-response-ipAddressType"></a>
-The IP address type for this access source (IPv4 or IPv6).
+The IP address type for this access source. Valid values are IPV4, IPV6, and NONE.
 Type: String
-Valid Values: `IPV4 | IPV6`
+Valid Values: `IPV4 | IPV6 | NONE`
 
  ** [name](#API_route53globalresolver_CreateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-response-name"></a>
 The descriptive name of the access source.
@@ -158,6 +181,11 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
 The DNS protocol that is permitted for this access source (Do53, DoT, or DoH).
 Type: String
 Valid Values: `DO53 | DOH | DOT`
+
+ ** [segment](#API_route53globalresolver_CreateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-response-segment"></a>
+The name of the segment associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
 
  ** [status](#API_route53globalresolver_CreateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateAccessSource-response-status"></a>
 The operational status of the access source.

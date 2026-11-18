@@ -977,6 +977,10 @@ Exception prefix: `LambdaCore`
 Task state resource: `arn:aws:states:::aws-sdk:lambdamicrovms:{{[apiAction]}}`
 Exception prefix: `LambdaMicrovms`
 
+**AWS Lambda Web {{New}}**
+Task state resource: `arn:aws:states:::aws-sdk:lambdaweb:{{[apiAction]}}`
+Exception prefix: `LambdaWeb`
+
 **AWS Launch Wizard**
 Task state resource: `arn:aws:states:::aws-sdk:launchwizard:{{[apiAction]}}`
 Exception prefix: `LaunchWizard`

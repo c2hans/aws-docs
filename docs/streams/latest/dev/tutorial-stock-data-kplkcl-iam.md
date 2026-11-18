@@ -178,7 +178,7 @@ The resulting policy document should look something like the following:
 
 1. Choose `StockTradeStreamUser` and **Attach Policy**.
 
-## Next Steps
+## Next steps
 <a name="tutorial-stock-data-kplkcl-iam-next"></a>
 
 [Download and build the implementation code](tutorial-stock-data-kplkcl-download.md)

@@ -20,6 +20,19 @@ The initial state of the builder is `PENDING`. When it is ready, the state is `R
          "VpceId": "{{string}}"
       }
    ],
+   "AgentAccessConfig": {
+      "S3BucketArn": "{{string}}",
+      "ScreenImageFormat": "{{string}}",
+      "ScreenResolution": "{{string}}",
+      "ScreenshotsUploadEnabled": {{boolean}},
+      "Settings": [
+         {
+            "AgentAction": "{{string}}",
+            "Permission": "{{string}}"
+         }
+      ],
+      "UserControlMode": "{{string}}"
+   },
    "AppstreamAgentVersion": "{{string}}",
    "Description": "{{string}}",
    "DisableIMDSV1": {{boolean}},
@@ -60,6 +73,11 @@ The request accepts the following data in JSON format.
 The list of interface VPC endpoint (interface endpoint) objects. Administrators can connect to the image builder only through the specified endpoints.
 Type: Array of [AccessEndpoint](API_AccessEndpoint.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 4 items.
+Required: No
+
+ ** [AgentAccessConfig](#API_CreateImageBuilder_RequestSyntax) **   <a name="WorkSpacesApplications-CreateImageBuilder-request-AgentAccessConfig"></a>
+The configuration for agent access on the image builder. If specified, agent access is enabled for the image builder.
+Type: [ImageBuilderAgentAccessConfig](API_ImageBuilderAgentAccessConfig.md) object
 Required: No
 
  ** [AppstreamAgentVersion](#API_CreateImageBuilder_RequestSyntax) **   <a name="WorkSpacesApplications-CreateImageBuilder-request-AppstreamAgentVersion"></a>
@@ -277,6 +295,19 @@ Required: No
             "VpceId": "string"
          }
       ],
+      "AgentAccessConfig": {
+         "S3BucketArn": "string",
+         "ScreenImageFormat": "string",
+         "ScreenResolution": "string",
+         "ScreenshotsUploadEnabled": boolean,
+         "Settings": [
+            {
+               "AgentAction": "string",
+               "Permission": "string"
+            }
+         ],
+         "UserControlMode": "string"
+      },
       "AppstreamAgentVersion": "string",
       "Arn": "string",
       "CreatedTime": number,

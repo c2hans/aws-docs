@@ -58,7 +58,7 @@ This section describes possible solutions for the following file upload issues.
 
 **Description**
 
-When you are attempting to upload a file to Amazon S3 storage using Transfer Family, you receive the following error message: AWS Transfer does not support random access writes to S3 objects.
+When you are attempting to upload a file to Amazon S3 storage using Transfer Family, you receive the following error message: `AWS Transfer does not support random access writes to S3 objects.`
 
 **Cause**
 

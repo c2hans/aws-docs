@@ -23,6 +23,8 @@ Amazon MQ adds IAM global conditional keys `aws:SourceAccount` and `aws:SourceAr
 ## Supported keys
 <a name="arn-support-supported-keys"></a>
 
+**Required IAM role**
+
 `aws.arns.assume_role_arn`
 IAM role ARN that Amazon MQ assumes to access other AWS resources. Required when any other ARN configuration is used.
 

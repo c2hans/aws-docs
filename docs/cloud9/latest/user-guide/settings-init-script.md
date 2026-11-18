@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/settings-init-s
 **Important**
 AWS Cloud9 no longer supports the experimental feature that allowed users to customize an initialization script. This script was automatically run in the IDE. Users can continue to view, edit, and save the `init.js` file using the editor. But, customized initialization scripts are no longer permitted to run and can't modify the IDE's behavior.
 If AWS Cloud9 detects that the `init.js` file has been modified, the following message is displayed in the IDE:
-Support for initialization scripts has been discontinued. The contents of this init.js file will no longer be executed on loading the AWS Cloud9 IDE.
+`Support for initialization scripts has been discontinued. The contents of this init.js file will no longer be executed on loading the AWS Cloud9 IDE.`
 If you need to run a custom initialization script for the IDE, [contact us](https://aws.amazon.com/contact-us/).
 
 An *initialization script* defines initialization code to run in your IDE after all plugins are loaded. This applies across each AWS Cloud9 development environment that's associated with your IAM user. AWS Cloud9 also continually scans for changes to the initialization script and alerts users if a modification occurred.

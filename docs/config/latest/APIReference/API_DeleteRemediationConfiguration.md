@@ -28,13 +28,12 @@ The request accepts the following data in JSON format.
 The name of the AWS Config rule for which you want to delete remediation configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** [ResourceType](#API_DeleteRemediationConfiguration_RequestSyntax) **   <a name="config-DeleteRemediationConfiguration-request-ResourceType"></a>
 The type of a resource.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
 ## Response Elements

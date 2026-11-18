@@ -109,6 +109,7 @@ Access details about updates to AWS managed policies for Amazon EMR Serverless s
 
 | Change | Description | Date |
 | --- | --- | --- |
+| AmazonEMRServerlessServiceRolePolicy – Update to an existing policy | Amazon EMR Serverless added the `ec2:CreateNetworkInterfacePermission` and `ec2:DeleteNetworkInterfacePermission` permissions to the `EC2PolicyStatement` in the [AmazonEMRServerlessServiceRolePolicy policy](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions). These permissions allow Flex execution to attach, and later revoke, the elastic network interfaces that EMR Serverless creates in your VPC for a job run. | November 17, 2026 |
 | AmazonEMRServerlessServiceRolePolicy – Update to an existing policy | Amazon EMR Serverless added the new `Sid` `CloudWatchPolicyStatement` and `EC2PolicyStatement` to the [AmazonEMRServerlessServiceRolePolicy policy](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions). | January 25, 2024 |
 | AmazonEMRServerlessServiceRolePolicy – Update to an existing policy | Amazon EMR Serverless added new permissions to allow Amazon EMR Serverless to publish aggregated account metrics for vCPU usage in the `"AWS/Usage"` namespace. | April 20, 2023 |
 | Amazon EMR Serverless started tracking changes | Amazon EMR Serverless started tracking changes for its AWS managed policies. | April 20, 2023 |

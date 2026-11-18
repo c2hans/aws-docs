@@ -55,6 +55,11 @@ Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `[\s\S]*`
 Required: No
 
+ ** MultipathResilience **   <a name="networkmanager-Type-CoreNetworkChangeValues-MultipathResilience"></a>
+The change in multipath resilience configuration in the core network change values.
+Type: [MultipathResilienceChangeValues](API_MultipathResilienceChangeValues.md) object
+Required: No
+
  ** NetworkFunctionGroupName **   <a name="networkmanager-Type-CoreNetworkChangeValues-NetworkFunctionGroupName"></a>
 The network function group name if the change event is associated with a network function group.
 Type: String

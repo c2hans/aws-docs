@@ -253,7 +253,7 @@ To avoid latency issues and request rejections, perform EBS volume resizes only 
 
 You might encounter the following error when you try to enable audit log publishing using the OpenSearch Service console:
 
-The Resource Access Policy specified for the CloudWatch Logs log group does not grant sufficient permissions for Amazon OpenSearch Service to create a log stream. Please check the Resource Access Policy.
+`The Resource Access Policy specified for the CloudWatch Logs log group does not grant sufficient permissions for Amazon OpenSearch Service to create a log stream. Please check the Resource Access Policy.`
 
 If you encounter this error, verify that the `resource` element of your policy includes the correct log group ARN. If it does, take the following steps:
 

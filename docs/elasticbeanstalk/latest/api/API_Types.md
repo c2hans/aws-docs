@@ -25,6 +25,7 @@ The following data types are supported:
 +  [ConfigurationSettingsDescription](API_ConfigurationSettingsDescription.md)
 +  [CPUUtilization](API_CPUUtilization.md)
 +  [CustomAmi](API_CustomAmi.md)
++  [DefaultAmi](API_DefaultAmi.md)
 +  [Deployment](API_Deployment.md)
 +  [EnvironmentDescription](API_EnvironmentDescription.md)
 +  [EnvironmentInfoDescription](API_EnvironmentInfoDescription.md)

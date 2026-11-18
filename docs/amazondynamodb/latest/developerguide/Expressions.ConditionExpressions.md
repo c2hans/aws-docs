@@ -46,7 +46,7 @@ aws dynamodb put-item \
     --condition-expression "attribute_not_exists(Id)"
 ```
 
-If the condition expression evaluates to false, DynamoDB returns the following error message: The conditional request failed.
+If the condition expression evaluates to false, DynamoDB returns the following error message: `The conditional request failed`.
 
 **Note**
 For more information about `attribute_not_exists` and other functions, see [Condition and filter expressions, operators, and functions in DynamoDB](Expressions.OperatorsAndFunctions.md).

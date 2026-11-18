@@ -43,12 +43,14 @@ Content-type: application/json
 {
    "arn": "string",
    "cidr": "string",
+   "coreNetworkEndpointId": "string",
    "createdAt": "string",
    "dnsViewId": "string",
    "id": "string",
    "ipAddressType": "string",
    "name": "string",
    "protocol": "string",
+   "segment": "string",
    "status": "string",
    "updatedAt": "string"
 }
@@ -70,7 +72,13 @@ Pattern: `arn:[-.a-z0-9]{1,63}:[-.a-z0-9]{1,63}:[-.a-z0-9]{0,63}:[-.a-z0-9]{0,63
  ** [cidr](#API_route53globalresolver_DeleteAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_DeleteAccessSource-response-cidr"></a>
 The IP address or CIDR range of the deleted access source.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 43.
+Length Constraints: Minimum length of 0. Maximum length of 43.
+
+ ** [coreNetworkEndpointId](#API_route53globalresolver_DeleteAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_DeleteAccessSource-response-coreNetworkEndpointId"></a>
+The ID of the core network endpoint associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
 
  ** [createdAt](#API_route53globalresolver_DeleteAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_DeleteAccessSource-response-createdAt"></a>
 The date and time when the access source was originally created.
@@ -89,9 +97,9 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[-.a-zA-Z0-9]+`
 
  ** [ipAddressType](#API_route53globalresolver_DeleteAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_DeleteAccessSource-response-ipAddressType"></a>
-The IP address type of the deleted access source (IPv4 or IPv6).
+The IP address type of the deleted access source. Valid values are IPV4, IPV6, and NONE.
 Type: String
-Valid Values: `IPV4 | IPV6`
+Valid Values: `IPV4 | IPV6 | NONE`
 
  ** [name](#API_route53globalresolver_DeleteAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_DeleteAccessSource-response-name"></a>
 The name of the deleted access source.
@@ -103,6 +111,11 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
 The DNS protocol that was permitted for the deleted access source.
 Type: String
 Valid Values: `DO53 | DOH | DOT`
+
+ ** [segment](#API_route53globalresolver_DeleteAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_DeleteAccessSource-response-segment"></a>
+The name of the segment associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
 
  ** [status](#API_route53globalresolver_DeleteAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_DeleteAccessSource-response-status"></a>
 The final status of the deleted access source.

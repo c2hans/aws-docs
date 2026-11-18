@@ -144,6 +144,8 @@ atx custom def exec -n my-transformation -p ./my-project -d
 
 The `-d` or `--do-not-learn` flag opts out of allowing lesson extraction from the current execution.
 
+Runs of a transformation definition shared with your account never add lessons to your account. To contribute lessons from a run to the owner's transformation definition, use `--share-learnings`. For more information, see [Lessons and shared transformation definitions](custom-sharing-lessons.md).
+
 ### Resuming Conversations
 <a name="custom-resuming-conversations"></a>
 
@@ -938,7 +940,7 @@ atx custom def delete -n my-transformation
 ```
 
 **Important**
-This permanently deletes the specified transformation definition from your account.
+This permanently deletes the specified transformation definition from your account. If the transformation definition is shared, revoke its shares first. For more information, see [Manage your shares](custom-sharing-manage.md).
 
 ### Managing Transformation Versions
 <a name="custom-managing-transformation-versions"></a>

@@ -27,7 +27,7 @@ If this endpoint is on a Dynamic Multiview channel, additional restrictions appl
 
 1. Choose **Create**.
 
-   When you're creating an endpoint, you will receive an error if you exceed the quotas on the account. An error similar to Too many requests, please try again. Resource limit exceeded means that either you've exceeded the API request quotas, or you've already reached the maximum number of endpoints permitted on this channel.
+   When you're creating an endpoint, you will receive an error if you exceed the quotas on the account. An error similar to `Too many requests, please try again. Resource limit exceeded` means that either you've exceeded the API request quotas, or you've already reached the maximum number of endpoints permitted on this channel.
 
 ## Endpoint settings fields
 <a name="endpoints-settings"></a>

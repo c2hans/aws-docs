@@ -151,6 +151,8 @@ Amazon Bedrock and Amazon SageMaker AI offer different levels of customization c
 
 ------
 
+**Using Amazon Bedrock and Amazon SageMaker AI together**
+
 The choice between Amazon Bedrock and Amazon SageMaker AI is not always mutually exclusive. You may benefit from using both services together in a progressive customization pipeline:
 + **Start with Amazon Bedrock**: Begin with prompt engineering and retrieval augmented generation (RAG) using Amazon Bedrock Knowledge Bases to quickly build and iterate on your generative AI application.
 + **Move to SageMaker AI serverless customization**: When you need to change model behavior beyond what prompting can achieve, use SageMaker AI serverless customization with techniques such as SFT and DPO to fine-tune models on your data.

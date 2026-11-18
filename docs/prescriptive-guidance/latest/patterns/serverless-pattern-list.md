@@ -13,6 +13,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 + [Import the psycopg2 library to AWS Lambda to interact with your PostgreSQL database](import-psycopg2-library-lambda.md)
 + [Process events asynchronously with Amazon API Gateway and AWS Lambda](process-events-asynchronously-with-amazon-api-gateway-and-aws-lambda.md)
 + [Process events asynchronously with Amazon API Gateway and Amazon DynamoDB Streams](processing-events-asynchronously-with-amazon-api-gateway-and-amazon-dynamodb-streams.md)
++ [Process events asynchronously with Amazon API Gateway, Amazon SQS, and AWS Fargate](process-events-asynchronously-with-amazon-api-gateway-amazon-sqs-and-aws-fargate.md)
 + [Run AWS Systems Manager Automation tasks synchronously from AWS Step Functions](run-aws-systems-manager-automation-tasks-synchronously-from-aws-step-functions.md)
 + [Run parallel reads of S3 objects by using Python in an AWS Lambda function](run-parallel-reads-of-s3-objects-by-using-python-in-an-aws-lambda-function.md)
 + [More patterns](serverless-more-patterns-pattern-list.md)

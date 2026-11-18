@@ -45,6 +45,7 @@ Content-type: application/json
 {
    "destination": {
       "bucketName": "string",
+      "expectedBucketOwner": "string",
       "keyPrefix": "string",
       "kmsKeyArn": "string"
    },
@@ -361,6 +362,30 @@ Content-type: application/json
          {
             "endInclusive": number,
             "startInclusive": number
+         }
+      ],
+      "machineImageId": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "machineImageName": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "machineImageOwnerAccountId": [
+         {
+            "comparison": "string",
+            "value": "string"
+         }
+      ],
+      "machineImagePlatform": [
+         {
+            "comparison": "string",
+            "value": "string"
          }
       ],
       "networkProtocol": [

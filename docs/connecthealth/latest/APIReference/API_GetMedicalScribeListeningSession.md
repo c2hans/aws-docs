@@ -62,6 +62,7 @@ Content-type: application/json
       "languageCode": "string",
       "mediaEncoding": "string",
       "mediaSampleRateHertz": number,
+      "medicalCodingContextProvided": boolean,
       "postStreamActionResult": {
          "clinicalNoteGenerationResult": {
             "afterVisitSummaryResult": {
@@ -79,11 +80,22 @@ Content-type: application/json
                "outputLocation": "string",
                "status": "string"
             }
+         },
+         "medicalCodeGenerationResult": {
+            "jobId": "string",
+            "medicalCodesResult": {
+               "failureReason": "string",
+               "outputLocation": "string",
+               "status": "string"
+            }
          }
       },
       "postStreamActionSettings": {
          "clinicalNoteGenerationSettings": {
             "noteTemplateSettings": { ... }
+         },
+         "medicalCodeGenerationSettings": {
+            "enabled": boolean
          },
          "outputS3Uri": "string"
       },

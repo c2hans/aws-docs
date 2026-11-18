@@ -16,5 +16,6 @@ Rightsizing recommendations doesn't support billing transfer.
 + [Using your rightsizing recommendations](rr-use.md)
 + [Sharing your rightsizing recommendations](csv-details.md)
 + [Understanding rightsizing recommendations calculations](understanding-rr-calc.md)
++ [Viewing your Reserved Instances inventory](ri-inventory.md)
 + [Understanding reservations in Cost Explorer](ce-ris.md)
 + [Accessing reservation recommendations](ri-recommendations.md)

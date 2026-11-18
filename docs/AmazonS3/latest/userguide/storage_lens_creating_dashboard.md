@@ -70,6 +70,7 @@ You can choose up to 50 buckets to include or exclude.
    + **Cost optimization metrics**
    + **Data protection metrics**
    + **Performance metrics**
+   + **Intelligent-Tiering access tier metrics**
 
    To preview which metrics are included in each category, use the drop-down arrow button below the metrics category checkbox list. For more information about metrics categories, see [Metrics categories](storage_lens_basics_metrics_recommendations.md#storage_lens_basics_metrics_types). For a complete list of metrics, see [Amazon S3 Storage Lens metrics glossary](storage_lens_metrics_glossary.md).
 
@@ -100,6 +101,10 @@ The **Prefix depth** setting determines how many hierarchical levels deep S3 Sto
 1. Under **Metrics publishing**, choose **CloudWatch publishing** if you want to access your Storage Lens metrics in your CloudWatch dashboard.
 **Note**
 Prefix-level metrics aren't available in CloudWatch.
+
+1. Under **Metrics publishing**, select **Billing and Cost Management publishing** if you want to publish prefix-level storage and request metrics to AWS Billing and Cost Management for split cost allocation data. This option is available only for advanced tier dashboards that use the default **Prefix delimiter**, `/`. For more information, see [Estimating Amazon S3 costs by prefix with S3 Storage Lens and AWS Cost and Usage Reports](storage-lens-cost-and-usage-reports.md).
+
+1. If you selected **Billing and Cost Management publishing**, in the **Publish to AWS Cost and Usage Reports (CUR)** panel, enter the **Minimum prefix level** and **Maximum prefix level**.
 
 1. Under **Metrics export**, choose which Storage Lens dashboard data you want exported daily:
    + **Default metrics report**
@@ -176,6 +181,7 @@ import software.amazon.awssdk.services.s3control.model.CloudWatchMetrics;
 import software.amazon.awssdk.services.s3control.model.DetailedStatusCodesMetrics;
 import software.amazon.awssdk.services.s3control.model.Format;
 import software.amazon.awssdk.services.s3control.model.Include;
+import software.amazon.awssdk.services.s3control.model.IntAccessTiers;
 import software.amazon.awssdk.services.s3control.model.OutputSchemaVersion;
 import software.amazon.awssdk.services.s3control.model.PrefixLevel;
 import software.amazon.awssdk.services.s3control.model.PrefixLevelStorageMetrics;
@@ -276,12 +282,17 @@ public class CreateAndUpdateDashboard {
                     .storageLensTableDestination(s3TablesDestination)
                     .build();
 
+            IntAccessTiers intAccessTiers = IntAccessTiers.builder()
+                    .isEnabled({{true}})
+                    .build();
+
             StorageLensConfiguration configuration = StorageLensConfiguration.builder()
                     .id(configurationId)
                     .accountLevel(accountLevel)
                     .include(include)
                     .dataExport(dataExport)
                     .awsOrg(awsOrg)
+                    .intAccessTiers(intAccessTiers)
                     .expandedPrefixesDataExport(expandedPrefixesDataExport)
                     .prefixDelimiter("{{/}}")
                     .isEnabled({{true}})

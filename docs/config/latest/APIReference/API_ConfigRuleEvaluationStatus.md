@@ -26,7 +26,7 @@ Required: No
 The name of the AWS Config rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: No
 
  ** FirstActivatedTime **   <a name="config-Type-ConfigRuleEvaluationStatus-FirstActivatedTime"></a>

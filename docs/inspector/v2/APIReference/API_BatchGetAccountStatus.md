@@ -49,6 +49,11 @@ Content-type: application/json
       {
          "accountId": "string",
          "resourceState": {
+            "ami": {
+               "errorCode": "string",
+               "errorMessage": "string",
+               "status": "string"
+            },
             "codeRepository": {
                "errorCode": "string",
                "errorMessage": "string",
@@ -88,6 +93,7 @@ Content-type: application/json
          "errorCode": "string",
          "errorMessage": "string",
          "resourceStatus": {
+            "ami": "string",
             "codeRepository": "string",
             "ec2": "string",
             "ecr": "string",

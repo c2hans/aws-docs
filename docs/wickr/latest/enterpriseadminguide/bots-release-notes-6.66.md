@@ -9,6 +9,8 @@ This guide provides documentation for Wickr Enterprise. If you're using AWS Wick
 
 The following release notes include information for bots release 6.66. For information on the release timeline, see [Change log for Bots 6.66](#bots-release-notes-6.66-change-log).
 
+**Platform versions**
+
 | Component | Version |
 | --- | --- |
 | Bots | 6.66.2 |

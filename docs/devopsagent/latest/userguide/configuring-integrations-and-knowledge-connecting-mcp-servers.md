@@ -40,6 +40,16 @@ To use a community MCP server:
 
 1. Register the deployed server with your Agent Space as a capability provider by following the steps in [Registering an MCP server](#registering-an-mcp-server-account-level) below.
 
+## Partner-managed connectors
+<a name="partner-managed-connectors"></a>
+
+Some partners publish a partner-managed connector for the MCP server that they host. Use the connector if one exists, because it saves you from looking up the server's configuration. A connector provides the following:
++ The server's endpoints and authentication settings, so that you enter only your credentials
++ Skills that the partner recommends
++ For some connectors, an alert webhook that starts investigations from the partner's alerts
+
+For more information about partner-managed connectors, see [Using partner-managed connectors](configuring-integrations-and-knowledge-using-partner-managed-connectors.md).
+
 ## Registering an MCP server (account-level)
 <a name="registering-an-mcp-server-account-level"></a>
 
@@ -224,7 +234,7 @@ To control whether the agent can invoke an MCP tool as a read-only or mutating a
 ## Managing MCP server connections
 <a name="managing-mcp-server-connections"></a>
 
-**Updating authentication credentials** – You can update the authentication credentials of a registered MCP server without deregistering it. Navigate to the **Capability Providers** page in the AWS DevOps Agent console, select your MCP server, and choose **Update** from the **Actions** menu. Your Agent Space associations are preserved. What you can update depends on the authentication method:
+**Updating authentication credentials** – You can update the authentication credentials of a registered MCP server without deregistering it. Navigate to the **Capability Providers** page in the AWS DevOps Agent console. Under **Currently registered**, choose **View all** on the **MCP Server** card. For an MCP server that you registered from a partner-managed connector, use the connector's card instead. In **Registrations**, select your MCP server, and choose **Update** from the **Actions** menu. Your Agent Space associations are preserved. What you can update depends on the authentication method:
 + **API key** – Enter a new API key value and header name to rotate the credential. The endpoint can't be changed during an update.
 + **OAuth 3LO (Three-Legged OAuth)** – Re-run the authorization flow to refresh the stored token. You don't re-enter the client credentials. When you submit, AWS DevOps Agent redirects you to the provider's consent page to complete the re-authorization. Optionally, you can override the authorization URL. If you leave it blank, AWS DevOps Agent discovers it from your MCP server's metadata.
 + **AWS SigV4** – Update the server name, endpoint, description, AWS Region, service, IAM role, and custom headers.

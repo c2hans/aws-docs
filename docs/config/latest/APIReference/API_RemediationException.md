@@ -14,7 +14,7 @@ An object that represents the details about the remediation exception. The detai
 The name of the AWS Config rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** ResourceId **   <a name="config-Type-RemediationException-ResourceId"></a>

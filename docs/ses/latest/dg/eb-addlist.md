@@ -268,7 +268,7 @@ The following console procedure and its AWS CLI equivalent are showing an exampl
 
 **To use an Address List in a rule condition:**
 
-1. Create a new rule or edit an existing one as explained in [Creating rule sets & rules (console)](eb-rules.md#eb-rules-create-console)
+1. Create a new rule or edit an existing one as explained in [Create and manage rule sets (console)](eb-rules-setup.md#eb-rules-create-console)
 
 1. In the **Rule conditions** container, build the rule's condition as follows.
    + Select **Recipient address** for the **Select property** field.

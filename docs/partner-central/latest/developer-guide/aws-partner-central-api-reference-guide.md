@@ -77,5 +77,6 @@ Engagement Invitation refers to a formal request from AWS for partners to collab
 + [Working with multipartner opportunities](working-with-multi-partner-opportunities.md)
 + [Associating, disassociating and assigning opportunities](associating-disassociating-assigning-opportunities.md)
 + [Manage leads using the AWS Partner Central Selling API](working-with-your-leads.md)
++ [Manage customer accounts using the AWS Partner Central Selling API](working-with-customer-accounts.md)
 + [Working with deal sizing insights](working-with-deal-sizing-insights.md)
 + [Best practices](best-practices.md)

@@ -46,7 +46,7 @@ Required: No
 The EC2 instance type of the host.
 EC2 instances created through Amazon EVS do not support associating an IAM instance profile.
 Type: String
-Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl`
+Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl | r7i.metal-24xl | r7i.metal-48xl`
 Required: No
 
  ** ipAddress **   <a name="evs-Type-Host-ipAddress"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 # CreateGlobalResolver
 <a name="API_route53globalresolver_CreateGlobalResolver"></a>
 
-Creates a new Route 53 Global Resolver instance. A Route 53 Global Resolver is a global, internet-accessible DNS resolver that provides secure DNS resolution for both public and private domains through global anycast IP addresses.
+Creates a new Route 53 Global Resolver instance. A Route 53 Global Resolver is a global, internet-accessible DNS resolver that provides secure DNS resolution for both public and private domains through global anycast IP addresses. When you create a resolver, use the `publicIpStatus` parameter to control public IP connectivity, which determines whether DNS clients can send queries to the resolver over the internet.
 
 **Important**
 Route 53 Global Resolver is a global service that supports resolvers in multiple AWS Regions but you must specify the US East (Ohio) Region to create, update, or otherwise work with Route 53 Global Resolver resources. That is, for example, specify `--region us-east-2` on AWS CLI commands.
@@ -23,6 +23,7 @@ Content-type: application/json
    "ipAddressType": "{{string}}",
    "name": "{{string}}",
    "observabilityRegion": "{{string}}",
+   "publicIpStatus": "{{string}}",
    "regions": [ "{{string}}" ],
    "tags": {
       "{{string}}" : "{{string}}"
@@ -71,6 +72,16 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 32.
 Required: No
 
+ ** [publicIpStatus](#API_route53globalresolver_CreateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateGlobalResolver-request-publicIpStatus"></a>
+Specifies the public IP connectivity to configure for the Route 53 Global Resolver. Public IP addresses let DNS clients send queries to the resolver over the internet. Valid values are the following:
++  `ENABLED_RESERVED` - Public IP connectivity is enabled, and the global anycast public IP addresses are reserved for the Route 53 Global Resolver.
++  `DISABLED_RESERVED` - Public IP connectivity is disabled, and the global anycast public IP addresses remain reserved for the Route 53 Global Resolver.
++  `DISABLED_RELEASED` - Public IP connectivity is disabled, and the global anycast public IP addresses are released.
+A reserved state keeps the global anycast public IP addresses allocated to the Route 53 Global Resolver so that you can re-enable public connectivity later without the addresses changing. The released state frees those addresses when you no longer need public connectivity.
+Type: String
+Valid Values: `ENABLED_RESERVED | DISABLED_RESERVED | DISABLED_RELEASED`
+Required: No
+
  ** [regions](#API_route53globalresolver_CreateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateGlobalResolver-request-regions"></a>
 List of AWS Regions where the Route 53 Global Resolver will operate. The resolver will be distributed across these Regions to provide global availability and low-latency DNS resolution.
 Type: Array of strings
@@ -106,6 +117,7 @@ Content-type: application/json
    "ipv6Addresses": [ "string" ],
    "name": "string",
    "observabilityRegion": "string",
+   "publicIpStatus": "string",
    "regions": [ "string" ],
    "status": "string",
    "updatedAt": "string"
@@ -177,6 +189,14 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
 The AWS Region where observability data for the Route 53 Global Resolver is stored.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 32.
+
+ ** [publicIpStatus](#API_route53globalresolver_CreateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateGlobalResolver-response-publicIpStatus"></a>
+The public IP connectivity configured for the Route 53 Global Resolver. Public IP addresses let DNS clients send queries to the resolver over the internet. Valid values are the following:
++  `ENABLED_RESERVED` - Public IP connectivity is enabled, and the global anycast public IP addresses are reserved for the Route 53 Global Resolver.
++  `DISABLED_RESERVED` - Public IP connectivity is disabled, and the global anycast public IP addresses remain reserved for the Route 53 Global Resolver.
++  `DISABLED_RELEASED` - Public IP connectivity is disabled, and the global anycast public IP addresses are released.
+Type: String
+Valid Values: `ENABLED_RESERVED | DISABLED_RESERVED | DISABLED_RELEASED`
 
  ** [regions](#API_route53globalresolver_CreateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_CreateGlobalResolver-response-regions"></a>
 The AWS Regions where the Route 53 Global Resolver is deployed and operational.

@@ -154,6 +154,7 @@ An example of detail data generated for the SES email sending event `Email Rende
     }
   }
 ```
+For bounce and delivery delay events, SES can truncate the `diagnosticCode` values of recipients from the end. SES truncates the values only when the event exceeds the size limit that SES applies to it. The event does not indicate whether SES truncated the values.
 
 **Example: Email sending status event**  <a name="schema-resource-status-event-email-sending.example"></a>
 The following is an example of the full email sending status event for the event type `Email Rendering Failed`. The detail event value in this example is a combination of static and dynamic values based on the email sending event for a specific email.

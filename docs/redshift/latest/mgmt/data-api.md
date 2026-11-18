@@ -143,7 +143,7 @@ Consider the following when using named parameters:
     --sql "SELECT :colname, FROM event" --parameters "[{\"name\": \"colname\", \"value\": \"eventname\"}]"
     ```
 
-    If you describe (`describe-statement` operation) the statement with the syntax error, the `QueryString` returned does not substitute the column name for the parameter (`"QueryString": "SELECT :colname, FROM event"`), and an error is reported (ERROR: syntax error at or near \\"FROM\\"\\n Position: 12).
+    If you describe (`describe-statement` operation) the statement with the syntax error, the `QueryString` returned does not substitute the column name for the parameter (`"QueryString": "SELECT :colname, FROM event"`), and an error is reported (`ERROR: syntax error at or near \"FROM\"\n Position: 12`).
   + You can't replace column names in an aggregate function, such as `COUNT(column-name)`, `AVG(column-name)`, or `SUM(column-name)`.
   + You can't replace column names in a JOIN clause.
 + When the SQL runs, data is implicitly cast to a data type. For more information about data type casting, see [Data types](https://docs.aws.amazon.com/redshift/latest/dg/c_Supported_data_types.html) in the *Amazon Redshift Database Developer Guide*.

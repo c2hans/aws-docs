@@ -564,6 +564,8 @@ Use the [`key generate-file`](cloudhsm_cli-key-generate-file.md) command to expo
 + {{<private\_key\_label>}} – Label of the private key you generated in the previous step.
 + {{<web\_server\_fake\_pem.key>}} – Name of the file that your fake PEM key will be written to.
 
+**For RSA and EC keys**
+
 Use the `reference-pem` encoding:
 
 ```
@@ -575,6 +577,8 @@ aws-cloudhsm > key generate-file --encoding reference-pem --path {{<web_server_f
   }
 }
 ```
+
+**For Ed25519 and ML-DSA keys**
 
 Use the `cloudhsm-reference-pem` encoding:
 

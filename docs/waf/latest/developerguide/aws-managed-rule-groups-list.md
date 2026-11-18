@@ -49,6 +49,7 @@ Test and tune any changes to your AWS WAF protections before you use them for pr
   + [Account takeover prevention rules listing](aws-managed-rule-groups-atp.md#aws-managed-rule-groups-atp-rules)
 + [AWS WAF Bot Control rule group](aws-managed-rule-groups-bot.md)
   + [Protection levels](aws-managed-rule-groups-bot.md#aws-managed-rule-groups-bot-prot-levels)
+  + [Bot confidence levels](aws-managed-rule-groups-bot-confidence.md)
   + [Considerations for using this rule group](aws-managed-rule-groups-bot.md#aws-managed-rule-groups-bot-using)
   + [Labels added by this rule group](aws-managed-rule-groups-bot.md#aws-managed-rule-groups-bot-labels)
     + [Token labels](aws-managed-rule-groups-bot.md#aws-managed-rule-groups-bot-labels-token)

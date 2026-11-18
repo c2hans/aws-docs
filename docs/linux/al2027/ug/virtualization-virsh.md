@@ -2,26 +2,26 @@
 source_url: https://docs.aws.amazon.com/linux/al2027/ug/virtualization-virsh.html
 ---
 
-# Manage virtual machines with virsh on Amazon Linux 2027
+# Managing virtual machines with virsh on Amazon Linux 2027
 <a name="virtualization-virsh"></a>
 
-Running `qemu-system-x86_64` by hand is convenient for a one-off guest, but it means re-typing a long command line every time and managing the process yourself. libvirt solves that: you describe the guest once in an XML document called a *domain*, and the libvirt daemon builds the QEMU command line, starts and stops the guest, and keeps track of it. `virsh` is the command line client that talks to that daemon.
+Running `qemu-system-x86_64` by hand is convenient for a one-off guest, but it means re-typing a long command line every time and managing the process yourself. libvirt solves that: you describe the guest once in an XML document called a *domain*, and the libvirt daemon builds the QEMU command line, starts and stops the guest, and keeps track of it. `virsh` is the command-line client that talks to that daemon.
 
-This page walks through the full lifecycle of one guest. It assumes you have already installed the packages and enabled the daemon as described in [Get started with virtualization on Amazon Linux 2027](virtualization-getting-started.md).
+This page walks through the full lifecycle of one guest. It assumes you have already installed the packages and enabled the daemon as described in [Getting started with virtualization on Amazon Linux 2027](virtualization-getting-started.md).
 
 **Important**
-Run `virsh` with `sudo`. The system libvirt instance (`qemu:///system`) authorizes non-root callers through polkit, and a non-interactive shell has no polkit agent, so an unprivileged `virsh` fails with `authentication unavailable: no polkit agent available to authenticate action 'org.libvirt.unix.manage'`. Either use `sudo`, or add your user to the `libvirt` group and start a new login session. Unprivileged users can alternatively use the per-user instance, `virsh -c qemu:///session`, which needs no privileges but cannot use the shared networks described below.
+Run `virsh` with `sudo`. The system libvirt instance (`qemu:///system`) authorizes non-root callers through polkit, and a non-interactive shell has no polkit agent, so an unprivileged `virsh` fails with `authentication unavailable: no polkit agent available to authenticate action 'org.libvirt.unix.manage'`. Either use `sudo`, or add your user to the `libvirt` group and start a new login session. Unprivileged users can alternatively use the per-user instance, `virsh -c qemu:///session`, which needs no privileges but cannot use the shared networks described in the following section.
 
 **Topics**
-+ [Write the domain XML](#virtualization-virsh-xml)
-+ [Define, start, and connect to the guest](#virtualization-virsh-lifecycle)
-+ [Choose a networking mode](#virtualization-virsh-networking)
++ [Writing the domain XML](#virtualization-virsh-xml)
++ [Defining, starting, and connecting to the guest](#virtualization-virsh-lifecycle)
++ [Choosing a networking mode](#virtualization-virsh-networking)
 + [Related topics](#virtualization-virsh-more-info)
 
-## Write the domain XML
+## Writing the domain XML
 <a name="virtualization-virsh-xml"></a>
 
-Save the following as `al2027-demo.xml`. It describes a guest with two vCPUs, 2 GiB of memory, a virtio disk, user-mode networking, and a serial console. Point `source file` at a disk image you have already created, for example a copy of the AL2027 Kernel-based Virtual Machine (KVM) image, or a blank image from `qemu-img create`.
+This domain XML describes a guest with two vCPUs, 2 GiB of memory, a virtio disk, user-mode networking, and a serial console. Point `source file` at a disk image you have already created, for example a copy of the AL2027 Kernel-based Virtual Machine (KVM) image, or a blank image from `qemu-img create`. Save the following as `al2027-demo.xml`:
 
 ```
 <domain type='kvm'>
@@ -62,11 +62,13 @@ Save the following as `al2027-demo.xml`. It describes a guest with two vCPUs, 2 
 
 Three details in this document are specific to AL2027:
 + `machine='q35'` is required, because the legacy `pc` machine type is not built. libvirt expands this to a versioned machine such as `pc-q35-11.0`, which you can see with `virsh dumpxml`.
-+ `<backend type='passt'/>` selects `passt` for user-mode networking. The older SLIRP backend is not built, so a plain `<interface type='user'/>` with no backend will not work.
++ `<backend type='passt'/>` selects `passt` for user-mode networking. The older SLIRP backend is not built, so a plain `<interface type='user'/>` with no backend does not work.
 + `<cpu mode='host-passthrough'/>` passes the host CPU through to the guest. This requires KVM. If you are running under emulation without `/dev/kvm`, use `<domain type='qemu'>` instead of `<domain type='kvm'>` and set `<cpu mode='maximum'/>`.
 
-## Define, start, and connect to the guest
+## Defining, starting, and connecting to the guest
 <a name="virtualization-virsh-lifecycle"></a>
+
+**To define, start, and connect to the guest**
 
 1. Register the domain with libvirt. This only stores the definition; it does not start anything.
 
@@ -133,7 +135,7 @@ Three details in this document are specific to AL2027:
 **Note**
 `shutdown` sends an ACPI power button event and depends on the guest responding to it. If the guest is unresponsive, `sudo virsh destroy al2027-demo` stops it immediately, which is the equivalent of pulling the power and can lose unwritten data. `undefine` removes the definition but does not delete the disk image — delete that yourself if you no longer need it.
 
-## Choose a networking mode
+## Choosing a networking mode
 <a name="virtualization-virsh-networking"></a>
 
 Two guest networking modes are practical on AL2027, and they differ in what you have to enable.
@@ -141,7 +143,7 @@ Two guest networking modes are practical on AL2027, and they differ in what you 
 ### User-mode networking with passt
 <a name="virtualization-virsh-net-passt"></a>
 
-This is the mode used in the domain XML above. It gives the guest outbound access without a bridge, needs no additional daemon, and is the simplest option for a short-lived test guest.
+This is the mode used in the preceding domain XML. It gives the guest outbound access without a bridge, needs no additional daemon, and is the simplest option for a short-lived test guest. It uses the following `<interface>` configuration:
 
 ```
 <interface type='user'>
@@ -152,13 +154,15 @@ This is the mode used in the domain XML above. It gives the guest outbound acces
 
 Because there is no shared bridge, libvirt has no DHCP lease to report, so `virsh domifaddr` returns nothing useful for this mode. Read the address from inside the guest instead.
 
-### The default NAT network
+### Default NAT network
 <a name="virtualization-virsh-net-nat"></a>
 
 libvirt also ships a NAT network called `default`, which puts guests on a host bridge (`virbr0`, `192.168.122.0/24`) with DHCP. Guests on it can reach each other and the host can reach them, which user-mode networking does not provide.
 
 **Important**
 The `default` network is managed by a separate daemon, `virtnetworkd`, which is not enabled by default. Until you enable it, any network command fails with `Failed to connect socket to '/var/run/libvirt/virtnetworkd-sock': No such file or directory`, even though the `libvirt-daemon-config-network` package is installed.
+
+**To set up the default NAT network**
 
 1. Enable the network daemon socket and confirm the network is available.
 
@@ -185,7 +189,7 @@ The `default` network is managed by a separate daemon, `virtnetworkd`, which is 
    </interface>
    ```
 
-1. Once the guest has booted and requested an address, libvirt can report it.
+1. Retrieve the guest's address after it has booted and requested one.
 
    ```
    [ec2-user ~]$ sudo virsh domifaddr al2027-demo --source lease
@@ -202,5 +206,5 @@ The `default` network is managed by a separate daemon, `virtnetworkd`, which is 
 
 ## Related topics
 <a name="virtualization-virsh-more-info"></a>
-+ [Get started with virtualization on Amazon Linux 2027](virtualization-getting-started.md)
++ [Getting started with virtualization on Amazon Linux 2027](virtualization-getting-started.md)
 + [Virtualization on Amazon Linux 2027](virtualization.md) — what the stack does and does not support.

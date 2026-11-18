@@ -7,7 +7,22 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 
 Creates a model customization job in Amazon SageMaker. A job runs a workload based on the job category and configuration you provide. You specify the job category, a schema-versioned configuration document, and an IAM role that grants Amazon SageMaker permission to access resources on your behalf.
 
-Use the `AgentRFT` category to fine-tune a model using multi-turn reinforcement learning with reward signals. Use the `AgentRFTEvaluation` category to evaluate a fine-tuned or base model by running multi-turn rollouts against a held-out prompt dataset and computing metrics such as pass@k and mean reward.
+Specify one of the following job categories, which determines the type of workload that the job runs:
+
+AgentRFT
+Fine-tune a model using multi-turn reinforcement learning with reward signals.
+
+AgentRFTEvaluation
+Evaluate a fine-tuned or base model by running multi-turn rollouts against a held-out prompt dataset. This category computes metrics such as pass@k and mean reward.
+
+DataQualityEvaluation
+Evaluate the quality of a generated or bring-your-own dataset using quality metrics or your own specification.
+
+DataTransformation
+Transform datasets into the format you need, for example for model customization.
+
+SyntheticDataGeneration
+Generate synthetic training and testing datasets from your context data and specifications.
 
 Before creating a job, call `ListJobSchemaVersions` and `DescribeJobSchemaVersion` to retrieve the configuration schema for your job category. The `JobConfigDocument` must conform to the schema specified by `JobConfigSchemaVersion`.
 
@@ -48,7 +63,7 @@ The request accepts the following data in JSON format.
  ** [JobCategory](#API_CreateJob_RequestSyntax) **   <a name="sagemaker-CreateJob-request-JobCategory"></a>
 The category of the job. The category determines the type of workload that the job runs.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: Yes
 
  ** [JobConfigDocument](#API_CreateJob_RequestSyntax) **   <a name="sagemaker-CreateJob-request-JobConfigDocument"></a>

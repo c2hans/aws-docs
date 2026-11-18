@@ -26,6 +26,8 @@ Create a geofence collection to store and manage geofences by using the Amazon L
 ------
 #### [ Console ]
 
+**To create a geofence collection using the Amazon Location console**
+
 1. Open the Amazon Location Service console at [https://console.aws.amazon.com/location/](https://console.aws.amazon.com/location/home).
 
 1. In the left navigation pane, choose **Geofence collections**.
@@ -47,6 +49,8 @@ Create a geofence collection to store and manage geofences by using the Amazon L
 ------
 #### [ API ]
 
+**To create a geofence collection using the Amazon Location APIs**
+
 Use the `[CreateGeofenceCollection](https://docs.aws.amazon.com/location/latest/APIReference/API_WaypointGeofencing_CreateGeofenceCollection.html)` operation from the Amazon Location Geofences APIs.
 
 The following example uses an API request to create a geofence collection called {{ExampleGeofenceCollection}}. The geofence collection is associated with a [customer managed AWS KMS key to encrypt customer data](encryption-at-rest.md).
@@ -67,6 +71,8 @@ Content-type: application/json
 
 ------
 #### [ AWS CLI ]
+
+**To create a geofence collection using AWS CLI commands**
 
 Use the `[create-geofence-collection](https://docs.aws.amazon.com/cli/latest/reference/location/create-geofence-collection.html)` command.
 
@@ -103,6 +109,8 @@ Polygon geofences use GeoJSON coordinate arrays to define an area. Use this form
 ### Draw geofences using a GeoJSON tool
 <a name="draw-geofences-geojson"></a>
 
+**To create a GeoJSON file**
+
 1. Open a GeoJSON editing tool, such as [geojson.io](http://geojson.io/).
 
 1. Choose the **Draw a polygon** icon and draw your area of interest.
@@ -116,6 +124,8 @@ You can use the resulting GeoJSON file to upload your geofences using the Amazon
 
 ------
 #### [ Console ]
+
+**To add a geofence to a geofence collection using the Amazon Location Service console**
 
 1. Open the Amazon Location Service console at [https://console.aws.amazon.com/location/](https://console.aws.amazon.com/location/home).
 
@@ -131,6 +141,8 @@ You can use the resulting GeoJSON file to upload your geofences using the Amazon
 
 ------
 #### [ API ]
+
+**To add geofences using the Amazon Location APIs**
 
 Use the `[PutGeofence](https://docs.aws.amazon.com/location/latest/APIReference/API_WaypointGeofencing_PutGeofence.html)` operation from the Amazon Location Geofences APIs.
 
@@ -188,6 +200,8 @@ Content-type: application/json
 ------
 #### [ AWS CLI ]
 
+**To add a geofence to a geofence collection using AWS CLI commands**
+
 Use the `[put-geofence](https://docs.aws.amazon.com/cli/latest/reference/location/put-geofence.html)` command.
 
 The following example uses the AWS CLI to add a geofence to a geofence collection called {{ExampleGeofenceCollection}}.
@@ -211,6 +225,8 @@ To create a circular geofence, you must know the latitude and longitude of the c
 ------
 #### [ Console ]
 
+**To add a circular geofence to a geofence collection using the Amazon Location Service console**
+
 1. Open the Amazon Location Service console at [https://console.aws.amazon.com/location/](https://console.aws.amazon.com/location/home).
 
 1. In the left navigation pane, choose **Geofence collections**.
@@ -225,6 +241,8 @@ To create a circular geofence, you must know the latitude and longitude of the c
 
 ------
 #### [ API ]
+
+**To add circular geofences using the Amazon Location APIs**
 
 Use the `[PutGeofence](https://docs.aws.amazon.com/location/latest/APIReference/API_WaypointGeofencing_PutGeofence.html)` operation from the Amazon Location Geofences APIs.
 
@@ -246,6 +264,8 @@ Content-type: application/json
 
 ------
 #### [ AWS CLI ]
+
+**To add a circular geofence to a geofence collection using AWS CLI commands**
 
 Use the `[put-geofence](https://docs.aws.amazon.com/cli/latest/reference/location/put-geofence.html)` command.
 

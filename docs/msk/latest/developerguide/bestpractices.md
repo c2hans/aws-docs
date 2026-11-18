@@ -32,6 +32,9 @@ The following table shows the recommended number of partitions (including leader
 | kafka.m7g.large or kafka.m7g.xlarge | 1000 | 1500 |
 | kafka.m7g.2xlarge | 2000 | 3000 |
 | kafka.m7g.4xlarge, kafka.m7g.8xlarge, kafka.m7g.12xlarge, or kafka.m7g.16xlarge | 4000 | 6000 |
+| kafka.m8g.large or kafka.m8g.xlarge | 1000 | 1500 |
+| kafka.m8g.2xlarge | 2000 | 3000 |
+| kafka.m8g.4xlarge, kafka.m8g.8xlarge, kafka.m8g.12xlarge, kafka.m8g.16xlarge, or kafka.m8g.24xlarge | 4000 | 6000 |
 
 If you have high partition, low throughput use cases where you have higher partition counts, but you are not sending traffic across all partitions, you can pack more partitions per broker, as long as you have performed sufficient testing and performance testing to validate that your cluster remains healthy with the higher partition count. If the number of partitions per broker exceeds the maximum allowed value and your cluster becomes overloaded, you will be prevented from performing the following operations:
 + Update the cluster configuration
@@ -49,10 +52,10 @@ To determine the right number of Standard brokers for your MSK Provisioned clust
 
 To understand how the underlying infrastructure affects Apache Kafka performance, see [Best practices for right-sizing your Apache Kafka clusters to optimize performance and cost](https://aws.amazon.com/blogs/big-data/best-practices-for-right-sizing-your-apache-kafka-clusters-to-optimize-performance-and-cost/) in the AWS Big Data Blog. The blog post provides information about how to size your clusters to meet your throughput, availability, and latency requirements. It also provides answers to questions, such as when you should scale *up* versus scale *out*, and guidance about how to continuously verify the size of your production clusters. For information about tiered storage based clusters, see [Best practices for running production workloads using Amazon MSK tiered storage](https://aws.amazon.com/blogs/big-data/best-practices-for-running-production-workloads-using-amazon-msk-tiered-storage/).
 
-### Optimize cluster throughput for m5.4xl, m7g.4xl or larger instances
+### Optimize cluster throughput for m5.4xl, m7g.4xl, m8g.4xl, or larger instances
 <a name="optimize-broker-threads"></a>
 
-When using m5.4xl, m7g.4xl, or larger instances, you can optimize the MSK Provisioned cluster throughput by tuning the num.io.threads and num.network.threads configurations.
+When using m5.4xl, m7g.4xl, m8g.4xl, or larger instances, you can optimize the MSK Provisioned cluster throughput by tuning the num.io.threads and num.network.threads configurations.
 
 Num.io.threads is the number of threads that a Standard broker uses for processing requests. Adding more threads, up to the number of CPU cores supported for the instance size, can help improve cluster throughput.
 
@@ -74,6 +77,11 @@ The following table describes the recommended settings for each instance size.
 | m7g.8xlarge | 32 | 16 |
 | m7g.12xlarge | 48 | 24 |
 | m7g.16xlarge | 64 | 32 |
+| m8g.4xlarge | 16 | 8 |
+| m8g.8xlarge | 32 | 16 |
+| m8g.12xlarge | 48 | 24 |
+| m8g.16xlarge | 64 | 32 |
+| m8g.24xlarge | 96 | 48 |
 
 ### Use latest Kafka AdminClient to avoid topic ID mismatch issue
 <a name="topic-id-mismatch"></a>

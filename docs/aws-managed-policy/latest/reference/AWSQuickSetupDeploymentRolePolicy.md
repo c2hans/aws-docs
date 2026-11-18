@@ -18,13 +18,13 @@ You can attach `AWSQuickSetupDeploymentRolePolicy` to your users, groups, and ro
 <a name="AWSQuickSetupDeploymentRolePolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: June 26, 2024, 09:55 UTC
-+ **Edited time:** September 07, 2026, 15:07 UTC
++ **Edited time:** November 17, 2026, 10:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSQuickSetupDeploymentRolePolicy`
 
 ## Policy version
 <a name="AWSQuickSetupDeploymentRolePolicy-version"></a>
 
-**Policy version:** v14 (default)
+**Policy version:** v15 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -388,7 +388,12 @@ The policy's default version is the version that defines the permissions for the
             "arn:aws:iam::aws:policy/AWSSystemsManagerEnableConfigRecordingExecutionPolicy",
             "arn:aws:iam::aws:policy/AWSQuickSetupManagedInstanceProfileExecutionPolicy",
             "arn:aws:iam::aws:policy/AWSQuickSetupStartStopInstancesExecutionPolicy",
-            "arn:aws:iam::aws:policy/AWSQuickSetupStartSSMAssociationsExecutionPolicy"
+            "arn:aws:iam::aws:policy/AWSQuickSetupStartSSMAssociationsExecutionPolicy",
+            "arn:aws:iam::aws:policy/AWSQuickSetupSSMHostMgmtDispatchRolePolicy",
+            "arn:aws:iam::aws:policy/AWSQuickSetupDistributorDispatchRolePolicy",
+            "arn:aws:iam::aws:policy/AWSQuickSetupSchedulerDispatchRolePolicy",
+            "arn:aws:iam::aws:policy/AWSQuickSetupCFGRecordingDispatchRolePolicy",
+            "arn:aws:iam::aws:policy/AWSQuickSetupCFGCPacksDispatchRolePolicy"
           ]
         },
         "ForAnyValue:StringEquals" : {

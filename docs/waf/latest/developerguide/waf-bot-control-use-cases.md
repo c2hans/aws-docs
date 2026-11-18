@@ -69,7 +69,7 @@ For most production web applications, we recommend targeted protection. For guid
 | Client application integration SDKs | Not required | Strongly recommended |
 
 **Checking your rule group version**
-The Bot Control managed rule group is updated over time with new detection capabilities. Check which version you are currently using and whether a newer static version is available. Newer versions include additional detections that can increase your coverage against new bot threats. You can review the available versions and their changes in the [AWS Managed Rules changelog](aws-managed-rule-groups-changelog.md).
+The Bot Control managed rule group is updated over time with new detection capabilities. Check which version you are currently using and whether a newer static version is available. Newer versions include additional detections that can increase your coverage against new bot threats. You can review the available versions and their changes in the [AWS Managed Rules changelog](aws-managed-rule-groups-changelog.md). To always use the newest version without manual upgrades, choose the `LATEST` version. For more information about `LATEST`, see [LATEST version for the Bot Control managed rule group](waf-managed-rule-groups-versioning-latest.md).
 
 ## How Bot Control detection works
 <a name="waf-bot-control-how-it-protects"></a>

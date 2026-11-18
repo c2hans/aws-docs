@@ -16,7 +16,7 @@ Elemental Inference invokes Amazon Bedrock as the access role in your account, s
 ## Permissions policy
 <a name="functions-prerequisites-permissions-policy"></a>
 
-Attach a policy that allows `bedrock:InvokeModel` on exactly the models that your functions target.
+Attach a policy that allows `bedrock:InvokeModel` on exactly the models that your functions target. In the following policy, replace `{{region}}` with the feed's Region, `{{model-id}}` with the model ID, `{{111122223333}}` with your account ID, and `{{profile-id}}` with the inference profile ID.
 
 ```
 {
@@ -41,13 +41,15 @@ If a function targets a cross-Region inference profile, grant both the inference
 ## Trust policy
 <a name="functions-prerequisites-trust-policy"></a>
 
-The role must trust the Elemental Inference service principal. Elemental Inference assumes the role with an external ID and with the confused-deputy condition keys set from the feed, so we recommend that you require all three, as follows.
+The role must trust the Elemental Inference service principal. Elemental Inference assumes the role with an external ID, and with the confused-deputy condition keys set from the feed. As a best practice, require all three in the trust policy, as follows.
 
 | Condition key | Value that Elemental Inference sends |
 | --- | --- |
 | sts:ExternalId | The fixed string ElementalInference. |
 | aws:SourceAccount | The ID of the account that owns the feed. |
 | aws:SourceArn | The ARN of the feed whose function is running. |
+
+In the following policy, replace `{{111122223333}}` with the ID of the account that owns the feed, and `{{region}}` with the feed's Region.
 
 ```
 {
@@ -73,4 +75,4 @@ The role must trust the Elemental Inference service principal. Elemental Inferen
 }
 ```
 
-To restrict the role to one feed, replace the wildcard in `aws:SourceArn` with the full feed ARN. These condition keys protect against the cross-service confused deputy problem. For more information, see [Cross-service confused deputy prevention](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the *IAM User Guide*.
+To restrict the role to one feed, replace the wildcard in `aws:SourceArn` with the full feed ARN. These condition keys protect against the cross-service confused deputy problem. For more information, see [Cross-service confused deputy prevention](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html#cross-service-confused-deputy-prevention) in the *IAM User Guide*.

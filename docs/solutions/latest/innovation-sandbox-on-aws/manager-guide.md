@@ -14,6 +14,8 @@ Managers (and Administrators) can create lease templates that define specific co
 
 To create a lease template, navigate to **Lease Templates** in the web UI and choose **Add new lease template**. This opens a wizard to configure your template.
 
+<a name="step-1-basic-details"></a>****Step 1: Basic Details****
+
 On the **Basic details** page, configure the template’s name, description, visibility, and approval requirements.
 
 ![Basic Details page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step1-basic-details.png)
@@ -34,6 +36,8 @@ On the **Basic details** page, configure the template’s name, description, vis
 
 1. Choose **Next**.
 
+<a name="step-2-blueprint"></a>****Step 2: Blueprint****
+
 On the **Blueprint** page, you can associate a blueprint with this lease template to pre-deploy infrastructure when leases are created.
 
 ![Blueprint page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step2-blueprint.png)
@@ -47,6 +51,8 @@ On the **Blueprint** page, you can associate a blueprint with this lease templat
 
 **Note**
 When you approve a lease, the blueprint deploys to the sandbox account. If deployment fails, the lease terminates automatically and the account returns to the pool.
+
+<a name="step-3-budget-settings"></a>****Step 3: Budget Settings****
 
 On the **Budget** page, configure spending limits and budget thresholds. See [Budget thresholds](#budget-thresholds) for detailed guidance.
 
@@ -66,6 +72,8 @@ On the **Budget** page, configure spending limits and budget thresholds. See [Bu
 
 1. Choose **Next**.
 
+<a name="step-4-lease-duration"></a>****Step 4: Lease Duration****
+
 On the **Lease Duration** page, configure time limits and duration thresholds. See [Duration thresholds](#duration-thresholds) for detailed guidance.
 
 ![Lease Duration page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step4-duration.png)
@@ -84,6 +92,8 @@ On the **Lease Duration** page, configure time limits and duration thresholds. S
 
 1. Choose **Next**.
 
+<a name="step-5-cost-report-group"></a>****Step 5: Cost Report Group****
+
 On the **Cost Report Group** page, optionally assign a cost report group to the lease template for cost attribution and reporting purposes.
 
 ![Cost Report Group page](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/lease-template-wizard-step5-cost-report.png)
@@ -98,6 +108,8 @@ On the **Cost Report Group** page, optionally assign a cost report group to the 
 
 **Note**
 Cost report groups are used to generate custom cost reports that are delivered to an S3 bucket for detailed cost tracking and chargeback by department, project, or team. If the administrator has enabled the **Require cost report group** setting on the **Settings** page, selecting a cost report group will be mandatory.
+
+<a name="step-6-review-and-submit"></a>****Step 6: Review and Submit****
 
 On the **Review and Submit** page, review all your settings before creating the template.
 
@@ -192,6 +204,8 @@ The lease will be created immediately without requiring approval, and the target
 
 **Note**
 Managers and Administrators are exempt from the lease request rate limit when assigning leases. However, each lease you assign still counts toward the target user’s own rolling rate-limit window (by default, 10 leases per 7 days). As a result, a heavily-assigned user might be temporarily unable to self-request new leases until their window slides.
+
+<a name="monitoring-assigned-leases"></a>****Monitoring assigned leases****
 
 Leases you create on behalf of others will show your email address in the "Created by" field, making it easy to track which leases you’ve assigned. You can view all leases you’ve created in the **Leases** page, where they will be clearly identified with assignment details.
 

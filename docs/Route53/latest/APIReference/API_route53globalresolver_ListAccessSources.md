@@ -48,12 +48,14 @@ Content-type: application/json
       {
          "arn": "string",
          "cidr": "string",
+         "coreNetworkEndpointId": "string",
          "createdAt": "string",
          "dnsViewId": "string",
          "id": "string",
          "ipAddressType": "string",
          "name": "string",
          "protocol": "string",
+         "segment": "string",
          "status": "string",
          "updatedAt": "string"
       }
@@ -70,7 +72,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [accessSources](#API_route53globalresolver_ListAccessSources_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_ListAccessSources-response-accessSources"></a>
-An array containing information about the access sources, such as the ID, CIDR etc.
+An array containing information about the access sources, such as the ID and CIDR.
 Type: Array of [AccessSourcesItem](API_route53globalresolver_AccessSourcesItem.md) objects
 
  ** [nextToken](#API_route53globalresolver_ListAccessSources_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_ListAccessSources-response-nextToken"></a>

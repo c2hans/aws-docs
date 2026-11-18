@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/services-dynamodb.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Amazon DynamoDB
 <a name="services-dynamodb"></a>
 
-This chapter provides runnable examples for common [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) workflows: creating tables, reading and writing items, running queries, and coordinating batch operations and transactions. Each example uses the SDK's asynchronous DynamoDB client with typed inputs and outputs, so you can adapt them to your application without translating from raw JSON. Start here to install the client package and configure shared setup that the remaining pages build on.
+[Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) is a serverless NoSQL database service. This section has runnable examples for common DynamoDB tasks. The examples create tables, read and write items, run queries and scans, and group writes and reads in batches and transactions.
 
-Install the DynamoDB client before running the asynchronous examples on this page:
+Install the `aws-sdk-dynamodb` package before you run the examples.
 
 ```
 python -m pip install aws-sdk-dynamodb
@@ -18,21 +18,22 @@ python -m pip install aws-sdk-dynamodb
 ## Set up the examples
 <a name="dynamodb-shared-setup"></a>
 
-The `client` that is used in the following examples can be created from the following snippet by calling `client = await create_client()` from your asynchronous code. Use the client as an asynchronous context manager, or call `await client.close()` after the last operation, as described in [Creating a service client](using-requests.md#using-requests-client). When you resolve the generated asynchronous configuration with `resolve()`, the SDK reads the AWS Region from standard AWS settings, such as environment variables and shared AWS configuration files. The SDK also reads credentials from the same settings. Configure both before running the examples: if no Region is configured, `resolve()` fails before the client is created, and if no credentials are configured, requests fail when the SDK signs them. For more information about the Region and other settings, see [Configuration variables](configuration-variables.md). For how the SDK finds credentials, see [Credential providers](credential-providers.md).
+The examples on the following pages use a `client` that the following `create_client()` function returns. Call it in a `with` statement, such as `with create_client() as client:`, or call `client.close()` after the last operation, as described in [Creating a service client](using-requests.md#using-requests-client).
+
+Configure an AWS Region and credentials before you run the examples. For more information, see [Configuration variables](configuration-variables.md) and [Credential providers](credential-providers.md).
 
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.config import AsyncDynamoDBConfig
+from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
 ```
 
  **Code**
 
 ```
-async def create_client() -> AsyncDynamoDBClient:
-    config = await AsyncDynamoDBConfig.resolve()
-    return AsyncDynamoDBClient(config=config)
+def create_client() -> DynamoDBClient:
+    config = DynamoDBConfig.resolve()
+    return DynamoDBClient(config=config)
 ```
 
 **Topics**

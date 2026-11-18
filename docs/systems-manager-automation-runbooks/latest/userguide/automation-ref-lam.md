@@ -16,3 +16,5 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWSSupport-TroubleshootLambdaInternetAccess`](AWSSupport-TroubleshootLambdaInternetAccess.md)
 + [`AWSSupport-TroubleshootLambdaS3Event`](automation-aws-troubleshootlambdas3event.md)
 + [`AWSSupport-TroubleshootLambdaVpcConnectivity`](automation-awssupport-troubleshootlambdavpcconnectivity.md)
++ [`AWSSupportRemediator-ResizeLambdaMemory`](automation-awssupportremediator-resizelambdamemory.md)
++ [`AWSSupportRemediator-UpdateLambdaMemory`](automation-awssupportremediator-updatelambdamemory.md)

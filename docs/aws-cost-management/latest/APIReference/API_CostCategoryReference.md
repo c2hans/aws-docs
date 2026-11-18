@@ -59,7 +59,7 @@ Type: Array of [CostCategoryProcessingStatus](API_CostCategoryProcessingStatus.m
 Required: No
 
  ** SupportedResourceTypes **   <a name="awscostmanagement-Type-CostCategoryReference-SupportedResourceTypes"></a>
- The resource types supported by a specific cost category.
+ The resource types supported by a specific cost category. The valid values are `billing:rispgroupsharing`, `billing:billingview`, `billing:creditsharing`, `billing:benefitlevelsharing`, and `billing:benefitgroupsharing`.
 Type: Array of strings
 Pattern: `^[-a-zA-Z0-9/_]+:[-a-zA-Z0-9/_]+`
 Required: No

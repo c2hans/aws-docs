@@ -57,7 +57,7 @@ Configuration relating to consumer group replication.
 The ARN of the source Kafka cluster.
 *Required*: No
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafka:.*`
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-eusc):kafka:.*`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SourceKafkaClusterId`  <a name="cfn-msk-replicator-replicationinfo-sourcekafkaclusterid"></a>
@@ -77,7 +77,7 @@ The compression type to use when producing records to target cluster.
 The ARN of the target Kafka cluster.
 *Required*: No
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafka:.*`
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-eusc):kafka:.*`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TargetKafkaClusterId`  <a name="cfn-msk-replicator-replicationinfo-targetkafkaclusterid"></a>

@@ -25,9 +25,12 @@ Pattern: `.*(^arn:.*:ecr:.*:\d{12}:repository\/[a-zA-Z0-9._\/-]+(\/sha256:[a-z0-
 Required: Yes
 
  ** resourceType **   <a name="inspector2-Type-CoveredResource-resourceType"></a>
-The type of the covered resource.
+The type of the covered resource. Valid values:
++  AWS – `AWS_EC2_INSTANCE`, `AWS_LAMBDA_FUNCTION`, `AWS_ECR_CONTAINER_IMAGE`, `AWS_ECR_REPOSITORY`, `MACHINE_IMAGE`, `CODE_REPOSITORY`, or `AWS_ACCOUNT`.
++ Microsoft Azure – `Microsoft.Compute/virtualMachines`, `Microsoft.ContainerRegistry/registries`, `Microsoft.ContainerRegistry/registry/containerRepository`, `Microsoft.ContainerRegistry/registry/containerImage`, or `Microsoft.Web/sites`.
++ Google Cloud Platform (GCP) – `compute.googleapis.com/Instance`, `cloudfunctions.googleapis.com/Function`, `artifactregistry.googleapis.com/Repository`, or `artifactregistry.googleapis.com/DockerImage`.
 Type: String
-Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_ECR_REPOSITORY | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.ContainerRegistry/registry/containerRepository | Microsoft.Web/sites | Microsoft.ContainerRegistry/registries`
+Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_ECR_REPOSITORY | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.ContainerRegistry/registry/containerRepository | Microsoft.Web/sites | Microsoft.ContainerRegistry/registries | MACHINE_IMAGE | cloudfunctions.googleapis.com/Function | compute.googleapis.com/Instance | artifactregistry.googleapis.com/Repository | artifactregistry.googleapis.com/DockerImage`
 Required: Yes
 
  ** scanType **   <a name="inspector2-Type-CoveredResource-scanType"></a>
@@ -42,23 +45,32 @@ Type: Timestamp
 Required: No
 
  ** provider **   <a name="inspector2-Type-CoveredResource-provider"></a>
-The cloud provider of the covered resource.
+The cloud provider of the covered resource. Valid values:
++  `AWS` – AWS resources.
++  `AZURE` – Microsoft Azure resources.
++  `GCP` – Google Cloud Platform (GCP) resources.
 Type: String
-Valid Values: `AWS | AZURE`
+Valid Values: `AWS | AZURE | GCP`
 Required: No
 
  ** providerAccountId **   <a name="inspector2-Type-CoveredResource-providerAccountId"></a>
-The cloud provider account ID of the covered resource.
+The cloud provider account ID of the covered resource. The value format depends on the cloud provider:
++ An AWS account ID.
++ An Azure subscription ID.
++ A Google Cloud Platform (GCP) project ID, such as `my-project`.
 Type: String
-Length Constraints: Minimum length of 12. Maximum length of 36.
-Pattern: `(\d{12}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})`
+Length Constraints: Minimum length of 6. Maximum length of 36.
+Pattern: `(\d{12}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[a-z][a-z0-9-]{4,28}[a-z0-9])`
 Required: No
 
  ** providerOrgId **   <a name="inspector2-Type-CoveredResource-providerOrgId"></a>
-The cloud provider organization ID of the covered resource.
+The cloud provider organization ID of the covered resource. The value format depends on the cloud provider:
++ An AWS Organizations organization ID.
++ An Azure tenant ID.
++ A numeric Google Cloud Platform (GCP) organization ID.
 Type: String
-Length Constraints: Minimum length of 12. Maximum length of 36.
-Pattern: `(o-[a-z0-9]{10,32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})`
+Length Constraints: Minimum length of 6. Maximum length of 36.
+Pattern: `(o-[a-z0-9]{10,32}|[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|[0-9]{6,30})`
 Required: No
 
  ** providerPartition **   <a name="inspector2-Type-CoveredResource-providerPartition"></a>
@@ -69,10 +81,13 @@ Pattern: `(aws(-[a-z]+)*|Azure[A-Za-z]+)`
 Required: No
 
  ** providerRegion **   <a name="inspector2-Type-CoveredResource-providerRegion"></a>
-The cloud provider region of the covered resource.
+The cloud provider region of the covered resource. The value format depends on the cloud provider:
++ An AWS Region, such as `us-east-1`.
++ An Azure region, such as `eastus`.
++ A Google Cloud Platform (GCP) location, such as the region `us-central1` or the zone `us-central1-a`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `([a-z]{2}(-[a-z]+)+-\d+|[a-z][a-z0-9]+)`
+Pattern: `([a-z]{2}(-[a-z]+)+-\d+|[a-z][a-z0-9]+|[a-z]+-[a-z]+[0-9]+(-[a-z])?)`
 Required: No
 
  ** resourceMetadata **   <a name="inspector2-Type-CoveredResource-resourceMetadata"></a>

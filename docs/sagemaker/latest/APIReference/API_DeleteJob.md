@@ -32,7 +32,7 @@ The request accepts the following data in JSON format.
  ** [JobCategory](#API_DeleteJob_RequestSyntax) **   <a name="sagemaker-DeleteJob-request-JobCategory"></a>
 The category of the job to delete.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: Yes
 
  ** [JobName](#API_DeleteJob_RequestSyntax) **   <a name="sagemaker-DeleteJob-request-JobName"></a>

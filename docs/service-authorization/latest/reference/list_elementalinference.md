@@ -39,6 +39,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [elemental-inference:TagResource](#list_elementalinference-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** elemental-inference.amazonaws.com / **Access level:** Write
 
+- **   CreateFunction  **
+  - **IAM action:**  [elemental-inference:TagResource](#list_elementalinference-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
+- **   CreateQuestionSet  **
+  - **IAM action:**  [elemental-inference:TagResource](#list_elementalinference-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   CreateScheduleAction  **
   - **IAM action:**  [elemental-inference:CreateScheduleAction](#list_elementalinference-action-CreateScheduleAction)
   - **Condition key:**

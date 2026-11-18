@@ -178,6 +178,8 @@ This section lists client errors that are specific to certain Amazon EC2 API act
 | <a name="InvalidExportTaskID.Malformed"></a>InvalidExportTaskID.Malformed | The specified export task ID cannot be found. |
 | <a name="InvalidExportTaskID.NotFound"></a>InvalidExportTaskID.NotFound | The specified export task ID is malformed. Ensure that you specify the ID in the form export-ami-xxxxxxxxxxxxxxxxx. |
 | <a name="InvalidFilter"></a> InvalidFilter  | The specified filter is not valid. |
+| <a name="InvalidFlexCostAllocationPolicyID.Malformed"></a> InvalidFlexCostAllocationPolicyID.Malformed  | The specified Flex Cost Allocation policy ID is malformed. Make sure that you specify the ID in the form fcap-xxxxxxxxxxxxxxxxx. |
+| <a name="InvalidFlexCostAllocationPolicyID.NotFound"></a> InvalidFlexCostAllocationPolicyID.NotFound  | The specified Flex Cost Allocation policy does not exist. Verify that the policy ID is correct and that the policy exists in the current Region. |
 | <a name="InvalidFlowLogId.NotFound"></a> InvalidFlowLogId.NotFound  | The specified flow log does not exist. |
 | <a name="InvalidFormat"></a> InvalidFormat | The specified disk format (for the instance or volume import) is not valid. |
 | InvalidFpgaImageID.Malformed | The specified Amazon FPGA image (AFI) ID is malformed. Ensure that you provide the full AFI ID in the request, in the form afi-xxxxxxxxxxxxxxxxx. |

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/index.html
 title: 'AWS Decision Guides'
 canonical_url: https://docs.aws.amazon.com/decision-guides/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # AWS Decision Guides

@@ -25,6 +25,8 @@ AWS DeepRacer does not support Wi-Fi network that requires active captcha verifi
 +  [Get ready to setup Wi-Fi connection for your AWS DeepRacer vehicle](#get-ready-setup-wifi)
 +  [Setup Wi-Fi connection and update your AWS DeepRacer vehicle’s software](#setup-wifi-update-software)
 
+<a name="get-ready-setup-wifi"></a>**Get ready to setup Wi-Fi connection for your AWS DeepRacer vehicle**
+
 To setup your vehicle’s Wi-Fi connection, connect your a laptop or desktop computer to your vehicle’s compute module using the included USB-to-USB C cable.
 
 To connect your computer to your vehicle’s compute module, follow the steps below.
@@ -36,6 +38,8 @@ To connect your computer to your vehicle’s compute module, follow the steps be
 1. Insert the cable’s USB C end into your vehicle’s USB C port.
 
 You’re now ready to proceed to setting up your vehicle’s Wi-Fi connection.
+
+<a name="setup-wifi-update-software"></a>**Setup Wi-Fi connection and update your AWS DeepRacer vehicle’s software**
 
 Before you follow the steps here to setup the Wi-Fi connection, be sure you complete the steps in [Get ready to setup Wi-Fi connection for your AWS DeepRacer vehicle](#get-ready-setup-wifi).
 

@@ -15,8 +15,7 @@ pip install sagemaker-train
 <a name="training-sessions-sdk-glance"></a>
 
 ```
-from sagemaker.train.training_session import ServiceClient, AdamParams
-from sagemaker.train.training_session._utils import _serialize_loss_fn_inputs
+from sagemaker.train.training_session import ServiceClient, AdamParams, Datum, ModelInput
 
 PAIRS = [
     ("Question: 2+2?\nAnswer:", " 4"),
@@ -35,18 +34,15 @@ tok = tc.get_tokenizer()                   # the service takes token IDs, so tok
 
 batch = []
 for prompt, response in PAIRS:
-    prompt_ids = tok.encode(prompt, add_special_tokens=False)
-    ids = tok.encode(prompt + response, add_special_tokens=False)
-    prompt_len = len(prompt_ids)
-    eos = tok.eos_token_id if tok.eos_token_id is not None else ids[-1]
-    target_tokens = ids[1:] + [eos]
-    weights = [0.0] * prompt_len + [1.0] * (len(ids) - prompt_len)
-    batch.append({
-        "modelInput": {"chunks": [{"tokens": ids, "type": "encoded_text"}]},
-        "lossFnInputs": _serialize_loss_fn_inputs(
-            {"target_tokens": target_tokens, "weights": weights}
-        ),
-    })
+    prompt_len = len(tok.encode(prompt, add_special_tokens=False))
+    ids = tok.encode(prompt + response, add_special_tokens=False) + [tok.eos_token_id]
+    batch.append(Datum(
+        model_input=ModelInput.from_ints(ids[:-1]),
+        loss_fn_inputs={
+            "target_tokens": ids[1:],
+            "weights": [0.0] * (prompt_len - 1) + [1.0] * (len(ids) - prompt_len),
+        },
+    ))
 
 # Both calls return an APIFuture immediately, so optim_step is queued behind
 # forward_backward. Resolve both once they are submitted.
@@ -197,6 +193,8 @@ if step % checkpoint_every == 0:
     tc.save_state(description=f"step {step}").result()
 
 # Later, or in a new process
+from sagemaker.train.training_session import ModelPackageKind, ServiceClient
+
 svc = ServiceClient(region="us-west-2", role_arn=role_arn, model_package_group_arn=my_group)
 ckpt = svc.get_latest_model_package(ModelPackageKind.CHECKPOINT)
 tc = svc.create_training_client_from_state_with_optimizer(model_package_arn=ckpt.model_package_arn)
@@ -214,10 +212,12 @@ Each saved package consumes Amazon S3 storage until you remove it. `delete_model
 ```
 from sagemaker.train.training_session import Datum, ModelInput, TensorData, TensorDtype
 
+# Prompt [101, 2023], response [3456, 7890]. Input drops the last token.
+tokens = [101, 2023, 3456, 7890]
 Datum(
-    model_input=ModelInput.from_ints([101, 2023, 3456]),
+    model_input=ModelInput.from_ints(tokens[:-1]),
     loss_fn_inputs={
-        "target_tokens": TensorData([2023, 3456, 0], dtype=TensorDtype.INT64, shape=[3]),
+        "target_tokens": TensorData(tokens[1:], dtype=TensorDtype.INT64, shape=[3]),
         "weights": TensorData([0.0, 1.0, 1.0], shape=[3]),
         "logprobs": TensorData(logprobs_tensor),   # torch or numpy
         "advantages": TensorData([0.0, 1.5, 1.5], shape=[3]),
@@ -232,7 +232,7 @@ Each loss function requires specific `loss_fn_inputs` keys. Omitting one fails t
 | cross\_entropy | target\_tokens, weights |
 | ppo, importance\_sampling, cispo | target\_tokens, weights, logprobs, advantages |
 
-Two requirements apply to every value: the length matches the model input (provide a full-sequence value with the prompt positions zero-padded; a length that disagrees with the token count is rejected), and `weights` masks the prompt (use `0` for prompt tokens and `1` for response tokens so the loss counts only the response).
+Two requirements apply to every value: the length matches the model input (provide one value per input token, with `0` at positions you do not want scored; a length that disagrees with the token count is rejected), and `weights` masks the prompt. `weights[i]` applies to `target_tokens[i]`, the token that follows position `i`. Use `0` where the target is a prompt token and `1` where it is a response token, so the loss counts only the response.
 
 `TensorData` accepts torch tensors and numpy arrays and converts them when the operation is sent. To pass strings rather than token IDs, call `get_tokenizer()` on a `TrainingClient` or `SamplingClient`. This loads the base model HuggingFace tokenizer and requires the tokenizer extra: `pip install 'sagemaker-train[tokenizer]'`.
 

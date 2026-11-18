@@ -12,6 +12,8 @@ MongoDB commands and operators that are internal-only or not applicable to a ful
 We have added over 50\+ additional capabilities since launch, and will continue to work backwards from our customers to deliver the capabilities that they need. For information on the most recent launches, see [Amazon DocumentDB Announcements](https://aws.amazon.com/documentdb/resources/).
 
 If there is a feature that isn't supported that you'd like us to build, let us know by sending an email with your accountID, the requested features, and use case to the [Amazon DocumentDB service team](mailto:documentdb-feature-request@amazon.com).
+
+**Topics**
 + [Database commands](#mongo-apis-database)
 + [Query and projection operators](#mongo-apis-query)
 + [Update operators](#mongo-apis-update)

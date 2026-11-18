@@ -125,7 +125,7 @@ Argument values, including the query string that you pass, must be enclosed in s
 SELECT * FROM TABLE(system.query(query => 'SELECT * FROM testdb.persons LIMIT 10'))
 ```
 
-When the query string is surrounded by double quotes, the query fails. The following query fails with the error message COLUMN\_NOT\_FOUND: line 1:43: Column 'select \* from testdb.persons limit 10' cannot be resolved.
+When the query string is surrounded by double quotes, the query fails. The following query fails with the error message `COLUMN_NOT_FOUND: line 1:43: Column 'select * from testdb.persons limit 10' cannot be resolved`.
 
 ```
 SELECT * FROM TABLE(system.query(query => "SELECT * FROM testdb.persons LIMIT 10"))

@@ -10,6 +10,8 @@ Our new AWS experience lets you build using AWS accounts created with preconfigu
 
 You can provide your AI coding tool with access to your project and install the Agent Toolkit, which bundles the AWS MCP server configuration and a curated set of agent skills. This lets your AI coding tool create and manage AWS resources on your behalf.
 
+If you don't have an AWS account yet, your AI coding tool can start Sign up for AWS (new) for you from the AWS Command Line Interface (AWS CLI). You complete sign-up in your browser and choose your new project, and then the AWS CLI receives credentials that your AI coding tool can use. For more information, see [Sign up using the AWS CLI](sign-in-new.md#sign-up-cli).
+
 ## Considerations for connecting your coding tool to your project
 <a name="connect-ai-coding-tool-considerations"></a>
 + You can connect AI coding tools to a project you own or a project that has been shared with you.
@@ -56,6 +58,8 @@ Run the following command to download and follow the setup instructions:
 ```
 curl -fsSL https://github.com/aws/agent-toolkit-for-aws/blob/main/setup-instructions/setup.md
 ```
+
+If you don't have an AWS account yet, the setup instructions start sign-up for you.
 
 ------
 

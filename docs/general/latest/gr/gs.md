@@ -20,13 +20,11 @@ The following are the service endpoints and service quotas for this service.
 | US East (N. Virginia) | us-east-1 |  groundstation.us-east-1.amazonaws.com <br /> groundstation-fips.us-east-1.api.aws <br /> groundstation-fips.us-east-1.amazonaws.com <br /> groundstation.us-east-1.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |
 | US West (Oregon) | us-west-2 |  groundstation.us-west-2.amazonaws.com <br /> groundstation-fips.us-west-2.api.aws <br /> groundstation-fips.us-west-2.amazonaws.com <br /> groundstation.us-west-2.api.aws  | HTTPS<br />HTTPS<br />HTTPS<br />HTTPS |
 | Africa (Cape Town) | af-south-1 |  groundstation.af-south-1.amazonaws.com <br /> groundstation.af-south-1.api.aws  | HTTPS<br />HTTPS |
-| Asia Pacific (Seoul) | ap-northeast-2 |  groundstation.ap-northeast-2.amazonaws.com <br /> groundstation.ap-northeast-2.api.aws  | HTTPS<br />HTTPS |
 | Asia Pacific (Singapore) | ap-southeast-1 |  groundstation.ap-southeast-1.amazonaws.com <br /> groundstation.ap-southeast-1.api.aws  | HTTPS<br />HTTPS |
 | Asia Pacific (Sydney) | ap-southeast-2 |  groundstation.ap-southeast-2.amazonaws.com <br /> groundstation.ap-southeast-2.api.aws  | HTTPS<br />HTTPS |
 | Europe (Frankfurt) | eu-central-1 |  groundstation.eu-central-1.amazonaws.com <br /> groundstation.eu-central-1.api.aws  | HTTPS<br />HTTPS |
 | Europe (Ireland) | eu-west-1 |  groundstation.eu-west-1.amazonaws.com <br /> groundstation.eu-west-1.api.aws  | HTTPS<br />HTTPS |
 | Europe (Stockholm) | eu-north-1 |  groundstation.eu-north-1.amazonaws.com <br /> groundstation.eu-north-1.api.aws  | HTTPS<br />HTTPS |
-| Middle East (Bahrain) | me-south-1 |  groundstation.me-south-1.amazonaws.com <br /> groundstation.me-south-1.api.aws  | HTTPS<br />HTTPS |
 | South America (São Paulo) | sa-east-1 |  groundstation.sa-east-1.amazonaws.com <br /> groundstation.sa-east-1.api.aws  | HTTPS<br />HTTPS |
 
 ## Service quotas

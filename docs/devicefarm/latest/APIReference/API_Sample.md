@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Sampl
 
 Represents a sample of performance data.
 
+**Important**
+Device Farm does not support performance data samples during test executions.
+
 ## Contents
 <a name="API_Sample_Contents"></a>
 

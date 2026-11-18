@@ -24,6 +24,7 @@ Refer to the following built-in stored procedures for information about their sy
 + [rdsadmin.activate\_database](#db2-sp-activate-database)
 + [rdsadmin.reactivate\_database](#db2-sp-reactivate-database)
 + [rdsadmin.drop\_database](#db2-sp-drop-database)
++ [rdsadmin.rename\_database](#db2-sp-rename-database)
 + [rdsadmin.update\_db\_param](#db2-sp-update-db-param)
 + [rdsadmin.set\_configuration](#db2-sp-set-configuration)
 + [rdsadmin.show\_configuration](#db2-sp-show-configuration)
@@ -384,6 +385,126 @@ The following example drops a database called `TESTDB`:
 
 ```
 db2 "call rdsadmin.drop_database('TESTDB')"
+```
+
+## rdsadmin.rename\_database
+<a name="db2-sp-rename-database"></a>
+
+The `rdsadmin.rename_database` stored procedure renames a database on your Amazon RDS for Db2 DB instance. The database keeps its data, so you don't need to back it up and restore it under a new name.
+
+Before you call `rdsadmin.rename_database`, connect to the `rdsadmin` database with your master username and master password. In the following command, replace {{master\_username}} and {{master\_password}} with your own values.
+
+```
+db2 connect to rdsadmin user {{master_username}} using {{master_password}}
+```
+
+### Syntax
+<a name="db2-sp-rename-database-syntax"></a>
+
+Use this syntax:
+
+```
+db2 "call rdsadmin.rename_database(
+    ?,
+    '{{current_database_name}}',
+    '{{new_database_name}}')"
+```
+
+### Parameters
+<a name="db2-sp-rename-database-parameters"></a>
+
+The following output parameter is required:
+
+?
+A parameter marker that outputs an error message. This parameter accepts only `?`.
+
+The following input parameters are required:
+
+{{current\_database\_name}}
+The name of the database to rename. The data type is `varchar`.
+
+{{new\_database\_name}}
+The new name for the database. The data type is `varchar`.
+
+### Usage notes
+<a name="db2-sp-rename-database-usage-notes"></a>
+
+For instructions on renaming a database, see [Renaming a database without restoring it](db2-managing-databases.md#db2-renaming-database).
+
+#### Naming rules
+<a name="db2-sp-rename-database-naming-rules"></a>
+
+Both names must follow these rules:
++ Each name is 1 to 8 characters long.
++ Each name starts with a letter.
++ Each name contains only letters, digits, and underscores.
+
+Amazon RDS for Db2 changes both names to uppercase.
+
+#### Checking when you can rename a database
+<a name="db2-sp-rename-database-refusals"></a>
+
+The stored procedure doesn't rename the database in these cases. Instead, it returns the reason in the output parameter:
++ The DB instance has a read replica.
++ A read replica of the DB instance is being created.
++ You named the database when you created the DB instance.
++ Either name is `rdsadmin`.
++ The new name is the same as the current name.
++ A task that uses either name is running.
++ Another rename is running on the DB instance.
++ The database doesn't exist.
++ The database isn't ready.
++ The new name is already in use.
+
+To rename a database on a DB instance that has a read replica, delete the read replica first. If a read replica is being created, wait for it to finish, and then delete it.
+
+If a backup is running, then the rename task fails. Try again after the backup finishes.
+
+For instructions on resolving the errors that `rdsadmin.rename_database` returns, see [Resolving rdsadmin.rename\_database errors](db2-troubleshooting.md#db2-troubleshooting-rename-database-sp-errors).
+
+#### Accessing the database during a rename
+<a name="db2-sp-rename-database-during"></a>
+
+While a rename runs, other stored procedures that use either name don't run. Most of them return one of the following messages:
+
+```
+A rename involving this database is in progress. Try again later.
+A rename involving database {{database_name}} is in progress. Try again later.
+```
+
+When you rename a database, all connections to it end, and the rename rolls back any work that isn't committed. Commit your work before you start.
+
+Connections to the old name fail first with `SQL1042C`. After the rename finishes, they fail with `SQL30061N`. This is expected.
+
+For information about checking the status of a rename, see [rdsadmin.get\_task\_status](db2-user-defined-functions.md#db2-udf-get-task-status).
+
+#### Updating scripts and standby databases after a rename
+<a name="db2-sp-rename-database-after"></a>
+
+After the rename finishes, do the following:
++ If you have scripts or jobs that read archive logs from Amazon Simple Storage Service (Amazon S3), then update them. The database name in the Amazon S3 prefix changes, but the unique ID stays the same, as the following prefixes show:
+
+  ```
+  Before: {{old_database_name}}-{{database_unique_id}}/
+  After:  {{new_database_name}}-{{database_unique_id}}/
+  ```
++ If you have scripts or jobs that read database-level audit logs from Amazon S3, then update them. New audit logs upload to a folder that has the new database name. Earlier audit logs stay in folders that have the old name.
++ If you use reverse log shipping to apply archive logs to an on-premises standby database, then rename the standby database to match.
+
+#### Restoring to a point in time near a rename
+<a name="db2-sp-rename-database-pitr"></a>
+
+If automated backups are on, then each rename takes a snapshot of your DB instance. Until the snapshot finishes, the latest restorable time might fall behind. If you rename several databases in a row, then the gap grows.
+
+A point-in-time restore uses the last snapshot before the restore time. If the restore time is after a rename but before the next snapshot finishes, then the restore uses a snapshot from before the rename, and the database has its old name. To use the new name, rename the database again on the restored DB instance.
+
+### Example – Renaming a database
+<a name="db2-sp-rename-database-examples"></a>
+
+The following `db2` command renames `TESTDB` to `PRODDB`:
+
+```
+db2 "call rdsadmin.rename_database(?, 'TESTDB', 'PRODDB')"
 ```
 
 ## rdsadmin.update\_db\_param

@@ -22,7 +22,7 @@ Required: Yes
  ** NewColumnId **   <a name="QS-Type-AppendedColumn-NewColumnId"></a>
 A unique identifier for the column in the appended result.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
 ## See Also

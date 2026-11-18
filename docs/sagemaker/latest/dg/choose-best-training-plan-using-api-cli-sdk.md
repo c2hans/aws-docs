@@ -9,7 +9,7 @@ After reviewing the available training plan offerings that best match your requi
 
 **Important**
 Training plans cannot be modified once purchased.
-Training plans cannot be shared across AWS accounts or within your AWS Organization.
+You can share a training plan only with other AWS accounts in your organization in AWS Organizations, by using AWS Resource Access Manager. For more information, see [Setting up cross-account sharing for SageMaker training plans](training-plan-resource-sharing-ram.md).
 
 The following example uses the an AWS CLI command to request a specific training plan, passing the plan ID as a parameter.
 

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Service GatewayConnectorDeregistrationDelay
 <a name="aws-properties-ecs-service-gatewayconnectorderegistrationdelay"></a>
 
-<a name="aws-properties-ecs-service-gatewayconnectorderegistrationdelay-description"></a>The `GatewayConnectorDeregistrationDelay` property type specifies Property description not available. for an [AWS::ECS::Service](aws-resource-ecs-service.md).
+The amount of time to allow in-flight requests to complete before a deregistering target is removed.
 
 ## Syntax
 <a name="aws-properties-ecs-service-gatewayconnectorderegistrationdelay-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-gatewayconnectorderegistrationdelay-properties"></a>
 
 `TimeoutSeconds`  <a name="cfn-ecs-service-gatewayconnectorderegistrationdelay-timeoutseconds"></a>
-Property description not available.
+The amount of time, in seconds, to wait before a deregistering target is removed. A value of `0` removes the target immediately. The valid range is 0-3600 seconds. The default value is 300 seconds.
 *Required*: No
 *Type*: Integer
 *Minimum*: `0`

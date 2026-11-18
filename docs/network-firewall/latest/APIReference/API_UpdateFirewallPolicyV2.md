@@ -64,6 +64,11 @@ Updates the properties of the specified Next Generation policy.
                   "RulesString": "{{string}}"
                },
                "RuleVariables": {
+                  "ContextSets": {
+                     "{{string}}" : {
+                        "Definition": [ "{{string}}" ]
+                     }
+                  },
                   "IPSets": {
                      "{{string}}" : {
                         "Definition": [ "{{string}}" ]
@@ -94,6 +99,11 @@ Updates the properties of the specified Next Generation policy.
                   "RulesString": "{{string}}"
                },
                "RuleVariables": {
+                  "ContextSets": {
+                     "{{string}}" : {
+                        "Definition": [ "{{string}}" ]
+                     }
+                  },
                   "IPSets": {
                      "{{string}}" : {
                         "Definition": [ "{{string}}" ]

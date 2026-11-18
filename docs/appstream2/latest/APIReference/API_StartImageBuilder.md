@@ -48,6 +48,19 @@ Required: Yes
             "VpceId": "string"
          }
       ],
+      "AgentAccessConfig": {
+         "S3BucketArn": "string",
+         "ScreenImageFormat": "string",
+         "ScreenResolution": "string",
+         "ScreenshotsUploadEnabled": boolean,
+         "Settings": [
+            {
+               "AgentAction": "string",
+               "Permission": "string"
+            }
+         ],
+         "UserControlMode": "string"
+      },
       "AppstreamAgentVersion": "string",
       "Arn": "string",
       "CreatedTime": number,

@@ -9,6 +9,11 @@ The following table describes the documentation releases for VPC Lattice.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Update resource gateway DNS resolution](#doc-history) | You can now change the Resource Config DNS Resolution setting of a resource gateway after creation. | November 17, 2026 |
+| [Update private DNS settings](#doc-history) | You can now change the private DNS preference and specified domains of resource VPC endpoints, service-network VPC endpoints, and service network VPC associations after creation. | November 17, 2026 |
+| [Private hosted zone re-use](#doc-history) | For group resource configurations, VPC Lattice now reuses an existing VPC Lattice-managed private hosted zone when multiple endpoints or VPC associations in a VPC connect to groups with the same group domain. | November 17, 2026 |
+| [Enable or disable private DNS](#doc-history) | You can now enable or disable private DNS on resource VPC endpoints, service-network VPC endpoints, and service network VPC associations after creation. | November 17, 2026 |
+| [Resource gateways in shared subnets](#doc-history) | Participant accounts can now create resource gateways and resource configurations in shared VPC subnets. | November 10, 2026 |
 | [Added configurable IP addresses for resource gateways](https://docs.aws.amazon.com/vpc-lattice/latest/ug/resource-gateway.html#ipv4-address-type-per-eni) | VPC Lattice now supports configurable IP addresses for resource gateways. | October 7, 2025 |
 | [Added VPC Lattice for Oracle Database@AWS](https://docs.aws.amazon.com/vpc-lattice/latest/ug/vcp-lattice-oci.html) | VPC Lattice for Oracle Database@AWS released. | June 26, 2025 |
 | [Added dual-stack support for management endpoints](https://docs.aws.amazon.com/vpc-lattice/latest/ug/what-is-vpc-lattice.html#service-endpoints) | VPC Lattice now supports dual-stack (IPv4 and IPv6) endpoints for all VPC Lattice management APIs. | April 30, 2025 |

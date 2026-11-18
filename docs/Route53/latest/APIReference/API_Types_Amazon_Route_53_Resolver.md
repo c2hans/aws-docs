@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Types_Am
 <a name="API_Types_Amazon_Route_53_Resolver"></a>
 
 The following data types are supported by Amazon Route 53 Resolver:
++  [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md)
 +  [BatchCreateFirewallRuleError](API_route53resolver_BatchCreateFirewallRuleError.md)
 +  [BatchDeleteFirewallRuleError](API_route53resolver_BatchDeleteFirewallRuleError.md)
 +  [BatchUpdateFirewallRuleError](API_route53resolver_BatchUpdateFirewallRuleError.md)
@@ -19,6 +20,7 @@ The following data types are supported by Amazon Route 53 Resolver:
 +  [FirewallDomainList](API_route53resolver_FirewallDomainList.md)
 +  [FirewallDomainListMetadata](API_route53resolver_FirewallDomainListMetadata.md)
 +  [FirewallRule](API_route53resolver_FirewallRule.md)
++  [FirewallRuleDomain](API_route53resolver_FirewallRuleDomain.md)
 +  [FirewallRuleGroup](API_route53resolver_FirewallRuleGroup.md)
 +  [FirewallRuleGroupAssociation](API_route53resolver_FirewallRuleGroupAssociation.md)
 +  [FirewallRuleGroupMetadata](API_route53resolver_FirewallRuleGroupMetadata.md)
@@ -27,6 +29,7 @@ The following data types are supported by Amazon Route 53 Resolver:
 +  [IpAddressRequest](API_route53resolver_IpAddressRequest.md)
 +  [IpAddressResponse](API_route53resolver_IpAddressResponse.md)
 +  [IpAddressUpdate](API_route53resolver_IpAddressUpdate.md)
++  [ListFirewallRuleDomainsQueryOptions](API_route53resolver_ListFirewallRuleDomainsQueryOptions.md)
 +  [OutpostResolver](API_route53resolver_OutpostResolver.md)
 +  [PartnerThreatProtectionConfig](API_route53resolver_PartnerThreatProtectionConfig.md)
 +  [ResolverConfig](API_route53resolver_ResolverConfig.md)

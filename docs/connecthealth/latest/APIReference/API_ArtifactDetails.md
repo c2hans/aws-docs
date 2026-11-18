@@ -27,7 +27,7 @@ Required: No
  ** status **   <a name="connecthealth-Type-ArtifactDetails-status"></a>
 The generation status of the artifact
 Type: String
-Valid Values: `IN_PROGRESS | FAILED | COMPLETED`
+Valid Values: `IN_PROGRESS | FAILED | COMPLETED | PENDING | SKIPPED`
 Required: No
 
 ## See Also

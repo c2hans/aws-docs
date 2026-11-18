@@ -34,7 +34,7 @@ For more information, see [Creating and Deploying Elastic Beanstalk Applications
    This should print the version number of the .NET SDK.
 **Note**
 Instead of the version number, you might receive the following error:
-error: libunwind.so.8: cannot open shared object file: No such file or directory
+`error: libunwind.so.8: cannot open shared object file: No such file or directory`
 To resolve the error, install the `libunwind` package.
 
    ```

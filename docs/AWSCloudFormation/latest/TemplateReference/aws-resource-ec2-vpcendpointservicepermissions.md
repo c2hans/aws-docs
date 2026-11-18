@@ -24,7 +24,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::EC2::VPCEndpointServicePermissions",
   "Properties" : {
       "[AllowedPrincipals](#cfn-ec2-vpcendpointservicepermissions-allowedprincipals)" : {{[ String, ... ]}},
-      "[ServiceId](#cfn-ec2-vpcendpointservicepermissions-serviceid)" : {{String}}
+      "[ServiceId](#cfn-ec2-vpcendpointservicepermissions-serviceid)" : {{String}},
+      "[TransitGatewayAttachmentAllowedPrincipals](#cfn-ec2-vpcendpointservicepermissions-transitgatewayattachmentallowedprincipals)" : {{[ String, ... ]}}
     }
 }
 ```
@@ -38,6 +39,8 @@ Properties:
   [AllowedPrincipals](#cfn-ec2-vpcendpointservicepermissions-allowedprincipals): {{
     - String}}
   [ServiceId](#cfn-ec2-vpcendpointservicepermissions-serviceid): {{String}}
+  [TransitGatewayAttachmentAllowedPrincipals](#cfn-ec2-vpcendpointservicepermissions-transitgatewayattachmentallowedprincipals): {{
+    - String}}
 ```
 
 ## Properties
@@ -54,6 +57,12 @@ The ID of the service.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`TransitGatewayAttachmentAllowedPrincipals`  <a name="cfn-ec2-vpcendpointservicepermissions-transitgatewayattachmentallowedprincipals"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
 <a name="aws-resource-ec2-vpcendpointservicepermissions-return-values"></a>

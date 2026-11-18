@@ -13,6 +13,8 @@ When you use the API or AWS CLI, specify conversion path settings under the sect
 
 Each setting shows the AWS Management Console label followed by the API and AWS CLI parameter name in parentheses. Use the parameter name when configuring settings with the API or AWS CLI.
 
+**Metadata settings**
+
 Settings that control how source SQL Server metadata — object names, schema structure, and index definitions — are handled during conversion.
 
 **Treat source database object names as case sensitive** (`CaseSensitivityNames`)
@@ -59,6 +61,8 @@ Controls how the target PostgreSQL schema name is generated from the SQL Server 
 
 **Type:** String (enum)
 **Default:** `DB_SCHEMA`
+
+**SQL code settings**
 
 Settings that control how SQL Server code — identifiers, parameters, data types, and unsupported functions — is handled during conversion.
 

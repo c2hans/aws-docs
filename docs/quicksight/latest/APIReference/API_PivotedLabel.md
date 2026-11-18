@@ -22,7 +22,7 @@ Required: Yes
  ** NewColumnId **   <a name="QS-Type-PivotedLabel-NewColumnId"></a>
 A unique identifier for the new column created from this pivoted label.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 
  ** NewColumnName **   <a name="QS-Type-PivotedLabel-NewColumnName"></a>

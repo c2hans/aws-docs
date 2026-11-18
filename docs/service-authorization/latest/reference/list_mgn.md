@@ -71,6 +71,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [mgn:CreateNetworkMigrationDefinition](#list_mgn-action-CreateNetworkMigrationDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [mgn:TagResource](#list_mgn-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateRemoteSourceAction  **
+  - **IAM action:**  [mgn:CreateRemoteSourceAction](#list_mgn-action-CreateRemoteSourceAction)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [mgn:TagResource](#list_mgn-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreateReplicationConfigurationTemplate  **
   - **IAM action:**  [mgn:CreateReplicationConfigurationTemplate](#list_mgn-action-CreateReplicationConfigurationTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [mgn:TagResource](#list_mgn-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -105,6 +109,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteNetworkMigrationDefinition  **
   - **IAM action:**  [mgn:DeleteNetworkMigrationDefinition](#list_mgn-action-DeleteNetworkMigrationDefinition)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteRemoteSourceAction  **
+  - **IAM action:**  [mgn:DeleteRemoteSourceAction](#list_mgn-action-DeleteRemoteSourceAction)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -195,6 +205,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetLaunchConfiguration  **
   - **IAM action:**  [mgn:GetLaunchConfiguration](#list_mgn-action-GetLaunchConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetLaunchConfigurationDefaults  **
+  - **IAM action:**  [mgn:GetLaunchConfigurationDefaults](#list_mgn-action-GetLaunchConfigurationDefaults)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -343,6 +359,30 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListRemoteSourceActionInvocationResults  **
+  - **IAM action:**  [mgn:ListRemoteSourceActionInvocationResults](#list_mgn-action-ListRemoteSourceActionInvocationResults)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListRemoteSourceActionInvocations  **
+  - **IAM action:**  [mgn:ListRemoteSourceActionInvocations](#list_mgn-action-ListRemoteSourceActionInvocations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListRemoteSourceActionJobs  **
+  - **IAM action:**  [mgn:ListRemoteSourceActionJobs](#list_mgn-action-ListRemoteSourceActionJobs)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListRemoteSourceActions  **
+  - **IAM action:**  [mgn:ListRemoteSourceActions](#list_mgn-action-ListRemoteSourceActions)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListSourceServerActions  **
   - **IAM action:**  [mgn:ListSourceServerActions](#list_mgn-action-ListSourceServerActions)
   - **Condition key:**
@@ -463,6 +503,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   StartRemoteSourceActionJob  **
+  - **IAM action:**  [mgn:StartRemoteSourceActionJob](#list_mgn-action-StartRemoteSourceActionJob)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   StartReplication  **
   - **IAM action:**  [mgn:StartReplication](#list_mgn-action-StartReplication)
   - **Condition key:**
@@ -525,6 +571,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateLaunchConfigurationDefaults  **
+  - **IAM action:**  [mgn:UpdateLaunchConfigurationDefaults](#list_mgn-action-UpdateLaunchConfigurationDefaults)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateLaunchConfigurationTemplate  **
   - **IAM action:**  [mgn:UpdateLaunchConfigurationTemplate](#list_mgn-action-UpdateLaunchConfigurationTemplate)
   - **Condition key:**
@@ -539,6 +591,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateNetworkMigrationMapperSegment  **
   - **IAM action:**  [mgn:UpdateNetworkMigrationMapperSegment](#list_mgn-action-UpdateNetworkMigrationMapperSegment)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateRemoteSourceAction  **
+  - **IAM action:**  [mgn:UpdateRemoteSourceAction](#list_mgn-action-UpdateRemoteSourceAction)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

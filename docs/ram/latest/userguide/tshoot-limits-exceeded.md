@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-limits-excee
 ## Scenario
 <a name="tshoot-limits-exceeded-scenario"></a>
 
-You receive "You have reached the limit on the number of resources you can share" or "ResourceShareLimitExceededException" when trying to share resources.
+You receive "`You have reached the limit on the number of resources you can share`" or "`ResourceShareLimitExceededException`" when trying to share resources.
 
 ## Cause
 <a name="tshoot-limits-exceeded-cause"></a>

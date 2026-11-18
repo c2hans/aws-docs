@@ -24,4 +24,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 + [Run an ASP.NET Core web API Docker container on an Amazon EC2 Linux instance](run-an-asp-net-core-web-api-docker-container-on-an-amazon-ec2-linux-instance.md)
 + [Run stateful workloads with persistent data storage by using Amazon EFS on Amazon EKS with AWS Fargate](run-stateful-workloads-with-persistent-data-storage-by-using-amazon-efs-on-amazon-eks-with-aws-fargate.md)
 + [Set up event-driven auto scaling in Amazon EKS by using Amazon EKS Pod Identity and KEDA](event-driven-auto-scaling-with-eks-pod-identity-and-keda.md)
++ [Simplify application authentication with mutual TLS in Amazon ECS by using Application Load Balancer](simplify-application-authentication-with-mutual-tls-in-amazon-ecs.md)
 + [More patterns](containersandmicroservices-more-patterns-pattern-list.md)

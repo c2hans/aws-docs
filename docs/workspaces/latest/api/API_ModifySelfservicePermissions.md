@@ -15,7 +15,9 @@ Modifies the self-service WorkSpace management capabilities for your users. For 
    "ResourceId": "{{string}}",
    "SelfservicePermissions": {
       "ChangeComputeType": "{{string}}",
+      "EnableEndUserAdvisor": "{{string}}",
       "IncreaseVolumeSize": "{{string}}",
+      "NestedVirtualization": "{{string}}",
       "RebuildWorkspace": "{{string}}",
       "RestartWorkspace": "{{string}}",
       "SwitchRunningMode": "{{string}}"

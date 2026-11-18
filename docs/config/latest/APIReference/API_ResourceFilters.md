@@ -13,7 +13,6 @@ Filters the results by resource account ID, region, resource ID, and resource na
  ** AccountId **   <a name="config-Type-ResourceFilters-AccountId"></a>
 The 12-digit source account ID.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

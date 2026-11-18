@@ -16,7 +16,7 @@ The following errors can occur during the conversion phase when you launch a dri
 ## Error: Failed to connect using HTTP channel
 <a name="Error-Failed-to-connect-using-HTTP-channel"></a>
 
-**Error message:** Failed to connect using HTTP channel
+**Error message:** `Failed to connect using HTTP channel`
 
 **Cause:** The Conversion server cannot communicate with AWS endpoints on TCP port 443. The Conversion server is a separate instance from the replication server and might be affected by network changes made after replication was established.
 
@@ -68,7 +68,7 @@ If the issue persists after verifying network configuration, create an AWS Suppo
 ## Error: Conversion server launch failed
 <a name="error-conversion-server-launch-failed"></a>
 
-**Error message:** Conversion server launch failed
+**Error message:** `Conversion server launch failed`
 
 **Cause:** The conversion server could not be launched or did not become available. This can be caused by Amazon EC2 capacity constraints, IAM permission issues, or subnet configuration problems.
 
@@ -83,7 +83,7 @@ If the issue persists after verifying network configuration, create an AWS Suppo
 ## Error: Conversion failed
 <a name="error-conversion-failed"></a>
 
-**Error message:** Conversion failed
+**Error message:** `Conversion failed`
 
 **Cause:** The volume conversion process did not complete. This can occur due to disk corruption on the source, unsupported filesystem types, or internal conversion errors.
 
@@ -98,7 +98,7 @@ If the issue persists after verifying network configuration, create an AWS Suppo
 ## Error: Failed to take snapshot
 <a name="error-snapshot-failed"></a>
 
-**Error message:** Failed to take snapshot
+**Error message:** `Failed to take snapshot`
 
 **Cause:** Elastic Disaster Recovery could not create a point-in-time snapshot. If you use a custom AWS KMS key for EBS encryption, the key might be missing, disabled, or the Elastic Disaster Recovery service roles might lack permissions.
 

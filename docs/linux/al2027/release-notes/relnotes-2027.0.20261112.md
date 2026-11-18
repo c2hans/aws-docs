@@ -1,0 +1,1114 @@
+---
+source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/relnotes-2027.0.20261112.html
+---
+
+# Amazon Linux 2027 (AL2027) preview version 2027.0.20261112 release notes
+<a name="relnotes-2027.0.20261112"></a>
+
+These are the release notes for Amazon Linux 2027 (AL2027) preview version 2027.0.20261112.
+
+**Contents**
++ [Release summary](#release-summary-2027.0.20261112)
++ [Repository Updates](#repository-updates-2027.0.20261112)
+  + [Core New Packages](#amis-2027.0.20261112.Core-New-Packages)
+  + [Core Updated Packages](#amis-2027.0.20261112.Core-Updated-Packages)
+  + [Nvidia-driver-580 Updated Packages](#amis-2027.0.20261112.Nvidia-driver-580-Updated-Packages)
+  + [Nvidia-driver-580 Removed Packages](#amis-2027.0.20261112.Nvidia-driver-580-Removed-Packages)
+  + [Nvidia-driver-595 Updated Packages](#amis-2027.0.20261112.Nvidia-driver-595-Updated-Packages)
+  + [Nvidia-driver-595 Removed Packages](#amis-2027.0.20261112.Nvidia-driver-595-Removed-Packages)
+  + [Nvidia-products New Packages](#amis-2027.0.20261112.Nvidia-products-New-Packages)
++ [Image Updates](#ami-updates-2027.0.20261112)
+  + [Default Kernel 7.2 AMI](#amis-2027.0.20261112.Default-Kernel-7-2-AMI)
+  + [Minimal Kernel 7.2 AMI](#amis-2027.0.20261112.Minimal-Kernel-7-2-AMI)
+  + [Default Container](#amis-2027.0.20261112.Default-Container)
+  + [Minimal Container](#amis-2027.0.20261112.Minimal-Container)
++ [Contact us](#amis-2027.0.20261112.contact-us)
+
+**AL2027 Preview**
+ AL2027 is currently available for preview, for more information see the [ AL2027 User Guide](https://docs.aws.amazon.com/linux/al2027/ug/what-is.html). It is intended for evaluation and testing only and is not recommended for production workloads.
+
+## Release summary
+<a name="release-summary-2027.0.20261112"></a>
+
+This release is an update to the AL2027 preview.
+
+**Notable updates**
++ The AL2027 preview now supports a dedicated `kernel7.2-64k` build for the ARM64 platform. This kernel uses 64k page sizes and may improve performance for applications handling large dynamic memory allocations. Install using `sudo dnf install kernel7.2-64k && sudo reboot`.
++ AL2027 now ships NVIDIA 620 driver packages for both `aarch64` and `x86_64`. For more information, see [NVIDIA drivers](https://docs.aws.amazon.com/linux/al2027/ug/nvidia-drivers.html).
+
+**Security updates**
++ For information on the CVEs addressed in this release, see the [Amazon Linux Security Center (ALAS)](https://alas.aws.amazon.com/alas2027.html).
++ For visibility into the status of CVEs that haven't been addressed yet, see the [Amazon Linux Security Center CVE Explorer](https://explore.alas.aws.amazon.com/).
+
+## Repository Updates
+<a name="repository-updates-2027.0.20261112"></a>
+
+### Core New Packages
+<a name="amis-2027.0.20261112.Core-New-Packages"></a>
+
+This section provides details about Core New Packages.
+
+| Package |
+| --- |
+|  python-discovery-1.6.2-1.amzn2027.0.2  |
+|  python-extras-1.0.0-42.amzn2027.0.6  |
+|  python-lit-15.0.7-2.amzn2027.0.2  |
+|  python-pyasynchat-1.0.4-1.amzn2027.0.2  |
+|  python-pyasyncore-1.0.4-1.amzn2027.0.3  |
+|  python-roman-numerals-4.1.0-1.amzn2027.0.3  |
+|  python-sphinx-testing-1.0.1-10.amzn2027.0.2  |
+|  python-time-machine-2.16.0-1.amzn2027.0.3  |
+|  python3.14-packaging-25.0-1.amzn2027.0.4  |
+|  python3.14-pip-26.1.1-1.amzn2027.0.6  |
+|  python3.14-setuptools-78.1.1-1.amzn2027.0.4  |
+|  python3.14-wheel-0.45.1-1.amzn2027.0.4  |
+|  python3.15-3.15.2-1.amzn2027.0.1  |
+|  spal-release-2027-1.amzn2027  |
+
+### Core Updated Packages
+<a name="amis-2027.0.20261112.Core-Updated-Packages"></a>
+
+This section provides details about Core Updated Packages.
+
+| Package |
+| --- |
+|  Cython-3.2.8-1.amzn2027.0.6  |
+|  PackageKit-1.4.0-2.amzn2027  |
+|  PyYAML-6.0.3-2.amzn2027.0.3  |
+|  amazon-efs-utils-3.3.4-2.amzn2027  |
+|  amazon-ssm-agent-3.3.5828.0-1.amzn2027  |
+|  annobin-13.14-1.amzn2027.0.2  |
+|  ansible-14.2.0-2.amzn2027.0.5  |
+|  ansible-core-2.21.2-1.amzn2027.0.5  |
+|  apr-1.7.6-5.amzn2027.0.3  |
+|  asciidoc-10.2.0-17.amzn2027.0.5  |
+|  at-spi2-core-2.60.5-2.amzn2027.0.8  |
+|  audit-4.1.3-1.amzn2027.0.3  |
+|  aws-cfn-bootstrap-2.0-40.amzn2027.0.1  |
+|  awscli-2-2.36.47-1.amzn2027.0.4  |
+|  babel-2.18.0-1.amzn2027.0.3  |
+|  babeltrace-1.5.11-15.amzn2027.0.2  |
+|  babeltrace2-2.1.2-3.amzn2027.0.1  |
+|  bcc-0.37.0-1.amzn2027.0.2  |
+|  blis-2.0-5.amzn2027.0.2  |
+|  blktrace-1.3.0-13.amzn2027.0.2  |
+|  blueprint-compiler-0.20.4-1.amzn2027.0.1  |
+|  boost-1.90.0-7.amzn2027.0.2  |
+|  brotli-1.2.1-1.amzn2027.0.1  |
+|  btrfs-progs-7.1-1.amzn2027.0.2  |
+|  c-ares-1.34.8-1.amzn2027.0.2  |
+|  ca-certificates-2026.2.90\_v9.0.316-101.0.amzn2027.0.4  |
+|  capstone-5.0.6-2.amzn2027.0.1  |
+|  catch-3.11.0-2.amzn2027.0.1  |
+|  certbot-5.6.0-1.amzn2027.0.3  |
+|  clamav1.4-1.4.6-1.amzn2027.0.3  |
+|  clamav1.5-1.5.4-1.amzn2027.0.2  |
+|  cloud-init-26.1-250.amzn2027.0.17  |
+|  cmake-3.31.11-3.amzn2027.0.9  |
+|  collectd-5.12.0-62.amzn2027.0.6  |
+|  coreutils-9.10-3.amzn2027.0.2  |
+|  cppcheck-2.21.1-1.amzn2027.0.2  |
+|  crash-9.0.3-1.amzn2027.0.1  |
+|  createrepo\_c-1.2.1-4.amzn2027.0.7  |
+|  criu-4.2.1-1.amzn2027.0.1  |
+|  crypto-policies-20260811-1.git4dcd294.amzn2027.2  |
+|  curl-8.22.0-1.amzn2027.0.4  |
+|  cyrus-sasl-2.1.28-35.amzn2027.0.5  |
+|  dblatex-0.3.12-1.amzn2027.0.5  |
+|  dbus-python-1.5.0-1.amzn2027.0.3  |
+|  dnf-plugin-release-notification-2.0.0-5.amzn2027  |
+|  dnf-plugin-support-info-3.0.0-4.amzn2027  |
+|  dnf5-5.4.2.1-38.amzn2027.0.3  |
+|  dns-root-data-2026260100-2.amzn2027.0.1  |
+|  dotnet10.0-10.0.114-1.amzn2027.0.2  |
+|  dovecot-2.4.5-1.amzn2027.0.3  |
+|  dtc-1.8.1-5.amzn2027.0.3  |
+|  ec2-hibinit-agent-1.0.12-0.amzn2027.0.1  |
+|  ec2-utils-2.2.0-1.amzn2027.0.4  |
+|  ec2rl-1.1.8-1.amzn2027.0.2  |
+|  ecs-service-connect-agent-v1.40.2.1-1.amzn2027  |
+|  edk2-20260508-14.amzn2027.0.1  |
+|  ephemeral-port-reserve-1.1.4-16.amzn2027.0.2  |
+|  fail2ban-1.1.0-16.amzn2027.0.2  |
+|  fapolicyd-2.0.1-1.amzn2027.0.1  |
+|  fetchmail-6.6.8-1.amzn2027.0.2  |
+|  file-5.46-8.amzn2027.0.2  |
+|  fio-3.40-2.amzn2027.0.2  |
+|  firefox-153.6.0-1.amzn2027.0.1  |
+|  firewalld-2.4.0-2.amzn2027.0.2  |
+|  flexiblas-3.5.0-3.amzn2027.0.2  |
+|  fltk-1.4.5-3.amzn2027.0.1  |
+|  fontforge-20251009-3.amzn2027.0.2  |
+|  fonttools-4.62.1-1.amzn2027.0.3  |
+|  freeipa-4.13.1-1.amzn2027.0.1  |
+|  freeradius-3.2.8-3.amzn2027.0.2  |
+|  freerdp-3.33.0-3.amzn2027  |
+|  gcc-16.2.1-2.amzn2027.0.2  |
+|  gdal312-3.12.4-1.amzn2027.0.3  |
+|  gdb-17.1-5.amzn2027.0.5  |
+|  gi-docgen-2026.1-2.amzn2027.0.1  |
+|  git-2.55.0-1.amzn2027.0.5  |
+|  gl-manpages-1.1-22.20190306.amzn2027.0.4  |
+|  glib2-2.88.1-1.amzn2027.0.1  |
+|  gnome-desktop3-44.5-2.amzn2027.0.2  |
+|  gnome-shell-50.3-1.amzn2027.0.1  |
+|  gnome-tweaks-49.0-2.amzn2027.0.2  |
+|  gnulib-0-60.20260801git9748dc4.amzn2027.0.2  |
+|  gobject-introspection-1.86.0-2.amzn2027.0.2  |
+|  google-noto-cjk-fonts-20230817-2.amzn2027.0.2  |
+|  gpgme-2.0.1-5.amzn2027.0.2  |
+|  graphviz-14.1.4-2.amzn2027.0.7  |
+|  grpc-1.60.2-10.amzn2027.0.4  |
+|  grub2-2.12-58.amzn2027.0.7  |
+|  gtest-1.17.0-2.amzn2027.0.2  |
+|  gtk-doc-1.36.1-2.amzn2027.0.1  |
+|  htop-3.4.1-2.amzn2027.0.1  |
+|  httpd-2.4.71-1.amzn2027.0.1  |
+|  hunspell-en-0.20260225-2.amzn2027.0.5  |
+|  ibus-1.5.34-2.amzn2027.0.2  |
+|  ibus-anthy-1.5.18-1.amzn2027.0.2  |
+|  ibus-hangul-1.5.5-6.amzn2027.0.2  |
+|  ibus-libpinyin-1.16.5-2.amzn2027.0.2  |
+|  ibus-libzhuyin-1.10.4-2.amzn2027.0.2  |
+|  ibus-table-1.17.19-2.amzn2027  |
+|  icu-77.1-2.amzn2027.0.3  |
+|  imath-3.1.12-6.amzn2027.0.2  |
+|  iscsi-initiator-utils-6.2.1.11-0.git4b3e853.amzn2027.2.2  |
+|  iso-codes-4.20.1-3.amzn2027.0.5  |
+|  itstool-2.0.7-12.amzn2027.0.2  |
+|  javapackages-tools-6.5.1-1.amzn2027.0.2  |
+|  jpegxl-0.11.2-5.amzn2027  |
+|  jsoncpp-1.9.4-3.amzn2027.0.4  |
+|  kernel7.1-7.1.13-92.102.amzn2027  |
+|  kernel7.2-7.2.13-18.151.amzn2027  |
+|  kiwi-11.0.2-3.amzn2027  |
+|  kiwi-image-descriptions-examples-1.0.2-1.amzn2027.0.2  |
+|  krb5-1.22.2-7.amzn2027.0.1  |
+|  langpacks-4.3-1.amzn2027.0.5  |
+|  langtable-0.0.71-2.amzn2027.0.1  |
+|  lasso-2.9.0-3.amzn2027.0.2  |
+|  ldns-1.9.0-2.amzn2027.0.2  |
+|  libappstream-glib-0.8.3-6.amzn2027  |
+|  libblockdev-3.5.0-1.amzn2027.0.1  |
+|  libbytesize-2.12-1.amzn2027.0.2  |
+|  libcap-ng-0.9.3-1.amzn2027.0.2  |
+|  libclc-22.1.7-1.amzn2027.0.2  |
+|  libcomps-0.1.24-1.amzn2027.0.2  |
+|  libdex-1.1.0-1.amzn2027.0.1  |
+|  libdwarf-2.3.1-2.amzn2027.0.1  |
+|  libei-1.5.0-2.amzn2027.0.1  |
+|  libepoxy-1.5.10-12.amzn2027.0.3  |
+|  libevdev-1.13.3-1.amzn2027.0.3  |
+|  libevent-2.1.12-16.amzn2027.0.6  |
+|  libgexiv2-0.16.0-2.amzn2027.0.1  |
+|  libgit2-1.9.6-2.amzn2027.0.1  |
+|  libglvnd-1.7.0-9.amzn2027.0.9  |
+|  libheif-1.23.7-1.amzn2027  |
+|  libical-3.0.20-2.amzn2027.0.1  |
+|  liblerc-4.0.0-11.amzn2027.0.3  |
+|  libmodulemd-2.15.3-1.amzn2027.0.5  |
+|  libnbd-1.25.5-1.amzn2027.0.2  |
+|  libnvme-1.16.1-1.amzn2027.0.2  |
+|  libpeas1-1.36.0-1.amzn2027.0.1  |
+|  libpfm-4.13.0-20.amzn2027.0.2  |
+|  libplist-2.7.0-2.amzn2027.0.1  |
+|  libproxy-0.5.12-2.amzn2027.0.2  |
+|  libpsl-0.21.5-1.amzn2027.0.3  |
+|  libpwquality-1.4.5-15.amzn2027.0.2  |
+|  librepo-1.20.0-4.amzn2027.0.3  |
+|  libseccomp-2.6.1-2.amzn2027.0.1  |
+|  libsecret-0.21.7-3.amzn2027.1  |
+|  libselinux-3.10-1.amzn2027.0.2  |
+|  libsemanage-3.10-1.amzn2027.0.2  |
+|  libsndfile-1.2.2-12.amzn2027.0.3  |
+|  libsolv-0.7.39-2.amzn2027.0.5  |
+|  libstoragemgmt-1.10.3-1.amzn2027.0.3  |
+|  libtalloc-2.4.4-2.amzn2027.0.1  |
+|  libtdb-1.4.15-2.amzn2027.0.1  |
+|  libtevent-0.17.1-3.amzn2027.0.3  |
+|  libuser-0.64-16.amzn2027.0.2  |
+|  libvirt-12.0.0-3.amzn2027.0.6  |
+|  libvirt-python-12.0.0-1.amzn2027.0.5  |
+|  libvoikko-4.3.3-2.amzn2027.0.1  |
+|  libxcb-1.17.0-7.amzn2027.2  |
+|  libxml2-2.12.10-5.amzn2027.0.4  |
+|  libxslt-1.1.43-1.amzn2027.0.5  |
+|  llvm-22.1.7-2.amzn2027  |
+|  lohit-odia-fonts-2.91.2-11.amzn2027.0.5  |
+|  lshw-B.02.20-10.amzn2027.0.3  |
+|  lttng-tools-2.14.0-4.amzn2027.0.2  |
+|  lttng-ust-2.14.0-4.amzn2027.0.2  |
+|  lvm2-2.03.38-3.amzn2027.0.1  |
+|  mailcap-2.1.49-3.amzn2027.0.6  |
+|  mariadb1011-10.11.19-1.amzn2027.0.3  |
+|  mariadb114-11.4.13-1.amzn2027.0.3  |
+|  mariadb118-11.8.9-1.amzn2027.0.3  |
+|  mariadb123-12.3.3-2.amzn2027.0.3  |
+|  marshalparser-0.5.0-2.amzn2027.0.2  |
+|  maturin-1.9.6-1.amzn2027.0.3  |
+|  mercurial-7.2.4-1.amzn2027.0.2  |
+|  mesa-26.1.5-1.amzn2027.0.4  |
+|  meson-1.11.1-1.amzn2027.0.3  |
+|  mock-6.7-3.amzn2027.0.2  |
+|  mpich-4.2.2-2.amzn2027.0.1  |
+|  nbdkit-1.48.0-2.amzn2027  |
+|  net-snmp-5.9.4-18.amzn2027.0.2  |
+|  netpbm-11.13.00-2.amzn2027.0.3  |
+|  netplan-1.2.1-2.amzn2027.0.2  |
+|  newt-0.52.25-5.amzn2027.0.2  |
+|  nfs-utils-2.8.4-1.amzn2027.0.2  |
+|  nftables-1.1.3-6.amzn2027.0.3  |
+|  nghttp2-1.68.0-3.amzn2027.0.5  |
+|  ninja-build-1.13.2-1.amzn2027.0.6  |
+|  nodejs24-24.22.3-1.amzn2027.0.1  |
+|  nototools-0.2.20-4.amzn2027.0.2  |
+|  numpy-2.4.6-1.amzn2027.0.5  |
+|  nvidia-release-2027-2.amzn2027  |
+|  open-vmdk-0.3.12-1.amzn2027.0.3  |
+|  openexr-3.2.4-7.amzn2027.0.3  |
+|  openmpi-5.0.9-2.amzn2027.0.1  |
+|  openscap-1.4.4-1.amzn2027.0.2  |
+|  osinfo-db-tools-1.12.0-1.amzn2027.0.3  |
+|  p11-kit-0.26.4-2.amzn2027  |
+|  pacemaker-3.0.2-0.3.amzn2027.0.3  |
+|  pam\_wrapper-1.1.8-1.amzn2027.0.2  |
+|  parted-3.6-13.amzn2027.0.3  |
+|  pcs-0.12.2-1.amzn2027.0.4  |
+|  pcsc-lite-2.4.1-2.amzn2027.0.2  |
+|  perl-CGI-5.02-1.amzn2027  |
+|  perl-MIME-tools-5.522-1.amzn2027.0.1  |
+|  pesign-116-9.amzn2027.0.3  |
+|  policycoreutils-3.10-4.amzn2027.0.4  |
+|  postgresql-odbc-18.00.0006-1.amzn2027.0.1  |
+|  postgresql16-16.15-1.amzn2027.0.3  |
+|  postgresql17-17.11-1.amzn2027.0.3  |
+|  postgresql18-18.6-1.amzn2027.0.3  |
+|  protobuf-3.19.6-15.amzn2027.0.4  |
+|  py3c-1.4-2.amzn2027.0.1  |
+|  pyOpenSSL-26.4.0-2.amzn2027.0.3  |
+|  pybind11-3.0.4-1.amzn2027.0.3  |
+|  pycairo-1.28.0-2.amzn2027.0.1  |
+|  pyelftools-0.33-2.amzn2027.0.3  |
+|  pygobject3-3.56.3-2.amzn2027.0.2  |
+|  pyparsing-3.1.2-1.amzn2027.0.7  |
+|  pyparted-3.13.0-8.amzn2027.0.3  |
+|  pyproject-rpm-macros-1.23.2-1.amzn2027.0.4  |
+|  pyserial-3.5-16.amzn2027.0.2  |
+|  pytest-9.0.3-1.amzn2027.0.6  |
+|  python-Automat-24.8.1-1.amzn2027.0.4  |
+|  python-CommonMark-0.9.1-27.amzn2027.0.2  |
+|  python-Pallets-Sphinx-Themes-2.5.0-1.amzn2027.0.3  |
+|  python-absl-py-2.4.0-1.amzn2027.0.3  |
+|  python-annotated-doc-0.0.5-1.amzn2027.0.3  |
+|  python-apipkg-3.0.2-13.amzn2027.0.2  |
+|  python-appdirs-1.4.4-2.amzn2027.0.2  |
+|  python-argcomplete-3.6.3-1.amzn2027.0.3  |
+|  python-asgiref-3.9.2-1.amzn2027.0.4  |
+|  python-asn1crypto-1.5.1-17.amzn2027.0.3  |
+|  python-async-generator-1.10-9.amzn2027.0.3  |
+|  python-atomicwrites-1.4.0-6.amzn2027.0.2  |
+|  python-attrs-26.1.0-1.amzn2027.0.14  |
+|  python-augeas-1.2.0-6.amzn2027.0.2  |
+|  python-awscrt-0.36.4-1.amzn2027.0.5  |
+|  python-backoff-2.2.1-16.amzn2027.0.3  |
+|  python-bcrypt-4.3.0-1.amzn2027.0.2  |
+|  python-blinker-1.9.0-10.amzn2027.3  |
+|  python-boto3-1.43.31-1.amzn2027.0.4  |
+|  python-botocore-1.43.62-1.amzn2027.0.3  |
+|  python-bottle-0.13.4-7.amzn2027.0.2  |
+|  python-breathe-4.36.0-2.amzn2027.0.2  |
+|  python-build-1.5.0-1.amzn2027.0.2  |
+|  python-cachetools-7.1.6-1.amzn2027.0.2  |
+|  python-certifi-2026.01.04-2.amzn2027.0.2  |
+|  python-cffi-2.0.0-1.amzn2027.0.7  |
+|  python-cffsubr-0.4.0-5.amzn2027.0.3  |
+|  python-chardet-6.0.0.post1-1.amzn2027.0.3  |
+|  python-charset-normalizer-3.4.9-1.amzn2027.0.2  |
+|  python-chevron-0.14.0-1.amzn2027.0.2  |
+|  python-click-8.4.2-1.amzn2027.0.4  |
+|  python-cloudpickle-3.1.2-2.amzn2027.0.3  |
+|  python-colorama-0.4.6-2.amzn2027.0.2  |
+|  python-configargparse-1.7.5-1.amzn2027.0.3  |
+|  python-configobj-5.0.9-11.amzn2027.0.2  |
+|  python-configshell-2.0.2-4.amzn2027.0.3  |
+|  python-constantly-23.10.4-1.amzn2027.0.5  |
+|  python-construct-2.10.70-14.amzn2027.0.2  |
+|  python-coverage-7.15.0-3.amzn2027.0.2  |
+|  python-cpuinfo-9.0.0-19.amzn2027.0.2  |
+|  python-crypt-r-3.13.1-2.amzn2027.0.2  |
+|  python-cryptography-49.0.0-1.amzn2027.0.5  |
+|  python-cups-2.0.4-11.amzn2027.0.2  |
+|  python-daemon-3.1.0-2.amzn2027.0.3  |
+|  python-dateutil-2.9.0.post0-1.amzn2027.0.6  |
+|  python-dbusmock-0.38.0-3.amzn2027.0.2  |
+|  python-decorator-5.3.0-2.amzn2027.0.2  |
+|  python-defusedxml-0.7.1-2.amzn2027.0.2  |
+|  python-deprecated-1.3.1-5.amzn2027.0.3  |
+|  python-dill-0.4.1-2.amzn2027.0.2  |
+|  python-distlib-0.4.3-1.amzn2027.0.1  |
+|  python-distro-1.9.0-13.amzn2027.0.2  |
+|  python-dns-2.8.0-2.amzn2027.0.4  |
+|  python-docker-7.2.0-1.amzn2027.0.2  |
+|  python-docopt-0.6.2-19.amzn2027.0.3  |
+|  python-docopt-ng-0.9.0-1.amzn2027.0.3  |
+|  python-docs-theme-2026.4-1.amzn2027.0.2  |
+|  python-docutils-0.21.2-2.amzn2027.0.3  |
+|  python-dulwich-1.2.21-1.amzn2027.0.1  |
+|  python-editables-0.6-1.amzn2027.0.3  |
+|  python-elementpath-4.8.0-2.amzn2027.0.3  |
+|  python-enchant-3.3.0-1.amzn2027.0.5  |
+|  python-execnet-2.1.2-5.amzn2027.0.9  |
+|  python-factory-boy-3.3.3-1.amzn2027.0.3  |
+|  python-faker-40.29.0-1.amzn2027.0.3  |
+|  python-fastjsonschema-2.21.2-5.amzn2027.0.2  |
+|  python-fields-5.0.0-30.amzn2027.0.3  |
+|  python-filelock-3.20.3-1.amzn2027.0.2  |
+|  python-fixtures-4.3.2-1.amzn2027.0.2  |
+|  python-flaky-3.8.1-2.amzn2027.0.2  |
+|  python-flask-3.1.3-1.amzn2027.0.4  |
+|  python-flit-3.12.0-1.amzn2027.0.3  |
+|  python-flit-core-3.12.0-2.amzn2027.0.5  |
+|  python-freezegun-1.5.5-1.amzn2027.0.4  |
+|  python-fs-2.4.16-18.amzn2027.0.4  |
+|  python-genshi-0.7.11-5.amzn2027.0.2  |
+|  python-google-crc32c-1.8.0-1.amzn2027.0.3  |
+|  python-greenlet-3.5.4-1.amzn2027.0.2  |
+|  python-gssapi-1.7.3-15.amzn2027.0.3  |
+|  python-hamcrest-2.1.0-8.amzn2027.0.3  |
+|  python-hatch-fancy-pypi-readme-25.1.0-5.amzn2027.0.3  |
+|  python-hatch-vcs-0.5.0-1.amzn2027.0.5  |
+|  python-hatchling-1.31.0-1.amzn2027.0.4  |
+|  python-html5lib-1.1-1.amzn2027.0.4  |
+|  python-httpbin-0.10.4-1.amzn2027.0.4  |
+|  python-httpretty-1.1.4-8.amzn2027.0.2  |
+|  python-hyperlink-21.0.0-1.amzn2027.0.3  |
+|  python-hypothesis-6.123.0-1.amzn2027.0.9  |
+|  python-idna-3.11-2.amzn2027.0.3  |
+|  python-ifaddr-0.2.0-7.amzn2027.0.2  |
+|  python-imagesize-2.0.0-3.amzn2027.0.2  |
+|  python-impacket-0.13.1-1.amzn2027.0.3  |
+|  python-incremental-24.7.2-2.amzn2027.0.2  |
+|  python-iniconfig-2.3.0-1.amzn2027.0.8  |
+|  python-inotify-0.9.6-34.amzn2027.0.3  |
+|  python-iso8601-2.1.0-7.amzn2027.0.3  |
+|  python-itsdangerous-2.2.0-9.amzn2027.0.3  |
+|  python-jedi-0.19.2-1.amzn2027.0.5  |
+|  python-jinja2-3.1.6-10.amzn2027.0.2  |
+|  python-jmespath-1.0.1-16.amzn2027.0.3  |
+|  python-josepy-2.0.0-10.amzn2027.0.3  |
+|  python-jsonpatch-1.33-12.amzn2027.0.2  |
+|  python-jsonpointer-2.4-11.amzn2027.0.2  |
+|  python-jsonschema-4.26.0-1.amzn2027.0.6  |
+|  python-jsonschema-specifications-2025.9.1-1.amzn2027.0.7  |
+|  python-jwcrypto-1.6.1-1.amzn2027.0.4  |
+|  python-jwt-2.15.1-1.amzn2027.0.2  |
+|  python-kmod-0.9.2-11.amzn2027.0.3  |
+|  python-lark-1.2.2-2.amzn2027.0.3  |
+|  python-ldap-3.4.7-2.amzn2027.0.2  |
+|  python-ldap3-2.9.1-15.amzn2027.0.1  |
+|  python-libevdev-0.13.1-4.amzn2027.0.2  |
+|  python-linux-procfs-0.7.4-5.amzn2027.0.2  |
+|  python-lockfile-0.12.2-6.amzn2027.0.3  |
+|  python-lxml-6.1.1-1.amzn2027.0.2  |
+|  python-mako-1.2.3-16.amzn2027.0.2  |
+|  python-markdown-3.10.3-1.amzn2027.0.3  |
+|  python-markdown-it-py-4.2.0-1.amzn2027.0.3  |
+|  python-markupsafe-3.0.2-2.amzn2027.0.2  |
+|  python-mdurl-0.1.2-16.amzn2027.0.3  |
+|  python-meson-python-0.20.0-1.amzn2027.0.2  |
+|  python-mimeparse-2.0.0-2.amzn2027.0.2  |
+|  python-mistune-3.3.0-1.amzn2027.0.5  |
+|  python-mock-4.0.3-1.amzn2027.0.4  |
+|  python-more-itertools-10.8.0-1.amzn2027.0.12  |
+|  python-munkres-1.1.4-2.amzn2027.0.3  |
+|  python-mypy\_extensions-1.1.0-8.amzn2027.0.2  |
+|  python-netaddr-1.3.0-15.amzn2027.0.2  |
+|  python-netifaces-0.11.0-19.amzn2027.0.2  |
+|  python-oauthlib-4.0.1-1.amzn2027.0.1  |
+|  python-olefile-0.47-15.amzn2027.0.7  |
+|  python-openstackdocstheme-3.6.0-1.amzn2027.0.2  |
+|  python-packaging-26.3-1.amzn2027.0.7  |
+|  python-pam-2.0.2-20.amzn2027.0.2  |
+|  python-parameterized-0.9.0-1.amzn2027.0.5  |
+|  python-parsedatetime-2.6-24.amzn2027.0.2  |
+|  python-parso-0.8.7-1.amzn2027.0.3  |
+|  python-pathspec-1.1.1-1.amzn2027.0.14  |
+|  python-pbr-7.0.3-1.amzn2027.0.12  |
+|  python-pdm-backend-2.4.5-1.amzn2027.0.9  |
+|  python-pefile-2024.8.26-2.amzn2027.0.2  |
+|  python-pexpect-4.9.0-19.amzn2027.0.2  |
+|  python-pillow-13.0.0-1.amzn2027.0.2  |
+|  python-pip-26.2.1-3.amzn2027.0.6  |
+|  python-pkgconfig-1.6.0-2.amzn2027.0.2  |
+|  python-platformdirs-4.9.1-1.amzn2027.0.7  |
+|  python-pluggy-1.6.0-8.amzn2027.0.8  |
+|  python-ply-3.11-35.amzn2027.0.2  |
+|  python-poetry-core-2.4.1-1.amzn2027.0.7  |
+|  python-pretend-1.0.9-2.amzn2027.0.2  |
+|  python-prettytable-3.10.0-2.amzn2027.0.3  |
+|  python-process-tests-3.0.0-2.amzn2027.0.2  |
+|  python-progressbar2-4.5.0-1.amzn2027.0.4  |
+|  python-prompt-toolkit-3.0.52-1.amzn2027.0.2  |
+|  python-psutil-7.2.2-2.amzn2027.0.2  |
+|  python-psycopg2-2.9.12-3.amzn2027.0.1  |
+|  python-ptyprocess-0.7.0-17.amzn2027.0.2  |
+|  python-py-1.11.0-22.amzn2027.0.2  |
+|  python-pyasn1-0.6.5-1.amzn2027.0.1  |
+|  python-pybeam-0.8.1-1.amzn2027.0.2  |
+|  python-pycotap-1.3.1-13.amzn2027.0.2  |
+|  python-pycparser-3.00-1.amzn2027.0.2  |
+|  python-pycryptodomex-3.23.0-4.amzn2027.0.4  |
+|  python-pycurl-7.47.0-3.amzn2027.0.3  |
+|  python-pygments-2.20.0-1.amzn2027.0.4  |
+|  python-pygments-pytest-2.4.0-2.amzn2027.0.2  |
+|  python-pymongo-4.18.2-1.amzn2027.0.5  |
+|  python-pyproject-api-1.9.1-2.amzn2027.0.3  |
+|  python-pyproject-hooks-1.2.0-2.amzn2027.0.2  |
+|  python-pyproject-metadata-0.9.1-1.amzn2027.0.3  |
+|  python-pyrfc3339-2.0.1-9.amzn2027.0.2  |
+|  python-pyroute2-0.9.6-1.amzn2027.0.2  |
+|  python-pyrsistent-0.20.0-1.amzn2027.0.2  |
+|  python-pysocks-1.7.1-35.amzn2027.0.2  |
+|  python-pytest-asyncio-1.4.0-1.amzn2027.0.2  |
+|  python-pytest-benchmark-5.1.0-7.amzn2027.0.2  |
+|  python-pytest-cov-7.1.0-1.amzn2027.0.10  |
+|  python-pytest-env-0.6.2^20170617gitafb13a0-1.amzn2027.0.3  |
+|  python-pytest-expect-1.1.0-1.amzn2027.0.4  |
+|  python-pytest-forked-1.6.0-17.amzn2027.0.2  |
+|  python-pytest-github-actions-annotate-failures-0.2.0-2.amzn2027.0.2  |
+|  python-pytest-httpbin-2.1.0-9.amzn2027.0.3  |
+|  python-pytest-httpserver-1.0.8-11.amzn2027.0.3  |
+|  python-pytest-lazy-fixtures-1.1.4-2.amzn2027.0.3  |
+|  python-pytest-mock-3.15.1-4.amzn2027.0.7  |
+|  python-pytest-randomly-4.1.0-1.amzn2027.0.3  |
+|  python-pytest-rerunfailures-15.0-9.amzn2027.0.2  |
+|  python-pytest-runner-4.0-31.amzn2027.0.3  |
+|  python-pytest-subtests-0.15.0-1.amzn2027.0.2  |
+|  python-pytest-timeout-2.4.0-8.amzn2027.0.9  |
+|  python-pytest-xdist-3.7.0-9.amzn2027.0.4  |
+|  python-pyudev-0.24.4-2.amzn2027.0.2  |
+|  python-qemu-qmp-0.0.5-2.amzn2027.0.4  |
+|  python-qrcode-8.0-1.amzn2027.0.2  |
+|  python-railroad-diagrams-3.0.1-1.amzn2027.0.3  |
+|  python-raven-6.10.0-31.amzn2027.0.2  |
+|  python-recommonmark-0.7.1-19.git.amzn2027.0.2  |
+|  python-referencing-0.37.0-1.amzn2027.0.3  |
+|  python-requests-2.34.2-1.amzn2027.0.3  |
+|  python-requests-download-0.1.2-6.amzn2027.0.2  |
+|  python-requests-unixsocket-0.4.1-2.amzn2027.0.2  |
+|  python-resolvelib-1.0.1-11.amzn2027.0.3  |
+|  python-responses-0.26.2-1.amzn2027.0.3  |
+|  python-rich-15.0.0-2.amzn2027.0.1  |
+|  python-roman-numerals-py-3.1.0-1.amzn2027.0.3  |
+|  python-rpds-py-0.30.0-1.amzn2027.0.3  |
+|  python-rpm-generators-14-15.amzn2027.0.9  |
+|  python-rpm-macros-3.15-12.amzn2027.0.7  |
+|  python-rpmautospec-core-0.1.5-1.amzn2027.3  |
+|  python-rtslib-2.2.4-1.amzn2027.0.2  |
+|  python-ruamel-yaml-0.19.1-1.amzn2027.0.3  |
+|  python-ruamel-yaml-clib-0.2.15-1.amzn2027.0.2  |
+|  python-s3transfer-0.19.2-1.amzn2027.0.3  |
+|  python-scikit-build-core-0.11.5-1.amzn2027.0.2  |
+|  python-semantic\_version-2.10.0-1.amzn2027.0.5  |
+|  python-service-identity-24.2.0-1.amzn2027.0.4  |
+|  python-setproctitle-1.3.7-2.amzn2027.0.5  |
+|  python-setuptools-84.0.0-1.amzn2027.0.5  |
+|  python-setuptools-rust-1.12.1-1.amzn2027.0.4  |
+|  python-setuptools\_scm-9.2.2-1.amzn2027.0.13  |
+|  python-shellingham-1.5.4-1.amzn2027.0.3  |
+|  python-simplejson-4.1.1-1.amzn2027.0.2  |
+|  python-six-1.17.0-2.amzn2027.0.2  |
+|  python-smartypants-2.0.1-27.amzn2027.0.3  |
+|  python-sortedcontainers-2.4.0-29.amzn2027.0.6  |
+|  python-sphinx-8.2.3-1.amzn2027.0.3  |
+|  python-sphinx-epytext-0.0.4-6.amzn2027.0.2  |
+|  python-sphinx-hoverxref-1.4.1-1.amzn2027.0.4  |
+|  python-sphinx-issues-6.0.0-2.amzn2027.0.2  |
+|  python-sphinx-notfound-page-1.0.4-6.amzn2027.0.2  |
+|  python-sphinx-removed-in-0.2.3-2.amzn2027.0.2  |
+|  python-sphinx-theme-alabaster-0.7.16-8.amzn2027.0.2  |
+|  python-sphinx-theme-py3doc-enhanced-2.4.0-21.amzn2027.0.2  |
+|  python-sphinx\_rtd\_theme-3.1.0-1.amzn2027.0.3  |
+|  python-sphinx\_selective\_exclude-1.0.3-23.amzn2027.0.2  |
+|  python-sphinxcontrib-apidoc-0.6.0-2.amzn2027.0.3  |
+|  python-sphinxcontrib-devhelp-2.0.0-2.amzn2027.0.2  |
+|  python-sphinxcontrib-htmlhelp-2.1.0-1.amzn2027.0.7  |
+|  python-sphinxcontrib-httpdomain-1.8.1-9.amzn2027.0.2  |
+|  python-sphinxcontrib-jquery-4.1-17.amzn2027.0.2  |
+|  python-sphinxcontrib-log-cabinet-1.0.1-27.amzn2027.0.2  |
+|  python-sphinxcontrib-qthelp-2.0.0-2.amzn2027.0.2  |
+|  python-sphinxcontrib-serializinghtml-2.0.0-2.amzn2027.0.2  |
+|  python-sphinxcontrib-trio-1.2.0-3.amzn2027.0.2  |
+|  python-sqlparse-0.6.1-1.amzn2027.0.1  |
+|  python-systemd-235-1.amzn2027.0.7  |
+|  python-templated-dictionary-1.6-8.amzn2027.0.2  |
+|  python-testpath-0.6.0-2.amzn2027.0.2  |
+|  python-testresources-2.1.2-1.amzn2027.0.2  |
+|  python-testscenarios-0.6.1-2.amzn2027.0.2  |
+|  python-testtools-2.8.7-2.amzn2027.0.3  |
+|  python-text-unidecode-1.3-24.amzn2027.0.5  |
+|  python-toml-0.10.2-2.amzn2027.0.5  |
+|  python-tomli-2.4.1-1.amzn2027.0.4  |
+|  python-tomli-w-1.2.0-2.amzn2027.0.2  |
+|  python-tornado-6.5.10-2.amzn2027.0.3  |
+|  python-tox-4.35.0-1.amzn2027.0.5  |
+|  python-tox-current-env-0.0.17-1.amzn2027.0.4  |
+|  python-tpm2-pytss-2.3.0-12.amzn2027.0.3  |
+|  python-tqdm-4.69.0-1.amzn2027.0.2  |
+|  python-trove-classifiers-2026.6.1.19-1.amzn2027.0.10  |
+|  python-trustme-1.2.1-1.amzn2027.0.4  |
+|  python-typer-0.27.2-1.amzn2027.0.2  |
+|  python-types-pyyaml-6.0.1-2.amzn2027.0.2  |
+|  python-typing-extensions-4.16.0-4.amzn2027.0.1  |
+|  python-typogrify-2.0.7-30.amzn2027.0.2  |
+|  python-u-msgpack-python-2.8.0-1.amzn2027.0.4  |
+|  python-uefivars-1.0.0-1.amzn2027.0.3  |
+|  python-urllib3-2.6.3-1.amzn2027.0.6  |
+|  python-urwid-3.0.4-1.amzn2027.0.5  |
+|  python-utils-3.9.1-2.amzn2027.0.3  |
+|  python-versioneer-0.29-1.amzn2027.0.4  |
+|  python-virtualenv-21.14.13-1.amzn2027.0.1  |
+|  python-waitress-3.0.2-2.amzn2027.0.2  |
+|  python-watchdog-6.0.0-1.amzn2027.0.2  |
+|  python-wcwidth-0.7.0-1.amzn2027.0.2  |
+|  python-webencodings-0.5.1-35.amzn2027.0.4  |
+|  python-websocket-client-1.9.0-1.amzn2027.0.2  |
+|  python-websockets-15.0.1-1.amzn2027.0.3  |
+|  python-werkzeug-3.1.8-1.amzn2027.0.1  |
+|  python-wheel-0.48.0-1.amzn2027.0.5  |
+|  python-wrapt-2.2.2-1.amzn2027.0.3  |
+|  python-xmlschema-3.4.5-2.amzn2027.0.3  |
+|  python-yamlloader-1.1.0-1.amzn2027.0.4  |
+|  python-yubico-1.3.3-25.amzn2027.0.2  |
+|  python-zope-event-6.0-2.amzn2027.0.3  |
+|  python-zope-interface-8.5-1.amzn2027.0.4  |
+|  python-zope-testing-6.2-1.amzn2027.0.3  |
+|  python-zstandard-0.25.0-5.amzn2027.0.3  |
+|  python3-docs-3.15.0\~b4-1.amzn2027.0.3  |
+|  python3-mallard-ducktype-1.0.2-30.amzn2027.0.2  |
+|  python3-mypy-1.18.2-1.amzn2027.0.3  |
+|  python3.14-3.14.10-1.amzn2027.0.3  |
+|  python3.14-flit-core-3.12.0-1.amzn2027.0.6  |
+|  pytz-2026.1-3.amzn2027.0.2  |
+|  pyusb-1.3.1-10.amzn2027.0.2  |
+|  pyxattr-0.7.2-19.amzn2027.0.4  |
+|  pyxdg-0.28-1.amzn2027.0.4  |
+|  qemu-11.0.4-3.amzn2027  |
+|  rdma-core-61.0-2.amzn2027.0.1  |
+|  re2-20251105-2.amzn2027.0.1  |
+|  re2c-3.1-1.amzn2027.0.3  |
+|  realmd-0.17.1-19.amzn2027.0.6  |
+|  recode-3.7.15-2.amzn2027.0.2  |
+|  resource-agents-4.18.0-3.amzn2027  |
+|  rpm-6.0.0-1.amzn2027.0.20  |
+|  rpmdevtools-9.6-15.amzn2027  |
+|  rpmlint-2.8.0-4.amzn2027.0.2  |
+|  rrdtool-1.9.0-11.amzn2027.0.3  |
+|  rsync-3.5.1-1.amzn2027.0.3  |
+|  rust-1.99.1-2.amzn2027.0.1  |
+|  samba-4.24.6-5.amzn2027  |
+|  sanlock-4.2.0-1.amzn2027.0.2  |
+|  satyr-0.43-11.amzn2027.0.2  |
+|  scap-security-guide-0.1.81-1.amzn2027.0.2  |
+|  scipy-1.16.2-3.amzn2027.0.4  |
+|  seabios-1.17.0-14.amzn2027.0.1  |
+|  selinux-policy-45.23-3.amzn2027  |
+|  setools-4.6.0-5.amzn2027.0.2  |
+|  shaderc-2026.1-1.amzn2027.0.4  |
+|  showtime-50.0-2.amzn2027.0.2  |
+|  snowball-3.0.1-2.amzn2027.0.1  |
+|  spirv-tools-2026.1-2.amzn2027.0.4  |
+|  squid-7.7-1.amzn2027  |
+|  sssd-2.13.1-1.amzn2027.0.6  |
+|  stunnel-5.80-2.amzn2027.0.1  |
+|  subversion-1.14.5-3.amzn2027.0.5  |
+|  sudo-1.9.17-1.p2.amzn2027.0.6  |
+|  swiftlang-6.3.2-2.amzn2027  |
+|  swig-4.4.1-4.amzn2027.0.3  |
+|  system-release-2027.0.20261112-0.amzn2027  |
+|  systemd-262.1-3.amzn2027  |
+|  systemtap-5.6-1.amzn2027.0.3  |
+|  targetcli-3.0.1-4.amzn2027.0.2  |
+|  tbb-2022.3.0-1.amzn2027.0.2  |
+|  texlive-20260301-1.amzn2027.0.9  |
+|  tpm2-pkcs11-1.9.1-7.amzn2027.0.2  |
+|  trace-cmd-3.3.1-5.amzn2027.0.2  |
+|  tre-0.9.0-2.amzn2027.0.2  |
+|  tuna-0.20-4.amzn2027.0.2  |
+|  tuned-2.27.0-1.amzn2027.0.1  |
+|  udica-0.2.8-11.amzn2027.0.2  |
+|  unbound-1.26.1-2.amzn2027.0.1  |
+|  util-linux-2.42.4-14.amzn2027.0.1  |
+|  valgrind-3.27.1-1.amzn2027.0.2  |
+|  vim-9.2.920-1.amzn2027.0.4  |
+|  voikko-fi-2.5-10.amzn2027.0.2  |
+|  volume\_key-0.3.12-30.amzn2027.0.3  |
+|  vulkan-loader-1.4.341.0-1.amzn2027.0.4  |
+|  vulkan-tools-1.4.341.0-1.amzn2027.0.4  |
+|  vulkan-utility-libraries-1.4.341.0-1.amzn2027.0.4  |
+|  vulkan-validation-layers-1.4.341.0-2.amzn2027.0.4  |
+|  wget1-1.25.0-5.amzn2027.0.2  |
+|  wireshark-4.6.9-1.amzn2027.0.1  |
+|  xcb-proto-1.17.0-8.amzn2027.0.2  |
+|  xfsprogs-7.1.1-1.amzn2027.0.2  |
+|  xorg-x11-server-Xwayland-24.1.13-1.amzn2027.0.2  |
+|  xwayland-run-0.0.5-1.amzn2027.0.2  |
+|  yasm-1.3.0^20250625git121ab15-5.amzn2027.0.6  |
+|  z3-4.16.0-1.amzn2027.0.4  |
+|  zziplib-0.13.78-1.amzn2027.0.2  |
+
+### Nvidia-driver-580 Updated Packages
+<a name="amis-2027.0.20261112.Nvidia-driver-580-Updated-Packages"></a>
+
+This section provides details about Nvidia-driver-580 Updated Packages.
+
+| Package |
+| --- |
+|  cuda-compat-13-0-580.196.07-1.amzn2027  |
+|  cuda-drivers-580.196.07-1.amzn2027  |
+|  kmod-nvidia-latest-dkms-580.196.07-1.amzn2027  |
+|  kmod-nvidia-open-dkms-580.196.07-1.amzn2027  |
+|  libnvidia-cfg-580.196.07-1.amzn2027  |
+|  libnvidia-fbc-580.196.07-1.amzn2027  |
+|  libnvidia-gpucomp-580.196.07-1.amzn2027  |
+|  libnvidia-ml-580.196.07-1.amzn2027  |
+|  nvidia-driver-580.196.07-1.amzn2027  |
+|  nvidia-driver-cuda-580.196.07-1.amzn2027  |
+|  nvidia-driver-cuda-libs-580.196.07-1.amzn2027  |
+|  nvidia-driver-libs-580.196.07-1.amzn2027  |
+|  nvidia-kmod-common-580.196.07-1.amzn2027  |
+|  nvidia-libXNVCtrl-580.196.07-1.amzn2027  |
+|  nvidia-libXNVCtrl-devel-580.196.07-1.amzn2027  |
+|  nvidia-modprobe-580.196.07-1.amzn2027  |
+|  nvidia-open-580.196.07-1.amzn2027  |
+|  nvidia-persistenced-580.196.07-1.amzn2027  |
+|  nvidia-settings-580.196.07-1.amzn2027  |
+
+### Nvidia-driver-580 Removed Packages
+<a name="amis-2027.0.20261112.Nvidia-driver-580-Removed-Packages"></a>
+
+This section provides details about Nvidia-driver-580 Removed Packages.
+
+| Package |
+| --- |
+|  nvidia-xconfig-580.178.04-1.amzn2027  |
+|  xorg-x11-nvidia-580.178.04-1.amzn2027  |
+
+### Nvidia-driver-595 Updated Packages
+<a name="amis-2027.0.20261112.Nvidia-driver-595-Updated-Packages"></a>
+
+This section provides details about Nvidia-driver-595 Updated Packages.
+
+| Package |
+| --- |
+|  cuda-compat-13-2-595.112.07-1.amzn2027  |
+|  cuda-drivers-595.112.07-1.amzn2027  |
+|  kmod-nvidia-latest-dkms-595.112.07-1.amzn2027  |
+|  kmod-nvidia-open-dkms-595.112.07-1.amzn2027  |
+|  libnvidia-cfg-595.112.07-1.amzn2027  |
+|  libnvidia-fbc-595.112.07-1.amzn2027  |
+|  libnvidia-gpucomp-595.112.07-1.amzn2027  |
+|  libnvidia-ml-595.112.07-1.amzn2027  |
+|  nvidia-driver-595.112.07-1.amzn2027  |
+|  nvidia-driver-cuda-595.112.07-1.amzn2027  |
+|  nvidia-driver-cuda-libs-595.112.07-1.amzn2027  |
+|  nvidia-driver-libs-595.112.07-1.amzn2027  |
+|  nvidia-kmod-common-595.112.07-1.amzn2027  |
+|  nvidia-libXNVCtrl-595.112.07-1.amzn2027  |
+|  nvidia-libXNVCtrl-devel-595.112.07-1.amzn2027  |
+|  nvidia-modprobe-595.112.07-1.amzn2027  |
+|  nvidia-open-595.112.07-1.amzn2027  |
+|  nvidia-persistenced-595.112.07-1.amzn2027  |
+|  nvidia-settings-595.112.07-1.amzn2027  |
+
+### Nvidia-driver-595 Removed Packages
+<a name="amis-2027.0.20261112.Nvidia-driver-595-Removed-Packages"></a>
+
+This section provides details about Nvidia-driver-595 Removed Packages.
+
+| Package |
+| --- |
+|  nvidia-xconfig-595.91.07-1.amzn2027  |
+|  xorg-x11-nvidia-595.91.07-1.amzn2027  |
+
+### Nvidia-products New Packages
+<a name="amis-2027.0.20261112.Nvidia-products-New-Packages"></a>
+
+This section provides details about Nvidia-products New Packages.
+
+| Package |
+| --- |
+|  egl-gbm-1.1.4-1.amzn2027  |
+|  egl-wayland-1.1.24-1.amzn2027  |
+|  egl-wayland-devel-1.1.24-1.amzn2027  |
+|  egl-wayland2-1.0.2-1.amzn2027  |
+|  egl-x11-1.0.6-1.amzn2027  |
+|  eglexternalplatform-devel-1.2.1-3.amzn2027.0.2  |
+|  nvidia-driver-selinux-0.1-3.amzn2027  |
+
+## Image Updates
+<a name="ami-updates-2027.0.20261112"></a>
+
+### Default Kernel 7.2 AMI
+<a name="amis-2027.0.20261112.Default-Kernel-7-2-AMI"></a>
+
+This section provides details about new/updated packages in Default Kernel 7.2 AMI.
+
+| Package |
+| --- |
+|  amazon-linux-repo-s3-2027.0.20261112-0.amzn2027  |
+|  amazon-ssm-agent-3.3.5828.0-1.amzn2027  |
+|  audit-libs-4.1.3-1.amzn2027.0.3  |
+|  audit-rules-4.1.3-1.amzn2027.0.3  |
+|  audit-4.1.3-1.amzn2027.0.3  |
+|  aws-cfn-bootstrap-2.0-40.amzn2027.0.1  |
+|  awscli-2-2.36.47-1.amzn2027.0.4  |
+|  c-ares-1.34.8-1.amzn2027.0.2  |
+|  ca-certificates-2026.2.90\_v9.0.316-101.0.amzn2027.0.4  |
+|  cloud-init-cfg-ec2-26.1-250.amzn2027.0.17  |
+|  cloud-init-26.1-250.amzn2027.0.17  |
+|  compact-dnf-utils-5.4.2.1-38.amzn2027.0.3  |
+|  coreutils-common-9.10-3.amzn2027.0.2  |
+|  coreutils-9.10-3.amzn2027.0.2  |
+|  crypto-policies-20260811-1.git4dcd294.amzn2027.2  |
+|  curl-8.22.0-1.amzn2027.0.4  |
+|  cyrus-sasl-gssapi-2.1.28-35.amzn2027.0.5  |
+|  cyrus-sasl-lib-2.1.28-35.amzn2027.0.5  |
+|  device-mapper-libs-1.02.212-3.amzn2027.0.1  |
+|  device-mapper-1.02.212-3.amzn2027.0.1  |
+|  dnf-plugin-release-notification-2.0.0-5.amzn2027  |
+|  dnf-plugin-support-info-3.0.0-4.amzn2027  |
+|  dnf5-plugins-5.4.2.1-38.amzn2027.0.3  |
+|  dnf5-5.4.2.1-38.amzn2027.0.3  |
+|  ec2-utils-2.2.0-1.amzn2027.0.4  |
+|  file-libs-5.46-8.amzn2027.0.2  |
+|  file-5.46-8.amzn2027.0.2  |
+|  glib2-2.88.1-1.amzn2027.0.1  |
+|  grub2-common-1:2.12-58.amzn2027.0.7  |
+|  grub2-efi-x64-ec2-1:2.12-58.amzn2027.0.7  |
+|  grub2-pc-modules-1:2.12-58.amzn2027.0.7  |
+|  grub2-tools-minimal-1:2.12-58.amzn2027.0.7  |
+|  grub2-tools-1:2.12-58.amzn2027.0.7  |
+|  kernel7.2-tools-1:7.2.13-18.151.amzn2027  |
+|  kernel7.2-1:7.2.13-18.151.amzn2027  |
+|  krb5-libs-1.22.2-7.amzn2027.0.1  |
+|  libblkid-2.42.4-14.amzn2027.0.1  |
+|  libcap-ng-0.9.3-1.amzn2027.0.2  |
+|  libcurl-minimal-8.22.0-1.amzn2027.0.4  |
+|  libdnf5-cli-5.4.2.1-38.amzn2027.0.3  |
+|  libdnf5-5.4.2.1-38.amzn2027.0.3  |
+|  libevent-2.1.12-16.amzn2027.0.6  |
+|  libfdisk-2.42.4-14.amzn2027.0.1  |
+|  libgcc-16.2.1-2.amzn2027.0.2  |
+|  libgomp-16.2.1-2.amzn2027.0.2  |
+|  libibverbs-61.0-2.amzn2027.0.1  |
+|  libicu-77.1-2.amzn2027.0.3  |
+|  liblastlog2-2.42.4-14.amzn2027.0.1  |
+|  libldb-2:4.24.6-5.amzn2027  |
+|  libmount-2.42.4-14.amzn2027.0.1  |
+|  libnghttp2-1.68.0-3.amzn2027.0.5  |
+|  libpsl-0.21.5-1.amzn2027.0.3  |
+|  libpwquality-1.4.5-15.amzn2027.0.2  |
+|  librepo-1.20.0-4.amzn2027.0.3  |
+|  libseccomp-2.6.1-2.amzn2027.0.1  |
+|  libselinux-utils-3.10-1.amzn2027.0.2  |
+|  libselinux-3.10-1.amzn2027.0.2  |
+|  libsemanage-3.10-1.amzn2027.0.2  |
+|  libsmartcols-2.42.4-14.amzn2027.0.1  |
+|  libsolv-0.7.39-2.amzn2027.0.5  |
+|  libsss\_certmap-2.13.1-1.amzn2027.0.6  |
+|  libsss\_idmap-2.13.1-1.amzn2027.0.6  |
+|  libsss\_nss\_idmap-2.13.1-1.amzn2027.0.6  |
+|  libsss\_sudo-2.13.1-1.amzn2027.0.6  |
+|  libstdc\+\+-16.2.1-2.amzn2027.0.2  |
+|  libtalloc-2.4.4-2.amzn2027.0.1  |
+|  libtdb-1.4.15-2.amzn2027.0.1  |
+|  libtevent-0.17.1-3.amzn2027.0.3  |
+|  libuuid-2.42.4-14.amzn2027.0.1  |
+|  libxml2-2.12.10-5.amzn2027.0.4  |
+|  p11-kit-trust-0.26.4-2.amzn2027  |
+|  p11-kit-0.26.4-2.amzn2027  |
+|  policycoreutils-python-utils-3.10-4.amzn2027.0.4  |
+|  policycoreutils-3.10-4.amzn2027.0.4  |
+|  python-chevron-0.14.0-1.amzn2027.0.2  |
+|  python3-attrs-26.1.0-1.amzn2027.0.14  |
+|  python3-audit-4.1.3-1.amzn2027.0.3  |
+|  python3-awscrt-0.36.4-1.amzn2027.0.5  |
+|  python3-charset-normalizer-3.4.9-1.amzn2027.0.2  |
+|  python3-colorama-0.4.6-2.amzn2027.0.2  |
+|  python3-configobj-5.0.9-11.amzn2027.0.2  |
+|  python3-daemon-3.1.0-2.amzn2027.0.3  |
+|  python3-dateutil-1:2.9.0.post0-1.amzn2027.0.6  |
+|  python3-distro-1.9.0-13.amzn2027.0.2  |
+|  python3-docutils-0.21.2-2.amzn2027.0.3  |
+|  python3-idna-3.11-2.amzn2027.0.3  |
+|  python3-jinja2-3.1.6-10.amzn2027.0.2  |
+|  python3-jmespath-1.0.1-16.amzn2027.0.3  |
+|  python3-jsonpatch-1.33-12.amzn2027.0.2  |
+|  python3-jsonpointer-2.4-11.amzn2027.0.2  |
+|  python3-jsonschema-specifications-2025.9.1-1.amzn2027.0.7  |
+|  python3-jsonschema-4.26.0-1.amzn2027.0.6  |
+|  python3-libs-3.15.2-1.amzn2027.0.1  |
+|  python3-libselinux-3.10-1.amzn2027.0.2  |
+|  python3-libsemanage-3.10-1.amzn2027.0.2  |
+|  python3-lockfile-1:0.12.2-6.amzn2027.0.3  |
+|  python3-markupsafe-3.0.2-2.amzn2027.0.2  |
+|  python3-oauthlib-4.0.1-1.amzn2027.0.1  |
+|  python3-pip-wheel-26.2.1-3.amzn2027.0.6  |
+|  python3-policycoreutils-3.10-4.amzn2027.0.4  |
+|  python3-prompt-toolkit-3.0.52-1.amzn2027.0.2  |
+|  python3-pyyaml-6.0.3-2.amzn2027.0.3  |
+|  python3-referencing-0.37.0-1.amzn2027.0.3  |
+|  python3-requests-2.34.2-1.amzn2027.0.3  |
+|  python3-rpds-py-0.30.0-1.amzn2027.0.3  |
+|  python3-ruamel-yaml\+oldlibyaml-0.19.1-1.amzn2027.0.3  |
+|  python3-ruamel-yaml-clib-0.2.15-1.amzn2027.0.2  |
+|  python3-ruamel-yaml-0.19.1-1.amzn2027.0.3  |
+|  python3-setools-4.6.0-5.amzn2027.0.2  |
+|  python3-six-1.17.0-2.amzn2027.0.2  |
+|  python3-urllib3-2.6.3-1.amzn2027.0.6  |
+|  python3-wcwidth-0.7.0-1.amzn2027.0.2  |
+|  python3-3.15.2-1.amzn2027.0.1  |
+|  rdma-core-common-61.0-2.amzn2027.0.1  |
+|  rpm-build-libs-6.0.0-1.amzn2027.0.20  |
+|  rpm-libs-6.0.0-1.amzn2027.0.20  |
+|  rpm-plugin-selinux-6.0.0-1.amzn2027.0.20  |
+|  rpm-plugin-systemd-inhibit-6.0.0-1.amzn2027.0.20  |
+|  rpm-sign-libs-6.0.0-1.amzn2027.0.20  |
+|  rpm-6.0.0-1.amzn2027.0.20  |
+|  samba-common-2:4.24.6-5.amzn2027  |
+|  samba-core-libs-2:4.24.6-5.amzn2027  |
+|  samba-ndr-libs-2:4.24.6-5.amzn2027  |
+|  selinux-policy-targeted-45.23-3.amzn2027  |
+|  selinux-policy-45.23-3.amzn2027  |
+|  sssd-client-2.13.1-1.amzn2027.0.6  |
+|  sssd-common-2.13.1-1.amzn2027.0.6  |
+|  sssd-kcm-2.13.1-1.amzn2027.0.6  |
+|  sssd-krb5-common-2.13.1-1.amzn2027.0.6  |
+|  sudo-1.9.17-1.p2.amzn2027.0.6  |
+|  system-release-2027.0.20261112-0.amzn2027  |
+|  systemd-libs-262.1-3.amzn2027  |
+|  systemd-networkd-262.1-3.amzn2027  |
+|  systemd-pam-262.1-3.amzn2027  |
+|  systemd-resolved-262.1-3.amzn2027  |
+|  systemd-shared-262.1-3.amzn2027  |
+|  systemd-sysusers-262.1-3.amzn2027  |
+|  systemd-udev-262.1-3.amzn2027  |
+|  systemd-262.1-3.amzn2027  |
+|  util-linux-core-2.42.4-14.amzn2027.0.1  |
+|  util-linux-2.42.4-14.amzn2027.0.1  |
+|  vim-data-2:9.2.920-1.amzn2027.0.4  |
+|  vim-minimal-2:9.2.920-1.amzn2027.0.4  |
+|  xfsprogs-7.1.1-1.amzn2027.0.2  |
+
+### Minimal Kernel 7.2 AMI
+<a name="amis-2027.0.20261112.Minimal-Kernel-7-2-AMI"></a>
+
+This section provides details about new/updated packages in Minimal Kernel 7.2 AMI.
+
+| Package |
+| --- |
+|  amazon-linux-repo-s3-2027.0.20261112-0.amzn2027  |
+|  audit-libs-4.1.3-1.amzn2027.0.3  |
+|  audit-rules-4.1.3-1.amzn2027.0.3  |
+|  audit-4.1.3-1.amzn2027.0.3  |
+|  awscli-2-2.36.47-1.amzn2027.0.4  |
+|  ca-certificates-2026.2.90\_v9.0.316-101.0.amzn2027.0.4  |
+|  cloud-init-cfg-ec2-26.1-250.amzn2027.0.17  |
+|  cloud-init-26.1-250.amzn2027.0.17  |
+|  coreutils-common-9.10-3.amzn2027.0.2  |
+|  coreutils-9.10-3.amzn2027.0.2  |
+|  crypto-policies-20260811-1.git4dcd294.amzn2027.2  |
+|  curl-8.22.0-1.amzn2027.0.4  |
+|  cyrus-sasl-lib-2.1.28-35.amzn2027.0.5  |
+|  device-mapper-libs-1.02.212-3.amzn2027.0.1  |
+|  device-mapper-1.02.212-3.amzn2027.0.1  |
+|  dnf-plugin-release-notification-2.0.0-5.amzn2027  |
+|  dnf-plugin-support-info-3.0.0-4.amzn2027  |
+|  dnf5-5.4.2.1-38.amzn2027.0.3  |
+|  ec2-utils-2.2.0-1.amzn2027.0.4  |
+|  file-libs-5.46-8.amzn2027.0.2  |
+|  file-5.46-8.amzn2027.0.2  |
+|  glib2-2.88.1-1.amzn2027.0.1  |
+|  grub2-common-1:2.12-58.amzn2027.0.7  |
+|  grub2-efi-x64-ec2-1:2.12-58.amzn2027.0.7  |
+|  grub2-pc-modules-1:2.12-58.amzn2027.0.7  |
+|  grub2-tools-minimal-1:2.12-58.amzn2027.0.7  |
+|  grub2-tools-1:2.12-58.amzn2027.0.7  |
+|  kernel7.2-1:7.2.13-18.151.amzn2027  |
+|  krb5-libs-1.22.2-7.amzn2027.0.1  |
+|  libblkid-2.42.4-14.amzn2027.0.1  |
+|  libcap-ng-0.9.3-1.amzn2027.0.2  |
+|  libcurl-minimal-8.22.0-1.amzn2027.0.4  |
+|  libdnf5-cli-5.4.2.1-38.amzn2027.0.3  |
+|  libdnf5-5.4.2.1-38.amzn2027.0.3  |
+|  libevent-2.1.12-16.amzn2027.0.6  |
+|  libfdisk-2.42.4-14.amzn2027.0.1  |
+|  libgcc-16.2.1-2.amzn2027.0.2  |
+|  libgomp-16.2.1-2.amzn2027.0.2  |
+|  libibverbs-61.0-2.amzn2027.0.1  |
+|  liblastlog2-2.42.4-14.amzn2027.0.1  |
+|  libmount-2.42.4-14.amzn2027.0.1  |
+|  libnghttp2-1.68.0-3.amzn2027.0.5  |
+|  libpsl-0.21.5-1.amzn2027.0.3  |
+|  libpwquality-1.4.5-15.amzn2027.0.2  |
+|  librepo-1.20.0-4.amzn2027.0.3  |
+|  libseccomp-2.6.1-2.amzn2027.0.1  |
+|  libselinux-utils-3.10-1.amzn2027.0.2  |
+|  libselinux-3.10-1.amzn2027.0.2  |
+|  libsemanage-3.10-1.amzn2027.0.2  |
+|  libsmartcols-2.42.4-14.amzn2027.0.1  |
+|  libsolv-0.7.39-2.amzn2027.0.5  |
+|  libstdc\+\+-16.2.1-2.amzn2027.0.2  |
+|  libuuid-2.42.4-14.amzn2027.0.1  |
+|  libxml2-2.12.10-5.amzn2027.0.4  |
+|  p11-kit-trust-0.26.4-2.amzn2027  |
+|  p11-kit-0.26.4-2.amzn2027  |
+|  policycoreutils-python-utils-3.10-4.amzn2027.0.4  |
+|  policycoreutils-3.10-4.amzn2027.0.4  |
+|  python3-attrs-26.1.0-1.amzn2027.0.14  |
+|  python3-audit-4.1.3-1.amzn2027.0.3  |
+|  python3-awscrt-0.36.4-1.amzn2027.0.5  |
+|  python3-cffi-2.0.0-1.amzn2027.0.7  |
+|  python3-charset-normalizer-3.4.9-1.amzn2027.0.2  |
+|  python3-colorama-0.4.6-2.amzn2027.0.2  |
+|  python3-configobj-5.0.9-11.amzn2027.0.2  |
+|  python3-cryptography-49.0.0-1.amzn2027.0.5  |
+|  python3-dateutil-1:2.9.0.post0-1.amzn2027.0.6  |
+|  python3-distro-1.9.0-13.amzn2027.0.2  |
+|  python3-docutils-0.21.2-2.amzn2027.0.3  |
+|  python3-idna-3.11-2.amzn2027.0.3  |
+|  python3-jinja2-3.1.6-10.amzn2027.0.2  |
+|  python3-jmespath-1.0.1-16.amzn2027.0.3  |
+|  python3-jsonpatch-1.33-12.amzn2027.0.2  |
+|  python3-jsonpointer-2.4-11.amzn2027.0.2  |
+|  python3-jsonschema-specifications-2025.9.1-1.amzn2027.0.7  |
+|  python3-jsonschema-4.26.0-1.amzn2027.0.6  |
+|  python3-libs-3.15.2-1.amzn2027.0.1  |
+|  python3-libselinux-3.10-1.amzn2027.0.2  |
+|  python3-libsemanage-3.10-1.amzn2027.0.2  |
+|  python3-markupsafe-3.0.2-2.amzn2027.0.2  |
+|  python3-oauthlib-4.0.1-1.amzn2027.0.1  |
+|  python3-pip-wheel-26.2.1-3.amzn2027.0.6  |
+|  python3-policycoreutils-3.10-4.amzn2027.0.4  |
+|  python3-prompt-toolkit-3.0.52-1.amzn2027.0.2  |
+|  python3-pycparser-3.00-1.amzn2027.0.2  |
+|  python3-pyyaml-6.0.3-2.amzn2027.0.3  |
+|  python3-referencing-0.37.0-1.amzn2027.0.3  |
+|  python3-requests-2.34.2-1.amzn2027.0.3  |
+|  python3-rpds-py-0.30.0-1.amzn2027.0.3  |
+|  python3-ruamel-yaml\+oldlibyaml-0.19.1-1.amzn2027.0.3  |
+|  python3-ruamel-yaml-clib-0.2.15-1.amzn2027.0.2  |
+|  python3-ruamel-yaml-0.19.1-1.amzn2027.0.3  |
+|  python3-setools-4.6.0-5.amzn2027.0.2  |
+|  python3-six-1.17.0-2.amzn2027.0.2  |
+|  python3-urllib3-2.6.3-1.amzn2027.0.6  |
+|  python3-wcwidth-0.7.0-1.amzn2027.0.2  |
+|  python3-3.15.2-1.amzn2027.0.1  |
+|  rdma-core-common-61.0-2.amzn2027.0.1  |
+|  rpm-libs-6.0.0-1.amzn2027.0.20  |
+|  rpm-plugin-selinux-6.0.0-1.amzn2027.0.20  |
+|  rpm-plugin-systemd-inhibit-6.0.0-1.amzn2027.0.20  |
+|  rpm-6.0.0-1.amzn2027.0.20  |
+|  selinux-policy-targeted-45.23-3.amzn2027  |
+|  selinux-policy-45.23-3.amzn2027  |
+|  sudo-1.9.17-1.p2.amzn2027.0.6  |
+|  system-release-2027.0.20261112-0.amzn2027  |
+|  systemd-libs-262.1-3.amzn2027  |
+|  systemd-networkd-262.1-3.amzn2027  |
+|  systemd-resolved-262.1-3.amzn2027  |
+|  systemd-shared-262.1-3.amzn2027  |
+|  systemd-sysusers-262.1-3.amzn2027  |
+|  systemd-udev-262.1-3.amzn2027  |
+|  systemd-262.1-3.amzn2027  |
+|  util-linux-core-2.42.4-14.amzn2027.0.1  |
+|  util-linux-2.42.4-14.amzn2027.0.1  |
+|  vim-data-2:9.2.920-1.amzn2027.0.4  |
+|  vim-minimal-2:9.2.920-1.amzn2027.0.4  |
+|  xfsprogs-7.1.1-1.amzn2027.0.2  |
+
+### Default Container
+<a name="amis-2027.0.20261112.Default-Container"></a>
+
+This section provides details about new/updated packages in Default Container.
+
+| Package |
+| --- |
+|  amazon-linux-repo-cdn-2027.0.20261112-0.amzn2027  |
+|  ca-certificates-2026.2.90\_v9.0.316-101.0.amzn2027.0.4  |
+|  coreutils-single-9.10-3.amzn2027.0.2  |
+|  crypto-policies-20260811-1.git4dcd294.amzn2027.2  |
+|  curl-8.22.0-1.amzn2027.0.4  |
+|  dnf5-5.4.2.1-38.amzn2027.0.3  |
+|  glib2-2.88.1-1.amzn2027.0.1  |
+|  krb5-libs-1.22.2-7.amzn2027.0.1  |
+|  libblkid-2.42.4-14.amzn2027.0.1  |
+|  libcurl-minimal-8.22.0-1.amzn2027.0.4  |
+|  libdnf5-cli-5.4.2.1-38.amzn2027.0.3  |
+|  libdnf5-5.4.2.1-38.amzn2027.0.3  |
+|  libgcc-16.2.1-2.amzn2027.0.2  |
+|  libmount-2.42.4-14.amzn2027.0.1  |
+|  libnghttp2-1.68.0-3.amzn2027.0.5  |
+|  libpsl-0.21.5-1.amzn2027.0.3  |
+|  librepo-1.20.0-4.amzn2027.0.3  |
+|  libselinux-3.10-1.amzn2027.0.2  |
+|  libsmartcols-2.42.4-14.amzn2027.0.1  |
+|  libsolv-0.7.39-2.amzn2027.0.5  |
+|  libstdc\+\+-16.2.1-2.amzn2027.0.2  |
+|  libuuid-2.42.4-14.amzn2027.0.1  |
+|  libxml2-2.12.10-5.amzn2027.0.4  |
+|  p11-kit-trust-0.26.4-2.amzn2027  |
+|  p11-kit-0.26.4-2.amzn2027  |
+|  rpm-libs-6.0.0-1.amzn2027.0.20  |
+|  rpm-6.0.0-1.amzn2027.0.20  |
+|  system-release-2027.0.20261112-0.amzn2027  |
+|  systemd-libs-262.1-3.amzn2027  |
+|  systemd-standalone-sysusers-262.1-3.amzn2027  |
+
+### Minimal Container
+<a name="amis-2027.0.20261112.Minimal-Container"></a>
+
+This section provides details about new/updated packages in Minimal Container.
+
+| Package |
+| --- |
+|  amazon-linux-repo-cdn-2027.0.20261112-0.amzn2027  |
+|  ca-certificates-2026.2.90\_v9.0.316-101.0.amzn2027.0.4  |
+|  coreutils-single-9.10-3.amzn2027.0.2  |
+|  crypto-policies-20260811-1.git4dcd294.amzn2027.2  |
+|  curl-8.22.0-1.amzn2027.0.4  |
+|  dnf5-5.4.2.1-38.amzn2027.0.3  |
+|  glib2-2.88.1-1.amzn2027.0.1  |
+|  krb5-libs-1.22.2-7.amzn2027.0.1  |
+|  libblkid-2.42.4-14.amzn2027.0.1  |
+|  libcurl-minimal-8.22.0-1.amzn2027.0.4  |
+|  libdnf5-cli-5.4.2.1-38.amzn2027.0.3  |
+|  libdnf5-5.4.2.1-38.amzn2027.0.3  |
+|  libgcc-16.2.1-2.amzn2027.0.2  |
+|  libmount-2.42.4-14.amzn2027.0.1  |
+|  libnghttp2-1.68.0-3.amzn2027.0.5  |
+|  libpsl-0.21.5-1.amzn2027.0.3  |
+|  librepo-1.20.0-4.amzn2027.0.3  |
+|  libselinux-3.10-1.amzn2027.0.2  |
+|  libsmartcols-2.42.4-14.amzn2027.0.1  |
+|  libsolv-0.7.39-2.amzn2027.0.5  |
+|  libstdc\+\+-16.2.1-2.amzn2027.0.2  |
+|  libuuid-2.42.4-14.amzn2027.0.1  |
+|  libxml2-2.12.10-5.amzn2027.0.4  |
+|  p11-kit-trust-0.26.4-2.amzn2027  |
+|  p11-kit-0.26.4-2.amzn2027  |
+|  rpm-libs-6.0.0-1.amzn2027.0.20  |
+|  rpm-6.0.0-1.amzn2027.0.20  |
+|  system-release-2027.0.20261112-0.amzn2027  |
+|  systemd-libs-262.1-3.amzn2027  |
+|  systemd-standalone-sysusers-262.1-3.amzn2027  |
+
+## Contact us
+<a name="amis-2027.0.20261112.contact-us"></a>
+
+**Important**
+ If you want to report a vulnerability or have a security concern regarding AWS cloud services or open source projects, contact AWS Security using the [Vulnerability Reporting page](https://aws.amazon.com/security/vulnerability-reporting/)
+
+We use GitHub issues to gather feedback about AL2027 and to track bug reports and feature requests. You can look at [existing issues on GitHub](https://github.com/amazonlinux/amazon-linux-2027/issues) to see whether your concern is already known. If it is not, open a [new issue on GitHub](https://github.com/amazonlinux/amazon-linux-2027/issues/new/choose).
+
+If you only have questions about AL2027, start or join a [discussion on GitHub](https://github.com/amazonlinux/amazon-linux-2027/discussions). Feedback on AL2027 can also be provided through your designated AWS representative.

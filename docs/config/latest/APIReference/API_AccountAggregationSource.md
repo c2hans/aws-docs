@@ -14,7 +14,6 @@ A collection of accounts and regions.
 The 12-digit account ID of the account being aggregated.
 Type: Array of strings
 Array Members: Minimum number of 1 item.
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: Yes
 

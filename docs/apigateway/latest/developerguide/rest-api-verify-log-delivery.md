@@ -28,7 +28,7 @@ Then send a test request and check your destination:
    + **Amazon S3** – Open the Amazon S3 console and navigate to your bucket. Look for objects with a path prefix that includes your REST API ID.
    + **Firehose** – Check the delivery stream metrics in the Firehose console to confirm data is flowing.
 
-## Troubleshooting
+## Troubleshoot execution log delivery
 <a name="rest-api-verify-log-delivery-troubleshooting"></a>
 
 If logs are not arriving at your destination, check the following:

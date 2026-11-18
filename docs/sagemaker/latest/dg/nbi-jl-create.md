@@ -18,3 +18,5 @@ create-notebook-instance --notebook-instance-name {{<NEW_NOTEBOOK_NAME>}} \
 --role-arn {{<YOUR_ROLE_ARN>}} \
 --platform-identifier notebook-al2023-v1
 ```
+
+To create a notebook instance with Python 3.12, set `--platform-identifier` to `notebook-al2023-v2`.

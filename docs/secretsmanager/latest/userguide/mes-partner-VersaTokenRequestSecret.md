@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-VersaTokenRequestSecret"></a>
 
 ## Secret Value Fields
-<a name="w2aac29c13c63b3"></a>
+<a name="w2aac29c13c65b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -37,12 +37,12 @@ password
 The current password of the user. Secrets Manager rotates this field. If you change the password in Versa Networks yourself, update this field so that the next rotation can sign in.
 
 ## Secret Metadata Fields
-<a name="w2aac29c13c63b5"></a>
+<a name="w2aac29c13c65b5"></a>
 
 This secret type requires no rotation metadata fields.
 
 ## Usage Flow
-<a name="w2aac29c13c63b7"></a>
+<a name="w2aac29c13c65b7"></a>
 
 This rotation type self-rotates. Secrets Manager signs in as the stored user and changes the password of that user, so no separate administrator credential is needed. The secret does not store an access token. Do not write an access token or a refresh token into the secret.
 

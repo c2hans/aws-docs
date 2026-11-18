@@ -32,7 +32,7 @@ The request accepts the following data in JSON format.
  ** [JobCategory](#API_ListJobSchemaVersions_RequestSyntax) **   <a name="sagemaker-ListJobSchemaVersions-request-JobCategory"></a>
 The category of job schemas to list.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: Yes
 
  ** [MaxResults](#API_ListJobSchemaVersions_RequestSyntax) **   <a name="sagemaker-ListJobSchemaVersions-request-MaxResults"></a>

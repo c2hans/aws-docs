@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 
 Retrieves a list that describes one or more specified image builders, if the image builder names are provided. Otherwise, all image builders in the account are described.
 
+The description of each image builder includes its agent access configuration, if agent access is enabled.
+
 ## Request Syntax
 <a name="API_DescribeImageBuilders_RequestSyntax"></a>
 
@@ -55,6 +57,19 @@ Required: No
                "VpceId": "string"
             }
          ],
+         "AgentAccessConfig": {
+            "S3BucketArn": "string",
+            "ScreenImageFormat": "string",
+            "ScreenResolution": "string",
+            "ScreenshotsUploadEnabled": boolean,
+            "Settings": [
+               {
+                  "AgentAction": "string",
+                  "Permission": "string"
+               }
+            ],
+            "UserControlMode": "string"
+         },
          "AppstreamAgentVersion": "string",
          "Arn": "string",
          "CreatedTime": number,

@@ -16,7 +16,7 @@ Type: Integer
 Required: No
 
  ** evaluateOnExit **   <a name="Batch-Type-RetryStrategy-evaluateOnExit"></a>
-Array of up to 5 objects that specify the conditions where jobs are retried or failed. If this parameter is specified, then the `attempts` parameter must also be specified. If none of the listed conditions match, then the job is retried.
+Array of up to 10 objects that specify the conditions where jobs are retried or failed. If this parameter is specified, then the `attempts` parameter must also be specified. If none of the listed conditions match, then the job is retried.
 Type: Array of [EvaluateOnExit](API_EvaluateOnExit.md) objects
 Required: No
 

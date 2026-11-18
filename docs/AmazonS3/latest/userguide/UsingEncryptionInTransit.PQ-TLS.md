@@ -14,7 +14,7 @@ If you’re developing applications that rely on the long-term confidentiality o
 Post-quantum TLS for Amazon S3 is available in all AWS Regions. For a list of S3 endpoints for each AWS Region, see [Amazon Simple Storage Service endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/s3.html) in the *Amazon Web Services General Reference*.
 
 **Note**
-Hybrid post-quantum TLS is supported for all S3 endpoints except for AWS PrivateLink for Amazon S3, Multi-Region Access Points, and S3 Vectors.
+Hybrid post-quantum TLS is supported for all S3 endpoints except for Multi-Region Access Points.
 
 ## Using hybrid post-quantum TLS with Amazon S3
 <a name="pqtls-details"></a>
@@ -27,10 +27,43 @@ Hybrid post-quantum TLS is only used for encryption in transit. This protects yo
 
 **Supported Clients**
 
-The use of hybrid post-quantum TLS requires using a client that supports this functionality. AWS SDKs and tools have cryptographic capabilities and configuration that differ across languages and runtimes. To learn more about post-quantum cryptography for specific tools, see [Enabling hybrid post-quantum TLS](https://docs.aws.amazon.com/payment-cryptography/latest/userguide/pqtls-details.html).
+The use of hybrid post-quantum TLS requires using a client that supports this functionality. AWS SDKs and tools have cryptographic capabilities and configuration that differ across languages and runtimes. To learn more about post-quantum cryptography for specific tools, see [Enabling hybrid post-quantum TLS](https://docs.aws.amazon.com/sdkref/latest/guide/pqtls-details.html) in the *AWS SDKs and Tools Reference Guide*. For a configuration example, see [Configuring hybrid post-quantum TLS for your client](pqtls-how-to.md).
+
+## Verifying hybrid post-quantum TLS with AWS CloudTrail
+<a name="pqtls-verify"></a>
+
+AWS CloudTrail records the key exchange used for each request to Amazon S3 in the `keyExchange` field of the `tlsDetails` element. You can use this field to confirm that your clients use hybrid post-quantum TLS, and to find clients that still use classical key exchange. For more information about `tlsDetails`, see [CloudTrail record contents](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-record-contents.html) in the *AWS CloudTrail User Guide*.
+
+The `keyExchange` field contains one of the following values:
+
+| Value | Meaning |
+| --- | --- |
+| X25519MLKEM768 | Hybrid post-quantum key exchange (X25519 with ML-KEM-768), TLS 1.3 |
+| SecP256r1MLKEM768 | Hybrid post-quantum key exchange (P-256 with ML-KEM-768), TLS 1.3 |
+| x25519 | Classical elliptic curve key exchange, TLS 1.3 or TLS 1.2 |
+| secp256r1, secp384r1 | Classical elliptic curve key exchange, TLS 1.3 or TLS 1.2 |
+
+The following example shows the `tlsDetails` element of a CloudTrail event for a request that used hybrid post-quantum TLS.
+
+```
+{
+  "eventVersion": "1.11",
+  "eventSource": "s3.amazonaws.com",
+  "eventName": "ListBuckets",
+  "awsRegion": "us-east-2",
+  "userAgent": "aws-cli/2.40.1 ...",
+  "tlsDetails": {
+    "tlsVersion": "TLSv1.3",
+    "cipherSuite": "TLS_AES_128_GCM_SHA256",
+    "clientProvidedHostHeader": "s3.us-east-2.amazonaws.com",
+    "keyExchange": "X25519MLKEM768"
+  },
+  ...
+}
+```
 
 **Note**
-PQ-TLS key exchange details for requests to Amazon S3 are not available in AWS CloudTrail events or S3 server access logs.
+Amazon S3 server access logs record the TLS version and cipher suite for each request, but not the key exchange.
 
 ## Learn more about post-quantum TLS
 <a name="pqtls-see-also"></a>

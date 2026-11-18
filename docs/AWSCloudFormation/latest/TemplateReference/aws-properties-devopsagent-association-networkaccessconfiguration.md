@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::DevOpsAgent::Association NetworkAccessConfiguration
 <a name="aws-properties-devopsagent-association-networkaccessconfiguration"></a>
 
-<a name="aws-properties-devopsagent-association-networkaccessconfiguration-description"></a>The `NetworkAccessConfiguration` property type specifies Property description not available. for an [AWS::DevOpsAgent::Association](aws-resource-devopsagent-association.md).
+Specifies how AWS DevOps Agent reaches your application through a release management environment. Specify exactly one access type.
 
 ## Syntax
 <a name="aws-properties-devopsagent-association-networkaccessconfiguration-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-networkaccessconfiguration-properties"></a>
 
 `PrivateAccess`  <a name="cfn-devopsagent-association-networkaccessconfiguration-privateaccess"></a>
-Property description not available.
+Private network access to your application inside a VPC. AWS DevOps Agent reaches the application through a private connection.
 *Required*: Yes
 *Type*: [PrivateNetworkAccess](aws-properties-devopsagent-association-privatenetworkaccess.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

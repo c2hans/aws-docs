@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/index.ht
 title: 'AWS Reference Architecture Diagrams'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # AWS Reference Architecture Diagrams
@@ -95,15 +95,14 @@ Search or filter by category to find reference architecture diagrams across AWS 
 
 ### Digital Marketing
 
-- [Embedded ML models using Amazon SageMaker on AWS Marketplace](/reference-architecture-diagrams/latest/embedded-ml-models-using-sagemaker-on-aws-marketplace/embedded-ml-models-using-sagemaker-on-aws-marketplace.html): This architecture creates an environment where a buyer can consume a seller’s application into their own virtual private cloud (VPC), protecting the buyer’s data privacy while also protecting the seller’s application intellectual property through isolated network access controls and subscription authorization.
-- [Hosting Adobe Experience Manager on AWS](/reference-architecture-diagrams/latest/hosting-adobe-experience-manager/hosting-adobe-experience-manager.html): Deploy Adobe Experience Manager on AWS by using Amazon Elastic Compute Cloud, Amazon Simple Storage Service, Amazon CloudFront, and AWS Lambda.
-- [IBM DataStage on AWS with IBM CP4D](/reference-architecture-diagrams/latest/ibm-datastage-on-aws-with-ibm-cp4d/ibm-datastage-on-aws-with-ibm-cp4d.html): This architecture shows how to build a modern, cloud-native, secure data integration solution to collect, transform, enrich, and deliver data at any scale and complexity.
-- [Knowledge Graphs and GraphRAG with AWS and Neo4j](/reference-architecture-diagrams/latest/knowledge-graphs-and-graphrag-with-neo4j/knowledge-graphs-and-graphrag-with-neo4j.html): This reference architecture demonstrates how AWS services and Neo4j can be used to create knowledge graphs. Those graphs can then be used in a GraphRAG architecture.
-- [OpenText InfoArchive Architecture Using Amazon EKS and Amazon RDS](/reference-architecture-diagrams/latest/opentext-infoarchive-architecture-using-amazon-eks/opentext-infoarchive-architecture-using-amazon-eks.html): Run OpenText InfoArchive on Amazon Elastic Kubernetes Service (Amazon EKS) and Amazon Relational Database Service (Amazon RDS).
-- [Oracle E-Business Suite on AWS](/reference-architecture-diagrams/latest/oracle-e-business-suite-on-aws/oracle-e-business-suite-on-aws.html): Deploy Oracle E-Business Suite on AWS with high availability for the database and application tier.
-- [Oracle PeopleSoft on AWS](/reference-architecture-diagrams/latest/oracle-peoplesoft-on-aws/oracle-peoplesoft-on-aws.html): This architecture shows how to deploy a highly available and resilient Oracle PeopleSoft production environment on AWS.
-- [Security-rich API Management Using IBM API Connect on AWS](/reference-architecture-diagrams/latest/security-rich-api-management-using-ibm-api-connect/security-rich-api-management-using-ibm-api-connect.html): Take advantage of agility, security, and elasticity to create, manage, secure, and socialize all of your APIs across the cloud in order to power digital applications with a market-leading and scalable API management solution.
-- [Mobile Apps for Location-based Engagement](/reference-architecture-diagrams/latest/mobile-apps-location-based-engagement/mobile-apps-location-based-engagement.html): Adding location awareness to mobile apps enables you to offer an enhanced experience, such as sending real-time messages and information based on proximity.
+- [Embedded ML models using Amazon SageMaker AI on AWS Marketplace](/reference-architecture-diagrams/latest/digital-marketing/embedded-ml-models-using-sagemaker-on-aws-marketplace.html): This architecture creates an environment where a buyer can consume a seller's application into their own virtual private cloud (VPC), protecting the buyer's data privacy while also protecting the seller's application intellectual property through isolated network access controls and subscription authorization.
+- [Hosting Adobe Experience Manager on AWS](/reference-architecture-diagrams/latest/digital-marketing/hosting-adobe-experience-manager.html): Deploy Adobe Experience Manager on AWS by using Amazon Elastic Compute Cloud, Amazon Simple Storage Service, Amazon CloudFront, and AWS Lambda.
+- [IBM DataStage on AWS with IBM Cloud Pak for Data](/reference-architecture-diagrams/latest/digital-marketing/ibm-datastage-on-aws-with-ibm-cp4d.html): This architecture shows how to build a modern, cloud-native, secure data integration solution to collect, transform, enrich, and deliver data at any scale and complexity.
+- [Knowledge graphs and GraphRAG with AWS and Neo4j](/reference-architecture-diagrams/latest/digital-marketing/knowledge-graphs-and-graphrag-with-neo4j.html): This reference architecture demonstrates how AWS services and Neo4j can be used to create knowledge graphs. Those graphs can then be used in a GraphRAG architecture.
+- [OpenText InfoArchive on Amazon EKS and Amazon RDS](/reference-architecture-diagrams/latest/digital-marketing/opentext-infoarchive-architecture-using-amazon-eks.html): Run OpenText InfoArchive on Amazon Elastic Kubernetes Service (Amazon EKS) and Amazon Relational Database Service (Amazon RDS).
+- [Oracle E-Business Suite on AWS](/reference-architecture-diagrams/latest/digital-marketing/oracle-e-business-suite-on-aws.html): Deploy Oracle E-Business Suite on AWS with high availability for the database and application tier.
+- [Oracle PeopleSoft on AWS](/reference-architecture-diagrams/latest/digital-marketing/oracle-peoplesoft-on-aws.html): This architecture shows how to deploy a highly available and resilient Oracle PeopleSoft production environment on AWS.
+- [Security-rich API management using IBM API Connect on AWS](/reference-architecture-diagrams/latest/digital-marketing/security-rich-api-management-using-ibm-api-connect.html): Take advantage of agility, security, and elasticity to create, manage, secure, and socialize all of your APIs across the cloud in order to power digital applications with a market-leading and scalable API management solution.
 
 ### eCommerce & Retail / CPG
 

@@ -15,6 +15,9 @@ When you specify a custom launch template for a AWS Batch compute environment, A
 **Note**
 Launch templates aren't supported on AWS Fargate resources.
 
+**Note**
+AWS Batch doesn't support Windows AMIs for Amazon EC2 compute resources in compute environments that use Amazon ECS orchestration. These compute resources must use a Linux-based AMI. The AMI must meet the requirements in [Compute resource AMI specification](batch-ami-spec.md). To run Windows containers, use AWS Fargate compute resources and set the operating system family in the job definition's `runtimePlatform` parameter. For more information, see [runtimePlatform](https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerProperties.html#Batch-Type-ContainerProperties-runtimePlatform) in the *AWS Batch API Reference*.
+
 You must create a launch template before you can associate it with a compute environment. You can create a launch template in the Amazon EC2 console. Or, you can use the AWS CLI or an AWS SDK. For example, the following JSON file represents a launch template that resizes the Docker data volume for the default AWS Batch compute resource AMI and also sets it to be encrypted.
 
 ```

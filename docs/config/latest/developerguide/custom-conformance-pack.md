@@ -5,8 +5,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/custom-conf
 # Creating templates for Custom Conformance Packs for AWS Config
 <a name="custom-conformance-pack"></a>
 
-A custom conformance pack is a unique collection of AWS Config rules and remediation actions that you can deploy together in an account and an AWS Region, or across an organization in AWS Organizations.
-
 To make a custom conformance pack, follow the steps in the following **Customizing the template **section to author a YAML file that contains the list of [AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) or [AWS Config Custom Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html) that you want to work with.
 
 **Topics**

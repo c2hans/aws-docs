@@ -2,14 +2,14 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/services-sns.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Amazon SNS
 <a name="services-sns"></a>
 
-This page provides runnable examples for common [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) (Amazon SNS) workflows: creating topics, subscribing endpoints across protocols, publishing messages with metadata attributes, and managing subscription and topic lifecycle. Each example uses the SDK's asynchronous SNS client with typed inputs and outputs, so you can adapt them to your application without assembling raw request parameters. Start below to install the client package and configure shared setup that the remaining examples build on.
+[Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) (Amazon SNS) delivers each message that you publish to a topic to the endpoints subscribed to that topic. The examples on this page create and list topics, subscribe an endpoint, publish a message with message attributes, and remove subscriptions and topics.
 
-Install the SNS client before running the asynchronous examples on this page:
+Install the Amazon SNS client before you run the examples on this page.
 
 ```
 python -m pip install aws-sdk-sns
@@ -18,21 +18,24 @@ python -m pip install aws-sdk-sns
 ## Set up the examples
 <a name="sns-shared-setup"></a>
 
-The `client` that is used in the following examples can be created from the following snippet by calling `client = await create_client()` from your asynchronous code. Use the client as an asynchronous context manager, or call `await client.close()` after the last operation, as described in [Creating a service client](using-requests.md#using-requests-client). When you resolve the generated asynchronous configuration with `resolve()`, the SDK reads the AWS Region from standard AWS settings, such as environment variables and shared AWS configuration files. The SDK also reads credentials from the same settings. Configure both before running the examples: if no Region is configured, `resolve()` fails before the client is created, and if no credentials are configured, requests fail when the SDK signs them. For more information about the Region and other settings, see [Configuration variables](configuration-variables.md). For how the SDK finds credentials, see [Credential providers](credential-providers.md).
+The examples on this page use the `client` that the following `create_client` function returns. Use the client in a `with` statement, or call `client.close()` after the last operation, as described in [Creating a service client](using-requests.md#using-requests-client).
+
+Configure an AWS Region and credentials before you run the examples. For more information, see [Configuration variables](configuration-variables.md) and [Credential providers](credential-providers.md).
+
+The identity that runs the examples needs the `sns:CreateTopic`, `sns:ListTopics`, `sns:Subscribe`, `sns:Publish`, `sns:Unsubscribe`, and `sns:DeleteTopic` permissions.
 
  **Imports**
 
 ```
-from aws_sdk_sns.client import AsyncSNSClient
-from aws_sdk_sns.config import AsyncSNSConfig
+from aws_sdk_sns import SNSClient, SNSConfig
 ```
 
  **Code**
 
 ```
-async def create_client() -> AsyncSNSClient:
-    config = await AsyncSNSConfig.resolve()
-    return AsyncSNSClient(config=config)
+def create_client() -> SNSClient:
+    config = SNSConfig.resolve()
+    return SNSClient(config=config)
 ```
 
 ## Create a topic
@@ -40,25 +43,22 @@ async def create_client() -> AsyncSNSClient:
 
 For request and response details, see the [create\_topic()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/sns/operations/create_topic/) API reference.
 
-A *topic* is a logical grouping of communication channels that defines which systems to send a message to, for example, fanning out a message to AWS Lambda and an HTTP webhook. You send messages to Amazon SNS, then they're distributed to the channels defined in the topic. This makes the messages available to subscribers.
+A *topic* groups the endpoints that receive a message, for example an AWS Lambda function and an HTTP webhook. When you publish a message to a topic, Amazon SNS delivers it to each endpoint subscribed to the topic.
 
-Create a topic with `create_topic` and retain the returned ARN. Later operations identify the topic by this ARN.
+Create a topic with `create_topic` and keep the returned ARN. Later operations identify the topic by this ARN.
 
  **Imports**
 
 ```
-from aws_sdk_sns.client import AsyncSNSClient
-from aws_sdk_sns.models import CreateTopicInput
+from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
 ```
-async def create_topic(client: AsyncSNSClient, topic_name: str) -> str:
+def create_topic(client: SNSClient, topic_name: str) -> str:
     """Create a topic and return its ARN."""
-    response = await client.create_topic(
-        input=CreateTopicInput(name=topic_name)
-    )
+    response = client.create_topic(name=topic_name)
     if not response.topic_arn:
         raise RuntimeError("SNS did not return a topic ARN")
     return response.topic_arn
@@ -69,26 +69,23 @@ async def create_topic(client: AsyncSNSClient, topic_name: str) -> str:
 
 For request and response details, see the [list\_topics()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/sns/operations/list_topics/) API reference.
 
-`list_topics` can return a partial result. Continue with `next_token` until Amazon SNS returns no continuation token.
+Each `list_topics` response can contain a partial result. Pass the returned `next_token` to the next call until the response has no token.
 
  **Imports**
 
 ```
-from aws_sdk_sns.client import AsyncSNSClient
-from aws_sdk_sns.models import ListTopicsInput
+from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
 ```
-async def list_topics(client: AsyncSNSClient) -> list[str]:
+def list_topics(client: SNSClient) -> list[str]:
     """Return all topic ARNs, following pagination tokens."""
     topic_arns: list[str] = []
     next_token: str | None = None
     while True:
-        page = await client.list_topics(
-            input=ListTopicsInput(next_token=next_token)
-        )
+        page = client.list_topics(next_token=next_token)
         topic_arns.extend(
             topic.topic_arn
             for topic in page.topics or []
@@ -104,73 +101,59 @@ async def list_topics(client: AsyncSNSClient) -> list[str]:
 
 For request and response details, see the [subscribe()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/sns/operations/subscribe/) API reference.
 
-After you create a topic, you can configure which communication channels will be endpoints for that topic. Messages are distributed to these endpoints after Amazon SNS receives them.
-
-Subscribe an endpoint by specifying its protocol and address. This example subscribes an email address that you control. Email subscriptions do not receive publications until the recipient confirms the subscription.
+Subscribe an endpoint by specifying its protocol and address. This example subscribes an email address that you control. An email subscription doesn't receive messages until the recipient confirms the subscription.
 
  **Imports**
 
 ```
-from aws_sdk_sns.client import AsyncSNSClient
-from aws_sdk_sns.models import SubscribeInput
+from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
 ```
-async def subscribe_email(
-    client: AsyncSNSClient, topic_arn: str, email: str
-) -> str:
-    """Request an email subscription and return its ARN or status."""
-    response = await client.subscribe(
-        input=SubscribeInput(
-            topic_arn=topic_arn,
-            protocol="email",
-            endpoint=email,
-            return_subscription_arn=True,
-        )
+def subscribe_email(client: SNSClient, topic_arn: str, email: str) -> str:
+    """Request an email subscription and return its ARN."""
+    response = client.subscribe(
+        topic_arn=topic_arn,
+        protocol="email",
+        endpoint=email,
+        return_subscription_arn=True,
     )
     if not response.subscription_arn:
-        raise RuntimeError("SNS did not return a subscription status")
+        raise RuntimeError("SNS did not return a subscription ARN")
     return response.subscription_arn
 ```
 
-Different protocols have different endpoint formats and confirmation behavior. Do not publish sensitive data until the intended endpoint has confirmed the subscription.
+Each protocol has its own endpoint format and confirmation behavior. Don't publish sensitive data until the intended endpoint confirms the subscription.
 
 ## Publish a message to a topic
 <a name="sns-publish-message"></a>
 
 For request and response details, see the [publish()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/sns/operations/publish/) API reference.
 
-After you have a topic and one or more endpoints configured for it, you can publish a message to it.
-
-Publish to a topic ARN after its intended endpoints are confirmed. Message attributes carry typed metadata separately from the body.
+Publish a message to a topic by its ARN after the topic's endpoints confirm their subscriptions. Message attributes carry typed metadata separately from the message body.
 
  **Imports**
 
 ```
-from aws_sdk_sns.client import AsyncSNSClient
-from aws_sdk_sns.models import MessageAttributeValue, PublishInput
+from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
 ```
-async def publish_to_topic(
-    client: AsyncSNSClient, topic_arn: str, message: str
-) -> str:
+def publish_to_topic(client: SNSClient, topic_arn: str, message: str) -> str:
     """Publish a message and return its message ID."""
-    response = await client.publish(
-        input=PublishInput(
-            topic_arn=topic_arn,
-            message=message,
-            message_attributes={
-                "event_type": MessageAttributeValue(
-                    data_type="String",
-                    string_value="order-created",
-                )
-            },
-        )
+    response = client.publish(
+        topic_arn=topic_arn,
+        message=message,
+        message_attributes={
+            "event_type": {
+                "data_type": "String",
+                "string_value": "order-created",
+            }
+        },
     )
     if not response.message_id:
         raise RuntimeError("SNS did not return a message ID")
@@ -182,25 +165,22 @@ async def publish_to_topic(
 
 For request and response details, see the [unsubscribe()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/sns/operations/unsubscribe/) API reference.
 
-You can remove the communication channels configured as endpoints for a topic. After doing that, the topic itself continues to exist and distributes messages to any other endpoints configured for that topic.
+Unsubscribing removes one endpoint from a topic. The topic still exists and keeps delivering messages to its other subscriptions.
 
-Use `unsubscribe` with the subscription ARN returned by `subscribe`. The subscription must be confirmed first: because the examples request `return_subscription_arn=True`, `subscribe` returns a real ARN even before the endpoint confirms, but unsubscribing a subscription that is still pending confirmation fails with the modeled `InvalidParameterException`.
+Call `unsubscribe` with the subscription ARN that `subscribe` returned. Because the subscribe example sets `return_subscription_arn=True`, `subscribe` returns an ARN even before the endpoint confirms. The endpoint must confirm the subscription before you unsubscribe it. If the subscription is still pending confirmation, `unsubscribe` raises the modeled `InvalidParameterException`.
 
  **Imports**
 
 ```
-from aws_sdk_sns.client import AsyncSNSClient
-from aws_sdk_sns.models import UnsubscribeInput
+from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
 ```
-async def unsubscribe(client: AsyncSNSClient, subscription_arn: str) -> None:
+def unsubscribe(client: SNSClient, subscription_arn: str) -> None:
     """Unsubscribe an endpoint identified by its subscription ARN."""
-    await client.unsubscribe(
-        input=UnsubscribeInput(subscription_arn=subscription_arn)
-    )
+    client.unsubscribe(subscription_arn=subscription_arn)
 ```
 
 ## Delete a topic
@@ -208,26 +188,25 @@ async def unsubscribe(client: AsyncSNSClient, subscription_arn: str) -> None:
 
 For request and response details, see the [delete\_topic()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/sns/operations/delete_topic/) API reference.
 
-Delete a temporary topic when it is no longer needed. Deleting a topic also deletes its subscriptions.
+Delete a topic when you no longer need it. Deleting a topic also deletes its subscriptions.
 
  **Imports**
 
 ```
-from aws_sdk_sns.client import AsyncSNSClient
-from aws_sdk_sns.models import DeleteTopicInput
+from aws_sdk_sns import SNSClient
 ```
 
  **Code**
 
 ```
-async def delete_topic(client: AsyncSNSClient, topic_arn: str) -> None:
+def delete_topic(client: SNSClient, topic_arn: str) -> None:
     """Delete the topic identified by its ARN."""
-    await client.delete_topic(input=DeleteTopicInput(topic_arn=topic_arn))
+    client.delete_topic(topic_arn=topic_arn)
 ```
 
 ## More information
 <a name="sns-more-info"></a>
-+ [Amazon SNS Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
++ [Amazon Simple Notification Service Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
 + [CreateTopic](https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html) in the Amazon Simple Notification Service API Reference
 + [ListTopics](https://docs.aws.amazon.com/sns/latest/api/API_ListTopics.html) in the Amazon Simple Notification Service API Reference
 + [Subscribe](https://docs.aws.amazon.com/sns/latest/api/API_Subscribe.html) in the Amazon Simple Notification Service API Reference

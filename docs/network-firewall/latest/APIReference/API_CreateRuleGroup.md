@@ -64,6 +64,11 @@ You provide your rule group specification in your request using either `RuleGrou
          "RulesString": "{{string}}"
       },
       "RuleVariables": {
+         "ContextSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
          "IPSets": {
             "{{string}}" : {
                "Definition": [ "{{string}}" ]
@@ -88,6 +93,11 @@ You provide your rule group specification in your request using either `RuleGrou
          "RulesString": "{{string}}"
       },
       "RuleVariables": {
+         "ContextSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
          "IPSets": {
             "{{string}}" : {
                "Definition": [ "{{string}}" ]
@@ -191,6 +201,11 @@ You provide your rule group specification in your request using either `RuleGrou
          }
       },
       "RuleVariables": {
+         "ContextSets": {
+            "{{string}}" : {
+               "Definition": [ "{{string}}" ]
+            }
+         },
          "IPSets": {
             "{{string}}" : {
                "Definition": [ "{{string}}" ]

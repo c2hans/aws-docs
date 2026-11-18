@@ -42,7 +42,7 @@ Exporting DB cluster data to Amazon S3 has the following limitations:
 + For partial exports, the `ExportOnly` list has a maximum size of 200 KB.
 + We strongly recommend that you use a unique name for each export task. If you don't use a unique task name, you might receive the following error message:
 
-  ExportTaskAlreadyExistsFault: An error occurred (ExportTaskAlreadyExists) when calling the StartExportTask operation: The export task with the ID {{xxxxx}} already exists.
+  `ExportTaskAlreadyExistsFault: An error occurred (ExportTaskAlreadyExists) when calling the StartExportTask operation: The export task with the ID {{xxxxx}} already exists.`
 + Because some tables might be skipped, we recommend that you verify row and table counts in the data after export.
 
 ## File naming convention

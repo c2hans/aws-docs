@@ -64,6 +64,8 @@ Individual `HTTP_REQUEST` functions still respect their own `RequestTimeoutMilli
 
 This example calls two enrichment APIs in parallel and combines their results into player parameters. It uses two HTTP\_REQUEST functions orchestrated by a CONCURRENT\_EXECUTOR.
 
+**Child 1 – User profile (`fetchUserProfile`)**
+
 ```
 {
     "FunctionId": "fetchUserProfile",
@@ -79,6 +81,8 @@ This example calls two enrichment APIs in parallel and combines their results in
 }
 ```
 
+**Child 2 – Device info (`fetchDeviceInfo`)**
+
 ```
 {
     "FunctionId": "fetchDeviceInfo",
@@ -93,6 +97,8 @@ This example calls two enrichment APIs in parallel and combines their results in
     }
 }
 ```
+
+**Executor (`parallelEnrichment`)**
 
 ```
 {

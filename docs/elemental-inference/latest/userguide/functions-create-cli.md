@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Creating a function using the CLI
 <a name="functions-create-cli"></a>
 
-Use `create-function`. The following example creates a function that sends sampled frames to an Anthropic Claude model and keeps one sentence of description.
+Use `create-function`. The following AWS CLI command creates a function that sends sampled frames to an Anthropic Claude model and keeps one sentence of description. In the command, replace `{{us-west-2}}` with your Region, and `{{model-id}}` with the ID of the Anthropic Claude model or inference profile that you want to invoke.
 
 ```
 aws elemental-inference create-function \
@@ -64,7 +64,7 @@ The response contains the function, including the fields that Elemental Inferenc
 ```
 
 **Important**
-Check `contextTypes` in the response. It is how you confirm that Elemental Inference read your expression the way you intended. A function that you expect to analyze frames but that returns `"contextTypes": []` does not actually reference `media.frames`, so no frames will be decoded and the model will receive no images.
+Check `contextTypes` in the response. It is how you confirm that Elemental Inference read your expression the way you intended. A function that you expect to analyze frames but that returns `"contextTypes": []` does not actually reference `media.frames`, so Elemental Inference decodes no frames and the model receives no images.
 
 For a passthrough function, specify the `passthrough` target instead. The following example reshapes the contextual classification of each scene into a compact record of your own, with no model invocation.
 
@@ -74,9 +74,8 @@ aws elemental-inference create-function \
   --name scene-brand-safety-record \
   --target '{ "passthrough": {} }' \
   --request-expression '{
-    "categories": media.contextual.categories,
-    "risk": media.contextual.garm.risk,
-    "flagged": media.contextual.garm.flagged
+    "categories": [media.contextual.scene.iabTaxonomy.categories.path[-1]],
+    "flagged": media.contextual.scene.garm.suitability.categories[flagged].{ "category": category, "risk": risk }
   }'
 ```
 

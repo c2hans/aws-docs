@@ -83,7 +83,7 @@ By default, failure of individual records within a request does not stop the pro
 
 Successful records include `SequenceNumber` and `ShardID` values, and unsuccessful records include `ErrorCode` and `ErrorMessage` values. The `ErrorCode` parameter reflects the type of error and can be one of the following values: `ProvisionedThroughputExceededException` or `InternalFailure`. `ErrorMessage` provides more detailed information about the `ProvisionedThroughputExceededException` exception including the account ID, stream name, and shard ID of the record that was throttled. The example below has three records in a `PutRecords` request. The second record fails and is reflected in the response.
 
-**Example PutRecords Request Syntax**
+**Example PutRecords request syntax**
 
 ```
 {
@@ -105,7 +105,7 @@ Successful records include `SequenceNumber` and `ShardID` values, and unsuccessf
 }
 ```
 
-**Example PutRecords Response Syntax**
+**Example PutRecords response syntax**
 
 ```
 {

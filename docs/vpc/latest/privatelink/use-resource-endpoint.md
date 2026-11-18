@@ -23,7 +23,7 @@ VPC Lattice does not create a resource endpoint if the following are true:
 ## Create a VPC resource endpoint
 <a name="create-resource-endpoint-aws"></a>
 
-Use the following procedure to create a VPC resource endpoint. After you create a resource endpoint, you can only modify its security groups or tags.
+Use the following procedure to create a VPC resource endpoint. After you create a resource endpoint, you can modify its security groups, private DNS settings, or tags.
 
 **To create a VPC resource endpoint**
 

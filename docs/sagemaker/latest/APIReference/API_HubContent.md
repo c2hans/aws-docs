@@ -69,6 +69,11 @@ Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 Required: Yes
 
+ ** CreatedBy **   <a name="sagemaker-Type-HubContent-CreatedBy"></a>
+Information about the user who created the hub content.
+Type: [UserContext](API_UserContext.md) object
+Required: No
+
  ** FailureReason **   <a name="sagemaker-Type-HubContent-FailureReason"></a>
 The failure reason if importing hub content failed.
 Type: String
@@ -114,6 +119,11 @@ Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `.*`
+Required: No
+
+ ** LastModifiedBy **   <a name="sagemaker-Type-HubContent-LastModifiedBy"></a>
+Information about the user who last modified the hub content.
+Type: [UserContext](API_UserContext.md) object
 Required: No
 
  ** LastModifiedTime **   <a name="sagemaker-Type-HubContent-LastModifiedTime"></a>

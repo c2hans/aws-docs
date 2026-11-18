@@ -45,7 +45,7 @@ When you create a domain-connected RDS for SQL Server DB instance using the Amaz
 + Performing maintenance operations on domain-joined instances
 
 **Important**
-If you delete the `rds-directoryservice-access-role` IAM role, you can't make changes to your domain-connected SQL Server instance through the Amazon RDS console or API. Attempting to modify the instance results in an error message stating: You don't have permission to iam:CreateRole. To request access, copy the following text and send it to your AWS administrator.
+If you delete the `rds-directoryservice-access-role` IAM role, you can't make changes to your domain-connected SQL Server instance through the Amazon RDS console or API. Attempting to modify the instance results in an error message stating: `You don't have permission to iam:CreateRole. To request access, copy the following text and send it to your AWS administrator.`
 This error occurs because Amazon RDS needs to recreate the role to manage the domain connection, but lacks the necessary permissions. Additionally, this error is not logged in CloudTrail, which can make troubleshooting more difficult.
 
 If you accidentally delete the `rds-directoryservice-access-role`, you must have `iam:CreateRole` permissions to recreate it before you can make any changes to your domain-connected SQL Server instance. To recreate the role manually, ensure it has the `AmazonRDSDirectoryServiceAccess` managed policy attached and the appropriate trust relationship that allows the RDS service to assume the role.

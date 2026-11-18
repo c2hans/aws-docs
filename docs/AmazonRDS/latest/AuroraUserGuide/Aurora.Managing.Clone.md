@@ -42,7 +42,7 @@ When you finish using the clone for your testing, development, or other purposes
 
 Aurora cloning currently has the following limitations:
 + You can create as many clones as you want, up to the maximum number of DB clusters allowed in the AWS Region.
-+ You can create up to 15 clones with copy-on-write protocol. After you have 15 clones, the next clone that you create is a full copy. The full-copy protocol acts like a point-in-time recovery.
++ You can create up to 15 clones that use the copy-on-write protocol from each source Aurora DB cluster. After a source DB cluster has 15 copy-on-write clones, the next clone that you create from that DB cluster is a full copy. The full-copy protocol acts like a point-in-time recovery.
 + You can't create a clone in a different AWS Region from the source Aurora DB cluster.
 + You can't create a clone from an Aurora DB cluster without the parallel query feature to a cluster that uses parallel query. To bring data into a cluster that uses parallel query, create a snapshot of the original cluster and restore it to the cluster that's using the parallel query feature.
 + You can't create a clone from an Aurora DB cluster that has no DB instances. You can only clone Aurora DB clusters that have at least one DB instance.

@@ -20,7 +20,7 @@ Use this section to do the following:
 + Customize branding and agent settings, and monitor usage metrics.
 
 **Topics**
-+ [Getting started with AWS Quick](getting-started-admin.md)
++ [Key concepts for AWS Quick administrators](getting-started-admin.md)
 + [Setting up for Quick](admin-setting-up.md)
 + [Configuring VPC connections in AWS Quick Sight](working-with-aws-vpc.md)
 + [Configuring AWS Quick Sight access to AWS data sources](access-to-aws-resources.md)

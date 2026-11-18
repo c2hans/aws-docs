@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/textract/index.html
 title: 'Amazon Textract Documentation'
 canonical_url: https://docs.aws.amazon.com/textract/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # Amazon Textract Documentation

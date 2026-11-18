@@ -33,7 +33,7 @@ The request accepts the following data in JSON format.
  ** [JobCategory](#API_DescribeJob_RequestSyntax) **   <a name="sagemaker-DescribeJob-request-JobCategory"></a>
 The category of the job.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: Yes
 
  ** [JobName](#API_DescribeJob_RequestSyntax) **   <a name="sagemaker-DescribeJob-request-JobName"></a>
@@ -106,7 +106,7 @@ Pattern: `arn:(aws[a-z\-]*):sagemaker:[a-z0-9\-]+:[0-9]{12}:job/[a-zA-Z0-9]+/[a-
  ** [JobCategory](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-JobCategory"></a>
 The category of the job.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 
  ** [JobConfigDocument](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-JobConfigDocument"></a>
 The JSON configuration document for the job.
@@ -143,7 +143,7 @@ Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
  ** [SecondaryStatus](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-SecondaryStatus"></a>
 The detailed secondary status of the job, providing more granular information about the job's progress. Secondary statuses may change between releases.
 Type: String
-Valid Values: `Starting | Downloading | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Interrupted | Failed | Completed | Restarting | Pending | Evaluating | Deleting | DeleteFailed`
+Valid Values: `Starting | Downloading | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Interrupted | Failed | Completed | Restarting | Pending | Generating | PartialGeneration | Evaluating | Validating | Preparing | Executing | Publishing | Finalizing | Transforming | Deleting | DeleteFailed`
 
  ** [SecondaryStatusTransitions](#API_DescribeJob_ResponseSyntax) **   <a name="sagemaker-DescribeJob-response-SecondaryStatusTransitions"></a>
 A list of secondary status transitions for the job, with timestamps and optional status messages.

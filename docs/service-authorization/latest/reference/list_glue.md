@@ -1068,6 +1068,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListIntegrationTableProperties  **
+  - **IAM action:**  [glue:ListIntegrationTableProperties](#list_glue-action-ListIntegrationTableProperties)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListJobs  **
   - **IAM action:**  [glue:ListJobs](#list_glue-action-ListJobs)
   - **Condition key:**
@@ -2873,6 +2879,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [connection\*](#list_glue-resource-connection) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [database\*](#list_glue-resource-database) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [integrationResourceProperty\*](#list_glue-resource-integrationResourceProperty) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_glue-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
+- **   [ListIntegrationTableProperties](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html#aws-glue-api-integrations-ListIntegrationTableProperties)  **
+  - **Description:** Grants permission to list zero-ETL integration table properties
+  - **Resource types (\*required):**
+  - **Condition keys:**
   - **Access level:** List
 
 - **   [ListJobUpgradeAnalyses](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-upgrade-analysis.html#aws-glue-api-upgrade-analysis-ListJobUpgradeAnalyses)  **

@@ -66,7 +66,7 @@ For more information, see [Neural query](https://docs.opensearch.org/latest/quer
 For more information, see [Hybrid query](https://docs.opensearch.org/latest/query-dsl/compound/hybrid/) on the *OpenSearch Documentation* website.
 
 To configure semantic search components in Amazon OpenSearch Serverless, follow the steps in the [Neural Search tutorial](https://docs.opensearch.org/latest/tutorials/vector-search/neural-search-tutorial/) on the *OpenSearch Documentation* website. Keep in mind these important differences:
-+ OpenSearch Serverless supports only remote models. You must configure connectors to remotely hosted models. You don't need to deploy or remove remote models. For more information, see [Getting started with semantic and hybrid search](https://docs.opensearch.org/latest/tutorials/vector-search/neural-search-tutorial/) on the *OpenSearch Documentation* website.
++ OpenSearch Serverless supports only remote models. You must configure connectors to remotely hosted models. For more information, see [Getting started with semantic and hybrid search](https://docs.opensearch.org/latest/tutorials/vector-search/neural-search-tutorial/) on the *OpenSearch Documentation* website. To delete a deployed model, first undeploy it. For the required permissions, see [Delete models and connectors](serverless-configure-machine-learning.md#serverless-configure-machine-learning-delete).
 + Expect up to 15 seconds of latency when you search against your vector index or search for recently created search and ingest pipelines.
 
 ## Configure permissions
@@ -149,7 +149,7 @@ The following describes the collection data access policies required for neural 
             {
                 "ResourceType": "model",
                 "Resource": ["model/{{collection_name}}/*"],
-                "Permission": ["aoss:CreateMLResources"]
+                "Permission": ["aoss:CreateMLResource"]
             }
         ],
         "Principal": [

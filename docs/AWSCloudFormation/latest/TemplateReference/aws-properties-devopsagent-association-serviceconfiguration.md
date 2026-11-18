@@ -161,7 +161,7 @@ Configuration for PagerDuty integration. Specifies the customer email, service I
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReleaseManagement`  <a name="cfn-devopsagent-association-serviceconfiguration-releasemanagement"></a>
-Property description not available.
+Configuration for a release management environment. Specifies the environment name and the network access that AWS DevOps Agent uses to reach your application for automated verification testing.
 *Required*: No
 *Type*: [ReleaseManagementConfiguration](aws-properties-devopsagent-association-releasemanagementconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -13,7 +13,7 @@ You can install Spark on an Amazon EMR cluster along with other Hadoop applicati
 
 For an example tutorial on setting up an EMR cluster with Spark and analyzing a sample data set, see [Tutorial: Getting started with Amazon EMR ](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-gs.html) on the AWS News blog.
 
-You can use the Apache Spark Troubleshooting Agent to troubleshoot your Apache Spark applications on EMR on EC2, Amazon EMR Serverless, and EMR on EKS. To learn more, see [What is Apache Spark Troubleshooting Agent for Amazon EMR and AWS Glue](spark-troubleshoot.md).
+You can use the Apache Spark Troubleshooting Agent to troubleshoot your Apache Spark applications on EMR on EC2, Amazon EMR Serverless, and EMR on EKS. To learn more, see [Spark Troubleshooting and Optimization Agents](spark-troubleshoot.md).
 
 **Important**
 Apache Spark version 2.3.1, available beginning with Amazon EMR release 5.16.0, addresses [CVE-2018-8024](https://nvd.nist.gov/vuln/detail/CVE-2018-8024) and [CVE-2018-1334](https://nvd.nist.gov/vuln/detail/CVE-2018-1334). We recommend that you migrate earlier versions of Spark to Spark version 2.3.1 or later.
@@ -57,7 +57,7 @@ For the version of components installed with Spark in this release, see [Release
 + [Use AWS Glue Data Catalog with Spark on Amazon EMR](emr-spark-glue.md)
 + [Working with a multi-catalog hierarchy in AWS Glue Data Catalog with Spark on Amazon EMR](emr-multi-catalog.md)
 + [Configure Spark](emr-spark-configure.md)
-+ [What is Apache Spark Troubleshooting Agent for Amazon EMR and AWS Glue](spark-troubleshoot.md)
++ [Spark Troubleshooting and Optimization Agents](spark-troubleshoot.md)
 + [Optimize Spark performance](emr-spark-performance.md)
 + [Spark Result Fragment Caching](emr-spark-fragment-result-caching.md)
 + [Use the NVIDIA cuDF Plugin for Apache Spark](emr-spark-cudf.md)

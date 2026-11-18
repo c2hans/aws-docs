@@ -170,6 +170,21 @@ Content-type: application/json
                "Truncated": boolean
             }
          },
+         "ExecutionPausedDetails": {
+            "ExecutionTimeoutPaused": boolean,
+            "PauseRequestTimestamp": number,
+            "Reason": {
+               "Payload": "string",
+               "Truncated": boolean
+            }
+         },
+         "ExecutionResumedDetails": {
+            "Reason": {
+               "Payload": "string",
+               "Truncated": boolean
+            },
+            "ResumeRequestTimestamp": number
+         },
          "ExecutionStartedDetails": {
             "ExecutionTimeout": number,
             "Input": {

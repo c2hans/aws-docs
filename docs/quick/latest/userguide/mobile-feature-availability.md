@@ -13,6 +13,8 @@ The following tables summarize feature availability on mobile compared to deskto
 ## Chat
 <a name="mobile-availability-chat"></a>
 
+**Chat feature availability on mobile**
+
 | Feature | Availability |
 | --- | --- |
 | Chatting with Quick | Available |
@@ -40,6 +42,8 @@ Branching conversations is available on Android only. See [Differences between i
 ## Creating documents and visuals
 <a name="mobile-availability-documents"></a>
 
+**Document and visual feature availability on mobile**
+
 | Feature | Availability |
 | --- | --- |
 | Document creation | Available |
@@ -49,6 +53,8 @@ Branching conversations is available on Android only. See [Differences between i
 
 ## Your content and data
 <a name="mobile-availability-content"></a>
+
+**Content and data feature availability on mobile**
 
 | Feature | Availability | Notes |
 | --- | --- | --- |
@@ -61,6 +67,8 @@ Branching conversations is available on Android only. See [Differences between i
 ## Connectors, agents, and skills
 <a name="mobile-availability-connections"></a>
 
+**Connector, agent, and skill feature availability on mobile**
+
 | Feature | Availability | Notes |
 | --- | --- | --- |
 | Agents | Available | Choose an agent and use agent templates. |
@@ -71,6 +79,8 @@ Branching conversations is available on Android only. See [Differences between i
 
 ## Settings
 <a name="mobile-availability-settings"></a>
+
+**Settings feature availability on mobile**
 
 | Feature | Availability | Notes |
 | --- | --- | --- |

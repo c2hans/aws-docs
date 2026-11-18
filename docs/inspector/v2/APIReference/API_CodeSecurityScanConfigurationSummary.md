@@ -61,13 +61,6 @@ The scope settings that define which repositories will be scanned. If the `Scope
 Type: [ScopeSettings](API_ScopeSettings.md) object
 Required: No
 
- ** tags **   <a name="inspector2-Type-CodeSecurityScanConfigurationSummary-tags"></a>
-The tags associated with the scan configuration.
-Type: String to string map
-Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Minimum length of 0. Maximum length of 256.
-Required: No
-
 ## See Also
 <a name="API_CodeSecurityScanConfigurationSummary_SeeAlso"></a>
 

@@ -70,12 +70,12 @@ sudo yum install java-27-amazon-corretto-jmods
 ```
 java -version
 ```
-Expected output for 27.0.1:
+Expected output for 27.0.1.1:
 
 ```
-openjdk 27.0.1 2026-10-20
- OpenJDK Runtime Environment Corretto-27.0.1.0.11 (build 27.0.1+11-FR)
- OpenJDK 64-Bit Server VM Corretto-27.0.1.0.11 (build 27.0.1+11-FR, mixed mode, sharing)
+openjdk 27.0.1.1 2026-11-17
+ OpenJDK Runtime Environment Corretto-27.0.1.1.4 (build 27.0.1.1+4-FR)
+ OpenJDK 64-Bit Server VM Corretto-27.0.1.1.4 (build 27.0.1.1+4-FR, mixed mode, sharing)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers.

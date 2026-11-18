@@ -46,7 +46,7 @@ The available GPU accelerators are:
 + `rtx-pro-4500` - NVIDIA RTX PRO 4500 GPU (32 GiB memory)
 *Required*: Yes
 *Type*: String
-*Allowed values*: `t4 | a10g | l4 | l40s | rtx-pro-server-6000`
+*Allowed values*: `t4 | a10g | l4 | l40s | rtx-pro-server-6000 | rtx-pro-4500`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Runtime`  <a name="cfn-deadline-fleet-acceleratorselection-runtime"></a>

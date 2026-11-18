@@ -31,6 +31,8 @@ The following table lists the default Java version for applications in `AWS runt
 + **Known limitations** - Spark Connect secure endpoint with Native FGAC support is not available in this release.
 + **Additional Documentation** - For additional Apache Spark documentation, see [Apache Spark 4.0.2 Release Documentation](https://spark.apache.org/releases/spark-release-4-0-2.html).
 
+**Getting Started**
+
 To get started with Apache Spark 4.0.2, create an EMR Serverless application using the AWS CLI:
 
 ```
@@ -39,5 +41,7 @@ aws emr-serverless create-application --type SPARK \
   --name spark4-serverless \
   --region us-east-1
 ```
+
+**Notes**
 + This release supersedes the preview release (emr-spark-8.0-preview). The preview was limited to Spark 4.0.1 and lacked FGAC, Hudi, data connectors, and Persistent Spark History Server.
 + The `--type` parameter for `create-application` uses `SPARK` (uppercase).

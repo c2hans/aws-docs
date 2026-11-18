@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/url-redirection-troubleshooting.html
 ---
 
-# Troubleshooting
+# Troubleshooting URL redirection
 <a name="url-redirection-troubleshooting"></a>
 
 **Links aren't redirected**
 + Verify that the `enabled` parameter is set to `true` and that the allow list contains at least one pattern. To check the values, run `dcv.exe get-config --section url-redirection`.
-+ Verify that the Amazon DCV server and client meet the version requirements in [Prerequisites](url-redirection-prerequisites.md).
++ Verify that the Amazon DCV server and client meet the version requirements in [URL redirection prerequisites](url-redirection-prerequisites.md).
 + Start a new Amazon DCV session after you change the configuration.
 
 **Links opened in the web browser aren't redirected**

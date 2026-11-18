@@ -56,8 +56,10 @@ Required: No
       {
          "arn": "string",
          "createdTime": number,
+         "gcpOrganizationId": "string",
          "name": "string",
          "provider": "string",
+         "serviceAccountEmail": "string",
          "tenantIdentifier": "string"
       }
    ],

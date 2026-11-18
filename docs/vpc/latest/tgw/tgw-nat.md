@@ -33,7 +33,7 @@ Translation doesn't depend on connection state, so return traffic is translated 
 
 **Supported:** VPC, Direct Connect gateway, Site-to-Site VPN (including Private IP VPN), Connect, intra-Region and inter-Region peering, and VPN Concentrator.
 
-**Unsupported:** AWS Cloud WAN peering and route table attachments, Network Function, and Client VPN.
+**Unsupported:** AWS Cloud WAN peering and route table attachments, network function attachments, and Client VPN.
 
 **Additional restrictions:**
 + You can't enable NAT on a VPC attachment that has appliance mode enabled. Disable one before enabling the other.

@@ -53,6 +53,18 @@ The Availability Zones where the firewall endpoints are created for a transit ga
 Type: Array of [AvailabilityZoneMapping](API_AvailabilityZoneMapping.md) objects
 Required: No
 
+ ** ContextStoreId **   <a name="networkfirewall-Type-Firewall-ContextStoreId"></a>
+The unique identifier of the context store that the firewall uses to resolve context sets in its rule groups. Network Firewall discovers the context store from the transit gateway association in Network Manager. This field is only present for transit gateway-attached firewalls whose transit gateway is associated with a context store.
+Type: String
+Required: No
+
+ ** ContextStoreOwnerAccountId **   <a name="networkfirewall-Type-Firewall-ContextStoreOwnerAccountId"></a>
+The AWS account ID that owns the context store. This may be different from the firewall owner's account ID.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `^\d{12}$`
+Required: No
+
  ** DeleteProtection **   <a name="networkfirewall-Type-Firewall-DeleteProtection"></a>
 A flag indicating whether it is possible to delete the firewall. A setting of `TRUE` indicates that the firewall is protected against deletion. Use this setting to protect against accidentally deleting a firewall that is in use. When you create a firewall, the operation initializes this flag to `TRUE`.
 Type: Boolean

@@ -41,3 +41,5 @@ Low likelihood combined with low impact results in a severity of `INFORMATIONAL`
 **Impact** measures the magnitude of harm to your environment if the exposure is exploited. For example, an exposure could lead to loss of accountability, loss of availability, loss of confidentiality from data exposure, or loss of integrity from data corruption.
 
 To assess impact, Security Hub analyzes the effective permissions of the AWS Identity and Access Management principals associated with the resource to determine the actions and AWS services an attacker could invoke. It also identifies the existing resources an attacker could reach and compromise through privilege escalation. For more information, see [Impact and effective permissions](exposure-findings-supported-traits.md#exposure-findings-impact-analysis).
+
+Security Hub also uses the criticality of the affected resource as an input to impact. An exposure on a resource with a higher criticality has a higher impact than the same exposure on a resource with a lower criticality. For more information, see [Resources in Security Hub](resources-adv.md).

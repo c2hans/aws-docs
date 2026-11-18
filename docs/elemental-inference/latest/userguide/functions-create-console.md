@@ -5,18 +5,17 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Creating a function using the console
 <a name="functions-create-console"></a>
 
-1. Open the [Elemental Inference console](https://console.aws.amazon.com/elemental-inference/).
+1. Open the Elemental Inference console at [https://console.aws.amazon.com/elemental-inference/](https://console.aws.amazon.com/elemental-inference/).
 
 1. In the left navigation bar, choose **Functions**, then choose **Create function**.
 
-1. In **Start from a template**, choose a starting point. A template fills in the target and both expressions with a working example that you then edit. **Describe frames** is selected by default. Choose **Start from scratch** to begin with empty fields.
+1. In **Start from a template**, choose a starting point. A template fills in the target and both expressions with a working example that you then edit. **Describe frames** is selected by default. Choose **Start from scratch** to begin with empty fields. The following table describes the templates.
 
 <table>
 <thead>
   <tr><th>Template</th><th>What it does</th></tr>
 </thead>
 <tbody>
-  <tr><td><b>Describe video</b></td><td>Sends a video clip (<code>media.video</code>) to a video-capable model and keeps the description.</td></tr>
   <tr><td><b>Describe frames</b></td><td>Sends sampled frames (<code>media.frames</code>) to a model that accepts images and keeps the description.</td></tr>
   <tr><td><b>Summarize transcript</b></td><td>Sends the transcript (<code>media.transcript</code>) to a model and keeps the summary.</td></tr>
   <tr><td><b>Derive metadata from a scene</b></td><td>Reshapes the contextual classification of a scene (<code>media.contextual</code>) without invoking a model. Requires a per-scene or per-shot trigger when you attach it.</td></tr>
@@ -33,7 +32,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 **Note**
 If you switch to a model from a different provider while a template's expressions are still unedited, the console rewrites the expressions into that provider's request and response format, if the template has one for that provider. It never rewrites expressions that you have edited.
 
-1. In **Expressions**, write the **Request expression** and, optionally, the **Response expression**. The **Available context variables** table above the request field lists the `media` fields you can reference and what each one requires. The console reports an error on the request field, and you can't save, if the expression reads more than one of `media.transcript`, `media.contextual`, and `media.clip`, or if a metadata transform reads `media.frames` or `media.video`. For guidance, see [Writing function expressions](functions-expressions.md).
+1. In **Expressions**, write the **Request expression** and, optionally, the **Response expression**. The **Available context variables** table above the request field lists the `media` fields you can reference and what each one requires. The console reports an error on the request field, and you can't save, if the expression reads more than one of `media.transcript`, `media.contextual`, and `media.clip`, or if a metadata transform reads `media.frames`. For more information about writing expressions, see [Writing function expressions](functions-expressions.md).
 
 1. Optionally, add tags.
 

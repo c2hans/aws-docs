@@ -36,7 +36,7 @@ The request accepts the following data in JSON format.
 The name of the AWS Config rule for which you want to delete remediation exception configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** [ResourceKeys](#API_DeleteRemediationExceptions_RequestSyntax) **   <a name="config-DeleteRemediationExceptions-request-ResourceKeys"></a>
@@ -79,10 +79,6 @@ Type: Array of [FailedDeleteRemediationExceptionsBatch](API_FailedDeleteRemediat
 <a name="API_DeleteRemediationExceptions_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
-
- ** InvalidParameterValueException **
-One or more of the specified parameters are not valid. Verify that your parameters are valid and try again.
-HTTP Status Code: 400
 
  ** NoSuchRemediationExceptionException **
 You tried to delete a remediation exception that does not exist.

@@ -163,7 +163,7 @@ A message that provides information about the error.
 HTTP Status Code: 400
 
  ** KMSDisabledException **
-The request was rejected because the specified customer master key (CMK) isn't enabled.
+The request was rejected because the specified KMS key isn't enabled.
  ** message **
 A message that provides information about the error.
 HTTP Status Code: 400

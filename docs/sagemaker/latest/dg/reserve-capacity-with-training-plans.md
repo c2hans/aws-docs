@@ -115,7 +115,7 @@ SageMaker training plans return up to three offerings of one or two segments. Fo
 **Important**
 Training plan purchases are final and cannot be cancelled.
 Training plans cannot be modified to add or remove instances; they can only be extended to a new end date.
-Training plans cannot be shared across AWS accounts or within your AWS Organization.
+You can share a training plan only with other AWS accounts in your organization in AWS Organizations, by using AWS Resource Access Manager. For more information, see [Setting up cross-account sharing for SageMaker training plans](training-plan-resource-sharing-ram.md).
 + When searching for training plan offerings, SageMaker training plans adapts its search strategy based on the [target resources](#training-plans-target-resources):
 
   **For SageMaker HyperPod clusters**:

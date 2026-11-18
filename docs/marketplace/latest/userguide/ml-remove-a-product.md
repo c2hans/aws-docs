@@ -26,6 +26,8 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-remove-a
 
 1.  Review the changes and then choose **Submit**.
 
- You can monitor your request from the **Requests** tab of the **Machine learning** products page. For more information on statuses, see [Machine learning product status](ml-product-lifecycle.md#ml-product-status).
+ The product's visibility changes to **Restricted** as soon as your request succeeds. There's no waiting period and no review. You can monitor your request from the **Requests** tab of the **Machine learning** products page. For more information on statuses, see [Machine learning product status](ml-product-lifecycle.md#ml-product-status).
 
- Once removed, the product appears in the **Current products** list where you can only download product spreadsheets. If you have questions about removing products, contact the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.
+ To make a **Restricted** product available again, select the product, choose **Request changes**, select **Update product visibility**, and then select **Public**. The AWS Marketplace Seller Operations team might review your request to make the product Public.
+
+ If you have questions about removing products, contact the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.

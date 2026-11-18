@@ -19,3 +19,6 @@ If you have enabled server-side encryption for a data stream with AWS managed KM
 ![Encryption settings with Use customer-managed CMK selected and dropdown to choose CMK.](https://docs.aws.amazon.com/streams/latest/dev/images/cmk2.png)
 
 In addition, you must allow your sharing principal entities to have access to your CMK, using KMS cross account sharing capabilities. Make sure to also make the change in the IAM policies for the sharing principal entities. For more information, see [Allowing users in other accounts to use a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html).
+
+**Note**
+Queues work on an encrypted stream. Because a queue delivers stream data to its consumer, a queue consumer that calls `ReceiveQueueRecords` or `ReceiveDeadLetterQueueRecords` on an encrypted stream needs `kms:Decrypt` permission on the stream's AWS KMS key. `CreateQueue` doesn't need any AWS KMS permissions. For more information, see [Permissions to use user-generated KMS keys](permissions-user-key-KMS.md).

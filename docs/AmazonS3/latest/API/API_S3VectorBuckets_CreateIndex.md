@@ -28,7 +28,14 @@ Content-type: application/json
    },
    "indexName": "{{string}}",
    "metadataConfiguration": {
-      "nonFilterableMetadataKeys": [ "{{string}}" ]
+      "nonFilterableMetadataKeys": [ "{{string}}" ],
+      "textSearchConfigurations": [
+         {
+            "language": "{{string}}",
+            "metadataKey": "{{string}}",
+            "status": "{{string}}"
+         }
+      ]
    },
    "tags": {
       "{{string}}" : "{{string}}"

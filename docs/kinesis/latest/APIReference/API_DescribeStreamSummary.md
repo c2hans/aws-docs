@@ -68,6 +68,7 @@ Required: No
       "KeyId": "string",
       "MaxRecordSizeInKiB": number,
       "OpenShardCount": number,
+      "QueueCount": number,
       "RecordDistributionStrategy": "string",
       "RetentionPeriodHours": number,
       "StreamARN": "string",

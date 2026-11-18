@@ -25,7 +25,7 @@ The additional storage is in increments of whichever of the following is greater
 The maximum storage threshold is the limit that you set for autoscaling the DB instance. It has the following constraints:
 + You must set the maximum storage threshold to at least 10% more than the current allocated storage. We recommend setting it to at least 26% more to avoid receiving an [event notification](USER_Events.Messages.md#RDS-EVENT-0225) that the storage size is approaching the maximum storage threshold.
 
-  For example, if you have DB instance with 1000 GiB of allocated storage, then set the maximum storage threshold to at least 1100 GiB. If you don't, you get an error such as Invalid max storage size for {{engine\_name}}. However, we recommend that you set the maximum storage threshold to at least 1260 GiB to avoid the event notification.
+  For example, if you have DB instance with 1000 GiB of allocated storage, then set the maximum storage threshold to at least 1100 GiB. If you don't, you get an error such as `Invalid max storage size for {{engine_name}}`. However, we recommend that you set the maximum storage threshold to at least 1260 GiB to avoid the event notification.
 + For a DB instance that uses Provisioned IOPS (io1 or io2 Block Express) storage, the ratio of IOPS to maximum storage threshold (in GiB) must be within a certain range. For more information, see [Provisioned IOPS SSD storage](CHAP_Storage.md#USER_PIOPS).
 + You can't set the maximum storage threshold for autoscaling-enabled instances to a value greater than the maximum allocated storage for the database engine and DB instance class.
 

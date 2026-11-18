@@ -38,7 +38,8 @@ A PromQL alarm carries its threshold inside the query. To turn any of these quer
 
 ```
 100 * {"valkey.memory.used", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
-    / {"valkey.memory.max",  "@resource.aws.elasticache.replication_group.id"="my-cluster"}
+    / on ("@resource.aws.elasticache.node.id") group_left
+      {"valkey.memory.max",  "@resource.aws.elasticache.replication_group.id"="my-cluster"}
     > 90
 ```
 
@@ -52,7 +53,8 @@ Choose a threshold that suits your workload. A query that already ends in a comp
 
 ```
 100 * {"valkey.memory.used", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
-    / {"valkey.memory.max",  "@resource.aws.elasticache.replication_group.id"="my-cluster"}
+    / on ("@resource.aws.elasticache.node.id") group_left
+      {"valkey.memory.max",  "@resource.aws.elasticache.replication_group.id"="my-cluster"}
 ```
 
 A ratio against the configured limit, so it is comparable across different configurations.
@@ -63,7 +65,7 @@ A ratio against the configured limit, so it is comparable across different confi
 ```
 100 * predict_linear({"valkey.memory.used",
                       "@resource.aws.elasticache.replication_group.id"="my-cluster"}[1h], 3600)
-    / on ("@resource.aws.elasticache.node.id")
+    / on ("@resource.aws.elasticache.node.id") group_left
       {"valkey.memory.max", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
 ```
 
@@ -73,9 +75,11 @@ A ratio against the configured limit, so it is comparable across different confi
 <a name="otel-metrics-queries.memory-and-capacity.memory-counted-toward-eviction-as-a-percentage-of-the-limit"></a>
 
 ```
-100 * ( {"valkey.memory.used",                  "@resource.aws.elasticache.replication_group.id"="my-cluster"}
-      - {"valkey.memory.not_counted_for_evict", "@resource.aws.elasticache.replication_group.id"="my-cluster"} )
-    / {"valkey.memory.max",                     "@resource.aws.elasticache.replication_group.id"="my-cluster"}
+100 * ( {"valkey.memory.used", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
+        - on ("@resource.aws.elasticache.node.id") group_left
+          {"valkey.memory.not_counted_for_evict", "@resource.aws.elasticache.replication_group.id"="my-cluster"} )
+    / on ("@resource.aws.elasticache.node.id") group_left
+      {"valkey.memory.max", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
 ```
 
 The engine excludes some memory when deciding whether to evict, so this tracks the eviction decision more closely than total memory use does.
@@ -87,7 +91,8 @@ The engine excludes some memory when deciding whether to evict, so this tracks t
 
 ```
 100 * {"valkey.memory.used.overhead", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
-    / {"valkey.memory.used",          "@resource.aws.elasticache.replication_group.id"="my-cluster"}
+    / on ("@resource.aws.elasticache.node.id") group_left
+      {"valkey.memory.used", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
 ```
 
 A high share usually points to client buffer growth or replication backlog rather than dataset size.
@@ -363,7 +368,8 @@ rate({"valkey.keys.expired_fields", "@resource.aws.elasticache.replication_group
 
 ```
 100 * {"valkey.clients.connected", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
-    / {"valkey.clients.max",       "@resource.aws.elasticache.replication_group.id"="my-cluster"}
+    / on ("@resource.aws.elasticache.node.id") group_left
+      {"valkey.clients.max", "@resource.aws.elasticache.replication_group.id"="my-cluster"}
 ```
 
 A ratio against the configured limit, so it is comparable across different configurations.
@@ -498,7 +504,7 @@ A ratio against the limit the instance reports, so it is comparable across node 
 ```
 100 * rate({"system.network.io", "network.io.direction"="receive",
             "@resource.aws.elasticache.replication_group.id"="my-cluster"}[5m])
-    / on ("@resource.aws.elasticache.node.id")
+    / on ("@resource.aws.elasticache.node.id") group_left
       {"system.network.bandwidth.limit",
        "@resource.aws.elasticache.replication_group.id"="my-cluster"}
 ```
@@ -733,7 +739,7 @@ Read with the average cycle time: a falling cycle rate together with rising cycl
 
 ```
   rate({"valkey.eventloop.duration", "@resource.aws.elasticache.replication_group.id"="my-cluster"}[5m])
-- on ("@resource.aws.elasticache.node.id")
+- on ("@resource.aws.elasticache.node.id") group_left
   sum without ("cpu.mode") (
     rate({"process.cpu.time", "thread.type"="main",
           "@resource.aws.elasticache.replication_group.id"="my-cluster"}[5m]))

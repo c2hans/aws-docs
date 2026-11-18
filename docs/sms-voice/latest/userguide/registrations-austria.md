@@ -9,6 +9,8 @@ All alphanumeric sender IDs used to send SMS messages to Austrian mobile numbers
 
 Dedicated phone numbers (local long codes or short codes) are not affected by this regulation and do not require registration.
 
+**Sender ID requirements**
+
 Austria sender IDs must comply with the following rules:
 + Minimum 3 characters, maximum 11 characters
 + Permitted characters: A-Z, a-z, 0-9, space, \+, -, \_, &
@@ -18,6 +20,8 @@ Austria sender IDs must comply with the following rules:
 + Cannot resemble a phone number
 + Generic terms are not permitted (for example: doctor, pharmacy, OTP, SMS info)
 + Case-sensitive — registering "MyBrand" does not cover "MYBRAND"
+
+**How to register your sender ID for Austria**
 
 1. Open the AWS End User Messaging SMS console at [https://console.aws.amazon.com/sms-voice/](https://console.aws.amazon.com/sms-voice/).
 
@@ -68,6 +72,8 @@ If you already created a registration when requesting the origination identity, 
 
 1. Choose **Submit registration**.
 
+**Common denial reasons**
+
 If your registration is denied, the AWS End User Messaging SMS console shows a denial reason on the registration. The following are the most common reasons Austria registrations are denied and what to do about each one.
 
 Sender ID invalid
@@ -86,6 +92,8 @@ This means you did not attach the letter of authorization or the proof of sender
 **What to do:** Attach both the letter of authorization and the proof of sender ID connection, then resubmit.
 
 A denied registration can be updated and resubmitted as a new version by following the directions in [Edit a registration in AWS End User Messaging SMS](registrations-edit.md).
+
+**Frequently asked questions**
 
 What happens if I send messages with an unregistered sender ID after October 1, 2026?
 Messages sent using an unregistered alphanumeric sender ID will be blocked by Austrian mobile operators and will not be delivered.

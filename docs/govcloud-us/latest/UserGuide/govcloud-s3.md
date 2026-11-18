@@ -33,6 +33,7 @@ The following differences apply to Amazon Simple Storage Service:
 +  Amazon S3 Tables migration is not available.
 + Access points for directory buckets are not available.
 + You cannot use S3 access points to access file data stored on Amazon FSx file systems.
++ Full-text search and hybrid search for Amazon S3 Vectors are not available in the AWS GovCloud (US) Regions.
 
 ## Documentation
 <a name="govcloud-s3-docs"></a>

@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 # `AWSSupport-RecoverWorkSpaceWithApproval`
 <a name="automation-aws-recoverworkspacewithapproval"></a>
 
+**Description**
+
 The `AWSSupport-RecoverWorkSpaceWithApproval` runbook performs recovery steps on the Amazon WorkSpaces (WorkSpaces) instance you specify if its operational state is `Unhealthy`. Depending on the values you specify for the input parameters and the snapshots available, the runbook reboots, restores, and rebuilds the WorkSpaces until its status becomes `Available`. This runbook uses the `aws:approve` automation action, which temporarily pauses the automation until the designated principals either approve or deny the recovery actions selected.
 
 **Important**
@@ -12,6 +14,8 @@ Restoring or rebuilding a WorkSpace is a potentially destructive action that can
 The restore option recreates both the root volume and user volume based on the most recent snapshots. The rebuild option recreates the user volume from the most recent snapshot and recreates the WorkSpace from the image associated with the bundle the WorkSpace was created from. Applications that were installed or system settings that were changed after the WorkSpace was created are lost. For more information about restoring and rebuilding WorkSpaces, see [Restore a WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/restore-workspace.html) and [Rebuild a WorkSpace](https://docs.aws.amazon.com/workspaces/latest/adminguide/rebuild-workspace.html) in the *Amazon WorkSpaces Administration Guide*.
 
 Before using this runbook, we recommend reviewing the [Troubleshooting Amazon WorkSpaces Issues](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-troubleshooting.html) topic in the Amazon WorkSpaces Administration Guide.
+
+**How it works**
 
 The runbook performs the following recovery actions in sequence, stopping as soon as the WorkSpaces reaches an `Available` state:
 + Retrieves the initial state of the WorkSpaces and confirms it is in a recoverable state (`Unhealthy`, `Error`, `Impaired`, `Stopped`, or `Available`).
@@ -74,6 +78,8 @@ Example IAM policy:
     ]
 }
 ```
+
+**Instructions**
 
 Follow these steps to configure the automation:
 
@@ -145,6 +151,8 @@ Follow these steps to configure the automation:
    + **`assertWorkSpaceFinalState`**: Confirms the WorkSpaces status is `Available`. The automation fails if the WorkSpaces is not in an `Available` state.
 
 1. After completion, review the Outputs section for the detailed results of the execution.
+
+**References**
 
 Systems Manager Automation
 + [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/documents/AWSSupport-RecoverWorkSpaceWithApproval/description)

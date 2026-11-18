@@ -2,12 +2,12 @@
 source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/functions-examples-passthrough-gamestate.html
 ---
 
-# Build a scoreboard headline from the game state without a model
+# Example – Build a scoreboard headline from the game state without a model
 <a name="functions-examples-passthrough-gamestate"></a>
 
 A passthrough function that turns the tracked game state into a display string and a clutch-time flag, refreshed every 5 seconds. Requires an enabled event clipping output that is mapped to a sports data source, so that `media.clip.eventState` is populated. For more information, see [Aligning clips to plays with Sports Data](create-feed-outputs.md#event-clip-sports-data).
 
-The request expression reads the game phase that the data source reports and does the arithmetic. The response expression formats the result. For the phase values, see [Fields in `media.clip`](functions-context.md#functions-context-clip). Set `$regulationPeriods` to the number of regulation periods in the game: 4 for quarters, 2 for halves.
+The request expression reads the game phase that the data source reports and does the arithmetic. The response expression formats the result. For information about the phase values, see [Fields in `media.clip`](functions-context.md#functions-context-clip). Set `$regulationPeriods` to the number of regulation periods in the game: 4 for quarters, 2 for halves.
 
 **Target**
 
@@ -76,7 +76,7 @@ Test a value with `!= null` before you compare it with `<`, `>`, `<=`, or `>=`. 
   "status": "ENABLED",
   "outputConfig": {
     "function": {
-      "functionArn": "arn:aws:elemental-inference:us-west-2:111122223333:function/{{function-id}}",
+      "functionArn": "arn:aws:elemental-inference:{{us-west-2}}:{{111122223333}}:function/{{function-id}}",
       "trigger": { "fixedInterval": { "intervalSeconds": 5 } },
       "clippingSettings": { "outputName": "game-clips" }
     }
@@ -84,7 +84,7 @@ Test a value with `!= null` before you compare it with `<`, `>`, `<=`, or `>=`. 
 }
 ```
 
-**Results** for four different game states.
+**Results**. The following table shows the stored value for four different game states.
 
 | `media.clip.eventState` | Stored value |
 | --- | --- |

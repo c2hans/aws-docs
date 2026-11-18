@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-feat
 
 The following table compares key features between IDC and Amazon Q Business implementations:
 
+**IDC and non-IDC implementation feature comparison**
+
 | Feature | IDC Implementation | Non-IDC Implementation |
 | --- | --- | --- |
 | User management | AWS Identity Center | AWS Quick |

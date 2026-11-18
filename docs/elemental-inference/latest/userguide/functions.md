@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Using functions in Elemental Inference
 <a name="functions"></a>
 
-The other Elemental Inference features — smart crop, event clipping, smart subtitles, and contextual metadata — produce a fixed set of metadata. For information about configuring them, see [Configuring each feature](create-feed-outputs.md). A *function* lets you add your own analysis to the same feed, and read the result from the same metadata timeline.
+The other Elemental Inference features — smart crop, event clipping, smart subtitles, and contextual metadata — produce a fixed set of metadata. For information about configuring them, see [Configuring each feature](create-feed-outputs.md). With a *function*, you can add your own analysis to the same feed, and read the result from the same metadata timeline.
 
 You define a function once, in your own account, and attach it to any number of feeds in that account. On each attachment you choose how often the function runs. Elemental Inference gathers the media and metadata that your function asks for, builds a request from your instructions, optionally sends that request to a model in *your* Amazon Bedrock account, shapes the result, and writes it to the feed's metadata timeline next to the native metadata. You retrieve it with the same `GetMetadata` operation that you already use.
 
@@ -29,5 +29,5 @@ Functions do not affect the rest of the feed. If a function fails, the feed's ot
 + [Example functions](functions-examples.md)
 + [Managing existing functions](functions-managing.md)
 + [Using functions with AWS Elemental MediaLive](functions-medialive.md)
-+ [Quotas and limits for functions](functions-quotas.md)
++ [AWS Elemental Inference function quotas](functions-quotas.md)
 + [Troubleshooting functions](functions-troubleshooting.md)

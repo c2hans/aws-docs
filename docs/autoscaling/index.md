@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/autoscaling/index.html
 title: 'Auto Scaling Documentation'
 canonical_url: https://docs.aws.amazon.com/autoscaling/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # Auto Scaling Documentation

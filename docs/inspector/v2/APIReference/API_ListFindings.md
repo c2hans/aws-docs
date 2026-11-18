@@ -328,6 +328,30 @@ Content-type: application/json
             "startInclusive": {{number}}
          }
       ],
+      "machineImageId": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "machineImageName": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "machineImageOwnerAccountId": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "machineImagePlatform": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
       "networkProtocol": [
          {
             "comparison": "{{string}}",
@@ -647,6 +671,19 @@ Content-type: application/json
                      "pushedAt": number,
                      "registry": "string",
                      "repositoryName": "string"
+                  },
+                  "machineImage": {
+                     "architecture": "string",
+                     "creationDate": number,
+                     "isPublic": boolean,
+                     "machineImageId": "string",
+                     "name": "string",
+                     "ownerAccountId": "string",
+                     "platform": "string",
+                     "rootDeviceType": "string",
+                     "sourceResourceId": "string",
+                     "state": "string",
+                     "virtualizationType": "string"
                   },
                   "serverlessFunction": {
                      "architectures": [ "string" ],

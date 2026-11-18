@@ -40,6 +40,8 @@ As you review, remove lessons you don’t need. If you already know some of the 
 
 After you save your personalized learning track, choose **Start** on any lesson to see every available format for that lesson. Choose a format. Then work your way through each milestone of your personalized learning track.
 
+<a name="faqs"></a>**FAQs**
+
  **What if my goal doesn’t fit one of the types listed above in Step 3?**
 
 If a personalized learning track can’t be built for your goal, the AI assistant tells you and might suggest another way to frame your goal.

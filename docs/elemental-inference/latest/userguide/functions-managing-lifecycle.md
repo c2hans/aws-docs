@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Function status
 <a name="functions-managing-lifecycle"></a>
 
-A function's status controls what you can change about it.
+The status of a function controls what you can change about it, as the following table shows.
 
 | Status | Meaning |
 | --- | --- |

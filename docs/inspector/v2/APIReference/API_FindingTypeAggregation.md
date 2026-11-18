@@ -17,9 +17,9 @@ Valid Values: `NETWORK_REACHABILITY | PACKAGE_VULNERABILITY | CODE_VULNERABILITY
 Required: No
 
  ** resourceType **   <a name="inspector2-Type-FindingTypeAggregation-resourceType"></a>
-The resource type to aggregate.
+The resource type to aggregate. For Google Cloud Platform (GCP) resources, the resource type is `compute.googleapis.com/Instance`, `cloudfunctions.googleapis.com/Function`, or `artifactregistry.googleapis.com/DockerImage`.
 Type: String
-Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.Web/sites`
+Valid Values: `AWS_EC2_INSTANCE | AWS_ECR_CONTAINER_IMAGE | AWS_LAMBDA_FUNCTION | CODE_REPOSITORY | Microsoft.Compute/virtualMachines | Microsoft.ContainerRegistry/registry/containerImage | Microsoft.Web/sites | cloudfunctions.googleapis.com/Function | compute.googleapis.com/Instance | artifactregistry.googleapis.com/DockerImage`
 Required: No
 
  ** sortBy **   <a name="inspector2-Type-FindingTypeAggregation-sortBy"></a>

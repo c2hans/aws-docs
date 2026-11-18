@@ -37,7 +37,7 @@ Before you begin, you need the public DNS name of the primary node and your key 
 ## Set up an SSH tunnel using dynamic port forwarding with the AWS CLI
 <a name="emr-ssh-tunnel-cli"></a>
 
-You can create an SSH connection with the primary node using the AWS CLI on Windows and on Linux, Unix, and Mac OS X. If you are using the AWS CLI on Linux, Unix, or Mac OS X, you must set permissions on the `.pem` file as shown in [To configure the key pair private key file permissions](emr-connect-master-node-ssh.md#emr-keypair-file-permission-config). If you are using the AWS CLI on Windows, PuTTY must appear in the path environment variable or you may receive an error such as OpenSSH or PuTTY not available.<a name="ssh-tunnel-cli"></a>
+You can create an SSH connection with the primary node using the AWS CLI on Windows and on Linux, Unix, and Mac OS X. If you are using the AWS CLI on Linux, Unix, or Mac OS X, you must set permissions on the `.pem` file as shown in [To configure the key pair private key file permissions](emr-connect-master-node-ssh.md#emr-keypair-file-permission-config). If you are using the AWS CLI on Windows, PuTTY must appear in the path environment variable or you may receive an error such as `OpenSSH or PuTTY not available`.<a name="ssh-tunnel-cli"></a>
 
 **To set up an SSH tunnel using dynamic port forwarding with the AWS CLI**
 

@@ -10,6 +10,8 @@ In an unmanaged compute environment, you manage your own compute resources. AWS 
 **Note**
 AWS Fargate resources aren't supported in unmanaged compute environments.
 
+**Unmanaged Amazon ECS compute environments**
+
 For unmanaged Amazon ECS compute environments, you must verify that the AMI you use for your compute resources meets the Amazon ECS container instance AMI specification. For more information, see [Compute resource AMI specification](batch-ami-spec.md) and [Tutorial: Create a compute resource AMI](create-batch-ami.md).
 
 After you created your unmanaged compute environment, use the [DescribeComputeEnvironments](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeComputeEnvironments.html) API operation to view the compute environment details. Find the Amazon ECS cluster that's associated with the environment and then manually launch your container instances into that Amazon ECS cluster.
@@ -28,6 +30,8 @@ For more information, see [Launching an Amazon ECS container instance](https://d
 #!/bin/bash
 echo "ECS_CLUSTER={{ecsClusterArn}}" >> /etc/ecs/ecs.config
 ```
+
+**Unmanaged Amazon EKS compute environments**
 
 In an unmanaged Amazon EKS compute environment, you manage your own Kubernetes nodes while AWS Batch handles job scheduling and placement. It allows you to directly control your Kubernetes infrastructure for security, compliance, or operational requirements. You are responsible for provisioning and configuring your Amazon EKS nodes, while AWS Batch integrates with your existing Amazon EKS cluster to schedule and run jobs.
 

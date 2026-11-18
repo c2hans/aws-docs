@@ -92,7 +92,7 @@ The inference pipeline error messages indicate which containers failed.
 
 If an error occurs while SageMaker AI is invoking an endpoint, the service returns a `ModelError` (error code 424), which indicates which container failed. If the request payload (the response from the previous container) exceeds the limit of 5 MB, SageMaker AI provides a detailed error message, such as:
 
-Received response from MyContainerName1 with status code 200. However, the request payload from MyContainerName1 to MyContainerName2 is 6000000 bytes, which has exceeded the maximum limit of 5 MB.
+`Received response from MyContainerName1 with status code 200. However, the request payload from MyContainerName1 to MyContainerName2 is 6000000 bytes, which has exceeded the maximum limit of 5 MB.`
 
 ``
 

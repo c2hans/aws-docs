@@ -22,6 +22,11 @@ Type: Array of [AccessEndpoint](API_AccessEndpoint.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 4 items.
 Required: No
 
+ ** AgentAccessConfig **   <a name="WorkSpacesApplications-Type-ImageBuilder-AgentAccessConfig"></a>
+The agent access configuration of the image builder, if agent access is enabled.
+Type: [ImageBuilderAgentAccessConfig](API_ImageBuilderAgentAccessConfig.md) object
+Required: No
+
  ** AppstreamAgentVersion **   <a name="WorkSpacesApplications-Type-ImageBuilder-AppstreamAgentVersion"></a>
 The version of the WorkSpaces Applications agent that is currently being used by the image builder.
 Type: String

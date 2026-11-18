@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/related-services.html
+---
+
+# AWS services that integrate with Amazon Route 53 Global Resolver for enhanced DNS security
+<a name="related-services"></a>
+
+Amazon Route 53 Global Resolver integrates seamlessly with other AWS services to provide comprehensive DNS security and management capabilities. These integrations enhance Amazon Route 53 Global Resolver's core functionality and enable advanced use cases:
+
+Amazon Route 53
+Amazon Route 53 Global Resolver integrates with Amazon Route 53 to resolve private hosted zones globally. For more information, see the [Amazon Route 53 Developer Guide](https://docs.aws.amazon.com/route53/latest/developerguide/).
+
+Amazon CloudWatch
+Amazon Route 53 Global Resolver can deliver query logs to Amazon CloudWatch for monitoring and analysis. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/cloudwatch/).
+
+Amazon Simple Storage Service
+Amazon Route 53 Global Resolver can store query logs in Amazon Simple Storage Service buckets for long-term storage and analysis. For more information, see the [Amazon S3 User Guide](https://docs.aws.amazon.com/s3/).
+
+Amazon Data Firehose
+Amazon Route 53 Global Resolver can stream query logs to Amazon Data Firehose for real-time processing. For more information, see the [Amazon Data Firehose Developer Guide](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html).
+
+Route 53 Resolver DNS Firewall
+Amazon Route 53 Global Resolver complements Route 53 Resolver DNS Firewall by providing global DNS filtering capabilities. For more information, see the [Route 53 Resolver DNS Firewall documentation](https://docs.aws.amazon.com/route53/latest/developerguide/resolver-dns-firewall.html).
+
+AWS Global Accelerator
+Amazon Route 53 Global Resolver works with AWS Global Accelerator to provide optimized global network performance for DNS resolution. For more information, see the [AWS Global Accelerator Developer Guide](https://docs.aws.amazon.com/global-accelerator/).
+
+AWS Cloud WAN
+Amazon Route 53 Global Resolver can connect to an AWS Cloud WAN core network through a core network endpoint. After you connect the core network, its segments can be used as access sources, so clients that reach the global resolver from those segments are authorized for DNS resolution. For more information, see [Connecting a global resolver to a Cloud WAN core network](core-network-endpoints.md).

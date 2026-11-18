@@ -18,9 +18,14 @@ Before starting Lightsail Setup, confirm the following:
 + **A running Lightsail WordPress instance.** Your instance must be in a running state. If you don't have one, see [Create an instance](how-to-create-amazon-lightsail-instance-virtual-private-server-vps.md).
 ![A WordPress instance in a running state in the Lightsail console.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/instance-running.png)
 + **A domain registered outside of Lightsail.** Your domain is registered with a registrar other than Lightsail – for example, GoDaddy, Namecheap, or Cloudflare. The domain must be verified and active. If your domain is registered through Lightsail or Route 53, use [Enable HTTPS on your WordPress instance with a Lightsail managed domain](amazon-lightsail-enabling-https-on-wordpress.md) instead.
-+ **Access to your DNS provider.** You need the ability to create DNS records (A and AAAA) at the service that manages your domain's DNS. This could be a Route 53 hosted zone, Cloudflare, GoDaddy, Google Cloud DNS, or another provider. You can also use a Lightsail DNS zone to manage your DNS records – see [Create a DNS zone to manage domain records](lightsail-how-to-create-dns-entry.md).
-+ **Ports 22, 80, and 443 are configured to enable Lightsail Setup.** Port 22 is required for Lightsail Setup to connect to your instance. Port 80 is required for domain ownership validation during certificate installation. Port 443 is required for serving HTTPS traffic after setup. You can verify this on the **Networking** tab of your instance's management page. For more information, see [Instance firewalls](understanding-firewall-and-port-mappings-in-amazon-lightsail.md).
-![Firewall rules showing ports 22, 80, and 443 configured on the Networking tab in the Lightsail console.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/ports-open.png)
++ **Access to your DNS provider.** You need the ability to create DNS records (an A record, and optionally an AAAA record) at the service that manages your domain's DNS. This could be a Route 53 hosted zone, Cloudflare, GoDaddy, Google Cloud DNS, or another provider. You can also use a Lightsail DNS zone to manage your DNS records – see [Create a DNS zone to manage domain records](lightsail-how-to-create-dns-entry.md).
++ **Your instance firewall allows Lightsail Setup.** Ensure that your instance's firewall allows the following traffic, so that Lightsail Setup can configure HTTPS:
+  + **SSH** (TCP 22) – Must allow **Lightsail Setup**. Lightsail Setup uses this port to connect to your instance.
+  + **HTTP** (TCP 80) – Must allow any IPv4 and IPv6 address. Let's Encrypt uses this port to validate domain ownership.
+  + **HTTPS** (TCP 443) – Must allow any IPv4 and IPv6 address. Your website uses this port to serve HTTPS traffic.
+
+  To check, open the **Networking** tab of your instance. If the **SSH** rule doesn't allow **Lightsail Setup**, edit the rule and select **Lightsail Setup access**. To learn more, see [Instance firewalls](understanding-firewall-and-port-mappings-in-amazon-lightsail.md).
+![Firewall rules on the Networking tab in the Lightsail console showing HTTP (80) and HTTPS (443) open to any IPv4 or IPv6 address, and SSH (22) allowing Lightsail browser SSH and Lightsail Setup.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/ports-open.png)
 
 ## Step 2: Start Lightsail Setup
 <a name="thirdparty-start-setup"></a>
@@ -30,15 +35,15 @@ Before starting Lightsail Setup, confirm the following:
 1. Choose your WordPress instance from the instance list.
 ![Selecting a WordPress instance from the instance list in the Lightsail console.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/instance-selection.png)
 
-1. Choose the **Connect** tab and choose **Set up your website**.
-![The Set up your website button on the Connect tab in the Lightsail console.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/your-website.png)
+1. In the **Getting started** tab, choose **Start Lightsail Setup**.
+![The "Start Lightsail Setup" button on the "Getting started" tab in the Lightsail console.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/your-website.png)
 
 ## Step 3: Select your domain
 <a name="thirdparty-select-domain"></a>
 
-Because your domain is registered outside of Lightsail, choose **Third-party domain** and enter your domain name (for example, `example.com`).
+Because your domain is registered outside of Lightsail, choose **Third-party domain** and enter your domain name (for example, `exampletest.com`).
 
-![Entering a domain name in the Third-party domain field of the Lightsail Setup workflow.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/thirdparty-domain-name.png)
+![Entering a domain name in the "Third-party domain" field of the Lightsail Setup workflow.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/thirdparty-domain-name.png)
 
 Choose **Use this domain** to continue.
 
@@ -116,7 +121,12 @@ After this step, Lightsail Setup attaches the static IP to your instance and dis
 
 This step appears if you chose **Third-party DNS** in Step 4. If you chose **Lightsail DNS zone**, continue to Step 8.
 
-Lightsail Setup displays the IPv4 and IPv6 addresses that your domain must resolve to. You need to create DNS records at your DNS provider pointing your domain to these addresses.
+Lightsail Setup shows your instance's IPv4 and IPv6 addresses. Use these addresses to create DNS records at your DNS provider:
++ **A record** (required) – Points your domain to the IPv4 address of your instance.
++ **AAAA record** (optional) – Points your domain to the IPv6 address of your instance.
+
+**Note**
+An AAAA record isn't required. If your domain has an AAAA record, it must point to your instance's IPv6 address, else Lightsail Setup fails.
 
 ![IPv4 and IPv6 addresses displayed in the Lightsail Setup workflow.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/ipv4-ipv6.png)
 
@@ -129,17 +139,17 @@ Keep the Lightsail Setup page open – you return to it after creating your reco
 
 1. Navigate to the DNS records section for your domain.
 
-1. Create an **A** record for your root domain (`example.com`) with the value set to the static IPv4 address displayed in Lightsail Setup.
+1. Create an **A** record for your root domain (`exampletest.com`) with the value set to the static IPv4 address displayed in Lightsail Setup.
 
-1. Create an **AAAA** record for your root domain (`example.com`) with the value set to the IPv6 address displayed in Lightsail Setup.
+1. (Optional) Create an **AAAA** record for your root domain (`exampletest.com`) with the value set to the IPv6 address displayed in Lightsail Setup.
 
-1. (Optional) Repeat steps 3–4 for your www subdomain (`www.example.com`).
+1. (Optional) Repeat steps 3–4 for your www subdomain (`www.exampletest.com`).
 
-#### Example: Adding A and AAAA records in GoDaddy
+#### Example: Adding DNS records in GoDaddy
 <a name="thirdparty-dns-godaddy-example"></a>
 
 **Note**
-The following example walks you through how to add A and AAAA records in GoDaddy. For more information, see [GoDaddy: Manage DNS records](https://www.godaddy.com/help/manage-dns-records-680) on the GoDaddy website.
+The following example walks you through how to add an A record and an optional AAAA record in GoDaddy. For more information, see [GoDaddy: Manage DNS records](https://www.godaddy.com/help/manage-dns-records-680) on the GoDaddy website.
 
 1. Sign in to your [GoDaddy Domain Portfolio](https://dcc.godaddy.com/control/portfolio).
 
@@ -154,20 +164,20 @@ The following example walks you through how to add A and AAAA records in GoDaddy
    + **Value:** The static IPv4 address displayed in Lightsail Setup
    + **TTL:** 1 hour (default)
 
-1. Select **Add another record** and select **AAAA** from the Type menu.
+1. (Optional) Select **Add another record** and select **AAAA** from the Type menu.
 
 1. Enter the following:
    + **Name:** `@` (for your root domain)
    + **Value:** The IPv6 address displayed in Lightsail Setup
    + **TTL:** 1 hour (default)
-![Adding A and AAAA records in GoDaddy.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/godaddy-records.png)
+![Adding DNS records in GoDaddy.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/godaddy-records.png)
 
 1. Select **Save**.
 
 1. (Optional) Repeat steps 4–8 for your www subdomain, entering `www` in the Name field.
 
 **Note**
-The exact steps for creating DNS records vary by provider. Refer to your provider's documentation for guidance on adding A and AAAA records:
+The exact steps for creating DNS records vary by provider. Refer to your provider's documentation for guidance on adding DNS records:
 [Cloudflare: Manage DNS records](https://developers.cloudflare.com/dns/manage-dns-records/) on the Cloudflare website.
 [Namecheap: Set up an A record](https://www.namecheap.com/support/knowledgebase/article.aspx/319/2237/how-can-i-set-up-an-a-address-record-for-my-domain/) on the Namecheap website.
 
@@ -183,23 +193,23 @@ Domain assignments are DNS records that direct traffic for your domain to your i
 
 1. Choose **Add assignment**.
 
-1. Add your root domain (for example, `example.com`).
+1. Add your root domain (for example, `exampletest.com`).
 
-1. (Optional) Add your www subdomain (for example, `www.example.com`).
+1. (Optional) Add your www subdomain (for example, `www.exampletest.com`).
 
 1. Choose **Continue**.
 
 ![Managing domain assignments in the Lightsail Setup workflow.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/manage-domains.png)
 
 **Tip**
-If you skip the www subdomain, visitors who type `www.example.com` will not reach your site.
+If you skip the www subdomain, visitors who type `www.exampletest.com` will not reach your site.
 
 ### Verify your name servers and DNS records
 <a name="thirdparty-verify-dns-records"></a>
 
 This step appears if you chose **Third-party DNS** in Step 4. Before proceeding, confirm the following:
 
-1. **Your domain's name servers point to the correct DNS provider.** They must point to the same provider where you created your A and AAAA records. If they don't match, traffic does not reach your records and Lightsail Setup fails.
+1. **Your domain's name servers point to the correct DNS provider.** They must point to the same provider where you created your DNS records. If they don't match, traffic does not reach your records and Lightsail Setup fails.
 
    To verify your name servers, use [NS Lookup](https://dnschecker.org/ns-lookup.php) on the *dnschecker.org* website.
 
@@ -207,12 +217,12 @@ This step appears if you chose **Third-party DNS** in Step 4. Before proceeding,
    + **macOS and Linux:**
 
      ```
-     $ dig NS {{example.com}} +short
+     $ dig NS {{yourdomain.com}} +short
      ```
    + **Windows:**
 
      ```
-     C:\> nslookup -type=NS {{example.com}}
+     C:\> nslookup -type=NS {{yourdomain.com}}
      ```
 
    For example, if you created records in GoDaddy, the result should show GoDaddy name servers. If you created records in Route 53, the result should show `awsdns-*` name servers. If the result shows a different provider, update your domain's name servers at your registrar before continuing.
@@ -225,17 +235,17 @@ This step appears if you chose **Third-party DNS** in Step 4. Before proceeding,
    + **macOS and Linux:**
 
      ```
-     $ dig {{example.com}} A +short
-     $ dig {{example.com}} AAAA +short
+     $ dig {{yourdomain.com}} A +short
+     $ dig {{yourdomain.com}} AAAA +short
      ```
    + **Windows:**
 
      ```
-     C:\> nslookup -type=A {{example.com}}
-     C:\> nslookup -type=AAAA {{example.com}}
+     C:\> nslookup -type=A {{yourdomain.com}}
+     C:\> nslookup -type=AAAA {{yourdomain.com}}
      ```
 
-   The A queries should return your instance's static IPv4 address. The AAAA queries should return your instance's IPv6 address. Both should match what Lightsail Setup displayed.
+   The **A** queries should return your instance's static IPv4 address. If you created an **AAAA** record, the **AAAA** queries should return your instance's IPv6 address. The results should match what Lightsail Setup displayed.
 
 **Important**
 DNS changes can take anywhere from a few minutes to 48 hours to propagate. Do not proceed to certificate creation until all records resolve to the correct addresses. If you proceed before your DNS changes have fully propagated, your SSL/TLS certificate will fail to validate because Lightsail can't confirm that you control the domain. If the commands do not return the expected values, wait and try again.
@@ -246,7 +256,7 @@ DNS changes can take anywhere from a few minutes to 48 hours to propagate. Do no
 ### Create certificate
 <a name="thirdparty-create-cert"></a>
 
-1. Enter the domains and subdomains you want to secure with HTTPS. Because your domain is registered outside of Lightsail, you enter these manually (for example, `example.com` and `www.example.com`). You can secure up to 10 domains and subdomains.
+1. Select the domains and subdomains you want to secure with HTTPS (for example, `exampletest.com` and `www.exampletest.com`). You can secure up to 10 domains and subdomains.
 
 1. Enter your email address. This is used for certificate renewal notifications.
 
@@ -254,7 +264,7 @@ DNS changes can take anywhere from a few minutes to 48 hours to propagate. Do no
 
 1. Choose **Create certificate**.
 
-![Manually entering domain names to create an SSL/TLS certificate in the Lightsail Setup workflow.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/create-certificate-thirdparty.png)
+![Creating an SSL/TLS certificate in the Lightsail Setup workflow.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/create-certificate.png)
 
 Lightsail Setup begins configuring HTTPS on your instance. This process takes up to 15 minutes.
 
@@ -274,9 +284,16 @@ After Lightsail Setup completes:
 
 1. Test each additional domain and subdomain that you secured in the certificate (for example, `https://www.{{yourdomain.com}}`) to confirm they all load successfully over HTTPS.
 
-1. Test the automatic redirect from HTTP to HTTPS. In your browser, go to `http://{{yourdomain.com}}` and confirm that the address automatically redirects to `https://{{yourdomain.com}}`.
+To confirm that your website uses the certificate that Lightsail Setup created, view the certificate in your browser. For example, in Google Chrome:
 
-![WordPress website loaded successfully with HTTPS enabled.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/https-verified.png)
+1. In the address bar, choose the site information icon to the left of the URL, and then choose **Connection is secure**.
+![The "Connection is secure" option in the Google Chrome site information menu.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/https-verified.png)
+
+1. Choose **Certificate details**.
+![The "Certificate details" option in the Google Chrome Security panel.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/https-certificate-details.png)
+
+1. Confirm that the certificate is issued to your domain. Under **Issued By**, confirm that **Organization (O)** is Let's Encrypt.
+![Certificate details in Google Chrome showing Let's Encrypt as the issuing organization.](https://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-setup/https-certificate-issuer.png)
 
 Your website is now configured with HTTPS and an **automatic redirect from HTTP to HTTPS**.
 

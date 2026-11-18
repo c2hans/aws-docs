@@ -47,6 +47,11 @@ Content-type: application/json
    },
    "endpoint": "string",
    "identifier": "string",
+   "metricGroups": [
+      {
+         "metricGroup": "string"
+      }
+   ],
    "multiRegionProperties": {
       "clusters": [ "string" ],
       "witnessRegion": "string"
@@ -91,6 +96,11 @@ Pattern: `[a-zA-Z0-9.-]+`
 The ID of the retrieved cluster.
 Type: String
 Pattern: `[a-z0-9]{26}`
+
+ ** [metricGroups](#API_GetCluster_ResponseSyntax) **   <a name="auroradsql-GetCluster-response-metricGroups"></a>
+The metric groups that you enabled for advanced monitoring on the cluster. If you haven't enabled any metric groups, the list is empty.
+Type: Array of [MetricGroupResponse](API_MetricGroupResponse.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
  ** [multiRegionProperties](#API_GetCluster_ResponseSyntax) **   <a name="auroradsql-GetCluster-response-multiRegionProperties"></a>
 Returns the current multi-Region cluster configuration, including witness region and linked cluster information.

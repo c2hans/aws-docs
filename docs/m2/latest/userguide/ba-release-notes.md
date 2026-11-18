@@ -46,6 +46,8 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### zOS
 <a name="runtime-zos-5.274.0"></a>
+
+**Improvements**
 + COBOL
   + Improved UNSTRING to preserve whitespace-like trailing bytes in alphanumeric receivers
   + Aligned level-88 condition evaluation with legacy semantics by comparing on the raw bytes
@@ -113,6 +115,8 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### AS400
 <a name="runtime-as400-5.274.0"></a>
+
+**Improvements**
 + File access
   + Added support for Extend open mode.
 + CL
@@ -131,6 +135,8 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### zOS
 <a name="transformation-zos-5.274.0"></a>
+
+**Improvements**
 + COBOL
   + Improved HEX built-in generation for ADDR expressions.
   + Added LEADING and TRAILING keyword support to COPY REPLACING
@@ -152,6 +158,8 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### AS400
 <a name="transformation-as400-5.274.0"></a>
+
+**Improvements**
 + RPG / CL
   + Improved support for the MONITOR statement with multiple ON-ERROR clauses.
 + RPG
@@ -193,6 +201,8 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### zOS
 <a name="runtime-zos-5.194.0"></a>
+
+**Improvements**
 + COBOL
   + Improved support for packed decimal by using the new YML property dataSimplifier.zeroInvalidBcdNibbles, which treats invalid BCD nibbles (non-decimal hex digits) as 00
   + Added support for configurable read buffer size for sequential files by using the new YML property gapwalk.io.sequential.readBufferSize, improving read performance on network-attached storage
@@ -243,6 +253,8 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### AS400
 <a name="runtime-as400-5.194.0"></a>
+
+**Improvements**
 + RPG
   + Improved CLEAR operation on Elementary arrays
   + Improved support of Program Status Data Structure
@@ -276,6 +288,8 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### zOS
 <a name="transformation-zos-5.194.0"></a>
+
+**Improvements**
 + COBOL
   + Added support for EXIT PROGRAM AND CONTINUE RUN UNIT statement
   + Added support for figurative SPACES in CALL statement
@@ -302,11 +316,15 @@ This version of the AWS Transform for mainframe Runtime has been tested with the
 
 ### AS400
 <a name="transformation-as400-5.194.0"></a>
+
+**Improvements**
 + RPG
   + Added support for accessing elements of arrays that are part of an overlay
 
 ### Code quality
 <a name="transformation-code-quality-5.194.0"></a>
+
+**Improvements**
 + Improved naming convention for generated entity identifiers.
   + Class names, field names, and getter/setter names that previously had a \_<digits> prefix are now stripped to proper Java naming conventions. For example, \_90CallFlowMainContext becomes CallFlowMainContext, and get\_90CallFlow() becomes getCallFlow().
   + A collision detection mechanism preserves the original prefix when multiple programs would produce the same name after stripping.

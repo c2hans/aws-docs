@@ -378,7 +378,11 @@ If your source API owns the field's resolver, annotate the field in that source 
 
 Two conditions apply:
 
+**Declare the authorization directive on the field**
+
 *@canonical* preserves the field as declared. A field annotated *@canonical* with no authorization directive of its own takes your source API's primary authorization mode, which might be more permissive than you intend.
+
+**Annotate a field in only one source API**
 
 If two source APIs annotate the same field as *canonical*, the merge fails with the error `Multiple subschemas cannot declare the same field as canonical`.
 

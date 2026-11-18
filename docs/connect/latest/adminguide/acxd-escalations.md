@@ -67,6 +67,8 @@ Examples of escalation context:
 + Selected product or reservation
 + Reason for escalation
 
+**State modification format**
+
 To pass data, add one or more State modifications to the Escalate node in your agentic CX designer flow that set one or more context variables.
 
 For example, you may set a context variable `{summary}` to a variable generated upstream by a Generative text node that summarized the system transcript.

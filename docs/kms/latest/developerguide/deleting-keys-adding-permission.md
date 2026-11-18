@@ -29,7 +29,7 @@ To give key administrators permission to schedule and cancel key deletion.
 
 1. The next step differs for the *default view* and *policy view* of your key policy. Default view is available only if you are using the default console key policy. Otherwise, only policy view is available.
 
-   When default view is available, a **Switch to policy view** or **Switch to default view** button appears on the **Key policy** tab. If the tab shows a **Default view** and **Policy view (JSON)** control instead, use that control to switch between the views.
+   When default view is available, a **Switch to policy view** or **Switch to default view** button appears on the **Key policy** tab.
    + In default view:
 
      1. Under **Key deletion**, choose **Allow key administrators to delete this key**.

@@ -58,6 +58,7 @@ Required: No
 The cloud service provider associated with this image layer aggregation. Valid values:
 +  `AWS` – Findings from AWS resources.
 +  `AZURE` – Findings from Microsoft Azure resources.
++  `GCP` – Findings from Google Cloud Platform (GCP) resources.
 Type: String
 Required: No
 
@@ -65,6 +66,7 @@ Required: No
 The cloud Region associated with this image layer aggregation. The value format depends on the cloud provider:
 + An AWS Region, such as `us-east-1`.
 + An Azure region, such as `eastus`.
++ A Google Cloud Platform (GCP) location, such as the region `us-central1` or the zone `us-central1-a`.
 Type: String
 Required: No
 

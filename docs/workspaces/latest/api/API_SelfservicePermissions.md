@@ -16,8 +16,20 @@ Type: String
 Valid Values: `ENABLED | DISABLED`
 Required: No
 
+ ** EnableEndUserAdvisor **   <a name="WorkSpaces-Type-SelfservicePermissions-EnableEndUserAdvisor"></a>
+Specifies whether users can use End User Advisor in the WorkSpaces client for Windows to see their session health and get recommended actions for common issues. The default value is `ENABLED`. For more information, see Proactive troubleshooting for your WorkSpaces users.
+Type: String
+Valid Values: `ENABLED | DISABLED`
+Required: No
+
  ** IncreaseVolumeSize **   <a name="WorkSpaces-Type-SelfservicePermissions-IncreaseVolumeSize"></a>
 Specifies whether users can increase the volume size of the drives on their WorkSpace.
+Type: String
+Valid Values: `ENABLED | DISABLED`
+Required: No
+
+ ** NestedVirtualization **   <a name="WorkSpaces-Type-SelfservicePermissions-NestedVirtualization"></a>
+Specifies whether users can enable or disable nested virtualization on their WorkSpace. The default value is `DISABLED`. For more information, see [Nested virtualization for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/nested-virtualization.html).
 Type: String
 Valid Values: `ENABLED | DISABLED`
 Required: No

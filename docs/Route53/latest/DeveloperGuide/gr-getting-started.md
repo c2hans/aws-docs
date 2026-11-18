@@ -138,3 +138,4 @@ Now that you have a basic Route 53 Global Resolver configuration, you can explor
 + Configure private hosted zone forwarding for internal domains (required if you have private AWS resources). For more information, see *Working with private hosted zones*.
 + Set up encrypted DNS connectivity using DNS-over-HTTPS (DoH) or DNS-over-TLS (DoT). For more information, see *Configuring encrypted DNS*.
 + Create custom domain lists and advanced filtering rules. For more information, see *DNS filtering*.
++ Connect your global resolver to an AWS Cloud WAN core network. Create a core network endpoint so that the core network's segments can be used as access sources for DNS resolution. For more information, see [Connecting a global resolver to a core network](gr-core-network-endpoints.md).

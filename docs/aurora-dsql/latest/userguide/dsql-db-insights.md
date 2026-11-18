@@ -13,6 +13,7 @@ You don't need to set up DASH. It is automatically enabled for every Aurora DSQL
 + [What is DASH?](#dash-what-is)
 + [DASH metrics and wait events](#dash-metrics-wait-events)
 + [Accessing DASH data](#dash-accessing-data)
++ [Monitoring SQL statements with Aurora DSQL statement statistics](dsql-statement-statistics.md)
 + [Related resources](#dash-related-resources)
 
 ## What is DASH?

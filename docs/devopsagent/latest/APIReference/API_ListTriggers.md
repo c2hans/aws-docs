@@ -96,6 +96,8 @@ HTTP Status Code: 403
 The request conflicts with the current state of the resource.
  ** message **
 Detailed error message describing the conflict.
+ ** reason **
+A machine-readable reason code that explains why the request conflicted with the current state of the resource. For example, `CHAT_ARCHIVED` indicates that the request acted on a chat that is archived. This field is absent when no specific reason applies.
 HTTP Status Code: 409
 
  ** ContentSizeExceededException **

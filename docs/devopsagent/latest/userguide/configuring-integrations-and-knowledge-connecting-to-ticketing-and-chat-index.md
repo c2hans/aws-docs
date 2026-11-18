@@ -13,3 +13,4 @@ To learn about connecting ticketing and chat integrations, see the following:
 + [Connecting Slack](connecting-to-ticketing-and-chat-connecting-slack.md)
 + [Using Slack code channels](connecting-to-ticketing-and-chat-using-slack-code-channels.md)
 + [Connecting Microsoft Teams](connecting-to-ticketing-and-chat-connecting-microsoft-teams.md)
++ [Using partner-managed connectors](configuring-integrations-and-knowledge-using-partner-managed-connectors.md)

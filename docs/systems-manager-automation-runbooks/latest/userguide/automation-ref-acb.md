@@ -10,3 +10,4 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 **Topics**
 + [`AWSConfigRemediation-ConfigureCodeBuildProjectWithKMSCMK`](automation-aws-codebuild-cmk.md)
 + [`AWSConfigRemediation-DeleteAccessKeysFromCodeBuildProject`](automation-aws-delete-cb-keys.md)
++ [`AWSSupportRemediator-EnableCodeBuildLoggingConfig`](automation-awssupportremediator-enablecodebuildloggingconfig.md)

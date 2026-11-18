@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 # Enable service-managed record distribution on an existing stream
 <a name="service-managed-pk-configure-update"></a>
 
-To enable service-managed record distribution on an existing on-demand stream, use the `UpdateStreamRecordDistributionStrategy` API. The change takes effect immediately. Before you enable `AUTO`, verify that your consumers can handle an absent (null) partition key, and ensure any KPL producers do not aggregate records. For more information, see [Safe migration patterns](service-managed-pk-configure-safe-migration.md).
+To enable service-managed record distribution on an existing On-demand stream, use the `UpdateStreamRecordDistributionStrategy` API. The change takes effect immediately. Before you enable `AUTO`, verify that your consumers can handle an absent (null) partition key, and ensure any KPL producers do not aggregate records. For more information, see [Safe migration patterns](service-managed-pk-configure-safe-migration.md).
 
 **Example Enable service-managed distribution on an existing stream (AWS CLI)**
 

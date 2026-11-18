@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 
 Commit application permission policies with application code in the same repository. Manage general resource policies and security service configurations in separate repositories and deployment pipelines. This separation reduces the risk of a single compromised repository affecting both application code and security configurations.
 
-The following TypeScript AWS CDK stack demonstrates three foundational security controls from this document: an Amazon S3 bucket with `BlockPublicAccess` and server-side encryption ([ACCT.08](acct-08.md)), a CloudTrail trail with log file validation ([ACCT.07](acct-07.md)), and IAM Access Analyzer ([ACCT.11](acct-11.md)).
+The following TypeScript AWS CDK stack demonstrates three foundational security controls from this document: an Amazon S3 bucket with `BlockPublicAccess` and server-side encryption ([ACCT.08](acct-08.md)), a CloudTrail trail with log file validation ([ACCT.07](acct-07.md)), and AWS Identity and Access Management Access Analyzer ([ACCT.11](acct-11.md)).
 
 ```
 import * as cdk from "aws-cdk-lib";

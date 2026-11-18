@@ -19,6 +19,7 @@ Content-type: application/json
 
 {
    "cidr": "{{string}}",
+   "dnsViewId": "{{string}}",
    "ipAddressType": "{{string}}",
    "name": "{{string}}",
    "protocol": "{{string}}"
@@ -44,13 +45,20 @@ The request accepts the following data in JSON format.
  ** [cidr](#API_route53globalresolver_UpdateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-request-cidr"></a>
 The CIDR block for the access source.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 43.
+Length Constraints: Minimum length of 0. Maximum length of 43.
+Required: No
+
+ ** [dnsViewId](#API_route53globalresolver_UpdateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-request-dnsViewId"></a>
+The ID of the DNS view to associate with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
 Required: No
 
  ** [ipAddressType](#API_route53globalresolver_UpdateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-request-ipAddressType"></a>
 The IP address type for the access source.
 Type: String
-Valid Values: `IPV4 | IPV6`
+Valid Values: `IPV4 | IPV6 | NONE`
 Required: No
 
  ** [name](#API_route53globalresolver_UpdateAccessSource_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-request-name"></a>
@@ -76,12 +84,14 @@ Content-type: application/json
 {
    "arn": "string",
    "cidr": "string",
+   "coreNetworkEndpointId": "string",
    "createdAt": "string",
    "dnsViewId": "string",
    "id": "string",
    "ipAddressType": "string",
    "name": "string",
    "protocol": "string",
+   "segment": "string",
    "status": "string",
    "updatedAt": "string"
 }
@@ -103,7 +113,13 @@ Pattern: `arn:[-.a-z0-9]{1,63}:[-.a-z0-9]{1,63}:[-.a-z0-9]{0,63}:[-.a-z0-9]{0,63
  ** [cidr](#API_route53globalresolver_UpdateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-response-cidr"></a>
 The CIDR block of the updated access source.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 43.
+Length Constraints: Minimum length of 0. Maximum length of 43.
+
+ ** [coreNetworkEndpointId](#API_route53globalresolver_UpdateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-response-coreNetworkEndpointId"></a>
+The ID of the core network endpoint associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
 
  ** [createdAt](#API_route53globalresolver_UpdateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-response-createdAt"></a>
 The date and time when the access source was originally created.
@@ -124,7 +140,7 @@ Pattern: `[-.a-zA-Z0-9]+`
  ** [ipAddressType](#API_route53globalresolver_UpdateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-response-ipAddressType"></a>
 The IP address type of the updated access source.
 Type: String
-Valid Values: `IPV4 | IPV6`
+Valid Values: `IPV4 | IPV6 | NONE`
 
  ** [name](#API_route53globalresolver_UpdateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-response-name"></a>
 The name of the updated access source.
@@ -136,6 +152,11 @@ Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
 The protocol of the updated access source.
 Type: String
 Valid Values: `DO53 | DOH | DOT`
+
+ ** [segment](#API_route53globalresolver_UpdateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-response-segment"></a>
+The name of the segment associated with this access source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
 
  ** [status](#API_route53globalresolver_UpdateAccessSource_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateAccessSource-response-status"></a>
 The current status of the updated access source.

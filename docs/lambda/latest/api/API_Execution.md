@@ -39,7 +39,7 @@ Required: Yes
  ** Status **   <a name="lambda-Type-Execution-Status"></a>
 The current status of the durable execution.
 Type: String
-Valid Values: `RUNNING | SUCCEEDED | FAILED | TIMED_OUT | STOPPED`
+Valid Values: `RUNNING | SUCCEEDED | FAILED | TIMED_OUT | STOPPED | DELETING | PAUSING | PAUSED`
 Required: Yes
 
  ** EndTimestamp **   <a name="lambda-Type-Execution-EndTimestamp"></a>

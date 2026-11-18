@@ -32,7 +32,7 @@ The request accepts the following data in JSON format.
  ** [JobCategory](#API_StopJob_RequestSyntax) **   <a name="sagemaker-StopJob-request-JobCategory"></a>
 The category of the job to stop.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: Yes
 
  ** [JobName](#API_StopJob_RequestSyntax) **   <a name="sagemaker-StopJob-request-JobName"></a>

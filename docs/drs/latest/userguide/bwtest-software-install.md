@@ -57,7 +57,7 @@ rm configs.toml
 ```
 
 **Important**
-The shipped file points at an assets directory that does not exist at your install path. Left in place, the program logs Config assets directory failed \! and then serves 404 on `/`, so the browser page is dead although the CLI endpoints keep working, which is easy to misdiagnose.
+The shipped file points at an assets directory that does not exist at your install path. Left in place, the program logs `Config assets directory failed !` and then serves 404 on `/`, so the browser page is dead although the CLI endpoints keep working, which is easy to misdiagnose.
 
 Deleting the file also stops the program from creating a `speedtest.db` in your working directory, and it removes the file as a thing to get wrong: with nothing to load, the defaults are used deterministically. Editing the file instead of deleting it is not a reliable substitute: depending on how the program is invoked, a partial or hand-edited config is either rejected with a parse error or silently ignored in favor of defaults. With no config file present, startup logs `Configs initialized with defaults` and `Config default assets directory.`, and `/` returns 200.
 

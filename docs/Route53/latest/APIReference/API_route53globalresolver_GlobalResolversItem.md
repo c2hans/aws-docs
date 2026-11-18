@@ -97,6 +97,15 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 32.
 Required: No
 
+ ** publicIpStatus **   <a name="Route53GlobalResolver-Type-route53globalresolver_GlobalResolversItem-publicIpStatus"></a>
+The public IP connectivity configured for the Route 53 Global Resolver. Public IP addresses let DNS clients send queries to the resolver over the internet. Valid values are the following:
++  `ENABLED_RESERVED` - Public IP connectivity is enabled, and the global anycast public IP addresses are reserved for the Route 53 Global Resolver.
++  `DISABLED_RESERVED` - Public IP connectivity is disabled, and the global anycast public IP addresses remain reserved for the Route 53 Global Resolver.
++  `DISABLED_RELEASED` - Public IP connectivity is disabled, and the global anycast public IP addresses are released.
+Type: String
+Valid Values: `ENABLED_RESERVED | DISABLED_RESERVED | DISABLED_RELEASED`
+Required: No
+
 ## See Also
 <a name="API_route53globalresolver_GlobalResolversItem_SeeAlso"></a>
 

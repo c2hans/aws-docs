@@ -47,9 +47,6 @@ Content-type: application/json
          "name": "string",
          "status": "string",
          "statusReason": "string",
-         "tags": {
-            "string" : "string"
-         },
          "type": "string"
       }
    ],

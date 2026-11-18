@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListTags
 
 List all tags added to the specified Kinesis resource. Each tag is a label consisting of a user-defined key and value. Tags can help you manage, identify, organize, search for, and filter resources.
 
+The Kinesis resource can be a data stream, a queue, or an enhanced fan-out consumer.
+
 For more information about tagging Kinesis resources, see [Tag your Amazon Kinesis Data Streams resources](https://docs.aws.amazon.com/streams/latest/dev/tagging.html).
 
 ## Request Syntax
@@ -28,7 +30,7 @@ The request accepts the following data in JSON format.
 The Amazon Resource Name (ARN) of the Kinesis resource for which to list tags.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel)/\S+`
+Pattern: `arn:aws.*:kinesis:.*:\d{12}:.*(stream|channel|queue)/\S+`
 Required: Yes
 
  ** [StreamId](#API_ListTagsForResource_RequestSyntax) **   <a name="Streams-ListTagsForResource-request-StreamId"></a>
@@ -73,6 +75,10 @@ For information about the errors that are common to all actions, see [Common Err
 Specifies that you do not have the permissions required to perform this operation.
 HTTP Status Code: 400
 
+ ** InternalFailureException **
+The processing of the request failed because of an unknown error, exception, or failure.
+HTTP Status Code: 500
+
  ** InvalidArgumentException **
 A specified parameter exceeds its restrictions, is not supported, or can't be used. For more information, see the returned message.
  ** message **
@@ -95,6 +101,10 @@ HTTP Status Code: 400
 The requested resource could not be found. The stream might not be specified correctly.
  ** message **
 A message that provides information about the error.
+HTTP Status Code: 400
+
+ ** ValidationException **
+The request failed validation. For example, a parameter value is not valid, a combination of parameters is not supported, or the operation is not supported for the stream's capacity mode. The error message describes the specific reason.
 HTTP Status Code: 400
 
 ## Examples

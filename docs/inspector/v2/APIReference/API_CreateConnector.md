@@ -58,7 +58,7 @@ Required: Yes
  ** [provider](#API_CreateConnector_RequestSyntax) **   <a name="inspector2-CreateConnector-request-provider"></a>
 The cloud provider for the connector.
 Type: String
-Valid Values: `AZURE`
+Valid Values: `AZURE | GCP`
 Required: Yes
 
  ** [providerDetail](#API_CreateConnector_RequestSyntax) **   <a name="inspector2-CreateConnector-request-providerDetail"></a>
@@ -72,7 +72,7 @@ The tags to apply to the connector.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `(?!aws:)[\p{L}\p{Z}\p{N}_.:/=+\-@]*`
+Key Pattern: `[\p{L}\p{Z}\p{N}_.:/=+\-@]*`
 Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 

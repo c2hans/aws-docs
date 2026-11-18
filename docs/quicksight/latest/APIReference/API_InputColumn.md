@@ -29,7 +29,7 @@ Required: Yes
  ** Id **   <a name="QS-Type-InputColumn-Id"></a>
 A unique identifier for the input column.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: No
 
  ** SubType **   <a name="QS-Type-InputColumn-SubType"></a>

@@ -38,6 +38,17 @@ Type: String
 Valid Values: `EVENT | VOICE_ID | PINPOINT_APP | WISDOM_ASSISTANT | WISDOM_KNOWLEDGE_BASE | WISDOM_QUICK_RESPONSES | Q_MESSAGE_TEMPLATES | CASES_DOMAIN | APPLICATION | FILE_SCANNER | SES_IDENTITY | ANALYTICS_CONNECTOR | CALL_TRANSFER_CONNECTOR | COGNITO_USER_POOL | MESSAGE_PROCESSOR`
 Required: No
 
+ ** LastModifiedRegion **   <a name="connect-Type-IntegrationAssociationSummary-LastModifiedRegion"></a>
+The AWS Region where the integration association was last modified.
+Type: String
+Pattern: `[a-z]{2}(-[a-z]+){1,2}(-[0-9])?`
+Required: No
+
+ ** LastModifiedTime **   <a name="connect-Type-IntegrationAssociationSummary-LastModifiedTime"></a>
+The timestamp when the integration association was last modified.
+Type: Timestamp
+Required: No
+
  ** SourceApplicationName **   <a name="connect-Type-IntegrationAssociationSummary-SourceApplicationName"></a>
 The user-provided, friendly name for the external application.
 Type: String

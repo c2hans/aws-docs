@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 # Routing and communication across micro-frontends
 <a name="routing-communication"></a>
 
-Routing options depend on the composition approach. Communication can be optimized by reducing coupling between front-end components.
+Routing options depend on the composition approach. You can improve communication by reducing coupling between front-end components.
 
 ## Routing
 <a name="routing"></a>
@@ -19,8 +19,8 @@ Applications that use edge-side composition and server-side composition align be
 
 With micro-frontend architectures, we recommend reducing the coupling between frontend components. One approach to reduce coupling is to move away from synchronous function calls to asynchronous messaging.
 
-Browser runtimes and user interactions are asynchronous by nature. Events can be exchanged between producers and consumers through messages. The events provide a well-defined interface for communication across micro-frontends.
+Browser runtimes and user interactions are asynchronous by nature. Producers and consumers can exchange events through messages. The events provide a well-defined interface for communication across micro-frontends.
 
-If you follow DDD practices to identify your bounded contexts for micro-frontends, the next step is to identify events that must be communicated across the boundaries.
+If you follow domain-driven design (DDD) practices to identify your bounded contexts for micro-frontends, the next step is to identify the events that must cross the boundaries.
 
 The messaging mechanism for events can be native DOM events (`CustomEvents`), JavaScript event emitters, or reactive stream libraries provided by the platform teams. Micro-frontends publish events and subscribe to events relevant for their bounded context. With this method, the publishers and subscribers don't need to be aware of each other. The contract is the event definition. For a visual representation of this, see the *Communicate with events* section of the [Bounded context with event architectures diagram](https://eda-visuals.boyney.io/visuals/bounded-context-with-event-architectures).

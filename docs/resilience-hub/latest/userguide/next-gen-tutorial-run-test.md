@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 
 Resilience testing helps validate that your service operates and recovers as expected by injecting controlled faults using AWS Fault Injection Service (AWS FIS). In this step, you choose a test template, create a test for your service, and start a test run.
 
+**Console**
+
 1. Navigate to your service and choose the Testing tab. You will see recommended resilience tests based on your service's architecture and resilience policy.
 
 1. Select a test template (for example, **Availability Zone: recovery**). Choose **View details** to learn more about the recommended test.
@@ -16,6 +18,8 @@ Resilience testing helps validate that your service operates and recovers as exp
 1. Choose Start test to start a test run.
 
 1. Monitor the run and review whether your recovery objectives were met.
+
+**AWS CLI**
 
 ```
 # List the available test templates

@@ -186,6 +186,6 @@ Consider the following when you integrate Amazon EMR with S3 on Outposts buckets
 + Amazon S3 on Outposts is supported with Amazon EMR version 7.0.0 and later.
 + The S3A connector is required to use S3 on Outposts with Amazon EMR. Only S3A has the features required to interact with S3 on Outposts buckets. For S3A connector setup information, see [Prerequisites](#s3a-outposts-prerequisites).
 + Amazon S3 on Outposts supports only server-side encryption with Amazon S3 managed keys (SSE-S3) with Amazon EMR. For more information, see [Data encryption in S3 on Outposts](s3-outposts-data-encryption.md).
-+ Amazon S3 on Outposts doesn't support writes with the S3A FileOutputCommitter. Writes with the S3A FileOutputCommitter on S3 on Outposts buckets result in the following error: InvalidStorageClass: The storage class you specified is not valid.
++ Amazon S3 on Outposts doesn't support writes with the S3A FileOutputCommitter. Writes with the S3A FileOutputCommitter on S3 on Outposts buckets result in the following error: `InvalidStorageClass: The storage class you specified is not valid`.
 + Amazon S3 on Outposts isn't supported with Amazon EMR Serverless or Amazon EMR on EKS.
 + Amazon EMR logs are stored in a Regional Amazon S3 location that you select, and are not stored locally in the S3 on Outposts bucket.

@@ -89,6 +89,8 @@ Flat-rate pricing plans include the following AWS services and features for a si
 + Serverless edge compute
 + Amazon S3 storage credits each month
 
+Flat-rate pricing plans don't include the targeted protection level of the Bot Control managed rule group. For more information about the protection levels, see [Protection levels](aws-managed-rule-groups-bot.md#aws-managed-rule-groups-bot-prot-levels).
+
 Plans are available in Free, Pro, Business, and Premium tiers to match your application's needs. Plans do not need an annual commitment to get the best available rates. Start with the Free plan and upgrade to access more capabilities and larger usage allowances.
 
 For more information and a complete list of plans and features, see [CloudFront flat-rate pricing plans](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/flat-rate-pricing-plan.html) in the *Amazon CloudFront Developer Guide*.

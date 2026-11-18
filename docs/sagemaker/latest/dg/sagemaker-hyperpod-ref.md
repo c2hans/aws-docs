@@ -40,7 +40,9 @@ The following list is a full set of SageMaker HyperPod APIs for submitting actio
 + [DeleteCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteCluster.html)
 + [DescribeCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeCluster.html)
 + [DescribeClusterNode](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterNode.html)
++ [DescribeClusterOperation](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeClusterOperation.html)
 + [ListClusterNodes](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusterNodes.html)
++ [ListClusterOperations](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusterOperations.html)
 + [ListClusters](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListClusters.html)
 + [UpdateCluster](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html)
 + [UpdateClusterSoftware](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html)
@@ -442,7 +444,9 @@ When you are setting up access control for allowing to run SageMaker HyperPod AP
 | DeleteCluster | sagemaker:DeleteCluster | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
 | DescribeCluster | sagemaker:DescribeCluster | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
 | DescribeClusterNode | sagemaker:DescribeClusterNode | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
+| DescribeClusterOperation | sagemaker:DescribeClusterOperation | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
 | ListClusterNodes | sagemaker:ListClusterNodes | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
+| ListClusterOperations | sagemaker:ListClusterOperations | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
 | ListClusters | sagemaker:ListClusters | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
 | UpdateCluster | sagemaker:UpdateCluster | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
 | UpdateClusterSoftware | sagemaker:UpdateClusterSoftware | arn:aws:sagemaker:{{region}}:{{account-id}}:cluster/{{cluster-id}} |
@@ -458,7 +462,9 @@ The following are the AWS CLI commands for SageMaker HyperPod to run the core [H
 + [delete-cluster](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-cluster.html)
 + [describe-cluster](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-cluster.html)
 + [describe-cluster-node](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-cluster-node.html)
++ [describe-cluster-operation](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-cluster-operation.html)
 + [list-cluster-nodes](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-cluster-nodes.html)
++ [list-cluster-operations](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-cluster-operations.html)
 + [list-clusters](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-clusters.html)
 + [update-cluster](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-cluster.html)
 + [update-cluster-software](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-cluster-software.html)
@@ -472,7 +478,9 @@ The following are the methods of the AWS SDK for Python (Boto3) client for SageM
 + [delete\_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/delete_cluster.html)
 + [describe\_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/describe_cluster.html)
 + [describe\_cluster\_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/describe_cluster_node.html)
++ [describe\_cluster\_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/describe_cluster_operation.html)
 + [list\_cluster\_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/list_cluster_nodes.html)
++ [list\_cluster\_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/list_cluster_operations.html)
 + [list\_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/list_clusters.html)
 + [update\_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/update_cluster.html)
 + [update\_cluster\_software](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/update_cluster_software.html)

@@ -260,7 +260,7 @@ When using both `HostName` and `ReplaceKeyWith` together, Amazon S3 constructs t
 This configuration redirects a request for `https://yourbucket.s3-website-region.amazonaws.com/redirect/me` to `https://example.com/new/path`. Note that `ReplaceKeyWith` is set to `new/path` without a leading slash.
 
 **Example 4: Redirect for an HTTP error**
-Suppose that when a requested object is not found, you want to redirect requests to an Amazon Elastic Compute Cloud (Amazon EC2) instance. Add a redirection rule so that when an HTTP status code 404 (Not Found) is returned, the site visitor is redirected to an Amazon EC2 instance that handles the request.
+Suppose that when a requested object is not found, you want to redirect requests to an Amazon Elastic Compute Cloud (Amazon EC2) instance. Add a redirection rule so that when an HTTP status code `404 (Not Found)` is returned, the site visitor is redirected to an Amazon EC2 instance that handles the request.
 The following example also inserts the object key prefix `report-404/` in the redirect. For example, if you request a page `ExamplePage.html` and it results in an HTTP 404 error, the request is redirected to a page `report-404/ExamplePage.html` on the specified Amazon EC2 instance. If there is no routing rule and the HTTP error 404 occurs, the error document that is specified in the configuration is returned.
 
 ```

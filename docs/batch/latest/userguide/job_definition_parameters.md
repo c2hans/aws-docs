@@ -968,7 +968,7 @@ The number of times to move a job to the `RUNNABLE` status. You can specify betw
 Type: Integer
 Required: No
 `evaluateOnExit`
-Array of up to 6 objects that specify conditions under which AWS Batch retries or fails the job. If this parameter is specified, then the `attempts` parameter must also be specified. If `evaluateOnExit` is specified but none of the entries match, then the job is retried.
+Array of up to 10 objects that specify conditions under which AWS Batch retries or fails the job. If this parameter is specified, then the `attempts` parameter must also be specified. If `evaluateOnExit` is specified but none of the entries match, then the job is retried.
 
 ```
 "evaluateOnExit": [

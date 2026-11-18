@@ -40,7 +40,7 @@ Required: No
 The name that you assign to the AWS Config rule. The name is required if you are adding a new rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: No
 
  ** ConfigRuleState **   <a name="config-Type-ConfigRule-ConfigRuleState"></a>

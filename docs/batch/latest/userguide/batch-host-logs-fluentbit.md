@@ -22,6 +22,8 @@ This tutorial takes approximately 30 minutes to complete.
 
 **Important**
 The resources you create in this tutorial might result in charges to your AWS account. For more information, see the pricing pages for [Amazon EC2](https://aws.amazon.com/ec2/pricing/), [Amazon S3](https://aws.amazon.com/s3/pricing/), and [AWS Batch](https://aws.amazon.com/batch/pricing/).
+
+**Prerequisites**
 + An AWS account with permission to create IAM policies, Amazon EC2 launch templates, Amazon S3 buckets, and AWS Batch compute environments.
 + AWS Command Line Interface installed and configured (if you prefer CLI steps).
 

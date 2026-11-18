@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/remove-delegated-a
  This section describes how to remove the delegated administrator account.
 
 ## Remove the Amazon Inspector delegated administrator
-<a name="w2aac47c13c15b9"></a>
+<a name="w2aac49c13c15b9"></a>
 
  The following procedures describe how to remove the Amazon Inspector delegated administrator and how to associate member accounts from the delegated administrator account.
 

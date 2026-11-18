@@ -61,6 +61,8 @@ To expand the children of a metadata model, choose the expand icon (black triang
 
 When you choose a source metadata model that has been converted, the corresponding target metadata model is selected automatically in the target tree panel.
 
+**Browse the metadata tree**
+
 The following walkthrough shows how to browse the metadata tree and view a metadata model definition.
 
 1. In the tree panel, choose the expand icon next to your server to display the top-level categories, such as **Databases** or **Schemas** depending on the database engine.
@@ -71,6 +73,8 @@ The following walkthrough shows how to browse the metadata tree and view a metad
 
 ------
 #### [ AWS CLI ]
+
+<a name="sc-metadata-model-navigating-browse"></a>**Browse the metadata tree**
 
 To browse the metadata tree, you follow a repeating pattern: import metadata at a level, then describe the children at that level. Repeat this process to drill deeper into the tree.
 
@@ -166,6 +170,8 @@ aws dms start-metadata-model-import \
 
 Loading a full subtree can take minutes or hours for large schemas and places load on your database. For interactive exploration, use `--refresh` and drill into specific branches as needed.
 
+<a name="sc-metadata-model-navigating-definition"></a>**Get the definition of a metadata model**
+
 To retrieve the SQL definition of a metadata model, use [describe-metadata-model](https://docs.aws.amazon.com/cli/latest/reference/dms/describe-metadata-model.html). Pass the selection rules that identify the specific metadata model from a previous `describe-metadata-model-children` response:
 
 ```
@@ -187,6 +193,8 @@ The response includes the metadata model name, type, and SQL definition:
 
 **Note**
 The `Definition` field might not be populated for some metadata models, such as schemas and categories.
+
+<a name="sc-metadata-model-navigating-converted"></a>**View converted definitions**
 
 After you convert source metadata models, the converted definitions are available on the target tree. There are three ways to retrieve them.
 

@@ -50,6 +50,11 @@ Content-type: application/json
    "clientToken": "{{string}}",
    "deletionProtectionEnabled": {{boolean}},
    "kmsEncryptionKey": "{{string}}",
+   "metricGroups": [
+      {
+         "metricGroup": "{{string}}"
+      }
+   ],
    "multiRegionProperties": {
       "clusters": [ "{{string}}" ],
       "witnessRegion": "{{string}}"
@@ -96,6 +101,12 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `[a-zA-Z0-9:/_-]+`
 Required: No
 
+ ** [metricGroups](#API_CreateCluster_RequestSyntax) **   <a name="auroradsql-CreateCluster-request-metricGroups"></a>
+The metric groups to enable for advanced monitoring on the cluster. Advanced monitoring collects detailed database metrics and logs to help you analyze and resolve performance issues. If you omit this parameter, no metric groups are enabled.
+Type: Array of [MetricGroupRequest](API_MetricGroupRequest.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+Required: No
+
  ** [multiRegionProperties](#API_CreateCluster_RequestSyntax) **   <a name="auroradsql-CreateCluster-request-multiRegionProperties"></a>
 The configuration settings when creating a multi-Region cluster, including the witness region and linked cluster properties.
 Type: [MultiRegionProperties](API_MultiRegionProperties.md) object
@@ -135,6 +146,11 @@ Content-type: application/json
    },
    "endpoint": "string",
    "identifier": "string",
+   "metricGroups": [
+      {
+         "metricGroup": "string"
+      }
+   ],
    "multiRegionProperties": {
       "clusters": [ "string" ],
       "witnessRegion": "string"
@@ -156,7 +172,7 @@ Type: String
 Pattern: `arn:aws(-[^:]+)?:dsql:[a-z0-9-]{1,20}:[0-9]{12}:cluster/[a-z0-9]{26}`
 
  ** [creationTime](#API_CreateCluster_ResponseSyntax) **   <a name="auroradsql-CreateCluster-response-creationTime"></a>
-The time of when created the cluster.
+The time when Aurora DSQL created the cluster.
 Type: Timestamp
 
  ** [deletionProtectionEnabled](#API_CreateCluster_ResponseSyntax) **   <a name="auroradsql-CreateCluster-response-deletionProtectionEnabled"></a>
@@ -176,6 +192,11 @@ Pattern: `[a-zA-Z0-9.-]+`
 The ID of the created cluster.
 Type: String
 Pattern: `[a-z0-9]{26}`
+
+ ** [metricGroups](#API_CreateCluster_ResponseSyntax) **   <a name="auroradsql-CreateCluster-response-metricGroups"></a>
+The metric groups that you enabled for advanced monitoring on the created cluster.
+Type: Array of [MetricGroupResponse](API_MetricGroupResponse.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
 
  ** [multiRegionProperties](#API_CreateCluster_ResponseSyntax) **   <a name="auroradsql-CreateCluster-response-multiRegionProperties"></a>
 The multi-Region cluster configuration details that were set during cluster creation

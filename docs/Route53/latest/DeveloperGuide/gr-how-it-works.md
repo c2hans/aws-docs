@@ -34,6 +34,16 @@ Route 53 Global Resolver uses anycast IP addresses to provide:
 + **Built-in redundancy** - If a Region becomes unavailable, traffic automatically fails over to the next closest Region.
 + **Consistent IP addresses** - Clients use the same anycast IP addresses regardless of their location, simplifying configuration.
 
+## Private anycast architecture with Cloud WAN
+<a name="gr-private-anycast-architecture"></a>
+
+When clients reach the global resolver over private connections through an AWS Cloud WAN core network, Route 53 Global Resolver uses the same anycast-based geographic routing to direct queries to the closest AWS Region.
+
+Private IP addresses are resolved with the same routing and availability benefits as public internet traffic, over private Cloud WAN connectivity instead of the internet:
++ **Automatic geographic routing** - DNS queries from a connected core network are automatically routed to the closest AWS Region for optimal performance.
++ **Built-in redundancy** - If a Region becomes unavailable, traffic automatically fails over to the next closest Region.
++ **Consistent endpoints** - Clients use the same anycast IP addresses regardless of their location, simplifying configuration.
+
 ## DNS filtering and security
 <a name="gr-filtering-and-security"></a>
 

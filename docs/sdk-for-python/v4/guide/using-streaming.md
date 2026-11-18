@@ -2,41 +2,47 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/using-streaming.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Working with event streams
 <a name="using-streaming"></a>
 
-A standard request-response call works well when the service can return a complete result at once, but some workloads (live transcription, real-time inference, interactive conversations) produce data continuously while an operation is still running. For these cases, the SDK provides event stream operations that stay open and exchange a sequence of modeled events over time. The SDK supports multiple types of event streams:
-+ A unidirectional *output event stream*: The service sends events to the application. The application reads events until the service closes the output.
-+ A bidirectional *duplex event stream*: The application sends events through `input_stream` while it receives service events from the output side.
+Event stream operations are available only in asynchronous clients. For how the two client types differ, see [Synchronous and asynchronous clients](using-sync-async.md).
+
+Some workloads, such as live transcription and real-time model inference, produce data continuously while an operation is still running. For these workloads, services provide event stream operations. An event stream operation stays open and exchanges a sequence of modeled events with the application. The SDK supports the following types of event streams:
++ In an *output event stream*, the service sends events to the application. The application reads events until the service closes the output.
++ In a bidirectional *duplex event stream*, the application sends events through `input_stream` while it receives service events from the output side.
 
 A service can also model an input-only event stream, in which only the application sends events. The pattern for sending events matches the input side of a bidirectional stream.
 
-Every event stream's lifecycle is managed with an asynchronous context manager. Leaving the context closes its resources. The service model defines the generated input and output event types and any other events required to complete the operation.
+You call an event stream operation with keyword arguments, the same as any other operation. The keyword arguments set the members of the initial request. The events that you send after the stream opens are generated model objects. Each event stream is an asynchronous context manager. Leaving its `async with` block closes the stream and releases its resources. The service model defines the input and output event types and any other events required to complete the operation.
 
-This page explains how to invoke and handle output and bidirectional event streams.
+Event streams are different from streaming request and response bodies. A streaming body, such as the contents of an Amazon S3 object, is a single sequence of bytes in an operation's input or output. Operations with streaming bodies work in both synchronous and asynchronous clients. For examples, see [Amazon S3](services-s3.md).
 
 ## Consuming an output-only stream
 <a name="using-streaming-output"></a>
 
-An output event stream operation returns an open stream object. Calling the operation starts the request, but event data arrives later as the application iterates `output_stream`. Each item is one generated variant of the operation's output event union. The union represents the several possible event types.
+An output event stream operation returns an open stream object. Calling the operation starts the request, but event data arrives later as the application iterates `output_stream`. Each item is a variant of the operation's output event union. Each variant class represents one event type.
 
-The following example follows the stream lifecycle: call the operation, enter its asynchronous context, and wait for events with `async for`. It collects payload chunks and reports an event type that the current client doesn't recognize.
+The following example calls the operation, enters the stream's asynchronous context, and waits for events with `async for`. It collects payload chunks and raises an error for an event type that the installed client doesn't recognize.
 
 ```
-from aws_sdk_bedrock_runtime.client import AsyncBedrockRuntimeClient
+from aws_sdk_bedrock_runtime import AsyncBedrockRuntimeClient
 from aws_sdk_bedrock_runtime.models import (
-    InvokeModelWithResponseStreamInput,
     ResponseStreamChunk,
     ResponseStreamUnknown,
 )
 
 async def collect_response_chunks(
     client: AsyncBedrockRuntimeClient,
-    request: InvokeModelWithResponseStreamInput,
+    model_id: str,
+    body: bytes,
 ) -> list[bytes]:
-    response = await client.invoke_model_with_response_stream(input=request)
+    response = await client.invoke_model_with_response_stream(
+        model_id=model_id,
+        body=body,
+        content_type="application/json",
+    )
     chunks: list[bytes] = []
 
     async with response as stream:
@@ -56,39 +62,43 @@ async def collect_response_chunks(
     return chunks
 ```
 
-Leaving the asynchronous context closes the output stream even when event processing raises an exception. A modeled stream error can arrive while the application is iterating events; the SDK raises it as a generated service exception at that point. The event payloads and the signal that completes a stream vary by operation. For details, see the [invoke\_model\_with\_response\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
+Leaving the asynchronous context closes the output stream even when event processing raises an exception. A modeled stream error can arrive while the application is iterating events. The SDK raises it as a generated service exception at that point. The event payloads and the signal that completes a stream vary by operation. For details, see the [invoke\_model\_with\_response\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/invoke_model_with_response_stream/) API reference.
 
 ## Using a bidirectional event stream
 <a name="using-streaming-bidirectional"></a>
 
-A bidirectional application sends input and receives output at the same time. Its overall lifecycle is:
+A bidirectional application sends input and receives output at the same time. The application does the following:
 
-1. Call the operation to open the stream, and enter the stream's asynchronous context.
+1. Calls the operation to open the stream and enters the stream's asynchronous context.
 
-1. Run a sender and receiver concurrently so that neither side waits for the other side to finish first.
+1. Runs a sender and a receiver concurrently so that neither side waits for the other side to finish first.
 
-1. Send modeled input events. After the last required input or completion event, close `input_stream` to indicate that no more input will follow.
+1. Sends modeled input events. After the last required input or completion event, it closes `input_stream` to indicate that no more input will follow.
 
-1. Continue processing output events until the service closes the output side, and then leave the context to release the stream resources.
+1. Processes output events until the service closes the output side, and then leaves the context to release the stream resources.
 
-Bidirectional operations require the AWS Common Runtime (CRT) HTTP client as the client's transport. To opt in, install the client's `awscrt` extra and set `AWSCRTHTTPClient` as the transport. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
+Bidirectional operations require the AWS Common Runtime (CRT) HTTP client as the client's transport. To use it, install the client's `awscrt` extra and set `AWSCRTHTTPClient` as the transport. For more information, see [Use the AWS CRT client for bidirectional streaming](http-configuration.md#http-crt-streaming).
 
-The following example uses Amazon Transcribe types to make the bidirectional pattern concrete. It represents application-provided input as an asynchronous iterable and delegates output events to an application-provided handler. This keeps producing and interpreting service payloads separate from opening, using, and closing the stream.
+The following example uses Amazon Transcribe Streaming. The application supplies audio as an asynchronous iterable and handles transcript events in its own function. The example code opens the stream, sends and receives events, and closes the stream. It doesn't produce audio or interpret transcripts.
 
-The following snippet contains only the imports that the rest of this section shares.
+The following snippet contains the imports that the rest of this section shares.
 
 ```
 import asyncio
 from collections.abc import AsyncIterable, Callable
 
-from smithy_core.aio.interfaces.eventstream import EventPublisher, EventReceiver
+from smithy_core.aio.interfaces.eventstream import (
+    AsyncEventPublisher,
+    AsyncEventReceiver,
+)
 
-from aws_sdk_transcribe_streaming.client import AsyncTranscribeStreamingClient
+from aws_sdk_transcribe_streaming import AsyncTranscribeStreamingClient
 from aws_sdk_transcribe_streaming.models import (
     AudioEvent,
     AudioStream,
     AudioStreamAudioEvent,
-    StartStreamTranscriptionInput,
+    LanguageCode,
+    MediaEncoding,
     TranscriptEvent,
     TranscriptResultStream,
     TranscriptResultStreamTranscriptEvent,
@@ -99,13 +109,13 @@ from aws_sdk_transcribe_streaming.models import (
 ### Sending input events
 <a name="using-streaming-publish"></a>
 
-A bidirectional stream exposes `input_stream` for events sent by the application. The operation model defines an input event union, and each generated union variant represents one event type. For Amazon Transcribe, `AudioStreamAudioEvent` is the variant that carries an `AudioEvent`.
+A bidirectional stream exposes `input_stream` for events sent by the application. The operation model defines an input event union. Each generated union variant represents one event type. For Amazon Transcribe, `AudioStreamAudioEvent` is the variant that carries an `AudioEvent`.
 
 The sender wraps each prepared payload in the generated event classes and awaits `send()`. The asynchronous source determines how the application produces those payloads.
 
 ```
 async def send_audio(
-    input_stream: EventPublisher[AudioStream],
+    input_stream: AsyncEventPublisher[AudioStream],
     audio_chunks: AsyncIterable[bytes],
 ) -> None:
     """Send prepared audio chunks to the input side of the stream."""
@@ -118,18 +128,18 @@ async def send_audio(
         await input_stream.close()
 ```
 
-Closing `input_stream` half-closes the operation: the application can send no more input events, but the service can continue returning output events. The `finally` block closes the input side even if producing or sending a chunk fails. Closing this side doesn't close the output side or discard output that is still arriving.
+Closing `input_stream` half-closes the operation. The application can't send more input events, but the service can continue to return output events. The `finally` block closes the input side even if producing or sending a chunk fails. Closing this side doesn't close the output side or discard output that is still arriving.
 
 ### Receiving output events
 <a name="using-streaming-receive"></a>
 
-A bidirectional operation can return an initial modeled response before it starts yielding output events. This response contains the non-streaming members of the operation output; a separate receiver supplies the later events. The coordinating function below calls `await_output()` to wait for both, ignores the initial response, and passes the receiver to `receive_events()`.
+A bidirectional operation can return an initial modeled response before it starts to yield output events. This response contains the non-streaming members of the operation output. A separate receiver supplies the later events. The `transcribe_audio` function in [Coordinating both sides](#using-streaming-run) calls `await_output()` to wait for both, ignores the initial response, and passes the receiver to `receive_events()`.
 
-Each received item is one variant of the generated output event union. The receiver validates the variant and delegates the modeled event payload to an application-provided handler. The handler determines how to interpret or store the service-specific payload.
+Each received item is one variant of the generated output event union. The receiver validates the variant and passes the modeled event payload to an application-provided handler. The handler determines how to interpret or store the service-specific payload.
 
 ```
 async def receive_events(
-    output_stream: EventReceiver[TranscriptResultStream],
+    output_stream: AsyncEventReceiver[TranscriptResultStream],
     handle_event: Callable[[TranscriptEvent], None],
 ) -> None:
     """Receive modeled events and pass them to an application handler."""
@@ -142,24 +152,28 @@ async def receive_events(
         handle_event(event.value)
 ```
 
-A modeled service error can also arrive as the application iterates the receiver; the SDK raises it as a generated exception. A generated `TranscriptResultStreamUnknown` value means that the service sent an event variant the installed SDK doesn't recognize. Its `tag` identifies that unrecognized variant so the application can report it without treating it as a known event.
+A modeled service error can also arrive as the application iterates the receiver. The SDK raises it as a generated exception. A `TranscriptResultStreamUnknown` value means that the service sent an event variant that the installed SDK doesn't recognize. Its `tag` identifies the unrecognized variant so that the application can report it without treating it as a known event.
 
 When iteration ends, the service has closed `output_stream` and no more output events remain.
 
 ### Coordinating both sides
 <a name="using-streaming-run"></a>
 
-If an application waits for all input to finish before reading output, the service or client can block while output waits to be consumed. The following function accepts an application-configured request and event handler, starts the operation, enters the stream context, and uses `asyncio.gather()` to run the sender and receiver concurrently.
+If an application waits for all input to finish before it reads output, the service or client can block while output waits to be consumed. The following function starts the operation with keyword arguments for the initial request, enters the stream context, and uses `asyncio.gather()` to run the sender and receiver concurrently. The caller supplies the audio source, the event handler, and the sample rate of the audio.
 
 ```
 async def transcribe_audio(
     client: AsyncTranscribeStreamingClient,
-    request: StartStreamTranscriptionInput,
     audio_chunks: AsyncIterable[bytes],
     handle_event: Callable[[TranscriptEvent], None],
+    sample_rate: int,
 ) -> None:
     """Exchange events over a bidirectional transcription stream."""
-    stream = await client.start_stream_transcription(input=request)
+    stream = await client.start_stream_transcription(
+        language_code=LanguageCode.EN_US,
+        media_sample_rate_hertz=sample_rate,
+        media_encoding=MediaEncoding.PCM,
+    )
 
     async with stream:
         _, output_stream = await stream.await_output()
@@ -171,22 +185,15 @@ async def transcribe_audio(
         )
 ```
 
-On successful completion, `send_audio` closes the input side after the source has no more chunks, while `receive_events` continues until the service closes the output side. Leaving the asynchronous stream context then releases both sides.
+When the source has no more chunks, `send_audio` closes the input side. The `receive_events` function continues until the service closes the output side. Leaving the asynchronous stream context then releases both sides.
 
-The operation model defines how a bidirectional stream ends. Send any required completion event before closing `input_stream`.
+The operation model defines how a bidirectional stream ends. Send any required completion event before you close `input_stream`.
 
-See [Example 2: Stream audio bidirectionally with Amazon Transcribe](getting-started-transcribe-streaming.md) in the Getting Started chapter for a runnable application. The SDK repository also provides examples for a [prerecorded file](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-transcribe-streaming/examples/simple_file.py) and [live microphone input](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-transcribe-streaming/examples/simple_mic.py) on GitHub.
+For a runnable application, see [Example 2: Stream audio bidirectionally with Amazon Transcribe](getting-started-transcribe-streaming.md). The SDK repository on GitHub also provides examples for a [prerecorded file](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-transcribe-streaming/examples/simple_file.py) and [live microphone input](https://github.com/aws/aws-sdk-python/blob/develop/clients/aws-sdk-transcribe-streaming/examples/simple_mic.py).
 
 ## Applying the pattern to other operations
 <a name="using-streaming-other-operations"></a>
 
-The following generated Python methods support HTTP/2 bidirectional event streams:
-+ **Amazon Bedrock Runtime:** [invoke\_model\_with\_bidirectional\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/invoke_model_with_bidirectional_stream/)
-+ **Amazon Connect Health:** [start\_medical\_scribe\_listening\_session()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/connecthealth/operations/start_medical_scribe_listening_session/)
-+ **Amazon Lex Runtime V2:** [start\_conversation()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/lex-runtime-v2/operations/start_conversation/)
-+ **Amazon Polly:** [start\_speech\_synthesis\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/polly/operations/start_speech_synthesis_stream/)
-+ **Amazon Q Business:** [chat()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/qbusiness/operations/chat/)
-+ **Amazon SageMaker Runtime HTTP2:** [invoke\_endpoint\_with\_bidirectional\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/sagemaker-runtime-http2/operations/invoke_endpoint_with_bidirectional_stream/)
-+ **Amazon Transcribe Streaming:** [start\_call\_analytics\_stream\_transcription()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/transcribe-streaming/operations/start_call_analytics_stream_transcription/), [start\_medical\_scribe\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/transcribe-streaming/operations/start_medical_scribe_stream/), [start\_medical\_stream\_transcription()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/transcribe-streaming/operations/start_medical_stream_transcription/), and [start\_stream\_transcription()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/transcribe-streaming/operations/start_stream_transcription/)
+Other services also provide bidirectional event stream operations, including [invoke\_model\_with\_bidirectional\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/bedrock-runtime/operations/invoke_model_with_bidirectional_stream/) in Amazon Bedrock Runtime, [start\_conversation()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/lex-runtime-v2/operations/start_conversation/) in Amazon Lex Runtime V2, and [start\_speech\_synthesis\_stream()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/polly/operations/start_speech_synthesis_stream/) in Amazon Polly.
 
-Each operation defines its own input and output event variants and the signal used to finish the stream. Read the operation API reference before reusing the Amazon Transcribe coordination pattern. For the Amazon Nova Sonic protocol used by Bedrock Runtime, see [Use bidirectional streaming](bedrock-bidirectional-streaming.md).
+Each operation defines its own input and output event variants and the signal that finishes the stream. Read the operation API reference before you reuse the Amazon Transcribe coordination pattern. For the Amazon Nova Sonic protocol that Bedrock Runtime uses, see [Use bidirectional streaming](bedrock-bidirectional-streaming.md).

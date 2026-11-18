@@ -15,7 +15,7 @@ A **durable execution** represents the complete lifecycle of a Lambda durable fu
 The lifecycle might include multiple invocations of a Lambda function to complete the execution, particularly after suspensions or failure recovery. This approach enables your function to run for extended periods (up to one year) while maintaining reliable progress despite interruptions.
 
 **How replay works**
-Lambda keeps a running log of all durable operations (steps, waits, and other operations) as your function executes. When your function needs to pause or encounters an interruption, Lambda saves this checkpoint log and stops the execution. When it's time to resume, Lambda invokes your function again from the beginning and replays the checkpoint log, substituting stored values for completed operations. This means your code runs again, but previously completed steps don't re-execute. Their stored results are used instead.
+Lambda keeps a running log of all durable operations (steps, waits, and other operations) as your function executes. When your function needs to wait or encounters an interruption, Lambda saves this checkpoint log and stops the execution. When it's time to resume, Lambda invokes your function again from the beginning and replays the checkpoint log, substituting stored values for completed operations. This means your code runs again, but previously completed steps don't re-execute. Their stored results are used instead.
 
 This replay mechanism is fundamental to understanding durable functions. Your code must be deterministic during replay, meaning it produces the same results given the same inputs. Avoid operations with side effects (like generating random numbers or getting the current time) outside of steps, as these can produce different values during replay and cause non-deterministic behavior.
 
@@ -104,6 +104,8 @@ For example, if you set a durable execution timeout of 24 hours and a Lambda fun
 + The entire durable execution can run for up to 24 hours
 + Your function can be invoked many times during those 24 hours
 + Wait operations don't count against the Lambda function timeout but do count against the execution timeout
+
+If you pause an execution, you can choose whether the execution timeout keeps running while the execution is paused. For more information about the execution timeout of paused executions, see [Execution timeout while paused](durable-pause-resume.md#durable-pause-resume-timeout).
 
 You can configure the execution timeout when creating a durable function using the Lambda console, AWS CLI, or AWS SAM. In the Lambda console, choose your function, then Configuration, Durable execution. Set the Execution timeout value in seconds (default: 86400 seconds / 24 hours, minimum: 60 seconds, maximum: 31536000 seconds / 1 year).
 

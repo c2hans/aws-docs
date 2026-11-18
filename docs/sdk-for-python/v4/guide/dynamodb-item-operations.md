@@ -2,16 +2,16 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/dynamodb-item-operations.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Work with DynamoDB items
 <a name="dynamodb-item-operations"></a>
 
 In DynamoDB, an item is a collection of *attributes*, each of which has a *name* and a *value*. An attribute value can be a scalar, set, or document type. For more information, see [Naming Rules and Data Types](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html) in the Amazon DynamoDB Developer Guide.
 
-The low-level client represents an item as a map of attribute names to typed `AttributeValue` models, such as `AttributeValueS` for a string and `AttributeValueN` for a number. Numbers are strings to preserve decimal precision. Response attributes use the same models, so check the concrete model before reading its `value`, as shown in [Get an item](#dynamodb-get-item).
+The examples pass an item as a dictionary that maps each attribute name to a typed value. Each typed value is a dictionary with one key that names the attribute type, such as `"s"` for a string and `"n"` for a number. Numbers are strings to preserve decimal precision. Responses return each attribute as a typed `AttributeValue` model, such as `AttributeValueS` or `AttributeValueN`. Check the concrete model before you read its `value`, as shown in [Get an item](#dynamodb-get-item). For more information about dictionaries and model objects, see [Passing nested values](using-requests.md#using-requests-nested).
 
-The examples on this page use the composite-key table created in [Create a table with a composite primary key](dynamodb-tables.md#dynamodb-create-composite-table). The `client` that is used in the following examples can be created from the snippet in [Set up the examples](services-dynamodb.md#dynamodb-shared-setup).
+The examples on this page use the composite-key table created in [Create a table with a composite primary key](dynamodb-tables.md#dynamodb-create-composite-table). To create the `client` that the following examples use, see [Set up the examples](services-dynamodb.md#dynamodb-shared-setup). The identity that runs the examples needs the `dynamodb:PutItem`, `dynamodb:GetItem`, `dynamodb:UpdateItem`, and `dynamodb:DeleteItem` permissions on the table.
 
 ## Put an item
 <a name="dynamodb-put-item"></a>
@@ -23,29 +23,22 @@ Pass a complete map of typed attributes to `put_item`. A put replaces an existin
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import (
-    AttributeValueN,
-    AttributeValueS,
-    PutItemInput,
-)
+from aws_sdk_dynamodb import DynamoDBClient
 ```
 
  **Code**
 
 ```
-async def put_item(client: AsyncDynamoDBClient, table_name: str) -> None:
+def put_item(client: DynamoDBClient, table_name: str) -> None:
     """Put a book item, replacing any item with the same primary key."""
-    await client.put_item(
-        input=PutItemInput(
-            table_name=table_name,
-            item={
-                "author": AttributeValueS(value="Ada Lovelace"),
-                "title": AttributeValueS(value="Notes on the Analytical Engine"),
-                "year": AttributeValueN(value="1843"),
-                "copies": AttributeValueN(value="0"),
-            },
-        )
+    client.put_item(
+        table_name=table_name,
+        item={
+            "author": {"s": "Mary Major"},
+            "title": {"s": "Notes on Example Data"},
+            "year": {"n": "1843"},
+            "copies": {"n": "0"},
+        },
     )
 ```
 
@@ -59,33 +52,32 @@ Supply every primary-key attribute to `get_item`. This example requests a strong
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import AttributeValue, AttributeValueS, GetItemInput
+from aws_sdk_dynamodb import DynamoDBClient
+from aws_sdk_dynamodb.models import AttributeValue, AttributeValueS
 ```
 
  **Code**
 
 ```
-async def get_item(
-    client: AsyncDynamoDBClient, table_name: str
+def get_item(
+    client: DynamoDBClient, table_name: str
 ) -> dict[str, AttributeValue] | None:
     """Get a book by its complete composite primary key."""
-    response = await client.get_item(
-        input=GetItemInput(
-            table_name=table_name,
-            key={
-                "author": AttributeValueS(value="Ada Lovelace"),
-                "title": AttributeValueS(value="Notes on the Analytical Engine"),
-            },
-            consistent_read=True,
-        )
+    response = client.get_item(
+        table_name=table_name,
+        key={
+            "author": {"s": "Mary Major"},
+            "title": {"s": "Notes on Example Data"},
+        },
+        consistent_read=True,
     )
     return response.item
 ```
 
-Each returned attribute is a typed `AttributeValue` union. Narrow it to its concrete model before reading its `value`.
+Each returned attribute is a typed `AttributeValue` union. Narrow it to its concrete model before you read its `value`.
 
 ```
+item = get_item(client, table_name)
 if item:
     title = item.get("title")
     if isinstance(title, AttributeValueS):
@@ -97,41 +89,32 @@ if item:
 
 For request and response details, see the [update\_item()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/dynamodb/operations/update_item/) API reference.
 
-Use an update expression to change selected attributes. Expression-name placeholders safely represent attribute names, and `ALL_NEW` returns the item after the update.
+Use an update expression to change selected attributes. The `#copies` placeholder in `expression_attribute_names` stands for the attribute name, so the expression can refer to any attribute name, including reserved words. `ALL_NEW` returns the item after the update.
 
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import (
-    AttributeValue,
-    AttributeValueN,
-    AttributeValueS,
-    UpdateItemInput,
-)
+from aws_sdk_dynamodb import DynamoDBClient
+from aws_sdk_dynamodb.models import AttributeValue
 ```
 
  **Code**
 
 ```
-async def update_item(
-    client: AsyncDynamoDBClient, table_name: str
+def update_item(
+    client: DynamoDBClient, table_name: str
 ) -> dict[str, AttributeValue]:
     """Increment a book's copy count and return the updated item."""
-    response = await client.update_item(
-        input=UpdateItemInput(
-            table_name=table_name,
-            key={
-                "author": AttributeValueS(value="Ada Lovelace"),
-                "title": AttributeValueS(value="Notes on the Analytical Engine"),
-            },
-            update_expression="SET #copies = #copies + :increment",
-            expression_attribute_names={"#copies": "copies"},
-            expression_attribute_values={
-                ":increment": AttributeValueN(value="1")
-            },
-            return_values="ALL_NEW",
-        )
+    response = client.update_item(
+        table_name=table_name,
+        key={
+            "author": {"s": "Mary Major"},
+            "title": {"s": "Notes on Example Data"},
+        },
+        update_expression="SET #copies = #copies + :increment",
+        expression_attribute_names={"#copies": "copies"},
+        expression_attribute_values={":increment": {"n": "1"}},
+        return_values="ALL_NEW",
     )
     return response.attributes or {}
 ```
@@ -146,23 +129,20 @@ Delete one item by supplying its complete primary key.
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import AttributeValueS, DeleteItemInput
+from aws_sdk_dynamodb import DynamoDBClient
 ```
 
  **Code**
 
 ```
-async def delete_item(client: AsyncDynamoDBClient, table_name: str) -> None:
+def delete_item(client: DynamoDBClient, table_name: str) -> None:
     """Delete a book by its complete composite primary key."""
-    await client.delete_item(
-        input=DeleteItemInput(
-            table_name=table_name,
-            key={
-                "author": AttributeValueS(value="Ada Lovelace"),
-                "title": AttributeValueS(value="Notes on the Analytical Engine"),
-            },
-        )
+    client.delete_item(
+        table_name=table_name,
+        key={
+            "author": {"s": "Mary Major"},
+            "title": {"s": "Notes on Example Data"},
+        },
     )
 ```
 
@@ -171,39 +151,31 @@ async def delete_item(client: AsyncDynamoDBClient, table_name: str) -> None:
 
 For request and response details, see the [put\_item()](https://docs.aws.amazon.com/sdk-for-python/v4/reference/clients/dynamodb/operations/put_item/) API reference.
 
-A condition expression is evaluated before DynamoDB changes the item. This conditional put prevents replacement of an item that already has the same key. A false condition raises the modeled `ConditionalCheckFailedException` and does not change the item.
+DynamoDB evaluates a condition expression before it changes the item. This conditional put doesn't replace an item that already has the same key. If the condition is false, DynamoDB doesn't change the item. The client raises the modeled `ConditionalCheckFailedException`.
 
  **Imports**
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.models import (
-    AttributeValueS,
-    ConditionalCheckFailedException,
-    PutItemInput,
-)
+from aws_sdk_dynamodb import DynamoDBClient
+from aws_sdk_dynamodb.models import ConditionalCheckFailedException
 ```
 
  **Code**
 
 ```
-async def put_item_conditionally(
-    client: AsyncDynamoDBClient, table_name: str
+def put_item_conditionally(
+    client: DynamoDBClient, table_name: str
 ) -> bool:
-    """Put a book only when its partition key does not already exist."""
+    """Put a book only when no item has the same primary key."""
     try:
-        await client.put_item(
-            input=PutItemInput(
-                table_name=table_name,
-                item={
-                    "author": AttributeValueS(value="Ada Lovelace"),
-                    "title": AttributeValueS(
-                        value="Notes on the Analytical Engine"
-                    ),
-                },
-                condition_expression="attribute_not_exists(#author)",
-                expression_attribute_names={"#author": "author"},
-            )
+        client.put_item(
+            table_name=table_name,
+            item={
+                "author": {"s": "Mary Major"},
+                "title": {"s": "Notes on Example Data"},
+            },
+            condition_expression="attribute_not_exists(#author)",
+            expression_attribute_names={"#author": "author"},
         )
         return True
     except ConditionalCheckFailedException:

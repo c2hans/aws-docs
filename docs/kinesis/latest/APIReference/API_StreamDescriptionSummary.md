@@ -62,7 +62,7 @@ Valid Range: Minimum value of 0. Maximum value of 1000000.
 Required: No
 
  ** ConsumerCount **   <a name="Streams-Type-StreamDescriptionSummary-ConsumerCount"></a>
-The number of enhanced fan-out consumers registered with the stream.
+The number of enhanced fan-out consumers registered with the stream. Queues are not included in this count, even though they share the stream's registered consumer limit with enhanced fan-out consumers. `QueueCount` reports the number of queues.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 1000000.
 Required: No
@@ -92,6 +92,12 @@ Type: Integer
 Valid Range: Minimum value of 1024. Maximum value of 10240.
 Required: No
 
+ ** QueueCount **   <a name="Streams-Type-StreamDescriptionSummary-QueueCount"></a>
+The number of queues created on the data stream.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 1000000.
+Required: No
+
  ** RecordDistributionStrategy **   <a name="Streams-Type-StreamDescriptionSummary-RecordDistributionStrategy"></a>
 The record distribution strategy that the stream currently uses. A value of `AUTO` indicates that Amazon Kinesis Data Streams distributes records across shards using service-managed algorithms. A value of `USER_PARTITION_KEY` indicates that shard placement is determined by the partition key that producers supply. This field is only present for streams that use the on-demand capacity mode.
 Type: String
@@ -106,7 +112,7 @@ Pattern: `[a-z0-9]{20}-[a-z0-9]{3}`
 Required: No
 
  ** StreamModeDetails **   <a name="Streams-Type-StreamDescriptionSummary-StreamModeDetails"></a>
- Specifies the capacity mode to which you want to set your data stream. Currently, in Kinesis Data Streams, you can choose between an **on-demand** ycapacity mode and a **provisioned** capacity mode for your data streams.
+ Specifies the capacity mode to which you want to set your data stream. Currently, in Kinesis Data Streams, you can choose between an **on-demand** capacity mode and a **provisioned** capacity mode for your data streams.
 Type: [StreamModeDetails](API_StreamModeDetails.md) object
 Required: No
 

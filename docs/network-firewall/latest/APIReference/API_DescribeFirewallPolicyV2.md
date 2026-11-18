@@ -98,6 +98,11 @@ Required: No
                   "RulesString": "string"
                },
                "RuleVariables": {
+                  "ContextSets": {
+                     "string" : {
+                        "Definition": [ "string" ]
+                     }
+                  },
                   "IPSets": {
                      "string" : {
                         "Definition": [ "string" ]
@@ -128,6 +133,11 @@ Required: No
                   "RulesString": "string"
                },
                "RuleVariables": {
+                  "ContextSets": {
+                     "string" : {
+                        "Definition": [ "string" ]
+                     }
+                  },
                   "IPSets": {
                      "string" : {
                         "Definition": [ "string" ]

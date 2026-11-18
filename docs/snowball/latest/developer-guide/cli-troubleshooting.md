@@ -12,7 +12,7 @@ Use the following topics to help you resolve problems when working with an AWS S
 ## Troubleshooting AWS CLI error message: "Profile Cannot Be Null" with Snowball Edge
 <a name="null-profile-troubleshooting"></a>
 
-When working with the AWS CLI, you might encounter an error message that says Profile cannot be null. You can encounter this error if the AWS CLI hasn't been installed or an AWS CLI profile hasn't been configured.
+When working with the AWS CLI, you might encounter an error message that says `Profile cannot be null`. You can encounter this error if the AWS CLI hasn't been installed or an AWS CLI profile hasn't been configured.
 
 **Action to take**
 Ensure that you have downloaded and configured the AWS CLI on your workstation. For more information, see [Install or update to the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide.*

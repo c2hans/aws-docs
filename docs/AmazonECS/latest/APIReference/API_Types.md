@@ -105,6 +105,7 @@ The following data types are supported:
 +  [GatewayConnectionAlbResources](API_GatewayConnectionAlbResources.md)
 +  [GatewayConnectionResources](API_GatewayConnectionResources.md)
 +  [GatewayConnector](API_GatewayConnector.md)
++  [GatewayConnectorDeregistrationDelay](API_GatewayConnectorDeregistrationDelay.md)
 +  [GatewayConnectorFilters](API_GatewayConnectorFilters.md)
 +  [GatewayConnectorHealthCheck](API_GatewayConnectorHealthCheck.md)
 +  [GatewayConnectorHealthCheckMatcher](API_GatewayConnectorHealthCheckMatcher.md)

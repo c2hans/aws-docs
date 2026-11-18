@@ -11,3 +11,4 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 + [`AWS-EnableSNSTopicDeliveryStatusLogging`](aws-enable-sns-topic-delivery-status-logging.md)
 + [`AWSConfigRemediation-EncryptSNSTopic`](automation-aws-encrypt-sns-topic.md)
 + [`AWS-PublishSNSNotification`](automation-aws-publishsnsnotification.md)
++ [`AWSSupportRemediator-EnableSnsEncryptionAtRest`](automation-awssupportremediator-enablesnsencryptionatrest.md)

@@ -56,7 +56,7 @@ The request accepts the following data in JSON format.
 The name of the AWS Config rule for which you want to create remediation exception.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[A-Za-z0-9_-]+`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** [ExpirationTime](#API_PutRemediationExceptions_RequestSyntax) **   <a name="config-PutRemediationExceptions-request-ExpirationTime"></a>

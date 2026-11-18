@@ -77,6 +77,8 @@ You can create member accounts in an organization that is managed by AWS Organiz
 
 You can't create a standalone AWS account outside of an organization by using an AWS Command Line Interface (AWS CLI) or AWS API operation.
 
+To start Sign up for AWS (new) from the AWS CLI instead, see [Sign up using the AWS CLI](sign-in-new.md#sign-up-cli).
+
 ------
 
 ## Step 2: (Recommended) Install the AWS CLI

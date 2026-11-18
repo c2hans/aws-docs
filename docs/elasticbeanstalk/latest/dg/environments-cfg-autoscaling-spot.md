@@ -18,7 +18,7 @@ When you enable Capacity Rebalancing, EC2 automatically attempts to replace Spot
 For more information, see [Capacity Rebalancing](https://docs.aws.amazon.com/autoscaling/ec2/userguide/capacity-rebalance.html) in the *Amazon EC2 Auto Scaling User Guide* and [Spot Instance Interruptions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html) in the *Amazon EC2 User Guide*.
 
 **Older Instance Types and Spot Instance Support**
-Some older AWS accounts might provide Elastic Beanstalk with default instance types that don't support Spot Instances. If you enable Spot Instance requests and you see the error None of the instance types you specified supports Spot, update your configuration with instance types that support Spot Instances. To choose Spot Instance types, use the [Spot Instance Advisor](https://aws.amazon.com/ec2/spot/instance-advisor/).
+Some older AWS accounts might provide Elastic Beanstalk with default instance types that don't support Spot Instances. If you enable Spot Instance requests and you see the error `None of the instance types you specified supports Spot`, update your configuration with instance types that support Spot Instances. To choose Spot Instance types, use the [Spot Instance Advisor](https://aws.amazon.com/ec2/spot/instance-advisor/).
 
 **Topics**
 + [Enabling Spot Instances for your environment](environments-cfg-autoscaling-enable-spot.md)

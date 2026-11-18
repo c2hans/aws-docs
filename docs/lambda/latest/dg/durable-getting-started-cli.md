@@ -190,6 +190,32 @@ aws lambda stop-durable-execution \
   --durable-execution-arn {{arn:aws:lambda:us-east-1:123456789012:function:myDurableFunction:my-function-version/durable-execution/my-execution-name/my-execution-id}}
 ```
 
+**Pause an execution**
+Pause a running durable execution so that Lambda stops invoking your function. In the following example, replace the execution ARN and reason with your own values:
+
+```
+aws lambda pause-durable-execution \
+  --durable-execution-arn {{arn:aws:lambda:us-east-1:123456789012:function:myDurableFunction:my-function-version/durable-execution/my-execution-name/my-execution-id}} \
+  --reason "{{Investigating downstream errors}}"
+```
+
+This command uses the following options:
++ `--durable-execution-arn` – The ARN of the durable execution to pause.
++ `--reason` – (Optional) A description of why you're pausing the execution.
+
+**Resume an execution**
+Resume a paused durable execution from its last checkpoint. In the following example, replace the execution ARN with your own value:
+
+```
+aws lambda resume-durable-execution \
+  --durable-execution-arn {{arn:aws:lambda:us-east-1:123456789012:function:myDurableFunction:my-function-version/durable-execution/my-execution-name/my-execution-id}}
+```
+
+This command uses the following option:
++ `--durable-execution-arn` – The ARN of the paused durable execution to resume.
+
+For more information about pausing and resuming executions, see [Pausing and resuming durable executions](durable-pause-resume.md).
+
 To delete a durable execution that has reached a terminal state, together with its data, run the following command:
 
 ```

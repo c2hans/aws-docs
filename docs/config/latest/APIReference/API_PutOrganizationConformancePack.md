@@ -56,7 +56,7 @@ The request accepts the following data in JSON format.
  ** [ConformancePackInputParameters](#API_PutOrganizationConformancePack_RequestSyntax) **   <a name="config-PutOrganizationConformancePack-request-ConformancePackInputParameters"></a>
 A list of `ConformancePackInputParameter` objects.
 Type: Array of [ConformancePackInputParameter](API_ConformancePackInputParameter.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 60 items.
+Array Members: Minimum number of 0 items. Maximum number of 330 items.
 Required: No
 
  ** [DeliveryS3Bucket](#API_PutOrganizationConformancePack_RequestSyntax) **   <a name="config-PutOrganizationConformancePack-request-DeliveryS3Bucket"></a>
@@ -77,7 +77,6 @@ Required: No
 A list of AWS accounts to be excluded from an organization conformance pack while deploying a conformance pack.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 1000 items.
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

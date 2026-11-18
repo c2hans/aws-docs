@@ -31,7 +31,7 @@ The request accepts the following data in JSON format.
  ** [JobCategory](#API_DescribeJobSchemaVersion_RequestSyntax) **   <a name="sagemaker-DescribeJobSchemaVersion-request-JobCategory"></a>
 The category of the job schema to describe.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 Required: Yes
 
  ** [JobConfigSchemaVersion](#API_DescribeJobSchemaVersion_RequestSyntax) **   <a name="sagemaker-DescribeJobSchemaVersion-request-JobConfigSchemaVersion"></a>
@@ -62,7 +62,7 @@ The following data is returned in JSON format by the service.
  ** [JobCategory](#API_DescribeJobSchemaVersion_ResponseSyntax) **   <a name="sagemaker-DescribeJobSchemaVersion-response-JobCategory"></a>
 The category of the job schema.
 Type: String
-Valid Values: `AgentRFT | AgentRFTEvaluation`
+Valid Values: `AgentRFT | SyntheticDataGeneration | DataQualityEvaluation | AgentRFTEvaluation | DataTransformation`
 
  ** [JobConfigSchema](#API_DescribeJobSchemaVersion_ResponseSyntax) **   <a name="sagemaker-DescribeJobSchemaVersion-response-JobConfigSchema"></a>
 The JSON schema document that defines the structure of the job configuration.

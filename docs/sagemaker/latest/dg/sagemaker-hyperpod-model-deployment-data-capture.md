@@ -287,3 +287,5 @@ To enable data capture on your HyperPod Inference deployments, configure the fol
 + Use `initialSamplingPercentage` to control the volume of captured data. Start with a lower percentage in production and increase as needed.
 + Use `payloadConfig.maxPayloadSizeKB` (Tier 3) to cap the size of captured payloads and control storage costs.
 + Specify a `kmsKeyId` for Tier 1 and Tier 3 if your workload requires encryption at rest with your own AWS KMS key.
++ Set `s3Uri` to a dedicated bucket. If you omit it, captured data goes to the bucket the operator uses for TLS certificates.
++ Restrict access to the capture bucket. Turn on Amazon S3 Block Public Access, and limit read access to the principals that analyze captured data.

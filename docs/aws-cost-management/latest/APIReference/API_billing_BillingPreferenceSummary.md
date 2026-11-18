@@ -13,14 +13,14 @@ A single billing preference entry returned by `GetBillingPreferences`.
  ** feature **   <a name="awscostmanagement-Type-billing_BillingPreferenceSummary-feature"></a>
 The feature this preference belongs to.
 Type: String
-Valid Values: `RI_SHARING | RI_SHARING_HISTORY | CREDIT_SHARING | CREDIT_SHARING_HISTORY | CREDIT_LEVEL_SHARING | BILLING_ALERTS | CREDIT_PREFERENCE_OPTIONS`
+Valid Values: `RI_SHARING | RI_SHARING_HISTORY | CREDIT_SHARING | CREDIT_SHARING_HISTORY | CREDIT_LEVEL_SHARING | BILLING_ALERTS | CREDIT_PREFERENCE_OPTIONS | BENEFIT_LEVEL_SHARING`
 Required: Yes
 
  ** key **   <a name="awscostmanagement-Type-billing_BillingPreferenceSummary-key"></a>
 The preference key. Format depends on the feature.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2148.
-Pattern: `[a-zA-Z0-9-\/\*: ]+`
+Pattern: `[-a-zA-Z0-9_\/\*: ]+`
 Required: Yes
 
  ** value **   <a name="awscostmanagement-Type-billing_BillingPreferenceSummary-value"></a>

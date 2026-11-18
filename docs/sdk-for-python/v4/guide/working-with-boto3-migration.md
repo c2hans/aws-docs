@@ -2,41 +2,37 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/working-with-boto3-migration.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Convert AWS SDK for Python (Boto3) operations to the AWS SDK for Python v4
 <a name="working-with-boto3-migration"></a>
 
-The AWS SDK for Python v4 is experimental and in early development. You can try your existing Boto3 application code with the new SDK to evaluate its asynchronous capabilities, modular packages, and generated types in development and test environments. Do not use the AWS SDK for Python v4 for production workloads.
+To evaluate the AWS SDK for Python v4, convert Boto3 code in development and test environments. Keep production workloads on Boto3 during the Developer Preview.
 
-The two SDKs use separate packages and namespaces, so you can add the AWS SDK for Python v4 alongside Boto3 and try one supported operation or workflow at a time.
-
-What you can do today: Try converting your Boto3 application code to the AWS SDK for Python v4 for prototyping and evaluation. This lets you assess the asynchronous model, generated types, and modular architecture of the new SDK before general availability.
-
-What this page is not: A guide for migrating production deployments. Production workloads should remain on Boto3 until the AWS SDK for Python v4 reaches General Availability.
+The two SDKs use separate packages and namespaces, so you can try one operation or workflow at a time.
 
 For guidance on choosing between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 ## Before you start
 <a name="working-with-boto3-migration-readiness"></a>
-+ Check [Supported services](welcome.md#supported-services) for current client availability, then confirm each required operation and generated type in the [AWS SDK for Python v4 API Reference](https://docs.aws.amazon.com/sdk-for-python/v4/reference/). An available client or operation does not by itself establish support for Boto3 Resources, paginators, waiters, transfer utilities, or streaming.
++ Check [Supported services](welcome.md#supported-services) for current client availability, then confirm each required operation and generated type in the [AWS SDK for Python v4 API Reference](https://docs.aws.amazon.com/sdk-for-python/v4/reference/). The SDK doesn't provide paginators, waiters, or transfer utilities yet. Event streams are available only in asynchronous clients.
 + Identify the complete workflow to migrate, including its callers, configuration, error handling, tests, and any Boto3-specific features. Review [Key differences](working-with-boto3-differences.md) before changing its API contracts.
 + Keep Boto3 installed alongside the new SDK. Pin the generated service-package versions used by your application and retest when you upgrade them.
 
 ## Try an operation
 <a name="working-with-boto3-migration-foundation"></a>
 
-1. Add the generated package for the service. Import its asynchronous client, configuration, input and output models, unions, and modeled exceptions.
+1. Add the generated package for the service. Import its synchronous client and configuration, plus the model classes and modeled exceptions that your code uses.
 
-1. Resolve the generated asynchronous service configuration and pass it to the client. Values held in a Boto3 `Session` or Botocore `Config` object do not transfer to the new client. Both SDKs can independently resolve environment variables and shared AWS files, so verify the effective settings for each implementation.
+1. Resolve the generated service configuration with its `resolve()` method and pass it to the client. Values held in a Boto3 `Session` or Botocore `Config` object don't transfer to the new client. Both SDKs can independently resolve environment variables and shared AWS files, so verify the effective settings for each SDK.
 
-1. Move the path that calls the new SDK into `async def` functions. A synchronous script can call `asyncio.run()` once at its entry point; code running in an existing event loop must await the migrated function. See [Running asynchronous code](using-async.md#using-async-run).
+1. Keep the synchronous structure of your code. A synchronous client call blocks like a Boto3 call, so you don't need `async def` functions or an event loop. If your application runs on `asyncio`, use the asynchronous client and `await` each call instead. For the differences between the client types, see [Synchronous and asynchronous clients](using-sync-async.md).
 
-1. Replace Boto3 keyword arguments and request dictionaries with the generated input model. Use snake-case member names and construct the appropriate generated union variants.
+1. Rename each Boto3 keyword argument to its snake-case member name, such as `TableName` to `table_name`. Replace nested request dictionaries with generated model objects, including the generated variant for each union value.
 
 1. Replace response-dictionary access with generated output attributes. Check optional members for `None` and narrow generated unions before reading their values.
 
-1. Replace `ClientError` parsing with generated modeled exceptions where applicable, and account for runtime exceptions raised while preparing, sending, or processing a request. Update tests for the new asynchronous and generated types. See [Handling errors](using-errors.md).
+1. Replace `ClientError` parsing with generated modeled exceptions where applicable. Account for runtime exceptions raised while preparing, sending, or processing a request. Update tests for the generated types. For more information, see [Handling errors](using-errors.md).
 
 ## Example: convert a DynamoDB GetItem operation
 <a name="working-with-boto3-migration-example"></a>
@@ -45,7 +41,7 @@ This example applies the conversion sequence to one low-level DynamoDB `GetItem`
 
 Before you run the example:
 + Create a DynamoDB table with string partition and sort keys named `author` and `title`.
-+ Add an item with `author` set to "Ada Lovelace" and `title` set to "Notes on the Analytical Engine".
++ Add an item with `author` set to "Mary Major" and `title` set to "Notes on Example Data".
 
 ### Step 1: Add the service package
 <a name="working-with-boto3-migration-install"></a>
@@ -68,8 +64,8 @@ from typing import Any
 
 import boto3
 
-AUTHOR = "Ada Lovelace"
-TITLE = "Notes on the Analytical Engine"
+AUTHOR = "Mary Major"
+TITLE = "Notes on Example Data"
 
 def get_book_with_boto3(
     client: Any,
@@ -98,45 +94,38 @@ def run_boto3(table_name: str, region: str) -> None:
     print(title)
 ```
 
-The service function and its caller separate the SDK operation from application-level result handling. The conversion changes four SDK-facing parts: client construction, the synchronous boundary, request dictionaries, and response-dictionary access. The not-found message and title validation are application behavior that the migrated version preserves.
+The conversion changes three parts: client construction, request arguments, and response access.
 
 ### Step 3: Replace the complete operation
 <a name="working-with-boto3-migration-after"></a>
 
-The migrated version preserves the same result handling. Its SDK-specific code imports the generated client, asynchronous configuration, input model, and attribute-value union variants; resolves the configuration; awaits `get_item()`; reads the optional `item` output attribute; and narrows the returned title to `AttributeValueS`.
+The converted version uses the synchronous DynamoDB client of the AWS SDK for Python v4 and keeps the same result handling. It imports the generated client, configuration, and attribute-value union types. Then it resolves the configuration. It calls `get_item()` with keyword arguments and passes each key attribute as a dictionary with a snake-case union key, such as `{"s": AUTHOR}`. Then it reads the optional `item` output attribute and narrows the returned title to `AttributeValueS`.
 
 ```
-from aws_sdk_dynamodb.client import AsyncDynamoDBClient
-from aws_sdk_dynamodb.config import AsyncDynamoDBConfig
-from aws_sdk_dynamodb.models import (
-    AttributeValue,
-    AttributeValueS,
-    GetItemInput,
-)
+from aws_sdk_dynamodb import DynamoDBClient, DynamoDBConfig
+from aws_sdk_dynamodb.models import AttributeValue, AttributeValueS
 
-AUTHOR = "Ada Lovelace"
-TITLE = "Notes on the Analytical Engine"
+AUTHOR = "Mary Major"
+TITLE = "Notes on Example Data"
 
-async def get_book_with_sdk(
-    client: AsyncDynamoDBClient,
+def get_book_with_sdk(
+    client: DynamoDBClient,
     table_name: str,
 ) -> dict[str, AttributeValue] | None:
-    response = await client.get_item(
-        GetItemInput(
-            table_name=table_name,
-            key={
-                "author": AttributeValueS(value=AUTHOR),
-                "title": AttributeValueS(value=TITLE),
-            },
-            consistent_read=True,
-        )
+    response = client.get_item(
+        table_name=table_name,
+        key={
+            "author": {"s": AUTHOR},
+            "title": {"s": TITLE},
+        },
+        consistent_read=True,
     )
     return response.item
 
-async def run_sdk(table_name: str, region: str) -> None:
-    config = await AsyncDynamoDBConfig.resolve(region=region)
-    async with AsyncDynamoDBClient(config=config) as client:
-        item = await get_book_with_sdk(client, table_name)
+def run_sdk(table_name: str, region: str) -> None:
+    config = DynamoDBConfig.resolve(region=region)
+    with DynamoDBClient(config=config) as client:
+        item = get_book_with_sdk(client, table_name)
         if item is None:
             print("The book was not found.")
             return
@@ -147,7 +136,18 @@ async def run_sdk(table_name: str, region: str) -> None:
         print(title.value)
 ```
 
-The complete example keeps these SDK-specific functions separate from its shared command-line entry point. Code that is already running in an event loop should await `run_sdk()` instead of calling `asyncio.run()`.
+The following table shows how each Boto3 part of the request and response maps to the AWS SDK for Python v4.
+
+| AWS SDK for Python (Boto3) | AWS SDK for Python v4 |
+| --- | --- |
+| TableName=table\_name | table\_name=table\_name |
+| Key={"author": {"S": AUTHOR}} | key={"author": {"s": AUTHOR}} |
+| ConsistentRead=True | consistent\_read=True |
+| response.get("Item") | response.item |
+| item.get("title", {}).get("S") | item.get("title"), then check for AttributeValueS and read value |
+| except ClientError, then read error.response["Error"]["Code"] | except ResourceNotFoundException or another generated exception class |
+
+For the other accepted argument forms, see [Making requests and handling responses](using-requests.md). For error handling, see [Handling errors](using-errors.md).
 
 ### Step 4: Run and compare the implementations
 <a name="working-with-boto3-migration-compare"></a>
@@ -156,7 +156,6 @@ The complete example uses one shared command-line parser and entry point for bot
 
 ```
 import argparse
-import asyncio
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
@@ -174,13 +173,11 @@ def main() -> None:
     if args.implementation == "boto3":
         run_boto3(args.table_name, args.region)
     else:
-        asyncio.run(run_sdk(args.table_name, args.region))
+        run_sdk(args.table_name, args.region)
 
 if __name__ == "__main__":
     main()
 ```
-
-`--implementation boto3` calls the synchronous Boto3 branch directly. `--implementation sdk` starts one event loop for the asynchronous AWS SDK for Python v4 branch.
 
 Run each implementation against the same table, key, and Region:
 
@@ -196,5 +193,6 @@ Both commands should print the same title for the example item and should both r
 + For guidance on choosing the best path for your application, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 + For current client availability, see [Supported services](welcome.md#supported-services).
 + For API-model and execution differences, see [Key differences](working-with-boto3-differences.md).
++ For the differences between synchronous and asynchronous clients, see [Synchronous and asynchronous clients](using-sync-async.md).
 + For workflows that continue to require both SDKs, see [Use both SDKs in one application](working-with-boto3-coexistence.md).
-+ For asynchronous unit and integration testing patterns, see [Testing applications that use the SDK](using-testing.md).
++ For unit and integration testing patterns, see [Testing applications that use the SDK](using-testing.md).

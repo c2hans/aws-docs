@@ -26,6 +26,8 @@ Choose the engine version for your target database. This setting is the PostgreS
 **Type:** String (`14` \| `15`)
 **Default:** `15`
 
+**Metadata settings**
+
 Settings that control how source SAP ASE metadata — object names, schema structure, and index definitions — is handled during conversion.
 
 **Treat source database object names as case sensitive** (`CaseSensitivityNames`)
@@ -58,6 +60,8 @@ Controls how the target PostgreSQL schema name is generated from the SAP ASE two
 
 **Type:** String (enum)
 **Default:** `DB_SCHEMA`
+
+**SQL code settings**
 
 Settings that control how SAP ASE code — identifiers and case-insensitive operations — is handled during conversion.
 

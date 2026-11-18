@@ -399,12 +399,15 @@ You can create rules on the default event bus to identify specific events for Ev
 The following detail-types are available:
 
 **For tenant sending status changes:**
-+ `Sending Status Enabled` – The new sending status is `ENABLED`.
-+ `Sending Status Disabled` – The new sending status is `DISABLED` or `REINSTATED`.
++ `Sending Status Enabled` – The new sending status is `ENABLED` or `REINSTATED`.
++ `Sending Status Disabled` – The new sending status is `DISABLED`.
+
+**Important**
+Add `Sending Status Enabled` to your rule to receive an event when sending resumes after a pause. If you match only `Sending Status Disabled`, you don't receive these events.
 
 **Note**
-SES sends `Sending Status Disabled` for both a pause and a reinstatement. Read `detail.data.record.status` to tell the two apart. A status of `DISABLED` means the origin cannot send email. A status of `REINSTATED` means the origin can send email again. Do not use the detail-type alone to decide if a tenant can send email.
-The status in the event applies only to the origin named in `detail.data.origin`. It does not describe the tenant as a whole. If either origin is `DISABLED`, the tenant cannot send email. To read the combined status, call [GetReputationEntity](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetReputationEntity.html) and use the `SendingStatusAggregate` value.
+SES sends `Sending Status Enabled` when the sending status of one of a tenant's origins changes to `ENABLED` or to `REINSTATED`. To tell the two apart, read `detail.data.record.status`. `ENABLED` means the origin can send email. `REINSTATED` means the origin can send email again after a pause.
+Don't use the detail-type alone to decide if a tenant can send email. The status in the event applies only to the origin named in `detail.data.origin`. It does not describe the tenant as a whole. If either origin is `DISABLED`, the tenant cannot send email. To read the combined status, call [GetReputationEntity](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetReputationEntity.html) and use the `SendingStatusAggregate` value.
 
 **For reputation findings:**
 + `Advisor Recommendation Status Open`

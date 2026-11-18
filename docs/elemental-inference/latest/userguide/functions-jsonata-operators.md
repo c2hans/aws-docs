@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Operators
 <a name="functions-jsonata-operators"></a>
 
+The following tables list the operators that you can use in an expression.
+
 ## Arithmetic
 <a name="functions-jsonata-operators-arithmetic"></a>
 
@@ -21,7 +23,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 
 | Operator | Description | Example |
 | --- | --- | --- |
-| = | Equal to | media.contextual.garm.risk = "LOW" |
+| = | Equal to | $count(media.contextual.shot.garm.suitability.categories[flagged]) = 0 |
 | \!= | Not equal to | stop\_reason \!= "max\_tokens" |
 | < | Less than | $count(media.frames) < 4 |
 | > | Greater than | usage.output\_tokens > 200 |
@@ -35,7 +37,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 | --- | --- | --- |
 | and | Logical AND | $exists(media.transcript) and $length(media.transcript) > 20 |
 | or | Logical OR | risk = "HIGH" or risk = "FLOOR" |
-| in | Tests membership in an array | "Basketball" in media.contextual.categories |
+| in | Tests membership in an array | "Example Corp" in media.contextual.shot.brands |
 | \~> | Chains a value into a function as its first argument | media.transcript \~> $lowercase \~> $trim |
 
 Use parentheses to control precedence.

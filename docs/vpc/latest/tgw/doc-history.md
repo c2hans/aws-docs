@@ -9,6 +9,7 @@ The following table describes the releases for transit gateways.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Support for network function attachments of type Gateway Load Balancer](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-nf-fw.html) | Create and manage a network function attachment of type Gateway Load Balancer to connect a transit gateway to a Gateway Load Balancer VPC endpoint service. For more information, see AWS Transit Gateway network function attachments. | November 17, 2026 |
 | [1:1 NAT for transit gateways](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-nat.html) | Use 1:1 NAT to translate IPv4 addresses at the transit gateway, so that networks with overlapping CIDRs can communicate without being re-addressed. | October 22, 2026 |
 | [Policy-Based Routing for transit gateways](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html) | Use Policy-Based Routing (PBR) and policy tables to forward traffic across a transit gateway based on packet attributes such as source and destination IP addresses, ports, and protocol. | July 28, 2026 |
 | [Client VPN attachments](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-client-vpn-attachments.html) | Create a Client VPN attachment to connect a transit gateway to a Client VPN endpoint. | April 20, 2026 |

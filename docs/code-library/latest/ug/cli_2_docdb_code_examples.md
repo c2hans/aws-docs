@@ -19,6 +19,47 @@ Each example includes a link to the complete source code, where you can find ins
 ## Actions
 <a name="actions"></a>
 
+### `add-source-identifier-to-subscription`
+<a name="docdb_AddSourceIdentifierToSubscription_cli_2_topic"></a>
+
+The following code example shows how to use `add-source-identifier-to-subscription`.
+
+**AWS CLI**
+**To add a source to an event notification subscription**
+The following `add-source-identifier-to-subscription` example limits the specified subscription to events from the Amazon DocumentDB cluster `docdb-primary-cluster`.
+
+```
+aws docdb add-source-identifier-to-subscription \
+    --subscription-name {{docdb-cluster-events}} \
+    --source-identifier {{docdb-primary-cluster}}
+```
+Output:
+
+```
+{
+    "EventSubscription": {
+        "CustomerAwsId": "123456789012",
+        "CustSubscriptionId": "docdb-cluster-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:docdb-events",
+        "Status": "active",
+        "SubscriptionCreationTime": "2026-10-29 13:06:47.837",
+        "SourceType": "db-cluster",
+        "SourceIdsList": [
+            "docdb-primary-cluster"
+        ],
+        "EventCategoriesList": [
+            "failure",
+            "maintenance",
+            "notification"
+        ],
+        "Enabled": false,
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:docdb-cluster-events"
+    }
+}
+```
+For more information, see [Managing Amazon DocumentDB event notification subscriptions](https://docs.aws.amazon.com/documentdb/latest/devguide/event-subscriptions.managing.html) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [AddSourceIdentifierToSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/add-source-identifier-to-subscription.html) in *AWS CLI Command Reference*.
+
 ### `add-tags-to-resource`
 <a name="docdb_AddTagsToResource_cli_2_topic"></a>
 
@@ -388,6 +429,87 @@ Output:
 For more information, see [Creating an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-subnet-group-create.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [CreateDbSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/create-db-subnet-group.html) in *AWS CLI Command Reference*.
 
+### `create-event-subscription`
+<a name="docdb_CreateEventSubscription_cli_2_topic"></a>
+
+The following code example shows how to use `create-event-subscription`.
+
+**AWS CLI**
+**To create an event notification subscription**
+The following `create-event-subscription` example creates a subscription that sends `failure` and `maintenance` events for Amazon DocumentDB clusters to the specified Amazon SNS topic.
+
+```
+aws docdb create-event-subscription \
+    --subscription-name {{docdb-cluster-events}} \
+    --sns-topic-arn {{arn:aws:sns:us-west-2:123456789012:docdb-events}} \
+    --source-type {{db-cluster}} \
+    --event-categories {{failure}} {{maintenance}}
+```
+Output:
+
+```
+{
+    "EventSubscription": {
+        "CustomerAwsId": "123456789012",
+        "CustSubscriptionId": "docdb-cluster-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:docdb-events",
+        "Status": "active",
+        "SubscriptionCreationTime": "2026-10-29 13:06:47.837",
+        "SourceType": "db-cluster",
+        "EventCategoriesList": [
+            "failure",
+            "maintenance"
+        ],
+        "Enabled": true,
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:docdb-cluster-events"
+    }
+}
+```
+For more information, see [Subscribing to Amazon DocumentDB events](https://docs.aws.amazon.com/documentdb/latest/devguide/event-subscriptions.subscribe.html) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [CreateEventSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/create-event-subscription.html) in *AWS CLI Command Reference*.
+
+### `create-global-cluster`
+<a name="docdb_CreateGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `create-global-cluster`.
+
+**AWS CLI**
+**To create a global DB cluster**
+The following `create-global-cluster` example creates an Amazon DocumentDB global DB cluster that uses the specified cluster as its primary cluster.
+
+```
+aws docdb create-global-cluster \
+    --global-cluster-identifier {{docdb-global-cluster}} \
+    --source-db-cluster-identifier {{arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster}}
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "docdb-global-cluster",
+        "GlobalClusterResourceId": "cluster-a1b2c3d4e5f6a7b8",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:docdb-global-cluster",
+        "Status": "available",
+        "Engine": "docdb",
+        "EngineVersion": "8.0.0",
+        "StorageEncrypted": true,
+        "DeletionProtection": false,
+        "GlobalClusterMembers": [
+            {
+                "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster",
+                "Readers": [],
+                "IsWriter": true,
+                "SynchronizationStatus": "connected"
+            }
+        ],
+        "TagList": []
+    }
+}
+```
+For more information, see [Creating an Amazon DocumentDB global cluster](https://docs.aws.amazon.com/documentdb/latest/devguide/global-clusters.get-started.html#global-clusters-create) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [CreateGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/create-global-cluster.html) in *AWS CLI Command Reference*.
+
 ### `delete-db-cluster-parameter-group`
 <a name="docdb_DeleteDbClusterParameterGroup_cli_2_topic"></a>
 
@@ -616,6 +738,124 @@ aws docdb delete-db-subnet-group \
 This command produces no output.
 For more information, see [Deleting an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-subnet-group-delete.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DeleteDbSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/delete-db-subnet-group.html) in *AWS CLI Command Reference*.
+
+### `delete-event-subscription`
+<a name="docdb_DeleteEventSubscription_cli_2_topic"></a>
+
+The following code example shows how to use `delete-event-subscription`.
+
+**AWS CLI**
+**To delete an event notification subscription**
+The following `delete-event-subscription` example deletes the specified event notification subscription.
+
+```
+aws docdb delete-event-subscription \
+    --subscription-name {{docdb-cluster-events}}
+```
+Output:
+
+```
+{
+    "EventSubscription": {
+        "CustomerAwsId": "123456789012",
+        "CustSubscriptionId": "docdb-cluster-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:docdb-events",
+        "Status": "deleting",
+        "SubscriptionCreationTime": "2026-10-29 13:06:47.837",
+        "SourceType": "db-cluster",
+        "EventCategoriesList": [
+            "failure",
+            "maintenance",
+            "notification"
+        ],
+        "Enabled": false,
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:docdb-cluster-events"
+    }
+}
+```
+For more information, see [Deleting an Amazon DocumentDB event notification subscription](https://docs.aws.amazon.com/documentdb/latest/devguide/event-subscriptions.managing.html#event-subscriptions.delete) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [DeleteEventSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/delete-event-subscription.html) in *AWS CLI Command Reference*.
+
+### `delete-global-cluster`
+<a name="docdb_DeleteGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `delete-global-cluster`.
+
+**AWS CLI**
+**To delete a global DB cluster**
+The following `delete-global-cluster` example deletes an Amazon DocumentDB global DB cluster. Before you delete a global DB cluster, you must remove all of its member clusters and turn off deletion protection. The output shows the cluster that you're deleting, but subsequent `describe-global-clusters` commands don't list that DB cluster.
+
+```
+aws docdb delete-global-cluster \
+    --global-cluster-identifier {{docdb-global-cluster}}
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "docdb-global-cluster",
+        "GlobalClusterResourceId": "cluster-a1b2c3d4e5f6a7b8",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:docdb-global-cluster",
+        "Status": "available",
+        "Engine": "docdb",
+        "EngineVersion": "8.0.0",
+        "StorageEncrypted": true,
+        "DeletionProtection": false,
+        "GlobalClusterMembers": [],
+        "TagList": []
+    }
+}
+```
+For more information, see [Deleting a cluster from an Amazon DocumentDB global cluster](https://docs.aws.amazon.com/documentdb/latest/devguide/global-clusters.manage.html#global-clusters.delete) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [DeleteGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/delete-global-cluster.html) in *AWS CLI Command Reference*.
+
+### `describe-certificates`
+<a name="docdb_DescribeCertificates_cli_2_topic"></a>
+
+The following code example shows how to use `describe-certificates`.
+
+**AWS CLI**
+**To list the available CA certificates**
+The following `describe-certificates` example lists the certificate authority (CA) certificates that Amazon DocumentDB provides for TLS connections in the current AWS Region.
+
+```
+aws docdb describe-certificates
+```
+Output:
+
+```
+{
+    "Certificates": [
+        {
+            "CertificateIdentifier": "rds-ca-ecc384-g1",
+            "CertificateType": "CA",
+            "Thumbprint": "24a97b91cbe86911190576c35c36aab4fa7b25de",
+            "ValidFrom": "2021-05-25T22:41:55+00:00",
+            "ValidTill": "2121-05-25T23:41:55+00:00",
+            "CertificateArn": "arn:aws:rds:us-west-2::cert:rds-ca-ecc384-g1"
+        },
+        {
+            "CertificateIdentifier": "rds-ca-rsa4096-g1",
+            "CertificateType": "CA",
+            "Thumbprint": "9da6fa7fd2ec09c569a400d876b01b0c12759a96",
+            "ValidFrom": "2021-05-25T22:38:35+00:00",
+            "ValidTill": "2121-05-25T23:38:35+00:00",
+            "CertificateArn": "arn:aws:rds:us-west-2::cert:rds-ca-rsa4096-g1"
+        },
+        {
+            "CertificateIdentifier": "rds-ca-rsa2048-g1",
+            "CertificateType": "CA",
+            "Thumbprint": "2fa77ef894d983ba9d37ad699c84ab0f657be1c8",
+            "ValidFrom": "2021-05-25T22:34:57+00:00",
+            "ValidTill": "2061-05-25T23:34:57+00:00",
+            "CertificateArn": "arn:aws:rds:us-west-2::cert:rds-ca-rsa2048-g1"
+        }
+    ]
+}
+```
+For more information, see [Updating your Amazon DocumentDB TLS certificates](https://docs.aws.amazon.com/documentdb/latest/devguide/ca_cert_rotation.html) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [DescribeCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-certificates.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-cluster-parameter-groups`
 <a name="docdb_DescribeDbClusterParameterGroups_cli_2_topic"></a>
@@ -1141,6 +1381,44 @@ Output:
 For more information, see [Viewing Amazon DocumentDB event categories](https://docs.aws.amazon.com/documentdb/latest/devguide/managing-events.html#viewing-event-categories) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DescribeEventCategories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-event-categories.html) in *AWS CLI Command Reference*.
 
+### `describe-event-subscriptions`
+<a name="docdb_DescribeEventSubscriptions_cli_2_topic"></a>
+
+The following code example shows how to use `describe-event-subscriptions`.
+
+**AWS CLI**
+**To describe an event notification subscription**
+The following `describe-event-subscriptions` example displays the details of the specified event notification subscription.
+
+```
+aws docdb describe-event-subscriptions \
+    --subscription-name {{docdb-cluster-events}}
+```
+Output:
+
+```
+{
+    "EventSubscriptionsList": [
+        {
+            "CustomerAwsId": "123456789012",
+            "CustSubscriptionId": "docdb-cluster-events",
+            "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:docdb-events",
+            "Status": "active",
+            "SubscriptionCreationTime": "2026-10-29 13:06:47.837",
+            "SourceType": "db-cluster",
+            "EventCategoriesList": [
+                "failure",
+                "maintenance"
+            ],
+            "Enabled": true,
+            "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:docdb-cluster-events"
+        }
+    ]
+}
+```
+For more information, see [Managing Amazon DocumentDB event notification subscriptions](https://docs.aws.amazon.com/documentdb/latest/devguide/event-subscriptions.managing.html) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [DescribeEventSubscriptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-event-subscriptions.html) in *AWS CLI Command Reference*.
+
 ### `describe-events`
 <a name="docdb_DescribeEvents_cli_2_topic"></a>
 
@@ -1148,7 +1426,7 @@ The following code example shows how to use `describe-events`.
 
 **AWS CLI**
 **To list Amazon DocumentDB events**
-The following `describe-events` example list all the Amazon DocumentDB events for the last 24 hours (1440 minutes).
+The following `describe-events` example lists all the Amazon DocumentDB events for the last 24 hours (1440 minutes).
 
 ```
 aws docdb describe-events \
@@ -1299,6 +1577,57 @@ This command produces no output. Output:
 ```
 For more information, see [Viewing Amazon DocumentDB events](https://docs.aws.amazon.com/documentdb/latest/devguide/managing-events.html#viewing-events) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DescribeEvents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-events.html) in *AWS CLI Command Reference*.
+
+### `describe-global-clusters`
+<a name="docdb_DescribeGlobalClusters_cli_2_topic"></a>
+
+The following code example shows how to use `describe-global-clusters`.
+
+**AWS CLI**
+**To describe a global DB cluster**
+The following `describe-global-clusters` example displays the details of the specified Amazon DocumentDB global DB cluster, including its primary cluster and its secondary cluster in another AWS Region.
+
+```
+aws docdb describe-global-clusters \
+    --global-cluster-identifier {{docdb-global-cluster}}
+```
+Output:
+
+```
+{
+    "GlobalClusters": [
+        {
+            "GlobalClusterIdentifier": "docdb-global-cluster",
+            "GlobalClusterResourceId": "cluster-a1b2c3d4e5f6a7b8",
+            "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:docdb-global-cluster",
+            "Status": "available",
+            "Engine": "docdb",
+            "EngineVersion": "8.0.0",
+            "StorageEncrypted": true,
+            "DeletionProtection": false,
+            "GlobalClusterMembers": [
+                {
+                    "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster",
+                    "Readers": [
+                        "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster"
+                    ],
+                    "IsWriter": true,
+                    "SynchronizationStatus": "connected"
+                },
+                {
+                    "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster",
+                    "Readers": [],
+                    "IsWriter": false,
+                    "SynchronizationStatus": "connected"
+                }
+            ],
+            "TagList": []
+        }
+    ]
+}
+```
+For more information, see [Managing an Amazon DocumentDB global cluster](https://docs.aws.amazon.com/documentdb/latest/devguide/global-clusters.manage.html) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [DescribeGlobalClusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-global-clusters.html) in *AWS CLI Command Reference*.
 
 ### `describe-orderable-db-instance-options`
 <a name="docdb_DescribeOrderableDbInstanceOptions_cli_2_topic"></a>
@@ -1545,6 +1874,64 @@ Output:
 ```
 For more information, see [Amazon DocumentDB Failover](https://docs.aws.amazon.com/documentdb/latest/developerguide/failover.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [FailoverDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/failover-db-cluster.html) in *AWS CLI Command Reference*.
+
+### `failover-global-cluster`
+<a name="docdb_FailoverGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `failover-global-cluster`.
+
+**AWS CLI**
+**To fail over a global DB cluster**
+The following `failover-global-cluster` example promotes the specified cluster to be the primary cluster of the global DB cluster.
+
+```
+aws docdb failover-global-cluster \
+    --region {{us-east-1}} \
+    --global-cluster-identifier {{docdb-global-cluster}} \
+    --target-db-cluster-identifier {{arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster}} \
+    --allow-data-loss
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "docdb-global-cluster",
+        "GlobalClusterResourceId": "cluster-a1b2c3d4e5f6a7b8",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:docdb-global-cluster",
+        "Status": "failing-over",
+        "Engine": "docdb",
+        "EngineVersion": "8.0.0",
+        "StorageEncrypted": true,
+        "DeletionProtection": true,
+        "GlobalClusterMembers": [
+            {
+                "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster",
+                "Readers": [],
+                "IsWriter": false,
+                "SynchronizationStatus": "connected"
+            },
+            {
+                "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster",
+                "Readers": [
+                    "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster"
+                ],
+                "IsWriter": true,
+                "SynchronizationStatus": "connected"
+            }
+        ],
+        "FailoverState": {
+            "Status": "pending",
+            "FromDbClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster",
+            "ToDbClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster",
+            "IsDataLossAllowed": true
+        },
+        "TagList": []
+    }
+}
+```
+For more information, see [Performing a manual failover for an Amazon DocumentDB global cluster](https://docs.aws.amazon.com/documentdb/latest/devguide/global-clusters-disaster-recovery.html#manual-failover) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [FailoverGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/failover-global-cluster.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
 <a name="docdb_ListTagsForResource_cli_2_topic"></a>
@@ -1899,6 +2286,96 @@ Output:
 For more information, see [Modifying an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-subnet-group-modify.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [ModifyDbSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-subnet-group.html) in *AWS CLI Command Reference*.
 
+### `modify-event-subscription`
+<a name="docdb_ModifyEventSubscription_cli_2_topic"></a>
+
+The following code example shows how to use `modify-event-subscription`.
+
+**AWS CLI**
+**To modify an event notification subscription**
+The following `modify-event-subscription` example adds the `notification` event category to the specified subscription and disables it. When you specify `--event-categories`, you must also specify `--source-type`.
+
+```
+aws docdb modify-event-subscription \
+    --subscription-name {{docdb-cluster-events}} \
+    --source-type {{db-cluster}} \
+    --event-categories {{failure}} {{maintenance}} {{notification}} \
+    --no-enabled
+```
+Output:
+
+```
+{
+    "EventSubscription": {
+        "CustomerAwsId": "123456789012",
+        "CustSubscriptionId": "docdb-cluster-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:docdb-events",
+        "Status": "active",
+        "SubscriptionCreationTime": "2026-10-29 13:06:47.837",
+        "SourceType": "db-cluster",
+        "EventCategoriesList": [
+            "failure",
+            "maintenance",
+            "notification"
+        ],
+        "Enabled": false,
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:docdb-cluster-events"
+    }
+}
+```
+For more information, see [Managing Amazon DocumentDB event notification subscriptions](https://docs.aws.amazon.com/documentdb/latest/devguide/event-subscriptions.managing.html) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [ModifyEventSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-event-subscription.html) in *AWS CLI Command Reference*.
+
+### `modify-global-cluster`
+<a name="docdb_ModifyGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `modify-global-cluster`.
+
+**AWS CLI**
+**To modify a global DB cluster**
+The following `modify-global-cluster` example enables deletion protection for an Amazon DocumentDB global DB cluster.
+
+```
+aws docdb modify-global-cluster \
+    --global-cluster-identifier {{docdb-global-cluster}} \
+    --deletion-protection
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "docdb-global-cluster",
+        "GlobalClusterResourceId": "cluster-a1b2c3d4e5f6a7b8",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:docdb-global-cluster",
+        "Status": "available",
+        "Engine": "docdb",
+        "EngineVersion": "8.0.0",
+        "StorageEncrypted": true,
+        "DeletionProtection": true,
+        "GlobalClusterMembers": [
+            {
+                "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster",
+                "Readers": [
+                    "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster"
+                ],
+                "IsWriter": true,
+                "SynchronizationStatus": "connected"
+            },
+            {
+                "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster",
+                "Readers": [],
+                "IsWriter": false,
+                "SynchronizationStatus": "connected"
+            }
+        ],
+        "TagList": []
+    }
+}
+```
+For more information, see [Modifying an Amazon DocumentDB global cluster](https://docs.aws.amazon.com/documentdb/latest/devguide/global-clusters.manage.html#global-clusters.modify) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [ModifyGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-global-cluster.html) in *AWS CLI Command Reference*.
+
 ### `reboot-db-instance`
 <a name="docdb_RebootDbInstance_cli_2_topic"></a>
 
@@ -1990,6 +2467,79 @@ This command produces no output. Output:
 ```
 For more information, see [Rebooting an Amazon DocumentDB ILnstance](https://docs.aws.amazon.com/documentdb/latest/developerguide/db-instance-reboot.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [RebootDbInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/reboot-db-instance.html) in *AWS CLI Command Reference*.
+
+### `remove-from-global-cluster`
+<a name="docdb_RemoveFromGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `remove-from-global-cluster`.
+
+**AWS CLI**
+**To remove a cluster from a global DB cluster**
+The following `remove-from-global-cluster` example detaches the specified cluster from an Amazon DocumentDB global DB cluster. The cluster becomes a standalone cluster. In this example, it was the last remaining member, so `GlobalClusterMembers` is empty.
+
+```
+aws docdb remove-from-global-cluster \
+    --global-cluster-identifier {{docdb-global-cluster}} \
+    --db-cluster-identifier {{arn:aws:rds:us-west-2:123456789012:cluster:docdb-secondary-cluster}}
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "docdb-global-cluster",
+        "GlobalClusterResourceId": "cluster-a1b2c3d4e5f6a7b8",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:docdb-global-cluster",
+        "Status": "available",
+        "Engine": "docdb",
+        "EngineVersion": "8.0.0",
+        "StorageEncrypted": true,
+        "DeletionProtection": true,
+        "GlobalClusterMembers": [],
+        "TagList": []
+    }
+}
+```
+For more information, see [Removing a cluster from an Amazon DocumentDB global cluster](https://docs.aws.amazon.com/documentdb/latest/devguide/global-clusters.manage.html#global-clusters.remove) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [RemoveFromGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/remove-from-global-cluster.html) in *AWS CLI Command Reference*.
+
+### `remove-source-identifier-from-subscription`
+<a name="docdb_RemoveSourceIdentifierFromSubscription_cli_2_topic"></a>
+
+The following code example shows how to use `remove-source-identifier-from-subscription`.
+
+**AWS CLI**
+**To remove a source from an event notification subscription**
+The following `remove-source-identifier-from-subscription` example removes the Amazon DocumentDB cluster `docdb-primary-cluster` from the specified subscription.
+
+```
+aws docdb remove-source-identifier-from-subscription \
+    --subscription-name {{docdb-cluster-events}} \
+    --source-identifier {{docdb-primary-cluster}}
+```
+Output:
+
+```
+{
+    "EventSubscription": {
+        "CustomerAwsId": "123456789012",
+        "CustSubscriptionId": "docdb-cluster-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:docdb-events",
+        "Status": "active",
+        "SubscriptionCreationTime": "2026-10-29 13:06:47.837",
+        "SourceType": "db-cluster",
+        "EventCategoriesList": [
+            "failure",
+            "maintenance",
+            "notification"
+        ],
+        "Enabled": false,
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:docdb-cluster-events"
+    }
+}
+```
+For more information, see [Managing Amazon DocumentDB event notification subscriptions](https://docs.aws.amazon.com/documentdb/latest/devguide/event-subscriptions.managing.html) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [RemoveSourceIdentifierFromSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/remove-source-identifier-from-subscription.html) in *AWS CLI Command Reference*.
 
 ### `remove-tags-from-resource`
 <a name="docdb_RemoveTagsFromResource_cli_2_topic"></a>
@@ -2276,3 +2826,59 @@ Output:
 ```
 For more information, see [Stopping and Starting an Amazon DocumentDB Cluster](https://docs.aws.amazon.com/documentdb/latest/developerguide/db-cluster-stop-start.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [StopDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/stop-db-cluster.html) in *AWS CLI Command Reference*.
+
+### `switchover-global-cluster`
+<a name="docdb_SwitchoverGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `switchover-global-cluster`.
+
+**AWS CLI**
+**To switch over a global DB cluster**
+The following `switchover-global-cluster` example promotes the specified secondary cluster to be the primary cluster of the global DB cluster.
+
+```
+aws docdb switchover-global-cluster \
+    --global-cluster-identifier {{docdb-global-cluster}} \
+    --target-db-cluster-identifier {{arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster}}
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "docdb-global-cluster",
+        "GlobalClusterResourceId": "cluster-a1b2c3d4e5f6a7b8",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:docdb-global-cluster",
+        "Status": "switching-over",
+        "Engine": "docdb",
+        "EngineVersion": "8.0.0",
+        "StorageEncrypted": true,
+        "DeletionProtection": true,
+        "GlobalClusterMembers": [
+            {
+                "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster",
+                "Readers": [
+                    "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster"
+                ],
+                "IsWriter": true,
+                "SynchronizationStatus": "connected"
+            },
+            {
+                "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster",
+                "Readers": [],
+                "IsWriter": false,
+                "SynchronizationStatus": "connected"
+            }
+        ],
+        "FailoverState": {
+            "Status": "pending",
+            "FromDbClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:docdb-primary-cluster",
+            "ToDbClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:docdb-secondary-cluster",
+            "IsDataLossAllowed": false
+        },
+        "TagList": []
+    }
+}
+```
+For more information, see [Performing a switchover for an Amazon DocumentDB global cluster](https://docs.aws.amazon.com/documentdb/latest/devguide/global-clusters-disaster-recovery.html#global-cluster-switchover) in the *Amazon DocumentDB Developer Guide*.
++  For API details, see [SwitchoverGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/switchover-global-cluster.html) in *AWS CLI Command Reference*.

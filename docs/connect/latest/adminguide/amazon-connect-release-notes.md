@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026 Updates
 <a name="nov26-release-notes"></a>
 
+### Resolutions for operational work
+<a name="nov26-resolutions"></a>
+
+With Resolutions, you can handle high-volume operational work such as refund requests, dispute resolution, fraud investigations, insurance claims, and loan applications. Resolutions turns your standard operating procedures (SOPs) into structured Work plans. AI agents run each Work plan from intake through verified resolution, while specialists in your organization step in for approvals and exceptions.
+
+To learn more and get started, see [Resolutions](https://docs.aws.amazon.com/connect/latest/adminguide/resolutions.html).
+
 ### Amazon Connect Customer agent assist now supports interactive responses
 <a name="nov26-agent-assist-interactive-responses"></a>
 

@@ -13,10 +13,10 @@ Provisioned throughput exceeded exception errors (HTTP 400) occur when the reque
 + Ensure that there is proper distribution of partition keys.
 + Monitor stream metrics.
 
-Additionally, using the Kinesis on-demand capacity mode helps to automatically adjust workloads, and minimize the occurrence of this exception. For more information, see [What is AWS Fault Injection Service?](https://docs.aws.amazon.com/fis/latest/userguide/what-is.html)
+Additionally, using the Kinesis On-demand capacity mode helps to automatically adjust workloads, and minimize the occurrence of this exception. For more information, see [What is AWS Fault Injection Service?](https://docs.aws.amazon.com/fis/latest/userguide/what-is.html)
 
 **Note**
-Improper distribution issues are outside of on-demand mode capability of automatic scaling.
+Improper distribution issues are outside of On-demand mode capability of automatic scaling.
 
 **To perform a basic experiment**
 

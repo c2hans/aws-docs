@@ -30,7 +30,7 @@ If the issue still isn't resolved, contact [AWS Support Center](https://console.
 
 You might see the following error when running a DataSync task that involves an NFS file server location:
 
-Task failed to access location loc-1111222233334444a: x40016: mount.nfs: Connection timed out
+`Task failed to access location loc-1111222233334444a: x40016: mount.nfs: Connection timed out`
 
 **Actions to take**
 Do the following until the error is resolved.
@@ -48,7 +48,7 @@ Do the following until the error is resolved.
 
 You might see the following error when running a DataSync task that involves an Amazon EFS location:
 
-Task failed to access location loc-1111222233334444a: x40016: Failed to connect to EFS mount target with IP: 10.10.1.0.
+`Task failed to access location loc-1111222233334444a: x40016: Failed to connect to EFS mount target with IP: 10.10.1.0.`
 
 This can happen if the Amazon EFS file system's mount path that you configure with your location gets updated or deleted. DataSync isn't aware of these changes in the file system.
 
@@ -85,7 +85,7 @@ Task failed to access location
 + The Kerberos principal that you specify for your location matches the principal that you use to create the Kerberos key table (keytab) file. Principal names are case sensitive.
 + The Kerberos principal's mapped user password hasn't changed since you created the keytab file. If the password changes (because of password rotation or some other reason), your task execution might fail with the following error:
 
-  Task failed to access location loc-1111222233334444a: x40015: kinit: Preauthentication failed while getting initial credentials
+  `Task failed to access location loc-1111222233334444a: x40015: kinit: Preauthentication failed while getting initial credentials`
 
 **Can't contact KDC realm**
 The following error indicates a networking issue:

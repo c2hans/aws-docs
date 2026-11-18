@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-OktaAdminJwtKey"></a>
 
 ## Secret Value Fields
-<a name="w2aac29c13c41b3"></a>
+<a name="w2aac29c13c43b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -37,12 +37,12 @@ scopes
 (Optional) The space-separated Okta scopes that Secrets Manager requests for the administrator access token. Default: `okta.apps.manage okta.apps.read`. Rotation requires `okta.apps.manage`, so do not remove it.
 
 ## Secret Metadata Fields
-<a name="w2aac29c13c41b5"></a>
+<a name="w2aac29c13c43b5"></a>
 
 This secret type has no metadata fields, because Secrets Manager does not rotate it.
 
 ## Usage Flow
-<a name="w2aac29c13c41b7"></a>
+<a name="w2aac29c13c43b7"></a>
 
 This secret type stores the Okta administrator credential that Secrets Manager uses to create and revoke client secrets when it rotates a secret of type OktaOAuthClientSecret. Secrets Manager does not rotate a secret of this type, because Okta does not allow API credential changes on an application that holds an administrator role.
 

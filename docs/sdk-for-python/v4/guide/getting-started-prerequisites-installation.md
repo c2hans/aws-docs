@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/getting-started-prerequisites-installation.html
 ---
 
-**Experimental**: This documentation covers the AWS SDK for Python v4, which is experimental, non-GA software intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
+**Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Prerequisites and installation
 <a name="getting-started-prerequisites-installation"></a>
@@ -46,40 +46,18 @@ python -m pip install --upgrade pip
 
 The preceding steps are the standard setup for most SDK projects. The packages that you install next are specific to the examples in this chapter.
 
-The SDK publishes a separate package for each AWS service client. Install the Amazon DynamoDB and Amazon Transcribe client packages:
+The SDK publishes a separate package for each AWS service client. Each package includes the synchronous and asynchronous clients for its service. Install the Amazon DynamoDB and Amazon Transcribe client packages:
 
 ```
 python -m pip install aws-sdk-dynamodb aws-sdk-transcribe-streaming
 ```
 
-This command installs both clients as individual packages.
-
 Alternatively, install the same clients as optional dependencies of the `aws-sdk-python` meta-package:
 
 ```
-python -m pip install "aws-sdk-python[dynamodb,transcribe_streaming]"
+python -m pip install "aws-sdk-python[dynamodb, transcribe_streaming]"
 ```
 
 The meta-package installs only the service clients that you select as extras; without extras, it installs no clients. It coordinates client versions through its MAJOR.MINOR version, so it installs compatible client versions together.
 
 Use the meta-package when your application depends on several clients. Install individual client packages when your application uses only one or two services and you want the smallest dependency set.
-
-The preceding commands install the latest package versions. To control which version is installed, add a version specifier to the package name. Version specifiers work for both individual client packages and the meta-package:
-
-```
-# Install version 0.11.0 specifically
-python -m pip install "aws-sdk-dynamodb==0.11.0" "aws-sdk-transcribe-streaming==0.11.0"  # individual client packages
-python -m pip install "aws-sdk-python[dynamodb,transcribe_streaming]==0.11.0"            # meta-package
-
-# Install the latest version that is at least 0.11.0
-python -m pip install "aws-sdk-dynamodb>=0.11.0" "aws-sdk-transcribe-streaming>=0.11.0"  # individual client packages
-python -m pip install "aws-sdk-python[dynamodb,transcribe_streaming]>=0.11.0"            # meta-package
-
-# Install the latest version that is at most 0.11.0
-python -m pip install "aws-sdk-dynamodb<=0.11.0" "aws-sdk-transcribe-streaming<=0.11.0"  # individual client packages
-python -m pip install "aws-sdk-python[dynamodb,transcribe_streaming]<=0.11.0"            # meta-package
-
-# Install the latest version that is compatible with 0.11.0 (>=0.11.0, <0.12.0)
-python -m pip install "aws-sdk-dynamodb~=0.11.0" "aws-sdk-transcribe-streaming~=0.11.0"  # individual client packages
-python -m pip install "aws-sdk-python[dynamodb,transcribe_streaming]~=0.11.0"            # meta-package
-```

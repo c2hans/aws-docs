@@ -37,5 +37,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Amazon Resource Name (ARN) of an Amazon MSK cluster.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafka:.*`
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-eusc):kafka:.*`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

@@ -29,6 +29,17 @@ The device proxy to be configured on the device for the remote access session.
 Type: [DeviceProxy](API_DeviceProxy.md) object
 Required: No
 
+ ** parameters **   <a name="devicefarm-Type-CreateRemoteAccessSessionConfiguration-parameters"></a>
+The name-value string pairs that specify additional settings for the remote access session.
++  `appium:version`: The major version of the Appium server to use for the session (for example, 2 or 3). The service might reject the selected version if it is not available for the selected device.
+Type: String to string map
+Map Entries: Maximum number of 3 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `[a-zA-Z0-9:_]+`
+Value Length Constraints: Minimum length of 1. Maximum length of 64.
+Value Pattern: `[a-zA-Z0-9_.]+`
+Required: No
+
  ** vpceConfigurationArns **   <a name="devicefarm-Type-CreateRemoteAccessSessionConfiguration-vpceConfigurationArns"></a>
 An array of ARNs included in the VPC endpoint configuration.
 Type: Array of strings

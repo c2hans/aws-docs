@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListS
 
 Gets information about samples, given an AWS Device Farm job ARN.
 
+**Important**
+Device Farm does not support performance data samples during test executions.
+
 ## Request Syntax
 <a name="API_ListSamples_RequestSyntax"></a>
 

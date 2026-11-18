@@ -24,7 +24,7 @@ The following section explains how Security Hub uses your Content for service im
 
 AWS Security Hub collects and uses the following categories of Security Hub Content to develop and improve exposure findings and resource criticality inference:
 + Third-party security findings that you aggregate in Security Hub from partner products or external integrations
-+ Resource configuration data for resources in other cloud environments, such as Microsoft Azure, that you integrate with Security Hub
++ Resource configuration data for resources in other cloud environments, such as Microsoft Azure and Google Cloud Platform, that you integrate with Security Hub
 + Software inventory data for your resources, such as the software bill of materials (SBOM) that Amazon Inspector collects and that is available in Security Hub
 
 For information about how Security Hub uses data to provide the capabilities that you enable, see [How Security Hub uses data to provide the capabilities you enable](securityhub-v2-data-use.md).

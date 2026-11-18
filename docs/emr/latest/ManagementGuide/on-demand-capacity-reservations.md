@@ -77,7 +77,7 @@ You can also use the Amazon EMR CLI to create an instance fleet-based cluster us
 ```
 aws emr create-cluster \
 	--name 'open-ODCR-cluster' \
-	--release-label emr-5.30.0 \
+	--release-label emr-7.14.0 \
 	--service-role EMR_DefaultRole \
 	--ec2-attributes SubnetId=subnet-22XXXX01,InstanceProfile=EMR_EC2_DefaultRole \
 	--instance-fleets InstanceFleetType=MASTER,TargetOnDemandCapacity=1,InstanceTypeConfigs=['{InstanceType=c4.xlarge}'] \
@@ -159,7 +159,7 @@ You can also use the Amazon EMR CLI to create an instance-fleet based cluster us
 ```
 aws emr create-cluster \
   --name 'use-CR-first-cluster' \
-  --release-label emr-5.30.0 \
+  --release-label emr-7.14.0 \
   --service-role EMR_DefaultRole \
   --ec2-attributes SubnetId=subnet-22XXXX01,InstanceProfile=EMR_EC2_DefaultRole \
   --instance-fleets \
@@ -243,7 +243,7 @@ You can also use the Amazon EMR CLI to create an instance fleet-based cluster us
 ```
 aws emr create-cluster \
   --name 'targeted-CR-cluster' \
-  --release-label emr-5.30.0 \
+  --release-label emr-7.14.0 \
   --service-role EMR_DefaultRole \
   --ec2-attributes SubnetId=subnet-22XXXX01,InstanceProfile=EMR_EC2_DefaultRole \
   --instance-fleets InstanceFleetType=MASTER,TargetOnDemandCapacity=1,InstanceTypeConfigs=['{InstanceType=c4.xlarge}'] \
@@ -279,7 +279,7 @@ You can also use the Amazon EMR CLI to create an instance fleet-based cluster wi
 ```
 aws emr create-cluster \
   --name 'none-CR-cluster' \
-  --release-label emr-5.30.0 \
+  --release-label emr-7.14.0 \
   --service-role EMR_DefaultRole \
   --ec2-attributes SubnetId=subnet-22XXXX01,InstanceProfile=EMR_EC2_DefaultRole \
   --instance-fleets \

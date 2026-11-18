@@ -17,7 +17,7 @@ The format of records on the source stream. Valid values:
 +  `STRING` - Supported only for general purpose Amazon S3 destinations.
 +  `BYTE_ARRAY` - Supported only for general purpose Amazon S3 destinations.
 Type: String
-Valid Values: `GSR_JSON | JSON | STRING | BYTE_ARRAY`
+Valid Values: `GSR_JSON | JSON | STRING | BYTE_ARRAY | GSR_AVRO | GSR_PROTOBUF`
 Required: Yes
 
  ** GSRSchemaARN **   <a name="Streams-Type-RecordConfiguration-GSRSchemaARN"></a>

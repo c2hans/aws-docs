@@ -50,6 +50,7 @@ The following actions are supported by Amazon Route 53 Resolver:
 +  [ListFirewallConfigs](API_route53resolver_ListFirewallConfigs.md)
 +  [ListFirewallDomainLists](API_route53resolver_ListFirewallDomainLists.md)
 +  [ListFirewallDomains](API_route53resolver_ListFirewallDomains.md)
++  [ListFirewallRuleDomains](API_route53resolver_ListFirewallRuleDomains.md)
 +  [ListFirewallRuleGroupAssociations](API_route53resolver_ListFirewallRuleGroupAssociations.md)
 +  [ListFirewallRuleGroups](API_route53resolver_ListFirewallRuleGroups.md)
 +  [ListFirewallRules](API_route53resolver_ListFirewallRules.md)

@@ -93,7 +93,7 @@ To create Quick resources, the AWS CloudFormation stack requires the user to inp
 
 1.  Choose **Create stack** to deploy the stack.
 
-1. You can view the status of the stack in the AWS CloudFormation Console in the **Status** column. You should see a status of CREATE\_COMPLETE in approximately 1 minute.
+1. You can view the status of the stack in the AWS CloudFormation Console in the **Status** column. You should see a status of `CREATE_COMPLETE` in approximately 1 minute.
 
 ## Step 4. Explore the data using QuickSight
 <a name="step-4.-explore-the-data-using-quicksight"></a>

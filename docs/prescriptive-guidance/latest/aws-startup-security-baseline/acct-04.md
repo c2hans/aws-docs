@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-startup
 # ACCT.04 Assign permissions
 <a name="acct-04"></a>
 
-Configure user permissions by attaching [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html) to IAM roles. *AWS managed policies* are standalone policies designed by AWS to provide permissions for many common use cases. If you customize permissions, follow the security best practice of [granting least privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege). *Least privilege* is the practice of granting the minimum set of permissions that each user needs to perform their tasks. Examples of roles for early-stage startups include administrator, developer, contractor, and finance team member. Create specialized roles as specific job functions are identified.
+Configure user permissions by attaching [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html) to IAM roles. *AWS managed policies* are standalone policies designed by AWS to provide permissions for many common use cases. If you customize permissions, follow the security best practice of [granting least privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege). *Least privilege* is the practice of granting the minimum set of permissions that each user needs to perform their tasks. Examples of roles for early-stage startups include administrator, developer, contractor, and finance team member. Create specialized roles when you identify specific job functions.
 
-If you are using federated identities, users access the account by assuming an IAM role through the external identity provider. The IAM role defines the actions that users authenticated by your organization's IdP can perform. Apply custom or AWS managed policies to this role to configure permissions.
+If you are using federated identities, users access the account by assuming an IAM role through the external identity provider (IdP). The IAM role defines the actions that users authenticated by your organization's IdP can perform. Apply custom or AWS managed policies to this role to configure permissions.
 
 **To assign permissions for federated identities using IAM Identity Center**
 

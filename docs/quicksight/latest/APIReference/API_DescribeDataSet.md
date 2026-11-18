@@ -788,6 +788,15 @@ Content-type: application/json
             }
          }
       },
+      "UnmaterializedCalculatedColumns": [
+         {
+            "ColumnId": "string",
+            "ColumnName": "string",
+            "Expression": "string",
+            "SubType": "string",
+            "Type": "string"
+         }
+      ],
       "UseAs": "string"
    },
    "RequestId": "string"

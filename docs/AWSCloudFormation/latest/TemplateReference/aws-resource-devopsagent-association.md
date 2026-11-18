@@ -58,14 +58,16 @@ The unique identifier of the Agent Space.
 *Update requires*: Updates are not supported.
 
 `Capabilities`  <a name="cfn-devopsagent-association-capabilities"></a>
-Property description not available.
+The automated AWS DevOps Agent capabilities to enable for the repository in this association, such as code change risk analysis. You can set capabilities only on `GitHub` and `GitLab` associations.
+When you set this property, it defines both capabilities, and CloudFormation turns off any capability that you omit. If you remove this property from a template that previously set it, CloudFormation turns off both capabilities.
+If you configured capabilities outside of CloudFormation, CloudFormation leaves them unchanged until you set this property for the first time. On rollback, CloudFormation restores both capabilities to the values in the previous template.
 *Required*: No
 *Type*: [Capabilities](aws-properties-devopsagent-association-capabilities.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Configuration`  <a name="cfn-devopsagent-association-configuration"></a>
 The configuration that directs how the Agent Space interacts with the given service. You can specify only one configuration type per association.
-*Allowed Values*: `SourceAws` \| `Aws` \| `GitHub` \| `GitLab` \| `Slack` \| `Dynatrace` \| `ServiceNow` \| `MCPServer` \| `MCPServerNewRelic` \| `MCPServerDatadog` \| `MCPServerSplunk` \| `EventChannel`
+*Allowed Values*: `SourceAws` \| `Aws` \| `GitHub` \| `GitLab` \| `Slack` \| `Dynatrace` \| `ServiceNow` \| `MCPServer` \| `MCPServerNewRelic` \| `MCPServerDatadog` \| `MCPServerSplunk` \| `EventChannel` \| `ReleaseManagement`
 *Required*: Yes
 *Type*: [ServiceConfiguration](aws-properties-devopsagent-association-serviceconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -77,7 +79,7 @@ Set of linked association IDs for parent-child relationships.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ServiceId`  <a name="cfn-devopsagent-association-serviceid"></a>
-The identifier for the associated service. For `SourceAws` and `Aws` configurations, this must be `aws`. For all other service types, this is a UUID generated from the RegisterService command.
+The identifier for the associated service. For `SourceAws` and `Aws` configurations, this must be `aws`. For `ReleaseManagement` configurations, this must be `releaseManagement`. For all other service types, this is a UUID generated from the RegisterService command.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

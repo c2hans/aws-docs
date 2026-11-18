@@ -21,7 +21,7 @@ GitLab is registered at the AWS account level and shared among all Agent Spaces 
 
 1. Go to the **Capability Providers** page (accessible from the side navigation)
 
-1. Find **GitLab** in the **Available** providers section under **Pipeline** and choose **Register**
+1. In the **Available** section, find the **GitLab** card and choose **Register**. To narrow the list, enter GitLab in **Find capability**, or choose **Pipeline** in the category filter.
 
 ### Step 2: Configure GitLab connection
 <a name="step-2-configure-gitlab-connection"></a>
@@ -206,6 +206,6 @@ The token cannot read the selected project, or GitLab is temporarily throttling 
 
 ## Managing GitLab connections
 <a name="managing-gitlab-connections"></a>
-+ **Updating access token** – If your access token expires or needs to be updated, you can rotate it without deregistering. On the **Capability Providers** page, select your GitLab registration, choose **Update** from the **Actions** menu, and enter the new token. Your Agent Space associations and project connections are preserved.
++ **Updating access token** – If your access token expires or needs to be updated, you can rotate it without deregistering. On the **Capability Providers** page, under **Currently registered**, choose **View all** on the **GitLab** card. In **Registrations**, select your GitLab registration, choose **Update** from the **Actions** menu, and enter the new token. Your Agent Space associations and project connections are preserved.
 + **Viewing connected projects** – In the AWS DevOps Agent console, select your Agent Space and go to the Capabilities tab to view connected projects in the Pipeline section.
 + **Removing GitLab connection** – To disconnect GitLab projects from an Agent Space, select the connection in the Pipeline section and choose **Remove**. To remove the GitLab registration completely, remove it from all Agent Spaces first, then delete the registration at the account level.

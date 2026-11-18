@@ -21,7 +21,7 @@ You must complete the following tasks when implementing a KCL consumer applicati
 + [Implement a class factory for the IRecordProcessor interface](#kinesis-record-processor-implementation-factory-java)
 + [Create a worker](#kcl-java-worker)
 + [Modify the configuration properties](#kinesis-record-processor-initialization-java)
-+ [Migrate to Version 2 of the record processor interface](#kcl-java-v2-migration)
++ [Migrate to version 2 of the record processor interface](#kcl-java-v2-migration)
 
 ## Implement the IRecordProcessor methods
 <a name="kinesis-record-processor-implementation-interface-java"></a>
@@ -29,10 +29,10 @@ You must complete the following tasks when implementing a KCL consumer applicati
 The KCL currently supports two versions of the `IRecordProcessor` interface:The original interface is available with the first version of the KCL, and version 2 is available starting with KCL version 1.5.0. Both interfaces are fully supported. Your choice depends on your specific scenario requirements. Refer to your locally built Javadocs or the source code to see all the differences. The following sections outline the minimal implementation for getting started.
 
 **Topics**
-+ [Original Interface (Version 1)](#kcl-java-interface-original)
-+ [Updated interface (Version 2)](#kcl-java-interface-v2)
++ [Original interface (version 1)](#kcl-java-interface-original)
++ [Updated interface (version 2)](#kcl-java-interface-v2)
 
-### Original Interface (Version 1)
+### Original interface (version 1)
 <a name="kcl-java-interface-original"></a>
 
 The original `IRecordProcessor` interface (`package com.amazonaws.services.kinesis.clientlibrary.interfaces`) exposes the following record processor methods that your consumer must implement. The sample provides implementations that you can use as a starting point (see `AmazonKinesisApplicationSampleRecordProcessor.java`).
@@ -88,7 +88,7 @@ Processing ends when the record processor does not receive any further records f
 
 The KCL also passes a `IRecordProcessorCheckpointer` interface to `shutdown`. If the shutdown reason is `TERMINATE`, the record processor should finish processing any data records, and then call the `checkpoint` method on this interface.
 
-### Updated interface (Version 2)
+### Updated interface (version 2)
 <a name="kcl-java-interface-v2"></a>
 
 The updated `IRecordProcessor` interface (`package com.amazonaws.services.kinesis.clientlibrary.interfaces.v2`) exposes the following record processor methods that your consumer must implement:
@@ -196,7 +196,7 @@ The sample initialization code creates an ID for the worker, `workerId`, using t
 String workerId = InetAddress.getLocalHost().getCanonicalHostName() + ":" + UUID.randomUUID();
 ```
 
-## Migrate to Version 2 of the record processor interface
+## Migrate to version 2 of the record processor interface
 <a name="kcl-java-v2-migration"></a>
 
 If you want to migrate code that uses the original interface, in addition to the steps described previously, the following steps are required:

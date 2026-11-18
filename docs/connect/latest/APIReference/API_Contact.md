@@ -80,6 +80,11 @@ Information about the contact evaluations where the key is the FormId, which is 
 Type: String to [ContactEvaluation](API_ContactEvaluation.md) object map
 Required: No
 
+ ** ContactLens **   <a name="connect-Type-Contact-ContactLens"></a>
+Information about the conversational analytics configuration applied to the contact. This field is present only for contacts where conversational analytics is enabled in the contact flow.
+Type: [ContactLens](API_ContactLens.md) object
+Required: No
+
  ** Customer **   <a name="connect-Type-Contact-Customer"></a>
 Information about the Customer on the contact.
 Type: [Customer](API_Customer.md) object

@@ -22,7 +22,7 @@ You can continue to use the snapshot while the archive is in process. As soon as
 
 1. In the navigation pane, choose **Snapshots**.
 
-1. In the list of snapshots, select the snapshot to archive and then choose **Actions**, **Archive snapshot**.
+1. In the list of snapshots, select the snapshot to archive and then choose **Actions**, **Archiving**, **Archive snapshot**.
 
 1. To confirm, choose **Archive snapshot**.
 

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Crea
 # CreateStream
 <a name="API_CreateStream"></a>
 
-Creates a new change data capture (CDC) stream for a cluster. The stream captures database changes and delivers them to the specified target destination.
+Creates a new change data capture (CDC) stream for an Aurora DSQL cluster. The stream captures database changes and delivers them to the specified target destination.
 
  **Required permissions**
 
@@ -14,7 +14,7 @@ Permission to create a new stream.
 Resources: `arn:aws:dsql:region:account-id:cluster/cluster-id`
 
 iam:PassRole
-Permission to pass the IAM role specified in the target definition to the service.
+Permission to pass the IAM role specified in the target definition to the Aurora DSQL service.
 Resources: ARN of the IAM role specified in `targetDefinition.kinesis.roleArn`
 
 kms:Decrypt
@@ -126,7 +126,7 @@ Type: String
 Pattern: `[a-z0-9]{26}`
 
  ** [creationTime](#API_CreateStream_ResponseSyntax) **   <a name="auroradsql-CreateStream-response-creationTime"></a>
-The time when created the stream.
+The time when Aurora DSQL created the stream.
 Type: Timestamp
 
  ** [format](#API_CreateStream_ResponseSyntax) **   <a name="auroradsql-CreateStream-response-format"></a>

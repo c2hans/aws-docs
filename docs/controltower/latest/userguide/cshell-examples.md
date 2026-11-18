@@ -65,7 +65,7 @@ In the following example, you can use AWS CloudShell to create an Amazon S3 buck
    }
    ```
 **Note**
-If you don't adhere to the [rules for naming buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html#bucketnamingrules) (using only lowercase letters, for example), the following error is displayed: An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.
+If you don't adhere to the [rules for naming buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html#bucketnamingrules) (using only lowercase letters, for example), the following error is displayed: `An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.`
 
 1. To upload a file and add it as an object to the bucket that was just created, call the **PutObject** method:
 

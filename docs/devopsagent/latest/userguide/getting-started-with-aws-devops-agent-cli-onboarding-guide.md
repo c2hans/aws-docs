@@ -669,7 +669,7 @@ aws devops-agent list-associations \
 ## Next steps
 <a name="next-steps"></a>
 + To connect additional integrations, see [Configuring integrations and knowledge](configuring-integrations-and-knowledge.md).
-+ To learn about agent skills and capabilities, see [DevOps Agent skills](about-aws-devops-agent-devops-agent-skills.md).
++ To learn about agent skills and capabilities, see [DevOps Agent skills](about-aws-devops-agent-devops-agent-skills-index.md).
 + For more information about managing skills, custom agents, and other assets as infrastructure as code, see [Managing assets](about-aws-devops-agent-managing-assets.md).
 + To understand the operator web app, see [What is a DevOps Agent web app](about-aws-devops-agent-what-is-a-devops-agent-web-app.md).
 

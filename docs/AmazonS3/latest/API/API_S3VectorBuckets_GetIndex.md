@@ -73,7 +73,14 @@ Content-type: application/json
       "indexMode": "string",
       "indexName": "string",
       "metadataConfiguration": {
-         "nonFilterableMetadataKeys": [ "string" ]
+         "nonFilterableMetadataKeys": [ "string" ],
+         "textSearchConfigurations": [
+            {
+               "language": "string",
+               "metadataKey": "string",
+               "status": "string"
+            }
+         ]
       },
       "vectorBucketName": "string"
    }

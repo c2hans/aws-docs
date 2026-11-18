@@ -81,6 +81,7 @@ The following actions are supported by Amazon Connect Service:
 +  [CreateWorkspace](API_CreateWorkspace.md)
 +  [CreateWorkspacePage](API_CreateWorkspacePage.md)
 +  [DeactivateEvaluationForm](API_DeactivateEvaluationForm.md)
++  [DeleteAllEntitySessions](API_DeleteAllEntitySessions.md)
 +  [DeleteAttachedFile](API_DeleteAttachedFile.md)
 +  [DeleteContactData](API_DeleteContactData.md)
 +  [DeleteContactEvaluation](API_DeleteContactEvaluation.md)

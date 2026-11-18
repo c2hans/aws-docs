@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/license-manager/index.html
 title: 'AWS License Manager Documentation'
 canonical_url: https://docs.aws.amazon.com/license-manager/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # AWS License Manager Documentation

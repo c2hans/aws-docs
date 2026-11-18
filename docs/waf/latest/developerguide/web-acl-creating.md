@@ -38,6 +38,8 @@ Using more than 1,500 WCUs in a protection pack (web ACL) incurs costs beyond th
 
 1. Under **Choose initial protections,** select your preferred protection level: **Recommended**, **Essentials**, or **You build it**.
 
+1. (Optional) Under **Targeted bot control**, select **Enable Targeted bot control** to add the Bot Control managed rule group at the targeted protection level with the recommended settings. Then review the action for each bot confidence level. This section is available for the CloudFront scope only, and isn't available if you select **You build it**. For more information about the setting, see [Turning on Targeted bot control in the console](waf-bot-control-targeted-console.md).
+
 1. (Optional) If you choose **You build it**, build your rules.
 
    1. (Optional) If you want to add your own rule, on the **Add rules ** page, choose **Custom rule** and then choose **Next**.

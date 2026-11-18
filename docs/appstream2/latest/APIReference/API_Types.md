@@ -40,6 +40,8 @@ The following data types are supported:
 +  [FleetError](API_FleetError.md)
 +  [Image](API_Image.md)
 +  [ImageBuilder](API_ImageBuilder.md)
++  [ImageBuilderAgentAccessConfig](API_ImageBuilderAgentAccessConfig.md)
++  [ImageBuilderAgentAccessConfigForUpdate](API_ImageBuilderAgentAccessConfigForUpdate.md)
 +  [ImageBuilderStateChangeReason](API_ImageBuilderStateChangeReason.md)
 +  [ImagePermissions](API_ImagePermissions.md)
 +  [ImageSoftwareMetadata](API_ImageSoftwareMetadata.md)

@@ -30,6 +30,7 @@ If your account is set up for multi-account, you can manage global network resou
 + [Multi-account](nm-multi-account.md)
 + [Global networks](global-networks.md)
 + [Transit gateway registrations](tgw-registrations.md)
++ [Context sharing with security services](context-stores.md)
 + [Sites and links](nm-sites.md)
 + [Devices](nm-devices.md)
 + [Connections](device-connections.md)

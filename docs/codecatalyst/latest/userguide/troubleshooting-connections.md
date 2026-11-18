@@ -33,9 +33,9 @@ When you choose to verify the account, a new browser window will open in the AWS
 <a name="connections-troubleshoot-workflow"></a>
 
 **Problem:** When the workflow runs and does not find a configured account or IAM roles associated with your space, you must fill in the role, connection, and environment fields manually in the workflow YAML. View the failed workflow action, and note whether the error messages are as follows:
-+ The role is not available for use with the connection associated with the environment.
-+ Action did not succeed. Status: FAILED; The provided value for account connection or environment is not valid. Verify the connection is associated with your space and the environment is associated with your project.
-+ Action did not succeed. Status: FAILED; The provided value for IAM role is not valid. Verify the name exists, the IAM role is added to your account connection, and the connection is already associated with your Amazon CodeCatalyst space
++ `The role is not available for use with the connection associated with the environment.`
++ `Action did not succeed. Status: FAILED; The provided value for account connection or environment is not valid. Verify the connection is associated with your space and the environment is associated with your project.`
++ `Action did not succeed. Status: FAILED; The provided value for IAM role is not valid. Verify the name exists, the IAM role is added to your account connection, and the connection is already associated with your Amazon CodeCatalyst space`
 
 **Possible fixes:** Make sure that the workflow YAML fields have accurate values for [Environment](build-action-ref.md#build.environment), [Connections](build-action-ref.md#build.environment.connections), and [Role](build-action-ref.md#build.environment.connections.role). The CodeCatalyst workflow actions that require an environment are build or deploy actions that run AWS resources or that generate AWS resource stacks.
 
@@ -95,6 +95,6 @@ For more information, see [Managing billing](https://docs.aws.amazon.com/codecat
 
 **Problem:** When creating a project and then running the project workflow, the workflow fails and shows an error stating that the connection name is not valid, as follows:
 
-Failed at <action\_name>: The connection name is not valid.
+`Failed at <action_name>: The connection name is not valid.`
 
 **Possible fixes:** Make sure you provide the account ID that you want to add to your space, and make sure that the account is not enabled for project-restricted account connections. If the account is enabled for project-restricted account connections, then you might need to update the account connection by enabling access to the new project. For more information, see [Configuring project-restricted account connections](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-accounts.html#managing-accounts-restriction).

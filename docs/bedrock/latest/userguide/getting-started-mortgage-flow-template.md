@@ -23,7 +23,7 @@ The `cloudformation-mortgage-flow-setup.zip` file that you download contains the
   + `guardrails-template` – The template for the guardrail to be associated with the agent.
   + `prompts-template` – The template for the prompts to be used in flow.
   + `kb-role-template` – The template for the knowledge base role, to be used both by the OpenSearch template and by the knowledge base template.
-  + `oss-infra-template` – The template for the Amazon OpenSearch Serverless vector store to be used for the knowledge base.
+  + `oss-infra-template` – The template for the OpenSearch Serverless vector store to be used for the knowledge base.
   + `kb-infra-template` – The template for the mortgage loan knowledge base to be associated with the agent.
   + `agent-template` – The template for mortgage processing agent to be used in the flow.
   + `mortgage-flow-template` – The template for the mortgage processing flow that combines all the resources.

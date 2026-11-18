@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-trouble
 
 Athena for Spark has a known calculation code block size limit of 68000 characters. When you run a calculation with a code block over this limit, you can receive the following error message:
 
- '...' at 'codeBlock' failed to satisfy constraint: Member must have length less than or equal to 68000
+` '...' at 'codeBlock' failed to satisfy constraint: Member must have length less than or equal to 68000`
 
 The following image shows this error in the Athena console notebook editor.
 
@@ -24,7 +24,7 @@ aws athena start-calculation-execution \
 
 The command gives the following error message:
 
-{{{LARGE\_CODE\_BLOCK}}} at 'codeBlock' failed to satisfy constraint: Member must have length less than or equal to 68000
+`{{{LARGE_CODE_BLOCK}}} at 'codeBlock' failed to satisfy constraint: Member must have length less than or equal to 68000`
 
 ## Workaround
 <a name="notebooks-spark-troubleshooting-code-block-size-limit-workaround"></a>

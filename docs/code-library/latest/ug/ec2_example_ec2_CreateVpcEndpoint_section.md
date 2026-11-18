@@ -103,7 +103,7 @@ Output:
 ```
 For more information, see [Create an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink User Guide*.
 **Example 3: To create a Gateway Load Balancer endpoint**
-The following `create-vpc-endpoint` example creates a Gateway Load Balancer endpoint between VPC `vpc-1a2b3c4d5e6f7a8b9` and and a service that is configured using a Gateway Load Balancer.
+The following `create-vpc-endpoint` example creates a Gateway Load Balancer endpoint between VPC `vpc-1a2b3c4d5e6f7a8b9` and a service that is configured using a Gateway Load Balancer.
 
 ```
 aws ec2 create-vpc-endpoint \

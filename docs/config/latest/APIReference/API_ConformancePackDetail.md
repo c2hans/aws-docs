@@ -32,7 +32,7 @@ Required: Yes
  ** ConformancePackInputParameters **   <a name="config-Type-ConformancePackDetail-ConformancePackInputParameters"></a>
 A list of `ConformancePackInputParameter` objects.
 Type: Array of [ConformancePackInputParameter](API_ConformancePackInputParameter.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 60 items.
+Array Members: Minimum number of 0 items. Maximum number of 330 items.
 Required: No
 
  ** CreatedBy **   <a name="config-Type-ConformancePackDetail-CreatedBy"></a>
@@ -60,9 +60,29 @@ The last time a conformation pack update was requested.
 Type: Timestamp
 Required: No
 
+ ** Scope **   <a name="config-Type-ConformancePackDetail-Scope"></a>
+An object of type `ConformancePackScope`, which contains the tag key and optional tag value that defines which resources trigger an evaluation for the AWS Config rules in the managed conformance pack.
+Managed conformance packs with a scope populate this field. Custom conformance packs leave it empty.
+Type: [ConformancePackScope](API_ConformancePackScope.md) object
+Required: No
+
+ ** Source **   <a name="config-Type-ConformancePackDetail-Source"></a>
+Contains the identifier of the managed conformance pack that AWS Config deploys in your account.
+This field applies only to managed conformance packs. Custom conformance packs leave it empty.
+Type: [ConformancePackSource](API_ConformancePackSource.md) object
+Required: No
+
  ** TemplateSSMDocumentDetails **   <a name="config-Type-ConformancePackDetail-TemplateSSMDocumentDetails"></a>
 An object that contains the name or Amazon Resource Name (ARN) of the AWS Systems Manager document (SSM document) and the version of the SSM document that is used to create a conformance pack.
 Type: [TemplateSSMDocumentDetails](API_TemplateSSMDocumentDetails.md) object
+Required: No
+
+ ** Type **   <a name="config-Type-ConformancePackDetail-Type"></a>
+The type of the conformance pack. Valid values:
++  `CUSTOM` – A custom conformance pack.
++  `MANAGED` – A managed conformance pack.
+Type: String
+Valid Values: `CUSTOM | MANAGED`
 Required: No
 
 ## See Also

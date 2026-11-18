@@ -6,16 +6,22 @@ source_url: https://docs.aws.amazon.com/resilience-hub/index.html
 title: 'AWS Resilience Hub Documentation'
 canonical_url: https://docs.aws.amazon.com/resilience-hub/
 source: aws-documentation
-generated_on: 2026-11-16
+generated_on: 2026-11-17
 ---
 
 # AWS Resilience Hub Documentation
 
-AWS Resilience Hub helps you proactively prepare and protect your AWS applications from disruptions. AWS Resilience Hub provides resiliency assessment and validation to help you identify and resolve issues before releasing applications into production.
+The next generation of AWS Resilience Hub helps you assess and improve the resilience of your critical applications. Identify failure modes, discover application dependencies, and track resilience progress across your organization.
 
-- [User Guide](/resilience-hub/latest/userguide/): Describes how to use AWS Resilience Hub to analyze your infrastructure, get recommendations to improve the resiliency of your AWS apps, review resiliency scores, and more.
-- [API Reference](/resilience-hub/latest/APIReference/): Describes all the AWS Resilience Hub API operations in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
-- [Next generation Resilience Hub API Reference](/resilience-hub/v2/APIReference/): Describes all the next generation of Resilience Hub API operations in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
+## Next generation Resilience Hub
+
+- [User Guide](/resilience-hub/latest/userguide/next-gen.html): Describes how to use the next generation of Resilience Hub to model your applications, define resilience policies, discover dependencies, and assess and improve your resilience posture.
+- [API Reference](/resilience-hub/v2/APIReference/Welcome.html): Describes all the next generation of Resilience Hub API operations in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
+
+## AWS Resilience Hub V1
+
+- [User Guide](/resilience-hub/latest/userguide/arh.html): Describes how to use AWS Resilience Hub to analyze your infrastructure, get recommendations to improve the resiliency of your AWS apps, review resiliency scores, and more.
+- [API Reference](/resilience-hub/latest/APIReference/Welcome.html): Describes all the AWS Resilience Hub API operations in detail. Also provides sample requests, responses, and errors for the supported web services protocols.
 
 ---
 

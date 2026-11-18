@@ -246,10 +246,10 @@ This CloudTrail event shows a failed `PatchUser` operation that resulted in a `V
 The following validation error messages commonly appear in CloudTrail events when using the SCIM API with IAM Identity Center. These validation errors typically occur during user and group provisioning operations.
 
 For detailed guidance on resolving these errors and properly configuring SCIM provisioning, see this [AWS re:Post article](https://repost.aws//knowledge-center/iam-identity-center-provision).
-+ List attribute email exceeds allowed limit of 1
-+ List attribute addresses allowed limit of 1
-+ 1 validation errors detected: Value at '\*name.familyName\*' failed to satisfy constraint: Member must satisfy regular expression pattern: [\\\\p{L}\\\\p{M}\\\\p{S}\\\\p{N}\\\\p{P}\\\\t\\\\n\\\\r ]\+
-+ 2 validation errors detected: Value at 'name.familyName' failed to satisfy constraint: Member must have length greater than or equal to 1; Value at 'name.familyName' failed to satisfy constraint: Member must satisfy regular expression pattern: [\\\\p{L}\\\\p{M}\\\\p{S}\\\\p{N}\\\\p{P}\\\\t\\\\n\\\\r ]\+
-+ 2 validation errors detected: Value at 'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value' failed to satisfy constraint: Member must have length greater than or equal to 1; Value at 'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value' failed to satisfy constraint: Member must satisfy regular expression pattern: [\\\\p{L}\\\\p{M}\\\\p{S}\\\\p{N}\\\\p{P}\\\\t\\\\n\\\\r ]\+",
-+ Invalid JSON from RequestBody
-+ Invalid Filter format
++ `List attribute email exceeds allowed limit of 1`
++ `List attribute addresses allowed limit of 1`
++ `1 validation errors detected: Value at '*name.familyName*' failed to satisfy constraint: Member must satisfy regular expression pattern: [\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\t\\n\\r ]+`
++ `2 validation errors detected: Value at 'name.familyName' failed to satisfy constraint: Member must have length greater than or equal to 1; Value at 'name.familyName' failed to satisfy constraint: Member must satisfy regular expression pattern: [\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\t\\n\\r ]+`
++ `2 validation errors detected: Value at 'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value' failed to satisfy constraint: Member must have length greater than or equal to 1; Value at 'urn:ietf:params:scim:schemas:extension:enterprise:2.0:User.manager.value' failed to satisfy constraint: Member must satisfy regular expression pattern: [\\p{L}\\p{M}\\p{S}\\p{N}\\p{P}\\t\\n\\r ]+",`
++ `Invalid JSON from RequestBody`
++ `Invalid Filter format`

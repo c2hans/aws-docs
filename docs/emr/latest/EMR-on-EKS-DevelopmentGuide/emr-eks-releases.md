@@ -15,6 +15,7 @@ Amazon EMR on EKS uses the following form of release label: `emr-x.x.x-latest` o
 For a comparison between Amazon EMR on EKS and Amazon EMR running on EC2, see the [Amazon EMR FAQs](https://aws.amazon.com/emr/faqs/#Deployment_options) on the AWS website.
 
 **Topics**
++ [AWS runtime for Apache Spark (emr-spark-8.2.0) on EKS](emr-eks-spark-8.2.0.md)
 + [AWS runtime for Apache Spark (emr-spark-8.1.0) on EKS](emr-eks-spark-8.1.0.md)
 + [AWS runtime for Apache Spark (emr-spark-8.0.0) on EKS](emr-eks-spark-8.0.0.md)
 + [Amazon EMR on EKS 7.14.0 releases](emr-eks-7.14.0.md)

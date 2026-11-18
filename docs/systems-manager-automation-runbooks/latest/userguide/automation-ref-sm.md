@@ -10,3 +10,4 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 **Topics**
 + [`AWS-DisableSageMakerNotebookRootAccess`](AWS-DisableSageMakerNotebookRootAccess.md)
 + [`AWSSupport-RequestSageMakerLimitIncrease`](automation-awssupport-requestsagemakerlimitincrease.md)
++ [`AWSSupportRemediator-DisableSageMakerNotebookInstanceRootAccess`](automation-awssupportremediator-disablesagemakernotebookinstancerootaccess.md)

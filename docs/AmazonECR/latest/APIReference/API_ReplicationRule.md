@@ -16,6 +16,11 @@ Type: Array of [ReplicationDestination](API_ReplicationDestination.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: Yes
 
+ ** deleteReplication **   <a name="ECR-Type-ReplicationRule-deleteReplication"></a>
+The delete replication settings for the replication rule. When delete replication is enabled, the service replicates image deletions and image tag removals from the source registry to the replication destinations. If you do not specify this parameter, the service does not replicate image deletions or image tag removals for the replication rule.
+Type: [DeleteReplication](API_DeleteReplication.md) object
+Required: No
+
  ** repositoryFilters **   <a name="ECR-Type-ReplicationRule-repositoryFilters"></a>
 An array of objects representing the filters for a replication rule. Specifying a repository filter for a replication rule provides a method for controlling which repositories in a private registry are replicated.
 Type: Array of [RepositoryFilter](API_RepositoryFilter.md) objects

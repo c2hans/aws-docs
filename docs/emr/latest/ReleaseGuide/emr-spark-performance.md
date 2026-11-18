@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-perfor
 # Optimize Spark performance
 <a name="emr-spark-performance"></a>
 
+To get configuration recommendations based on your successful Spark runs on EMR Serverless and AWS Glue, see [Apache Spark Optimization Agent for Amazon EMR and AWS Glue](spark-optimization-agent.md).
+
 Amazon EMR provides multiple performance optimization features for Spark. This topic explains each optimization feature in detail.
 
 For more information on how to set Spark configuration, see [Configure Spark](emr-spark-configure.md).

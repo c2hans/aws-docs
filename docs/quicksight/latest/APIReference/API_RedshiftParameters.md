@@ -25,6 +25,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: No
 
+ ** FederatedCatalog **   <a name="QS-Type-RedshiftParameters-FederatedCatalog"></a>
+The federated database to use for table and schema discovery. Specify the exact database name returned by `SHOW DATABASES`, such as `producer_database@catalog_name`. This value must differ from `Database`, which specifies the database used for the connection.
+For `UpdateDataSource`, omit this parameter to keep the current catalog, or specify an empty string to clear the configured catalog.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 127.
+Required: No
+
  ** Host **   <a name="QS-Type-RedshiftParameters-Host"></a>
 Host. This field can be blank if `ClusterId` is provided.
 Type: String

@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 # Listing and viewing functions
 <a name="functions-managing-list"></a>
 
+In the following commands, replace `{{us-west-2}}` with your AWS Region, and `{{function-id}}` with the ID of the function.
+
 ```
 aws elemental-inference list-functions \
   --region {{us-west-2}} \

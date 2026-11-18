@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-TwilioApiKey"></a>
 
 ## Secret Value Fields
-<a name="w2aac29c13c57b3"></a>
+<a name="w2aac29c13c59b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -33,7 +33,7 @@ validationUrl
 This field is required for a Restricted key. A Restricted key can call only the endpoints that its policy permits, so supply an endpoint that you know the policy allows. For a Standard key, Secrets Manager derives a default endpoint.
 
 ## Secret Metadata Fields
-<a name="w2aac29c13c57b5"></a>
+<a name="w2aac29c13c59b5"></a>
 
 The following are the metadata fields for Twilio API Key:
 
@@ -55,7 +55,7 @@ friendlyNamePrefix
 (Optional) The prefix for the friendly name of each replacement key. Default: `aws-sm-api-key`.
 
 ## Usage Flow
-<a name="w2aac29c13c57b7"></a>
+<a name="w2aac29c13c59b7"></a>
 
 This rotation uses a two-secret architecture. A Twilio API key cannot rotate itself, because the Twilio key management endpoints reject API key authentication. An administrator secret therefore provides the credential that creates and deletes keys.
 

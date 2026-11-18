@@ -13,7 +13,6 @@ The details of an AWS Config evaluation for an account ID and region in an aggre
  ** AccountId **   <a name="config-Type-AggregateEvaluationResult-AccountId"></a>
 The 12-digit account ID of the source account.
 Type: String
-Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
 Required: No
 

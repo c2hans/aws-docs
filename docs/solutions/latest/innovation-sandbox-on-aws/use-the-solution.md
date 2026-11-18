@@ -31,6 +31,8 @@ This section provides detailed instructions on how to log into the web UI, and u
 +  [Viewing leases shared with you](user-section.md#shared-leases)
 +  [Requesting a lease extension](user-section.md#lease-extension)
 
+<a name="available-actions-per-role"></a>**Available actions per role**
+
 The following table summarizes the actions that can be performed by each Innovation Sandbox role.
 
  **Accounts**

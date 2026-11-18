@@ -10,17 +10,17 @@ Amazon S3 supports both HTTP and HTTPS protocols for data transmission. HTTP tra
 ## TLS 1.2 and TLS 1.3 Support
 <a name="UsingEncryptionInTransit.TLS-support"></a>
 
-Amazon S3 supports TLS 1.2 and TLS 1.3 for HTTPS connections across all API endpoints for all AWS Regions. S3 automatically negotiates the strongest TLS protection supported by your client software, and the S3 endpoint you are accessing. Current AWS tools (2014 or later) including the AWS SDKs and AWS CLI automatically default to TLS 1.3 with no action required on your part. You can override this automatic negotiation through client configuration settings to specify a particular TLS version if backward compatibility to TLS 1.2 is needed. When using TLS 1.3, you can optionally configure hybrid post quantum key exchange (ML-KEM) to make quantum-resistant requests to Amazon S3. For more information, see [Configuring hybrid post-quantum TLS for your client](pqtls-how-to.md).
+Amazon S3 supports TLS 1.2 and TLS 1.3 for HTTPS connections across all API endpoints for all AWS Regions. S3 automatically negotiates the strongest TLS protection supported by your client software, and the S3 endpoint you are accessing. Current AWS tools (2014 or later) including the AWS SDKs and AWS CLI automatically default to TLS 1.3 with no action required on your part. You can override this automatic negotiation through client configuration settings to specify a particular TLS version if backward compatibility to TLS 1.2 is needed. When using TLS 1.3, you can optionally configure hybrid post quantum key exchange (ML-KEM) to make quantum-resistant requests to Amazon S3. Many current clients use hybrid post-quantum key exchange by default. For more information, see [Configuring hybrid post-quantum TLS for your client](pqtls-how-to.md).
 
 **Note**
-TLS 1.3 is supported in all S3 endpoints, except for AWS PrivateLink for Amazon S3 and Multi-Region Access Points.
+TLS 1.3 is supported in all S3 endpoints, except for Multi-Region Access Points.
 
 ## Monitoring TLS usage
 <a name="UsingEncryptionInTransit.monitoring"></a>
 
-You can use either Amazon S3 server access logs or AWS CloudTrail to monitor requests to Amazon S3 buckets. Both logging options record the TLS version and cipher suite used in each request.
+You can use either Amazon S3 server access logs or AWS CloudTrail to monitor requests to Amazon S3 buckets. Both logging options record the TLS version and cipher suite used in each request. AWS CloudTrail also records the key exchange, which shows whether a request used hybrid post-quantum TLS. For more information, see [Verifying hybrid post-quantum TLS with AWS CloudTrail](UsingEncryptionInTransit.PQ-TLS.md#pqtls-verify).
 + **Amazon S3 server access logs** – Server access logging provides detailed records for the requests that are made to a bucket. For example, access log information can be useful in security and access audits. For more information, see [Amazon S3 server access log format](LogFormat.md).
-+ **AWS CloudTrail** – [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) is a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Amazon S3 as events. For more information, see [Amazon S3 CloudTrail events](cloudtrail-logging-s3-info.md).
++ **AWS CloudTrail** – [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) is a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Amazon S3 as events. The `tlsDetails` element of each event contains the TLS version (`tlsVersion`), cipher suite (`cipherSuite`), host name (`clientProvidedHostHeader`), and key exchange (`keyExchange`). For more information, see [Amazon S3 CloudTrail events](cloudtrail-logging-s3-info.md).
 
 ## Enforcing encryption in transit
 <a name="UsingEncryptionInTransit.enforcement"></a>

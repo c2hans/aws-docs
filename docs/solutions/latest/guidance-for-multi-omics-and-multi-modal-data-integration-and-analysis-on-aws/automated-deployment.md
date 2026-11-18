@@ -52,4 +52,4 @@ This guidance uses the AWS CodePipeline and Amazon Omics services, which are cur
 
 1.  Choose **Create stack** to deploy the stack.
 
-1. You can view the status of the stack in the AWS CloudFormation Console in the **Status** column. You should see a status of CREATE\_COMPLETE in approximately 60 minutes.
+1. You can view the status of the stack in the AWS CloudFormation Console in the **Status** column. You should see a status of `CREATE_COMPLETE` in approximately 60 minutes.

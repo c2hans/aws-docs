@@ -109,7 +109,8 @@ The rule type configuration for the firewall rule. This is a tagged union — se
 +  `FirewallAdvancedThreatCategory` — match an AWS-managed advanced threat category (for example, `PHISHING`).
 +  `DnsThreatProtection` — match a built-in DNS Firewall Advanced threat detector (`DGA`, `DNS_TUNNELING`, or `DICTIONARY_DGA`).
 +  `PartnerThreatProtection` — match a third-party threat feed delivered through AWS Marketplace. The selected partner must be an active subscription on the calling account.
-To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md).
++  `AutoAllowlist` — automatically observe the domains that the VPCs associated with the rule group resolve, and allow the ones that you approve. See [AutoAllowlistConfig](API_route53resolver_AutoAllowlistConfig.md).
+To enumerate the values supported in your account, call [ListFirewallRuleTypes](API_route53resolver_ListFirewallRuleTypes.md). It doesn't return `AutoAllowlist`.
 Type: [FirewallRuleType](API_route53resolver_FirewallRuleType.md) object
 Required: No
 

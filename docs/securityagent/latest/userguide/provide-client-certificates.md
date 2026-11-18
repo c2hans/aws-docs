@@ -16,7 +16,8 @@ The endpoint’s own server certificate is a separate setting. If it is self-sig
 ## How client certificates apply
 <a name="provide-client-certificates-how"></a>
 +  **A certificate applies to a whole host** – You attach a certificate to one or more hosts, and it applies to every path and port on each host. A host can use only one client certificate.
-+  **Hosts must be target endpoints** – Each host must belong to a target URL of the penetration test.
++  **Hosts must be target endpoints** – Each host must belong to a target URL of the penetration test. Include every host that requires the certificate, not only the API host. For example, suppose the API at `https://api.example.com` needs a token from `https://auth.example.com`. If the token endpoint requires the client certificate, add both URLs as targets and attach the certificate to both hosts. Otherwise, the token request goes out without a certificate, and the authentication server rejects it.
++  **The agent never handles the certificate** – AWS Security Agent presents the certificate during the TLS handshake. This happens on the network path between the test environment and the host. The certificate and private key are not available inside the test environment. Don’t instruct the agent to pass a certificate file to a command, for example with `curl --cert`. Write authentication steps as plain HTTPS requests, and AWS Security Agent attaches the certificate for the hosts that you chose.
 +  **Hosts must use HTTPS and a hostname** – An origin uses the form ` [:port](https://host) ` with no path. An IP address is not accepted. AWS Security Agent selects the certificate from the TLS server name, and a connection to an IP address does not carry one.
 +  **Certificates are presented only to their hosts** – AWS Security Agent presents a certificate only when it connects to a host that you attached it to. It never presents the certificate to any other host.
 +  **Certificate names** – A name can be 1–100 characters: letters, numbers, hyphens, and underscores, starting with a letter or number. Names must be unique within the penetration test.
@@ -134,7 +135,12 @@ To update the client certificates on an existing penetration test, use `update-p
 ## Troubleshoot client certificate errors
 <a name="provide-client-certificates-troubleshoot"></a>
 
-AWS Security Agent checks each client certificate before testing begins. If a check fails, the penetration test stops with a message that names the certificate. Find the message in the following table, and take the action for that certificate.
+Client certificate errors come from the secret, the certificate and key, or the target’s TLS setup. AWS Security Agent checks each client certificate before testing begins, in two steps. First, it reads the secret and validates the certificate and private key. Then, it connects to each host with its certificate. If either step fails, AWS Security Agent stops the penetration test with a message. Find the message in the following tables, and take the action for it.
+
+### Certificate loading messages
+<a name="provide-client-certificates-troubleshoot-load"></a>
+
+A certificate loading message names the certificate.
 
 | Message contains | What to do |
 | --- | --- |
@@ -151,3 +157,14 @@ AWS Security Agent checks each client certificate before testing begins. If a ch
 | The private key does not match the certificate | Use the private key from the same key pair as the certificate. |
 | has expired, or is not yet valid | Replace the certificate with one that is currently valid. |
 | run window | Use a certificate that stays valid for at least 36 hours after the penetration test starts, or for your maximum task-hours limit if it is lower than 36. |
+
+### Connection check messages
+<a name="provide-client-certificates-troubleshoot-connect"></a>
+
+If a host does not answer the connection check, the message begins with `Could not complete an mTLS connection to one or more targets.` It then lists each reason that was found, with the number of targets that failed for that reason. The message does not name the hosts. If you attached certificates to more than one host, check each of those hosts.
+
+| Message contains | What to do |
+| --- | --- |
+| The server certificate does not match the configured hostname | The host’s TLS server certificate does not cover the hostname in the target URL. Update the server certificate so that its subject alternative names include that hostname, or change the target URL to a hostname that the certificate covers. This is common when a private API sits behind a load balancer or API gateway that serves a certificate for a different name. |
+| The server certificate failed verification | AWS Security Agent could not validate the host’s server certificate. Check that the certificate is valid and that the host sends its complete certificate chain. If the host uses a self-signed certificate or a private or internal CA, add that CA as a trusted CA certificate. For more information, see [Provide trusted CA certificates for a penetration test](provide-trusted-ca-certificates.md). |
+| Check that the server certificate is trusted and matches the configured hostname | The connection failed, but the cause could not be determined. Check the following, in order:1.  The host’s server certificate is trusted and matches the hostname. <br />2.  The host accepts the attached client certificate. For example, confirm that the certificate’s issuer is in the host’s trust store. <br />3.  The host is reachable from the penetration test network. For a host in a VPC, see [Connect agent to private VPC resources](connect-agent-vpc.md).  |

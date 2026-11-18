@@ -72,7 +72,7 @@ Required. The Amazon S3 URI, AWS Glue ARN, or Amazon S3 Tables ARN pointing to y
 + Amazon S3 Tables ARN: `arn:aws:s3tables:region:account:bucket/bucket-name/table/table-id`.
 + AWS Glue ARN (standard): `arn:aws:glue:region:account:table/database/table`.
 + AWS Glue ARN (Amazon S3 Tables): `arn:aws:glue:region:account:table/s3tablescatalog/bucket/namespace/table`.
-+ AWS Glue ARN (federated catalog): `arn:aws:glue:region:account:table/catalog/database/table`.
++ An example AWS Glue ARN for a federated catalog is `arn:aws:glue:us-east-1:111122223333:table/catalog/database/table`. Federated catalogs are supported only for single-level Iceberg REST Catalog (IRC)-compatible catalogs, such as Snowflake Horizon and Databricks Unity Catalog. The underlying data must be Iceberg data in Amazon S3. Amazon Redshift federated catalogs are not supported. For more information about Amazon Redshift federated catalog limitations, see [Limitations](aurora-analytics-limitations.md).
 `format`
 The data format: `'parquet'` or `'iceberg'`.
 + For an Amazon S3 URI, this option is required. Aurora PostgreSQL doesn't infer the format from the file extension or from the files at the location.

@@ -57,8 +57,8 @@ Your product must remain at a reduced price so you and the AWS Marketplace Selle
    + Examine available purchase options
    + Process test payments
    + Verify links to your own product website
-**Important**
-Cancel your pay-as-you-go subscription before changing your product's visibility from limited to public by following the instructions at [Canceling your SaaS subscription](https://docs.aws.amazon.com/marketplace/latest/buyerguide/cancel-subscription.html#cancel-saas-subscription). To cancel contract, contact the AWS Marketplace Seller Operations team by [submitting a support ticket](https://aws.amazon.com/marketplace/management/contact-us/).
+
+   When you finish testing, cancel your test subscription before you change your product's visibility from limited to public. To cancel a pay-as-you-go subscription, follow the instructions at [Canceling your SaaS subscription](https://docs.aws.amazon.com/marketplace/latest/buyerguide/cancel-subscription.html#cancel-saas-subscription). To cancel a contract, request an agreement cancellation from the **Agreements** page in AWS Partner Central. For instructions on canceling an agreement, see [Requesting an agreement cancellation](refunds.md#requesting-cancellation).
 
 1. **Submit your product for launch**
 

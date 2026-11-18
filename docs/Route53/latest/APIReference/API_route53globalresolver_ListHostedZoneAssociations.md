@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 # ListHostedZoneAssociations
 <a name="API_route53globalresolver_ListHostedZoneAssociations"></a>
 
-Lists all hosted zone associations for a Route 53 Global Resolver resource with pagination support.
+Lists hosted zone associations with pagination support. Specify a DNS view through the `resourceArn` parameter to list the hosted zone associations for that DNS view, or omit it to list all hosted zone associations in your AWS account.
 
 **Important**
 Route 53 Global Resolver is a global service that supports resolvers in multiple AWS Regions but you must specify the US East (Ohio) Region to create, update, or otherwise work with Route 53 Global Resolver resources. That is, for example, specify `--region us-east-2` on AWS CLI commands.
@@ -14,7 +14,7 @@ Route 53 Global Resolver is a global service that supports resolvers in multiple
 <a name="API_route53globalresolver_ListHostedZoneAssociations_RequestSyntax"></a>
 
 ```
-GET /hosted-zone-associations/resource-arn/{{resourceArn+}}?max_results={{maxResults}}&next_token={{nextToken}} HTTP/1.1
+GET /hosted-zone-associations?max_results={{maxResults}}&next_token={{nextToken}}&resourceArn={{resourceArn}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -29,10 +29,9 @@ The maximum number of results to retrieve in a single call.
 A pagination token used for large sets of results that can't be returned in a single response.
 
  ** [resourceArn](#API_route53globalresolver_ListHostedZoneAssociations_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_ListHostedZoneAssociations-request-uri-resourceArn"></a>
-Amazon Resource Name (ARN) of the DNS view.
+The Amazon Resource Name (ARN) of the DNS view to list hosted zone associations for. This parameter is optional; if you omit it, all hosted zone associations in your AWS account are returned.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `arn:[-.a-z0-9]{1,63}:[-.a-z0-9]{1,63}:[-.a-z0-9]{0,63}:[-.a-z0-9]{0,63}:[^/].{0,1023}`
-Required: Yes
 
 ## Request Body
 <a name="API_route53globalresolver_ListHostedZoneAssociations_RequestBody"></a>

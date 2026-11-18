@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 # GetBillingPreferences
 <a name="API_billing_GetBillingPreferences"></a>
 
-Retrieves billing preferences for the specified feature. Each feature controls a distinct billing capability: which accounts can share Reserved Instances or credits, whether billing alerts are enabled, the historical record of sharing changes, and per-credit options.
+Retrieves billing preferences for the specified feature. Each feature controls a distinct billing capability: which accounts can share Reserved Instances or credits, whether billing alerts are enabled, the historical record of sharing changes, per-credit options, and which accounts an individual Reserved Instance or Savings Plan is shared with.
 
 ## Request Syntax
 <a name="API_billing_GetBillingPreferences_RequestSyntax"></a>
@@ -32,14 +32,15 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [features](#API_billing_GetBillingPreferences_RequestSyntax) **   <a name="awscostmanagement-billing_GetBillingPreferences-request-features"></a>
-The feature to retrieve. Specify exactly one value. Valid values: `BILLING_ALERTS`, `RI_SHARING`, `RI_SHARING_HISTORY`, `CREDIT_SHARING`, `CREDIT_SHARING_HISTORY`, `CREDIT_LEVEL_SHARING`, `CREDIT_PREFERENCE_OPTIONS`.
+The feature to retrieve. Specify exactly one value. Valid values: `BILLING_ALERTS`, `RI_SHARING`, `RI_SHARING_HISTORY`, `CREDIT_SHARING`, `CREDIT_SHARING_HISTORY`, `CREDIT_LEVEL_SHARING`, `CREDIT_PREFERENCE_OPTIONS`, `BENEFIT_LEVEL_SHARING`.
 Type: Array of strings
 Array Members: Fixed number of 1 item.
-Valid Values: `RI_SHARING | RI_SHARING_HISTORY | CREDIT_SHARING | CREDIT_SHARING_HISTORY | CREDIT_LEVEL_SHARING | BILLING_ALERTS | CREDIT_PREFERENCE_OPTIONS`
+Valid Values: `RI_SHARING | RI_SHARING_HISTORY | CREDIT_SHARING | CREDIT_SHARING_HISTORY | CREDIT_LEVEL_SHARING | BILLING_ALERTS | CREDIT_PREFERENCE_OPTIONS | BENEFIT_LEVEL_SHARING`
 Required: Yes
 
  ** [filters](#API_billing_GetBillingPreferences_RequestSyntax) **   <a name="awscostmanagement-billing_GetBillingPreferences-request-filters"></a>
 Filters to narrow results. Specify exactly one filter when supplied. The supported filter name is `PREFERENCE_KEY`, which accepts 1 to 10 values to match preference keys.
+For `BENEFIT_LEVEL_SHARING`, this filter is required. Specify exactly one value that identifies the Reserved Instance (RI) or Savings Plan (SP), in the form `benefit/{ri|sp}/{benefitId}`.
 Type: Array of [BillingFeatureFilter](API_billing_BillingFeatureFilter.md) objects
 Array Members: Fixed number of 1 item.
 Required: No
